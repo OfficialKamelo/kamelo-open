@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kamelo — Web Store screenshots (licht)</title>
+<!--
+  Chrome Web Store-afbeeldingen in de stijl van echte browservensters op een lichte achtergrond.
+  ?shot=1…5 (1280×800), ?shot=marquee (1400×560), ?shot=small (440×280); ?lang=en of ?lang=nl.
+  De popup en het kluisscherm zijn de echte extensiepagina's (demo/*-preview.html) in een iframe.
+  Renderen: zie store/render-light.sh (Chrome moet met --allow-file-access-from-files draaien).
+-->
+<style>
+  :root { --font: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; }
+  html, body { margin: 0; background: #fff; }
+  body { font-family: var(--font); -webkit-font-smoothing: antialiased; color: #1f1f1f; }
+  .canvas { position: relative; overflow: hidden; background: #fff; }
+
+  /* ---------- Chrome-venster ---------- */
+  .win { position: absolute; display: flex; flex-direction: column; overflow: hidden; background: #fff;
+    border-radius: 10px; border: 1px solid rgba(0, 0, 0, .14);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, .14), 0 4px 14px rgba(0, 0, 0, .08); }
+  .tabs { height: 40px; flex: none; background: #e3e6ea; display: flex; align-items: flex-end; padding: 0 10px; gap: 6px; }
+  .lights { display: flex; gap: 8px; align-self: center; margin: 0 14px 0 4px; }
+  .lights i { width: 12px; height: 12px; border-radius: 50%; }
+  .lights i:nth-child(1) { background: #ff5f57; } .lights i:nth-child(2) { background: #febc2e; } .lights i:nth-child(3) { background: #28c840; }
+  .tab { position: relative; height: 32px; width: 236px; background: #fff; border-radius: 9px 9px 0 0; display: flex; align-items: center;
+    gap: 9px; padding: 0 12px; box-sizing: border-box; font-size: 12.5px; color: #1f1f1f; }
+  .tab::before, .tab::after { content: ""; position: absolute; bottom: 0; width: 10px; height: 10px; }
+  .tab::before { left: -10px; background: radial-gradient(circle at 0 0, transparent 10px, #fff 10.5px); }
+  .tab::after { right: -10px; background: radial-gradient(circle at 100% 0, transparent 10px, #fff 10.5px); }
+  .tab .fav { width: 16px; height: 16px; border-radius: 4px; flex: none; display: grid; place-items: center; }
+  .tab .t { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tab .x { width: 14px; height: 14px; color: #5f6368; }
+  .newtab { align-self: center; width: 16px; height: 16px; color: #5f6368; margin-left: 10px; }
+  .bar { height: 46px; flex: none; display: flex; align-items: center; gap: 4px; padding: 0 10px; border-bottom: 1px solid #e0e2e6; }
+  .ib { width: 30px; height: 30px; display: grid; place-items: center; color: #5f6368; border-radius: 50%; flex: none; }
+  .ib svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .ib.dim { color: #b5b8bc; }
+  .ib.on { background: #e3e6ea; }
+  .ib img { width: 18px; height: 18px; }
+  .omni { flex: 1; height: 34px; margin: 0 8px; background: #f1f3f4; border-radius: 17px; display: flex; align-items: center; gap: 10px; padding: 0 14px;
+    font-size: 14px; color: #1f1f1f; min-width: 0; }
+  .omni svg { width: 16px; height: 16px; flex: none; fill: none; stroke: #5f6368; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .omni .u { flex: 1; white-space: nowrap; overflow: hidden; }
+  .omni .u span { color: #5f6368; }
+  .omni .chip { font-size: 13px; color: #1f1f1f; background: #fff; border-radius: 10px; padding: 2px 9px; }
+  .avatar { width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, #8ab4f8, #1a73e8); margin: 0 4px; flex: none; }
+  .page { position: relative; flex: 1; overflow: hidden; }
+
+  /* Extensiepopup onder het Kamelo-icoon */
+  .popup { position: absolute; z-index: 5; width: 340px; border-radius: 10px; overflow: hidden; background: #f2f2f7;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .2), 0 0 0 1px rgba(0, 0, 0, .08); }
+  .popup iframe { display: block; width: 340px; border: 0; }
+
+  /* Echte melding van Kamelo (zelfde opmaak als src/content.js) */
+  .toast { position: absolute; right: 20px; bottom: 20px; z-index: 4; max-width: 340px; background: rgba(30, 30, 32, .92); color: #fff;
+    border: .5px solid rgba(255, 255, 255, .12); border-radius: 14px; padding: 10px 10px 10px 12px; font: 13px/1.38 var(--font);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25); display: flex; gap: 10px; align-items: center; }
+  .toast svg { width: 22px; height: 22px; flex: none; }
+  .toast b { font-weight: 600; margin-right: 4px; }
+  .toast .more { margin-left: auto; font-size: 12px; font-weight: 500; background: #0a84ff; border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
+
+  /* Venster "Meer info" (zelfde opmaak als src/content.js, lichte variant) */
+  .backdrop { position: absolute; inset: 0; z-index: 6; background: rgba(0, 0, 0, .28); backdrop-filter: blur(3px); display: grid; place-items: center; }
+  .card { width: 460px; background: #fff; border-radius: 18px; box-shadow: 0 24px 60px rgba(0, 0, 0, .28), 0 0 0 .5px rgba(0, 0, 0, .08);
+    font: 14px/1.4 var(--font); color: #1d1d1f; overflow: hidden; }
+  .card header { display: flex; gap: 12px; align-items: flex-start; padding: 18px 18px 12px; }
+  .card header > svg { width: 30px; height: 30px; flex: none; }
+  .card h2 { margin: 0; font-size: 16px; font-weight: 650; letter-spacing: -.01em; }
+  .card .sub { margin: 2px 0 0; color: #6e6e73; font-size: 13px; }
+  .card .tools { margin-left: auto; display: flex; gap: 6px; }
+  .card .tools span { width: 28px; height: 28px; border-radius: 50%; background: #f2f2f7; color: #6e6e73; display: grid; place-items: center; }
+  .card .tools svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+  .card ul { list-style: none; margin: 0; padding: 0 10px 6px; }
+  .card li { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "type keep" "val ph"; gap: 3px 12px; align-items: center;
+    padding: 10px 8px; border-top: .5px solid rgba(0, 0, 0, .08); }
+  .card li:first-child { border-top: 0; }
+  .card li.hover { background: #f5f5f7; border-radius: 10px; }
+  .card .type { grid-area: type; font-size: 11px; color: #6e6e73; }
+  .card .type i { font-style: normal; margin-left: 6px; padding: 0 6px; border-radius: 999px; background: #e5e5ea; }
+  .card .val { grid-area: val; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; filter: blur(5px); }
+  .card li.hover .val { filter: none; }
+  .card .ph { grid-area: ph; justify-self: end; display: flex; align-items: center; gap: 8px; color: #6e6e73; }
+  .card .ph code { font: 600 12px var(--mono, ui-monospace, Menlo, monospace); color: #0a5cc2; background: #e8f1fd; padding: 3px 7px; border-radius: 6px; }
+  .card .keep { grid-area: keep; justify-self: end; font-size: 12px; color: #0a84ff; }
+  .card footer { display: flex; align-items: center; gap: 6px; padding: 12px 18px 16px; color: #6e6e73; font-size: 12px; border-top: .5px solid rgba(0, 0, 0, .08); }
+  .card footer svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+
+  /* ---------- Nagebootste AI-chat ---------- */
+  .chat { position: absolute; inset: 0; display: flex; flex-direction: column; background: #fff; }
+  .chat .top { height: 52px; flex: none; display: flex; align-items: center; gap: 8px; padding: 0 22px; font-size: 16px; font-weight: 600; color: #1f1f1f; }
+  .spark { width: 22px; height: 22px; border-radius: 50%; background: #1f1f1f; display: grid; place-items: center; flex: none; }
+  .spark svg { width: 13px; height: 13px; fill: #fff; }
+  .chat .top .model { font-weight: 400; color: #8e8e93; }
+  .chat .body { flex: 1; overflow: hidden; display: flex; flex-direction: column; align-items: center; padding: 18px 0 0; }
+  .col { width: 700px; max-width: calc(100% - 64px); display: flex; flex-direction: column; gap: 22px; }
+  .empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; width: 100%; padding-bottom: 60px; }
+  .hello { display: grid; place-items: center; font-size: 28px; font-weight: 500; letter-spacing: -.01em; color: #1f1f1f; padding-bottom: 20px; }
+  .me { align-self: flex-end; max-width: 78%; background: #f0f0f2; border-radius: 20px; padding: 11px 18px; font-size: 15.5px; line-height: 1.55; }
+  .ai { display: flex; gap: 14px; font-size: 15.5px; line-height: 1.65; }
+  .ai p { margin: 0 0 12px; } .ai p:last-child { margin: 0; }
+  .ai .spark { margin-top: 2px; }
+  .chat.side .body, .chat.side > .composer { margin-right: 360px; }
+  .chat.side .body { padding-right: 0; }
+  .chat.side .col { width: 600px; }
+  .composer { flex: none; align-self: center; width: 740px; max-width: calc(100% - 48px); margin: 14px 0 22px; border: 1px solid #e3e3e6; border-radius: 26px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .05); padding: 16px 20px 12px; box-sizing: border-box; }
+  .composer .txt { font-size: 15.5px; line-height: 1.55; min-height: 48px; }
+  .composer .ph { color: #8e8e93; }
+  .composer .row { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+  .composer .plus { width: 30px; height: 30px; border-radius: 50%; border: 1px solid #e3e3e6; display: grid; place-items: center; color: #5f6368; }
+  .composer .plus svg, .composer .send svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .composer .send { width: 34px; height: 34px; border-radius: 50%; background: #1f1f1f; color: #fff; display: grid; place-items: center; }
+  .caret { display: inline-block; width: 1.5px; height: 18px; background: #1a73e8; vertical-align: -3px; margin-left: 1px; }
+
+  /* ---------- Nagebootste mail-app ---------- */
+  .mail { position: absolute; inset: 0; display: flex; background: #f6f8fc; }
+  .mail .side { width: 220px; flex: none; padding: 18px 12px; box-sizing: border-box; font-size: 14px; color: #1f1f1f; }
+  .mail .logo { display: flex; align-items: center; gap: 10px; font-size: 20px; color: #444746; padding: 0 10px 18px; }
+  .mail .logo i { width: 26px; height: 20px; border-radius: 4px; background: linear-gradient(135deg, #1a73e8, #8ab4f8); }
+  .mail .compose-btn { display: inline-flex; align-items: center; gap: 12px; background: #c2e7ff; border-radius: 16px; padding: 16px 22px; font-weight: 500; margin-bottom: 14px; }
+  .mail .nav { padding: 6px 12px; border-radius: 16px; display: flex; justify-content: space-between; }
+  .mail .nav.on { background: #d3e3fd; font-weight: 600; }
+  .mail .list { flex: 1; margin: 8px 16px 16px 0; background: #fff; border-radius: 16px; }
+  .mail .item { display: grid; grid-template-columns: 180px 1fr 60px; gap: 16px; padding: 13px 22px; border-bottom: 1px solid #f1f3f4; font-size: 14px; color: #444746; }
+  .mail .item b { color: #1f1f1f; }
+  .mail .cmp { position: absolute; right: 24px; bottom: 0; width: 560px; height: 74%; background: #fff; border-radius: 12px 12px 0 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .18); display: flex; flex-direction: column; font-size: 14px; }
+  .mail .cmp .h { background: #f2f6fc; border-radius: 12px 12px 0 0; padding: 11px 16px; font-weight: 500; }
+  .mail .cmp .f { padding: 10px 16px; border-bottom: 1px solid #f1f3f4; color: #444746; }
+  .mail .cmp .f span { color: #1f1f1f; }
+  .assist { margin: 14px 16px; border-radius: 16px; padding: 14px 16px; background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(120deg, #4285f4, #9b72cb, #d96570) border-box; border: 1.5px solid transparent; }
+  .assist .lab { display: flex; align-items: center; gap: 8px; font-weight: 500; color: #1f1f1f; margin-bottom: 8px; }
+  .assist .lab svg { width: 18px; height: 18px; fill: #4285f4; }
+  .assist .txt { line-height: 1.55; color: #1f1f1f; min-height: 66px; }
+  .assist .go { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; }
+  .assist .go span { background: #0b57d0; color: #fff; border-radius: 18px; padding: 8px 18px; font-weight: 500; }
+  .assist .go span.ghost { background: none; color: #0b57d0; }
+  .mail .cmp .bodytxt { flex: 1; }
+  .mail .cmp .foot { padding: 12px 16px; display: flex; align-items: center; gap: 14px; }
+  .mail .cmp .foot .snd { background: #0b57d0; color: #fff; border-radius: 18px; padding: 9px 22px; font-weight: 500; }
+
+  /* Kluispagina (unlock) vult het venster */
+  .full { position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 0; background: #f2f2f7; }
+
+  /* ---------- Kleine promotietegel ---------- */
+  .small { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: #fff; }
+  .small img { width: 84px; height: 84px; }
+  .small .n { font-size: 38px; font-weight: 700; letter-spacing: -.02em; }
+  .small .d { font-size: 17px; color: #6e6e73; margin-top: -8px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../src/strings.js"></script>
+<script>
+const Q = new URLSearchParams(location.search);
+const SHOT = Q.get('shot') || '1';
+const LANG = Q.get('lang') === 'nl' ? 'nl' : 'en';
+const { t, typeLabel } = globalThis.PrivacyI18n;
+
+// Teksten op de nagebootste pagina's (de teksten van Kamelo zelf komen uit src/strings.js).
+const TXT = {
+  en: {
+    model: 'Assistant', hello: 'What can I help with?', ask: 'Ask anything',
+    masked: 'Write a friendly payment reminder to [PERSON_1] ([EMAIL_1]). Her SSN is [ID_1] and she pays from IBAN [IBAN_1].',
+    sent: 'Write a friendly payment reminder to [PERSON_1] ([EMAIL_1]). She pays from IBAN [IBAN_1].',
+    reply: ['Here’s a friendly reminder you can send:',
+      'Hi Sarah Miller,<br>I hope you’re well! Just a quick reminder that invoice 2291 is still open. Could you transfer the amount from GB82 WEST 1234 5698 7654 32 by Friday?',
+      'Thanks so much, and let me know if you have any questions.'],
+    tab: 'Assistant', mailTab: 'Inbox – Mail', vaultTab: 'Kamelo – Vault',
+    mail: { compose: 'Compose', inbox: 'Inbox', sentF: 'Sent', drafts: 'Drafts', newMsg: 'New message', to: 'To', subj: 'Subject', help: 'Help me write',
+      prompt: 'Ask [PERSON_1] to pay invoice 2291 to [IBAN_1] by Friday, and mention her new address [ADDRESS_1].', create: 'Create', cancel: 'Cancel', send: 'Send',
+      rows: [['Acme Inc.', 'Quarterly report – Numbers for Q3 are in'], ['Daniel', 'Weekend plans – Are we still on for Saturday?'], ['Bank', 'Your statement is ready'], ['Landlord', 'Re: Heating – The engineer will come by on Tuesday'], ['Sarah', 'Invoice 2291 – Thanks for the reminder'], ['Calendar', 'Dentist appointment – Thursday 10:30'], ['Daniel', 'Photos from the trip'], ['Acme Inc.', 'Team lunch on Friday']] },
+    items: [['PERSON', 1], ['EMAIL', 1], ['ID', 1], ['IBAN', 1]], mailItems: [['PERSON', 1], ['IBAN', 1], ['ADDRESS', 1]],
+    details: [['PERSON', 'Sarah Miller', '[PERSON_1]', true], ['EMAIL', 'sarah.miller@gmail.com', '[EMAIL_1]'], ['ID', '536-22-8415', '[ID_1]'], ['IBAN', 'GB82 WEST 1234 5698 7654 32', '[IBAN_1]']],
+    small: 'AI privacy software',
+  },
+  nl: {
+    model: 'Assistent', hello: 'Waarmee kan ik helpen?', ask: 'Vraag maar raak',
+    masked: 'Schrijf een vriendelijke betalingsherinnering aan [PERSON_1] ([EMAIL_1]). Zijn BSN is [ID_1] en hij betaalt vanaf IBAN [IBAN_1].',
+    sent: 'Schrijf een vriendelijke betalingsherinnering aan [PERSON_1] ([EMAIL_1]). Hij betaalt vanaf IBAN [IBAN_1].',
+    reply: ['Hier is een vriendelijke herinnering die je kunt sturen:',
+      'Beste Jan de Vries,<br>Ik hoop dat alles goed gaat! Een korte herinnering dat factuur 2291 nog openstaat. Zou je het bedrag vóór vrijdag willen overmaken vanaf NL91 ABNA 0417 1643 00?',
+      'Alvast bedankt, en laat het weten als je vragen hebt.'],
+    tab: 'Assistent', mailTab: 'Inbox – Mail', vaultTab: 'Kamelo – Kluis',
+    mail: { compose: 'Opstellen', inbox: 'Inbox', sentF: 'Verzonden', drafts: 'Concepten', newMsg: 'Nieuw bericht', to: 'Aan', subj: 'Onderwerp', help: 'Help me schrijven',
+      prompt: 'Vraag [PERSON_1] om factuur 2291 vóór vrijdag te betalen naar [IBAN_1], en noem haar nieuwe adres [ADDRESS_1].', create: 'Maken', cancel: 'Annuleren', send: 'Verzenden',
+      rows: [['Acme BV', 'Kwartaalrapport – De cijfers voor Q3 zijn binnen'], ['Sanne', 'Weekend – Gaat zaterdag nog door?'], ['Bank', 'Je afschrift staat klaar'], ['Verhuurder', 'Re: Verwarming – De monteur komt dinsdag langs'], ['Jan', 'Factuur 2291 – Bedankt voor de herinnering'], ['Agenda', 'Tandarts – donderdag 10:30'], ['Sanne', 'Foto’s van de vakantie'], ['Acme BV', 'Teamlunch op vrijdag']] },
+    items: [['PERSON', 1], ['EMAIL', 1], ['ID', 1], ['IBAN', 1]], mailItems: [['PERSON', 1], ['IBAN', 1], ['ADDRESS', 1]],
+    details: [['PERSON', 'Jan de Vries', '[PERSON_1]', true], ['EMAIL', 'jan.devries@gmail.com', '[EMAIL_1]'], ['ID', '111222333', '[ID_1]'], ['IBAN', 'NL91 ABNA 0417 1643 00', '[IBAN_1]']],
+    small: 'privacysoftware voor AI',
+  },
+}[LANG];
+
+const ICON = {
+  back: '<path d="M19 12H5M11 6l-6 6 6 6"/>', fwd: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  reload: '<path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/>', star: '<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8L3.5 9.7l5.9-.9z"/>',
+  puzzle: '<path d="M9 4.5a2 2 0 1 1 4 0V6h4a1 1 0 0 1 1 1v4h-1.5a2 2 0 1 0 0 4H18v4a1 1 0 0 1-1 1h-4v-1.5a2 2 0 1 0-4 0V20H5a1 1 0 0 1-1-1v-4h1.5a2 2 0 1 0 0-4H4V7a1 1 0 0 1 1-1h4z"/>',
+  dots: '<circle cx="12" cy="5" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="12" cy="19" r="1.2"/>',
+  tune: '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>',
+  x: '<path d="M6 6l12 12M18 6 6 18"/>', plus: '<path d="M12 5v14M5 12h14"/>', up: '<path d="M12 19V5M6 11l6-6 6 6"/>',
+};
+const svg = (name, extra = '') => `<svg viewBox="0 0 24 24" ${extra}>${ICON[name]}</svg>`;
+const SPARK = '<svg viewBox="0 0 24 24"><path d="M12 2c.6 5.3 4.7 9.4 10 10-5.3.6-9.4 4.7-10 10-.6-5.3-4.7-9.4-10-10C7.3 11.4 11.4 7.3 12 2z"/></svg>';
+const SHIELD = `<svg viewBox="0 0 128 128" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="#1A8CFF" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg>`;
+
+function chromeWindow({ x, y, w, h, zoom = 1, tab, fav, url, chip, page, popup, kameloOn }) {
+  return `<div class="win" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;zoom:${zoom}">
+    <div class="tabs"><div class="lights"><i></i><i></i><i></i></div>
+      <div class="tab"><span class="fav">${fav}</span><span class="t">${tab}</span><span class="x">${svg('x', 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"')}</span></div>
+      <span class="newtab">${svg('plus', 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"')}</span></div>
+    <div class="bar">
+      <span class="ib">${svg('back')}</span><span class="ib dim">${svg('fwd')}</span><span class="ib">${svg('reload')}</span>
+      <div class="omni">${chip ? `<span class="chip">${chip}</span>` : svg('tune')}<span class="u">${url}</span>${svg('star')}</div>
+      <span class="ib ${kameloOn ? 'on' : ''}"><img src="../icons/icon32.png" alt=""></span>
+      <span class="ib">${svg('puzzle')}</span><span class="avatar"></span><span class="ib">${svg('dots')}</span>
+    </div>
+    <div class="page">${page}${popup ? `<div class="popup" style="right:${popup.right ?? 96}px;top:4px"><iframe data-view="${popup.view}"
+      src="../demo/popup-preview.html?lang=${LANG}&host=${popup.host}"></iframe></div>` : ''}</div>
+  </div>`;
+}
+
+function toast(items) {
+  const n = items.reduce((s, [, c]) => s + c, 0);
+  return `<div class="toast">${SHIELD}<b>${t(n === 1 ? 'toastOne' : 'toastMany', { n })}</b><span class="more">${t('toastMore')}</span></div>`;
+}
+
+// Het venster achter "Meer info": de eerste rij aangewezen (echte waarde zichtbaar, "Zichtbaar laten"), de rest vervaagd.
+function details(rows) {
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const eye = '<svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const lock = '<svg viewBox="0 0 20 20"><rect x="4.5" y="9" width="11" height="8" rx="2"/><path d="M7 9V6.75a3 3 0 0 1 6 0V9"/></svg>';
+  return `<div class="backdrop"><section class="card">
+    <header>${SHIELD}<div><h2>${t(rows.length === 1 ? 'toastOne' : 'toastMany', { n: rows.length })}</h2><p class="sub">${t('toastPaste')}</p></div>
+      <div class="tools"><span>${eye}</span><span>${svg('x')}</span></div></header>
+    <ul>${rows.map(([type, value, ph, remembered], i) => `<li class="${i === 0 ? 'hover' : ''}">
+      <span class="type">${cap(typeLabel(type))}${remembered ? `<i>${t('detailsRemembered')}</i>` : ''}</span>
+      ${i === 0 ? `<span class="keep">${t('detailsKeep')}</span>` : ''}
+      <span class="val">${value}</span><span class="ph">→<code>${ph}</code></span></li>`).join('')}</ul>
+    <footer>${lock}<span>${t('staysOnDevice')}</span></footer></section></div>`;
+}
+
+const chatTop = `<div class="top"><span class="spark">${SPARK}</span>${TXT.model}</div>`;
+const composer = (inner) => `<div class="composer"><div class="txt">${inner}</div><div class="row">
+  <span class="plus">${svg('plus')}</span><span class="send">${svg('up')}</span></div></div>`;
+const conversation = (side) => `<div class="chat ${side ? 'side' : ''}">${chatTop}<div class="body"><div class="col">
+    <div class="me">${TXT.sent}</div>
+    <div class="ai"><span class="spark">${SPARK}</span><div>${TXT.reply.map(p => `<p>${p}</p>`).join('')}</div></div>
+  </div></div>${composer(`<span class="ph">${TXT.ask}</span>`)}</div>`;
+const pasted = `<div class="chat">${chatTop}<div class="empty"><div class="hello">${TXT.hello}</div>
+  ${composer(`${TXT.masked}<span class="caret"></span>`)}</div></div>${toast(TXT.items)}`;
+const M = TXT.mail;
+const mail = `<div class="mail">
+  <div class="side"><div class="logo"><i></i>Mail</div><div class="compose-btn">✎ ${M.compose}</div>
+    <div class="nav on"><span>${M.inbox}</span><span>12</span></div><div class="nav"><span>${M.sentF}</span></div><div class="nav"><span>${M.drafts}</span><span>2</span></div></div>
+  <div class="list">${M.rows.map(([f, s]) => `<div class="item"><b>${f}</b><span>${s}</span><span>9:41</span></div>`).join('')}</div>
+  <div class="cmp"><div class="h">${M.newMsg}</div><div class="f">${M.to}</div><div class="f">${M.subj}</div>
+    <div class="assist"><div class="lab">${SPARK}${M.help}</div><div class="txt">${M.prompt}<span class="caret"></span></div>
+      <div class="go"><span class="ghost">${M.cancel}</span><span>${M.create}</span></div></div>
+    <div class="bodytxt"></div><div class="foot"><span class="snd">${M.send}</span></div></div>
+  </div>${toast(TXT.mailItems)}`;
+
+const CHAT = { tab: TXT.tab, fav: `<span class="spark" style="width:16px;height:16px">${SPARK}</span>`, url: 'chat.example.com<span>/c/payment-reminder</span>' };
+const MAIL = { tab: TXT.mailTab, fav: '<i style="width:16px;height:12px;border-radius:3px;background:linear-gradient(135deg,#1a73e8,#8ab4f8)"></i>', url: 'mail.example.com<span>/inbox</span>' };
+const VAULT = { tab: TXT.vaultTab, fav: '<img src="../icons/icon32.png" style="width:16px;height:16px">', chip: 'Kamelo', url: '<span>chrome-extension://…/unlock/unlock.html</span>' };
+
+const W = { x: 60, y: 44, w: 1160, h: 712 }; // één venster op 1280×800
+const SHOTS = {
+  1: { size: [1280, 800], html: chromeWindow({ ...W, ...CHAT, page: pasted }) },
+  2: { size: [1280, 800], html: chromeWindow({ ...W, ...CHAT, page: pasted.replace(/<div class="toast">[\s\S]*?<\/div>$/, '') + details(TXT.details) }) },
+  3: { size: [1280, 800], html: chromeWindow({ ...W, ...CHAT, page: conversation(true), kameloOn: true, popup: { view: 'main', host: 'chat.example.com' } }) },
+  4: { size: [1280, 800], html: chromeWindow({ ...W, ...MAIL, page: mail }) },
+  5: { size: [1280, 800], html: chromeWindow({ ...W, ...CHAT, page: conversation(true), kameloOn: true, popup: { view: 'vault', host: 'chat.example.com' } }) },
+  6: { size: [1280, 800], html: chromeWindow({ ...W, ...VAULT, page: `<iframe class="full" style="transform:scale(1.3);transform-origin:0 0;width:76.93%;height:76.93%" src="../demo/unlock-preview.html?lang=${LANG}"></iframe>` }) },
+  marquee: { size: [1400, 560], html:
+    chromeWindow({ x: 70 / .5, y: 44 / .5, w: 610 / .5, h: 472 / .5, zoom: .5, ...CHAT, page: pasted }) +
+    chromeWindow({ x: 720 / .5, y: 44 / .5, w: 610 / .5, h: 472 / .5, zoom: .5, ...CHAT, page: conversation(true), kameloOn: true, popup: { view: 'main', host: 'chat.example.com' } }) },
+  small: { size: [440, 280], html: `<div class="small" style="position:absolute;inset:0"><img src="../icons/icon128.png" alt=""><div class="n">Kamelo</div><div class="d">${TXT.small}</div></div>` },
+};
+
+const s = SHOTS[SHOT];
+document.getElementById('root').innerHTML = `<div class="canvas" style="width:${s.size[0]}px;height:${s.size[1]}px">${s.html}</div>`;
+
+// Popup: achtergrond van de preview weghalen, juiste scherm openen, hoogte aanpassen aan de inhoud.
+document.querySelectorAll('.popup iframe').forEach(f => f.addEventListener('load', () => {
+  const d = f.contentDocument;
+  const st = d.createElement('style');
+  st.textContent = 'html{background:#f2f2f7!important}body{margin:0!important;border-radius:0!important}';
+  d.head.appendChild(st);
+  const fit = () => { f.style.height = d.body.scrollHeight + 'px'; };
+  setTimeout(() => {
+    if (f.dataset.view !== 'main') d.querySelector(`[data-open="${f.dataset.view}"]`)?.click();
+    setTimeout(fit, 300);
+  }, 400);
+}));
+</script>
+</body>
+</html>

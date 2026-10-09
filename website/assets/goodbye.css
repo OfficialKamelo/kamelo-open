@@ -1,0 +1,27 @@
+/* Afscheidspagina: kamelo.eu/goodbye, opent als iemand Kamelo verwijdert. Eén vraag met keuzes, optioneel bericht, versturen. */
+.bye { max-width: 720px; margin: 0 auto; padding: 0 var(--gutter) 20px; }
+.reasons { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.reasons button { font: inherit; font-size: 16px; padding: 12px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  cursor: pointer; transition: background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease), transform .3s var(--spring); }
+.reasons button:hover { border-color: #c7c7cc; }
+.reasons button[aria-checked="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); transform: scale(1.03); }
+.tip { margin: 22px auto 0; max-width: 600px; text-align: center; color: var(--muted); font-size: 16px; line-height: 1.55; animation: bye-in .45s var(--ease); }
+.tip b { color: var(--ink); font-weight: 600; }
+.more { display: block; margin: 40px 0 10px; font-weight: 500; }
+.more span { color: var(--muted); font-weight: 400; }
+#msg { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 16px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--soft);
+  color: var(--ink); resize: vertical; min-height: 110px; }
+#msg:focus { outline: 2px solid var(--action); outline-offset: 1px; background: var(--bg); }
+.send-row { display: flex; align-items: center; gap: 18px; margin-top: 18px; flex-wrap: wrap; }
+.bye-send { font: inherit; font-size: 16px; font-weight: 600; padding: 13px 30px; border-radius: 999px; border: 0; background: var(--ink); color: var(--bg); cursor: pointer; transition: opacity .2s; }
+.bye-send:disabled { opacity: .3; cursor: default; }
+.note { color: var(--muted); font-size: 14px; }
+.done { margin-top: 26px; font-size: 20px; font-weight: 600; text-align: center; animation: bye-in .45s var(--ease); }
+.fail { margin-top: 18px; color: var(--muted); }
+.fail a { color: var(--action); }
+.bye.sent .reasons, .bye.sent .tip, .bye.sent .more, .bye.sent #msg, .bye.sent .send-row { display: none; }
+@keyframes bye-in { from { opacity: 0; transform: translateY(-6px); } }
+.bye-back { text-align: center; padding: 90px var(--gutter) 110px; }
+.bye-back h2 { font-size: clamp(26px, 3vw, 34px); font-weight: 600; letter-spacing: -.03em; margin: 0; }
+.bye-back .ctas { justify-content: center; }
+@media (prefers-reduced-motion: reduce) { .tip, .done { animation: none; } .reasons button { transition: none; } }

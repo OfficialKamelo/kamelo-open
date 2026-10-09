@@ -1,0 +1,35 @@
+# Secrets
+*.env
+.env*
+
+# OS
+.DS_Store
+
+# Local working files (not part of the public project)
+HANDOFF.md
+FRICTION.md
+CLAUDE.md
+.claude/
+media/
+studio/
+brand/
+web-store-uploaden/
+store/INVULLEN-WEB-STORE.md
+store/images/
+
+# Dependencies
+node_modules/
+
+# Persoonlijk (niet in git)
+LEESMIJ.md
+archief/
+onderzoek/
+kamelo-chat/
+kamelo-agents/
+reports/
+research_notes/
+
+# Uploadklare zip vooraan in de map (komt uit web-store-uploaden/)
+Kamelo-*-uploaden.zip
+Kamelo-*-test/
+Kamelo-Safari-test/

@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in Kamelo doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Use made-up data only**, never real personal data.
+        Security or privacy vulnerability? Please report it privately via [SECURITY.md](https://github.com/OfficialKamelo/kamelo/blob/main/SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open chatgpt.com
+        2. Paste "..."
+        3. Press Enter
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Site
+      placeholder: chatgpt.com
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Kamelo version
+      description: See chrome://extensions
+      placeholder: "1.1.2"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 140, macOS 26
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Errors in the console (optional)
+      description: Errors from chrome://extensions → Kamelo → Errors, or the page console.
+      render: text

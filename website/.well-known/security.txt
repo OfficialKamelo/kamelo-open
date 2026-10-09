@@ -1,0 +1,4 @@
+Contact: mailto:hello@kamelo.eu
+Expires: 2027-10-08T00:00:00.000Z
+Preferred-Languages: en, nl
+Canonical: https://kamelo.eu/.well-known/security.txt

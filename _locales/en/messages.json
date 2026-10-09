@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Kamelo – AI privacy software"
+  },
+  "extDescription": {
+    "message": "Masks names, IDs, bank details and passwords on your device before they reach ChatGPT, Gemini, Claude or any other AI."
+  },
+  "actionTitle": {
+    "message": "Kamelo"
+  }
+}

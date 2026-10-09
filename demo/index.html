@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kamelo demo</title>
+  <style>
+    :root {
+      --bg: #f8fafc; --card: #ffffff; --fg: #0f172a; --muted: #64748b; --line: #e2e8f0;
+      --user: #e0f2fe; --ai: #f1f5f9; --accent: #16a34a; --raw: #fff7ed; --raw-line: #fed7aa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #020617; --card: #0f172a; --fg: #f1f5f9; --muted: #94a3b8; --line: #1e293b;
+        --user: #0c4a6e; --ai: #1e293b; --accent: #22c55e; --raw: #1c1408; --raw-line: #7c2d12;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+      font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+    h1 { margin: 0 0 4px; font-size: 22px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: 3fr 2fr; gap: 16px; margin-top: 16px; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+    h2 { margin: 0 0 10px; font-size: 15px; }
+    #messages { min-height: 260px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+    .msg { padding: 10px 12px; border-radius: 12px; max-width: 90%; white-space: pre-wrap; }
+    .msg.user { background: var(--user); align-self: flex-end; }
+    .msg.ai { background: var(--ai); align-self: flex-start; }
+    .composer { display: flex; gap: 8px; align-items: flex-end; border: 1px solid var(--line);
+      border-radius: 12px; padding: 8px; }
+    #prompt { flex: 1; min-height: 44px; max-height: 200px; overflow: auto; outline: none; padding: 4px; white-space: pre-wrap; }
+    #prompt:empty::before { content: attr(data-placeholder); color: var(--muted); }
+    button { border: 0; border-radius: 10px; background: var(--accent); color: #fff; padding: 8px 14px;
+      font: inherit; font-weight: 600; cursor: pointer; }
+    button.secondary { background: transparent; color: var(--fg); border: 1px solid var(--line); font-weight: 400; }
+    .tools { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    #raw { background: var(--raw); border: 1px solid var(--raw-line); border-radius: 10px; padding: 10px;
+      white-space: pre-wrap; font: 13px/1.5 ui-monospace, Menlo, monospace; min-height: 120px; overflow-wrap: anywhere; }
+    ol { padding-left: 18px; margin: 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Kamelo — demo</h1>
+  <p class="muted">Een nagebootste AI-chat. Rechts zie je precies wat er naar de AI zou gaan.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Chat</h2>
+      <div id="messages"></div>
+      <div class="composer">
+        <div id="prompt" contenteditable="true" role="textbox" aria-label="Vraag de AI" data-placeholder="Vraag de AI iets…"></div>
+        <button id="send" aria-label="Verstuur bericht">Verstuur</button>
+      </div>
+      <div class="tools">
+        <button class="secondary" id="copySample">Voorbeeldtekst kopiëren</button>
+        <button class="secondary" id="fillSample">Voorbeeld invullen</button>
+        <button class="secondary" id="apiTest">Test: app die de OpenAI-API aanroept</button>
+        <button class="secondary" id="reset">Opnieuw beginnen</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Wat de AI ontvangt</h2>
+      <div id="raw" data-pf-raw class="muted">Nog niets verstuurd.</div>
+      <h2 style="margin-top:16px">Gewoon bericht aan een collega</h2>
+      <p class="muted" style="margin:0 0 8px">Geen AI, dus hier blijft alles zoals je het typt.</p>
+      <textarea id="mail" rows="3" placeholder="Schrijf een e-mail…" style="width:100%;font:inherit;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg)"></textarea>
+      <h2 style="margin-top:16px">Zo werkt het</h2>
+      <ol class="muted">
+        <li>Plak de voorbeeldtekst: gegevens worden direct afgeschermd.</li>
+        <li>Of vul in en druk op Enter: het filter houdt het bericht tegen en schermt eerst af.</li>
+        <li>Het antwoord van de AI bevat placeholders; de extensie zet ze lokaal terug.</li>
+      </ol>
+    </section>
+  </div>
+</main>
+
+<script src="fake-ai-api.js"></script>
+<script src="../src/sites.js"></script>
+<script src="../src/config.js"></script>
+<script src="../src/ai-hosts.js"></script>
+<script src="../src/net-main.js"></script>
+<script src="chrome-shim.js"></script>
+<script src="../src/strings.js"></script>
+<script src="../src/detector.js"></script>
+<script src="../src/content.js"></script>
+<script>
+  const SAMPLE = `Kun je een vriendelijke herinneringsmail schrijven aan Jan de Vries (jan.devries@gmail.com, 06-12345678)?
+Hij woont op Kerkstraat 14, 3511 AB Utrecht en heeft BSN 111222333.
+De factuur van €450 moet nog betaald worden op NL91ABNA0417164300.`;
+
+  const prompt = document.getElementById('prompt');
+  const messages = document.getElementById('messages');
+  const raw = document.getElementById('raw');
+
+  function addMessage(text, who) {
+    const div = document.createElement('div');
+    div.className = `msg ${who}`;
+    div.textContent = text;
+    messages.appendChild(div);
+  }
+
+  function fakeReply(sent) {
+    const find = type => (sent.match(new RegExp(`\\[${type}_\\d+\\]`)) || [])[0];
+    const person = find('PERSON'), iban = find('IBAN');
+    if (!person) return 'Ik heb je bericht ontvangen. Er stonden geen persoonsgegevens in.';
+    return `Natuurlijk! Hier is een concept:\n\nBeste ${person},\n\n` +
+      `Volgens onze administratie staat er nog een factuur van €450 open. ` +
+      (iban ? `Wil je het bedrag overmaken naar ${iban}? ` : '') +
+      `Neem gerust contact op als je vragen hebt.\n\nMet vriendelijke groet`;
+  }
+
+  function send() {
+    const text = prompt.innerText.trim();
+    if (!text) return;
+    addMessage(text, 'user');
+    raw.classList.remove('muted');
+    raw.textContent = text;
+    prompt.textContent = '';
+    setTimeout(() => addMessage(fakeReply(text), 'ai'), 600);
+  }
+
+  document.getElementById('send').addEventListener('click', send);
+  prompt.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+  });
+  // Eenvoudige plak-afhandeling zoals een echte editor die doet.
+  prompt.addEventListener('paste', e => {
+    e.preventDefault();
+    document.execCommand('insertText', false, e.clipboardData.getData('text/plain'));
+  });
+
+  document.getElementById('copySample').addEventListener('click', async e => {
+    try { await navigator.clipboard.writeText(SAMPLE); e.target.textContent = 'Gekopieerd — plak in de chat'; }
+    catch { e.target.textContent = 'Kopiëren lukte niet'; }
+  });
+  document.getElementById('fillSample').addEventListener('click', () => { prompt.textContent = SAMPLE; prompt.focus(); });
+  // Zoals een website die zelf de OpenAI-API aanroept, met een gewoon tekstveld zonder AI-label.
+  document.getElementById('apiTest').addEventListener('click', async () => {
+    addMessage(SAMPLE, 'user');
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'gpt-demo', messages: [{ role: 'user', content: SAMPLE }] }),
+    });
+    const data = await res.json();
+    raw.classList.remove('muted');
+    raw.textContent = JSON.parse(window.lastApiRequest).messages[0].content;
+    addMessage(data.choices[0].message.content, 'ai');
+  });
+
+  document.getElementById('reset').addEventListener('click', async () => {
+    await chrome.storage.session.set({ vault: PrivacyDetector.emptyVault() });
+    messages.replaceChildren();
+    raw.textContent = 'Nog niets verstuurd.';
+    raw.classList.add('muted');
+  });
+</script>
+</body>
+</html>

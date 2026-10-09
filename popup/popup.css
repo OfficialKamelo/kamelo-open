@@ -1,0 +1,293 @@
+/* Opgezet volgens Apple's Human Interface Guidelines (macOS/iOS 26, Liquid Glass): gegroepeerde lijsten,
+   systeemkleuren, één accentkleur, ronde glazen knoppen in de navigatiebalk.
+   Eén blauw: --accent voor vlakken en schakelaars, --accent-text voor blauwe tekst en links, --accent-strong onder witte
+   tekst (≥ 4,5:1). Grijze tekst (--secondary) haalt ook 4,5:1; --tertiary alleen voor lijnen en chevrons. */
+:root {
+  --bg: #f2f2f7;             /* systemGroupedBackground */
+  --cell: #ffffff;           /* secondarySystemGroupedBackground */
+  --fill: rgba(118, 118, 128, .12); /* tertiarySystemFill */
+  --label: #000000;
+  --secondary: #6e6e73;      /* 5,1:1 op wit */
+  --tertiary: rgba(60, 60, 67, .3);
+  --separator: rgba(60, 60, 67, .18);
+  --accent: #0071e3;         /* vlakken, schakelaars, focusring */
+  --accent-text: #0066cc;    /* blauwe tekst en links: 5,6:1 op wit */
+  --accent-strong: #0071e3;  /* onder witte tekst: 4,7:1 */
+  --ph-fg: #0a5cc2; --ph-bg: #e8f1fd; /* placeholder-chips, zoals in het detailvenster */
+  --destructive: #ff383c;    /* systemRed (2025) */
+  --green: #34c759; --green-text: #1a7f37; --gray: #8e8e93; --indigo: #6155f5;
+  --switch-off: rgba(120, 120, 128, .16);
+  --radius: 12px;
+  /* Hoofdscherm: wit vlak zoals kamelo.eu, met één gekleurde statuskaart */
+  --surface: #ffffff; --ink: #1d1d1f; --line: rgba(0, 0, 0, .08); --soft: #f5f5f7;
+  --ok: #1a7f37; --ok-bg: #e9f7ee; --pause: #6e6e73; --pause-bg: #f2f2f7;
+  /* Glazen bedieningselementen */
+  --control: rgba(255, 255, 255, .78);
+  --control-edge: rgba(0, 0, 0, .06);
+  --control-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 1px 3px rgba(0, 0, 0, .08);
+  --group-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1e;
+    --cell: #2c2c2e;
+    --fill: rgba(118, 118, 128, .24);
+    --label: #ffffff;
+    --secondary: #98989d;
+    --tertiary: rgba(235, 235, 245, .3);
+    --separator: rgba(84, 84, 88, .6);
+    --accent: #0a84ff;
+    --accent-text: #4da3ff;
+    --accent-strong: #0071e3;
+    --ph-fg: #64b0ff; --ph-bg: rgba(10, 132, 255, .18);
+    --destructive: #ff4245;
+    --green: #30d158; --green-text: #3fb950; --gray: #8e8e93; --indigo: #6d7cff;
+    --switch-off: rgba(120, 120, 128, .32);
+    --surface: #1c1c1e; --ink: #f5f5f7; --line: rgba(255, 255, 255, .1); --soft: #2c2c2e;
+    --ok: #3fb950; --ok-bg: rgba(63, 185, 80, .14); --pause: #98989d; --pause-bg: #2c2c2e;
+    --control: rgba(255, 255, 255, .09);
+    --control-edge: rgba(255, 255, 255, .1);
+    --control-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 1px 3px rgba(0, 0, 0, .3);
+    --group-shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  width: 340px; margin: 0; padding: 0; background: var(--bg); color: var(--label);
+  font: 13px/1.38 system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+[hidden] { display: none !important; }
+.view { padding: 0 16px 16px; }
+/* Het hoofdscherm is een wit vlak (geen grijze, gegroepeerde lijst). */
+html:has(#view-main:not([hidden])), body:has(#view-main:not([hidden])) { background: var(--surface); }
+h1, p { margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Rijen staan in groepen met overflow: hidden; de ring daarom binnen de rij. */
+.row:focus-visible, .remove:focus-visible { outline-offset: -2px; }
+.row:focus-visible { border-radius: var(--radius); }
+svg { flex: none; }
+
+/* ---------- Navigatiebalk ---------- */
+.bar { display: flex; align-items: center; justify-content: space-between; height: 46px; }
+.title-group { display: flex; align-items: center; gap: 8px; }
+.logo { width: 22px; height: 22px; }
+h1 { font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+h1.center { flex: 1; text-align: center; }
+.spacer { width: 72px; }
+.icon-btn { width: 30px; height: 30px; border: .5px solid var(--control-edge); border-radius: 50%; background: var(--control); box-shadow: var(--control-shadow); display: grid; place-items: center; }
+.icon-btn:hover { filter: brightness(.97); }
+.icon-btn svg { width: 17px; height: 17px; fill: none; stroke: var(--secondary); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.back { height: 30px; display: flex; align-items: center; gap: 5px; padding: 0 12px 0 10px; border: .5px solid var(--control-edge); border-radius: 999px;
+  background: var(--control); box-shadow: var(--control-shadow); color: var(--accent-text); }
+.back svg { width: 9px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- Groepen en rijen ---------- */
+.group { background: var(--cell); border-radius: var(--radius); box-shadow: var(--group-shadow); overflow: hidden; margin-top: 8px; }
+.group.pad { padding: 10px 12px 6px; }
+.row {
+  width: 100%; min-height: 40px; display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  border: 0; background: none; text-align: left; position: relative; cursor: default;
+}
+/* Lijn boven elke rij met een zichtbare rij ervóór (een verborgen rij, zoals #lockNow, telt niet mee). */
+.row:not([hidden]) ~ .row::before, .item:not([hidden]) ~ .item::before {
+  content: ""; position: absolute; top: 0; left: 12px; right: 0; height: .5px; background: var(--separator);
+}
+.row-label { flex: 1; }
+.row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.row-sub { color: var(--secondary); font-size: 12px; line-height: 15px; }
+
+/* Gekleurde tegeltjes vóór de rijen, zoals in Systeeminstellingen */
+.tile { width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; flex: none; background: var(--gray); }
+.tile.blue { background: var(--accent); } .tile.green { background: var(--green); } .tile.gray { background: var(--gray); } .tile.indigo { background: var(--indigo); }
+.tile svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.row.nav { gap: 10px; }
+.row.nav:not([hidden]) ~ .row.nav::before { left: 44px; }
+.row-value { color: var(--secondary); font-variant-numeric: tabular-nums; }
+.row.nav { cursor: pointer; }
+.row.nav:active, .row.destructive:active { background: var(--fill); }
+.chevron { width: 7px; height: 12px; fill: none; stroke: var(--tertiary); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.row.destructive { justify-content: center; color: var(--destructive); cursor: pointer; }
+label.row { cursor: pointer; }
+
+.footnote { color: var(--secondary); font-size: 11px; margin: 6px 12px 14px; }
+.section { color: var(--secondary); font-size: 12px; font-weight: 600; margin: 18px 12px 0; }
+
+/* ---------- Lijsten (kluis, termen) ---------- */
+.list { max-height: 228px; overflow-y: auto; }
+.list:empty { display: none; }
+.item { position: relative; display: flex; align-items: center; gap: 10px; padding: 8px 12px; min-height: 40px; }
+.item-text { flex: 1; min-width: 0; }
+.item-text strong { display: block; font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.item-text span { display: block; color: var(--secondary); font-size: 11px; }
+/* Rode cirkel van 18px met een klikvlak van 24×24 (WCAG 2.5.8); de negatieve marge houdt de rij even breed. */
+.remove { width: 24px; height: 24px; margin: -3px; border-radius: 50%; border: 0; padding: 0; background: none; position: relative; flex: none; }
+.remove::before, .remove::after { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.remove::before { width: 18px; height: 18px; border-radius: 50%; background: var(--destructive); }
+.remove::after { width: 8px; height: 1.8px; border-radius: 1px; background: #fff; }
+/* Echte waarden in de kluis: vervaagd tot je ze aanwijst of het oogje aanzet (zoals in het detailvenster). */
+.list.blurred .item-text strong { filter: blur(5px); transition: filter .2s; }
+.list.blurred .item:hover .item-text strong { filter: none; }
+.bar-end { width: 72px; display: flex; justify-content: flex-end; }
+.icon-btn[aria-pressed="true"] svg { stroke: var(--accent-text); }
+.empty { color: var(--secondary); text-align: center; padding: 18px 12px; }
+
+/* ---------- Switch (macOS-formaat) ---------- */
+.switch { position: relative; flex: none; display: inline-flex; }
+.switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+.track { width: 38px; height: 22px; border-radius: 11px; background: var(--switch-off); transition: background .2s; position: relative; }
+.track::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 0 0 .5px rgba(0, 0, 0, .04); transition: transform .2s;
+}
+.switch input:checked + .track { background: var(--accent); }
+.switch input:checked + .track::after { transform: translateX(16px); }
+.switch input:focus-visible + .track { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- Invoer ---------- */
+select {
+  font: inherit; color: var(--secondary); background: none; border: 0; padding: 0 2px; cursor: pointer; text-align: right;
+}
+select:focus-visible { color: var(--accent-text); border-radius: 4px; }
+.search { position: relative; }
+.search svg {
+  position: absolute; left: 9px; top: 50%; width: 14px; height: 14px; transform: translateY(-50%);
+  fill: none; stroke: var(--secondary); stroke-width: 1.8; stroke-linecap: round; pointer-events: none;
+}
+input, textarea { font: inherit; color: var(--label); border: 0; }
+input::placeholder, textarea::placeholder { color: var(--secondary); }
+.search input { width: 100%; padding: 8px 12px 8px 30px; border-radius: 999px; background: var(--fill); }
+.search input:focus { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+textarea { width: 100%; resize: none; background: none; padding: 0; display: block; }
+textarea:focus, .add input:focus { outline: none; }
+.plain-btn { border: 0; background: none; color: var(--accent-text); padding: 8px 0 4px; font-weight: 500; }
+.add { margin-top: 8px; }
+#markedAiSection + .group { margin-top: 20px; }
+.add input { width: 100%; padding: 10px 12px; border-radius: var(--radius); background: var(--cell); }
+.add input:focus { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+/* ---------- Voet van Instellingen ---------- */
+.links { display: flex; justify-content: center; margin: 14px 12px 0; }
+.link { border: 0; background: none; padding: 0; color: var(--accent-text); font-size: 12px; }
+.link:hover { text-decoration: underline; }
+
+/* ---------- Kluis ontgrendelen en vergrendelen ---------- */
+.lockpanel { text-align: center; background: var(--cell); border-radius: var(--radius); box-shadow: var(--group-shadow); margin-top: 8px; padding: 18px 14px 12px; }
+.lock-glyph { width: 30px; height: 30px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.lockpanel h2 { font-size: 15px; font-weight: 600; margin: 6px 0 0; }
+.lockpanel .footnote { margin: 4px 4px 12px; }
+.fill-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 34px; border: 0; border-radius: 999px;
+  background: var(--accent-strong); color: #fff; font-weight: 500; }
+.fill-btn:hover { filter: brightness(1.06); }
+.fill-btn svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pw { display: flex; gap: 6px; margin-top: 8px; }
+.pw input { flex: 1; min-width: 0; height: 34px; padding: 0 12px; border-radius: 999px; background: var(--fill); }
+.pw input:focus { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+.pw .fill-btn { width: auto; padding: 0 14px; }
+.lock-msg { min-height: 16px; margin-top: 6px; font-size: 11px; color: var(--secondary); }
+.lock-msg.error { color: var(--destructive); }
+.row.action { cursor: pointer; color: var(--accent-text); }
+.row.action:active { background: var(--fill); }
+.row.action svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.row.action .ext { width: 10px; height: 10px; stroke: var(--tertiary); stroke-width: 1.8; }
+
+/* ---------- Hoofdscherm ---------- */
+#view-main { padding: 0; color: var(--ink); }
+.top { display: flex; align-items: center; gap: 8px; padding: 14px 16px 6px; }
+.top .logo { width: 22px; height: 22px; }
+
+/* Statuskaart: één woord en de schakelaar. Groen = aan (beschermd), grijs = uit. */
+.status { margin: 8px 16px 0; padding: 14px; border-radius: 12px; background: var(--ok-bg);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; }
+.status[data-state="off"], .status[data-state="reload"], .status[data-state="none"] { background: var(--pause-bg); }
+.state { grid-column: 1; grid-row: 1; min-width: 0; display: flex; align-items: center; gap: 7px; font-size: 17px; line-height: 22px; font-weight: 600; letter-spacing: -.02em; color: var(--ok); }
+.state span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.state svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.state .ic-pause, .status[data-state="off"] .ic-ok, .status[data-state="none"] .ic-ok { display: none; }
+.status[data-state="off"] .ic-pause { display: block; }
+.status[data-state="off"] .state { color: var(--pause); }
+.status[data-state="none"] .state { color: var(--pause); }
+.state.reload { border: 0; background: none; padding: 0; color: var(--accent-text); text-align: left; cursor: pointer; }
+.state.reload:hover span { text-decoration: underline; }
+.status .switch { grid-column: 2; grid-row: 1; }
+.switch.big .track { width: 42px; height: 26px; border-radius: 13px; }
+.switch.big .track::after { width: 22px; height: 22px; }
+.status .switch .track { background: rgba(120, 120, 128, .24); }
+.status .switch input:checked + .track { background: var(--accent); }
+
+/* Tekst afschermen: één blauw getinte kaart */
+.mask-card { width: calc(100% - 32px); margin: 16px 16px 0; display: flex; align-items: center; gap: 12px; padding: 12px; border: 0; border-radius: 12px;
+  background: var(--ph-bg); color: var(--ink); text-align: left; }
+.mask-card:hover { filter: brightness(.98); }
+.mask-card .ico { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; flex: none; color: var(--ph-fg); background: var(--ph-bg); }
+.mask-card b { flex: 1; font-weight: 600; }
+.mask-card svg, .foot svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.chev { color: var(--secondary); }
+
+/* Het getal van deze maand (klik: het overzicht) */
+.proof { display: flex; flex-direction: column; align-items: flex-start; margin: 16px 16px 2px; padding: 0; border: 0; background: none; color: var(--ink); text-align: left; border-radius: 6px; }
+.proof .n { font-size: 34px; line-height: 36px; font-weight: 600; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.proof .l { color: var(--secondary); font-size: 12px; line-height: 16px; margin-top: 2px; }
+.proof:hover .l { color: var(--ink); }
+
+/* Eerste keer: nog niets afgeschermd */
+.ready { margin: 16px 16px 2px; }
+.ready .pill-btn { width: 100%; height: 40px; font-size: 14px; }
+.pill-btn { height: 32px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--accent-strong); color: #fff; font-weight: 600; }
+.pill-btn:hover { filter: brightness(1.06); }
+
+/* Onderaan: Kluis | Instellingen */
+.foot { margin-top: 14px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; }
+.foot button { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 12px 16px; border: 0; background: none; color: var(--ink); text-align: left; }
+.foot button:hover { background: var(--soft); }
+.foot button + button { border-left: 1px solid var(--line); }
+.foot button > svg:first-child, .foot .ic-lock { color: var(--secondary); }
+.foot span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.foot em { margin-left: auto; font-style: normal; color: var(--secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.foot .chev { margin-left: auto; }
+.foot .ic-lock, .foot.locked .ic-vault { display: none; }
+.foot.locked .ic-lock { display: block; }
+#view-main button:focus-visible { outline-offset: -2px; }
+
+/* ---------- Maandoverzicht ---------- */
+.stats { padding: 12px 12px 10px; margin-bottom: 4px; }
+.stats-head { display: flex; align-items: baseline; gap: 6px; }
+.stats-head strong { font-size: 22px; font-weight: 650; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.stats-head span { color: var(--secondary); }
+.stats-list:not(:empty) { margin-top: 8px; display: grid; gap: 5px; }
+.stat { display: grid; grid-template-columns: minmax(0, 1fr) 72px 30px; align-items: center; gap: 8px; font-size: 12px; }
+.stat-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.stat-bar { height: 6px; border-radius: 3px; background: var(--fill); overflow: hidden; }
+.stat-bar span { display: block; height: 100%; border-radius: 3px; background: var(--accent); }
+.stat-n { text-align: right; color: var(--secondary); font-variant-numeric: tabular-nums; }
+
+/* ---------- Tekst afschermen ---------- */
+.composer { margin-top: 8px; background: var(--cell); border-radius: 14px; box-shadow: var(--group-shadow); overflow: hidden; }
+.composer textarea { padding: 12px 12px 10px; min-height: 92px; max-height: 160px; overflow-y: auto; line-height: 1.45; }
+.result { border-top: .5px solid var(--separator); padding: 9px 12px 11px; background: color-mix(in srgb, var(--accent) 5%, var(--cell)); }
+.result[data-mode="plain"] { background: var(--cell); }
+.result[data-mode="restore"] { background: color-mix(in srgb, var(--green) 7%, var(--cell)); }
+.result-head { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--accent-text); }
+.result[data-mode="plain"] .result-head { color: var(--secondary); }
+.result[data-mode="restore"] .result-head { color: var(--green-text); }
+.result-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.result-text { margin-top: 5px; max-height: 120px; overflow-y: auto; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.55; color: var(--secondary); }
+.result-text .ph { font: 600 11.5px ui-monospace, "SF Mono", Menlo, monospace; color: var(--ph-fg); background: var(--ph-bg); border-radius: 5px; padding: 1px 4px; }
+.result-text .real { color: var(--label); background: color-mix(in srgb, var(--green) 16%, transparent); border-radius: 5px; padding: 1px 3px; }
+.copy-btn { margin-top: 10px; height: 36px; transition: background .2s, opacity .2s; }
+.copy-btn:disabled { opacity: .35; cursor: default; filter: none; }
+.copy-btn.done { background: var(--green); }
+.footnote.center { text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation: none !important; }
+}
+
+/* ---------- Instellingen: categorieën ---------- */
+.row.cat { gap: 12px; }
+.cat-ico { width: 28px; height: 28px; border-radius: 8px; background: var(--fill); color: var(--secondary); display: grid; place-items: center; flex: none; }
+.cat-ico svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.footnote.center-note { text-align: center; margin-top: 4px; }
