@@ -43,6 +43,7 @@
     runtime: {
       onMessage: { addListener: fn => messageListeners.push(fn) },
       onInstalled: { addListener() {} },
+      setUninstallURL: async () => {},
       getURL: p => `../${p}`,
       getManifest: () => ({ version: 'preview' }),
       sendMessage: msg => new Promise(resolve => {

@@ -7,13 +7,14 @@
 //   … --push                            pusht de commit en tag ook naar GitHub
 //
 // Stappen: controles (main, schone werkmap, bijgewerkt, iets in [Unreleased]) → versie ophogen in manifest.json,
-// package.json en package-lock.json → CHANGELOG bijwerken → alle tests → pakketten (store en bèta) → commit en tag.
+// package.json en package-lock.json → CHANGELOG bijwerken → alle tests → pakketten (store, ondertekende .crx en bèta) → commit en tag.
 // Uploaden naar de stores doe je daarna zelf.
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { pack } from './pack.mjs';
+import { hasKey, signCrx, KEY } from './sign.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const args = process.argv.slice(2);
@@ -114,7 +115,11 @@ async function main() {
   }
 
   step('Pakketten');
-  console.log(`  ${pack()} (ook in Microsoft Edge/)\n  ${pack({ beta: true })}\n  ${pack({ firefox: true })}`);
+  const store = pack();
+  console.log(`  ${store} (ook in Microsoft Edge/)\n  ${pack({ beta: true })}\n  ${pack({ firefox: true })}`);
+  // Chrome Web Store: ondertekend pakket (Verified CRX uploads). Zonder sleutel alleen een waarschuwing.
+  if (hasKey()) console.log(`  ${path.relative(ROOT, signCrx(path.join(ROOT, store)))} (ondertekend, voor de Chrome Web Store)`);
+  else console.log(`  ⚠ Geen ondertekende .crx: geen sleutel in ${KEY} (node tools/sign.mjs --init)`);
 
   step('Commit en tag');
   git('commit', '--quiet', '--all', '--message', `Release ${version}`);

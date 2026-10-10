@@ -111,8 +111,13 @@ See [kamelo.eu](https://kamelo.eu) for screenshots and a short demo.
 
 ## Installation
 
-**Chrome Web Store:** coming soon.
-**Microsoft Edge Add-ons:** [install Kamelo](https://microsoftedge.microsoft.com/addons/detail/kjjenbhncoomobcdpbhljmhfcmanhbkj).
+| Store | Official extension ID |
+|---|---|
+| [Chrome Web Store](https://chromewebstore.google.com/detail/ijmapnnfbjdkldjljobgadjfoabpgjoj) | `ijmapnnfbjdkldjljobgadjfoabpgjoj` |
+| [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/kjjenbhncoomobcdpbhljmhfcmanhbkj) | `kjjenbhncoomobcdpbhljmhfcmanhbkj` |
+
+These are the only official listings. Kamelo never asks for an account, a password or a payment.
+To check which one you have, open `chrome://extensions` (or `edge://extensions`), turn on Developer mode and compare the ID.
 
 **From source (developer mode):**
 1. Clone this repository.
