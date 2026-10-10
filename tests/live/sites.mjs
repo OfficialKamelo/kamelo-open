@@ -25,14 +25,20 @@ const BLOCKED = /just a moment|attention required|verify you are human|are you a
 const isChallenge = page => page.evaluate(() => !!(window._cf_chl_opt
   || document.querySelector('#challenge-form, #challenge-running, [name="cf-turnstile-response"], script[src*="challenges.cloudflare.com"], iframe[src*="captcha"]')));
 // Zoekt het invoerveld zelf, keer op keer: waitForSelector raakt de draad kwijt als de site tijdens het laden nog eens navigeert (Gemini).
-async function findComposer(page, selector, timeout = 20_000) {
+// Het veld moet ook even blijven staan: Grok toont eerst een tijdelijk textarea en vervangt dat na het laden door het echte veld.
+async function findComposer(page, selector, timeout = 20_000, stable = 1_500) {
   const end = Date.now() + timeout;
+  let current = null, since = 0;
   while (Date.now() < end) {
     const el = await page.$(selector).catch(() => null);
-    if (el && await el.isVisible().catch(() => false)) return el;
+    const visible = el && await el.isVisible().catch(() => false);
+    const same = visible && current && await page.evaluate((a, b) => a === b, el, current).catch(() => false);
+    if (!visible) current = null;
+    else if (!same) { current = el; since = Date.now(); }
+    else if (Date.now() - since >= stable) return current;
     await new Promise(r => setTimeout(r, 250));
   }
-  return null;
+  return current;
 }
 const masked = text => text.includes('[IBAN_') && !text.includes(SAMPLE.iban);
 

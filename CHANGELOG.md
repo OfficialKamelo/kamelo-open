@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 - **Grok.** Grok is rolling out a new text field; Kamelo now finds both the old and the new one.
+- **The notice never covers the text bar.** It now sits 8px above the visible bar (not just the text inside it), lined up with its left edge, and follows it while a long message makes it grow, on every AI site, also those without a form (Claude, Gemini, Perplexity). No room above? Then below the bar, then beside it, and only on a small screen as a small badge on the bar's top edge. It also stays put when a site swaps its text field after pasting (Grok).
 - A stray line above "Clear vault".
 - "Locked" was shown twice on the main screen when the vault was locked; it now appears once, next to the vault.
 - An empty "Marked as AI" section in Settings.

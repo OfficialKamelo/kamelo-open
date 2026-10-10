@@ -125,3 +125,30 @@ export async function waitForShadow(page, test, timeout = 3_000) {
   }
   return html;
 }
+
+// Waar Kamelo's melding (of kaart) in beeld staat, en waar een element van de pagina staat: allebei via CDP, dus in
+// dezelfde coördinaten. null als er geen melding open is.
+export async function noticeRect(page, cls = 't') {
+  const cdp = await page.createCDPSession();
+  try {
+    const { root } = await cdp.send('DOM.getDocument', { depth: -1, pierce: true });
+    let id = null;
+    const walk = node => {
+      const a = node.attributes || [];
+      const c = a[a.indexOf('class') + 1] || '';
+      if (a.includes('class') && c.split(' ').includes(cls) && (cls !== 't' || c.split(' ').includes('show'))) id = node.nodeId;
+      for (const child of [...(node.children || []), ...(node.shadowRoots || [])]) walk(child);
+    };
+    walk(root);
+    return id ? quad(await cdp.send('DOM.getBoxModel', { nodeId: id })) : null;
+  } finally { await cdp.detach(); }
+}
+export async function rectOf(page, selector) {
+  const cdp = await page.createCDPSession();
+  try {
+    const { root } = await cdp.send('DOM.getDocument');
+    const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector });
+    return quad(await cdp.send('DOM.getBoxModel', { nodeId }));
+  } finally { await cdp.detach(); }
+}
+const quad = ({ model: { border: q } }) => ({ left: q[0], top: q[1], right: q[2], bottom: q[5] });

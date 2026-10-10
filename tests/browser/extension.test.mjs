@@ -3,7 +3,7 @@
 // verzoeken aan AI-API's. Hangt niet af van internet of van de opmaak van echte sites (dat doet tests/live/sites.mjs).
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { launch, mockPage, paste, textOf, waitForText, clickText, waitForShadow, SAMPLE } from './kamelo.mjs';
+import { launch, mockPage, paste, textOf, waitForText, clickText, waitForShadow, noticeRect, rectOf, SAMPLE } from './kamelo.mjs';
 
 const CHAT = `<!doctype html><title>Chat</title>
 <main>
@@ -162,6 +162,87 @@ test('melding: "Bekijk" toont wat is afgeschermd; zichtbaar laten en ongedaan ma
   assert.ok((await textOf(page, '#prompt-textarea')).includes(SAMPLE.name), 'naam niet teruggezet in het veld');
   await clickText(page, /·/);
   assert.ok(!(await textOf(page, '#prompt-textarea')).includes(SAMPLE.name), 'ongedaan maken werkte niet');
+  await page.close();
+});
+
+// Een invoerbalk zoals op Claude, Gemini en Perplexity: geen <form>, het veld zit in een scrollvak binnen een balk met
+// achtergrond, rand en schaduw, met binnenruimte en een knoppenrij. `top` zet de balk ergens anders dan onderaan.
+const BAR = ({ top = null, maxHeight = '320px', id = 'chat-input' } = {}) => `<!doctype html><title>Chat</title>
+<style>body { margin: 0; height: 100vh; display: flex; flex-direction: column; font: 16px/24px sans-serif; }
+  .spacer { flex: 1; } fieldset { border: 0; margin: 0 auto 16px; padding: 0; width: 680px; ${top == null ? '' : `position: fixed; top: ${top}px; left: 300px;`} }
+  #bar { background: #fff; border: 1px solid #ddd; border-radius: 20px; padding: 16px 14px 48px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  .scroll { max-height: ${maxHeight}; overflow-y: auto; } [contenteditable] { outline: none; min-height: 24px; }</style>
+<div class="spacer"></div>
+<fieldset><div id="bar"><div class="scroll"><div data-testid="${id}" contenteditable="true"></div></div></div></fieldset>`;
+const ED = '[contenteditable]';
+const lines = n => Array.from({ length: n }, (_, i) => `Line ${i + 1} of a long message.`).join('\n');
+const frames = page => page.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
+
+// De melding staat boven de balk, met ruimte ertussen, en links gelijk met de balk.
+async function assertAbove(page, step) {
+  await frames(page);
+  const [n, bar] = [await noticeRect(page), await rectOf(page, '#bar')];
+  assert.ok(n, `${step}: geen melding`);
+  assert.ok(n.bottom <= bar.top - 4, `${step}: melding (onderkant ${n.bottom}) overlapt de balk (bovenkant ${bar.top})`);
+  assert.ok(Math.abs(n.left - bar.left) <= 1, `${step}: melding (${n.left}) niet links gelijk met de balk (${bar.left})`);
+}
+
+test('melding: blijft boven de balk terwijl die groeit, ook zonder <form> (Claude, Gemini, Perplexity)', async () => {
+  const page = await mockPage(browser, 'https://claude.ai/new', BAR());
+  await paste(page, ED, SAMPLE.text);
+  await waitForShadow(page, html => html.includes('[PERSON_1]'));
+  await assertAbove(page, 'na plakken');
+  // Typen met Shift+Enter, en een lange tekst erbij: de balk groeit omhoog, tot het scrollvak vol is.
+  for (let i = 0; i < 6; i++) {
+    await page.keyboard.down('Shift'); await page.keyboard.press('Enter'); await page.keyboard.up('Shift');
+    await page.keyboard.type(`more ${i}`);
+  }
+  await assertAbove(page, 'na typen');
+  await page.$eval(ED, (el, t) => { el.innerText += '\n' + t; }, lines(30));
+  await assertAbove(page, 'na een lange tekst (scrollvak vol)');
+  await page.close();
+});
+
+test('melding: geen ruimte boven de balk, dan eronder (gecentreerde balk op een nieuw gesprek)', async () => {
+  const page = await mockPage(browser, 'https://gemini.google.com/app', BAR({ top: 40 }));
+  await paste(page, ED, SAMPLE.text);
+  await waitForShadow(page, html => html.includes('[PERSON_1]'));
+  await frames(page);
+  const [n, bar] = [await noticeRect(page), await rectOf(page, '#bar')];
+  assert.ok(n.top >= bar.bottom + 4, `melding (bovenkant ${n.top}) overlapt de balk (onderkant ${bar.bottom})`);
+  await page.close();
+});
+
+test('melding: een balk zo hoog als het scherm: ernaast als dat past, anders klein op de rand; nooit over de tekst', async () => {
+  for (const width of [1600, 1280]) {
+    const page = await mockPage(browser, 'https://claude.ai/new', BAR({ top: 20, maxHeight: 'none' }));
+    await page.setViewport({ width, height: 900 });
+    await page.$eval(ED, (el, t) => { el.innerText = t; }, lines(40));
+    await paste(page, ED, SAMPLE.text);
+    await waitForShadow(page, html => html.includes('[PERSON_1]'));
+    await frames(page); await frames(page);
+    const [n, bar, text] = [await noticeRect(page), await rectOf(page, '#bar'), await rectOf(page, ED)];
+    if (width === 1600) {
+      assert.ok(n.left >= bar.right + 4 || n.right <= bar.left - 4, `${width}: melding (${n.left}–${n.right}) staat over de balk (${bar.left}–${bar.right})`);
+    } else {
+      assert.ok(n.bottom <= text.top, `${width}: melding (onderkant ${n.bottom}) staat over de tekst (bovenkant ${text.top})`);
+      assert.ok(n.right - n.left < 160, `${width}: melding op de rand is niet klein (${n.right - n.left}px breed)`);
+    }
+    await page.close();
+  }
+});
+
+test('melding: vervangt de site het invoerveld na plakken (Grok), dan blijft hij bij de balk', async () => {
+  const page = await mockPage(browser, 'https://claude.ai/new', BAR());
+  await paste(page, ED, SAMPLE.text);
+  await waitForShadow(page, html => html.includes('[PERSON_1]'));
+  await page.$eval(ED, el => {
+    const copy = el.cloneNode(true);
+    el.replaceWith(copy);
+    copy.focus();
+  });
+  await page.$eval(ED, (el, t) => { el.innerText += '\n' + t; }, lines(8));
+  await assertAbove(page, 'na vervangen');
   await page.close();
 });
 

@@ -430,26 +430,81 @@
     return v;
   }
 
-  // Waar de melding komt: vlak boven het invoerveld, links gelijk met de tekst. Is het veld er niet (bijv. bij een
-  // verzoek aan een AI-API) of staat het buiten beeld, dan rechtsonder.
+  // Waar de melding komt (zoals Grammarly, 1Password en DLP-extensies: naast het veld, nooit over de tekst):
+  //   1. boven de zichtbare balk om het invoerveld, links gelijk met de balk (de balk, niet het veld: eromheen zitten
+  //      nog rand, knoppen en bijlagen);
+  //   2. past dat niet (een lange tekst maakt de balk hoog, of de balk staat bovenin), dan eronder;
+  //   3. dan ernaast, gelijk met de bovenkant (op een breed scherm is daar ruimte genoeg);
+  //   4. pas als niets past (smal scherm, balk zo hoog als het scherm): klein (logo, Bekijk, ×) half over de bovenrand
+  //      van de balk, waar alleen binnenruimte zit.
+  // Zonder veld (bijv. een verzoek aan een AI-API) of met het veld buiten beeld: rechtsonder.
   let anchorEd = null;
-  function anchor(need = 60) {
-    const ed = anchorEd?.isConnected ? anchorEd : null;
+  const GAP = 8;
+  const hasBox = s => (s.backgroundColor !== 'transparent' && !/^rgba\(.*,\s*0\)$/.test(s.backgroundColor))
+    || parseFloat(s.borderTopWidth) > 0 || s.boxShadow !== 'none';
+  // De balk: de dichtstbijzijnde voorouder met een eigen achtergrond, rand of schaduw die niet veel groter is dan het
+  // zichtbare deel van het veld. Het veld zelf telt alleen voor zover het niet weggescrold is.
+  function composerBar(ed) {
+    const own = ed.getBoundingClientRect();
+    let top = own.top, bottom = own.bottom, bar = null;
+    for (let n = ed.parentElement, d = 0; n && n !== document.body && d < 12; n = n.parentElement, d++) {
+      const r = n.getBoundingClientRect();
+      const s = getComputedStyle(n);
+      if (s.overflowY !== 'visible') { top = Math.max(top, r.top); bottom = Math.min(bottom, r.bottom); }
+      if (!bar && r.height && r.height <= bottom - top + 260 && r.width <= own.width + 480 && hasBox(s)) bar = r;
+    }
+    // Geen balk met eigen opmaak gevonden: dan het formulier eromheen, als dat niet veel groter is.
+    const form = !bar && ed.closest('form')?.getBoundingClientRect();
+    if (form && form.height && form.height <= bottom - top + 260 && form.width <= own.width + 480) bar = form;
+    return bar
+      ? { top: Math.min(bar.top, top), bottom: Math.max(bar.bottom, bottom), left: bar.left, right: bar.right }
+      : { top, bottom, left: own.left, right: own.right };
+  }
+  // Het veld van de laatste melding; vervangt de site het (Grok doet dat na plakken), dan het nieuwe.
+  function liveEditor() {
+    if (anchorEd?.isConnected) return anchorEd;
+    let ed = findEditor(document.activeElement);
+    if (!ed && aiSite?.composer) try { ed = findEditor(document.querySelector(aiSite.composer)); } catch {}
+    if (ed) anchorEd = ed;
+    return ed;
+  }
+  // prev: de vorige plek. Terug naar boven pas bij 16px extra ruimte, zodat hij niet bij elke regel heen en weer springt.
+  // need: hoogte die de melding nodig heeft; width: zijn breedte.
+  function anchor(need = 60, prev, width = 240) {
+    const ed = liveEditor();
     if (!ed) return null;
-    const r = ed.getBoundingClientRect();
-    if (!r.width || !r.height) return null;
-    const form = ed.closest('form')?.getBoundingClientRect();
-    const top = form && form.top <= r.top && form.height < r.height + 200 ? form.top : r.top;
-    if (top - need < 8 || top > innerHeight || r.right < 0 || r.left > innerWidth) return null;
-    return { left: Math.round(Math.max(12, Math.min(r.left - 8, innerWidth - 240))), bottom: Math.round(innerHeight - top + 10), room: top - 18 };
+    const own = ed.getBoundingClientRect();
+    if (!own.width || !own.height) return null;
+    const b = composerBar(ed);
+    if (b.bottom < 0 || b.top > innerHeight || b.right < 0 || b.left > innerWidth) return null;
+    const left = Math.round(Math.max(12, Math.min(b.left, innerWidth - 240)));
+    if (b.top - GAP - need >= 8 + (prev === 'below' ? 16 : 0)) {
+      return { side: 'above', left, bottom: Math.round(innerHeight - b.top + GAP), room: b.top - GAP - 8 };
+    }
+    if (b.bottom + GAP + need <= innerHeight - 8) {
+      return { side: 'below', left, top: Math.round(b.bottom + GAP), room: innerHeight - b.bottom - GAP - 8 };
+    }
+    const top = Math.round(Math.max(8, b.top));
+    const room = innerHeight - top - 8;
+    if (b.right + GAP + width <= innerWidth - 8) return { side: 'right', left: Math.round(b.right + GAP), top, room };
+    if (b.left - GAP - width >= 8) return { side: 'left', left: Math.round(b.left - GAP - width), top, room };
+    const edge = Math.round(Math.max(8, b.top - 14));
+    return { side: 'edge', left: left + 12, top: edge, room: innerHeight - edge - 8 };
+  }
+  // De volle breedte, ook als hij klein op de rand staat: anders past hij klein wel ernaast, en springt hij heen en weer.
+  function fullWidth(box) {
+    if (box.dataset.side !== 'edge' && box.offsetWidth) box.dataset.w = box.offsetWidth;
+    return +box.dataset.w || undefined;
   }
   function place(box, need) {
-    const a = anchor(need);
+    const a = anchor(need, box.dataset.side, fullWidth(box));
+    box.dataset.side = a ? a.side : '';
     Object.assign(box.style, a
-      ? { left: `${a.left}px`, right: 'auto', bottom: `${a.bottom}px`, maxWidth: `${innerWidth - a.left - 12}px` }
-      : { left: 'auto', right: '20px', bottom: '20px', maxWidth: `${innerWidth - 40}px` });
+      ? { left: `${a.left}px`, right: 'auto', top: a.top == null ? 'auto' : `${a.top}px`, bottom: a.top == null ? `${a.bottom}px` : 'auto', maxWidth: `${innerWidth - a.left - 12}px` }
+      : { left: 'auto', right: '20px', top: 'auto', bottom: '20px', maxWidth: `${innerWidth - 40}px` });
     return a;
   }
+
   // Het invoerveld groeit mee met de tekst (typen, een lange tekst plakken) en de pagina kan scrollen: zolang de
   // melding of kaart open is, schuift hij elke frame mee. Alleen schrijven als de plek echt verandert.
   // Eén lus per vak: een nieuwe melding terwijl de vorige nog openstaat, stopt de oude lus.
@@ -460,8 +515,8 @@
     followers.set(box, id);
     const tick = () => {
       if (followers.get(box) !== id || !box.isConnected || !isOpen()) return;
-      const a = anchor(need);
-      const key = a ? `${a.left},${a.bottom}` : 'corner';
+      const a = anchor(need, box.dataset.side, fullWidth(box));
+      const key = a ? `${a.side},${a.left},${a.bottom},${a.top}` : 'corner';
       if (key !== last) { last = key; place(box, need); }
       requestAnimationFrame(tick);
     };
@@ -521,6 +576,9 @@
         button:focus-visible { outline: 2px solid var(--ring); outline-offset: 1px; }
         .t.compact { padding: 5px 6px 5px 8px; gap: 6px; font-size: 12px; }
         .t.compact > svg:first-child { width: 16px; height: 16px; }
+        /* Klein op de rand van de balk, als er nergens anders plek is (zie anchor) */
+        .t.pill[data-side="edge"] { padding: 2px 4px 2px 8px; gap: 6px; }
+        .t.pill[data-side="edge"] :is(.what, .more) { display: none; }
         /* Gevoelig onderwerp: dezelfde melding, met een zin en twee knoppen */
         .t.card { border-radius: 14px; align-items: flex-start; white-space: normal; max-width: 400px; padding: 10px 10px 10px 12px; }
         .t.card > svg:first-child { width: 22px; height: 22px; }
