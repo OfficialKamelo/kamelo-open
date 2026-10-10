@@ -3,13 +3,15 @@
 // - Beheert de kluis: de actuele kluis staat in chrome.storage.session (alleen in het werkgeheugen);
 //   deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.
 // In Firefox laadt het manifest deze bestanden zelf (background.scripts); daar bestaat importScripts niet.
-if (typeof importScripts === 'function') importScripts('vaultcrypto.js', 'vaultstore.js', 'stats.js');
+if (typeof importScripts === 'function') importScripts('vaultcrypto.js', 'vaultstore.js', 'stats.js', 'sites.js', 'config.js', 'detector.js', 'vaultscope.js');
 
 // In een eigen blok, zodat namen niet botsen als dit script samen met een pagina wordt geladen (previews).
 {
 const PC = globalThis.PrivacyCrypto;
 
 const { emptyVault, initSession } = globalThis.PrivacyVault;
+const VS = globalThis.PrivacyVaultScope;
+const D = globalThis.PrivacyDetector;
 
 // Na verwijderen opent de browser kamelo.eu/goodbye: waarom weg, met een oplossing per reden. Een gewone pagina, zonder gegevens erbij.
 chrome.runtime.setUninstallURL('https://kamelo.eu/goodbye');
@@ -41,10 +43,10 @@ if (/beta/i.test(chrome.runtime.getManifest().version_name || '')) {
   chrome.action.setBadgeBackgroundColor({ color: '#6e6e73' });
 }
 
-// Content scripts moeten de (ontgrendelde) kluis in het werkgeheugen kunnen lezen.
-// Firefox kent setAccessLevel niet: daar geeft deze achtergrond de kluis door (zie RELAY hieronder).
-const RELAY = typeof chrome.storage.session.setAccessLevel !== 'function';
-if (!RELAY) chrome.storage.session.setAccessLevel({ accessLevel: 'TRUSTED_AND_UNTRUSTED_CONTEXTS' });
+// Het werkgeheugen (de kluis en, als die beveiligd is, de sleutel) is alleen voor Kamelo zelf: de achtergrond, de popup
+// en het kluisvenster. Content scripts draaien in elke website; zij krijgen via berichten alleen het deel van hun eigen
+// site (zie vaultscope.js). Zo kan een website, ook een gekraakte, nooit de hele kluis of de sleutel bereiken.
+chrome.storage.session.setAccessLevel?.({ accessLevel: 'TRUSTED_CONTEXTS' });
 
 // Eén keer per browsersessie de kluis in het werkgeheugen zetten (zie vaultstore.js).
 let initPromise = null;
@@ -68,16 +70,46 @@ function persist(vault) {
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === 'session' && changes.vault) {
     persist(changes.vault.newValue);
-    if (RELAY) broadcastVault(changes.vault.newValue);
+    announceChange();
   }
+  // Net ontgrendeld: oude gegevens uit de versleutelde kluis meteen opschonen.
+  if (area === 'session' && changes.locked && changes.locked.newValue === false) prune();
 });
 
-// Firefox: content scripts krijgen een gewijzigde kluis als bericht, omdat ze storage.session niet zien.
-// Alleen de kluis gaat mee, nooit de sleutel.
-async function broadcastVault(vault) {
-  const tabs = await chrome.tabs.query({ url: ['http://*/*', 'https://*/*'] }).catch(() => []);
-  for (const tab of tabs) chrome.tabs.sendMessage(tab.id, { type: 'pf:vault', vault }).catch(() => {});
+// Tabs horen alleen dát de kluis is veranderd, zonder gegevens. Elk venster haalt daarna zelf zijn eigen deel op.
+let announceTimer = 0;
+function announceChange() {
+  clearTimeout(announceTimer);
+  announceTimer = setTimeout(async () => {
+    const tabs = await chrome.tabs.query({ url: ['http://*/*', 'https://*/*'] }).catch(() => []);
+    for (const tab of tabs) chrome.tabs.sendMessage(tab.id, { type: 'pf:vault-changed' }).catch(() => {});
+  }, 50);
 }
+
+// Wijzigingen in de kluis in het werkgeheugen, één tegelijk, zodat twee tabs elkaar niet overschrijven.
+let vaultQueue = Promise.resolve();
+function updateVault(change) {
+  const run = vaultQueue.then(async () => {
+    await init();
+    const { vault } = await chrome.storage.session.get('vault');
+    const v = vault || emptyVault();
+    if (change(v)) await chrome.storage.session.set({ vault: v });
+  });
+  vaultQueue = run.catch(err => console.error('[Kamelo] kluis bijwerken mislukt', err));
+  return run;
+}
+
+// "Na 30 dagen gewist" (instelling retentionDays, 0 = nooit): hier gegarandeerd, bij het starten, elke 12 uur en na
+// ontgrendelen, ook als je een tijd geen AI-site opent. Een vergrendelde kluis wordt na ontgrendelen opgeschoond.
+async function prune() {
+  const { settings } = await chrome.storage.local.get('settings');
+  const days = settings?.retentionDays ?? globalThis.PrivacyConfig.DEFAULT_SETTINGS.retentionDays;
+  const { locked } = await chrome.storage.session.get('locked');
+  if (locked) return;
+  return updateVault(v => D.prune(v, days) > 0);
+}
+chrome.alarms?.create('kamelo-prune', { periodInMinutes: 720 });
+chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-prune') prune(); });
 
 async function lock() {
   const { protect } = await chrome.storage.local.get('protect');
@@ -98,20 +130,30 @@ function count(counts) {
   return statsQueue;
 }
 
-chrome.runtime.onMessage.addListener((msg, _sender, reply) => {
+// Berichten komen alleen van Kamelo zelf, maar content scripts draaien in elke website. Daarom:
+// - de kluis lezen en schrijven kan alleen voor de site van de afzender, zoals de browser die doorgeeft;
+// - vergrendelen en wegschrijven alleen vanuit Kamelo's eigen pagina's (popup, kluisvenster).
+const fromExtensionPage = sender => sender.id === chrome.runtime.id && !!sender.url?.startsWith(chrome.runtime.getURL(''));
+
+chrome.runtime.onMessage.addListener((msg, sender, reply) => {
+  if (sender.id !== chrome.runtime.id) return;
   if (msg?.type === 'pf:count') { count(msg.counts).then(() => reply(true)); return true; }
   if (msg?.type === 'pf:init') { init().then(() => reply(true)); return true; }
-  if (msg?.type === 'pf:vault-get' && RELAY) {
-    init().then(() => chrome.storage.session.get('vault')).then(({ vault }) => reply(vault || null));
+  if (msg?.type === 'pf:vault-get') {
+    const where = VS.scopeOfSender(sender);
+    init().then(() => chrome.storage.session.get('vault')).then(({ vault }) => reply(VS.sliceVault(vault, where)))
+      .catch(() => reply(null));
     return true;
   }
-  if (msg?.type === 'pf:vault-set' && RELAY && msg.vault) {
-    chrome.storage.session.set({ vault: msg.vault }).then(() => reply(true));
+  if (msg?.type === 'pf:vault-set' && msg.vault) {
+    const where = VS.scopeOfSender(sender);
+    if (!where) { reply(false); return; }
+    updateVault(v => VS.mergeSlice(v, msg.vault, where)).then(() => reply(true), () => reply(false));
     return true;
   }
-  if (msg?.type === 'pf:lock') { lock().then(() => reply(true)); return true; }
-  if (msg?.type === 'pf:flush') { queue.then(() => reply(true)); return true; }
+  if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }
+  if (msg?.type === 'pf:flush' && fromExtensionPage(sender)) { queue.then(() => reply(true)); return true; }
 });
 
-init();
+init().then(prune);
 }

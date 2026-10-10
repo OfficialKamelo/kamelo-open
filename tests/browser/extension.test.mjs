@@ -261,6 +261,23 @@ test('elke site: verzoeken aan een AI-API worden afgeschermd voordat ze vertrekk
   await page.close();
 });
 
+test('liever niet versturen dan onafgeschermd: is het afschermen op, dan gaat een verzoek met gegevens niet weg', async () => {
+  const sent = [];
+  const page = await mockPage(browser, 'https://flood.example/', SHOP, req => {
+    if (req.method() === 'POST' && req.url().startsWith('https://api.openai.com/')) sent.push(req.postData());
+  });
+  const post = text => page.evaluate(text => fetch('https://api.openai.com/v1/x', { method: 'POST', body: text })
+    .then(() => 'sent', e => `blocked: ${e.message}`), text);
+  // Een site die het budget opmaakt (500 nieuwe gegevens per pagina).
+  const flood = Array.from({ length: 501 }, (_, i) => `user${i}@flood.example`).join(' ');
+  assert.equal(await post(flood), 'sent');
+  const result = await post(SAMPLE.text);
+  assert.match(result, /^blocked: Kamelo/);
+  assert.ok(!sent.some(b => b.includes(SAMPLE.name)), 'de echte gegevens zijn toch verstuurd');
+  assert.equal(await post('hello there'), 'sent'); // zonder gegevens gaat alles gewoon door
+  await page.close();
+});
+
 test('gewone site: alleen AI-velden worden afgeschermd, berichten aan mensen niet', async () => {
   const page = await mockPage(browser, 'https://shop.example/', SHOP);
   assert.equal(await paste(page, '#message', SAMPLE.text), false, 'Kamelo greep in bij een bericht aan een mens');
@@ -300,6 +317,18 @@ test('gevoelig onderwerp: melding, en "Niet meer tonen" zet dat onderwerp uit', 
     await chrome.storage.local.set({ settings: { ...settings, mutedTopics: [] } });
   });
   await page.close();
+});
+
+test('kluis: wat in het ene tabblad is afgeschermd, komt in een ander tabblad van dezelfde AI-site terug', async () => {
+  const a = await mockPage(browser, 'https://chatgpt.com/', CHAT);
+  await paste(a, '#prompt-textarea', SAMPLE.text);
+  const phs = placeholdersIn(await waitForText(a, '#prompt-textarea', masked));
+  const b = await mockPage(browser, 'https://chat.openai.com/', CHAT);
+  await b.evaluate(text => { document.getElementById('answer').textContent = text; }, phs.join(' '));
+  const back = await waitForText(b, '#answer', t => t.includes(SAMPLE.name));
+  assert.ok(back.includes(SAMPLE.name), `niet teruggezet: "${back}"`);
+  await a.close();
+  await b.close();
 });
 
 test('beveiliging: een andere website kan de kluis niet uitlezen', async () => {

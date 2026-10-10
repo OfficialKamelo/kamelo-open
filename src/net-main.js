@@ -7,8 +7,10 @@
   const C = window.PrivacyAiHosts;
   if (!C || window.__privacyfilterNet) return;
   window.__privacyfilterNet = true;
+  // Vastgelegd vóór de scripts van de site draaien: later aanpassen van window.PrivacyAiHosts schakelt niets uit.
+  const isAiApiHost = C.isAiApiHost.bind(C);
 
-  const TIMEOUT_MS = 5000;
+  const TIMEOUT_MS = 8000;
   const pending = new Map();
   let seq = 0;
 
@@ -16,20 +18,38 @@
     let msg;
     try { msg = JSON.parse(e.detail); } catch { return; }
     const done = pending.get(msg.id);
-    if (done) { pending.delete(msg.id); done(msg.body); }
+    if (done) { pending.delete(msg.id); done(msg); }
   });
 
-  // Antwoordt de extensie niet binnen 5 seconden, dan gaat het verzoek ongewijzigd door,
-  // zodat de site niet vastloopt.
+  // Draait Kamelo's content script in deze pagina? Het antwoordt meteen (events lopen synchroon).
+  function kameloHere() {
+    let here = false;
+    const pong = () => { here = true; };
+    document.addEventListener('pf:pong', pong);
+    document.dispatchEvent(new CustomEvent('pf:ping'));
+    document.removeEventListener('pf:pong', pong);
+    return here;
+  }
+
+  const blocked = () => new TypeError('Kamelo could not mask this message, so it was not sent. Please try again.');
+
+  // Liever niet versturen dan onafgeschermd versturen: lukt het afschermen niet (geen antwoord binnen 8 seconden, of
+  // het content script weigert), dan gaat het verzoek niet door. Alleen als Kamelo hier helemaal niet draait,
+  // gaat het ongewijzigd door: dan is er niets afgeschermd en niets beloofd.
   function maskBody(body, host) {
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
       const id = `${++seq}:${Math.random().toString(36).slice(2)}`;
       const timer = setTimeout(() => {
         pending.delete(id);
-        console.warn('[Kamelo] Geen antwoord van de extensie; verzoek niet afgeschermd.');
-        resolve(body);
+        if (!kameloHere()) return resolve(body);
+        console.warn('[Kamelo] Afschermen duurde te lang; verzoek niet verstuurd.');
+        reject(blocked());
       }, TIMEOUT_MS);
-      pending.set(id, masked => { clearTimeout(timer); resolve(typeof masked === 'string' ? masked : body); });
+      pending.set(id, msg => {
+        clearTimeout(timer);
+        if (msg.blocked) { console.warn('[Kamelo] Verzoek niet verstuurd: afschermen lukte niet.'); return reject(blocked()); }
+        resolve(typeof msg.body === 'string' ? msg.body : body);
+      });
       document.dispatchEvent(new CustomEvent('pf:mask', { detail: JSON.stringify({ id, body, host }) }));
     });
   }
@@ -37,7 +57,7 @@
   function aiHost(url) {
     try {
       const { hostname } = new URL(url, location.href);
-      return C.isAiApiHost(hostname) ? hostname : null;
+      return isAiApiHost(hostname) ? hostname : null;
     } catch { return null; }
   }
 
@@ -114,12 +134,16 @@
 
   const origOpen = XMLHttpRequest.prototype.open;
   const origSend = XMLHttpRequest.prototype.send;
+  const xhrHost = new WeakMap(); // niet als eigenschap op het verzoek, zodat de site hem niet kan wissen
   XMLHttpRequest.prototype.open = function (method, url, async) {
-    this.__pfHost = async === false ? null : aiHost(url); // synchrone verzoeken kunnen we niet uitstellen
+    xhrHost.set(this, async === false ? null : aiHost(url)); // synchrone verzoeken kunnen we niet uitstellen
     return origOpen.apply(this, arguments);
   };
   XMLHttpRequest.prototype.send = function (body) {
-    if (!this.__pfHost || typeof body !== 'string') return origSend.apply(this, arguments);
-    maskBody(body, this.__pfHost).then(masked => origSend.call(this, masked));
+    const host = xhrHost.get(this);
+    if (!host || typeof body !== 'string') return origSend.apply(this, arguments);
+    maskBody(body, host).then(masked => origSend.call(this, masked), () => {
+      for (const type of ['error', 'loadend']) this.dispatchEvent(new ProgressEvent(type));
+    });
   };
 })();

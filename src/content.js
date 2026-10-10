@@ -72,9 +72,9 @@
   // Het afschermen blijft werken met wat al in het geheugen staat; opslaan slaan we stil over.
   const store = (area, data) => { if (alive()) chrome.storage[area].set(data).catch(() => {}); };
 
-  // Firefox laat content scripts niet bij storage.session (geen setAccessLevel). Daar lopen lezen en
-  // schrijven van de kluis via de achtergrond, en komen wijzigingen als bericht binnen (pf:vault).
-  const RELAY = chrome.runtime.getURL('').startsWith('moz-extension:');
+  // De kluis loopt altijd via de achtergrond (zie vaultscope.js): dit script krijgt alleen het deel van deze site,
+  // en wat het terugschrijft wordt alleen voor deze site overgenomen. Bij een wijziging komt pf:vault-changed binnen.
+  const fetchVault = () => chrome.runtime.sendMessage({ type: 'pf:vault-get' });
 
   // De kluis staat in het werkgeheugen (chrome.storage.session); de achtergrond schrijft hem
   // (zo nodig versleuteld) naar schijf. Eerst wachten tot die hem heeft klaargezet.
@@ -82,20 +82,14 @@
     await chrome.runtime.sendMessage({ type: 'pf:init' }).catch(() => {});
     const [{ settings: s, noticesSeen: seen }, { vault: v }] = await Promise.all([
       chrome.storage.local.get(['settings', 'noticesSeen']),
-      RELAY ? chrome.runtime.sendMessage({ type: 'pf:vault-get' }).then(vault => ({ vault })) : chrome.storage.session.get('vault'),
+      fetchVault().then(vault => ({ vault })),
     ]);
-    if (v) vault = v;
+    if (v && typeof v === 'object') vault = v;
     noticesSeen = Number(seen) || 0;
     applySettings(s);
-    if (aiSite && window === window.top) {
-      const before = JSON.stringify(vault.lastUsed || null);
-      D.prune(vault, settings.retentionDays);
-      if (JSON.stringify(vault.lastUsed) !== before) saveVault();
-    }
   })().catch(() => {}); // geen verbinding met de extensie: verder met de standaardinstellingen
 
   chrome.storage.onChanged.addListener((changes, area) => {
-    if (area === 'session' && changes.vault) vault = changes.vault.newValue || D.emptyVault();
     if (area === 'local' && changes.settings) applySettings(changes.settings.newValue);
     if (area === 'local' && changes.noticesSeen) noticesSeen = Number(changes.noticesSeen.newValue) || 0;
     if (restoring) restoreIn(document.body);
@@ -104,7 +98,6 @@
   const opts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList, scope: SCOPE, legacy: LEGACY });
   const restoreText = text => D.restore(text, vault, { scope: SCOPE, legacy: LEGACY });
   const saveVault = () => {
-    if (!RELAY) return store('session', { vault });
     if (alive()) chrome.runtime.sendMessage({ type: 'pf:vault-set', vault }).catch(() => {});
   };
 
@@ -288,11 +281,15 @@
     return { body: items.length ? JSON.stringify(out) : text, items };
   }
 
+  let refetchTimer = 0;
   // De popup vraagt hier op welke site we draaien, zodat hij niet hoeft te raden aan de hand van de url.
   chrome.runtime.onMessage.addListener((msg, _sender, reply) => {
-    if (msg?.type === 'pf:vault' && RELAY) {
-      vault = msg.vault || D.emptyVault();
-      if (restoring) restoreIn(document.body);
+    if (msg?.type === 'pf:vault-changed') {
+      clearTimeout(refetchTimer);
+      refetchTimer = setTimeout(() => {
+        if (!alive()) return;
+        fetchVault().then(v => { vault = v || D.emptyVault(); if (restoring) restoreIn(document.body); }).catch(() => {});
+      }, 50);
       return;
     }
     if (msg?.type !== 'pf:status' || window !== window.top) return;
@@ -305,15 +302,20 @@
   // - een budget per pagina, zodat een site de kluis niet kan volstoppen tot echte gegevens eruit vallen;
   // - de naam in de melding moet eruitzien als een hostnaam.
   let apiBudget = 500;
+  document.addEventListener('pf:ping', () => { if (!superseded) document.dispatchEvent(new CustomEvent('pf:pong')); });
   document.addEventListener('pf:mask', async e => {
     if (superseded) return;
     let msg;
     try { msg = JSON.parse(e.detail); } catch { return; }
     await ready;
-    let body = msg.body, items = [];
-    if (settings.enabled && typeof body === 'string' && apiBudget > 0) ({ body, items } = maskRequestBody(body));
+    let body = msg.body, items = [], blocked = false;
+    if (settings.enabled && typeof body === 'string') {
+      // Budget op: niet afschermen, maar ook niet onafgeschermd laten vertrekken als er iets persoonlijks in staat.
+      if (apiBudget > 0) ({ body, items } = maskRequestBody(body));
+      else blocked = D.detect(body, opts()).length > 0;
+    }
     apiBudget -= uniqueItems(items).length;
-    document.dispatchEvent(new CustomEvent('pf:masked', { detail: JSON.stringify({ id: msg.id, body }) }));
+    document.dispatchEvent(new CustomEvent('pf:masked', { detail: JSON.stringify({ id: msg.id, body, blocked }) }));
     if (items.length) afterMask(items);
   });
 

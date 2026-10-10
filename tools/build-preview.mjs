@@ -8,7 +8,8 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 const OUT = `${root}demo/popup-preview.html`;
 
 // Eerst de nagebootste extensie (seed, chrome-API, achtergrond), dan de scripts van de popup zelf.
-const SHIM = ['popup-seed.js', 'chrome-shim.js', '../src/vaultcrypto.js', '../src/vaultstore.js', '../src/background.js'];
+const SHIM = ['popup-seed.js', 'chrome-shim.js', '../src/vaultcrypto.js', '../src/vaultstore.js', '../src/sites.js', '../src/config.js',
+  '../src/detector.js', '../src/vaultscope.js', '../src/background.js'];
 
 export function buildPreview(popupHtml) {
   const body = popupHtml.slice(popupHtml.indexOf('<body>') + 6, popupHtml.indexOf('  <script'));

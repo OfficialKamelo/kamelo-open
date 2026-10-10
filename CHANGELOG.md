@@ -5,7 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
-### Added
+### Security
+- **Websites only ever see their own part of the vault.** Kamelo's background now hands each page only the details that were masked on that same site, and only accepts changes for that site. The full vault and the key of a protected vault stay inside Kamelo itself (the popup, the vault window and the background), out of reach of every website, even one that has been hacked.
+- **"Deleted after 30 days" is now guaranteed.** The background clears old details on start, every 12 hours and right after unlocking, also when you don't open an AI site for a while. (Before, this only happened when you opened an AI site or the popup.) Requires the "alarms" permission, which shows no warning.
+- **Better not sent than sent unmasked.** If Kamelo can't mask a message to an AI service in time, or a page tries to wear out its limit, the message is stopped instead of going out with your details; just send it again. Kamelo's own settings on that site are respected: when it's off, nothing changes.
+- A page can no longer switch off the network filter by changing Kamelo's list of AI services after loading.
+
 - **Firefox.** Kamelo now also runs in Firefox (128 and newer). `npm run pack:firefox` builds the package for addons.mozilla.org; in Firefox the vault reaches the page through the background, because content scripts can't read session storage there.
 - When you remove Kamelo, your browser opens a short goodbye page (kamelo.eu/goodbye) that asks what didn't work and shows a quick fix for each reason. It's an ordinary web page: Kamelo sends nothing.
 

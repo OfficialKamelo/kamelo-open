@@ -24,7 +24,7 @@ export const STORES = { chrome: 'Google Chrome', edge: 'Microsoft Edge', firefox
 // Kamelo geen gegevens verzamelt (verplicht voor nieuwe add-ons sinds november 2025).
 export function firefoxManifest(manifest) {
   const m = structuredClone(manifest);
-  m.background = { scripts: ['src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js', 'src/background.js'] };
+  m.background = { scripts: ['src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js', 'src/sites.js', 'src/config.js', 'src/detector.js', 'src/vaultscope.js', 'src/background.js'] };
   m.browser_specific_settings = {
     gecko: { id: 'kamelo@kamelo.eu', strict_min_version: '128.0', data_collection_permissions: { required: ['none'] } },
   };
