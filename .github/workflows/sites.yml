@@ -1,0 +1,45 @@
+name: Live sites
+
+# Elke nacht: werkt Kamelo nog op de echte AI-sites? (tests/live/sites.mjs, sites uit src/sites.js)
+# Is een site stuk, dan faalt deze workflow (GitHub mailt je) en komt er één melding bij Issues.
+# Sites die een robot een botcontrole tonen, worden overgeslagen; draai die lokaal met: npm run test:sites -- --show
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: live-sites
+  cancel-in-progress: true
+
+jobs:
+  sites:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Ubuntu 24.04 blokkeert de user namespaces die de sandbox van Chrome nodig heeft.
+      - run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      # Met een (virtueel) scherm, zoals een gewone browser.
+      - run: xvfb-run --auto-servernum npm run test:sites -- --show
+      - name: Open an issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$(gh issue list --label site-broken --state open --json number --jq '.[].number')" ]; then
+            gh label create site-broken --color d73a4a --description 'Kamelo no longer works on an AI site' 2>/dev/null || true
+            gh issue create --label site-broken --title 'Live site check failed' \
+              --body "Kamelo no longer works on one or more AI sites. See the summary of [this run]($RUN_URL); usually the fix is a selector in \`src/sites.js\`."
+          fi

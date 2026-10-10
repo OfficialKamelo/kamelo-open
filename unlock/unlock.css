@@ -1,0 +1,17 @@
+/* Aanvullend op popup.css: de kluispagina opent in een eigen klein venster. */
+body { width: auto; max-width: 380px; margin: 0 auto; }
+.hero { text-align: center; margin: 10px 0 18px; }
+.lock-icon {
+  width: 64px; height: 64px; margin: 0 auto 12px; border-radius: 20px; display: grid; place-items: center;
+  background: var(--control); border: .5px solid var(--control-edge); box-shadow: var(--control-shadow);
+}
+.lock-icon svg { width: 34px; height: 34px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.lock-icon.open svg { stroke: var(--secondary); }
+.lock-icon.open #shackle { transform: translateX(5px) translateY(-2px); }
+h2 { font-size: 17px; font-weight: 600; margin: 0; }
+.footnote.center { text-align: center; margin-top: 4px; }
+.row-icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.group.pad input { display: block; width: 100%; padding: 9px 2px; background: none; border-bottom: .5px solid var(--separator); border-radius: 0; }
+.group.pad input:focus { outline: none; box-shadow: none; }
+.message { min-height: 18px; text-align: center; font-size: 12px; color: var(--secondary); margin-top: 6px; }
+.message.error { color: var(--destructive); }

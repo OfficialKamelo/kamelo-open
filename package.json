@@ -1,0 +1,22 @@
+{
+  "name": "kamelo",
+  "version": "1.3.2",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "description": "Chrome extension that masks personal data on your device before it reaches an AI.",
+  "scripts": {
+    "test": "node tests/detector.test.js && node tests/topics.test.js && node tests/stats.test.js && node tests/vaultcrypto.test.js && node tests/vaultlock.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/preview.test.mjs && node tests/release.test.mjs",
+    "test:browser": "node --test --test-concurrency=1 tests/browser/extension.test.mjs",
+    "test:sites": "node tests/live/sites.mjs",
+    "pack": "node tools/pack.mjs",
+    "release": "node tools/release.mjs",
+    "test:firefox": "node tests/browser/firefox.mjs",
+    "pack:firefox": "node tools/pack.mjs --firefox"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "puppeteer": "^25.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+# Secrets
+*.env
+.env*
+
+# OS
+.DS_Store
+
+# Dependencies
+node_modules
+
+# Build output
+web-store-uploaden/

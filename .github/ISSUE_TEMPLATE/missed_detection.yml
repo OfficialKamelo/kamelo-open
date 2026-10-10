@@ -1,0 +1,51 @@
+name: Missed detection or false positive
+description: Kamelo didn't mask something it should, or masked ordinary text.
+labels: [detection]
+body:
+  - type: markdown
+    attributes:
+      value: "**Use made-up data only.** Replace real values with fake ones in the same format."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - Not masked (missed detection)
+        - Masked but shouldn't be (false positive)
+        - Wrong placeholder type
+        - Not restored in the answer
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Type of data
+      placeholder: IBAN, name, phone number, BSN, API key...
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Example text (made-up data)
+      description: The exact text you typed or pasted, with fake values in the same format.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should Kamelo have done?
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language and country of the data
+      placeholder: Dutch, Netherlands
+  - type: input
+    id: version
+    attributes:
+      label: Kamelo version
+      placeholder: "1.1.2"
+    validations:
+      required: true
