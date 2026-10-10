@@ -1,4 +1,4 @@
-// Kamelo — netwerkfilter (draait in de pagina zelf, vóór de scripts van de site).
+// Netwerkfilter (draait in de pagina zelf, vóór de scripts van de site).
 // Verzoeken die de pagina rechtstreeks naar een AI-API stuurt (OpenAI, Anthropic, Google, …)
 // worden eerst afgeschermd. Het afschermen zelf gebeurt in het content script, waar de kluis
 // staat; deze kant stuurt alleen de tekst heen en krijgt de afgeschermde versie terug.

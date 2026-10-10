@@ -1,4 +1,4 @@
-// Kamelo — alle teksten van de interface, in het Engels en het Nederlands.
+// Alle teksten van de interface, in het Engels en het Nederlands.
 // De taal volgt de browser: Nederlands als die in het Nederlands staat, anders Engels.
 // Gebruik: t('key', { naam: waarde }) en applyI18n() voor elementen met data-i18n*-attributen.
 // tools/build-locales.mjs maakt hieruit de _locales-bestanden voor de naam en beschrijving in Chrome.
@@ -7,7 +7,7 @@
 
   const STRINGS = {
     en: {
-      extName: 'Kamelo – AI privacy software',
+      extName: 'Kamelo: AI privacy software',
       extDescription: 'Masks names, IDs, bank details and passwords on your device before they reach ChatGPT, Gemini, Claude or any other AI.',
       actionTitle: 'Kamelo',
 
@@ -94,7 +94,7 @@
     },
 
     nl: {
-      extName: 'Kamelo – privacysoftware voor AI',
+      extName: 'Kamelo: privacysoftware voor AI',
       extDescription: 'Schermt namen, ID’s, bankgegevens en wachtwoorden lokaal af voordat ze ChatGPT, Gemini, Claude of een andere AI bereiken.',
       actionTitle: 'Kamelo',
 

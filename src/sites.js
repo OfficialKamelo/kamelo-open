@@ -1,4 +1,4 @@
-// Kamelo — de AI-sites die Kamelo kent. Verandert een site zijn pagina, dan is dit meestal het enige bestand dat je aanpast.
+// De AI-sites die Kamelo kent. Verandert een site zijn pagina, dan is dit meestal het enige bestand dat je aanpast.
 //
 //   name      naam in de popup en de melding
 //   hosts     domeinen (subdomeinen tellen mee)

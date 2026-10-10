@@ -44,7 +44,7 @@
 </head>
 <body>
 <main>
-  <h1>Kamelo — demo</h1>
+  <h1>Kamelo demo</h1>
   <p class="muted">Een nagebootste AI-chat. Rechts zie je precies wat er naar de AI zou gaan.</p>
 
   <div class="grid">
@@ -135,7 +135,7 @@ De factuur van €450 moet nog betaald worden op NL91ABNA0417164300.`;
   });
 
   document.getElementById('copySample').addEventListener('click', async e => {
-    try { await navigator.clipboard.writeText(SAMPLE); e.target.textContent = 'Gekopieerd — plak in de chat'; }
+    try { await navigator.clipboard.writeText(SAMPLE); e.target.textContent = 'Gekopieerd, plak in de chat'; }
     catch { e.target.textContent = 'Kopiëren lukte niet'; }
   });
   document.getElementById('fillSample').addEventListener('click', () => { prompt.textContent = SAMPLE; prompt.focus(); });

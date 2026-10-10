@@ -1,4 +1,4 @@
-// Kamelo — detectie en maskering van persoonsgegevens, wereldwijd.
+// Detectie en maskering van persoonsgegevens, wereldwijd.
 // Draait volledig lokaal: in de browser (content script / popup) en in Node (tests).
 //
 // Placeholders zijn Engelstalig ([PERSON_1], [IBAN_1], …): één taal die elke AI begrijpt.
@@ -231,7 +231,7 @@
     initials: new RegExp(`(?<![\\p{L}.])(?:\\p{Lu}\\.[ \\t]?){1,4}(?:${TUSSEN}[ \\t]+)*${NAMEWORD}`, 'gu'),
     nameToken: new RegExp(`(?<![\\p{L}\\d])${NAMEWORD}`, 'gu'),
     nameTail: new RegExp(`^[ \\t]+((?:${TUSSEN}[ \\t]+)*)(${NAMEWORD})`, 'u'),
-    // Bedrijfsnaam: 1–4 woorden met een hoofdletter (of cijfer), gevolgd door een rechtsvorm.
+    // Bedrijfsnaam: 1 tot 4 woorden met een hoofdletter (of cijfer), gevolgd door een rechtsvorm.
     company: /(?<![\p{L}\d])((?:[\p{Lu}\d][\p{L}\d&'.-]*[ \t]+(?:&[ \t]+)?){1,4})(Inc\.?|Incorporated|Ltd\.?|Limited|LLC|L\.L\.C\.|LLP|PLC|Corp\.?|Corporation|GmbH|AG|KG|B\.V\.|BV|N\.V\.|NV|V\.O\.F\.|VOF|S\.A\.|SAS|SARL|S\.r\.l\.|Srl|S\.p\.A\.|SpA|Pty\.? Ltd\.?|Oy|A\/S|ApS|& Co\.)(?![\p{L}\d])/gu,
     word: /\p{L}[\p{L}'-]*/gu,
   };

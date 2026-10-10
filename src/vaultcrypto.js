@@ -1,4 +1,4 @@
-// Kamelo — versleuteling van de kluis (Web Crypto, draait in browser én Node).
+// Versleuteling van de kluis (Web Crypto, draait in browser én Node).
 //
 // Opbouw:
 //  - De kluis wordt versleuteld met één willekeurige sleutel K (AES-GCM 256).

@@ -37,7 +37,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 - "Restore text" moved out of the vault into **Mask text**, so masking and restoring live in one place.
-- Kamelo is now called **Kamelo – AI privacy software** (in Dutch: *privacysoftware voor AI*).
+- Kamelo is now called **Kamelo: AI privacy software** (in Dutch: *privacysoftware voor AI*).
 
 ## [1.3.1] - 2026-10-08
 

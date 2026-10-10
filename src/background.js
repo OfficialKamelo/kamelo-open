@@ -1,4 +1,4 @@
-// Kamelo — achtergrond.
+// Achtergrond.
 // - Opent de welkomstpagina na installatie.
 // - Beheert de kluis: de actuele kluis staat in chrome.storage.session (alleen in het werkgeheugen);
 //   deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.

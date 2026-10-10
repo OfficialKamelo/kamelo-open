@@ -1,4 +1,4 @@
-// Kamelo — kluis beveiligen, ontgrendelen en vergrendelen (Touch ID of eigen wachtwoord).
+// Kluis beveiligen, ontgrendelen en vergrendelen (Touch ID of eigen wachtwoord).
 // Deze pagina opent in een eigen venster: een extensie-popup sluit zodra Touch ID om je vingerafdruk vraagt.
 const PC = globalThis.PrivacyCrypto;
 const L = globalThis.PrivacyVaultLock;

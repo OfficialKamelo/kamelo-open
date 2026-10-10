@@ -1,4 +1,4 @@
-// Kamelo — AI-diensten die een pagina rechtstreeks kan aanroepen (voor het netwerkfilter, net-main.js).
+// AI-diensten die een pagina rechtstreeks kan aanroepen (voor het netwerkfilter, net-main.js).
 // Een eigen bestand: Chrome laadt hetzelfde bestand maar één keer per pagina, dus het netwerkfilter (in de
 // pagina zelf) en het content script (in de afgeschermde omgeving van de extensie) mogen geen bestanden delen.
 (function (root) {

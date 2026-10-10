@@ -1,4 +1,4 @@
-// Kamelo — de kluis klaarzetten in het werkgeheugen (chrome.storage.session).
+// De kluis klaarzetten in het werkgeheugen (chrome.storage.session).
 // Wordt gebruikt door de achtergrond, de popup en het kluisvenster. Pagina's vragen het eerst aan de
 // achtergrond; antwoordt die niet (bijv. vlak na een update), dan zetten ze de kluis zelf klaar,
 // zodat er nooit een venster blijft hangen.

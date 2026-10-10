@@ -1,4 +1,4 @@
-// Kamelo — de kluis ontgrendelen en vergrendelen. Gedeeld door de popup en het kluisvenster (unlock/).
+// De kluis ontgrendelen en vergrendelen. Gedeeld door de popup en het kluisvenster (unlock/).
 // Ontgrendelen: de sleutel van de kluis uitpakken met het wachtwoord of Touch ID, de versleutelde kluis van schijf
 // ontsleutelen en samenvoegen met wat er intussen (vergrendeld) is afgeschermd.
 (function (root) {

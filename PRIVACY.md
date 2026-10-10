@@ -1,8 +1,8 @@
-# Privacy Policy – Kamelo (AI privacy software)
+# Kamelo Privacy Policy
 
 _Last updated: October 9, 2026_
 
-Kamelo – AI privacy software (formerly Elidy; "Kamelo", "the extension") is a browser extension for Chrome and Edge that protects your personal data when you use AI tools. This policy explains what data the extension handles and how.
+Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a browser extension for Chrome and Edge that protects your personal data when you use AI tools. This policy explains what data the extension handles and how.
 
 ## Summary
 - Kamelo does **not** collect, transmit, sell or share any of your data.

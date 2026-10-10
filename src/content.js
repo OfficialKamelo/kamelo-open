@@ -1,4 +1,4 @@
-// Kamelo — content script.
+// Content script.
 // Schermt persoonsgegevens af in alles wat naar een AI gaat:
 //  - op AI-sites (ChatGPT, Gemini, Claude, …) in elk tekstveld;
 //  - op andere sites (Gmail, Slack, Notion, …) alleen in AI-velden, zoals "Help me schrijven";

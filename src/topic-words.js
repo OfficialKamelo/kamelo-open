@@ -1,4 +1,4 @@
-// Kamelo — woordenlijsten voor gevoelige onderwerpen (zie topics.js), in 82 talen.
+// Woordenlijsten voor gevoelige onderwerpen (zie topics.js), in 82 talen.
 //
 // Per taal:
 //  - words: veelgebruikte woorden, om de taal van een zin te herkennen. Zo telt "min" (Zweeds: mijn) niet in een

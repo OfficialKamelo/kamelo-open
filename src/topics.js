@@ -1,4 +1,4 @@
-// Kamelo — gevoelige onderwerpen herkennen: gezondheid, mentale gezondheid, seksualiteit, geloof, geldzorgen en justitie.
+// Gevoelige onderwerpen herkennen: gezondheid, mentale gezondheid, seksualiteit, geloof, geldzorgen en justitie.
 // Dat zijn grotendeels "bijzondere persoonsgegevens" in de AVG. Ze zijn niet te vervangen door een placeholder,
 // dus Kamelo waarschuwt alleen, één keer per onderwerp per pagina.
 //

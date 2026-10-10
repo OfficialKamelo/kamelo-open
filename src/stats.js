@@ -1,4 +1,4 @@
-// Kamelo — maandoverzicht: hoe vaak per soort gegeven er is afgeschermd, per maand.
+// Maandoverzicht: hoe vaak per soort gegeven er is afgeschermd, per maand.
 // Alleen tellingen: geen waarden, geen sites, geen tijden. Staat los van de kluis, dus wissen of het maximum
 // van de kluis (MAX_ENTRIES) heeft er geen invloed op. Draait in de achtergrond, de popup en in Node (tests).
 (function (root) {
