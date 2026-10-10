@@ -1,6 +1,6 @@
 {
   "name": "kamelo",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "license": "AGPL-3.0-only",
   "private": true,
   "description": "Chrome extension that masks personal data on your device before it reaches an AI.",

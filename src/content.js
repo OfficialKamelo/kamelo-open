@@ -40,9 +40,22 @@
   // Kluis per site (zie inScope in detector.js): gegevens die hier worden afgeschermd, komen alleen hier terug.
   // Bekende AI-sites met meerdere adressen (chatgpt.com en chat.openai.com) delen één bereik. Gegevens van vóór
   // de kluis per site gelden alleen op bekende AI-sites, want daar zijn ze ooit afgeschermd.
-  const KNOWN_AI = S.siteFor(location.hostname);
-  const SCOPE = KNOWN_AI ? `ai:${KNOWN_AI.name}` : location.hostname.replace(/^www\./, '');
+  // Een venster zonder eigen adres (about:blank, srcdoc, data:, blob:, file:) hoort bij de pagina eromheen.
+  // Kunnen we die niet bepalen, dan krijgt het venster een eigen, leeg bereik: nooit de hele kluis.
+  const HOST = pageHost();
+  const KNOWN_AI = S.siteFor(HOST);
+  const SCOPE = KNOWN_AI ? `ai:${KNOWN_AI.name}` : HOST ? HOST.replace(/^www\./, '') : `frame:${Math.random().toString(36).slice(2)}`;
   const LEGACY = !!KNOWN_AI;
+
+  function pageHost() {
+    if (location.hostname) return location.hostname;
+    try {
+      const anc = location.ancestorOrigins;
+      if (anc?.length) return new URL(anc[0]).hostname;
+    } catch {}
+    try { return window.parent.location.hostname; } catch {} // zelfde herkomst (Firefox heeft geen ancestorOrigins)
+    return '';
+  }
 
   const EDITOR_SEL = 'textarea, [contenteditable]:not([contenteditable="false"])';
   const NEVER_RESTORE_SEL = 'script, style, noscript, [data-pf-raw]';

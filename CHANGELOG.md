@@ -30,6 +30,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - "Locked" was shown twice on the main screen when the vault was locked; it now appears once, next to the vault.
 - An empty "Marked as AI" section in Settings.
 
+## [1.3.3] - 2026-10-11
+
+### Security
+- **A website could read details you masked elsewhere.** Small frames without their own web address (for example an empty `about:blank` or `srcdoc` frame that a page creates) were not tied to any site, so Kamelo treated every detail in your vault as allowed there. A malicious page could put placeholders like [PERSON_1] in such a frame and read back the real values. Those frames now belong to the page around them, and a frame Kamelo can't place gets nothing. Found in our own security review; we know of no abuse. Update to 1.3.3.
+
 ## [1.3.2] - 2026-10-08
 
 ### Added

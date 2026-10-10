@@ -570,9 +570,11 @@
   // Terugzetten, hergebruiken en het geheugen werken alleen op diezelfde site (opts.scope), zodat een
   // andere website de kluis niet kan uitlezen door zelf placeholders aan te bieden. Gegevens van vóór
   // deze indeling hebben geen site; die gelden alleen waar opts.legacy is gezet (bekende AI-sites).
-  // Zonder opts.scope (popup, kluisvenster, tests) telt alles.
+  // Zonder opts.scope (popup, kluisvenster, tests) telt alles. Een leeg bereik ('') telt nergens: zo kan een
+  // venster zonder adres nooit de hele kluis terugzetten.
   function inScope(vault, ph, opts = {}) {
-    if (!opts.scope) return true;
+    if (opts.scope === undefined) return true;
+    if (!opts.scope) return false;
     const site = vault.sites?.[ph];
     return site === undefined ? !!opts.legacy : site === opts.scope;
   }

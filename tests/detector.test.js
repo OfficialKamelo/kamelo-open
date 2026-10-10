@@ -277,6 +277,14 @@ test('een andere site kan placeholders niet terugzetten', () => {
   assert.equal(D.restore(r.text, v, B), r.text);
   assert.equal(D.restore('[IBAN_1] [SECRET_1] [PERSON_1]', v, B), '[IBAN_1] [SECRET_1] [PERSON_1]');
 });
+test('een leeg bereik (venster zonder adres) zet niets terug', () => {
+  const v = D.emptyVault();
+  const r = D.mask('Mail sarah.miller@example.com, IBAN NL91ABNA0417164300', v, A);
+  D.mask('Bel 0612345678', v); // ook oude gegevens zonder site
+  assert.equal(D.restore(r.text, v, { scope: '' }), r.text);
+  assert.equal(D.restore('[PHONE_1]', v, { scope: '', legacy: true }), '[PHONE_1]');
+  assert.equal(D.restore(r.text, v), 'Mail sarah.miller@example.com, IBAN NL91ABNA0417164300'); // popup: alles
+});
 test('hetzelfde gegeven op een andere site krijgt een eigen placeholder', () => {
   const v = D.emptyVault();
   const a = D.mask('mail sarah.miller@example.com', v, A).items[0].placeholder;

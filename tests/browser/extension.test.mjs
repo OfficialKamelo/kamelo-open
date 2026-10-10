@@ -334,5 +334,20 @@ test('beveiliging: een andere website kan de kluis niet uitlezen', async () => {
   await new Promise(r => setTimeout(r, 400));
   const dom = await textOf(evil, '#dom');
   assert.ok(!dom.includes(SAMPLE.name) && !dom.includes('GB82'), `via de pagina uitgelekt: "${dom}"`);
+  // En via een venster zonder eigen adres (srcdoc, about:blank): dat hoort bij evil.example, niet bij de hele kluis.
+  const framed = await evil.evaluate(async probe => {
+    const f = document.createElement('iframe');
+    f.srcdoc = '<p id="p"></p>';
+    document.body.append(f);
+    await new Promise(r => f.addEventListener('load', r, { once: true }));
+    await new Promise(r => setTimeout(r, 300));
+    const doc = f.contentDocument;
+    doc.dispatchEvent(new CustomEvent('pf:mask', { detail: JSON.stringify({ id: 'y', body: 'mail a@b.example', host: 'api.openai.com' }) }));
+    await new Promise(r => setTimeout(r, 300));
+    doc.getElementById('p').textContent = probe;
+    await new Promise(r => setTimeout(r, 500));
+    return doc.getElementById('p').textContent;
+  }, probe);
+  assert.ok(!framed.includes(SAMPLE.name) && !framed.includes('GB82'), `via een srcdoc-venster uitgelekt: "${framed}"`);
   await evil.close();
 });
