@@ -1,0 +1,16 @@
+/* Markeringen van Kamelo in de pagina (zie "Zichtbaar in de pagina" in content.js). Alleen ::highlight-regels:
+   ze doen niets tot Kamelo een markering zet, en ze veranderen niets aan de opmaak van de site.
+   Blauw, niet rood: Kamelo meldt geen fout, het beschermt. */
+::highlight(kamelo-pending) {
+  text-decoration: underline wavy rgba(10, 132, 255, .9);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+::highlight(kamelo-ph) {
+  background-color: rgba(10, 132, 255, .16);
+}
+::highlight(kamelo-restored) {
+  text-decoration: underline dotted rgba(10, 132, 255, .75);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}

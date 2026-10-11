@@ -21,11 +21,20 @@
       <div class="state" id="state">
         <svg class="ic-ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/><path d="m9 12 2.2 2.2L15.2 10"/></svg>
         <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/><path d="M10 9.5v5M14 9.5v5"/></svg>
+        <svg class="ic-ready" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/></svg>
         <span id="stateText"></span>
       </div>
+      <p class="state-sub" id="stateSub"></p>
       <button class="state reload" id="reloadTab" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg><span data-i18n="statusReload"></span></button>
       <span class="switch big"><input type="checkbox" id="enabled" data-i18n-title="protection"><span class="track"></span></span>
     </div>
+
+    <!-- Vraag het privé: op ChatGPT, Claude en Gemini, naar een tijdelijke chat (met wat er al in het veld staat). -->
+    <button class="mask-card private-card" id="askPrivately" type="button" hidden>
+      <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c0-4 3.4-7 7.5-7s7.5 3 7.5 7-3.4 7-7.5 7c-1.1 0-2.2-.2-3.1-.6L4.5 19.5l1.1-3.6A6.6 6.6 0 0 1 4.5 12Z" stroke-dasharray="2.6 2.4"/><path d="M9.2 11.2h.01M12 11.2h.01M14.8 11.2h.01"/></svg></span>
+      <span class="card-text"><b data-i18n="topicPrivate"></b><span data-i18n="askPrivatelySub"></span></span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+    </button>
 
     <button class="mask-card" data-open="mask">
       <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/><path d="M11 14h6"/></svg></span>

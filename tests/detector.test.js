@@ -332,5 +332,16 @@ test('tekst afschermen in de popup: geen website krijgt die gegevens terug', () 
   assert.equal(D.restore(r.text, v), 'Mail Sarah Miller, IBAN NL91 ABNA 0417 1643 00');
 });
 
+test('terugzetten met plekken: zelfde tekst als restore, met waar elke waarde staat', () => {
+  const v = D.emptyVault();
+  const r = D.mask('Mail Sarah Miller at sarah@example.com', v, A);
+  const text = `Hi ${r.text.match(/\[PERSON_\d+\]/)[0]}, mail [EMAIL_1] or [PERSON_9].`;
+  const out = D.restoreSpans(text, v, A);
+  assert.equal(out.text, D.restore(text, v, A));
+  assert.deepEqual(out.spans.map(s => out.text.slice(s.start, s.end)), ['Sarah Miller', 'sarah@example.com']);
+  assert.deepEqual(out.spans.map(s => s.placeholder), ['[PERSON_1]', '[EMAIL_1]']);
+  assert.deepEqual(D.restoreSpans(text, v, B).spans, []); // andere site: niets terug
+});
+
 console.log(`\n${passed} geslaagd, ${failed} mislukt`);
 process.exit(failed ? 1 : 0);

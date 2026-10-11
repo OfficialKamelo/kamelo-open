@@ -21,6 +21,8 @@
   /* Hoofdscherm: wit vlak zoals kamelo.eu, met één gekleurde statuskaart */
   --surface: #ffffff; --ink: #1d1d1f; --line: rgba(0, 0, 0, .08); --soft: #f5f5f7;
   --ok: #1a7f37; --ok-bg: #e9f7ee; --pause: #6e6e73; --pause-bg: #f2f2f7;
+  --warn: #a14f00; --warn-bg: #fff3e0; /* uit: 5,6:1 op de tint */
+  --private-fg: #5b45d6; --private-bg: #f1eeff;
   /* Glazen bedieningselementen */
   --control: rgba(255, 255, 255, .78);
   --control-edge: rgba(0, 0, 0, .06);
@@ -45,6 +47,8 @@
     --switch-off: rgba(120, 120, 128, .32);
     --surface: #1c1c1e; --ink: #f5f5f7; --line: rgba(255, 255, 255, .1); --soft: #2c2c2e;
     --ok: #3fb950; --ok-bg: rgba(63, 185, 80, .14); --pause: #98989d; --pause-bg: #2c2c2e;
+    --warn: #ffb340; --warn-bg: rgba(255, 159, 10, .14);
+    --private-fg: #b4a6ff; --private-bg: rgba(130, 110, 255, .16);
     --control: rgba(255, 255, 255, .09);
     --control-edge: rgba(255, 255, 255, .1);
     --control-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 1px 3px rgba(0, 0, 0, .3);
@@ -202,14 +206,23 @@ textarea:focus, .add input:focus { outline: none; }
 /* Statuskaart: één woord en de schakelaar. Groen = aan (beschermd), grijs = uit. */
 .status { margin: 8px 16px 0; padding: 14px; border-radius: 12px; background: var(--ok-bg);
   display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; }
-.status[data-state="off"], .status[data-state="reload"], .status[data-state="none"] { background: var(--pause-bg); }
+.status[data-state="reload"], .status[data-state="none"], .status[data-state="ready"] { background: var(--pause-bg); }
+.status[data-state="off"] { background: var(--warn-bg); }
 .state { grid-column: 1; grid-row: 1; min-width: 0; display: flex; align-items: center; gap: 7px; font-size: 17px; line-height: 22px; font-weight: 600; letter-spacing: -.02em; color: var(--ok); }
 .state span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .state svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.state .ic-pause, .status[data-state="off"] .ic-ok, .status[data-state="none"] .ic-ok { display: none; }
-.status[data-state="off"] .ic-pause { display: block; }
-.status[data-state="off"] .state { color: var(--pause); }
+/* Eén icoon per toestand: aan = schild met vinkje, klaar en niet beschikbaar = leeg schild, uit = pauze. */
+.state .ic-pause, .state .ic-ready { display: none; }
+.status:is([data-state="off"], [data-state="ready"], [data-state="none"]) .ic-ok { display: none; }
+.status[data-state="off"] .ic-pause, .status:is([data-state="ready"], [data-state="none"]) .ic-ready { display: block; }
+.status[data-state="off"] .state { color: var(--warn); }
+.status[data-state="ready"] .state { color: var(--ink); }
+.status[data-state="ready"] .ic-ready { color: var(--accent); }
 .status[data-state="none"] .state { color: var(--pause); }
+/* Onder de status: waar (de site) en wat dat betekent. */
+.state-sub { grid-column: 1 / -1; grid-row: 2; margin: 0 0 0 27px; color: var(--secondary); font-size: 12px; line-height: 16px; text-wrap: pretty; }
+.state-sub:empty { display: none; }
+.status[data-state="off"] .state-sub { color: var(--warn); }
 .state.reload { border: 0; background: none; padding: 0; color: var(--accent-text); text-align: left; cursor: pointer; }
 .state.reload:hover span { text-decoration: underline; }
 .status .switch { grid-column: 2; grid-row: 1; }
@@ -224,6 +237,12 @@ textarea:focus, .add input:focus { outline: none; }
 .mask-card:hover { filter: brightness(.98); }
 .mask-card .ico { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; flex: none; color: var(--ph-fg); background: var(--ph-bg); }
 .mask-card b { flex: 1; font-weight: 600; }
+.mask-card:not([hidden]) + .mask-card { margin-top: 8px; }
+.card-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.card-text span { color: var(--secondary); font-size: 12px; line-height: 16px; }
+/* Vraag het privé: lila, zoals de tijdelijke chats van de AI-diensten zelf een eigen kleur hebben. */
+.private-card { background: var(--private-bg); }
+.private-card .ico { color: var(--private-fg); background: var(--private-bg); }
 .mask-card svg, .foot svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .chev { color: var(--secondary); }
 

@@ -5,13 +5,21 @@
 //   composer  CSS-selector van het veld waarin je typt. Optioneel: zonder selector vindt Kamelo het veld zelf.
 //             Placeholders blijven alleen in dit veld staan; overal anders worden ze teruggezet.
 //   live      pagina die de nachtelijke sitecontrole opent (tests/live/sites.mjs); alleen sites die werken zonder inloggen
+//   private   hoe je hier een tijdelijke chat opent (niet in je geschiedenis, niet voor training), voor "Vraag het privé":
+//             url    = adres van een nieuwe tijdelijke chat, of anders
+//             start  = adres van een nieuwe chat + button = de knop die daar de tijdelijke chat aanzet;
+//             onUrl  = stukje van de url, of onSel = element, waaraan je ziet dat je er al in zit
+//             (nagekeken op de echte, ingelogde sites op 11 okt 2026)
 (function (root) {
   'use strict';
 
   const SITES = [
-    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt', live: 'https://chatgpt.com/' },
-    { name: 'Gemini', hosts: ['gemini.google.com'], composer: 'rich-textarea .ql-editor', live: 'https://gemini.google.com/app' },
-    { name: 'Claude', hosts: ['claude.ai'], composer: '[data-testid="chat-input"], fieldset .ProseMirror' },
+    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt', live: 'https://chatgpt.com/',
+      private: { url: 'https://chatgpt.com/?temporary-chat=true', onUrl: 'temporary-chat=true' } },
+    { name: 'Gemini', hosts: ['gemini.google.com'], composer: 'rich-textarea .ql-editor', live: 'https://gemini.google.com/app',
+      private: { start: 'https://gemini.google.com/app', button: 'temp-chat-button button', onSel: 'chat-window.is-temporary-chat' } },
+    { name: 'Claude', hosts: ['claude.ai'], composer: '[data-testid="chat-input"], fieldset .ProseMirror',
+      private: { url: 'https://claude.ai/new?incognito', onUrl: 'incognito', onSel: 'button[aria-label="Exit incognito"]' } },
     { name: 'Copilot', hosts: ['copilot.microsoft.com', 'copilot.com', 'copilot.cloud.microsoft'], composer: '#userInput' },
     { name: 'Perplexity', hosts: ['perplexity.ai'], composer: '#ask-input', live: 'https://www.perplexity.ai/' },
     { name: 'Mistral', hosts: ['chat.mistral.ai'], composer: 'form .ProseMirror', live: 'https://chat.mistral.ai/chat' },

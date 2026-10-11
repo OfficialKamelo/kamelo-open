@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const m = require('../manifest.json');
 const seen = new Map();
 for (const [i, cs] of m.content_scripts.entries()) {
-  for (const file of cs.js || []) {
+  for (const file of [...(cs.js || []), ...(cs.css || [])]) {
     assert.ok(!seen.has(file), `${file} staat in content_scripts[${seen.get(file)}] en [${i}]`);
     seen.set(file, i);
   }

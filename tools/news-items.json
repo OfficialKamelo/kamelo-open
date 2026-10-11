@@ -1,0 +1,20 @@
+{
+  "_uitleg": "Bron voor kamelo.eu/news (tools/news.mjs). Elke versie uit CHANGELOG.md komt er vanzelf op; hier staan alleen eigen titels per versie en mijlpalen zonder versie. Zonder titel hier gebruikt news.mjs het eerste vetgedrukte punt uit de changelog.",
+  "versions": {
+    "1.3.3": { "title": "Security update", "text": "Empty frames on a page can no longer read details you masked on another site. Found in our own review; no known abuse." },
+    "1.3.2": { "title": "Mask text, anywhere", "text": "Paste text in the popup and Kamelo masks it, for places it can't reach itself. Paste the answer back to restore it." },
+    "1.3.1": { "title": "A welcome page on kamelo.eu", "text": "After installing, a short page shows how to pin Kamelo and try it on ChatGPT, Gemini or Claude." },
+    "1.3.0": { "title": "A vault per site", "text": "Details masked on one site are only restored on that same site. Plus: this month's count and a calm notice for sensitive topics." },
+    "1.2.1": { "title": "One address for contact", "text": "Contact and Report a problem now go to one Kamelo email address." },
+    "1.2.0": { "title": "A new name: Kamelo", "text": "A new name, a blue chameleon, and a shorter notice that shows what the AI sees." },
+    "1.1.3": { "title": "Lock your vault with Touch ID", "text": "Lock and unlock the vault from the popup, and Kamelo now works in tabs that were already open." },
+    "1.1.2": { "title": "Quieter after updates", "text": "Open tabs no longer show errors after Kamelo updates. Masking keeps working." },
+    "1.1.1": { "title": "Masking works everywhere again", "text": "A fix for a bug that stopped Kamelo from masking anything in Chrome." },
+    "1.1.0": { "title": "Kamelo remembers names", "text": "A masked name is recognised later in other forms, like a first name or lowercase, with the same placeholder." },
+    "1.0.0": { "title": "First release", "text": "Kamelo masks personal data on your device before it reaches AI, and puts the real values back in the answer." }
+  },
+  "milestones": [
+    { "date": "2026-10-10", "kind": "Company", "title": "Kamelo is open source", "text": "Every line of the extension is public on GitHub, under AGPL-3.0.", "label": "Open source", "url": "https://github.com/OfficialKamelo/kamelo-open" },
+    { "date": "2026-10-08", "kind": "Company", "title": "Live on Microsoft Edge", "text": "Kamelo is in the Microsoft Edge Add-ons store.", "label": "Edge", "url": "https://microsoftedge.microsoft.com/addons/detail/kjjenbhncoomobcdpbhljmhfcmanhbkj" }
+  ]
+}

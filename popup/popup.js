@@ -54,11 +54,22 @@ const everMasked = () => Object.values(stats || {}).some(m => Object.values(m ||
 // Hoofdscherm: alleen aan (groen, "Beschermd") of uit (grijs). Geen sitenaam, geen uitleg.
 function renderMain() {
   const custom = site.kind === 'web' && settings.customAiSites.includes(site.name);
-  const name = site.kind === 'none' ? '' : shortHost(site.host);
+  // AI-site: de hele host (gemini.google.com, niet google.com); gewone site: het registreerbare domein.
+  const name = site.kind === 'none' ? '' : site.kind === 'ai' ? site.host.replace(/^www\./, '') : shortHost(site.host);
   const reload = site.kind !== 'none' && !site.running;
-  const state = !settings.enabled ? 'off' : reload ? 'reload' : site.kind === 'none' ? 'none' : 'on';
+  // Eerlijk per soort site: "Beschermd" alleen waar een AI meeleest; op een gewone site "Klaar" (Kamelo let op
+  // AI-velden); uit zegt wat dat betekent, want de schakelaar geldt voor alle sites.
+  const protects = site.kind === 'ai' || custom;
+  const state = !settings.enabled ? 'off' : reload ? 'reload' : site.kind === 'none' ? 'none' : protects ? 'on' : 'ready';
   $('status').dataset.state = state;
-  $('stateText').textContent = t({ on: 'statusProtected', none: 'statusNone', off: 'statusOff' }[state] || 'statusProtected');
+  $('stateText').textContent = t({ on: 'statusProtected', ready: 'statusReady', none: 'statusNone', off: 'statusOff' }[state] || 'statusProtected');
+  $('stateSub').textContent = {
+    on: t(site.private ? 'statusPrivateSub' : 'statusOnSub', { site: name }),
+    ready: t('statusReadySub', { site: name }),
+    off: t('statusOffSub'),
+    none: t('statusNoneSub'),
+  }[state] || '';
+  $('askPrivately').hidden = state !== 'on' || !S.siteFor(site.host)?.private || !!site.private;
   $('state').hidden = state === 'reload';
   $('reloadTab').hidden = state !== 'reload';
   $('enabled').checked = settings.enabled;
@@ -264,6 +275,11 @@ $('report').addEventListener('click', () => {
 const openTab = url => (chrome.tabs?.create ? chrome.tabs.create({ url }) : window.open(url, '_blank'));
 $('openWelcome').addEventListener('click', () => openTab('https://kamelo.eu/#how'));
 $('tryIt').addEventListener('click', () => openTab('https://chatgpt.com/'));
+// Vraag het privé: het tabblad gaat naar een tijdelijke chat van dezelfde dienst, met wat er al in het veld stond.
+$('askPrivately').addEventListener('click', async () => {
+  try { await chrome.tabs.sendMessage(site.tab, { type: 'pf:private-open' }); } catch {}
+  window.close();
+});
 // Tabblad dat Kamelo nog niet kent (bijv. geopend vóór installeren): verversen zet hem aan.
 $('reloadTab').addEventListener('click', async () => {
   try { const [tab] = await chrome.tabs.query({ active: true, currentWindow: true }); if (tab) await chrome.tabs.reload(tab.id); } catch {}
@@ -392,6 +408,7 @@ async function inject(tabId) {
   for (const cs of chrome.runtime.getManifest().content_scripts || []) {
     await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, files: cs.js, world: cs.world || 'ISOLATED' })
       .catch(() => {}); // bijv. de Chrome Web Store, waar extensies niet mogen komen
+    if (cs.css) await chrome.scripting.insertCSS({ target: { tabId, allFrames: true }, files: cs.css }).catch(() => {});
   }
 }
 
@@ -422,5 +439,6 @@ async function detectSite() {
   }
   if (!host || !web) return { kind: 'none', name: '', host: '', running: false };
   const ai = S.siteFor(host);
-  return ai ? { kind: 'ai', name: ai.name, host, running: !!status } : { kind: 'web', name: host, host, running: !!status };
+  return ai ? { kind: 'ai', name: ai.name, host, running: !!status, private: !!status?.private, tab: tab.id }
+    : { kind: 'web', name: host, host, running: !!status, tab: tab.id };
 }

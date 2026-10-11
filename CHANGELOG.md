@@ -5,20 +5,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-10-11
+
 ### Security
 - **Websites only ever see their own part of the vault.** Kamelo's background now hands each page only the details that were masked on that same site, and only accepts changes for that site. The full vault and the key of a protected vault stay inside Kamelo itself (the popup, the vault window and the background), out of reach of every website, even one that has been hacked.
 - **"Deleted after 30 days" is now guaranteed.** The background clears old details on start, every 12 hours and right after unlocking, also when you don't open an AI site for a while. (Before, this only happened when you opened an AI site or the popup.) Requires the "alarms" permission, which shows no warning.
 - **Better not sent than sent unmasked.** If Kamelo can't mask a message to an AI service in time, or a page tries to wear out its limit, the message is stopped instead of going out with your details; just send it again. Kamelo's own settings on that site are respected: when it's off, nothing changes.
 - A page can no longer switch off the network filter by changing Kamelo's list of AI services after loading.
 
+### Added
+- **See what Kamelo does, right in the text.** While you type, names, email addresses and other details that will be masked get a blue wavy underline; hover for "Mask now" or "Keep visible". After masking, the placeholders in the text field are marked in blue. In the AI's answer, every detail Kamelo put back gets a dotted underline; hover to see the placeholder the AI saw. Kamelo draws these marks with the browser's highlight feature (CSS Custom Highlight API), without changing the page itself. Not in plain text boxes (`<textarea>`) and not in Firefox before version 140; masking and restoring work there as before.
+- **Ask privately in the popup.** On ChatGPT, Claude and Gemini the popup offers "Ask privately": the tab moves to a temporary chat, taking along what you had typed, masked as usual.
+- **Ask privately.** When you share something personal (health, money problems, …) on ChatGPT, Claude or Gemini, the notice now offers "Ask privately": one click opens a temporary chat (Claude: incognito) with your message already in it, masked as usual. Temporary chats stay out of your history and memory and aren't used for training. Your text travels along in memory only, for that tab, for at most a minute.
 - **Firefox.** Kamelo now also runs in Firefox (128 and newer). `npm run pack:firefox` builds the package for addons.mozilla.org; in Firefox the vault reaches the page through the background, because content scripts can't read session storage there.
 - When you remove Kamelo, your browser opens a short goodbye page (kamelo.eu/goodbye) that asks what didn't work and shows a quick fix for each reason. It's an ordinary web page: Kamelo sends nothing.
 
 ### Changed
+- **New short description:** "Talk to AI freely. Kamelo masks your name and personal details on your device before they reach ChatGPT, Gemini, Claude or other AI."
 - **Kamelo is open source.** The code is now licensed under the AGPL-3.0 (it was PolyForm Noncommercial). The name and logo stay protected; see TRADEMARKS.md.
 - **Settings in categories.** Masking (always/never protect, sensitive topics), Vault (restore, auto-delete, vault lock) and Sites (mask every text field, marked sites) each have their own page, with help and the version below.
 - **One blue, easier to read.** The popup, the in-page notice and the details window now share one blue, and small grey and blue text, placeholders and the green "restored" label all meet the WCAG AA contrast level in light and dark mode.
-- **A clearer popup with less text.** One glance tells you where you stand: "Protected" on a green card when Kamelo is on, "Off" on a grey card when it's off, and the switch. Below it: Mask text, how much Kamelo protected this month (click the number for the breakdown), and Vault and Settings side by side. Right after installing, a "Try Kamelo" button (opens ChatGPT) takes the place of the number.
+- **A clearer popup with less text.** One glance tells you where you stand, and where: "Protected on chatgpt.com" on a green card on an AI site (or "temporary chat on chatgpt.com"), "Ready" with "Masks AI fields on bol.com" on other websites, and "Off" on an orange card that says what that means: on every site, personal details go to AI unmasked. And the switch. Below it: Mask text, how much Kamelo protected this month (click the number for the breakdown), and Vault and Settings side by side. Right after installing, a "Try Kamelo" button (opens ChatGPT) takes the place of the number.
 - **The notice shows what was masked, right above where you type.** For example "Sarah Miller → [PERSON_1] +3 more", with Details and a close button. Press Esc to close it; it never takes the focus away from your message, and it stays put while you hover over it. After the first five times it shrinks to just "4 protected".
 - **"What the AI sees".** Details opens a small card in the same spot, listing each item with its type, your value (bank and card numbers partly hidden) and the placeholder the AI gets, with "Keep visible" on every row.
 - The vault lock and "How does it work?" moved to Settings.

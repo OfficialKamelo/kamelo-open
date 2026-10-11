@@ -65,6 +65,7 @@
     settings = { ...C.DEFAULT_SETTINGS, ...(next || {}) };
     aiSite = S.siteFor(location.hostname, settings.customAiSites);
     if (aiSite) startRestoring();
+    repaintAll();
   }
 
   // Na het herladen of bijwerken van de extensie blijft dit script actief in tabs die al open stonden,
@@ -177,6 +178,7 @@
     startRestoring();
     count(items);
     toast(items, ctx);
+    if (ctx?.ed) paintSoon(ctx.ed);
   }
 
   // Voor het maandoverzicht in de popup: alleen hoeveel per soort, nooit de waarden (zie stats.js).
@@ -292,8 +294,10 @@
       }, 50);
       return;
     }
-    if (msg?.type !== 'pf:status' || window !== window.top) return;
-    ready.then(() => reply({ host: location.hostname, aiSite: S.siteFor(location.hostname)?.name ?? null }));
+    if (window !== window.top) return;
+    if (msg?.type === 'pf:private-open' && aiSite?.private && !inPrivateChat()) { ready.then(() => goPrivate(liveEditor())); return; }
+    if (msg?.type !== 'pf:status') return;
+    ready.then(() => reply({ host: location.hostname, aiSite: S.siteFor(location.hostname)?.name ?? null, private: inPrivateChat() }));
     return true;
   });
 
@@ -332,8 +336,10 @@
     if (!v || !parent || !D.hasPlaceholder(v) || parent.closest(NEVER_RESTORE_SEL)) return;
     const ed = findEditor(parent);
     if (ed && isComposer(ed)) return;
-    const restored = restoreText(v);
-    if (restored !== v) n.nodeValue = restored;
+    const { text: restored, spans } = D.restoreSpans(v, vault, { scope: SCOPE, legacy: LEGACY });
+    if (restored === v) return;
+    n.nodeValue = restored;
+    for (const sp of spans) addMark('restored', n, sp.start, n, sp.end, { placeholder: sp.placeholder });
   }
 
   // Op AI-sites is niet elk bewerkbaar veld het invoerveld: ChatGPT zet bijv. e-mailconcepten in een bewerkbaar
@@ -345,6 +351,7 @@
     if (!ed) return;
     typedIn.add(ed);
     if (!superseded && settings.enabled && goesToAi(ed)) checkTopicsSoon(ed);
+    paintSoon(ed);
   }, true);
   function isComposer(ed) {
     if (!aiSite) return hinted(ed);
@@ -385,8 +392,219 @@
         const nodes = [...pending];
         pending.clear();
         nodes.forEach(n => n.isConnected && restoreIn(n));
+        pruneMarks();
       }, 30);
     }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+  }
+
+  // ---------- Zichtbaar in de pagina ----------
+  // Drie markeringen, getekend met de CSS Custom Highlight API (stijl in src/marks.css). De DOM van de site blijft
+  // onaangeroerd: editors als ProseMirror draaien eigen wijzigingen terug, en een extra <span> breekt React. De pagina
+  // kan zien wélke tekst gemarkeerd is, maar die tekst staat al op haar eigen pagina; echte waarden achter een
+  // placeholder staan alleen in het kaartje, in een gesloten shadow root.
+  //   pending   golflijn onder wat je typt en bij versturen wordt afgeschermd (zoals Grammarly, maar blauw: geen fout);
+  //   ph        placeholders in het invoerveld als blauw label;
+  //   restored  stippellijn onder wat Kamelo in een antwoord heeft teruggezet.
+  // Muis erop: een kaartje met uitleg, en bij een golflijn "Nu afschermen" of "Zichtbaar laten".
+  // Een browser zonder de API (Firefox vóór 140) slaat dit over; afschermen en terugzetten werken gewoon.
+
+  const MARKS = (() => {
+    try {
+      if (!globalThis.CSS?.highlights || typeof Highlight !== 'function') return null;
+      const m = { pending: new Highlight(), ph: new Highlight(), restored: new Highlight() };
+      for (const [kind, h] of Object.entries(m)) CSS.highlights.set(`kamelo-${kind}`, h);
+      return m;
+    } catch { return null; }
+  })();
+  const markInfo = new WeakMap(); // Range → { kind, … }
+
+  function addMark(kind, startNode, start, endNode, end, info, list) {
+    if (!MARKS) return;
+    try {
+      const r = document.createRange();
+      r.setStart(startNode, start);
+      r.setEnd(endNode, end);
+      MARKS[kind].add(r);
+      markInfo.set(r, { kind, ...info });
+      list?.push(r);
+    } catch {} // knoop net veranderd
+  }
+
+  // Een range op tekst die de site heeft vervangen, klapt dicht of hangt los: weg ermee.
+  let pruneAt = 0;
+  function pruneMarks() {
+    if (!MARKS || Date.now() - pruneAt < 2000) return;
+    pruneAt = Date.now();
+    for (const h of Object.values(MARKS)) {
+      for (const r of h) if (r.collapsed || !r.startContainer.isConnected) h.delete(r);
+    }
+  }
+
+  // Het invoerveld: placeholders als label, en een golflijn onder wat bij versturen wordt afgeschermd. Per blok
+  // (alinea), zodat een aanwijzing als "mijn naam is" in dezelfde zin meetelt. Een <textarea> heeft geen tekstknopen
+  // die je kunt markeren; daar alleen de melding, zoals nu.
+  const BLOCK_TAGS = /^(P|DIV|LI|H[1-6]|PRE|BLOCKQUOTE|TD|TH)$/;
+  const PH_IN_TEXT = /\[[A-Z]+_\d+\]/g;
+  const painted = new Map(); // veld → zijn ranges
+  const paintTimers = new WeakMap();
+
+  function paintSoon(ed) {
+    if (!MARKS || !ed) return;
+    clearTimeout(paintTimers.get(ed));
+    paintTimers.set(ed, setTimeout(() => paint(ed), 250));
+  }
+
+  function unpaint(ed) {
+    for (const r of painted.get(ed) || []) { MARKS.pending.delete(r); MARKS.ph.delete(r); }
+    painted.delete(ed);
+  }
+
+  function repaintAll() {
+    if (!MARKS) return;
+    for (const ed of [...painted.keys()]) paint(ed);
+  }
+
+  function paint(ed) {
+    if (!MARKS) return;
+    unpaint(ed);
+    if (superseded || !ed.isConnected || ed.tagName === 'TEXTAREA' || !settings.enabled || !goesToAi(ed)) return;
+    const mine = [];
+    painted.set(ed, mine);
+    const blocks = new Map();
+    const walker = document.createTreeWalker(ed, NodeFilter.SHOW_TEXT);
+    for (let n; (n = walker.nextNode());) {
+      let b = n.parentElement;
+      while (b && b !== ed && !BLOCK_TAGS.test(b.tagName)) b = b.parentElement;
+      if (!blocks.has(b)) blocks.set(b, []);
+      blocks.get(b).push(n);
+    }
+    for (const nodes of blocks.values()) {
+      const text = nodes.map(n => n.nodeValue).join('');
+      if (!text.trim()) continue;
+      // Plek in de bloktekst → [tekstknoop, plek daarin]. Een einde valt in de knoop ervóór, niet aan het begin van de volgende.
+      const at = (i, isEnd) => {
+        let acc = 0;
+        for (const n of nodes) {
+          const len = n.nodeValue.length;
+          if (i < acc + len || (isEnd && i === acc + len)) return [n, i - acc];
+          acc += len;
+        }
+        return [nodes.at(-1), nodes.at(-1).nodeValue.length];
+      };
+      const mark = (kind, start, end, info) => addMark(kind, ...at(start), ...at(end, true), { ed, ...info }, mine);
+      for (const m of text.matchAll(PH_IN_TEXT)) {
+        if (m[0] in vault.byPlaceholder) mark('ph', m.index, m.index + m[0].length, { placeholder: m[0] });
+      }
+      let found = [];
+      // Heel lange tekst (een heel document geplakt): geen golflijnen, dat kost te veel bij elke toetsaanslag.
+      if (text.length <= 20000) try { found = D.detect(text, { ...opts(), vault }); } catch {}
+      for (const d of found) mark('pending', d.start, d.end, { type: d.type, value: d.value });
+    }
+  }
+
+  // ----- Kaartje bij de muis -----
+  let hint = null, hintRange = null, hintTimer = 0, hintFrame = 0;
+
+  function markAt(x, y) {
+    let node, offset;
+    if (document.caretPositionFromPoint) ({ offsetNode: node, offset } = document.caretPositionFromPoint(x, y) || {});
+    else ({ startContainer: node, startOffset: offset } = document.caretRangeFromPoint?.(x, y) || {});
+    if (!node || node.nodeType !== Node.TEXT_NODE) return null;
+    const near = r => [...r.getClientRects()].some(b => x >= b.left - 1 && x <= b.right + 1 && y >= b.top - 2 && y <= b.bottom + 2);
+    for (const kind of ['pending', 'ph', 'restored']) {
+      for (const r of MARKS[kind]) {
+        try { if (r.isPointInRange(node, offset) && near(r)) return r; } catch {}
+      }
+    }
+    return null;
+  }
+
+  document.addEventListener('mousemove', e => {
+    if (!MARKS || hintFrame || superseded) return;
+    if (!(MARKS.pending.size || MARKS.ph.size || MARKS.restored.size)) return;
+    if (hint && e.composedPath().includes(hint.host)) return; // op het kaartje zelf
+    const { clientX: x, clientY: y } = e;
+    hintFrame = setTimeout(() => { // hooguit eens per 40 ms kijken wat er onder de muis staat
+      hintFrame = 0;
+      const r = markAt(x, y);
+      if (r && r === hintRange) return void clearTimeout(hintTimer);
+      if (r) return showHint(r);
+      if (hint) hideHintIn(250);
+    }, 40);
+  }, { capture: true, passive: true });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && hint) hideHint(); }, true);
+  addEventListener('scroll', () => hint && hideHint(), { capture: true, passive: true });
+
+  function hideHint() {
+    clearTimeout(hintTimer);
+    hint?.host.remove();
+    hint = hintRange = null;
+  }
+  function hideHintIn(ms) {
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(hideHint, ms);
+  }
+
+  function showHint(r) {
+    const info = markInfo.get(r);
+    if (!info) return;
+    hideHint();
+    const [host, root] = shadowHost();
+    root.innerHTML = `
+      <style>
+        :host { all: initial; }
+        * { box-sizing: border-box; }
+        .h { position: fixed; z-index: 2147483647; max-width: 300px; padding: 10px 12px; border-radius: 12px; background: var(--bg); color: var(--fg);
+             font: 13px/18px ${FONT}; -webkit-font-smoothing: antialiased; box-shadow: 0 0 0 .5px var(--edge), 0 10px 30px rgba(0,0,0,.16);
+             animation: in .14s ease-out;
+             --bg: #fff; --fg: #1d1d1f; --muted: #6e6e73; --edge: rgba(0,0,0,.14); --ph-bg: #e8f1fd; --ph-fg: #0a5cc2; --btn: #0071e3; --link: #0066cc; }
+        .h.dark { --bg: #2c2c2e; --fg: #f5f5f7; --muted: #a1a1a6; --edge: rgba(255,255,255,.16); --ph-bg: rgba(10,132,255,.22); --ph-fg: #8cc4ff; --link: #4da3ff;
+                  box-shadow: 0 0 0 .5px var(--edge), 0 10px 30px rgba(0,0,0,.5); }
+        .top { display: flex; align-items: center; gap: 6px; font-weight: 600; }
+        .top svg { width: 16px; height: 16px; flex: none; }
+        .m { margin-top: 3px; color: var(--muted); font-size: 12px; line-height: 16px; }
+        .v { margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .tag { font: 500 11.5px ui-monospace, "SF Mono", Menlo, monospace; color: var(--ph-fg); background: var(--ph-bg); padding: 1px 5px; border-radius: 5px; white-space: nowrap; }
+        .k { display: flex; align-items: center; gap: 12px; margin-top: 9px; }
+        button { font: inherit; font-size: 12px; font-weight: 500; border: 0; cursor: pointer; border-radius: 999px; }
+        .p { background: var(--btn); color: #fff; padding: 4px 12px; }
+        .p:hover { filter: brightness(1.08); }
+        .l { background: none; color: var(--link); padding: 4px 0; }
+        .l:hover { text-decoration: underline; }
+        button:focus-visible { outline: 2px solid var(--btn); outline-offset: 2px; }
+        @keyframes in { from { opacity: 0; transform: translateY(3px); } }
+        @media (prefers-reduced-motion: reduce) { .h { animation: none; } }
+      </style>
+      <div class="h" role="tooltip"></div>`;
+    const box = root.querySelector('.h');
+    box.classList.toggle('dark', pageIsDark());
+    const tag = text => el('span', { className: 'tag', textContent: text });
+    const line = (...kids) => el('div', { className: 'm' }, ...kids);
+    const top = text => { const t = el('div', { className: 'top' }); t.innerHTML = LOGO; t.append(el('span', { textContent: text })); return t; };
+    if (info.kind === 'restored') {
+      box.append(top(I.t('markRestored')), line(`${I.t('markAiSaw')} `, tag(info.placeholder)));
+    } else if (info.kind === 'ph') {
+      const value = vault.byPlaceholder[info.placeholder];
+      const type = info.placeholder.slice(1, info.placeholder.lastIndexOf('_'));
+      box.append(top(capital(I.typeLabel(type))));
+      if (value !== undefined) box.append(el('div', { className: 'v', textContent: shownValue({ type, value }) }));
+      box.append(line(`${I.t('markAiSees')} `, tag(info.placeholder)));
+    } else {
+      box.append(top(capital(I.typeLabel(info.type))), line(I.t('markPending')),
+        el('div', { className: 'k' },
+          textButton('p', I.t('markMaskNow'), () => { hideHint(); if (info.ed.isConnected) guard(info.ed); }),
+          textButton('l', I.t('detailsKeep'), () => { hideHint(); keepVisible(info.value, null); paint(info.ed); })));
+    }
+    box.addEventListener('mouseenter', () => clearTimeout(hintTimer));
+    box.addEventListener('mouseleave', () => hideHintIn(250));
+    document.documentElement.appendChild(host);
+    // Boven het woord, links gelijk; past dat niet (bovenin het scherm), dan eronder.
+    const rect = r.getClientRects()[0] || r.getBoundingClientRect();
+    const left = Math.round(Math.max(8, Math.min(rect.left - 4, innerWidth - box.offsetWidth - 8)));
+    const above = rect.top - box.offsetHeight - 8 >= 8;
+    Object.assign(box.style, { left: `${left}px`, top: `${Math.round(above ? rect.top - box.offsetHeight - 8 : rect.bottom + 8)}px` });
+    hint = { host };
+    hintRange = r;
   }
 
   // ---------- Kopiëren ----------
@@ -602,6 +820,8 @@
         .c .m { display: block; margin-top: 2px; color: var(--dim); font-size: 12px; line-height: 16px; }
         .k { display: flex; gap: 6px; margin-top: 8px; }
         .k button { font-size: 12px; font-weight: 500; background: var(--hover); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
+        .k .p { background: #0071e3; color: #fff; }
+        .k .p:hover { filter: brightness(1.08); }
         @media (prefers-reduced-motion: reduce) { .t { transform: none; transition: opacity .15s; } }
       </style>
       <div class="t" role="status" aria-live="polite"></div>`;
@@ -695,7 +915,7 @@
   }
 
   function checkTopics(text, ed = null) {
-    if (!T || !settings.enabled || !settings.topicWarnings) return;
+    if (!T || !settings.enabled || !settings.topicWarnings || inPrivateChat()) return;
     const muted = settings.mutedTopics || [];
     const topic = T.sensitiveTopics(text).find(k => !warnedTopics.has(k) && !muted.includes(k));
     if (!topic) return;
@@ -703,11 +923,13 @@
     if (toastShown() || panel) return void setTimeout(() => checkTopics(text, ed), 1500);
     warnedTopics.add(topic);
     anchorEd = ed;
+    const canGoPrivate = !!aiSite?.private && !!ed;
     showToast('card', [
       el('div', { className: 'c' },
         el('b', { textContent: I.t('topicTitle') }),
-        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t('topicAdvice')}` }),
+        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(canGoPrivate ? 'topicAdvicePrivate' : 'topicAdvice')}` }),
         el('div', { className: 'k' },
+          ...(canGoPrivate ? [textButton('p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
           textButton('', I.t('topicOk'), hideToast),
           textButton('', I.t('topicMute'), () => {
             settings.mutedTopics = [...new Set([...(settings.mutedTopics || []), topic])];
@@ -716,6 +938,76 @@
           }))),
     ], 9000);
   }
+
+  // ---------- Vraag het privé ----------
+  // Een persoonlijke vraag in een tijdelijke chat van dezelfde site: niet in je geschiedenis, niet in het geheugen van
+  // de AI en niet gebruikt voor training. De tekst gaat via de achtergrond mee (alleen in het werkgeheugen, alleen
+  // dit tabblad), en wordt in de tijdelijke chat weer in het veld gezet, afgeschermd zoals altijd.
+
+  function inPrivateChat() {
+    const p = aiSite?.private;
+    if (!p) return false;
+    if (p.onUrl && location.href.includes(p.onUrl)) return true;
+    try { return !!(p.onSel && document.querySelector(p.onSel)); } catch { return false; }
+  }
+
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  async function waitFor(fn, ms = 10000) {
+    for (let t = 0; t < ms; t += 250) { const v = fn(); if (v) return v; await sleep(250); }
+    return null;
+  }
+  const privateButton = () => { try { return document.querySelector(aiSite.private.button); } catch { return null; } };
+
+  // ed: het veld met de vraag; uit de popup kan dat leeg zijn of ontbreken (dan gewoon een nieuwe tijdelijke chat).
+  async function goPrivate(ed) {
+    const p = aiSite.private;
+    const text = ed?.isConnected ? getText(ed).trim() : '';
+    if (text && alive()) await chrome.runtime.sendMessage({ type: 'pf:private-set', host: location.hostname, text }).catch(() => {});
+    if (text) clearField(ed); // geen concept in de gewone chat laten staan
+    if (p.url) return location.assign(p.url);
+    if (!text) { // niets mee te nemen: alleen de tijdelijke chat openen
+      const button = privateButton();
+      return button ? button.click() : location.assign(p.start);
+    }
+    // Een knop op de pagina (Gemini): meteen indrukken als hij er is, anders eerst naar een nieuwe chat.
+    if (privateButton()) return takePrivate();
+    location.assign(p.start);
+  }
+
+  function clearField(ed) {
+    if (ed.tagName === 'TEXTAREA') return insertText(ed, '', true);
+    ed.focus();
+    const range = document.createRange();
+    range.selectNodeContents(ed);
+    getSelection().removeAllRanges();
+    getSelection().addRange(range);
+    document.execCommand('delete');
+  }
+
+  // In de tijdelijke chat (of op de pagina waar de knop zit): de meegenomen tekst terugzetten zodra het veld er is.
+  async function takePrivate() {
+    const p = aiSite?.private;
+    if (!p || !alive() || window !== window.top) return;
+    if (!p.button && !inPrivateChat()) return;
+    const text = await chrome.runtime.sendMessage({ type: 'pf:private-take', host: location.hostname }).catch(() => null);
+    if (!text) return;
+    if (!inPrivateChat() && p.button) {
+      const button = await waitFor(privateButton);
+      button?.click();
+      if (!await waitFor(inPrivateChat, 5000)) return;
+      anchorEd = null; // de site zet een nieuw veld neer
+      await sleep(300);
+    }
+    const ed = await waitFor(liveEditor);
+    if (!ed) return;
+    const result = settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] };
+    insertText(ed, result.text, true);
+    typedIn.add(ed);
+    if (result.items.length) { saveVault(); startRestoring(); }
+    anchorEd = ed;
+    showToast('compact', [el('span', { textContent: I.t('privateReady') })], 6000);
+  }
+  ready.then(takePrivate);
 
   // ---------- Kaart "Wat de AI ziet" ----------
   // Per gegeven: soort, jouw waarde (bankgegevens half verborgen) en de placeholder die de AI krijgt, met

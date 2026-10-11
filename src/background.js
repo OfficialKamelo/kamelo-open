@@ -33,6 +33,7 @@ async function injectIntoOpenTabs() {
     for (const cs of entries) {
       chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, files: cs.js, world: cs.world || 'ISOLATED' })
         .catch(() => {}); // bijv. de Chrome Web Store, waar extensies niet mogen komen
+      if (cs.css) chrome.scripting.insertCSS({ target: { tabId: tab.id, allFrames: true }, files: cs.css }).catch(() => {});
     }
   }
 }
@@ -149,6 +150,21 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     const where = VS.scopeOfSender(sender);
     if (!where) { reply(false); return; }
     updateVault(v => VS.mergeSlice(v, msg.vault, where)).then(() => reply(true), () => reply(false));
+    return true;
+  }
+  // "Vraag het privé": de tekst gaat mee naar de tijdelijke chat in hetzelfde tabblad. Alleen in het werkgeheugen,
+  // alleen voor dit tabblad en deze site (zoals de browser die doorgeeft, niet zoals het bericht zegt), hooguit een minuut.
+  const senderHost = () => { try { return new URL(sender.url).hostname; } catch { return ''; } };
+  if (msg?.type === 'pf:private-set' && sender.tab) {
+    chrome.storage.session.set({ handoff: { tab: sender.tab.id, host: senderHost(), text: String(msg.text), at: Date.now() } }).then(() => reply(true));
+    return true;
+  }
+  if (msg?.type === 'pf:private-take' && sender.tab) {
+    chrome.storage.session.get('handoff').then(async ({ handoff: h }) => {
+      const mine = h && h.tab === sender.tab.id && h.host === senderHost() && Date.now() - h.at < 60000;
+      if (mine || (h && Date.now() - h.at >= 60000)) await chrome.storage.session.remove('handoff');
+      reply(mine ? h.text : null);
+    });
     return true;
   }
   if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }

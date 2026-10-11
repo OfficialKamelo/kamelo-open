@@ -4,7 +4,7 @@ Kamelo handles personal data, so security and privacy reports get priority.
 
 ## Supported versions
 
-Only the latest release receives fixes. Please check that you're on the newest version (see `chrome://extensions`) before reporting.
+Only the latest release receives fixes. Please check that you're on the newest version (see `chrome://extensions`, `edge://extensions` or `about:addons`) before reporting.
 
 ## Reporting a vulnerability
 
@@ -19,7 +19,7 @@ Examples of what to report:
 - ways to read or decrypt the vault, or to bypass the lock
 - a website that can read masked values or the vault through the extension
 
-Please include the Kamelo version, the Chrome version, the site, and steps to reproduce. Use made-up data, never real personal data.
+Please include the Kamelo version, the browser and its version, the site, and steps to reproduce. Use made-up data, never real personal data.
 
 ## What happens next
 

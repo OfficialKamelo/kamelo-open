@@ -17,7 +17,7 @@ No build step: the extension is plain JavaScript (Manifest V3) with no runtime d
 
 ```bash
 git clone https://github.com/OfficialKamelo/kamelo-open.git
-cd kamelo
+cd kamelo-open
 npm install
 npm test
 npm run test:browser

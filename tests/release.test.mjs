@@ -1,7 +1,9 @@
 // Draai met: node tests/release.test.mjs
 // De rekenstukjes van tools/release.mjs: de volgende versie en het bijwerken van de changelog.
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { nextVersion, releaseChangelog } from '../tools/release.mjs';
+import { entries, updatePage } from '../tools/news.mjs';
 
 const CHANGELOG = `# Changelog
 
@@ -35,6 +37,26 @@ const tests = {
   },
   'changelog: lege [Unreleased] wordt geweigerd': () => {
     assert.equal(releaseChangelog(CHANGELOG.replace('### Fixed\n- Something.\n\n', ''), '1.1.4', '2026-10-07'), null);
+  },
+  'nieuws: elke versie, nieuwste eerst, eigen titel of het eerste vetgedrukte punt': () => {
+    const log = releaseChangelog(CHANGELOG.replace('- Something.', '- **Faster masking.** Twice as fast.'), '1.1.4', '2026-10-07');
+    const list = entries(log, { versions: { '1.1.3': { title: 'Older fix', text: 'Text.' } },
+      milestones: [{ date: '2026-10-06', kind: 'Company', title: 'Milestone', text: '', label: 'M', url: 'https://kamelo.eu' }] });
+    assert.deepEqual(list.map(e => e.title), ['Faster masking', 'Older fix', 'Milestone']);
+    assert.equal(list[0].text, 'Twice as fast.');
+    assert.equal(list[0].kind, 'Release');
+    assert.match(list[0].url, /CHANGELOG\.md#114---2026-10-07$/);
+  },
+  'nieuws: alleen beveiliging telt als Security': () => {
+    const log = '## [2.0.1] - 2026-11-01\n\n### Security\n- **Safer.** Yes.\n\n## [2.0.0] - 2026-10-30\n\n### Security\n- A.\n\n### Added\n- B.\n';
+    assert.deepEqual(entries(log, {}).map(e => e.kind), ['Security', 'Release']);
+  },
+  'nieuws: news.html heeft de markeringen en is bijgewerkt': () => {
+    if (!fs.existsSync(new URL('../website/news.html', import.meta.url))) return; // openbare repo: geen website
+    const html = fs.readFileSync(new URL('../website/news.html', import.meta.url), 'utf8');
+    const list = entries(fs.readFileSync(new URL('../CHANGELOG.md', import.meta.url), 'utf8'),
+      JSON.parse(fs.readFileSync(new URL('../tools/news-items.json', import.meta.url), 'utf8')));
+    assert.equal(updatePage(html, list), html, 'draai node tools/news.mjs');
   },
 };
 

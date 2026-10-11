@@ -8,7 +8,7 @@
   const STRINGS = {
     en: {
       extName: 'Kamelo: AI privacy software',
-      extDescription: 'Masks names, IDs, bank details and passwords on your device before they reach ChatGPT, Gemini, Claude or any other AI.',
+      extDescription: 'Talk to AI freely. Kamelo masks your name and personal details on your device before they reach ChatGPT, Gemini, Claude or other AI.',
       actionTitle: 'Kamelo',
 
       settings: 'Settings', back: 'Back', loading: 'Loading…',
@@ -50,6 +50,11 @@
       detailsClose: 'Close',
       detailsKeep: 'Keep visible', detailsKept: 'Stays visible', detailsRemembered: 'remembered',
       toastUndo: 'Undo',
+      markRestored: 'Restored by Kamelo', markAiSaw: 'The AI saw', markAiSees: 'The AI only sees',
+      markPending: 'Masked when you send.', markMaskNow: 'Mask now',
+      statusReady: 'Ready', statusOnSub: 'on {site}', statusPrivateSub: 'temporary chat on {site}',
+      statusReadySub: 'Masks AI fields on {site}', statusOffSub: 'On every site. Personal details go to AI unmasked.',
+      statusNoneSub: 'Kamelo can’t run on this page.', askPrivatelySub: 'Temporary chat: not in your history',
 
       thisMonth: 'This month', statsCaption: 'items protected in {month}', statsEmpty: 'Nothing protected yet in {month}.',
       types_PERSON: 'Names', types_EMAIL: 'Email addresses', types_PHONE: 'Phone numbers', types_IBAN: 'IBANs',
@@ -66,6 +71,9 @@
       topic_LEGAL: 'You’re sharing something about police or the courts.',
       topicAdvice: 'Kamelo can’t mask this. Consider a temporary chat.',
       topicOk: 'OK', topicMute: 'Don’t show again',
+      topicAdvicePrivate: 'Ask it in a temporary chat: it stays out of your history and isn’t used for training.',
+      topicPrivate: 'Ask privately',
+      privateReady: 'Temporary chat: not in your history, not used for training.',
       topicWarnings: 'Warn about sensitive topics',
       exceptionFrom: 'From {site} · {date}',
 
@@ -95,7 +103,7 @@
 
     nl: {
       extName: 'Kamelo: privacysoftware voor AI',
-      extDescription: 'Schermt namen, ID’s, bankgegevens en wachtwoorden lokaal af voordat ze ChatGPT, Gemini, Claude of een andere AI bereiken.',
+      extDescription: 'Praat vrij met AI. Kamelo schermt je naam en persoonsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of andere AI bereiken.',
       actionTitle: 'Kamelo',
 
       settings: 'Instellingen', back: 'Terug', loading: 'Laden…',
@@ -137,6 +145,11 @@
       detailsClose: 'Sluiten',
       detailsKeep: 'Zichtbaar laten', detailsKept: 'Blijft zichtbaar', detailsRemembered: 'onthouden',
       toastUndo: 'Ongedaan maken',
+      markRestored: 'Teruggezet door Kamelo', markAiSaw: 'De AI zag', markAiSees: 'De AI ziet alleen',
+      markPending: 'Wordt afgeschermd als je verstuurt.', markMaskNow: 'Nu afschermen',
+      statusReady: 'Klaar', statusOnSub: 'op {site}', statusPrivateSub: 'tijdelijke chat op {site}',
+      statusReadySub: 'Schermt AI-velden af op {site}', statusOffSub: 'Op alle sites. Persoonsgegevens gaan onafgeschermd naar AI.',
+      statusNoneSub: 'Kamelo kan op deze pagina niet werken.', askPrivatelySub: 'Tijdelijke chat zonder geschiedenis',
 
       thisMonth: 'Deze maand', statsCaption: 'gegevens afgeschermd in {month}', statsEmpty: 'Nog niets afgeschermd in {month}.',
       types_PERSON: 'Namen', types_EMAIL: 'E-mailadressen', types_PHONE: 'Telefoonnummers', types_IBAN: 'IBAN’s',
@@ -153,6 +166,9 @@
       topic_LEGAL: 'Je deelt iets over politie of justitie.',
       topicAdvice: 'Dit kan Kamelo niet afschermen. Overweeg een tijdelijke chat.',
       topicOk: 'Oké', topicMute: 'Niet meer tonen',
+      topicAdvicePrivate: 'Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training.',
+      topicPrivate: 'Vraag het privé',
+      privateReady: 'Tijdelijke chat: niet in je geschiedenis, niet voor training.',
       topicWarnings: 'Waarschuwen bij gevoelige onderwerpen',
       exceptionFrom: 'Van {site} · {date}',
 

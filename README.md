@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>AI doesn't need to know everything.</strong><br>
-  A Chrome extension that masks personal data on your device before it reaches ChatGPT, Gemini, Claude or any other AI,
+  A browser extension for Chrome, Edge and Firefox that masks personal data on your device before it reaches ChatGPT, Gemini, Claude or any other AI,
   and puts the real details back in the answer, only on your screen.
 </p>
 
@@ -20,16 +20,16 @@
 ## How it works
 
 1. **You type or paste** a message into an AI chat, just like always.
-2. **Kamelo masks personal data on your device** before anything is sent. `Sarah Miller` becomes `[PERSON_1]`, an IBAN becomes `[IBAN_1]`.
+2. **Kamelo masks personal data on your device** before anything is sent. `Sarah Miller` becomes `[PERSON_1]`, an email address becomes `[EMAIL_1]`.
 3. **The AI answers with placeholders.** Kamelo replaces them with the real values on your screen.
 
 The link between placeholders and real values is kept in a local vault in your browser. There is no server, no account and no second AI:
 detection is rule-based (patterns, checksums and keyword lists), and restoring is a lookup in that vault.
 
 ```
-You type:        Remind Sarah Miller to pay from GB82 WEST 1234 5698 7654 32.
-The AI sees:     Remind [PERSON_1] to pay from [IBAN_1].
-You see back:    Hi Sarah Miller, please transfer the amount from GB82 WEST 1234 5698 7654 32.
+You type:        I'm Sarah Miller. Since my breakup with Tom Becker I can't sleep. How do I tell my therapist?
+The AI sees:     I'm [PERSON_1]. Since my breakup with [PERSON_2] I can't sleep. How do I tell my therapist?
+You see back:    I'm sorry, Sarah Miller. You could say: "Since my breakup with Tom Becker I've been sleeping badly."
 ```
 
 ## What it detects

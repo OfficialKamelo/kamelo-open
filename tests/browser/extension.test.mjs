@@ -319,6 +319,61 @@ test('gevoelig onderwerp: melding, en "Niet meer tonen" zet dat onderwerp uit', 
   await page.close();
 });
 
+test('gevoelig onderwerp: "Vraag het privé" opent een tijdelijke chat met dezelfde tekst, afgeschermd', async () => {
+  const temp = 'https://chatgpt.com/?temporary-chat=true';
+  const page = await mockPage(browser, 'https://chatgpt.com/', CHAT, req => {
+    if (req.url() === temp) req.respond({ status: 200, contentType: 'text/html', body: CHAT });
+  });
+  await paste(page, '#prompt-textarea', `I have been struggling with depression lately. My name is ${SAMPLE.name}.`);
+  await waitForShadow(page, html => /Ask privately|Vraag het privé/.test(html), 6_000);
+  await Promise.all([page.waitForNavigation({ waitUntil: 'domcontentloaded' }), clickText(page, /^(Ask privately|Vraag het privé)$/)]);
+  assert.equal(page.url(), temp);
+  await page.waitForFunction(() => document.querySelector('#prompt-textarea').innerText.includes('depression'), { timeout: 10_000 });
+  const text = await textOf(page, '#prompt-textarea');
+  assert.match(text, /\[PERSON_\d+\]/);
+  assert.ok(!text.includes(SAMPLE.name), text);
+  // De tekst is maar één keer mee te nemen.
+  const again = await worker.evaluate(() => chrome.storage.session.get('handoff'));
+  assert.equal(again.handoff, undefined);
+  await page.close();
+});
+
+test('gevoelig onderwerp: op Claude opent "Vraag het privé" een incognito-chat', async () => {
+  const temp = 'https://claude.ai/new?incognito';
+  const CLAUDE = CHAT.replace('id="prompt-textarea"', 'id="prompt-textarea" data-testid="chat-input"');
+  const page = await mockPage(browser, 'https://claude.ai/new', CLAUDE, req => {
+    if (req.url() === temp) req.respond({ status: 200, contentType: 'text/html', body: CLAUDE });
+  });
+  await paste(page, '#prompt-textarea', `My doctor says I might have diabetes. I'm ${SAMPLE.name}.`);
+  await waitForShadow(page, html => /Ask privately|Vraag het privé/.test(html), 6_000);
+  await Promise.all([page.waitForNavigation({ waitUntil: 'domcontentloaded' }), clickText(page, /^(Ask privately|Vraag het privé)$/)]);
+  assert.equal(page.url(), temp);
+  await page.waitForFunction(() => document.querySelector('#prompt-textarea').innerText.includes('diabetes'), { timeout: 10_000 });
+  assert.ok(!(await textOf(page, '#prompt-textarea')).includes(SAMPLE.name));
+  await page.close();
+});
+
+test('gevoelig onderwerp: op Gemini drukt "Vraag het privé" de knop voor een tijdelijke chat in', async () => {
+  // Zoals Gemini: een knop op de pagina, geen adres. Na de klik een nieuw, leeg veld in een "tijdelijke" chat.
+  const GEMINI = `<!doctype html><title>Gemini</title>
+<chat-window><rich-textarea><div class="ql-editor" contenteditable="true"></div></rich-textarea></chat-window>
+<temp-chat-button><button aria-label="Temporary chat">tmp</button></temp-chat-button>
+<script>
+  document.querySelector('temp-chat-button button').addEventListener('click', () => {
+    const w = document.querySelector('chat-window');
+    w.classList.add('is-temporary-chat');
+    w.innerHTML = '<rich-textarea><div class="ql-editor" contenteditable="true"></div></rich-textarea>';
+  });
+</script>`;
+  const page = await mockPage(browser, 'https://gemini.google.com/app', GEMINI);
+  await paste(page, '.ql-editor', `I have been struggling with depression lately. I'm ${SAMPLE.name}.`);
+  await waitForShadow(page, html => /Ask privately|Vraag het privé/.test(html), 6_000);
+  await clickText(page, /^(Ask privately|Vraag het privé)$/);
+  await page.waitForFunction(() => document.querySelector('chat-window.is-temporary-chat .ql-editor')?.innerText.includes('depression'), { timeout: 10_000 });
+  assert.ok(!(await textOf(page, 'chat-window .ql-editor')).includes(SAMPLE.name));
+  await page.close();
+});
+
 test('kluis: wat in het ene tabblad is afgeschermd, komt in een ander tabblad van dezelfde AI-site terug', async () => {
   const a = await mockPage(browser, 'https://chatgpt.com/', CHAT);
   await paste(a, '#prompt-textarea', SAMPLE.text);
@@ -379,4 +434,83 @@ test('beveiliging: een andere website kan de kluis niet uitlezen', async () => {
   }, probe);
   assert.ok(!framed.includes(SAMPLE.name) && !framed.includes('GB82'), `via een srcdoc-venster uitgelekt: "${framed}"`);
   await evil.close();
+});
+
+// ---------- Zichtbaar in de pagina (CSS Custom Highlight API) ----------
+const marks = page => page.evaluate(() => Object.fromEntries(['pending', 'ph', 'restored'].map(k => [k, CSS.highlights.get(`kamelo-${k}`)?.size ?? 0])));
+const PROSE = `<!doctype html><title>Chat</title>
+<main><div id="answer" style="font:16px/24px sans-serif;padding:20px"></div></main>
+<form><div id="prompt-textarea" contenteditable="true" style="font:16px/24px sans-serif;padding:20px"><p><br></p></div><button type="submit" aria-label="Send">↑</button></form>`;
+
+test('zichtbaar: golflijn tijdens typen, label na afschermen, stippellijn onder wat is teruggezet', async () => {
+  const page = await mockPage(browser, 'https://chatgpt.com/?lang=en', PROSE);
+  await page.focus('#prompt-textarea');
+  await page.keyboard.type(`Write to ${SAMPLE.name} at sarah.miller@example.com`);
+  await page.waitForFunction(() => CSS.highlights.get('kamelo-pending')?.size === 2, { timeout: 5_000 });
+  await page.keyboard.press('Enter');
+  const sent = await waitForText(page, '#prompt-textarea', t => /\[PERSON_\d+\]/.test(t));
+  await page.waitForFunction(() => CSS.highlights.get('kamelo-ph')?.size === 2 && !CSS.highlights.get('kamelo-pending')?.size, { timeout: 5_000 });
+  // De pagina zelf blijft onaangeroerd: geen extra elementen in het veld.
+  assert.equal(await page.$eval('#prompt-textarea', ed => ed.querySelectorAll('span, mark').length), 0);
+  await page.evaluate(text => { document.getElementById('answer').textContent = `Sure, ${text.match(/\[PERSON_\d+\]/)[0]}!`; }, sent);
+  await waitForText(page, '#answer', t => t.includes(SAMPLE.name));
+  await page.waitForFunction(() => CSS.highlights.get('kamelo-restored')?.size === 1, { timeout: 5_000 });
+  // Muis op de teruggezette naam: een kaartje met de placeholder die de AI zag.
+  const pos = await page.evaluate(name => {
+    const t = document.getElementById('answer').firstChild, i = t.nodeValue.indexOf(name);
+    const r = document.createRange(); r.setStart(t, i + 1); r.setEnd(t, i + 3); const b = r.getBoundingClientRect();
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+  }, SAMPLE.name);
+  await page.mouse.move(pos.x - 30, pos.y);
+  await page.mouse.move(pos.x, pos.y, { steps: 4 });
+  const html = await waitForShadow(page, h => h.includes('role="tooltip"'));
+  assert.match(html, /Restored by Kamelo|Teruggezet door Kamelo/);
+  assert.match(html, /\[PERSON_\d+\]/);
+  await page.close();
+});
+
+test('zichtbaar: "Nu afschermen" in het kaartje schermt het veld af; zonder de schakelaar geen markeringen', async () => {
+  const page = await mockPage(browser, 'https://chatgpt.com/?lang=en', PROSE);
+  await page.focus('#prompt-textarea');
+  await page.keyboard.type(`Ask ${SAMPLE.name} about it`);
+  await page.waitForFunction(() => CSS.highlights.get('kamelo-pending')?.size === 1, { timeout: 5_000 });
+  const pos = await page.evaluate(() => {
+    const r = [...CSS.highlights.get('kamelo-pending')][0].getBoundingClientRect();
+    return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+  });
+  await page.mouse.move(pos.x - 30, pos.y);
+  await page.mouse.move(pos.x, pos.y, { steps: 4 });
+  await waitForShadow(page, h => /Mask now|Nu afschermen/.test(h));
+  await clickText(page, /^(Mask now|Nu afschermen)$/);
+  await waitForText(page, '#prompt-textarea', t => /\[PERSON_\d+\]/.test(t));
+  await worker.evaluate(async () => {
+    const { settings } = await chrome.storage.local.get('settings');
+    await chrome.storage.local.set({ settings: { ...settings, enabled: false } });
+  });
+  await page.waitForFunction(() => !CSS.highlights.get('kamelo-ph')?.size && !CSS.highlights.get('kamelo-pending')?.size, { timeout: 5_000 });
+  await worker.evaluate(async () => {
+    const { settings } = await chrome.storage.local.get('settings');
+    await chrome.storage.local.set({ settings: { ...settings, enabled: true } });
+  });
+  await page.close();
+});
+
+test('popup: "Vraag het privé" brengt het tabblad met de tekst naar een tijdelijke chat', async () => {
+  const temp = 'https://chatgpt.com/?temporary-chat=true';
+  // Een eigen adres, zodat het bericht naar dit tabblad gaat en niet naar een ander ChatGPT-tabblad.
+  const page = await mockPage(browser, 'https://chatgpt.com/c/popup-private', CHAT, req => {
+    if (req.url() === temp) req.respond({ status: 200, contentType: 'text/html', body: CHAT });
+  });
+  await page.$eval('#prompt-textarea', (ed, name) => { ed.textContent = `A question about my landlord, from ${name}`; }, SAMPLE.name);
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
+    worker.evaluate(async () => {
+      const [tab] = await chrome.tabs.query({ url: 'https://chatgpt.com/c/popup-private' });
+      await chrome.tabs.sendMessage(tab.id, { type: 'pf:private-open' }).catch(() => {});
+    }),
+  ]);
+  assert.equal(page.url(), temp);
+  await page.waitForFunction(() => document.querySelector('#prompt-textarea').innerText.includes('landlord'), { timeout: 10_000 });
+  assert.ok(!(await textOf(page, '#prompt-textarea')).includes(SAMPLE.name));
+  await page.close();
 });

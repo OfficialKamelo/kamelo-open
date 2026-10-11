@@ -672,13 +672,29 @@
     return text.replace(PLACEHOLDER_RE, m => (inScope(vault, m, opts) ? vault.byPlaceholder[m] ?? m : m));
   }
 
+  // Als restore, maar met de plekken van de teruggezette waarden in de nieuwe tekst (voor de markering in de pagina).
+  function restoreSpans(text, vault, opts = {}) {
+    const spans = [];
+    let out = '', last = 0;
+    PLACEHOLDER_RE.lastIndex = 0;
+    for (let m; (m = PLACEHOLDER_RE.exec(text));) {
+      const value = inScope(vault, m[0], opts) ? vault.byPlaceholder[m[0]] : undefined;
+      if (value === undefined) continue;
+      out += text.slice(last, m.index);
+      spans.push({ start: out.length, end: out.length + value.length, placeholder: m[0] });
+      out += value;
+      last = m.index + m[0].length;
+    }
+    return { text: out + text.slice(last), spans };
+  }
+
   function hasPlaceholder(text) {
     PLACEHOLDER_RE.lastIndex = 0;
     return PLACEHOLDER_RE.test(text);
   }
 
   const api = {
-    detect, mask, restore, prune, limit, hasPlaceholder, emptyVault, inScope, MAX_ENTRIES,
+    detect, mask, restore, restoreSpans, prune, limit, hasPlaceholder, emptyVault, inScope, MAX_ENTRIES,
     LABELS, IBAN_COUNTRIES: Object.keys(IBAN_LEN).length,
     _internal: { elfproef, luhn, ibanValid, abaValid, verhoeff, cpfValid, cnIdValid, beValid, frNirValid },
   };
