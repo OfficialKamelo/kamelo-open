@@ -18,12 +18,14 @@ jobs:
           node-version: 22
           cache: npm
       - name: Syntax check
-        run: find src popup unlock tools tests \( -name '*.js' -o -name '*.mjs' \) | xargs -n1 node --check
+        # unlock/ bestaat alleen in kamelo-prive (Kamelo for teams), niet in kamelo-open.
+        run: find src popup chat tools tests $(ls -d unlock 2>/dev/null) \( -name '*.js' -o -name '*.mjs' \) | xargs -n1 node --check
       - name: Manifest is valid JSON
         run: node -e "JSON.parse(require('fs').readFileSync('manifest.json','utf8'))"
       - name: No network requests in extension code
         run: |
-          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup unlock --include='*.js' | grep -v "net-main.js"; then
+          # chat/device.js (antwoorden op dit apparaat) hoort er ook bij; chat.js niet, die praat met de relay (Kamelo Plus).
+          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat/device.js --include='*.js' | grep -v "net-main.js"; then
             echo "Network call found in extension code. Kamelo must not make network requests."; exit 1
           fi
       - run: npm ci

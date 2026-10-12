@@ -1,5 +1,7 @@
 // Content script.
-// Schermt persoonsgegevens af in alles wat naar een AI gaat:
+// In beide edities (zie edition.js): op AI-chatsites een rustige melding bij een persoonlijk onderwerp, met de knop
+// naar een tijdelijke chat en (in Chrome) naar Private Chat. Alleen in Kamelo for teams (MASK) daarnaast:
+// schermt persoonsgegevens af in alles wat naar een AI gaat:
 //  - op AI-sites (ChatGPT, Gemini, Claude, …) in elk tekstveld;
 //  - op andere sites (Gmail, Slack, Notion, …) alleen in AI-velden, zoals "Help me schrijven";
 //  - in verzoeken die een pagina rechtstreeks naar een AI-API stuurt (zie net-main.js);
@@ -17,10 +19,13 @@
   const S = globalThis.PrivacySites;
   const I = globalThis.PrivacyI18n;
   const T = globalThis.PrivacyTopics;
+  const TA = globalThis.KameloTopicAi;
+  // Afschermen alleen in Kamelo for teams. De gratis editie laadt detector.js niet, en schermt nergens iets af.
+  const MASK = !!D && globalThis.KameloEdition !== 'public';
   // Al actief in dit frame (bijv. ook ingevoegd na installeren)? Dan niets doen, tenzij die versie geen verbinding
   // met de extensie meer heeft. Oudere versies zetten hier true in plaats van een functie.
   const prev = globalThis.__privacyfilterActive;
-  if (!D || !C || !S || (typeof prev === 'function' && prev())) return;
+  if (!C || !S || (typeof prev === 'function' && prev())) return;
   const alive = () => { try { return !!chrome.runtime?.id; } catch { return false; } };
   globalThis.__privacyfilterActive = alive;
 
@@ -33,7 +38,7 @@
   document.dispatchEvent(new CustomEvent('pf:hello', { detail: INSTANCE }));
 
   let settings = { ...C.DEFAULT_SETTINGS };
-  let vault = D.emptyVault();
+  let vault = MASK ? D.emptyVault() : { byPlaceholder: {} };
   let aiSite = S.siteFor(location.hostname); // de AI-site (zie sites.js), of null op een gewone site
   let internalPaste = false;
 
@@ -64,7 +69,7 @@
   function applySettings(next) {
     settings = { ...C.DEFAULT_SETTINGS, ...(next || {}) };
     aiSite = S.siteFor(location.hostname, settings.customAiSites);
-    if (aiSite) startRestoring();
+    if (aiSite && MASK) startRestoring();
     repaintAll();
   }
 
@@ -80,10 +85,10 @@
   // De kluis staat in het werkgeheugen (chrome.storage.session); de achtergrond schrijft hem
   // (zo nodig versleuteld) naar schijf. Eerst wachten tot die hem heeft klaargezet.
   const ready = (async () => {
-    await chrome.runtime.sendMessage({ type: 'pf:init' }).catch(() => {});
+    if (MASK) await chrome.runtime.sendMessage({ type: 'pf:init' }).catch(() => {});
     const [{ settings: s, noticesSeen: seen }, { vault: v }] = await Promise.all([
       chrome.storage.local.get(['settings', 'noticesSeen']),
-      fetchVault().then(vault => ({ vault })),
+      MASK ? fetchVault().then(vault => ({ vault })) : {},
     ]);
     if (v && typeof v === 'object') vault = v;
     noticesSeen = Number(seen) || 0;
@@ -203,6 +208,8 @@
     const ed = aiEditor(e.target);
     const text = ed && e.clipboardData?.getData('text/plain');
     if (!text) return;
+    byUser.set(ed, e.isTrusted);
+    if (!MASK) { typedIn.add(ed); return checkTopics(text, ed); }
     const result = D.mask(text, vault, opts());
     typedIn.add(ed);
     if (!result.items.length) return checkTopics(text, ed);
@@ -215,7 +222,7 @@
 
   window.addEventListener('keydown', e => {
     if (superseded) return;
-    if (!settings.enabled || e.key !== 'Enter' || e.shiftKey || e.isComposing) return;
+    if (!MASK || !settings.enabled || e.key !== 'Enter' || e.shiftKey || e.isComposing) return;
     const ed = aiEditor(e.target);
     if (ed && guard(ed)) {
       e.preventDefault();
@@ -242,7 +249,7 @@
 
   window.addEventListener('click', e => {
     if (superseded) return;
-    if (!settings.enabled) return;
+    if (!MASK || !settings.enabled) return;
     const btn = e.target.closest?.('button, [role="button"]');
     if (!btn || !isSendButton(btn)) return;
     const ed = editorNear(btn);
@@ -286,7 +293,7 @@
   let refetchTimer = 0;
   // De popup vraagt hier op welke site we draaien, zodat hij niet hoeft te raden aan de hand van de url.
   chrome.runtime.onMessage.addListener((msg, _sender, reply) => {
-    if (msg?.type === 'pf:vault-changed') {
+    if (msg?.type === 'pf:vault-changed' && MASK) {
       clearTimeout(refetchTimer);
       refetchTimer = setTimeout(() => {
         if (!alive()) return;
@@ -306,8 +313,8 @@
   // - een budget per pagina, zodat een site de kluis niet kan volstoppen tot echte gegevens eruit vallen;
   // - de naam in de melding moet eruitzien als een hostnaam.
   let apiBudget = 500;
-  document.addEventListener('pf:ping', () => { if (!superseded) document.dispatchEvent(new CustomEvent('pf:pong')); });
-  document.addEventListener('pf:mask', async e => {
+  if (MASK) document.addEventListener('pf:ping', () => { if (!superseded) document.dispatchEvent(new CustomEvent('pf:pong')); });
+  if (MASK) document.addEventListener('pf:mask', async e => {
     if (superseded) return;
     let msg;
     try { msg = JSON.parse(e.detail); } catch { return; }
@@ -346,10 +353,15 @@
   // blok in het antwoord. Placeholders blijven alleen staan in het veld waarin de gebruiker typt of plakt.
   // De selector uit sites.js is het snelst en het zekerst; zonder (of als die niet meer klopt) raden we.
   const typedIn = new WeakSet();
+  // Kwam de laatste wijziging in dit veld van de gebruiker zelf (een echte toets of plakactie)? Een pagina kan zelf tekst
+  // in het veld zetten en input-events sturen; dan vragen we de AI op dit apparaat niets (geen rekenwerk op commando
+  // van de site), en wordt een vraag die naar Private Chat gaat niet vanzelf gesteld.
+  const byUser = new WeakMap();
   window.addEventListener('input', e => {
     const ed = findEditor(e.target);
     if (!ed) return;
     typedIn.add(ed);
+    byUser.set(ed, e.isTrusted);
     if (!superseded && settings.enabled && goesToAi(ed)) checkTopicsSoon(ed);
     paintSoon(ed);
   }, true);
@@ -409,6 +421,7 @@
   // Een browser zonder de API (Firefox vóór 140) slaat dit over; afschermen en terugzetten werken gewoon.
 
   const MARKS = (() => {
+    if (!MASK) return null;
     try {
       if (!globalThis.CSS?.highlights || typeof Highlight !== 'function') return null;
       const m = { pending: new Highlight(), ph: new Highlight(), restored: new Highlight() };
@@ -612,7 +625,7 @@
   // hier (synchroon, zodat de klik als gebruikersactie blijft gelden) om de echte waarden terug te zetten.
   // Ook dit event kan de pagina zelf sturen. Daarom alleen tijdens een echte gebruikersactie (een klik of toets,
   // die een pagina niet kan namaken) en alleen met gegevens van deze site.
-  document.addEventListener('pf:restore', e => {
+  if (MASK) document.addEventListener('pf:restore', e => {
     if (superseded) return;
     let msg;
     try { msg = JSON.parse(e.detail); } catch { return; }
@@ -822,6 +835,9 @@
         .k button { font-size: 12px; font-weight: 500; background: var(--hover); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
         .k .p { background: #0071e3; color: #fff; }
         .k .p:hover { filter: brightness(1.08); }
+        button.done { display: flex; background: none; padding: 0; cursor: pointer; } button.done:hover { text-decoration: underline; }
+        .c .done { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; color: var(--dim); }
+        .c .done::before { content: ""; width: 8px; height: 4px; margin-top: -2px; border: solid #34c759; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
         @media (prefers-reduced-motion: reduce) { .t { transform: none; transition: opacity .15s; } }
       </style>
       <div class="t" role="status" aria-live="polite"></div>`;
@@ -879,9 +895,12 @@
   // Hoe vaak de volledige melding al is getoond (alleen een getal, in chrome.storage.local).
   let noticesSeen = 0;
 
+  // De laatste melding "afgeschermd", zodat de kaart bij een gevoelig onderwerp er nog naartoe kan (Wat de AI ziet).
+  let lastMasked = null;
   function toast(items, ctx) {
     const unique = uniqueItems(items);
     if (!unique.length) return;
+    lastMasked = { unique, ctx };
     anchorEd = ctx?.ed || null;
     // Met het toetsenbord geopend (een klik zonder muis): de focus gaat naar de kaart, en daarna terug.
     const details = e => { hideToast(); openDetails(unique, ctx, e.detail === 0); };
@@ -905,41 +924,97 @@
 
   // ---------- Gevoelige onderwerpen ----------
   // Gezondheid, geloof, geldzorgen, …: niet te vervangen door een placeholder, dus alleen een rustige melding.
-  // Eén keer per onderwerp per pagina; "Niet meer tonen" zet dat onderwerp voorgoed uit (terug te zetten in de instellingen).
+  // Teams: één keer per onderwerp per pagina. Gratis (de melding is daar het hele product): één keer per bericht. Is het
+  // veld weer leeg (verstuurd of gewist), of staat het onderwerp er niet meer in, dan komt de melding de volgende keer terug.
 
   const warnedTopics = new Set();
+  const byWords = new Set(); // onderwerpen die de woordenlijst vond (die van de AI vergeten we pas bij een leeg veld)
+  const PER_MESSAGE = !MASK;
+  function forgetTopics(text, found) {
+    if (!PER_MESSAGE || !warnedTopics.size) return;
+    if (!text.trim()) { warnedTopics.clear(); byWords.clear(); return; }
+    for (const k of [...byWords]) if (!found.includes(k)) { warnedTopics.delete(k); byWords.delete(k); }
+  }
+  // Na versturen maakt de site het veld zelf leeg, vaak zonder input-event: zolang er een melding is geweest, kijken we
+  // af en toe of het veld leeg is.
+  let emptyWatch = 0;
+  function watchEmpty(ed) {
+    if (!PER_MESSAGE || !ed || emptyWatch) return;
+    emptyWatch = setInterval(() => {
+      if (!warnedTopics.size) { clearInterval(emptyWatch); emptyWatch = 0; return; }
+      if (!ed.isConnected || !getText(ed).trim()) { forgetTopics('', []); clearInterval(emptyWatch); emptyWatch = 0; }
+    }, 1000);
+  }
   let topicTimer;
+  const topicsOn = () => !!T && settings.enabled && settings.topicWarnings && !inPrivateChat();
+  const freshTopic = k => !warnedTopics.has(k) && !(settings.mutedTopics || []).includes(k);
   function checkTopicsSoon(ed) {
     clearTimeout(topicTimer);
-    topicTimer = setTimeout(() => ed.isConnected && checkTopics(getText(ed), ed), 900);
+    deviceTopics?.cancel();
+    topicTimer = setTimeout(() => {
+      if (!ed.isConnected) return;
+      const text = getText(ed);
+      if (!text.trim()) return void forgetTopics('', []);
+      if (!checkTopics(text, ed)) askDevice(ed);
+    }, 900);
   }
 
+  // Geeft true als de woordenlijst een onderwerp vond (ook als de melding daarvoor al is geweest of uitstaat).
   function checkTopics(text, ed = null) {
-    if (!T || !settings.enabled || !settings.topicWarnings || inPrivateChat()) return;
-    const muted = settings.mutedTopics || [];
-    const topic = T.sensitiveTopics(text).find(k => !warnedTopics.has(k) && !muted.includes(k));
-    if (!topic) return;
+    if (!topicsOn()) return false;
+    const found = T.sensitiveTopics(text);
+    forgetTopics(text, found);
+    const topic = found.find(freshTopic);
+    if (topic) { showTopic(topic, ed); if (warnedTopics.has(topic) && PER_MESSAGE) byWords.add(topic); }
+    return found.length > 0;
+  }
+
+  // Tweede kans (zie topic-ai.js): vond de woordenlijst niets, dan de AI van Chrome op dit apparaat, als die er al is.
+  // Alleen in de gratis editie en alleen in Chrome. De tekst gaat alleen naar Kamelo's eigen achtergrond.
+  const deviceTopics = TA && globalThis.KameloEdition === 'public' && I.BROWSER.id === 'chrome'
+    ? TA.gate({ ask: text => (alive() ? chrome.runtime.sendMessage({ type: 'pf:topic-ai', text }) : Promise.resolve(null)) })
+    : null;
+  function askDevice(ed) {
+    if (!deviceTopics || !topicsOn() || !byUser.get(ed) || !TA.TOPICS.some(freshTopic)) return;
+    deviceTopics.schedule({
+      read: () => (ed.isConnected && !superseded ? getText(ed) : ''),
+      onTopic: topic => showTopic(topic, ed),
+      waited: 900,
+    });
+  }
+
+  function showTopic(topic, ed = null) {
+    if (!topicsOn() || !freshTopic(topic)) return;
     // Staat er al een melding (bijv. "2 afgeschermd" bij hetzelfde plakken)? Dan erna.
-    if (toastShown() || panel) return void setTimeout(() => checkTopics(text, ed), 1500);
+    // Het detailvenster staat open? Dan erna. Een gewone "afgeschermd"-melding wordt vervangen: de keuze voor Private Chat
+    // is belangrijker, en de kaart zegt zelf hoeveel er is afgeschermd.
+    if (panel) return void setTimeout(() => showTopic(topic, ed), 1500);
     warnedTopics.add(topic);
+    watchEmpty(ed);
     anchorEd = ed;
-    const canGoPrivate = !!aiSite?.private && !!ed;
+    // Met een veld: "Ask in Private Chat" brengt de vraag naar Kamelo Private Chat (docs/PLAN-PRIVE-CHAT.md).
+    // Alleen in Chrome: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding alleen de tijdelijke chat.
+    const canProtect = !!ed && !!settings.privateChat && I.BROWSER.id === 'chrome';
+    const masked = ed?.isConnected ? new Set(getText(ed).match(/\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g) || []).size : 0;
     showToast('card', [
       el('div', { className: 'c' },
         el('b', { textContent: I.t('topicTitle') }),
-        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(canGoPrivate ? 'topicAdvicePrivate' : 'topicAdvice')}` }),
+        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(canProtect ? 'topicAdviceChat' : ed && aiSite?.private ? 'topicAdvicePrivate' : 'topicAdvice')}` }),
+        ...(masked ? [lastMasked && lastMasked.ctx?.ed === ed
+          ? textButton('done', I.t('toastCompact', { n: masked }), e => { const m = lastMasked; hideToast(); openDetails(m.unique, m.ctx, e.detail === 0); })
+          : el('span', { className: 'done', textContent: I.t('toastCompact', { n: masked }) })] : []),
         el('div', { className: 'k' },
-          ...(canGoPrivate ? [textButton('p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
-          textButton('', I.t('topicOk'), hideToast),
-          textButton('', I.t('topicMute'), () => {
-            settings.mutedTopics = [...new Set([...(settings.mutedTopics || []), topic])];
-            store('local', { settings });
-            hideToast();
-          }))),
-    ], 9000);
+          ...(canProtect ? [textButton('p', I.t('topicProtect'), () => { hideToast(); goPrivateChat(ed); })] : []),
+          // Tweede keuze: een tijdelijke chat in dezelfde AI (voor wie z'n eigen ChatGPT wil houden).
+          ...(ed && aiSite?.private ? [textButton(canProtect ? '' : 'p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
+        )),
+      // Sluiten met het kruisje of Esc; uitzetten kan in de instellingen (Waarschuwen bij gevoelige onderwerpen).
+      iconButton('x', I.t('detailsClose'), hideToast),
+    // Publiek is deze melding het hele product: langer laten staan. Teams toont daarnaast al de placeholders.
+    ], MASK ? 15000 : 40000);
   }
 
-  // ---------- Vraag het privé ----------
+  // ---------- Tijdelijke chat (Ask privately) ----------
   // Een persoonlijke vraag in een tijdelijke chat van dezelfde site: niet in je geschiedenis, niet in het geheugen van
   // de AI en niet gebruikt voor training. De tekst gaat via de achtergrond mee (alleen in het werkgeheugen, alleen
   // dit tabblad), en wordt in de tijdelijke chat weer in het veld gezet, afgeschermd zoals altijd.
@@ -957,6 +1032,17 @@
     return null;
   }
   const privateButton = () => { try { return document.querySelector(aiSite.private.button); } catch { return null; } };
+
+  // Naar Kamelo Private Chat: de tekst gaat via de achtergrond (alleen werkgeheugen) naar Kamelo's eigen chatpagina,
+  // het veld hier wordt leeg. Er gaat niets naar deze AI. Synchroon versturen, zodat de klik als gebruikersactie telt.
+  function goPrivateChat(ed) {
+    // De echte tekst, niet die met de placeholders van deze site: het paneel heeft een eigen kluis, en anders kunnen
+    // twee mensen daar allebei [PERSON_1] worden. Hij gaat alleen via het werkgeheugen van de achtergrond.
+    const text = ed.isConnected ? (MASK ? restoreText(getText(ed)) : getText(ed)).trim() : '';
+    if (!alive()) return;
+    chrome.runtime.sendMessage({ type: 'pf:pchat-open', text, typed: byUser.get(ed) === true }).catch(() => {});
+    if (ed.isConnected) clearField(ed);
+  }
 
   // ed: het veld met de vraag; uit de popup kan dat leeg zijn of ontbreken (dan gewoon een nieuwe tijdelijke chat).
   async function goPrivate(ed) {
@@ -1000,7 +1086,7 @@
     }
     const ed = await waitFor(liveEditor);
     if (!ed) return;
-    const result = settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] };
+    const result = MASK && settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] };
     insertText(ed, result.text, true);
     typedIn.add(ed);
     if (result.items.length) { saveVault(); startRestoring(); }

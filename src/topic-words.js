@@ -5,7 +5,10 @@
 //    Engelse zin over "10 min", en "ma" (Ests: ik) niet in een Italiaanse zin.
 //  - self: ik, mijn, wij, ik heb, ik ben, … Geen "me/mij/to me": "Leg me uit wat diabetes is" is een algemene vraag.
 //  - HEALTH, MENTAL, SEXUALITY, RELIGION, MONEY, LEGAL: de onderwerpen.
-// Notatie: * = het woord mag langer doorlopen (depressi* → depressie, depressief); _ = spatie in een woordgroep.
+// Notatie: * = het woord mag langer doorlopen (depressi* → depressie, depressief); *pijn = woordeinde (keelpijn,
+// buikpijn); _ = spatie in een woordgroep (een woordgroep met apostrof telt ook zonder: can't_pay → cant pay);
+// ! vooraan = de woordgroep zegt zelf al dat het over de schrijver gaat, ook zonder ik/mijn (!behind_on_rent).
+// NOT: woorden die zeggen dat het niet over de schrijver gaat (huiswerk, roman, personage): dan geen melding.
 // Woorden die ook gewoon werkjargon zijn (disabled, technical debt, dependency, diagnostics) staan er bewust niet in.
 // Zelfdoding en zelfbeschadiging ook niet: daar hoort geen privacymelding bij.
 //
@@ -21,78 +24,243 @@
   const LANGS = {
     // ---------- Europa ----------
     en: {
-      words: `the and is are was to of in it that with for you what how about can have has this`,
-      self: `i i'm i’m i've i’ve i'd i’d my mine myself our ours`,
-      HEALTH: `diagnosed diagnosis cancer tumor tumour chemo chemotherapy radiotherapy diabetes hiv aids std sti pregnan*
+      words: `the a an and is are was to of in on at it that with for from you what how about can have has had this be
+        been do dont not so but if just like got get keep since all no up out he she his her they we me your`,
+      self: `i i'm im i've ive i'd idk my mine myself our ours`,
+      NOT: `homework essay essays assignment novel novels fiction chapter protagonist villain main_character
+        my_character
+        characters screenplay in_my_story short_story history_class pain_point pain_points pain_in_the_neck
+        pain_in_the_ass pain_in_the_butt dying_of_laughter rash_decision* sore_loser* technical_debt tech_debt
+        design_debt the_history_of learn_about learning_about presentation`,
+      HEALTH: `diagnosed diagnosis cancer tumor tumour chemo chemotherapy radiotherapy diabetes hiv aids std sti
+        pregnan*
         miscarriage abortion ivf medication* prescription* hospital hospitals hospitalized hospitalised hospitalization
-        hospitalisation surgery chronic epilepsy asthma heart_attack* dementia alzheimer* parkinson* autism autistic adhd
+        hospitalisation surgery chronic epilepsy asthma heart_attack* dementia alzheimer* parkinson* autism autistic
+        adhd
         rheumat* disease* illness* symptom* oncolo* cardiolo* neurologist allergic allergy allergies migraine*
-        multiple_sclerosis crohn* endometriosis menopause disability sick_leave`,
-      MENTAL: `depressi* anxiety_disorder* panic_attack* burnout* burn-out* eating_disorder* anorexia bulimia bipolar*
-        schizophren* psychosis ptsd trauma* psychologist* psychiatrist* therapist* therapy antidepressant* addict* rehab ocd`,
-      SEXUALITY: `gay lesbian* bisexual* transgender* non-binary nonbinary queer sexual_orientation coming-out sexuality
-        erectile libido`,
+        multiple_sclerosis crohn* endometriosis menopause disability sick_leave
+        lump_in lump_on lumps breast_lump chest_pain* stomach_pain* back_pain* joint_pain* pain_in pain_when pain_after
+        in_pain painkiller* cramps im_bleeding been_bleeding keeps_bleeding bleeding_from heavy_bleeding blood_in_my
+        coughing_up_blood coughing coughed a_cough dry_cough bad_cough cough_for cough_that throwing_up threw_up
+        keep_vomiting vomit* diarrhea diarrhoea constipat*
+        skin_rash rash_on fever headache* nausea nauseous dizzy dizziness fainted infection* swollen swelling biopsy
+        mammogram smear_test pap_smear ultrasound mri x-ray blood_test* test_results scan_results my_doctor my_gp
+        broke_his_arm broke_her_arm broke_my_arm broke_his_leg broke_her_leg broke_my_leg broke_my_wrist broken_arm
+        broken_leg broken_wrist fracture* hip_hurts back_hurts stomach_hurts head_hurts chest_hurts knee_hurts
+        tummy_hurts throat_hurts joints_hurt mole_on weird_mole stops_breathing stop_breathing sleep_apnea
+        losing_weight_without lost_weight_without weight_loss_without my_period missed_period period_is_late
+        period_late sore_throat throat_is_sore white_spots my_throat my_stomach my_tummy my_knee my_ankle my_hip
+        my_joints
+        my_kidney* my_liver my_lungs my_bladder my_thyroid out_of_breath rash sore ache aches aching achy *ache itchy
+        twitch* high_temperature a_temperature stiff_neck nosebleed* ct_scan mri_scan pet_scan for_a_scan bump_on
+        bruise* blister* flu the_flu covid covid-19 have_a_cold got_a_cold caught_a_cold sprain* numb numbness tingling
+        bloated bloating heartburn reflux insulin dialysis hernia hair_loss hair_falling_out losing_my_hair seizure*
+        had_a_stroke blood_pressure cholesterol when_i_pee burns_when birth_control the_pill iud pills my_meds meds
+        see_a_doctor the_doctor urgent_care the_er breastfeed* injury injured concussion dentist toothache cramp*
+        cramping pressure_in chest_tightness tight_chest uti stitches deep_cut
+        swallowing antibiotic* physio* physical_therapy short_of_breath shortness_of_breath tired_all_the_time
+        exhausted_all_the_time
+        keeps_forgetting_things forgetting_things_lately memory_loss memory_problems losing_her_memory losing_his_memory`,
+      MENTAL: `depression* depressed depressive anxiety_disorder* panic_attack* burnout* burn-out* burnt_out burned_out
+        eating_disorder* eating_problem binge_eating keep_binging anorexia bulimia bipolar* schizophren* psychosis ptsd
+        trauma* psychologist* psychiatrist* therapist* therapy antidepressant* addict* rehab ocd alcoholic alcoholism
+        drinking_problem been_low feeling_low feel_low feels_low been_down feeling_down feel_down lonely loneliness
+        anxious anxiety panicking insomnia can't_sleep cannot_sleep grief grieving can't_stop_crying keep_crying
+        cry_myself cried_myself crying_all crying_every so_stressed stressed_out feel_empty feel_so_empty feel_numb
+        feel_worthless feeling_worthless feel_hopeless feeling_hopeless feel_like_a_burden feel_like_nobody
+        sad_all_the_time always_sad feel_sad feeling_sad been_sad so_sad dark_time dark_place rough_patch overthink*
+        always_on_edge constantly_on_edge so_on_edge heart_races racing_thoughts no_motivation lost_motivation
+        unmotivated not_coping can't_cope
+        struggling_to_cope really_down so_down hate_myself enjoy_anything stressed snapping_at feel_insecure
+        so_insecure low_self-esteem low_self_esteem self-esteem crying_a_lot cried_all nightmares flashbacks counselor*
+        counsellor* counseling counselling
+        paranoid paranoia hallucinat* hearing_voices anger_issues nervous_breakdown mental_breakdown
+        mental_health feel_overwhelmed so_overwhelmed i'm_overwhelmed emotionally drinking_too_much drink_too_much
+        gambling_problem falling_apart feel_like_a_failure i'm_a_failure struggling_a_lot really_struggling
+        struggling_mentally nervous_around_people so_nervous_around cries_every cries_all crying_every
+        can't_get_out_of_bed mood_swings isolating seems_withdrawn so_withdrawn won't_talk_to_anyone`,
+      SEXUALITY: `gay lesbian* bisexual* transgender* non-binary nonbinary non_binary queer sexual_orientation
+        coming-out
+        coming_out came_out_to come_out_to come_out_at_work sexuality erectile erection*
+        libido asexual aromantic pansexual* demisexual* i'm_bi am_bi is_bi he's_bi she's_bi as_trans is_trans i'm_trans
+        he's_trans she's_trans trans_kid trans_man trans_woman start_transitioning gender_identity my_gender dysphoria
+        my_pronouns wrong_pronouns attracted_to_men attracted_to_women attracted_to_girls attracted_to_guys
+        attracted_to_boys
+        attracted_to_anyone attracted_to_the_same attracted_to_both i_like_girls i_like_boys i_like_guys into_girls
+        into_guys sex_drive
+        sex_life had_sex have_sex having_sex sex_with things_in_bed stuff_in_bed kinky trouble_getting_hard
+        can't_get_hard premature_ejaculation his_gender her_gender misgender* deadname* puberty_blockers
+        wants_to_be_a_girl wants_to_be_a_boy says_he's_a_girl says_she's_a_boy sexually sexual_health painful_sex
+        lost_my_virginity same-sex same_sex outed`,
       RELIGION: `muslim* islam* christian* catholic* protestant* jewish hindu* buddhist* atheist* religion* religious
-        my_faith our_faith ramadan mosque* synagogue* church_service*`,
-      MONEY: `in_debt my_debts our_debts indebted debt_collector* bankrupt* bailiff* foreclos* eviction* food_bank`,
-      LEGAL: `criminal_record* convicted arrested probation parole prison jail sentenced`,
+        my_faith our_faith ramadan mosque* synagogue* church_service* my_church our_church going_to_church
+        go_to_church went_to_church jehovah* judaism mormon* sikh* evangelical* pentecostal* hijab* headscarf niqab
+        burka burqa kippah yarmulke joined_a_cult in_a_cult left_a_cult believe_in_god baptized baptised baptism prayer
+        prayers praying
+        quran koran imam rabbi pastor priest halal kosher sabbath shabbat first_communion sinful a_sin left_the_church
+        leave_the_church`,
+      MONEY: `in_debt my_debts our_debts indebted debt_collector* bankrupt* bailiff* foreclos* evict* food_bank
+        my_debt credit_card_debt gambling_debt* student_debt student_loan* behind_on_my_bills behind_on_bills
+        behind_on_rent
+        behind_on_my_rent behind_on_payments behind_on_my_payments behind_on_my_mortgage can't_pay cannot_pay
+        can't_afford overdrawn overdraft* maxed_out minimum_payment* payday_loan* garnish* repossess* until_payday
+        till_payday missed_payments missed_a_payment i'm_broke so_broke flat_broke owe_the_irs owe_the_bank owe_money
+        owe_taxes back_taxes owe_my_landlord owe_rent months_rent months_of_rent back_rent in_the_hole
+        keep_up_with_payments keep_up_with_my_bills keep_up_with_rent
+        lose_our_house lose_my_house lose_the_house losing_our_home losing_my_home we're_broke can't_buy_food
+        debt_collectors collectors_calling medical_debt
+        debt_relief debt_consolidation drowning_in_debt car_payment* months_behind account_is_negative negative_balance
+        lose_our_apartment lose_my_apartment lose_our_home
+        sent_to_collections in_collections bad_credit poor_credit credit_score unemployed laid_off lost_my_job
+        lost_his_job lost_her_job on_welfare food_stamps unemployment_benefits universal_credit !we_can't_afford
+        !we_can't_pay !behind_on_rent !behind_on_bills`,
+      LEGAL: `criminal_record* convicted arrested my_arrest probation parole prison jail sentenced court_date court_case
+        court_hearing in_court to_court sued suing lawsuit* summons dui dwi drunk_driving shoplift* restraining_order*
+        pulled_over charged_with criminal_lawyer defense_lawyer warrant_out warrant_for out_on_bail
+        on_bail bail_hearing felony felonies misdemeanor* deport* police_questioned police_want police_are_involved
+        police_station police_custody got_locked_up caught_driving driving_without_a_license driving_without_a_licence
+        caught_with investigated_for being_investigated under_investigation accused_of
+        custody possession_of caught_stealing stole_from_work !questioned_me !interview_me !reported_me_to_the_police
+        !arrested_me`,
     },
     nl: {
-      words: `de het een en is van dat niet op te voor met wat hoe je ben heb heeft`,
-      self: `ik mijn m'n m’n wij we ons onze`,
-      HEALTH: `gediagnosticeerd diagnose kanker tumor chemo chemotherapie bestraling* diabetes suikerziekte hiv aids soa
-        zwanger* miskraam abortus ivf medicatie medicijn* voorgeschreven ziekenhuis* operatie* chronisch* epilepsie astma
-        hartaanval* beroerte dementie alzheimer* parkinson* autisme autist* adhd reuma* ziekte* symptomen symptoom
-        huisarts* oncolo* cardiolo* neuroloog allergie* allergisch migraine* ms-patiënt crohn* endometriose menopauze
-        arbeidsongeschikt* ziekmelding* ziektewet ziek_gemeld`,
-      MENTAL: `depressi* angststoornis* angstaanval* paniekaanval* burn-out* burnout* overspannen* eetstoornis* anorexia
-        boulimia bipolair* schizofren* psychose* ptss trauma* psycholoog* psychiater* therapeut* therapie* antidepressiva
-        verslaafd* verslaving* afkicken ocd dwangstoornis*`,
-      SEXUALITY: `homo homoseksu* lesbi* biseksu* transgender* non-binair* queer seksuele_geaardheid uit_de_kast coming-out
-        seksualiteit erectie*`,
+      words: `de het een en is van dat die niet op te voor met wat hoe je ben heb heeft al er maar om naar zo nog ook
+        als
+        bij aan heel geen wil moet kan zijn weet`,
+      self: `ik mijn m'n mn k'heb kheb wij we ons onze`,
+      NOT: `werkstuk* spreekbeurt* huiswerk opstel scriptie* boekverslag roman thriller detective hoofdpersoon
+        personage* hoofdstuk in_mijn_boek in_mijn_verhaal pijnpunt* van_het_lachen pijn_geleden technische_schuld
+        de_geschiedenis_van
+        leren_over presentatie*`,
+      HEALTH: `gediagnosticeerd diagnose kanker borstkanker darmkanker longkanker huidkanker prostaatkanker tumor chemo
+        chemotherapie bestraling* diabetes suikerziekte hiv aids soa zwanger* miskraam abortus ivf medicatie medicijn*
+        voorgeschreven ziekenhuis* operatie* geopereerd chronisch* epilepsie astma hartaanval* beroerte dementie
+        alzheimer* parkinson* autisme autist* adhd reuma* ziekte* symptomen symptoom huisarts* oncolo* cardiolo*
+        neuroloog allergie* allergisch migraine* ms-patiënt crohn* endometriose menopauze
+        arbeidsongeschikt* ziekmelding* ziektewet ziek_gemeld
+        knobbel* bult bulten bultje* pijn pijn_op_de_borst buikpijn* rugpijn* hoofdpijn* krampen bloed_in bloeding*
+        bloedverlies koorts misselijk* overgeven duizelig* flauwgevallen ontsteking* infectie* gezwollen zwelling*
+        biopt* mammografie* uitstrijkje* mri röntgen* bloedonderzoek* bloedwaarde* uitslag_van_de_dokter
+        uitslag_van_het_onderzoek uitslag_van_de_scan mijn_dokter mijn_arts
+        diarree verstopt verstopping hoest* hoesten arm_gebroken been_gebroken pols_gebroken gebroken_arm
+        gebroken_been botbreuk* uitslag_op vlekjes moedervlek* snurk* stopt_met_ademen ademstilstand* slaapapneu
+        val_af_zonder afgevallen_zonder ongesteld* menstruatie* weken_over_tijd dagen_over_tijd ben_over_tijd
+        buiten_adem kortademig* benauwd* last_van_mijn_maag last_van_mn_maag maagzweer heeft_suiker suikerpatiënt*
+        insuline* *pijn *ontsteking *kanker *allergie
+        blaasinfectie* oorinfectie* longinfectie* schimmelinfectie* maagklachten hartklachten rugklachten darmklachten
+        haaruitval haar_valt_uit dialyse ontlasting hernia maagzuur verkouden* griep corona heb_verhoging
+        hoge_temperatuur
+        stijve_nek bloedneus* ct-scan mri-scan voor_een_scan een_echo jeuk* blauwe_plek* blaren verstuikt verzwikt
+        tinteling* doof_gevoel
+        opgeblazen_gevoel bloeddruk cholesterol epileptische_aanval pillen de_pil anticonceptie tandarts gewond wond
+        blessure* hersenschudding rolstoel oververmoeid vermoeid* *pokken mazelen roodvonk krentenbaard
+        met_spoed_opgenomen spoedeisende_hulp de_seh darmen antibiotica
+        geheugenproblemen geheugenverlies vergeet_steeds_dingen vergeet_de_laatste_tijd`,
+      MENTAL: `depressi* angststoornis* angstaanval* paniekaanval* burn-out* burnout* overspannen* opgebrand*
+        eetstoornis*
+        anorexia boulimia bipolair* schizofren* psychose* ptss trauma* psycholoog* psychiater* therapeut* therapie*
+        antidepressiva verslaafd* verslaving* gokverslaafd* gokverslaving* drankverslaafd* alcoholist* drankprobleem*
+        alcoholprobleem* drinkt_te_veel drinkt_teveel afkicken ocd dwangstoornis*
+        somber* neerslachtig* eenzaam* angstig* slapeloos* kan_niet_slapen niet_kan_slapen slaap_slecht
+        voel_me_down zit_niet_lekker_in_mijn_vel rouw rouwen rouwproces sinds_hij_overleden sinds_ze_overleden
+        sinds_het_overlijden verdriet* angst
+        angsten moe_van_alles kan_me_niet_concentreren concentratieproblemen *verslaafd *verslaving gestrest gestresst
+        gestressed
+        zit_er_doorheen zit_er_echt_doorheen zit_er_helemaal_doorheen zat_er_doorheen stoppen_met_huilen
+        moet_steeds_huilen huilbui* bed_niet_uit voel_me_leeg voel_me_zo_leeg voel_me_waardeloos
+        voel_me_zo_waardeloos voel_me_niet_goed voel_me_rot voel_me_zo_rot voel_me_slecht voel_me_alleen
+        voel_me_zo_alleen voel_me_ellendig nergens_meer_zin nergens_zin_in nergens_meer_energie in_een_dip pieker*
+        zo_gespannen altijd_gespannen constant_gespannen tijd_gespannen hart_gaat_tekeer sluit_zich_op praat_met_niemand
+        alles_voelt_zwaar trekt_het_niet trek_het_niet
+        kan_het_niet_aan stemmingswisseling* stress zo_onzeker onzeker_over_mezelf zelfbeeld
+        minderwaardig* zelfvertrouwen geen_energie_meer alleen_maar_slapen slaap_slecht slaap_al huil huilen huilde
+        moet_huilen nachtmerrie* herbeleving* prikkelbaar paniek* overprikkeld overweldigd uitgeput emotioneel ggz
+        poh-ggz zelfhaat haat_mezelf mentaal mentale_gezondheid niet_meer_zitten rotperiode moeilijke_periode
+        zware_periode`,
+      SEXUALITY: `homo homoseksu* lesbi* biseksu* gay transgender* non-binair* queer seksuele_geaardheid uit_de_kast
+        coming-out coming_out seksualiteit erectie* erectieprobl* impotent* aseksu* panseksu* demiseksu* bi_ben
+        ben_ik_bi ben_bi hij_bi zij_bi ze_bi als_trans is_trans ben_trans val_op_meisjes val_op_jongens val_op_mannen
+        val_op_vrouwen
+        op_meisjes_valt op_jongens_valt op_mannen_valt op_vrouwen_valt aangetrokken_tot dingen_in_bed
+        hem_niet_omhoog seks seksleven mijn_gender genderidentiteit genderdysforie mijn_transitie
+        hormoonbehandeling op_mannen_of_vrouwen op_vrouwen_of_mannen wil_een_jongen_zijn wil_een_meisje_zijn
+        pubertijdsremmers maagdelijkheid ontmaagd* seksueel seksuele`,
       RELIGION: `moslim* islam* christen* christelijk* katholiek* protestant* joods jood hindoe* boeddhist* atheïst*
-        gelovig* religie* religieus* bekeerd* mijn_geloof ons_geloof ramadan moskee* synagoge* kerkdienst*`,
+        atheist*
+        gelovig* religie* religieus* bekeerd* bekeren* mijn_geloof mn_geloof m'n_geloof ons_geloof hun_geloof
+        in_god ramadan moskee* synagoge* kerkdienst* kerk kerken kerkgemeente* kerkelijk* jehova* gereformeerd*
+        hervormd* evangelisch* pinkstergemeente* mormoon* gedoopt jodendom hoofddoek* boerka nikab keppel sekte* dopen
+        laten_dopen bidden gebed*
+        imam dominee pastoor priester rabbijn koran bijbel halal koosjer sabbat communie vormsel
+        niet_meer_geloof niet_meer_gelovig uit_het_geloof geloof_verlaten mijn_geloof_kwijt`,
       MONEY: `schulden schuldhulp* schuldsanering* schuldeiser* deurwaarder* incassobureau* betalingsachterstand*
-        huurachterstand* bewindvoerder* beschermingsbewind wsnp failliet* faillissement* uitzetting* voedselbank`,
-      LEGAL: `strafblad* veroordeeld* gearresteerd* taakstraf* celstraf* gevangenis* reclassering* enkelband`,
+        huurachterstand* bewindvoerder* beschermingsbewind wsnp failliet* faillissement* uitzetting* voedselbank
+        achter_met_betalen achter_met_de_huur rood_staan sta_rood staat_rood in_het_rood kan_niet_betalen
+        rekeningen_niet_betalen niet_betalen niet_meer_betalen niet_terugbetalen maanden_niet_betaald
+        niet_betaald_heb aanmaning* gestorneerd storno* aan_de_limiet aan_mijn_limiet creditcardschuld* loonbeslag
+        beslaglegging beslag_gelegd eruit_te_zetten uit_huis_gezet studieschuld* tot_mn_salaris tot_mijn_salaris
+        gokschuld* belastingschuld* schuld_bij *schulden rekening_geblokkeerd rekening_is_geblokkeerd achterstand_bij
+        betalingsregeling* krap_bij_kas rond_te_komen rond_moet_komen rondkomen
+        niet_meer_betaald blut platzak geld_lenen geld_geleend bijstand uitkering* werkloos ontslagen baan_kwijt
+        huis_kwijt huis_verliezen schuldhulpverlening in_de_min
+        dwangbevel* invordering*`,
+      LEGAL: `strafblad* veroordeeld* gearresteerd* taakstraf* celstraf* gevangenis* reclassering* enkelband
+        ben_opgepakt werd_opgepakt zijn_opgepakt gisteren_opgepakt vannacht_opgepakt opgepakt_door opgepakt_voor
+        rechtszaak* rechtbank* rechtszitting* bij_de_rechter voor_de_rechter verhoor* rijden_onder_invloed
+        ben_aangehouden werd_aangehouden aangehouden_voor aangehouden_door betrapt_op winkeldiefstal* aangifte_tegen
+        dagvaarding* contactverbod* straatverbod* gebiedsverbod* verdacht_van advocaat_nodig strafrechtadvocaat*
+        jaar_cel maanden_cel zonder_rijbewijs ingevorderd voorarrest* voorlopige_hechtenis politiecel*
+        strafbeschikking* zit_in_de_cel betrapt_met aangifte_gedaan_tegen werkstraf*
+        verdachte proces-verbaal voogdij strafzaak* huiszoeking aangeklaagd
+        aanklacht* oproep_van_de_politie !me_verhoord !aangifte_tegen_mij !aangifte_tegen_me`,
     },
     de: {
-      words: `der die das und ist nicht ein eine zu mit auf für wie was habe bin`,
+      words: `der die das und ist nicht ein eine zu mit auf für wie was habe hab bin seit nur noch sind`,
       self: `ich mein* unser* wir`,
-      HEALTH: `diagnostiziert krebs* tumor* chemo* chemotherapie* diabetes schwanger* fehlgeburt* abtreibung* medikament*
-        krankenhaus* chronisch* epilepsie asthma herzinfarkt* schlaganfall* demenz* alzheimer* parkinson* autismus autist*
-        adhs rheuma* krankheit* erkrank* symptom* hausarzt* hausärzt* allergi* migräne* krankgeschrieben krankschreibung*
-        behinderung* wechseljahre*`,
-      MENTAL: `depression* depressiv* angststörung* panikattack* burn-out* burnout* essstörung* magersucht bulimie bipolar*
+      HEALTH: `diagnostiziert krebs* tumor* chemo* chemotherapie* diabetes schwanger* fehlgeburt* abtreibung*
+        medikament*
+        krankenhaus* chronisch* epilepsie asthma herzinfarkt* schlaganfall* demenz* alzheimer* parkinson* autismus
+        autist*
+        adhs rheuma* krankheit* erkrank* symptom* hausarzt* hausärzt* allergi* migräne* krankgeschrieben
+        krankschreibung*
+        behinderung* wechseljahre* *schmerzen *entzündung schmerzen fieber knoten* übelkeit
+        schwindel*`,
+      MENTAL: `depression* depressiv* angststörung* panikattack* burn-out* burnout* essstörung* magersucht bulimie
+        bipolar*
         schizophren* psychose* ptbs trauma* psycholog* psychiater* psychotherapeut* therapeut* therapie* antidepressiv*
-        süchtig* drogensucht* alkoholsucht* spielsucht* entzug* zwangsstörung*`,
+        süchtig* drogensucht* alkoholsucht* spielsucht* entzug* zwangsstörung* weine* niedergeschlagen* traurig*
+        einsam* schlaflos*`,
       SEXUALITY: `schwul* lesbisch* bisexuell* transgender* transsexuell* nicht-binär* queer sexuelle_orientierung
-        coming-out sexualität* erektion*`,
-      RELIGION: `muslim* islam* christlich* christin christen katholisch* evangelisch* jüdisch* jude jüdin hindu* buddhist*
-        atheist* gläubig* religion* religiös* moschee* synagoge* ramadan`,
+        coming-out coming_out sexualität* erektion* bi_bin`,
+      RELIGION: `muslim* islam* christlich* christin christen katholisch* evangelisch* jüdisch* jude jüdin hindu*
+        buddhist*
+        atheist* gläubig* religion* religiös* moschee* synagoge* ramadan kirche* konvertiert*`,
       MONEY: `schulden* schuldner* schuldnerberatung* gerichtsvollzieher* inkasso* privatinsolvenz* insolvenz* pleite
-        zwangsräumung* räumungsklage* mietschulden*`,
+        zwangsräumung* räumungsklage* mietschulden* mahnung* im_minus nicht_zahlen nicht_bezahlen pfändung*`,
       LEGAL: `vorstrafe* vorbestraft* verurteilt* verhaftet* festgenommen* gefängnis* haftstrafe* bewährung* knast
-        führungszeugnis*`,
+        führungszeugnis* gerichtstermin* vor_gericht anzeige_gegen`,
     },
     fr: {
-      words: `le la les et est un une des pas pour que qui dans avec ai suis`,
-      self: `je j' j’ mon ma mes nous notre nos`,
+      words: `le la les et est un une des pas pour que qui dans avec ai suis de du au à depuis a son sa ses fait`,
+      self: `je j' j’ jai jsuis jarrête mon ma mes nous notre nos`,
       HEALTH: `diagnostiqué* cancer* tumeur* chimio* diabète diabétique* enceinte grossesse fausse_couche avortement ivg
         médicament* hôpital hospitalisé* chronique* épilepsie asthme crise_cardiaque infarctus avc démence alzheimer*
         parkinson* autisme autiste* tdah maladie* symptôme* médecin_traitant allergi* migraine* arrêt_maladie handicap*
-        ménopause`,
+        ménopause grosseur* mal_à_la_tête mal_au_ventre mal_au_dos fièvre`,
       MENTAL: `dépression* dépressi* déprimé* trouble_anxieux crise_d'angoisse crise_d’angoisse attaque_de_panique
-        burn-out burnout trouble_alimentaire anorexi* boulimi* bipolaire* schizophrén* psychose* tspt trauma* psychologue*
-        psychiatre* psychothérapeut* thérapeute* thérapie* antidépresseur* addict* toc`,
+        burn-out burnout trouble_alimentaire anorexi* boulimi* bipolaire* schizophrén* psychose* tspt trauma*
+        psychologue*
+        psychiatre* psychothérapeut* thérapeute* thérapie* antidépresseur* addict* toc bout_du_rouleau pleure* pleurer
+        triste*`,
       SEXUALITY: `homosexuel* gay lesbienne* bisexuel* transgenre* non-binaire queer orientation_sexuelle coming-out
-        sexualité érection*`,
+        sexualité érection* coming_out suis_bi`,
       RELIGION: `musulman* islam* chrétien* catholique* protestant* juif juive* hindou* bouddhiste* athée* croyant*
-        religion* religieu* mosquée* synagogue* ramadan`,
-      MONEY: `dettes endetté* surendettement huissier* recouvrement* faillite* expulsion* loyers_impayés banque_alimentaire
-        restos_du_cœur`,
+        religion* religieu* mosquée* synagogue* ramadan lislam converti*`,
+      MONEY: `dettes endetté* surendettement huissier* recouvrement* faillite* expulsion* loyers_impayés
+        banque_alimentaire
+        restos_du_cœur à_découvert peux_pas_payer peux_plus_payer`,
       LEGAL: `casier_judiciaire condamné* garde_à_vue interpellé* prison* incarcéré* détention* sursis
-        bracelet_électronique`,
+        bracelet_électronique été_arrêté été_arrêtée`,
     },
     es: {
       words: `el la los las y es un una que de no por para con qué`,
@@ -100,16 +268,18 @@
       HEALTH: `diagnosticad* cáncer tumor* quimio* diabetes diabétic* embarazad* aborto* medicación medicament* hospital
         hospitalizad* crónic* epilepsia asma infarto* derrame_cerebral ictus demencia alzheimer* parkinson* autismo
         autista* tdah enfermedad* síntoma* médico_de_cabecera alergia* alérgic* migraña* baja_médica discapacidad*
-        menopausia`,
+        menopausia bulto* fiebre dolor_de_cabeza`,
       MENTAL: `depresión depresiv* deprimid* ansiedad trastorno_de_ansiedad ataque_de_pánico ataques_de_pánico burnout
         trastorno_alimentario anorexi* bulimi* bipolar* esquizofren* psicosis tept trauma* psicólog* psiquiatra*
-        terapeuta* terapia* antidepresiv* adicción adict* toc`,
+        terapeuta* terapia* antidepresiv* adicción adict* toc llorar triste*`,
       SEXUALITY: `homosexual* gay lesbiana* bisexual* transgénero no_binari* queer orientación_sexual salir_del_armario
-        sexualidad erección*`,
+        sexualidad erección* salió_del_armario salí_del_armario soy_bi`,
       RELIGION: `musulmán musulmana* musulmanes islam* cristian* católic* protestante* judío* judía* hindú budista* ateo
         atea creyente* religión religios* mezquita* sinagoga* ramadán`,
-      MONEY: `deudas endeudad* desahucio* quiebra bancarrota cobrador* moroso* banco_de_alimentos`,
-      LEGAL: `antecedentes_penales condenad* detenid* arrestad* cárcel prisión libertad_condicional encarcelad*`,
+      MONEY: `deudas endeudad* desahucio* quiebra bancarrota cobrador* moroso* banco_de_alimentos números_rojos
+        no_puedo_pagar`,
+      LEGAL: `antecedentes_penales condenad* detenid* arrestad* cárcel prisión libertad_condicional encarcelad*
+        !me_arrestaron !me_detuvieron`,
     },
     it: {
       words: `il lo la gli le e è un una che di non per con ma`,
@@ -163,7 +333,7 @@
     },
     gl: {
       words: `o a os as e é un unha que de non para con`,
-      self: `eu meu miña meus miñas teño estou son nós noso* nosa*`,
+      self: `eu meu miña meus miñas teño estou nós noso* nosa*`,
       HEALTH: `diagnosticad* cancro tumor* quimio* diabete* embarazada aborto* medicación medicamento* hospital* crónic*
         epilepsia asma infarto* ictus demencia alzheimer* parkinson* autismo enfermidade* síntoma* alerxia* xaqueca*
         discapacidade*`,

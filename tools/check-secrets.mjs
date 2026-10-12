@@ -6,31 +6,27 @@
 //   node tools/check-secrets.mjs --range A..B        commits die je gaat pushen (git pre-push)
 //   node tools/check-secrets.mjs pad [pad …]         bestanden, mappen of zips (sync naar kamelo-open, store-pakket)
 //
-// kamelo.env wordt gezocht in de hoofdmap van deze repo en in ../KAMELO (worktrees en de websiterepo ernaast).
-// Ontbreekt hij (bijvoorbeeld in CI), dan controleren we alleen de patronen.
+// kamelo.env wordt gevonden met tools/env.mjs: $KAMELO_ENV, anders de hoofdmap van deze repo en de mappen erboven
+// (zo ook vanuit werkmappen/<naam>/). Ontbreekt hij (bijvoorbeeld in CI), dan controleren we alleen de patronen.
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { execFileSync, spawnSync } from 'node:child_process';
+import { findEnv, readEnv } from './env.mjs';
 
 const git = (...a) => execFileSync('git', a, { encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
 let root = process.cwd();
 try { root = git('rev-parse', '--show-toplevel').trim(); } catch {}
 
 function loadSecrets() {
-  for (const f of [process.env.KAMELO_ENV, path.join(root, 'kamelo.env'), path.join(root, '..', 'KAMELO', 'kamelo.env')]) {
-    if (!f || !fs.existsSync(f)) continue;
-    const out = {};
-    for (const line of fs.readFileSync(f, 'utf8').split('\n')) {
-      const m = line.match(/^\s*(?:export\s+)?([A-Z0-9_]+)\s*=\s*(.*)$/);
-      if (!m) continue;
-      const v = m[2].trim().replace(/^["']|["']$/g, '');
-      // ID's (account, product, client-id) zijn niet geheim en staan soms terecht in code.
-      if (v.length >= 16 && !/_ID$/.test(m[1])) out[m[1]] = v;
-    }
-    return { file: f, values: out };
+  const file = findEnv();
+  if (!file) return { file: null, values: {} };
+  const out = {};
+  for (const [k, v] of Object.entries(readEnv(file))) {
+    // ID's (account, product, client-id) zijn niet geheim en staan soms terecht in code.
+    if (v.length >= 16 && !/_ID$/.test(k)) out[k] = v;
   }
-  return { file: null, values: {} };
+  return { file, values: out };
 }
 const { file: envFile, values } = loadSecrets();
 

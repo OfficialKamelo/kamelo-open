@@ -1,0 +1,30 @@
+/* Popup van de gratis editie (public.html): klein en rustig. Bovenop popup.css; alleen wat hier anders is. */
+body.pub { width: 300px; padding-bottom: 14px; background: var(--surface); }
+html:has(body.pub) { background: var(--surface); }
+.pub .top { padding: 14px 16px 8px; }
+.pub .top h1 { font-size: 15px; }
+
+/* Beschermd: één regel met de schakelaar */
+.pub .status { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 14px; padding: 12px 14px;
+  border-radius: 14px; background: var(--soft); }
+.pub .status .state { font-size: 15px; color: var(--ink); }
+.pub .status .state svg { color: var(--accent); }
+.pub .status[data-state="off"] .state, .pub .status[data-state="off"] .state svg { color: var(--secondary); }
+.pub .status .switch .track { background: var(--switch-off); }
+
+/* Private Chat en tijdelijke chat: één gegroepeerde lijst */
+.pub-list { margin: 10px 14px 0; border-radius: 14px; background: var(--soft); overflow: hidden; }
+.pub-row { position: relative; width: 100%; display: flex; align-items: center; gap: 12px; padding: 11px 12px 11px 12px; border: 0;
+  background: none; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.pub-row:hover { background: var(--fill); }
+.pub-row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 14px; }
+.pub-row:not([hidden]) ~ .pub-row:not([hidden])::before { content: ""; position: absolute; top: 0; left: 56px; right: 0; height: 1px; background: var(--line); }
+.pub-row .ico { width: 32px; height: 32px; flex: none; display: grid; place-items: center; border-radius: 9px; }
+.pub-row .ico svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pub-row .ico.green { color: var(--green-text); background: var(--ok-bg); }
+.pub-row .ico.purple { color: var(--private-fg); background: var(--private-bg); }
+.pub-row .txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.pub-row .txt b { font-size: 14px; font-weight: 600; }
+.pub-row .txt span { font-size: 12px; color: var(--secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pub-row .chev { width: 7px; height: 12px; flex: none; fill: none; stroke: var(--tertiary); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pub-list:not(:has(.pub-row:not([hidden]))) { display: none; }

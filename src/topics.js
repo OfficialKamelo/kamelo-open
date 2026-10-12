@@ -3,13 +3,15 @@
 // dus Kamelo waarschuwt alleen, één keer per onderwerp per pagina.
 //
 // Alleen als het over de gebruiker of iemand om hem heen gaat ("ik heb", "mijn dochter", "my doctor"), in dezelfde zin.
-// Een algemene vraag als "Wat zijn de symptomen van diabetes?" geeft dus geen melding.
+// Een algemene vraag als "Wat zijn de symptomen van diabetes?" geeft dus geen melding. Uitzonderingen:
+//  - een woordgroep met ! zegt het zelf al ("behind on rent", "de politie heeft me verhoord"): geen ik/mijn nodig;
+//  - een NOT-woord in de zin (huiswerk, roman, personage, pain point) betekent: het gaat niet over de schrijver.
 //
 // Werkt in 82 talen (woordenlijsten in topic-words.js). Per zin eerst een lichte taalherkenning op veelgebruikte woorden,
 // zodat een kort woord als "min" (Zweeds: mijn) of "ma" (Ests: ik) niet meetelt in een Engelse of Italiaanse zin.
 //
 // Snel genoeg voor tijdens het typen: een zin wordt één keer in woorden gesplitst en die worden opgezocht in één index
-// voor alle talen (woorden, woordbegin bij een *, en woordgroepen). Alleen talen zonder spaties (Chinees, Thai, …)
+// voor alle talen (woorden, woordbegin bij woord*, woordeinde bij *woord, en woordgroepen). Alleen talen zonder spaties (Chinees, Thai, …)
 // gebruiken een gewone zoekopdracht. Zinnen die al gecontroleerd zijn, worden onthouden.
 // Draait volledig lokaal: in de browser (content script) en in Node (tests).
 (function (root) {
@@ -17,34 +19,44 @@
 
   const W = root.PrivacyTopicWords || (typeof require === 'function' ? require('./topic-words.js') : null);
   const TOPICS = ['HEALTH', 'MENTAL', 'SEXUALITY', 'RELIGION', 'MONEY', 'LEGAL'];
-  const KINDS = ['words', 'self', ...TOPICS];
+  const KINDS = ['words', 'self', 'NOT', ...TOPICS];
   const MAX_LENGTH = 20000; // bij heel lange teksten alleen het begin
   const TOKEN = /[\p{L}\p{M}\p{N}'’-]+/gu;
-  const norm = s => s.normalize('NFC').toLowerCase();
+  const norm = s => s.normalize('NFC').toLowerCase().replace(/’/g, "'");
 
   // ---------- Index opbouwen ----------
-  // exact: "woord" of "woord woord" → [[taal, soort], …]; prefix: idem voor woordbegin (term met * of eindigend op ').
-  const exact = new Map(), prefix = new Map();
+  // exact: "woord" of "woord woord" → [[taal, soort], …]; prefix: idem voor woordbegin (term met * of eindigend op ');
+  // suffix: woordeinde (term die met * begint), voor samenstellingen als keelpijn, blaasontsteking, gokverslaafd.
+  const exact = new Map(), prefix = new Map(), suffix = new Map();
   const dense = []; // [{ code, words: RegExp(g), self: RegExp, topics: [[soort, RegExp]] }]
   const loose = new Set(W?.LOOSE || []);
-  let maxWords = 1, minPrefix = Infinity;
+  let maxWords = 1, minPrefix = Infinity, minSuffix = Infinity;
   const add = (map, key, entry) => (map.get(key) || map.set(key, []).get(key)).push(entry);
   const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
   for (const [code, lang] of Object.entries(W?.LANGS || {})) {
     const terms = kind => (kind === 'words' ? `${lang.words} ${lang.self}` : lang[kind] || '').trim().split(/\s+/).filter(Boolean);
     if (W.DENSE.includes(code)) {
-      const re = (kind, flags = 'u') => new RegExp(terms(kind).map(t => escape(norm(t.replace(/\*$/, '')))).join('|'), flags);
+      const re = (kind, flags = 'u') => new RegExp(terms(kind).map(t => escape(norm(t.replace(/^!?\*?|\*$/g, '')))).join('|'), flags);
       dense.push({ code, words: re('words', 'gu'), self: re('self'), topics: TOPICS.filter(k => lang[k]).map(k => [k, re(k)]) });
       continue;
     }
     for (const kind of KINDS) {
-      for (const term of terms(kind)) {
+      for (let term of terms(kind)) {
+        // !woordgroep: zegt op zichzelf al dat het over de schrijver gaat ("behind on rent"), ook zonder ik/mijn.
+        const alone = term.startsWith('!');
+        if (alone) term = term.slice(1);
         const open = term.endsWith('*') || /['’]$/.test(term);
-        const key = norm(term.replace(/\*$/, '')).replace(/_/g, ' ');
+        const end = term.startsWith('*');
+        const key = norm(term.replace(/^\*|\*$/g, '')).replace(/_/g, ' ');
         maxWords = Math.max(maxWords, key.split(' ').length);
         if (open) minPrefix = Math.min(minPrefix, key.length);
-        add(open ? prefix : exact, key, [code, kind]);
+        if (end) minSuffix = Math.min(minSuffix, key.length);
+        const entry = [code, kind, alone];
+        if (end) { add(suffix, key, entry); continue; }
+        add(open ? prefix : exact, key, entry);
+        // Woordgroepen ook zonder apostrof, zoals op een telefoon getypt: can't_pay → cant pay.
+        if (key.includes(' ') && key.includes("'")) add(open ? prefix : exact, key.replace(/'/g, ''), entry);
       }
     }
   }
@@ -66,20 +78,25 @@
   // Per taal: hoeveel veelgebruikte woorden, of er een "ik/mijn" in staat, en welke onderwerpen.
   function hitsIn(sentence) {
     const hits = new Map();
-    const hit = code => hits.get(code) || hits.set(code, { score: 0, self: false, topics: new Set() }).get(code);
+    const hit = code => hits.get(code)
+      || hits.set(code, { score: 0, self: false, not: false, topics: new Set(), alone: new Set() }).get(code);
     const record = (entries, stripped) => {
-      for (const [code, kind] of entries || []) {
+      for (const [code, kind, alone] of entries || []) {
         if (stripped && !loose.has(code)) continue;
         const h = hit(code);
         if (kind === 'words') h.score++;
         else if (kind === 'self') h.self = true;
-        else h.topics.add(kind);
+        else if (kind === 'NOT') h.not = true;
+        else (alone ? h.alone : h.topics).add(kind);
       }
     };
     const lower = norm(sentence);
     for (const [key, stripped] of keys(lower.match(TOKEN) || [])) {
       record(exact.get(key), stripped);
       for (let len = key.length; len >= minPrefix; len--) record(prefix.get(key.slice(0, len)), stripped);
+      if (!stripped && !key.includes(' ')) {
+        for (let cut = 1; key.length - cut >= minSuffix; cut++) record(suffix.get(key.slice(cut)), false);
+      }
     }
     for (const d of dense) {
       const score = (lower.match(d.words) || []).length;
@@ -93,13 +110,16 @@
   }
 
   // De talen die het best bij de zin passen: de meeste treffers, of minstens de helft daarvan (en dan minstens twee).
+  // Een woordgroep met ! telt altijd (die is lang genoeg om bij één taal te horen). Staat er een NOT-woord in de zin
+  // (huiswerk, roman, personage, pain point), dan telt die taal niet: het gaat dan niet over de schrijver zelf.
   function topicsIn(sentence) {
     const hits = [...hitsIn(sentence).values()];
     const best = Math.max(0, ...hits.map(h => h.score));
-    if (!best) return [];
     const found = new Set();
     for (const h of hits) {
-      if (!h.self || !(h.score === best || (h.score >= 2 && h.score >= best / 2))) continue;
+      if (h.not) continue;
+      h.alone.forEach(k => found.add(k));
+      if (!best || !h.self || !(h.score === best || (h.score >= 2 && h.score >= best / 2))) continue;
       h.topics.forEach(k => found.add(k));
     }
     return [...found];

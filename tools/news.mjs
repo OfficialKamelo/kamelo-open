@@ -39,7 +39,7 @@ export function entries(changelog, items) {
     const security = v.sections.length > 0 && v.sections.every(s => s === 'Security');
     const [maj, min, pat] = v.version.split('.').map(Number);
     return { date: v.date, order: maj * 1e6 + min * 1e3 + pat + 0.5, kind: security ? 'Security' : 'Release',
-      title, text, label: v.version, url: `${CHANGELOG_URL}#${anchor(v.version, v.date)}` };
+      title, text, label: v.version, url: own?.url || `${CHANGELOG_URL}#${anchor(v.version, v.date)}` };
   });
   for (const m of items.milestones || []) list.push({ ...m, order: 0 });
   return list.sort(byNewest);

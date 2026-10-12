@@ -8,8 +8,10 @@
   const STRINGS = {
     en: {
       extName: 'Kamelo: AI privacy software',
-      extDescription: 'Talk to AI freely. Kamelo masks your name and personal details on your device before they reach ChatGPT, Gemini, Claude or other AI.',
+      extDescription: 'Private Chat with AI on your own computer, and a nudge to use a temporary chat when you ask AI something personal.',
       actionTitle: 'Kamelo',
+      extNameTeams: 'Kamelo for teams',
+      extDescriptionTeams: 'Kamelo for teams masks personal and company details on your device before they reach ChatGPT, Gemini, Claude or AI in work apps.',
 
       settings: 'Settings', back: 'Back', loading: 'Loading…',
       protection: 'Protection', vaultSecurity: 'Vault lock', off: 'Off',
@@ -54,7 +56,7 @@
       markPending: 'Masked when you send.', markMaskNow: 'Mask now',
       statusReady: 'Ready', statusOnSub: 'on {site}', statusPrivateSub: 'temporary chat on {site}',
       statusReadySub: 'Masks AI fields on {site}', statusOffSub: 'On every site. Personal details go to AI unmasked.',
-      statusNoneSub: 'Kamelo can’t run on this page.', askPrivatelySub: 'Temporary chat: not in your history',
+      statusNoneSub: 'Kamelo can’t run on this page.', askPrivatelySub: 'Not in your history, not used for training',
 
       thisMonth: 'This month', statsCaption: 'items protected in {month}', statsEmpty: 'Nothing protected yet in {month}.',
       types_PERSON: 'Names', types_EMAIL: 'Email addresses', types_PHONE: 'Phone numbers', types_IBAN: 'IBANs',
@@ -72,9 +74,73 @@
       topicAdvice: 'Kamelo can’t mask this. Consider a temporary chat.',
       topicOk: 'OK', topicMute: 'Don’t show again',
       topicAdvicePrivate: 'Ask it in a temporary chat: it stays out of your history and isn’t used for training.',
-      topicPrivate: 'Ask privately',
+      topicPrivate: 'Temporary chat',
       privateReady: 'Temporary chat: not in your history, not used for training.',
+      topicProtect: 'Ask in Private Chat',
+      topicAdviceChat: 'Ask it in Kamelo’s Private Chat instead.',
+      pchatTitle: 'Private Chat', pchatLeft: '{n} of {max} free questions left today',
+      pchatNewChat: 'New chat', pchatChatsGone: 'Chats disappear when you close this window.',
+      pchatChecking: 'Checking…',
+      pchatVerified: 'Sealed',
+      pchatNotVerified: 'Not verified',
+      pchatNotVerifiedInfo: 'Kamelo couldn’t confirm that the AI runs the published code in a sealed chip, so nothing is sent. Try again in a moment.',
+      pchatInfo: 'Your question is sealed on this device: encrypted so only a sealed chip can open it. Not even we can read it. We can see that a question was sent and roughly how long it was.',
+      pchatCheckedAt: 'Checked at {time}', pchatViewCode: 'View the code',
+      pchatEmptyTitle: 'What’s on your mind?',
+      pchatEmptyText: 'Help in confidence',
+      pchatFactAccount: 'No account', pchatFactSaved: 'Nothing saved', pchatFactTraining: 'Not used for training',
+      pchatPlaceholder: 'Ask anything', pchatHint: 'Names and details are masked first', pchatSend: 'Send',
+      pchatMovedTitle: 'Moved here', pchatMoved: 'Nothing was sent to the other AI. Press send when you’re ready.',
+      pchatSeen: 'This is what the AI gets',
+      pchatLimitTitle: 'You’ve used today’s {max} free questions', pchatLimit: 'More tomorrow. Masking and temporary chats keep working.',
+      pchatPlus: 'Kamelo Plus · €4.99 a month incl. VAT (soon)',
+      pchatNotSentTitle: 'Not sent', pchatNotSent: 'Nothing was sent.',
+      pchatNoKey: 'Private Chat Plus isn’t available right now. Nothing was sent.',
+      pchatBadKey: 'Private Chat Plus isn’t available right now. Nothing was sent.',
+      pchatNoRelay: 'Private Chat Plus isn’t available right now. Nothing was sent.',
+      pchatError: 'Something went wrong.',
+      pchatCut: 'The answer was cut short. Ask “go on” for the rest.',
+      pchatOnDevice: 'On this device',
+      pchatDeviceInfo: 'Your question never leaves this device. The AI built into {browser} answers it right here.',
+      pchatDeviceInfoFx: 'Your question never leaves this device. Firefox runs a small open AI model (Qwen3) right here. Firefox downloaded it once from Hugging Face.',
+      pchatDownloading: 'Downloading the on-device AI ({p}%)…',
+      pchatDeviceOfferTitle: 'Answer on this device?',
+      pchatDeviceOffer: '{browser} can answer here for free, and your question never leaves this device. First {browser} downloads its own AI once. It’s a big download: {browser} needs {free} GB of free space.',
+      pchatDeviceOfferFx: 'Firefox can answer here for free, and your question never leaves this device. First Firefox downloads an AI model of {size} once, from Hugging Face. Firefox asks for your permission first.',
+      pchatDeviceDownload: 'Download', pchatDeviceNotNow: 'Not now', pchatCancel: 'Cancel',
+      pchatPreparing: 'Getting the AI on this device ready…',
+      pchatDeviceReady: 'The AI on this device is ready.',
+      pchatThinkingDevice: 'Answering on this device. The answer appears all at once and can take up to a minute.',
+      pchatDeviceFailed: 'The AI in {browser} couldn’t start on this device. Nothing was sent, and your question is still in the box.',
+      pchatDeviceBlocked: 'AI is switched off in Firefox’s settings, so it can’t answer on this device. Nothing was sent.',
+      pchatDeviceDenied: 'Firefox didn’t get permission, so nothing was downloaded or sent.',
+      pchatDeviceCancelled: 'Download stopped. Nothing was sent.',
+      pchatDeviceSpace: 'There isn’t enough room for the AI model in Firefox. Nothing was sent.',
+      pchatRemoveModel: 'Remove the AI model ({size})', pchatModelRemoved: 'Removed.',
+      pchatUseDevice: 'Answer on this device after all',
+      pchatNoDeviceTitle: 'No AI on this device',
+      pchatNoDevice: '{browser} can’t run its own AI on this computer: it needs {needs}. Ask in a temporary chat instead: it stays out of your history and isn’t used for training. Kamelo masks your details as always.',
+      pchatNeedsChrome: 'a graphics chip with more than 4 GB of video memory (or 16 GB of RAM), and 22 GB of free space',
+      pchatNeedsEdge: 'Windows 10/11 or macOS 13.3+, a graphics chip with at least 5.5 GB of memory and 20 GB of free space',
+      pchatNoApi: '{browser} doesn’t offer its built-in AI to extensions yet. Ask in a temporary chat instead: it stays out of your history and isn’t used for training. Kamelo masks your details as always.',
+      pchatOldFirefox: 'Firefox 140 or newer can answer on this device. Update Firefox, or ask in a temporary chat instead.',
+      pchatSlowFirefox: 'Firefox’s own AI is still too slow on most computers, so Kamelo doesn’t use it yet. Ask in a temporary chat instead: it stays out of your history and isn’t used for training. Kamelo masks your details as always.',
+      pchatDeviceMemory: 'This computer doesn’t have enough free memory for the AI on this device. Nothing was sent.',
+      pchatDeviceSlow: 'The AI on this device answered very slowly on this computer, so Kamelo now offers a temporary chat instead: it stays out of your history and isn’t used for training. Kamelo masks your details as always.',
+      pchatSlowNote: 'That took {s} seconds. If it stays this slow, Kamelo will offer a temporary chat next time.',
+      pchatCutShort: 'Kept short so it stays fast on this device. Ask a follow-up for more.',
+      pchatDeviceCant: 'The AI on this device couldn’t answer this one. Nothing was sent, and your question is still in the box.',
+      pchatTooLong: 'This is too long for the AI on this device. Nothing was sent. Shorten it, or ask in a temporary chat.',
+      pchatNoDeviceDeclined: 'You chose not to download the AI on this device. Ask in a temporary chat instead: it stays out of your history and isn’t used for training.',
+      pchatTempChat: 'Temporary chat in {site}',
+      pchatTempOpened: 'Opening a temporary chat in {site}, with your question ready to send. Nothing was sent from here.',
+      privateChat: 'Private Chat',
       topicWarnings: 'Warn about sensitive topics',
+      privateChatSetting: 'Offer Private Chat for personal questions',
+      onOff: 'Kamelo on or off', statusOn: 'On', statusTopicsSub: 'Notices personal topics on {site}', statusAiOnlySub: 'Kamelo works on AI chat sites like ChatGPT, Claude and Gemini.',
+      tempChatNew: 'Start a temporary chat', mutedTopics: 'Muted topics', privacyPolicy: 'Privacy',
+      topicName_HEALTH: 'Health', topicName_MENTAL: 'Mental health', topicName_SEXUALITY: 'Sexuality',
+      topicName_RELIGION: 'Faith or religion', topicName_MONEY: 'Money problems', topicName_LEGAL: 'Police or the courts',
       exceptionFrom: 'From {site} · {date}',
 
       vaultPageTitle: 'Vault · Kamelo',
@@ -85,7 +151,7 @@
       methodTouch: 'Touch ID', methodPassword: 'a password', and: 'and',
       setupTouch: 'Lock with Touch ID', usePassword: 'Use your own password',
       newPassword: 'New password (at least 8 characters)', repeatPassword: 'Repeat password', secureVault: 'Lock vault',
-      passwordHint: 'Don’t use your Google password or any password you already use. If you forget this password, the vault can’t be opened; Kamelo will then start a new one.',
+      passwordHint: 'Don’t use your email password or any password you already use. If you forget this password, the vault can’t be opened; Kamelo will then start a new one.',
       unlockTouch: 'Unlock with Touch ID', passwordField: 'Password', unlock: 'Unlock',
       lockedHint: 'Even while locked, Kamelo keeps protecting your data. You only need to unlock to restore it in answers.',
       lockNow: 'Lock now', addTouch: 'Add Touch ID', addPassword: 'Add password',
@@ -103,8 +169,10 @@
 
     nl: {
       extName: 'Kamelo: privacysoftware voor AI',
-      extDescription: 'Praat vrij met AI. Kamelo schermt je naam en persoonsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of andere AI bereiken.',
+      extDescription: 'Private Chat met AI op je eigen computer, en een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt.',
       actionTitle: 'Kamelo',
+      extNameTeams: 'Kamelo for teams',
+      extDescriptionTeams: 'Kamelo for teams schermt persoons- en bedrijfsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of AI in werkapps bereiken.',
 
       settings: 'Instellingen', back: 'Terug', loading: 'Laden…',
       protection: 'Bescherming', vaultSecurity: 'Kluisbeveiliging', off: 'Uit',
@@ -141,7 +209,7 @@
       type_POSTCODE: 'postcode', type_IP: 'IP-adres', type_WALLET: 'cryptowallet', type_SECRET: 'wachtwoord of sleutel',
       type_CONFIDENTIAL: 'eigen term', type_COMPANY: 'bedrijf',
 
-      toastMore: 'Bekijk', toastMoreN: '+{n} meer', toastCompact: '{n} afgeschermd', detailsTitle: 'Wat de AI ziet',
+      toastMore: 'Details', toastMoreN: '+{n} meer', toastCompact: '{n} afgeschermd', detailsTitle: 'Wat de AI ziet',
       detailsClose: 'Sluiten',
       detailsKeep: 'Zichtbaar laten', detailsKept: 'Blijft zichtbaar', detailsRemembered: 'onthouden',
       toastUndo: 'Ongedaan maken',
@@ -149,7 +217,7 @@
       markPending: 'Wordt afgeschermd als je verstuurt.', markMaskNow: 'Nu afschermen',
       statusReady: 'Klaar', statusOnSub: 'op {site}', statusPrivateSub: 'tijdelijke chat op {site}',
       statusReadySub: 'Schermt AI-velden af op {site}', statusOffSub: 'Op alle sites. Persoonsgegevens gaan onafgeschermd naar AI.',
-      statusNoneSub: 'Kamelo kan op deze pagina niet werken.', askPrivatelySub: 'Tijdelijke chat zonder geschiedenis',
+      statusNoneSub: 'Kamelo kan op deze pagina niet werken.', askPrivatelySub: 'Niet in je geschiedenis, niet voor training',
 
       thisMonth: 'Deze maand', statsCaption: 'gegevens afgeschermd in {month}', statsEmpty: 'Nog niets afgeschermd in {month}.',
       types_PERSON: 'Namen', types_EMAIL: 'E-mailadressen', types_PHONE: 'Telefoonnummers', types_IBAN: 'IBAN’s',
@@ -167,9 +235,73 @@
       topicAdvice: 'Dit kan Kamelo niet afschermen. Overweeg een tijdelijke chat.',
       topicOk: 'Oké', topicMute: 'Niet meer tonen',
       topicAdvicePrivate: 'Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training.',
-      topicPrivate: 'Vraag het privé',
+      topicPrivate: 'Tijdelijke chat',
       privateReady: 'Tijdelijke chat: niet in je geschiedenis, niet voor training.',
+      topicProtect: 'Vraag in Private Chat',
+      topicAdviceChat: 'Stel je vraag liever in de Private Chat van Kamelo.',
+      pchatTitle: 'Private Chat', pchatLeft: 'Nog {n} van {max} gratis vragen vandaag',
+      pchatNewChat: 'Nieuw gesprek', pchatChatsGone: 'Gesprekken verdwijnen als je dit venster sluit.',
+      pchatChecking: 'Controleren…',
+      pchatVerified: 'Verzegeld',
+      pchatNotVerified: 'Niet gecontroleerd',
+      pchatNotVerifiedInfo: 'Kamelo kon niet bevestigen dat de AI de openbare code in een afgesloten chip draait, dus er wordt niets verstuurd. Probeer het zo opnieuw.',
+      pchatInfo: 'Je vraag wordt verzegeld op dit apparaat: versleuteld, zodat alleen een afgesloten chip hem kan openen. Zelfs wij kunnen hem niet lezen. We zien wel dát er een vraag is verstuurd en ongeveer hoe lang hij was.',
+      pchatCheckedAt: 'Gecontroleerd om {time}', pchatViewCode: 'Bekijk de code',
+      pchatEmptyTitle: 'Waar zit je mee?',
+      pchatEmptyText: 'Hulp in vertrouwen',
+      pchatFactAccount: 'Geen account', pchatFactSaved: 'Niets bewaard', pchatFactTraining: 'Niet voor training',
+      pchatPlaceholder: 'Vraag maar', pchatHint: 'Namen en gegevens worden eerst afgeschermd', pchatSend: 'Versturen',
+      pchatMovedTitle: 'Hierheen verplaatst', pchatMoved: 'Er is niets naar de andere AI gestuurd. Druk op versturen als je klaar bent.',
+      pchatSeen: 'Dit krijgt de AI',
+      pchatLimitTitle: 'Je hebt je {max} gratis vragen van vandaag gebruikt', pchatLimit: 'Morgen weer. Afschermen en tijdelijke chats blijven werken.',
+      pchatPlus: 'Kamelo Plus · €4,99 per maand incl. btw (binnenkort)',
+      pchatNotSentTitle: 'Niet verstuurd', pchatNotSent: 'Er is niets verstuurd.',
+      pchatNoKey: 'Private Chat Plus is nu niet beschikbaar. Er is niets verstuurd.',
+      pchatBadKey: 'Private Chat Plus is nu niet beschikbaar. Er is niets verstuurd.',
+      pchatNoRelay: 'Private Chat Plus is nu niet beschikbaar. Er is niets verstuurd.',
+      pchatError: 'Er ging iets mis.',
+      pchatCut: 'Het antwoord is afgekapt. Vraag “ga door” voor de rest.',
+      pchatOnDevice: 'Op dit apparaat',
+      pchatDeviceInfo: 'Je vraag verlaat dit apparaat niet. De AI die in {browser} zit, beantwoordt hem hier.',
+      pchatDeviceInfoFx: 'Je vraag verlaat dit apparaat niet. Firefox draait hier een klein open AI-model (Qwen3). Dat heeft Firefox één keer gedownload van Hugging Face.',
+      pchatDownloading: 'De AI voor op dit apparaat downloaden ({p}%)…',
+      pchatDeviceOfferTitle: 'Beantwoorden op dit apparaat?',
+      pchatDeviceOffer: '{browser} kan hier gratis antwoorden, en je vraag verlaat dit apparaat niet. Eerst downloadt {browser} één keer zijn eigen AI. Dat is een grote download: {browser} heeft {free} GB vrije ruimte nodig.',
+      pchatDeviceOfferFx: 'Firefox kan hier gratis antwoorden, en je vraag verlaat dit apparaat niet. Eerst downloadt Firefox één keer een AI-model van {size}, van Hugging Face. Firefox vraagt eerst je toestemming.',
+      pchatDeviceDownload: 'Downloaden', pchatDeviceNotNow: 'Nu niet', pchatCancel: 'Annuleren',
+      pchatPreparing: 'De AI op dit apparaat wordt klaargezet…',
+      pchatDeviceReady: 'De AI op dit apparaat is klaar.',
+      pchatThinkingDevice: 'Wordt op dit apparaat beantwoord. Het antwoord komt in één keer en kan tot een minuut duren.',
+      pchatDeviceFailed: 'De AI in {browser} kon op dit apparaat niet starten. Er is niets verstuurd en je vraag staat er nog.',
+      pchatDeviceBlocked: 'AI staat uit in de instellingen van Firefox, dus hij kan niet op dit apparaat antwoorden. Er is niets verstuurd.',
+      pchatDeviceDenied: 'Firefox kreeg geen toestemming, dus er is niets gedownload of verstuurd.',
+      pchatDeviceCancelled: 'Download gestopt. Er is niets verstuurd.',
+      pchatDeviceSpace: 'Er is in Firefox niet genoeg ruimte voor het AI-model. Er is niets verstuurd.',
+      pchatRemoveModel: 'AI-model verwijderen ({size})', pchatModelRemoved: 'Verwijderd.',
+      pchatUseDevice: 'Toch op dit apparaat beantwoorden',
+      pchatNoDeviceTitle: 'Geen AI op dit apparaat',
+      pchatNoDevice: '{browser} kan op deze computer zelf geen AI draaien. Daarvoor is nodig: {needs}. Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training. Kamelo schermt je gegevens af zoals altijd.',
+      pchatNeedsChrome: 'een grafische chip met meer dan 4 GB videogeheugen (of 16 GB werkgeheugen), en 22 GB vrije ruimte',
+      pchatNeedsEdge: 'Windows 10/11 of macOS 13.3+, een grafische chip met minstens 5,5 GB geheugen en 20 GB vrije ruimte',
+      pchatNoApi: '{browser} biedt zijn ingebouwde AI nog niet aan extensies aan. Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training. Kamelo schermt je gegevens af zoals altijd.',
+      pchatOldFirefox: 'Vanaf Firefox 140 kan Firefox op dit apparaat antwoorden. Werk Firefox bij, of stel je vraag in een tijdelijke chat.',
+      pchatSlowFirefox: 'De eigen AI van Firefox is op de meeste computers nog te traag, dus Kamelo gebruikt hem nog niet. Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training. Kamelo schermt je gegevens af zoals altijd.',
+      pchatDeviceMemory: 'Deze computer heeft niet genoeg vrij geheugen voor de AI op dit apparaat. Er is niets verstuurd.',
+      pchatDeviceSlow: 'De AI op dit apparaat antwoordde op deze computer erg traag, dus Kamelo biedt nu een tijdelijke chat aan: die komt niet in je geschiedenis en wordt niet gebruikt voor training. Kamelo schermt je gegevens af zoals altijd.',
+      pchatSlowNote: 'Dat duurde {s} seconden. Blijft het zo traag, dan biedt Kamelo de volgende keer een tijdelijke chat aan.',
+      pchatCutShort: 'Kort gehouden, zodat het snel blijft op dit apparaat. Vraag door voor meer.',
+      pchatDeviceCant: 'De AI op dit apparaat kon deze vraag niet beantwoorden. Er is niets verstuurd en je vraag staat er nog.',
+      pchatTooLong: 'Dit is te lang voor de AI op dit apparaat. Er is niets verstuurd. Maak het korter, of stel je vraag in een tijdelijke chat.',
+      pchatNoDeviceDeclined: 'Je hebt de AI op dit apparaat niet gedownload. Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training.',
+      pchatTempChat: 'Tijdelijke chat in {site}',
+      pchatTempOpened: 'Er gaat een tijdelijke chat open in {site}, met je vraag klaar om te versturen. Vanaf hier is niets verstuurd.',
+      privateChat: 'Private Chat',
       topicWarnings: 'Waarschuwen bij gevoelige onderwerpen',
+      privateChatSetting: 'Private Chat aanbieden bij persoonlijke vragen',
+      onOff: 'Kamelo aan of uit', statusOn: 'Aan', statusTopicsSub: 'Let op persoonlijke onderwerpen op {site}', statusAiOnlySub: 'Kamelo werkt op AI-chatsites zoals ChatGPT, Claude en Gemini.',
+      tempChatNew: 'Begin een tijdelijke chat', mutedTopics: 'Uitgezette onderwerpen', privacyPolicy: 'Privacy',
+      topicName_HEALTH: 'Gezondheid', topicName_MENTAL: 'Mentale gezondheid', topicName_SEXUALITY: 'Seksualiteit',
+      topicName_RELIGION: 'Geloof', topicName_MONEY: 'Geldzorgen', topicName_LEGAL: 'Politie of rechter',
       exceptionFrom: 'Van {site} · {date}',
 
       vaultPageTitle: 'Kluis · Kamelo',
@@ -180,7 +312,7 @@
       methodTouch: 'Touch ID', methodPassword: 'wachtwoord', and: 'en',
       setupTouch: 'Beveilig met Touch ID', usePassword: 'Gebruik een eigen wachtwoord',
       newPassword: 'Nieuw wachtwoord (minstens 8 tekens)', repeatPassword: 'Herhaal wachtwoord', secureVault: 'Kluis beveiligen',
-      passwordHint: 'Gebruik niet je Google-wachtwoord of een ander wachtwoord dat je al gebruikt. Vergeet je dit wachtwoord, dan is de kluis niet meer te openen; Kamelo maakt dan een nieuwe aan.',
+      passwordHint: 'Gebruik niet je e-mailwachtwoord of een ander wachtwoord dat je al gebruikt. Vergeet je dit wachtwoord, dan is de kluis niet meer te openen; Kamelo maakt dan een nieuwe aan.',
       unlockTouch: 'Ontgrendel met Touch ID', passwordField: 'Wachtwoord', unlock: 'Ontgrendelen',
       lockedHint: 'Ook vergrendeld blijft Kamelo je gegevens afschermen. Ontgrendelen is alleen nodig om ze in antwoorden terug te zetten.',
       lockNow: 'Nu vergrendelen', addTouch: 'Touch ID toevoegen', addPassword: 'Wachtwoord toevoegen',
@@ -211,10 +343,13 @@
   }
   const LANG = language();
 
-  // Chrome of Edge: voor teksten als "als je Chrome sluit" en het adres van de extensiepagina. ?browser=edge voor previews.
+  // Chrome, Edge of Firefox: voor teksten als "als je Chrome sluit" en het adres van de extensiepagina. ?browser=edge voor previews.
   function browser() {
     const nav = root.navigator;
     const forced = root.location ? new URLSearchParams(root.location.search).get('browser') : null;
+    const firefox = forced ? forced === 'firefox'
+      : typeof root.browser?.runtime?.getBrowserInfo === 'function' || /\bFirefox\//.test(nav?.userAgent || '');
+    if (firefox) return { id: 'firefox', name: 'Firefox', extensions: 'about:addons' };
     const edge = forced ? forced === 'edge'
       : nav?.userAgentData?.brands ? nav.userAgentData.brands.some(b => b.brand === 'Microsoft Edge')
       : /\bEdg\//.test(nav?.userAgent || '');
@@ -224,8 +359,28 @@
   }
   const BROWSER = browser();
 
+  // De gratis editie (zie edition.js) schermt niets af: daar andere woorden waar de gewone tekst over afschermen gaat.
+  const MASKS_EN = ' Kamelo masks your details as always.', MASKS_NL = ' Kamelo schermt je gegevens af zoals altijd.';
+  const PUBLIC = {
+    en: {
+      topicAdvice: 'Consider a temporary chat for this.',
+      pchatCardSub: 'Answers on your own computer', tempChatSub: 'Not saved in your history',
+      statusOffSub: 'No notices about personal topics.',
+      pchatLimit: 'More tomorrow. Temporary chats keep working.',
+      ...Object.fromEntries(['pchatNoDevice', 'pchatNoApi', 'pchatSlowFirefox', 'pchatDeviceSlow'].map(k => [k, STRINGS.en[k].replace(MASKS_EN, '')])),
+    },
+    nl: {
+      topicAdvice: 'Overweeg hiervoor een tijdelijke chat.',
+      pchatCardSub: 'Antwoordt op je eigen computer', tempChatSub: 'Niet in je geschiedenis',
+      statusOffSub: 'Geen meldingen bij persoonlijke onderwerpen.',
+      pchatLimit: 'Morgen weer. Tijdelijke chats blijven werken.',
+      ...Object.fromEntries(['pchatNoDevice', 'pchatNoApi', 'pchatSlowFirefox', 'pchatDeviceSlow'].map(k => [k, STRINGS.nl[k].replace(MASKS_NL, '')])),
+    },
+  };
+
   function t(key, vars = {}) {
-    const text = STRINGS[LANG][key] ?? STRINGS.en[key] ?? key;
+    const pub = root.KameloEdition === 'public' ? PUBLIC : null;
+    const text = pub?.[LANG][key] ?? STRINGS[LANG][key] ?? pub?.en[key] ?? STRINGS.en[key] ?? key;
     const all = { browser: BROWSER.name, extensions: BROWSER.extensions, ...vars };
     return text.replace(/\{(\w+)\}/g, (_, k) => (k in all ? all[k] : `{${k}}`));
   }
@@ -246,7 +401,7 @@
     });
   }
 
-  const api = { STRINGS, LANG, BROWSER, t, typeLabel, typesLabel, applyI18n };
+  const api = { STRINGS, PUBLIC, LANG, BROWSER, t, typeLabel, typesLabel, applyI18n };
   root.PrivacyI18n = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

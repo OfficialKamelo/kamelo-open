@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kamelo Private Chat</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <header class="top">
+    <!-- Gesprekken in dit venster: de titel is de eerste vraag. Alleen in het geheugen; dicht = weg. -->
+    <button class="convbtn" id="convBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="convList">
+      <h1 id="convTitle" data-i18n="pchatTitle"></h1>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+    </button>
+    <button class="newchat" id="newChat" type="button" data-i18n-title="pchatNewChat" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <!-- Of de verbinding met de AI in de enclave is gecontroleerd. Klik voor de details. -->
+    <button class="lock" id="lock" type="button" data-state="checking" aria-controls="lockInfo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      <span id="lockText"></span>
+    </button>
+  </header>
+  <div class="lockinfo" id="lockInfo" hidden></div>
+  <div class="convlist" id="convList" hidden></div>
+
+  <main class="msgs" id="msgs"></main>
+  <template id="emptyTpl">
+    <div class="empty">
+      <div class="aura" aria-hidden="true"><img src="../icons/icon128.png" alt=""></div>
+      <h2 data-i18n="pchatEmptyTitle"></h2>
+      <p data-i18n="pchatEmptyText"></p>
+      <ul class="facts">
+        <li data-i18n="pchatFactAccount"></li><li data-i18n="pchatFactSaved"></li><li data-i18n="pchatFactTraining"></li>
+      </ul>
+    </div>
+  </template>
+
+  <div class="note" id="note" hidden></div>
+
+  <form class="composer" id="form">
+    <textarea id="input" rows="3" data-i18n-placeholder="pchatPlaceholder"></textarea>
+    <div class="row">
+      <span class="hint" id="hint"></span>
+      <button class="send" id="send" type="submit" data-i18n-title="pchatSend" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </button>
+    </div>
+  </form>
+
+  <script src="../src/edition.js"></script>
+  <script src="../src/strings.js"></script>
+  <script src="../src/config.js"></script>
+  <script src="../src/sites.js"></script>
+  <script src="device.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

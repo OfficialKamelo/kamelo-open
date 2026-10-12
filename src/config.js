@@ -28,6 +28,7 @@
     retentionDays: 30, // 0 = nooit automatisch wissen
     topicWarnings: true, // waarschuwen bij gevoelige onderwerpen (zie topics.js)
     mutedTopics: [], // onderwerpen waarbij de gebruiker "Niet meer tonen" koos
+    privateChat: true, // "Vraag in Private Chat" in de melding: naar Private Chat (op dit apparaat of de tijdelijke chat; de chip alleen voor Plus)
   };
 
   root.PrivacyConfig = { AI_FIELD_HINT, DEFAULT_SETTINGS, SUPPORT_EMAIL };

@@ -1,16 +1,14 @@
 {
   "name": "kamelo",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "license": "AGPL-3.0-only",
   "private": true,
-  "description": "Chrome extension that masks personal data on your device before it reaches an AI.",
+  "description": "Kamelo: a browser extension that suggests a temporary chat or Private Chat (on-device AI) when you type something personal into an AI chat.",
   "scripts": {
-    "test": "node tests/detector.test.js && node tests/topics.test.js && node tests/stats.test.js && node tests/vaultcrypto.test.js && node tests/vaultlock.test.js && node tests/vaultscope.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/preview.test.mjs && node tests/release.test.mjs",
-    "test:browser": "node --test --test-concurrency=1 tests/browser/extension.test.mjs",
-    "test:sites": "node tests/live/sites.mjs",
+    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/release.test.mjs && node tests/device.test.js && node tests/pack.test.mjs",
+    "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs",
     "pack": "node tools/pack.mjs",
     "release": "node tools/release.mjs",
-    "test:firefox": "node tests/browser/firefox.mjs",
     "pack:firefox": "node tools/pack.mjs --firefox"
   },
   "engines": {

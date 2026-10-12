@@ -5,11 +5,13 @@
 //   composer  CSS-selector van het veld waarin je typt. Optioneel: zonder selector vindt Kamelo het veld zelf.
 //             Placeholders blijven alleen in dit veld staan; overal anders worden ze teruggezet.
 //   live      pagina die de nachtelijke sitecontrole opent (tests/live/sites.mjs); alleen sites die werken zonder inloggen
-//   private   hoe je hier een tijdelijke chat opent (niet in je geschiedenis, niet voor training), voor "Vraag het privé":
+//   private   hoe je hier een tijdelijke chat opent (niet in je geschiedenis, niet voor training), voor "Tijdelijke chat":
 //             url    = adres van een nieuwe tijdelijke chat, of anders
 //             start  = adres van een nieuwe chat + button = de knop die daar de tijdelijke chat aanzet;
 //             onUrl  = stukje van de url, of onSel = element, waaraan je ziet dat je er al in zit
 //             (nagekeken op de echte, ingelogde sites op 11 okt 2026)
+//   teams     alleen in Kamelo for teams: ontwikkelaarsconsoles en chatbot-widgets (daar stelt niemand een persoonlijke
+//             vraag, maar wel klantgegevens). De gratis editie vraagt er geen toegang tot.
 (function (root) {
   'use strict';
 
@@ -27,25 +29,25 @@
     { name: 'DeepSeek', hosts: ['chat.deepseek.com'], composer: '#chat-input' },
     { name: 'Meta AI', hosts: ['meta.ai'] },
     { name: 'Microsoft 365 Copilot', hosts: ['m365.cloud.microsoft'] },
-    { name: 'OpenAI Playground', hosts: ['platform.openai.com'] },
+    { name: 'OpenAI Playground', hosts: ['platform.openai.com'], teams: true },
     { name: 'AI Studio', hosts: ['aistudio.google.com'] },
     { name: 'NotebookLM', hosts: ['notebooklm.google.com'] },
-    { name: 'Anthropic Console', hosts: ['console.anthropic.com'] },
+    { name: 'Anthropic Console', hosts: ['console.anthropic.com'], teams: true },
     { name: 'Poe', hosts: ['poe.com'] },
     { name: 'You.com', hosts: ['you.com'] },
     { name: 'Qwen', hosts: ['chat.qwen.ai'] },
     { name: 'Duck.ai', hosts: ['duck.ai'] },
     { name: 'Character.AI', hosts: ['character.ai'] },
     { name: 'Pi', hosts: ['pi.ai'] },
-    { name: 'OpenRouter', hosts: ['openrouter.ai'] },
-    { name: 'Groq', hosts: ['console.groq.com'] },
+    { name: 'OpenRouter', hosts: ['openrouter.ai'], teams: true },
+    { name: 'Groq', hosts: ['console.groq.com'], teams: true },
     { name: 'TypingMind', hosts: ['typingmind.com'] },
     { name: 'Phind', hosts: ['phind.com'] },
     { name: 'Kimi', hosts: ['kimi.com'] },
     { name: 'Z.ai', hosts: ['z.ai'] },
     // Bouwers van AI-chatbots die als widget op andere sites draaien (vaak in een iframe).
     {
-      name: 'AI chatbot',
+      name: 'AI chatbot', teams: true,
       hosts: ['chatbase.co', 'botpress.cloud', 'voiceflow.com', 'kapa.ai', 'inkeep.com', 'mendable.ai',
         'customgpt.ai', 'sitegpt.ai', 'chatling.ai', 'docsbot.ai', 'chatsimple.ai'],
     },

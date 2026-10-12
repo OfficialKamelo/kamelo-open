@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kamelo</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="public.css">
+</head>
+<body class="pub">
+  <!-- Popup van de gratis editie (zie src/edition.js): geen afschermen, geen kluis. Bewust klein: aan/uit
+       (Beschermd), Private Chat (alleen Chrome) en een tijdelijke chat. Kamelo for teams gebruikt popup.html. -->
+  <div class="view" id="view-main">
+    <header class="top">
+      <img src="../icons/icon128.png" alt="" class="logo">
+      <h1>Kamelo</h1>
+    </header>
+
+    <div class="status" id="status" data-state="ready">
+      <div class="state" id="state">
+        <svg class="ic-ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/><path d="m9 12 2.2 2.2L15.2 10"/></svg>
+        <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/><path d="M10 9.5v5M14 9.5v5"/></svg>
+        <svg class="ic-ready" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.8v5.4c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V5.8z"/></svg>
+        <span id="stateText"></span>
+      </div>
+      <button class="state reload" id="reloadTab" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></svg><span data-i18n="statusReload"></span></button>
+      <span class="switch big"><input type="checkbox" id="enabled" data-i18n-title="onOff"><span class="track"></span></span>
+    </div>
+
+    <!-- Private Chat (alleen Chrome) en een tijdelijke chat: op ChatGPT, Claude en Gemini in hetzelfde tabblad,
+         met wat er al in het veld staat; anders een nieuwe in ChatGPT. -->
+    <div class="pub-list">
+      <button class="pub-row" id="openPrivateChat" type="button">
+        <span class="ico green"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+        <span class="txt"><b data-i18n="privateChat"></b><span data-i18n="pchatCardSub"></span></span>
+        <svg class="chev" viewBox="0 0 8 14" aria-hidden="true"><path d="m1 1 6 6-6 6"/></svg>
+      </button>
+      <button class="pub-row" id="tempChat" type="button">
+        <span class="ico purple"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12c0-4 3.4-7 7.5-7s7.5 3 7.5 7-3.4 7-7.5 7c-1.1 0-2.2-.2-3.1-.6L4.5 19.5l1.1-3.6A6.6 6.6 0 0 1 4.5 12Z" stroke-dasharray="2.6 2.4"/><path d="M9.2 11.2h.01M12 11.2h.01M14.8 11.2h.01"/></svg></span>
+        <span class="txt"><b data-i18n="tempChatNew"></b><span data-i18n="tempChatSub"></span></span>
+        <svg class="chev" viewBox="0 0 8 14" aria-hidden="true"><path d="m1 1 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="../src/edition.js"></script>
+  <script src="../src/strings.js"></script>
+  <script src="../src/sites.js"></script>
+  <script src="../src/config.js"></script>
+  <script src="public.js"></script>
+</body>
+</html>

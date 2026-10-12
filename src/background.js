@@ -1,27 +1,50 @@
 // Achtergrond.
 // - Opent de welkomstpagina na installatie.
-// - Beheert de kluis: de actuele kluis staat in chrome.storage.session (alleen in het werkgeheugen);
-//   deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.
+// - Brengt een vraag naar een tijdelijke chat of naar Private Chat (beide edities).
+// - Alleen Kamelo for teams: beheert de kluis. De actuele kluis staat in chrome.storage.session (alleen in het
+//   werkgeheugen); deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.
+// - Alleen de gratis editie: ruimt na een update alles op wat 1.4.x en eerder voor het afschermen bewaarde.
 // In Firefox laadt het manifest deze bestanden zelf (background.scripts); daar bestaat importScripts niet.
-if (typeof importScripts === 'function') importScripts('vaultcrypto.js', 'vaultstore.js', 'stats.js', 'sites.js', 'config.js', 'detector.js', 'vaultscope.js');
-
-// In een eigen blok, zodat namen niet botsen als dit script samen met een pagina wordt geladen (previews).
-{
-const PC = globalThis.PrivacyCrypto;
-
-const { emptyVault, initSession } = globalThis.PrivacyVault;
-const VS = globalThis.PrivacyVaultScope;
-const D = globalThis.PrivacyDetector;
+if (typeof importScripts === 'function') {
+  importScripts('edition.js', 'sites.js', 'config.js');
+  // De gratis editie heeft de bestanden voor het afschermen niet (zie tools/pack.mjs).
+  if (globalThis.KameloEdition !== 'public') importScripts('vaultcrypto.js', 'vaultstore.js', 'stats.js', 'detector.js', 'vaultscope.js');
+  // Alleen de gratis editie: de AI van Chrome op dit apparaat als tweede kans voor gevoelige onderwerpen.
+  else importScripts('topic-ai.js');
+}
+const TEAMS = globalThis.KameloEdition !== 'public';
 
 // Na verwijderen opent de browser kamelo.eu/goodbye: waarom weg, met een oplossing per reden. Een gewone pagina, zonder gegevens erbij.
 chrome.runtime.setUninstallURL('https://kamelo.eu/goodbye');
 
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason !== 'install' && reason !== 'update') return;
+  if (!TEAMS) forgetMasking();
   injectIntoOpenTabs();
   // Na installatie: de bedankpagina op kamelo.eu. Dat is een gewoon tabblad; Kamelo stuurt zelf niets.
   if (reason === 'install') chrome.tabs.create({ url: 'https://kamelo.eu/welcome' });
 });
+
+// De gratis editie schermt niets meer af (sinds 12 okt 2026). Wat versie 1.4.x en eerder daarvoor op dit apparaat
+// bewaarde, gaat weg: de kluis (ook versleuteld), de kluisbeveiliging, het maandoverzicht en de eigen woordenlijsten.
+// Bij elke update en elke start, zodat er ook na een onderbroken update niets persoonlijks blijft staan.
+const MASKING_KEYS = ['vault', 'vaultEnc', 'protect', 'stats', 'noticesSeen'];
+const MASKING_SETTINGS = ['restore', 'customTerms', 'allowList', 'allowMeta', 'customAiSites', 'retentionDays',
+  // De gratis popup heeft geen knoppen meer voor de meldingen per onderwerp: die gaan terug naar de standaard (aan),
+  // anders kan iemand die ze ooit uitzette ze nooit meer aanzetten. Aan/uit van Kamelo zelf blijft zoals het was.
+  'topicWarnings', 'mutedTopics'];
+async function forgetMasking() {
+  try {
+    await chrome.storage.local.remove(MASKING_KEYS);
+    await chrome.storage.session.remove(['vault', 'key', 'locked', 'ready']);
+    const { settings } = await chrome.storage.local.get('settings');
+    if (settings && MASKING_SETTINGS.some(k => k in settings)) {
+      const kept = Object.fromEntries(Object.entries(settings).filter(([k]) => !MASKING_SETTINGS.includes(k)));
+      await chrome.storage.local.set({ settings: kept });
+    }
+  } catch (err) { console.error('[Kamelo] opruimen mislukt', err); }
+}
+if (!TEAMS) chrome.runtime.onStartup.addListener(forgetMasking);
 
 // Chrome voert content scripts alleen uit op pagina's die na het installeren of bijwerken worden geladen.
 // Zonder dit werkt Kamelo niet in tabbladen die al openstonden, tot de gebruiker ze herlaadt.
@@ -48,6 +71,20 @@ if (/beta/i.test(chrome.runtime.getManifest().version_name || '')) {
 // en het kluisvenster. Content scripts draaien in elke website; zij krijgen via berichten alleen het deel van hun eigen
 // site (zie vaultscope.js). Zo kan een website, ook een gekraakte, nooit de hele kluis of de sleutel bereiken.
 chrome.storage.session.setAccessLevel?.({ accessLevel: 'TRUSTED_CONTEXTS' });
+
+// Berichten komen alleen van Kamelo zelf, maar content scripts draaien in websites. Daarom:
+// - de kluis lezen en schrijven kan alleen voor de site van de afzender, zoals de browser die doorgeeft;
+// - vergrendelen, wegschrijven en Private Chat-teksten ophalen alleen vanuit Kamelo's eigen pagina's (popup, kluisvenster, chat).
+const fromExtensionPage = sender => sender.id === chrome.runtime.id && !!sender.url?.startsWith(chrome.runtime.getURL(''));
+
+// Alleen Kamelo for teams: de kluis. In een eigen blok, zodat namen niet botsen als dit script samen met een pagina
+// wordt geladen (previews).
+if (TEAMS) {
+const PC = globalThis.PrivacyCrypto;
+
+const { emptyVault, initSession } = globalThis.PrivacyVault;
+const VS = globalThis.PrivacyVaultScope;
+const D = globalThis.PrivacyDetector;
 
 // Eén keer per browsersessie de kluis in het werkgeheugen zetten (zie vaultstore.js).
 let initPromise = null;
@@ -131,11 +168,6 @@ function count(counts) {
   return statsQueue;
 }
 
-// Berichten komen alleen van Kamelo zelf, maar content scripts draaien in elke website. Daarom:
-// - de kluis lezen en schrijven kan alleen voor de site van de afzender, zoals de browser die doorgeeft;
-// - vergrendelen en wegschrijven alleen vanuit Kamelo's eigen pagina's (popup, kluisvenster).
-const fromExtensionPage = sender => sender.id === chrome.runtime.id && !!sender.url?.startsWith(chrome.runtime.getURL(''));
-
 chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (sender.id !== chrome.runtime.id) return;
   if (msg?.type === 'pf:count') { count(msg.counts).then(() => reply(true)); return true; }
@@ -152,11 +184,35 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     updateVault(v => VS.mergeSlice(v, msg.vault, where)).then(() => reply(true), () => reply(false));
     return true;
   }
+  if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }
+  if (msg?.type === 'pf:flush' && fromExtensionPage(sender)) { queue.then(() => reply(true)); return true; }
+});
+
+init().then(prune);
+}
+
+// Doorgegeven tekst (naar de tijdelijke chat of Private Chat) staat alleen in het werkgeheugen en verloopt. Wordt hij nooit
+// opgehaald (tabblad dicht, paneel niet open), dan ruimen we hem alsnog op. Slaapt de achtergrond eerder, dan wist de
+// browser het werkgeheugen bij afsluiten, en kijkt de volgende ophaalpoging naar de leeftijd.
+function expireLater(key, ms) {
+  setTimeout(async () => {
+    const { [key]: h } = await chrome.storage.session.get(key).catch(() => ({}));
+    if (h && Date.now() - h.at >= ms) await chrome.storage.session.remove(key).catch(() => {});
+  }, ms + 1000);
+}
+chrome.tabs.onRemoved?.addListener(async tabId => {
+  const { handoff: h } = await chrome.storage.session.get('handoff').catch(() => ({}));
+  if (h?.tab === tabId) await chrome.storage.session.remove('handoff').catch(() => {});
+});
+
+chrome.runtime.onMessage.addListener((msg, sender, reply) => {
+  if (sender.id !== chrome.runtime.id) return;
   // "Vraag het privé": de tekst gaat mee naar de tijdelijke chat in hetzelfde tabblad. Alleen in het werkgeheugen,
   // alleen voor dit tabblad en deze site (zoals de browser die doorgeeft, niet zoals het bericht zegt), hooguit een minuut.
   const senderHost = () => { try { return new URL(sender.url).hostname; } catch { return ''; } };
   if (msg?.type === 'pf:private-set' && sender.tab) {
-    chrome.storage.session.set({ handoff: { tab: sender.tab.id, host: senderHost(), text: String(msg.text), at: Date.now() } }).then(() => reply(true));
+    chrome.storage.session.set({ handoff: { tab: sender.tab.id, host: senderHost(), text: String(msg.text || '').slice(0, 20000), at: Date.now() } })
+      .then(() => { expireLater('handoff', 60000); reply(true); });
     return true;
   }
   if (msg?.type === 'pf:private-take' && sender.tab) {
@@ -167,9 +223,65 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     });
     return true;
   }
-  if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }
-  if (msg?.type === 'pf:flush' && fromExtensionPage(sender)) { queue.then(() => reply(true)); return true; }
+  // Private Chat (docs/PLAN-PRIVE-CHAT.md): "Ask in Private Chat" in de melding. Het zijpaneel moet meteen open, zonder
+  // await ervoor, anders telt de klik niet meer als gebruikersactie. Lukt dat niet (Firefox, oud Chrome), dan een klein venster.
+  // De tekst staat alleen in het werkgeheugen en alleen Kamelo's eigen chatpagina kan hem ophalen, één keer, binnen 2 minuten.
+  if (msg?.type === 'pf:pchat-open' && sender.tab) {
+    // De klik moet meteen het paneel openen (gebruikersactie), dus de instelling wordt in de content script al gecontroleerd.
+    openPrivateChat(sender.tab);
+    chrome.storage.session.set({ pchat: { text: String(msg.text || '').slice(0, 20000), host: senderHost(), typed: msg.typed === true, at: Date.now() } })
+      .then(() => { expireLater('pchat', 120000); reply(true); });
+    return true;
+  }
+  if (msg?.type === 'pf:pchat-take' && fromExtensionPage(sender)) {
+    chrome.storage.session.get('pchat').then(async ({ pchat: h }) => {
+      if (h) await chrome.storage.session.remove('pchat');
+      reply(h && Date.now() - h.at < 120000 ? { text: h.text, host: h.host || '', typed: h.typed === true } : null);
+    });
+    return true;
+  }
+  // Private Chat kan hier niet antwoorden (geen AI op dit apparaat, of een taal die hij niet kent): de vraag gaat naar
+  // de tijdelijke chat van dezelfde AI-site (anders ChatGPT). Zelfde weg als "Tijdelijke chat" in de melding: de tekst
+  // staat alleen in het werkgeheugen, voor dat ene nieuwe tabblad, en wordt daar afgeschermd ingevuld.
+  if (msg?.type === 'pf:pchat-temp' && fromExtensionPage(sender)) {
+    const S = globalThis.PrivacySites;
+    const from = S.siteFor(String(msg.host || ''));
+    const site = from?.private ? from : S.SITES.find(x => x.name === 'ChatGPT');
+    const url = site.private.url || site.private.start;
+    chrome.tabs.create({ url: 'about:blank', active: true }).then(async tab => {
+      const text = String(msg.text || '').slice(0, 20000);
+      if (text) { await chrome.storage.session.set({ handoff: { tab: tab.id, host: new URL(url).hostname, text, at: Date.now() } }); expireLater('handoff', 60000); }
+      await chrome.tabs.update(tab.id, { url });
+      reply(site.name);
+    }, () => reply(null));
+    return true;
+  }
+  if (msg?.type === 'pf:pchat-window' && fromExtensionPage(sender)) { openChatWindow(); reply(true); return; }
 });
 
-init().then(prune);
+// Alleen de gratis editie: een gevoelig onderwerp dat de woordenlijst miste, aan de AI van Chrome op dit apparaat
+// vragen (zie topic-ai.js). Alleen vanuit een tabblad; de tekst blijft in het werkgeheugen en wordt nergens bewaard of gelogd.
+// Is het model er niet (nog niet gedownload, Edge, Firefox), dan antwoordt dit { topic: null } en wordt er niets gedownload.
+if (!TEAMS && globalThis.KameloTopicAi) {
+  const deviceTopics = globalThis.KameloTopicAi.model();
+  chrome.runtime.onMessage.addListener((msg, sender, reply) => {
+    if (sender.id !== chrome.runtime.id || msg?.type !== 'pf:topic-ai' || !sender.tab) return;
+    deviceTopics.ask(String(msg.text || ''), sender.tab.id).then(reply, () => reply({ topic: null }));
+    return true;
+  });
+}
+
+// ---------- Private Chat openen ----------
+const CHAT_URL = chrome.runtime.getURL('chat/chat.html');
+function openChatWindow() {
+  chrome.windows.create({ url: CHAT_URL, type: 'popup', width: 440, height: 760, focused: true }).catch(() => chrome.tabs.create({ url: CHAT_URL }));
+}
+function openPrivateChat(tab) {
+  try {
+    if (chrome.sidePanel?.open) {
+      chrome.sidePanel.open({ tabId: tab.id }).catch(openChatWindow);
+      return;
+    }
+  } catch {}
+  openChatWindow();
 }

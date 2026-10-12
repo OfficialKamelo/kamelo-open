@@ -3,9 +3,15 @@
     "message": "Kamelo: privacysoftware voor AI"
   },
   "extDescription": {
-    "message": "Praat vrij met AI. Kamelo schermt je naam en persoonsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of andere AI bereiken."
+    "message": "Private Chat met AI op je eigen computer, en een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt."
   },
   "actionTitle": {
     "message": "Kamelo"
+  },
+  "extNameTeams": {
+    "message": "Kamelo for teams"
+  },
+  "extDescriptionTeams": {
+    "message": "Kamelo for teams schermt persoons- en bedrijfsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of AI in werkapps bereiken."
   }
 }

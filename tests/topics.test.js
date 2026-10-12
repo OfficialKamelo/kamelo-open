@@ -20,6 +20,43 @@ test('over jezelf of iemand om je heen', () => {
   topics('Als moslim wil ik tijdens de ramadan …. ik werk in de zorg')(['RELIGION']);
   topics('I have a criminal record, can I still get a visa?')(['LEGAL']);
 });
+test('de voorbeelden van kamelo.eu (moeten altijd een melding geven)', () => {
+  topics('I found a lump in my breast this morning. Should I be worried?')(['HEALTH']);
+  topics('i found a lump in my breast should i be worried?')(['HEALTH']);
+  topics('My partner has been low for weeks. How do I bring it up without making it worse?')(['MENTAL']);
+  topics('I’m €4,000 behind on my bills and too ashamed to tell anyone. Where do I start?')(['MONEY']);
+});
+test('gewone woorden voor klachten, niet alleen diagnoses', () => {
+  topics('My doctor says I need a blood test')(['HEALTH']);
+  topics('Ik heb een knobbel in mijn borst gevonden')(['HEALTH']);
+  topics('Ik sta rood en kan de huur niet betalen')(['MONEY']);
+  topics('I paid a lump sum last year')([]);
+  topics('I made a rash decision at work')([]);
+});
+test('zoals mensen echt typen: zonder hoofdletters of apostrof', () => {
+  topics('im $4000 behind on bills and idk what to do')(['MONEY']);
+  topics('ive had chest pain since yesterday')(['HEALTH']);
+  topics('cant pay rent this month what do i do')(['MONEY']);
+  topics('mn moeder heeft kanker')(['HEALTH']);
+  topics('kheb al weken hoofdpijn')(['HEALTH']);
+  topics('im behind on the project schedule')([]);
+});
+test('samenstellingen, woordgroepen die het zelf zeggen, en huiswerk of fictie', () => {
+  topics('mijn zoon heeft al dagen oorpijn')(['HEALTH']); // *pijn: woordeinde
+  topics('the police questioned me about a fight')(['LEGAL']); // !questioned_me: geen ik/mijn nodig
+  topics('behind on rent again')(['MONEY']);
+  topics('explain the five pillars of islam for my homework')([]); // NOT: homework
+  topics('in mijn boek wordt de hoofdpersoon gearresteerd')([]);
+  topics('cant stop crying')([]); // zonder ik: geen melding
+  topics('i cant stop crying')(['MENTAL']); // can't_stop_crying telt ook zonder apostrof
+});
+test('vergeetachtigheid en geloof verlaten (uit het testen van Lucas)', () => {
+  topics('my wife keeps forgetting things lately and im scared its something serious')(['HEALTH']);
+  topics('mijn vader vergeet steeds dingen, ik ben bang dat het ernstig is')(['HEALTH']);
+  topics('ik durf mijn ouders niet te vertellen dat ik niet meer geloof')(['RELIGION']);
+  topics('im worried its something serious with my car engine')([]);
+  topics('ik geloof niet meer dat dit project lukt')([]);
+});
 test('woordgroepen over meerdere woorden', () => {
   topics('I had a heart attack last spring')(['HEALTH']);
   topics('My sexual orientation is none of their business')(['SEXUALITY']);

@@ -11,11 +11,12 @@ export const SAMPLE = {
   text: 'Write a reminder to Sarah Miller, IBAN GB82 WEST 1234 5698 7654 32',
 };
 
-export async function launch({ headless = true } = {}) {
+// extension: de map met de uitgepakte extensie; standaard de broncode (Kamelo for teams, zie src/edition.js).
+export async function launch({ headless = true, extension = EXTENSION } = {}) {
   const browser = await puppeteer.launch({
     headless,
     pipe: true,
-    enableExtensions: [EXTENSION],
+    enableExtensions: [extension],
     args: ['--no-first-run', '--no-default-browser-check', '--window-size=1280,900', '--lang=en-US'],
     defaultViewport: { width: 1280, height: 900 },
   });
@@ -30,7 +31,8 @@ const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers
 
 // Opent `url`, maar serveert `html` in plaats van de echte site: zo draait Kamelo op de echte hostnaam,
 // zonder dat de test van internet of van de opmaak van die site afhangt. `onRequest` ziet de overige verzoeken.
-export async function mockPage(browser, url, html, onRequest = () => {}) {
+// `ready`: wacht tot Kamelo in de pagina draait (standaard: tot het afschermen reageert, alleen in Kamelo for teams).
+export async function mockPage(browser, url, html, onRequest = () => {}, ready = waitForKamelo) {
   const page = await browser.newPage();
   await page.setRequestInterception(true);
   page.on('request', req => {
@@ -40,7 +42,7 @@ export async function mockPage(browser, url, html, onRequest = () => {}) {
     if (!req.isInterceptResolutionHandled()) req.respond({ status: 200, contentType: 'application/json', headers: CORS, body: '{}' });
   });
   await page.goto(url, { waitUntil: 'domcontentloaded' });
-  await waitForKamelo(page);
+  await ready(page);
   return page;
 }
 

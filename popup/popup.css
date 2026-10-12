@@ -310,3 +310,8 @@ textarea:focus, .add input:focus { outline: none; }
 .cat-ico { width: 28px; height: 28px; border-radius: 8px; background: var(--fill); color: var(--secondary); display: grid; place-items: center; flex: none; }
 .cat-ico svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .footnote.center-note { text-align: center; margin-top: 4px; }
+
+/* Private Chat (docs/PLAN-PRIVE-CHAT.md) */
+.pchat-card { margin-top: 8px; }
+.pchat-card .ico { color: var(--green-text); background: var(--ok-bg); }
+.pchat-card[hidden] { display: none; }

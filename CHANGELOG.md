@@ -5,6 +5,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-10-12
+
+### Changed
+- **Kamelo now focuses on Private Chat and temporary chats.** When you type something personal on ChatGPT, Claude, Gemini or another AI chat (about your health, mental health, sexuality, faith, money or legal trouble), Kamelo suggests asking it in a temporary chat, which stays out of your history and isn't used for training, or in Private Chat, where Chrome's built-in AI answers on your own computer. Kamelo doesn't change what you send, and your AI account still knows who you are: it helps you pick the right place for a personal question.
+- **Masking moved to Kamelo for teams.** Replacing names and details with placeholders, restoring them in answers and the vault are no longer part of the free Kamelo.
+- **Old masked data is deleted.** On this update Kamelo removes everything it kept on your device for masking: the vault (also a locked one), the vault lock, the monthly overview and your lists of words to always or never mask.
+- **Fewer permissions.** Kamelo now only runs on the AI chat sites it knows instead of on every website, and no longer needs the "alarms" permission.
+- **Private Chat is faster, with separate conversations.** The AI on your computer gets ready as soon as the window opens, your question appears right away and the answer is written out smoothly. Start a new chat or switch between chats in the window; a question from the notice opens as a new chat, and is asked straight away when the AI is ready.
+- **A simpler popup.** Just the switch (Protected), Private Chat and a temporary chat.
+- The extension details page now links to kamelo.eu.
+
+### Added
+- **Better at recognising personal topics.** Kamelo understands more of the way people actually type ("im", "idk", "kheb"), everyday words for symptoms, low mood and payment trouble, forgetfulness, and leaving a faith. In Chrome, when the word list finds nothing, Kamelo asks Chrome's built-in AI on your computer as a second check, only if the model is already there (it never downloads it for this) and only after you pause typing. Your text stays on your device and isn't stored.
+
+## [1.4.3] - 2026-10-12
+
+### Changed
+- **Firefox package is smaller.** Firefox doesn't get Private Chat, so it no longer includes the library that only Kamelo Plus needs.
+
+## [1.4.2] - 2026-10-12
+
+### Changed
+- **Edge and Firefox: straight to a temporary chat.** Private Chat needs the AI built into Chrome, so in Edge and Firefox the notice for a personal topic now offers the temporary chat directly, and the popup no longer shows Private Chat there. Chrome is unchanged.
+
+## [1.4.1] - 2026-10-12
+
+### Added
+- **Private Chat.** Your own chat for personal questions, from the Kamelo popup or from "Protect your data" in the notice on ChatGPT, Claude or Gemini (you can switch the latter off in Settings). In Chrome, Private Chat uses Chrome's built-in AI, so your question never leaves your device. Nothing is downloaded until you click Download, with the free space needed shown first. When the browser can't answer on the device (Edge and Firefox for now, or a computer that can't run it), Kamelo sends nothing and offers a temporary chat on ChatGPT, Claude or Gemini instead, with your text masked as usual. Edge joins automatically once it offers its built-in AI to extensions.
+
+### Changed
+- **More names, addresses and passwords caught.** Names with El, Ben, Al or Van in the middle ("Fatima El Amrani"), O'Connor and McDonald; a later "Mrs El Amrani" gets the same placeholder as the full name. Street names that start with the kind of street ("Laan van Meerdervoort 210") or have words before them ("Burgemeester de Withstraat 3", "Oude Gracht 45"), and Polish addresses and postcodes. And the password in a connection link such as `postgres://admin:…@host`.
+- **Keys in code and config.** Settings like `aws_secret_access_key = …`, `DB_PASSWORD=…` or `"client_secret": "…"` are now masked too: the word may sit anywhere in the setting's name.
+- **Better at names in personal messages.** Kamelo now knows more Dutch first names (like Annelies, Marleen, Marcel) and also masks names that are ordinary words, like Mark or Frans, when the words before them clearly point to a person: "my ex Mark", "ze heet …", "my therapist …", "dear Mark". Without such a clue ("Mark this as done", "in het Frans") or before a number ("met Max 5 personen") they stay as they are.
+
 ## [1.4.0] - 2026-10-11
 
 ### Security

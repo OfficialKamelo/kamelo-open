@@ -5,104 +5,86 @@
 <h1 align="center">Kamelo</h1>
 
 <p align="center">
-  <strong>AI doesn't need to know everything.</strong><br>
-  A browser extension for Chrome, Edge and Firefox that masks personal data on your device before it reaches ChatGPT, Gemini, Claude or any other AI,
-  and puts the real details back in the answer, only on your screen.
+  <strong>A better place for personal questions to AI.</strong><br>
+  A browser extension for Chrome, Edge and Firefox. When you type something personal into ChatGPT, Claude, Gemini or another AI chat,
+  Kamelo suggests a temporary chat, or Private Chat: an AI that answers on your own computer.
 </p>
 
 <p align="center">
   <a href="https://github.com/OfficialKamelo/kamelo-open/actions/workflows/test.yml"><img src="https://github.com/OfficialKamelo/kamelo-open/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
   <img src="https://img.shields.io/badge/manifest-v3-0a84ff" alt="Manifest V3">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-6e6e73" alt="License: AGPL-3.0"></a>
-  <img src="https://img.shields.io/badge/data%20leaves%20your%20device-never-34c759" alt="Data never leaves your device">
+  <img src="https://img.shields.io/badge/network%20requests-none-34c759" alt="No network requests">
 </p>
 
-## How it works
+## What it does
 
-1. **You type or paste** a message into an AI chat, just like always.
-2. **Kamelo masks personal data on your device** before anything is sent. `Sarah Miller` becomes `[PERSON_1]`, an email address becomes `[EMAIL_1]`.
-3. **The AI answers with placeholders.** Kamelo replaces them with the real values on your screen.
+More and more people ask AI about their health, their relationships or their money. Those chats are usually saved in your account,
+and many AI apps use them for training by default. Kamelo doesn't change what you send, and your AI account still knows who you are.
+What it does is help you choose where to ask:
 
-The link between placeholders and real values is kept in a local vault in your browser. There is no server, no account and no second AI:
-detection is rule-based (patterns, checksums and keyword lists), and restoring is a lookup in that vault.
+1. **You type into an AI chat**, just like always.
+2. **If it's personal**, about your own (or someone close to you) health, mental health, sexuality, faith, money or legal trouble,
+   Kamelo shows a short notice above the text field. General questions ("what are the symptoms of flu?") don't trigger it.
+3. **One click** moves your message, unchanged, to the site's **temporary chat** (ChatGPT, Gemini, Claude's incognito chat),
+   which stays out of your history and isn't used for training. In Chrome you can also ask it in **Private Chat**.
 
-```
-You type:        I'm Sarah Miller. Since my breakup with Tom Becker I can't sleep. How do I tell my therapist?
-The AI sees:     I'm [PERSON_1]. Since my breakup with [PERSON_2] I can't sleep. How do I tell my therapist?
-You see back:    I'm sorry, Sarah Miller. You could say: "Since my breakup with Tom Becker I've been sleeping badly."
-```
+### Recognising personal topics
+A word list in 82 languages ([`src/topic-words.js`](src/topic-words.js), [`src/topics.js`](src/topics.js)), written for the way
+people actually type. In Chrome, when the word list finds nothing, Kamelo asks Chrome's built-in AI (Gemini Nano) on your computer
+as a second check ([`src/topic-ai.js`](src/topic-ai.js)): only when the model is already on your computer (Kamelo never downloads it
+for this), only after you pause typing, and nothing is stored. Corrections from native speakers are welcome.
 
-## What it detects
+### Private Chat
+A chat in the browser's side panel where Chrome's built-in AI answers on your own computer ([`chat/device.js`](chat/device.js)).
+Your question never leaves the device. Nothing is downloaded until you click Download; Chrome then fetches its own model once.
+Chats live only in that window and are gone when you close it. Edge and Firefox don't offer an on-device AI to extensions yet,
+so there Kamelo offers a temporary chat instead.
 
-| Category | Examples |
-|---|---|
-| **Bank details** | IBANs from 87 countries (with checksum), US routing and account numbers, UK sort codes, BIC/SWIFT, Indian IFSC |
-| **Payment cards** | Card numbers (Luhn check) and CVV codes |
-| **ID numbers** | SSN, BSN, National Insurance, Belgian national number, DNI/NIE, codice fiscale, NIR, Aadhaar, PAN, CPF, Chinese ID, and passport, licence and other numbers after a keyword |
-| **Secrets** | API keys (OpenAI, Anthropic, AWS, GitHub, Slack, Google, Stripe), private keys, JWTs, passwords after `password:` and similar |
-| **Personal details** | Names, email addresses, phone numbers, dates of birth, addresses, postcodes, IP addresses, crypto wallets |
-| **Companies** | Company names with a legal form, such as Acme Inc., Jansen BV, Müller GmbH or Smith Ltd |
-| **Your own terms** | Client names, project names or anything else you add |
-
-Formats with a fixed structure (IBANs, cards, checksummed IDs, emails, phone numbers, keys) are recognised in any language.
-Keywords and month names are recognised in 20+ languages.
-
-### Sensitive topics
-Health, mental health, sexuality, faith, money problems and police or courts can't be replaced by a placeholder.
-When you share something about yourself or someone close ("my doctor", "ik heb schulden"), Kamelo shows a short notice suggesting a temporary chat,
-once per topic per page. General questions don't trigger it. Recognised in 82 languages ([word lists](src/topic-words.js); corrections from native speakers welcome).
-
-### It remembers, carefully
-Once Kamelo has masked a name, it also recognises it later in other forms: in lowercase, or just the first or last name, in the next message or chat, always with the same placeholder.
-To avoid false positives, single names only count when they look like a name (capitalised, or after cues like "to sarah" or "dear mark"),
-and names that are also ordinary words (Will, May, Mark) only after a clear cue. So "Will you help me?" and "mark this as done" stay untouched.
-
-Anything masked from memory is listed in the notice. Click a word there to keep it visible: it goes on your "Never protect" list
-(with the site and date it came from), and you can undo it straight from the notice.
+### The popup
+The switch (Protected), Private Chat and a temporary chat. That's all.
 
 ## Where it works
 
-- **AI chats:** ChatGPT, Gemini, Claude, Copilot, Perplexity, Mistral, DeepSeek, Grok, Meta AI and more ([full list](src/sites.js)).
-- **AI fields on other sites:** "Help me write" in Gmail, Slack AI, Notion AI and AI chat widgets, recognised by their labels.
-- **AI APIs called from the browser:** requests to `api.openai.com`, `api.anthropic.com`, Azure OpenAI and others are masked before they leave.
-- **Any other site:** "Mask every text field" in the popup masks every text field on that site.
-
-Regular messages to people, such as a normal email or chat message, are left untouched.
+Only on the AI chat sites in [`src/sites.js`](src/sites.js): ChatGPT, Gemini, Claude, Copilot, Perplexity, Mistral, Grok, DeepSeek,
+Meta AI and others. Kamelo doesn't run on any other website.
 
 ## Privacy and security
 
-- **No network requests.** Kamelo never contacts a server, not even ours. There are no analytics, no tracking and no account. See [Verify it yourself](#verify-it-yourself).
-- **Encrypted vault (optional).** Lock the vault with Touch ID (WebAuthn PRF) or a password (PBKDF2, 600,000 rounds); the vault is encrypted with AES-256-GCM.
-  When unlocked it lives only in memory (`chrome.storage.session`) and locks again when Chrome closes.
-- **Automatic cleanup.** Vault entries that haven't been used for 30 days (adjustable) are deleted.
-
-- **Size limit.** The vault keeps at most 10,000 entries (Chrome gives extensions 10 MB of storage); the least recently used entries go first.
+- **No network requests.** Kamelo never contacts a server, not even ours. No analytics, no tracking, no account.
+  See [Verify it yourself](#verify-it-yourself).
+- **Everything stays on your device.** The text you type is checked in the page, in memory. When you click the temporary chat
+  or Private Chat button, your message is kept in the browser's session memory (never on disk) for at most a minute, only to
+  put it in the new chat.
+- **Old data is removed.** Versions up to 1.4.3 masked personal details and kept a local vault. On updating to 1.5.0, Kamelo deletes
+  that vault (also a locked one), the vault lock, the monthly overview and the word lists from your device.
 
 ### Why each permission
 | Permission | Why |
 |---|---|
-| Access to all websites | AI fields appear on many sites (Gmail, Slack, Notion, support chats), so Kamelo has to recognise them anywhere. Normal messages to people are left alone. |
-| `storage` | Your settings and the placeholder vault, stored only on your device. |
-| `activeTab` | Lets the popup show whether Kamelo is active on the current site and mark a site as AI. |
+| Access to the AI chat sites in `src/sites.js` | To notice a personal topic in the text you type there and show the notice. No other sites. |
+| `storage` | Your on/off setting, stored on your device. |
+| `scripting` | Starts Kamelo's own bundled scripts in AI chat tabs that were already open when you installed or updated it. No remote code. |
+| `sidePanel` | Opens Private Chat in Chrome's side panel (not in Firefox, which has no side panel API). |
 
 See the [privacy policy](PRIVACY.md). To report a vulnerability, see [SECURITY.md](SECURITY.md).
 
 ## Verify it yourself
 
-You don't have to take our word for any of this. Everything Kamelo does is in this repository, with no build step and no minified code.
+Everything Kamelo does is in this repository, with no build step and no minified code.
 
 - **It makes no requests of its own.** Search the extension code for network calls:
   ```bash
-  grep -rnE "fetch\(|XMLHttpRequest|sendBeacon|WebSocket\(" src popup unlock
+  grep -rnE "fetch\(|XMLHttpRequest|sendBeacon|WebSocket\(" src popup chat
   ```
-  The only hits are in [`src/net-main.js`](src/net-main.js), where Kamelo wraps the page's own requests to AI APIs so it can mask them.
+  The only hit is in `chat/chat.js`: the encrypted route for a future paid Kamelo Plus. It needs a library that isn't part of
+  this repository or the store package, so it can't run.
 - **The only pages it opens:** [kamelo.eu/welcome](https://kamelo.eu/welcome) once after installing, [kamelo.eu/goodbye](https://kamelo.eu/goodbye) when you remove it
-  (both in [`src/background.js`](src/background.js)), and links you click in the popup. Opening a page sends nothing from your vault.
-- **Watch what is sent.** Open DevTools (Network tab) on chatgpt.com, send `My password is Hunter2!` and look at the request payload:
-  it says `[SECRET_1]`.
-- **Run the tests.** `npm run test:browser` loads Kamelo in a real Chrome and checks that requests to AI APIs leave with placeholders, not the real values
-  ([`tests/browser/extension.test.mjs`](tests/browser/extension.test.mjs)).
-- **The store package is this code.** [`tools/pack.mjs`](tools/pack.mjs) zips `manifest.json`, `_locales`, `src`, `popup`, `unlock` and `icons` as they are.
+  (both in [`src/background.js`](src/background.js)), and the temporary chat of the AI site you're on when you click it.
+- **Run the tests.** `npm run test:browser` loads the store package in a real Chrome
+  ([`tests/browser/public.test.mjs`](tests/browser/public.test.mjs)): the notice appears for a personal topic, your text goes to the
+  temporary chat unchanged, Kamelo doesn't run on other sites, and nothing is downloaded for the on-device check.
+- **The store package is this code.** [`tools/pack.mjs`](tools/pack.mjs) zips `manifest.json`, `_locales`, `src`, `popup`, `chat` and `icons` as they are.
   Download the package from the store, unzip it and compare it with this code at the same version (see `manifest.json`).
 
 ## Screenshots
@@ -124,8 +106,6 @@ To check which one you have, open `chrome://extensions` (or `edge://extensions`)
 2. Open `chrome://extensions` (or `edge://extensions` in Edge) and turn on **Developer mode**.
 3. Click **Load unpacked** and select the repository folder.
 
-Your browser will say the extension can "read and change data on all websites". That is needed to recognise AI fields on any site; all processing stays on your device.
-
 ## Development
 
 No build step: the extension is plain JavaScript (Manifest V3) with no runtime dependencies.
@@ -133,37 +113,33 @@ The browser tests use Puppeteer, installed with `npm install`.
 
 ```bash
 npm install
-npm test                       # unit tests (Node 20+)
-npm run test:browser           # Kamelo in a real Chrome, on simulated AI and shop pages
-npm run test:sites -- --show   # Kamelo on the real AI sites (nothing is sent)
-python3 -m http.server 8765
+npm test                 # unit tests (Node 20+)
+npm run test:browser     # the store package in a real Chrome, on simulated AI pages
+npm run pack             # the store package for Chrome and Edge (npm run pack:firefox for Firefox)
 ```
-
-With the server running, open:
-- `http://localhost:8765/demo/`: a simulated AI chat that shows exactly what would be sent to the AI.
-- `http://localhost:8765/demo/popup-preview.html`: the popup with sample data.
 
 | Path | Contents |
 |---|---|
-| `src/detector.js` | Detection, masking and restoring (shared by all parts) |
-| `src/content.js` | Finds AI fields on the page, masks on paste and send, restores answers |
-| `src/net-main.js` | Masks requests that pages send to AI APIs |
-| `src/background.js`, `src/vault*.js` | Vault storage and encryption |
-| `src/sites.js` | Known AI sites and where their input field is. **When a site changes, this is usually the only file to edit** |
-| `src/ai-hosts.js` | AI API hosts whose requests are masked on any site |
-| `src/config.js` | Settings and the labels that mark AI fields on other sites |
-| `src/strings.js` | UI text in English and Dutch |
-| `popup/`, `unlock/` | Extension pages |
-| `demo/` | Local test pages and the popup preview used by the tests |
-| `tests/` | Unit tests; `tests/browser/` runs Kamelo in Chrome; `tests/live/` checks the real AI sites nightly |
-| `tools/` | `release.mjs`, `pack.mjs` (store and Firefox packages), `build-locales.mjs`, `build-preview.mjs` |
+| `src/content.js` | Watches the text field on AI chat sites and shows the notice |
+| `src/topics.js`, `src/topic-words.js` | Personal topics: the word lists in 82 languages |
+| `src/topic-ai.js` | The second check with Chrome's built-in AI, on the device |
+| `src/background.js` | Hands your message to the temporary chat or Private Chat; removes old masking data after an update |
+| `src/sites.js` | Known AI sites, their input field and temporary chat. **When a site changes, this is usually the only file to edit** |
+| `src/config.js`, `src/strings.js`, `src/edition.js` | Settings, UI text in English and Dutch, and which edition this is |
+| `chat/` | Private Chat (`device.js`: the on-device AI of the browser) |
+| `popup/` | The popup (`public.html`) |
+| `tests/` | Unit tests; `tests/browser/` runs the store package in Chrome |
+| `tools/` | `pack.mjs` (store and Firefox packages), `release.mjs`, `sign.mjs` (signed `.crx`), `news.mjs`, `check-secrets.mjs`, `build-locales.mjs` |
+
+Some shared files (`src/content.js`, `src/background.js`, `src/strings.js`, `chat/chat.js`) still contain code paths for
+Kamelo for teams, a separate edition that isn't part of this repository. They do nothing here: `src/edition.js` says `public`.
 
 ## Known limitations
 
-- AI called from a site's own **server** is invisible to a browser extension. Turn on "Mask every text field" for such a site.
-- The network filter only sees text (JSON) requests. **Uploaded files** (PDFs, images) are not filtered.
-- **Names** are recognised from first-name lists, patterns and memory; a new surname on its own can still be missed. Add important names under "Always protect".
-- If an AI rewrites a placeholder (for example "Person 1" instead of `[PERSON_1]`), it can't be restored.
+- The notice is a suggestion. Kamelo doesn't stop you from sending, and doesn't change what you send.
+- The word list can miss a personal question phrased in an unusual way, especially outside Chrome (no on-device second check).
+- Temporary chats are a feature of the AI service, with its own rules: for example, ChatGPT may keep temporary chats for up to 30 days for safety.
+- Private Chat needs Chrome's built-in AI, which needs a recent computer and about 22 GB of free space.
 
 ## Contributing
 
