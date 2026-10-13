@@ -3,15 +3,15 @@
     "message": "Kamelo: AI privacy software"
   },
   "extDescription": {
-    "message": "Private Chat with AI on your own computer, and a nudge to use a temporary chat when you ask AI something personal."
+    "message": "Melo, a private AI chat on your own computer, and a nudge to use a temporary chat when you ask AI something personal."
   },
   "actionTitle": {
     "message": "Kamelo"
   },
   "extNameTeams": {
-    "message": "Kamelo for teams"
+    "message": "Kamelo Business"
   },
   "extDescriptionTeams": {
-    "message": "Kamelo for teams masks personal and company details on your device before they reach ChatGPT, Gemini, Claude or AI in work apps."
+    "message": "Kamelo Business masks personal and company details on your device before they reach ChatGPT, Gemini, Claude or AI in work apps."
   }
 }

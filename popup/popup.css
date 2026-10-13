@@ -59,7 +59,7 @@
 * { box-sizing: border-box; }
 html { background: var(--bg); }
 body {
-  width: 340px; margin: 0; padding: 0; background: var(--bg); color: var(--label);
+  width: 320px; margin: 0; padding: 0; background: var(--bg); color: var(--label);
   font: 13px/1.38 system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -198,78 +198,72 @@ textarea:focus, .add input:focus { outline: none; }
 .row.action svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .row.action .ext { width: 10px; height: 10px; stroke: var(--tertiary); stroke-width: 1.8; }
 
-/* ---------- Hoofdscherm ---------- */
-#view-main { padding: 0; color: var(--ink); }
-.top { display: flex; align-items: center; gap: 8px; padding: 14px 16px 6px; }
-.top .logo { width: 22px; height: 22px; }
+/* ---------- Hoofdscherm ----------
+   Zoals de panelen in de menubalk van macOS (Bedieningspaneel, Wi-Fi): smal, 13 px, één statusregel met een kleine
+   schakelaar, daaronder één gegroepeerde lijst met gekleurde icoontjes (Systeeminstellingen) en een tekstregel onderaan. */
+#view-main { padding: 0 0 6px; color: var(--ink); }
+.top { display: flex; align-items: center; gap: 7px; padding: 10px 10px 0 14px; }
+.top .logo { width: 18px; height: 18px; }
+.top h1 { font-size: 13px; font-weight: 600; letter-spacing: -.01em; }
 
-/* Statuskaart: één woord en de schakelaar. Groen = aan (beschermd), grijs = uit. */
-.status { margin: 8px 16px 0; padding: 14px; border-radius: 12px; background: var(--ok-bg);
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; }
-.status[data-state="reload"], .status[data-state="none"], .status[data-state="ready"] { background: var(--pause-bg); }
-.status[data-state="off"] { background: var(--warn-bg); }
-.state { grid-column: 1; grid-row: 1; min-width: 0; display: flex; align-items: center; gap: 7px; font-size: 17px; line-height: 22px; font-weight: 600; letter-spacing: -.02em; color: var(--ok); }
-.state span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.state svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-/* Eén icoon per toestand: aan = schild met vinkje, klaar en niet beschikbaar = leeg schild, uit = pauze. */
-.state .ic-pause, .state .ic-ready { display: none; }
-.status:is([data-state="off"], [data-state="ready"], [data-state="none"]) .ic-ok { display: none; }
-.status[data-state="off"] .ic-pause, .status:is([data-state="ready"], [data-state="none"]) .ic-ready { display: block; }
-.status[data-state="off"] .state { color: var(--warn); }
-.status[data-state="ready"] .state { color: var(--ink); }
-.status[data-state="ready"] .ic-ready { color: var(--accent); }
-.status[data-state="none"] .state { color: var(--pause); }
-/* Onder de status: waar (de site) en wat dat betekent. */
-.state-sub { grid-column: 1 / -1; grid-row: 2; margin: 0 0 0 27px; color: var(--secondary); font-size: 12px; line-height: 16px; text-wrap: pretty; }
-.state-sub:empty { display: none; }
-.status[data-state="off"] .state-sub { color: var(--warn); }
-.state.reload { border: 0; background: none; padding: 0; color: var(--accent-text); text-align: left; cursor: pointer; }
-.state.reload:hover span { text-decoration: underline; }
-.status .switch { grid-column: 2; grid-row: 1; }
-.switch.big .track { width: 42px; height: 26px; border-radius: 13px; }
-.switch.big .track::after { width: 22px; height: 22px; }
-.status .switch .track { background: rgba(120, 120, 128, .24); }
-.status .switch input:checked + .track { background: var(--accent); }
+/* Rechtsboven: een klein schild dat ook de aan/uit-knop is. Groen = aan, rood = uit. Tekst alleen in de tooltip. */
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.top .status { position: relative; margin-left: auto; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; }
+.top .status:hover { background: var(--fill); }
+.top .status:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
+#view-main:has(#mainActive[hidden]) .top .status { display: none; }
+.top .state { display: grid; place-items: center; color: #34c759; }
+.top .state svg { width: 20px; height: 20px; }
+.top .state svg path:first-child { fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
+.top .state .mark { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.top .state .ic-pause { display: none; }
+.top .status[data-state="off"] .state { color: #ff3b30; }
+.top .status[data-state="off"] .ic-ok { display: none; }
+.top .status[data-state="off"] .ic-pause { display: block; }
+/* De schakelaar zelf is onzichtbaar en ligt over het schild: klikken = aan/uit */
+.top .status .switch { position: absolute; inset: 0; }
+.top .status .switch input { border-radius: 50%; }
+.top .status .track { display: none; }
+.top .status:has(input:disabled) { cursor: not-allowed; }
+.top .status:has(input:disabled):hover { background: none; }
+@media (prefers-color-scheme: dark) { .top .state { color: #30d158; } .top .status[data-state="off"] .state { color: #ff453a; } }
 
-/* Tekst afschermen: één blauw getinte kaart */
-.mask-card { width: calc(100% - 32px); margin: 16px 16px 0; display: flex; align-items: center; gap: 12px; padding: 12px; border: 0; border-radius: 12px;
-  background: var(--ph-bg); color: var(--ink); text-align: left; }
-.mask-card:hover { filter: brightness(.98); }
-.mask-card .ico { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; flex: none; color: var(--ph-fg); background: var(--ph-bg); }
-.mask-card b { flex: 1; font-weight: 600; }
-.mask-card:not([hidden]) + .mask-card { margin-top: 8px; }
-.card-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-.card-text span { color: var(--secondary); font-size: 12px; line-height: 16px; }
-/* Vraag het privé: lila, zoals de tijdelijke chats van de AI-diensten zelf een eigen kleur hebben. */
-.private-card { background: var(--private-bg); }
-.private-card .ico { color: var(--private-fg); background: var(--private-bg); }
-.mask-card svg, .foot svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.chev { color: var(--secondary); }
+/* Pagina nog niet bijgewerkt na installeren: één regel om te verversen */
+.reload-row { display: flex; align-items: center; gap: 8px; width: calc(100% - 20px); margin: 8px 10px 0; padding: 8px 10px; border: 0; border-radius: 10px;
+  background: var(--soft); color: var(--accent-text); font-size: 13px; text-align: left; }
+.reload-row svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.reload-row:hover span { text-decoration: underline; }
 
-/* Het getal van deze maand (klik: het overzicht) */
-.proof { display: flex; flex-direction: column; align-items: flex-start; margin: 16px 16px 2px; padding: 0; border: 0; background: none; color: var(--ink); text-align: left; border-radius: 6px; }
-.proof .n { font-size: 34px; line-height: 36px; font-weight: 600; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-.proof .l { color: var(--secondary); font-size: 12px; line-height: 16px; margin-top: 2px; }
-.proof:hover .l { color: var(--ink); }
+/* Eén gegroepeerde lijst, zoals Systeeminstellingen */
+.menu { margin: 10px 10px 0; border-radius: 12px; background: var(--soft); overflow: hidden; }
+.mrow { position: relative; width: 100%; min-height: 36px; display: flex; align-items: center; gap: 10px; padding: 6px 10px; border: 0;
+  background: none; color: var(--ink); text-align: left; font-size: 13px; }
+.mrow:hover { background: var(--fill); }
+/* Scheidingslijn vanaf de tekst, niet onder het icoon (zoals bij Apple) */
+.menu .mrow:not([hidden]) ~ .mrow::before, .menu .mrow:not([hidden]) ~ #ready .mrow::before { content: ""; position: absolute; top: 0; left: 42px; right: 0; height: .5px; background: var(--separator); }
+.mtext { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.mtext b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mtext span { color: var(--secondary); font-size: 11px; line-height: 14px; }
+.mrow em { font-style: normal; color: var(--secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mrow .chev { width: 12px; height: 12px; fill: none; stroke: var(--tertiary); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+/* Gekleurd icoontje met een wit symbool */
+.tile { width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; flex: none; }
+.tile svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.t-blue { background: #0a84ff; } .t-green { background: #34c759; } .t-indigo { background: #5e5ce6; } .t-orange { background: #ff9f0a; } .t-gray { background: #8e8e93; }
+.try .tile svg { fill: #fff; stroke: none; }
+.try b { color: var(--accent-text); }
+.mrow .ic-lock, .menu.locked .ic-vault { display: none; }
+.menu.locked .ic-lock { display: block; }
 
-/* Eerste keer: nog niets afgeschermd */
-.ready { margin: 16px 16px 2px; }
-.ready .pill-btn { width: 100%; height: 40px; font-size: 14px; }
+/* Onderaan: één tekstregel naar de instellingen (zoals "Wi-Fi-instellingen…") */
+.settings-link { display: block; width: calc(100% - 20px); margin: 6px 10px 0; padding: 7px 10px; border: 0; border-radius: 8px; background: none;
+  color: var(--ink); font-size: 13px; text-align: left; }
+.settings-link:hover { background: var(--fill); }
+#view-main button:focus-visible { outline-offset: -2px; }
+
+/* Kaarten die op de schermen voor afschermen en de licentie nog worden gebruikt */
 .pill-btn { height: 32px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--accent-strong); color: #fff; font-weight: 600; }
 .pill-btn:hover { filter: brightness(1.06); }
-
-/* Onderaan: Kluis | Instellingen */
-.foot { margin-top: 14px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; }
-.foot button { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 12px 16px; border: 0; background: none; color: var(--ink); text-align: left; }
-.foot button:hover { background: var(--soft); }
-.foot button + button { border-left: 1px solid var(--line); }
-.foot button > svg:first-child, .foot .ic-lock { color: var(--secondary); }
-.foot span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.foot em { margin-left: auto; font-style: normal; color: var(--secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.foot .chev { margin-left: auto; }
-.foot .ic-lock, .foot.locked .ic-vault { display: none; }
-.foot.locked .ic-lock { display: block; }
-#view-main button:focus-visible { outline-offset: -2px; }
 
 /* ---------- Maandoverzicht ---------- */
 .stats { padding: 12px 12px 10px; margin-bottom: 4px; }
@@ -311,7 +305,4 @@ textarea:focus, .add input:focus { outline: none; }
 .cat-ico svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .footnote.center-note { text-align: center; margin-top: 4px; }
 
-/* Private Chat (docs/PLAN-PRIVE-CHAT.md) */
-.pchat-card { margin-top: 8px; }
-.pchat-card .ico { color: var(--green-text); background: var(--ok-bg); }
-.pchat-card[hidden] { display: none; }
+/* Private Chat (docs/private-chat/PLAN-PRIVE-CHAT.md) */

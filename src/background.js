@@ -1,14 +1,16 @@
 // Achtergrond.
 // - Opent de welkomstpagina na installatie.
 // - Brengt een vraag naar een tijdelijke chat of naar Private Chat (beide edities).
-// - Alleen Kamelo for teams: beheert de kluis. De actuele kluis staat in chrome.storage.session (alleen in het
+// - Alleen Kamelo Business: controleert de licentie (src/licence.js) voor de content scripts en Private Chat, en zet
+//   een rode "!" op het icoon zolang Kamelo Business niet actief is.
+// - Alleen Kamelo Business: beheert de kluis. De actuele kluis staat in chrome.storage.session (alleen in het
 //   werkgeheugen); deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.
 // - Alleen de gratis editie: ruimt na een update alles op wat 1.4.x en eerder voor het afschermen bewaarde.
 // In Firefox laadt het manifest deze bestanden zelf (background.scripts); daar bestaat importScripts niet.
 if (typeof importScripts === 'function') {
   importScripts('edition.js', 'sites.js', 'config.js');
   // De gratis editie heeft de bestanden voor het afschermen niet (zie tools/pack.mjs).
-  if (globalThis.KameloEdition !== 'public') importScripts('vaultcrypto.js', 'vaultstore.js', 'stats.js', 'detector.js', 'vaultscope.js');
+  if (globalThis.KameloEdition !== 'public') importScripts('policy.js', 'licence.js', 'vaultcrypto.js', 'vaultstore.js', 'stats.js', 'teams/terms-index.js', 'detector.js', 'vaultscope.js');
   // Alleen de gratis editie: de AI van Chrome op dit apparaat als tweede kans voor gevoelige onderwerpen.
   else importScripts('topic-ai.js');
 }
@@ -20,6 +22,8 @@ chrome.runtime.setUninstallURL('https://kamelo.eu/goodbye');
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason !== 'install' && reason !== 'update') return;
   if (!TEAMS) forgetMasking();
+  // Kamelo Business had tot 1.5.0 een proefperiode vanaf installeren; die is weg (zonder licentie niet actief).
+  if (TEAMS) chrome.storage.local.remove('teamsSince').catch(() => {});
   injectIntoOpenTabs();
   // Na installatie: de bedankpagina op kamelo.eu. Dat is een gewoon tabblad; Kamelo stuurt zelf niets.
   if (reason === 'install') chrome.tabs.create({ url: 'https://kamelo.eu/welcome' });
@@ -62,7 +66,8 @@ async function injectIntoOpenTabs() {
 }
 
 // De bètaversie (tools/pack.mjs --beta) draagt een β op het icoon, zodat hij niet te verwarren is met de gewone.
-if (/beta/i.test(chrome.runtime.getManifest().version_name || '')) {
+const BETA = /beta/i.test(chrome.runtime.getManifest().version_name || '');
+if (BETA) {
   chrome.action.setBadgeText({ text: 'β' });
   chrome.action.setBadgeBackgroundColor({ color: '#6e6e73' });
 }
@@ -77,7 +82,7 @@ chrome.storage.session.setAccessLevel?.({ accessLevel: 'TRUSTED_CONTEXTS' });
 // - vergrendelen, wegschrijven en Private Chat-teksten ophalen alleen vanuit Kamelo's eigen pagina's (popup, kluisvenster, chat).
 const fromExtensionPage = sender => sender.id === chrome.runtime.id && !!sender.url?.startsWith(chrome.runtime.getURL(''));
 
-// Alleen Kamelo for teams: de kluis. In een eigen blok, zodat namen niet botsen als dit script samen met een pagina
+// Alleen Kamelo Business: de kluis. In een eigen blok, zodat namen niet botsen als dit script samen met een pagina
 // wordt geladen (previews).
 if (TEAMS) {
 const PC = globalThis.PrivacyCrypto;
@@ -139,14 +144,16 @@ function updateVault(change) {
 
 // "Na 30 dagen gewist" (instelling retentionDays, 0 = nooit): hier gegarandeerd, bij het starten, elke 12 uur en na
 // ontgrendelen, ook als je een tijd geen AI-site opent. Een vergrendelde kluis wordt na ontgrendelen opgeschoond.
+// Het beleid van de organisatie (policy.js, retentionDays) wint van de eigen instelling.
 async function prune() {
-  const { settings } = await chrome.storage.local.get('settings');
-  const days = settings?.retentionDays ?? globalThis.PrivacyConfig.DEFAULT_SETTINGS.retentionDays;
+  const [{ settings }, policy] = await Promise.all([chrome.storage.local.get('settings'), globalThis.KameloPolicy.read()]);
+  const days = globalThis.KameloPolicy.merge(settings, policy).retentionDays;
   const { locked } = await chrome.storage.session.get('locked');
   if (locked) return;
   return updateVault(v => D.prune(v, days) > 0);
 }
 chrome.alarms?.create('kamelo-prune', { periodInMinutes: 720 });
+globalThis.KameloPolicy.watch(() => prune());
 chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-prune') prune(); });
 
 async function lock() {
@@ -168,8 +175,42 @@ function count(counts) {
   return statsQueue;
 }
 
+// ---------- Licentie (src/licence.js) ----------
+// Content scripts en Private Chat vragen hier of Kamelo Business actief is (pf:licence). Hier, en niet in elke pagina:
+// de achtergrond leest de code en het beleid zelf en controleert de handtekening, dus een pagina of een aangepaste
+// waarde in de opslag kan niets aanzetten. Het antwoord is alleen { active, until }.
+// Niet actief: een rode "!" op het icoon (geen meldingen in websites; de popup legt het uit).
+const LIC = globalThis.KameloLicence;
+const NOT_ACTIVE = { state: 'none', active: false, until: 0 };
+let badgeOff = null;
+async function licence() {
+  const s = await LIC.check(await globalThis.KameloPolicy.read()).catch(() => NOT_ACTIVE);
+  const off = !s.active;
+  if (off !== badgeOff) {
+    badgeOff = off;
+    const lang = /^nl\b/i.test(chrome.i18n?.getUILanguage?.() || '') ? 'nl' : 'en';
+    const title = chrome.runtime.getManifest().action?.default_title || '';
+    const normal = /^__MSG_(\w+)__$/.test(title) ? chrome.i18n?.getMessage(title.slice(6, -2)) || 'Kamelo' : title;
+    const quiet = fn => { try { fn()?.catch?.(() => {}); } catch {} };
+    quiet(() => chrome.action.setBadgeText({ text: off ? '!' : BETA ? 'β' : '' }));
+    quiet(() => chrome.action.setBadgeBackgroundColor({ color: off ? '#d70015' : '#6e6e73' }));
+    quiet(() => chrome.action.setBadgeTextColor?.({ color: '#ffffff' }));
+    quiet(() => chrome.action.setTitle({ title: off ? LIC.STRINGS[lang].inactiveTitle : normal }));
+  }
+  return s;
+}
+licence().catch(() => {});
+globalThis.KameloPolicy.watch(() => licence().catch(() => {}));
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === 'local' && (changes.licence || changes.testLicenceKeys)) licence().catch(() => {});
+});
+// Een licentie verloopt ook als niemand iets doet: elk uur opnieuw kijken (voor het icoon).
+chrome.alarms?.create('kamelo-licence', { periodInMinutes: 60 });
+chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-licence') licence().catch(() => {}); });
+
 chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (sender.id !== chrome.runtime.id) return;
+  if (msg?.type === 'pf:licence') { licence().then(s => reply({ active: !!s.active, until: s.until || 0 }), () => reply({ active: false, until: 0 })); return true; }
   if (msg?.type === 'pf:count') { count(msg.counts).then(() => reply(true)); return true; }
   if (msg?.type === 'pf:init') { init().then(() => reply(true)); return true; }
   if (msg?.type === 'pf:vault-get') {
@@ -223,7 +264,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     });
     return true;
   }
-  // Private Chat (docs/PLAN-PRIVE-CHAT.md): "Ask in Private Chat" in de melding. Het zijpaneel moet meteen open, zonder
+  // Melo, de privéchat (docs/private-chat/PLAN-PRIVE-CHAT.md): "Ask Melo" in de melding. Het zijpaneel moet meteen open, zonder
   // await ervoor, anders telt de klik niet meer als gebruikersactie. Lukt dat niet (Firefox, oud Chrome), dan een klein venster.
   // De tekst staat alleen in het werkgeheugen en alleen Kamelo's eigen chatpagina kan hem ophalen, één keer, binnen 2 minuten.
   if (msg?.type === 'pf:pchat-open' && sender.tab) {

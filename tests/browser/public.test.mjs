@@ -57,12 +57,23 @@ test('gratis: een persoonlijk onderwerp geeft de melding met tijdelijke chat en 
   assert.equal(taken, false, 'Kamelo nam het plakken over');
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
   assert.match(html, /Temporary chat|Tijdelijke chat/);
-  assert.match(html, /Ask in Private Chat|Vraag in Private Chat/); // Private Chat, alleen in Chrome
+  assert.match(html, /Ask Melo|Vraag het Melo/); // Private Chat, alleen in Chrome
   assert.doesNotMatch(html, /\[PERSON_|\[IBAN_|protected|afgeschermd|mask/i);
   await new Promise(r => setTimeout(r, 400));
   const text = await textOf(page, '#prompt-textarea');
   assert.ok(text.includes(SAMPLE.name) && text.includes(SAMPLE.iban), text);
   assert.equal(await page.evaluate(() => CSS.highlights.size), 0, 'markeringen in de pagina');
+  await page.close();
+});
+
+test('gratis: in Edge en Firefox zegt de melding eerlijk waarom er een tijdelijke chat is in plaats van Private Chat', async () => {
+  // ?browser=edge: strings.js doet dan of dit Edge is (zoals in de previews).
+  const url = 'https://chatgpt.com/c/edge?browser=edge';
+  const page = await mockPage(browser, url, CHAT, undefined, ready(url));
+  await pasteText(page, '#prompt-textarea', HEALTH);
+  const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
+  assert.match(html, /Edge doesn’t have a built-in AI that Kamelo can use yet|Edge heeft nog geen ingebouwde AI die Kamelo kan gebruiken/);
+  assert.doesNotMatch(html, /Ask Melo|Vraag het Melo/);
   await page.close();
 });
 
@@ -197,7 +208,7 @@ test('gratis: de popup toont alleen Beschermd, Private Chat en een tijdelijke ch
   const text = await page.evaluate(() => document.body.innerText);
   assert.match(text, /Protected|Beschermd/);
   assert.match(text, /Start a temporary chat|Begin een tijdelijke chat/);
-  assert.match(text, /Private Chat/);
+  assert.match(text, /Melo/);
   assert.doesNotMatch(text, /Vault|Kluis|Mask text|Tekst afschermen|protected this month|Warn about|Waarschuwen|Privacy|Report|Probleem/);
   // Uitzetten schrijft alleen "enabled" terug, niets van het afschermen.
   await page.click('#enabled');

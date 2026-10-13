@@ -1,5 +1,5 @@
-// Kamelo Private Chat (zie docs/PLAN-PRIVE-CHAT.md).
-// 1. Alleen Kamelo for teams: namen en gegevens worden afgeschermd met een kluis die alleen in dit venster leeft (dicht = weg).
+// Kamelo Private Chat (zie docs/private-chat/PLAN-PRIVE-CHAT.md).
+// 1. Alleen Kamelo Business: namen en gegevens worden afgeschermd met een kluis die alleen in dit venster leeft (dicht = weg).
 // 2. Gratis: de AI van de browser zelf beantwoordt de vraag op dit apparaat (Chrome, Gemini Nano; zie device.js).
 //    Kan dat niet (Edge, Firefox, te zwakke computer, te traag), dan biedt Kamelo een tijdelijke chat aan.
 // 3. Alleen Kamelo Plus (staat uit): Tinfoil's SecureClient controleert de enclave en versleutelt de vraag;
@@ -33,7 +33,7 @@
   // "Te traag op deze computer": eerste woord na meer dan 15 s, minder dan 12 tekens per seconde, of langer dan 40 s.
   // Twee keer achter elkaar te traag: voortaan de tijdelijke chat aanbieden (terug via het slotje: "Toch op dit apparaat").
   const isSlow = st => st && (st.firstMs > 15000 || st.ms > 40000 || (st.chars > 150 && st.chars / Math.max(1, st.ms - st.firstMs) * 1000 < 12));
-  // Kosten per vraag laag houden (docs/PLAN-PRIVE-CHAT.md): weinig "nadenken", een korte bovengrens, en alleen de laatste berichten meesturen.
+  // Kosten per vraag laag houden (docs/private-chat/PLAN-PRIVE-CHAT.md): weinig "nadenken", een korte bovengrens, en alleen de laatste berichten meesturen.
   const MAX_TOKENS = 600, HISTORY_KEEP = 6;
 
   const vault = D.emptyVault();      // alleen in dit venster
@@ -305,7 +305,7 @@
     autosize();
     return true;
   }
-  // De vraag komt uit de melding ("Ask in Private Chat"): je koos al voor Private Chat, dus meteen stellen als de AI op
+  // De vraag komt uit de melding ("Ask Melo"): je koos al voor Melo, dus meteen stellen als de AI op
   // dit apparaat klaarstaat. Anders blijft hij in het veld staan (download aanbieden, of de tijdelijke chat).
   // Alleen als de gebruiker de tekst zelf typte of plakte; zette de site hem in het veld, dan eerst laten zien.
   let handedTyped = false;
@@ -317,7 +317,7 @@
   // al is (nooit een download zonder klik).
   function warmUp() { if (engine === 'device' && devInfo.state === 'available' && !dev.ready) dev.prepare().catch(() => {}); }
 
-  const maskOpts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList });
+  const maskOpts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList, types: settings.types });
 
   // ---------- weergave ----------
   const PH = /\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g;
@@ -535,6 +535,26 @@
     newConv();
     const { settings: s } = await chrome.storage.local.get('settings');
     settings = { ...C.DEFAULT_SETTINGS, ...(s || {}) };
+    // Kamelo Business: het beleid van de organisatie (policy.js) geldt ook hier, bijv. eigen termen die altijd worden afgeschermd.
+    if (globalThis.KameloPolicy) {
+      // Niets laden, geen vraag aannemen; alleen een regel uitleg.
+      const off = async text => {
+        await chrome.storage.session.remove('pchat').catch(() => {});
+        const note = document.createElement('p');
+        note.className = 'org-off';
+        note.textContent = text;
+        msgs.replaceChildren(note);
+        form.hidden = true;
+        document.documentElement.dataset.engine = 'off';
+      };
+      // Kamelo Business zonder geldige licentie (src/licence.js, gecontroleerd in de achtergrond): ook geen Private Chat.
+      const licence = await chrome.runtime.sendMessage({ type: 'pf:licence' }).catch(() => null);
+      if (licence?.active !== true) return off(I.t('pchatInactive'));
+      const policy = await globalThis.KameloPolicy.read();
+      settings = globalThis.KameloPolicy.merge(settings, policy);
+      // De organisatie heeft Private Chat uitgezet.
+      if (policy.privateChat === false) return off(I.t('pchatOffByOrg'));
+    }
     relay = settings.privateChatRelay || RELAY_DEFAULT;
     // De vraag uit de melding meteen in beeld, terwijl we nagaan welke AI kan antwoorden.
     const handed = await takeHandoff();

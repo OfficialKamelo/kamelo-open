@@ -12,7 +12,8 @@
     "1.1.1": {"title": "Masking works everywhere again", "text": "A fix for a bug that stopped Kamelo from masking anything in Chrome."},
     "1.1.0": {"title": "Kamelo remembers names", "text": "A masked name is recognised later in other forms, like a first name or lowercase, with the same placeholder.", "url": "https://kamelo.eu/news/kamelo-remembers-names"},
     "1.0.0": {"title": "First release", "text": "Kamelo masks personal data on your device before it reaches AI, and puts the real values back in the answer.", "url": "https://kamelo.eu/news/first-release"},
-    "1.4.1": {"title": "Private Chat is here", "text": "Ask personal questions in your own chat. In Chrome, the AI answers on your own computer, so nothing is sent. And Kamelo catches more names, addresses and keys.", "url": "https://kamelo.eu/news/private-chat-is-here"},
+    "1.5.1": {"title": "Private Chat is now Melo", "text": "Same private chat on your own computer, new name: Melo. And Kamelo notices more everyday personal questions, like debt, divorce and residence permits.", "url": "https://kamelo.eu/news/private-chat-is-here"},
+    "1.4.1": {"title": "Melo is here", "text": "Ask personal questions in your own chat. In Chrome, the AI answers on your own computer, so nothing is sent. And Kamelo catches more names, addresses and keys.", "url": "https://kamelo.eu/news/private-chat-is-here"},
     "1.4.0": {"url": "https://kamelo.eu/news/ask-privately"}
   },
   "milestones": [

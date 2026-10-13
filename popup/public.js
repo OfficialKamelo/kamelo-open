@@ -1,4 +1,4 @@
-// Popup van de gratis editie (zie src/edition.js en public.html). Kamelo for teams gebruikt popup.js.
+// Popup van de gratis editie (zie src/edition.js en public.html). Kamelo Business gebruikt popup.js.
 const { t, applyI18n, BROWSER } = globalThis.PrivacyI18n;
 const C = globalThis.PrivacyConfig;
 const S = globalThis.PrivacySites;

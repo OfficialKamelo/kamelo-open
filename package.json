@@ -1,11 +1,11 @@
 {
   "name": "kamelo",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "license": "AGPL-3.0-only",
   "private": true,
-  "description": "Kamelo: a browser extension that suggests a temporary chat or Private Chat (on-device AI) when you type something personal into an AI chat.",
+  "description": "Kamelo: a browser extension that suggests a temporary chat or Melo, a private chat with on-device AI, when you type something personal into an AI chat.",
   "scripts": {
-    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/release.test.mjs && node tests/device.test.js && node tests/pack.test.mjs",
+    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topics-alledaags.test.js && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/release.test.mjs && node tests/device.test.js && node tests/pack.test.mjs",
     "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs",
     "pack": "node tools/pack.mjs",
     "release": "node tools/release.mjs",

@@ -10,32 +10,34 @@
 //             start  = adres van een nieuwe chat + button = de knop die daar de tijdelijke chat aanzet;
 //             onUrl  = stukje van de url, of onSel = element, waaraan je ziet dat je er al in zit
 //             (nagekeken op de echte, ingelogde sites op 11 okt 2026)
-//   teams     alleen in Kamelo for teams: ontwikkelaarsconsoles en chatbot-widgets (daar stelt niemand een persoonlijke
+//   files     alleen in Kamelo Business: bestanden afschermen bij uploaden (upload.js van teams): kiezen met de
+//             bestandsknop, slepen en plakken. Zet dit pas aan als uploaden op de echte site is nagekeken.
+//   teams     alleen in Kamelo Business: ontwikkelaarsconsoles en chatbot-widgets (daar stelt niemand een persoonlijke
 //             vraag, maar wel klantgegevens). De gratis editie vraagt er geen toegang tot.
 (function (root) {
   'use strict';
 
   const SITES = [
-    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt', live: 'https://chatgpt.com/',
+    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt', live: 'https://chatgpt.com/', files: true,
       private: { url: 'https://chatgpt.com/?temporary-chat=true', onUrl: 'temporary-chat=true' } },
-    { name: 'Gemini', hosts: ['gemini.google.com'], composer: 'rich-textarea .ql-editor', live: 'https://gemini.google.com/app',
+    { name: 'Gemini', hosts: ['gemini.google.com'], files: true, composer: 'rich-textarea .ql-editor', live: 'https://gemini.google.com/app',
       private: { start: 'https://gemini.google.com/app', button: 'temp-chat-button button', onSel: 'chat-window.is-temporary-chat' } },
-    { name: 'Claude', hosts: ['claude.ai'], composer: '[data-testid="chat-input"], fieldset .ProseMirror',
+    { name: 'Claude', hosts: ['claude.ai'], composer: '[data-testid="chat-input"], fieldset .ProseMirror', files: true,
       private: { url: 'https://claude.ai/new?incognito', onUrl: 'incognito', onSel: 'button[aria-label="Exit incognito"]' } },
-    { name: 'Copilot', hosts: ['copilot.microsoft.com', 'copilot.com', 'copilot.cloud.microsoft'], composer: '#userInput' },
-    { name: 'Perplexity', hosts: ['perplexity.ai'], composer: '#ask-input', live: 'https://www.perplexity.ai/' },
-    { name: 'Mistral', hosts: ['chat.mistral.ai'], composer: 'form .ProseMirror', live: 'https://chat.mistral.ai/chat' },
-    { name: 'Grok', hosts: ['grok.com'], composer: 'form textarea, form .ProseMirror', live: 'https://grok.com/' },
-    { name: 'DeepSeek', hosts: ['chat.deepseek.com'], composer: '#chat-input' },
-    { name: 'Meta AI', hosts: ['meta.ai'] },
-    { name: 'Microsoft 365 Copilot', hosts: ['m365.cloud.microsoft'] },
+    { name: 'Copilot', hosts: ['copilot.microsoft.com', 'copilot.com', 'copilot.cloud.microsoft'], files: true, composer: '#userInput' },
+    { name: 'Perplexity', hosts: ['perplexity.ai'], files: true, composer: '#ask-input', live: 'https://www.perplexity.ai/' },
+    { name: 'Mistral', hosts: ['chat.mistral.ai'], files: true, composer: 'form .ProseMirror', live: 'https://chat.mistral.ai/chat' },
+    { name: 'Grok', hosts: ['grok.com'], files: true, composer: 'form textarea, form .ProseMirror', live: 'https://grok.com/' },
+    { name: 'DeepSeek', hosts: ['chat.deepseek.com'], files: true, composer: '#chat-input' },
+    { name: 'Meta AI', hosts: ['meta.ai'], files: true },
+    { name: 'Microsoft 365 Copilot', hosts: ['m365.cloud.microsoft'], files: true },
     { name: 'OpenAI Playground', hosts: ['platform.openai.com'], teams: true },
-    { name: 'AI Studio', hosts: ['aistudio.google.com'] },
-    { name: 'NotebookLM', hosts: ['notebooklm.google.com'] },
+    { name: 'AI Studio', hosts: ['aistudio.google.com'], files: true },
+    { name: 'NotebookLM', hosts: ['notebooklm.google.com'], files: true },
     { name: 'Anthropic Console', hosts: ['console.anthropic.com'], teams: true },
-    { name: 'Poe', hosts: ['poe.com'] },
-    { name: 'You.com', hosts: ['you.com'] },
-    { name: 'Qwen', hosts: ['chat.qwen.ai'] },
+    { name: 'Poe', hosts: ['poe.com'], files: true },
+    { name: 'You.com', hosts: ['you.com'], files: true },
+    { name: 'Qwen', hosts: ['chat.qwen.ai'], files: true },
     { name: 'Duck.ai', hosts: ['duck.ai'] },
     { name: 'Character.AI', hosts: ['character.ai'] },
     { name: 'Pi', hosts: ['pi.ai'] },
@@ -43,8 +45,8 @@
     { name: 'Groq', hosts: ['console.groq.com'], teams: true },
     { name: 'TypingMind', hosts: ['typingmind.com'] },
     { name: 'Phind', hosts: ['phind.com'] },
-    { name: 'Kimi', hosts: ['kimi.com'] },
-    { name: 'Z.ai', hosts: ['z.ai'] },
+    { name: 'Kimi', hosts: ['kimi.com'], files: true },
+    { name: 'Z.ai', hosts: ['z.ai'], files: true },
     // Bouwers van AI-chatbots die als widget op andere sites draaien (vaak in een iframe).
     {
       name: 'AI chatbot', teams: true,

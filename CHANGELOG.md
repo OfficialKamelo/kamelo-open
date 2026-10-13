@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-10-13
+
+### Security
+- **Kamelo for teams: the network filter covers more kinds of requests.** When a page itself calls an AI service (such as OpenAI's API), Kamelo now also masks text sent as a Blob, raw bytes, FormData or URL parameters, in fetch, XMLHttpRequest and sendBeacon. Before, only plain text was masked. Files that aren't text, like images, still go as they are and arrive intact.
+
+### Added
+- **Kamelo for teams: Excel and PowerPoint files are masked too.** A .xlsx keeps its cells, numbers and formulas, with client details in cells, formula results, comments and authors replaced by placeholders. A .pptx keeps its slides and layout, with slides, speaker notes, comments, authors and alt text masked. A file with a chart or an embedded file is sent as masked text instead.
+- **Kamelo for teams: files are masked on every AI service you can upload to,** not only ChatGPT and Claude: also Gemini, Copilot, Microsoft 365 Copilot, Perplexity, Mistral, Grok, DeepSeek, Meta AI, AI Studio, NotebookLM, Poe, You.com, Qwen, Kimi and Z.ai.
+
+### Changed
+- **Private Chat is now called Melo.** Same private chat on your computer, new name: Melo is Kamelo's private chat, where Chrome's built-in AI answers on your own computer. The button in the notice now says "Ask Melo". Nothing else changes, and your settings stay as they are.
+- **Better at everyday personal questions.** Kamelo now also notices debt in more of the ways people say it ("I have so much debt", "ik heb een schuld van 3000 euro", BKR, bailiffs, CCJs, gambling away savings), sexually transmitted infections, common medicines, palpitations, infidelity and open relationships, divorce and custody, burnout and being fired, and questions about visas, asylum and residence permits. "Schuld" as in "it's my fault", technical debt and debt as a finance term still don't give a notice.
+- **Legal notice, broader words.** The notice for legal questions now says "a legal matter" instead of "police or the courts", so it also fits divorce, custody and residence permits.
+- **Edge and Firefox say why.** Where Chrome offers Melo, the notice in Edge and Firefox now explains: "Edge doesn't have a built-in AI that Kamelo can use yet, so Kamelo offers a temporary chat instead."
+- **Kamelo for teams: dangerous details are always masked.** Card numbers, bank and IBAN numbers, ID numbers, passwords, keys and crypto wallets are now always masked, even if you once chose "Keep visible" for them. Names, addresses, phone numbers, email addresses and dates of birth are still masked automatically, and you can still keep those visible with one click.
+- **Kamelo for teams: click a placeholder to change it.** Click a blue placeholder in the text field to see what it stands for. For a name or contact detail, "Keep visible" puts the real value back; for dangerous details the card says they're always masked.
+
 ## [1.5.0] - 2026-10-12
 
 ### Changed

@@ -3,7 +3,7 @@
 // niet). Chrome en Edge houden hun zijpaneel en krijgen geen onbekende toestemming.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { firefoxManifest } from '../tools/pack.mjs';
+import { firefoxManifest, publicEdition } from '../tools/pack.mjs';
 import { createRequire } from 'node:module';
 const { FX_ENABLED } = createRequire(import.meta.url)('../chat/device.js');
 
@@ -26,5 +26,13 @@ test('Firefox: geen zijpaneel-sleutels', () => {
 });
 test('het Chrome-manifest wordt niet aangepast', () => {
   assert.ok(manifest.side_panel);
+});
+test('gratis editie: teams wordt public; al public (kamelo-open) mag; onbekend of teams blijft stopt', () => {
+  const T = "  root.KameloEdition = 'teams';\n", P = "  root.KameloEdition = 'public';\n";
+  assert.equal(publicEdition(T), P);
+  assert.equal(publicEdition(P), P);
+  assert.throws(() => publicEdition('  root.KameloEdition = "teams";\n'));
+  assert.throws(() => publicEdition(P + '  root.KameloEdition = "teams";\n'));
+  assert.throws(() => publicEdition('niets\n'));
 });
 console.log(`\n${passed} geslaagd`);

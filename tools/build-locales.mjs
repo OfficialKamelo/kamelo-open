@@ -1,4 +1,4 @@
-// Maakt _locales/<taal>/messages.json uit src/strings.js (naam, beschrijving en knoptitel in Chrome; ook die van Kamelo for teams).
+// Maakt _locales/<taal>/messages.json uit src/strings.js (naam, beschrijving en knoptitel in Chrome; ook die van Kamelo Business).
 // Gebruik: node tools/build-locales.mjs
 import fs from 'node:fs';
 import { createRequire } from 'node:module';

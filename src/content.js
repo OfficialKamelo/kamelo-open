@@ -1,6 +1,6 @@
 // Content script.
 // In beide edities (zie edition.js): op AI-chatsites een rustige melding bij een persoonlijk onderwerp, met de knop
-// naar een tijdelijke chat en (in Chrome) naar Private Chat. Alleen in Kamelo for teams (MASK) daarnaast:
+// naar een tijdelijke chat en (in Chrome) naar Private Chat. Alleen in Kamelo Business (MASK) daarnaast:
 // schermt persoonsgegevens af in alles wat naar een AI gaat:
 //  - op AI-sites (ChatGPT, Gemini, Claude, …) in elk tekstveld;
 //  - op andere sites (Gmail, Slack, Notion, …) alleen in AI-velden, zoals "Help me schrijven";
@@ -20,8 +20,16 @@
   const I = globalThis.PrivacyI18n;
   const T = globalThis.PrivacyTopics;
   const TA = globalThis.KameloTopicAi;
-  // Afschermen alleen in Kamelo for teams. De gratis editie laadt detector.js niet, en schermt nergens iets af.
+  // Alleen Kamelo Business: beheerd beleid van de organisatie (policy.js). In de gratis editie ontbreekt het.
+  const P = globalThis.KameloPolicy;
+  // Afschermen alleen in Kamelo Business. De gratis editie laadt detector.js niet, en schermt nergens iets af.
   const MASK = !!D && globalThis.KameloEdition !== 'public';
+  // Kamelo Business doet alleen iets met een geldige licentie (src/licence.js). De achtergrond controleert hem
+  // (pf:licence); tot het antwoord er is, en zonder licentie, doet dit script niets: niet afschermen, niet terugzetten,
+  // geen bestanden, geen kaarten of meldingen. Alleen deze ene vraag aan de achtergrond, geen detectiewerk.
+  let licensed = MASK ? null : true; // null: nog niet bekend
+  let licensedUntil = MASK ? 0 : Infinity;
+  const active = () => !MASK || (licensed === true && Date.now() <= licensedUntil);
   // Al actief in dit frame (bijv. ook ingevoegd na installeren)? Dan niets doen, tenzij die versie geen verbinding
   // met de extensie meer heeft. Oudere versies zetten hier true in plaats van een functie.
   const prev = globalThis.__privacyfilterActive;
@@ -37,7 +45,11 @@
   document.addEventListener('pf:hello', e => { if (e.detail !== INSTANCE && !alive()) superseded = true; });
   document.dispatchEvent(new CustomEvent('pf:hello', { detail: INSTANCE }));
 
-  let settings = { ...C.DEFAULT_SETTINGS };
+  // userSettings: wat de gebruiker zelf instelde (wordt opgeslagen). settings: wat geldt, met het beleid van de
+  // organisatie erover (alleen teams). Zonder beleid zijn ze gelijk.
+  let userSettings = { ...C.DEFAULT_SETTINGS };
+  let settings = MASK ? { ...userSettings, enabled: false } : userSettings;
+  let policy = {};
   let vault = MASK ? D.emptyVault() : { byPlaceholder: {} };
   let aiSite = S.siteFor(location.hostname); // de AI-site (zie sites.js), of null op een gewone site
   let internalPaste = false;
@@ -66,10 +78,16 @@
   const NEVER_RESTORE_SEL = 'script, style, noscript, [data-pf-raw]';
   const HINT_ATTRS = ['placeholder', 'aria-label', 'aria-placeholder', 'data-placeholder', 'title', 'data-testid', 'name', 'id'];
 
+  const effective = () => {
+    settings = P ? P.merge(userSettings, policy) : userSettings;
+    if (!active()) settings = { ...settings, enabled: false }; // teams zonder geldige licentie: alles uit
+  };
   function applySettings(next) {
-    settings = { ...C.DEFAULT_SETTINGS, ...(next || {}) };
+    userSettings = { ...C.DEFAULT_SETTINGS, ...(next || {}) };
+    effective();
     aiSite = S.siteFor(location.hostname, settings.customAiSites);
-    if (aiSite && MASK) startRestoring();
+    if (MASK && active() && !MARKS) MARKS = makeMarks();
+    if (aiSite && MASK && active()) startRestoring();
     repaintAll();
   }
 
@@ -84,28 +102,117 @@
 
   // De kluis staat in het werkgeheugen (chrome.storage.session); de achtergrond schrijft hem
   // (zo nodig versleuteld) naar schijf. Eerst wachten tot die hem heeft klaargezet.
+  // Teams: eerst de licentie. Zonder geldige licentie wordt verder niets geladen (geen kluis, geen instellingen).
+  let licenceTimer = 0;
+  async function checkLicence() {
+    if (!MASK) return true;
+    const r = alive() ? await chrome.runtime.sendMessage({ type: 'pf:licence' }).catch(() => null) : null;
+    licensed = r?.active === true;
+    licensedUntil = Number(r?.until) || 0;
+    // Loopt de licentie af terwijl deze pagina openstaat (na de 14 dagen na de vervaldag), dan stopt het hier ook.
+    clearTimeout(licenceTimer);
+    const left = licensedUntil - Date.now();
+    if (licensed && left < 2 ** 31 - 2000) licenceTimer = setTimeout(() => applySettings(userSettings), Math.max(0, left) + 1000);
+    return active();
+  }
+  let loaded = false;
+  // Een licentie die net is ingevuld (popup) of via het beleid binnenkomt: meteen aan, zonder de pagina te herladen.
+  async function recheckLicence() {
+    if (!MASK || superseded || !alive()) return;
+    const was = active();
+    const now = await checkLicence();
+    if (now && !loaded) await load().catch(() => {});
+    else if (now !== was) applySettings(userSettings);
+  }
+
   const ready = (async () => {
+    if (!(await checkLicence())) return;
+    await load();
+  })().catch(() => {}); // geen verbinding met de extensie: verder met de standaardinstellingen (teams: niets)
+
+  async function load() {
+    loaded = true;
     if (MASK) await chrome.runtime.sendMessage({ type: 'pf:init' }).catch(() => {});
-    const [{ settings: s, noticesSeen: seen }, { vault: v }] = await Promise.all([
+    const [{ settings: s, noticesSeen: seen }, { vault: v }, p] = await Promise.all([
       chrome.storage.local.get(['settings', 'noticesSeen']),
       MASK ? fetchVault().then(vault => ({ vault })) : {},
+      P ? P.read() : {},
     ]);
     if (v && typeof v === 'object') vault = v;
+    policy = p || {};
     noticesSeen = Number(seen) || 0;
     applySettings(s);
-  })().catch(() => {}); // geen verbinding met de extensie: verder met de standaardinstellingen
+  }
 
+  P?.watch(p => { policy = p; applySettings(userSettings); recheckLicence(); });
   chrome.storage.onChanged.addListener((changes, area) => {
+    if (area === 'local' && (changes.licence || changes.testLicenceKeys)) recheckLicence();
     if (area === 'local' && changes.settings) applySettings(changes.settings.newValue);
     if (area === 'local' && changes.noticesSeen) noticesSeen = Number(changes.noticesSeen.newValue) || 0;
     if (restoring) restoreIn(document.body);
   });
 
-  const opts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList, scope: SCOPE, legacy: LEGACY });
+  const opts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList, types: settings.types, scope: SCOPE, legacy: LEGACY });
+  // Mag de gebruiker een gegeven zelf zichtbaar laten? De organisatie kan dat uitzetten (allowKeepVisible).
+  const mayKeep = () => settings.allowKeepVisible !== false;
   const restoreText = text => D.restore(text, vault, { scope: SCOPE, legacy: LEGACY });
   const saveVault = () => {
     if (alive()) chrome.runtime.sendMessage({ type: 'pf:vault-set', vault }).catch(() => {});
   };
+
+  // ---------- Bestanden (alleen teams, src/teams/upload.js) ----------
+  // Vóór de luisteraar voor plakken hieronder: een geplakt bestand gaat eerst langs het afschermen van bestanden.
+  // Dezelfde kluis en hetzelfde bereik als getypte tekst, dus dezelfde placeholders en terugzetten in het antwoord.
+  if (MASK) globalThis.KameloUpload?.install({
+    active: () => !superseded && settings.enabled && settings.maskFiles !== false && !!aiSite?.files,
+    unreadable: () => settings.unreadableFiles || 'ask',
+    mask: (text, terms) => D.mask(text, vault, terms ? { ...opts(), customTerms: terms, types: [] } : opts()),
+    done: items => { saveVault(); startRestoring(); count(items); },
+    fallbackTarget: () => liveEditor(),
+    compact: text => showToast('compact', [el('span', { textContent: text })], 6000),
+    details: items => openDetails(uniqueItems(items), null, false),
+    card: fileCard,
+  });
+
+  // Een kaart in de stijl van de melding: kop, tekst, knoppen. wait: pas klaar na een keuze (of sluiten: undefined).
+  function fileCard({ title, text, buttons = [], ms = 15000, wait = false }) {
+    return new Promise(resolve => {
+      let done = false;
+      const finish = v => { if (!done) { done = true; resolve(v); } };
+      const body = el('div', { className: 'c' }, el('b', { textContent: title }));
+      body.style.maxWidth = '360px'; // zo breed als de melding bij een gevoelig onderwerp, ook met een lange bestandsnaam
+      body.style.overflowWrap = 'anywhere';
+      if (text) { const m = el('span', { className: 'm', textContent: text }); m.style.whiteSpace = 'pre-line'; body.append(m); }
+      if (buttons.length) {
+        body.append(el('div', { className: 'k' }, ...buttons.map(b => textButton(b.primary ? 'p' : '', b.label, () => { hideToast(); b.run?.(); finish(b.value); }))));
+      }
+      showToast('card', [body, iconButton('x', I.t('detailsClose'), () => { hideToast(); finish(undefined); })], wait ? 600000 : ms);
+      if (!wait) return finish(undefined);
+      // Weg zonder keuze (Esc, een andere melding): dan geldt het als annuleren.
+      const check = setInterval(() => { if (!body.isConnected || !toastShown()) { clearInterval(check); finish(undefined); } }, 300);
+    });
+  }
+
+  // ---------- AI-beleid van de organisatie (alleen teams, src/teams/ai-policy.js) ----------
+  // Met aiPolicyAck: bij de eerste klik in een tekstveld op een AI-site een kaart met "Ik heb het gelezen" en "Beleid lezen",
+  // één keer per pagina, tot je het hebt gelezen (of het adres verandert). Alleen op dit apparaat bewaard.
+  const AIP = globalThis.KameloAiPolicy;
+  let policyAsked = false;
+  if (MASK && AIP && window === window.top) window.addEventListener('focusin', e => {
+    if (policyAsked || superseded || !aiSite || !active()) return;
+    const ed = findEditor(e.target);
+    if (!ed) return;
+    policyAsked = true;
+    ready.then(async () => {
+      if (!(await AIP.needed(policy, await AIP.read()).catch(() => false))) return;
+      anchorEd = ed;
+      const body = el('div', { className: 'c' }, el('b', { textContent: I.t('aiPolicy') }), el('span', { className: 'm', textContent: I.t('aiPolicyAckText') }),
+        el('div', { className: 'k' },
+          textButton('p', I.t('aiPolicyAcked'), () => { hideToast(); AIP.acknowledge(policy).catch(() => {}); }),
+          textButton('', I.t('aiPolicyRead'), () => { const url = AIP.url(policy); if (url) window.open(url, '_blank', 'noopener'); })));
+      showToast('card', [body, iconButton('x', I.t('detailsClose'), hideToast)], 60000);
+    });
+  }, true);
 
   // ---------- Editors ----------
 
@@ -358,6 +465,7 @@
   // van de site), en wordt een vraag die naar Private Chat gaat niet vanzelf gesteld.
   const byUser = new WeakMap();
   window.addEventListener('input', e => {
+    if (!active()) return;
     const ed = findEditor(e.target);
     if (!ed) return;
     typedIn.add(ed);
@@ -420,7 +528,9 @@
   // Muis erop: een kaartje met uitleg, en bij een golflijn "Nu afschermen" of "Zichtbaar laten".
   // Een browser zonder de API (Firefox vóór 140) slaat dit over; afschermen en terugzetten werken gewoon.
 
-  const MARKS = (() => {
+  // Pas aangemaakt zodra Kamelo Business actief is (applySettings): zonder licentie verandert er niets aan de pagina.
+  let MARKS = null;
+  const makeMarks = () => {
     if (!MASK) return null;
     try {
       if (!globalThis.CSS?.highlights || typeof Highlight !== 'function') return null;
@@ -428,7 +538,7 @@
       for (const [kind, h] of Object.entries(m)) CSS.highlights.set(`kamelo-${kind}`, h);
       return m;
     } catch { return null; }
-  })();
+  };
   const markInfo = new WeakMap(); // Range → { kind, … }
 
   function addMark(kind, startNode, start, endNode, end, info, list) {
@@ -545,6 +655,12 @@
       if (hint) hideHintIn(250);
     }, 40);
   }, { capture: true, passive: true });
+  document.addEventListener('click', e => {
+    if (!MARKS || superseded || !(MARKS.pending.size || MARKS.ph.size)) return;
+    if (hint && e.composedPath().includes(hint.host)) return;
+    const r = markAt(e.clientX, e.clientY);
+    if (r && r !== hintRange) showHint(r);
+  }, { capture: true, passive: true });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && hint) hideHint(); }, true);
   addEventListener('scroll', () => hint && hideHint(), { capture: true, passive: true });
 
@@ -602,11 +718,18 @@
       box.append(top(capital(I.typeLabel(type))));
       if (value !== undefined) box.append(el('div', { className: 'v', textContent: shownValue({ type, value }) }));
       box.append(line(`${I.t('markAiSees')} `, tag(info.placeholder)));
+      // In het veld waarin je typt: klik en kies. Namen e.d. mag je toch zichtbaar laten; gevaarlijke gegevens niet.
+      if (value !== undefined && info.ed?.isConnected) {
+        if (D.ALWAYS.has(type)) box.append(line(I.t('markAlways')));
+        else if (mayKeep()) box.append(el('div', { className: 'k' }, textButton('l', I.t('detailsKeep'), () => {
+          hideHint(); keepVisible(String(value), null); showRealIn(info.ed, info.placeholder, String(value)); })));
+      }
     } else {
-      box.append(top(capital(I.typeLabel(info.type))), line(I.t('markPending')),
+      const always = D.ALWAYS.has(info.type);
+      box.append(top(capital(I.typeLabel(info.type))), line(I.t(always ? 'markAlways' : 'markPending')),
         el('div', { className: 'k' },
           textButton('p', I.t('markMaskNow'), () => { hideHint(); if (info.ed.isConnected) guard(info.ed); }),
-          textButton('l', I.t('detailsKeep'), () => { hideHint(); keepVisible(info.value, null); paint(info.ed); })));
+          ...(always || !mayKeep() ? [] : [textButton('l', I.t('detailsKeep'), () => { hideHint(); keepVisible(info.value, null); paint(info.ed); })])));
     }
     box.addEventListener('mouseenter', () => clearTimeout(hintTimer));
     box.addEventListener('mouseleave', () => hideHintIn(250));
@@ -992,14 +1115,18 @@
     warnedTopics.add(topic);
     watchEmpty(ed);
     anchorEd = ed;
-    // Met een veld: "Ask in Private Chat" brengt de vraag naar Kamelo Private Chat (docs/PLAN-PRIVE-CHAT.md).
+    // Met een veld: "Ask Melo" brengt de vraag naar Melo, de privéchat van Kamelo (docs/private-chat/PLAN-PRIVE-CHAT.md).
     // Alleen in Chrome: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding alleen de tijdelijke chat.
     const canProtect = !!ed && !!settings.privateChat && I.BROWSER.id === 'chrome';
+    // In Edge en Firefox zegt de melding waarom er een tijdelijke chat staat waar Chrome Private Chat aanbiedt.
+    const advice = canProtect ? 'topicAdviceChat'
+      : ed && aiSite?.private ? (settings.privateChat ? 'topicAdviceNoDevice' : 'topicAdvicePrivate')
+      : 'topicAdvice';
     const masked = ed?.isConnected ? new Set(getText(ed).match(/\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g) || []).size : 0;
     showToast('card', [
       el('div', { className: 'c' },
         el('b', { textContent: I.t('topicTitle') }),
-        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(canProtect ? 'topicAdviceChat' : ed && aiSite?.private ? 'topicAdvicePrivate' : 'topicAdvice')}` }),
+        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(advice)}` }),
         ...(masked ? [lastMasked && lastMasked.ctx?.ed === ed
           ? textButton('done', I.t('toastCompact', { n: masked }), e => { const m = lastMasked; hideToast(); openDetails(m.unique, m.ctx, e.detail === 0); })
           : el('span', { className: 'done', textContent: I.t('toastCompact', { n: masked }) })] : []),
@@ -1093,7 +1220,7 @@
     anchorEd = ed;
     showToast('compact', [el('span', { textContent: I.t('privateReady') })], 6000);
   }
-  ready.then(takePrivate);
+  ready.then(() => { if (active()) takePrivate(); });
 
   // ---------- Kaart "Wat de AI ziet" ----------
   // Per gegeven: soort, jouw waarde (bankgegevens half verborgen) en de placeholder die de AI krijgt, met
@@ -1131,6 +1258,7 @@
         .keep { grid-area: 1 / 2; justify-self: end; border: 0; background: none; padding: 0; color: var(--accent-text);
                 font: inherit; font-size: 11px; line-height: 16px; font-weight: 500; cursor: pointer; white-space: nowrap; }
         .keep:hover { text-decoration: underline; }
+        .always { grid-area: 1 / 2; justify-self: end; color: var(--muted); font-size: 12px; }
         .val { grid-area: 2 / 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .tag { grid-area: 2 / 2; justify-self: end; font-weight: 500; color: var(--ph-fg); background: var(--ph-bg); padding: 0 6px; border-radius: 5px; white-space: nowrap; }
         li.kept .tag { text-decoration: line-through; opacity: .5; }
@@ -1155,7 +1283,8 @@
         el('span', { className: 'val', textContent: shownValue(it) }),
         el('span', { className: 'tag', textContent: it.placeholder }));
       // Alleen bij een veld: dit gegeven toch zichtbaar laten, met "Ongedaan maken" op dezelfde plek.
-      if (ctx?.ed) {
+      if (ctx?.ed && D.ALWAYS.has(it.type)) li.append(el('span', { className: 'always', textContent: I.t('markAlways').split(':')[0] }));
+      else if (ctx?.ed && mayKeep()) {
         let before = null, kept = false;
         const keep = el('button', { type: 'button', className: 'keep' });
         const label = () => { keep.textContent = kept ? `${I.t('detailsKept')} · ${I.t('toastUndo')}` : I.t('detailsKeep'); };
@@ -1206,18 +1335,23 @@
   // Een woord dat onterecht is afgeschermd: in het veld terugzetten en op de lijst "Nooit afschermen" zetten,
   // met de site en datum erbij, zodat een misklik terug te vinden is. Geeft de vorige tekst terug voor ongedaan maken.
   function keepVisible(word, ctx) {
+    if (!mayKeep()) return null;
     const lower = word.toLowerCase();
-    if (!settings.allowList.some(w => w.toLowerCase() === lower)) settings.allowList = [...settings.allowList, word];
-    settings.allowMeta = { ...(settings.allowMeta || {}), [lower]: { site: location.hostname, at: Date.now() } };
-    store('local', { settings });
+    const u = userSettings;
+    if (!u.allowList.some(w => w.toLowerCase() === lower)) u.allowList = [...u.allowList, word];
+    u.allowMeta = { ...(u.allowMeta || {}), [lower]: { site: location.hostname, at: Date.now() } };
+    effective();
+    store('local', { settings: u });
     return ctx && unmaskInField(ctx, lower);
   }
 
   function undoKeep(word, ctx, before) {
     const lower = word.toLowerCase();
-    settings.allowList = settings.allowList.filter(w => w.toLowerCase() !== lower);
-    if (settings.allowMeta) { const { [lower]: _, ...rest } = settings.allowMeta; settings.allowMeta = rest; }
-    store('local', { settings });
+    const u = userSettings;
+    u.allowList = u.allowList.filter(w => w.toLowerCase() !== lower);
+    if (u.allowMeta) { const { [lower]: _, ...rest } = u.allowMeta; u.allowMeta = rest; }
+    effective();
+    store('local', { settings: u });
     if (before && ctx?.ed?.isConnected) {
       const cur = getText(ctx.ed), i = cur.lastIndexOf(ctx.segment);
       if (i !== -1) {
@@ -1226,6 +1360,15 @@
         ctx.items = before.items;
       }
     }
+  }
+
+  // Klik op een placeholder in het veld → 'Zichtbaar laten': overal in dit veld de echte waarde terug.
+  function showRealIn(ed, placeholder, value) {
+    if (!ed?.isConnected) return;
+    const cur = getText(ed);
+    if (!cur.includes(placeholder)) return;
+    insertText(ed, cur.split(placeholder).join(value), true);
+    paintSoon(ed);
   }
 
   // Zet in het veld de placeholders terug die bij dit woord horen. Geeft de vorige versie van de tekst terug.

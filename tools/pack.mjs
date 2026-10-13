@@ -3,14 +3,14 @@
 // Twee edities uit dezelfde broncode (zie src/edition.js):
 //   gratis (standaard)  de versie in de winkels: Private Chat en de melding bij persoonlijke onderwerpen op AI-chatsites.
 //                       Zonder de bestanden voor het afschermen, en alleen toegang tot de AI-chatsites uit src/sites.js.
-//   Kamelo for teams    --teams: alles, zoals de broncode (afschermen, kluis, alle instellingen) plus Private Chat.
+//   Kamelo Business    --teams: alles, zoals de broncode (afschermen, kluis, alle instellingen) plus Private Chat.
 //
 // Elke store heeft een eigen map in web-store-uploaden/, met het pakket, de afbeeldingen en INVULLEN-*.md:
 //   node tools/pack.mjs           → Google Chrome/ en Microsoft Edge/kamelo-store-<versie>.zip (hetzelfde pakket)
 //   node tools/pack.mjs --beta    → Google Chrome/kamelo-beta-<versie>.zip
 //   node tools/pack.mjs --firefox → Firefox/kamelo-firefox-<versie>.zip (voor addons.mozilla.org)
-//   node tools/pack.mjs --teams   → Kamelo for teams/kamelo-teams-<versie>.zip (met --firefox: kamelo-teams-firefox-…)
-//   --test                        → naam "Kamelo (test)" of "Kamelo for teams (test)", om naast de echte te laden
+//   node tools/pack.mjs --teams   → Kamelo Business/kamelo-teams-<versie>.zip (met --firefox: kamelo-teams-firefox-…)
+//   --test                        → naam "Kamelo (test)" of "Kamelo Business (test)", om naast de echte te laden
 //
 // De bètaversie heet "Kamelo Beta" en toont een β op het icoon, zodat je hem naast de gewone versie herkent.
 // Hij is bedoeld voor een aparte, verborgen vermelding in de Web Store.
@@ -24,25 +24,35 @@ import { createRequire } from 'node:module';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const CONTENTS = ['manifest.json', '_locales', 'src', 'popup', 'unlock', 'icons', 'chat', 'vendor'];
 const OUT_DIR = path.join(ROOT, 'web-store-uploaden');
-export const STORES = { chrome: 'Google Chrome', edge: 'Microsoft Edge', firefox: 'Firefox', teams: 'Kamelo for teams' };
+export const STORES = { chrome: 'Google Chrome', edge: 'Microsoft Edge', firefox: 'Firefox', teams: 'Kamelo Business' };
 const require = createRequire(import.meta.url);
 const { FX_ENABLED } = require('../chat/device.js');
 const { SITES } = require('../src/sites.js');
 
-// Alleen in Kamelo for teams: alles voor het afschermen, de kluis en het maandoverzicht. Ook vendor/ (de Tinfoil-bundel
+// Alleen in Kamelo Business: alles voor het afschermen, de kluis en het maandoverzicht. Ook vendor/ (de Tinfoil-bundel
 // voor de "chip" van Kamelo Plus, die met placeholders werkt) en de popup van teams.
 export const TEAMS_ONLY = [
   'src/detector.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/vaultlock.js', 'src/vaultscope.js', 'src/stats.js',
   'src/net-main.js', 'src/ai-hosts.js', 'src/marks.css', 'unlock', 'vendor', 'popup/popup.html', 'popup/popup.js',
+  // Beheerd beleid van de organisatie (chrome.storage.managed) en het schema daarvan.
+  'src/policy.js', 'src/managed-schema.json',
+  // Licentie van de organisatie, offline gecontroleerd (alleen de openbare sleutel).
+  'src/licence.js',
+  // Opmaak voor beleid en licentie in de popup van teams.
+  'popup/teams.css',
+  // Nieuwe modules van teams (ronde 1 en later): bestanden afschermen, klantenlijst, AI-beleid. De hele map.
+  'src/teams',
 ];
+// Hoort dit bestand (of deze map) alleen bij teams? Ook bestanden ín een map uit TEAMS_ONLY (src/teams/files.js).
+export const teamsOnly = f => TEAMS_ONLY.some(t => f === t || f.startsWith(`${t}/`));
 // Alleen in de gratis editie: de eigen, eenvoudige popup.
 export const PUBLIC_ONLY = ['popup/public.html', 'popup/public.js', 'popup/public.css'];
 
 // De achtergrondscripts per editie, in dezelfde volgorde als importScripts in background.js (voor Firefox).
 const BACKGROUND = {
   public: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/topic-ai.js', 'src/background.js'],
-  teams: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js',
-    'src/detector.js', 'src/vaultscope.js', 'src/background.js'],
+  teams: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/policy.js', 'src/licence.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js',
+    'src/teams/terms-index.js', 'src/detector.js', 'src/vaultscope.js', 'src/background.js'],
 };
 
 // De AI-chatsites uit sites.js als adrespatronen: het domein zelf en elk subdomein. Zonder de sites die alleen voor
@@ -63,7 +73,7 @@ export function publicManifest(manifest) {
   m.content_scripts = [{
     ...isolated,
     matches: sites,
-    js: isolated.js.filter(f => !TEAMS_ONLY.includes(f)),
+    js: isolated.js.filter(f => !teamsOnly(f)),
   }];
   delete m.content_scripts[0].css;
   m.action.default_popup = 'popup/public.html';
@@ -74,6 +84,14 @@ export function publicManifest(manifest) {
 // volgorde als importScripts in background.js. Verder een vast add-on-ID, de minimale versie
 // (world: MAIN en match_origin_as_fallback bestaan pas vanaf Firefox 128) en de verklaring dat
 // Kamelo geen gegevens verzamelt (verplicht voor nieuwe add-ons sinds november 2025).
+// src/edition.js voor de gratis editie. In kamelo-open staat hij al op 'public' (tools/open-tree.mjs); dat is goed.
+// Lukt het omzetten niet (edition.js anders opgemaakt), dan nooit stilletjes een teams-pakket als gratis versie bouwen.
+export function publicEdition(text) {
+  const out = text.replace("root.KameloEdition = 'teams';", "root.KameloEdition = 'public';");
+  if (!out.includes("root.KameloEdition = 'public';") || /KameloEdition\s*=\s*['"]teams['"]/.test(out)) throw new Error('src/edition.js: kan de editie niet op public zetten');
+  return out;
+}
+
 export function firefoxManifest(manifest, { teams = true } = {}) {
   const m = structuredClone(manifest);
   m.background = { scripts: BACKGROUND[teams ? 'teams' : 'public'] };
@@ -86,18 +104,29 @@ export function firefoxManifest(manifest, { teams = true } = {}) {
   if (FX_ENABLED) m.optional_permissions = [...new Set([...(m.optional_permissions || []), 'trialML'])];
   m.permissions = m.permissions.filter(p => p !== 'sidePanel');
   delete m.side_panel;
+  // Firefox kent storage.managed_schema niet: daar komt beheerd beleid uit policies.json ("3rdparty"), zonder schema.
+  delete m.storage;
+  return m;
+}
+
+// Alleen Kamelo Business: het schema voor beheerd beleid (chrome.storage.managed), zodat IT het via Google Admin,
+// Intune of een macOS-profiel kan instellen (docs/teams/UITROLLEN.md). Firefox leest beleid anders (policies.json).
+export const MANAGED_SCHEMA = 'src/managed-schema.json';
+export function teamsManifest(manifest) {
+  const m = structuredClone(manifest);
+  m.storage = { ...(m.storage || {}), managed_schema: MANAGED_SCHEMA };
   return m;
 }
 
 // Het manifest van een pakket.
 export function manifestFor(manifest, { teams = false, beta = false, firefox = false, test = false } = {}) {
-  let m = teams ? structuredClone(manifest) : publicManifest(manifest);
+  let m = teams ? teamsManifest(manifest) : publicManifest(manifest);
   if (beta) {
     Object.assign(m, { name: 'Kamelo Beta', version_name: `${m.version} beta` });
     m.action.default_title = 'Kamelo Beta';
   }
   if (test) {
-    m.name = teams ? 'Kamelo for teams (test)' : 'Kamelo (test)';
+    m.name = teams ? 'Kamelo Business (test)' : 'Kamelo (test)';
     m.action.default_title = m.name;
   }
   if (firefox) m = firefoxManifest(m, { teams });
@@ -118,7 +147,7 @@ export function dropMissingScripts(dir) {
 
 // Zet het uitgepakte pakket in `dir` (leeg of nog niet bestaand). Geeft het manifest terug.
 export function build(dir, { teams = false, beta = false, firefox = false, test = false } = {}) {
-  if (teams && !fs.existsSync(path.join(ROOT, 'src/detector.js'))) throw new Error('Kamelo for teams zit niet in deze repo.');
+  if (teams && !fs.existsSync(path.join(ROOT, 'src/detector.js'))) throw new Error('Kamelo Business zit niet in deze repo.');
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
   const skip = new Set(teams ? PUBLIC_ONLY : TEAMS_ONLY);
   // Firefox krijgt geen Private Chat (alleen de tijdelijke chat), dus ook de Tinfoil-bundel voor Plus niet:
@@ -135,16 +164,27 @@ export function build(dir, { teams = false, beta = false, firefox = false, test 
   }
   const m = manifestFor(manifest, { teams, beta, firefox, test });
   fs.writeFileSync(path.join(dir, 'manifest.json'), `${JSON.stringify(m, null, 2)}\n`);
+  // Het nagebootste beleid en licenties met de testsleutel alleen in testversies; in echte pakketten uit.
+  if (teams && !test) setTestBuild(dir, false);
   if (!teams) {
     const edition = path.join(dir, 'src/edition.js');
-    const before = fs.readFileSync(edition, 'utf8');
-    const after = before.replace("root.KameloEdition = 'teams';", "root.KameloEdition = 'public';");
-    // Lukt het omzetten niet (edition.js anders opgemaakt), dan nooit stilletjes een teams-pakket als gratis versie bouwen.
-    if (after === before || !after.includes("root.KameloEdition = 'public';")) throw new Error('src/edition.js: kan de editie niet op public zetten');
-    fs.writeFileSync(edition, after);
+    fs.writeFileSync(edition, publicEdition(fs.readFileSync(edition, 'utf8')));
   }
   dropMissingScripts(dir);
   return m;
+}
+
+// Zet `const TEST_BUILD = true;` in de bestanden van teams op `on`. Lukt dat niet, dan stoppen (nooit stilletjes een
+// echt pakket met de testhaak bouwen).
+export const TEST_BUILD_FILES = ['src/policy.js', 'src/licence.js'];
+function setTestBuild(dir, on) {
+  for (const f of TEST_BUILD_FILES) {
+    const file = path.join(dir, f);
+    const before = fs.readFileSync(file, 'utf8');
+    const after = before.replace(/^(\s*)const TEST_BUILD = (true|false);/m, `$1const TEST_BUILD = ${on};`);
+    if (!after.includes(`const TEST_BUILD = ${on};`)) throw new Error(`${f}: kan TEST_BUILD niet op ${on} zetten`);
+    fs.writeFileSync(file, after);
+  }
 }
 
 // Maakt een zip van een uitgepakt pakket.

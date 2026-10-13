@@ -31,7 +31,10 @@
         my_character
         characters screenplay in_my_story short_story history_class pain_point pain_points pain_in_the_neck
         pain_in_the_ass pain_in_the_butt dying_of_laughter rash_decision* sore_loser* technical_debt tech_debt
-        design_debt the_history_of learn_about learning_about presentation`,
+        design_debt the_history_of learn_about learning_about presentation
+        cost_of_debt bad_debt debt_financing debt_to_equity debt-to-equity debt_ratio debt_service national_debt
+        government_debt public_debt sovereign_debt corporate_debt company's_debt its_debt debt_fund* balance_sheet
+        thesis article_about`,
       HEALTH: `diagnosed diagnosis cancer tumor tumour chemo chemotherapy radiotherapy diabetes hiv aids std sti
         pregnan*
         miscarriage abortion ivf medication* prescription* hospital hospitals hospitalized hospitalised hospitalization
@@ -60,7 +63,11 @@
         cramping pressure_in chest_tightness tight_chest uti stitches deep_cut
         swallowing antibiotic* physio* physical_therapy short_of_breath shortness_of_breath tired_all_the_time
         exhausted_all_the_time
-        keeps_forgetting_things forgetting_things_lately memory_loss memory_problems losing_her_memory losing_his_memory`,
+        keeps_forgetting_things forgetting_things_lately memory_loss memory_problems losing_her_memory losing_his_memory
+        broke_my_toe broke_my_finger broke_my_foot broke_my_nose broke_my_rib* broken_toe broken_finger broken_foot
+        broken_nose broken_rib* herpes chlamydia gonorrh* syphilis hpv genital_warts cold_sore* eczema psoriasis
+        hemorrhoid* haemorrhoid* palpitation* heart_keeps_skipping heart_skips_beats skipping_beats blood_sugar*
+        morning_after_pill morning-after_pill hrt metformin ozempic wegovy levothyroxine statins warfarin`,
       MENTAL: `depression* depressed depressive anxiety_disorder* panic_attack* burnout* burn-out* burnt_out burned_out
         eating_disorder* eating_problem binge_eating keep_binging anorexia bulimia bipolar* schizophren* psychosis ptsd
         trauma* psychologist* psychiatrist* therapist* therapy antidepressant* addict* rehab ocd alcoholic alcoholism
@@ -78,7 +85,13 @@
         mental_health feel_overwhelmed so_overwhelmed i'm_overwhelmed emotionally drinking_too_much drink_too_much
         gambling_problem falling_apart feel_like_a_failure i'm_a_failure struggling_a_lot really_struggling
         struggling_mentally nervous_around_people so_nervous_around cries_every cries_all crying_every
-        can't_get_out_of_bed mood_swings isolating seems_withdrawn so_withdrawn won't_talk_to_anyone`,
+        can't_get_out_of_bed mood_swings isolating seems_withdrawn so_withdrawn won't_talk_to_anyone
+        sertraline zoloft prozac fluoxetine citalopram escitalopram lexapro xanax not_good_enough_at_anything
+        never_good_enough feel_like_i'm_not_good_enough feel_not_good_enough don't_have_any_friends
+        no_one_to_talk_to feel_so_alone feeling_so_alone feel_completely_alone alone_all_the_time stop_drinking_every
+        drinking_every_night drink_every_night quit_drinking haven't_left_the_house can't_leave_the_house
+        i_can't_function cry_every cry_all_the_time cry_a_lot burning_out dread_going_to_work dread_work dread_waking_up
+        had_a_breakdown gambling_addiction`,
       SEXUALITY: `gay lesbian* bisexual* transgender* non-binary nonbinary non_binary queer sexual_orientation
         coming-out
         coming_out came_out_to come_out_to come_out_at_work sexuality erectile erection*
@@ -91,12 +104,17 @@
         sex_life had_sex have_sex having_sex sex_with things_in_bed stuff_in_bed kinky trouble_getting_hard
         can't_get_hard premature_ejaculation his_gender her_gender misgender* deadname* puberty_blockers
         wants_to_be_a_girl wants_to_be_a_boy says_he's_a_girl says_she's_a_boy sexually sexual_health painful_sex
-        lost_my_virginity same-sex same_sex outed`,
+        lost_my_virginity same-sex same_sex outed
+        !when_we_have_sex !when_we_had_sex !pain_during_sex !hurts_during_sex like_in_bed orgasm* open_relationship
+        open_marriage threesome* cheated_on_me cheating_on_me cheated_on_my_wife cheated_on_my_husband cheated_on_my_girlfriend cheated_on_my_boyfriend cheated_on_my_partner cheated_on_my_gf cheated_on_my_bf
+        cheating_on_my_wife cheating_on_my_husband cheating_on_my_girlfriend cheating_on_my_boyfriend cheating_on_my_partner cheating_on_my_gf cheating_on_my_bf having_an_affair
+        had_an_affair like_both_guys like_both_girls like_both_men like_both_women like_guys_and_girls
+        like_boys_and_girls`,
       RELIGION: `muslim* islam* christian* catholic* protestant* jewish hindu* buddhist* atheist* religion* religious
         my_faith our_faith ramadan mosque* synagogue* church_service* my_church our_church going_to_church
         go_to_church went_to_church jehovah* judaism mormon* sikh* evangelical* pentecostal* hijab* headscarf niqab
         burka burqa kippah yarmulke joined_a_cult in_a_cult left_a_cult believe_in_god baptized baptised baptism prayer
-        prayers praying
+        prayers praying pray_every pray_daily pray_to_god pray_five_times
         quran koran imam rabbi pastor priest halal kosher sabbath shabbat first_communion sinful a_sin left_the_church
         leave_the_church`,
       MONEY: `in_debt my_debts our_debts indebted debt_collector* bankrupt* bailiff* foreclos* evict* food_bank
@@ -113,7 +131,16 @@
         lose_our_apartment lose_my_apartment lose_our_home
         sent_to_collections in_collections bad_credit poor_credit credit_score unemployed laid_off lost_my_job
         lost_his_job lost_her_job on_welfare food_stamps unemployment_benefits universal_credit !we_can't_afford
-        !we_can't_pay !behind_on_rent !behind_on_bills`,
+        !we_can't_pay !behind_on_rent !behind_on_bills
+        have_debt has_debt had_debt having_debt so_much_debt lot_of_debt lots_of_debt of_debt out_of_debt pay_off_debt
+        paying_off_debt debt_free in_so_much_debt ccj ccjs county_court_judgment* !bailiffs_are_coming
+        !bailiff_is_coming can't_make_the_payments can't_make_payments can't_make_my_payments can't_make_rent
+        can't_make_the_mortgage paycheck_to_paycheck default_on_my_credit defaults_on_my_credit
+        borrow_money_for_rent borrow_money_for_food borrow_money_for_groceries
+        borrow_money_for_bills gambled_away gambling_away keep_gambling money_gambling lost_my_savings
+        lost_all_my_savings lost_our_savings lost_all_our_savings got_fired been_fired was_fired getting_fired
+        fired_me was_let_go been_let_go got_let_go lose_my_job losing_my_job contract_isn't_being_renewed
+        contract_wasn't_renewed contract_not_renewed child_support`,
       LEGAL: `criminal_record* convicted arrested my_arrest probation parole prison jail sentenced court_date court_case
         court_hearing in_court to_court sued suing lawsuit* summons dui dwi drunk_driving shoplift* restraining_order*
         pulled_over charged_with criminal_lawyer defense_lawyer warrant_out warrant_for out_on_bail
@@ -121,7 +148,14 @@
         police_station police_custody got_locked_up caught_driving driving_without_a_license driving_without_a_licence
         caught_with investigated_for being_investigated under_investigation accused_of
         custody possession_of caught_stealing stole_from_work !questioned_me !interview_me !reported_me_to_the_police
-        !arrested_me`,
+        !arrested_me
+        getting_divorced get_divorced got_divorced getting_a_divorce wants_a_divorce want_a_divorce filed_for_divorce
+        file_for_divorce my_divorce our_divorce divorcing divorce_papers visitation_rights won't_let_me_see_my
+        doesn't_let_me_see_my community_service visa_expires visa_expired visa_expiring visa_was_rejected
+        visa_was_denied visa_got_rejected overstay* asylum_application* asylum_claim* asylum_seeker* asylum_case
+        asylum_interview applied_for_asylum apply_for_asylum refugee_status residence_permit* immigration_status
+        immigration_detention i'm_undocumented am_undocumented we're_undocumented parents_are_undocumented
+        undocumented_immigrant* here_illegally green_card_interview`,
     },
     nl: {
       words: `de het een en is van dat die niet op te voor met wat hoe je ben heb heeft al er maar om naar zo nog ook
@@ -131,7 +165,7 @@
       NOT: `werkstuk* spreekbeurt* huiswerk opstel scriptie* boekverslag roman thriller detective hoofdpersoon
         personage* hoofdstuk in_mijn_boek in_mijn_verhaal pijnpunt* van_het_lachen pijn_geleden technische_schuld
         de_geschiedenis_van
-        leren_over presentatie*`,
+        leren_over presentatie* artikel_over voor_de_krant`,
       HEALTH: `gediagnosticeerd diagnose kanker borstkanker darmkanker longkanker huidkanker prostaatkanker tumor chemo
         chemotherapie bestraling* diabetes suikerziekte hiv aids soa zwanger* miskraam abortus ivf medicatie medicijn*
         voorgeschreven ziekenhuis* operatie* geopereerd chronisch* epilepsie astma hartaanval* beroerte dementie
@@ -155,7 +189,12 @@
         opgeblazen_gevoel bloeddruk cholesterol epileptische_aanval pillen de_pil anticonceptie tandarts gewond wond
         blessure* hersenschudding rolstoel oververmoeid vermoeid* *pokken mazelen roodvonk krentenbaard
         met_spoed_opgenomen spoedeisende_hulp de_seh darmen antibiotica
-        geheugenproblemen geheugenverlies vergeet_steeds_dingen vergeet_de_laatste_tijd`,
+        geheugenproblemen geheugenverlies vergeet_steeds_dingen vergeet_de_laatste_tijd
+        onderrug last_van_mijn_rug last_van_mn_rug bloeddrukpil* als_ik_plas bij_het_plassen
+        chlamydia herpes gonorroe syfilis hpv genitale_wratten koortslip* aambei* eczeem psoriasis hartkloppingen
+        hartritme* hart_slaat_over hart_slaat_soms_over bloedsuiker* mijn_suiker mn_suiker suikerwaarde* metformine
+        ozempic wegovy morning-afterpil morningafterpil morning_afterpil morning_after_pil nu_bloed_ik ik_bloed
+        dikke_enkel dikke_knie dikke_voet enkel_is_dik ziek_thuis bedrijfsarts re-integr* reïntegr* hormoontherapie`,
       MENTAL: `depressi* angststoornis* angstaanval* paniekaanval* burn-out* burnout* overspannen* opgebrand*
         eetstoornis*
         anorexia boulimia bipolair* schizofren* psychose* ptss trauma* psycholoog* psychiater* therapeut* therapie*
@@ -176,7 +215,10 @@
         minderwaardig* zelfvertrouwen geen_energie_meer alleen_maar_slapen slaap_slecht slaap_al huil huilen huilde
         moet_huilen nachtmerrie* herbeleving* prikkelbaar paniek* overprikkeld overweldigd uitgeput emotioneel ggz
         poh-ggz zelfhaat haat_mezelf mentaal mentale_gezondheid niet_meer_zitten rotperiode moeilijke_periode
-        zware_periode`,
+        zware_periode sertraline citalopram escitalopram fluoxetine paroxetine venlafaxine oxazepam elke_avond_drinken
+        drink_elke_avond stoppen_met_drinken stop_met_drinken weken_de_deur_niet_uit maanden_de_deur_niet_uit
+        durf_de_deur_niet_uit elke_sociale_situatie in_sociale_situaties sociale_angst voel_ik_niks_meer voel_ik_niets_meer
+        voel_niks_meer voel_niets_meer op_tegen_mijn_werk zie_elke_ochtend_op_tegen zie_elke_dag_op_tegen`,
       SEXUALITY: `homo homoseksu* lesbi* biseksu* gay transgender* non-binair* queer seksuele_geaardheid uit_de_kast
         coming-out coming_out seksualiteit erectie* erectieprobl* impotent* aseksu* panseksu* demiseksu* bi_ben
         ben_ik_bi ben_bi hij_bi zij_bi ze_bi als_trans is_trans ben_trans val_op_meisjes val_op_jongens val_op_mannen
@@ -184,7 +226,9 @@
         op_meisjes_valt op_jongens_valt op_mannen_valt op_vrouwen_valt aangetrokken_tot dingen_in_bed
         hem_niet_omhoog seks seksleven mijn_gender genderidentiteit genderdysforie mijn_transitie
         hormoonbehandeling op_mannen_of_vrouwen op_vrouwen_of_mannen wil_een_jongen_zijn wil_een_meisje_zijn
-        pubertijdsremmers maagdelijkheid ontmaagd* seksueel seksuele`,
+        pubertijdsremmers maagdelijkheid ontmaagd* seksueel seksuele
+        hem_niet_meer_omhoog open_relatie vreemdga* vreemdgegaan vreemd_gegaan vreemd_gaan vrijen vrijt vrijde
+        orgasme* klaarkomen trans_is trans_ben ik_trans_ben`,
       RELIGION: `moslim* islam* christen* christelijk* katholiek* protestant* joods jood hindoe* boeddhist* atheïst*
         atheist*
         gelovig* religie* religieus* bekeerd* bekeren* mijn_geloof mn_geloof m'n_geloof ons_geloof hun_geloof
@@ -192,7 +236,8 @@
         hervormd* evangelisch* pinkstergemeente* mormoon* gedoopt jodendom hoofddoek* boerka nikab keppel sekte* dopen
         laten_dopen bidden gebed*
         imam dominee pastoor priester rabbijn koran bijbel halal koosjer sabbat communie vormsel
-        niet_meer_geloof niet_meer_gelovig uit_het_geloof geloof_verlaten mijn_geloof_kwijt`,
+        niet_meer_geloof niet_meer_gelovig uit_het_geloof geloof_verlaten mijn_geloof_kwijt
+        bid_ik bid_elke ik_bid_elke ik_bid_voor ik_bid_tot ik_bid_dagelijks`,
       MONEY: `schulden schuldhulp* schuldsanering* schuldeiser* deurwaarder* incassobureau* betalingsachterstand*
         huurachterstand* bewindvoerder* beschermingsbewind wsnp failliet* faillissement* uitzetting* voedselbank
         achter_met_betalen achter_met_de_huur rood_staan sta_rood staat_rood in_het_rood kan_niet_betalen
@@ -203,7 +248,16 @@
         betalingsregeling* krap_bij_kas rond_te_komen rond_moet_komen rondkomen
         niet_meer_betaald blut platzak geld_lenen geld_geleend bijstand uitkering* werkloos ontslagen baan_kwijt
         huis_kwijt huis_verliezen schuldhulpverlening in_de_min
-        dwangbevel* invordering*`,
+        dwangbevel* invordering*
+        een_schuld_van euro_schuld heb_een_schuld hebt_een_schuld heeft_een_schuld hebben_een_schuld met_een_schuld
+        mijn_schuld_af* mn_schuld_af* onze_schuld_af* van_mijn_schuld_af schuld_afbetalen schuld_aflossen
+        schuld_af_te_betalen schuld_af_te_lossen schuld_terugbetalen schuld_terug_te_betalen mijn_schuld_wordt
+        onze_schuld_wordt schuld_groeit schuld_loopt_op schuld_is_opgelopen openstaande_schuld* flinke_schuld
+        hoge_schuld grote_schuld in_de_schuld duoschuld* duo-schuld* huurschuld* zorgschuld* energieschuld*
+        bkr-registratie* bkr-notering* bkr-codering* bkr-code* bkr_registratie* bkr_notering* bkr_codering*
+        bij_het_bkr bij_bkr negatieve_bkr* a-codering !deurwaarder_komt !deurwaarder_staat !deurwaarder_is_geweest
+        creditcard_staat_vol creditcard_zit_vol lening_afgesloten_om vergokt elke_maand_geld_tekort geld_tekort_voor_de_huur geld_tekort_voor_de_boodschappen in_de_ww
+        contract_wordt_niet_verlengd contract_niet_verlengd me_ontslaan alimentatie kinderalimentatie`,
       LEGAL: `strafblad* veroordeeld* gearresteerd* taakstraf* celstraf* gevangenis* reclassering* enkelband
         ben_opgepakt werd_opgepakt zijn_opgepakt gisteren_opgepakt vannacht_opgepakt opgepakt_door opgepakt_voor
         rechtszaak* rechtbank* rechtszitting* bij_de_rechter voor_de_rechter verhoor* rijden_onder_invloed
@@ -212,7 +266,13 @@
         jaar_cel maanden_cel zonder_rijbewijs ingevorderd voorarrest* voorlopige_hechtenis politiecel*
         strafbeschikking* zit_in_de_cel betrapt_met aangifte_gedaan_tegen werkstraf*
         verdachte proces-verbaal voogdij strafzaak* huiszoeking aangeklaagd
-        aanklacht* oproep_van_de_politie !me_verhoord !aangifte_tegen_mij !aangifte_tegen_me`,
+        aanklacht* oproep_van_de_politie !me_verhoord !aangifte_tegen_mij !aangifte_tegen_me
+        verhoren wil_scheiden gaan_scheiden ga_scheiden willen_scheiden laten_scheiden echtscheiding* vechtscheiding*
+        ben_gescheiden aan_het_scheiden scheidingsadvocaat scheidingsconvenant omgangsregeling* ouderlijk_gezag
+        kinderen_niet_zien verblijfsvergunning* asielaanvraag* asielzoeker* asielprocedure* asielstatus
+        asiel_aangevraagd asiel_aanvragen ongedocumenteerd* geen_papieren vreemdelingendetentie
+        vreemdelingenbewaring gezinshereniging de_ind bij_de_ind van_de_ind moet_het_land_uit moeten_het_land_uit
+        het_land_uit_gezet uitgezet_naar !me_verhoren`,
     },
     de: {
       words: `der die das und ist nicht ein eine zu mit auf für wie was habe hab bin seit nur noch sind`,

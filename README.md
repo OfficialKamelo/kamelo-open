@@ -7,7 +7,7 @@
 <p align="center">
   <strong>A better place for personal questions to AI.</strong><br>
   A browser extension for Chrome, Edge and Firefox. When you type something personal into ChatGPT, Claude, Gemini or another AI chat,
-  Kamelo suggests a temporary chat, or Private Chat: an AI that answers on your own computer.
+  Kamelo suggests a temporary chat, or Melo: Kamelo's private chat, where an AI answers on your own computer.
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ What it does is help you choose where to ask:
 2. **If it's personal**, about your own (or someone close to you) health, mental health, sexuality, faith, money or legal trouble,
    Kamelo shows a short notice above the text field. General questions ("what are the symptoms of flu?") don't trigger it.
 3. **One click** moves your message, unchanged, to the site's **temporary chat** (ChatGPT, Gemini, Claude's incognito chat),
-   which stays out of your history and isn't used for training. In Chrome you can also ask it in **Private Chat**.
+   which stays out of your history and isn't used for training. In Chrome you can also ask **Melo**, Kamelo's private chat.
 
 ### Recognising personal topics
 A word list in 82 languages ([`src/topic-words.js`](src/topic-words.js), [`src/topics.js`](src/topics.js)), written for the way
@@ -35,14 +35,14 @@ people actually type. In Chrome, when the word list finds nothing, Kamelo asks C
 as a second check ([`src/topic-ai.js`](src/topic-ai.js)): only when the model is already on your computer (Kamelo never downloads it
 for this), only after you pause typing, and nothing is stored. Corrections from native speakers are welcome.
 
-### Private Chat
-A chat in the browser's side panel where Chrome's built-in AI answers on your own computer ([`chat/device.js`](chat/device.js)).
+### Melo, the private chat
+Melo (called Private Chat before) is a chat in the browser's side panel where Chrome's built-in AI answers on your own computer ([`chat/device.js`](chat/device.js)).
 Your question never leaves the device. Nothing is downloaded until you click Download; Chrome then fetches its own model once.
 Chats live only in that window and are gone when you close it. Edge and Firefox don't offer an on-device AI to extensions yet,
 so there Kamelo offers a temporary chat instead.
 
 ### The popup
-The switch (Protected), Private Chat and a temporary chat. That's all.
+The switch (Protected), Melo (the private chat) and a temporary chat. That's all.
 
 ## Where it works
 
@@ -54,7 +54,7 @@ Meta AI and others. Kamelo doesn't run on any other website.
 - **No network requests.** Kamelo never contacts a server, not even ours. No analytics, no tracking, no account.
   See [Verify it yourself](#verify-it-yourself).
 - **Everything stays on your device.** The text you type is checked in the page, in memory. When you click the temporary chat
-  or Private Chat button, your message is kept in the browser's session memory (never on disk) for at most a minute, only to
+  or Melo button, your message is kept in the browser's session memory (never on disk) for at most a minute, only to
   put it in the new chat.
 - **Old data is removed.** Versions up to 1.4.3 masked personal details and kept a local vault. On updating to 1.5.0, Kamelo deletes
   that vault (also a locked one), the vault lock, the monthly overview and the word lists from your device.
@@ -65,7 +65,7 @@ Meta AI and others. Kamelo doesn't run on any other website.
 | Access to the AI chat sites in `src/sites.js` | To notice a personal topic in the text you type there and show the notice. No other sites. |
 | `storage` | Your on/off setting, stored on your device. |
 | `scripting` | Starts Kamelo's own bundled scripts in AI chat tabs that were already open when you installed or updated it. No remote code. |
-| `sidePanel` | Opens Private Chat in Chrome's side panel (not in Firefox, which has no side panel API). |
+| `sidePanel` | Opens Melo, the private chat, in Chrome's side panel (not in Firefox, which has no side panel API). |
 
 See the [privacy policy](PRIVACY.md). To report a vulnerability, see [SECURITY.md](SECURITY.md).
 
@@ -123,23 +123,23 @@ npm run pack             # the store package for Chrome and Edge (npm run pack:f
 | `src/content.js` | Watches the text field on AI chat sites and shows the notice |
 | `src/topics.js`, `src/topic-words.js` | Personal topics: the word lists in 82 languages |
 | `src/topic-ai.js` | The second check with Chrome's built-in AI, on the device |
-| `src/background.js` | Hands your message to the temporary chat or Private Chat; removes old masking data after an update |
+| `src/background.js` | Hands your message to the temporary chat or Melo; removes old masking data after an update |
 | `src/sites.js` | Known AI sites, their input field and temporary chat. **When a site changes, this is usually the only file to edit** |
 | `src/config.js`, `src/strings.js`, `src/edition.js` | Settings, UI text in English and Dutch, and which edition this is |
-| `chat/` | Private Chat (`device.js`: the on-device AI of the browser) |
+| `chat/` | Melo, the private chat (`device.js`: the on-device AI of the browser) |
 | `popup/` | The popup (`public.html`) |
 | `tests/` | Unit tests; `tests/browser/` runs the store package in Chrome |
 | `tools/` | `pack.mjs` (store and Firefox packages), `release.mjs`, `sign.mjs` (signed `.crx`), `news.mjs`, `check-secrets.mjs`, `build-locales.mjs` |
 
 Some shared files (`src/content.js`, `src/background.js`, `src/strings.js`, `chat/chat.js`) still contain code paths for
-Kamelo for teams, a separate edition that isn't part of this repository. They do nothing here: `src/edition.js` says `public`.
+Kamelo Business, a separate edition that isn't part of this repository. They do nothing here: `src/edition.js` says `public`.
 
 ## Known limitations
 
 - The notice is a suggestion. Kamelo doesn't stop you from sending, and doesn't change what you send.
 - The word list can miss a personal question phrased in an unusual way, especially outside Chrome (no on-device second check).
 - Temporary chats are a feature of the AI service, with its own rules: for example, ChatGPT may keep temporary chats for up to 30 days for safety.
-- Private Chat needs Chrome's built-in AI, which needs a recent computer and about 22 GB of free space.
+- Melo needs Chrome's built-in AI, which needs a recent computer and about 22 GB of free space.
 
 ## Contributing
 

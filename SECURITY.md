@@ -15,7 +15,7 @@ Only the latest release receives fixes. Please check that you're on the newest v
 
 Examples of what to report:
 - any way data leaves the device, or a network request made by Kamelo
-- a website that can read text through the extension that it shouldn't see (for example a message handed to a temporary chat or to Private Chat)
+- a website that can read text through the extension that it shouldn't see (for example a message handed to a temporary chat or to Melo, the private chat)
 - Kamelo running on a site where it shouldn't, or the on-device AI being downloaded without a click
 - data from older versions (the vault) that is not deleted after updating
 

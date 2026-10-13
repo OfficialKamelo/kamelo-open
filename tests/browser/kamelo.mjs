@@ -11,7 +11,7 @@ export const SAMPLE = {
   text: 'Write a reminder to Sarah Miller, IBAN GB82 WEST 1234 5698 7654 32',
 };
 
-// extension: de map met de uitgepakte extensie; standaard de broncode (Kamelo for teams, zie src/edition.js).
+// extension: de map met de uitgepakte extensie; standaard de broncode (Kamelo Business, zie src/edition.js).
 export async function launch({ headless = true, extension = EXTENSION } = {}) {
   const browser = await puppeteer.launch({
     headless,
@@ -31,7 +31,7 @@ const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers
 
 // Opent `url`, maar serveert `html` in plaats van de echte site: zo draait Kamelo op de echte hostnaam,
 // zonder dat de test van internet of van de opmaak van die site afhangt. `onRequest` ziet de overige verzoeken.
-// `ready`: wacht tot Kamelo in de pagina draait (standaard: tot het afschermen reageert, alleen in Kamelo for teams).
+// `ready`: wacht tot Kamelo in de pagina draait (standaard: tot het afschermen reageert, alleen in Kamelo Business).
 export async function mockPage(browser, url, html, onRequest = () => {}, ready = waitForKamelo) {
   const page = await browser.newPage();
   await page.setRequestInterception(true);
