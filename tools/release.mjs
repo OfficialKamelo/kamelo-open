@@ -8,7 +8,8 @@
 //
 // Stappen: controles (main, schone werkmap, bijgewerkt, iets in [Unreleased]) → versie ophogen in manifest.json,
 // package.json en package-lock.json → CHANGELOG en kamelo.eu/news bijwerken → alle tests → pakketten (store, ondertekende .crx en bèta) → commit en tag.
-// Daarna uploaden, pas als Lucas het zegt: npm run publish:chrome en npm run publish:edge (via de API's). Firefox met de hand.
+// Daarna uploaden, pas als Lucas het zegt: npm run publish:all (Chrome, Edge en Firefox via de API's; los kan ook met
+// publish:chrome, publish:edge en publish:firefox).
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -141,9 +142,9 @@ async function main() {
   console.log(`
 ✓ Kamelo ${version} staat klaar.
 ${args.includes('--push') ? '' : '  git push --follow-tags          (naar GitHub)\n'}  1. Bèta: upload web-store-uploaden/Google Chrome/kamelo-beta-${version}.zip en probeer hem zelf.
-  2. Chrome en Edge: npm run publish:chrome en npm run publish:edge (via de API's).
-  3. Firefox: upload web-store-uploaden/Firefox/kamelo-firefox-${version}.zip met de hand op addons.mozilla.org.
-  4. Website: website/news.html hier is een oude kopie. Zet het nieuws live via werkmappen/kamelo-website
+  2. Chrome, Edge en Firefox in één keer: npm run publish:all (eerst: npm run publish:all -- --dry-run).
+     Los kan ook: npm run publish:chrome, publish:edge of publish:firefox.
+  3. Website: website/news.html hier is een oude kopie. Zet het nieuws live via werkmappen/kamelo-website
      (git pull, nieuwsblok overnemen, commit, push; docs/WEBSITE.md).`);
 }
 

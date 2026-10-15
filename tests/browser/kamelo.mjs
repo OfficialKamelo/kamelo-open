@@ -1,6 +1,9 @@
 // Gedeelde hulpjes voor de browsertests: Chrome starten met Kamelo, pagina's nabootsen en tekst plakken.
 import puppeteer from 'puppeteer';
 import { fileURLToPath } from 'node:url';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 export const EXTENSION = fileURLToPath(new URL('../..', import.meta.url));
 
@@ -12,10 +15,20 @@ export const SAMPLE = {
 };
 
 // extension: de map met de uitgepakte extensie; standaard de broncode (Kamelo Business, zie src/edition.js).
+// Een eigen, tijdelijk profiel met een eigen downloadmap (`downloads`): een test zet nooit iets in de echte Downloads.
 export async function launch({ headless = true, extension = EXTENSION } = {}) {
+  const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-profile-'));
+  const downloads = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-downloads-'));
+  fs.mkdirSync(path.join(profile, 'Default'), { recursive: true });
+  fs.writeFileSync(path.join(profile, 'Default', 'Preferences'), JSON.stringify({
+    download: { default_directory: downloads, prompt_for_download: false, directory_upgrade: true },
+    savefile: { default_directory: downloads },
+  }));
+  process.on('exit', () => { for (const d of [profile, downloads]) try { fs.rmSync(d, { recursive: true, force: true }); } catch {} });
   const browser = await puppeteer.launch({
     headless,
     pipe: true,
+    userDataDir: profile,
     enableExtensions: [extension],
     args: ['--no-first-run', '--no-default-browser-check', '--window-size=1280,900', '--lang=en-US'],
     defaultViewport: { width: 1280, height: 900 },
@@ -24,7 +37,7 @@ export async function launch({ headless = true, extension = EXTENSION } = {}) {
   const worker = await target.worker();
   // De welkomstpagina opent na installatie; die zit de tests alleen in de weg.
   for (const page of await browser.pages()) if (page.url().startsWith('chrome-extension://')) await page.close();
-  return { browser, worker };
+  return { browser, worker, downloads };
 }
 
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Methods': '*' };
@@ -46,15 +59,16 @@ export async function mockPage(browser, url, html, onRequest = () => {}, ready =
   return page;
 }
 
-// Kamelo is klaar zodra het content script reageert op een kopieerverzoek (zie net-main.js en content.js).
+// Kamelo is klaar zodra het content script reageert op pf:ping (zie net-main.js en content.js; alleen Kamelo Business).
 export async function waitForKamelo(page, timeout = 10_000) {
-  await page.waitForFunction(() => new Promise(resolve => {
-    const id = Math.random().toString(36).slice(2);
-    const done = e => { try { if (JSON.parse(e.detail).id === id) resolve(true); } catch {} };
-    document.addEventListener('pf:restored', done, { once: true });
-    document.dispatchEvent(new CustomEvent('pf:restore', { detail: JSON.stringify({ id, text: '' }) }));
-    setTimeout(() => resolve(false), 200);
-  }), { timeout, polling: 250 });
+  await page.waitForFunction(() => {
+    let here = false;
+    const pong = () => { here = true; };
+    document.addEventListener('pf:pong', pong);
+    document.dispatchEvent(new CustomEvent('pf:ping'));
+    document.removeEventListener('pf:pong', pong);
+    return here;
+  }, { timeout, polling: 250 });
 }
 
 // Plakt tekst zoals een gebruiker dat doet: een paste-event met klembordgegevens op het veld.
@@ -154,3 +168,48 @@ export async function rectOf(page, selector) {
   } finally { await cdp.detach(); }
 }
 const quad = ({ model: { border: q } }) => ({ left: q[0], top: q[1], right: q[2], bottom: q[5] });
+
+// De Kamelo-knoppen bij antwoorden (in gesloten shadow roots), via CDP: alleen die in beeld staan (class "b on").
+async function answerButtonIds(cdp) {
+  const { root } = await cdp.send('DOM.getDocument', { depth: -1, pierce: true });
+  const ids = [];
+  const walk = node => {
+    const a = node.attributes || [];
+    const c = a.includes('class') ? a[a.indexOf('class') + 1].split(' ') : [];
+    if (node.nodeName === 'BUTTON' && c.includes('b') && c.includes('on')) ids.push(node.nodeId);
+    for (const child of [...(node.children || []), ...(node.shadowRoots || [])]) walk(child);
+  };
+  walk(root);
+  return ids;
+}
+export async function answerButtons(page) {
+  const cdp = await page.createCDPSession();
+  try { return (await answerButtonIds(cdp)).length; } finally { await cdp.detach(); }
+}
+// Wacht tot er `n` Kamelo-knoppen bij antwoorden in beeld staan; geeft het aantal terug.
+export async function waitForAnswerButtons(page, n, timeout = 5_000) {
+  const end = Date.now() + timeout;
+  let count = 0;
+  while (Date.now() < end) {
+    count = await answerButtons(page);
+    if (count === n) return count;
+    await new Promise(r => setTimeout(r, 100));
+  }
+  return count;
+}
+// Klikt op de Kamelo-knop bij het blok `selector` (de knop die het dichtst bij de bovenkant van dat blok staat).
+export async function clickAnswerButton(page, selector) {
+  const target = await rectOf(page, selector);
+  const cdp = await page.createCDPSession();
+  try {
+    let best = null;
+    for (const nodeId of await answerButtonIds(cdp)) {
+      const { model } = await cdp.send('DOM.getBoxModel', { nodeId });
+      const [x1, y1, , , x3, y3] = model.content;
+      const d = Math.abs(y1 - Math.max(4, target.top));
+      if (!best || d < best.d) best = { d, x: (x1 + x3) / 2, y: (y1 + y3) / 2 };
+    }
+    if (!best) throw new Error(`Kamelo-knop bij ${selector} niet gevonden`);
+    await page.mouse.click(best.x, best.y);
+  } finally { await cdp.detach(); }
+}

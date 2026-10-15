@@ -37,9 +37,7 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 
 .msgs { flex: 1; overflow-y: auto; padding: 14px 12px; display: flex; flex-direction: column; gap: 12px; }
 .empty { margin: auto 12px; text-align: center; }
-.empty .aura { width: 120px; height: 120px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(255, 255, 255, .9), transparent 70%), conic-gradient(from 200deg, #d3e2ff, #e4ddff, #ffd9e6, #d6f3e4, #d3e2ff); }
-.empty .aura img { width: 52px; height: 52px; }
+.empty .aura { margin: 0 auto 16px; display: grid; place-items: center; }
 .empty h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
 .empty p { margin: 8px auto 0; max-width: 270px; font-size: 13.5px; color: var(--muted); }
 .facts { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
@@ -53,6 +51,50 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .a ul, .a ol { margin: 0 0 8px; padding-left: 20px; }
 .a hr { border: 0; border-top: 1px solid var(--line); margin: 12px 0; }
 .a .think { color: var(--muted); font-style: italic; }
+
+/* Opmaak in antwoorden (chat/rich.js): kopjes, tabellen, code, formules, grafieken. */
+:root { --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #4a3aa7; --s8: #e34948; --grid: #ececef; --axis: #c7c7cc; }
+@media (prefers-color-scheme: dark) {
+  :root { --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --grid: #2f2f32; --axis: #545458; }
+}
+.a h3, .a h4 { margin: 14px 0 6px; font-size: 15px; font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
+.a h4 { font-size: 14px; }
+.a > :first-child { margin-top: 0; }
+.a li { margin: 2px 0; }
+.a li > ul, .a li > ol { margin: 2px 0 0; }
+.a code { font: 12.5px/1.4 ui-monospace, Menlo, monospace; background: var(--soft); padding: 1px 5px; border-radius: 5px; }
+.a pre { margin: 0 0 8px; padding: 10px 12px; background: var(--soft); border-radius: 12px; overflow-x: auto; }
+.a pre code { padding: 0; background: none; white-space: pre; }
+.a math { font-size: 1.08em; }
+.a .mathblock { margin: 6px 0 10px; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.a .mathblock math { font-size: 1.2em; }
+.a .tablewrap { margin: 0 0 10px; overflow-x: auto; }
+.a table { border-collapse: collapse; font-size: 13px; min-width: 60%; }
+.a th, .a td { padding: 5px 10px 5px 0; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.a th { font-weight: 600; }
+.a td.r, .a th.r { text-align: right; font-variant-numeric: tabular-nums; } .a td.c, .a th.c { text-align: center; }
+.a tr:last-child td { border-bottom: 0; }
+.chart { margin: 4px 0 12px; padding: 12px 12px 8px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.chart figcaption { font-size: 13px; font-weight: 600; margin: 0 2px 6px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 2px 6px; font-size: 12px; color: var(--muted); }
+.chart .legend span { display: inline-flex; align-items: center; gap: 5px; }
+.chart .legend i { width: 9px; height: 9px; border-radius: 3px; background: currentColor; }
+.chart .cnote { margin: 4px 2px 0; font-size: 11px; color: var(--muted); }
+.chart .grid { stroke: var(--grid); stroke-width: 1; }
+.chart .axis { stroke: var(--axis); stroke-width: 1; }
+.chart .tick { font: 10px system-ui, sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.chart .total { font: 600 18px system-ui, sans-serif; fill: var(--label); }
+.chart .ln { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .dot { stroke: var(--card); stroke-width: 2; }
+.chart .slice { stroke: var(--card); stroke-width: 2; }
+.chart .bar:hover, .chart .dot:hover, .chart .slice:hover { opacity: .8; }
+.chart.drawing { color: var(--muted); font-size: 12.5px; font-style: italic; animation: pulse 1.2s ease-in-out infinite; }
+.chart .s1 { fill: var(--s1); stroke: var(--s1); color: var(--s1); } .chart .s2 { fill: var(--s2); stroke: var(--s2); color: var(--s2); }
+.chart .s3 { fill: var(--s3); stroke: var(--s3); color: var(--s3); } .chart .s4 { fill: var(--s4); stroke: var(--s4); color: var(--s4); }
+.chart .s5 { fill: var(--s5); stroke: var(--s5); color: var(--s5); } .chart .s6 { fill: var(--s6); stroke: var(--s6); color: var(--s6); }
+.chart .s7 { fill: var(--s7); stroke: var(--s7); color: var(--s7); } .chart .s8 { fill: var(--s8); stroke: var(--s8); color: var(--s8); }
+.chart .bar { stroke: none; } .chart .ln { fill: none; } .chart .dot, .chart .slice { stroke: var(--card); }
 .chip { font: 600 12px/1 ui-monospace, Menlo, monospace; color: var(--ph-fg); background: var(--ph-bg); padding: 2px 5px; border-radius: 5px; white-space: nowrap; }
 .back { color: var(--ok); background: var(--ok-bg); padding: 0 3px; border-radius: 4px; font-weight: 500; }
 .dots { display: inline-flex; gap: 4px; padding: 6px 4px; }
@@ -79,6 +121,22 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .send { width: 30px; height: 30px; border-radius: 50%; border: 0; background: var(--label); color: var(--bg); display: grid; place-items: center; cursor: pointer; }
 .send svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .send:disabled { opacity: .35; cursor: default; }
+/* Bestanden en afbeeldingen: paperclip links, de bijlagen boven het tekstveld en in je bericht. */
+.attach { width: 30px; height: 30px; border-radius: 50%; border: 0; background: none; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
+.attach:hover { background: var(--line); color: var(--label); }
+.attach svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.composer.drop { border-color: var(--accent, #0a84ff); box-shadow: 0 0 0 3px rgba(10, 132, 255, .15); }
+.atts { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.atts[hidden] { display: none; }
+.att { position: relative; display: inline-flex; align-items: center; gap: 7px; max-width: 220px; padding: 4px 8px 4px 4px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--bg); font-size: 12px; }
+.att img { width: 34px; height: 34px; border-radius: 7px; object-fit: cover; flex: none; }
+.att .doc { width: 34px; height: 34px; border-radius: 7px; flex: none; display: grid; place-items: center; background: var(--line); color: var(--muted);
+  font-size: 9px; font-weight: 700; letter-spacing: .02em; }
+.att .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.att .x { position: absolute; top: -6px; right: -6px; width: 18px; height: 18px; border-radius: 50%; border: 0; background: var(--label); color: var(--bg);
+  font-size: 12px; line-height: 18px; padding: 0; cursor: pointer; }
+.atts.sent { justify-content: flex-end; margin-bottom: 6px; }
 
 /* Rustig binnenkomen: berichten schuiven zacht in beeld */
 .u, .a { animation: msgIn .28s cubic-bezier(.2, .8, .2, 1) both; }
@@ -106,3 +164,111 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .convnote { margin: 4px 10px 2px; font-size: 11px; color: var(--muted); }
 .thread { display: flex; flex-direction: column; gap: 12px; min-height: 100%; }
 .thread[hidden] { display: none; }
+
+/* Onder een antwoord: kopiëren, pdf, Word. Rustig, pas duidelijk bij aanwijzen. */
+.a .tools { display: flex; gap: 2px; margin: 6px 0 0 -6px; }
+.a .tool { display: inline-flex; align-items: center; gap: 4px; height: 26px; padding: 0 8px 0 6px; border: 0; border-radius: 8px; background: none;
+  color: var(--muted); font: 500 11.5px/1 inherit; cursor: pointer; opacity: .75; transition: opacity .15s, background .15s; }
+.a .tool svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.a .tool:hover, .a .tool:focus-visible { opacity: 1; background: var(--soft); color: var(--label); }
+/* Alleen bij het laatste antwoord altijd zichtbaar; een antwoord staat in een rij met Melo's hoofdje (.mf-row). */
+.thread > :not(:last-child) .tools { opacity: 0; transition: opacity .15s; } .thread > :not(:last-child):hover .tools, .thread > :not(:last-child):focus-within .tools { opacity: 1; }
+
+/* ---------- Rustige chat (15 okt): lege staat met beginnetjes, privacy boven het invoerveld, stoppen ---------- */
+/* Lege staat: kop, één regel, vier optionele beginnetjes. Ze gaan zacht weg zodra je typt. */
+.empty .sub { margin: 8px auto 0; max-width: 300px; text-wrap: balance; font-size: 13.5px; color: var(--muted); }
+.sugs { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 18px auto 0; max-width: 340px;
+  transition: opacity .2s ease, transform .2s ease; }
+.sug { padding: 7px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--card); color: var(--label);
+  font: 500 12.5px/1.2 inherit; cursor: pointer; transition: background .15s, border-color .15s; }
+.sug:hover { background: var(--soft); border-color: transparent; }
+body.typing .sugs { opacity: 0; transform: translateY(4px); pointer-events: none; }
+
+/* Privacy: klein, rustig, uitklapbaar. Geen groene badge. */
+.privacy { margin: 0 12px 6px; }
+.privacy[hidden] { display: none; }
+.privbtn { display: inline-flex; align-items: center; gap: 5px; padding: 3px 6px 3px 4px; margin-left: 4px; border: 0; border-radius: 8px; background: none;
+  color: var(--muted); font: 500 11.5px/1.2 inherit; cursor: pointer; }
+.privbtn:hover { color: var(--label); background: var(--soft); }
+.privbtn svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.privbtn .chev { width: 11px; height: 11px; transition: transform .2s; }
+.privbtn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+.privinfo { margin: 4px 0 2px; padding: 10px 12px; border-radius: 12px; background: var(--soft); font-size: 12.5px; line-height: 1.5; color: var(--label); }
+.privinfo[hidden] { display: none; }
+.privinfo p { margin: 0; }
+.privinfo .facts { justify-content: flex-start; margin-top: 8px; }
+.privinfo .facts li { background: var(--bg); }
+
+/* Stoppen tijdens een antwoord: dezelfde knop, een vierkantje. */
+.send.stop svg { fill: currentColor; stroke: none; width: 12px; height: 12px; }
+
+/* Leesbaar: een rustige kolom, ook als het venster breed is; berichten van de gebruiker zonder grote bel. */
+.thread, .composer, .note, .privacy, .lockinfo, .convlist { width: auto; max-width: 720px; }
+.thread { width: 100%; margin: 0 auto; }
+.composer, .note, .privacy { margin-left: max(12px, calc((100% - 720px) / 2)); margin-right: max(12px, calc((100% - 720px) / 2)); }
+.a { line-height: 1.6; max-width: 68ch; }
+.u { border-radius: 14px; padding: 8px 12px; max-width: 82%; }
+
+/* Openen: kop en invoerveld komen zacht binnen, kort. Geen intro die het typen ophoudt. */
+.empty, .composer { animation: rise .32s cubic-bezier(.2, .8, .2, 1) both; }
+.composer { animation-delay: .04s; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .empty, .composer { animation: none; }
+  .sugs, .privbtn .chev { transition: none; }
+}
+/* hidden moet winnen van display (anders stond het paperclipje ook in de gratis editie, en het slotje naast de privacyregel) */
+.attach[hidden], .lock[hidden] { display: none; }
+.top .newchat:not([hidden]) ~ .newchat { margin-left: 6px; }
+.a .stopped { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+/* Melo's gezicht (melo-face.js): één kopvorm, de uitdrukking vloeit zacht over. Geen cirkel eromheen. */
+.melo-face { flex: none; display: inline-block; width: 34px; aspect-ratio: 128 / 112; }
+.melo-face svg { display: block; width: 100%; height: 100%; overflow: visible; fill: none; stroke: none; }   /* geen lijn van de algemene svg-regel */
+.melo-face.big { width: 112px; }
+.top .melo-face { margin: -5px -2px -5px -3px; }
+.mf-lid, .mf-brow, .mf-mouth { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.mf-eye { transform-box: fill-box; transform-origin: center; transform: scaleY(calc(var(--open, 1) * var(--blink, 1))); }
+.mf-o { transform-box: fill-box; transform-origin: center; }
+.mf-all { transform-origin: 64px 96px; }
+.mf-ready :is(.mf-white, .mf-pupil, .mf-glint, .mf-o) { transition: cx .26s cubic-bezier(.3, .7, .2, 1), cy .26s cubic-bezier(.3, .7, .2, 1),
+  rx .26s cubic-bezier(.3, .7, .2, 1), ry .26s cubic-bezier(.3, .7, .2, 1), opacity .16s; }
+.mf-ready :is(.mf-lid, .mf-brow, .mf-mouth) { transition: d .26s cubic-bezier(.3, .7, .2, 1), stroke-width .26s, opacity .16s; }
+.mf-ready .mf-skin { transition: fill .7s ease; }   /* van kleur veranderen */
+/* Pratend: de mond gaat onregelmatig open en dicht. */
+.mf-talk .mf-o { animation: mf-talk .62s ease-in-out infinite; }
+@keyframes mf-talk { 0%, 100% { transform: scaleY(.45); } 30% { transform: scaleY(1.1); } 55% { transform: scaleY(.6); } 75% { transform: scaleY(.95); } }
+/* Even een veertje bij een korte reactie (knipoog, verrast, blij). */
+.mf-pop .mf-all { animation: mf-pop .34s cubic-bezier(.3, 1.5, .5, 1); }
+@keyframes mf-pop { 45% { transform: scale(1.06); } }
+/* Groot op het startscherm: zweeft heel rustig. Slapend: langzaam ademen. */
+.melo-face.big svg { animation: mf-float 5s ease-in-out infinite; }
+@keyframes mf-float { 50% { transform: translateY(-3px); } }
+.mf-asleep .mf-all { animation: mf-breathe 3.8s ease-in-out infinite; }
+@keyframes mf-breathe { 50% { transform: scale(1.025, 1.035); } }
+/* Knipperen (melo-face.js): oogleden schuiven over het oog, snel dicht en iets rustiger weer open. */
+.mf-ulid { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); }
+.mf-llid { transform: translateY(calc(var(--ry, 16) * 1px + 6px)); }
+.mf-blink .mf-ulid { animation: mf-ulid .24s both; }
+.mf-blink .mf-llid { animation: mf-llid .24s both; }
+@keyframes mf-ulid {
+  0% { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); animation-timing-function: cubic-bezier(.55, 0, 1, .45); }
+  38%, 52% { transform: translateY(calc(var(--ry, 16) * .22px - 2px)); animation-timing-function: cubic-bezier(0, .55, .45, 1); }
+  100% { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); }
+}
+@keyframes mf-llid {
+  0%, 100% { transform: translateY(calc(var(--ry, 16) * 1px + 6px)); }
+  38%, 52% { transform: translateY(calc(var(--ry, 16) * .22px - 1px)); }
+}
+/* Dicht oog (knipoog, blij, slapend): de oogleden blijven dicht, het lijntje van het ooglid valt weg voor de boog. */
+.mf-shut .mf-ulid { transform: translateY(calc(var(--ry, 16) * .22px - 2px)); }
+.mf-shut .mf-llid { transform: translateY(calc(var(--ry, 16) * .22px - 1px)); }
+.mf-ulid path + path { opacity: 0; }   /* randje van het ooglid alleen tijdens knipperen, anders lijkt het even een boze blik */
+.mf-blink .mf-lids:not(.mf-shut) .mf-ulid path + path { opacity: 1; }
+.mf-ready .mf-shut :is(.mf-ulid, .mf-llid) { transition: transform .13s cubic-bezier(.55, 0, 1, .45); }
+.mf-ready .mf-lids:not(.mf-shut) :is(.mf-ulid, .mf-llid) { transition: transform .16s cubic-bezier(0, .55, .45, 1); }
+.mf-ready .mf-eye { transition: transform .14s ease-out, opacity 0s; }
+/* Melo's hoofdje naast elk antwoord: het antwoord komt van hem. */
+.mf-row { display: flex; align-items: flex-start; gap: 10px; }
+.mf-row > .a { flex: 1; min-width: 0; }
+.melo-face.mf-msg { width: 30px; margin-top: 0; }
+@media (prefers-reduced-motion: reduce) { .melo-face *, .melo-face svg { transition: none !important; animation: none !important; } }

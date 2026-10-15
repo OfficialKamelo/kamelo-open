@@ -58,6 +58,7 @@ test('gratis: een persoonlijk onderwerp geeft de melding met tijdelijke chat en 
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
   assert.match(html, /Temporary chat|Tijdelijke chat/);
   assert.match(html, /Ask Melo|Vraag het Melo/); // Private Chat, alleen in Chrome
+  assert.match(html, /class="p melo"><svg viewBox="46.5 64.5 419.1 419.1"/); // met het Melo-logo
   assert.doesNotMatch(html, /\[PERSON_|\[IBAN_|protected|afgeschermd|mask/i);
   await new Promise(r => setTimeout(r, 400));
   const text = await textOf(page, '#prompt-textarea');
@@ -206,7 +207,13 @@ test('gratis: de popup toont alleen Beschermd, Private Chat en een tijdelijke ch
   await page.goto(`chrome-extension://${id}/popup/public.html`);
   await page.waitForFunction(() => document.getElementById('stateText').textContent);
   const text = await page.evaluate(() => document.body.innerText);
-  assert.match(text, /Protected|Beschermd/);
+  assert.match(text, /\bOn\b|\bAan\b/); // de gratis editie schermt niets af: "Aan", niet "Beschermd" (testpanel 13 okt)
+  // Eén schild tegelijk, en een blauwe schakelaar als Kamelo aan staat (de stijl staat in public.css, niet in popup.css).
+  await new Promise(r => setTimeout(r, 400)); // de schakelaar kleurt met een overgang
+  const look = await page.evaluate(() => ({ icons: [...document.querySelectorAll('#state svg')].filter(s => getComputedStyle(s).display !== 'none').length,
+    track: getComputedStyle(document.querySelector('#enabled + .track')).backgroundColor, on: document.getElementById('enabled').checked }));
+  assert.equal(look.icons, 1);
+  assert.equal(/rgba\(120, 120, 128/.test(look.track), !look.on);
   assert.match(text, /Start a temporary chat|Begin een tijdelijke chat/);
   assert.match(text, /Melo/);
   assert.doesNotMatch(text, /Vault|Kluis|Mask text|Tekst afschermen|protected this month|Warn about|Waarschuwen|Privacy|Report|Probleem/);

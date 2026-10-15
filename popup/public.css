@@ -11,6 +11,16 @@ html:has(body.pub) { background: var(--surface); }
 .pub .status .state svg { color: var(--accent); }
 .pub .status[data-state="off"] .state, .pub .status[data-state="off"] .state svg { color: var(--secondary); }
 .pub .status .switch .track { background: var(--switch-off); }
+.pub .status .switch input:checked + .track { background: var(--accent); }
+/* Eén schild tegelijk: met vinkje (aan op een AI-site), met pauzestreepjes (uit) of leeg (aan, geen AI-site open).
+   Staat hier zelf, sinds de Business-popup (popup.css) geen statusblok meer heeft. */
+.pub .status .state { min-width: 0; display: flex; align-items: center; gap: 8px; }
+.pub .status .state svg { width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.pub .status .state .ic-pause, .pub .status .state .ic-ready { display: none; }
+.pub .status:is([data-state="off"], [data-state="ready"], [data-state="none"]) .ic-ok { display: none; }
+.pub .status[data-state="off"] .ic-pause, .pub .status:is([data-state="ready"], [data-state="none"]) .ic-ready { display: block; }
+.pub .status .state.reload { border: 0; background: none; padding: 0; color: var(--accent-text); font: inherit; text-align: left; cursor: pointer; }
+.pub .status .state.reload:hover span { text-decoration: underline; }
 
 /* Private Chat en tijdelijke chat: één gegroepeerde lijst */
 .pub-list { margin: 10px 14px 0; border-radius: 14px; background: var(--soft); overflow: hidden; }
@@ -22,6 +32,9 @@ html:has(body.pub) { background: var(--surface); }
 .pub-row .ico { width: 32px; height: 32px; flex: none; display: grid; place-items: center; border-radius: 9px; }
 .pub-row .ico svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .pub-row .ico.green { color: var(--green-text); background: var(--ok-bg); }
+/* Melo: het logo (wit op lichtblauw), zoals het app-icoon in brand/melo */
+.pub-row .ico.melo { color: #fff; background: #4FC3E8; }
+.pub-row .ico.melo svg { width: 25px; height: 25px; fill: currentColor; stroke: none; }
 .pub-row .ico.purple { color: var(--private-fg); background: var(--private-bg); }
 .pub-row .txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .pub-row .txt b { font-size: 14px; font-weight: 600; }

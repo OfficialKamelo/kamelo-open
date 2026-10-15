@@ -12,8 +12,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: 22
           cache: npm
@@ -25,9 +25,18 @@ jobs:
       - name: No network requests in extension code
         run: |
           # chat/device.js (antwoorden op dit apparaat) hoort er ook bij; chat.js niet, die praat met de relay (Kamelo Plus).
-          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat/device.js --include='*.js' | grep -v "net-main.js"; then
+          # Eén uitzondering: readLocal in src/teams/originals.js leest een blob:- of data:-adres dat al in de pagina
+          # staat (een download van de AI-site), geen netwerk. Alleen de regels met "// lokaal: blob/data", en alleen
+          # zolang de functie elk ander adres weigert (tests/teams-docs.test.js test dat ook).
+          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat/device.js --include='*.js' | grep -v "net-main.js" | grep -vE "^src/teams/originals\.js:[0-9]+:.*// lokaal: blob/data$"; then
             echo "Network call found in extension code. Kamelo must not make network requests."; exit 1
           fi
+          grep -qF "if (typeof href !== 'string' || !LOCAL.test(href)) throw" src/teams/originals.js && grep -qF "const LOCAL = /^(?:blob|data):/i;" src/teams/originals.js \
+            || { echo "readLocal in src/teams/originals.js must refuse everything but blob: and data:."; exit 1; }
+      - name: No secrets in the repository
+        # Sleutelpatronen (Anthropic, OpenAI, GitHub, AWS, …) en sleutels in toewijzingen (apiKey: "…", TOKEN=…).
+        # In CI is er geen kamelo.env, dus alleen de patronen. Noemt alleen de soort en het bestand, nooit de waarde.
+        run: node tools/check-secrets.mjs .
       - run: npm ci
       - run: npm test
 
@@ -35,8 +44,8 @@ jobs:
     name: Browser tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: 22
           cache: npm

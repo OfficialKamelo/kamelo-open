@@ -20,7 +20,9 @@
 
   const DEFAULT_SETTINGS = {
     enabled: true,
-    restore: true,
+    // Kamelo-knop bij antwoorden met placeholders: een kaart met de echte gegevens, alleen voor jou. Kamelo zet nooit
+    // echte waarden terug in de pagina zelf (die kan de site uitlezen); zie 'Antwoorden' in content.js.
+    answerButton: true,
     customTerms: [],
     allowList: [],
     allowMeta: {}, // herkomst van uitzonderingen: { woord: { site, at } }

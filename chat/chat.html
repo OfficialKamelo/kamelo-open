@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Melo · Kamelo</title>
   <link rel="stylesheet" href="chat.css">
+  <link rel="icon" href="../icons/melo.svg">
 </head>
 <body>
   <header class="top">
@@ -12,6 +13,10 @@
     <button class="convbtn" id="convBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="convList">
       <h1 id="convTitle" data-i18n="pchatTitle"></h1>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+    </button>
+    <!-- Gesprek wissen: meteen weg uit dit venster (ook uit het geheugen van de AI). -->
+    <button class="newchat" id="clearChat" type="button" data-i18n-title="pchatClear" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12"/></svg>
     </button>
     <button class="newchat" id="newChat" type="button" data-i18n-title="pchatNewChat" hidden>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
@@ -28,20 +33,34 @@
   <main class="msgs" id="msgs"></main>
   <template id="emptyTpl">
     <div class="empty">
-      <div class="aura" aria-hidden="true"><img src="../icons/icon128.png" alt=""></div>
+      <div class="aura" aria-hidden="true"><span class="melo-face big" data-melo></span></div>
       <h2 data-i18n="pchatEmptyTitle"></h2>
-      <p data-i18n="pchatEmptyText"></p>
-      <ul class="facts">
-        <li data-i18n="pchatFactAccount"></li><li data-i18n="pchatFactSaved"></li><li data-i18n="pchatFactTraining"></li>
-      </ul>
+      <p class="sub"></p>
+      <!-- Optionele beginnetjes: een klik zet een begin van de vraag in het veld. Zelf typen kan altijd meteen. -->
+      <div class="sugs"></div>
     </div>
   </template>
 
   <div class="note" id="note" hidden></div>
 
+  <!-- Privacy, rustig boven het invoerveld: waar het antwoord vandaan komt. Klik voor de uitleg. -->
+  <div class="privacy" id="privacy" hidden>
+    <button class="privbtn" id="privBtn" type="button" aria-expanded="false" aria-controls="privInfo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+      <span id="privText"></span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+    </button>
+    <div class="privinfo" id="privInfo" hidden></div>
+  </div>
+
   <form class="composer" id="form">
+    <div class="atts" id="atts" hidden></div>
     <textarea id="input" rows="3" data-i18n-placeholder="pchatPlaceholder"></textarea>
     <div class="row">
+      <button class="attach" id="attach" type="button" data-i18n-title="pchatAttach" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 11.5-8.3 8.3a5 5 0 0 1-7.1-7.1l8.6-8.6a3.4 3.4 0 0 1 4.8 4.8l-8.6 8.6a1.7 1.7 0 0 1-2.4-2.4l7.9-7.9"/></svg>
+      </button>
+      <input type="file" id="file" multiple hidden>
       <span class="hint" id="hint"></span>
       <button class="send" id="send" type="submit" data-i18n-title="pchatSend" aria-label="Send">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
@@ -53,7 +72,10 @@
   <script src="../src/strings.js"></script>
   <script src="../src/config.js"></script>
   <script src="../src/sites.js"></script>
+  <script src="rich.js"></script>
+  <script src="export.js"></script>
   <script src="device.js"></script>
   <script src="chat.js"></script>
+  <script src="melo-face.js"></script>
 </body>
 </html>

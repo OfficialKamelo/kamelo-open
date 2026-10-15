@@ -1,6 +1,12 @@
-# Secrets
+# Secrets (sleutels horen alleen in kamelo.env, buiten git; zie tools/check-secrets.mjs)
 *.env
+*.env.*
+*.env.bak
 .env*
+*.pem
+*.key
+*.p12
+*.pfx
 
 # OS
 .DS_Store

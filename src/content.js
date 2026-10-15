@@ -11,7 +11,8 @@
 // 1. Plakken: gegevens worden direct vervangen door placeholders.
 // 2. Versturen (Enter of verstuurknop): staan er nog gegevens in, dan wordt het bericht eerst
 //    afgeschermd en tegengehouden, zodat de gebruiker kan controleren.
-// 3. Antwoorden: placeholders op de pagina worden lokaal teruggezet naar de echte waarden.
+// 3. Antwoorden: de placeholders blijven op de pagina staan. De echte waarden zie je alleen in Kamelo's eigen kaart
+//    (de Kamelo-knop bij het antwoord, in een gesloten shadow root), nooit in iets wat de site kan uitlezen.
 (() => {
   'use strict';
   const D = globalThis.PrivacyDetector;
@@ -22,10 +23,12 @@
   const TA = globalThis.KameloTopicAi;
   // Alleen Kamelo Business: beheerd beleid van de organisatie (policy.js). In de gratis editie ontbreekt het.
   const P = globalThis.KameloPolicy;
+  // Alleen Kamelo Business: beleid per AI-app (teams/ai-apps.js): masked, allowed of blocked.
+  const AA = globalThis.KameloAiApps;
   // Afschermen alleen in Kamelo Business. De gratis editie laadt detector.js niet, en schermt nergens iets af.
   const MASK = !!D && globalThis.KameloEdition !== 'public';
   // Kamelo Business doet alleen iets met een geldige licentie (src/licence.js). De achtergrond controleert hem
-  // (pf:licence); tot het antwoord er is, en zonder licentie, doet dit script niets: niet afschermen, niet terugzetten,
+  // (pf:licence); tot het antwoord er is, en zonder licentie, doet dit script niets: niet afschermen, geen knoppen,
   // geen bestanden, geen kaarten of meldingen. Alleen deze ene vraag aan de achtergrond, geen detectiewerk.
   let licensed = MASK ? null : true; // null: nog niet bekend
   let licensedUntil = MASK ? 0 : Infinity;
@@ -51,18 +54,25 @@
   let settings = MASK ? { ...userSettings, enabled: false } : userSettings;
   let policy = {};
   let vault = MASK ? D.emptyVault() : { byPlaceholder: {} };
+  // Alleen teams: de documentlaag (teams/doclayer.js). Placeholders uit geüploade documenten, alleen in het werkgeheugen
+  // van de browser, nooit in de kluis op schijf. Antwoorden en de Kamelo-kaart kennen ze wel.
+  const DL = globalThis.KameloDocLayer;
+  let docs = MASK ? D.emptyVault() : { byPlaceholder: {} };
+  let docsEpoch;
+  const docsPending = new Set(); // nog onderweg naar de achtergrond: een eerdere kopie van daar mag ze niet wegvagen
   let aiSite = S.siteFor(location.hostname); // de AI-site (zie sites.js), of null op een gewone site
+  let appMode = null; // de stand van deze AI-app volgens de organisatie (teams/ai-apps.js), of null
   let internalPaste = false;
 
   // Kluis per site (zie inScope in detector.js): gegevens die hier worden afgeschermd, komen alleen hier terug.
-  // Bekende AI-sites met meerdere adressen (chatgpt.com en chat.openai.com) delen één bereik. Gegevens van vóór
-  // de kluis per site gelden alleen op bekende AI-sites, want daar zijn ze ooit afgeschermd.
+  // Bekende AI-sites met meerdere adressen (chatgpt.com en chat.openai.com) delen één bereik; chatbot-widgets van
+  // verschillende bedrijven niet (S.scopeFor, dezelfde indeling als de achtergrond in vaultscope.js). Gegevens van
+  // vóór de kluis per site (zonder site) gelden nergens meer: ze blijven afgeschermd en verlopen vanzelf.
   // Een venster zonder eigen adres (about:blank, srcdoc, data:, blob:, file:) hoort bij de pagina eromheen.
   // Kunnen we die niet bepalen, dan krijgt het venster een eigen, leeg bereik: nooit de hele kluis.
   const HOST = pageHost();
-  const KNOWN_AI = S.siteFor(HOST);
-  const SCOPE = KNOWN_AI ? `ai:${KNOWN_AI.name}` : HOST ? HOST.replace(/^www\./, '') : `frame:${Math.random().toString(36).slice(2)}`;
-  const LEGACY = !!KNOWN_AI;
+  const SCOPE = (HOST && S.scopeFor(HOST)) || (HOST ? HOST.replace(/^www\./, '') : `frame:${Math.random().toString(36).slice(2)}`);
+  const LEGACY = false;
 
   function pageHost() {
     if (location.hostname) return location.hostname;
@@ -74,21 +84,33 @@
     return '';
   }
 
-  const EDITOR_SEL = 'textarea, [contenteditable]:not([contenteditable="false"])';
-  const NEVER_RESTORE_SEL = 'script, style, noscript, [data-pf-raw]';
+  // Tekstvelden: textarea, contenteditable en een gewone invoerregel (type text, search of zonder type). Andere soorten
+  // (wachtwoord, e-mail, telefoon, nummer) en velden voor inloggen of betalen (autocomplete) blijven buiten schot.
+  const EDITOR_SEL = 'textarea, input:not([type]), input[type="" i], input[type="text" i], input[type="search" i], ' +
+    '[contenteditable]:not([contenteditable="false"])';
+  const LOGIN_AUTOCOMPLETE = /\b(?:username|email|tel|one-time-code|current-password|new-password|cc-[a-z-]+|webauthn)\b/i;
+  const isField = ed => ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT';
+  const SKIP_SEL = 'script, style, noscript, textarea, [data-pf-raw]';
   const HINT_ATTRS = ['placeholder', 'aria-label', 'aria-placeholder', 'data-placeholder', 'title', 'data-testid', 'name', 'id'];
 
   const effective = () => {
     settings = P ? P.merge(userSettings, policy) : userSettings;
-    if (!active()) settings = { ...settings, enabled: false }; // teams zonder geldige licentie: alles uit
+    appMode = MASK && AA && active() ? AA.modeFor(HOST, policy) : null;
+    // Teams zonder geldige licentie: alles uit. Een AI-app die de organisatie toestaat (bijv. Harvey): Kamelo doet
+    // daar niets, ook niet in verzoeken aan AI-API's. Geblokkeerd: niets afschermen, de pagina gaat weg (blockHere).
+    if (!active() || appMode === 'allowed' || appMode === 'blocked') settings = { ...settings, enabled: false };
   };
   function applySettings(next) {
     userSettings = { ...C.DEFAULT_SETTINGS, ...(next || {}) };
     effective();
-    aiSite = S.siteFor(location.hostname, settings.customAiSites);
+    aiSite = appMode === 'allowed' ? null : S.siteFor(location.hostname, settings.customAiSites)
+      // Een AI-app die Kamelo kent zonder invoerveld (teams/ai-apps.js) of die de organisatie noemt: elk tekstveld.
+      || (appMode === 'masked' && location.hostname ? { name: AA.nameFor(HOST), hosts: [HOST] } : null);
+    if (appMode === 'blocked') blockHere();
     if (MASK && active() && !MARKS) MARKS = makeMarks();
-    if (aiSite && MASK && active()) startRestoring();
+    if (aiSite && MASK && active()) startAnswers();
     repaintAll();
+    if (watching) rescanAnswers();
   }
 
   // Na het herladen of bijwerken van de extensie blijft dit script actief in tabs die al open stonden,
@@ -99,6 +121,15 @@
   // De kluis loopt altijd via de achtergrond (zie vaultscope.js): dit script krijgt alleen het deel van deze site,
   // en wat het terugschrijft wordt alleen voor deze site overgenomen. Bij een wijziging komt pf:vault-changed binnen.
   const fetchVault = () => chrome.runtime.sendMessage({ type: 'pf:vault-get' });
+  // De documentlaag van deze site. Gewist (vergrendeld, "Kluis wissen"): dan ook de originelen weg (teams/originals.js).
+  const fetchDocs = () => (DL ? chrome.runtime.sendMessage({ type: 'pf:docs-get' }).then(d => {
+    if (!d || typeof d !== 'object') return;
+    if (docsEpoch !== undefined && d.epoch !== docsEpoch) globalThis.KameloOriginals?.clear();
+    docsEpoch = d.epoch;
+    delete d.epoch;
+    for (const add of docsPending) DL.apply(d, add, SCOPE, vault);
+    docs = d;
+  }).catch(() => {}) : Promise.resolve());
 
   // De kluis staat in het werkgeheugen (chrome.storage.session); de achtergrond schrijft hem
   // (zo nodig versleuteld) naar schijf. Eerst wachten tot die hem heeft klaargezet.
@@ -137,6 +168,7 @@
       chrome.storage.local.get(['settings', 'noticesSeen']),
       MASK ? fetchVault().then(vault => ({ vault })) : {},
       P ? P.read() : {},
+      MASK ? fetchDocs() : null,
     ]);
     if (v && typeof v === 'object') vault = v;
     policy = p || {};
@@ -149,29 +181,71 @@
     if (area === 'local' && (changes.licence || changes.testLicenceKeys)) recheckLicence();
     if (area === 'local' && changes.settings) applySettings(changes.settings.newValue);
     if (area === 'local' && changes.noticesSeen) noticesSeen = Number(changes.noticesSeen.newValue) || 0;
-    if (restoring) restoreIn(document.body);
   });
 
   const opts = () => ({ customTerms: settings.customTerms, allowList: settings.allowList, types: settings.types, scope: SCOPE, legacy: LEGACY });
   // Mag de gebruiker een gegeven zelf zichtbaar laten? De organisatie kan dat uitzetten (allowKeepVisible).
   const mayKeep = () => settings.allowKeepVisible !== false;
-  const restoreText = text => D.restore(text, vault, { scope: SCOPE, legacy: LEGACY });
+  const restoreText = text => D.restore(D.restore(text, vault, { scope: SCOPE, legacy: LEGACY }), docs, { scope: SCOPE, legacy: LEGACY });
+  // De echte waarde achter een placeholder van deze site (kluis of documentlaag), of undefined.
+  const valueOf = ph => vault.byPlaceholder[ph] ?? docs.byPlaceholder?.[ph];
   const saveVault = () => {
     if (alive()) chrome.runtime.sendMessage({ type: 'pf:vault-set', vault }).catch(() => {});
   };
 
   // ---------- Bestanden (alleen teams, src/teams/upload.js) ----------
   // Vóór de luisteraar voor plakken hieronder: een geplakt bestand gaat eerst langs het afschermen van bestanden.
-  // Dezelfde kluis en hetzelfde bereik als getypte tekst, dus dezelfde placeholders en terugzetten in het antwoord.
+  // Hetzelfde bereik en dezelfde nummering als getypte tekst (en dezelfde Kamelo-knop bij het antwoord), maar wat alleen in
+  // een document staat gaat naar de documentlaag in het werkgeheugen, niet naar de kluis (docSession hieronder).
+  const fileOpts = terms => (terms ? { ...opts(), customTerms: terms, types: [] } : opts());
+  // Een document afschermen zonder iets in de kluis op schijf te zetten: een werkkopie (kluis + documentlaag), en
+  // daarna alleen het nieuwe naar de documentlaag (in het werkgeheugen) en de tellers naar de kluis. Eerder getypte
+  // gegevens houden hun placeholder.
+  function docSession() {
+    if (!DL) return null;
+    const work = DL.working(vault, docs);
+    return {
+      mask: (text, terms) => D.mask(text, work, fileOpts(terms)),
+      end: (files, results) => {
+        const add = DL.harvest(work, vault, docs);
+        DL.apply(docs, add, SCOPE, vault);
+        if ((Object.keys(add.entries).length || Object.keys(add.keys).length) && alive()) {
+          const sent = { entries: add.entries, keys: add.keys, counters: add.counters };
+          docsPending.add(sent);
+          chrome.runtime.sendMessage({ type: 'pf:docs-add', add: sent }).catch(() => {})
+            .then(() => fetchDocs()).finally(() => docsPending.delete(sent));
+        }
+        if (add.changed) saveVault();
+        // Het origineel onthouden (alleen in dit script), om te bekijken en bij downloaden terug te zetten.
+        results.forEach((r, i) => {
+          if (r.status !== 'unreadable' && r.file !== files[i]) globalThis.KameloOriginals?.keep(files[i], r.file).catch(() => {});
+        });
+      },
+    };
+  }
   if (MASK) globalThis.KameloUpload?.install({
     active: () => !superseded && settings.enabled && settings.maskFiles !== false && !!aiSite?.files,
     unreadable: () => settings.unreadableFiles || 'ask',
-    mask: (text, terms) => D.mask(text, vault, terms ? { ...opts(), customTerms: terms, types: [] } : opts()),
-    done: items => { saveVault(); startRestoring(); count(items); },
+    begin: docSession,
+    mask: (text, terms) => D.mask(text, vault, fileOpts(terms)),
+    done: items => { saveVault(); startAnswers(); count(items); },
     fallbackTarget: () => liveEditor(),
     compact: text => showToast('compact', [el('span', { textContent: text })], 6000),
     details: items => openDetails(uniqueItems(items), null, false),
     card: fileCard,
+  });
+
+  // Het origineel bekijken en downloads met de echte gegevens (alleen teams, src/teams/originals.js). Alleen op AI-sites
+  // met uploaden, met een geldige licentie en Kamelo aan.
+  const lookupPh = ph => { const v = restoreText(ph); return v === ph ? null : v; };
+  if (MASK) globalThis.KameloOriginals?.install({
+    active: () => !superseded && active() && settings.enabled && settings.maskFiles !== false && !!aiSite?.files,
+    lookup: lookupPh,
+    shadowHost: () => shadowHost(),
+    logo: () => LOGO,
+    dark: () => pageIsDark(),
+    toast: text => showToast('compact', [el('span', { textContent: text })], 6000),
+    t: (k, v) => I.t(k, v),
   });
 
   // Een kaart in de stijl van de melding: kop, tekst, knoppen. wait: pas klaar na een keuze (of sluiten: undefined).
@@ -214,12 +288,36 @@
     });
   }, true);
 
+  // ---------- AI-apps die de organisatie blokkeert (alleen teams, src/teams/ai-apps.js) ----------
+  // Ook als de medewerker het afschermen uitzette: blokkeren is een regel van de organisatie. De achtergrond stuurt
+  // het tabblad meestal al door voordat dit script zover is (tabs.onUpdated); dit is de vangrail. Een venster in een
+  // andere pagina (iframe) krijgt hier een melding in plaats van de app.
+  let blockedHere = false;
+  function blockHere() {
+    if (blockedHere || superseded) return;
+    blockedHere = true;
+    try { window.stop(); } catch {}
+    if (window === window.top && alive()) chrome.runtime.sendMessage({ type: 'pf:block' }).catch(() => {});
+    const box = el('div', {},
+      el('b', { textContent: I.t('blockedTitle', { app: AA.nameFor(HOST) }) }),
+      el('p', { textContent: I.t('blockedText') }),
+      el('p', { textContent: policy.supportContact ? I.t('blockedAsk', { contact: P.support(policy).value }) : I.t('blockedAskIt') }));
+    box.setAttribute('style', 'max-width:420px;margin:15vh auto;padding:0 24px;font:15px/1.5 system-ui,-apple-system,sans-serif;color:#1d1d1f');
+    const body = document.createElement('body');
+    body.setAttribute('style', 'margin:0;background:#fff');
+    body.dataset.pfBlocked = '';
+    body.append(box);
+    const html = document.documentElement || document.appendChild(document.createElement('html'));
+    html.replaceChildren(document.createElement('head'), body);
+  }
+
   // ---------- Editors ----------
 
   function findEditor(node) {
     const el = node?.nodeType === 1 ? node : node?.parentElement;
     const hit = el?.closest(EDITOR_SEL);
     if (!hit) return null;
+    if (hit.tagName === 'INPUT') return hit.readOnly || hit.disabled || LOGIN_AUTOCOMPLETE.test(hit.autocomplete || '') ? null : hit;
     if (hit.tagName === 'TEXTAREA') return hit;
     let top = hit;
     while (top.parentElement?.isContentEditable) top = top.parentElement;
@@ -253,16 +351,18 @@
     return ed && goesToAi(ed) ? ed : null;
   }
 
-  const getText = ed => (ed.tagName === 'TEXTAREA' ? ed.value : ed.innerText);
+  const getText = ed => (isField(ed) ? ed.value : ed.innerText);
 
   // Voegt tekst in op de cursor (of vervangt alles). Voor rich-text editors (ProseMirror,
   // Quill) sturen we een synthetisch paste-event, zodat de editor zijn eigen state bijwerkt.
   function insertText(ed, text, replaceAll) {
     ed.focus();
-    if (ed.tagName === 'TEXTAREA') {
+    if (isField(ed)) {
       if (replaceAll) ed.select();
       if (!document.execCommand('insertText', false, text)) {
-        const setter = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value').set;
+        // De eigen setter van de browser (niet die van React e.d.), en dan een input-event zodat de site het ziet.
+        const proto = ed.tagName === 'INPUT' ? HTMLInputElement.prototype : HTMLTextAreaElement.prototype;
+        const setter = Object.getOwnPropertyDescriptor(proto, 'value').set;
         const { selectionStart: s, selectionEnd: e, value } = ed;
         setter.call(ed, replaceAll ? text : value.slice(0, s) + text + value.slice(e));
         ed.dispatchEvent(new Event('input', { bubbles: true }));
@@ -287,7 +387,7 @@
   // ctx: het veld en de afgeschermde tekst die erin is gezet, zodat een klik in de melding iets kan terugzetten.
   function afterMask(items, ctx = null) {
     saveVault();
-    startRestoring();
+    startAnswers();
     count(items);
     toast(items, ctx);
     if (ctx?.ed) paintSoon(ctx.ed);
@@ -337,30 +437,56 @@
     }
   }, true);
 
-  const SEND_LABEL = /send|verzend|verstuur|submit|stuur|ask|vraag|generate|genereer|create|maken|maak/i;
+  // Verstuurknoppen in veel talen (en, nl, de, fr, es, it, pt, pl, cs, sv, da, no, fi, tr, ru, …). 'send' vangt ook
+  // senden en absenden.
+  const SEND_LABEL = new RegExp('send|verzend|verstuur|submit|stuur|ask|vraag|generate|genereer|create|maken|maak|' +
+    'abschicken|fragen|erstellen|envoyer|envoi|soumettre|demander|enviar|envía|envia|preguntar|invia|inviare|invio|chiedi|' +
+    'perguntar|wyślij|wyslij|odeslat|odeslání|skicka|lähetä|gönder|отправ|послать|发送|送信|전송|إرسال|שלח', 'i');
+  const BUTTON_SEL = 'button, [role="button"], input[type="submit" i], input[type="button" i], input[type="image" i]';
 
   function isSendButton(btn) {
-    const label = [btn.getAttribute('aria-label'), btn.getAttribute('data-testid'), btn.title, btn.textContent]
-      .filter(Boolean).join(' ');
+    if (aiSite?.send) try { if (btn.matches(aiSite.send)) return true; } catch {} // ongeldige selector: op het label
+    const label = [btn.getAttribute('aria-label'), btn.getAttribute('data-testid'), btn.title, btn.textContent,
+      btn.tagName === 'INPUT' ? btn.value : ''].filter(Boolean).join(' ');
     return SEND_LABEL.test(label) && !/stop/i.test(label);
   }
 
-  function editorNear(btn) {
+  // De velden bij een knop: op het eerste niveau (van binnen naar buiten) waar er velden zijn, allemaal.
+  function editorsNear(btn) {
     let n = btn;
     for (let i = 0; i < 10 && n; i++, n = n.parentElement) {
-      const ed = n.querySelector?.(EDITOR_SEL);
-      if (ed) return findEditor(ed);
+      const eds = [...(n.querySelectorAll?.(EDITOR_SEL) || [])].map(findEditor).filter(Boolean);
+      if (eds.length) return [...new Set(eds)];
     }
-    return findEditor(document.activeElement);
+    const ed = findEditor(document.activeElement);
+    return ed ? [ed] : [];
+  }
+
+  // Schermt elk van deze velden af dat naar een AI gaat. true: er is iets afgeschermd, dus het versturen tegenhouden.
+  function guardAll(eds) {
+    let hit = false;
+    for (const ed of eds) if (goesToAi(ed) && guard(ed)) hit = true;
+    return hit;
   }
 
   window.addEventListener('click', e => {
     if (superseded) return;
     if (!MASK || !settings.enabled) return;
-    const btn = e.target.closest?.('button, [role="button"]');
+    const btn = e.target.closest?.(BUTTON_SEL);
     if (!btn || !isSendButton(btn)) return;
-    const ed = editorNear(btn);
-    if (ed && goesToAi(ed) && guard(ed)) {
+    if (guardAll(editorsNear(btn))) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+
+  // Vangnet voor een knop die we niet herkennen (alleen een pictogram, een taal die hierboven ontbreekt): het formulier
+  // rond het veld wordt verzonden. Ook dan eerst afschermen en tegenhouden, zodat de gebruiker kan controleren.
+  window.addEventListener('submit', e => {
+    if (superseded) return;
+    if (!MASK || !settings.enabled || !(e.target instanceof HTMLFormElement)) return;
+    const eds = [...new Set([...e.target.querySelectorAll(EDITOR_SEL)].map(findEditor).filter(Boolean))];
+    if (guardAll(eds)) {
       e.preventDefault();
       e.stopImmediatePropagation();
     }
@@ -404,7 +530,8 @@
       clearTimeout(refetchTimer);
       refetchTimer = setTimeout(() => {
         if (!alive()) return;
-        fetchVault().then(v => { vault = v || D.emptyVault(); if (restoring) restoreIn(document.body); }).catch(() => {});
+        Promise.all([fetchVault().then(v => { vault = v || D.emptyVault(); }).catch(() => {}), fetchDocs()])
+          .then(() => { if (watching) rescanAnswers(); });
       }, 50);
       return;
     }
@@ -419,6 +546,11 @@
   // - wat hier wordt afgeschermd, komt in het bereik van deze site (en kan dus niets van andere sites onthullen);
   // - een budget per pagina, zodat een site de kluis niet kan volstoppen tot echte gegevens eruit vallen;
   // - de naam in de melding moet eruitzien als een hostnaam.
+  // Afschermen is vast (dezelfde waarde krijgt op deze site steeds dezelfde placeholder), dus een site kan hiermee een
+  // gok controleren: komt 'Jan Jansen' terug als de [PERSON_3] die al in het gesprek staat? Dat is onvermijdelijk zolang
+  // net-main.js in de pagina draait (de pagina kan dit event altijd namaken). Het antwoord bevat alleen de afgeschermde
+  // versie van wat de pagina zelf meestuurde, nooit iets uit de kluis; het budget hieronder houdt het aantal gokken per
+  // pagina klein, en het werkt alleen binnen de kluis van deze site.
   let apiBudget = 500;
   if (MASK) document.addEventListener('pf:ping', () => { if (!superseded) document.dispatchEvent(new CustomEvent('pf:pong')); });
   if (MASK) document.addEventListener('pf:mask', async e => {
@@ -437,27 +569,9 @@
     if (items.length) afterMask(items);
   });
 
-  // ---------- Terugzetten in antwoorden ----------
-  // Op AI-sites altijd; op andere sites pas zodra hier iets is afgeschermd. Antwoorden die in
-  // een gewoon veld belanden (bijv. een AI-concept in Gmail) worden ook teruggezet, zodat de
-  // ontvanger de echte gegevens krijgt. In het AI-veld zelf blijven de placeholders staan.
-
-  let restoring = false;
-
-  function fixTextNode(n) {
-    const v = n.nodeValue;
-    const parent = n.parentElement;
-    if (!v || !parent || !D.hasPlaceholder(v) || parent.closest(NEVER_RESTORE_SEL)) return;
-    const ed = findEditor(parent);
-    if (ed && isComposer(ed)) return;
-    const { text: restored, spans } = D.restoreSpans(v, vault, { scope: SCOPE, legacy: LEGACY });
-    if (restored === v) return;
-    n.nodeValue = restored;
-    for (const sp of spans) addMark('restored', n, sp.start, n, sp.end, { placeholder: sp.placeholder });
-  }
-
   // Op AI-sites is niet elk bewerkbaar veld het invoerveld: ChatGPT zet bijv. e-mailconcepten in een bewerkbaar
-  // blok in het antwoord. Placeholders blijven alleen staan in het veld waarin de gebruiker typt of plakt.
+  // blok in het antwoord. Alleen in het veld waarin de gebruiker typt of plakt krijgen placeholders een label (paint);
+  // elders (antwoorden, ook bewerkbare blokken daarin) komt de Kamelo-knop erbij.
   // De selector uit sites.js is het snelst en het zekerst; zonder (of als die niet meer klopt) raden we.
   const typedIn = new WeakSet();
   // Kwam de laatste wijziging in dit veld van de gebruiker zelf (een echte toets of plakactie)? Een pagina kan zelf tekst
@@ -485,48 +599,280 @@
     try { return !!(ed.closest(sel) || ed.querySelector(sel)); } catch { return false; } // ongeldige selector
   }
 
-  function restoreIn(root) {
-    if (!root || !settings.enabled || !settings.restore) return;
-    if (root.nodeType === Node.TEXT_NODE) return fixTextNode(root);
-    if (root.nodeType !== Node.ELEMENT_NODE) return;
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    let n;
-    while ((n = walker.nextNode())) fixTextNode(n);
-  }
+  // ---------- Antwoorden: placeholders blijven staan ----------
+  // Strikte modus: Kamelo schrijft nooit echte waarden in de pagina (tekst, DOM, events of het klembord via de site),
+  // want alles wat daar staat kan de site uitlezen. Een site kan zelf '[PERSON_1]' in een verborgen blok zetten en
+  // kijken wat ervan wordt. Het antwoord houdt dus zijn placeholders. Bij elk blok met een placeholder uit de kluis van
+  // deze site zet Kamelo een kleine knop (gesloten shadow root); een klik opent een kaart met dat antwoord mét de echte
+  // gegevens, en een knop Kopiëren. Muis op een placeholder: het kaartje met de echte waarde (zie showHint).
+  // Wat de pagina wél kan zien: dát er een knop of markering staat, dus dat een placeholder in de kluis van deze site
+  // staat. Nooit de waarde.
+  // Op AI-sites altijd; op andere sites pas zodra hier iets is afgeschermd.
 
-  function startRestoring() {
-    if (restoring) return;
-    restoring = true;
-    restoreIn(document.body);
+  let watching = false;
+  // Placeholders zoals detector.js ze maakt, ook met een samengestelde soort.
+  const PH_ANY = /\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g;
+  // Waar een antwoord (of een bericht) begint, op de bekende chatsites en in veel chatwidgets. Het binnenste blok dat
+  // hierop past is het antwoord; past niets, dan het dichtstbijzijnde blok (alinea, lijst, …).
+  const ANSWER_SEL = '[data-message-author-role], [data-message-id], message-content, model-response, user-query, ' +
+    '.markdown, .prose, [data-testid*="message" i], [data-testid*="turn" i], article, [role="article"], ' +
+    '[class*="message" i], [class*="response" i], [class*="answer" i]';
+  const answers = new Map(); // blok → { host, btn, key }
+  const phMarks = new WeakMap(); // tekstknoop → zijn ph-markeringen
+  const answerRanges = new Set(); // alle ph-markeringen buiten het invoerveld, om ze samen weg te halen
+  const known = ph => restoreText(ph) !== ph; // staat deze placeholder in de kluis van deze site?
+  const hasKnown = text => !!text && D.hasPlaceholder(text) && (text.match(PH_ANY) || []).some(known);
+  const answersOn = () => watching && !superseded && settings.enabled && settings.answerButton !== false;
+
+  function startAnswers() {
+    if (watching) return;
+    watching = true;
+    rescanAnswers();
     const pending = new Set();
     let scheduled = false;
     new MutationObserver(mutations => {
       for (const m of mutations) {
         if (m.type === 'characterData') pending.add(m.target);
-        else m.addedNodes.forEach(n => pending.add(n));
+        else m.addedNodes.forEach(n => { if (!(n.nodeType === 1 && n.hasAttribute('data-pf-raw'))) pending.add(n); });
       }
-      if (scheduled) return;
+      if (scheduled || !pending.size) return;
       scheduled = true;
       setTimeout(() => {
         scheduled = false;
         const nodes = [...pending];
         pending.clear();
-        nodes.forEach(n => n.isConnected && restoreIn(n));
+        nodes.forEach(n => n.isConnected && scanAnswers(n));
+        pruneAnswers();
         pruneMarks();
       }, 30);
     }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+    addEventListener('scroll', placeSoon, { capture: true, passive: true });
+    addEventListener('resize', placeSoon, { passive: true });
+    // De site kan blokken verschuiven zonder dat er tekst verandert (zijbalk open, afbeelding geladen).
+    setInterval(() => { if (answers.size) placeSoon(); }, 500);
   }
 
+  function rescanAnswers() {
+    if (!watching) return;
+    pruneAnswers();
+    if (!answersOn()) { for (const r of answerRanges) MARKS?.ph.delete(r); answerRanges.clear(); return; }
+    scanAnswers(document.body);
+  }
+
+  function scanAnswers(root) {
+    if (!root || !answersOn()) return;
+    if (root.nodeType === Node.TEXT_NODE) return scanText(root);
+    if (root.nodeType !== Node.ELEMENT_NODE || root.closest(SKIP_SEL)) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    for (let n; (n = walker.nextNode());) scanText(n);
+    placeSoon();
+  }
+
+  function scanText(n) {
+    for (const r of phMarks.get(n) || []) { MARKS?.ph.delete(r); answerRanges.delete(r); }
+    phMarks.delete(n);
+    const v = n.nodeValue, parent = n.parentElement;
+    if (!v || !parent || !D.hasPlaceholder(v) || parent.closest(SKIP_SEL)) return;
+    const ed = findEditor(parent);
+    if (ed && isComposer(ed)) return; // het invoerveld: daar geeft paint() de placeholders een label
+    let hit = false;
+    const marks = [];
+    for (const m of v.matchAll(PH_ANY)) {
+      if (!known(m[0])) continue;
+      hit = true;
+      addMark('ph', n, m.index, n, m.index + m[0].length, { placeholder: m[0] }, marks); // zonder Highlight API: niets
+    }
+    if (marks.length) { phMarks.set(n, marks); marks.forEach(r => answerRanges.add(r)); }
+    if (hit) addAnswer(answerRoot(parent));
+  }
+
+  // Het blok waar de knop bij hoort. Nooit de hele pagina, en nooit een blok met het invoerveld erin.
+  function answerRoot(el) {
+    const bad = r => !r || r === document.body || r === document.documentElement || !!r.closest(SKIP_SEL)
+      || [...r.querySelectorAll(EDITOR_SEL)].some(e => { const ed = findEditor(e); return ed && isComposer(ed); });
+    let root = null;
+    try { root = el.closest(ANSWER_SEL); } catch {}
+    if (bad(root)) {
+      root = el;
+      while (root && root !== document.body && !BLOCK_TAGS.test(root.tagName)) root = root.parentElement;
+    }
+    return bad(root) ? null : root;
+  }
+
+  function addAnswer(root) {
+    if (!root || answers.has(root)) return;
+    // Zit het al in een blok met een knop, dan geen tweede; omvat het blokken met een knop, dan neemt dit ze over.
+    for (const [r, a] of answers) {
+      if (r.contains(root)) return;
+      if (root.contains(r)) { a.host.remove(); answers.delete(r); }
+    }
+    const [host, sr] = shadowHost();
+    sr.innerHTML = `
+      <style>
+        :host { all: initial; }
+        .b { position: fixed; z-index: 2147483646; width: 26px; height: 26px; display: none; place-items: center; padding: 0; margin: 0;
+             border: 0; border-radius: 50%; cursor: pointer; background: #fff; box-shadow: 0 0 0 .5px rgba(0,0,0,.14), 0 2px 8px rgba(0,0,0,.12);
+             opacity: .9; transition: opacity .15s, transform .15s; }
+        .b.dark { background: #2c2c2e; box-shadow: 0 0 0 .5px rgba(255,255,255,.16), 0 2px 8px rgba(0,0,0,.4); }
+        .b.on { display: grid; }
+        .b:hover { opacity: 1; transform: scale(1.06); }
+        .b:focus-visible { outline: 2px solid #0071e3; outline-offset: 2px; }
+        svg { width: 16px; height: 16px; }
+        @media (prefers-reduced-motion: reduce) { .b { transition: none; } }
+      </style>
+      <button type="button" class="b">${LOGO}</button>`;
+    const btn = sr.querySelector('.b');
+    btn.title = I.t('answerShow');
+    btn.setAttribute('aria-label', I.t('answerShow'));
+    btn.classList.toggle('dark', pageIsDark());
+    btn.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); openAnswer(root, e.detail === 0); });
+    document.documentElement.appendChild(host);
+    answers.set(root, { host, btn, key: '' });
+  }
+
+  function removeAnswer(root) {
+    answers.get(root)?.host.remove();
+    answers.delete(root);
+    if (panel?.answer === root) closeDetails(false);
+  }
+
+  // Weg met knoppen bij blokken die er niet meer zijn of geen bekende placeholder meer hebben.
+  function pruneAnswers() {
+    for (const root of [...answers.keys()]) {
+      if (!answersOn() || !root.isConnected || !hasKnown(root.textContent)) removeAnswer(root);
+    }
+    for (const r of answerRanges) if (!r.startContainer.isConnected) { MARKS?.ph.delete(r); answerRanges.delete(r); }
+  }
+
+  let placeFrame = 0;
+  function placeSoon() {
+    if (!placeFrame && answers.size) placeFrame = requestAnimationFrame(() => { placeFrame = 0; placeAnswers(); });
+  }
+  // Rechts naast het blok, gelijk met de bovenkant (en meeschuivend als je door een lang antwoord scrolt); past dat
+  // niet, dan binnen de rechterrand. Alleen schrijven als de plek echt verandert.
+  function placeAnswers() {
+    for (const [root, a] of answers) {
+      const r = root.getBoundingClientRect();
+      const seen = r.width > 0 && r.height > 0 && r.bottom > 8 && r.top < innerHeight - 8
+        && (root.checkVisibility?.({ opacityProperty: true, visibilityProperty: true }) ?? true);
+      const left = Math.round(r.right + 6 + 26 <= innerWidth - 4 ? r.right + 6 : Math.max(4, r.right - 30));
+      const top = Math.round(Math.max(4, Math.min(r.top, r.bottom - 26, innerHeight - 30)));
+      const key = seen ? `${left},${top}` : 'off';
+      if (key === a.key) continue;
+      a.key = key;
+      a.btn.classList.toggle('on', seen);
+      if (seen) Object.assign(a.btn.style, { left: `${left}px`, top: `${top}px` });
+    }
+  }
+
+  // De kaart: het antwoord met de echte gegevens, alleen voor de gebruiker (gesloten shadow root). Alles met
+  // textContent en tekstknopen; de tekst is niet te selecteren, want een selectie kan de pagina uitlezen. Kopiëren
+  // gaat via de knop, rechtstreeks vanuit dit script naar het klembord (de pagina ziet daar geen copy-event van).
+  function openAnswer(root, viaKeyboard) {
+    if (!root?.isConnected) return;
+    closeDetails(false);
+    const source = root.innerText || root.textContent || '';
+    const restored = restoreText(source);
+    const [host, sr] = shadowHost();
+    sr.innerHTML = `
+      <style>
+        :host { all: initial; }
+        * { box-sizing: border-box; }
+        .card { position: fixed; z-index: 2147483647; display: flex; flex-direction: column; border-radius: 16px;
+                background: var(--bg); color: var(--fg); font: 13px/19px ${FONT}; -webkit-font-smoothing: antialiased;
+                box-shadow: 0 0 0 .5px var(--edge), 0 18px 50px rgba(0,0,0,.2); overflow: hidden; outline: none;
+                animation: pop .22s cubic-bezier(.2,.9,.3,1.1);
+                --bg: #fff; --fg: #1d1d1f; --muted: #6e6e73; --line: rgba(0,0,0,.06); --edge: rgba(0,0,0,.12); --fill: #f2f2f7;
+                --real-bg: #e8f1fd; --real-fg: #0a5cc2; --accent: #0071e3; }
+        .card.dark { --bg: #1c1c1e; --fg: #f5f5f7; --muted: #98989d; --line: rgba(255,255,255,.08); --edge: rgba(255,255,255,.14); --fill: #2c2c2e;
+                     --real-bg: rgba(10,132,255,.18); --real-fg: #64b0ff; --accent: #0a84ff;
+                     box-shadow: 0 0 0 .5px var(--edge), 0 18px 50px rgba(0,0,0,.5); }
+        header { display: flex; align-items: center; gap: 8px; padding: 12px 12px 4px 14px; flex: none; }
+        header svg { width: 20px; height: 20px; flex: none; }
+        h2 { margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; }
+        .x { margin-left: auto; width: 26px; height: 26px; border-radius: 50%; border: 0; padding: 0; background: var(--fill); color: var(--muted);
+             display: grid; place-items: center; cursor: pointer; flex: none; }
+        .x:hover { color: var(--fg); }
+        .x svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+        .note { padding: 0 14px 10px; color: var(--muted); font-size: 12px; line-height: 16px; }
+        .txt { padding: 10px 14px; border-top: 1px solid var(--line); overflow-y: auto; white-space: pre-wrap; overflow-wrap: anywhere;
+               user-select: none; -webkit-user-select: none; }
+        .r { color: var(--real-fg); background: var(--real-bg); border-radius: 4px; padding: 0 3px; }
+        footer { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--line); flex: none; }
+        .p { font: inherit; font-size: 12px; font-weight: 500; border: 0; cursor: pointer; border-radius: 999px; background: var(--accent); color: #fff; padding: 5px 14px; }
+        .p:hover { filter: brightness(1.08); }
+        .s { color: var(--muted); font-size: 12px; }
+        button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        @keyframes pop { from { opacity: 0; transform: translateY(6px); } }
+        @media (prefers-reduced-motion: reduce) { .card { animation: none; } }
+      </style>
+      <section class="card answer" role="dialog" aria-modal="true" aria-labelledby="h" tabindex="-1">
+        <header>${LOGO}<h2 id="h"></h2></header>
+        <div class="note"></div>
+        <div class="txt"></div>
+        <footer></footer>
+      </section>`;
+    const card = sr.querySelector('.card');
+    card.classList.toggle('dark', pageIsDark());
+    sr.querySelector('#h').textContent = I.t('answerTitle');
+    sr.querySelector('.note').textContent = I.t('answerOnlyYou', { site: aiSite?.name || location.hostname });
+    const close = iconButton('x', I.t('detailsClose'), () => closeDetails(true));
+    sr.querySelector('header').append(close);
+    // De tekst: gewone stukken als tekstknoop, elke teruggezette waarde gemarkeerd, met zijn placeholder als titel.
+    const parts = [];
+    let at = 0;
+    for (const m of source.matchAll(PH_ANY)) {
+      const value = restoreText(m[0]);
+      if (value === m[0]) continue;
+      if (m.index > at) parts.push(document.createTextNode(source.slice(at, m.index)));
+      parts.push(el('span', { className: 'r', textContent: value, title: m[0] }));
+      at = m.index + m[0].length;
+    }
+    parts.push(document.createTextNode(source.slice(at)));
+    const txt = sr.querySelector('.txt');
+    txt.replaceChildren(...parts);
+    const status = el('span', { className: 's' });
+    status.setAttribute('role', 'status');
+    const copy = textButton('p', I.t('answerCopy'), async () => {
+      try {
+        await navigator.clipboard.writeText(restored);
+        status.textContent = I.t('copied');
+      } catch { status.textContent = I.t('answerCopyFailed'); }
+    });
+    sr.querySelector('footer').append(copy, status);
+
+    // Bij het antwoord: links gelijk met het blok, onder de bovenkant; zo breed als past.
+    const r = root.getBoundingClientRect();
+    const width = Math.min(560, innerWidth - 24);
+    const left = Math.round(Math.max(12, Math.min(r.left, innerWidth - width - 12)));
+    const top = Math.round(Math.max(12, Math.min(r.top, innerHeight - 260)));
+    Object.assign(card.style, { left: `${left}px`, top: `${top}px`, width: `${width}px`, maxHeight: `${innerHeight - top - 12}px` });
+
+    const onKey = e => {
+      if (e.key === 'Escape') { e.stopPropagation(); closeDetails(false); return; }
+      if (e.key !== 'Tab' || !card.contains(sr.activeElement)) return;
+      e.preventDefault();
+      (sr.activeElement === close ? copy : close).focus();
+    };
+    const onDown = e => { if (!e.composedPath().includes(host)) closeDetails(false); };
+    document.addEventListener('keydown', onKey, true);
+    document.addEventListener('pointerdown', onDown, true);
+    document.documentElement.appendChild(host);
+    panel = { host, onKey, onDown, ed: null, answer: root };
+    if (viaKeyboard) copy.focus({ preventScroll: true });
+  }
+
+
   // ---------- Zichtbaar in de pagina ----------
-  // Drie markeringen, getekend met de CSS Custom Highlight API (stijl in src/marks.css). De DOM van de site blijft
+  // Twee markeringen, getekend met de CSS Custom Highlight API (stijl in src/marks.css). De DOM van de site blijft
   // onaangeroerd: editors als ProseMirror draaien eigen wijzigingen terug, en een extra <span> breekt React. De pagina
   // kan zien wélke tekst gemarkeerd is, maar die tekst staat al op haar eigen pagina; echte waarden achter een
   // placeholder staan alleen in het kaartje, in een gesloten shadow root.
   //   pending   golflijn onder wat je typt en bij versturen wordt afgeschermd (zoals Grammarly, maar blauw: geen fout);
-  //   ph        placeholders in het invoerveld als blauw label;
-  //   restored  stippellijn onder wat Kamelo in een antwoord heeft teruggezet.
-  // Muis erop: een kaartje met uitleg, en bij een golflijn "Nu afschermen" of "Zichtbaar laten".
-  // Een browser zonder de API (Firefox vóór 140) slaat dit over; afschermen en terugzetten werken gewoon.
+  //   ph        placeholders uit de kluis als blauw label, in het invoerveld en in antwoorden.
+  // Muis erop: een kaartje met uitleg (bij een placeholder de echte waarde, in een gesloten shadow root), en bij een
+  // golflijn "Nu afschermen" of "Zichtbaar laten".
+  // Een browser zonder de API (Firefox vóór 140) slaat dit over; afschermen en de Kamelo-knop werken gewoon.
 
   // Pas aangemaakt zodra Kamelo Business actief is (applySettings): zonder licentie verandert er niets aan de pagina.
   let MARKS = null;
@@ -534,7 +880,7 @@
     if (!MASK) return null;
     try {
       if (!globalThis.CSS?.highlights || typeof Highlight !== 'function') return null;
-      const m = { pending: new Highlight(), ph: new Highlight(), restored: new Highlight() };
+      const m = { pending: new Highlight(), ph: new Highlight() };
       for (const [kind, h] of Object.entries(m)) CSS.highlights.set(`kamelo-${kind}`, h);
       return m;
     } catch { return null; }
@@ -590,7 +936,7 @@
   function paint(ed) {
     if (!MARKS) return;
     unpaint(ed);
-    if (superseded || !ed.isConnected || ed.tagName === 'TEXTAREA' || !settings.enabled || !goesToAi(ed)) return;
+    if (superseded || !ed.isConnected || isField(ed) || !settings.enabled || !goesToAi(ed)) return;
     const mine = [];
     painted.set(ed, mine);
     const blocks = new Map();
@@ -616,7 +962,7 @@
       };
       const mark = (kind, start, end, info) => addMark(kind, ...at(start), ...at(end, true), { ed, ...info }, mine);
       for (const m of text.matchAll(PH_IN_TEXT)) {
-        if (m[0] in vault.byPlaceholder) mark('ph', m.index, m.index + m[0].length, { placeholder: m[0] });
+        if (valueOf(m[0]) !== undefined) mark('ph', m.index, m.index + m[0].length, { placeholder: m[0] });
       }
       let found = [];
       // Heel lange tekst (een heel document geplakt): geen golflijnen, dat kost te veel bij elke toetsaanslag.
@@ -634,7 +980,7 @@
     else ({ startContainer: node, startOffset: offset } = document.caretRangeFromPoint?.(x, y) || {});
     if (!node || node.nodeType !== Node.TEXT_NODE) return null;
     const near = r => [...r.getClientRects()].some(b => x >= b.left - 1 && x <= b.right + 1 && y >= b.top - 2 && y <= b.bottom + 2);
-    for (const kind of ['pending', 'ph', 'restored']) {
+    for (const kind of ['pending', 'ph']) {
       for (const r of MARKS[kind]) {
         try { if (r.isPointInRange(node, offset) && near(r)) return r; } catch {}
       }
@@ -644,7 +990,7 @@
 
   document.addEventListener('mousemove', e => {
     if (!MARKS || hintFrame || superseded) return;
-    if (!(MARKS.pending.size || MARKS.ph.size || MARKS.restored.size)) return;
+    if (!(MARKS.pending.size || MARKS.ph.size)) return;
     if (hint && e.composedPath().includes(hint.host)) return; // op het kaartje zelf
     const { clientX: x, clientY: y } = e;
     hintFrame = setTimeout(() => { // hooguit eens per 40 ms kijken wat er onder de muis staat
@@ -710,10 +1056,8 @@
     const tag = text => el('span', { className: 'tag', textContent: text });
     const line = (...kids) => el('div', { className: 'm' }, ...kids);
     const top = text => { const t = el('div', { className: 'top' }); t.innerHTML = LOGO; t.append(el('span', { textContent: text })); return t; };
-    if (info.kind === 'restored') {
-      box.append(top(I.t('markRestored')), line(`${I.t('markAiSaw')} `, tag(info.placeholder)));
-    } else if (info.kind === 'ph') {
-      const value = vault.byPlaceholder[info.placeholder];
+    if (info.kind === 'ph') {
+      const value = valueOf(info.placeholder);
       const type = info.placeholder.slice(1, info.placeholder.lastIndexOf('_'));
       box.append(top(capital(I.typeLabel(type))));
       if (value !== undefined) box.append(el('div', { className: 'v', textContent: shownValue({ type, value }) }));
@@ -744,32 +1088,9 @@
   }
 
   // ---------- Kopiëren ----------
-  // De kopieerknop van een AI-site kopieert de tekst uit zijn eigen gegevens, met placeholders. net-main.js vraagt
-  // hier (synchroon, zodat de klik als gebruikersactie blijft gelden) om de echte waarden terug te zetten.
-  // Ook dit event kan de pagina zelf sturen. Daarom alleen tijdens een echte gebruikersactie (een klik of toets,
-  // die een pagina niet kan namaken) en alleen met gegevens van deze site.
-  if (MASK) document.addEventListener('pf:restore', e => {
-    if (superseded) return;
-    let msg;
-    try { msg = JSON.parse(e.detail); } catch { return; }
-    if (typeof msg?.text !== 'string') return;
-    const allowed = restoring && settings.enabled && settings.restore && navigator.userActivation?.isActive !== false;
-    const text = allowed ? restoreText(msg.text) : msg.text;
-    document.dispatchEvent(new CustomEvent('pf:restored', { detail: JSON.stringify({ id: msg.id, text }) }));
-  });
-  // Kopiëren via execCommand: de site zet de tekst in het copy-event; wij zetten daarna de echte waarden terug.
-  window.addEventListener('copy', e => {
-    if (superseded) return;
-    if (!restoring || !settings.enabled || !settings.restore || !e.clipboardData) return;
-    let changed = false;
-    for (const type of ['text/plain', 'text/html']) {
-      const data = e.clipboardData.getData(type);
-      if (!data || !D.hasPlaceholder(data)) continue;
-      e.clipboardData.setData(type, restoreText(data));
-      changed = true;
-    }
-    if (changed) e.preventDefault();
-  });
+  // Wat je van de pagina kopieert (selectie of de kopieerknop van de site), houdt de placeholders: Kamelo verandert
+  // niets aan het klembord van de site en geeft de pagina geen weg om echte waarden op te vragen (geen pf:restore
+  // meer). De versie met de echte gegevens kopieer je met de knop in Kamelo's eigen kaart (openAnswer).
 
   // ---------- Melding ----------
   // Een pil vlak boven het invoerveld: het eerste gegeven doorgestreept → zijn placeholder, "+N meer", Bekijk en ×.
@@ -777,6 +1098,8 @@
   // Neemt nooit de focus over; Esc sluit hem.
 
   const LOGO = `<svg viewBox="0 0 128 128" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="#1A8CFF" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg>`;
+  // Het Melo-logo (brand/melo/melo-head.svg, glimlach als boog) op de knop "Ask Melo".
+  const MELO_ICON = '<svg viewBox="46.5 64.5 419.1 419.1" aria-hidden="true"><path d="M217.17 118.5A50 50 0 0 1 294.83 118.5L354.37 191.91A70 70 0 0 1 368.66 222.35L368.65 222.35A10 10 0 0 0 377.52 230.36L377.52 230.35A80 80 0 0 1 408.46 380.15L309.84 434.21A112 112 0 0 1 202.16 434.21L103.54 380.15A80 80 0 0 1 134.48 230.35L134.48 230.36A10 10 0 0 0 143.35 222.35L143.34 222.35A70 70 0 0 1 157.63 191.91ZM324 312A52 52 0 1 0 428 312A52 52 0 1 0 324 312ZM344 317A26 26 0 1 1 396 317A26 26 0 1 1 344 317ZM84 312A52 52 0 1 0 188 312A52 52 0 1 0 84 312ZM116 317A26 26 0 1 1 168 317A26 26 0 1 1 116 317ZM229.08 380.9A39.5 39.5 0 0 0 282.92 380.9A5.5 5.5 0 0 0 275.43 372.85A28.5 28.5 0 0 1 236.57 372.85A5.5 5.5 0 0 0 229.08 380.9Z"/></svg>';
   const X_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
   const FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const COMPACT_AFTER = 5; // zo vaak de volledige melding, daarna de compacte
@@ -958,6 +1281,8 @@
         .k button { font-size: 12px; font-weight: 500; background: var(--hover); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
         .k .p { background: #0071e3; color: #fff; }
         .k .p:hover { filter: brightness(1.08); }
+        .k .melo { display: inline-flex; align-items: center; gap: 5px; padding-left: 8px; }
+        .k .melo svg { width: 15px; height: 15px; fill: currentColor; }
         button.done { display: flex; background: none; padding: 0; cursor: pointer; } button.done:hover { text-decoration: underline; }
         .c .done { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; color: var(--dim); }
         .c .done::before { content: ""; width: 8px; height: 4px; margin-top: -2px; border: solid #34c759; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
@@ -1012,6 +1337,12 @@
   function textButton(cls, label, onClick) {
     const b = el('button', { type: 'button', className: cls, textContent: label });
     b.addEventListener('click', onClick);
+    return b;
+  }
+  // "Ask Melo" met het Melo-logo ervoor.
+  function meloButton(onClick) {
+    const b = textButton('p melo', I.t('topicProtect'), onClick);
+    b.insertAdjacentHTML('afterbegin', MELO_ICON);
     return b;
   }
 
@@ -1131,7 +1462,7 @@
           ? textButton('done', I.t('toastCompact', { n: masked }), e => { const m = lastMasked; hideToast(); openDetails(m.unique, m.ctx, e.detail === 0); })
           : el('span', { className: 'done', textContent: I.t('toastCompact', { n: masked }) })] : []),
         el('div', { className: 'k' },
-          ...(canProtect ? [textButton('p', I.t('topicProtect'), () => { hideToast(); goPrivateChat(ed); })] : []),
+          ...(canProtect ? [meloButton(() => { hideToast(); goPrivateChat(ed); })] : []),
           // Tweede keuze: een tijdelijke chat in dezelfde AI (voor wie z'n eigen ChatGPT wil houden).
           ...(ed && aiSite?.private ? [textButton(canProtect ? '' : 'p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
         )),
@@ -1188,7 +1519,7 @@
   }
 
   function clearField(ed) {
-    if (ed.tagName === 'TEXTAREA') return insertText(ed, '', true);
+    if (isField(ed)) return insertText(ed, '', true);
     ed.focus();
     const range = document.createRange();
     range.selectNodeContents(ed);
@@ -1216,7 +1547,7 @@
     const result = MASK && settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] };
     insertText(ed, result.text, true);
     typedIn.add(ed);
-    if (result.items.length) { saveVault(); startRestoring(); }
+    if (result.items.length) { saveVault(); startAnswers(); }
     anchorEd = ed;
     showToast('compact', [el('span', { textContent: I.t('privateReady') })], 6000);
   }

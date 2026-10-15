@@ -4,13 +4,14 @@
 // - Alleen Kamelo Business: controleert de licentie (src/licence.js) voor de content scripts en Private Chat, en zet
 //   een rode "!" op het icoon zolang Kamelo Business niet actief is.
 // - Alleen Kamelo Business: beheert de kluis. De actuele kluis staat in chrome.storage.session (alleen in het
-//   werkgeheugen); deze service schrijft hem naar schijf: versleuteld als de kluisbeveiliging aanstaat, anders gewoon.
+//   werkgeheugen); deze service schrijft hem altijd versleuteld naar schijf: met de sleutel van de kluisbeveiliging als
+//   die aanstaat, anders met de apparaatsleutel (zie vaultcrypto.js).
 // - Alleen de gratis editie: ruimt na een update alles op wat 1.4.x en eerder voor het afschermen bewaarde.
 // In Firefox laadt het manifest deze bestanden zelf (background.scripts); daar bestaat importScripts niet.
 if (typeof importScripts === 'function') {
   importScripts('edition.js', 'sites.js', 'config.js');
   // De gratis editie heeft de bestanden voor het afschermen niet (zie tools/pack.mjs).
-  if (globalThis.KameloEdition !== 'public') importScripts('policy.js', 'licence.js', 'vaultcrypto.js', 'vaultstore.js', 'stats.js', 'teams/terms-index.js', 'detector.js', 'vaultscope.js');
+  if (globalThis.KameloEdition !== 'public') importScripts('policy.js', 'teams/ai-apps.js', 'licence.js', 'vaultcrypto.js', 'vaultstore.js', 'stats.js', 'teams/terms-index.js', 'detector.js', 'vaultscope.js', 'teams/doclayer.js', 'teams/ocr-host.js');
   // Alleen de gratis editie: de AI van Chrome op dit apparaat als tweede kans voor gevoelige onderwerpen.
   else importScripts('topic-ai.js');
 }
@@ -26,13 +27,17 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (TEAMS) chrome.storage.local.remove('teamsSince').catch(() => {});
   injectIntoOpenTabs();
   // Na installatie: de bedankpagina op kamelo.eu. Dat is een gewoon tabblad; Kamelo stuurt zelf niets.
-  if (reason === 'install') chrome.tabs.create({ url: 'https://kamelo.eu/welcome' });
+  // Welkomstpagina in de taal van de browser, als kamelo.eu die taal heeft (testpanel 13 okt: altijd Engels was verwarrend).
+  if (reason === 'install') {
+    const lang = (chrome.i18n?.getUILanguage?.() || 'en').slice(0, 2).toLowerCase();
+    chrome.tabs.create({ url: `https://kamelo.eu/${['nl', 'de', 'fr', 'es'].includes(lang) ? lang + '/' : ''}welcome` });
+  }
 });
 
 // De gratis editie schermt niets meer af (sinds 12 okt 2026). Wat versie 1.4.x en eerder daarvoor op dit apparaat
 // bewaarde, gaat weg: de kluis (ook versleuteld), de kluisbeveiliging, het maandoverzicht en de eigen woordenlijsten.
 // Bij elke update en elke start, zodat er ook na een onderbroken update niets persoonlijks blijft staan.
-const MASKING_KEYS = ['vault', 'vaultEnc', 'protect', 'stats', 'noticesSeen'];
+const MASKING_KEYS = ['vault', 'vaultEnc', 'vaultBox', 'vaultCounters', 'protect', 'stats', 'noticesSeen'];
 const MASKING_SETTINGS = ['restore', 'customTerms', 'allowList', 'allowMeta', 'customAiSites', 'retentionDays',
   // De gratis popup heeft geen knoppen meer voor de meldingen per onderwerp: die gaan terug naar de standaard (aan),
   // anders kan iemand die ze ooit uitzette ze nooit meer aanzetten. Aan/uit van Kamelo zelf blijft zoals het was.
@@ -40,7 +45,9 @@ const MASKING_SETTINGS = ['restore', 'customTerms', 'allowList', 'allowMeta', 'c
 async function forgetMasking() {
   try {
     await chrome.storage.local.remove(MASKING_KEYS);
-    await chrome.storage.session.remove(['vault', 'key', 'locked', 'ready']);
+    await chrome.storage.session.remove(['vault', 'key', 'locked', 'ready', 'vaultLoaded']);
+    // De apparaatsleutel (zie vaultcrypto.js) is zonder kluis ook niet meer nodig.
+    if (typeof indexedDB !== 'undefined') indexedDB.deleteDatabase('kamelo-kluis');
     const { settings } = await chrome.storage.local.get('settings');
     if (settings && MASKING_SETTINGS.some(k => k in settings)) {
       const kept = Object.fromEntries(Object.entries(settings).filter(([k]) => !MASKING_SETTINGS.includes(k)));
@@ -74,7 +81,9 @@ if (BETA) {
 
 // Het werkgeheugen (de kluis en, als die beveiligd is, de sleutel) is alleen voor Kamelo zelf: de achtergrond, de popup
 // en het kluisvenster. Content scripts draaien in elke website; zij krijgen via berichten alleen het deel van hun eigen
-// site (zie vaultscope.js). Zo kan een website, ook een gekraakte, nooit de hele kluis of de sleutel bereiken.
+// site (zie vaultscope.js). chrome.storage.local kunnen content scripts wél lezen (ook die van een gekraakte website):
+// daar staat de kluis daarom alleen versleuteld, en de sleutel staat in de IndexedDB van de extensie, waar een website
+// niet bij kan.
 chrome.storage.session.setAccessLevel?.({ accessLevel: 'TRUSTED_CONTEXTS' });
 
 // Berichten komen alleen van Kamelo zelf, maar content scripts draaien in websites. Daarom:
@@ -87,36 +96,158 @@ const fromExtensionPage = sender => sender.id === chrome.runtime.id && !!sender.
 if (TEAMS) {
 const PC = globalThis.PrivacyCrypto;
 
-const { emptyVault, initSession } = globalThis.PrivacyVault;
+const { emptyVault } = globalThis.PrivacyVault;
 const VS = globalThis.PrivacyVaultScope;
 const D = globalThis.PrivacyDetector;
 
-// Eén keer per browsersessie de kluis in het werkgeheugen zetten (zie vaultstore.js).
-let initPromise = null;
-const init = () => (initPromise ??= initSession());
+const deviceKey = PC.deviceKey(globalThis.KameloDeviceKeyStore); // tests geven een eigen opslag mee
 
-// Wijzigingen in de kluis naar schijf schrijven (één tegelijk, in volgorde).
-let queue = Promise.resolve();
-function persist(vault) {
-  queue = queue.then(async () => {
-    if (!vault) return;
-    const { protect } = await chrome.storage.local.get('protect');
-    if (!protect) return chrome.storage.local.set({ vault });
-    protect.counters = vault.counters; // tellers zijn geen gevoelige gegevens
-    const { key } = await chrome.storage.session.get('key');
-    if (!key) return chrome.storage.local.set({ protect }); // vergrendeld: oude versleutelde kluis blijft staan
-    const vaultEnc = await PC.encryptJSON(await PC.importAesRaw(PC.unb64(key)), vault);
-    await chrome.storage.local.set({ vaultEnc, protect });
-  }).catch(err => console.error('[Kamelo] kluis opslaan mislukt', err));
+// Op schijf (chrome.storage.local) staat de kluis nooit leesbaar:
+// - zonder kluisbeveiliging: vaultBox, versleuteld met de apparaatsleutel, met vaultCounters ernaast;
+// - met kluisbeveiliging: vaultEnc, versleuteld met de kluissleutel K, met protect.counters ernaast.
+// (Tellers per soort zijn geen gevoelige gegevens.) Tot en met 1.5.0 stond `vault` hier onversleuteld: die wordt bij
+// het laden één keer versleuteld weggeschreven en gewist.
+const PLAIN = 'vault';
+
+// Eén keer per browsersessie de kluis van schijf in het werkgeheugen zetten. `vaultLoaded` zegt dat de achtergrond dat
+// gedaan heeft; pas dan mag persist() schrijven. Een pagina die niet op de achtergrond kon wachten zet met initSession
+// (vaultstore.js) alleen een lege kluis klaar: die wordt hier samengevoegd met wat op schijf staat, niet overschreven.
+let initPromise = null;
+const init = () => (initPromise ??= loadSession().catch(err => {
+  initPromise = null; // de volgende vraag probeert het opnieuw
+  console.error('[Kamelo] kluis laden mislukt', err);
+}));
+
+async function loadSession() {
+  const { vaultLoaded } = await chrome.storage.session.get('vaultLoaded');
+  if (!vaultLoaded) {
+    const { [PLAIN]: plain, vaultBox, vaultCounters, protect } = await chrome.storage.local.get([PLAIN, 'vaultBox', 'vaultCounters', 'protect']);
+    const { vault: pending, ready } = await chrome.storage.session.get(['vault', 'ready']);
+    if (protect) {
+      // Beveiligd: start vergrendeld; alleen de tellers gaan mee, zodat nieuwe placeholders niet botsen.
+      await chrome.storage.session.set(ready ? { vaultLoaded: true }
+        : { vault: emptyVault(protect.counters || {}), locked: true, ready: true, vaultLoaded: true });
+    } else {
+      let stored = plain || null;
+      if (!stored && vaultBox) {
+        const key = await deviceKey(); // een fout van IndexedDB gaat omhoog: dan niets overschrijven, later opnieuw
+        try { stored = await PC.decryptJSON(key, vaultBox); }
+        catch {
+          // Sleutel weg of gegevens kapot: de kluis begint leeg (met de tellers), afgeschermde teksten blijven afgeschermd.
+          console.warn('[Kamelo] de kluis op schijf is niet meer te openen; Kamelo begint met een lege kluis');
+          stored = emptyVault(vaultCounters || {});
+        }
+      }
+      const vault = ready && pending ? PC.mergeVaults(stored || emptyVault(), pending) : (stored || emptyVault());
+      await chrome.storage.session.set({ vault, locked: false, ready: true, vaultLoaded: true });
+    }
+  }
+  // Altijd één keer wegschrijven: zo verdwijnt een onversleutelde kluis van een oudere versie meteen.
+  const { vault } = await chrome.storage.session.get('vault');
+  await persist(vault);
 }
+
+// Wijzigingen in de kluis naar schijf schrijven, en de kluisbeveiliging aan- of uitzetten: één tegelijk, in volgorde.
+let queue = Promise.resolve();
+function enqueue(job) {
+  const run = queue.then(job);
+  queue = run.catch(err => console.error('[Kamelo] kluis opslaan mislukt', err));
+  return run;
+}
+const persist = vault => enqueue(() => writeVault(vault)).catch(() => {});
+
+async function writeVault(vault) {
+  if (!vault) return;
+  const { vaultLoaded, key } = await chrome.storage.session.get(['vaultLoaded', 'key']);
+  if (!vaultLoaded) return; // de kluis van schijf is nog niet geladen: niet overschrijven
+  const { protect } = await chrome.storage.local.get('protect');
+  if (!protect) {
+    const vaultBox = await PC.encryptJSON(await deviceKey(), vault);
+    await chrome.storage.local.set({ vaultBox, vaultCounters: vault.counters || {} });
+    await chrome.storage.local.remove([PLAIN, 'vaultEnc']);
+    return;
+  }
+  protect.counters = vault.counters; // tellers zijn geen gevoelige gegevens
+  await chrome.storage.local.remove(PLAIN);
+  if (!key) return chrome.storage.local.set({ protect }); // vergrendeld: oude versleutelde kluis blijft staan
+  const vaultEnc = await PC.encryptJSON(await PC.importAesRaw(PC.unb64(key)), vault);
+  await chrome.storage.local.set({ vaultEnc, protect });
+  await chrome.storage.local.remove(['vaultBox', 'vaultCounters']);
+}
+
+// Kluisbeveiliging aanzetten (vanuit het kluisvenster, unlock.js): de pagina maakt de sleutel K en pakt hem in met
+// Touch ID of een wachtwoord; hier wordt de kluis met K versleuteld en verdwijnt de kopie met de apparaatsleutel.
+async function protectOn({ protect, key }) {
+  if (!protect || typeof key !== 'string' || !(protect.touch || protect.password)) throw new Error('ongeldige beveiliging');
+  await init(); // buiten de rij: init() schrijft zelf ook via de rij
+  return enqueue(async () => {
+    const { vault } = await chrome.storage.session.get('vault');
+    const current = vault || emptyVault();
+    const entry = { ...protect, counters: current.counters || {} };
+    const vaultEnc = await PC.encryptJSON(await PC.importAesRaw(PC.unb64(key)), current);
+    await chrome.storage.session.set({ key, locked: false });
+    await chrome.storage.local.set({ protect: entry, vaultEnc });
+    await chrome.storage.local.remove([PLAIN, 'vaultBox', 'vaultCounters']);
+    lastActivity = 0; // de wekker voor vergrendelen meteen zetten
+    touchActivity();
+  });
+}
+
+// Een tweede methode (Touch ID of wachtwoord) toevoegen; alleen als de kluis open is.
+function protectAdd({ method, entry }) {
+  return enqueue(async () => {
+    const { protect } = await chrome.storage.local.get('protect');
+    const { key } = await chrome.storage.session.get('key');
+    if (!protect || !key || !['touch', 'password'].includes(method) || !entry?.wrapped) throw new Error('kluis niet open');
+    protect[method] = entry;
+    await chrome.storage.local.set({ protect });
+  });
+}
+
+// Kluisbeveiliging uitzetten; alleen als de kluis open is (anders zou de versleutelde kluis verloren gaan).
+// Eerst de kluis met de apparaatsleutel wegschrijven, dan pas de beveiligde kopie wissen.
+function protectOff() {
+  return enqueue(async () => {
+    const { key, locked, vault } = await chrome.storage.session.get(['key', 'locked', 'vault']);
+    const { protect } = await chrome.storage.local.get('protect');
+    if (!protect) return;
+    if (!key || locked) throw new Error('kluis vergrendeld');
+    const current = vault || emptyVault();
+    const vaultBox = await PC.encryptJSON(await deviceKey(), current);
+    await chrome.storage.local.set({ vaultBox, vaultCounters: current.counters || {} });
+    await chrome.storage.local.remove(['protect', 'vaultEnc', PLAIN]);
+    await chrome.storage.session.remove('key');
+    await chrome.storage.session.set({ locked: false });
+    chrome.alarms?.clear?.(AUTOLOCK);
+  });
+}
+
+// Een beveiligde kluis die open staat, gaat na AUTOLOCK_MINUTES zonder gebruik vanzelf op slot (chrome.alarms, dus ook
+// als de achtergrond intussen slaapt). Gebruik = een website of Kamelo's eigen pagina leest of schrijft de kluis.
+const AUTOLOCK = 'kamelo-autolock';
+const AUTOLOCK_MINUTES = 30;
+let lastActivity = 0;
+function touchActivity() {
+  if (Date.now() - lastActivity < 60000) return; // hooguit één keer per minuut de wekker verzetten
+  lastActivity = Date.now();
+  chrome.storage.session.get(['key', 'locked']).then(({ key, locked }) => {
+    if (key && !locked) chrome.alarms?.create(AUTOLOCK, { delayInMinutes: AUTOLOCK_MINUTES });
+  }).catch(() => {});
+}
+chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === AUTOLOCK) lock().catch(() => {}); });
 
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === 'session' && changes.vault) {
     persist(changes.vault.newValue);
     announceChange();
   }
-  // Net ontgrendeld: oude gegevens uit de versleutelde kluis meteen opschonen.
-  if (area === 'session' && changes.locked && changes.locked.newValue === false) prune();
+  if (area === 'session' && changes.docs) {
+    // Gewist (vergrendeld, "Kluis wissen"): een nieuw tijdperk, zodat tabbladen ook hun originelen vergeten.
+    if (changes.docs.newValue === undefined) chrome.storage.session.set({ docsEpoch: Date.now() }).catch(() => {});
+    if (!changes.vault) announceChange();
+  }
+  // Net ontgrendeld: oude gegevens uit de versleutelde kluis meteen opschonen, en de wekker voor vergrendelen zetten.
+  if (area === 'session' && changes.locked && changes.locked.newValue === false) { prune(); lastActivity = 0; touchActivity(); }
 });
 
 // Tabs horen alleen dát de kluis is veranderd, zonder gegevens. Elk venster haalt daarna zelf zijn eigen deel op.
@@ -157,10 +288,11 @@ globalThis.KameloPolicy.watch(() => prune());
 chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-prune') prune(); });
 
 async function lock() {
+  chrome.alarms?.clear?.(AUTOLOCK);
   const { protect } = await chrome.storage.local.get('protect');
   if (!protect) return;
   await queue; // eerst de laatste wijzigingen versleuteld wegschrijven
-  await chrome.storage.session.remove('key');
+  await chrome.storage.session.remove(['key', 'docs']); // documenten: ook weg (op slot = niets terug te zetten)
   await chrome.storage.session.set({ locked: true, vault: emptyVault(protect.counters || {}) });
 }
 
@@ -208,12 +340,43 @@ chrome.storage.onChanged.addListener((changes, area) => {
 chrome.alarms?.create('kamelo-licence', { periodInMinutes: 60 });
 chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-licence') licence().catch(() => {}); });
 
+// ---------- AI-apps die de organisatie blokkeert (src/teams/ai-apps.js, docs/teams/AI-APPS.md) ----------
+// Zonder nieuwe rechten: met de toegang tot alle sites geeft tabs.onUpdated het adres van elk tabblad. Gaat een tabblad
+// naar een geblokkeerde AI-app, dan komt de blokpagina van Kamelo ervoor in de plaats (alleen de host gaat mee, nooit het
+// hele adres). Het content script vraagt hetzelfde (pf:block) als vangrail; hier telt alleen het adres van de afzender.
+// Alleen met een geldige licentie, net als de rest van Kamelo Business.
+const AA = globalThis.KameloAiApps;
+const BLOCKED_PAGE = 'src/teams/blocked.html';
+let policyNow = null;
+globalThis.KameloPolicy.watch(p => { policyNow = Promise.resolve(p); });
+async function blockedHost(url) {
+  let u;
+  try { u = new URL(url); } catch { return ''; }
+  if (!/^https?:$/.test(u.protocol) || !AA) return '';
+  const policy = await (policyNow ??= globalThis.KameloPolicy.read());
+  if (AA.modeFor(u.hostname, policy) !== 'blocked') return '';
+  return (await licence()).active ? u.hostname : '';
+}
+async function sendToBlocked(tabId, url) {
+  const host = await blockedHost(url).catch(() => '');
+  if (!host) return false;
+  await chrome.tabs.update(tabId, { url: chrome.runtime.getURL(`${BLOCKED_PAGE}?host=${encodeURIComponent(host)}`) }).catch(() => {});
+  return true;
+}
+chrome.tabs.onUpdated?.addListener((tabId, change) => { if (change.url) sendToBlocked(tabId, change.url); });
+
 chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (sender.id !== chrome.runtime.id) return;
+  if (msg?.type === 'pf:block') {
+    if (sender.tab?.id == null || sender.frameId !== 0 || !sender.url) { reply(false); return; }
+    sendToBlocked(sender.tab.id, sender.url).then(reply, () => reply(false));
+    return true;
+  }
   if (msg?.type === 'pf:licence') { licence().then(s => reply({ active: !!s.active, until: s.until || 0 }), () => reply({ active: false, until: 0 })); return true; }
   if (msg?.type === 'pf:count') { count(msg.counts).then(() => reply(true)); return true; }
   if (msg?.type === 'pf:init') { init().then(() => reply(true)); return true; }
   if (msg?.type === 'pf:vault-get') {
+    touchActivity();
     const where = VS.scopeOfSender(sender);
     init().then(() => chrome.storage.session.get('vault')).then(({ vault }) => reply(VS.sliceVault(vault, where)))
       .catch(() => reply(null));
@@ -222,11 +385,190 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (msg?.type === 'pf:vault-set' && msg.vault) {
     const where = VS.scopeOfSender(sender);
     if (!where) { reply(false); return; }
+    touchActivity();
     updateVault(v => VS.mergeSlice(v, msg.vault, where)).then(() => reply(true), () => reply(false));
     return true;
   }
   if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }
   if (msg?.type === 'pf:flush' && fromExtensionPage(sender)) { queue.then(() => reply(true)); return true; }
+  // Kluisbeveiliging aan, uit of een methode erbij: alleen vanuit het kluisvenster, en in de rij met persist().
+  const done = p => { p.then(() => reply(true), err => reply({ error: String(err?.message || err) })); return true; };
+  if (msg?.type === 'pf:protect-on' && fromExtensionPage(sender)) return done(protectOn(msg));
+  if (msg?.type === 'pf:protect-add' && fromExtensionPage(sender)) return done(protectAdd(msg));
+  if (msg?.type === 'pf:protect-off' && fromExtensionPage(sender)) return done(protectOff());
+});
+
+// ---------- Documenten (teams/doclayer.js, teams/originals.js) ----------
+// De documentlaag: placeholders uit geüploade documenten, alleen in het werkgeheugen (storage.session `docs`), per
+// site. Nooit in de kluis op schijf; alleen de tellers gaan daarheen (zodat nummers niet botsen). Weg bij afsluiten,
+// vergrendelen en "Kluis wissen".
+const DL = globalThis.KameloDocLayer;
+let docsQueue = Promise.resolve();
+function addDocs(add, where) {
+  const run = docsQueue.then(async () => {
+    await init();
+    const { docs, vault } = await chrome.storage.session.get(['docs', 'vault']);
+    const all = docs && typeof docs === 'object' ? docs : {};
+    const mine = all[where.scope] || DL.empty();
+    if (DL.apply(mine, add, where.scope, VS.sliceVault(vault, where))) {
+      all[where.scope] = mine;
+      await chrome.storage.session.set({ docs: all });
+    }
+    // De tellers wel naar de kluis (en dus naar schijf): een nummer uit een document wordt nooit opnieuw uitgedeeld.
+    await updateVault(v => {
+      let changed = false;
+      v.counters = v.counters || {};
+      for (const [type, n] of Object.entries(add.counters || {})) {
+        if (/^[A-Z_]+$/.test(type) && Number.isInteger(n) && n > (v.counters[type] || 0) && n < 1e9) { v.counters[type] = n; changed = true; }
+      }
+      return changed;
+    });
+  });
+  docsQueue = run.catch(err => console.error('[Kamelo] documentlaag bijwerken mislukt', err));
+  return run;
+}
+
+// Een bestandsnaam die chrome.downloads accepteert: geen mappen, geen tekens die Windows of macOS weigeren.
+function safeName(name) {
+  const base = String(name || '').split(/[\\/]/).pop().replace(/[\u0000-\u001f<>:"|?*\u007f]/g, '_').replace(/^[.\s]+|[.\s]+$/g, '').slice(0, 200);
+  return base || 'download';
+}
+
+// Een download die Kamelo zelf start (de teruggezette versie). Een adres voor de bytes: in Firefox (achtergrondpagina)
+// een blob-adres, in Chrome via het offscreen-document (teams/ocr-host.js), anders een data:-adres voor kleine bestanden.
+const ownDownloads = new Set();
+// Chrome: met een eigen onDeterminingFilename-luisteraar (hieronder) negeert Chrome de naam uit downloads.download,
+// dus geeft de luisteraar die naam zelf terug (names: adres → naam). Ook voor "Openen" in de viewer (pf:dl-name).
+const names = new Map();
+async function saveFile({ b64, name, mime: type }) {
+  if (typeof b64 !== 'string' || !b64) throw new Error('leeg');
+  const mime = /^[\w.+-]+\/[\w.+-]+$/.test(type || '') ? type : 'application/octet-stream';
+  let url = null;
+  if (typeof document !== 'undefined' && typeof URL.createObjectURL === 'function') {
+    const bin = atob(b64), bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    url = URL.createObjectURL(new Blob([bytes], { type: mime }));
+    setTimeout(() => URL.revokeObjectURL(url), 120000);
+  } else if (globalThis.KameloOffscreen) {
+    const r = await globalThis.KameloOffscreen.run({ blob: { b64, type: mime } }).catch(() => null);
+    url = r?.url || null;
+  }
+  if (!url && b64.length < 4 * 1024 * 1024) url = `data:${mime};base64,${b64}`;
+  if (!url) throw new Error('geen adres voor de download');
+  names.set(url, safeName(name));
+  const id = await chrome.downloads.download({ url, filename: safeName(name), conflictAction: 'uniquify' });
+  ownDownloads.add(id);
+  return id;
+}
+
+// Downloads die de pagina zelf start (een blob van de site, een link naar een bestand): op een AI-site met uploaden
+// vraagt de achtergrond het tabblad om de echte gegevens terug te zetten. Lukt dat (en stond er iets in), dan gaat de
+// download van de site niet door en komt de teruggezette versie ervoor in de plaats. Lukt het niet: de download van
+// de site gewoon. Wat de content script zelf al afhandelde (teams/originals.js) heeft byExtensionId of staat in `passes`.
+const passes = new Map(); // adres → tijd: de content script laat deze download bewust door
+const hostOfUrl = u => { try { const x = new URL(u.startsWith('blob:') ? u.slice(5) : u); return /^https?:$/.test(x.protocol) ? x.hostname : ''; } catch { return ''; } };
+const fileSite = host => { const s = host && globalThis.PrivacySites.siteFor(host); return s?.files ? s : null; };
+const RESTORABLE = /\.(?:txt|md|markdown|log|csv|tsv|json|html?|eml|rtf|pdf|docx|xlsx|pptx|odt|ods|odp)$/i;
+
+async function restoreDownload(item) {
+  if (item.byExtensionId || ownDownloads.has(item.id)) return null;
+  const url = item.finalUrl || item.url || '';
+  const t = passes.get(url);
+  if (t && Date.now() - t < 20000) return null;
+  const pageHost = fileSite(hostOfUrl(url)) ? hostOfUrl(url) : hostOfUrl(item.referrer || '');
+  if (!fileSite(pageHost)) return null;
+  const name = String(item.filename || '').split(/[\\/]/).pop() || decodeURIComponent(url.split(/[?#]/)[0].split('/').pop() || '');
+  if (!RESTORABLE.test(name) && !/^(?:text\/|application\/(?:json|pdf|rtf|vnd\.openxmlformats|vnd\.oasis)|message\/rfc822)/.test(item.mime || '')) return null;
+  if (!(await licence().catch(() => NOT_ACTIVE)).active) return null;
+  const scope = globalThis.PrivacySites.scopeFor(pageHost);
+  const tabs = (await chrome.tabs.query({}).catch(() => [])).filter(tab => {
+    const h = hostOfUrl(tab.url || '');
+    return h && (h === pageHost || (scope && globalThis.PrivacySites.scopeFor(h) === scope));
+  });
+  if (!tabs.length) return null;
+  // Alleen een bestand dat al in de pagina staat (blob: of data:): dat leest het tabblad zelf, zonder netwerk. Een
+  // bestand op een webadres (ook bij de AI-dienst zelf) haalt Kamelo niet opnieuw op: de extensie doet geen eigen
+  // netwerkverzoeken. Die download gaat door zoals de site hem maakte, en het tabblad zegt dat er nog placeholders
+  // in kunnen staan.
+  if (!/^(?:blob|data):/i.test(url)) {
+    const tab = tabs.find(t => t.active);
+    if (tab) chrome.tabs.sendMessage(tab.id, { type: 'pf:dl-remote' }, { frameId: 0 }).catch(() => {});
+    return null;
+  }
+  for (const tab of tabs) {
+    const r = await chrome.tabs.sendMessage(tab.id, { type: 'pf:dl-restore', url, name, mime: item.mime || '' }, { frameId: 0 }).catch(() => null);
+    if (r?.b64) return r;
+  }
+  return null;
+}
+
+async function replaceDownload(item, r) {
+  await chrome.downloads.cancel(item.id).catch(() => {});
+  if (item.state === 'complete') await chrome.downloads.removeFile?.(item.id).catch(() => {});
+  await chrome.downloads.erase({ id: item.id }).catch(() => {});
+  await saveFile(r);
+}
+
+const withTimeout = (p, ms) => Promise.race([p, new Promise(resolve => setTimeout(() => resolve(null), ms))]);
+if (chrome.downloads?.onDeterminingFilename) {
+  // Chrome: de download wacht op een naam, dus er komt niets op schijf zolang Kamelo kijkt.
+  chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
+    const own = names.get(item.url);
+    if (own) { names.delete(item.url); suggest({ filename: own, conflictAction: 'uniquify' }); return; }
+    if (item.byExtensionId || ownDownloads.has(item.id)) return;
+    if (!fileSite(hostOfUrl(item.finalUrl || item.url || '')) && !fileSite(hostOfUrl(item.referrer || ''))) return;
+    withTimeout(restoreDownload(item).catch(() => null), 15000).then(async r => {
+      if (!r) { try { suggest(); } catch {} return; }
+      try { await replaceDownload(item, r); } catch { try { suggest(); } catch {} }
+    });
+    return true;
+  });
+} else if (chrome.downloads?.onCreated) {
+  // Firefox: geen onDeterminingFilename; de download loopt al, en wordt vervangen als het terugzetten lukt.
+  chrome.downloads.onCreated.addListener(item => {
+    restoreDownload(item).then(r => r && replaceDownload(item, r)).catch(() => {});
+  });
+}
+
+chrome.runtime.onMessage.addListener((msg, sender, reply) => {
+  if (sender.id !== chrome.runtime.id) return;
+  if (msg?.type === 'pf:docs-get') {
+    const where = VS.scopeOfSender(sender);
+    chrome.storage.session.get(['docs', 'docsEpoch']).then(({ docs, docsEpoch }) => reply({ ...DL.slice(docs, where?.scope), epoch: docsEpoch || 0 }), () => reply(null));
+    return true;
+  }
+  if (msg?.type === 'pf:docs-add' && msg.add && typeof msg.add === 'object') {
+    const where = VS.scopeOfSender(sender);
+    if (!where || !sender.tab) { reply(false); return; }
+    addDocs(msg.add, where).then(() => reply(true), () => reply(false));
+    return true;
+  }
+  // Het origineel bekijken: Kamelo's eigen pagina (teams/viewer.html) in een nieuw tabblad. Die vraagt het bestand
+  // zelf op bij het content script van dit tabblad en frame; de achtergrond geeft alleen door welk.
+  if (msg?.type === 'pf:view' && sender.tab && typeof msg.id === 'string' && /^[\w-]{6,64}$/.test(msg.id)) {
+    const url = chrome.runtime.getURL(`src/teams/viewer.html#${sender.tab.id}:${sender.frameId || 0}:${msg.id}`);
+    chrome.tabs.create({ url, openerTabId: sender.tab.id, index: sender.tab.index + 1 })
+      .catch(() => chrome.tabs.create({ url })).then(() => reply(true), () => reply(false));
+    return true;
+  }
+  // Een teruggezet bestand bewaren (teams/originals.js): alleen vanuit een tabblad op een AI-site met uploaden.
+  if (msg?.type === 'pf:save' && sender.tab && chrome.downloads) {
+    if (!fileSite(VS.senderHost(sender))) { reply({ error: 'site' }); return; }
+    saveFile(msg).then(id => reply({ id }), err => reply({ error: String(err?.message || err) }));
+    return true;
+  }
+  // De viewer (Kamelo's eigen pagina) start zelf een download ("Openen"): de naam erbij.
+  if (msg?.type === 'pf:dl-name' && fromExtensionPage(sender) && typeof msg.url === 'string') {
+    names.set(msg.url, safeName(msg.name));
+    reply(true);
+    return;
+  }
+  if (msg?.type === 'pf:dl-pass' && sender.tab && typeof msg.url === 'string') {
+    passes.set(msg.url, Date.now());
+    for (const [u, at] of passes) if (Date.now() - at > 60000) passes.delete(u);
+    reply(true);
+    return;
+  }
 });
 
 init().then(prune);

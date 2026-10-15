@@ -117,6 +117,15 @@ test('lege tekst', () => {
   topics('')([]);
   topics(undefined)([]);
 });
+test('heel lange woorden zonder spaties: snel (lineair), en een onderwerp erachter telt nog', () => {
+  for (const s of ['a'.repeat(40000), 'aaaa-'.repeat(8000), '1'.repeat(40000)]) {
+    const t = Date.now();
+    sensitiveTopics(s);
+    assert.ok(Date.now() - t < 300, `${s.slice(0, 5)}…: ${Date.now() - t} ms`);
+  }
+  topics(`${'x'.repeat(15000)}. I have been struggling with depression lately`)(['MENTAL']);
+  topics('Ik heb keelpijn en blaasontsteking')(['HEALTH']); // woordbegin en -einde werken nog
+});
 
 console.log(`\n${passed} geslaagd, ${failed} mislukt`);
 if (failed) process.exit(1);

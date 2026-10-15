@@ -42,6 +42,8 @@ export const TEAMS_ONLY = [
   'popup/teams.css',
   // Nieuwe modules van teams (ronde 1 en later): bestanden afschermen, klantenlijst, AI-beleid. De hele map.
   'src/teams',
+  // Bestanden en afbeeldingen in Private Chat (leest met de lezers uit src/teams).
+  'chat/read.js',
 ];
 // Hoort dit bestand (of deze map) alleen bij teams? Ook bestanden ín een map uit TEAMS_ONLY (src/teams/files.js).
 export const teamsOnly = f => TEAMS_ONLY.some(t => f === t || f.startsWith(`${t}/`));
@@ -51,8 +53,8 @@ export const PUBLIC_ONLY = ['popup/public.html', 'popup/public.js', 'popup/publi
 // De achtergrondscripts per editie, in dezelfde volgorde als importScripts in background.js (voor Firefox).
 const BACKGROUND = {
   public: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/topic-ai.js', 'src/background.js'],
-  teams: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/policy.js', 'src/licence.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js',
-    'src/teams/terms-index.js', 'src/detector.js', 'src/vaultscope.js', 'src/background.js'],
+  teams: ['src/edition.js', 'src/sites.js', 'src/config.js', 'src/policy.js', 'src/teams/ai-apps.js', 'src/licence.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/stats.js',
+    'src/teams/terms-index.js', 'src/detector.js', 'src/vaultscope.js', 'src/teams/doclayer.js', 'src/background.js'],
 };
 
 // De AI-chatsites uit sites.js als adrespatronen: het domein zelf en elk subdomein. Zonder de sites die alleen voor
@@ -66,7 +68,11 @@ export function publicManifest(manifest) {
   const m = structuredClone(manifest);
   m.name = '__MSG_extName__';
   m.description = '__MSG_extDescription__';
-  m.permissions = m.permissions.filter(p => p !== 'alarms');
+  // Geen OCR van afbeeldingen (teams/ocr-host.js) in de gratis editie: geen offscreen-document, en geen wasm in de
+  // extensiepagina's (de standaard-CSP van MV3, zonder 'wasm-unsafe-eval').
+  // Geen downloads: het terugzetten van gegevens in bestanden (teams/originals.js) is alleen voor Kamelo Business.
+  m.permissions = m.permissions.filter(p => p !== 'alarms' && p !== 'offscreen' && !p.startsWith('downloads'));
+  delete m.content_security_policy;
   const sites = aiSitePatterns();
   m.host_permissions = sites;
   const isolated = m.content_scripts.find(cs => !cs.world || cs.world === 'ISOLATED');
@@ -98,11 +104,16 @@ export function firefoxManifest(manifest, { teams = true } = {}) {
   m.browser_specific_settings = {
     gecko: { id: teams ? 'teams@kamelo.eu' : 'kamelo@kamelo.eu', strict_min_version: '128.0', data_collection_permissions: { required: ['none'] } },
   };
+  // De gratis editie heeft in Firefox geen Melo (alleen de tijdelijke chat): een eigen beschrijving zonder Melo.
+  if (!teams) m.description = '__MSG_extDescriptionFirefox__';
   // Private Chat op dit apparaat (chat/device.js): Firefox' eigen AI (trial.ml) mag alleen als optionele toestemming,
   // pas gevraagd na een klik op Downloaden, en alleen zolang die aan staat (nu uit: te traag). Firefox kent geen
   // zijpaneel-API: daar opent de chat in een eigen venster.
   if (FX_ENABLED) m.optional_permissions = [...new Set([...(m.optional_permissions || []), 'trialML'])];
-  m.permissions = m.permissions.filter(p => p !== 'sidePanel');
+  // Firefox kent ook geen offscreen-documenten: daar geen OCR van afbeeldingen (die blijven tegengehouden), en geen
+  // vendor/ (zie build), dus ook de bestanden van tesseract niet.
+  m.permissions = m.permissions.filter(p => p !== 'sidePanel' && p !== 'offscreen');
+  delete m.content_security_policy;
   delete m.side_panel;
   // Firefox kent storage.managed_schema niet: daar komt beheerd beleid uit policies.json ("3rdparty"), zonder schema.
   delete m.storage;

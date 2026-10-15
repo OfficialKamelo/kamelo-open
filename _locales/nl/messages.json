@@ -13,5 +13,8 @@
   },
   "extDescriptionTeams": {
     "message": "Kamelo Business schermt persoons- en bedrijfsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of AI in werkapps bereiken."
+  },
+  "extDescriptionFirefox": {
+    "message": "Een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt."
   }
 }

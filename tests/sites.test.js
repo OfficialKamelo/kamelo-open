@@ -39,6 +39,25 @@ test('siteFor: subdomeinen tellen mee, lookalikes niet', () => {
   assert.equal(siteFor('chatgpt.com.evil.example'), null);
 });
 
+test('scopeFor: één bereik per dienst, per domein bij perHost, null op een gewone site', () => {
+  const { scopeFor } = require('../src/sites.js');
+  assert.equal(scopeFor('chatgpt.com'), 'ai:ChatGPT');
+  assert.equal(scopeFor('chat.openai.com'), 'ai:ChatGPT');
+  assert.equal(scopeFor('shop.example'), null);
+  const bots = SITES.find(s => s.perHost);
+  const scopes = bots.hosts.map(h => scopeFor(h));
+  assert.equal(new Set(scopes).size, bots.hosts.length, 'twee chatbot-bedrijven delen een bereik');
+  assert.equal(scopeFor('widget.' + bots.hosts[0]), scopes[0]);
+});
+
+test('send en composer zijn geldige CSS-selectors', () => {
+  for (const site of SITES) for (const key of ['composer', 'send']) {
+    if (!site[key]) continue;
+    assert.equal(typeof site[key], 'string', `${site.name}.${key}`);
+    assert.doesNotMatch(site[key], /[{}]/, `${site.name}.${key}`);
+  }
+});
+
 test('siteFor: sites die de gebruiker zelf als AI markeert', () => {
   assert.equal(siteFor('help.shop.example', ['shop.example']).name, 'help.shop.example');
   assert.equal(siteFor('shop.example'), null);

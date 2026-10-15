@@ -4,6 +4,8 @@
 //   hosts     domeinen (subdomeinen tellen mee)
 //   composer  CSS-selector van het veld waarin je typt. Optioneel: zonder selector vindt Kamelo het veld zelf.
 //             Placeholders blijven alleen in dit veld staan; overal anders worden ze teruggezet.
+//   send      CSS-selector van de verstuurknop. Optioneel: zonder selector (of als hij niet meer klopt) herkent Kamelo de
+//             knop aan zijn label in veel talen, en vangt het verzenden van het formulier rond het veld ook af.
 //   live      pagina die de nachtelijke sitecontrole opent (tests/live/sites.mjs); alleen sites die werken zonder inloggen
 //   private   hoe je hier een tijdelijke chat opent (niet in je geschiedenis, niet voor training), voor "Tijdelijke chat":
 //             url    = adres van een nieuwe tijdelijke chat, of anders
@@ -14,15 +16,20 @@
 //             bestandsknop, slepen en plakken. Zet dit pas aan als uploaden op de echte site is nagekeken.
 //   teams     alleen in Kamelo Business: ontwikkelaarsconsoles en chatbot-widgets (daar stelt niemand een persoonlijke
 //             vraag, maar wel klantgegevens). De gratis editie vraagt er geen toegang tot.
+//   perHost   de domeinen zijn verschillende bedrijven onder één naam: elk domein krijgt een eigen kluis (zie scopeFor).
+//   widget    draait als venster op andere sites (de klantenservice van een webwinkel): Kamelo Business blokkeert het
+//             niet via aiAppsDefault, alleen als de organisatie het zelf noemt (ai-apps.js van teams).
 (function (root) {
   'use strict';
 
   const SITES = [
-    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt', live: 'https://chatgpt.com/', files: true,
+    { name: 'ChatGPT', hosts: ['chatgpt.com', 'chat.openai.com'], composer: '#prompt-textarea, #mobile-composer-prompt',
+      send: '[data-testid="send-button"], #composer-submit-button', live: 'https://chatgpt.com/', files: true,
       private: { url: 'https://chatgpt.com/?temporary-chat=true', onUrl: 'temporary-chat=true' } },
-    { name: 'Gemini', hosts: ['gemini.google.com'], files: true, composer: 'rich-textarea .ql-editor', live: 'https://gemini.google.com/app',
+    { name: 'Gemini', hosts: ['gemini.google.com'], files: true, composer: 'rich-textarea .ql-editor', send: 'button.send-button', live: 'https://gemini.google.com/app',
       private: { start: 'https://gemini.google.com/app', button: 'temp-chat-button button', onSel: 'chat-window.is-temporary-chat' } },
     { name: 'Claude', hosts: ['claude.ai'], composer: '[data-testid="chat-input"], fieldset .ProseMirror', files: true,
+      send: 'button[aria-label="Send message"]',
       private: { url: 'https://claude.ai/new?incognito', onUrl: 'incognito', onSel: 'button[aria-label="Exit incognito"]' } },
     { name: 'Copilot', hosts: ['copilot.microsoft.com', 'copilot.com', 'copilot.cloud.microsoft'], files: true, composer: '#userInput' },
     { name: 'Perplexity', hosts: ['perplexity.ai'], files: true, composer: '#ask-input', live: 'https://www.perplexity.ai/' },
@@ -49,7 +56,7 @@
     { name: 'Z.ai', hosts: ['z.ai'], files: true },
     // Bouwers van AI-chatbots die als widget op andere sites draaien (vaak in een iframe).
     {
-      name: 'AI chatbot', teams: true,
+      name: 'AI chatbot', teams: true, perHost: true, widget: true,
       hosts: ['chatbase.co', 'botpress.cloud', 'voiceflow.com', 'kapa.ai', 'inkeep.com', 'mendable.ai',
         'customgpt.ai', 'sitegpt.ai', 'chatling.ai', 'docsbot.ai', 'chatsimple.ai'],
     },
@@ -64,7 +71,17 @@
     return customAiSites.some(host => matchesHost(hostname, host)) ? { name: hostname, hosts: [hostname] } : null;
   }
 
-  const api = { SITES, siteFor, matchesHost };
+  // Het bereik van de kluis op een bekende AI-site (zie inScope in detector.js en vaultscope.js), of null.
+  // Adressen van één dienst (chatgpt.com en chat.openai.com) delen één bereik; bij perHost krijgt elk domein
+  // (met zijn subdomeinen) een eigen bereik, zodat bijv. chatbase.co niet terugzet wat op botpress.cloud is afgeschermd.
+  function scopeFor(hostname) {
+    const site = SITES.find(s => s.hosts.some(host => matchesHost(hostname, host)));
+    if (!site) return null;
+    if (!site.perHost) return `ai:${site.name}`;
+    return `ai:${site.name}/${site.hosts.find(host => matchesHost(hostname, host))}`;
+  }
+
+  const api = { SITES, siteFor, scopeFor, matchesHost };
   root.PrivacySites = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

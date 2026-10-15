@@ -30,7 +30,7 @@
   const exact = new Map(), prefix = new Map(), suffix = new Map();
   const dense = []; // [{ code, words: RegExp(g), self: RegExp, topics: [[soort, RegExp]] }]
   const loose = new Set(W?.LOOSE || []);
-  let maxWords = 1, minPrefix = Infinity, minSuffix = Infinity;
+  let maxWords = 1, minPrefix = Infinity, minSuffix = Infinity, maxPrefix = 0, maxSuffix = 0;
   const add = (map, key, entry) => (map.get(key) || map.set(key, []).get(key)).push(entry);
   const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -50,8 +50,8 @@
         const end = term.startsWith('*');
         const key = norm(term.replace(/^\*|\*$/g, '')).replace(/_/g, ' ');
         maxWords = Math.max(maxWords, key.split(' ').length);
-        if (open) minPrefix = Math.min(minPrefix, key.length);
-        if (end) minSuffix = Math.min(minSuffix, key.length);
+        if (open) { minPrefix = Math.min(minPrefix, key.length); maxPrefix = Math.max(maxPrefix, key.length); }
+        if (end) { minSuffix = Math.min(minSuffix, key.length); maxSuffix = Math.max(maxSuffix, key.length); }
         const entry = [code, kind, alone];
         if (end) { add(suffix, key, entry); continue; }
         add(open ? prefix : exact, key, entry);
@@ -93,9 +93,11 @@
     const lower = norm(sentence);
     for (const [key, stripped] of keys(lower.match(TOKEN) || [])) {
       record(exact.get(key), stripped);
-      for (let len = key.length; len >= minPrefix; len--) record(prefix.get(key.slice(0, len)), stripped);
+      // Alleen woordbegin en -einde zo lang als de langste term: een heel lang 'woord' (40.000 letters zonder spatie)
+      // kost zo per positie een vaste hoeveelheid werk in plaats van zijn hele lengte.
+      for (let len = Math.min(key.length, maxPrefix); len >= minPrefix; len--) record(prefix.get(key.slice(0, len)), stripped);
       if (!stripped && !key.includes(' ')) {
-        for (let cut = 1; key.length - cut >= minSuffix; cut++) record(suffix.get(key.slice(cut)), false);
+        for (let cut = Math.max(1, key.length - maxSuffix); key.length - cut >= minSuffix; cut++) record(suffix.get(key.slice(cut)), false);
       }
     }
     for (const d of dense) {

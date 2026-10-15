@@ -251,6 +251,8 @@ textarea:focus, .add input:focus { outline: none; }
 .tile svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .t-blue { background: #0a84ff; } .t-green { background: #34c759; } .t-indigo { background: #5e5ce6; } .t-orange { background: #ff9f0a; } .t-gray { background: #8e8e93; }
 .try .tile svg { fill: #fff; stroke: none; }
+/* Melo: het logo (wit op lichtblauw), zoals het app-icoon in brand/melo */
+.t-melo { background: #4FC3E8; } .tile.t-melo svg { width: 17px; height: 17px; fill: #fff; stroke: none; }
 .try b { color: var(--accent-text); }
 .mrow .ic-lock, .menu.locked .ic-vault { display: none; }
 .menu.locked .ic-lock { display: block; }

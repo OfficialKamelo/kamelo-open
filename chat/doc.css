@@ -1,0 +1,20 @@
+/* Afdrukpagina voor Melo's antwoorden (chat/doc.html): A4, rustig, zelfde letters en kleuren als de chat. */
+html, body { height: auto; }
+body.doc { display: block; background: var(--soft); }
+.doc .bar { position: sticky; top: 0; display: flex; align-items: center; gap: 12px; padding: 12px 20px; background: var(--bg); border-bottom: 1px solid var(--line); }
+.doc .btn { padding: 8px 16px; border-radius: 99px; border: 0; background: var(--accent); color: #fff; font: 600 13px/1 inherit; cursor: pointer; }
+.doc .tip { font-size: 12px; color: var(--muted); }
+.doc .page { box-sizing: border-box; max-width: 210mm; min-height: 297mm; margin: 24px auto; padding: 22mm 20mm; background: #fff; color: #1d1d1f;
+  border-radius: 4px; box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 12px 40px rgba(0, 0, 0, .06); font-size: 11pt; line-height: 1.55; }
+.doc .page h1.title { margin: 0 0 14px; font-size: 22pt; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
+.doc .page h3 { font-size: 15pt; margin: 18px 0 8px; } .doc .page h4 { font-size: 12.5pt; }
+.doc .page .chart { break-inside: avoid; max-width: 140mm; }
+/* Het document is altijd licht (papier), ook als de computer donker staat. */
+.doc .page { --card: #fff; --soft: #f4f4f5; --label: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --grid: #ececef; --axis: #c7c7cc;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #4a3aa7; --s8: #e34948; }
+@page { size: A4; margin: 18mm 18mm; }
+@media print {
+  body.doc { background: #fff; }
+  .doc .bar { display: none; }
+  .doc .page { margin: 0; padding: 0; max-width: none; min-height: 0; box-shadow: none; border-radius: 0; }
+}
