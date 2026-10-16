@@ -29,8 +29,8 @@ const require = createRequire(import.meta.url);
 const { FX_ENABLED } = require('../chat/device.js');
 const { SITES } = require('../src/sites.js');
 
-// Alleen in Kamelo Business: alles voor het afschermen, de kluis en het maandoverzicht. Ook vendor/ (de Tinfoil-bundel
-// voor de "chip" van Kamelo Plus, die met placeholders werkt) en de popup van teams.
+// Alleen in Kamelo Business: alles voor het afschermen, de kluis en het maandoverzicht. Ook vendor/ (tesseract, de OCR
+// van afbeeldingen) en de popup van teams.
 export const TEAMS_ONLY = [
   'src/detector.js', 'src/vaultcrypto.js', 'src/vaultstore.js', 'src/vaultlock.js', 'src/vaultscope.js', 'src/stats.js',
   'src/net-main.js', 'src/ai-hosts.js', 'src/marks.css', 'unlock', 'vendor', 'popup/popup.html', 'popup/popup.js',
@@ -44,6 +44,8 @@ export const TEAMS_ONLY = [
   'src/teams',
   // Bestanden en afbeeldingen in Private Chat (leest met de lezers uit src/teams).
   'chat/read.js',
+  // Melo's zakelijke onderdelen: e-mail met afgeschermde gegevens, actiepunten, beslissing (de gratis editie heeft eigen onderdelen in rich.js).
+  'chat/rich-werk.js',
 ];
 // Hoort dit bestand (of deze map) alleen bij teams? Ook bestanden ín een map uit TEAMS_ONLY (src/teams/files.js).
 export const teamsOnly = f => TEAMS_ONLY.some(t => f === t || f.startsWith(`${t}/`));
@@ -112,7 +114,8 @@ export function firefoxManifest(manifest, { teams = true } = {}) {
   if (FX_ENABLED) m.optional_permissions = [...new Set([...(m.optional_permissions || []), 'trialML'])];
   // Firefox kent ook geen offscreen-documenten: daar geen OCR van afbeeldingen (die blijven tegengehouden), en geen
   // vendor/ (zie build), dus ook de bestanden van tesseract niet.
-  m.permissions = m.permissions.filter(p => p !== 'sidePanel' && p !== 'offscreen');
+  // activeTab is alleen voor "Lees deze pagina" in Melo (chat/page.js): zolang Melo in Firefox uit staat, ook dat recht niet.
+  m.permissions = m.permissions.filter(p => p !== 'sidePanel' && p !== 'offscreen' && (FX_ENABLED || p !== 'activeTab'));
   delete m.content_security_policy;
   delete m.side_panel;
   // Firefox kent storage.managed_schema niet: daar komt beheerd beleid uit policies.json ("3rdparty"), zonder schema.
@@ -161,8 +164,7 @@ export function build(dir, { teams = false, beta = false, firefox = false, test 
   if (teams && !fs.existsSync(path.join(ROOT, 'src/detector.js'))) throw new Error('Kamelo Business zit niet in deze repo.');
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
   const skip = new Set(teams ? PUBLIC_ONLY : TEAMS_ONLY);
-  // Firefox krijgt geen Private Chat (alleen de tijdelijke chat), dus ook de Tinfoil-bundel voor Plus niet:
-  // dat scheelt bijna 1 MB en een broncodevraag bij de keuring van addons.mozilla.org.
+  // Firefox kent geen offscreen-documenten, dus ook geen OCR: vendor/ (tesseract) gaat niet mee (zie firefoxManifest).
   if (firefox) skip.add('vendor');
   fs.mkdirSync(dir, { recursive: true });
   for (const entry of CONTENTS) {

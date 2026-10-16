@@ -385,7 +385,8 @@
     in: '∈', notin: '∉', subset: '⊂', subseteq: '⊆', cup: '∪', cap: '∩', forall: '∀', exists: '∃', neg: '¬', land: '∧', lor: '∨', circ: '∘', degree: '°',
     sum: '∑', prod: '∏', int: '∫', iint: '∬', oint: '∮', lim: 'lim', cdots: '⋯', ldots: '…', dots: '…', angle: '∠', perp: '⊥', parallel: '∥', triangle: '△',
     langle: '⟨', rangle: '⟩', lfloor: '⌊', rfloor: '⌋', lceil: '⌈', rceil: '⌉', ast: '∗', star: '⋆', bullet: '•', percent: '%', '%': '%', '$': '$', '#': '#', '&': '&',
-    '{': '{', '}': '}', '|': '‖', lvert: '|', rvert: '|', lbrace: '{', rbrace: '}', setminus: '∖', emptyset: '∅', Re: 'ℜ', Im: 'ℑ', aleph: 'ℵ' };
+    '{': '{', '}': '}', '|': '‖', lvert: '|', rvert: '|', lbrace: '{', rbrace: '}', setminus: '∖', emptyset: '∅', Re: 'ℜ', Im: 'ℑ', aleph: 'ℵ',
+    therefore: '∴', because: '∵', cong: '≅', simeq: '≃', ll: '≪', gg: '≫', prime: '′', vdots: '⋮', ddots: '⋱', checkmark: '✓', colon: ':', mid: '|', nmid: '∤', ni: '∋' };
   const FUNCS = /^(sin|cos|tan|cot|sec|csc|arcsin|arccos|arctan|sinh|cosh|tanh|log|ln|lg|exp|max|min|det|gcd|deg|dim|ker|arg|sup|inf|mod|Pr)$/;
   const BIG = /^(sum|prod|int|iint|oint|lim|max|min|sup|inf)$/;
   const ACCENT = { vec: '→', hat: '^', bar: '¯', overline: '¯', tilde: '~', dot: '˙', ddot: '¨', widehat: '^', overrightarrow: '→' };
@@ -486,11 +487,22 @@
           return fence ? h('mrow', {}, h('mo', { stretchy: 'true' }, fence[0]), tbl, fence[1] ? h('mo', { stretchy: 'true' }, fence[1]) : null) : tbl;
         }
         if (n === 'end') { rawGroup(); return null; }
+        // \boxed{5}: de uitkomst in een kader (chat.css .boxed). Kleur en leegte laten we weg, de inhoud blijft.
+        if (n === 'boxed' || n === 'fbox' || n === 'framebox') return h('mrow', { class: 'boxed' }, arg());
+        if (n === 'color') { rawGroup(); return null; }
+        if (n === 'textcolor' || n === 'colorbox') { rawGroup(); return arg(); }
+        if (n === 'underbrace' || n === 'overbrace' || n === 'cancel' || n === 'bcancel' || n === 'xcancel' || n === 'boldsymbol' || n === 'bm' || n === 'pmb') return arg();
+        if (n === 'phantom' || n === 'hphantom' || n === 'vphantom') { arg(); return h('mspace', { width: '0.5em' }); }
+        if (n === 'hline' || n === 'newline' || n === 'nonumber' || n === 'notag' || n === 'label') { if (n === 'label') rawGroup(); return null; }
         if (n in GREEK) return h('mi', {}, GREEK[n]);
         if (FUNCS.test(n)) { const m = h(BIG.test(n) ? 'mo' : 'mi', BIG.test(n) ? { movablelimits: 'true' } : { mathvariant: 'normal' }, n); m.big = BIG.test(n); return m; }
         if (n in OPS) { const m = h('mo', BIG.test(n) ? { largeop: 'true', movablelimits: 'true' } : {}, OPS[n]); m.big = BIG.test(n); return m; }
         if (n === 'displaystyle' || n === 'limits' || n === 'nolimits' || n === 'textstyle') return null;
-        return h('mtext', {}, n); // onbekend: de naam als tekst, zodat er niets verdwijnt
+        // Onbekend met een {groep} erachter (\mathsf{x}, \emph{y}): alleen de inhoud. Zonder groep: de naam als tekst, zodat er
+        // niets verdwijnt. (Vroeger werd \boxed{5} zo "boxed5".)
+        ws();
+        if (s[i] === '{') return arg();
+        return h('mtext', {}, n);
       }
       i++;
       if (c === '}') return null;
@@ -499,7 +511,7 @@
       return h('mo', {}, c);
     }
     const body = row(null);
-    return h('math', display ? { display: 'block' } : {}, body.tag === 'mrow' ? body.kids : [body]);
+    return h('math', display ? { display: 'block' } : {}, body.tag === 'mrow' && !body.attrs.class ? body.kids : [body]);
   }
   // Voor kopiëren en Word: een formule als leesbare tekst (x², √x, a/b).
   const SUPS = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹', '-': '⁻', '+': '⁺', n: 'ⁿ', i: 'ⁱ' };
@@ -553,9 +565,326 @@
   const isTableSep = l => /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(l);
   const cells = l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
 
+  // Een blok tussen ``` (of ~~~): de taal achter de streepjes, de regels erin, en of het al dicht is.
+  function readFence(lines, i) {
+    const m = lines[i].match(FENCE), mark = m[1][0] === '`' ? '```' : '~~~', body = [];
+    let closed = false;
+    if (m[3] && !/^```/.test(m[3])) body.push(m[3]);
+    for (i++; i < lines.length; i++) {
+      if (new RegExp(`^\\s*${mark}`).test(lines[i])) { closed = true; i++; break; }
+      body.push(lines[i]);
+    }
+    return { lang: (m[2] || '').toLowerCase(), src: body.join('\n'), closed, next: i };
+  }
+
+  // ---------- Melo's onderdelen (generatieve UI): brief, checklist, stappenplan, vergelijking ----------
+  // Net als bij een grafiek schrijft de AI een eenvoudig blok met gewone regels; Kamelo tekent het hier, als elementen:
+  //   ```letter              ```checklist            ```steps                    ```compare
+  //   Beste [naam],          title: Naar de huisarts  title: Huurtoeslag          title: Huren of kopen
+  //   …                      - Verzekeringspas        1. DigiD: vraag het aan     option: Huren
+  //   Met vriendelijke groet, - Medicijnenlijst       2. Inloggen: op …           pro: … / con: …
+  //   [je naam]              ```                      ```                         option: Kopen …
+  //   ```
+  // [je naam] wordt een klein invulveld. Wat iemand invult of aanvinkt, leeft alleen in dit venster (state) en gaat nooit naar
+  // de AI; kopiëren, pdf en Word nemen het mee via flatten(). Een blok dat niet klopt, wordt gewone tekst. Welke onderdelen er
+  // zijn, kiest chat.js per editie (parts); Kamelo Business voegt eigen onderdelen toe met addPart (chat/rich-werk.js, niet in
+  // de gratis editie). Niets opent een link of verstuurt iets: alleen tekst, invulvelden, vinkjes en knoppen in dit venster.
+  const PARTS = new Map();
+  const addPart = (kind, def) => { PARTS.set(kind, def); };
+  // Welk onderdeel hoort bij ```tag, binnen wat deze editie toelaat (dezelfde tag kan per editie iets anders zijn).
+  const OTHER_PARTS = /^(letter|e-?mail|checklist|todo|steps|compare|actions?|action-?items|actiepunten|decision|beslissing)$/;
+  const partOf = (tag, allowed) => (tag && allowed ? allowed.find(k => PARTS.get(k)?.tags.test(tag)) || null : null);
+  // Teksten in het onderdeel: via chat.js (I.t, vijf talen), anders Engels (tests, afdrukpagina).
+  const EN = {
+    letter: 'Letter', email: 'Email', checklist: 'Checklist', steps: 'Step by step', compare: 'Comparison', actions: 'Action items', decision: 'Decision',
+    toFill: '{n} to fill in', filled: 'All filled in', done: '{n} of {total} done', pros: 'Pros', cons: 'Cons', writing: 'Writing…',
+    yourName: 'your name', stays: 'What you fill in stays in this window. It never goes to the AI.',
+    staysWork: 'Only you see what you fill in and the restored details. They never go to the AI.',
+    to: 'To', subject: 'Subject', who: 'Who', what: 'What', when: 'When', total: 'Total', weight: 'Weight {n}', best: 'Highest score',
+    weightHint: 'Tap a weight to make a criterion count more.', step: 'Mark step {n} as done',
+  };
+  function say(ctx, key, vars = {}) {
+    const k = `pchatPart${key[0].toUpperCase()}${key.slice(1)}`;
+    let s = ctx?.t?.(k, vars);
+    if (!s || s === k) s = EN[key];
+    return String(s).replace(/\{(\w+)\}/g, (m, v) => (v in vars ? vars[v] : m));
+  }
+  // [je naam], [datum], [adres huisbaas]: een invulveld. Niet: [PERSON_1] (afgeschermd, Business), [x] en [ ] (vinkjes),
+  // [1] (bron), [tekst](link).
+  // Een lange uitleg tussen haken ("[Naam contactpersoon, indien bekend, anders: HR]") wordt een kort veld; de hele uitleg
+  // staat als tooltip.
+  const FIELD = /\[(?![A-Z][A-Z_]*_\d+\])(?!\s*[xX✓✔]?\s*\])(?=[^\]\n]*\p{L})([^[\]\n]{1,160})\](?!\()/gu;
+  const shortLabel = l => (String(l).trim().split(/\s*(?:[,:;(]|\s[-–—]\s|\b(?:indien|bijv(?:oorbeeld)?|zoals|if|e\.g\.|such as|z\.\s?B\.|falls|par exemple|si|por ejemplo|como|o sea)\b)/i)[0] || String(l).trim()).slice(0, 40).trim();
+  const hasField = s => { FIELD.lastIndex = 0; const r = FIELD.test(s); FIELD.lastIndex = 0; return r; };
+  const fieldKey = l => shortLabel(l).toLowerCase().replace(/\s+/g, ' ');
+  const fieldKeys = lines => [...new Set(lines.flatMap(l => [...String(l).matchAll(FIELD)].map(m => fieldKey(m[1]))))];
+  const inl = (s, ctx) => inlineTree(s, ctx.plain || (t => [t]));
+  // Een invulveld; even breed als wat erin staat. Hetzelfde veld (zelfde woorden) vult zich overal in de brief.
+  function fieldNode(label, ctx, st = {}, key = fieldKey(label)) {
+    const v = st.f?.[key] || '';
+    const short = shortLabel(label), long = label.trim() !== short ? label.trim() : null;
+    return h('input', { class: `fld${v ? ' on' : ''}`, type: 'text', 'data-k': key, value: v || null, placeholder: short, 'aria-label': long || short, title: long,
+      size: Math.max(3, Math.min(42, [...(v || short)].length + 1)), maxlength: 200, spellcheck: 'false', autocomplete: 'off', disabled: ctx.streaming ? '' : null });
+  }
+  // Een regel tekst met opmaak en invulvelden.
+  function fieldLine(line, ctx, st) {
+    const s = String(line).replace(/\*\*(\[[^\]\n]+\])\*\*/g, '$1');
+    const out = [];
+    let last = 0;
+    for (const m of s.matchAll(FIELD)) {
+      if (m.index > last) out.push(...inl(s.slice(last, m.index), ctx));
+      out.push(fieldNode(m[1], ctx, st));
+      last = m.index + m[0].length;
+    }
+    if (last < s.length) out.push(...inl(s.slice(last), ctx));
+    return out;
+  }
+  // Voor kopiëren en Word: het veld met wat er is ingevuld, anders [zoals de AI het schreef].
+  const fillLine = (line, st = {}) => String(line).replace(/\*\*(\[[^\]\n]+\])\*\*/g, '$1').replace(FIELD, (m, l) => st.f?.[fieldKey(l)] || m);
+  // Kleine lijn-iconen (24×24, zelfde stijl als de knoppen onder een antwoord).
+  const ICON = {
+    letter: ['M6 5.5h12A2.5 2.5 0 0 1 20.5 8v8a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 16V8A2.5 2.5 0 0 1 6 5.5Z', 'm4.5 7.5 7.5 5.5 7.5-5.5'],
+    checklist: ['m4 7.5 1.8 1.8L9 6', 'm4 15.5 1.8 1.8L9 14', 'M12.5 8H20', 'M12.5 16H20'],
+    steps: ['M5 4.5h1.5v5', 'M10 7h10', 'M10 16h10', 'M4.6 14.3c.4-.6 1-.9 1.6-.9.9 0 1.5.6 1.5 1.4 0 1.3-3.1 2.3-3.1 3.8h3.2'],
+    compare: ['M5.5 4.5h3A1.5 1.5 0 0 1 10 6v12a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 4 18V6a1.5 1.5 0 0 1 1.5-1.5Z', 'M15.5 4.5h3A1.5 1.5 0 0 1 20 6v12a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 14 18V6a1.5 1.5 0 0 1 1.5-1.5Z'],
+    actions: ['M9 4.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z', 'M3.5 19.5c.7-3 2.9-4.7 5.5-4.7s4.8 1.7 5.5 4.7', 'm15.5 10 1.8 1.8 3.4-3.6'],
+    decision: ['M4 19.5h16', 'M7 16.5v-5', 'M12 16.5V5', 'M17 16.5v-8'],
+    check: ['m6.5 12.5 3.5 3.5 7.5-8'], minus: ['M7.5 12h9'], person: ['M12 4.5a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z', 'M5.5 19.5c.8-3.2 3.4-5 6.5-5s5.7 1.8 6.5 5'],
+    when: ['M6.5 5.5h11a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2Z', 'M4.5 10h15', 'M8.5 3.5v3', 'M15.5 3.5v3'],
+  };
+  ICON.email = ICON.letter;
+  const icon = (name, cls = 'ic') => h('svg', { class: cls, viewBox: '0 0 24 24', 'aria-hidden': 'true' }, (ICON[name] || []).map(d => h('path', { d })));
+  // Voortgang als ring: n van total.
+  const RING_R = 7.5, RING_C = 2 * Math.PI * RING_R;
+  const ringOffset = (n, total) => (RING_C * (1 - (total ? Math.min(1, n / total) : 0))).toFixed(2);
+  const ring = (n, total) => h('svg', { class: 'ring', viewBox: '0 0 20 20', 'aria-hidden': 'true' },
+    h('circle', { class: 'rt', cx: 10, cy: 10, r: RING_R }),
+    h('circle', { class: 'rf', cx: 10, cy: 10, r: RING_R, 'stroke-dasharray': RING_C.toFixed(2), 'stroke-dashoffset': ringOffset(n, total), transform: 'rotate(-90 10 10)' }));
+  // Kop van een onderdeel: icoon, titel (of de soort), daaronder de soort, en rechts hoe ver je bent ({ n, total, text }).
+  // Zo min mogelijk tekst (Lucas: "minder text"): icoon en titel, rechts een ring met 2/5. De uitleg ("Nog 2 in te vullen",
+  // "blijft in dit venster") staat alleen als tooltip en voor schermlezers.
+  const head = (kind, ctx, title, prog, note = '') => {
+    const full = prog && prog.n >= prog.total;
+    return h('div', { class: 'ph' },
+      h('span', { class: 'pi', title: note || say(ctx, kind), 'aria-label': say(ctx, kind), role: 'img' }, icon(kind)),
+      h('div', { class: 'pt' }, title?.length ? title : say(ctx, kind)),
+      prog ? h('div', { class: `pp${full ? ' full' : ''}`, title: prog.text, 'aria-label': prog.text, 'aria-live': 'polite' }, ring(prog.n, prog.total), h('span', { class: 'ppt' }, `${prog.n}/${prog.total}`)) : null);
+  };
+  const KEYVAL = /^\s*([\p{L} ]{1,24}?)\s*[:=]\s*(.*)$/u;
+  const TITLE = /^(title|titel|titre|t[ií]tulo|thema|topic)$/i;
+  const clean = s => String(s).replace(/^\s*(?:[-*•+]|\d+[.)])\s+/, '').replace(/^\*\*(.+)\*\*:?$/, '$1').trim();
+  const lines = src => String(src).replace(/\r/g, '').split('\n');
+
+  // Brief of e-mail. Vooraan mag "Onderwerp: …"; een ondertekening zonder naam krijgt een veld voor je naam.
+  const SIGNOFF = /^(met )?(vriendelijke|hartelijke|warme|lieve) groet(en)?\b|^groet(jes|en)?\b|^(veel )?liefs\b|^(kind|best|warm|kindest) (regards|wishes)\b|^regards\b|^(yours )?(sincerely|faithfully|truly)\b|^best,?$|^cheers\b|^(mit )?(freundlichen|herzlichen|besten|lieben) gr[üu](ß|ss)en\b|^(viele |liebe )?gr[üu](ß|ss)e\b|^(bien )?cordialement\b|^(sinc[eè]res )?salutations\b|^bien [àa] (toi|vous)\b|^(je vous prie|veuillez agr[ée]er)\b|^atentamente\b|^(un )?saludos?( cordiales)?\b|^cordialmente\b|^un abrazo\b/i;
+  const SUBJECT = /^\**(subject|onderwerp|betreff|objet|asunto|re)\**\s*:\s*\**\s*(.*?)\**\s*$/i;
+  function letterParse(src, ctx, { header = /(?!)/ } = {}) {
+    const ls = lines(src).map(l => l.replace(/\s+$/, ''));
+    while (ls.length && !ls[0].trim()) ls.shift();
+    while (ls.length && !ls.at(-1).trim()) ls.pop();
+    const spec = { title: '', subject: '', head: [], lines: [] };
+    // kop: titel, onderwerp en (Business) aan wie; daarna de brief zelf
+    while (ls.length) {
+      const l = ls[0].trim();
+      let m;
+      if (!l) { ls.shift(); continue; }
+      if ((m = l.match(/^#{1,3}\s+(.+)$/)) && !spec.title) { spec.title = m[1].replace(/\*\*/g, ''); ls.shift(); continue; }
+      if ((m = l.match(KEYVAL)) && TITLE.test(m[1].trim()) && m[2] && !spec.title) { spec.title = m[2]; ls.shift(); continue; }
+      if ((m = l.match(SUBJECT)) && m[2]) { spec.subject = m[2]; ls.shift(); continue; }
+      if ((m = l.match(header))) { spec.head.push(m); ls.shift(); continue; }
+      break;
+    }
+    spec.lines = ls;
+    const words = ls.join(' ').match(/\p{L}{2,}/gu) || [];
+    if (ls.filter(l => l.trim()).length < 2 || words.length < 6 || ls.join('\n').length > 6000) return null;
+    // Ondertekening zonder naam eronder: Kamelo zet er zelf een veld voor je naam (de AI laat die soms weg).
+    const sign = ls.findLastIndex(l => SIGNOFF.test(clean(l)));
+    if (sign >= 0 && !ls.slice(sign + 1).some(l => l.trim())) ls.push(`[${say(ctx, 'yourName')}]`);
+    return spec;
+  }
+  // De brief als alinea's (een lege regel = nieuwe alinea), met invulvelden.
+  function letterBody(spec, ctx, st) {
+    const paras = [];
+    let cur = [];
+    for (const l of spec.lines) { if (l.trim()) cur.push(l.trim()); else if (cur.length) { paras.push(cur); cur = []; } }
+    if (cur.length) paras.push(cur);
+    return paras.map(p => h('p', {}, p.map((l, k) => [k ? h('br') : null, fieldLine(l.replace(/^#{1,4}\s+/, ''), ctx, st)])));
+  }
+  const fieldProgress = keys => (st = {}, ctx) => {
+    if (!keys.length) return null;
+    const open = keys.filter(k => !st.f?.[k]?.trim()).length;
+    return { n: keys.length - open, total: keys.length, text: open ? say(ctx, 'toFill', { n: open }) : say(ctx, 'filled') };
+  };
+  const letterKeys = spec => fieldKeys([spec.subject, ...spec.head.map(m => m[2]), ...spec.lines]);
+  const letterFlat = (spec, st) => [spec.title ? `### ${fillLine(spec.title, st)}` : '', spec.subject ? `**${fillLine(spec.subject, st)}**` : '', spec.lines.map(l => fillLine(l, st)).join('\n')].filter(Boolean).join('\n\n');
+  addPart('letter', {
+    tags: /^(letter|brief|e-?mail|mail|lettre|courriel|carta|correo|anschreiben|nachricht|mensaje)$/,
+    parse: letterParse,
+    progress: (spec, st, ctx) => fieldProgress(letterKeys(spec))(st, ctx),
+    tree(spec, ctx, st) {
+      const keys = letterKeys(spec);
+      return [
+        head('letter', ctx, spec.title ? fieldLine(spec.title, ctx, st) : null, fieldProgress(keys)(st, ctx), keys.length ? say(ctx, 'stays') : ''),
+        h('div', { class: 'pb letter' },
+          spec.subject ? h('p', { class: 'subj' }, fieldLine(spec.subject, ctx, st)) : null,
+          letterBody(spec, ctx, st)),
+      ];
+    },
+    flat: letterFlat,
+  });
+
+  // Checklist: één ding per regel. "- [x] …" staat al aangevinkt; een regel met een dubbele punt aan het eind is een kopje.
+  function listItems(src, { max = 40 } = {}) {
+    let title = '';
+    const items = [];
+    let group = '';
+    for (const raw of lines(src)) {
+      const l = raw.trim();
+      if (!l || /^```/.test(l) || /^[-*_]{3,}$/.test(l)) continue;
+      let m;
+      if (!items.length && !title && (m = l.match(/^#{1,4}\s+(.+)$/))) { title = clean(m[1]); continue; }
+      if ((m = l.match(KEYVAL)) && TITLE.test(m[1].trim())) { if (!title) title = m[2].trim(); continue; }
+      const bullet = /^\s*(?:[-*•+]|\d+[.)]|[☐☑✅✓✔□■])\s*/.test(raw) || /^\[[ xX✓]\]/.test(l);
+      if (!bullet && /:\s*$/.test(l) && l.length <= 60) { group = clean(l.replace(/:\s*$/, '')); continue; }
+      if (!bullet && (m = l.match(/^#{1,4}\s+(.+)$/))) { group = clean(m[1]); continue; }
+      let text = l.replace(/^(?:[-*•+]|\d+[.)])\s*/, '');
+      const box = text.match(/^(?:\[\s*([xX✓✔]?)\s*\]|([☐□])|([☑✅✓✔■]))\s*/);
+      const checked = !!(box && (box[1] || box[3]));
+      if (box) text = text.slice(box[0].length);
+      text = text.trim();
+      if (text && /\p{L}|\p{N}/u.test(text)) items.push({ text: text.slice(0, 300), group, checked });
+    }
+    return items.length >= 2 && items.length <= max ? { title, items } : null;
+  }
+  const checked = (st = {}, i, item) => (st.c && i in st.c ? !!st.c[i] : !!item.checked);
+  const doneOf = (spec, st, ctx) => { const n = spec.items.filter((it, i) => checked(st, i, it)).length; return { n, total: spec.items.length, text: say(ctx, 'done', { n, total: spec.items.length }) }; };
+  addPart('checklist', {
+    tags: /^(checklist|check-?list|checkliste|todo|to-do|todos|lijst|lijstje|list|liste|lista|paklijst|packliste)$/,
+    parse: src => listItems(src),
+    progress: doneOf,
+    tree(spec, ctx, st) {
+      const rows = [];
+      let group = '';
+      spec.items.forEach((it, i) => {
+        if (it.group && it.group !== group) { group = it.group; rows.push(h('div', { class: 'grp' }, inl(group, ctx))); }
+        const on = checked(st, i, it);
+        rows.push(h('label', { class: `ck${on ? ' done' : ''}` },
+          h('input', { type: 'checkbox', 'data-i': i, checked: on ? '' : null, disabled: ctx.streaming ? '' : null }),
+          h('span', {}, inl(it.text, ctx))));
+      });
+      return [head('checklist', ctx, spec.title ? inl(spec.title, ctx) : null, doneOf(spec, st, ctx)), h('div', { class: 'pb' }, h('div', { class: 'cks' }, rows))];
+    },
+    flat(spec, st) {
+      let group = '';
+      const out = spec.title ? [`**${spec.title}**`, ''] : [];
+      spec.items.forEach((it, i) => {
+        if (it.group && it.group !== group) { group = it.group; out.push('', `**${group}**`, ''); }
+        out.push(`- ${checked(st, i, it) ? '☑' : '☐'} ${it.text}`);
+      });
+      return out.join('\n').trim();
+    },
+  });
+
+  // Stappenplan: genummerde stappen, "kop: uitleg". Een regel zonder nummer hoort bij de stap erboven.
+  function stepItems(src) {
+    let title = '';
+    const steps = [];
+    for (const raw of lines(src)) {
+      const l = raw.trim();
+      if (!l || /^```/.test(l)) continue;
+      let m;
+      if (!steps.length && (m = l.match(/^#{1,4}\s+(.+)$/))) { title = clean(m[1]); continue; }
+      if ((m = l.match(KEYVAL)) && TITLE.test(m[1].trim())) { if (!title) title = m[2].trim(); continue; }
+      const num = l.match(/^(?:(?:stap|step|schritt|[ée]tape|paso)\s*(\d+)\s*[:.)-]|(\d+)\s*[.)]|[-*•+])\s*(.*)$/i);
+      if (num) {
+        let text = num[3].trim().replace(/^\*\*(.+?)\*\*\s*/, (x, b) => `${b} `);
+        let detail = '';
+        const split = text.match(/^(.{2,70}?)(?:\s*:\s+|\s+[—–]\s+)(.{2,})$/);
+        if (split) { text = split[1].trim(); detail = split[2].trim().replace(/^\p{Ll}/u, c => c.toUpperCase()); }
+        if (/\p{L}/u.test(text)) steps.push({ text: text.replace(/:$/, ''), detail });
+        continue;
+      }
+      if (steps.length) steps.at(-1).detail = `${steps.at(-1).detail} ${l}`.trim();
+      else if (!title && l.length <= 80) title = clean(l.replace(/:$/, ''));
+    }
+    return steps.length >= 2 && steps.length <= 15 ? { title, items: steps } : null;
+  }
+  addPart('steps', {
+    tags: /^(steps|stappen|stappenplan|plan|schritte|[ée]tapes|pasos|howto|how-to)$/,
+    parse: stepItems,
+    progress: doneOf,
+    tree(spec, ctx, st) {
+      // De eerste stap die nog niet gedaan is, is "nu" (zacht gemarkeerd).
+      const now = spec.items.findIndex((s, i) => !checked(st, i, s));
+      return [head('steps', ctx, spec.title ? inl(spec.title, ctx) : null, doneOf(spec, st, ctx)),
+        h('div', { class: 'pb' },
+          h('ol', { class: 'stp' }, spec.items.map((s, i) => {
+            const on = checked(st, i, s);
+            return h('li', { class: on ? 'done' : i === now ? 'now' : null },
+              h('button', { type: 'button', class: 'num', 'data-i': i, 'aria-pressed': String(on), 'aria-label': say(ctx, 'step', { n: i + 1 }), disabled: ctx.streaming ? '' : null }, on ? icon('check') : String(i + 1)),
+              h('div', { class: 'sx' }, h('b', {}, inl(s.text, ctx)), s.detail ? h('p', {}, inl(s.detail, ctx)) : null));
+          })))];
+    },
+    flat: (spec, st) => [spec.title ? `**${spec.title}**\n` : '', ...spec.items.map((s, i) => `${i + 1}. ${checked(st, i, s) ? '✓ ' : ''}${s.text}${s.detail ? `: ${s.detail}` : ''}`)].filter(Boolean).join('\n'),
+  });
+
+  // Vergelijking: twee (of drie) opties naast elkaar, met voor- en nadelen.
+  const OPTION = /^(option|optie|keuze|choice|wahl|opci[oó]n|alternatie[fv]|alternative|variant|variante)\s*\d*$|^[A-C]$/i;
+  const PRO = /^(pros?|voorde(el|len)|pluspunt(en)?|plus|vorteile?|avantages?|ventajas?|positie[fv]|good|\+)$/i;
+  const CON = /^(cons?|nade(el|len)|minpunt(en)?|minus|nachteile?|inconv[ée]nients?|d[ée]savantages?|desventajas?|negatie[fv]|bad|[-−–])$/i;
+  function compareParse(src) {
+    let title = '';
+    const opts = [];
+    let sec = null;
+    const add = (where, text) => { const o = opts.at(-1); if (o && text && /\p{L}|\p{N}/u.test(text)) o[where].push(text.slice(0, 200)); };
+    for (const raw of lines(src)) {
+      const l = raw.trim();
+      if (!l || /^```/.test(l)) continue;
+      let m;
+      if ((m = l.match(KEYVAL)) && TITLE.test(m[1].trim())) { if (!title) title = m[2].trim(); continue; }
+      if ((m = l.match(/^(?:[-*•]\s*)?([^:]{1,30}?)\s*:\s*(.*)$/)) && !/^[+−–]/.test(l)) {
+        const key = m[1].replace(/\*\*/g, '').trim(), val = m[2].trim();
+        if (OPTION.test(key)) { if (val) { opts.push({ name: val.replace(/\*\*/g, ''), pros: [], cons: [] }); sec = null; } continue; }
+        if (PRO.test(key)) { sec = 'pros'; add('pros', val); continue; }
+        if (CON.test(key)) { sec = 'cons'; add('cons', val); continue; }
+        if (!val && !/^[-*•]/.test(l)) { opts.push({ name: key, pros: [], cons: [] }); sec = null; continue; }
+      }
+      if ((m = l.match(/^(?:#{1,4}\s+|\*\*)(.+?)(?:\*\*)?:?$/)) && !/^[+−–-]\s/.test(l)) { opts.push({ name: m[1].replace(/\*\*/g, '').trim(), pros: [], cons: [] }); sec = null; continue; }
+      if ((m = l.match(/^(\+|➕|✅|✓)\s*(.+)$/))) { add('pros', m[2].trim()); continue; }
+      if ((m = l.match(/^(−|–|➖|❌|✗)\s*(.+)$/))) { add('cons', m[2].trim()); continue; }
+      if ((m = l.match(/^[-*•]\s*(.+)$/))) { add(sec || 'cons', m[1].trim()); continue; }
+    }
+    // "pro: flexibel, minder onderhoud, lagere kosten": de AI zet ze vaak op één regel; dan elk een eigen punt.
+    const split = list => (list.length === 1 && (list[0].replace(/\([^()]*\)/g, '').match(/,\s/g) || []).length >= 2
+      ? list[0].replace(/[.;]\s*$/, '').split(/,\s+(?![^()]*\))/).map(x => x.trim().replace(/^\p{Ll}/u, c => c.toUpperCase())).filter(Boolean) : list);
+    for (const o of opts) { o.pros = split(o.pros); o.cons = split(o.cons); }
+    const ok = opts.filter(o => o.pros.length || o.cons.length);
+    return ok.length >= 2 && ok.length <= 3 && ok.length === opts.length ? { title, opts: ok } : null;
+  }
+  addPart('compare', {
+    tags: /^(compare|comparison|vergelijk|vergelijking|vergleich|comparer|comparaison|comparar|comparaci[oó]n|pros-?cons|versus|vs)$/,
+    parse: compareParse,
+    tree(spec, ctx) {
+      const list = (cls, mark, label, items) => (items.length ? h('ul', { class: `pc ${cls}`, 'aria-label': label }, items.map(x => h('li', {}, h('span', { class: 'mk' }, icon(mark)), h('span', {}, inl(x, ctx))))) : null);
+      return [head('compare', ctx, spec.title ? inl(spec.title, ctx) : null),
+        h('div', { class: 'pb' },
+          h('div', { class: `cmp n${spec.opts.length}` }, spec.opts.map((o, k) => h('div', { class: 'opt' },
+            h('div', { class: 'on' }, inl(o.name, ctx)),
+            list('plus', 'check', say(ctx, 'pros'), o.pros), list('min', 'minus', say(ctx, 'cons'), o.cons)))))];
+    },
+    flat: spec => [spec.title ? `**${spec.title}**` : '', ...spec.opts.map(o => [`**${o.name}**`, ...o.pros.map(x => `- + ${x}`), ...o.cons.map(x => `- − ${x}`)].join('\n'))].filter(Boolean).join('\n\n'),
+  });
+
+  // Een onderdeel als boom: een kaart met data-n (welk onderdeel in dit antwoord) voor de state.
+  function partTree(kind, spec, ctx, n) {
+    return h('div', { class: `part ${kind}`, 'data-kind': kind, 'data-n': n }, PARTS.get(kind).tree(spec, ctx, ctx.state?.[n] || {}, n));
+  }
+
   // Tekst → boom. plain(tekst) geeft de stukjes gewone tekst terug (chat.js zet daar de echte gegevens terug).
   // drawing: wat er staat zolang een grafiek nog binnenkomt (woord voor woord).
-  function parse(text, { lang = 'en', plain = t => [t], streaming = false, drawing = '…' } = {}) {
+  // parts: de onderdelen die deze editie tekent (bijv. ['letter', 'checklist']); state: wat er al is ingevuld.
+  function parse(text, { lang = 'en', plain = t => [t], streaming = false, drawing = '…', parts = null, state = null, t = null, seen = null } = {}) {
+    const ctx = { lang, plain, streaming, drawing, parts, state, t, seen: seen || { n: 0, specs: [] } };
     const lines = String(text).replace(/\r/g, '').split('\n');
     const out = [];
     const startsBlock = (l, next) => FENCE.test(l) || /^\s*(type|soort)\s*:\s*(stacked|stapel|bar|staaf|line|lijn|pie|taart|function|functie)/i.test(l) || /^\s*(\$\$|\\\[)/.test(l) || /^\s{0,3}#{1,6}\s/.test(l) || isHr(l) || LIST.test(l) || (isTableRow(l) && next != null && isTableSep(next));
@@ -563,16 +892,22 @@
       const l = lines[i];
       if (!l.trim()) { i++; continue; }
       let m;
-      if ((m = l.match(FENCE))) {
-        const mark = m[1][0], lang2 = (m[2] || '').toLowerCase();
-        const body = [];
-        let closed = false;
-        if (m[3] && !/^```/.test(m[3])) body.push(m[3]);
-        for (i++; i < lines.length; i++) {
-          if (new RegExp(`^\\s*${mark === '`' ? '```' : '~~~'}`).test(lines[i])) { closed = true; i++; break; }
-          body.push(lines[i]);
+      if (FENCE.test(l)) {
+        const { lang: lang2, src, closed, next } = readFence(lines, i);
+        i = next;
+        // Een onderdeel (brief, checklist, …): pas tekenen als het blok dicht is. Klopt het niet, dan gewone tekst.
+        const kind = partOf(lang2, parts);
+        if (kind) {
+          const n = ctx.seen.n++;
+          if (!closed && streaming) { out.push(h('div', { class: 'part drawing' }, say(ctx, 'writing'))); continue; }
+          const spec = PARTS.get(kind).parse(src, ctx);
+          ctx.seen.specs[n] = spec && { kind, spec };
+          if (spec) out.push(partTree(kind, spec, ctx, n));
+          else out.push(...parse(src.replace(/^\s*(```|~~~).*$/gm, ''), { ...ctx, parts: null }));
+          continue;
         }
-        const src = body.join('\n');
+        // Een onderdeel van de andere editie (bijv. ```decision in de gratis editie): gewone tekst, geen codeblok.
+        if (parts && OTHER_PARTS.test(lang2)) { out.push(...parse(src, { ...ctx, parts: null })); continue; }
         const wantsChart = /^(chart|graph|grafiek|plot|diagram|diagramm|graphique|gr[aá]fico|bar|line|pie|function)$/.test(lang2) || (/^(json|yaml|)$/.test(lang2) && /\b(type|series|datasets|labels|functions?)\b/i.test(src));
         if (wantsChart && !closed && streaming) { out.push(h('div', { class: 'chart drawing' }, drawing)); continue; }
         const spec = wantsChart ? parseChart(src, lang2) : null;
@@ -651,16 +986,24 @@
     return out;
   }
 
-  // In de pagina: tekst → elementen in el. plain(tekst, ouder) mag zelf iets toevoegen (bijv. groene teruggezette gegevens).
-  function render(text, el, { lang = 'en', plain = null, streaming = false, drawing = '…' } = {}) {
-    const doc = el.ownerDocument;
+  // Boom → DOM. plain geeft een element terug: we zetten een merkteken in de boom en vullen het daarna met de echte DOM.
+  function build(doc, plain, make) {
     let n = 0;
     const holders = new Map();
-    // plain geeft een element terug: we zetten een merkteken in de boom en vullen het daarna met de echte DOM.
     const mark = t => { if (!plain) return [t]; const id = `p${n++}`; holders.set(id, t); return [h('kamelo-t', { 'data-i': id })]; };
     const frag = doc.createDocumentFragment();
-    for (const node of parse(text, { lang, plain: mark, streaming, drawing })) frag.append(toDom(node, doc));
+    for (const node of [].concat(make(mark))) frag.append(toDom(node, doc));
     if (plain) for (const ph of frag.querySelectorAll('kamelo-t')) { const span = doc.createDocumentFragment(); plain(holders.get(ph.dataset.i), span); ph.replaceWith(span); }
+    return frag;
+  }
+
+  // In de pagina: tekst → elementen in el. plain(tekst, ouder) mag zelf iets toevoegen (bijv. groene teruggezette gegevens).
+  // parts en state: zie parse. Invullen en aanvinken werkt alleen in dit venster; state onthoudt het (ook als het antwoord
+  // opnieuw getekend wordt) en flatten() neemt het mee bij kopiëren, pdf en Word.
+  function render(text, el, { lang = 'en', plain = null, streaming = false, drawing = '…', parts = null, state = null, t = null } = {}) {
+    const doc = el.ownerDocument;
+    const ctx = { lang, streaming, drawing, parts, state: state || {}, t, seen: { n: 0, specs: [] } };
+    const frag = build(doc, plain, mark => parse(text, { ...ctx, plain: mark }));
     // Elke grafiek een eigen clipPath-id (er kunnen er meer op het scherm staan).
     for (const svg of frag.querySelectorAll('svg')) {
       const cp = svg.querySelector('clipPath');
@@ -669,10 +1012,122 @@
       cp.id = id;
       svg.querySelectorAll('[clip-path]').forEach(p => p.setAttribute('clip-path', `url(#${id})`));
     }
+    if (ctx.seen.n) { el._kamelo = { ctx, plain, specs: ctx.seen.specs }; wire(el); }
     el.append(frag);
   }
+  // Invullen, aanvinken en wegen: één keer per antwoord luisteren (het antwoord wordt woord voor woord opnieuw getekend).
+  function wire(el) {
+    if (el._kameloWired) return;
+    el._kameloWired = true;
+    const at = node => {
+      const p = node?.closest?.('.part[data-n]');
+      const k = el._kamelo, n = p ? +p.dataset.n : -1, s = k?.specs[n];
+      if (!p || !el.contains(p) || !s) return null;
+      return { p, n, s, k, st: (k.ctx.state[n] ||= {}) };
+    };
+    const sync = ({ p, s, st, k }) => {
+      const pp = p.querySelector(':scope > .ph .pp'), def = PARTS.get(s.kind), prog = pp && def.progress?.(s.spec, st, k.ctx);
+      if (!prog) return;
+      const full = prog.n >= prog.total;
+      pp.querySelector('.ppt').textContent = `${prog.n}/${prog.total}`;
+      pp.title = prog.text; pp.setAttribute('aria-label', prog.text);
+      pp.querySelector('.rf')?.setAttribute('stroke-dashoffset', ringOffset(prog.n, prog.total));
+      pp.classList.toggle('full', full);
+    };
+    el.addEventListener('input', e => {
+      const f = e.target, a = f.matches?.('input.fld') && at(f);
+      if (!a) return;
+      const v = f.value.slice(0, 200);
+      (a.st.f ||= {})[f.dataset.k] = v;
+      for (const o of a.p.querySelectorAll('input.fld')) {
+        if (o.dataset.k !== f.dataset.k) continue;
+        if (o !== f) o.value = v;
+        o.classList.toggle('on', !!v.trim());
+        o.size = Math.max(3, Math.min(42, [...(v || o.placeholder)].length + 1));
+      }
+      sync(a);
+    });
+    el.addEventListener('change', e => {
+      const c = e.target, a = c.matches?.('input[type="checkbox"][data-i]') && at(c);
+      if (!a) return;
+      (a.st.c ||= {})[c.dataset.i] = c.checked;
+      c.closest('.ck, .ar, tr')?.classList.toggle('done', c.checked);
+      sync(a);
+    });
+    el.addEventListener('click', e => {
+      const b = e.target.closest?.('button[data-i], button[data-w]'), a = b && at(b);
+      if (!a) return;
+      if (b.dataset.w != null) (a.st.w ||= {})[b.dataset.w] = b.dataset.v ? +b.dataset.v : ((a.st.w[b.dataset.w] || 1) % 3) + 1; // gewicht ×1, ×2 of ×3
+      else (a.st.c ||= {})[b.dataset.i] = !(a.st.c?.[b.dataset.i] ?? a.s.spec.items?.[b.dataset.i]?.checked);
+      // Opnieuw tekenen (vinkje, totalen); de focus blijft op dezelfde knop.
+      const sel = b.dataset.w != null ? `button[data-w="${b.dataset.w}"]${b.dataset.v ? `[data-v="${b.dataset.v}"]` : ''}` : `button[data-i="${b.dataset.i}"]`;
+      const frag = build(el.ownerDocument, a.k.plain, mark => partTree(a.s.kind, a.s.spec, { ...a.k.ctx, plain: mark }, a.n));
+      const fresh = frag.firstElementChild;
+      a.p.replaceWith(frag);
+      fresh?.querySelector(sel)?.focus();
+    });
+  }
 
-  const api = { compile, parseChart, chartTree, texTree, texText, treeText, parse, render, toXml, num };
+  // Voor kopiëren, pdf en Word: elk onderdeel als gewone tekst met opmaak, met wat er is ingevuld en aangevinkt.
+  // Zelfde volgorde (en dus dezelfde state) als render, omdat beide dezelfde blokken in dezelfde volgorde lezen.
+  function flatten(text, { parts = null, state = {}, t = null, lang = 'en' } = {}) {
+    if (!parts?.length) return String(text ?? '');
+    const ctx = { lang, t, parts, plain: x => [x] };
+    const ls = String(text ?? '').replace(/\r/g, '').split('\n'), out = [];
+    let n = 0;
+    for (let i = 0; i < ls.length;) {
+      if (!FENCE.test(ls[i])) { out.push(ls[i++]); continue; }
+      const f = readFence(ls, i), kind = partOf(f.lang, parts);
+      if (!kind) { out.push(...ls.slice(i, f.next)); i = f.next; continue; }
+      const def = PARTS.get(kind), spec = def.parse(f.src, ctx);
+      out.push(spec ? def.flat(spec, state?.[n] || {}, ctx) : f.src.replace(/^\s*(```|~~~).*$/gm, ''));
+      n++; i = f.next;
+    }
+    return out.join('\n');
+  }
+
+  // Een brief zonder blok eromheen (de AI vergeet het soms): Kamelo zet hem er zelf in, van de aanhef tot en met de naam
+  // onder de groet. Zo worden [je naam] en [datum] ook dan invulvelden, en niet weggepoetst (guard.tidy laat blokken met rust).
+  const GREET = /^\**(beste|geachte|zeer geachte|hallo|hoi|lieve|dag|dear|hi|hello|hey|to whom|sehr geehrte[rs]?|liebe[rs]?|guten tag|hallo|madame|monsieur|bonjour|cher|ch[èe]re|salut|estimad[oa]s?|hola|querid[oa]s?|buenos d[ií]as|a quien)\b/i;
+  const LETTER_FENCE = /^\s*(```|~~~)\s*(letter|brief|e-?mail|mail|lettre|courriel|carta|correo)\b/im;
+  function asLetter(text, kind = 'letter') {
+    const s = String(text ?? '');
+    if (LETTER_FENCE.test(s)) return s;
+    const ls = s.replace(/\r/g, '').split('\n');
+    // De brief in een blok zonder soort (```, ```text, ```markdown): dat blok wordt de brief.
+    for (let i = 0; i < ls.length;) {
+      if (!FENCE.test(ls[i])) { i++; continue; }
+      const f = readFence(ls, i), body = lines(f.src);
+      if (/^(|te?xt|plain(text)?|markdown|md)$/.test(f.lang) && body.some(l => GREET.test(l.trim())) && body.some(l => SIGNOFF.test(clean(l)) || hasField(l))) {
+        ls[i] = '```' + kind;
+        return ls.join('\n');
+      }
+      i = f.next;
+    }
+    let start = ls.findIndex(l => { const x = l.trim(); return GREET.test(x) && x.length <= 80 && (/[,:]$/.test(x) || !/[.!?]$/.test(x)); });
+    if (start < 0) return s;
+    // het onderwerp vlak boven de aanhef hoort erbij
+    for (let k = start - 1; k >= Math.max(0, start - 3); k--) { const x = ls[k].trim(); if (SUBJECT.test(x)) { start = k; break; } if (x) break; }
+    let end = -1;
+    const sign = ls.findIndex((l, k) => k > start && SIGNOFF.test(clean(l)));
+    if (sign > 0) {
+      end = sign;
+      for (let k = sign + 1, took = 0; k < ls.length && took < 3; k++) {
+        const x = ls[k].trim();
+        if (!x) { if (took) break; continue; }
+        if (x.length > 60 || (/[.!?]$/.test(x) && !hasField(x))) break;
+        end = k; took++;
+      }
+    }
+    const lastField = ls.findLastIndex((l, k) => k >= start && hasField(l));
+    if (lastField > end && (end < 0 || lastField - end <= 3)) end = lastField;
+    if (end < 0 || ls.slice(start, end + 1).some(l => FENCE.test(l))) return s;
+    return [...ls.slice(0, start), '```' + kind, ...ls.slice(start, end + 1), '```', ...ls.slice(end + 1)].join('\n');
+  }
+
+  // Voor chat/rich-werk.js (Kamelo Business): dezelfde bouwstenen, zodat een eigen onderdeel er net zo uitziet en werkt.
+  const kit = { h, inl, say, head, icon, field: fieldNode, fieldLine, fieldKeys, fillLine, fieldProgress, letterParse, letterBody, letterFlat, checked, doneOf, listItems, KEYVAL, TITLE, SUBJECT, clean, lines, num };
+  const api = { compile, parseChart, chartTree, texTree, texText, treeText, parse, render, toXml, num, addPart, partOf, flatten, asLetter, kit };
   globalThis.KameloRich = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })();

@@ -24,16 +24,18 @@ jobs:
         run: node -e "JSON.parse(require('fs').readFileSync('manifest.json','utf8'))"
       - name: No network requests in extension code
         run: |
-          # chat/device.js (antwoorden op dit apparaat) hoort er ook bij; chat.js niet, die praat met de relay (Kamelo Plus).
+          # chat/ (Melo) hoort er helemaal bij: Melo antwoordt alleen op dit apparaat (geen chip of relay sinds 16 okt 2026).
           # Eén uitzondering: readLocal in src/teams/originals.js leest een blob:- of data:-adres dat al in de pagina
           # staat (een download van de AI-site), geen netwerk. Alleen de regels met "// lokaal: blob/data", en alleen
           # zolang de functie elk ander adres weigert (tests/teams-docs.test.js test dat ook).
-          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat/device.js --include='*.js' | grep -v "net-main.js" | grep -vE "^src/teams/originals\.js:[0-9]+:.*// lokaal: blob/data$"; then
+          if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat --include='*.js' | grep -v "net-main.js" | grep -vE "^src/teams/originals\.js:[0-9]+:.*// lokaal: blob/data$"; then
             echo "Network call found in extension code. Kamelo must not make network requests."; exit 1
           fi
           grep -qF "if (typeof href !== 'string' || !LOCAL.test(href)) throw" src/teams/originals.js && grep -qF "const LOCAL = /^(?:blob|data):/i;" src/teams/originals.js \
             || { echo "readLocal in src/teams/originals.js must refuse everything but blob: and data:."; exit 1; }
       - name: No secrets in the repository
+        # Alleen in de privé-repo: tools/check-secrets.mjs gaat niet mee naar kamelo-open.
+        if: hashFiles('tools/check-secrets.mjs') != ''
         # Sleutelpatronen (Anthropic, OpenAI, GitHub, AWS, …) en sleutels in toewijzingen (apiKey: "…", TOKEN=…).
         # In CI is er geen kamelo.env, dus alleen de patronen. Noemt alleen de soort en het bestand, nooit de waarde.
         run: node tools/check-secrets.mjs .

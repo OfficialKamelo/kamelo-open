@@ -1,8 +1,6 @@
 /* Popup van de gratis editie (public.html): klein en rustig. Bovenop popup.css; alleen wat hier anders is. */
-body.pub { width: 300px; padding-bottom: 14px; background: var(--surface); }
+body.pub { width: 300px; padding: 10px 0 14px; background: var(--surface); }
 html:has(body.pub) { background: var(--surface); }
-.pub .top { padding: 14px 16px 8px; }
-.pub .top h1 { font-size: 15px; }
 
 /* Beschermd: één regel met de schakelaar */
 .pub .status { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 14px; padding: 12px 14px;
@@ -33,8 +31,10 @@ html:has(body.pub) { background: var(--surface); }
 .pub-row .ico svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .pub-row .ico.green { color: var(--green-text); background: var(--ok-bg); }
 /* Melo: het logo (wit op lichtblauw), zoals het app-icoon in brand/melo */
-.pub-row .ico.melo { color: #fff; background: #4FC3E8; }
+.pub-row .ico.melo { color: #fff; background: #0C88FE; }
 .pub-row .ico.melo svg { width: 25px; height: 25px; fill: currentColor; stroke: none; }
+/* Tijdelijke chat: een volle paarse ballon, zonder tegel */
+.pub-row .ico.temp svg { width: 27px; height: 27px; fill: var(--indigo); stroke: none; }
 .pub-row .ico.purple { color: var(--private-fg); background: var(--private-bg); }
 .pub-row .txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .pub-row .txt b { font-size: 14px; font-weight: 600; }

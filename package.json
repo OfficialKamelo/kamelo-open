@@ -1,14 +1,13 @@
 {
   "name": "kamelo",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "license": "AGPL-3.0-only",
   "private": true,
   "description": "Kamelo: a browser extension that suggests a temporary chat or Melo, a private chat with on-device AI, when you type something personal into an AI chat.",
   "scripts": {
-    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topics-alledaags.test.js && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/release.test.mjs && node tests/device.test.js && node tests/rich.test.js && node tests/pack.test.mjs && node tests/check-secrets.test.mjs && node tests/talen.test.js",
-    "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs",
+    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topics-alledaags.test.js && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/device.test.js && node tests/rich.test.js && node tests/melo-face.test.js && node tests/reken.test.js && node tests/guard.test.js && node tests/pack.test.mjs && node tests/talen.test.js && node tests/chat-page.test.js",
+    "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs tests/browser/lees-pagina.test.mjs",
     "pack": "node tools/pack.mjs",
-    "release": "node tools/release.mjs",
     "pack:firefox": "node tools/pack.mjs --firefox"
   },
   "engines": {

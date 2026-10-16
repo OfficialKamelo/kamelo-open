@@ -213,3 +213,28 @@ export async function clickAnswerButton(page, selector) {
     await page.mouse.click(best.x, best.y);
   } finally { await cdp.detach(); }
 }
+
+// ---------- Melo met een nagebootste AI van Chrome (voor Melo's onderdelen) ----------
+// In de pagina (evaluateOnNewDocument): elke vraag krijgt het volgende antwoord uit `answers`, in stukjes zoals de echte AI.
+// window.lm.sent: wat er naar de AI ging; window.lm.initial: het gesprek waarmee een sessie begon.
+export function fakeLanguageModel(answers) {
+  window.lm = { sent: [], initial: [], answers: [...answers] };
+  Object.defineProperty(window, 'LanguageModel', { value: {
+    availability: async () => 'available',
+    create: async o => {
+      window.lm.initial.push(JSON.stringify(o?.initialPrompts || []));
+      return { destroy() {}, clone: async () => null, prompt: async () => 'ok',
+        async *promptStreaming(m) {
+          window.lm.sent.push(typeof m === 'string' ? m : JSON.stringify(m));
+          for (const w of (window.lm.answers.shift() ?? 'Ok.').match(/[\s\S]{1,16}/g)) { await new Promise(r => setTimeout(r, 5)); yield w; }
+        } };
+    },
+  } });
+}
+// Een vraag stellen in Melo en wachten tot het antwoord af is (de knoppen eronder staan er).
+export async function askMelo(page, q) {
+  const before = await page.$$eval('.thread:not([hidden]) .a .tools', t => t.length);
+  await page.evaluate(q => { const i = document.getElementById('input'); i.value = q; i.dispatchEvent(new Event('input', { bubbles: true })); document.getElementById('form').requestSubmit(); }, q);
+  await page.waitForFunction(n => document.querySelectorAll('.thread:not([hidden]) .a .tools').length > n && !document.querySelector('#send.stop'), { timeout: 10000, polling: 100 }, before)
+    .catch(async e => { throw new Error(`${e.message}\n${await page.evaluate(() => `${document.querySelector('#note')?.innerText}\n${document.querySelector('.thread:not([hidden])')?.innerText}\n${[...document.querySelectorAll('.a')].at(-1)?.outerHTML.replace(/<svg[\s\S]*?<\/svg>/g, '')}\n${JSON.stringify(window.lm?.sent)}`)}`); });
+}

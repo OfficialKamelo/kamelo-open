@@ -1,8 +1,8 @@
 # Kamelo Privacy Policy
 
-_Last updated: October 12, 2026 (version 1.5.0)_
+_Last updated: October 16, 2026 (version 1.7.0)_
 
-Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a browser extension for Chrome, Edge and Firefox. When you type something personal into an AI chat, it suggests asking it in a temporary chat, or Melo, Kamelo's private chat, where the AI built into your browser answers on your own computer. This policy explains what data the extension handles and how.
+Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a browser extension for Chrome, Edge and Firefox. When you type something personal into an AI chat, it suggests asking it in a temporary chat, or Melo, Kamelo's private chat, where the AI built into Chrome answers on your own computer (Melo is only available in Chrome). This policy explains what data the extension handles and how.
 
 ## Summary
 - Kamelo does **not** collect, transmit, sell or share any of your data.
@@ -14,6 +14,8 @@ Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a br
 - **Text you type on AI chat sites.** Kamelo only runs on the AI chat sites it knows (such as ChatGPT, Gemini and Claude). There it reads the text you type into the chat's input field and checks, on your device, whether it is about a personal topic: health, mental health, sexuality, religion, money or legal matters. If so, it shows a notice. The text is checked in memory and is not stored.
 - **On-device AI check (Chrome only).** When the word list finds nothing, Kamelo may ask the AI built into Chrome (Gemini Nano) whether the text is a personal question in one of those topics. This runs entirely on your computer, only when Chrome's model is already on your device (Kamelo never downloads it for this), and nothing is stored or logged.
 - **Melo, the private chat (called Private Chat before).** Questions you ask Melo are answered by the AI built into your browser, on your own computer. They are not sent anywhere. Conversations exist only in the open Melo window and are gone when you close it. The model is downloaded by your browser (for Chrome, from Google) only after you click Download.
+- **Saving a Melo answer.** Copy, PDF and Word are made on your computer; nothing is sent. For a PDF, the answer is kept in the browser's session memory (never written to disk) until Kamelo's own print page has opened it, and then removed.
+- **Read this page (Melo, Chrome only).** When you click "Read this page" in Melo (or ask about "this page"), Kamelo reads the main text of the tab you are looking at: the article or main part, without menus, ads, forms or hidden text, and never what you typed into fields. It only can after you clicked the Kamelo icon for that tab (Chrome's activeTab permission). The text goes with your question to the AI on your own computer, is not sent anywhere and is not stored; it is gone when you close Melo. Kamelo never reads the browser's own pages, and asks first on mail and message sites, banking and payment sites, and pages with a password or card field.
 - **Moving a message.** When you click the temporary chat or Melo button, the message you had typed is kept in the browser's session memory (never written to disk) so it can be put into the new chat. It is only handed over on the same tab and site (or to Melo), within one minute, and removed once used.
 
 ## What data is stored, and where
@@ -32,7 +34,8 @@ Text that you choose to send to an AI service, in a normal or a temporary chat, 
 - **Access to AI chat sites** (only the sites listed in the extension, such as chatgpt.com, gemini.google.com and claude.ai): to check the text you type there for personal topics and show the notice. Kamelo does not run on other websites.
 - **storage**: to save your on/off setting.
 - **scripting**: to start Kamelo's own bundled scripts in AI chat tabs that were already open when Kamelo was installed or updated. No remote code is run.
-- **sidePanel** (Chrome and Edge): to open Melo, the private chat, in the browser's side panel.
+- **sidePanel** (Chrome and Edge): to open Melo, the private chat, in the browser's side panel. Melo is only offered in Chrome for now.
+- **activeTab** (Chrome and Edge): for "Read this page" in Melo. It gives access to the tab you are looking at only after you click the Kamelo icon, only to that tab and only until you leave the page. Kamelo uses it only when you click "Read this page". Not in the Firefox version.
 
 ## Use of data
 Kamelo's use of information complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. Data is not sold, not used for advertising, not used for creditworthiness or lending purposes, and not used for any purpose other than the extension's single purpose described above.
@@ -51,7 +54,7 @@ Kamelo does not knowingly collect any data from anyone, including children.
 Kamelo is made by Lucas van der Wegen, Amsterdam, the Netherlands. Contact: hello@kamelo.eu.
 
 ## Your rights
-Under the GDPR you have the right to access, correct or delete your personal data, and to object to its use. Because Kamelo does not collect any data, we usually have nothing to show or delete: everything is on your own device, and you can clear it from the extension at any time. If you email us, we only use your message to reply, and delete it when it is no longer needed.
+Under the GDPR you have the right to access, correct or delete your personal data, and to object to its use. Because Kamelo does not collect any data, we usually have nothing to show or delete: everything is on your own device, and you can remove it at any time by removing the extension. If you email us, we only use your message to reply, and delete it when it is no longer needed.
 
 You can also file a complaint with the Dutch Data Protection Authority ([Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en)).
 

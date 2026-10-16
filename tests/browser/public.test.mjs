@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { build } from '../../tools/pack.mjs';
-import { launch, mockPage, paste, textOf, waitForShadow, shadowHTML, clickText, SAMPLE } from './kamelo.mjs';
+import { launch, mockPage, paste, textOf, waitForShadow, shadowHTML, clickText, SAMPLE, fakeLanguageModel, askMelo } from './kamelo.mjs';
 
 const CHAT = `<!doctype html><title>Chat</title>
 <main><div id="answer"></div></main>
@@ -17,10 +17,10 @@ const SHOP = `<!doctype html><title>Shop</title>
 const HEALTH = `I have been struggling with depression lately. My name is ${SAMPLE.name}, IBAN ${SAMPLE.iban}.`;
 
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-public-'));
-let browser, worker;
+let browser, worker, downloads;
 before(async () => {
   build(path.join(dir, 'ext'));
-  ({ browser, worker } = await launch({ extension: path.join(dir, 'ext') }));
+  ({ browser, worker, downloads } = await launch({ extension: path.join(dir, 'ext') }));
 });
 after(async () => { await browser?.close(); fs.rmSync(dir, { recursive: true, force: true }); });
 
@@ -58,7 +58,7 @@ test('gratis: een persoonlijk onderwerp geeft de melding met tijdelijke chat en 
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
   assert.match(html, /Temporary chat|Tijdelijke chat/);
   assert.match(html, /Ask Melo|Vraag het Melo/); // Private Chat, alleen in Chrome
-  assert.match(html, /class="p melo"><svg viewBox="46.5 64.5 419.1 419.1"/); // met het Melo-logo
+  assert.match(html, /class="p melo"><svg viewBox="0 -18 240 240"/); // met het Melo-logo
   assert.doesNotMatch(html, /\[PERSON_|\[IBAN_|protected|afgeschermd|mask/i);
   await new Promise(r => setTimeout(r, 400));
   const text = await textOf(page, '#prompt-textarea');
@@ -224,5 +224,62 @@ test('gratis: de popup toont alleen Beschermd, Private Chat en een tijdelijke ch
   assert.equal(settings.enabled, false);
   assert.deepEqual(Object.keys(settings), ['enabled']);
   await worker.evaluate(() => chrome.storage.local.set({ settings: { enabled: true } }));
+  await page.close();
+});
+
+// ---------- Melo's onderdelen (chat/rich.js): brief met invulvelden, checklist ----------
+test('gratis: Melo tekent een brief met invulvelden en een checklist; wat je invult gaat nooit naar de AI, wel mee naar Word', async () => {
+  const id = new URL(worker.url()).host;
+  const page = await browser.newPage();
+  await page.evaluateOnNewDocument(fakeLanguageModel, [
+    // geen blok eromheen: Kamelo zet de brief er zelf in
+    'Beste [naam huisbaas],\n\nDe verwarming in mijn woning aan de [adres] doet het sinds [datum] niet meer. Wilt u een monteur sturen?\n\nMet vriendelijke groet,\n\n[je naam]',
+    'Prima, hier is hij wat formeler.',
+    '```checklist\ntitle: Naar de huisarts\n- Verzekeringspas\n- Lijst met medicijnen\n- Je vragen op papier\n```',
+    '```decision\ncriteria: a | b\nX: 1 | 2\nY: 2 | 1\n```',
+  ]);
+  await page.goto(`chrome-extension://${id}/chat/chat.html?lang=nl&engine=device`);
+  await page.waitForFunction(() => document.documentElement.dataset.engine === 'device', { timeout: 5000 });
+  assert.equal(await page.evaluate(() => typeof globalThis.KameloRich.kit.h), 'function');
+  assert.equal(await page.evaluate(() => KameloRich.partOf('decision', ['letter', 'checklist', 'steps', 'compare'])), null);
+
+  await askMelo(page, 'Schrijf een korte brief aan mijn huisbaas dat de verwarming kapot is.');
+  assert.match(await page.evaluate(() => window.lm.sent[0]), /```letter/, 'het formaat gaat mee met deze vraag');
+  assert.match(await textOf(page, '.part.letter .ph'), /Brief\s*0\/4/);
+  assert.equal(await page.$eval('.part.letter .pp', p => p.title), 'Nog 4 in te vullen');
+  assert.equal(await page.$eval('.part.letter .ring .rf', c => c.getAttribute('stroke-dashoffset')), await page.$eval('.part.letter .ring .rf', c => c.getAttribute('stroke-dasharray')), 'lege ring');
+  await page.type('.part.letter input[data-k="datum"]', '3 maart');
+  await page.type('.part.letter input[data-k="je naam"]', 'Anna de Boer');
+  assert.equal(await page.$eval('.part.letter .pp', p => p.title), 'Nog 2 in te vullen');
+  assert.match(await textOf(page, '.part.letter .ppt'), /2\/4/);
+  assert.ok(+await page.$eval('.part.letter .ring .rf', c => c.getAttribute('stroke-dashoffset')) < 30, 'de ring loopt mee');
+  assert.equal(await page.$eval('.part.letter input[data-k="datum"]', i => i.classList.contains('on')), true);
+  // Word: met wat er is ingevuld (de docx is een zip zonder compressie, dus de tekst staat er leesbaar in)
+  const before = new Set(fs.readdirSync(downloads));
+  await page.$$eval('.a .tool', bs => bs.find(b => /Word/.test(b.textContent)).click());
+  let file = null;
+  for (let k = 0; k < 50 && !file; k++) { await new Promise(r => setTimeout(r, 100)); file = fs.readdirSync(downloads).find(f => !before.has(f) && f.endsWith('.docx')); }
+  assert.ok(file, 'geen Word-bestand');
+  const docx = fs.readFileSync(path.join(downloads, file), 'latin1');
+  assert.match(docx, /sinds 3 maart niet meer/);
+  assert.match(docx, /Anna de Boer/);
+  assert.match(docx, /aan de \[adres\]/);
+
+  // Een vervolgvraag: wat er is ingevuld, staat nergens in wat naar de AI gaat.
+  await askMelo(page, 'Maak hem wat formeler.');
+  const toAi = await page.evaluate(() => [...window.lm.sent, ...window.lm.initial].join('\n'));
+  assert.ok(!toAi.includes('3 maart') && !toAi.includes('Anna de Boer'), 'ingevulde gegevens gingen naar de AI');
+
+  await askMelo(page, 'Wat neem ik mee naar de huisarts? Maak een checklist.');
+  assert.match(await page.evaluate(() => window.lm.sent.at(-1)), /```checklist/);
+  assert.equal(await page.$eval('.part.checklist .pp', p => p.title), '0 van 3 klaar');
+  await page.$eval('.part.checklist label.ck input', i => i.click()); // page.click wacht op een beeldje (het tabblad staat op de achtergrond)
+  assert.equal(await page.$eval('.part.checklist .pp', p => p.title), '1 van 3 klaar');
+  assert.match(await textOf(page, '.part.checklist .ppt'), /1\/3/);
+  assert.equal(await page.$eval('.part.checklist label.ck', l => l.classList.contains('done')), true);
+
+  // Een onderdeel van Business bestaat hier niet: gewone tekst, geen kaart en geen codeblok.
+  await askMelo(page, 'En verder?');
+  assert.equal(await page.$$eval('.thread:not([hidden]) .a', as => as.at(-1).querySelectorAll('.part, pre').length), 0);
   await page.close();
 });

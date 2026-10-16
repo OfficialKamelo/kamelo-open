@@ -201,32 +201,28 @@ textarea:focus, .add input:focus { outline: none; }
 /* ---------- Hoofdscherm ----------
    Zoals de panelen in de menubalk van macOS (Bedieningspaneel, Wi-Fi): smal, 13 px, één statusregel met een kleine
    schakelaar, daaronder één gegroepeerde lijst met gekleurde icoontjes (Systeeminstellingen) en een tekstregel onderaan. */
-#view-main { padding: 0 0 6px; color: var(--ink); }
-.top { display: flex; align-items: center; gap: 7px; padding: 10px 10px 0 14px; }
-.top .logo { width: 18px; height: 18px; }
-.top h1 { font-size: 13px; font-weight: 600; letter-spacing: -.01em; }
+#view-main { padding: 4px 0 6px; color: var(--ink); }
 
-/* Rechtsboven: een klein schild dat ook de aan/uit-knop is. Groen = aan, rood = uit. Tekst alleen in de tooltip. */
+/* Rechtsonder: een klein schild dat ook de aan/uit-knop is. Groen = aan, rood = uit. Tekst alleen in de tooltip. */
 .vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.top .status { position: relative; margin-left: auto; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; }
-.top .status:hover { background: var(--fill); }
-.top .status:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
-#view-main:has(#mainActive[hidden]) .top .status { display: none; }
-.top .state { display: grid; place-items: center; color: #34c759; }
-.top .state svg { width: 20px; height: 20px; }
-.top .state svg path:first-child { fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
-.top .state .mark { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.top .state .ic-pause { display: none; }
-.top .status[data-state="off"] .state { color: #ff3b30; }
-.top .status[data-state="off"] .ic-ok { display: none; }
-.top .status[data-state="off"] .ic-pause { display: block; }
+.foot .status { position: relative; margin-left: auto; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; }
+.foot .status:hover { background: var(--fill); }
+.foot .status:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
+.foot .state { display: grid; place-items: center; color: #34c759; }
+.foot .state svg { width: 20px; height: 20px; }
+.foot .state svg path:first-child { fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
+.foot .state .mark { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.foot .state .ic-pause { display: none; }
+.foot .status[data-state="off"] .state { color: #ff3b30; }
+.foot .status[data-state="off"] .ic-ok { display: none; }
+.foot .status[data-state="off"] .ic-pause { display: block; }
 /* De schakelaar zelf is onzichtbaar en ligt over het schild: klikken = aan/uit */
-.top .status .switch { position: absolute; inset: 0; }
-.top .status .switch input { border-radius: 50%; }
-.top .status .track { display: none; }
-.top .status:has(input:disabled) { cursor: not-allowed; }
-.top .status:has(input:disabled):hover { background: none; }
-@media (prefers-color-scheme: dark) { .top .state { color: #30d158; } .top .status[data-state="off"] .state { color: #ff453a; } }
+.foot .status .switch { position: absolute; inset: 0; }
+.foot .status .switch input { border-radius: 50%; }
+.foot .status .track { display: none; }
+.foot .status:has(input:disabled) { cursor: not-allowed; }
+.foot .status:has(input:disabled):hover { background: none; }
+@media (prefers-color-scheme: dark) { .foot .state { color: #30d158; } .foot .status[data-state="off"] .state { color: #ff453a; } }
 
 /* Pagina nog niet bijgewerkt na installeren: één regel om te verversen */
 .reload-row { display: flex; align-items: center; gap: 8px; width: calc(100% - 20px); margin: 8px 10px 0; padding: 8px 10px; border: 0; border-radius: 10px;
@@ -252,13 +248,16 @@ textarea:focus, .add input:focus { outline: none; }
 .t-blue { background: #0a84ff; } .t-green { background: #34c759; } .t-indigo { background: #5e5ce6; } .t-orange { background: #ff9f0a; } .t-gray { background: #8e8e93; }
 .try .tile svg { fill: #fff; stroke: none; }
 /* Melo: het logo (wit op lichtblauw), zoals het app-icoon in brand/melo */
-.t-melo { background: #4FC3E8; } .tile.t-melo svg { width: 17px; height: 17px; fill: #fff; stroke: none; }
+.t-melo { background: #0C88FE; } .tile.t-melo svg { width: 17px; height: 17px; fill: #fff; stroke: none; }
+/* Tijdelijke chat: een volle paarse ballon, zonder tegel */
+.tile.t-temp { background: none; } .tile.t-temp svg { width: 21px; height: 21px; fill: var(--indigo); stroke: none; }
 .try b { color: var(--accent-text); }
 .mrow .ic-lock, .menu.locked .ic-vault { display: none; }
 .menu.locked .ic-lock { display: block; }
 
 /* Onderaan: één tekstregel naar de instellingen (zoals "Wi-Fi-instellingen…") */
-.settings-link { display: block; width: calc(100% - 20px); margin: 6px 10px 0; padding: 7px 10px; border: 0; border-radius: 8px; background: none;
+.foot { display: flex; align-items: center; gap: 4px; margin: 6px 10px 0; }
+.settings-link { display: block; flex: 1; min-width: 0; margin: 0; padding: 7px 10px; border: 0; border-radius: 8px; background: none;
   color: var(--ink); font-size: 13px; text-align: left; }
 .settings-link:hover { background: var(--fill); }
 #view-main button:focus-visible { outline-offset: -2px; }

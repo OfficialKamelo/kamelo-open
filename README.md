@@ -5,7 +5,7 @@
 <h1 align="center">Kamelo</h1>
 
 <p align="center">
-  <strong>A better place for personal questions to AI.</strong><br>
+  <strong>For the questions you'd only ask AI.</strong><br>
   A browser extension for Chrome, Edge and Firefox. When you type something personal into ChatGPT, Claude, Gemini or another AI chat,
   Kamelo suggests a temporary chat, or Melo: Kamelo's private chat, where an AI answers on your own computer.
 </p>
@@ -38,24 +38,43 @@ for this), only after you pause typing, and nothing is stored. Corrections from 
 ### Melo, the private chat
 Melo (called Private Chat before) is a chat in the browser's side panel where Chrome's built-in AI answers on your own computer ([`chat/device.js`](chat/device.js)).
 Your question never leaves the device. Nothing is downloaded until you click Download; Chrome then fetches its own model once.
-Chats live only in that window and are gone when you close it. Edge and Firefox don't offer an on-device AI to extensions yet,
-so there Kamelo offers a temporary chat instead.
+Chats live only in that window and are gone when you close it. Melo isn't Kamelo's own AI model: it's the one built into Chrome.
+Melo can draw charts and formulas, and you can copy an answer or save it as PDF or Word. That is all made on your computer too.
+Edge and Firefox don't offer an on-device AI to extensions yet, so there Kamelo offers a temporary chat instead.
+
+### Read this page (Melo, Chrome)
+Reading an article, a letter from the council, a medicine leaflet or an email? Open Melo and click **Read this page** (or ask
+"what's on this page?"). Melo reads the main text of the tab you're looking at and answers questions about it, on your computer
+([`chat/page.js`](chat/page.js)). Only this page, only now: nothing is sent, nothing is stored, and the text is gone when you close Melo.
+
+- **Only after a click.** Kamelo uses Chrome's `activeTab` permission: Chrome lets Kamelo into a tab only after you click the
+  Kamelo icon in the toolbar, and only that tab until you leave the page. Clicking inside the side panel doesn't count for Chrome,
+  so if you switched tabs, Melo asks you to click the Kamelo icon and open Melo once more.
+- **Only the readable text.** The article (or main part) of the page, without menus, ads, cookie banners, buttons, forms, scripts or
+  hidden text. What you type into fields is never read. A long page is cut to what the on-device AI can handle (about 6,000
+  characters), and Melo says it read the start.
+- **Never:** the browser's own pages (`chrome://`, settings), extension stores and files on your computer.
+- **Asks first:** mail and messages (Gmail, Outlook, WhatsApp Web and other `mail.` sites: what other people wrote to you), your bank
+  or a payment service, and pages with a visible password or card field. You choose "Read anyway" or "Don't read".
+- **Edge and Firefox:** not yet. Reading only works with an AI on your own computer, and Edge and Firefox don't give one to extensions
+  yet. In Edge, Melo says so; the Firefox package doesn't include the `activeTab` permission at all.
 
 ### The popup
-The switch (Protected), Melo (the private chat) and a temporary chat. That's all.
+The switch (On or Off), Melo (the private chat, Chrome only) and a temporary chat. That's all.
 
 ## Where it works
 
 Only on the AI chat sites in [`src/sites.js`](src/sites.js): ChatGPT, Gemini, Claude, Copilot, Perplexity, Mistral, Grok, DeepSeek,
-Meta AI and others. Kamelo doesn't run on any other website.
+Meta AI and others. Kamelo doesn't run on any other website. The one exception: when you click **Read this page** in Melo after
+clicking the Kamelo icon, Melo reads the text of that one tab, once (see above).
 
 ## Privacy and security
 
 - **No network requests.** Kamelo never contacts a server, not even ours. No analytics, no tracking, no account.
   See [Verify it yourself](#verify-it-yourself).
 - **Everything stays on your device.** The text you type is checked in the page, in memory. When you click the temporary chat
-  or Melo button, your message is kept in the browser's session memory (never on disk) for at most a minute, only to
-  put it in the new chat.
+  or Melo button, your message is kept in the browser's session memory (never on disk) for at most a minute (two for Melo),
+  only to put it in the new chat.
 - **Old data is removed.** Versions up to 1.4.3 masked personal details and kept a local vault. On updating to 1.5.0, Kamelo deletes
   that vault (also a locked one), the vault lock, the monthly overview and the word lists from your device.
 
@@ -66,6 +85,7 @@ Meta AI and others. Kamelo doesn't run on any other website.
 | `storage` | Your on/off setting, stored on your device. |
 | `scripting` | Starts Kamelo's own bundled scripts in AI chat tabs that were already open when you installed or updated it. No remote code. |
 | `sidePanel` | Opens Melo, the private chat, in Chrome's side panel (not in Firefox, which has no side panel API). |
+| `activeTab` | **Read this page** in Melo: reads the text of the tab you're on, only after you click the Kamelo icon, only that tab, only until you leave the page. No access to any other site, and no warning at install. Not in the Firefox package. |
 
 See the [privacy policy](PRIVACY.md). To report a vulnerability, see [SECURITY.md](SECURITY.md).
 
@@ -77,9 +97,9 @@ Everything Kamelo does is in this repository, with no build step and no minified
   ```bash
   grep -rnE "fetch\(|XMLHttpRequest|sendBeacon|WebSocket\(" src popup chat
   ```
-  The only hit is in `chat/chat.js`: the encrypted route for a future paid Kamelo Plus. It needs a library that isn't part of
-  this repository or the store package, so it can't run.
-- **The only pages it opens:** [kamelo.eu/welcome](https://kamelo.eu/welcome) once after installing, [kamelo.eu/goodbye](https://kamelo.eu/goodbye) when you remove it
+  It finds nothing. Melo, the private chat, answers with the AI built into your browser, on your own computer; there is no
+  server route.
+- **The only pages it opens:** [kamelo.eu/welcome](https://kamelo.eu/welcome) once after installing (in your browser's language if the site has it), [kamelo.eu/goodbye](https://kamelo.eu/goodbye) when you remove it
   (both in [`src/background.js`](src/background.js)), and the temporary chat of the AI site you're on when you click it.
 - **Run the tests.** `npm run test:browser` loads the store package in a real Chrome
   ([`tests/browser/public.test.mjs`](tests/browser/public.test.mjs)): the notice appears for a personal topic, your text goes to the
@@ -97,9 +117,11 @@ See [kamelo.eu](https://kamelo.eu) for screenshots and a short demo.
 |---|---|
 | [Chrome Web Store](https://chromewebstore.google.com/detail/ijmapnnfbjdkldjljobgadjfoabpgjoj) | `ijmapnnfbjdkldjljobgadjfoabpgjoj` |
 | [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/kjjenbhncoomobcdpbhljmhfcmanhbkj) | `kjjenbhncoomobcdpbhljmhfcmanhbkj` |
+| [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/kamelo-ai-privacy-software/) | `kamelo@kamelo.eu` |
 
 These are the only official listings. Kamelo never asks for an account, a password or a payment.
 To check which one you have, open `chrome://extensions` (or `edge://extensions`), turn on Developer mode and compare the ID.
+In Firefox, open `about:debugging#/runtime/this-firefox` and compare the Extension ID.
 
 **From source (developer mode):**
 1. Clone this repository.
@@ -125,11 +147,11 @@ npm run pack             # the store package for Chrome and Edge (npm run pack:f
 | `src/topic-ai.js` | The second check with Chrome's built-in AI, on the device |
 | `src/background.js` | Hands your message to the temporary chat or Melo; removes old masking data after an update |
 | `src/sites.js` | Known AI sites, their input field and temporary chat. **When a site changes, this is usually the only file to edit** |
-| `src/config.js`, `src/strings.js`, `src/edition.js` | Settings, UI text in English and Dutch, and which edition this is |
-| `chat/` | Melo, the private chat (`device.js`: the on-device AI of the browser) |
+| `src/config.js`, `src/strings.js`, `src/edition.js` | Settings, UI text in English, Dutch, German, French and Spanish, and which edition this is |
+| `chat/` | Melo, the private chat (`device.js`: the on-device AI of the browser; `rich.js`: charts and formulas; `export.js`: PDF and Word) |
 | `popup/` | The popup (`public.html`) |
 | `tests/` | Unit tests; `tests/browser/` runs the store package in Chrome |
-| `tools/` | `pack.mjs` (store and Firefox packages), `release.mjs`, `sign.mjs` (signed `.crx`), `news.mjs`, `check-secrets.mjs`, `build-locales.mjs` |
+| `tools/` | `pack.mjs` (store and Firefox packages) and `build-locales.mjs` (`_locales/` from `src/strings.js`) |
 
 Some shared files (`src/content.js`, `src/background.js`, `src/strings.js`, `chat/chat.js`) still contain code paths for
 Kamelo Business, a separate edition that isn't part of this repository. They do nothing here: `src/edition.js` says `public`.

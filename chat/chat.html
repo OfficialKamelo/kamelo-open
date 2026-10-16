@@ -21,7 +21,7 @@
     <button class="newchat" id="newChat" type="button" data-i18n-title="pchatNewChat" hidden>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
     </button>
-    <!-- Of de verbinding met de AI in de enclave is gecontroleerd. Klik voor de details. -->
+    <!-- Alleen zichtbaar als er geen AI op dit apparaat is: klik voor de uitleg en wat wel kan. -->
     <button class="lock" id="lock" type="button" data-state="checking" aria-controls="lockInfo">
       <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
       <span id="lockText"></span>
@@ -61,6 +61,11 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 11.5-8.3 8.3a5 5 0 0 1-7.1-7.1l8.6-8.6a3.4 3.4 0 0 1 4.8 4.8l-8.6 8.6a1.7 1.7 0 0 1-2.4-2.4l7.9-7.9"/></svg>
       </button>
       <input type="file" id="file" multiple hidden>
+      <!-- Lees deze pagina (chat/page.js): de tekst van het tabblad ernaast, alleen na deze klik, alleen op deze computer. -->
+      <button class="readpage" id="readPage" type="button" data-i18n-title="pchatReadPageInfo" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 8.5h17M7.5 12.5h9M7.5 15.5h6"/></svg>
+        <span data-i18n="pchatReadPage"></span>
+      </button>
       <span class="hint" id="hint"></span>
       <button class="send" id="send" type="submit" data-i18n-title="pchatSend" aria-label="Send">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
@@ -72,7 +77,11 @@
   <script src="../src/strings.js"></script>
   <script src="../src/config.js"></script>
   <script src="../src/sites.js"></script>
+  <script src="page.js"></script>
   <script src="rich.js"></script>
+  <script src="reken.js"></script>
+  <script src="kennis.js"></script>
+  <script src="guard.js"></script>
   <script src="export.js"></script>
   <script src="device.js"></script>
   <script src="chat.js"></script>

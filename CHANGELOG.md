@@ -5,6 +5,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-10-16
+
+### Added
+- **Melo reads the page you're on.** Reading an article, a letter, a medicine leaflet or an email? Click "Read this page" in Melo, or ask "what's on this page?", and Melo answers about it on your computer. Only this page, only now: nothing is sent or stored. Melo reads the main text without menus, ads, forms or hidden text, never what you type into fields, never the browser's own pages, and asks first on mail, banking and pages with a password field. A long page: Melo reads the start and says so. Chrome only; it uses the `activeTab` permission, so Kamelo can only read a tab after you click its icon.
+- **Melo has a new face.** A bright blue chameleon with 20 expressions: Melo listens while you type, thinks while the answer is on its way, talks as it answers and reacts to what you say, and never looks sad on its own. Drawn in Kamelo's own code, nothing loaded from the internet. The new face is also on the "Ask Melo" button, in the popup and as the icon of the chat.
+- **Letters, checklists, steps and comparisons.** Ask Melo to write a letter and the parts only you know (your name, a date) become small fields to fill in. Ask for a checklist, a step-by-step plan or a comparison and you get a calm card you can tick off. What you fill in stays in this window, never goes to the AI, and comes along when you copy or save the answer as PDF or Word.
+- **Melo gets sums right.** Kamelo now does the maths itself, on your computer: sums, percentages (of, discounts, VAT, what percentage, increase), equations (with the steps), circles, Pythagoras, rectangles, derivatives and unit conversions. Ask "What is 17% of 2340?" and the answer is there straight away and always correct; ask Melo to explain it and Melo explains with Kamelo's numbers.
+- **A crisis line, always.** When someone writes about not wanting to live anymore, Melo's answer always ends with the crisis line (113 in the Netherlands, 112 if you are in danger now), also if the AI forgets it. This is done in Kamelo's own code, not left to the AI.
+- **Checked facts.** For common school and science questions (Pythagoras, seasons, the speed of light, why the sky is blue and more), Kamelo gives Melo a short, checked fact with the question. If Melo still says something that is known to be wrong, Kamelo replaces that sentence with the right one.
+
+### Changed
+- **Melo answers in your language.** Chrome's built-in AI doesn't officially support Dutch and sometimes answered short Dutch questions in English. Kamelo now recognises Dutch, English, German, French and Spanish itself, also in short questions, stops an answer that starts in the wrong language and asks again.
+- **Cleaner answers.** No more "I hope this helps!" or "Let me know" at the end, no "Of course, I can make a chart for you" at the start, no [your phone number] in letters, and no stray formula code like \boxed{5}.
+
+- **A tidier popup.** The logo and name at the top are gone; the shield (on or off) now sits at the bottom right, next to Settings. The temporary chat has its own purple speech bubble.
+
+### Removed
+- Melo no longer has any route to a server or a “sealed chip”. Melo answers only on your own computer, or offers the AI site’s temporary chat.
+
 ## [1.6.0] - 2026-10-15
 
 ### Added
@@ -13,7 +32,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Save an answer as PDF or Word, or copy it.** Under each answer: Copy, PDF (a clean A4 page to print or save as PDF) and Word (a .docx with headings, tables and charts). Ask Melo to write a letter, CV or report and it writes the whole document. Everything is made on your computer.
 - **Stop, retry and clear.** Stop an answer while it's being written, retry the last one, or clear the conversation straight away.
 - **Melo has its own logo.** The light-blue chameleon head now marks Melo in the popup (instead of a green lock) and on the "Ask Melo" button in the notice; in the chat itself Melo shows his face.
-- **Kamelo Business: a policy per AI app.** IT decides per AI service: masked (the default), allowed, or blocked. A blocked app shows a Kamelo page that says which app, what is allowed instead, and how to request access.
 
 ### Changed
 - **Melo listens first.** When you share something personal, Melo says what it hears and asks about you, instead of sending a list of tips. Tips come when you ask for them. Short, casual messages get a light answer.
@@ -32,45 +50,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [1.5.1] - 2026-10-13
 
 ### Security
-- **Kamelo for teams: documents don't stay in the vault.** What Kamelo masks in an uploaded file is kept only in the browser's memory, for that AI site, and is gone when you close the browser, your vault locks or you clear it. Kamelo's answer card still shows the real details while you're working.
-- **Kamelo for teams: pasted pictures with text.** When you paste text together with a picture (cells from Excel, for example), only the text is pasted now; the picture used to reach the AI site unchecked when the text had nothing to mask.
-- **Kamelo for teams: strict mode for answers.** Answers on AI sites now keep the placeholders, like [PERSON_1], and copying from the page copies the placeholders too. Your real details show only in Kamelo's own card: click the Kamelo button next to an answer, then Copy if you need them. The AI site, its scripts and other extensions can't read that card. This replaces "Restore in answers"; organisations can turn the Kamelo button on or off for everyone with the new `answerButton` policy.
-- **Kamelo for teams: files Kamelo can't read are blocked.** Images and screenshots whose text Kamelo can't read reliably (all images in Firefox), scans, old Office files (.doc, .xls, .ppt), Outlook .msg, .zip and protected files are no longer uploaded, and there is no "Upload anyway". The notice says why and what to do instead. Images inside documents are replaced with blank images. Organisations that want the old choice back can set the new `allowUnreadableUploads` policy; only then does `unreadableFiles` (ask, block or allow) apply.
-- **Kamelo for teams: Office and PDF files fail closed.** If Kamelo can't check every part of a Word, Excel, PowerPoint or PDF file, the original is not sent. PDFs that were saved in several steps are checked in every saved version.
-- **Kamelo for teams: the vault is always encrypted.** Your vault is now stored encrypted on your computer, also without the vault lock. With the lock on, the vault locks itself after 30 minutes without use, and new passwords need at least 12 characters.
-- **Kamelo for teams: a separate vault per chatbot provider.** Chatbot widgets on other websites (such as Chatbase or Botpress) each get their own vault, so one provider can't see details masked for another.
 - **A secrets check runs on every change.** Our automatic checks now also refuse any change that contains a key or password.
-- **Kamelo for teams: the network filter covers more kinds of requests.** When a page itself calls an AI service (such as OpenAI's API), Kamelo now also masks text sent as a Blob, raw bytes, FormData or URL parameters, in fetch, XMLHttpRequest and sendBeacon. Before, only plain text was masked. Files that aren't text, like images, still go as they are and arrive intact.
 
 ### Changed
 - **Private Chat listens first.** It answers like someone who hears you out and gives practical advice, without a warning about doctors or 112 under every reply. A crisis line or 112 only comes up when it really matters. A simple "hi" gets a friendly hello back, in your language.
 - **The free extension's popup says "On" instead of "Protected".** The free edition doesn't mask anything, so "Protected" promised too much.
 
 ### Added
-- **Kamelo for teams: Private Chat reads files and images.** Add a screenshot or photo (paste it, drag it in or use the paperclip) and the AI on your computer looks at it, in Chrome. PDFs with text, Word, Excel, PowerPoint and text files are read on your computer too, and their text goes with your question, masked like everything you type. A long file is read from the start, and Kamelo says so. Files and images only go to the AI on your computer, never to Kamelo Plus.
 - **Kamelo speaks Spanish, German and French.** The popup, the notices, Private Chat and the settings follow your browser's language, like the website does.
 - **The welcome page opens in your language** (Dutch, German, French or Spanish) after installing.
-- **Kamelo for teams: see your own document, download it with your details.** Click a file you uploaded in the chat (or the small Kamelo button on it) and Kamelo opens it in its own tab with your real details: PDFs and images as they are, Word, Excel, PowerPoint, OpenDocument, text and email as readable text, with "Download original". The AI site never gets the original. When you download a file from the AI site, Kamelo puts your details back before it's saved: the masked copy you uploaded becomes your original again, and a new file the AI made (text, Word, Excel, PDF and more) gets the real names instead of placeholders. This works for files the page itself hands over; a file the AI service downloads from its own server is saved as it is, because Kamelo doesn't fetch anything over the network, and Kamelo tells you it may still contain placeholders. If restoring doesn't work, the site's own download goes ahead and Kamelo says so.
-- **Kamelo for teams: personal details in images are blacked out.** In Chrome and Edge, Kamelo now reads the text in screenshots and photos (PNG, JPG, WebP, GIF, BMP, AVIF) on your computer, in English and Dutch, and blacks out names, phone numbers, email addresses and other details before the image is uploaded. Nothing is sent anywhere to do this: the text recognition (tesseract.js) is part of Kamelo. Images are always saved again without their metadata, such as a location. If Kamelo can't read the text reliably, the image isn't sent. In Firefox, images are still blocked.
-- **Kamelo for teams: more file types are masked.** OpenDocument files (.odt, .ods, .odp) and web pages (.html) stay the same kind of file, emails (.eml) are masked with their headers and attachments, and .rtf files come out as a masked .txt.
-- **Kamelo for teams: a PDF stays a PDF.** Kamelo now sends a new, simple PDF with the same name instead of a .txt: the masked text page by page, plus filled-in form fields, comments and the names of attachments, all masked. The layout, images, scanned pages and the attachments themselves are left out, with a note in their place. PDFs with filled-in forms, comments or attachments are no longer blocked. A PDF with only scanned pages still can't be read.
-- **Kamelo for teams: Excel and PowerPoint files are masked too.** A .xlsx keeps its cells, numbers and formulas, with client details in cells, formula results, comments and authors replaced by placeholders. A .pptx keeps its slides and layout, with slides, speaker notes, comments, authors and alt text masked. A file with a chart or an embedded file is sent as masked text instead.
-- **Kamelo for teams: files are masked on every AI service you can upload to,** not only ChatGPT and Claude: also Gemini, Copilot, Microsoft 365 Copilot, Perplexity, Mistral, Grok, DeepSeek, Meta AI, AI Studio, NotebookLM, Poe, You.com, Qwen, Kimi and Z.ai.
 
 ### Changed
 - **Private Chat is now called Melo.** Same private chat on your computer, new name: Melo is Kamelo's private chat, where Chrome's built-in AI answers on your own computer. The button in the notice now says "Ask Melo". Nothing else changes, and your settings stay as they are.
-- **Kamelo for teams: better at finding details.** Kamelo now recognises send buttons in more languages, masks plain input fields as well as chat boxes, finds Dutch phone numbers written as +31 (0)6…, IBANs written with hyphens, and names after phrases like "my name is" or "her name is", in several languages.
 - **Better at everyday personal questions.** Kamelo now also notices debt in more of the ways people say it ("I have so much debt", "ik heb een schuld van 3000 euro", BKR, bailiffs, CCJs, gambling away savings), sexually transmitted infections, common medicines, palpitations, infidelity and open relationships, divorce and custody, burnout and being fired, and questions about visas, asylum and residence permits. "Schuld" as in "it's my fault", technical debt and debt as a finance term still don't give a notice.
 - **Legal notice, broader words.** The notice for legal questions now says "a legal matter" instead of "police or the courts", so it also fits divorce, custody and residence permits.
 - **Edge and Firefox say why.** Where Chrome offers Melo, the notice in Edge and Firefox now explains: "Edge doesn't have a built-in AI that Kamelo can use yet, so Kamelo offers a temporary chat instead."
-- **Kamelo for teams: dangerous details are always masked.** Card numbers, bank and IBAN numbers, ID numbers, passwords, keys and crypto wallets are now always masked, even if you once chose "Keep visible" for them. Names, addresses, phone numbers, email addresses and dates of birth are still masked automatically, and you can still keep those visible with one click.
-- **Kamelo for teams: click a placeholder to change it.** Click a blue placeholder in the text field to see what it stands for. For a name or contact detail, "Keep visible" puts the real value back; for dangerous details the card says they're always masked.
 
 ## [1.5.0] - 2026-10-12
 
 ### Changed
 - **Kamelo now focuses on Private Chat and temporary chats.** When you type something personal on ChatGPT, Claude, Gemini or another AI chat (about your health, mental health, sexuality, faith, money or legal trouble), Kamelo suggests asking it in a temporary chat, which stays out of your history and isn't used for training, or in Private Chat, where Chrome's built-in AI answers on your own computer. Kamelo doesn't change what you send, and your AI account still knows who you are: it helps you pick the right place for a personal question.
-- **Masking moved to Kamelo for teams.** Replacing names and details with placeholders, restoring them in answers and the vault are no longer part of the free Kamelo.
+- Replacing names and details with placeholders, restoring them in answers and the vault are no longer part of the free Kamelo.
 - **Old masked data is deleted.** On this update Kamelo removes everything it kept on your device for masking: the vault (also a locked one), the vault lock, the monthly overview and your lists of words to always or never mask.
 - **Fewer permissions.** Kamelo now only runs on the AI chat sites it knows instead of on every website, and no longer needs the "alarms" permission.
 - **Private Chat is faster, with separate conversations.** The AI on your computer gets ready as soon as the window opens, your question appears right away and the answer is written out smoothly. Start a new chat or switch between chats in the window; a question from the notice opens as a new chat, and is asked straight away when the AI is ready.

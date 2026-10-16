@@ -30,7 +30,7 @@
     retentionDays: 30, // 0 = nooit automatisch wissen
     topicWarnings: true, // waarschuwen bij gevoelige onderwerpen (zie topics.js)
     mutedTopics: [], // onderwerpen waarbij de gebruiker "Niet meer tonen" koos
-    privateChat: true, // "Vraag het Melo" in de melding: naar Melo (de privéchat, heette Private Chat) (op dit apparaat of de tijdelijke chat; de chip alleen voor Plus)
+    privateChat: true, // "Vraag het Melo" in de melding: naar Melo (de privéchat, heette Private Chat) (op dit apparaat of de tijdelijke chat; nooit een chip of server)
   };
 
   root.PrivacyConfig = { AI_FIELD_HINT, DEFAULT_SETTINGS, SUPPORT_EMAIL };

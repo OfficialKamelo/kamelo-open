@@ -62,8 +62,8 @@ test('zonder AI in de browser: geen laag, en niets kan', async () => {
   assert.equal((await dev.detect()).state, 'unavailable');
   await assert.rejects(dev.ask('x'), e => e.device === 'failed');
 });
-test('?engine=chip slaat het apparaat over, ook als de browser een AI heeft', async () => {
-  assert.equal(K.create({ env: promptEnv().env, force: 'chip' }).backend, 'none');
+test('geen chip meer (16 okt 2026): ?engine=chip laat de AI op dit apparaat gewoon staan', async () => {
+  assert.equal(K.create({ env: promptEnv().env, force: 'chip' }).backend, 'prompt-api');
 });
 test('Chrome en Edge: Prompt API; Firefox: trial.ml', () => {
   assert.equal(K.create({ env: promptEnv().env, browserId: 'edge' }).backend, 'prompt-api');
@@ -278,6 +278,32 @@ test('Firefox: onverwacht antwoord geeft een fout, niet iets halfs', async () =>
 });
 
 // ---------- regels ----------
+test('veto: een antwoord in de verkeerde taal stopt meteen, telt niet mee, en de AI begint opnieuw', async () => {
+  let made = 0;
+  const { env } = promptEnv({ create: () => { made++; return Promise.resolve(session(['Okay, ', "let's ", 'solve ', 'this.'])); } });
+  const d = K.create({ env, lang: 'nl', system: 's' });
+  await d.detect();
+  const seen = [];
+  const r = await d.ask('Los op', t => seen.push(t), null, { veto: t => t.length > 8 });
+  assert.equal(r, null);
+  assert.ok(d.stats.vetoed);
+  assert.ok(seen.every(t => t.length <= 8), 'wat na het veto komt, wordt niet getoond');
+  assert.equal(d.ready, false, 'de sessie is losgelaten');
+  const again = await d.ask('Los op', null, null, {});
+  assert.equal(again, "Okay, let's solve this.");
+  assert.equal(made, 2);
+});
+test('undo: de laatste vraag en het antwoord terugnemen voor een tweede poging', async () => {
+  const turns = [];
+  const { env } = promptEnv({ create: o => { turns.push(o.initialPrompts.length); return Promise.resolve(session(['Hoi'])); } });
+  const d = K.create({ env, lang: 'nl', system: 's' });
+  await d.detect();
+  await d.ask('een', null, null, {});
+  d.undo();
+  await d.ask('twee', null, null, {});
+  assert.deepEqual(turns, [1, 1], 'de tweede sessie begint zonder de teruggenomen beurt');
+  assert.doesNotThrow(() => K.create({ env: {} }).undo());
+});
 test('device.js doet zelf geen netwerkverzoeken', () => {
   const src = fs.readFileSync(path.join(__dirname, '..', 'chat', 'device.js'), 'utf8');
   assert.doesNotMatch(src, /\bfetch\(|XMLHttpRequest|WebSocket|sendBeacon|importScripts|\beval\(|new Function/);
@@ -293,6 +319,27 @@ test('strings: alle nieuwe teksten in het Engels en Nederlands; Firefox wordt he
   for (const k of keys) assert.ok(I.STRINGS.nl[k], `nl mist ${k}`);
   assert.doesNotMatch(I.STRINGS.en.pchatDeviceInfo, /Gemini/);
   assert.match(I.STRINGS.en.pchatDeviceInfo, /\{browser\}/);
+});
+
+// Geen chip (besluit Lucas, 16 okt 2026): Melo draait alleen op dit apparaat. Geen Tinfoil-bundel, geen relay, geen
+// verzegelde-chip-route en geen tekst die nog over een chip praat. ("graphics chip" in de hardware-eisen is iets anders.)
+test('geen chip-route: geen Tinfoil, geen relay, Melo zegt nergens dat hij op een chip draait', () => {
+  const root = path.join(__dirname, '..');
+  for (const f of ['vendor/tinfoil.js', 'relay']) assert.ok(!fs.existsSync(path.join(root, f)), `${f} hoort weg te zijn`);
+  const code = ['chat/chat.js', 'chat/chat.html', 'chat/device.js', 'src/config.js', 'src/strings.js']
+    .map(f => [f, fs.readFileSync(path.join(root, f), 'utf8')]);
+  for (const [f, text] of code) {
+    assert.doesNotMatch(text, /tinfoil|SecureClient|privateChatPlus|privateChatRelay|engine === 'chip'|FACTS_CHIP|enclave/i, f);
+    assert.doesNotMatch(text, /\b(sealed|secure|encrypted|versleutelde|beveiligde|afgesloten|versiegelte[nm]?|sicheren|sellado|cifrado) (chip|puce)|puce chiffrée/i, f);
+  }
+  const ctx = { navigator: { userAgent: 'Mozilla/5.0 Chrome/155.0 Safari/537.36', language: 'en' } }; ctx.globalThis = ctx;
+  require('node:vm').runInNewContext(code.find(([f]) => f === 'src/strings.js')[1], ctx);
+  const I = ctx.PrivacyI18n;
+  for (const lang of Object.keys(I.STRINGS)) {
+    for (const [k, v] of Object.entries(I.STRINGS[lang])) {
+      if (k.startsWith('pchat') && !/^pchatNeeds/.test(k)) assert.doesNotMatch(String(v), /\bchip|\bpuce|grafikchip/i, `${lang}.${k}`);
+    }
+  }
 });
 
 (async () => {

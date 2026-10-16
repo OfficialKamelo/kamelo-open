@@ -34,7 +34,7 @@ See the [README](README.md#development) for an overview of the source files.
 - `'use strict'`, `const`/`let`, two-space indentation, single quotes, semicolons. Match the surrounding code.
 - Keep comments short and explain *why*, not *what*.
 - **No network requests.** Kamelo never contacts a server. Pull requests that add `fetch`, analytics, remote code or similar will not be merged.
-- User-facing text goes in `src/strings.js` (English and Dutch) or `_locales/`, never hard-coded.
+- User-facing text goes in `src/strings.js`, never hard-coded: in English, Dutch, German, French and Spanish (`tests/talen.test.js` checks that every language has every text). `_locales/` is generated from it with `node tools/build-locales.mjs`.
 - Recognising topics must work fully on the device: word lists, and Chrome's built-in AI only when its model is already there. No external services.
 
 ## Tests

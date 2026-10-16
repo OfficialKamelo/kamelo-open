@@ -1099,7 +1099,7 @@
 
   const LOGO = `<svg viewBox="0 0 128 128" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="#1A8CFF" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg>`;
   // Het Melo-logo (brand/melo/melo-head.svg, glimlach als boog) op de knop "Ask Melo".
-  const MELO_ICON = '<svg viewBox="46.5 64.5 419.1 419.1" aria-hidden="true"><path d="M217.17 118.5A50 50 0 0 1 294.83 118.5L354.37 191.91A70 70 0 0 1 368.66 222.35L368.65 222.35A10 10 0 0 0 377.52 230.36L377.52 230.35A80 80 0 0 1 408.46 380.15L309.84 434.21A112 112 0 0 1 202.16 434.21L103.54 380.15A80 80 0 0 1 134.48 230.35L134.48 230.36A10 10 0 0 0 143.35 222.35L143.34 222.35A70 70 0 0 1 157.63 191.91ZM324 312A52 52 0 1 0 428 312A52 52 0 1 0 324 312ZM344 317A26 26 0 1 1 396 317A26 26 0 1 1 344 317ZM84 312A52 52 0 1 0 188 312A52 52 0 1 0 84 312ZM116 317A26 26 0 1 1 168 317A26 26 0 1 1 116 317ZM229.08 380.9A39.5 39.5 0 0 0 282.92 380.9A5.5 5.5 0 0 0 275.43 372.85A28.5 28.5 0 0 1 236.57 372.85A5.5 5.5 0 0 0 229.08 380.9Z"/></svg>';
+  const MELO_ICON = '<svg viewBox="0 -18 240 240" fill="currentColor" aria-hidden="true"><clipPath id="melo-ask"><path clip-rule="evenodd" d="M-20 -30H260V250H-20ZM11 100.5a34 36.5 0 1 0 68 0a34 36.5 0 1 0 -68 0ZM157.5 99a35.5 38 0 1 0 71 0a35.5 38 0 1 0 -71 0ZM84 140C100 156 136 156 152 140A6 6 0 0 1 152 152C136 168 100 168 84 152A6 6 0 0 1 84 140Z"/></clipPath><g clip-path="url(#melo-ask)"><ellipse cx="43" cy="98" rx="37" ry="45"/><ellipse cx="197" cy="98" rx="38" ry="45.5"/><path d="M57 57C75 42 95 24 112 13C124 5 146 0 156 11C164 22 172 38 188 55L214 130 210 140C210 175 175 196 118 196C62 196 31 178 31 140L28 120Z"/></g><ellipse cx="48" cy="104.5" rx="17.4" ry="19.5"/><ellipse cx="190" cy="103.5" rx="18" ry="20.5"/></svg>';
   const X_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
   const FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const COMPACT_AFTER = 5; // zo vaak de volledige melding, daarna de compacte
@@ -1282,7 +1282,7 @@
         .k .p { background: #0071e3; color: #fff; }
         .k .p:hover { filter: brightness(1.08); }
         .k .melo { display: inline-flex; align-items: center; gap: 5px; padding-left: 8px; }
-        .k .melo svg { width: 15px; height: 15px; fill: currentColor; }
+        .k .melo svg { width: 17px; height: 15px; fill: currentColor; }
         button.done { display: flex; background: none; padding: 0; cursor: pointer; } button.done:hover { text-decoration: underline; }
         .c .done { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; color: var(--dim); }
         .c .done::before { content: ""; width: 8px; height: 4px; margin-top: -2px; border: solid #34c759; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
@@ -1339,7 +1339,7 @@
     b.addEventListener('click', onClick);
     return b;
   }
-  // "Ask Melo" met het Melo-logo ervoor.
+  // "Ask Melo" met Melo's kop ervoor.
   function meloButton(onClick) {
     const b = textButton('p melo', I.t('topicProtect'), onClick);
     b.insertAdjacentHTML('afterbegin', MELO_ICON);

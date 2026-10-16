@@ -69,7 +69,7 @@
     return {
       backend: 'none', ready: false,
       detect: async () => ({ state: 'unavailable', why, browser: browserId, langs: [], backend: 'none', download: {} }),
-      prepare: fail, ask: fail, askImage: fail, canSee: async () => false, requestPermission: async () => false, remove: async () => {}, reset() {}, useTurns() {},
+      prepare: fail, ask: fail, askImage: fail, canSee: async () => false, requestPermission: async () => false, remove: async () => {}, reset() {}, undo() {}, useTurns() {},
     };
   }
 
@@ -126,7 +126,9 @@
       // Geeft het antwoord terug; in stats staat hoe snel het ging (voor "te traag op deze computer").
       stats: null,
       // hint: alleen voor de AI (bv. "Reply in Dutch."), niet in het gesprek bewaard. max: langer voor een document.
-      async ask(text, onChunk, signal, { hint, max = MAX_CHARS } = {}) {
+      // veto(tekst): onderweg nakijken (bv. verkeerde taal). Zegt hij ja, dan stopt het antwoord, telt het niet mee in het
+      // gesprek en geeft ask() null terug: dan kan chat.js het opnieuw vragen.
+      async ask(text, onChunk, signal, { hint, max = MAX_CHARS, veto = null } = {}) {
         clearTimeout(idle);
         const t0 = Date.now();
         await this.prepare({ signal });
@@ -134,18 +136,22 @@
         const stop = new AbortController();
         const both = signal && AbortSignal.any ? AbortSignal.any([signal, stop.signal]) : stop.signal;
         signal?.addEventListener?.('abort', () => stop.abort(), { once: true });
-        let out = '', first = 0, cut = false;
+        let out = '', first = 0, cut = false, vetoed = false;
         try {
           for await (const c of session.promptStreaming(hint ? `${text}\n\n(${hint})` : text, { signal: both })) {
             if (!first) first = Date.now();
-            out += c; onChunk?.(out);
+            out += c;
+            if (veto?.(out)) { vetoed = true; stop.abort(); break; }
+            onChunk?.(out);
             if (out.length >= roomFor(out, max)) { cut = true; stop.abort(); break; }
           }
         } catch (e) {
-          if (!(cut && e?.name === 'AbortError')) { later(); throw tag(e, codeOf(e, true)); }
+          if (!((cut || vetoed) && e?.name === 'AbortError')) { later(); throw tag(e, codeOf(e, true)); }
         }
-        if (cut) out = shorten(out, max);
         const done = Date.now();
+        // De sessie heeft het half afgemaakte antwoord gezien: opnieuw beginnen met het gesprek zonder deze beurt.
+        if (vetoed) { this.stats = { loadMs: t1 - t0, firstMs: (first || done) - t1, ms: done - t1, chars: out.length, vetoed: true }; release(); return null; }
+        if (cut) out = shorten(out, max);
         this.stats = { loadMs: t1 - t0, firstMs: (first || done) - t1, ms: done - t1, chars: out.length, cut };
         turns.push({ role: 'user', content: text }, { role: 'assistant', content: out.trim() });
         // Een sessie die na een afgekapt antwoord doorloopt, kent het einde niet: opnieuw beginnen met het gesprek.
@@ -200,6 +206,8 @@
       requestPermission: async () => true,
       remove: async () => {},
       reset() { release(); turns.length = 0; },
+      // De laatste vraag en het antwoord terugnemen (een tweede poging met een betere aanwijzing komt ervoor in de plaats).
+      undo() { if (turns.at(-1)?.role === 'assistant') turns.splice(-2); release(); },
       // Ander gesprek: de AI begint opnieuw, met wat in dat gesprek al gezegd is.
       useTurns(list) { if (list !== turns) { release(); turns = list; } },
     };
@@ -300,6 +308,7 @@
       },
       async remove() { await B.trial.ml.deleteCachedModels(); await B.storage.local.remove('pchatFxModel'); ready = false; },
       reset() { turns.length = 0; },
+      undo() { if (turns.at(-1)?.role === 'assistant') turns.splice(-2); },
       useTurns(list) { turns = list; },
     };
     return api;
@@ -307,7 +316,6 @@
 
   // Kiest de laag op wat de browser kan, niet op de user agent.
   function create({ env = globalThis, lang = 'en', force = null, system = '', browserId = 'chrome', fxModel = null, onProgress = null, sampling = null } = {}) {
-    if (force === 'chip') return none(browserId);
     const B = env.browser;
     if (typeof B?.runtime?.getBrowserInfo === 'function') return FX_ENABLED || force === 'device' ? firefoxMl({ B, system, fxModel, onProgress }) : none('firefox', 'slow');
     if (typeof env.LanguageModel !== 'undefined') return promptApi({ env, LM: env.LanguageModel, lang, system, browserId, onProgress, sampling });

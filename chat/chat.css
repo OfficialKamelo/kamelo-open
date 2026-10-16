@@ -68,6 +68,8 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .a math { font-size: 1.08em; }
 .a .mathblock { margin: 6px 0 10px; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .a .mathblock math { font-size: 1.2em; }
+/* \boxed{…}: de uitkomst van een som in een kader */
+.a math .boxed { border: 1.5px solid currentColor; border-radius: 4px; padding: 0 .3em; }
 .a .tablewrap { margin: 0 0 10px; overflow-x: auto; }
 .a table { border-collapse: collapse; font-size: 13px; min-width: 60%; }
 .a th, .a td { padding: 5px 10px 5px 0; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -125,6 +127,16 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .attach { width: 30px; height: 30px; border-radius: 50%; border: 0; background: none; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
 .attach:hover { background: var(--line); color: var(--label); }
 .attach svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+/* Lees deze pagina: rustig, naast de paperclip; tekst erbij, want het is een keuze en geen icoontje om te raden */
+.readpage { height: 30px; display: inline-flex; align-items: center; gap: 6px; padding: 0 11px 0 9px; border: 1px solid var(--line); border-radius: 99px;
+  background: none; color: var(--label); font-family: inherit; font-size: 12px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.readpage:hover { background: var(--soft); }
+.readpage:disabled { opacity: .5; cursor: default; }
+.readpage svg { width: 16px; height: 16px; flex: none; fill: none; stroke: var(--muted); stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.readpage[hidden] { display: none; }
+.att .doc.web { background: var(--ph-bg); color: var(--ph-fg); }
+.att .two { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.att .cut { font-size: 11px; color: var(--muted); }
 .composer.drop { border-color: var(--accent, #0a84ff); box-shadow: 0 0 0 3px rgba(10, 132, 255, .15); }
 .atts { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .atts[hidden] { display: none; }
@@ -221,54 +233,151 @@ body.typing .sugs { opacity: 0; transform: translateY(4px); pointer-events: none
 .attach[hidden], .lock[hidden] { display: none; }
 .top .newchat:not([hidden]) ~ .newchat { margin-left: 6px; }
 .a .stopped { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
-/* Melo's gezicht (melo-face.js): één kopvorm, de uitdrukking vloeit zacht over. Geen cirkel eromheen. */
-.melo-face { flex: none; display: inline-block; width: 34px; aspect-ratio: 128 / 112; }
-.melo-face svg { display: block; width: 100%; height: 100%; overflow: visible; fill: none; stroke: none; }   /* geen lijn van de algemene svg-regel */
-.melo-face.big { width: 112px; }
+/* Melo's gezicht (melo-face.js): de kameleonkop van 16 okt, in lagen. Alle beweging zit in melo-face.js zelf. */
+.melo-face { flex: none; display: inline-block; width: 41px; aspect-ratio: 6 / 5; }
+.melo-face svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.melo-face.big { width: 135px; }
 .top .melo-face { margin: -5px -2px -5px -3px; }
-.mf-lid, .mf-brow, .mf-mouth { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.mf-eye { transform-box: fill-box; transform-origin: center; transform: scaleY(calc(var(--open, 1) * var(--blink, 1))); }
-.mf-o { transform-box: fill-box; transform-origin: center; }
-.mf-all { transform-origin: 64px 96px; }
-.mf-ready :is(.mf-white, .mf-pupil, .mf-glint, .mf-o) { transition: cx .26s cubic-bezier(.3, .7, .2, 1), cy .26s cubic-bezier(.3, .7, .2, 1),
-  rx .26s cubic-bezier(.3, .7, .2, 1), ry .26s cubic-bezier(.3, .7, .2, 1), opacity .16s; }
-.mf-ready :is(.mf-lid, .mf-brow, .mf-mouth) { transition: d .26s cubic-bezier(.3, .7, .2, 1), stroke-width .26s, opacity .16s; }
-.mf-ready .mf-skin { transition: fill .7s ease; }   /* van kleur veranderen */
-/* Pratend: de mond gaat onregelmatig open en dicht. */
-.mf-talk .mf-o { animation: mf-talk .62s ease-in-out infinite; }
-@keyframes mf-talk { 0%, 100% { transform: scaleY(.45); } 30% { transform: scaleY(1.1); } 55% { transform: scaleY(.6); } 75% { transform: scaleY(.95); } }
-/* Even een veertje bij een korte reactie (knipoog, verrast, blij). */
-.mf-pop .mf-all { animation: mf-pop .34s cubic-bezier(.3, 1.5, .5, 1); }
-@keyframes mf-pop { 45% { transform: scale(1.06); } }
-/* Groot op het startscherm: zweeft heel rustig. Slapend: langzaam ademen. */
-.melo-face.big svg { animation: mf-float 5s ease-in-out infinite; }
-@keyframes mf-float { 50% { transform: translateY(-3px); } }
-.mf-asleep .mf-all { animation: mf-breathe 3.8s ease-in-out infinite; }
-@keyframes mf-breathe { 50% { transform: scale(1.025, 1.035); } }
-/* Knipperen (melo-face.js): oogleden schuiven over het oog, snel dicht en iets rustiger weer open. */
-.mf-ulid { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); }
-.mf-llid { transform: translateY(calc(var(--ry, 16) * 1px + 6px)); }
-.mf-blink .mf-ulid { animation: mf-ulid .24s both; }
-.mf-blink .mf-llid { animation: mf-llid .24s both; }
-@keyframes mf-ulid {
-  0% { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); animation-timing-function: cubic-bezier(.55, 0, 1, .45); }
-  38%, 52% { transform: translateY(calc(var(--ry, 16) * .22px - 2px)); animation-timing-function: cubic-bezier(0, .55, .45, 1); }
-  100% { transform: translateY(calc(var(--ry, 16) * -1px - 8px)); }
-}
-@keyframes mf-llid {
-  0%, 100% { transform: translateY(calc(var(--ry, 16) * 1px + 6px)); }
-  38%, 52% { transform: translateY(calc(var(--ry, 16) * .22px - 1px)); }
-}
-/* Dicht oog (knipoog, blij, slapend): de oogleden blijven dicht, het lijntje van het ooglid valt weg voor de boog. */
-.mf-shut .mf-ulid { transform: translateY(calc(var(--ry, 16) * .22px - 2px)); }
-.mf-shut .mf-llid { transform: translateY(calc(var(--ry, 16) * .22px - 1px)); }
-.mf-ulid path + path { opacity: 0; }   /* randje van het ooglid alleen tijdens knipperen, anders lijkt het even een boze blik */
-.mf-blink .mf-lids:not(.mf-shut) .mf-ulid path + path { opacity: 1; }
-.mf-ready .mf-shut :is(.mf-ulid, .mf-llid) { transition: transform .13s cubic-bezier(.55, 0, 1, .45); }
-.mf-ready .mf-lids:not(.mf-shut) :is(.mf-ulid, .mf-llid) { transition: transform .16s cubic-bezier(0, .55, .45, 1); }
-.mf-ready .mf-eye { transition: transform .14s ease-out, opacity 0s; }
-/* Melo's hoofdje naast elk antwoord: het antwoord komt van hem. */
 .mf-row { display: flex; align-items: flex-start; gap: 10px; }
 .mf-row > .a { flex: 1; min-width: 0; }
-.melo-face.mf-msg { width: 30px; margin-top: 0; }
+.melo-face.mf-msg { width: 36px; margin-top: -2px; }
 @media (prefers-reduced-motion: reduce) { .melo-face *, .melo-face svg { transition: none !important; animation: none !important; } }
+
+/* ---------- Melo's onderdelen (chat/rich.js, chat/rich-werk.js): brief, checklist, stappen, vergelijking; Business: e-mail,
+   actiepunten, beslissing. Rustig zoals openai.com: één kaart, veel lucht, een kop met icoon en titel, en Melo's blauw
+   (#4FC3E8) alleen voor wat je zelf aanraakt (invulveld, vinkje, stap, gewicht, hoogste score). ---------- */
+:root { --melo: #4fc3e8; --melo-ink: #0a7aa3; --melo-bg: rgba(79, 195, 232, .13); --melo-bg2: rgba(79, 195, 232, .22); --melo-line: rgba(79, 195, 232, .6);
+  --part-bg: #fff; --part-line: rgba(0, 0, 0, .08); --part-soft: #f6f6f7; --part-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 10px 28px -14px rgba(0, 0, 0, .14); }
+@media (prefers-color-scheme: dark) {
+  :root { --melo-ink: #8adcf5; --melo-bg: rgba(79, 195, 232, .14); --melo-bg2: rgba(79, 195, 232, .24); --melo-line: rgba(79, 195, 232, .65);
+    --part-bg: #242426; --part-line: rgba(255, 255, 255, .08); --part-soft: #2e2e31; --part-shadow: none; }
+}
+.a .part { margin: 6px 0 14px; border: 1px solid var(--part-line); border-radius: 18px; background: var(--part-bg); box-shadow: var(--part-shadow);
+  overflow: hidden; line-height: 1.55; }
+.a .part.drawing { padding: 14px 16px; color: var(--muted); font-size: 12.5px; font-style: italic; animation: pulse 1.2s ease-in-out infinite; }
+.part svg.ic { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Kop: icoon en titel; rechts een ring met 2/5. Verder geen tekst (uitleg staat in de tooltip). */
+.part .ph { display: flex; align-items: center; gap: 10px; padding: 14px 16px 4px; }
+.part .pi { flex: none; width: 28px; height: 28px; padding: 6px; border-radius: 9px; background: var(--melo-bg); color: var(--melo-ink); }
+.part .pt { min-width: 0; flex: 1; font-size: 15px; font-weight: 600; letter-spacing: -.012em; line-height: 1.3; color: var(--label); }
+.part .pp { flex: none; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+.part .pp.full { color: var(--melo-ink); }
+.part .ring { width: 18px; height: 18px; }
+.part .ring circle { fill: none; stroke-width: 2.2; }
+.part .ring .rt { stroke: var(--line); } .part .ring .rf { stroke: var(--melo); stroke-linecap: round; transition: stroke-dashoffset .35s cubic-bezier(.2, .8, .2, 1); }
+.part .pb { padding: 8px 16px 16px; }
+.a .part p { margin: 0 0 12px; } .a .part p:last-child { margin: 0; }
+
+/* Brief: rustig lezen, met invulvelden als zachte blauwe vlekjes in de tekst. */
+.part .pb.letter { font-size: 14.5px; line-height: 1.65; padding-top: 10px; }
+.part .subj { font-weight: 600; }
+.part input.fld { font: inherit; color: var(--label); background: var(--melo-bg); border: 0; border-radius: 6px; padding: 0 6px; margin: 0;
+  min-width: 3ch; max-width: 100%; field-sizing: content; line-height: 1.45; vertical-align: baseline; box-shadow: none;
+  transition: background .15s, box-shadow .15s; }
+.part input.fld::placeholder { color: var(--melo-ink); opacity: .9; }
+.part input.fld:hover { background: var(--melo-bg2); }
+.part input.fld:focus { outline: none; background: var(--part-bg); box-shadow: 0 0 0 1.5px var(--melo), 0 0 0 4px var(--melo-bg); }
+/* ingevuld: gewone tekst, met een dun lijntje zodat je ziet dat je het kunt aanpassen */
+.part input.fld.on:not(:focus) { background: transparent; padding: 0 1px; border-radius: 0; box-shadow: inset 0 -1.5px 0 var(--melo-line); }
+.part input.fld:disabled { opacity: .6; }
+/* teruggezette gegevens (Business): groen, zonder blokje eromheen */
+.part .back { background: none; padding: 0; color: var(--ok); font-weight: 500; }
+
+/* E-mail (Business): aan wie, als kop van de mail. */
+.part .mhead { display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; margin: 6px 16px 0; padding: 9px 12px; border-radius: 10px;
+  background: var(--part-soft); font-size: 13px; }
+.part .ml { color: var(--muted); } .part .mv { min-width: 0; }
+
+/* Vinkjes: rond, Melo's blauw als ze aan staan. */
+.part input[type="checkbox"] { appearance: none; flex: none; width: 20px; height: 20px; margin: 1px 0 0; border: 1.75px solid var(--axis, #c7c7cc); border-radius: 50%;
+  background: transparent no-repeat center / 12px; cursor: pointer; transition: background-color .15s, border-color .15s, transform .15s; }
+.part input[type="checkbox"]:hover { border-color: var(--melo); }
+.part input[type="checkbox"]:active { transform: scale(.92); }
+.part input[type="checkbox"]:checked { border-color: var(--melo); background-color: var(--melo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.6 6.3 5 8.6l4.5-5' fill='none' stroke='%23fff' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.part input[type="checkbox"]:focus-visible { outline: none; box-shadow: 0 0 0 4px var(--melo-bg2); }
+
+/* Checklist */
+.part .cks { display: flex; flex-direction: column; margin: 0 -6px; }
+.part .grp { margin: 12px 6px 2px; font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.part .grp:first-child { margin-top: 2px; }
+.part .ck { display: flex; align-items: flex-start; gap: 12px; padding: 8px 6px; border-radius: 10px; cursor: pointer; font-size: 14px; transition: background .15s; }
+.part .ck:hover { background: var(--part-soft); }
+.part .ck span { transition: color .15s; }
+.part .ck.done span { color: var(--muted); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 45%, transparent); }
+
+/* Stappenplan: nummers op een lijn; de eerste stap die nog open staat is "nu"; een klik op het nummer = gedaan. */
+.a .part ol.stp { list-style: none; margin: 4px 0 0; padding: 0; }
+.part .stp li { position: relative; display: flex; gap: 14px; padding: 0 0 16px; margin: 0; }
+.part .stp li:last-child { padding-bottom: 0; }
+.part .stp li:not(:last-child)::before { content: ''; position: absolute; left: 13.25px; top: 32px; bottom: 4px; width: 1.5px; border-radius: 1px; background: var(--line); }
+.part .stp li.done:not(:last-child)::before { background: var(--melo-line); }
+.part .stp .num { flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--part-bg); color: var(--muted);
+  font: 600 12.5px/1 inherit; display: grid; place-items: center; cursor: pointer; padding: 0; transition: background .15s, border-color .15s, box-shadow .15s; }
+.part .stp .num:hover { border-color: var(--melo); color: var(--label); }
+.part .stp .num svg.ic { width: 15px; height: 15px; stroke-width: 2.6; }
+.part .stp .now .num { border-color: var(--melo); color: var(--melo-ink); box-shadow: 0 0 0 4px var(--melo-bg); }
+.part .stp .done .num { background: var(--melo); border-color: var(--melo); color: #fff; }
+.part .stp .sx { min-width: 0; padding-top: 3px; }
+.part .stp .sx b { display: block; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.part .stp .sx p { margin: 2px 0 0 !important; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.part .stp .done .sx b { color: var(--muted); font-weight: 500; }
+
+/* Vergelijking: opties naast elkaar als zachte vlakken (smal: onder elkaar). */
+.part .cmp { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 2px; }
+.part .opt { padding: 12px 12px 14px; border-radius: 14px; background: var(--part-soft); }
+.part .opt .on { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 14.5px; font-weight: 600; letter-spacing: -.01em; }
+.a .part ul.pc { list-style: none; margin: 0; padding: 0; }
+.a .part ul.pc + ul.pc { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--part-line); }
+.part .pc li { display: flex; gap: 8px; margin: 0 0 6px; font-size: 13px; line-height: 1.45; }
+.part .pc li:last-child { margin-bottom: 0; }
+.part .pc .mk { flex: none; display: grid; place-items: center; width: 17px; height: 17px; margin-top: 1px; border-radius: 50%; }
+.part .pc .mk svg.ic { width: 11px; height: 11px; stroke-width: 2.8; }
+.part .pc.plus .mk { background: var(--ok-bg); color: var(--ok); }
+.part .pc.min .mk { background: var(--line); color: var(--muted); }
+
+/* Actiepunten (Business): wat, en daaronder wie en wanneer. */
+.a .part ul.acts { list-style: none; margin: 0; padding: 0; }
+.part .ar { display: flex; gap: 12px; padding: 10px 0; margin: 0; }
+.part .ar + .ar { border-top: 1px solid var(--part-line); }
+.part .ar:first-child { padding-top: 4px; }
+.part .ax { min-width: 0; flex: 1; }
+.part .aw { font-size: 14px; line-height: 1.4; transition: color .15s; }
+.part .ar.done .aw { color: var(--muted); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 45%, transparent); }
+.part .ams { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; font-size: 12.5px; color: var(--muted); }
+.part .am { display: inline-flex; align-items: center; gap: 5px; min-width: 0; }
+.part .am svg.ic { flex: none; width: 13px; height: 13px; }
+.part .am input.fld { font-size: 12.5px; }
+
+/* Beslissing (Business): de opties met hun totaal, daaronder per criterium het gewicht. */
+.part .rank { display: flex; flex-direction: column; gap: 12px; margin: 8px 0 14px; }
+.part .rn { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 14px; font-weight: 500; }
+.part .ro.best .rn { font-weight: 600; }
+.part .badge { flex: none; display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: var(--melo); color: #fff; }
+.part .badge svg.ic { width: 10px; height: 10px; stroke-width: 3; }
+.part svg.bar { display: block; width: 100%; height: 5px; }
+.part .bar .bt { fill: var(--part-soft); } .part .bar .bf { fill: var(--axis, #c7c7cc); }
+.part .ro.best .bar .bf { fill: var(--melo); }
+@media (prefers-color-scheme: dark) { .part .bar .bt { fill: #343437; } .part .bar .bf { fill: #5a5a5e; } }
+.part .rt { margin-left: auto; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--muted); }
+.part .ro.best .rt { color: var(--label); }
+.part .crit { border-top: 1px solid var(--part-line); }
+.part .cr { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--part-line); }
+.part .cr:last-child { border-bottom: 0; padding-bottom: 0; }
+.part .cn { min-width: 0; flex: 1; font-size: 13.5px; }
+.part .seg { flex: none; display: inline-flex; gap: 2px; padding: 2px; border-radius: 9px; background: var(--part-soft); }
+.part .seg .w { border: 0; background: none; color: var(--muted); font: 600 11px/1 inherit; padding: 4px 7px; border-radius: 7px; cursor: pointer; transition: background .15s, color .15s; }
+.part .seg .w:hover { color: var(--label); }
+.part .seg .w[aria-pressed="true"] { background: var(--part-bg); color: var(--label); box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 0 0 .5px rgba(0, 0, 0, .04); }
+@media (prefers-color-scheme: dark) { .part .seg .w[aria-pressed="true"] { background: #48484c; box-shadow: none; } }
+.part .cs { flex: none; display: inline-flex; gap: 10px; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.part .cs span { min-width: 1ch; text-align: center; } .part .cs .best { color: var(--melo-ink); font-weight: 600; }
+.part .adv { margin: 12px 0 0 !important; font-size: 13.5px; color: var(--muted); }
+/* zonder cijfers: een gewone tabel */
+.a .part .tablewrap { margin: 0; }
+.a .part table.dec { width: 100%; min-width: 0; }
+.a .part table.dec th { font-size: 12px; color: var(--muted); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) {
+  .part input.fld, .part input[type="checkbox"], .part .stp .num, .part .ring .rf, .part .ck { transition: none; } .a .part.drawing { animation: none; }
+}

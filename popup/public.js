@@ -63,6 +63,9 @@ $('openPrivateChat').addEventListener('click', () => {
   if (chrome.sidePanel?.open && pchatWindowId != null) {
     chrome.sidePanel.open({ windowId: pchatWindowId }).then(() => window.close(), fallback);
   } else fallback();
+  // Deze klik op het icoon gaf Melo toegang tot dit tabblad (activeTab): wachtte "Lees deze pagina" daarop, dan leest
+  // Melo nu verder (chat/chat.js).
+  chrome.storage.session.set({ pchatPopup: Date.now() }).catch(() => {});
 });
 
 chrome.storage.onChanged.addListener((changes, area) => {

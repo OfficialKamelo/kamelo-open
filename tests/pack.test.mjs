@@ -41,6 +41,16 @@ test('Firefox, gratis editie: eigen beschrijving zonder Melo; Chrome/Edge en Kam
     assert.ok(msgs.extDescriptionFirefox.message.length <= 132, lang);
   }
 });
+test('gratis editie in Chrome/Edge: precies deze rechten, met activeTab (Lees deze pagina) en geen toegang tot alle sites', () => {
+  const m = manifestFor(manifest);
+  assert.deepEqual(m.permissions, ['storage', 'scripting', 'activeTab', 'sidePanel']);
+  assert.ok(!JSON.stringify(m).includes('<all_urls>'));
+  assert.ok(m.host_permissions.every(h => /^https:\/\/(\*\.)?[a-z0-9.-]+\/\*$/.test(h)), 'alleen AI-chatsites');
+  assert.equal(m.optional_host_permissions, undefined);
+});
+test('Firefox: geen activeTab zolang Melo daar uit staat', () => {
+  assert.equal(manifestFor(manifest, { firefox: true }).permissions.includes('activeTab'), FX_ENABLED);
+});
 test('gratis editie: teams wordt public; al public (kamelo-open) mag; onbekend of teams blijft stopt', () => {
   const T = "  root.KameloEdition = 'teams';\n", P = "  root.KameloEdition = 'public';\n";
   assert.equal(publicEdition(T), P);

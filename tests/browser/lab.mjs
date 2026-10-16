@@ -5,7 +5,8 @@
 //
 //   POST /notice {edition:'gratis'|'business', site:'chatgpt.com', text, how:'paste'|'type', answer?}
 //        → { notice, noticeText, buttons, field, answerShown }   (Kamelo's melding en wat er in het invoerveld staat)
-//   POST /melo   {edition, messages:[...] }  → { transcript:[{q,a,ms,drawn}] }   (Melo in de zijbalk, met de echte AI; meetset: melo-eval.mjs)
+//   POST /melo   {edition, messages:[...], debug? } → { transcript:[{q,a,ms,drawn}], console? }   (Melo in de zijbalk, met de echte AI;
+//                meetset: melo-eval.mjs). debug: chat.html?debug, en wat Melo in de console schrijft komt mee terug.
 //   POST /mac    {messages:[...]}            → { transcript }               (Melo voor Mac, Apple's AI; zie tools in scratch)
 //   GET  /sites                              → lijst met nagebootste sites
 import fs from 'node:fs';
@@ -136,13 +137,15 @@ async function notice({ edition = 'gratis', site = 'chatgpt.com', text = '', how
   } finally { await p.close().catch(() => {}); }
 }
 
-async function melo({ edition = 'gratis', messages = [] }) {
+async function melo({ edition = 'gratis', messages = [], debug = false }) {
   if (!ED[edition]) throw new Error('edition: gratis of business');
   await aiOn();
   const E = { browser: AI, id: AIX[edition].id };
   const p = await E.browser.newPage();
+  const logs = [];
+  if (debug) { p.on('console', m => logs.push(`${m.type()}: ${m.text()}`)); p.on('pageerror', e => logs.push(`pageerror: ${e.message}`)); }
   try {
-    await p.goto(`chrome-extension://${E.id}/chat/chat.html`);
+    await p.goto(`chrome-extension://${E.id}/chat/chat.html${debug ? '?debug' : ''}`);
     await wait(1500);
     const transcript = [];
     for (const q of messages.slice(0, 6)) {
@@ -158,8 +161,12 @@ async function melo({ edition = 'gratis', messages = [] }) {
           const nt = document.querySelector('.note:not([hidden]), #note:not([hidden])');
           const el = as.at(-1);
           // wat Kamelo tekende: grafieken, formules, tabellen, opsommingspunten (de knoppen onder het antwoord tellen niet mee)
-          const drawn = el ? { charts: el.querySelectorAll('figure.chart svg').length, math: el.querySelectorAll('math').length, tables: el.querySelectorAll('table').length, items: el.querySelectorAll('li').length } : {};
+          // Melo's onderdelen (brief, checklist, …): welke, en hoeveel invulvelden
+          const drawn = el ? { charts: el.querySelectorAll('figure.chart svg').length, math: el.querySelectorAll('math').length, tables: el.querySelectorAll('table').length, items: el.querySelectorAll('li').length,
+            parts: [...el.querySelectorAll('.part[data-kind]')].map(p => p.dataset.kind), fields: el.querySelectorAll('.part input.fld').length } : {};
           const clone = el?.cloneNode(true); clone?.querySelectorAll('.tools, figure.chart').forEach(x => x.remove());
+          clone?.querySelectorAll('.part input.fld').forEach(i => i.replaceWith(`‹${i.placeholder}›`)); // invulveld leesbaar in het rapport
+          clone?.querySelectorAll('.part input[type="checkbox"]').forEach(i => i.replaceWith('☐ '));
           // formules als leesbare tekst (x^2 + 2), anders geeft innerText elk teken op een eigen regel
           const mt = n => {
             const k = [...n.children].map(mt), b = s => s.length > 1 ? `(${s})` : s;
@@ -177,11 +184,12 @@ async function melo({ edition = 'gratis', messages = [] }) {
           return { n: as.length, last: clone ? (document.body.append(clone), clone.innerText) : '', busy, note: nt?.innerText || '', drawn, clone: clone?.remove() };
         });
         note = s.note;
-        if (s.n > before && !s.busy && s.last.trim()) { a = s.last.trim(); drawn = s.drawn; break; }
+        // Een antwoord dat alleen een grafiek is (Kamelo haalde de lege aanloop en opvulzin weg), telt ook.
+        if (s.n > before && !s.busy && (s.last.trim() || s.drawn.charts)) { a = s.last.trim() || '(alleen een grafiek)'; drawn = s.drawn; break; }
       }
       transcript.push({ q, a: a || '(geen antwoord binnen 120 s)', note, drawn, ms: Date.now() - t0 });
     }
-    return { transcript };
+    return debug ? { transcript, console: logs } : { transcript };
   } finally { await p.close().catch(() => {}); }
 }
 
