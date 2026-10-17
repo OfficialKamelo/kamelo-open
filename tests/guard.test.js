@@ -100,6 +100,19 @@ test('vangnet: bij woorden over niet meer willen leven staat de hulplijn er alti
   for (const q of ['Ik zie het niet meer zitten. Soms wil ik gewoon niet meer wakker worden.', 'Ik denk aan zelfmoord', 'I want to die', 'Ich will nicht mehr leben', 'J’ai envie de mourir', 'No quiero vivir'])
     assert.ok(G.crisis(q), q);
   for (const q of ['Mijn hond is dood', 'Ik ben doodmoe', 'Hoe lang leeft een kat?', 'I could die for a pizza', 'Wat is 2 + 2?']) assert.ok(!G.crisis(q), q);
+});
+test('vangnet: gewone zinnen in alle talen (onderzoek 17 okt)', () => {
+  for (const q of [
+    'Je ne veux plus vivre', "Je n'ai plus envie de vivre", 'Je me scarifie depuis des mois', 'Je veux me tuer', 'Parfois je voudrais être morte',
+    'No quiero seguir viviendo', 'Me corto cuando estoy triste', 'Quiero matarme', 'Ojalá estuviera muerta',
+    'Ich will sterben', 'Ich ritze mich', 'Ich wäre lieber tot',
+    'I want to end it.', 'I wish I was dead', 'I wish I were dead', 'I cut myself', 'I keep cutting myself', 'I can’t go on anymore',
+    'Ik snijd mezelf', 'Soms wou ik dat ik dood was', 'Ik heb geen zin meer om te leven', 'Ik wil er een einde aan maken.', 'Ik denk erover mezelf iets aan te doen',
+  ]) assert.ok(G.crisis(q), q);
+  for (const q of [
+    'How do I end my subscription?', 'I want to end it with my boyfriend', 'I cut myself while cooking, how do I clean it?', 'I burn myself out at work',
+    'Hoe maak ik een einde aan het contract?', 'Me corto el pelo yo misma', 'Mon chef va me tuer', 'Ich will mich beim Sport nicht überanstrengen',
+  ]) assert.ok(!G.crisis(q), q);
   const a = G.withHelp('Wat zwaar dat je je zo voelt. Wil je vertellen wat er speelt?', 'Soms wil ik gewoon niet meer wakker worden.', 'nl');
   assert.match(a, /113 Zelfmoordpreventie\*\* op 0800-0113/); assert.match(a, /\*\*112\*\*/);
   assert.equal(G.withHelp('Bel 113 of 0800-0113.', 'ik wil dood', 'nl'), 'Bel 113 of 0800-0113.', 'staat er al: niet dubbel');

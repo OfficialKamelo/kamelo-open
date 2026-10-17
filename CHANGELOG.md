@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.7.1] - 2026-10-17
+
+### Fixed
+- **The crisis line in more languages and phrasings.** “Je ne veux plus vivre”, “Ich will sterben”, “I want to end it”, “I wish I was dead” and words about hurting yourself now also bring the crisis line under Melo’s answer, in all five languages. Everyday phrases like “end my subscription” no longer do.
+- **Melo is called Melo in German, French and Spanish too.** Some buttons, notices and the popup still said “Private Chat” in those languages.
+
 ## [1.7.0] - 2026-10-16
 
 ### Added

@@ -161,13 +161,22 @@
   // Bij woorden over niet meer willen leven staat de hulplijn er altijd onder, ook als de AI hem vergeet (meetset 16 okt:
   // "Soms wil ik gewoon niet meer wakker worden" kreeg geen 113). Zelfde vangnet als Melo voor Mac. In code, niet in de
   // instructies: zo hangt het niet af van wat de kleine AI doet.
+  // Onderzoek 17 okt: "Je ne veux plus vivre", "Ich will sterben", "I want to end it" en zelfbeschadiging ("I cut myself",
+  // "Ik snijd mezelf") vielen erdoor; "end my subscription" en "een einde aan het contract" gaven juist een hulplijn.
+  // Zelfbeschadiging zonder ongeluk-woorden erachter: "I cut myself while cooking" is geen crisis.
   const CRISIS = new RegExp([
     'zelfmoord', 'su[iï]cid', 'niet meer (willen )?leven', 'niet meer (wakker|op) (te )?(worden|staan)', '(wil|willen|wilde) (graag )?dood', 'dood (willen|wil) ',
-    'mezelf (iets )?(aan ?doen|doden|ombrengen|van kant)', 'een eind(e)? (aan|maken)( aan)? (mijn leven|alles|het)', 'er niet meer (willen |wil )?zijn', '(ik )?zie het (echt |gewoon )?niet meer zitten', 'uit het leven',
-    'kill myself', 'end (my|it all|my life)', 'want(ed)? to die', "don['’]?t want to (live|be alive|wake up|be here)", 'self[- ]?harm', 'hurt(ing)? myself', 'no reason to live', 'better off dead',
-    'umbringen', 'selbstmord', 'suizid', 'nicht mehr leben', 'sterben (will|möchte)', 'nicht mehr aufwachen', 'mir etwas antun',
-    'me suicider', 'suicide', 'en finir', 'ne plus vivre', 'envie de mourir', 'veux mourir', 'me faire du mal',
-    'quitarme la vida', 'no quiero vivir', 'quiero morir', 'hacerme da[ñn]o', 'acabar con (todo|mi vida)',
+    'mezelf (iets )?(aan ?doen|doden|ombrengen|van kant)', 'een eind(e)? (aan|maken( aan)?) (mijn leven|alles|het)(?=\\s*([.!?,]|$))', 'er niet meer (willen |wil )?zijn', '(ik )?zie het (echt |gewoon )?niet meer zitten', 'uit het leven',
+    'snijd mezelf', 'mezelf (iets )?aan te doen', 'er een eind(e)? aan (willen )?maken', 'mezelf (te )?(snijden|krassen|beschadigen|pijn (te )?doen)', 'dat ik dood (was|ben|zou zijn)', 'geen zin meer (in|om te) leven',
+    'kill myself', 'end (it all|my (own )?life)', '(want|going|planning) to end it(?=\\s*([.!?,]|$))', 'want(ed)? to die', "don['’]?t want to (live|be alive|wake up|be here)", 'self[- ]?harm', 'hurt(ing)? myself', 'no reason to live', 'better off dead',
+    'wish (i|that i) (was|were) dead', 'wish i (had )?never (been born|woke up)', 'take my (own )?life', "can['’]?t go on (any ?more|living)",
+    '(cutting|burning) myself', '(i )?(cut|burn) myself(?! (off|out|while|on|with|by|when|shaving|cooking|accidentally))',
+    'umbringen', 'selbstmord', 'suizid', 'nicht mehr leben', 'sterben (will|möchte)', '(will|möchte|wollte) (nur noch |einfach )?sterben', 'nicht mehr aufwachen', 'mir etwas antun',
+    'ritze mich', 'mich (selbst )?(ritzen|verletzen)', 'lieber tot', 'kein(en)? (grund|sinn) mehr (zu leben|im leben)',
+    'me suicider', 'suicide', 'en finir', 'ne plus vivre', '(veux|veut|voulais) plus vivre', 'plus envie de vivre', 'envie de mourir', 'veux mourir', 'me faire du mal', 'me fais du mal',
+    '(veux|vais|voudrais|envie de) me tuer', 'me scarifi', '(voudrais|veux|préférerais) être mort',
+    'quitarme la vida', 'no quiero vivir', 'no quiero seguir vivi(r|endo)', 'quiero morir', 'hacerme da[ñn]o', 'acabar con (todo|mi vida)',
+    '(quiero|voy a|pienso en|ganas de) matarme', 'me quiero matar', 'autolesi', 'me corto(?! (el pelo|el cabello|las uñas|la barba|el dedo|un dedo|con))', 'cortarme (las venas|los brazos|las muñecas)', 'ojal[aá] (estuviera|estar) muert',
   ].join('|'), 'i');
   const crisis = q => CRISIS.test(String(q || ''));
   const HELP = {

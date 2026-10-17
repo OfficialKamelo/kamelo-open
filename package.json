@@ -1,6 +1,6 @@
 {
   "name": "kamelo",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "license": "AGPL-3.0-only",
   "private": true,
   "description": "Kamelo: a browser extension that suggests a temporary chat or Melo, a private chat with on-device AI, when you type something personal into an AI chat.",
