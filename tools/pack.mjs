@@ -6,13 +6,16 @@
 //   Kamelo Business    --teams: alles, zoals de broncode (afschermen, kluis, alle instellingen) plus Private Chat.
 //
 // Elke store heeft een eigen map in web-store-uploaden/, met het pakket, de afbeeldingen en INVULLEN-*.md:
-//   node tools/pack.mjs           → Google Chrome/ en Microsoft Edge/kamelo-store-<versie>.zip (hetzelfde pakket)
+//   node tools/pack.mjs           → Google Chrome/ en Microsoft Edge/kamelo-store-<versie>.zip (dezelfde code; Edge met de
+//                                   naam en beschrijving zonder chat, zie noChatNames)
 //   node tools/pack.mjs --beta    → Google Chrome/kamelo-beta-<versie>.zip
 //   node tools/pack.mjs --firefox → Firefox/kamelo-firefox-<versie>.zip (voor addons.mozilla.org)
 //   node tools/pack.mjs --teams   → Kamelo Business/kamelo-teams-<versie>.zip (met --firefox: kamelo-teams-firefox-…)
-//   --test                        → naam "Kamelo (test)" of "Kamelo Business (test)", om naast de echte te laden
+//   --test                        → naam "Melo (test)" of "Kamelo Business (test)", om naast de echte te laden
 //
-// De bètaversie heet "Kamelo Beta" en toont een β op het icoon, zodat je hem naast de gewone versie herkent.
+// De gratis editie heet Melo ("Melo: private AI chat, by Kamelo", sinds 17 okt 2026): Melo is het product, de extensie is hoe
+// je Melo aan je browser toevoegt. Kamelo blijft de maker, en Kamelo Business heet zo.
+// De bètaversie heet "Melo Beta" en toont een β op het icoon, zodat je hem naast de gewone versie herkent.
 // Hij is bedoeld voor een aparte, verborgen vermelding in de Web Store.
 import fs from 'node:fs';
 import os from 'node:os';
@@ -66,10 +69,14 @@ export const aiSitePatterns = () => [...new Set(SITES.filter(s => !s.teams).flat
 // De gratis editie: geen afschermen, dus geen netwerkfilter, geen markeringen en geen kluis. Content scripts en
 // toegang alleen op de AI-chatsites, in plaats van op elke site. Geen alarms meer (die waren voor het opschonen van
 // de kluis); scripting blijft, om Kamelo na installeren of bijwerken in al open AI-tabbladen te starten.
+// Naam: Melo (zie boven). Melo is een naam en wordt nooit vertaald, dus de korte naam en de knoptitel staan er letterlijk.
+export const PUBLIC_NAME = 'Melo';
 export function publicManifest(manifest) {
   const m = structuredClone(manifest);
   m.name = '__MSG_extName__';
+  m.short_name = PUBLIC_NAME;
   m.description = '__MSG_extDescription__';
+  m.action.default_title = PUBLIC_NAME;
   // Geen OCR van afbeeldingen (teams/ocr-host.js) in de gratis editie: geen offscreen-document, en geen wasm in de
   // extensiepagina's (de standaard-CSP van MV3, zonder 'wasm-unsafe-eval').
   // Geen downloads: het terugzetten van gegevens in bestanden (teams/originals.js) is alleen voor Kamelo Business.
@@ -100,14 +107,23 @@ export function publicEdition(text) {
   return out;
 }
 
+// In Firefox en Edge kun je (nog) niet met Melo chatten: daar biedt de gratis editie alleen de tijdelijke chat. Een eigen
+// naam en beschrijving die geen privéchat beloven ("Melo: personal AI questions, by Kamelo"). De sleutels heten naar
+// Firefox, maar gelden ook voor Edge. Een bèta- of testnaam blijft staan.
+export function noChatNames(m) {
+  if (m.name === '__MSG_extName__') m.name = '__MSG_extNameFirefox__';
+  m.description = '__MSG_extDescriptionFirefox__';
+  return m;
+}
+
 export function firefoxManifest(manifest, { teams = true } = {}) {
   const m = structuredClone(manifest);
   m.background = { scripts: BACKGROUND[teams ? 'teams' : 'public'] };
   m.browser_specific_settings = {
     gecko: { id: teams ? 'teams@kamelo.eu' : 'kamelo@kamelo.eu', strict_min_version: '128.0', data_collection_permissions: { required: ['none'] } },
   };
-  // De gratis editie heeft in Firefox geen Melo (alleen de tijdelijke chat): een eigen beschrijving zonder Melo.
-  if (!teams) m.description = '__MSG_extDescriptionFirefox__';
+  // Het add-on-ID blijft kamelo@kamelo.eu, ook nu de extensie Melo heet (een nieuw ID is een nieuwe add-on).
+  if (!teams) noChatNames(m);
   // Private Chat op dit apparaat (chat/device.js): Firefox' eigen AI (trial.ml) mag alleen als optionele toestemming,
   // pas gevraagd na een klik op Downloaden, en alleen zolang die aan staat (nu uit: te traag). Firefox kent geen
   // zijpaneel-API: daar opent de chat in een eigen venster.
@@ -133,14 +149,15 @@ export function teamsManifest(manifest) {
 }
 
 // Het manifest van een pakket.
-export function manifestFor(manifest, { teams = false, beta = false, firefox = false, test = false } = {}) {
+export function manifestFor(manifest, { teams = false, beta = false, firefox = false, edge = false, test = false } = {}) {
   let m = teams ? teamsManifest(manifest) : publicManifest(manifest);
+  if (edge && !teams) noChatNames(m);
   if (beta) {
-    Object.assign(m, { name: 'Kamelo Beta', version_name: `${m.version} beta` });
-    m.action.default_title = 'Kamelo Beta';
+    Object.assign(m, { name: `${PUBLIC_NAME} Beta`, version_name: `${m.version} beta` });
+    m.action.default_title = m.name;
   }
   if (test) {
-    m.name = teams ? 'Kamelo Business (test)' : 'Kamelo (test)';
+    m.name = teams ? 'Kamelo Business (test)' : `${PUBLIC_NAME} (test)`;
     m.action.default_title = m.name;
   }
   if (firefox) m = firefoxManifest(m, { teams });
@@ -160,7 +177,7 @@ export function dropMissingScripts(dir) {
 }
 
 // Zet het uitgepakte pakket in `dir` (leeg of nog niet bestaand). Geeft het manifest terug.
-export function build(dir, { teams = false, beta = false, firefox = false, test = false } = {}) {
+export function build(dir, { teams = false, beta = false, firefox = false, edge = false, test = false } = {}) {
   if (teams && !fs.existsSync(path.join(ROOT, 'src/detector.js'))) throw new Error('Kamelo Business zit niet in deze repo.');
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
   const skip = new Set(teams ? PUBLIC_ONLY : TEAMS_ONLY);
@@ -175,7 +192,7 @@ export function build(dir, { teams = false, beta = false, firefox = false, test 
       filter: src => path.basename(src) !== '.DS_Store' && !skip.has(path.relative(ROOT, src).split(path.sep).join('/')),
     });
   }
-  const m = manifestFor(manifest, { teams, beta, firefox, test });
+  const m = manifestFor(manifest, { teams, beta, firefox, edge, test });
   fs.writeFileSync(path.join(dir, 'manifest.json'), `${JSON.stringify(m, null, 2)}\n`);
   // Het nagebootste beleid en licenties met de testsleutel alleen in testversies; in echte pakketten uit.
   if (teams && !test) setTestBuild(dir, false);
@@ -211,13 +228,14 @@ export function pack({ beta = false, firefox = false, teams = false, test = fals
   const { version } = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-pack-'));
   try {
-    const dir = path.join(tmp, 'kamelo');
-    build(dir, { teams, beta, firefox, test });
     const kind = teams ? (firefox ? 'teams-firefox' : 'teams') : firefox ? 'firefox' : beta ? 'beta' : 'store';
     const name = `kamelo-${kind}-${version}${test ? '-test' : ''}.zip`;
     const stores = teams ? [STORES.teams] : firefox ? [STORES.firefox] : beta ? [STORES.chrome] : [STORES.chrome, STORES.edge];
-    const zip = zipDir(dir, path.join(tmp, name));
+    // Edge krijgt een eigen pakket: dezelfde code, met de naam zonder chat (noChatNames). De bestandsnaam blijft gelijk.
     const outs = stores.map(store => {
+      const dir = path.join(tmp, store, 'kamelo');
+      build(dir, { teams, beta, firefox, test, edge: store === STORES.edge });
+      const zip = zipDir(dir, path.join(tmp, store, name));
       const out = path.join(OUT_DIR, store, name);
       fs.mkdirSync(path.dirname(out), { recursive: true });
       fs.copyFileSync(zip, out);

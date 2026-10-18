@@ -163,7 +163,8 @@
     return String(text).replace(/\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\]/g, (_, a, b) => R.texText(a ?? b))
       .replace(/\\\((.+?)\\\)/g, (_, a) => R.texText(a))
       .replace(/(?<!\$)\$(?!\s)([^$\n]*?[^\s$\\])\$(?!\d)/g, (m, a) => (/[\\^_=+\-*/]/.test(a) ? R.texText(a) : m))
-      .replace(/^\s*```+\s*(?:chart|graph|grafiek|plot)\s*$/gim, '').replace(/^\s*```+\s*$/gm, '')
+      // Alleen de hekjes van een grafiekblok weg (opener met zijn eigen sluiter); codeblokken houden de hunne.
+      .replace(/^[ \t]*```+[ \t]*(?:chart|graph|grafiek|plot)[ \t]*\n([\s\S]*?)(?:^[ \t]*```+[ \t]*$|(?![\s\S]))/gim, '$1')
       .replace(/\*\*([^*\n]+)\*\*/g, '$1').trim();
   }
 

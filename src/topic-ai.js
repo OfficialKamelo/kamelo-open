@@ -24,7 +24,7 @@
   const TIMEOUT_MS = 15000;  // trager dan dit: geen melding
   const CACHE_MAX = 200;
 
-  // Kort, in het Engels (dat kent de Prompt API officieel); de tekst zelf mag in elke taal.
+  // Kort, in het Engels; de tekst zelf mag in elke taal.
   // Zelfbeschadiging hoort er bewust niet bij (zoals in topics.js): geen melding die iemand wegstuurt.
   const SYSTEM = [
     'You check one message that someone is about to send to an AI chatbot.',
@@ -47,8 +47,12 @@
     required: ['personal', 'topic'],
     additionalProperties: false,
   };
-  // Dezelfde opties voor availability() en create(), zoals de Prompt API vraagt.
-  const LM_OPTS = { expectedInputs: [{ type: 'text', languages: ['en'] }], expectedOutputs: [{ type: 'text', languages: ['en'] }] };
+  // Dezelfde opties voor availability() en create(), zoals de Prompt API vraagt. De tekst kan Engels, Duits, Frans of
+  // Spaans zijn (die kent de Prompt API officieel; Nederlands niet), het antwoord is Engels. Is het model zo niet
+  // 'available' (bijv. deze Chrome kent die talen nog niet), dan zoals eerst alleen Engels: liever die tweede kans dan geen.
+  const opts = languages => ({ expectedInputs: [{ type: 'text', languages }], expectedOutputs: [{ type: 'text', languages: ['en'] }] });
+  const LM_OPTS = opts(['en', 'de', 'fr', 'es']);
+  const LM_OPTS_EN = opts(['en']);
 
   // Het stuk dat de AI ziet: de laatste alinea's, samen hooguit MAX_CHARS tekens (de vraag staat meestal aan het eind).
   // Een te lange laatste alinea: het einde, vanaf een heel woord.
@@ -108,6 +112,8 @@
         if (my !== gen) return;
         const s = snippet(read());
         if (!enough(s)) return;
+        // Huiswerk, een verhaal, een patiënt: de woordenlijst zag al dat het niet over de schrijver gaat (topics.js).
+        if (root.PrivacyTopics?.notAboutWriter?.(s)) return;
         const key = hash(s);
         if (cache.has(key)) { const t = cache.get(key); if (t) onTopic(t); return; }
         const wait = last + GAP_MS - now();
@@ -130,12 +136,12 @@
   // ---------- Achtergrond: de AI op dit apparaat ----------
   // ask(text, tabId) → { topic } of { topic: null, skipped }. LanguageModel wordt bij elke vraag opnieuw opgezocht.
   function model({ env = root, now = () => Date.now(), setTimer = (f, ms) => setTimeout(f, ms), clearTimer = t => clearTimeout(t) } = {}) {
-    let base = null, idle = null, busy = false;
+    let base = null, baseOpts = null, idle = null, busy = false;
     const lastByTab = new Map();
-    const release = () => { clearTimer(idle); idle = null; try { base?.destroy?.(); } catch {} base = null; };
+    const release = () => { clearTimer(idle); idle = null; try { base?.destroy?.(); } catch {} base = null; baseOpts = null; };
     const later = () => { clearTimer(idle); idle = setTimer(release, IDLE_MS); idle?.unref?.(); }; // unref: houdt Node (tests) niet open
-    async function create(LM) {
-      const opts = { ...LM_OPTS, initialPrompts: [{ role: 'system', content: SYSTEM }] };
+    async function create(LM, lmOpts) {
+      const opts = { ...lmOpts, initialPrompts: [{ role: 'system', content: SYSTEM }] };
       // topK en temperature: alleen samen, en alleen in extensies. Kent deze Chrome ze niet, dan zonder.
       try { return await LM.create({ ...opts, topK: 1, temperature: 0 }); } catch { return LM.create(opts); }
     }
@@ -153,12 +159,17 @@
       let session = null;
       try {
         // Nooit downloaden: alleen als het model er al is.
-        let state;
-        try { state = await LM.availability(LM_OPTS); } catch { state = 'unavailable'; }
+        let state, lmOpts;
+        for (lmOpts of [LM_OPTS, LM_OPTS_EN]) {
+          try { state = await LM.availability(lmOpts); } catch { state = 'unavailable'; }
+          if (state === 'available') break;
+        }
         if (state !== 'available') { release(); return { topic: null, why: String(state) }; }
         clearTimer(idle);
-        base ??= await create(LM);
-        session = typeof base.clone === 'function' ? await base.clone() : await create(LM);
+        if (base && baseOpts !== lmOpts) release();
+        base ??= await create(LM, lmOpts);
+        baseOpts = lmOpts;
+        session = typeof base.clone === 'function' ? await base.clone() : await create(LM, lmOpts);
         const signal = typeof AbortSignal !== 'undefined' && AbortSignal.timeout ? AbortSignal.timeout(TIMEOUT_MS) : undefined;
         const raw = await session.prompt(s, { responseConstraint: SCHEMA, signal });
         return { topic: parse(raw) };
@@ -174,7 +185,7 @@
     return { ask, release, get ready() { return !!base; } };
   }
 
-  const api = { TOPICS, PAUSE_MS, GAP_MS, MIN_WORDS, MAX_CHARS, IDLE_MS, SYSTEM, SCHEMA, LM_OPTS, snippet, enough, parse, hash, gate, model };
+  const api = { TOPICS, PAUSE_MS, GAP_MS, MIN_WORDS, MAX_CHARS, IDLE_MS, SYSTEM, SCHEMA, LM_OPTS, LM_OPTS_EN, snippet, enough, parse, hash, gate, model };
   root.KameloTopicAi = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

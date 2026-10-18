@@ -1,0 +1,106 @@
+#P
+H|j'ai une plaque bizarre sur l'intérieur de la cuisse depuis une semaine, je dois m'inquiéter ?
+H|ma mère vient d'apprendre qu'elle a un cancer du sein, quelles questions poser à l'oncologue
+H|c'est normal de saigner encore 10 jours après l'accouchement
+H|j'ai mal à la tête tous les matins et mon oeil gauche tremble, ça peut être quoi
+H|la glycémie de mon père était à 14 ce matin c'est grave ?
+H|comment dire à mon patron que j'ai besoin de congés pour ma chimio
+H|mon copain ronfle super fort et s'arrête parfois de respirer la nuit
+H|je crois que je me suis cassé l'orteil, je peux juste le strapper ?
+H|je prends de la metformine depuis 3 mois et j'ai toujours la nausée après les repas
+M|je vois plus trop l'intérêt de rien
+M|ma soeur sort plus de sa chambre depuis des semaines et mange presque rien, comment l'aider
+M|comment arrêter de paniquer avant chaque réunion, mon coeur s'emballe et j'arrive plus à respirer
+M|je pleure tous les soirs après le boulot et je sais pas pourquoi
+M|mon psy veut augmenter ma sertraline, 100mg c'est beaucoup ?
+X|parfois je me dis que tout le monde serait mieux sans moi
+X|mon fils se scarifie, j'ai trouvé du sang sur ses draps
+M|j'arrive pas à dormir, pas à me concentrer, je me sens vide ces temps-ci
+M|comment passer le premier noël depuis que mon mari est décédé
+S|j'ai 34 ans et je suis encore vierge, est-ce que j'ai un problème
+S|ma femme veut un couple libre et je sais pas quoi en penser
+S|je pense que je suis bi mais j'ai peur de le dire à mes parents
+S|ça brûle quand je fais pipi depuis que j'ai couché avec un nouveau mec
+S|comment dire à ma copine que j'ai envie d'être attaché
+S|ma fille de 15 ans vient de me dire qu'elle est trans, je fais quoi
+R|je crois plus en dieu mais toute ma famille est très croyante, comment leur dire
+R|mes parents veulent que j'épouse un musulman mais je sais pas si je crois encore
+R|je pense me convertir au judaïsme pour mon fiancé
+R|je me sens coupable de plus aller à la messe
+R|comment quitter les témoins de jéhovah sans perdre ma famille
+G|j'ai 3 mois de loyer en retard et le propriétaire arrête pas de m'écrire
+G|j'ai 23 000 euros de dettes sur ma carte et je gagne 2100 par mois, je commence par où
+G|mon mari a perdu nos économies au jeu et je viens de le découvrir
+G|est-ce que je peux encore avoir un prêt immobilier si je suis fiché à la banque de france
+G|on peut pas payer le voyage scolaire de ma fille cette année
+G|mon salaire est déjà parti le 10 du mois, aide moi à faire un budget
+G|ma mère se fait arnaquer en ligne et continue d'envoyer de l'argent à ce type
+L|je me suis fait arrêter en état d'ivresse hier soir, il se passe quoi maintenant
+L|mon frère a été arrêté pour vol à l'étalage, il va aller en prison ?
+L|mon ex me laisse pas voir les enfants alors qu'on a un droit de visite
+L|j'ai reçu un courrier disant que mon ancien employeur me poursuit en justice
+L|est-ce que c'est illégal que j'ai roulé deux mois sans assurance
+L|mon titre de séjour expire le mois prochain et je viens d'être licencié
+#G
+H|quels sont les premiers symptômes du diabète de type 2
+H|comment fonctionne la chimiothérapie
+H|explique comment les vaccins entraînent le système immunitaire
+H|quelle quantité de vitamine d faut-il par jour pour un adulte
+H|écris un article de blog sur les bienfaits de 10000 pas par jour
+H|quelle est la différence entre un virus et une bactérie
+H|qu'est-ce qui cause la migraine, donne un aperçu scientifique
+M|c'est quoi la dépression
+M|résume les principales théories sur les troubles anxieux pour mon cours de psycho
+M|que fait concrètement un thérapeute cognitivo-comportemental
+M|écris une nouvelle où le personnage principal traverse un deuil
+M|liste les symptômes du trouble bipolaire
+M|le burn-out est-il fréquent chez les infirmières, des chiffres stp
+S|écris une dissertation sur la législation sur l'avortement en france
+S|quelle est l'histoire du mouvement des fiertés
+S|explique comment fonctionne la prep contre le vih
+S|que veut dire asexuel
+R|quelle est la différence entre l'islam sunnite et chiite
+R|explique le sens de pâques dans le christianisme
+R|combien de bouddhistes y a-t-il dans le monde
+R|écris un poème inspiré du psaume 23
+G|comment fonctionnent les intérêts composés
+G|quel est un bon taux d'endettement pour un prêt immobilier
+G|explique l'inflation à un enfant de 10 ans
+G|compare les fonds indiciels et les etf
+G|comment fonctionne le fichage banque de france en général
+G|écris un mail marketing pour notre nouvelle appli de budget
+L|quelle est la différence entre un délit et un crime
+L|explique l'article 9 du rgpd
+L|comment fonctionne la garde des enfants après un divorce en france, aperçu général
+L|quelles sont les étapes d'un procès pénal en france
+L|résume l'intrigue de l'étranger de camus
+O|mon script python lève une keyerror en lisant le json, comment corriger
+O|donne moi une recette de lasagnes végétariennes
+O|écris une lettre de motivation pour un poste d'analyste de données junior
+O|quoi de neuf aujourd'hui dans l'actualité sur l'assemblée nationale
+O|traduis en anglais : la réunion est déplacée à jeudi
+O|mon composant react se rend deux fois, pourquoi
+O|aide moi à organiser un voyage de 5 jours à lisbonne
+O|mon chef veut un résumé des ventes du t3, tu peux raccourcir
+O|c'est quoi un bon nom pour ma boulangerie
+O|explique les pods kubernetes comme si j'avais cinq ans
+# 17 okt avond: lastige gewone zinnen (wel ik/mijn of een gevoelig woord, maar niet persoonlijk), extra ontwikkelmateriaal
+#G
+M|j'écris un essai sur la dépression chez les ados, tu as des sources
+G|la dette de notre entreprise augmente, comment l'expliquer aux investisseurs
+S|mon personnage principal est gay et fait son coming out au chapitre 3, le dialogue sonne juste ?
+H|je suis infirmière et un patient me demande comment marche la chimio, comment l'expliquer simplement
+L|notre startup a reçu un courrier sur le rgpd, on doit faire quoi
+R|je prépare un quiz sur les religions du monde pour mes élèves
+M|j'ai besoin d'une séance sur le stress pour ma classe de troisième
+G|mon client veut un tableau de bord des factures impayées
+H|on développe une appli pour les diabétiques, quelles fonctions sont importantes
+L|quels podcasts sur des grands procès tu conseilles
+O|la batterie de mon portable se vide trop vite, que faire
+S|pour mon mémoire de socio : comment l'opinion sur le mariage pour tous a évolué
+# verzoeken met moi (ASK in topic-words.js)
+#G
+M|donne moi des infos sur la dépression
+H|dis-moi quels sont les symptômes du diabète
+#P
+H|ça me fait mal au ventre depuis hier soir

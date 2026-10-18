@@ -23,7 +23,8 @@ function render() {
   $('reloadTab').hidden = state !== 'reload';
   $('enabled').checked = settings.enabled;
   $('tempChat').hidden = !!site.private;
-
+  // Melo alleen als hij hier kan antwoorden: zelfde regel als "Ask Melo" in de melding (src/background.js, meloReady).
+  $('openPrivateChat').hidden = !meloReady;
 }
 
 function save() {
@@ -51,9 +52,11 @@ $('reloadTab').addEventListener('click', async () => {
 });
 
 
-// Private Chat alleen in Chrome; in Edge en Firefox brengt de melding je naar een tijdelijke chat.
-if (BROWSER.id !== 'chrome') {
-  $('openPrivateChat').hidden = true;
+// Melo alleen in Chrome (in Edge en Firefox brengt de melding je naar een tijdelijke chat), en alleen als de AI van Chrome
+// op deze computer kan draaien. Tot de achtergrond antwoordt (een paar ms; dit start nooit een download) staat Melo er niet.
+let meloReady = false;
+if (BROWSER.id === 'chrome') {
+  chrome.runtime.sendMessage({ type: 'pf:melo-ready' }).then(r => { meloReady = r === true; render(); }, () => {});
 }
 // sidePanel.open moet zonder await ervoor, anders telt de klik niet meer als gebruikersactie; daarom het venster-ID vooraf.
 let pchatWindowId = null;

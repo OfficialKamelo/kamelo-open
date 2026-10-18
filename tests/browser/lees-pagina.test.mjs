@@ -1,7 +1,7 @@
 // Draai met: npm run test:browser (of los: node --test tests/browser/lees-pagina.test.mjs)
 // Melo, "Lees deze pagina", in de gratis editie in een echte Chrome. De AI van Chrome is hier nagebootst; de testpagina's
 // staan in tests/browser/pagina/ en worden op een verzonnen adres geserveerd (geen internet).
-// - Zonder klik op het Kamelo-icoon heeft Melo geen toegang (activeTab) en zegt hij dat.
+// - Zonder klik op het Melo-icoon heeft Melo geen toegang (activeTab) en zegt hij dat.
 // - Na de klik (CDP Extensions.triggerAction, net als op het icoon klikken) leest hij alleen de hoofdtekst.
 // - Mail, een wachtwoordveld en pagina's van de browser: eerst vragen, of niet.
 // - Een lange pagina: het begin, en dat staat erbij.
@@ -60,7 +60,7 @@ async function open(url, file) {
   await page.bringToFront();
   return page;
 }
-// Klikken op het Kamelo-icoon terwijl dit tabblad voor staat: Chrome geeft dan activeTab voor dit tabblad. De popup die
+// Klikken op het Melo-icoon (de extensie) terwijl dit tabblad voor staat: Chrome geeft dan activeTab voor dit tabblad. De popup die
 // opengaat, sluiten we weer.
 async function clickIcon(page) {
   await page.bringToFront();
@@ -92,11 +92,11 @@ test('lees deze pagina: de knop staat er, met de uitleg in gewone woorden', asyn
   await shot('1-knop.png');
 });
 
-test('lees deze pagina: zonder klik op het Kamelo-icoon mag Melo de pagina niet lezen, en zegt hoe het wel kan', async () => {
+test('lees deze pagina: zonder klik op het Melo-icoon mag Melo de pagina niet lezen, en zegt hoe het wel kan', async () => {
   const page = await open('https://nieuws.example/fietspad', 'artikel.html');
   await readPage();
   const text = await waitForText(chat, '#note', t => /may not read this page yet/.test(t));
-  assert.match(text, /Click the Kamelo icon at the top right and open Melo/);
+  assert.match(text, /Click the Melo icon at the top right and open Melo/);
   assert.deepEqual(await sent(), []);
   await shot('2-geen-toegang.png');
   // Klik op het icoon en dan Melo (popup/public.js zet pchatPopup): Melo leest nu vanzelf verder.
@@ -214,12 +214,14 @@ test('lees deze pagina: de chat zelf deed geen enkel netwerkverzoek', () => {
   assert.deepEqual(offline, []);
 });
 
-test('lees deze pagina: in Edge zegt Melo eerlijk dat het daar nog niet kan', async () => {
+// Zonder AI op dit apparaat (zoals in Edge) staat "Lees deze pagina" er niet: een knop die alleen kan zeggen dat het niet
+// kan, belooft iets (docs/KOERS.md, prioriteit 1). De melding zegt waarom er geen AI is en biedt de tijdelijke chat.
+test('lees deze pagina: in Edge (geen AI) staat de knop er niet, wel de tijdelijke chat', async () => {
   const edge = await browser.newPage();
   await edge.evaluateOnNewDocument(() => { delete window.LanguageModel; Object.defineProperty(window, 'LanguageModel', { value: undefined }); });
   await edge.goto(`chrome-extension://${id}/chat/chat.html?lang=en&browser=edge`);
   await edge.waitForFunction(() => document.documentElement.dataset.engine === 'none', { timeout: 10_000 });
-  await edge.click('#readPage');
-  assert.match(await waitForText(edge, '#note', t => /In Edge/.test(t)), /In Edge, Melo can’t read pages yet/);
+  assert.equal(await edge.$eval('#readPage', b => b.checkVisibility()), false);
+  assert.match(await waitForText(edge, '#note', t => /temporary chat/i.test(t)), /Temporary chat in ChatGPT/);
   await edge.close();
 });

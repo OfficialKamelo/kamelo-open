@@ -10,7 +10,7 @@
     'grok', 'llama', 'mistral', 'llm', 'chatbot', 'bot', 'assistant', 'assistent', 'asistente', 'assistente', 'asystent',
     'ассистент', 'помощник', 'virtual agent', 'prompt', 'ask anything', 'ask me anything',
     'vraag (?:me |het |maar )?(?:alles|iets)', 'stel (?:een|je) vraag', 'help me (?:write|schrijven)', 'help mij schrijven',
-    'frag (?:die |mich )?', 'pregunta', 'demandez', 'chiedi', 'pergunte', 'zapytaj', 'спросить', 'спросите',
+    'frag(?: die| mich)?', 'pregunta', 'demandez', 'chiedi', 'pergunte', 'zapytaj', 'спросить', 'спросите',
   ];
   const AI_FIELD_DENSE = ['助手', '问ai', '問ai', '人工智能', 'アシスタント', 'aiに', 'aiアシスタント', '어시스턴트', 'ai에게'];
   const AI_FIELD_HINT = new RegExp(

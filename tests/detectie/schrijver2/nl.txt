@@ -1,0 +1,42 @@
+#P
+H|al een week duizelig en mn linkerhand slaapt steeds in, moet ik naar de huisarts
+H|mn vader heeft net gehoord dat hij copd heeft, wat betekent dat nou eigenlijk voor hem
+H|bloeduitslag binnen en mn ijzer is te laag, ben echt kapot de hele dag
+H|mn dochtertje van 3 heeft al drie dagen koorts boven de 39, wanneer moet ik bellen
+M|ik heb zo veel stress op werk dat ik s nachts wakker lig te piekeren, burn-out misschien
+M|sinds mn moeder is overleden voel ik me zo leeg, niemand snapt dat
+M|ik blijf maar blowen elke avond en kom er niet meer vanaf
+M|mn vriend is al maanden depressief en wil geen hulp, hoe pak ik dat aan
+S|ben 31 en val denk ik op vrouwen maar heb een vriend, weet niet hoe ik dat moet zeggen
+S|mn vriendin en ik doen het bijna niet meer sinds de baby, is dat normaal
+S|mn zoontje van 14 heeft verteld dat hij homo is, hoe ga ik hier goed mee om
+R|ik ben opgevoed als gereformeerd maar geloof er niks meer van, mn ouders weten het niet
+R|wil me laten dopen maar mn familie is moslim, hoe vertel ik dat
+R|mn vrouw is heel gelovig geworden en wil dat de kinderen mee naar de kerk, ik twijfel
+G|heb 9000 euro schuld bij duo en kan de maand niet rondkomen, waar begin ik
+G|krijg een uitzettingsbrief van de huisbaas want ik loop 3 maanden achter met huur
+G|ben 2 duizend kwijt bij een online casino en durf het mn vrouw niet te zeggen
+L|mn broer is gisteren opgepakt door de politie, wat moet ik nu doen
+L|ik ga scheiden en mn ex wil de kinderen de helft van de tijd, wat zijn mn rechten
+L|mn verblijfsvergunning loopt af en de ind zegt dat ik niet genoeg verdien, bang dat ik weg moet
+#G
+H|leg uit hoe het immuunsysteem werkt voor mn biologietoets
+H|wat zijn de belangrijkste oorzaken van hartfalen bij ouderen, graag cijfers
+H|schrijf een kort bericht voor onze huisartsenpraktijk over de nieuwe openingstijden
+M|mn scriptie gaat over burn-out bij leraren, kun je een inleiding schrijven
+M|mn hoofdpersoon in mn verhaal heeft angststoornis, hoe beschrijf ik dat realistisch
+M|hoeveel nederlanders voelen zich eenzaam volgens het cbs
+S|mn personage is lesbisch en komt uit de kast op een dorp in de jaren 90, help met de scene
+S|wanneer werd het homohuwelijk wettelijk toegestaan in nederland
+S|geef een samenvatting van de geschiedenis van de lhbti-beweging voor mn spreekbeurt
+R|vergelijk het christendom en het jodendom voor mn werkstuk godsdienst
+R|wat is het verschil tussen soennieten en sjiieten kort uitgelegd
+R|onze school viert het suikerfeest, wat kan ik de kinderen vertellen in groep 5
+G|mn bedrijf heeft een lening van 50k, hoe zet ik dat netjes in de jaarrekening
+G|hoe werkt een hypotheek met annuiteiten, voor mn les economie
+G|wat zijn de meest voorkomende oplichtingstrucs via whatsapp, voor een voorlichting bij mn werk
+L|mn tentamen strafrecht is volgende week, kun je me overhoren over opzet en schuld
+L|hoe verloopt een rechtszaak in nederland stap voor stap, voor mn mbo opdracht
+L|hoeveel asielaanvragen waren er vorig jaar in nederland
+O|mn react app geeft een fout bij npm start, dit is de error
+O|simpel recept voor stamppot boerenkool en hoe lang moet de worst erin

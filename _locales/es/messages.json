@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "Kamelo: software de privacidad para IA"
+    "message": "Melo: chat privado con IA, de Kamelo"
   },
   "extDescription": {
-    "message": "Melo, un chat privado con IA en tu propio ordenador, y un aviso para usar un chat temporal cuando preguntas algo personal a la IA."
+    "message": "Melo es un chat privado con IA en tu navegador que responde en tu propio ordenador. Y un aviso para usar un chat temporal."
   },
   "actionTitle": {
     "message": "Kamelo"
@@ -13,6 +13,9 @@
   },
   "extDescriptionTeams": {
     "message": "Kamelo Business enmascara datos personales y de empresa en tu equipo antes de que lleguen a ChatGPT, Gemini, Claude o IA de oficina."
+  },
+  "extNameFirefox": {
+    "message": "Melo: preguntas personales a la IA, de Kamelo"
   },
   "extDescriptionFirefox": {
     "message": "Un aviso para usar un chat temporal cuando le preguntas algo personal a la IA."

@@ -194,6 +194,10 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .sug { padding: 7px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--card); color: var(--label);
   font: 500 12.5px/1.2 inherit; cursor: pointer; transition: background .15s, border-color .15s; }
 .sug:hover { background: var(--soft); border-color: transparent; }
+/* Geen AI hier: geen uitnodiging om te typen; de melding boven het veld biedt de tijdelijke chat. */
+body.noai .empty h2, body.noai .empty .sub, body.noai .sugs { display: none; }
+body.noai .composer { opacity: .55; }
+.composer textarea:disabled { cursor: default; }
 body.typing .sugs { opacity: 0; transform: translateY(4px); pointer-events: none; }
 
 /* Privacy: klein, rustig, uitklapbaar. Geen groene badge. */

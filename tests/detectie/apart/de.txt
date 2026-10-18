@@ -1,0 +1,42 @@
+#P
+H|mir tut seit drei tagen der rücken so weh dass ich kaum aufstehen kann
+H|meine tochter hat ständig bauchweh vor der schule, kann das was ernstes sein
+H|bei mir wurde eine schilddrüsenunterfunktion festgestellt, muss ich jetzt für immer tabletten nehmen
+H|mein opa hat nach der op wasser in der lunge, was heißt das
+M|ich hab ständig angst dass meine freundin mich verlässt und kann nicht mehr schlafen
+M|seit der trennung trinke ich jeden abend und komm morgens kaum aus dem bett
+M|mein bruder hat seit monaten keine lust mehr auf irgendwas und redet kaum noch
+M|ich fühle mich total leer und überfordert mit allem
+S|ich bin 17 und glaube ich bin lesbisch, wie sag ich das meinen eltern
+S|mein mann hat seit der geburt keine lust mehr auf sex
+S|ich hatte ungeschützten verkehr, wie schnell kann ich einen test machen
+R|ich bin aus der kirche ausgetreten und meine oma ist total enttäuscht
+R|mein freund ist muslim und will dass ich konvertiere
+R|ich glaube nicht mehr an gott, aber meine familie ist sehr religiös
+G|wir können die miete diesen monat nicht bezahlen, was passiert jetzt
+G|ich hab 12.000 euro schulden beim dispo und weiß nicht weiter
+G|mein vater hat sein ganzes geld beim online casino verspielt
+L|ich wurde beim schwarzfahren erwischt und soll 60 euro zahlen
+L|mein ex will das alleinige sorgerecht für unseren sohn
+L|die polizei hat mich als zeugen vorgeladen, muss ich da hin
+#G
+H|was sind die typischen symptome einer grippe
+H|wie funktioniert eine impfung
+H|schreib einen artikel über gesunde ernährung im alter
+H|wie viele menschen in deutschland haben krebs
+M|erkläre was eine angststörung ist
+M|ich schreibe eine hausarbeit über depressionen bei jugendlichen
+M|welche therapieformen gibt es bei essstörungen
+S|geschichte der ehe für alle in deutschland
+S|was bedeutet nicht-binär
+R|was ist der unterschied zwischen katholiken und protestanten
+R|wann beginnt der ramadan 2027
+R|fasse die bergpredigt zusammen
+G|wie funktioniert eine privatinsolvenz
+G|wie hoch sind die staatsschulden der usa
+G|unser startup braucht einen finanzplan für investoren
+L|wie lange dauert eine scheidung in deutschland
+L|welche strafe gibt es für diebstahl
+L|erkläre den unterschied zwischen zivilrecht und strafrecht
+O|mein auto macht komische geräusche beim bremsen
+O|meine katze frisst nicht mehr, was soll ich tun

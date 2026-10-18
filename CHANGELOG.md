@@ -5,6 +5,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.7.2] - 2026-10-18
+
+### Changed
+- **The extension is now called Melo.** Melo, the private AI chat that answers on your own computer, is what you add to your browser, so the extension carries its name: “Melo: private AI chat, by Kamelo”. The toolbar button, the on/off switch and the notices say Melo too. In Edge and Firefox, where you can't chat with Melo yet, it's “Melo: personal AI questions, by Kamelo”. Kamelo is still the maker, and nothing else changes: same extension, same settings, nothing to reinstall.
+- **"Ask Melo" only where Melo can answer.** If Chrome's built-in AI can't run on your computer, the notice no longer offers Melo (the button led to "No AI on this device"). It offers the temporary chat instead. Kamelo only asks Chrome whether the AI is there; that never starts a download.
+- **Melo and the popup are honest without AI too.** If Chrome's AI can't run on your computer, the popup no longer shows Melo, and Melo itself switches off the text box, the example questions and "Read this page". It says why and offers the temporary chat.
+- **The notice recognises personal questions far more often in German, French and Spanish.** Many more words and everyday phrasings for health, mental health, sexuality, faith, money and legal trouble, plus “mir/mich” and “me” (“mir ist übel”, “me duele”) and French words like “l’hôpital” and “d’angoisse”. On new test sentences the notice now catches 95% (German), 75–90% (French) and 90–100% (Spanish) of personal questions, up from 10–30%; English and Dutch also catch more (“after giving birth”, “still a virgin”, “opgelicht”, “strafbaar”). In Edge and Firefox this word list is the whole protection.
+- **Fewer notices that don't fit.** Homework, courses, teaching a class, a patient you care for as a nurse, your company's debt and comparisons (“compare Islam and Christianity”) no longer bring up the notice, now also in German, French and Spanish.
+- **Chrome's on-device second check now also reads German, French and Spanish.** If this Chrome doesn't support those languages yet, it keeps working in English as before.
+- **The on-device second check no longer second-guesses the word list.** When a message is clearly about a story character, homework, a class or a patient, Chrome's AI isn't asked anymore; it used to bring up the notice for exactly those messages.
+
+### Added
+- **Kamelo works with Meta AI in WhatsApp Web.** Asking Meta AI something personal in WhatsApp on your computer? Kamelo shows the same notice as on ChatGPT, with "Ask Melo" to ask it on your computer instead. Only in your chat with Meta AI: in chats with other people Kamelo does nothing, and never reads what you type there. This needs access to web.whatsapp.com, so your browser asks you to allow that after the update. On your phone, WhatsApp is an app, so Kamelo can't help there.
+- **A test that checks Kamelo talks to no server.** It builds the free extension exactly as it goes to the stores and fails if any file opens a connection of its own, uses `eval` or loads code from outside. Run it yourself: `node tests/geen-netwerk.test.mjs`.
+- **“Don’t show in this chat”.** The notice about a personal question comes back with every message. A quiet button in the notice now turns it off for this chat, in this tab only. Kamelo remembers nothing: a new chat, another tab or reloading the page brings the notice back.
+
+### Fixed
+- **Melo always shows the crisis line when it matters.** A question about privacy that also says you don’t want to live anymore got only Melo’s fixed privacy answer; now the crisis line comes first. Melo also recognises “sometimes I just want to be dead”, “to put an end to it” and “everyone would be better off without me”, in all five languages, while everyday phrases like “end my subscription” stay quiet.
+- **Long answers and big numbers.** Melo no longer throws away a long answer after two minutes, and a chart with very large numbers no longer freezes the page.
+- **Sending works on every site.** Kamelo could mistake buttons like “Tasks” for the send button and hold back that click.
+- **Gemini’s temporary chat no longer loses your question.** If Gemini’s own button for a temporary chat isn’t there (for example when you’re not signed in) or doesn’t open one, your question goes back into the box, unchanged and not sent, and Kamelo tells you.
+- **All buttons fit in the notice.** At 200% zoom or in a narrow window, “Discussion temporaire” and other long button names in French and Spanish fell outside the notice; they now move to the next line.
+
 ## [1.7.1] - 2026-10-17
 
 ### Fixed

@@ -21,6 +21,14 @@ import { shadowHTML } from './kamelo.mjs';
 
 const [PROFILE, PORT = '8790', MAC_CLI = ''] = process.argv.slice(2);
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-lab-'));
+// De kopie van het profiel kan 4 GB zijn: altijd opruimen, ook bij Ctrl-C (FRICTION 15–16 okt).
+process.on('exit', () => { try { fs.rmSync(tmp, { recursive: true, force: true }); } catch {} });
+for (const sig of ['SIGINT', 'SIGTERM', 'SIGHUP']) process.once(sig, async () => {
+  // AI en ED bestaan pas verderop (const/let): een signaal tijdens het opstarten mag daar niet op vastlopen.
+  const open = []; try { open.push(AI); } catch {} try { open.push(...Object.values(ED).map(e => e?.browser)); } catch {}
+  await Promise.allSettled(open.filter(Boolean).map(b => b.close()));
+  process.exit(130);
+});
 
 // Per site het invoerveld zoals de echte site het heeft (selectors uit src/sites.js).
 const FIELD = {

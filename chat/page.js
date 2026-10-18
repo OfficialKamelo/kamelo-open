@@ -103,7 +103,7 @@
   // Wat je in velden typt, komt er nooit in. Hooguit `max` tekens; is er meer, dan het begin (cut: true).
   function extract(max) {
     const SKIP = 'script,style,noscript,template,svg,canvas,iframe,frame,object,embed,video,audio,img,picture,map,nav,aside,form,button,' +
-      'input,textarea,select,option,label,dialog,menu,[hidden],[aria-hidden="true"],[inert],[contenteditable=""],[contenteditable="true"],' +
+      'input,textarea,select,option,label,dialog,menu,[hidden],[aria-hidden="true"],[inert],[contenteditable=""],[contenteditable="true"],[contenteditable="plaintext-only"],' +
       '[role="navigation"],[role="banner"],[role="contentinfo"],[role="complementary"],[role="search"],[role="dialog"],[role="alertdialog"],' +
       '[role="menu"],[role="menubar"],[role="toolbar"],[role="tablist"]';
     // Reclame, cookiemeldingen, deelknoppen en dergelijke, herkend aan class of id. Alleen kleine blokken: een grote
@@ -132,7 +132,8 @@
       const el = node;
       if (el !== top && (el.matches(SKIP) || (bare && el.matches('header, footer')))) return;
       if (el !== top && JUNK.test(`${el.id} ${typeof el.className === 'string' ? el.className : ''}`) && len(el) < 600) return;
-      if (el.checkVisibility && !el.checkVisibility({ visibilityProperty: true })) return;
+      // Ook doorzichtige tekst (opacity: 0) telt als verborgen: een pagina kan zo anders een opdracht voor Melo verstoppen.
+      if (el.checkVisibility && !el.checkVisibility({ visibilityProperty: true, opacityProperty: true, contentVisibilityAuto: true })) return;
       const block = BLOCK.test(el.tagName);
       if (block) flush();
       if (/^H[1-6]$/.test(el.tagName)) line += '# ';

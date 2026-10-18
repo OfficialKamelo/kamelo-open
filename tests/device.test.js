@@ -293,6 +293,22 @@ test('veto: een antwoord in de verkeerde taal stopt meteen, telt niet mee, en de
   assert.equal(again, "Okay, let's solve this.");
   assert.equal(made, 2);
 });
+test('rust-timer: een lang antwoord op een nieuwe sessie wordt niet halverwege afgebroken', async () => {
+  const real = { set: globalThis.setTimeout, clear: globalThis.clearTimeout };
+  const timers = new Set();
+  globalThis.setTimeout = (fn, ms) => { const t = { fn, ms, unref() {} }; if (ms === K.IDLE_MS) timers.add(t); else return real.set(fn, ms); return t; };
+  globalThis.clearTimeout = t => { if (!timers.delete(t)) real.clear(t); };
+  try {
+    let destroyed = false, pendingIdle = null;
+    const s = { destroy() { destroyed = true; },
+      async *promptStreaming() { for (const w of ['een ', 'lang ', 'antwoord']) { pendingIdle ??= timers.size; if (destroyed) throw new DOMException('weg', 'AbortError'); yield w; } } };
+    const { env } = promptEnv({ create: () => Promise.resolve(s) });
+    const d = K.create({ env, system: 's' });
+    await d.detect();
+    assert.equal(await d.ask('Schrijf een lange brief', null, null, {}), 'een lang antwoord');
+    assert.equal(pendingIdle, 0, 'geen rust-timer terwijl het antwoord nog loopt');
+  } finally { Object.assign(globalThis, { setTimeout: real.set, clearTimeout: real.clear }); }
+});
 test('undo: de laatste vraag en het antwoord terugnemen voor een tweede poging', async () => {
   const turns = [];
   const { env } = promptEnv({ create: o => { turns.push(o.initialPrompts.length); return Promise.resolve(session(['Hoi'])); } });

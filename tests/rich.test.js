@@ -113,6 +113,8 @@ test('formules: \\boxed{5} in een kader, onbekende commando\'s met {inhoud} zond
 });
 test('kopiëren en bestandsnaam', () => {
   assert.equal(X.plainText('Dus **$x = 5$**.'), 'Dus x = 5.');
+  assert.equal(X.plainText('```js\nlet a = 1;\n```'), '```js\nlet a = 1;\n```', 'codeblok houdt zijn sluiter');
+  assert.equal(X.plainText('```chart\ntype: bar\nA: 1, 2\n```'), 'type: bar\nA: 1, 2', 'grafiek: alleen de getallen');
   assert.equal(X.fileName('Brief: bijbaan/supermarkt?', 'docx'), 'Brief bijbaan supermarkt.docx');
   assert.equal(X.titleOf('## Mijn CV\nTekst', 'vraag'), 'Mijn CV');
 });
@@ -267,6 +269,18 @@ test('asLetter: een brief zonder blok krijgt er een, van de aanhef tot de naam; 
   assert.equal(R.asLetter('Waarom is de lucht blauw? Door verstrooiing.'), 'Waarom is de lucht blauw? Door verstrooiing.');
   assert.equal(R.asLetter('Hallo! Leuk dat je er bent. Wat kan ik doen?'), 'Hallo! Leuk dat je er bent. Wat kan ik doen?', 'een groet is geen brief');
   assert.equal(R.asLetter('Beste Jan,\n\n```chart\ntype: bar\nA: 1, 2\n```\n\nGroet,\nAnna'), 'Beste Jan,\n\n```chart\ntype: bar\nA: 1, 2\n```\n\nGroet,\nAnna', 'niet om een ander blok heen');
+});
+
+test('grafiek: enorme of bijna gelijke getallen laten de pagina niet hangen; een lijn hoeft niet bij 0 te beginnen', () => {
+  const t0 = Date.now();
+  R.parse('```chart\ntype: function\nf: x\nx: 10000000000000000 to 10000000000000004\n```', { lang: 'en' });
+  R.parse('```chart\n{"type":"function","f":"x","xmin":1e17,"xmax":100000000000000016}\n```', { lang: 'en' });
+  assert.ok(Date.now() - t0 < 2000, 'klaar binnen 2 s');
+  const ticks = md => find({ tag: 'root', kids: R.parse(md, { lang: 'en' }) }, 'text').filter(n => n.attrs?.class === 'tick' && n.attrs['text-anchor'] === 'end').map(n => Number(n.kids.join('').replace(/[^\d.-]/g, '')));
+  const line = ticks('```chart\ntype: line\nlabels: ma, di, wo\nTemp: 100, 101, 102\n```');
+  assert.ok(line.length && Math.min(...line) > 0, `lijn vlak bij 100 begint niet bij 0: ${line}`);
+  const bar = ticks('```chart\ntype: bar\nlabels: ma, di, wo\nTemp: 100, 101, 102\n```');
+  assert.equal(Math.min(...bar), 0, 'staven beginnen wel bij 0');
 });
 
 Promise.all(pending).then(() => { console.log(`\n${ok} geslaagd, ${bad} mislukt`); process.exitCode = bad ? 1 : 0; });

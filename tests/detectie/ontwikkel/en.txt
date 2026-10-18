@@ -1,0 +1,100 @@
+#P
+H|i've had a weird rash on my inner thigh for a week, should i be worried
+H|my mom just got diagnosed with stage 2 breast cancer what questions do we ask the oncologist
+H|is it normal to still be bleeding 10 days after giving birth
+H|i keep getting headaches every morning and my left eye twitches, what could it be
+H|dad's blood sugar was 14 this morning, is that dangerous
+H|how do i tell my boss i need time off for chemo
+H|my boyfriend snores so loud and stops breathing at night sometimes
+H|i think i broke my toe, can i just tape it
+H|been on metformin 3 months and still feel sick after every meal
+M|i dont really see the point of anything anymore
+M|my sister hasnt left her room in weeks and barely eats, how do i help her
+M|how do i stop panicking before every meeting, my heart races and i cant breathe
+M|i cry every night after work and i dont know why
+M|my therapist wants to up my sertraline dose, is 100mg a lot
+X|sometimes i think everyone would be better off without me
+X|my son cuts himself and i found blood on his sheets
+M|cant sleep, cant focus, i feel numb all the time lately
+M|how do i get through the first christmas since my husband died
+S|im 34 and still a virgin, is something wrong with me
+S|my wife wants to open our marriage and i dont know how i feel about it
+S|i think im bi but im scared to tell my parents
+S|it burns when i pee after sex with a new guy
+S|how do i bring up that i want to try being tied up with my gf
+S|my teenage daughter just told me shes trans, what do i do
+R|i stopped believing in god but my whole family is very religious, how do i tell them
+R|my parents want me to marry a muslim man but i'm not sure i still believe
+R|im thinking of converting to judaism for my fiance
+R|i feel guilty skipping mass, am i a bad catholic
+R|how do i leave the jehovahs witnesses without losing my family
+G|i'm 3 months behind on rent and the landlord keeps texting me
+G|i have 23k in credit card debt and only make 2100 a month, where do i start
+G|my husband gambled away our savings and i just found out
+G|can i still get a mortgage with a ccj on my record
+G|we cant afford my daughters school trip this year
+G|my paycheck is gone by the 10th every month, help me make a budget
+G|my mom is getting scammed by someone online and keeps sending him money
+L|i got pulled over drunk last night, what happens now
+L|my brother got arrested for shoplifting, will he go to jail
+L|my ex wont let me see the kids even though we have a custody agreement
+L|i got a letter that im being sued by my old employer
+L|is it illegal that i drove without insurance for two months
+L|my visa expires next month and my employer just fired me
+#G
+H|what are the early symptoms of type 2 diabetes
+H|how does chemotherapy work
+H|explain how vaccines train the immune system
+H|what is the recommended daily intake of vitamin d for adults
+H|write a blog post about the benefits of walking 10000 steps
+H|difference between a virus and a bacteria
+H|what causes migraines, give a scientific overview
+M|what is depression
+M|summarize the main theories of anxiety disorders for my psychology class
+M|what does a cognitive behavioral therapist actually do
+M|write a short story where the main character struggles with grief
+M|list the symptoms of bipolar disorder
+M|how common is burnout among nurses, statistics please
+S|write an essay about abortion legislation in the us
+S|what is the history of the pride movement
+S|explain how hiv prep works
+S|what does the term asexual mean
+R|what is the difference between sunni and shia islam
+R|explain the meaning of easter in christianity
+R|how many people in the world are buddhist
+R|write a poem inspired by psalm 23
+G|how does compound interest work
+G|what is a good debt to income ratio for a mortgage
+G|explain what inflation is to a 10 year old
+G|compare index funds and etfs
+G|how do credit scores work in the uk
+G|write a marketing email for our new budgeting app
+L|what is the difference between a misdemeanor and a felony
+L|explain gdpr article 9
+L|how does custody work after divorce in the netherlands, general overview
+L|what are the steps of a criminal trial in the us
+L|summarize the plot of to kill a mockingbird
+O|my python script throws a keyerror when reading the json, how do i fix it
+O|give me a recipe for vegan lasagna
+O|write a cover letter for a junior data analyst position
+O|what happened in the news today about the eu elections
+O|translate this into french: the meeting is moved to thursday
+O|my react component rerenders twice, why
+O|help me plan a 5 day trip to lisbon
+O|my boss wants a summary of q3 sales, can you make it shorter
+O|what's a good name for my bakery
+O|explain kubernetes pods like im five
+# 17 okt avond: lastige gewone zinnen (wel ik/mijn of een gevoelig woord, maar niet persoonlijk), extra ontwikkelmateriaal
+#G
+M|i'm writing an essay on depression in teenagers, can you give me sources
+G|our company's debt to equity ratio looks bad, how do we explain it to investors
+S|my main character is gay and comes out in chapter 3, does the dialogue sound natural
+H|i'm a nurse and my patient asks how chemo works, how do i explain it simply
+L|my startup got a letter about gdpr compliance, what do we need to do
+R|i'm making a quiz about world religions for my students
+M|i need a lesson plan about stress for my year 9 class
+G|my client wants a dashboard that tracks unpaid invoices
+H|we're building an app for diabetes patients, what features matter most
+L|i love true crime podcasts, which ones cover famous court cases
+O|my laptop battery is dying fast, how do i fix it
+S|for my sociology paper: how did attitudes to same-sex marriage change

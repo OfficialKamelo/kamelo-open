@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "Kamelo: privacysoftware voor AI"
+    "message": "Melo: privé AI-chat, van Kamelo"
   },
   "extDescription": {
-    "message": "Melo, een privéchat met AI op je eigen computer, en een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt."
+    "message": "Melo is een privéchat met AI in je browser die antwoordt op je eigen computer. Plus een seintje voor een tijdelijke chat."
   },
   "actionTitle": {
     "message": "Kamelo"
@@ -13,6 +13,9 @@
   },
   "extDescriptionTeams": {
     "message": "Kamelo Business schermt persoons- en bedrijfsgegevens lokaal af voordat ze ChatGPT, Gemini, Claude of AI in werkapps bereiken."
+  },
+  "extNameFirefox": {
+    "message": "Melo: persoonlijke AI-vragen, van Kamelo"
   },
   "extDescriptionFirefox": {
     "message": "Een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt."

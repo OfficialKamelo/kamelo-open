@@ -1,0 +1,42 @@
+#P
+H|j'ai des vertiges depuis une semaine et le bras gauche qui fourmille, je dois aller aux urgences
+H|ma mère vient d'apprendre qu'elle a un cancer du sein, on sait pas quoi lui dire
+H|ma fille de 5 ans a des poux pour la 3e fois ce mois-ci, ça devient dingue
+H|mon taux de glycémie est à 1,4 g/l, mon médecin parle de diabète
+M|je fais des crises d'angoisse tous les matins avant d'aller au boulot, je tiens plus
+M|depuis la mort de mon grand-père je pleure h24 et j'ai plus envie de rien
+M|mon mec fume du cannabis toute la journée et je sais plus comment lui parler
+M|je me sens trop seule depuis que j'ai déménagé à lyon, personne à qui parler
+S|j'ai 19 ans et je crois que je suis lesbienne mais mes parents sont très catho
+S|ma copine et moi on a plus de rapports depuis des mois, c'est ma faute ?
+S|mon fils m'a dit qu'il se sent fille depuis toujours, je sais pas comment réagir
+R|je viens d'une famille musulmane pratiquante mais je crois plus en rien, comment leur dire
+R|je veux me faire baptiser à 30 ans mais mon mari est athée
+R|ma belle-mère veut absolument que mes enfants fassent leur communion et moi j'ai pas envie
+G|j'ai 8000 euros de dettes et la banque me harcèle, je fais quoi
+G|je suis menacé d'expulsion, ça fait 4 mois que je paie pas mon loyer
+G|je me suis fait arnaquer sur leboncoin, 600 euros partis, je peux porter plainte
+L|mon frère est en garde à vue depuis hier soir et on a aucune nouvelle
+L|mon ex veut la garde alternée pour notre fils, je dois prendre un avocat
+L|mon titre de séjour expire dans un mois et la préfecture me donne pas de rdv
+#G
+H|explique-moi comment fonctionne le système immunitaire pour mon exposé de svt
+H|quelles sont les principales causes d'hypertension en france, chiffres si possible
+H|écris un petit message pour notre pharmacie sur les horaires de garde
+M|mon mémoire porte sur le burn-out chez les infirmiers, aide-moi pour le plan
+M|mon personnage a des crises d'angoisse dans mon roman, comment je les décris
+M|combien de français se sentent isolés selon les études
+S|mon héros est homo dans un village des années 60, aide-moi à écrire la scène
+S|depuis quand le mariage pour tous existe en france
+S|résume l'histoire de la marche des fiertés pour mon cours d'histoire
+R|compare le catholicisme et le protestantisme pour mon dm de philo
+R|c'est quoi la différence entre le ramadan et l'aïd, rapidement
+R|que dit la loi de 1905 sur la laïcité en france
+G|ma boîte a 300k de dettes fournisseurs, comment je le présente au comptable
+G|comment marche un crédit immobilier, c'est pour mon cours d'éco
+G|les arnaques les plus courantes par sms en ce moment, pour un atelier au boulot
+L|j'ai un partiel de droit pénal lundi, tu peux m'interroger sur la légitime défense
+L|c'est quoi la différence entre un tribunal judiciaire et un tribunal administratif
+L|combien de demandes d'asile en france l'an dernier
+O|mon code javascript plante à la ligne 22, voici le message d'erreur
+O|idée de recette rapide avec des courgettes et du chèvre

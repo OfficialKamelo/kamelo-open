@@ -238,6 +238,9 @@ chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === AUTOLOCK) lock(
 
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === 'session' && changes.vault) {
+    // Iets gewist buiten updateVault om (de popup: "Kluis wissen", bewaartermijn): oude kopieën in tabbladen gelden niet meer.
+    if (!changes.vaultCleared && removedFrom(changes.vault.oldValue, changes.vault.newValue))
+      chrome.storage.session.set({ vaultCleared: Date.now() }).catch(() => {});
     persist(changes.vault.newValue);
     announceChange();
   }
@@ -261,16 +264,24 @@ function announceChange() {
 }
 
 // Wijzigingen in de kluis in het werkgeheugen, één tegelijk, zodat twee tabs elkaar niet overschrijven.
+// vaultCleared: wanneer er voor het laatst iets uit de kluis is verdwenen (wissen, opschonen, vergrendelen). Een tabblad
+// dat nog een oude kopie heeft, mag dat niet terugzetten (zie mergeSlice): alleen wat daarna is gebruikt telt als nieuw.
 let vaultQueue = Promise.resolve();
-function updateVault(change) {
-  const run = vaultQueue.then(async () => {
-    await init();
-    const { vault } = await chrome.storage.session.get('vault');
-    const v = vault || emptyVault();
-    if (change(v)) await chrome.storage.session.set({ vault: v });
-  });
+function inVaultQueue(job) {
+  const run = vaultQueue.then(job);
   vaultQueue = run.catch(err => console.error('[Kamelo] kluis bijwerken mislukt', err));
   return run;
+}
+const removedFrom = (before, after) => Object.keys(before?.byPlaceholder || {}).some(ph => !(ph in (after?.byPlaceholder || {})));
+function updateVault(change) {
+  return inVaultQueue(async () => {
+    await init();
+    const { vault, vaultCleared = 0 } = await chrome.storage.session.get(['vault', 'vaultCleared']);
+    const v = vault || emptyVault();
+    const before = { byPlaceholder: { ...v.byPlaceholder } };
+    if (!change(v, vaultCleared)) return;
+    await chrome.storage.session.set(removedFrom(before, v) ? { vault: v, vaultCleared: Date.now() } : { vault: v });
+  });
 }
 
 // "Na 30 dagen gewist" (instelling retentionDays, 0 = nooit): hier gegarandeerd, bij het starten, elke 12 uur en na
@@ -289,11 +300,18 @@ chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === 'kamelo-prune')
 
 async function lock() {
   chrome.alarms?.clear?.(AUTOLOCK);
-  const { protect } = await chrome.storage.local.get('protect');
-  if (!protect) return;
-  await queue; // eerst de laatste wijzigingen versleuteld wegschrijven
-  await chrome.storage.session.remove(['key', 'docs']); // documenten: ook weg (op slot = niets terug te zetten)
-  await chrome.storage.session.set({ locked: true, vault: emptyVault(protect.counters || {}) });
+  if (!(await chrome.storage.local.get('protect')).protect) return;
+  // In de rij met updateVault: een wijziging die al onderweg is, kan de volle kluis anders na het vergrendelen terugzetten.
+  return inVaultQueue(async () => {
+    await queue; // eerst de laatste wijzigingen versleuteld wegschrijven
+    const [{ protect }, { vault }] = await Promise.all([chrome.storage.local.get('protect'), chrome.storage.session.get('vault')]);
+    if (!protect) return;
+    // De hoogste tellers houden (die van de kluis in het werkgeheugen kunnen nog niet op schijf staan).
+    const counters = { ...(protect.counters || {}) };
+    for (const [type, n] of Object.entries(vault?.counters || {})) if (n > (counters[type] || 0)) counters[type] = n;
+    await chrome.storage.session.remove(['key', 'docs']); // documenten: ook weg (op slot = niets terug te zetten)
+    await chrome.storage.session.set({ locked: true, vault: emptyVault(counters), vaultCleared: Date.now() });
+  });
 }
 
 // Maandoverzicht (zie stats.js): content scripts in alle tabs melden hier hoeveel ze per soort hebben afgeschermd.
@@ -376,7 +394,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   if (msg?.type === 'pf:count') { count(msg.counts).then(() => reply(true)); return true; }
   if (msg?.type === 'pf:init') { init().then(() => reply(true)); return true; }
   if (msg?.type === 'pf:vault-get') {
-    touchActivity();
+    // Geen touchActivity: elk frame van elke pagina haalt dit bij het laden op, en dan ging de kluis nooit vanzelf op slot.
     const where = VS.scopeOfSender(sender);
     init().then(() => chrome.storage.session.get('vault')).then(({ vault }) => reply(VS.sliceVault(vault, where)))
       .catch(() => reply(null));
@@ -386,7 +404,14 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     const where = VS.scopeOfSender(sender);
     if (!where) { reply(false); return; }
     touchActivity();
-    updateVault(v => VS.mergeSlice(v, msg.vault, where)).then(() => reply(true), () => reply(false));
+    updateVault((v, cleared) => VS.mergeSlice(v, msg.vault, where, cleared)).then(() => reply(true), () => reply(false));
+    return true;
+  }
+  // Nieuwe nummers voor placeholders vastleggen, voordat een tabblad ze gebruikt (zie claim in vaultscope.js).
+  if (msg?.type === 'pf:claim') {
+    if (!VS.scopeOfSender(sender)) { reply(null); return; }
+    let out = { ok: false, counters: {} };
+    updateVault(v => (out = VS.claim(v, msg.from, msg.to)).ok).then(() => reply(out), () => reply({ ok: false, counters: {} }));
     return true;
   }
   if (msg?.type === 'pf:lock' && fromExtensionPage(sender)) { lock().then(() => reply(true)); return true; }
@@ -609,6 +634,12 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   // Melo, de privéchat (docs/private-chat/PLAN-PRIVE-CHAT.md): "Ask Melo" in de melding. Het zijpaneel moet meteen open, zonder
   // await ervoor, anders telt de klik niet meer als gebruikersactie. Lukt dat niet (Firefox, oud Chrome), dan een klein venster.
   // De tekst staat alleen in het werkgeheugen en alleen Kamelo's eigen chatpagina kan hem ophalen, één keer, binnen 2 minuten.
+  // "Ask Melo" in de melding alleen als Melo hier ook kan antwoorden (docs/KOERS.md, prioriteit 1). Anders leidde de
+  // knop naar "Geen AI op dit apparaat"; nu biedt de melding dan alleen de tijdelijke chat. De popup vraagt hetzelfde.
+  if (msg?.type === 'pf:melo-ready' && (sender.tab || fromExtensionPage(sender))) {
+    meloReady().then(reply, () => reply(false));
+    return true;
+  }
   if (msg?.type === 'pf:pchat-open' && sender.tab) {
     // De klik moet meteen het paneel openen (gebruikersactie), dus de instelling wordt in de content script al gecontroleerd.
     openPrivateChat(sender.tab);
@@ -655,6 +686,15 @@ if (!TEAMS && globalThis.KameloTopicAi) {
 }
 
 // ---------- Private Chat openen ----------
+// Kan Melo op deze computer antwoorden? Ja als de AI van Chrome er al is, of na een klik in Melo te downloaden is
+// ('available', 'downloadable', 'downloading'). Nee bij 'unavailable' (bijv. te weinig geheugen) of zonder LanguageModel.
+// Alleen availability(), zoals Melo zelf (chat/device.js) voor het Engels: deze vraag start nooit een download.
+async function meloReady() {
+  const LM = globalThis.LanguageModel;
+  if (typeof LM?.availability !== 'function') return false;
+  const en = [{ type: 'text', languages: ['en'] }];
+  try { return (await LM.availability({ expectedInputs: en, expectedOutputs: en })) !== 'unavailable'; } catch { return false; }
+}
 const CHAT_URL = chrome.runtime.getURL('chat/chat.html');
 function openChatWindow() {
   chrome.windows.create({ url: CHAT_URL, type: 'popup', width: 440, height: 760, focused: true }).catch(() => chrome.tabs.create({ url: CHAT_URL }));

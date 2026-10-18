@@ -6,6 +6,13 @@ const { SITES, siteFor } = require('../src/sites.js');
 const tests = [];
 const test = (name, fn) => tests.push([name, fn]);
 
+test('aanwijzing voor een AI-veld: ook Duits "Frag mich …", niet "Fragment"', () => {
+  require('../src/config.js');
+  const H = globalThis.PrivacyConfig.AI_FIELD_HINT;
+  for (const s of ['Frag mich etwas', 'Frag die KI', 'Ask anything', 'Stel je vraag']) assert.ok(H.test(s), s);
+  for (const s of ['Fragment', 'Zoeken', 'Search']) assert.ok(!H.test(s), s);
+});
+
 test('elk domein hoort bij precies één site', () => {
   const seen = new Map();
   for (const site of SITES) for (const host of site.hosts) {

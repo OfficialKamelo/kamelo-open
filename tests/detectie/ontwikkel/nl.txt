@@ -1,0 +1,100 @@
+#P
+H|ik heb al een week een rare bult in mijn lies, moet ik naar de huisarts
+H|mijn moeder heeft net gehoord dat ze borstkanker heeft, wat moeten we de oncoloog vragen
+H|is het normaal dat ik 10 dagen na de bevalling nog steeds bloed verlies
+H|elke ochtend hoofdpijn en mijn linkeroog trilt, wat kan dat zijn
+H|mn vader z'n suiker was 14 vanochtend is dat gevaarlijk
+H|hoe vertel ik mijn baas dat ik vrij moet voor de chemo
+H|mijn vriend snurkt heel hard en stopt soms met ademen snachts
+H|volgens mij is mn teen gebroken kan ik hem gewoon tapen
+H|slik nu 3 maanden metformine en word nog steeds misselijk na het eten
+M|ik zie het nut van alles niet meer zo
+M|mijn zus komt al weken haar kamer niet uit en eet bijna niks, hoe help ik haar
+M|hoe stop ik met paniek voor elke vergadering, mijn hart gaat tekeer en ik krijg geen lucht
+M|ik huil elke avond na het werk en ik weet niet waarom
+M|mijn psycholoog wil mijn sertraline verhogen, is 100mg veel
+X|soms denk ik dat iedereen beter af is zonder mij
+X|mijn zoon snijdt zichzelf, ik vond bloed op zijn lakens
+M|kan niet slapen, kan me niet concentreren, voel me de laatste tijd zo leeg
+M|hoe kom ik door de eerste kerst sinds mijn man is overleden
+S|ik ben 34 en nog maagd, is er iets mis met mij
+S|mijn vrouw wil een open relatie en ik weet niet wat ik ervan vind
+S|ik denk dat ik bi ben maar durf het mijn ouders niet te vertellen
+S|het brandt bij het plassen sinds ik met een nieuwe jongen heb geslapen
+S|hoe zeg ik tegen mijn vriendin dat ik vastgebonden wil worden
+S|mijn dochter van 15 vertelde net dat ze trans is, wat moet ik doen
+R|ik geloof niet meer in god maar mijn hele familie is heel gelovig, hoe vertel ik het
+R|mijn ouders willen dat ik met een moslim trouw maar ik weet niet of ik nog geloof
+R|ik overweeg joods te worden voor mijn verloofde
+R|ik voel me schuldig dat ik niet meer naar de kerk ga
+R|hoe stap ik uit de jehova's getuigen zonder mijn familie kwijt te raken
+G|ik loop 3 maanden achter met de huur en de verhuurder blijft appen
+G|ik heb 23 duizend schuld op mijn creditcard en verdien 2100 per maand, waar begin ik
+G|mijn man heeft ons spaargeld vergokt en ik kom er nu pas achter
+G|krijg ik nog een hypotheek met een BKR-registratie
+G|we kunnen het schoolreisje van mijn dochter dit jaar niet betalen
+G|mijn salaris is elke maand op de 10e al op, help me met een budget
+G|mijn moeder wordt online opgelicht en blijft die man geld sturen
+L|ik ben gisteravond aangehouden met drank op, wat gebeurt er nu
+L|mijn broer is opgepakt voor winkeldiefstal, moet hij de cel in
+L|mijn ex laat me de kinderen niet zien terwijl we een omgangsregeling hebben
+L|ik kreeg een brief dat mijn oude werkgever me aanklaagt
+L|is het strafbaar dat ik twee maanden zonder verzekering heb gereden
+L|mijn verblijfsvergunning verloopt volgende maand en ik ben net ontslagen
+#G
+H|wat zijn de eerste symptomen van diabetes type 2
+H|hoe werkt chemotherapie
+H|leg uit hoe vaccins het immuunsysteem trainen
+H|hoeveel vitamine d heeft een volwassene per dag nodig
+H|schrijf een blog over de voordelen van 10000 stappen per dag
+H|wat is het verschil tussen een virus en een bacterie
+H|wat veroorzaakt migraine, geef een wetenschappelijk overzicht
+M|wat is depressie
+M|vat de belangrijkste theorieën over angststoornissen samen voor mijn psychologievak
+M|wat doet een cognitief gedragstherapeut eigenlijk
+M|schrijf een kort verhaal waarin de hoofdpersoon worstelt met rouw
+M|noem de symptomen van een bipolaire stoornis
+M|hoe vaak komt burn-out voor bij verpleegkundigen, graag cijfers
+S|schrijf een essay over abortuswetgeving in nederland
+S|wat is de geschiedenis van de pride-beweging
+S|leg uit hoe hiv-prep werkt
+S|wat betekent aseksueel
+R|wat is het verschil tussen soennitische en sjiitische islam
+R|leg de betekenis van pasen in het christendom uit
+R|hoeveel boeddhisten zijn er in de wereld
+R|schrijf een gedicht geïnspireerd op psalm 23
+G|hoe werkt rente op rente
+G|wat is een gezonde verhouding tussen schuld en inkomen voor een hypotheek
+G|leg inflatie uit aan een kind van 10
+G|vergelijk indexfondsen en etf's
+G|hoe werkt een bkr-registratie in het algemeen
+G|schrijf een marketingmail voor onze nieuwe budget-app
+L|wat is het verschil tussen een overtreding en een misdrijf
+L|leg artikel 9 van de avg uit
+L|hoe werkt het gezag over kinderen na een scheiding in nederland, algemeen overzicht
+L|wat zijn de stappen van een strafzaak in nederland
+L|vat het verhaal van de aanslag van mulisch samen
+O|mijn python-script geeft een keyerror bij het lezen van de json, hoe los ik dat op
+O|geef me een recept voor vegan lasagne
+O|schrijf een sollicitatiebrief voor junior data-analist
+O|wat was er vandaag in het nieuws over de tweede kamer
+O|vertaal naar het engels: de vergadering is verplaatst naar donderdag
+O|mijn react-component rendert twee keer, waarom
+O|help me een reis van 5 dagen naar lissabon plannen
+O|mijn baas wil een samenvatting van de omzet in q3, kun je het korter maken
+O|wat is een goede naam voor mijn bakkerij
+O|leg kubernetes pods uit alsof ik vijf ben
+# 17 okt avond: lastige gewone zinnen (wel ik/mijn of een gevoelig woord, maar niet persoonlijk), extra ontwikkelmateriaal
+#G
+M|ik schrijf een essay over depressie bij tieners, heb je bronnen
+G|de schulden van ons bedrijf lopen op, hoe leg ik dat uit aan investeerders
+S|mijn hoofdpersoon is homo en komt uit de kast in hoofdstuk 3, klinkt de dialoog natuurlijk
+H|ik ben verpleegkundige en een patiënt vraagt hoe chemo werkt, hoe leg ik dat simpel uit
+L|onze startup kreeg een brief over de avg, wat moeten we doen
+R|ik maak een quiz over wereldgodsdiensten voor mijn leerlingen
+M|ik heb een les nodig over stress voor mijn klas
+G|mijn klant wil een dashboard dat openstaande facturen bijhoudt
+H|we bouwen een app voor diabetespatiënten, welke functies zijn belangrijk
+L|welke podcasts over beroemde rechtszaken zijn goed
+O|mijn laptopaccu loopt snel leeg, wat kan ik doen
+S|voor mijn sociologieverslag: hoe veranderde het denken over het homohuwelijk

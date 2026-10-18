@@ -1,0 +1,42 @@
+#P
+H|mein arzt meinte mein blutdruck ist viel zu hoch und ich soll tabletten nehmen, aber ich hab angst vor nebenwirkungen
+H|meine oma hat seit gestern verwirrtheit und erkennt mich nicht mehr, soll ich den notarzt rufen
+H|ich hab seit wochen rückenschmerzen und mein chef glaubt mir nicht, was kann ich tun
+H|mein baby hat ausschlag am ganzen bauch und fiebert, ist das normal
+M|ich fuehl mich seit monaten so leer und antriebslos, morgens komm ich kaum aus dem bett
+M|meine freundin hat schluss gemacht und ich heul nur noch, wie komm ich da raus
+M|ich hab so krasse panik vor dem zahnarzt dass ich schon tage vorher nicht schlafe
+M|mein bruder trinkt jeden abend zu viel und ich mach mir sorgen um ihn
+S|mein mann und ich haben seit der geburt kaum noch sex und ich weiss nicht wie ich das ansprechen soll
+S|ich glaube ich bin schwul aber ich traue mich nicht es meinen eltern zu sagen
+S|ich fühl mich im falschen körper, wo fang ich an mit dem thema
+R|ich bin aus der katholischen kirche ausgetreten und meine mutter spricht nicht mehr mit mir
+R|mein freund ist zeuge jehovas und ich weiss nicht ob ich das mit der beziehung hinkriege
+R|ich will zum islam konvertieren aber hab angst vor der reaktion meiner familie
+G|ich hab 12000 euro schulden und der schufa eintrag macht mir alles kaputt
+G|das jobcenter hat mir die leistungen gekürzt und die miete ist überfällig
+G|hab bei sportwetten schon wieder 800 euro verzockt und meine freundin darf das nicht merken
+L|ich hab einen strafbefehl wegen schwarzfahren bekommen, muss ich da einspruch einlegen
+L|mein ex will das sorgerecht für unseren sohn, brauch ich einen anwalt
+L|meine aufenthaltserlaubnis läuft nächsten monat ab und die ausländerbehörde antwortet nicht
+#G
+H|was ist der unterschied zwischen grippe und erkältung
+H|schreib mir einen kurzen text für unseren newsletter über impfungen für senioren
+H|wie viele menschen in deutschland haben diabetes
+M|ich schreib ne hausarbeit über depressionen bei jugendlichen, gib mir mal ne gliederung
+M|schreib ne szene für meinen roman in der die hauptfigur trauert
+M|welche arten von angststörungen gibt es laut icd 10
+S|wann wurde die ehe für alle in deutschland eingeführt
+S|erklär mir was asexuell bedeutet, ich brauch es für ein referat
+S|schreib ein lustiges gedicht für die hochzeit meiner cousine
+R|was ist der unterschied zwischen evangelisch und katholisch
+R|ich hab morgen reli klausur, frag mich mal zu den zehn geboten ab
+R|wie viele muslime leben ungefähr in deutschland
+G|wie funktioniert die schufa eigentlich, ich muss das für wirtschaft erklären
+G|welche betrugsmaschen gibt es gerade bei ebay kleinanzeigen
+G|kannst du eine zahlungserinnerung für säumige kunden formulieren
+L|was ist der unterschied zwischen mord und totschlag
+L|ich bin referendar, erklär mir kurz was ein versäumnisurteil ist
+L|wie läuft ein einbürgerungsverfahren in deutschland ab
+O|mein python script wirft einen indexerror in zeile 8, woran liegts
+O|hast du tipps für ein wochenende in hamburg mit meiner mutter

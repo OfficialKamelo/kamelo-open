@@ -41,6 +41,26 @@ test('Firefox, gratis editie: eigen beschrijving zonder Melo; Chrome/Edge en Kam
     assert.ok(msgs.extDescriptionFirefox.message.length <= 132, lang);
   }
 });
+test('Melo-naam: Chrome "private AI chat"; Edge en Firefox (geen chat met Melo) de naam zonder chat; bèta en test blijven herkenbaar', () => {
+  assert.equal(manifestFor(manifest).name, '__MSG_extName__');
+  for (const opts of [{ edge: true }, { firefox: true }]) {
+    const m = manifestFor(manifest, opts);
+    assert.equal(m.name, '__MSG_extNameFirefox__', JSON.stringify(opts));
+    assert.equal(m.description, '__MSG_extDescriptionFirefox__', JSON.stringify(opts));
+    assert.equal(m.short_name, 'Melo');
+  }
+  // Edge houdt verder alles van Chrome (zijpaneel, rechten).
+  const { name, description, ...chrome } = manifestFor(manifest);
+  const { name: n2, description: d2, ...edge } = manifestFor(manifest, { edge: true });
+  assert.deepEqual(edge, chrome);
+  assert.equal(manifestFor(manifest, { edge: true, test: true }).name, 'Melo (test)');
+  assert.equal(manifestFor(manifest, { beta: true }).name, 'Melo Beta');
+  for (const lang of fs.readdirSync(new URL('../_locales', import.meta.url))) {
+    const msgs = JSON.parse(fs.readFileSync(new URL(`../_locales/${lang}/messages.json`, import.meta.url), 'utf8'));
+    assert.doesNotMatch(msgs.extNameFirefox.message, /chat|discussion/i, lang);
+    assert.ok(msgs.extName.message.length <= 45 && msgs.extNameFirefox.message.length <= 45, lang);
+  }
+});
 test('gratis editie in Chrome/Edge: precies deze rechten, met activeTab (Lees deze pagina) en geen toegang tot alle sites', () => {
   const m = manifestFor(manifest);
   assert.deepEqual(m.permissions, ['storage', 'scripting', 'activeTab', 'sidePanel']);

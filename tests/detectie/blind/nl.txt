@@ -1,0 +1,42 @@
+#P
+H|mn huisarts zegt dat mn cholesterol te hoog is en ik snap niks van die uitslag
+H|mijn moeder heeft net te horen gekregen dat ze borstkanker heeft, hoe ga ik daar mee om
+H|ik heb al weken last van buikpijn na het eten en durf niet naar de dokter
+H|mn dochtertje van 3 heeft steeds oorontsteking, moeten er buisjes in
+M|ik ben zo moe van alles, ik voel me al maanden leeg en niks lijkt nog leuk
+M|sinds mn scheiding voel ik me zo eenzaam dat ik haast niemand meer zie
+M|ik drink elke avond een fles wijn en ik wil eigenlijk stoppen maar het lukt niet
+M|mn beste vriend is overleden vorige week en ik weet niet hoe ik dit moet verwerken
+S|mn vriend heeft totaal geen zin meer in seks en ik voel me afgewezen
+S|ik val denk ik op vrouwen maar ik ben al 8 jaar getrouwd met mn man
+S|mn zoon van 15 heeft verteld dat hij homo is, hoe reageer ik goed
+R|ik ben opgegroeid in een gereformeerd gezin en wil uit de kerk stappen, hoe zeg ik dat tegen mn ouders
+R|ik overweeg moslim te worden maar mn familie zou er niks van snappen
+R|sinds mn oma overleed bid ik weer elke avond en ik schaam me er een beetje voor
+G|ik heb 9000 euro schuld bij de belastingdienst en kan mn zorgpremie niet meer betalen
+G|ze dreigen mn huis uit te zetten want ik loop 3 maanden achter met de huur
+G|ik ben 2000 euro kwijt aan online gokken en durf het niet aan mn vrouw te vertellen
+L|mn zoon is gisteren opgepakt door de politie voor een winkeldiefstal, wat nu
+L|mn ex wil de kinderen om het weekend niet meer laten komen, kan ik naar de rechter
+L|mn verblijfsvergunning loopt af en de ind reageert niet, kan ik uitgezet worden
+#G
+H|wat is het verschil tussen een virus en een bacterie, voor biologie
+H|hoeveel mensen in nederland hebben diabetes
+H|schrijf een korte tekst voor ons bedrijf over gezond tillen op de werkvloer
+M|geef me een samenvatting van de theorie van kübler-ross over rouwverwerking voor mn scriptie
+M|schrijf een scene voor mn roman waarin de hoofdpersoon een paniekaanval krijgt
+M|hoeveel mensen in nederland hebben een burn-out, zijn daar cijfers van
+S|wat is het verschil tussen biologisch geslacht en genderidentiteit, voor mn maatschappijleer presentatie
+S|wanneer werd het homohuwelijk in nederland ingevoerd
+S|schrijf een grappig liedje voor een vrijgezellenfeest
+R|leg uit wat het verschil is tussen katholiek en protestant
+R|ik moet een werkstuk maken over het hindoeïsme, geef een paar hoofdpunten
+R|wat zijn de belangrijkste feestdagen in het jodendom
+G|hoe werkt een hypotheek precies, ik wil het uitleggen aan mn klas
+G|welke oplichtingstrucs zijn er nu populair via whatsapp
+G|kun je een betalingsherinnering opstellen voor klanten die hun factuur niet hebben betaald
+L|wat is het verschil tussen een rechtbank en een gerechtshof
+L|ik studeer rechten, leg het verschil uit tussen schuld en opzet
+L|hoe lang duurt het gemiddeld om nederlander te worden voor een buitenlander
+O|mn react app geeft een error bij npm install, wat kan het zijn
+O|leuke dingen om te doen in lissabon met 3 dagen, ik ga met mn zus

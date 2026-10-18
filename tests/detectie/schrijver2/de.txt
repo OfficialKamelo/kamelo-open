@@ -1,0 +1,42 @@
+#P
+H|seit tagen schwindelig und mein linker arm kribbelt komisch, sollte ich zum arzt
+H|meine oma hat gerade die diagnose parkinson bekommen und wir wissen gar nicht was auf uns zukommt
+H|mein sohn ist 6 und hat schon wieder mittelohrentzündung, die dritte dieses jahr
+H|hab jetzt schon seit wochen rückenschmerzen und der orthopäde sagt bandscheibe, hab angst vor op
+M|ich kann nicht mehr schlafen weil mein chef mich fertig macht, glaub ich hab ne depression
+M|seit mein hund gestorben ist heule ich jeden abend, ist das normal
+M|mein mann trinkt jeden abend bier und ich mach mir sorgen dass er abhängig ist
+M|hab so krasse prüfungsangst dass ich kaum noch vor die tür gehe
+S|bin 24 und hab mich in meine beste freundin verliebt, weiß nicht ob ich ihr das sagen soll
+S|meine freundin hat seit monaten keine lust auf sex mehr, liegt das an mir
+S|mein bruder hat sich bei uns geoutet und mein vater redet nicht mehr mit ihm
+R|bin katholisch aufgewachsen aber überlege auszutreten wegen der kirchensteuer und weil ich nicht mehr glaube
+R|mein freund ist muslim und will dass ich konvertiere, ich bin mir total unsicher
+R|ich bete seit dem tod meiner mutter wieder jeden tag, ist das komisch
+G|hab 12000 euro schulden bei der bank und die schicken schon mahnungen, was jetzt
+G|jobcenter hat mir das bürgergeld gekürzt und ich weiß nicht wie ich die miete zahlen soll
+G|bin auf einen fake shop reingefallen und 400 euro weg, kann ich die zurückholen
+L|mein sohn wurde beim kiffen von der polizei erwischt, was kommt da auf ihn zu
+L|mein ex-mann will das sorgerecht für unsere tochter allein, was kann ich tun
+L|meine aufenthaltserlaubnis läuft im august aus und die ausländerbehörde meldet sich nicht
+#G
+H|erklär mir kurz wie impfungen wirken für mein referat in bio
+H|welche symptome hat eine grippe im vergleich zu corona, allgemein
+H|schreib einen kurzen aushang für unsere apotheke wegen der neuen öffnungszeiten
+M|meine hausarbeit handelt von burnout bei pflegekräften, brauche eine gliederung
+M|mein protagonist hat soziale phobie, wie beschreib ich das glaubwürdig
+M|wie viele menschen in deutschland sind laut studien von einsamkeit betroffen
+S|meine figur ist trans und outet sich auf einer dorfhochzeit, hilf mir bei der szene
+S|seit wann gibt es in deutschland die ehe für alle
+S|fass die geschichte vom christopher street day in 4 sätzen zusammen
+R|vergleiche kurz judentum und christentum für meine reli klausur
+R|was feiern muslime beim opferfest, für einen artikel in der schülerzeitung
+R|wie viele menschen sind 2023 aus der kirche ausgetreten in deutschland
+G|mein startup hat 80k schulden bei der bank, wie präsentiere ich das den investoren
+G|wie funktioniert der schufa score, für meine wirtschaftsklausur
+G|welche betrugsmaschen gibt es gerade bei ebay kleinanzeigen, für einen infoabend
+L|ich lern grad für die jura klausur, frag mich mal zum thema notwehr ab
+L|wie läuft ein strafprozess in deutschland ab, für mein politik referat
+L|was ist der unterschied zwischen mord und totschlag
+O|mein python code wirft ne exception in zeile 40, kannst du mal drüberschauen
+O|was kann ich in hamburg bei regen mit kindern machen

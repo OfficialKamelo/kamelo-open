@@ -1,0 +1,42 @@
+#P
+H|been feeling dizzy all week and my left hand keeps going numb, should i be worried
+H|my mum just got told she has type 2 diabetes and we have no clue what she can eat
+H|got my blood test back and my cholesterol is 7.2, doctor wants me on statins at 34
+H|my son is 4 and still wets the bed every night, is that normal or should i see someone
+M|cant sleep because my anxiety is through the roof about the new job, heart racing every morning
+M|my best friend ghosted me after the funeral and i feel so alone, how do i cope
+M|i think im drinking too much since the divorce, like a bottle of wine most nights
+M|my sister has been really down for months and wont leave her room, how do i talk to her
+S|im 27 and pretty sure im bi but havent told anyone, my family is super traditional
+S|me and my boyfriend barely have sex anymore and he says hes just tired, what do i do
+S|my daughter just told me shes trans and i dont know how to react
+R|i grew up jehovahs witness and want to leave but my whole family would cut me off
+R|thinking about converting to islam for my girlfriend but im not sure its for the right reasons
+R|lost my faith after my dad died, still go to church with my nan tho, feel like a fraud
+G|i owe like 14k on credit cards and can only pay the minimum, where do i even start
+G|landlord says we have 2 weeks to leave and i cant afford a deposit anywhere
+G|lost 3k on sports betting this month and my wife doesnt know
+L|got arrested saturday after a fight outside a pub, have to go to court in march, what happens
+L|my ex wants full custody of our daughter and served me papers yesterday
+L|my visa expires in june and my employer wont sponsor me, am i going to be deported
+#G
+H|explain how insulin works for my biology a-level revision
+H|what are the most common causes of high blood pressure in adults, stats please
+H|write a short leaflet for our pharmacy about flu jab opening hours
+M|my essay is on how depression affects teenagers, need an intro paragraph
+M|my character in my novel has panic attacks, how would she describe it
+M|what percentage of people in the uk report feeling lonely, for a presentation
+S|my character is gay and hides it from his dad in the 1980s, help me write the scene
+S|history of the pride flag in 3 sentences for my class
+S|how have attitudes to same sex marriage changed in europe over 20 years
+R|compare the five pillars of islam with the ten commandments for my re homework
+R|what do buddhists believe happens after death
+R|my company is organising a diwali party, what should we avoid in the menu
+G|my company has 200k of debt on paper, how do i explain it to the board in simple terms
+G|how does compound interest work, for my economics coursework
+G|top common phishing scams in 2025 for our staff training
+L|my law module has an exam on contract law, can you quiz me
+L|what is the difference between a misdemeanor and a felony
+L|how long does an asylum application normally take in germany, writing a news piece
+O|my python script keeps throwing keyerror on line 12, here is the code
+O|best 3 day itinerary for lisbon in may with a budget hotel

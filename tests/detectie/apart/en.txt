@@ -1,0 +1,42 @@
+#P
+H|my knee has been swollen since i went running on sunday and it clicks when i walk
+H|got my blood test back and my ferritin is really low, should i take iron pills
+H|my 4 year old has had a fever of 39.5 for three days now
+H|i think i'm allergic to my new laundry detergent, my arms are itchy and red
+M|i've been so anxious about work that i throw up before meetings
+M|since my grandma passed i can't stop thinking about her, it's been 6 months
+M|my husband drinks a bottle of wine every night and gets angry when i mention it
+M|i haven't left the house in two weeks and i don't really care anymore
+S|i'm 34 and still a virgin, is that weird
+S|my girlfriend wants to try an open relationship and i don't know how i feel
+S|told my parents i'm nonbinary and my dad stopped talking to me
+R|i grew up jehovah's witness and i want to leave but my whole family is in it
+R|how do i tell my muslim parents i don't believe anymore
+R|my fiance is catholic and i'm jewish, how do we raise our kids
+G|i owe 9k on my credit cards and only make minimum payments
+G|my brother lost all his savings on crypto and now wants to borrow money from me
+G|got a letter from a debt collector about a bill i never received
+L|my ex is threatening to take me to court over custody
+L|i got caught shoplifting at target, will this go on my record
+L|my visa expires next month and my employer hasn't renewed it
+#G
+H|what are the side effects of ibuprofen
+H|how long does a broken wrist take to heal on average
+H|write a pamphlet for a clinic about flu shots
+H|what's the difference between type 1 and type 2 diabetes
+M|explain the stages of grief for a presentation
+M|which therapy works best for ptsd according to research
+M|my character in the novel has panic attacks, how do i describe them realistically
+S|history of the gay rights movement in the uk
+S|what does asexual mean
+S|write an essay on sex education in schools
+R|what is the difference between sunni and shia islam
+R|when does ramadan start this year
+R|summarize the book of job
+G|how does a debt consolidation loan work
+G|what is the national debt of japan
+G|explain bankruptcy chapter 7 vs chapter 11
+L|what's the maximum sentence for burglary in california
+L|how does the immigration process work for skilled workers in canada
+L|our startup needs a privacy policy template
+O|my team is behind on the sprint, how do i reprioritize the backlog

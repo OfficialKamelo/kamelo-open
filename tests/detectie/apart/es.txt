@@ -1,0 +1,42 @@
+#P
+H|me duele mucho la muela desde hace dos días y se me hinchó la cara
+H|a mi madre le encontraron un nódulo en el tiroides
+H|llevo una semana con diarrea y no sé si ir al médico
+H|mi hijo de 3 años tiene tos por las noches y le cuesta respirar
+M|últimamente me siento muy solo y no tengo ganas de nada
+M|tengo ataques de ansiedad antes de cada examen
+M|mi pareja fuma porros todos los días y ya no sale de casa
+M|desde que murió mi abuelo no puedo dejar de llorar
+S|tengo 22 años y sigo siendo virgen, es normal
+S|creo que soy gay pero mi familia es muy conservadora
+S|mi novio quiere tener una relación abierta
+R|soy musulmana y mi novio es cristiano, cómo se lo digo a mis padres
+R|dejé de creer en dios y mi madre está muy triste
+R|mis suegros quieren que bauticemos a nuestro hijo pero no somos creyentes
+G|me han estafado por internet, perdí 500 euros
+G|debo 15 mil euros a la tarjeta y no llego a fin de mes
+G|a mi padre le van a embargar el sueldo
+L|me pusieron una multa por conducir borracho, me quitan el carnet
+L|mi ex no me deja ver a mis hijos, qué hago
+L|me caducó el permiso de residencia y tengo miedo de que me deporten
+#G
+H|cuáles son los síntomas de la gripe
+H|cómo funciona una resonancia magnética
+H|escribe un artículo sobre la dieta mediterránea
+H|cuántas personas tienen diabetes en españa
+M|explica qué es el trastorno obsesivo compulsivo
+M|tengo que hacer un trabajo sobre la depresión para clase de psicología
+M|qué diferencia hay entre un psicólogo y un psiquiatra
+S|historia del matrimonio igualitario en españa
+S|qué significa ser pansexual
+R|cuál es la diferencia entre católicos y protestantes
+R|cuándo empieza el ramadán este año
+R|resume la historia de la semana santa
+G|cómo funciona la ley de segunda oportunidad
+G|cuál es la deuda pública de españa
+G|haz un plan de negocio para una cafetería
+L|cuánto tarda un divorcio en españa
+L|qué pena tiene un robo con violencia
+L|explica la diferencia entre un juicio civil y uno penal
+O|mi ordenador va muy lento desde la actualización
+O|mi perro no quiere comer, qué hago

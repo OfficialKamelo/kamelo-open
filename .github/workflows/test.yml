@@ -11,6 +11,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
@@ -31,8 +32,11 @@ jobs:
           if grep -rnE "\b(fetch|XMLHttpRequest|sendBeacon|WebSocket|EventSource)\s*\(" src popup $(ls -d unlock 2>/dev/null) chat --include='*.js' | grep -v "net-main.js" | grep -vE "^src/teams/originals\.js:[0-9]+:.*// lokaal: blob/data$"; then
             echo "Network call found in extension code. Kamelo must not make network requests."; exit 1
           fi
-          grep -qF "if (typeof href !== 'string' || !LOCAL.test(href)) throw" src/teams/originals.js && grep -qF "const LOCAL = /^(?:blob|data):/i;" src/teams/originals.js \
-            || { echo "readLocal in src/teams/originals.js must refuse everything but blob: and data:."; exit 1; }
+          # src/teams gaat niet mee naar kamelo-open: daar is er niets te controleren.
+          if [ -f src/teams/originals.js ]; then
+            grep -qF "if (typeof href !== 'string' || !LOCAL.test(href)) throw" src/teams/originals.js && grep -qF "const LOCAL = /^(?:blob|data):/i;" src/teams/originals.js \
+              || { echo "readLocal in src/teams/originals.js must refuse everything but blob: and data:."; exit 1; }
+          fi
       - name: No secrets in the repository
         # Alleen in de privé-repo: tools/check-secrets.mjs gaat niet mee naar kamelo-open.
         if: hashFiles('tools/check-secrets.mjs') != ''
@@ -45,6 +49,7 @@ jobs:
   browser:
     name: Browser tests
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0

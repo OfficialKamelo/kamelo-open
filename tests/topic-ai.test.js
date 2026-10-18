@@ -103,11 +103,26 @@ for (const state of ['unavailable', 'downloadable', 'downloading']) {
     const c = clock();
     const m = A.model({ env: { LanguageModel: LM }, ...c });
     assert.deepEqual(await m.ask(PERSONAL, 1), { topic: null, why: state });
-    assert.equal(calls.availability.length, 1);
+    // Eerst met en/de/fr/es, dan nog één keer met alleen Engels (misschien kent deze Chrome de talen niet).
+    assert.deepEqual(calls.availability, [A.LM_OPTS, A.LM_OPTS_EN]);
     assert.equal(calls.create.length, 0);
     assert.equal(calls.prompt.length, 0);
   });
 }
+test('tweede kans in en, de, fr en es; kent deze Chrome die talen niet, dan alleen Engels', async () => {
+  assert.deepEqual(A.LM_OPTS.expectedInputs[0].languages, ['en', 'de', 'fr', 'es']);
+  assert.deepEqual(A.LM_OPTS.expectedOutputs[0].languages, ['en']);
+  const { LM, calls } = fakeLM();
+  await A.model({ env: { LanguageModel: LM }, ...clock() }).ask(PERSONAL, 1);
+  assert.deepEqual(calls.availability, [A.LM_OPTS]);
+  assert.deepEqual(calls.create[0].expectedInputs, A.LM_OPTS.expectedInputs);
+
+  const only = fakeLM();
+  only.LM.availability = async o => { only.calls.availability.push(o); return o.expectedInputs[0].languages.length > 1 ? 'unavailable' : 'available'; };
+  assert.deepEqual(await A.model({ env: { LanguageModel: only.LM }, ...clock() }).ask(PERSONAL, 1), { topic: 'MENTAL' });
+  assert.deepEqual(only.calls.availability, [A.LM_OPTS, A.LM_OPTS_EN]);
+  assert.deepEqual(only.calls.create[0].expectedInputs, A.LM_OPTS_EN.expectedInputs);
+});
 test('availability() gooit een fout: telt als niet beschikbaar, geen create()', async () => {
   const LM = { availability: async () => { throw new Error('boom'); }, create: async () => { throw new Error('mag niet'); } };
   assert.equal((await A.model({ env: { LanguageModel: LM }, ...clock() }).ask(PERSONAL, 1)).topic, null);
@@ -212,6 +227,20 @@ test('verder typen annuleert de vraag', async () => {
   g.cancel();
   await c.advance(5000);
   assert.equal(asked.length, 0);
+});
+test('de woordenlijst zag een NOT-woord (verhaal, huiswerk, patiënt): geen vraag aan de AI', async () => {
+  for (const text of ['my main character is gay and comes out in chapter 3, does the dialogue sound natural',
+    'mon personnage principal est gay et fait son coming out au chapitre 3',
+    'soy enfermera y un paciente me pregunta cómo funciona la quimio']) {
+    const { c, asked, schedule } = setup({ text });
+    schedule();
+    await c.advance(2000);
+    assert.equal(asked.length, 0, text);
+  }
+  const { c, asked, schedule } = setup();
+  schedule();
+  await c.advance(2000);
+  assert.equal(asked.length, 1, 'zonder NOT-woord wel');
 });
 test('minder dan 4 woorden: geen vraag', async () => {
   const { c, asked, schedule } = setup({ text: 'my back hurts' });

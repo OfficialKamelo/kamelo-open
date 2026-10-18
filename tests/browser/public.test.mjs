@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { build } from '../../tools/pack.mjs';
-import { launch, mockPage, paste, textOf, waitForShadow, shadowHTML, clickText, SAMPLE, fakeLanguageModel, askMelo } from './kamelo.mjs';
+import { launch, mockPage, paste, textOf, waitForShadow, shadowHTML, clickText, noticeRect, SAMPLE, fakeLanguageModel, askMelo } from './kamelo.mjs';
 
 const CHAT = `<!doctype html><title>Chat</title>
 <main><div id="answer"></div></main>
@@ -21,6 +21,8 @@ let browser, worker, downloads;
 before(async () => {
   build(path.join(dir, 'ext'));
   ({ browser, worker, downloads } = await launch({ extension: path.join(dir, 'ext') }));
+  // De echte AI van Chrome, vóór een test hem nabootst (fakeModel) of weghaalt.
+  await worker.evaluate(() => { globalThis.__realLM = globalThis.LanguageModel; });
 });
 after(async () => { await browser?.close(); fs.rmSync(dir, { recursive: true, force: true }); });
 
@@ -43,6 +45,30 @@ async function pasteText(page, selector, text) {
   return taken;
 }
 
+// De knoppen in Kamelo's melding (gesloten shadow root) met hun plek, via CDP.
+async function buttonBoxes(page) {
+  const cdp = await page.createCDPSession();
+  try {
+    const { root } = await cdp.send('DOM.getDocument', { depth: -1, pierce: true });
+    const found = [];
+    const walk = (node, inShadow) => {
+      if (inShadow && node.nodeName === 'BUTTON') found.push(node);
+      for (const c of node.children || []) walk(c, inShadow);
+      for (const sr of node.shadowRoots || []) walk(sr, true);
+    };
+    walk(root, false);
+    const out = [];
+    for (const n of found) {
+      const label = (n.children || []).filter(c => c.nodeType === 3).map(c => c.nodeValue).join('').trim();
+      const { model } = await cdp.send('DOM.getBoxModel', { nodeId: n.nodeId }).catch(() => ({}));
+      if (!model) continue;
+      const xs = model.border.filter((_, i) => i % 2 === 0);
+      out.push({ label, x: Math.min(...xs), width: Math.max(...xs) - Math.min(...xs) });
+    }
+    return out;
+  } finally { await cdp.detach(); }
+}
+
 test('gratis: de editie is public en laadt niets om af te schermen', async () => {
   assert.equal(await worker.evaluate(() => globalThis.KameloEdition), 'public');
   assert.equal(await worker.evaluate(() => typeof globalThis.PrivacyDetector), 'undefined');
@@ -52,6 +78,7 @@ test('gratis: de editie is public en laadt niets om af te schermen', async () =>
 });
 
 test('gratis: een persoonlijk onderwerp geeft de melding met tijdelijke chat en Private Chat; er wordt niets afgeschermd', async () => {
+  await fakeModel('available', '{"personal":false,"topic":"NONE"}'); // de AI van Chrome draait hier (anders geen "Ask Melo")
   const page = await mockPage(browser, 'https://chatgpt.com/', CHAT, undefined, ready('https://chatgpt.com/'));
   const taken = await pasteText(page, '#prompt-textarea', HEALTH);
   assert.equal(taken, false, 'Kamelo nam het plakken over');
@@ -73,7 +100,8 @@ test('gratis: in Edge en Firefox zegt de melding eerlijk waarom er een tijdelijk
   const page = await mockPage(browser, url, CHAT, undefined, ready(url));
   await pasteText(page, '#prompt-textarea', HEALTH);
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
-  assert.match(html, /Edge doesn’t have a built-in AI that Kamelo can use yet|Edge heeft nog geen ingebouwde AI die Kamelo kan gebruiken/);
+  // De extensie heet Melo: "die Melo kan gebruiken, dus Melo biedt …".
+  assert.match(html, /Edge doesn’t have a built-in AI that Melo can use yet|Edge heeft nog geen ingebouwde AI die Melo kan gebruiken/);
   assert.doesNotMatch(html, /Ask Melo|Vraag het Melo/);
   await page.close();
 });
@@ -126,6 +154,152 @@ test('gratis: "Tijdelijke chat" neemt de tekst ongewijzigd mee naar een tijdelij
   await page.close();
 });
 
+// Gemini heeft geen adres voor een tijdelijke chat maar een knop (temp-chat-button). Is die er niet (niet ingelogd, of
+// hernoemd) of opent hij niets, dan moet de vraag terug in het veld: eerst was het veld leeg en de vraag weg (audit 17 okt).
+const GEMINI = (button = '') => `<!doctype html><title>Gemini</title>
+<chat-window><rich-textarea><div class="ql-editor" contenteditable="true"></div></rich-textarea></chat-window>${button}`;
+const geminiText = page => page.$eval('.ql-editor', el => el.innerText);
+
+test('gratis: Gemini zonder knop voor een tijdelijke chat: de vraag komt terug in het veld', async () => {
+  const chat = 'https://gemini.google.com/app/1a2b3c4d5e6f7a8b';
+  const page = await mockPage(browser, chat, GEMINI(), req => {
+    if (req.url() === 'https://gemini.google.com/app') req.respond({ status: 200, contentType: 'text/html', body: GEMINI() });
+  }, ready(chat));
+  await pasteText(page, '.ql-editor', HEALTH);
+  await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
+  await Promise.all([page.waitForNavigation({ waitUntil: 'domcontentloaded' }), clickText(page, /^(Temporary chat|Tijdelijke chat)$/)]);
+  assert.equal(page.url(), 'https://gemini.google.com/app');
+  // De knop wordt 10 s gezocht (Gemini laadt traag), daarna staat de vraag er weer.
+  await page.waitForFunction(() => document.querySelector('.ql-editor')?.innerText.includes('depression'), { timeout: 20_000 })
+    .catch(() => {});
+  const text = await geminiText(page);
+  assert.ok(text.includes('depression') && text.includes(SAMPLE.name), `vraag weg: "${text}"`);
+  const html = await waitForShadow(page, h => /Couldn’t open a temporary chat|De tijdelijke chat ging niet open/.test(h), 3_000);
+  assert.match(html, /Couldn’t open a temporary chat|De tijdelijke chat ging niet open/);
+  // De melding komt niet meteen terug, en biedt hier geen tijdelijke chat meer aan (die werkt hier niet).
+  await new Promise(r => setTimeout(r, 1500));
+  assert.doesNotMatch(await shadowHTML(page), />(Temporary chat|Tijdelijke chat)</);
+  await page.close();
+});
+
+test('gratis: Gemini-knop opent geen tijdelijke chat: de vraag komt terug in het veld', async () => {
+  const page = await mockPage(browser, 'https://gemini.google.com/app', GEMINI('<temp-chat-button><button aria-label="Temporary chat">tmp</button></temp-chat-button>'),
+    undefined, ready('https://gemini.google.com/app'));
+  await pasteText(page, '.ql-editor', HEALTH);
+  await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
+  await clickText(page, /^(Temporary chat|Tijdelijke chat)$/);
+  await page.waitForFunction(() => document.querySelector('.ql-editor')?.innerText.includes('depression'), { timeout: 12_000 })
+    .catch(() => {});
+  const text = await geminiText(page);
+  assert.ok(text.includes('depression'), `vraag weg: "${text}"`);
+  await page.close();
+});
+
+// De gratis melding komt bij elk bericht terug. "Niet meer in dit gesprek" zet hem uit voor dit tabblad en dit gesprek,
+// alleen in het geheugen: niets in chrome.storage, en een ander gesprek krijgt hem weer.
+test('gratis: "Niet meer in dit gesprek" zet de melding uit tot een ander gesprek, zonder iets te bewaren', async () => {
+  const page = await mockPage(browser, 'https://chatgpt.com/', CHAT, undefined, ready('https://chatgpt.com/'));
+  const visible = h => /class="t card(?: light)? show"/.test(h);
+  const before = await worker.evaluate(() => chrome.storage.local.get(null));
+  const ask = async () => {
+    await page.$eval('#prompt-textarea', el => { el.textContent = ''; });
+    await new Promise(r => setTimeout(r, 1300)); // zoals na versturen: leeg veld, de melding mag weer
+    await page.click('#prompt-textarea');
+    await page.keyboard.type('My doctor says I might have diabetes, what should I eat?');
+  };
+  await ask();
+  const html = await waitForShadow(page, visible, 6_000);
+  assert.ok(visible(html), 'eerste melding');
+  assert.match(html, /class="q">(Don’t show in this chat|Niet meer in dit gesprek)</);
+  await clickText(page, /^(Don’t show in this chat|Niet meer in dit gesprek)$/);
+  assert.ok(!visible(await waitForShadow(page, h => !visible(h), 2_000)), 'melding blijft staan');
+
+  await ask();
+  await new Promise(r => setTimeout(r, 2500));
+  assert.ok(!visible(await shadowHTML(page)), 'melding terug in hetzelfde gesprek');
+  // Na het eerste bericht krijgt een nieuwe chat een eigen adres: nog steeds hetzelfde gesprek.
+  await page.evaluate(() => history.pushState(null, '', '/c/68f1a2b3-0c4d-8e5f-9a0b-1c2d3e4f5a6b'));
+  await ask();
+  await new Promise(r => setTimeout(r, 2500));
+  assert.ok(!visible(await shadowHTML(page)), 'melding terug na het eerste bericht (nieuw adres)');
+  assert.deepEqual(await worker.evaluate(() => chrome.storage.local.get(null)), before, 'er is iets bewaard');
+
+  // Een ander gesprek: de melding is er weer.
+  await page.evaluate(() => history.pushState(null, '', '/c/77aa0000-1111-2222-3333-444455556666'));
+  await ask();
+  assert.ok(visible(await waitForShadow(page, visible, 6_000)), 'geen melding in een ander gesprek');
+  await page.close();
+});
+
+test('gratis: in het Frans past elke knop van de melding in de kaart, ook als het venster smal is (zoals bij 200% zoom)', async () => {
+  const url = 'https://chatgpt.com/c/fr?lang=fr';
+  const page = await mockPage(browser, url, CHAT, undefined, ready(url));
+  await page.setViewport({ width: 360, height: 700 }); // zoals 200% zoom in een smal venster
+  await pasteText(page, '#prompt-textarea', HEALTH);
+  await waitForShadow(page, h => /Discussion temporaire/.test(h), 6_000);
+  await new Promise(r => setTimeout(r, 400)); // de kaart schuift in beeld
+  const boxes = await buttonBoxes(page);
+  const card = await noticeRect(page);
+  assert.ok(card && boxes.length >= 3, `kaart ${JSON.stringify(card)}, knoppen ${boxes.length}`);
+  for (const b of boxes) assert.ok(b.x >= card.left - 1 && b.x + b.width <= card.right + 1, `"${b.label}" valt buiten de kaart (${JSON.stringify({ b, card })})`);
+  assert.ok(boxes.some(b => b.label === 'Discussion temporaire'));
+  await page.close();
+});
+
+// WhatsApp Web, nagebouwd: links de chats, rechts (#main) de open chat met kop en invoerveld. Wisselen van chat vervangt
+// #main, zoals WhatsApp doet. Meta AI is een chat zoals elke andere; Kamelo mag alleen daar iets doen.
+const WHATSAPP = `<!doctype html><title>WhatsApp</title>
+<div id="app"><div id="side"><button id="to-meta">Meta AI</button><button id="to-anna">Anna</button></div><div id="slot"></div></div>
+<script>
+  // Zoals de echte pagina op 17 okt 2026: de naam in de kop (Meta AI met een label "AI" ernaast), het invoerveld met de
+  // naam van de chat in zijn label.
+  const chat = (name, id) => '<div id="main"><header><div title="Profielgegevens" role="button"><span dir="auto">' + name +
+    '</span>' + (name === 'Meta AI' ? '<span title="">AI</span>' : '') + '</div><button aria-label="Ask Meta AI">✦</button>' +
+    '<button aria-label="Zoeken">⌕</button></header><div role="application"><div data-id="true_' + id + '_3EB0A1"><span>hoi</span></div></div>' +
+    '<footer><div contenteditable="true" role="textbox" aria-label="Typ een chatbericht aan ' + name + '" aria-placeholder="Typ een bericht" ' +
+    'data-tab="10" data-lexical-editor="true"><p><br></p></div><button aria-label="Verzenden">➤</button></footer></div>';
+  const open = (name, id) => { document.getElementById('slot').innerHTML = chat(name, id); };
+  document.getElementById('to-meta').onclick = () => open('Meta AI', 'A1B2C3D4E5@lid');
+  document.getElementById('to-anna').onclick = () => open('Anna', '31612345678@c.us');
+  open('Anna', '31612345678@c.us');
+</script>`;
+const WA_FIELD = '#main footer [contenteditable="true"]';
+const DOCTOR = 'My doctor says I might have diabetes, what should I eat?';
+
+test('gratis: WhatsApp Web, in de chat met Meta AI komt de melding met Ask Melo', async () => {
+  const url = 'https://web.whatsapp.com/';
+  const page = await mockPage(browser, url, WHATSAPP, undefined, ready(url));
+  await page.click('#to-meta');
+  await page.click(WA_FIELD);
+  await page.keyboard.type(DOCTOR);
+  const html = await waitForShadow(page, h => /Ask Melo|Vraag het Melo/.test(h), 6_000);
+  assert.match(html, /Ask Melo|Vraag het Melo/);
+  assert.doesNotMatch(html, /Temporary chat|Tijdelijke chat/, 'WhatsApp heeft (nog) geen tijdelijke chat die Kamelo kan openen');
+  await page.close();
+});
+
+test('gratis: WhatsApp Web, in een chat met iemand anders nooit een melding, ook niet na een wissel', async () => {
+  const url = 'https://web.whatsapp.com/?chat=anna';
+  const page = await mockPage(browser, url, WHATSAPP, undefined, ready(url));
+  const visible = h => /class="t card(?: light)? show"/.test(h);
+  await page.click(WA_FIELD);
+  await page.keyboard.type(DOCTOR);
+  await new Promise(r => setTimeout(r, 2500));
+  assert.ok(!visible(await shadowHTML(page)), 'melding in de chat met Anna');
+  // Eerst Meta AI, dan terug naar Anna: daar weer niets.
+  await page.click('#to-meta');
+  await page.click(WA_FIELD);
+  await page.keyboard.type(DOCTOR);
+  assert.ok(visible(await waitForShadow(page, visible, 6_000)), 'melding in de chat met Meta AI');
+  await page.keyboard.press('Escape');
+  await page.click('#to-anna');
+  await page.click(WA_FIELD);
+  await page.keyboard.type('Mijn therapeut zegt dat ik een depressie heb.');
+  await new Promise(r => setTimeout(r, 2500));
+  assert.ok(!visible(await shadowHTML(page)), 'melding na terug naar Anna');
+  await page.close();
+});
+
 test('gratis: verzoeken aan een AI-API gaan ongewijzigd weg (geen netwerkfilter)', async () => {
   let body = null;
   const page = await mockPage(browser, 'https://chatgpt.com/c/api', CHAT, req => {
@@ -151,7 +325,7 @@ const fakeModel = (state, answer) => worker.evaluate((state, answer) => {
 const lmCalls = () => worker.evaluate(() => globalThis.__lmCalls);
 
 test('gratis: de AI van Chrome bestaat in de achtergrond (service worker) van de extensie', async () => {
-  assert.equal(await worker.evaluate(() => typeof LanguageModel), 'function');
+  assert.equal(await worker.evaluate(() => typeof globalThis.__realLM), 'function');
 });
 
 test('gratis: mist de woordenlijst een persoonlijk onderwerp, dan vraagt Kamelo de AI op dit apparaat', async () => {
@@ -174,7 +348,10 @@ test('gratis: vindt de woordenlijst het al, dan wordt de AI niet gevraagd', asyn
   await page.keyboard.type('My doctor says I might have diabetes, what should I eat?');
   await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
   await new Promise(r => setTimeout(r, 1500));
-  assert.equal((await lmCalls()).availability, 0);
+  // availability() mag wel (de melding vraagt of "Ask Melo" kan), maar de AI krijgt de tekst niet.
+  const calls = await lmCalls();
+  assert.equal(calls.create, 0);
+  assert.deepEqual(calls.prompt, []);
   await page.close();
 });
 
@@ -185,11 +362,108 @@ test('gratis: model nog niet op dit apparaat: geen download, geen melding', asyn
   await page.keyboard.type(MISSED);
   await new Promise(r => setTimeout(r, 3000));
   const calls = await lmCalls();
-  assert.equal(calls.availability, 1);
+  assert.equal(calls.availability, 2, 'eerst met en/de/fr/es, dan nog één keer met alleen Engels');
   assert.equal(calls.create, 0, 'create() zou een download starten');
   assert.doesNotMatch(await shadowHTML(page), /Temporary chat|Tijdelijke chat/);
   await page.close();
 });
+
+// "Ask Melo" alleen als Melo hier kan antwoorden (docs/KOERS.md, prioriteit 1). Kan de AI van Chrome niet op deze
+// computer draaien, dan leidde de knop naar "Geen AI op dit apparaat"; nu staat er alleen de tijdelijke chat.
+const meloOffer = async (url, state) => {
+  if (state) await fakeModel(state, '{"personal":false,"topic":"NONE"}');
+  else await worker.evaluate(() => { globalThis.LanguageModel = undefined; });
+  const page = await mockPage(browser, url, CHAT, undefined, ready(url));
+  await pasteText(page, '#prompt-textarea', HEALTH);
+  const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
+  await page.close();
+  return html;
+};
+for (const state of ['unavailable', null]) {
+  test(`gratis: ${state ? 'Chrome zegt "unavailable"' : 'geen LanguageModel'}: geen "Ask Melo", alleen de tijdelijke chat`, async () => {
+    const html = await meloOffer(`https://chatgpt.com/c/no-ai-${state}`, state);
+    assert.doesNotMatch(html, /Ask Melo|Vraag het Melo|class="p melo"/);
+    assert.match(html, /<button type="button" class="p">(Temporary chat|Tijdelijke chat)<\/button>/); // nu de hoofdknop
+    assert.match(html, /stays out of your history|komt niet in je geschiedenis/);
+    assert.doesNotMatch(html, /doesn’t have a built-in AI|heeft nog geen ingebouwde AI/); // dat klopt in Chrome niet
+  });
+}
+test('gratis: model nog te downloaden ("downloadable"): wel "Ask Melo" (Melo biedt de download zelf aan)', async () => {
+  const html = await meloOffer('https://chatgpt.com/c/downloadable', 'downloadable');
+  assert.match(html, /Ask Melo|Vraag het Melo/);
+  const calls = await lmCalls();
+  assert.equal(calls.create, 0, 'de vraag of Melo kan, start geen download');
+});
+
+// Zonder AI op deze computer is er in Melo niets aanklikbaar dat niets doet (docs/KOERS.md, prioriteit 1): geen invoerveld,
+// geen voorbeeldvragen, geen "Lees deze pagina"; wel de uitleg en de tijdelijke chat. De popup laat Melo dan weg.
+const NO_AI = {
+  unavailable: () => Object.defineProperty(window, 'LanguageModel', { value: { availability: async () => 'unavailable', create: async () => { throw new Error('unavailable'); } } }),
+  'geen LanguageModel': () => Object.defineProperty(window, 'LanguageModel', { value: undefined }),
+};
+const meloLook = page => page.evaluate(() => {
+  const shown = el => !!el && el.checkVisibility();
+  return {
+    engine: document.documentElement.dataset.engine,
+    input: document.getElementById('input').disabled, send: document.getElementById('send').disabled,
+    placeholder: document.getElementById('input').placeholder,
+    sugs: [...document.querySelectorAll('.sug')].filter(shown).length, title: shown(document.querySelector('.empty h2')),
+    readPage: shown(document.getElementById('readPage')),
+    note: document.getElementById('note').hidden ? '' : document.getElementById('note').innerText,
+    temp: [...document.querySelectorAll('#note .btn')].map(b => b.textContent),
+  };
+});
+for (const [name, noAi] of Object.entries(NO_AI)) {
+  test(`gratis: Melo zonder AI (${name}): alles uit behalve de tijdelijke chat`, async () => {
+    const id = new URL(worker.url()).host;
+    const page = await browser.newPage();
+    await page.evaluateOnNewDocument(noAi);
+    await page.goto(`chrome-extension://${id}/chat/chat.html?lang=en`);
+    await page.waitForFunction(() => document.documentElement.dataset.engine && !document.getElementById('note').hidden, { timeout: 5000 });
+    const look = await meloLook(page);
+    assert.equal(look.engine, 'none');
+    assert.equal(look.input, true, 'het invoerveld staat nog aan');
+    assert.equal(look.send, true, 'de verstuurknop staat nog aan');
+    assert.equal(look.placeholder, 'Melo can’t answer on this computer');
+    assert.equal(look.sugs, 0, 'voorbeeldvragen zonder AI');
+    assert.equal(look.title, false, '"What’s on your mind?" zonder AI');
+    assert.equal(look.readPage, false, '"Read this page" zonder AI');
+    assert.match(look.note, /No AI on this device/);
+    assert.deepEqual(look.temp, ['Temporary chat in ChatGPT']);
+    // Enter in het (uitgezette) veld verstuurt niets en laat geen bericht achter.
+    await page.focus('#input').catch(() => {});
+    await page.keyboard.press('Enter');
+    assert.equal(await page.$$eval('.thread .u', u => u.length), 0);
+    assert.equal(await page.$eval('#note .btn', b => b.disabled), false);
+    await page.close();
+  });
+}
+test('gratis: Melo met AI: invoerveld, voorbeeldvragen en "Lees deze pagina" staan aan', async () => {
+  const id = new URL(worker.url()).host;
+  const page = await browser.newPage();
+  await page.evaluateOnNewDocument(fakeLanguageModel, ['Ok.']);
+  await page.goto(`chrome-extension://${id}/chat/chat.html?lang=en`);
+  await page.waitForFunction(() => document.documentElement.dataset.engine === 'device', { timeout: 5000 });
+  const look = await meloLook(page);
+  assert.deepEqual([look.input, look.send, look.sugs, look.title, look.readPage, look.placeholder], [false, false, 4, true, true, 'Ask anything']);
+  await page.close();
+});
+// De popup: Melo alleen als de AI van Chrome hier kan draaien, met dezelfde vraag aan de achtergrond als de melding.
+for (const state of ['unavailable', null, 'available', 'downloadable']) {
+  test(`gratis: de popup ${state === 'unavailable' || !state ? 'laat Melo weg' : 'toont Melo'} (${state || 'geen LanguageModel'})`, async () => {
+    if (state) await fakeModel(state, '{}');
+    else await worker.evaluate(() => { globalThis.LanguageModel = undefined; });
+    const id = new URL(worker.url()).host;
+    const page = await browser.newPage();
+    await page.goto(`chrome-extension://${id}/popup/public.html`);
+    await page.waitForFunction(() => document.getElementById('stateText').textContent);
+    await new Promise(r => setTimeout(r, 300)); // het antwoord van de achtergrond
+    const rows = await page.$$eval('.pub-row', r => r.filter(x => x.checkVisibility()).map(x => x.id));
+    assert.deepEqual(rows, state === 'unavailable' || !state ? ['tempChat'] : ['openPrivateChat', 'tempChat']);
+    if (state) assert.equal((await lmCalls()).create, 0, 'de popup start geen download');
+    await page.close();
+  });
+}
 
 test('gratis: op een gewone site draait Kamelo niet, ook niet in AI-velden', async () => {
   const page = await mockPage(browser, 'https://shop.example/', SHOP, undefined, async () => {});
@@ -225,6 +499,35 @@ test('gratis: de popup toont alleen Beschermd, Private Chat en een tijdelijke ch
   assert.deepEqual(Object.keys(settings), ['enabled']);
   await worker.evaluate(() => chrome.storage.local.set({ settings: { enabled: true } }));
   await page.close();
+});
+
+// "Praat met geen enkele server", ook in een echte Chrome (naast de statische tests/geen-netwerk.test.mjs): alles wat
+// Melo, de popup en de achtergrond laden of versturen, is een eigen bestand van de extensie of iets uit het geheugen.
+test('gratis: Melo, de popup en de achtergrond maken geen verbinding naar buiten', async () => {
+  const id = new URL(worker.url()).host;
+  const seen = [];
+  await worker.client.send('Network.enable');
+  const onWorker = e => seen.push(e.request.url);
+  worker.client.on('Network.requestWillBeSent', onWorker);
+  const melo = await browser.newPage();
+  melo.on('request', r => seen.push(r.url()));
+  await melo.evaluateOnNewDocument(fakeLanguageModel, ['Dat klinkt zwaar. Wil je erover vertellen?']);
+  await melo.goto(`chrome-extension://${id}/chat/chat.html?lang=nl&engine=device`);
+  await melo.waitForFunction(() => document.documentElement.dataset.engine === 'device', { timeout: 5000 });
+  await askMelo(melo, 'Ik voel me de laatste tijd somber en slaap slecht.');
+  const popup = await browser.newPage();
+  popup.on('request', r => seen.push(r.url()));
+  await popup.goto(`chrome-extension://${id}/popup/public.html`);
+  await popup.waitForFunction(() => document.getElementById('stateText').textContent);
+  // De achtergrond aan het werk: een melding op een AI-site (de pagina zelf telt niet, die is van de site).
+  const page = await mockPage(browser, 'https://chatgpt.com/c/net', CHAT, undefined, ready('https://chatgpt.com/c/net'));
+  await pasteText(page, '#prompt-textarea', HEALTH);
+  await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
+  await new Promise(r => setTimeout(r, 500));
+  worker.client.off('Network.requestWillBeSent', onWorker);
+  assert.ok(seen.length >= 10, `maar ${seen.length} verzoeken gezien: kijkt de test wel?`);
+  assert.deepEqual(seen.filter(u => !/^(chrome-extension:\/\/|data:|blob:)/.test(u)), []);
+  for (const p of [melo, popup, page]) await p.close();
 });
 
 // ---------- Melo's onderdelen (chat/rich.js): brief met invulvelden, checklist ----------

@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "Kamelo: Privatsphäre-Software für KI"
+    "message": "Melo: privater KI-Chat, von Kamelo"
   },
   "extDescription": {
-    "message": "Melo, ein privater KI-Chat auf deinem Computer, und ein Hinweis auf den temporären Chat, wenn du KI etwas Persönliches fragst."
+    "message": "Melo ist ein privater KI-Chat im Browser, der auf deinem eigenen Computer antwortet. Dazu ein Hinweis auf den temporären Chat."
   },
   "actionTitle": {
     "message": "Kamelo"
@@ -13,6 +13,9 @@
   },
   "extDescriptionTeams": {
     "message": "Kamelo Business maskiert Personen- und Firmendaten lokal, bevor sie ChatGPT, Gemini, Claude oder KI in Arbeits-Apps erreichen."
+  },
+  "extNameFirefox": {
+    "message": "Melo: persönliche KI-Fragen, von Kamelo"
   },
   "extDescriptionFirefox": {
     "message": "Ein Hinweis auf einen temporären Chat, wenn du eine KI etwas Persönliches fragst."

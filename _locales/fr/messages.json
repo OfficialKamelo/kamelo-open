@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "Kamelo : logiciel de confidentialité pour l’IA"
+    "message": "Melo : discussion IA privée, par Kamelo"
   },
   "extDescription": {
-    "message": "Melo : l’IA en privé sur votre ordinateur. Pour vos questions personnelles, Kamelo propose une discussion temporaire."
+    "message": "Melo est une discussion IA privée dans votre navigateur, qui répond sur votre ordinateur. Et un rappel de la discussion temporaire."
   },
   "actionTitle": {
     "message": "Kamelo"
@@ -13,6 +13,9 @@
   },
   "extDescriptionTeams": {
     "message": "Kamelo Business masque sur l’appareil les données personnelles et d’entreprise avant leur envoi à ChatGPT, Gemini ou Claude."
+  },
+  "extNameFirefox": {
+    "message": "Melo : questions personnelles, par Kamelo"
   },
   "extDescriptionFirefox": {
     "message": "Un rappel pour utiliser une discussion temporaire quand vous posez une question personnelle à une IA."

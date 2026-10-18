@@ -101,6 +101,14 @@ test('vangnet: bij woorden over niet meer willen leven staat de hulplijn er alti
     assert.ok(G.crisis(q), q);
   for (const q of ['Mijn hond is dood', 'Ik ben doodmoe', 'Hoe lang leeft een kat?', 'I could die for a pizza', 'Wat is 2 + 2?']) assert.ok(!G.crisis(q), q);
 });
+test('vangnet: de gedeelde lijst (tools/vangnet.json, ook Mac en iPhone)', () => {
+  const V = require('../tools/vangnet.json');
+  for (const q of V.moetRaken) assert.ok(G.crisis(q), `geen hulplijn: ${q}`);
+  for (const q of V.moetStil) assert.ok(!G.crisis(q), `vals alarm: ${q}`);
+  for (const q of ['Soms wil ik gewoon dood.', 'Ik denk erover om er een einde aan te maken.', 'Everyone would be better off without me.']) assert.ok(G.crisis(q), q);
+  for (const q of ['How do I end my subscription?', 'Hoe maak ik een einde aan het contract?']) assert.ok(!G.crisis(q), q);
+  require('node:child_process').execFileSync(process.execPath, [require('node:path').join(__dirname, '../tools/vangnet.mjs'), '--check'], { stdio: 'pipe' });
+});
 test('vangnet: gewone zinnen in alle talen (onderzoek 17 okt)', () => {
   for (const q of [
     'Je ne veux plus vivre', "Je n'ai plus envie de vivre", 'Je me scarifie depuis des mois', 'Je veux me tuer', 'Parfois je voudrais être morte',
@@ -118,6 +126,9 @@ test('vangnet: gewone zinnen in alle talen (onderzoek 17 okt)', () => {
   assert.equal(G.withHelp('Bel 113 of 0800-0113.', 'ik wil dood', 'nl'), 'Bel 113 of 0800-0113.', 'staat er al: niet dubbel');
   assert.equal(G.withHelp('Gewoon antwoord.', 'Wat is 2 + 2?', 'nl'), 'Gewoon antwoord.');
   assert.match(G.withHelp('Das klingt schwer.', 'Ich will nicht mehr leben', 'de'), /TelefonSeelsorge/);
+  // 112 of een bedrag is geen hulplijn: de hulplijn komt er toch onder.
+  assert.match(G.withHelp('Ben je in gevaar, bel 112.', 'Ik wil dood', 'nl'), /0800-0113/);
+  assert.match(G.withHelp('Dat kost 113 euro.', 'Ik wil dood', 'nl'), /0800-0113/);
 });
 
 console.log('Feitenkaartjes (chat/kennis.js)');

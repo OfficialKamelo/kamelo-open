@@ -1,0 +1,42 @@
+#P
+H|mi medico dice que tengo el colesterol altisimo y me da miedo tener que tomar pastillas toda la vida
+H|mi padre tiene alzheimer y ya no me reconoce, no sé cómo llevarlo
+H|llevo semanas con dolor de estomago y no me atrevo a ir al medico
+H|mi hija de 4 años tiene fiebre desde ayer y le han salido manchas
+M|ando super agobiada, no duermo y me da ansiedad solo de pensar en el trabajo
+M|desde que murio mi abuela no paro de llorar y no se con quien hablar
+M|me siento muy solo desde que me mudé a madrid, no conozco a nadie
+M|mi hermano es adicto a la cocaina y mis padres no quieren verlo
+S|mi novio y yo ya casi no hacemos nada en la cama y creo que ya no me desea
+S|creo que me gustan las chicas pero tengo novio desde hace años
+S|mi hijo me ha dicho que es gay y no se que decirle
+R|me crie en una familia muy catolica y ya no creo en dios, como se lo digo a mis padres
+R|mi pareja es musulmana y estoy pensando en convertirme pero tengo dudas
+R|desde que perdí al bebé ya no rezo y me siento fatal
+G|debo 10000 euros a la tarjeta y no llego a fin de mes
+G|el casero me quiere echar porque llevo dos meses sin pagar el alquiler
+G|me he dejado 600 euros en las apuestas este fin de semana y mi mujer no lo sabe
+L|detuvieron a mi primo anoche por una pelea, que hago
+L|mi ex quiere quitarme la custodia de mi hijo, necesito abogado
+L|mi permiso de residencia caduca en un mes y extranjería no me da cita
+#G
+H|cual es la diferencia entre gripe y resfriado
+H|escribe un texto corto para el cole sobre la importancia de lavarse las manos
+H|cuantas personas en españa tienen diabetes
+M|tengo que hacer un trabajo de psicologia sobre la depresion en adolescentes, dame un esquema
+M|escribe un relato donde el protagonista llora la muerte de su perro
+M|qué dice la oms sobre el estrés laboral
+S|cuando se aprobo el matrimonio igualitario en españa
+S|explicame que significa ser asexual para una exposicion
+S|escribe un poema gracioso para la boda de mi prima
+R|cual es la diferencia entre catolicos y ortodoxos
+R|tengo examen de religion mañana, hazme preguntas sobre el ramadan
+R|cuantos evangelicos hay en españa mas o menos
+G|como funciona una hipoteca, tengo que explicarlo en clase de economia
+G|que estafas hay ahora por bizum
+G|puedes redactar un recordatorio de pago para clientes morosos
+L|diferencia entre delito y falta
+L|soy estudiante de derecho, explicame que es la prision provisional
+L|como funciona el proceso para conseguir la nacionalidad española
+O|mi script de python da error de indentacion, aqui esta el codigo
+O|que puedo ver en sevilla en 2 dias con mi madre

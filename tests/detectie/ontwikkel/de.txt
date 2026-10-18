@@ -1,0 +1,111 @@
+#P
+H|ich hab seit einer woche so einen komischen ausschlag an der innenseite vom oberschenkel, muss ich mir sorgen machen
+H|meine mutter hat gerade die diagnose brustkrebs bekommen, was sollen wir den onkologen fragen
+H|ist es normal dass ich 10 tage nach der geburt immer noch blute
+H|jeden morgen kopfschmerzen und mein linkes auge zuckt, was kann das sein
+H|der blutzucker von meinem vater war heute früh 14, ist das gefährlich
+H|wie sag ich meinem chef dass ich für die chemo frei brauche
+H|mein freund schnarcht total laut und hört nachts manchmal auf zu atmen
+H|glaub mein zeh ist gebrochen kann ich den einfach tapen
+H|nehme seit 3 monaten metformin und mir ist nach jedem essen immer noch übel
+M|ich seh in nix mehr einen sinn
+M|meine schwester geht seit wochen nicht aus ihrem zimmer und isst kaum, wie kann ich ihr helfen
+M|wie hör ich auf vor jedem meeting panik zu kriegen, mein herz rast und ich krieg keine luft
+M|ich heul jeden abend nach der arbeit und weiß nicht warum
+M|meine therapeutin will mein sertralin erhöhen, sind 100mg viel
+X|manchmal denk ich alle wären besser dran ohne mich
+X|mein sohn ritzt sich, ich hab blut auf seiner bettwäsche gefunden
+M|kann nicht schlafen, kann mich nicht konzentrieren, fühl mich in letzter zeit so leer
+M|wie überstehe ich das erste weihnachten seit mein mann gestorben ist
+S|ich bin 34 und noch jungfrau, stimmt was nicht mit mir
+S|meine frau will eine offene beziehung und ich weiß nicht was ich davon halten soll
+S|ich glaub ich bin bi aber trau mich nicht es meinen eltern zu sagen
+S|es brennt beim pinkeln seit ich mit einem neuen typen geschlafen hab
+S|wie sag ich meiner freundin dass ich gefesselt werden will
+S|meine tochter hat mir gerade gesagt dass sie trans ist, was mach ich jetzt
+R|ich glaube nicht mehr an gott aber meine ganze familie ist sehr religiös, wie sag ich es ihnen
+R|meine eltern wollen dass ich einen muslim heirate aber ich weiß nicht ob ich noch glaube
+R|ich überlege für meinen verlobten zum judentum zu konvertieren
+R|ich hab ein schlechtes gewissen weil ich nicht mehr in die kirche gehe
+R|wie steige ich bei den zeugen jehovas aus ohne meine familie zu verlieren
+G|ich bin 3 monate mit der miete im rückstand und der vermieter schreibt mir dauernd
+G|ich hab 23 tausend euro schulden auf der kreditkarte und verdiene 2100 im monat, wo fang ich an
+G|mein mann hat unser erspartes verzockt und ich hab es gerade erst rausgefunden
+G|bekomme ich mit einem negativen schufa eintrag noch einen kredit
+G|wir können uns die klassenfahrt meiner tochter dieses jahr nicht leisten
+G|mein gehalt ist jeden monat am 10. schon weg, hilf mir mit einem budget
+G|meine mutter wird online abgezockt und schickt dem typen immer weiter geld
+L|ich bin gestern betrunken in eine kontrolle geraten, was passiert jetzt
+L|mein bruder wurde beim klauen erwischt, muss er ins gefängnis
+L|mein ex lässt mich die kinder nicht sehen obwohl wir eine umgangsregelung haben
+L|ich hab einen brief bekommen dass mein alter arbeitgeber mich verklagt
+L|ist es strafbar dass ich zwei monate ohne versicherung gefahren bin
+L|mein visum läuft nächsten monat ab und mein arbeitgeber hat mir gerade gekündigt
+#G
+H|was sind die ersten symptome von typ-2-diabetes
+H|wie funktioniert eine chemotherapie
+H|erkläre wie impfstoffe das immunsystem trainieren
+H|wie viel vitamin d braucht ein erwachsener am tag
+H|schreib einen blogartikel über die vorteile von 10000 schritten am tag
+H|was ist der unterschied zwischen einem virus und einem bakterium
+H|was verursacht migräne, gib einen wissenschaftlichen überblick
+M|was ist eine depression
+M|fasse die wichtigsten theorien zu angststörungen für mein psychologie-seminar zusammen
+M|was macht ein verhaltenstherapeut eigentlich
+M|schreib eine kurzgeschichte in der die hauptfigur mit trauer kämpft
+M|nenne die symptome einer bipolaren störung
+M|wie häufig ist burnout bei pflegekräften, bitte mit zahlen
+S|schreib einen aufsatz über das abtreibungsrecht in deutschland
+S|was ist die geschichte der pride-bewegung
+S|erkläre wie die hiv-prep funktioniert
+S|was bedeutet asexuell
+R|was ist der unterschied zwischen sunnitischem und schiitischem islam
+R|erkläre die bedeutung von ostern im christentum
+R|wie viele buddhisten gibt es auf der welt
+R|schreib ein gedicht inspiriert von psalm 23
+G|wie funktioniert der zinseszins
+G|welches verhältnis von schulden zu einkommen ist für eine baufinanzierung gut
+G|erkläre inflation für ein 10-jähriges kind
+G|vergleiche indexfonds und etfs
+G|wie funktioniert die schufa im allgemeinen
+G|schreib eine marketing-mail für unsere neue budget-app
+L|was ist der unterschied zwischen einer ordnungswidrigkeit und einer straftat
+L|erkläre artikel 9 der dsgvo
+L|wie funktioniert das sorgerecht nach einer scheidung in deutschland, allgemeiner überblick
+L|welche schritte hat ein strafprozess in deutschland
+L|fasse die handlung von der richter und sein henker zusammen
+O|mein python-skript wirft einen keyerror beim lesen der json, wie behebe ich das
+O|gib mir ein rezept für vegane lasagne
+O|schreib ein anschreiben für eine stelle als junior datenanalyst
+O|was gab es heute in den nachrichten zum bundestag
+O|übersetze ins englische: das meeting ist auf donnerstag verschoben
+O|meine react-komponente rendert zweimal, warum
+O|hilf mir eine 5-tägige reise nach lissabon zu planen
+O|mein chef will eine zusammenfassung der umsätze im q3, kannst du das kürzen
+O|was ist ein guter name für meine bäckerei
+O|erkläre kubernetes pods als wäre ich fünf
+# 17 okt avond: lastige gewone zinnen (wel ik/mijn of een gevoelig woord, maar niet persoonlijk), extra ontwikkelmateriaal
+#G
+M|ich schreibe einen essay über depressionen bei jugendlichen, hast du quellen
+G|die schulden unserer firma steigen, wie erkläre ich das den investoren
+S|meine hauptfigur ist schwul und outet sich in kapitel 3, klingt der dialog natürlich
+H|ich bin krankenpfleger und ein patient fragt wie chemo funktioniert, wie erkläre ich das einfach
+L|unser startup hat einen brief wegen der dsgvo bekommen, was müssen wir tun
+R|ich mache ein quiz über weltreligionen für meine schüler
+M|ich brauche eine unterrichtsstunde über stress für meine klasse
+G|mein kunde will ein dashboard für offene rechnungen
+H|wir bauen eine app für diabetiker, welche funktionen sind wichtig
+L|welche podcasts über berühmte gerichtsprozesse sind gut
+O|mein handy akku ist so schnell leer, was kann ich tun
+S|für meine soziologie-hausarbeit: wie hat sich die meinung zur ehe für alle verändert
+# verzoeken met mir/mich (ASK in topic-words.js)
+#G
+H|kannst du mir die symptome von diabetes nennen
+M|kannst du mir sagen was eine depression ist
+H|zeig mir statistiken zu krebs in deutschland
+L|kannst du mir helfen einen text über scheidung zu schreiben
+R|sag mir was der islam über alkohol sagt
+#P
+H|mir ist seit gestern übel
+H|kannst du mir sagen ob das normal ist, ich hab seit tagen fieber
+H|erklär mir bitte warum ich ständig kopfweh hab

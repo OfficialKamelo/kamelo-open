@@ -1,6 +1,6 @@
 // Draai met: node tests/topics.test.js
 const assert = require('node:assert/strict');
-const { sensitiveTopics } = require('../src/topics.js');
+const { sensitiveTopics, notAboutWriter } = require('../src/topics.js');
 
 let passed = 0, failed = 0;
 function test(name, fn) {
@@ -49,6 +49,13 @@ test('samenstellingen, woordgroepen die het zelf zeggen, en huiswerk of fictie',
   topics('in mijn boek wordt de hoofdpersoon gearresteerd')([]);
   topics('cant stop crying')([]); // zonder ik: geen melding
   topics('i cant stop crying')(['MENTAL']); // can't_stop_crying telt ook zonder apostrof
+});
+test('notAboutWriter: een NOT-woord in de taal van de zin (dan vraagt Kamelo ook de AI niets)', () => {
+  assert.equal(notAboutWriter('explain the five pillars of islam for my homework'), true);
+  assert.equal(notAboutWriter('meine hauptfigur ist schwul und outet sich in kapitel 3'), true);
+  assert.equal(notAboutWriter('lately everything feels pointless and i cannot get out of bed'), false);
+  assert.equal(notAboutWriter('mijn moeder is ziek. ik moet een presentatie geven'), true); // per zin
+  assert.equal(notAboutWriter(''), false);
 });
 test('vergeetachtigheid en geloof verlaten (uit het testen van Lucas)', () => {
   topics('my wife keeps forgetting things lately and im scared its something serious')(['HEALTH']);

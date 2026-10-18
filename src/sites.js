@@ -19,6 +19,10 @@
 //   perHost   de domeinen zijn verschillende bedrijven onder één naam: elk domein krijgt een eigen kluis (zie scopeFor).
 //   widget    draait als venster op andere sites (de klantenservice van een webwinkel): Kamelo Business blokkeert het
 //             niet via aiAppsDefault, alleen als de organisatie het zelf noemt (ai-apps.js van teams).
+//   only      de AI zit in een app voor iets anders (Meta AI in WhatsApp): Kamelo doet er alleen iets als de chat met de
+//             AI open staat, nooit in een chat met iemand anders (zie aiChatOpen). root = het venster van de open chat,
+//             title = de kop daarin, name = de naam van de AI in die kop.
+//             Net als een widget blokkeert Kamelo Business zo'n app niet via aiAppsDefault.
 (function (root) {
   'use strict';
 
@@ -37,6 +41,10 @@
     { name: 'Grok', hosts: ['grok.com'], files: true, composer: 'form textarea, form .ProseMirror', live: 'https://grok.com/' },
     { name: 'DeepSeek', hosts: ['chat.deepseek.com'], files: true, composer: '#chat-input' },
     { name: 'Meta AI', hosts: ['meta.ai'], files: true },
+    // Meta AI in WhatsApp Web: alleen in de chat met Meta AI, nooit in je andere chats. De kop van die chat heeft precies
+    // de tekst "Meta AI" (nagekeken op de echte, ingelogde site op 17 okt 2026).
+    { name: 'Meta AI in WhatsApp', hosts: ['web.whatsapp.com'], composer: '#main footer [contenteditable="true"]',
+      only: { root: '#main', title: 'header', name: 'Meta AI' } },
     { name: 'Microsoft 365 Copilot', hosts: ['m365.cloud.microsoft'], files: true },
     { name: 'OpenAI Playground', hosts: ['platform.openai.com'], teams: true },
     { name: 'AI Studio', hosts: ['aistudio.google.com'], files: true },
@@ -81,7 +89,24 @@
     return `ai:${site.name}/${site.hosts.find(host => matchesHost(hostname, host))}`;
   }
 
-  const api = { SITES, siteFor, scopeFor, matchesHost };
+  // Staat de chat met de AI open? Altijd waar op een site zonder `only`. Kijkt alleen naar de kop van de open chat,
+  // nooit naar wat er in de berichten staat.
+  function aiChatOpen(site, doc) {
+    const only = site?.only;
+    if (!only) return !!site;
+    try {
+      const chat = doc.querySelector(only.root);
+      if (!chat) return false;
+      const title = chat.querySelector(only.title);
+      if (!title) return false;
+      const walk = doc.createTreeWalker(title, 4 /* NodeFilter.SHOW_TEXT */);
+      // Alleen zichtbare tekst die precies de naam is: een knop "Ask Meta AI" in de kop van een andere chat telt niet.
+      for (let n = walk.nextNode(); n; n = walk.nextNode()) if (n.nodeValue.trim() === only.name) return true;
+      return false;
+    } catch { return false; } // ongeldige selector
+  }
+
+  const api = { SITES, siteFor, scopeFor, matchesHost, aiChatOpen };
   root.PrivacySites = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

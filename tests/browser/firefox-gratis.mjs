@@ -75,7 +75,9 @@ try {
   await type(page, PERSONAL);
   const n = await waitForNotice(browser, page, topic, 10_000);
   check('een persoonlijke vraag geeft de melding "Sensitive topic" met een tijdelijke chat', topic(n), n);
-  check('de melding belooft in Firefox geen Melo', topic(n) && !/Melo/.test(n.text), n.text);
+  // De extensie heet Melo (17 okt), dus de naam mag in de melding staan; de chat met Melo (de knop "Ask Melo") niet.
+  check('de melding belooft in Firefox geen chat met Melo', topic(n) && !/Ask Melo|Vraag het Melo|Frag Melo|Demander à Melo|Pregúntale a Melo/i.test(n.text), n.text);
+  check('de melding heeft "Niet meer in dit gesprek"', /Don’t show in this chat|Niet meer in dit gesprek/.test(n.text), n.text);
   const field = await page.$eval('#prompt-textarea', el => el.innerText.trim());
   check('de tekst blijft ongewijzigd (niets afgeschermd)', field === PERSONAL, field);
 

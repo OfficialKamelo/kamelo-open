@@ -243,6 +243,8 @@
     const raw = (hi - lo) / want, mag = Math.pow(10, Math.floor(Math.log10(raw))), r = raw / mag;
     const step = (r >= 5 ? 10 : r >= 2.5 ? 5 : r >= 2 ? 2.5 : r >= 1 ? 2 : 1) * mag;
     const a = Math.floor(lo / step + 1e-9) * step, b = Math.ceil(hi / step - 1e-9) * step;
+    // Een stap die bij zo'n grote waarde wegvalt (1e16 + 1 === 1e16) of niet eindig is: anders loopt de lus eeuwig door.
+    if (!(step > 0) || !Number.isFinite(a) || !Number.isFinite(b) || a + step === a || (b - a) / step > 50) return [lo, hi];
     const ticks = [];
     for (let v = a; v <= b + step / 2; v += step) ticks.push(Math.abs(v) < step / 1e6 ? 0 : +v.toPrecision(12));
     return ticks;
@@ -308,9 +310,13 @@
     const stacked = spec.type === 'stacked' && spec.series.length > 1;
     const n = spec.labels.length;
     const sums = spec.labels.map((_, i) => spec.series.reduce((a, s) => a + Math.max(0, s.data[i] || 0), 0));
-    const vals = stacked ? [...sums, 0] : [...spec.series.flatMap(s => s.data), 0];
+    // Een lijn hoeft niet bij 0 te beginnen (zie hieronder); staven wel.
+    const vals = stacked ? [...sums, 0] : [...spec.series.flatMap(s => s.data), ...(spec.type === 'line' ? [] : [0])];
     lo = Math.min(...vals); hi = Math.max(...vals);
-    if (spec.type === 'line' && lo > 0 && lo > hi * 0.4) lo = lo - (hi - lo) * 0.2; // lijn hoeft niet bij 0 te beginnen
+    if (spec.type === 'line') {
+      if (lo > 0 && lo > hi * 0.4) lo = lo - (hi - lo) * 0.2; // lijn hoeft niet bij 0 te beginnen
+      else { lo = Math.min(lo, 0); hi = Math.max(hi, 0); }
+    }
     ys = niceTicks(lo, hi); lo = ys[0]; hi = ys.at(-1);
     const Y = y => T + ih - (y - lo) / (hi - lo) * ih;
     kids.push(...ys.map(v => h('line', { class: v === 0 ? 'axis' : 'grid', x1: L, x2: L + iw, y1: +Y(v).toFixed(1), y2: +Y(v).toFixed(1) })));

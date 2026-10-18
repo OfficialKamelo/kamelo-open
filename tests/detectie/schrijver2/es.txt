@@ -1,0 +1,42 @@
+#P
+H|llevo una semana mareada y con el brazo izquierdo dormido, tengo que ir al médico
+H|a mi padre le acaban de diagnosticar alzheimer y no sabemos cómo explicárselo a mi madre
+H|mi hijo de 7 años tiene asma y le da un ataque cada noche, qué hago
+H|me han salido las analíticas con el colesterol altísimo y tengo solo 29
+M|tengo ataques de ansiedad cada vez que cojo el metro, ya no puedo salir sola
+M|desde que me dejó mi novio no como ni duermo, me siento fatal
+M|mi hermano juega a las tragaperras todos los días y se le ha ido de las manos
+M|me siento muy solo desde que me mudé a madrid, no tengo con quién hablar
+S|tengo 22 y creo que me gustan los chicos pero mi familia es súper religiosa
+S|con mi marido hace meses que no tenemos relaciones y no sé cómo sacarlo
+S|mi hija me ha dicho que es no binaria y quiero apoyarla pero no sé cómo
+R|mis padres son muy católicos y yo ya no creo en dios, no sé cómo decírselo
+R|me estoy planteando hacerme musulmán por mi pareja pero tengo dudas
+R|desde que murió mi abuela rezo todas las noches y no sé si eso me hace creyente
+G|debo 6000 euros de tarjetas y no llego a fin de mes, por dónde empiezo
+G|el banco me va a quitar el piso porque llevo 5 meses sin pagar la hipoteca
+G|me han estafado con un bizum de 300 euros por wallapop, qué puedo hacer
+L|detuvieron a mi primo anoche y no nos dicen nada en comisaría
+L|mi ex quiere quitarme la custodia de mi hijo y tengo juicio en un mes
+L|mi permiso de residencia caduca en julio y me piden unos papeles que no tengo
+#G
+H|explícame cómo funciona la vacuna para mi trabajo de biología
+H|cuáles son las causas más comunes de la diabetes tipo 2 en españa, con datos
+H|redacta un cartel corto para la farmacia con el nuevo horario de verano
+M|mi tfg trata sobre la depresión en adolescentes, ayúdame con la introducción
+M|mi personaje sufre ataques de pánico en mi novela, cómo los narro
+M|cuántos españoles dicen sentirse solos según el ine
+S|mi protagonista es lesbiana en un pueblo de los 80, ayúdame a escribir la escena
+S|cuándo se aprobó el matrimonio igualitario en españa
+S|resume la historia del orgullo lgtb para mi clase de historia
+R|compara el islam y el cristianismo para mi trabajo de religión
+R|qué se celebra en la semana santa de sevilla, para un artículo
+R|cuántos españoles se declaran católicos según el cis
+G|mi empresa tiene 150k de deuda con proveedores, cómo lo explico en la junta
+G|cómo funciona el euríbor, es para mi clase de economía
+G|las estafas más comunes por whatsapp ahora mismo, para una charla en el trabajo
+L|tengo examen de derecho penal el lunes, hazme preguntas sobre la legítima defensa
+L|cuál es la diferencia entre un juzgado y una audiencia provincial
+L|cuántas solicitudes de asilo hubo en españa el año pasado
+O|mi código en java da error en la línea 15, mira a ver
+O|receta fácil de tortilla de patatas con cebolla y cuántos huevos

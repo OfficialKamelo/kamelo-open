@@ -132,6 +132,8 @@
         clearTimeout(idle);
         const t0 = Date.now();
         await this.prepare({ signal });
+        // prepare() zet de rust-timer (later()) bij een nieuwe sessie: niet tijdens het antwoord de sessie weggooien.
+        clearTimeout(idle);
         const t1 = Date.now();
         const stop = new AbortController();
         const both = signal && AbortSignal.any ? AbortSignal.any([signal, stop.signal]) : stop.signal;

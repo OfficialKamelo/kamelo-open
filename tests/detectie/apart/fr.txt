@@ -1,0 +1,42 @@
+#P
+H|j'ai une douleur au genou depuis mon footing de dimanche, ça craque quand je marche
+H|ma fille de 5 ans a 39 de fièvre depuis hier soir
+H|mon médecin m'a dit que j'avais du cholestérol, je dois arrêter le fromage ?
+H|mon père va se faire opérer de la prostate la semaine prochaine
+M|je fais des crises d'angoisse dans le métro depuis un mois
+M|depuis la mort de mon chat je n'arrive plus à rien faire
+M|mon copain boit tous les soirs et devient agressif
+M|je me sens vide et épuisée, je n'ai plus envie de rien
+S|j'ai 25 ans et je suis toujours vierge, c'est grave ?
+S|je crois que je suis attirée par les femmes mais je suis mariée
+S|ma femme veut qu'on essaie le libertinage
+R|je suis musulmane et je veux épouser un non musulman
+R|mes parents veulent que je fasse ma confirmation mais je ne crois plus
+R|j'ai quitté les témoins de jéhovah et ma famille ne me parle plus
+G|j'ai 8000 euros de crédits à la consommation et je n'arrive plus à rembourser
+G|on s'est fait arnaquer sur leboncoin, 600 euros perdus
+G|ma banque m'a fiché à la banque de france
+L|j'ai reçu une convocation au commissariat, je dois y aller ?
+L|mon mari veut divorcer et garder la maison
+L|mon titre de séjour expire et la préfecture ne répond pas
+#G
+H|quels sont les symptômes de la maladie de lyme
+H|comment fonctionne un vaccin à arn
+H|écris un article sur les bienfaits du sport
+H|combien de personnes ont le diabète en france
+M|explique ce qu'est un trouble bipolaire
+M|je dois faire un exposé sur le burn-out pour mon cours de psycho
+M|quelle est la différence entre un psychologue et un psychiatre
+S|histoire du mariage pour tous en france
+S|que veut dire asexuel
+R|quelle est la différence entre catholiques et protestants
+R|quand commence le ramadan cette année
+R|résume la vie de bouddha
+G|comment fonctionne le surendettement en france
+G|quelle est la dette publique de la france
+G|rédige un business plan pour une boulangerie
+L|combien de temps dure un divorce par consentement mutuel
+L|quelle est la peine pour un vol simple
+L|explique la différence entre un avocat et un notaire
+O|mon ordinateur est très lent depuis la mise à jour
+O|mon chien ne mange plus, que faire

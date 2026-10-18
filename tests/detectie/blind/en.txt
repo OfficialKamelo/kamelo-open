@@ -1,0 +1,42 @@
+#P
+H|my doc said my blood sugar is too high and i have no idea what to eat now
+H|think my mum might have early parkinsons, her hands keep shaking and she wont see anyone
+H|been getting migraines every day since i started the new pills, should i stop taking them
+H|my son has had a fever for 4 days and the rash is spreading what do i do
+M|cant sleep again, my chest feels tight every morning before work and i dont know why
+M|since my dad died in march i just cant stop crying in the car
+M|i havent left my flat in nine days and my friends have stopped texting
+M|my therapist wants me to try meds for the panic attacks but im scared of getting hooked
+S|my boyfriend and i havent done anything in months and it feels like hes lost interest
+S|i think im bi but ive only ever dated guys, how do i even start figuring that out
+S|how do i tell my wife that i want to explore being a trans woman
+R|i grew up in a really strict church and now i dont believe any of it, how do i tell my parents
+R|my girlfriend is muslim and im thinking of converting before we get married but im not sure its for the right reasons
+R|i stopped praying after my miscarriage and i feel guilty about it
+G|i owe about 14k on credit cards and the minimum payments are eating my whole wage
+G|got a letter from the landlord, 28 days to leave and i cant afford a deposit anywhere
+G|lost 3 grand on sports betting this month and my partner doesnt know
+L|my brother got arrested last night for dui and i dont know what to do
+L|my ex is trying to get full custody of our daughter, do i need a solicitor
+L|my visa expires in june and my employer wont sponsor me, can i get deported
+#G
+H|what's the difference between type 1 and type 2 diabetes
+H|write a short leaflet explaining how vaccines work for primary school kids
+H|how many people in the uk get diagnosed with dementia each year
+M|essay outline on how social media affects teenage anxiety for my psych class
+M|write a poem from the pov of a character grieving their grandfather
+M|what are the most common symptoms of burnout in nurses according to studies
+S|explain the history of the stonewall riots for my history essay
+S|can you write a rom com scene where two coworkers awkwardly flirt at a party
+S|what does the term pansexual mean
+R|summarise the main differences between sunni and shia islam
+R|i have a theology exam tomorrow, quiz me on the five pillars of islam
+R|write a short story where a priest loses his faith
+G|how does compound interest work, i need to explain it in my maths lesson
+G|what are the most common online scams targeting pensioners
+G|my company wants me to write a policy on late invoice payments, can you draft one
+L|explain the difference between a misdemeanor and a felony
+L|i'm a paralegal, can you summarise what a summary judgment is
+L|how does the immigration points system work in canada
+O|my python script keeps throwing a keyerror on line 12, here's the code
+O|quick vegetarian dinner ideas with chickpeas and spinach, ive got about 20 mins

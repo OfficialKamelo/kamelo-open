@@ -152,7 +152,7 @@
       if (i % 2) return part.replace(/\\boxed\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g, '$1');
       return part.replace(/\\boxed\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g, '**$$$1$$**').replace(TEXCMD, m => `$${m}$`).replace(/\*\*\$\$([^$]*)\$\$\*\*/g, (m, x) => `**$${x}$**`)
         // Een formule als platte tekst: een regel met alleen rekentekens ("9+16=c^2", "c=√(25)=5"), of in een zin "a^2+b^2=c^2".
-        .replace(/^([ \t]*)([\w+\-*/=^()√.,² ³·×−]+?)[ \t]*$/gm, (m, ind, x) => ((/[\^√²³]/.test(x) || (/=/.test(x) && /(?<!\p{L})[a-z](?!\p{L})/u.test(x))) && !/\p{L}{3,}/u.test(x) && /[-+*/=^]/.test(x) ? `${ind}$${x.trim()}$` : m))
+        .replace(/^([ \t]*)(?![ \t])([\w+\-*/=^()√.,² ³·×−]+?)[ \t]*$/gm, (m, ind, x) => ((/[\^√²³]/.test(x) || (/=/.test(x) && /(?<!\p{L})[a-z](?!\p{L})/u.test(x))) && !/\p{L}{3,}/u.test(x) && /[-+*/=^]/.test(x) ? `${ind}$${x.trim()}$` : m))
         .replace(/(?<![\w$\\^])((?:[a-zA-Z0-9]|\([^()\s]{1,12}\))+\^\d+(?:\s*[-+*/=]\s*(?:[a-zA-Z0-9]|\([^()\s]{1,12}\))+(?:\^\d+)?)+)(?![\w$^])/g, m => `$${m}$`);
     }).join('');
   }
@@ -164,19 +164,36 @@
   // Onderzoek 17 okt: "Je ne veux plus vivre", "Ich will sterben", "I want to end it" en zelfbeschadiging ("I cut myself",
   // "Ik snijd mezelf") vielen erdoor; "end my subscription" en "een einde aan het contract" gaven juist een hulplijn.
   // Zelfbeschadiging zonder ongeluk-woorden erachter: "I cut myself while cooking" is geen crisis.
+  // Meting Mac 17 okt: "Soms wil ik gewoon dood", "om er een einde aan te maken" en "better off without me" vielen erdoor.
+  // De lijst komt uit tools/vangnet.json (node tools/vangnet.mjs), dezelfde voor Mac en iPhone: niet hier aanpassen.
   const CRISIS = new RegExp([
-    'zelfmoord', 'su[iï]cid', 'niet meer (willen )?leven', 'niet meer (wakker|op) (te )?(worden|staan)', '(wil|willen|wilde) (graag )?dood', 'dood (willen|wil) ',
-    'mezelf (iets )?(aan ?doen|doden|ombrengen|van kant)', 'een eind(e)? (aan|maken( aan)?) (mijn leven|alles|het)(?=\\s*([.!?,]|$))', 'er niet meer (willen |wil )?zijn', '(ik )?zie het (echt |gewoon )?niet meer zitten', 'uit het leven',
-    'snijd mezelf', 'mezelf (iets )?aan te doen', 'er een eind(e)? aan (willen )?maken', 'mezelf (te )?(snijden|krassen|beschadigen|pijn (te )?doen)', 'dat ik dood (was|ben|zou zijn)', 'geen zin meer (in|om te) leven',
-    'kill myself', 'end (it all|my (own )?life)', '(want|going|planning) to end it(?=\\s*([.!?,]|$))', 'want(ed)? to die', "don['’]?t want to (live|be alive|wake up|be here)", 'self[- ]?harm', 'hurt(ing)? myself', 'no reason to live', 'better off dead',
-    'wish (i|that i) (was|were) dead', 'wish i (had )?never (been born|woke up)', 'take my (own )?life', "can['’]?t go on (any ?more|living)",
-    '(cutting|burning) myself', '(i )?(cut|burn) myself(?! (off|out|while|on|with|by|when|shaving|cooking|accidentally))',
-    'umbringen', 'selbstmord', 'suizid', 'nicht mehr leben', 'sterben (will|möchte)', '(will|möchte|wollte) (nur noch |einfach )?sterben', 'nicht mehr aufwachen', 'mir etwas antun',
-    'ritze mich', 'mich (selbst )?(ritzen|verletzen)', 'lieber tot', 'kein(en)? (grund|sinn) mehr (zu leben|im leben)',
-    'me suicider', 'suicide', 'en finir', 'ne plus vivre', '(veux|veut|voulais) plus vivre', 'plus envie de vivre', 'envie de mourir', 'veux mourir', 'me faire du mal', 'me fais du mal',
-    '(veux|vais|voudrais|envie de) me tuer', 'me scarifi', '(voudrais|veux|préférerais) être mort',
-    'quitarme la vida', 'no quiero vivir', 'no quiero seguir vivi(r|endo)', 'quiero morir', 'hacerme da[ñn]o', 'acabar con (todo|mi vida)',
-    '(quiero|voy a|pienso en|ganas de) matarme', 'me quiero matar', 'autolesi', 'me corto(?! (el pelo|el cabello|las uñas|la barba|el dedo|un dedo|con))', 'cortarme (las venas|los brazos|las muñecas)', 'ojal[aá] (estuviera|estar) muert',
+    'zelfmoord', 'su[iï]cid', 'niet meer (willen )?leven', 'niet meer (wakker|op) (te )?(worden|staan)',
+    '(wil|willen|wilde|wou) ((ik|graag|gewoon|echt|liever|eigenlijk|soms|nu|het liefst) )*dood(gaan)?(?![a-zà-ÿ]| (hout|blad|bladeren|vlees|spoor))',
+    'dood (willen|wil) ', 'mezelf (iets )?(aan ?doen|doden|ombrengen|van kant)',
+    'een eind(e)? (aan|maken( aan)?) (mijn leven|alles|het)(?=\\s*([.!?,]|$))', 'er niet meer (willen |wil )?zijn',
+    '(ik )?zie het (echt |gewoon )?niet meer zitten', 'uit het leven', 'snijd mezelf', 'mezelf (iets )?aan te doen',
+    'er een eind(e)? aan (willen |te |gaan )?maken', 'mezelf (te )?(snijden|krassen|beschadigen|pijn (te )?doen)',
+    'dat ik dood (was|ben|zou zijn)', 'geen zin meer (in|om te) leven', 'beter af (zijn |zou zijn )?zonder mij',
+    '(zou|zouden)( \\S+){0,2} beter( af)?( zijn)? zonder mij', 'kill myself', 'end (it all|my (own )?life)',
+    '(want|going|planning) to end it(?=\\s*([.!?,]|$))', 'want(ed)? to die',
+    "don['’]?t want to (live|be alive|wake up|be here)", 'self[- ]?harm', 'hurt(ing)? myself', 'no reason to live',
+    'better off dead', 'better off without me', "(would|will|[’']d) be better without me",
+    'wish (i|that i) (was|were) dead', 'wish i (had )?never (been born|woke up)', 'take my (own )?life',
+    "can['’]?t go on (any ?more|living)", '(cutting|burning) myself',
+    '(i )?(cut|burn) myself(?! (off|out|while|on|with|by|when|shaving|cooking|accidentally))', 'umbringen',
+    'selbstmord', 'suizid', 'nicht mehr leben', 'sterben (will|möchte)',
+    '(will|möchte|wollte) (nur noch |einfach )?sterben', 'nicht mehr aufwachen', 'mir etwas antun', 'ritze mich',
+    'mich (selbst )?(ritzen|verletzen)', 'lieber tot', 'besser dran ohne mich', 'ohne mich besser dran',
+    '(wäre|wären)( \\S+){0,2} besser (dran )?ohne mich', 'kein(en)? (grund|sinn) mehr (zu leben|im leben)',
+    'me suicider', 'suicide', 'en finir', 'ne plus vivre', '(veux|veut|voulais) plus vivre', 'plus envie de vivre',
+    'envie de mourir', 'veux mourir', 'me faire du mal', 'me fais du mal', '(veux|vais|voudrais|envie de) me tuer',
+    'me scarifi', '(voudrais|veux|préférerais) être mort',
+    '(serait|seraient|serais|seriez)( \\S+){0,2} mieux sans moi', 'quitarme la vida', 'no quiero vivir',
+    'no quiero seguir vivi(r|endo)', 'quiero morir', 'hacerme da[ñn]o', 'acabar con (todo|mi vida)',
+    '(quiero|voy a|pienso en|ganas de) matarme', 'me quiero matar', 'autolesi',
+    'me corto(?! (el pelo|el cabello|las uñas|la barba|el dedo|un dedo|con))',
+    'cortarme (las venas|los brazos|las muñecas)', 'ojal[aá] (estuviera|estar) muert',
+    '(estar[ií]a|estar[ií]an|ser[ií]a|ser[ií]an)( \\S+){0,2} mejor sin m[ií]',
   ].join('|'), 'i');
   const crisis = q => CRISIS.test(String(q || ''));
   const HELP = {
@@ -186,7 +203,8 @@
     fr: 'Si tu veux en parler à quelqu’un : appelle le **3114** (gratuit, 24 h/24). Si tu es en danger maintenant, appelle le **112**.',
     es: 'Si quieres hablar con alguien: llama al **024** (gratis, las 24 horas). Si estás en peligro ahora mismo, llama al **112**.',
   };
-  const HELP_NR = /\b(113|1813|112|0800[- ]?0113|0800 111 0 111|3114|024|988|116 ?123)\b/;
+  // Alleen een hulplijn telt; 112 niet (de AI noemt dat vaak al bij "ben je in gevaar") en ook geen bedrag als "113 euro".
+  const HELP_NR = /\b(113|1813|0800[- ]?0113|0800 111 0 (111|222)|3114|024|988|116 ?123)\b(?!\s*(euro|eur|€|%|dollar|\$|km|kg))/i;
   // De hulplijn onder het antwoord, als hij er nog niet in staat.
   function withHelp(answer, q, lang) {
     if (!crisis(q) || HELP_NR.test(answer)) return answer;

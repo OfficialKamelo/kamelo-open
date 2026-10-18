@@ -1,0 +1,42 @@
+#P
+H|al drie dagen last van mijn oor en ik hoor er bijna niks meer mee
+H|mijn vader moet volgende week aan zijn hart geopereerd worden, hoe lang duurt herstel
+H|sinds de bevalling lek ik urine als ik nies, gaat dat over
+H|m'n zoontje van 2 heeft rode vlekjes over z'n hele lijf en hangt een beetje
+M|ik slaap al weken maar 3 uur per nacht en ben op m'n werk alleen maar aan het piekeren
+M|mijn moeder is vorige maand overleden en ik kan nog steeds niet huilen, is dat raar
+M|mn vriend gebruikt elk weekend coke en het wordt steeds meer
+M|ik voel me de laatste tijd zo leeg, niks maakt me nog blij
+S|ik ben 19 en nog maagd, al mijn vrienden lachen me uit
+S|mijn vrouw heeft al een jaar geen zin meer in seks
+S|ik denk dat ik op jongens val maar ik durf het niemand te vertellen
+R|ik ben moslim maar mijn vriend niet, mijn ouders weten het niet
+R|ik ben uit de kerk gestapt en mijn familie praat niet meer met me
+R|mijn dochter wil zich laten dopen terwijl wij niet gelovig zijn
+G|ik ben opgelicht via marktplaats, 800 euro kwijt, krijg ik dat terug
+G|we hebben een betalingsachterstand bij de energie van 1200 euro
+G|mijn man heeft stiekem een lening van 15000 afgesloten
+L|ik ben geflitst met 52 te hard, raak ik mijn rijbewijs kwijt
+L|mijn buurman wil me aanklagen voor de schade aan zijn schutting
+L|is het strafbaar dat ik de berichten van mijn vriendin heb gelezen
+#G
+H|wat zijn de symptomen van de ziekte van lyme
+H|hoe werkt een mri-scan precies
+H|schrijf een folder over de griepprik voor ouderen
+H|hoeveel mensen in nederland hebben diabetes
+M|leg uit wat cognitieve gedragstherapie is
+M|ik moet een werkstuk maken over burn-out bij jongeren
+M|wat is het verschil tussen een psycholoog en een psychiater
+S|geschiedenis van het homohuwelijk in nederland
+S|maak een les over seksuele voorlichting voor groep 8
+R|wat vieren hindoes met divali
+R|hoeveel moskeeën zijn er in rotterdam
+R|leg het verschil uit tussen katholiek en protestants
+G|wat doet een bewindvoerder precies
+G|hoe hoog is de staatsschuld van italië
+G|schrijf een tweet over de stijgende huurprijzen
+L|hoe lang duurt een echtscheiding gemiddeld in nederland
+L|wat is de straf op inbraak
+L|maak een samenvatting van het arrest over de toeslagenaffaire
+O|onze sprint loopt achter, hoe verdeel ik de taken opnieuw
+O|mijn kat eet niet meer, wat kan ik doen

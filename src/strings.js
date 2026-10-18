@@ -7,8 +7,9 @@
 
   const STRINGS = {
     en: {
-      extName: 'Kamelo: AI privacy software',
-      extDescription: 'Melo, a private AI chat on your own computer, and a nudge to use a temporary chat when you ask AI something personal.',
+      extName: 'Melo: private AI chat, by Kamelo',
+      extDescription: 'Melo is a private AI chat in your browser that answers on your own computer. Plus a nudge for a temporary chat when it’s personal.',
+      extNameFirefox: 'Melo: personal AI questions, by Kamelo',
       extDescriptionFirefox: 'A nudge to use a temporary chat when you ask AI something personal.',
       actionTitle: 'Kamelo',
       extNameTeams: 'Kamelo Business',
@@ -80,6 +81,9 @@
       topicAdvicePrivate: 'Ask it in a temporary chat: it stays out of your history and isn’t used for training.',
       topicPrivate: 'Temporary chat',
       privateReady: 'Temporary chat: not in your history, not used for training.',
+      // Stille knop in de melding: alleen dit tabblad, tot een ander gesprek (niets bewaard).
+      topicMuteChat: 'Don’t show in this chat',
+      privateFailed: 'Couldn’t open a temporary chat. Your question is back in the box.',
       // Melo is de nieuwe naam van Private Chat (Lucas, 13 okt): een naam, nooit vertalen. Altijd erbij zeggen dat het de
       // privéchat van Kamelo is. Interne sleutels (pchat*, privateChat) blijven zoals ze zijn.
       topicProtect: 'Ask Melo',
@@ -91,7 +95,7 @@
       pchatEmptyTitle: 'What’s on your mind?',
       pchatEmptyText: 'Kamelo’s private chat, for help in confidence.',
       pchatFactAccount: 'No account', pchatFactSaved: 'Nothing saved', pchatFactTraining: 'Not used for training',
-      pchatPlaceholder: 'Ask anything', pchatHint: 'Names and details are masked first', pchatSend: 'Send',
+      pchatPlaceholder: 'Ask anything', pchatPlaceholderOff: 'Melo can’t answer on this computer', pchatHint: 'Names and details are masked first', pchatSend: 'Send',
       pchatMovedTitle: 'Moved here', pchatMoved: 'Nothing was sent to the other AI. Press send when you’re ready.',
       pchatSeen: 'This is what the AI gets',
       pchatNotSentTitle: 'Not sent',
@@ -256,8 +260,9 @@
     },
 
     nl: {
-      extName: 'Kamelo: privacysoftware voor AI',
-      extDescription: 'Melo, een privéchat met AI op je eigen computer, en een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt.',
+      extName: 'Melo: privé AI-chat, van Kamelo',
+      extDescription: 'Melo is een privéchat met AI in je browser die antwoordt op je eigen computer. Plus een seintje voor een tijdelijke chat.',
+      extNameFirefox: 'Melo: persoonlijke AI-vragen, van Kamelo',
       extDescriptionFirefox: 'Een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt.',
       actionTitle: 'Kamelo',
       extNameTeams: 'Kamelo Business',
@@ -329,6 +334,8 @@
       topicAdvicePrivate: 'Stel je vraag in een tijdelijke chat: die komt niet in je geschiedenis en wordt niet gebruikt voor training.',
       topicPrivate: 'Tijdelijke chat',
       privateReady: 'Tijdelijke chat: niet in je geschiedenis, niet voor training.',
+      topicMuteChat: 'Niet meer in dit gesprek',
+      privateFailed: 'De tijdelijke chat ging niet open. Je vraag staat weer in het veld.',
       topicProtect: 'Vraag het Melo',
       topicAdviceChat: 'Vraag het liever aan Melo, de privéchat van Kamelo op je computer.',
       topicAdviceNoDevice: '{browser} heeft nog geen ingebouwde AI die Kamelo kan gebruiken, dus Kamelo biedt een tijdelijke chat aan.',
@@ -337,7 +344,7 @@
       pchatEmptyTitle: 'Waar zit je mee?',
       pchatEmptyText: 'De privéchat van Kamelo, voor hulp in vertrouwen.',
       pchatFactAccount: 'Geen account', pchatFactSaved: 'Niets bewaard', pchatFactTraining: 'Niet voor training',
-      pchatPlaceholder: 'Vraag maar', pchatHint: 'Namen en gegevens worden eerst afgeschermd', pchatSend: 'Versturen',
+      pchatPlaceholder: 'Vraag maar', pchatPlaceholderOff: 'Melo kan op deze computer niet antwoorden', pchatHint: 'Namen en gegevens worden eerst afgeschermd', pchatSend: 'Versturen',
       pchatMovedTitle: 'Hierheen verplaatst', pchatMoved: 'Er is niets naar de andere AI gestuurd. Druk op versturen als je klaar bent.',
       pchatSeen: 'Dit krijgt de AI',
       pchatNotSentTitle: 'Niet verstuurd',
@@ -509,11 +516,12 @@
       answerOnlyYou: "Solo tú puedes ver esto. La IA y {site} solo ven los marcadores.",
       answerCopy: "Copiar",
       answerCopyFailed: "No se ha podido copiar. Inténtalo de nuevo.",
-      extName: "Kamelo: software de privacidad para IA",
-      extDescription: "Melo, un chat privado con IA en tu propio ordenador, y un aviso para usar un chat temporal cuando preguntas algo personal a la IA.",
+      extName: "Melo: chat privado con IA, de Kamelo",
+      extDescription: "Melo es un chat privado con IA en tu navegador que responde en tu propio ordenador. Y un aviso para usar un chat temporal.",
       actionTitle: "Kamelo",
       extNameTeams: "Kamelo Business",
       extDescriptionTeams: "Kamelo Business enmascara datos personales y de empresa en tu equipo antes de que lleguen a ChatGPT, Gemini, Claude o IA de oficina.",
+      extNameFirefox: "Melo: preguntas personales a la IA, de Kamelo",
       extDescriptionFirefox: "Un aviso para usar un chat temporal cuando le preguntas algo personal a la IA.",
       settings: "Ajustes",
       back: "Atrás",
@@ -646,6 +654,8 @@
       topicAdvicePrivate: "Pregúntalo en un chat temporal: no queda en tu historial y no se usa para entrenar.",
       topicPrivate: "Chat temporal",
       privateReady: "Chat temporal: no queda en tu historial ni se usa para entrenar.",
+      topicMuteChat: "No mostrar en este chat",
+      privateFailed: "No se pudo abrir un chat temporal. Tu pregunta vuelve a estar en el campo.",
       topicProtect: "Pregúntale a Melo",
       topicAdviceChat: "Pregúntale mejor a Melo, el chat privado de Kamelo en tu ordenador.",
       topicAdviceNoDevice: "{browser} aún no tiene una IA integrada que Kamelo pueda usar, así que Kamelo te ofrece un chat temporal.",
@@ -658,6 +668,7 @@
       pchatFactSaved: "No se guarda nada",
       pchatFactTraining: "No se usa para entrenar",
       pchatPlaceholder: "Pregunta lo que quieras",
+      pchatPlaceholderOff: "Melo no puede responder en este ordenador",
       pchatHint: "Los nombres y datos se enmascaran primero",
       pchatSend: "Enviar",
       pchatMovedTitle: "Movido aquí",
@@ -861,11 +872,12 @@
       answerOnlyYou: "Nur du siehst das. Die KI und {site} sehen nur die Platzhalter.",
       answerCopy: "Kopieren",
       answerCopyFailed: "Kopieren hat nicht geklappt. Versuch es noch mal.",
-      extName: "Kamelo: Privatsphäre-Software für KI",
-      extDescription: "Melo, ein privater KI-Chat auf deinem Computer, und ein Hinweis auf den temporären Chat, wenn du KI etwas Persönliches fragst.",
+      extName: "Melo: privater KI-Chat, von Kamelo",
+      extDescription: "Melo ist ein privater KI-Chat im Browser, der auf deinem eigenen Computer antwortet. Dazu ein Hinweis auf den temporären Chat.",
       actionTitle: "Kamelo",
       extNameTeams: "Kamelo Business",
       extDescriptionTeams: "Kamelo Business maskiert Personen- und Firmendaten lokal, bevor sie ChatGPT, Gemini, Claude oder KI in Arbeits-Apps erreichen.",
+      extNameFirefox: "Melo: persönliche KI-Fragen, von Kamelo",
       extDescriptionFirefox: "Ein Hinweis auf einen temporären Chat, wenn du eine KI etwas Persönliches fragst.",
       settings: "Einstellungen",
       back: "Zurück",
@@ -998,6 +1010,8 @@
       topicAdvicePrivate: "Frag es in einem temporären Chat: Er bleibt aus deinem Verlauf und wird nicht fürs Training genutzt.",
       topicPrivate: "Temporärer Chat",
       privateReady: "Temporärer Chat: nicht im Verlauf, nicht fürs Training.",
+      topicMuteChat: "Nicht mehr in diesem Chat",
+      privateFailed: "Der temporäre Chat ließ sich nicht öffnen. Deine Frage steht wieder im Feld.",
       topicProtect: "Frag Melo",
       topicAdviceChat: "Frag lieber Melo, Kamelos privaten Chat auf deinem Computer.",
       topicAdviceNoDevice: "{browser} hat noch keine integrierte KI, die Kamelo nutzen kann. Deshalb schlägt Kamelo einen temporären Chat vor.",
@@ -1010,6 +1024,7 @@
       pchatFactSaved: "Nichts gespeichert",
       pchatFactTraining: "Nicht fürs Training",
       pchatPlaceholder: "Frag, was du willst",
+      pchatPlaceholderOff: "Melo kann auf diesem Computer nicht antworten",
       pchatHint: "Namen und Angaben werden zuerst maskiert",
       pchatSend: "Senden",
       pchatMovedTitle: "Hierher verschoben",
@@ -1213,11 +1228,12 @@
       answerOnlyYou: "Vous seul voyez ceci. L’IA et {site} ne voient que les espaces réservés.",
       answerCopy: "Copier",
       answerCopyFailed: "Impossible de copier. Veuillez réessayer.",
-      extName: "Kamelo : logiciel de confidentialité pour l’IA",
-      extDescription: "Melo : l’IA en privé sur votre ordinateur. Pour vos questions personnelles, Kamelo propose une discussion temporaire.",
+      extName: "Melo : discussion IA privée, par Kamelo",
+      extDescription: "Melo est une discussion IA privée dans votre navigateur, qui répond sur votre ordinateur. Et un rappel de la discussion temporaire.",
       actionTitle: "Kamelo",
       extNameTeams: "Kamelo Business",
       extDescriptionTeams: "Kamelo Business masque sur l’appareil les données personnelles et d’entreprise avant leur envoi à ChatGPT, Gemini ou Claude.",
+      extNameFirefox: "Melo : questions personnelles, par Kamelo",
       extDescriptionFirefox: "Un rappel pour utiliser une discussion temporaire quand vous posez une question personnelle à une IA.",
       settings: "Paramètres",
       back: "Retour",
@@ -1350,6 +1366,8 @@
       topicAdvicePrivate: "Posez la question dans une discussion temporaire : elle reste hors de votre historique et ne sert pas à l’entraînement.",
       topicPrivate: "Discussion temporaire",
       privateReady: "Discussion temporaire : hors de votre historique, pas utilisée pour l’entraînement.",
+      topicMuteChat: "Plus dans cette discussion",
+      privateFailed: "Impossible d’ouvrir une discussion temporaire. Votre question est de retour dans le champ.",
       topicProtect: "Demander à Melo",
       topicAdviceChat: "Posez plutôt la question à Melo, la discussion privée de Kamelo sur votre ordinateur.",
       topicAdviceNoDevice: "{browser} n’a pas encore d’IA intégrée que Kamelo puisse utiliser : Kamelo propose donc une discussion temporaire.",
@@ -1362,6 +1380,7 @@
       pchatFactSaved: "Rien n’est conservé",
       pchatFactTraining: "Pas utilisé pour l’entraînement",
       pchatPlaceholder: "Posez votre question",
+      pchatPlaceholderOff: "Melo ne peut pas répondre sur cet ordinateur",
       pchatHint: "Les noms et données sont d’abord masqués",
       pchatSend: "Envoyer",
       pchatMovedTitle: "Déplacé ici",
@@ -1594,6 +1613,12 @@
     es: " Kamelo enmascara tus datos como siempre.", de: " Kamelo maskiert deine Angaben wie immer.", fr: " Kamelo masque vos données, comme toujours." };
   const NO_MASKS = lang => Object.fromEntries(['pchatNoDevice', 'pchatNoApi', 'pchatSlowFirefox', 'pchatDeviceSlow']
     .filter(k => STRINGS[lang]?.[k]).map(k => [k, STRINGS[lang][k].replace(MASKS[lang] || MASKS.en, '')]));
+  // De gratis editie heet Melo (17 okt 2026): waar Kamelo de extensie zelf is (de knop, het icoon, wat de extensie
+  // aanbiedt), zegt ze Melo. Kamelo blijft de maker ("niet naar Kamelo, niet naar Google") en Kamelo Business heet zo.
+  const AS_MELO = ['onOff', 'pchatPageNoAccess', 'topicAdviceNoDevice', 'pchatSlowFirefox', 'pchatDeviceSlow', 'pchatSlowNote'];
+  const MELO_NAMED = (lang, texts) => Object.fromEntries(AS_MELO.filter(k => STRINGS[lang]?.[k])
+    .map(k => [k, (texts[k] ?? STRINGS[lang][k]).replace(/\bKamelo\b/g, 'Melo')]));
+  const PUBLIC_TEXTS = lang => { const texts = NO_MASKS(lang); return { ...texts, ...MELO_NAMED(lang, texts) }; };
   const PUBLIC = {
     en: {
       topicAdvice: 'Consider a temporary chat for this.',
@@ -1601,14 +1626,14 @@
       statusOffSub: 'No notices about personal topics.',
       // De gratis editie schermt niets af: de popup zegt "Aan", niet "Beschermd" (testpanel 13 okt).
       statusProtected: 'On',
-      ...NO_MASKS('en'),
+      ...PUBLIC_TEXTS('en'),
     },
     nl: {
       topicAdvice: 'Overweeg hiervoor een tijdelijke chat.',
       tempChatSub: 'Niet in je geschiedenis',
       statusOffSub: 'Geen meldingen bij persoonlijke onderwerpen.',
       statusProtected: 'Aan',
-      ...NO_MASKS('nl'),
+      ...PUBLIC_TEXTS('nl'),
     },
     es: {
       topicAdvice: "Plantéate un chat temporal para esto.",
@@ -1616,7 +1641,7 @@
       tempChatSub: "No se guarda en tu historial",
       statusOffSub: "Sin avisos sobre temas personales.",
       statusProtected: "Activado",
-      ...NO_MASKS('es'),
+      ...PUBLIC_TEXTS('es'),
     },
     de: {
       topicAdvice: "Nimm dafür lieber einen temporären Chat.",
@@ -1624,7 +1649,7 @@
       tempChatSub: "Wird nicht im Verlauf gespeichert",
       statusOffSub: "Keine Hinweise zu persönlichen Themen.",
       statusProtected: "An",
-      ...NO_MASKS('de'),
+      ...PUBLIC_TEXTS('de'),
     },
     fr: {
       topicAdvice: "Pensez à une discussion temporaire pour ceci.",
@@ -1632,7 +1657,7 @@
       tempChatSub: "Pas conservée dans votre historique",
       statusOffSub: "Aucune notification sur les sujets personnels.",
       statusProtected: "Activé",
-      ...NO_MASKS('fr'),
+      ...PUBLIC_TEXTS('fr'),
     },
   };
 

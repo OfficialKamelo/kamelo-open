@@ -2,12 +2,13 @@
   <img src="icons/logo.svg" width="96" height="96" alt="Kamelo logo">
 </p>
 
-<h1 align="center">Kamelo</h1>
+<h1 align="center">Melo, by Kamelo</h1>
 
 <p align="center">
-  <strong>For the questions you'd only ask AI.</strong><br>
-  A browser extension for Chrome, Edge and Firefox. When you type something personal into ChatGPT, Claude, Gemini or another AI chat,
-  Kamelo suggests a temporary chat, or Melo: Kamelo's private chat, where an AI answers on your own computer.
+  <strong>Personal questions, private answers.</strong><br>
+  Melo is a private AI chat in your browser that answers on your own computer. This extension adds Melo to Chrome. When you type
+  something personal into ChatGPT, Claude, Gemini or another AI chat, it suggests asking Melo instead, or a temporary chat.
+  It works in Edge and Firefox too, with the temporary chat only: chatting with Melo needs Chrome.
 </p>
 
 <p align="center">
@@ -40,16 +41,20 @@ Melo (called Private Chat before) is a chat in the browser's side panel where Ch
 Your question never leaves the device. Nothing is downloaded until you click Download; Chrome then fetches its own model once.
 Chats live only in that window and are gone when you close it. Melo isn't Kamelo's own AI model: it's the one built into Chrome.
 Melo can draw charts and formulas, and you can copy an answer or save it as PDF or Word. That is all made on your computer too.
-Edge and Firefox don't offer an on-device AI to extensions yet, so there Kamelo offers a temporary chat instead.
+Edge and Firefox don't offer an on-device AI to extensions yet, so there the extension offers a temporary chat instead.
+
+The extension is called **Melo** in the stores ("Melo: private AI chat, by Kamelo"; in Firefox "Melo: personal AI questions, by
+Kamelo", because you can't chat with Melo there yet). Before October 2026 it was called *Kamelo: AI privacy software*. Kamelo is
+the maker, and the chameleon that notices: Kamelo notices, Melo listens.
 
 ### Read this page (Melo, Chrome)
 Reading an article, a letter from the council, a medicine leaflet or an email? Open Melo and click **Read this page** (or ask
 "what's on this page?"). Melo reads the main text of the tab you're looking at and answers questions about it, on your computer
 ([`chat/page.js`](chat/page.js)). Only this page, only now: nothing is sent, nothing is stored, and the text is gone when you close Melo.
 
-- **Only after a click.** Kamelo uses Chrome's `activeTab` permission: Chrome lets Kamelo into a tab only after you click the
-  Kamelo icon in the toolbar, and only that tab until you leave the page. Clicking inside the side panel doesn't count for Chrome,
-  so if you switched tabs, Melo asks you to click the Kamelo icon and open Melo once more.
+- **Only after a click.** Melo uses Chrome's `activeTab` permission: Chrome lets the extension into a tab only after you click the
+  Melo icon in the toolbar, and only that tab until you leave the page. Clicking inside the side panel doesn't count for Chrome,
+  so if you switched tabs, Melo asks you to click the Melo icon and open Melo once more.
 - **Only the readable text.** The article (or main part) of the page, without menus, ads, cookie banners, buttons, forms, scripts or
   hidden text. What you type into fields is never read. A long page is cut to what the on-device AI can handle (about 6,000
   characters), and Melo says it read the start.
@@ -65,8 +70,9 @@ The switch (On or Off), Melo (the private chat, Chrome only) and a temporary cha
 ## Where it works
 
 Only on the AI chat sites in [`src/sites.js`](src/sites.js): ChatGPT, Gemini, Claude, Copilot, Perplexity, Mistral, Grok, DeepSeek,
-Meta AI and others. Kamelo doesn't run on any other website. The one exception: when you click **Read this page** in Melo after
-clicking the Kamelo icon, Melo reads the text of that one tab, once (see above).
+Meta AI and others. Also in WhatsApp Web, but only in your chat with Meta AI: Kamelo never looks at what you type to
+other people. Kamelo doesn't run on any other website. The one exception: when you click **Read this page** in Melo after
+clicking the Melo icon, Melo reads the text of that one tab, once (see above).
 
 ## Privacy and security
 
@@ -85,7 +91,7 @@ clicking the Kamelo icon, Melo reads the text of that one tab, once (see above).
 | `storage` | Your on/off setting, stored on your device. |
 | `scripting` | Starts Kamelo's own bundled scripts in AI chat tabs that were already open when you installed or updated it. No remote code. |
 | `sidePanel` | Opens Melo, the private chat, in Chrome's side panel (not in Firefox, which has no side panel API). |
-| `activeTab` | **Read this page** in Melo: reads the text of the tab you're on, only after you click the Kamelo icon, only that tab, only until you leave the page. No access to any other site, and no warning at install. Not in the Firefox package. |
+| `activeTab` | **Read this page** in Melo: reads the text of the tab you're on, only after you click the Melo icon, only that tab, only until you leave the page. No access to any other site, and no warning at install. Not in the Firefox package. |
 
 See the [privacy policy](PRIVACY.md). To report a vulnerability, see [SECURITY.md](SECURITY.md).
 

@@ -1,8 +1,8 @@
 # Kamelo Privacy Policy
 
-_Last updated: October 16, 2026 (version 1.7.0)_
+_Last updated: October 18, 2026 (version 1.7.2)_
 
-Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a browser extension for Chrome, Edge and Firefox. When you type something personal into an AI chat, it suggests asking it in a temporary chat, or Melo, Kamelo's private chat, where the AI built into Chrome answers on your own computer (Melo is only available in Chrome). This policy explains what data the extension handles and how.
+Melo, by Kamelo (formerly "Kamelo: AI privacy software" and Elidy; "Kamelo", "Melo", "the extension"), is a browser extension for Chrome, Edge and Firefox, made by Kamelo. Melo is a private AI chat where the AI built into Chrome answers on your own computer (Melo's chat is only available in Chrome). When you type something personal into an AI chat, the extension suggests asking Melo instead, or a temporary chat. This policy explains what data the extension handles and how.
 
 ## Summary
 - Kamelo does **not** collect, transmit, sell or share any of your data.
@@ -11,7 +11,7 @@ Kamelo, AI privacy software (formerly Elidy; "Kamelo", "the extension"), is a br
 - Kamelo does not change or hide what you send to an AI service. Your AI account still knows who you are; Kamelo helps you choose a temporary chat or Melo for personal questions.
 
 ## What data the extension handles
-- **Text you type on AI chat sites.** Kamelo only runs on the AI chat sites it knows (such as ChatGPT, Gemini and Claude). There it reads the text you type into the chat's input field and checks, on your device, whether it is about a personal topic: health, mental health, sexuality, religion, money or legal matters. If so, it shows a notice. The text is checked in memory and is not stored.
+- **Text you type on AI chat sites.** Kamelo only runs on the AI chat sites it knows (such as ChatGPT, Gemini and Claude). On WhatsApp Web it only does something in your chat with Meta AI: it never reads what you type to other people. There it reads the text you type into the chat's input field and checks, on your device, whether it is about a personal topic: health, mental health, sexuality, religion, money or legal matters. If so, it shows a notice. The text is checked in memory and is not stored.
 - **On-device AI check (Chrome only).** When the word list finds nothing, Kamelo may ask the AI built into Chrome (Gemini Nano) whether the text is a personal question in one of those topics. This runs entirely on your computer, only when Chrome's model is already on your device (Kamelo never downloads it for this), and nothing is stored or logged.
 - **Melo, the private chat (called Private Chat before).** Questions you ask Melo are answered by the AI built into your browser, on your own computer. They are not sent anywhere. Conversations exist only in the open Melo window and are gone when you close it. The model is downloaded by your browser (for Chrome, from Google) only after you click Download.
 - **Saving a Melo answer.** Copy, PDF and Word are made on your computer; nothing is sent. For a PDF, the answer is kept in the browser's session memory (never written to disk) until Kamelo's own print page has opened it, and then removed.
@@ -31,7 +31,7 @@ None. Kamelo never sends your data to the developer or to any third party. The e
 Text that you choose to send to an AI service, in a normal or a temporary chat, is sent by that website, not by Kamelo, and is subject to that service's own privacy policy. A temporary chat is a feature of that service, with its own rules on how long it is kept.
 
 ## Permissions
-- **Access to AI chat sites** (only the sites listed in the extension, such as chatgpt.com, gemini.google.com and claude.ai): to check the text you type there for personal topics and show the notice. Kamelo does not run on other websites.
+- **Access to AI chat sites** (only the sites listed in the extension, such as chatgpt.com, gemini.google.com and claude.ai, plus web.whatsapp.com for Meta AI): to check the text you type there for personal topics and show the notice. On web.whatsapp.com Kamelo only checks which chat is open (never the messages in it), and only checks what you type when that chat is Meta AI. Kamelo does not run on other websites.
 - **storage**: to save your on/off setting.
 - **scripting**: to start Kamelo's own bundled scripts in AI chat tabs that were already open when Kamelo was installed or updated. No remote code is run.
 - **sidePanel** (Chrome and Edge): to open Melo, the private chat, in the browser's side panel. Melo is only offered in Chrome for now.

@@ -19,7 +19,7 @@
 
   const W = root.PrivacyTopicWords || (typeof require === 'function' ? require('./topic-words.js') : null);
   const TOPICS = ['HEALTH', 'MENTAL', 'SEXUALITY', 'RELIGION', 'MONEY', 'LEGAL'];
-  const KINDS = ['words', 'self', 'NOT', ...TOPICS];
+  const KINDS = ['words', 'self', 'NOT', 'ASK', ...TOPICS];
   const MAX_LENGTH = 20000; // bij heel lange teksten alleen het begin
   const TOKEN = /[\p{L}\p{M}\p{N}'’-]+/gu;
   const norm = s => s.normalize('NFC').toLowerCase().replace(/’/g, "'");
@@ -35,9 +35,9 @@
   const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
   for (const [code, lang] of Object.entries(W?.LANGS || {})) {
-    const terms = kind => (kind === 'words' ? `${lang.words} ${lang.self}` : lang[kind] || '').trim().split(/\s+/).filter(Boolean);
+    const terms = kind => (kind === 'words' ? `${lang.words} ${lang.self.replace(/~/g, '')}` : lang[kind] || '').trim().split(/\s+/).filter(Boolean);
     if (W.DENSE.includes(code)) {
-      const re = (kind, flags = 'u') => new RegExp(terms(kind).map(t => escape(norm(t.replace(/^!?\*?|\*$/g, '')))).join('|'), flags);
+      const re = (kind, flags = 'u') => new RegExp(terms(kind).map(t => escape(norm(t.replace(/^[!~]?\*?|\*$/g, '')))).join('|'), flags);
       dense.push({ code, words: re('words', 'gu'), self: re('self'), topics: TOPICS.filter(k => lang[k]).map(k => [k, re(k)]) });
       continue;
     }
@@ -46,13 +46,16 @@
         // !woordgroep: zegt op zichzelf al dat het over de schrijver gaat ("behind on rent"), ook zonder ik/mijn.
         const alone = term.startsWith('!');
         if (alone) term = term.slice(1);
+        // ~ik-woord: telt niet als de zin een verzoek is (ASK: "kannst du mir", "me puedes"): "mir ist übel" wel.
+        const weak = kind === 'self' && term.startsWith('~');
+        if (weak) term = term.slice(1);
         const open = term.endsWith('*') || /['’]$/.test(term);
         const end = term.startsWith('*');
         const key = norm(term.replace(/^\*|\*$/g, '')).replace(/_/g, ' ');
         maxWords = Math.max(maxWords, key.split(' ').length);
         if (open) { minPrefix = Math.min(minPrefix, key.length); maxPrefix = Math.max(maxPrefix, key.length); }
         if (end) { minSuffix = Math.min(minSuffix, key.length); maxSuffix = Math.max(maxSuffix, key.length); }
-        const entry = [code, kind, alone];
+        const entry = [code, weak ? 'weak' : kind, alone];
         if (end) { add(suffix, key, entry); continue; }
         add(open ? prefix : exact, key, entry);
         // Woordgroepen ook zonder apostrof, zoals op een telefoon getypt: can't_pay → cant pay.
@@ -65,11 +68,17 @@
 
   // Alle sleutels van een zin: woorden en woordgroepen (tot maxWords woorden). Bij Arabisch en Hebreeuws ook zonder
   // vastgeschreven voorvoegsels (و، ب، ال، ה، ב, …): die sleutels tellen alleen voor die talen.
+  // Ook zonder weggelaten lidwoord of voornaamwoord vooraan (Frans, Italiaans, Catalaans: l'hôpital, d'angoisse,
+  // envie d'être attaché): dat woord of die woordgroep telt dan voor alle talen, zoals zonder l' of d'.
+  const ELISION = /^(?:[cdjlmnst]|qu)'(\p{L}{3,}.*)$/u;
   function* keys(tokens) {
+    const bare = tokens.map(t => ELISION.exec(t)?.[1] || t);
     for (let i = 0; i < tokens.length; i++) {
       for (let n = 1; n <= maxWords && i + n <= tokens.length; n++) {
         const key = tokens.slice(i, i + n).join(' ');
         yield [key, false];
+        const alt = bare.slice(i, i + n).join(' ');
+        if (alt !== key) yield [alt, false];
         if (n === 1) for (let cut = 1; cut <= 4 && key.length - cut >= 3; cut++) yield [key.slice(cut), true];
       }
     }
@@ -79,13 +88,15 @@
   function hitsIn(sentence) {
     const hits = new Map();
     const hit = code => hits.get(code)
-      || hits.set(code, { score: 0, self: false, not: false, topics: new Set(), alone: new Set() }).get(code);
+      || hits.set(code, { score: 0, self: false, weak: false, ask: false, not: false, topics: new Set(), alone: new Set() }).get(code);
     const record = (entries, stripped) => {
       for (const [code, kind, alone] of entries || []) {
         if (stripped && !loose.has(code)) continue;
         const h = hit(code);
         if (kind === 'words') h.score++;
         else if (kind === 'self') h.self = true;
+        else if (kind === 'weak') h.weak = true;
+        else if (kind === 'ASK') h.ask = true;
         else if (kind === 'NOT') h.not = true;
         else (alone ? h.alone : h.topics).add(kind);
       }
@@ -111,6 +122,9 @@
     return hits;
   }
 
+  // Past deze taal bij de zin: de meeste treffers, of minstens de helft daarvan (en dan minstens twee).
+  const fits = (h, best) => best && (h.score === best || (h.score >= 2 && h.score >= best / 2));
+
   // De talen die het best bij de zin passen: de meeste treffers, of minstens de helft daarvan (en dan minstens twee).
   // Een woordgroep met ! telt altijd (die is lang genoeg om bij één taal te horen). Staat er een NOT-woord in de zin
   // (huiswerk, roman, personage, pain point), dan telt die taal niet: het gaat dan niet over de schrijver zelf.
@@ -121,7 +135,8 @@
     for (const h of hits) {
       if (h.not) continue;
       h.alone.forEach(k => found.add(k));
-      if (!best || !h.self || !(h.score === best || (h.score >= 2 && h.score >= best / 2))) continue;
+      const self = h.self || (h.weak && !h.ask);
+      if (!self || !fits(h, best)) continue;
       h.topics.forEach(k => found.add(k));
     }
     return [...found];
@@ -151,7 +166,19 @@
     return TOPICS.filter(k => found.has(k));
   }
 
-  const api = { sensitiveTopics, TOPICS, LANGUAGES: Object.keys(W?.LANGS || {}) };
+  // Zegt de tekst zelf dat het niet over de schrijver gaat (een NOT-woord: huiswerk, mijn hoofdpersoon, een patiënt)?
+  // Dan hoeft de AI-tweede kans (topic-ai.js) niet te raden: de woordenlijst zweeg daar bewust.
+  function notAboutWriter(text) {
+    for (const s of String(text || '').slice(0, MAX_LENGTH).split(/[.!?;\n。！？；।॥።။؟]+/)) {
+      if (!s.trim()) continue;
+      const hits = [...hitsIn(s.trim()).values()];
+      const best = Math.max(0, ...hits.map(h => h.score));
+      if (hits.some(h => h.not && fits(h, best))) return true;
+    }
+    return false;
+  }
+
+  const api = { sensitiveTopics, notAboutWriter, TOPICS, LANGUAGES: Object.keys(W?.LANGS || {}) };
   root.PrivacyTopics = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

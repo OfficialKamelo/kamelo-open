@@ -25,6 +25,8 @@
   const P = globalThis.KameloPolicy;
   // Alleen Kamelo Business: beleid per AI-app (teams/ai-apps.js): masked, allowed of blocked.
   const AA = globalThis.KameloAiApps;
+  // Alleen Kamelo Business: nieuwe nummers voor placeholders legt de achtergrond vast (vaultscope.js, owned).
+  const VS = globalThis.PrivacyVaultScope;
   // Afschermen alleen in Kamelo Business. De gratis editie laadt detector.js niet, en schermt nergens iets af.
   const MASK = !!D && globalThis.KameloEdition !== 'public';
   // Kamelo Business doet alleen iets met een geldige licentie (src/licence.js). De achtergrond controleert hem
@@ -61,6 +63,9 @@
   let docsEpoch;
   const docsPending = new Set(); // nog onderweg naar de achtergrond: een eerdere kopie van daar mag ze niet wegvagen
   let aiSite = S.siteFor(location.hostname); // de AI-site (zie sites.js), of null op een gewone site
+  // Praat je hier nu met de AI? Op een AI-site altijd; in WhatsApp Web alleen als de chat met Meta AI open staat
+  // (`only` in sites.js), nooit in een chat met iemand anders.
+  const aiHere = () => !!aiSite && S.aiChatOpen(aiSite, document);
   let appMode = null; // de stand van deze AI-app volgens de organisatie (teams/ai-apps.js), of null
   let internalPaste = false;
 
@@ -192,6 +197,11 @@
   const saveVault = () => {
     if (alive()) chrome.runtime.sendMessage({ type: 'pf:vault-set', vault }).catch(() => {});
   };
+  // Afschermen met nummers die alleen van dit tabblad zijn: een ander tabblad van deze site kan anders hetzelfde
+  // nummer aan iemand anders geven (zie owned in vaultscope.js). run(kluis) schermt af; { result } of { result, wait }.
+  const ask = msg => (alive() ? chrome.runtime.sendMessage(msg) : Promise.resolve(null));
+  const vaultTab = { get: () => vault, set: v => { vault = v; }, ask };
+  const maskOwned = run => VS.owned(vaultTab, run);
 
   // ---------- Bestanden (alleen teams, src/teams/upload.js) ----------
   // Vóór de luisteraar voor plakken hieronder: een geplakt bestand gaat eerst langs het afschermen van bestanden.
@@ -204,8 +214,18 @@
   function docSession() {
     if (!DL) return null;
     const work = DL.working(vault, docs);
+    const start = { ...work.counters };
     return {
       mask: (text, terms) => D.mask(text, work, fileOpts(terms)),
+      // Nieuwe nummers vastleggen voordat de bestanden de pagina in gaan. false: een ander tabblad had ze al; de
+      // tellers gaan dan omhoog en upload.js schermt opnieuw af.
+      claim: async () => {
+        const c = VS.newNumbers(start, work.counters);
+        const r = c && await ask({ type: 'pf:claim', ...c }).catch(() => null);
+        if (!r || typeof r !== 'object' || r.ok) return true;
+        vault.counters = DL.maxCounters(vault.counters, r.counters);
+        return false;
+      },
       end: (files, results) => {
         const add = DL.harvest(work, vault, docs);
         DL.apply(docs, add, SCOPE, vault);
@@ -273,7 +293,7 @@
   const AIP = globalThis.KameloAiPolicy;
   let policyAsked = false;
   if (MASK && AIP && window === window.top) window.addEventListener('focusin', e => {
-    if (policyAsked || superseded || !aiSite || !active()) return;
+    if (policyAsked || superseded || !aiHere() || !active()) return;
     const ed = findEditor(e.target);
     if (!ed) return;
     policyAsked = true;
@@ -327,7 +347,10 @@
   // Gaat de inhoud van dit veld naar een AI?
   const aiFieldCache = new WeakMap();
   function goesToAi(ed) {
-    return !!aiSite || hinted(ed);
+    if (aiHere()) return true;
+    // In een chat met iemand anders (WhatsApp) nooit, ook niet als er "AI" in het label van het veld staat.
+    if (aiSite?.only && ed.closest?.(aiSite.only.root)) return false;
+    return hinted(ed);
   }
 
   function hinted(ed) {
@@ -400,12 +423,15 @@
     if (alive()) chrome.runtime.sendMessage({ type: 'pf:count', counts }).catch(() => {});
   }
 
-  // Schermt de inhoud van het veld af. Geeft true terug als er iets is afgeschermd.
+  // Schermt de inhoud van het veld af. Geeft true terug als er iets is afgeschermd. Met nieuwe nummers komt de
+  // afgeschermde tekst erin zodra de achtergrond ze heeft vastgelegd (tot dan is versturen tegengehouden).
   function guard(ed) {
-    const result = D.mask(getText(ed), vault, opts());
-    if (!result.items.length) return false;
-    insertText(ed, result.text, true);
-    afterMask(result.items, { ed, segment: result.text, items: result.items });
+    const text = getText(ed);
+    const m = maskOwned(v => D.mask(text, v, opts()));
+    if (!m.result.items.length) return false;
+    const put = r => { insertText(ed, r.text, true); afterMask(r.items, { ed, segment: r.text, items: r.items }); };
+    if (!m.wait) put(m.result);
+    else m.wait.then(r => { if (getText(ed) === text) put(r); }).catch(() => {});
     return true;
   }
 
@@ -417,13 +443,14 @@
     if (!text) return;
     byUser.set(ed, e.isTrusted);
     if (!MASK) { typedIn.add(ed); return checkTopics(text, ed); }
-    const result = D.mask(text, vault, opts());
+    const m = maskOwned(v => D.mask(text, v, opts()));
     typedIn.add(ed);
-    if (!result.items.length) return checkTopics(text, ed);
+    if (!m.result.items.length) return checkTopics(text, ed);
     e.preventDefault();
     e.stopImmediatePropagation();
-    insertText(ed, result.text, false);
-    afterMask(result.items, { ed, segment: result.text, items: result.items });
+    const put = r => { insertText(ed, r.text, false); afterMask(r.items, { ed, segment: r.text, items: r.items }); };
+    if (!m.wait) put(m.result);
+    else m.wait.then(put).catch(() => {});
     checkTopics(text, ed); // na de melding hierboven
   }, true);
 
@@ -437,18 +464,27 @@
     }
   }, true);
 
-  // Verstuurknoppen in veel talen (en, nl, de, fr, es, it, pt, pl, cs, sv, da, no, fi, tr, ru, …). 'send' vangt ook
-  // senden en absenden.
-  const SEND_LABEL = new RegExp('send|verzend|verstuur|submit|stuur|ask|vraag|generate|genereer|create|maken|maak|' +
+  // Verstuurknoppen in veel talen (en, nl, de, fr, es, it, pt, pl, cs, sv, da, no, fi, tr, ru, …). Een woord telt alleen
+  // aan het begin van een woord (of na een kleine letter, zoals btnSend): anders was "Tasks" of "Mask" ook een verstuurknop.
+  const SEND_LABEL = new RegExp('send|absenden|verzend|verstuur|submit|stuur|ask|vraag|generate|genereer|create|maken|maak|' +
     'abschicken|fragen|erstellen|envoyer|envoi|soumettre|demander|enviar|envía|envia|preguntar|invia|inviare|invio|chiedi|' +
-    'perguntar|wyślij|wyslij|odeslat|odeslání|skicka|lähetä|gönder|отправ|послать|发送|送信|전송|إرسال|שלח', 'i');
+    'perguntar|wyślij|wyslij|odeslat|odeslání|skicka|lähetä|gönder|отправ|послать|发送|送信|전송|إرسال|שלח', 'giu');
+  const DENSE_SCRIPT = /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/;
+  const NOT_SEND = /stop|new[\s_-]*(?:chat|conversation|thread)|nieuwe[\s_-]*chat|neue[nr]?[\s_-]*chat|nouvelle[\s_-]*(?:discussion|conversation)|nuevo[\s_-]*chat/i;
+  function hasSendWord(label) {
+    for (const m of label.matchAll(SEND_LABEL)) {
+      const prev = label[m.index - 1] || '', first = label[m.index];
+      if (DENSE_SCRIPT.test(m[0]) || !/\p{L}/u.test(prev) || (/\p{Ll}/u.test(prev) && /\p{Lu}/u.test(first))) return true;
+    }
+    return false;
+  }
   const BUTTON_SEL = 'button, [role="button"], input[type="submit" i], input[type="button" i], input[type="image" i]';
 
   function isSendButton(btn) {
     if (aiSite?.send) try { if (btn.matches(aiSite.send)) return true; } catch {} // ongeldige selector: op het label
     const label = [btn.getAttribute('aria-label'), btn.getAttribute('data-testid'), btn.title, btn.textContent,
       btn.tagName === 'INPUT' ? btn.value : ''].filter(Boolean).join(' ');
-    return SEND_LABEL.test(label) && !/stop/i.test(label);
+    return hasSendWord(label) && !NOT_SEND.test(label);
   }
 
   // De velden bij een knop: op het eerste niveau (van binnen naar buiten) waar er velden zijn, allemaal.
@@ -501,11 +537,11 @@
     'mime_type', 'mimeType', 'media_type', 'encoding', 'detail', 'voice', 'service_tier',
   ]);
 
-  function maskRequestBody(text) {
+  function maskRequestBody(text, v) {
     const items = [];
     const maskString = s => {
       if (s.length > 1000 && !/\s/.test(s)) return s; // base64-afbeeldingen en andere binaire data
-      const r = D.mask(s, vault, opts());
+      const r = D.mask(s, v, opts());
       items.push(...r.items);
       return r.text;
     };
@@ -561,8 +597,10 @@
     let body = msg.body, items = [], blocked = false;
     if (settings.enabled && typeof body === 'string') {
       // Budget op: niet afschermen, maar ook niet onafgeschermd laten vertrekken als er iets persoonlijks in staat.
-      if (apiBudget > 0) ({ body, items } = maskRequestBody(body));
-      else blocked = D.detect(body, opts()).length > 0;
+      if (apiBudget > 0) {
+        const m = maskOwned(v => maskRequestBody(msg.body, v));
+        try { ({ body, items } = m.wait ? await m.wait : m.result); } catch { blocked = true; }
+      } else blocked = D.detect(body, opts()).length > 0;
     }
     apiBudget -= uniqueItems(items).length;
     document.dispatchEvent(new CustomEvent('pf:masked', { detail: JSON.stringify({ id: msg.id, body, blocked }) }));
@@ -588,7 +626,7 @@
     paintSoon(ed);
   }, true);
   function isComposer(ed) {
-    if (!aiSite) return hinted(ed);
+    if (!aiHere()) return hinted(ed);
     if (matchesComposer(ed)) return true;
     const active = document.activeElement;
     return typedIn.has(ed) || (active && ed.contains(active)) || !!ed.closest('form') || hinted(ed);
@@ -1277,12 +1315,15 @@
         .c { min-width: 0; }
         .c b { display: block; font-weight: 600; }
         .c .m { display: block; margin-top: 2px; color: var(--dim); font-size: 12px; line-height: 16px; }
-        .k { display: flex; gap: 6px; margin-top: 8px; }
+        /* wrap: bij 200% zoom in het Frans of Spaans viel "Discussion temporaire" anders buiten de kaart */
+        .k { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
         .k button { font-size: 12px; font-weight: 500; background: var(--hover); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
         .k .p { background: #0071e3; color: #fff; }
         .k .p:hover { filter: brightness(1.08); }
         .k .melo { display: inline-flex; align-items: center; gap: 5px; padding-left: 8px; }
         .k .melo svg { width: 17px; height: 15px; fill: currentColor; }
+        .k .q { background: none; color: var(--dim); padding: 4px 6px; }
+        .k .q:hover { text-decoration: underline; }
         button.done { display: flex; background: none; padding: 0; cursor: pointer; } button.done:hover { text-decoration: underline; }
         .c .done { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; color: var(--dim); }
         .c .done::before { content: ""; width: 8px; height: 4px; margin-top: -2px; border: solid #34c759; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
@@ -1400,13 +1441,32 @@
     }, 1000);
   }
   let topicTimer;
-  const topicsOn = () => !!T && settings.enabled && settings.topicWarnings && !inPrivateChat();
+  // "Niet meer in dit gesprek": alleen in dit tabblad en alleen in het geheugen (er wordt niets bewaard). Het gesprek is
+  // het pad van de pagina. Een nieuwe chat krijgt na het eerste bericht een eigen adres (chatgpt.com/ → /c/…,
+  // claude.ai/new → /chat/…, gemini…/app → /app/…): dat is nog hetzelfde gesprek. Elk ander pad zet de melding weer aan.
+  let mutedChat = null;
+  const hasChatId = p => /[0-9a-f]{8}|[\w-]{16}/i.test(p);
+  function mutedHere() {
+    if (!mutedChat) return false;
+    const now = location.pathname;
+    if (now === mutedChat) return true;
+    if (!hasChatId(mutedChat) && hasChatId(now)) { mutedChat = now; return true; }
+    mutedChat = null;
+    return false;
+  }
+  function muteChat() {
+    mutedChat = location.pathname;
+    hideToast();
+    clearTimeout(topicTimer);
+    deviceTopics?.cancel();
+  }
+  const topicsOn = () => !!T && settings.enabled && settings.topicWarnings && !inPrivateChat() && !mutedHere();
   const freshTopic = k => !warnedTopics.has(k) && !(settings.mutedTopics || []).includes(k);
   function checkTopicsSoon(ed) {
     clearTimeout(topicTimer);
     deviceTopics?.cancel();
     topicTimer = setTimeout(() => {
-      if (!ed.isConnected) return;
+      if (!ed.isConnected || !goesToAi(ed)) return; // intussen naar een andere chat (WhatsApp)
       const text = getText(ed);
       if (!text.trim()) return void forgetTopics('', []);
       if (!checkTopics(text, ed)) askDevice(ed);
@@ -1437,21 +1497,41 @@
     });
   }
 
+  // Kan Melo hier antwoorden (de AI van Chrome op deze computer)? null = nog niet gevraagd. De achtergrond vraagt alleen
+  // availability(), dus dit start nooit een download. Bij elke melding opnieuw gevraagd, voor de volgende.
+  let meloReady = null, meloCheck = null;
+  function checkMelo() {
+    meloCheck ??= (alive() ? chrome.runtime.sendMessage({ type: 'pf:melo-ready' }) : Promise.resolve(false))
+      .then(r => r === true, () => false)
+      .then(r => { meloReady = r; meloCheck = null; return r; });
+    return meloCheck;
+  }
+
   function showTopic(topic, ed = null) {
     if (!topicsOn() || !freshTopic(topic)) return;
     // Staat er al een melding (bijv. "2 afgeschermd" bij hetzelfde plakken)? Dan erna.
     // Het detailvenster staat open? Dan erna. Een gewone "afgeschermd"-melding wordt vervangen: de keuze voor Private Chat
     // is belangrijker, en de kaart zegt zelf hoeveel er is afgeschermd.
     if (panel) return void setTimeout(() => showTopic(topic, ed), 1500);
+    // Met een veld: "Ask Melo" brengt de vraag naar Melo, de privéchat van Kamelo (docs/private-chat/PLAN-PRIVE-CHAT.md).
+    // Alleen in Chrome: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding alleen de tijdelijke chat.
+    const wantsMelo = !!ed && !!settings.privateChat && I.BROWSER.id === 'chrome';
+    // En alleen als de AI van Chrome op deze computer kan draaien; anders leidde "Ask Melo" naar "Geen AI op dit apparaat".
+    // De eerste keer even op het antwoord wachten (meestal een paar ms, hooguit 1,5 s; geen antwoord = geen Melo).
+    if (wantsMelo && meloReady === null) {
+      return void Promise.race([checkMelo(), sleep(1500).then(() => false)]).then(r => { meloReady ??= r; showTopic(topic, ed); });
+    }
+    if (wantsMelo) checkMelo();
     warnedTopics.add(topic);
     watchEmpty(ed);
     anchorEd = ed;
-    // Met een veld: "Ask Melo" brengt de vraag naar Melo, de privéchat van Kamelo (docs/private-chat/PLAN-PRIVE-CHAT.md).
-    // Alleen in Chrome: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding alleen de tijdelijke chat.
-    const canProtect = !!ed && !!settings.privateChat && I.BROWSER.id === 'chrome';
-    // In Edge en Firefox zegt de melding waarom er een tijdelijke chat staat waar Chrome Private Chat aanbiedt.
+    const canProtect = wantsMelo && meloReady;
+    // Ging de tijdelijke chat op deze pagina net niet open (zie takePrivate), dan bieden we hem hier niet opnieuw aan.
+    const offerPrivate = !!ed && !!aiSite?.private && !privateFailed;
+    // In Edge en Firefox zegt de melding waarom er een tijdelijke chat staat waar Chrome Private Chat aanbiedt. Chrome
+    // zonder AI op deze computer: gewoon de tijdelijke chat, zonder "Chrome heeft nog geen ingebouwde AI" (die heeft hij wel).
     const advice = canProtect ? 'topicAdviceChat'
-      : ed && aiSite?.private ? (settings.privateChat ? 'topicAdviceNoDevice' : 'topicAdvicePrivate')
+      : offerPrivate ? (settings.privateChat && I.BROWSER.id !== 'chrome' ? 'topicAdviceNoDevice' : 'topicAdvicePrivate')
       : 'topicAdvice';
     const masked = ed?.isConnected ? new Set(getText(ed).match(/\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g) || []).size : 0;
     showToast('card', [
@@ -1464,9 +1544,13 @@
         el('div', { className: 'k' },
           ...(canProtect ? [meloButton(() => { hideToast(); goPrivateChat(ed); })] : []),
           // Tweede keuze: een tijdelijke chat in dezelfde AI (voor wie z'n eigen ChatGPT wil houden).
-          ...(ed && aiSite?.private ? [textButton(canProtect ? '' : 'p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
+          ...(offerPrivate ? [textButton(canProtect ? '' : 'p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
+          // Stil, als laatste: de gratis melding komt bij elk bericht terug, en wil je hem hier niet meer, dan kan dat.
+          ...(PER_MESSAGE ? [textButton('q', I.t('topicMuteChat'), muteChat)] : []),
         )),
-      // Sluiten met het kruisje of Esc; uitzetten kan in de instellingen (Waarschuwen bij gevoelige onderwerpen).
+      // Sluiten met het kruisje of Esc (alleen deze keer). Gratis: "Niet meer in dit gesprek" (hierboven) of Kamelo uit in
+      // de popup; de gratis popup heeft geen instelling per onderwerp (background.js zet die bij elke start terug).
+      // Teams: de instelling Waarschuwen bij gevoelige onderwerpen in de popup.
       iconButton('x', I.t('detailsClose'), hideToast),
     // Publiek is deze melding het hele product: langer laten staan. Teams toont daarnaast al de placeholders.
     ], MASK ? 15000 : 40000);
@@ -1484,6 +1568,7 @@
     try { return !!(p.onSel && document.querySelector(p.onSel)); } catch { return false; }
   }
 
+  let privateFailed = false; // zie giveBack
   const sleep = ms => new Promise(r => setTimeout(r, ms));
   async function waitFor(fn, ms = 10000) {
     for (let t = 0; t < ms; t += 250) { const v = fn(); if (v) return v; await sleep(250); }
@@ -1506,8 +1591,13 @@
   async function goPrivate(ed) {
     const p = aiSite.private;
     const text = ed?.isConnected ? getText(ed).trim() : '';
-    if (text && alive()) await chrome.runtime.sendMessage({ type: 'pf:private-set', host: location.hostname, text }).catch(() => {});
-    if (text) clearField(ed); // geen concept in de gewone chat laten staan
+    if (text) {
+      // Alleen verder als de tekst echt is meegegeven (een tabblad met het script van vóór een update kan dat niet):
+      // anders is de vraag weg. Het concept blijft dan gewoon staan.
+      const stored = alive() && await chrome.runtime.sendMessage({ type: 'pf:private-set', host: location.hostname, text }).then(r => r === true, () => false);
+      if (!stored) return;
+      clearField(ed); // geen concept in de gewone chat laten staan
+    }
     if (p.url) return location.assign(p.url);
     if (!text) { // niets mee te nemen: alleen de tijdelijke chat openen
       const button = privateButton();
@@ -1536,15 +1626,22 @@
     const text = await chrome.runtime.sendMessage({ type: 'pf:private-take', host: location.hostname }).catch(() => null);
     if (!text) return;
     if (!inPrivateChat() && p.button) {
+      // Geen knop (niet ingelogd, of de site heeft hem hernoemd) of hij opent geen tijdelijke chat: dan de vraag terug in
+      // het gewone veld, anders was hij weg (goPrivate heeft het veld al leeggemaakt).
       const button = await waitFor(privateButton);
       button?.click();
-      if (!await waitFor(inPrivateChat, 5000)) return;
+      if (!button || !await waitFor(inPrivateChat, 5000)) return giveBack(text);
       anchorEd = null; // de site zet een nieuw veld neer
       await sleep(300);
     }
     const ed = await waitFor(liveEditor);
     if (!ed) return;
-    const result = MASK && settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] };
+    let result = { text, items: [] };
+    if (MASK && settings.enabled) {
+      const m = maskOwned(v => D.mask(text, v, opts()));
+      result = m.wait ? await m.wait.catch(() => null) : m.result;
+      if (!result) return;
+    }
     insertText(ed, result.text, true);
     typedIn.add(ed);
     if (result.items.length) { saveVault(); startAnswers(); }
@@ -1552,6 +1649,22 @@
     showToast('compact', [el('span', { textContent: I.t('privateReady') })], 6000);
   }
   ready.then(() => { if (active()) takePrivate(); });
+
+  // De tijdelijke chat ging niet open: de vraag weer in het veld, ongewijzigd en niet verstuurd. De melding voor deze
+  // tekst is al geweest, en de knop voor de tijdelijke chat komt op deze pagina niet meer (hij werkt hier niet).
+  async function giveBack(text) {
+    privateFailed = true;
+    const ed = await waitFor(liveEditor);
+    if (!ed) return;
+    const result = MASK && settings.enabled ? D.mask(text, vault, opts()) : { text, items: [] }; // Teams: afgeschermd, zoals ervoor
+    insertText(ed, result.text, true);
+    typedIn.add(ed);
+    if (result.items.length) { saveVault(); startAnswers(); }
+    for (const k of T?.sensitiveTopics(text) || []) { warnedTopics.add(k); byWords.add(k); }
+    watchEmpty(ed);
+    anchorEd = ed;
+    showToast('compact', [el('span', { textContent: I.t('privateFailed') })], 8000);
+  }
 
   // ---------- Kaart "Wat de AI ziet" ----------
   // Per gegeven: soort, jouw waarde (bankgegevens half verborgen) en de placeholder die de AI krijgt, met

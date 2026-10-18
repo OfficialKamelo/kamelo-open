@@ -1,0 +1,108 @@
+#P
+H|llevo una semana con un sarpullido raro en la parte interna del muslo, debería preocuparme
+H|a mi madre le acaban de diagnosticar cáncer de mama, qué le preguntamos al oncólogo
+H|es normal seguir sangrando 10 días después del parto
+H|todas las mañanas me duele la cabeza y me tiembla el ojo izquierdo, qué puede ser
+H|el azúcar de mi padre estaba en 14 esta mañana es peligroso
+H|cómo le digo a mi jefe que necesito días libres para la quimio
+H|mi novio ronca muchísimo y a veces deja de respirar por la noche
+H|creo que me rompí el dedo del pie, puedo vendarlo y ya
+H|tomo metformina desde hace 3 meses y sigo con náuseas después de cada comida
+M|ya no le veo sentido a nada
+M|mi hermana lleva semanas sin salir de su cuarto y casi no come, cómo la ayudo
+M|cómo dejo de entrar en pánico antes de cada reunión, el corazón se me acelera y no puedo respirar
+M|lloro todas las noches después del trabajo y no sé por qué
+M|mi psicóloga quiere subirme la sertralina, 100mg es mucho?
+X|a veces pienso que todos estarían mejor sin mí
+X|mi hijo se corta, encontré sangre en sus sábanas
+M|no puedo dormir, no me concentro, últimamente me siento vacía
+M|cómo paso la primera navidad desde que murió mi marido
+S|tengo 34 años y sigo siendo virgen, me pasa algo
+S|mi mujer quiere una relación abierta y no sé qué pensar
+S|creo que soy bi pero me da miedo decírselo a mis padres
+S|me arde al hacer pis desde que me acosté con un chico nuevo
+S|cómo le digo a mi novia que quiero que me ate
+S|mi hija de 15 años me acaba de decir que es trans, qué hago
+R|ya no creo en dios pero toda mi familia es muy religiosa, cómo se lo digo
+R|mis padres quieren que me case con un musulmán pero no sé si sigo creyendo
+R|estoy pensando en convertirme al judaísmo por mi prometido
+R|me siento culpable por no ir a misa
+R|cómo salgo de los testigos de jehová sin perder a mi familia
+G|debo 3 meses de alquiler y el casero no para de escribirme
+G|tengo 23 mil euros de deuda en la tarjeta y gano 2100 al mes, por dónde empiezo
+G|mi marido se ha jugado nuestros ahorros y me acabo de enterar
+G|puedo conseguir una hipoteca si estoy en asnef
+G|no podemos pagar la excursión del colegio de mi hija este año
+G|el día 10 ya no me queda nada del sueldo, ayúdame con un presupuesto
+G|a mi madre la están estafando por internet y le sigue mandando dinero a ese tipo
+L|anoche me pararon conduciendo borracho, qué pasa ahora
+L|detuvieron a mi hermano por robar en una tienda, va a ir a la cárcel?
+L|mi ex no me deja ver a los niños aunque tenemos un régimen de visitas
+L|me llegó una carta de que mi antiguo jefe me ha denunciado
+L|es ilegal que haya conducido dos meses sin seguro
+L|mi permiso de residencia caduca el mes que viene y me acaban de despedir
+#G
+H|cuáles son los primeros síntomas de la diabetes tipo 2
+H|cómo funciona la quimioterapia
+H|explica cómo las vacunas entrenan al sistema inmunitario
+H|cuánta vitamina d necesita un adulto al día
+H|escribe un artículo de blog sobre los beneficios de caminar 10000 pasos al día
+H|cuál es la diferencia entre un virus y una bacteria
+H|qué causa la migraña, da una visión científica
+M|qué es la depresión
+M|resume las principales teorías sobre los trastornos de ansiedad para mi clase de psicología
+M|qué hace realmente un terapeuta cognitivo-conductual
+M|escribe un cuento donde el protagonista lucha con el duelo
+M|enumera los síntomas del trastorno bipolar
+M|qué tan común es el burnout en enfermeras, con datos por favor
+S|escribe un ensayo sobre la legislación del aborto en españa
+S|cuál es la historia del movimiento del orgullo
+S|explica cómo funciona la prep contra el vih
+S|qué significa asexual
+R|cuál es la diferencia entre el islam suní y chií
+R|explica el significado de la pascua en el cristianismo
+R|cuántos budistas hay en el mundo
+R|escribe un poema inspirado en el salmo 23
+G|cómo funciona el interés compuesto
+G|qué ratio de endeudamiento es bueno para una hipoteca
+G|explica la inflación a un niño de 10 años
+G|compara los fondos indexados y los etf
+G|cómo funciona asnef en general
+G|escribe un email de marketing para nuestra nueva app de presupuestos
+L|cuál es la diferencia entre un delito leve y un delito grave
+L|explica el artículo 9 del rgpd
+L|cómo funciona la custodia de los hijos tras un divorcio en españa, visión general
+L|cuáles son las fases de un juicio penal en españa
+L|resume el argumento de crónica de una muerte anunciada
+O|mi script de python lanza un keyerror al leer el json, cómo lo arreglo
+O|dame una receta de lasaña vegana
+O|escribe una carta de presentación para un puesto de analista de datos junior
+O|qué ha pasado hoy en las noticias sobre el congreso
+O|traduce al inglés: la reunión se ha movido al jueves
+O|mi componente de react se renderiza dos veces, por qué
+O|ayúdame a planear un viaje de 5 días a lisboa
+O|mi jefe quiere un resumen de las ventas del t3, puedes acortarlo
+O|cuál es un buen nombre para mi panadería
+O|explica los pods de kubernetes como si tuviera cinco años
+# 17 okt avond: lastige gewone zinnen (wel ik/mijn of een gevoelig woord, maar niet persoonlijk), extra ontwikkelmateriaal
+#G
+M|estoy escribiendo un ensayo sobre la depresión en adolescentes, me pasas fuentes
+G|la deuda de nuestra empresa sube, cómo se lo explico a los inversores
+S|mi protagonista es gay y sale del armario en el capítulo 3, suena natural el diálogo
+H|soy enfermera y un paciente me pregunta cómo funciona la quimio, cómo se lo explico fácil
+L|nuestra startup recibió una carta sobre el rgpd, qué tenemos que hacer
+R|estoy preparando un quiz sobre religiones del mundo para mis alumnos
+M|necesito una clase sobre el estrés para mis alumnos de secundaria
+G|mi cliente quiere un panel con las facturas impagadas
+H|estamos creando una app para diabéticos, qué funciones son importantes
+L|qué podcasts sobre juicios famosos me recomiendas
+O|la batería de mi móvil se gasta muy rápido, qué hago
+S|para mi trabajo de sociología: cómo cambió la opinión sobre el matrimonio igualitario
+# verzoeken met me (ASK in topic-words.js)
+#G
+H|me puedes decir los síntomas de la diabetes
+M|me dices qué es la ansiedad
+M|me recomiendas libros sobre el duelo
+L|me ayudas a escribir un texto sobre el divorcio
+#P
+H|me duele la espalda desde ayer

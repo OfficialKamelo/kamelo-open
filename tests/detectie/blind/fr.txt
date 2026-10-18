@@ -1,0 +1,42 @@
+#P
+H|mon medecin m'a dit que j'ai du diabete et j'ai peur de devoir me piquer tous les jours
+H|ma mère vient de se faire opérer du genou et elle a très mal, est-ce que c'est normal après 2 semaines
+H|j'ai des vertiges tous les matins depuis que je prends ce nouveau traitement
+H|mon fils a 6 ans et il fait encore pipi au lit, on s'inquiete
+M|j'arrive plus a dormir, j'ai la boule au ventre tous les soirs en pensant au boulot
+M|depuis la mort de mon père je pleure pour un rien et je sais pas à qui en parler
+M|je me sens tellement seule depuis mon demenagement, j'ai personne
+M|mon mari boit beaucoup trop et je sais pas comment lui dire qu'il doit se faire aider
+S|ma copine et moi on a plus de désir depuis des mois, c'est grave docteur
+S|je crois que je suis lesbienne mais je suis mariee depuis 10 ans
+S|mon fils m'a dit qu'il est trans, comment je dois réagir
+R|j'ai grandi dans une famille catho pratiquante et je ne crois plus en rien, comment le dire à ma mère
+R|je veux me convertir a l'islam pour mon copain mais j'hesite
+R|depuis que ma soeur est morte je prie plus et je me sens coupable
+G|j'ai 8000 euros de dettes et la banque me harcèle tous les jours
+G|je suis en retard de trois mois sur mon loyer et le proprio parle d'expulsion
+G|j'ai perdu 1500 euros aux paris en ligne ce mois-ci et ma femme sait rien
+L|mon frère a été placé en garde à vue hier soir, qu'est-ce que je dois faire
+L|mon ex veut la garde exclusive de notre fille, j'ai besoin d'un avocat
+L|mon titre de sejour expire dans 2 mois et la préfecture ne répond pas
+#G
+H|c'est quoi la difference entre un virus et une bacterie
+H|ecris un petit texte pour sensibiliser les ados a l'importance du sommeil
+H|combien de personnes en france ont un cancer chaque annee
+M|je fais un exposé sur le deuil chez les enfants, tu peux me faire un plan
+M|ecris une scène de roman où le personnage a une crise d'angoisse dans le métro
+M|c'est quoi les symptomes du burn-out selon l'oms
+S|quand est-ce que le mariage pour tous a ete vote en france
+S|explique-moi ce que veut dire non-binaire pour mon cours de sociologie
+S|ecris une chanson d'amour un peu coquine pour un film
+R|quelle est la difference entre catholiques et protestants
+R|j'ai un partiel sur la laïcité demain, pose-moi des questions
+R|combien de juifs vivent en france environ
+G|comment fonctionne un pret immobilier, c'est pour un exposé
+G|quelles sont les arnaques les plus courantes sur leboncoin
+G|peux-tu rédiger une relance pour des factures impayées de clients
+L|c'est quoi la difference entre un délit et un crime
+L|je suis en droit, explique-moi la présomption d'innocence
+L|comment on obtient la nationalite francaise en general
+O|mon code javascript renvoie undefined, voila la fonction
+O|une recette de gratin dauphinois pour mes beaux-parents ce week-end
