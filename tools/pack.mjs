@@ -12,6 +12,9 @@
 //   node tools/pack.mjs --firefox → Firefox/kamelo-firefox-<versie>.zip (voor addons.mozilla.org)
 //   node tools/pack.mjs --teams   → Kamelo Business/kamelo-teams-<versie>.zip (met --firefox: kamelo-teams-firefox-…)
 //   --test                        → naam "Melo (test)" of "Kamelo Business (test)", om naast de echte te laden
+//   node tools/pack.mjs --safari --out <map>
+//                                 → de gratis editie voor Safari, uitgepakt in <map> (zonder zip): die gaat mee in Melo voor
+//                                   Mac (repo melo-mac, bouw.sh). --out werkt ook voor de andere pakketten.
 //
 // De gratis editie heet Melo ("Melo: private AI chat, by Kamelo", sinds 17 okt 2026): Melo is het product, de extensie is hoe
 // je Melo aan je browser toevoegt. Kamelo blijft de maker, en Kamelo Business heet zo.
@@ -90,8 +93,27 @@ export function publicManifest(manifest) {
     matches: sites,
     js: isolated.js.filter(f => !teamsOnly(f)),
   }];
-  delete m.content_scripts[0].css;
+  // Alleen de blauwe markering van gevoelige gegevens (gegevens.css); marks.css hoort bij Business.
+  const css = (isolated.css || []).filter(f => !teamsOnly(f));
+  if (css.length) m.content_scripts[0].css = css; else delete m.content_scripts[0].css;
   m.action.default_popup = 'popup/public.html';
+  // Melo voor Mac (22 okt 2026): "Vraag Melo" kan naar de app op deze Mac (src/background.js), en sinds 26 okt het menu
+  // "Melo, doe hier iets mee" (contextMenus). Optioneel: Chrome vraagt het pas als je het in de popup aanzet, dus geen
+  // nieuwe waarschuwing bij het bijwerken.
+  m.optional_permissions = [...new Set([...(m.optional_permissions || []), 'nativeMessaging', 'contextMenus'])];
+  return m;
+}
+
+// Safari: dezelfde gratis editie, in Melo voor Mac. Geen zijpaneel (Safari kent het niet): "Vraag Melo" gaat altijd naar
+// Melo.app, dus nativeMessaging is daar een gewoon recht (de extensie praat alleen met de app waar ze in zit).
+export function safariManifest(manifest) {
+  const m = structuredClone(manifest);
+  m.permissions = [...m.permissions.filter(p => p !== 'sidePanel'), 'nativeMessaging', 'contextMenus'];
+  m.optional_permissions = (m.optional_permissions || []).filter(p => p !== 'nativeMessaging' && p !== 'contextMenus');
+  if (!m.optional_permissions.length) delete m.optional_permissions;
+  delete m.side_panel;
+  // De App Store keurt een beschrijving van meer dan 112 tekens af in een Safari-extensie (upload 22 okt 2026).
+  m.description = '__MSG_extDescriptionSafari__';
   return m;
 }
 
@@ -120,10 +142,12 @@ export function firefoxManifest(manifest, { teams = true } = {}) {
   const m = structuredClone(manifest);
   m.background = { scripts: BACKGROUND[teams ? 'teams' : 'public'] };
   m.browser_specific_settings = {
-    gecko: { id: teams ? 'teams@kamelo.eu' : 'kamelo@kamelo.eu', strict_min_version: '128.0', data_collection_permissions: { required: ['none'] } },
+    // Business controleert de licentie met Ed25519 in WebCrypto: dat heeft Firefox pas vanaf 129 (ESR 128 niet).
+    gecko: { id: teams ? 'teams@kamelo.eu' : 'kamelo@kamelo.eu', strict_min_version: teams ? '129.0' : '128.0', data_collection_permissions: { required: ['none'] } },
   };
   // Het add-on-ID blijft kamelo@kamelo.eu, ook nu de extensie Melo heet (een nieuw ID is een nieuwe add-on).
   if (!teams) noChatNames(m);
+  delete m.minimum_chrome_version; // alleen Chrome/Edge (teamsManifest); Firefox heeft strict_min_version
   // Private Chat op dit apparaat (chat/device.js): Firefox' eigen AI (trial.ml) mag alleen als optionele toestemming,
   // pas gevraagd na een klik op Downloaden, en alleen zolang die aan staat (nu uit: te traag). Firefox kent geen
   // zijpaneel-API: daar opent de chat in een eigen venster.
@@ -142,14 +166,28 @@ export function firefoxManifest(manifest, { teams = true } = {}) {
 // Alleen Kamelo Business: het schema voor beheerd beleid (chrome.storage.managed), zodat IT het via Google Admin,
 // Intune of een macOS-profiel kan instellen (docs/teams/UITROLLEN.md). Firefox leest beleid anders (policies.json).
 export const MANAGED_SCHEMA = 'src/managed-schema.json';
+// Alleen in de gratis editie gebruikt (content.js: `!MASK && ID`, en de tweede kans alleen bij KameloEdition 'public').
+export const PUBLIC_SCRIPTS = ['src/identifiers.js', 'src/topic-ai.js'];
+// De gewogen lijst (2 MB) alleen in het bovenste frame: Business draait op <all_urls>, ook in elke advertentie-iframe.
+// In een iframe valt topic-model.js vanzelf terug op de woordenlijst (ready() is dan false).
+export const TOP_FRAME_ONLY = ['src/topic-weights.js'];
 export function teamsManifest(manifest) {
   const m = structuredClone(manifest);
   m.storage = { ...(m.storage || {}), managed_schema: MANAGED_SCHEMA };
+  // De licentie (src/licence.js) gebruikt Ed25519 in WebCrypto: Chrome en Edge vanaf 137. Ouder: niet installeren, in
+  // plaats van stil "niet actief".
+  m.minimum_chrome_version = '137';
+  const isolated = m.content_scripts.find(cs => cs.js?.includes('src/content.js'));
+  if (isolated) {
+    const top = isolated.js.filter(f => TOP_FRAME_ONLY.includes(f));
+    isolated.js = isolated.js.filter(f => !PUBLIC_SCRIPTS.includes(f) && !TOP_FRAME_ONLY.includes(f));
+    if (top.length) m.content_scripts.push({ matches: isolated.matches, js: top, run_at: isolated.run_at, all_frames: false });
+  }
   return m;
 }
 
 // Het manifest van een pakket.
-export function manifestFor(manifest, { teams = false, beta = false, firefox = false, edge = false, test = false } = {}) {
+export function manifestFor(manifest, { teams = false, beta = false, firefox = false, edge = false, test = false, safari = false } = {}) {
   let m = teams ? teamsManifest(manifest) : publicManifest(manifest);
   if (edge && !teams) noChatNames(m);
   if (beta) {
@@ -161,6 +199,7 @@ export function manifestFor(manifest, { teams = false, beta = false, firefox = f
     m.action.default_title = m.name;
   }
   if (firefox) m = firefoxManifest(m, { teams });
+  if (safari && !teams) m = safariManifest(m);
   return m;
 }
 
@@ -177,7 +216,8 @@ export function dropMissingScripts(dir) {
 }
 
 // Zet het uitgepakte pakket in `dir` (leeg of nog niet bestaand). Geeft het manifest terug.
-export function build(dir, { teams = false, beta = false, firefox = false, edge = false, test = false } = {}) {
+export function build(dir, { teams = false, beta = false, firefox = false, edge = false, test = false, safari = false } = {}) {
+  if (safari && (teams || firefox)) throw new Error('Safari: alleen de gratis editie.');
   if (teams && !fs.existsSync(path.join(ROOT, 'src/detector.js'))) throw new Error('Kamelo Business zit niet in deze repo.');
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
   const skip = new Set(teams ? PUBLIC_ONLY : TEAMS_ONLY);
@@ -189,10 +229,11 @@ export function build(dir, { teams = false, beta = false, firefox = false, edge 
     if (skip.has(entry) || !fs.existsSync(path.join(ROOT, entry))) continue;
     fs.cpSync(path.join(ROOT, entry), path.join(dir, entry), {
       recursive: true,
-      filter: src => path.basename(src) !== '.DS_Store' && !skip.has(path.relative(ROOT, src).split(path.sep).join('/')),
+      // CLAUDE.md zijn werkaantekeningen (niet in git, wel in de werkmap): nooit in een pakket.
+      filter: src => !['.DS_Store', 'CLAUDE.md'].includes(path.basename(src)) && !skip.has(path.relative(ROOT, src).split(path.sep).join('/')),
     });
   }
-  const m = manifestFor(manifest, { teams, beta, firefox, edge, test });
+  const m = manifestFor(manifest, { teams, beta, firefox, edge, test, safari });
   fs.writeFileSync(path.join(dir, 'manifest.json'), `${JSON.stringify(m, null, 2)}\n`);
   // Het nagebootste beleid en licenties met de testsleutel alleen in testversies; in echte pakketten uit.
   if (teams && !test) setTestBuild(dir, false);
@@ -249,5 +290,15 @@ export function pack({ beta = false, firefox = false, teams = false, test = fals
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const flag = f => process.argv.includes(f);
+  const out = process.argv.includes('--out') ? path.resolve(process.argv[process.argv.indexOf('--out') + 1] || '') : null;
+  if (out) {
+    // Uitgepakt in een eigen map (die wordt eerst leeggemaakt): alleen een map die leeg is of al een pakket bevat.
+    if (fs.existsSync(out) && fs.readdirSync(out).length && !fs.existsSync(path.join(out, 'manifest.json'))) throw new Error(`${out}: geen pakket, niet leegmaken`);
+    fs.rmSync(out, { recursive: true, force: true });
+    const m = build(out, { beta: flag('--beta'), firefox: flag('--firefox'), teams: flag('--teams'), test: flag('--test'), safari: flag('--safari') });
+    console.log(`${out} (${m.version})`);
+    process.exit(0);
+  }
+  if (flag('--safari')) throw new Error('--safari hoort bij --out <map> (het pakket gaat mee in Melo voor Mac)');
   console.log(pack({ beta: flag('--beta'), firefox: flag('--firefox'), teams: flag('--teams'), test: flag('--test') }));
 }

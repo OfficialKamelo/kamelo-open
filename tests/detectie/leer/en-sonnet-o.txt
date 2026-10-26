@@ -1,0 +1,251 @@
+#G
+O|my python script throws IndexError on line 14, i think the loop runs one too many times
+O|what's a good swap for buttermilk in pancakes, we've run out and the shops are shut
+O|flying to Lisbon with my sister in March, is it worth buying the 3-day transport card or just paying as we go?
+O|Can you help me write a polite email to my manager asking to move our Thursday catch-up to Friday afternoon?
+O|how many calories does a 5k run burn roughly, just curious for my fitbit
+O|best way to get red wine out of a cream carpet, my mate spilled a whole glass at the party
+O|explain recursion like im 12
+O|my app crashed again right after the splash screen, android studio logcat says NullPointerException in MainActivity. any ideas
+O|how do i kill a process thats hogging port 3000 on mac
+O|my phone died halfway through the match and im gutted, which power bank should i get for under £30
+O|We're planning a surprise 40th for my husband. Any theme ideas that aren't just "pub night"?
+O|whats the difference between affect and effect, i always mix them up
+O|Is it ok to prune hydrangeas in October or should I wait till spring?
+O|I'm playing Skyrim and my debt to the thieves guild is huge, how do I pay it off quickly
+O|dying to see Coldplay in Mumbai next year, how early do tickets usually go on sale
+O|recommend a police procedural series to binge this weekend, something like Line of Duty
+O|our tennis court at the club is being resurfaced, which surface is best for a beginner group of kids
+O|my cousin is getting married at a church in Galway and we need a hotel nearby, any suggestions?
+O|that goal was SICK, who took the first penalty in the 2022 world cup final shootout
+O|hey can u convert 350 grams of flour to cups
+O|My laptop got a virus warning popup in chrome, I think it's the fake kind. How do I close it safely?
+O|our unit test passes locally but the positive test case fails on CI, what could differ between the two
+O|how do you say where is the train station in Hindi
+O|solve for x: 3x + 7 = 2x - 5
+O|my brother wants a PS5 for christmas but im not sure whether to get disc or digital
+O|Could you suggest a 20-minute bodyweight workout I can do in my flat? No equipment, I just want to stay fit for fun.
+O|whats the best way to season a cast iron pan, i got one from my nan and its a bit rusty
+O|Quick question: does "fewer" or "less" go with countable nouns?
+O|my friend and i are driving from Perth to Margaret River on saturday, roughly how long is the drive
+O|how to center a div, i know i should know this by now lol
+O|Need a catchy name for our office quiz team, we work in logistics
+O|my car makes a squealing noise when I brake in the morning, is it the pads or the discs?
+O|what does bare minimum mean when someone says it in an email
+O|we're thinking of getting a robot vacuum, anyone know if the Roborock or the Eufy copes better with thick carpet
+O|how long should i boil an egg for a runny yolk
+O|Can you check this sentence for me: "Me and my colleague goes to the meeting yesterday."
+O|im trying to learn the guitar chords for Wonderwall, is it the same capo position for the acoustic version
+O|My son's school is doing a science fair, he wants to build a volcano. What do we need besides baking soda and vinegar?
+O|bhai mera excel sheet VLOOKUP return kar raha hai #N/A, kya galat hai
+O|What are some good icebreakers for a team meeting with people from 5 different countries
+O|is it safe to eat rice that's been in the fridge overnight, my flatmate says no but i reckon its fine
+O|help me plan a weekend in Edinburgh for me and my mum, she loves castles and tea rooms
+O|How do I make a git branch from the commit before the last one?
+O|my tomato plants have yellow leaves at the bottom, am I overwatering
+O|can you explain the offside rule to my dad? he has watched football for 40 years and still argues about it
+O|what's 15% of 240
+O|We're organising our daughter's 7th birthday at a soft play centre, how many kids is too many?
+O|how do I stop my sourdough from coming out so dense, I've tried 3 times now
+O|Our team just got a new Jira setup and honestly I have no clue how to link tickets to epics
+O|Write a short and funny speech for my best mate's stag do, he's obsessed with golf and bad puns
+O|my wifi keeps dropping every evening around 8, router is a BT Smart Hub, any fix
+O|whats a decent budget for a first road bike? i'm 6'1 and mostly commuting
+O|in cricket how does the DLS method work, my uncle keeps trying to explain and i get lost
+O|Is it better to rent or buy a pressure washer for cleaning our patio once
+O|my daughter's got a spelling test tomorrow, can you give us 10 words with silent letters
+O|how do I reverse a string in javascript without using .reverse()
+O|which is faster to get from Heathrow to King's Cross, the Elizabeth line or the Piccadilly
+O|any tips for taking good photos of food with just my phone
+O|Why does my Minecraft world lag every time i go near the village, we play on a Realms server
+O|I need a gift for my mother-in-law who has everything, budget around €40
+O|Translate "good luck with your exams" into Spanish and German please
+O|pls help my teacher asked us to write 150 words on why the Roman roads were important
+O|can you recommend a podcast for a long drive to Cape Town, my wife and i like true crime and comedy
+O|my dog keeps scratching her ears and shaking her head, is it worth a vet trip or could it be just wax
+O|our cat has been sneezing a bit since we moved house, should i be worried about dust or the new litter
+O|My lab is 9 and has started limping after long walks, what joint supplements do vets usually suggest for older dogs?
+O|my hamster isnt eating his usual seeds but still runs on his wheel at night, normal?
+O|how often should we deworm our puppy, hes 12 weeks and a spaniel
+O|the budgie my kids have is fluffing up his feathers a lot today, any idea why
+O|my rabbit's teeth look long, how do i know if they need trimming
+O|my cat threw up a hairball twice this week, is that a lot or normal for a long haired breed
+O|We just adopted a rescue greyhound who is scared of stairs, how can we help her
+O|My dog ate a grape yesterday and seems fine, should I still ring the vet to be safe?
+O|how long do guinea pigs live, my daughter wants one
+O|my friend's car got towed and he's furious, can you help me write a funny group chat message to cheer him up
+O|how do I murder the weeds between my patio slabs without killing the grass
+O|My Wordle streak just died at 47 days, I'm devastated. Any starter word tips?
+O|i keep getting a blue screen of death on my pc whenever i launch Cyberpunk, anyone know a fix
+O|we have a fight scene to write for our school play, how do you choreograph a safe stage punch
+O|What time does the cemetery-themed Halloween trail at Kew open, my kids are desperate to go
+O|bleeding edge or LTS, which node version should we use for our startup's new project
+O|how do I shoot a good time lapse of clouds on my gopro
+O|my sourdough starter died while we were away for a week, can i revive it or start again
+O|The boss fight at the end of Elden Ring's Caelid area is destroying me, I've died like 30 times, any build tips
+O|can u recommend a true crime podcast thats more interesting than scary, me and my girlfriend listen on the commute
+O|My son's football team lost 9-0 on sunday and he took it hard, any fun drills to rebuild their confidence before next match
+O|How do I execute a SQL query for all customers who joined last month
+O|our company's quarterly report is due friday, how should i structure the executive summary
+O|I'm hooked on this new puzzle game Balatro, any strategies for beating the higher stakes
+O|my brother and i are arguing about whether a hot dog is a sandwich, settle this
+O|how do i get rid of the stinging nettles at the bottom of our garden without harsh chemicals
+O|my toddler's birthday cake sank in the middle, what did i do wrong with the oven temp
+O|Which is the best tool for scraping a website that blocks my bot? I mean for a legit price comparison script for my small online shop
+O|How much does it cost to hire a bouncy castle for a kid's party in Manchester, we need it for about 4 hours
+O|the batteries in my smoke alarm keep chirping at 3am, how do i stop it, it's driving us nuts
+O|what is the best way to hack together a quick prototype in Figma before our client meeting tomorrow
+O|my girlfriend's birthday is next friday and i want to get her something for her 3d printing hobby, what's a good starter filament set
+O|can you check my cover letter for typos, applying for an admin role at a school
+O|my tyre pressure light came on this morning, i'm on the M6 right now, is it ok to keep going to the services?
+O|any good caravan sites near Cork for a family of 5 in July
+O|how do you attack the opening in chess when your opponent plays the Sicilian
+O|I need to fire up my old Raspberry Pi as a media server, where do I start
+O|our neighbour's dog is gorgeous, what breed is a fluffy white one with a curly tail and black nose, maybe a samoyed or a spitz
+O|can you break down how a mortgage amortisation table works for a school maths class, I'm a teacher
+O|my partner and I want to paint the living room, how much paint do we need for 4m x 5m with 2.5m ceilings
+O|this blockchain assignment is killing me lol, what's a merkle tree in plain words
+O|My presentation on the water cycle is tomorrow and I'm blanking, can you give me a quick outline for 5 minutes
+O|My manager asked me to take the minutes at tomorrow's team call, any template you'd recommend?
+O|my printer keeps saying paper jam but theres no paper stuck, hp deskjet 2720
+O|is it rude to ask my colleagues for a lift to the airport, we're all going to the same conference in Dubai
+O|Which trainers are best for a 10k, I overpronate a bit and I'm after something under 120 bucks
+O|My nan is turning 90 next month and the whole family is coming, what should we cook for 20 people on a budget?
+O|how do i fix a leaking tap in the kitchen, mixer tap, the drip is from the spout
+O|wat is the best way to learn french fast before my trip to Montreal in 3 months
+O|How many hours of daylight does Reykjavik get in January? We're going for the northern lights.
+O|our band has a gig at a pub on friday, how do we write a setlist for 45 mins
+O|i need to cancel my gym membership in an email, can you write a short polite one
+O|How can I make my wardrobe smell nice without those overpowering sprays? my husband is sensitive to strong scents
+O|what's the capital of Kazakhstan and when did it change
+O|Hi, I need a sick day-proof handover note template for my team, so nothing falls over when someone's off
+O|the lasagne i made last night is still in the oven, will it be ok to eat if it's been sitting 4 hours? my kids are asking
+O|whats a good name for our new puppy, shes a black lab and my son wants something from Star Wars
+O|hi can u explain what a vlookup is, my boss says to use it for the sales sheet
+O|What's the best way to defrost a chicken quickly? We forgot to take it out and the guests arrive at 6.
+O|how do i delete a branch on github both local and remote
+O|my bike chain keeps slipping when i pedal hard uphill, do i need a new cassette
+O|Looking for a weekend itinerary in Kyoto for first timers, my husband and I love temples and street food
+O|Can you give me a pun-filled caption for a photo of my cat sitting in a cardboard box
+O|my little brother has a maths test on fractions tomorrow, can you make 5 practice questions for him
+O|wen is the best time 2 visit bali for surfing, my mates and i are thinking june
+O|Could you draft a short out-of-office message for me, I'm on annual leave from 23 December until 3 January.
+O|my lawn has bald patches after the summer, what grass seed should i sow in autumn
+O|how do I shoot a three pointer with better form, i keep hitting the rim
+O|Our Wi-Fi is fine but my Xbox says NAT type strict, how do we sort that out
+O|We need a vegetarian main for a dinner party of 8, something impressive but not too fiddly
+O|I'm trying to beat my brother's high score on Mario Kart, any tricks for Rainbow Road
+O|how long does a sourdough loaf stay fresh and can i freeze slices
+O|my kid's school bag zip broke for the third time, any brand that actually lasts
+O|can you explain how a car's turbo works in simple words, my dad and i were arguing about it on the way back
+O|my spreadsheet formula keeps returning a circular reference error, how do i find which cell causes it
+O|The pitch for our cricket club's new nets needs a plan, what dimensions do we use for a practice net?
+O|Is there an easy way to learn how to juggle, my friends bet me i couldn't do it by new year
+O|my car battery died in the car park this morning and i need a jump start, what do i do if there's no one around with cables
+O|How do I get my Roomba to stop eating the cable behind the telly
+O|We want to build a raised bed for veg, how deep does it need to be for carrots
+O|my phone screen is cracked, is it cheaper to repair at a shop or order the part and do it myself
+O|Whats a good ice breaker game for a kids party, we've got 15 six-year-olds in our garden
+O|any suggestions for a thank-you note to my colleagues who covered for me while i was at the conference
+O|my uncle has this old Honda Civic from the 90s that he wants to restore, where do we find original parts
+O|How do I train for a half marathon in 10 weeks if i can run 5k now
+O|tricky one: what's the plural of octopus, my daughter wants to know and i said octopuses
+O|we have a minor tennis tournament at our school on saturday, how do we set up a fair draw for 12 kids
+O|my sister keeps asking me for the wifi password on a plane, does it cost extra on Emirates economy
+O|Bhai Python me list comprehension ka matlab kya hota hai, simple example do
+O|im baking a victoria sponge for my dad's retirement do, how do I stop it sinking in the middle
+O|The tomato sauce I made is too acidic, what can I add to fix it without sugar
+O|any good board games for 6 adults and a 10 year old? we're all competitive
+O|my friend lent me a PS4 controller and now the left stick drifts, can i fix it myself
+O|The exam for my accounting module is next week and I'm stuck on how to calculate depreciation using the straight-line method
+O|how to start a vegetable garden when you only have a small balcony, we live in Dublin so its mostly rain
+O|what's a decent starter telescope for my kids, budget about 150 dollars
+O|my boss wants a one-pager on our product launch timeline, how should I lay it out
+O|so my team lost the fantasy football league by 2 points, which bench player should I have started, can you explain how the scoring works for tackles
+O|how many weeks until Christmas if today is the 19th of October
+O|I got hit with a surprise rain delay at the cricket and we have 3 overs left, how does the target get recalculated
+O|is a roof box worth it for a family trip to the Lake District, we have two dogs and a lot of luggage
+O|how do i write a decent LinkedIn headline for a project manager in construction
+O|My kids and I are making a model solar system for school, what scale should we use for the planets
+O|can someone explain what a REST API is, for a beginner course im taking at night school
+O|what do you call the person who sells you flowers, is it florist or flower dealer
+O|My bathroom mirror keeps fogging up even with the fan on, could the extractor be too weak
+O|Cheapest way to get from Delhi to Jaipur with my parents, they prefer trains
+O|We've got a client coming in from Seoul next week and I want to know the right way to greet them and exchange business cards
+O|do u think a fan or aircon is better for a small bedroom in summer in Brisbane
+O|my goldfish tank water is cloudy since yesterday, we added a new ornament, what should I do
+O|how can I make my resume fit onto 1 page without cutting everything
+O|I want to knit a scarf for my grandad, what size needles for chunky wool
+O|My teammates keep saying i'm a trigger-happy player in Valorant lol, how do i improve my positioning and not die first
+O|Ive got a bunch of lemons from my neighbour's tree, what can we make besides lemonade
+O|is it normal for my smartwatch to say 3 hours of sleep when i definitely slept 7, garmin vivoactive
+O|how do I politely decline an invitation to a colleague's leaving drinks, I've got a prior commitment
+O|my tent pole snapped on the campsite and we have 2 more nights, any quick field repair tricks
+O|we are about to buy our first ever dishwasher, what features actually matter
+O|hey i have my driving test in the new year, any top tips for roundabouts
+O|My cat won't use the new scratching post, how do we get her interested
+O|my parrot has started plucking one or two feathers off his chest, vet visit or just boredom? he's 4
+O|we think our ginger kitten has fleas, how do you check and what treatment is safe for 10 weeks old
+O|My dog has loose stools after a new brand of kibble, how long should I wait before switching back?
+O|how do I get my gaming PC to stop overheating, the fans scream and then it shuts down in the middle of the match
+O|My Nintendo Switch battery drains in about 2 hours now, am I better off replacing it or buying a new one
+O|what's the best way to attack a Python project with no tests, we inherited it last week at work
+O|can you recommend a documentary about the Mafia in Sicily, my dad and i need something for friday night
+O|We run a small bakery and need a short, friendly sign for the door that says we're closed on Mondays
+O|the final scene of Breaking Bad destroyed me, my husband and I want something equally good, what do you suggest
+O|how do you pronounce "quinoa" in british english
+O|i want to try fasting from social media for a month for fun, any apps that block instagram on my iphone
+O|my teenage son wants a drum kit for his birthday, which electric kit is good for small flats and doesn't annoy the neighbours
+O|My friend is training for a triathlon and has asked me to help with her playlist, what songs have a bpm around 170
+O|I'm gutted, the bakery sold out of my favourite cinnamon bun again, can you give me a recipe that's close
+O|what is the cheapest place to buy a second hand lawnmower in Sydney
+O|Our Slack channel is a mess. How can we organise threads so nothing gets buried?
+O|how can I find my lost AirPods, only one was in my bag when I got to work
+O|I need to attack this pile of washing, any tips on how to stop clothes shrinking
+O|how to take a screenshot on a samsung galaxy s23
+O|i just crashed my Mario Kart game for the 5th time in a row against the same cpu, how do i beat the 150cc cup
+O|which cheap camera is best for filming my kids' football games in the evening
+O|my car insurance renewal email says my premium went up 12%, what's the usual way to compare quotes
+O|Does anyone know how to remove a stripped screw from a bathroom cabinet, we've tried a rubber band already
+O|my little girl wants to be a witch for halloween, what's an easy costume we can make in an evening
+O|i would love to see how the F1 cars get their tyres changed in 2 seconds, how many people are in a pit crew
+O|my boyfriend and i keep losing at Catan, what is the strongest opening placement
+O|how long should I let the ink from my pen plotter dry before sealing the artwork, my art teacher said 24 hours
+O|so my friend's wedding is at a chapel in the Cotswolds, any tips on what to wear as a guest, dress code is smart casual
+O|Can you suggest a name for my food truck? We're selling Korean fried chicken in Leeds
+O|can i shoot a short film on my iphone and submit to a festival, whats the minimum resolution
+O|how do I carve a pumpkin so it lasts longer, we always end up with a mouldy one by Halloween
+O|how do i write a formal email to my professor to ask for a recommendation letter for a master's application
+O|My neighbour's kid and mine are running a lemonade stand, what should we price a cup at
+O|what does the idiom "break a leg" actually mean, my class asked me today
+O|I bought a used e-bike and the display shows error 21, any idea what that means on a Bosch system
+O|Okay we have exactly 90 minutes in Paris between trains, can we see anything near Gare de Lyon
+O|My cricket bat has hairline cracks in the face, is it still safe to use for nets
+O|how can I make my Zoom background blurry on a school laptop
+O|how can we keep a Christmas tree alive for 4 weeks, my family insists on a real one
+O|Is it worth upgrading from an iPhone 13 to a 16 for just the camera?
+O|can i use baking powder instead of baking soda for my chocolate chip cookies, mum says it'll still work
+O|What are some good questions to ask at the end of a job interview for a marketing role?
+O|my mate wants to start a podcast about retro games, which cheap USB mic would you pick
+O|where's a good place to watch the sunrise near Uluru, going with my partner in April
+O|looking for a decent yoga mat that doesn't slip, my sister and i do hot yoga on Saturdays
+O|Im cooking dal for 6 people, how much lentils do i need
+O|how do I extract a zip file on linux using the terminal
+O|My phone died on the walk home and now I can't get into my flat, do locksmiths charge more at night?
+O|Write me a limerick about a dog who loves chasing the postman, the kids will love it
+O|what is the difference between a gap year and a sabbatical? my sister and I are curious
+O|how do I score a touchdown in Madden when the defence blitzes constantly
+O|Which golf club should I use from 150 yards if i usually carry a 7 iron about 140
+O|Anyone know a good recipe for a Diwali sweet that my kids can help make, like laddoo
+O|i need to rotate my tyres myself on a long weekend, do i need a torque wrench for the lug nuts
+O|What's an interesting fun fact about Australia that i can drop into a presentation for my year 6 class
+O|any ideas for a fun last day of term activity for 28 eight-year-olds? I teach in Auckland
+O|my daughter's science project is about how plants grow in different light, how should we set up the experiment
+O|how do i keep my cows alive over winter in the game
+O|my cat's claws got stuck in the sofa again and she yowled, is a scratch guard the answer or should we trim her nails
+O|What's the best way to learn touch typing, my colleague types twice as fast as me
+O|how do I get a fishing licence in Ireland for a day trip with my brother
+O|Please suggest a few names for our school's fundraiser fun run, it's for the new library
+O|we're trying to decide between a hybrid and a petrol car for 15k miles a year, mostly motorway
+O|hey could you proofread my cv summary, i'm applying for a warehouse supervisor job in Nairobi
+O|my dad got me a drone for my birthday and i have no idea about the rules for flying it near our house in the UK

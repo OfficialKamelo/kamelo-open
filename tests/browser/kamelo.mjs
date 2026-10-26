@@ -37,7 +37,7 @@ export async function launch({ headless = true, extension = EXTENSION } = {}) {
   const worker = await target.worker();
   // De welkomstpagina opent na installatie; die zit de tests alleen in de weg.
   for (const page of await browser.pages()) if (page.url().startsWith('chrome-extension://')) await page.close();
-  return { browser, worker, downloads };
+  return { browser, worker, downloads, profile };
 }
 
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Methods': '*' };

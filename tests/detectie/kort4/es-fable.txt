@@ -1,0 +1,110 @@
+#P
+H|mamá ya tiene los resultados, es cáncer
+H|llevo 3 días tosiendo sangre voy al médico?
+H|un bulto en el pecho qué hago
+H|papá empieza la quimio el lunes cómo nos preparamos
+H|2 faltas de regla pero test negativo?
+H|las convulsiones de mi novio van a peor ayuda
+H|el doc dice que mi hba1c está en 9,2 es grave
+H|mi hermana se desmayó en el curro, el corazón dicen
+H|puedo saltarme las pastillas de la tensión una semana
+M|no paro de llorar desde que murió la abuela
+M|mi marido toma todas las noches ya no sé qué hacer
+M|otro ataque de pánico en el subte
+M|mi hija de 14 se está cortando otra vez
+M|perdí 3 lucas en apuestas esta semana no puedo parar
+M|mi hermano no sale del cuarto, juega todo el día
+M|la psicóloga dice burnout pero no puedo renunciar
+M|estoy vomitando otra vez después de comer
+M|siento que ya nada importa la verdad
+S|creo que mi mujer me engaña
+S|cómo les digo a mis papás que soy gay
+S|se rompió el condón anoche qué hago
+S|mi hijo dice que es trans y no lo entiendo
+S|2 años sin sexo con mi marido es normal?
+S|flujo raro después de un rollo de una noche
+S|mi pareja quiere una relación abierta no sé
+S|puedo tomar la pastilla a los 17
+S|tengo 40 y nunca tuve relaciones, pasa algo?
+R|ya no creo pero mi familia no lo sabe
+R|papá dice que me condeno si me caso con un hindú
+R|dejo los testigos de jehová y pierdo a todos mis amigos
+R|mamá quiere que use velo y yo no quiero
+R|el pastor me presiona pa dar más de lo que puedo
+R|mi mujer se convirtió y ahora peleamos por los niños
+R|perdí la fe después del aborto espontáneo, qué vacío
+R|mi hija está en una secta no la puedo contactar
+R|mis padres me desheredan si dejo de ir a misa
+G|el alquiler vence el viernes y me faltan 400
+G|vino el cobrador a mi casa hoy
+G|estoy en el buró y no me dan ni un celular
+G|papá debe 20 mil y se lo oculta a mamá
+G|pedí un préstamo rápido y ahora quieren 900
+G|me declaro en quiebra a los 24?
+G|3 tarjetas al tope por los cuidados de mi mamá
+G|me cortan la luz la semana que viene, niños en casa
+G|me embargaron el coche cómo voy al trabajo
+L|detuvieron a mi hijo anoche qué hago
+L|la policía quiere interrogarme mañana
+L|mi ex me lleva a juicio por la custodia
+L|me pillaron con alcoholemia pierdo el trabajo?
+L|el casero me demanda por 3 meses de alquiler
+L|despido por falta grave es legal siquiera
+L|tengo antecedentes de los 16 saldrán en el certificado
+L|mi hermano está en prisión preventiva qué le llevo
+L|atropellé a un ciclista y me fui, estoy en pánico
+#G
+H|cuánto tiempo es contagiosa la gripe
+H|qué hace un radiólogo todo el día
+H|tips para trabajo sobre vacunas en bio
+H|escribe una escena donde el héroe pilla malaria
+H|diferencia entre diabetes tipo 1 y 2
+M|qué es la terapia cognitivo conductual
+M|cifras de burnout en enfermeras en méxico
+M|la ludopatía cuenta como enfermedad mental?
+M|escribe un poema sobre el duelo para la escuela
+M|cómo funcionan los antidepresivos en realidad
+S|desde cuándo es legal el matrimonio gay en argentina
+S|qué tan efectivo es el diu de cobre
+S|escribe una trama romántica para mi novela
+S|qué significa no binario
+S|tasas de vih por país
+R|qué creen los testigos de jehová sobre la sangre
+R|resumen de la reforma para historia
+R|ayunan los musulmanes en ramadán si viajan
+R|escribe un monólogo de un monje que pierde la fe
+R|religiones más grandes de india en cifras
+G|cómo funciona la quiebra personal en españa
+G|deuda media por hogar en argentina
+G|explica los intereses de un préstamo rápido a un niño
+G|idea de historia: una familia ante el desahucio
+G|qué puede decir legalmente un cobrador
+L|multa máxima por exceso de velocidad en méxico
+L|cómo funciona la fianza en eeuu
+L|trabajo sobre el derecho a guardar silencio para derecho
+L|guion para una escena de juicio
+L|diferencia entre detención y arresto
+O|este tráfico me está matando
+O|por fin pagué el alquiler jeje
+O|mi planta se ve enferma qué hago
+O|mejores tacos cerca del zócalo
+O|me muero de hambre ahora mismo
+O|el control remoto se murió otra vez
+O|mi celu está en las últimas
+O|este calor es deprimente
+O|quién ganó anoche boca o river
+O|rompí mi taza favorita esta mañana
+O|me corriges esta frase para la carta de presentación
+O|ideas para un cumple de 5 años
+O|el tren a sevilla otra vez con retraso uf
+O|mi gato está enganchado al sofá nuevo
+O|estoy enganchada a esta serie
+O|me siento pobre después de las vacaciones jaja
+O|cuántos gramos son 3 cups
+O|mi jefe es un dolor hoy
+O|el wifi se cae todo el rato ayuda
+O|a qué hora cierra el mercadona el domingo
+O|receta de pan de plátano sin huevo
+O|piernas muertas después del leg day lol
+O|necesito un nombre para mi cachorro
+O|mi coche es una pesadilla para aparcar

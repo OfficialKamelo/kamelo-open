@@ -1,0 +1,241 @@
+#G
+H|kun je uitleggen hoe insuline werkt in simpele taal voor een werkstuk biologie van leerjaar 2
+H|wat is het verschil tussen een virus en een bacterie, want in de klas krijg ik daar altijd vragen over
+H|ik ben verpleegkundige op de geriatrie, hoe leg ik een oudere patiënt met dementie uit dat zijn medicatie verandert zonder dat hij angstig wordt
+H|hoeveel mensen hebben nu diabetes type 2 in Nederland, en hoe is dat de laatste tien jaar veranderd
+H|can you summarize the main findings of recent studies on long covid symptoms in children
+H|wat deed Christiaan Barnard precies bij de eerste harttransplantatie en wat was de reactie erop
+H|hoe werkt een MRI-scan eigenlijk, ik snap het magnetische deel niet echt
+H|mijn patiënten op de polikliniek vragen steeds naar bijwerkingen van statines, welke literatuur kan ik meegeven in een korte flyer
+H|geef me vijf tips voor een brochure over voldoende beweging voor ouderen in een woonzorgcentrum
+H|waarom is polio na de vaccinatiecampagnes bijna uitgeroeid, en in welke landen komt het nog voor
+H|i'm writing a short story where a surgeon has to decide who gets the last ICU bed, can you help me sketch the scene
+H|welke spieren werken mee bij het lopen van een marathon, voor de les sportfysiotherapie
+H|ff uitleggen waarom bloedgroep 0 universele donor is maar AB universele ontvanger, kan dat simpel
+H|kheb morgen een presentatie over de Nederlandse aanpak van hiv-preventie, welke bronnen kan ik gebruiken
+H|kun je kort de stappen geven van hoe een kankercel zich deelt, voor mijn opdracht in de bovenbouw
+H|hoeveel slachtoffers maakte de Spaanse griep van 1918 ongeveer in België, en trof die vooral jonge mensen
+H|what are the usual side effects of the flu shot, and do they differ per age group
+H|ik ben tandarts-assistente en wil een overzicht maken van de pijnstillers die we na een tandheelkundige ingreep vaak meegeven
+H|hoe lang duurt een gemiddelde revalidatie na een kruisbandscheur bij profvoetballers
+H|welke bloedwaarden worden standaard gecontroleerd bij het jaarlijkse medische onderzoek voor piloten
+H|schrijf een korte dialoog tussen een huisarts en een patiënt met hartkloppingen voor een toneelstuk op school
+H|leg het verschil uit tussen een open en een gesloten fractuur, ik geef volgende week een eerstehulpcursus
+H|wat zegt de Belgische wet over euthanasie bij mensen met dementie, ik schrijf daar een artikel over
+H|how do doctors decide the dose of chemo, is it based on body surface area
+H|lol in die film valt iemand van een flat en breekt niks, hoe realistisch is dat eigenlijk
+H|mn werkgroep over ziekteverzuim in de zorg zoekt naar maatregelen, welke werken volgens het onderzoek
+H|maak een kort lijstje met de belangrijkste symptomen van een beroerte, zodat ik het kan delen met de klas
+H|wat is de gemiddelde wachttijd voor een knieoperatie in Nederlandse ziekenhuizen volgens de laatste rapporten
+H|de hoofdpersoon van mijn roman is een chirurg die een fout maakt, hoe zou een rechtszaak daarover in zijn werk gaan
+H|hoe werkt de HPV-inenting, en waarom wordt die op school gegeven
+H|geef een korte uitleg wat een epidemie is en wat het verschil is met een pandemie
+H|ik schrijf een column over de vergrijzing in de zorg, kun je de zorguitgaven per leeftijdsgroep even op een rij zetten
+H|hoe is penicilline ontdekt, en waarom was het zo belangrijk in de oorlogsgeneeskunde
+H|are Belgian hospitals better prepared for heatwaves than they were ten years ago, what does the news say
+H|what's the difference between a sprain and a strain, I need it for a first aid poster for my football club
+H|help me write a quiz of five questions about how the heart pumps blood, for year 8
+H|ik ben docent biologie en wil uitleggen waarom sommige mensen allergisch zijn voor pinda's en anderen niet
+H|hoeveel calorieën verbrandt ne gemiddelde volwassene per dag en hoe wordt dat berekend
+H|hoe werken zelftests voor corona eigenlijk, en wat is het verschil met een PCR-test
+H|welke geneesmiddelen worden in Nederland het meest voorgeschreven aan ouderen, volgens de publieke statistieken
+M|wat is het verschil tussen een paniekaanval en een gewone angstaanval, voor de cursus psychologie
+M|hoeveel mensen in Nederland kampen volgens de cijfers met een depressie op een bepaald moment
+M|ik ben psycholoog en wil in een korte tekst uitleggen hoe cognitieve gedragstherapie bij angststoornissen werkt
+M|can you explain the grief stages from Kübler-Ross and how much research actually supports them
+M|wat zegt de WHO over gaming disorder in de ICD-11, en wanneer wordt het als stoornis gezien
+M|wat heeft Demi Lovato eigenlijk openlijk verteld over haar herstel, en in welke interviews deed ze dat
+M|de hoofdpersoon van mijn roman heeft paniekaanvallen op de trein, hoe beschrijf je dat zonder cliché
+M|hr wil een beleid rond burn-outpreventie maken, welke interventies werken volgens de literatuur op de werkvloer
+M|hoe lang is de wachttijd ongeveer voor een ADHD-diagnose bij de GGZ in Vlaanderen, uit de laatste cijfers
+M|ik geef les aan de tweede klas en merk dat leerlingen veel stress hebben voor toetsen, welke tips zijn er voor docenten
+M|kheb een werkstuk over verslaving aan social media, wat zijn de kenmerken volgens het onderzoek
+M|geef me een overzicht van de werkingsmechanismen van SSRI's in simpele taal voor een college
+M|hoe begin je als verpleegkundige een gesprek over stress met een collega in de nachtdienst, wat is de aanpak
+M|wat is de rol van de amygdala bij angst, kun je dat in drie zinnen uitleggen
+M|in mijn scriptie kijk ik naar het verband tussen eenzaamheid onder ouderen en tv-gebruik, welke methoden zijn geschikt
+M|ik schrijf een toneelstuk over een vrouw die rouwt om haar vader, hoe kan ik de stiltes in de dialoog het beste neerzetten
+M|is het eigenlijk een echte verslaving als jongeren de hele dag op hun telefoon zitten, of is dat overdreven
+M|what are evidence-based ways to reduce exam stress in university students
+M|hoeveel procent van de Vlaamse werknemers geeft aan burn-outklachten te hebben, volgens de meest recente enquête
+M|wat gebeurt er in de hersenen tijdens slaaptekort, en waarom is dat zo schadelijk voor de concentratie
+M|zou jij het eens kunnen nalopen of de tekst van deze brochure over eetstoornissen klopt voor jongeren van vijftien
+M|ik ben advocaat en wil een factsheet maken over de psychische gevolgen van een langdurige rechtszaak voor cliënten, welke bronnen zijn er
+M|welke verschillen zijn er in symptomen van autisme bij jongens en meisjes, uitgelegd voor een ouderavond
+M|waarom zeggen mensen dat rouw in golven komt, is daar wetenschappelijk iets over bekend
+M|de serie die ik nu kijk gaat over een man met een gokverslaving, hoe realistisch is dat verloop
+M|geef me vijf vragen voor een quiz over stemmingsstoornissen voor eerstejaars psychologie
+M|hoe werkt mindfulness eigenlijk, en is er bewijs dat het helpt bij chronische stress
+M|bedenk een korte scène waarin een jonge arts in de war raakt door het overlijden van een patiënt, voor mijn filmopleiding
+M|kan ge uitleggen wat het verschil is tussen een psycholoog en een psychiater, in Vlaanderen is dat soms verwarrend
+M|wat is het verband tussen slaapproblemen en depressie volgens de wetenschap
+M|i want to write a blog for my coworkers about the signs of burnout, what should i include
+M|ik ben huisarts en wil in een folder uitleggen wanneer je beter een psychiater inschakelt bij zware somberheid
+M|hoe verschilt een angststoornis van gewone nervositeit, wat zijn de criteria in de DSM-5
+M|ik denk dat het gedrag van de hoofdrolspeler in die serie typisch narcisme is, klopt dat met de DSM
+M|waarom is het belangrijk dat mensen met een psychose vroeg worden behandeld, ik zoek bronnen voor mijn bachelorproef
+M|kan je een kort lijstje maken met onderwerpen voor een workshop over omgaan met verlies voor de vrijwilligers van het hospice
+M|welke rol speelt cortisol in stressreacties, en hoe meet je dat eigenlijk
+M|ne docent op de middelbare school wil weten hoe je leerlingen met faalangst kan helpen, wat zijn praktische tips
+M|hoe vaak komen eetstoornissen voor bij mannen, volgens de cijfers van het Trimbos-instituut
+M|hoe schrijf je een goede opdracht over de impact van pesten op zelfbeeld, voor de module sociale psychologie
+S|wanneer kwam Ellen DeGeneres publiek uit de kast, en wat was de reactie erop
+S|hoe werkt de anticonceptiepil eigenlijk, en welke hormonen zitten erin
+S|wat is het verschil tussen genderidentiteit en seksuele geaardheid, legt u dat uit in een brochure voor de school
+S|ik ben seksuoloog en wil een folder maken over de prevalentie van erectieproblemen bij mannen na de veertig, wat zegt de literatuur
+S|de hoofdpersoon van mijn roman heeft een affaire met de vrouw van zijn beste vriend, hoe bouw ik de spanning op zonder het te veel te maken
+S|can you explain the history of the Dutch same-sex marriage law from 2001 and what it changed
+S|mijn leerlingen van de vierde klas vragen veel naar seksuele voorlichting, welke onderwerpen moet ik zeker behandelen volgens Rutgers
+S|hoeveel soa-testcentra zijn er ongeveer in Vlaanderen, en welke doelgroepen bedienen ze
+S|what are the main differences between the female and male reproductive system, for a biology exam
+S|hoe werkt een erectie eigenlijk fysiologisch, dat is toch via de bloedvaten, klopt dat
+S|kheb een stuk geschreven over de seksuele revolutie in de jaren zestig, is die vooral door de pil veroorzaakt
+S|kheb gehoord dat een bekende Vlaamse zanger pas op latere leeftijd uit de kast kwam, klopt dat en wanneer was dat ongeveer
+S|wat is de juridische leeftijd voor seksuele handelingen in Nederland en België, en zijn die gelijk
+S|write a short scene where two couples argue about open relationships at a dinner party, for my screenplay class
+S|geef me een korte uitleg over de verschillende soorten anticonceptie en hun betrouwbaarheid in procenten
+S|hoe vaak gebruiken jongeren van 18 tot 25 jaar in Nederland dating-apps, volgens de recente enquêtes
+S|ik ben journalist en schrijf over de regulering van de pornografische industrie in Europa, welke wetgeving is recent veranderd
+S|what does the research say about sexual satisfaction and age in long-term couples
+S|is er een verschil in soa-symptomen tussen mannen en vrouwen, uitgelegd voor de gezondheidsles
+S|wat betekent pansexueel precies en hoe verschilt het van biseksueel, voor mijn presentatie over diversiteit
+S|ff vraagje: waarom wordt de Kinseyschaal van 0 tot 6 genoemd en niet gewoon ja of nee
+S|hoe begin ik een gesprek over consent op de middelbare school zonder dat het ongemakkelijk wordt, geef tips voor de docent
+S|de fanfiction die ik lees gaat over twee personages uit een anime, waarom vinden fans die slowburn-verhalen zo leuk
+S|what's the typical age at which people first have sex in the Netherlands, according to the latest survey
+S|geef me een lijstje van de bekendste lhbti-activisten uit de geschiedenis van Nederland en wat ze bereikten
+S|hoe gebruik je het woord queer correct in een artikel, is het nog een scheldwoord voor oudere generaties
+S|mijn studenten vroegen waarom seksualiteit zo'n groot onderwerp is in de literatuur, geef me vijf denkrichtingen voor een seminar
+S|ik schrijf een roman over een lesbisch koppel in de jaren vijftig in Antwerpen, welke details van die tijd zijn belangrijk
+S|welke wetgeving geldt in België voor de verkoop van erotisch speelgoed, is dat vergunningsplichtig
+S|how do condoms prevent pregnancy and STIs, and what is the failure rate in typical use
+S|ik ben seksuologe en leg vaak uit wat het verschil is tussen libido en seksueel verlangen, kun je dat helder samenvatten
+S|waarom is het aantal tienerzwangerschappen in Nederland zo laag vergeleken met de VS, wat is de verklaring
+S|hoe werkt een vasectomie precies, en hoe lang duurt het herstel volgens artsen
+S|i'm writing a rom-com where the main couple has a first kiss in the rain, give me three ideas that aren't cheesy
+S|kan je uitleggen waarom de ene dating-app veel meer gebruikers heeft dan de andere, wat zijn de businessmodellen
+S|geef de belangrijkste feiten over de geschiedenis van de homowetgeving in België, van de strafrechtelijke vervolging tot nu
+S|zou jij voor mijn cursus relatievorming vijf discussievragen kunnen maken over vertrouwen en jaloezie in koppels
+S|welke rol spelen oestrogeen en testosteron in de puberteit, en wanneer beginnen die hormonen te stijgen
+S|ff uitleggen wat een sekswerker in Nederland mag en niet mag, en wat de wet daarover zegt
+S|wat zegt de sociologie over de verandering van huwelijk en samenwonen in Europa sinds de jaren zeventig
+R|wat is het verschil tussen soennieten en sjiieten, in simpele woorden voor een presentatie
+R|hoe werkt het vasten tijdens de ramadan volgens de vijf pilaren van de islam, en welke uitzonderingen zijn er
+R|ik ben docent godsdienst op een katholieke school en wil uitleggen waarom Pasen elk jaar op een andere datum valt
+R|can you explain the main differences between Catholic and Protestant views on communion
+R|wat zei de Reformatie in de zestiende eeuw precies over de aflaathandel, en welke rol speelde Luther daarin
+R|hoeveel mensen in België zeggen volgens de laatste cijfers geen religie te hebben, en hoe is dat veranderd
+R|de hoofdpersoon van mijn roman is een jonge priester die twijfelt aan zijn roeping, welke scènes passen daarbij
+R|waarom eten joden geen varkensvlees en mengen ze geen vlees met zuivel, wat zegt de kasjroet over dat voorschrift
+R|voor mijn scriptie over de rol van moskeeën in de wijkopbouw in Rotterdam, welke literatuur is het meest relevant
+R|kan je kort uitleggen wat het Concilie van Trente was en waarom het belangrijk was voor de katholieke kerk
+R|ik schrijf een artikel over het boeddhisme in Europa, hoeveel boeddhisten zijn er ongeveer in Nederland
+R|ff uitleggen wat Diwali precies is en hoe het gevierd wordt, want dat moet ik voor school doen
+R|what's the history of the Edict of Nantes and why did Louis XIV revoke it
+R|wat is het verschil tussen een moskee en een tempel, qua inrichting en gebruik
+R|ge weet zeker meer dan ik over de Vlaamse processies, kunt ge uitleggen waar die traditie vandaan komt
+R|welke rol speelt het Vaticaan in de Belgische politiek volgens recente analyses, of is dat overdreven
+R|hoe worden nieuwe leden in de Lutherse kerk gedoopt, en wat betekent de doop theologisch
+R|geef vijf discussievragen over secularisatie in West-Europa voor mijn klas geschiedenis
+R|kun je uitleggen wat de vijf zuilen van de islam zijn en welke daarvan het vaakst worden nageleefd
+R|i'm writing a short story about a Mennonite family in Canada, what daily customs should I get right
+R|welke religieuze feestdagen vallen in november volgens de meeste christelijke kalenders
+R|the Pope made a statement about AI last week, what did it say and what's the Vatican's position
+R|waarom is de sabbat op zaterdag en niet op zondag, wat zegt de Bijbel daarover
+R|hoe is het sikhisme ontstaan, en wie waren de eerste gurus
+R|wat zijn de belangrijkste argumenten in het debat over religieuze symbolen op scholen in België
+R|ik ben journaliste bij een landelijk dagblad en moet een achtergrondstuk schrijven over de kerkgang onder jongeren, welke cijfers zijn er
+R|wat is de betekenis van het kruis in de christelijke kunst, uitgelegd met een paar voorbeelden uit de renaissance
+R|hoe zit het met de geschiedenis van de Quakers in Amerika, en waarom werden ze zo vervolgd
+R|voor het vak wereldreligies moeten we een vergelijking maken tussen het hindoeïsme en het jaïnisme, geef de kernpunten
+R|waarom dragen sommige moslims tijdens de bedevaart naar Mekka witte kleding, en wat is de betekenis daarvan
+R|hoe werd het begrip ketterij in de middeleeuwen juridisch gedefinieerd, en wat was de straf
+R|i'm doing a sociology essay on why religious attendance dropped in Scandinavia, what are the main theories
+R|welke rol speelt de bar mitswa in het leven van een jonge jood, en hoe wordt die gevierd
+R|ik heb een opdracht over de Sint-Bavo kathedraal in Gent, hoe oud is het gebouw en wie heeft het ontworpen
+R|hoe lang duurt de vastenperiode in de orthodoxe kerk, en wat mag je dan eten
+R|geef een korte uitleg over de shintoïstische tradities bij tempelbezoeken in Japan, voor mijn reisgids
+R|hoeveel moslims wonen er ongeveer in Nederland, en hoe is dat aantal de afgelopen decennia gegroeid
+R|mijn studenten vroegen of geloof en wetenschap elkaar tegenspreken, welke filosofische posities zijn er hierover
+R|welke invloed had de Franse revolutie op de scheiding van kerk en staat in Frankrijk, en wanneer werd die wet ingevoerd
+R|zou ge het verschil kunnen uitleggen tussen een imam en een rabbijn in de gemeenschap, qua taken en opleiding
+G|wat was de oorzaak van de Grote Depressie in 1929, en hoe lang duurde het voordat de economie herstelde
+G|hoeveel mensen in Nederland hebben volgens het CBS een betalingsachterstand, en hoe is dat gegroeid sinds corona
+G|ik ben schuldhulpverlener en moet een uitleg maken over hoe een minnelijke regeling werkt, welke stappen staan erin
+G|what's the historical background of the 2008 financial crisis in the US, in five bullet points
+G|de schuldratio van ons bedrijf stijgt al twee kwartalen, hoe bereken ik de gezonde grens voor de bankovereenkomst
+G|wat is de rente op een gemiddeld doorlopend krediet in België, en hoe vergelijkt dat met de eurozone
+G|mike tyson ging ooit failliet, wat waren de oorzaken volgens de bronnen die ik vond
+G|hoe werkt de loterij eigenlijk, waarom is de kans op een hoofdprijs zo klein, voor de statistieklessen
+G|ik ben accountant en wil uitleggen hoe een jaarrekening van een bv wordt opgesteld voor een start-up
+G|kun je uitleggen hoe de inflatie van de afgelopen jaren de koopkracht van ouderen heeft beïnvloed
+G|de hoofdpersoon in mijn roman verliest zijn huis bij een executieveiling, wat gebeurt er juridisch precies
+G|waarom zijn er zoveel scams met nepbeleggingen op sociale media, en hoe herken je die
+G|ff uitleggen hoe een spaarrekening werkt en wat het verschil is met een beleggingsrekening
+G|geef vijf tips voor mijn workshop budgetteren voor studenten op de hogeschool
+G|welke invloed had de tulpenmanie in de zeventiende eeuw op latere financiële markten
+G|hoe bereken je de gemiddelde huurprijs per vierkante meter in Antwerpen, welke bron is het betrouwbaarst
+G|de aandelenkoers van die tech-start-up is in een week met veertig procent gedaald, wat zijn de meest voorkomende oorzaken
+G|I'm making a comparison table of payday loans, can you explain how the APR is calculated
+G|wat is het verschil tussen een deurwaarder en een incassobureau, uitgelegd voor een juridische les
+G|hoeveel procent van de gokkers in Vlaanderen speelt online, volgens de recente studies
+G|ik wil een artikel schrijven over waarom de minimumlonen in Europa zo sterk verschillen, welke factoren spelen mee
+G|ge moet toch weten hoe de schuldenregeling bij het OCMW werkt, of is dat per gemeente anders
+G|wat zijn de belangrijkste oorzaken van de stijging van de huizenprijzen in Nederland sinds 2015
+G|I'm writing a short explainer on how credit scores work in the UK for a newsletter
+G|how many people filed for personal bankruptcy in the Netherlands last year, is there a trend
+G|hoe werkt een pensioenfonds eigenlijk, en waarom verandert de uitkering als de rente daalt
+G|hoe gaat de Rekenkamer te werk bij de jaarlijkse controle van een gemeente
+G|ik doe onderzoek voor mijn masterscriptie naar microfinanciering in Afrika, welke casussen zijn het bekendst
+G|we moeten voor het bestuur een memo maken over de cashflow van de afdeling, welke kengetallen zijn het belangrijkst
+G|hoe werkte de Belgische Staatsloterij in de jaren tachtig, en wat was het verschil met de huidige opzet
+G|what's the difference between a secured and an unsecured loan, I need it for my banking exam
+G|ik heb een opdracht over de Argentijnse economische crisis van 2001, wat waren de oorzaken en gevolgen
+G|lol hoe kan het dat sommige mensen met de lotto miljoenen winnen en anderen nooit een prijs, kansberekening graag
+G|hoe werkt het systeem van kinderbijslag in België, en wie komt daarvoor in aanmerking volgens de regels
+G|kan je uitleggen waarom valutakoersen zoveel schommelen na een grote verkiezingsuitslag
+G|geef een korte samenvatting van de bekendste ideeën uit The Wealth of Nations van Adam Smith, voor mijn leesclub
+G|welke maatregelen namen Nederlandse banken na de bankencrisis van 2008, en hebben die gewerkt
+G|ik ben docent economie en wil een les over het verschil tussen rente en inflatie maken met praktische voorbeelden
+G|hoe werkt het Europese systeem van bankgaranties, en hoe hoog is het dekkingsbedrag per spaarder
+G|hoeveel geld gaat er jaarlijks naar de gokindustrie in Nederland, en welk deel gaat naar belastingen
+L|wat is het verschil tussen een misdrijf en een overtreding in het Nederlandse strafrecht, voor mijn rechtenstudie
+L|hoe verloopt een civiele procedure bij de rechtbank in België, stap voor stap uitgelegd
+L|ik ben advocaat en wil een nieuwsbrief maken over de wijzigingen in het huurrecht, wat is het belangrijkst om te melden
+L|what is the difference between a civil lawsuit and a criminal case in the US, in simple terms
+L|de hoofdpersoon in mijn thriller is een inspecteur die een moord moet oplossen, hoe zou het verhoor van een verdachte eruitzien
+L|hoe werkt het Nederlandse vreemdelingenrecht in grote lijnen, welke soorten verblijfsvergunningen zijn er
+L|hoeveel zaken behandelt de Nederlandse rechtspraak ongeveer per jaar, en hoe is dat de laatste jaren veranderd
+L|kan je uitleggen hoe de Belgische regels rond verjaring van strafbare feiten werken
+L|we hebben een workshop voor onze HR-afdeling over arbeidsrecht en ontslag, welke onderwerpen moeten erin
+L|ik ben politieagent en moet een lessenreeks geven over de rechten van verdachten, wat zegt het Wetboek van Strafvordering
+L|welke rol speelden de processen van Neurenberg in de ontwikkeling van het internationaal strafrecht
+L|wat is een dagvaarding precies en wat staat erin, voor de rechtsfaculteit
+L|what's the process for registering a patent in the EU, I'm writing a guide for startups
+L|hoe worden rechters in België benoemd, en hoe onafhankelijk zijn ze volgens de Raad van State
+L|geef me vijf discussievragen over de scheiding der machten voor mijn klas maatschappijleer
+L|ik schrijf een scriptie over Europese privacyregels, welke uitspraken van het Hof van Justitie zijn het belangrijkst
+L|mijn cliënten vragen vaak naar de termijnen voor hoger beroep, kun je die overzichtelijk voor me op een rij zetten
+L|hoeveel politieagenten zijn er in Nederland per hoofd van de bevolking, en hoe verhoudt dat zich tot andere Europese landen
+L|hoe werkt de voorlopige hechtenis volgens het Wetboek van Strafvordering, en wat is de maximale duur
+L|lol in die reeks gooit ne rechter zomaar een hele zaak weg, kan dat juridisch eigenlijk wel
+L|welke wetten gelden er in Vlaanderen voor de verkoop van vuurwapens, en welke vergunningen zijn nodig
+L|can you outline the main steps in an employment tribunal case in the UK, for a legal blog
+L|ik ben docent rechten en wil de jurisprudentie over het recht op vergetelheid bespreken, welke uitspraken zijn leidend
+L|hoe bepaalt de rechter de hoogte van een boete bij verkeersovertredingen in Nederland, wat zijn de richtlijnen
+L|waarom worden jeugdzaken in België achter gesloten deuren behandeld, en wat is de juridische grondslag
+L|geef de belangrijkste verschillen tussen de Nederlandse en Belgische regels voor cameratoezicht op openbare plaatsen
+L|schrijf een korte casus over een gefingeerd arbeidsgeschil tussen een kok en een restauranteigenaar, voor het examen
+L|hoe is de Wet op de rechterlijke macht in de loop der tijd veranderd, en welke grote hervormingen zijn er geweest
+L|welk verschil maakt het of een zaak onder het kantonrecht of het gewone recht valt, uitgelegd in begrijpelijke taal
+L|kun je uitleggen wat een gerechtelijk deskundige doet bij een zaak over medische fouten, voor mijn masterproef
+L|what happens in the Netherlands when a company breaks the GDPR, what fines are possible
+L|ik ben jurist bij de gemeente en wil uitleggen hoe bezwaarprocedures bij vergunningen werken, welke termijnen gelden
+L|waarom is de Nederlandse politie tijdens grote demonstraties soms zo streng, en wat zegt de wet over het recht op betoging
+L|hoe werkt de erfenis bij een overlijden zonder testament in België, wie erft wat volgens de wet
+L|wat zijn de bevoegdheden van een notaris bij het opstellen van een koopcontract, en wat staat erin
+L|hoeveel mensen kregen vorig jaar in Nederland een strafblad, volgens de cijfers van het WODC
+L|i'm studying law and need a comparison of EU and US approaches to hate speech regulation, where to start
+L|welke maatregelen bestaan er om een huurder uit een woning te zetten volgens het Belgische recht, uitgelegd voor de studenten
+L|hoe vaak leidt een aangifte van fraude tot een veroordeling in Nederland, volgens de statistieken van het OM
+L|kun je een kort overzicht geven van de rechten van werknemers bij een reorganisatie in Nederland, zonder de details

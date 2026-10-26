@@ -1,0 +1,251 @@
+#G
+O|meine App stürzt jedes Mal ab wenn ich auf den Speichern-Button drücke, Flutter, was könnte das sein
+O|wie kann ich unter linux einen hängenden Prozess killen ohne den ganzen rechner neu zu starten
+O|mein Handy ist komplett tot und lädt auch nicht mehr, liegt das eher am Kabel oder am Akku?
+O|wir spielen grad Monopoly und mein Bruder hat 3000 Schulden bei der Bank, darf man da weiterspielen oder is er raus
+O|ich glaub ich hab nen Virus auf meinem Laptop, ständig ploppen Fenster auf. was soll ich tun
+O|mein Unit-Test ist positiv obwohl er eigentlich fehlschlagen sollte, assertTrue statt assertFalse? Python
+O|ich sterbe vor lachen, schreib mir noch mehr so Wortspiele mit Gemüse
+O|Kennst du ne gute Krimiserie zum Bingen? Meine Frau und ich haben schon alles von Tatort durch
+O|wie viel kostet ein Tennisplatz pro Stunde bei uns im Verein ungefähr, wir wollen zu viert spielen
+O|Wir möchten in der Kirche St. Martin heiraten und danach im Gasthaus feiern, wie viel Zeit sollte man zwischen Trauung und Essen einplanen?
+O|das Tor von Musiala gestern war so krank!! wie nennt man diese Art Schuss eigentlich
+O|wie lange muss ich Hefeteig gehen lassen wenn ich nur 20 Minuten Zeit hab
+O|Mein Hund humpelt seit der Wanderung gestern ein bisschen auf der linken Vorderpfote, kann ich ihn schon mal beobachten oder soll ich gleich zum Tierarzt?
+O|Wie bekomme ich Flecken von Rotwein aus einer weissen Tischdecke raus, ich hab schon Salz probiert
+O|welche Reifen für nen Golf 7 im Winter, 205/55 R16 oder lieber 195?
+O|Formuliere bitte eine höfliche Mail an meinen Chef, dass ich nächsten Freitag Urlaub nehmen möchte
+O|unsere Katze kotzt seit heute früh immer wieder gelbe Flüssigkeit und frisst nichts, wir fahren gleich zur Tierärztin aber was könnte das sein
+O|Wie funktioniert ein Join in SQL, ich versteh den Unterschied zwischen left und inner net
+O|tipps für 5 Tage Lissabon mit zwei Kindern (7 und 10), was muss man gesehen haben
+O|ich hab grad meinen kompletten Spielstand in Elden Ring verloren weil die Konsole abgeschmiert ist, gibts ne Möglichkeit den zu retten?
+O|Welches Geschenk kann ich meiner Schwester zum 30. schenken, sie liebt Pflanzen und Kochen, Budget 50 Euro
+O|Was ist besser für den Rasen im Frühjahr, vertikutieren oder erst mal düngen?
+O|wie rechnet man nochmal Prozent, ich muss 18 Prozent von 240 ausrechnen und hab grad nen Blackout
+O|Erkläre mir bitte den Unterschied zwischen Dativ und Akkusativ mit ein paar Beispielen, mein Sohn schreibt morgen einen Test
+O|Dürfen wir unser Auto in der Schweiz mit Winterreifen ohne Profil parkieren, nein spass, wie tief muss das Profil mindestens sein?
+O|mein Mann will unbedingt nen Pizzaofen für den Garten kaufen, welcher ist für 4 Personen sinnvoll
+O|Wie lange braucht ein Kürbis bis er reif ist? Hab Mitte Mai gesät
+O|wie mach ich in Excel dass die Zeile rot wird wenn der Wert unter 10 liegt
+O|ich brauch ne Idee für nen Kindergeburtstag, 8 Jungs, 6 Jahre alt, Wohnung ist klein
+O|Wie kann ich in Minecraft eine automatische Weizenfarm bauen? Mein Neffe nervt mich seit Tagen damit
+O|ich will meine Oma zum 80. mit nem Fotobuch überraschen, welche Anbieter sind gut und net zu teuer
+O|Warum riecht meine Waschmaschine so muffig und was kann ich dagegen machen?
+O|mein Router stürzt jeden Abend um 21 Uhr ab, ich vermute das hat was mit dem Streaming zu tun
+O|Was sind gute Alternativen zu Butter beim Backen, ich hab grad keine mehr und die Läden haben zu
+O|Hi, kannst du mir ein Rezept für Kaiserschmarrn geben, ich hab nur Mehl, Eier, Milch und Rosinen
+O|Wie viele Kalorien verbrenne ich ungefähr bei einer Stunde Fahrradfahren, ich fahr zum Spass mit meinen Freunden am Wochenende
+O|erklär mir kurz wie die Abseitsregel funktioniert, mein Freund diskutiert seit ner Stunde mit mir
+O|Ich schreibe gerade eine Bewerbung als Elektriker, kannst du mir beim Anschreiben helfen? Ich habe 6 Jahre Erfahrung in der Industrie
+O|wie lang kann man ne offene Packung Parmesan im Kühlschrank aufbewahren
+O|mein Wellensittich rupft sich seit paar Tagen die Federn am Bauch, kann das von Langeweile kommen oder ist das was mit der Haut? wir haben ihn seit 2 Jahren
+O|Was heisst auf Italienisch Wo ist der Bahnhof und wie spricht man es aus?
+O|Wir fliegen im August nach Kreta, wann sollte man Mietwagen buchen damit es net so teuer wird
+O|wie hoch muss ich ein Regal aufhängen damit meine Katze nicht drankommt, sie klettert überall rauf
+O|Löse bitte die Gleichung 3x + 7 = 2x - 5 Schritt für Schritt
+O|Welche Pflanzen vertragen viel Schatten auf unserem Balkon, er geht nach Norden
+O|ich hab meiner Freundin versprochen Lasagne zu kochen und hab keinen Plan wie man Bechamel macht
+O|mein Prozess in Python lässt sich mit Ctrl+C nicht beenden, wie kann ich den trotzdem abschiessen
+O|Wie lange dauert es ungefähr bis man Spanisch auf A2 Niveau lernen kann wenn ich jeden Tag 30 Minuten übe
+O|Ist ein Elektroauto für uns sinnvoll, wir fahren ca 8000 km im Jahr und haben eine Garage mit Steckdose
+O|bester Weg nen alten Fleck von Kaugummi aus dem Teppich zu bekommen
+O|Wie schreibt man eine gute Einladung zur Betriebsfeier, wir sind ca 40 Leute und feiern im Dezember
+O|wir haben in unserer Wohnung Schimmel an der Fensterlaibung im Badezimmer, wie kriege ich das selber weg ohne Chemiekeule
+O|mein Kater frisst plötzlich sein Trockenfutter nicht mehr, nur noch Nassfutter. ist das normal oder will der mich ärgern?
+O|ich bin voll gestorben als ich das Video gesehen hab, hast du mehr so lustige Tierfails für nen Geburtstagsquiz
+O|Wie bringe ich meinem Hund bei an der Leine nicht zu ziehen, er ist 8 Monate alt und ein Labrador
+O|Gib mir bitte 5 Fragen für ein Quiz für unseren Spieleabend, Thema 90er Jahre Filme
+O|warum sind meine Tomaten unten schwarz und faulig? Hab heuer zum ersten Mal Paradeiser gepflanzt
+O|ich möchte meinen Opa zum Angeln mitnehmen, welche Ausrüstung brauchen wir für den Anfang
+O|Wie finde ich raus welcher Prozess auf meinem Mac so viel CPU frisst, der Lüfter dreht ständig hoch
+O|erklaer mir bitte kurz was der Unterschied zwischen Aktie und ETF ist, fuer ne Schulpräsentation von meiner Tochter
+O|wir wollen unsere Küche selber streichen, braucht man dafür spezielle Farbe wegen dem Fett und Dampf?
+O|Kann man Rosmarin im Winter draussen lassen oder muss er rein, wir wohnen in Salzburg
+O|wie viel Wasser soll ein Mensch beim Joggen trinken, ich laufe 10km zum Spass
+O|Beim Zocken hab ich grad 5 Mal hintereinander gegen den Endboss verloren, hat jemand Tipps für Dark Souls?
+O|bitte fass mir diesen Artikel zusammen, muss gleich in ein Meeting
+O|Kannst du mir helfen ein Gedicht fuer die Hochzeit von meinem besten Freund zu schreiben? Er liebt Fussball und Bier
+O|wie sag ich meinem Chef höflich dass ich die Deadline nicht halten kann weil die Daten vom Kunden fehlen
+O|ich hab mir nen Raspberry Pi gekauft, was kann man damit als Anfänger alles bauen
+O|wie lange kocht man Erdäpfel für nen Salat, die Dinger sind so mittelgross
+O|Ist es besser mit dem Zug oder mit dem Auto von München nach Wien zu fahren wenn wir zu dritt sind
+O|mein Notebook fährt nicht mehr hoch, nur schwarzer Bildschirm mit blinkendem Cursor, bitte hilf mir
+O|was gehört alles in ein gutes Erste-Hilfe-Set fürs Auto, mein Vater meint ich brauch das nicht
+O|Wie viele Gäste kann man auf einem Tisch mit 1,80m Länge unterbringen, wir planen ne Gartenparty
+O|Mein Sohn ist 13 und will einen Gaming PC, welche Teile braucht man bis 800 Euro
+O|Kannst du mir 3 Ideen fuer nen Vortrag über das Römische Reich geben, Klasse 7, maximal 10 Minuten
+O|wie kann ich auf Instagram meine Story nur für meine Freunde sichtbar machen
+O|Kuchen ist in der Mitte noch roh aber aussen schon dunkel, was hab ich falsch gemacht?
+O|Meine Frau und ich überlegen uns nen Hund anzuschaffen, welche Rasse passt für ne 3-Zimmer-Wohnung im 2. Stock
+O|Wie funktioniert ein Lastenheft und was gehört da alles rein? Ich bin neu im Projektmanagement
+O|wir brauchen Ideen für Mottopartys zum 40., Budget ist klein
+O|in unserem Minecraft Server hat jemand ne Falle gebaut und mein Kumpel ist 10 mal gestorben, wie kann ich Spawnpunkte setzen
+O|Der Akku von meinem E-Bike ist nach dem Winter nur noch halb so weit, ist der kaputt oder liegt das an der Kälte?
+O|welche Ausrede kann ich meinem Kumpel geben wenn ich net zu seinem Junggesellenabschied kann, hab an dem Wochenende die Hochzeit von meiner Cousine
+O|ich möchte meine Fotos von Google auf nen USB-Stick sichern, wie geht das am schnellsten
+O|Mein Hamster rennt jede Nacht stundenlang im Rad, ist das normal oder hat der Stress?
+O|Wie baue ich ein Hochbeet aus Paletten? Hab handwerklich nur Grundkenntnisse
+O|Übersetze bitte ins Englische Ich freue mich auf unser Treffen nächste Woche
+O|was ist ne gute Playlist fuer ne Autofahrt von Hamburg nach Berlin mit meinen Kumpels
+O|Ich hab nen kleinen Garten und will Bienen anlocken, welche Blumen soll ich säen?
+O|Wie koche ich Reis damit er nicht klebt, mein Mann beschwert sich immer
+O|der Dealer in GTA hat mich schon wieder abgezogen, wo finde ich im Spiel die besten Waffen
+O|Erklär mir bitte wie ein Kühlschrank funktioniert, aber so dass es ein Zehnjähriger versteht
+O|Schreib mir bitte eine Absage für ne Einladung, aber nett, wir sind an dem Tag schon verplant
+O|hab grad bei Excel die Fehlermeldung #BEZUG, was bedeutet das
+O|wir wollen im Herbst nach Japan, soll ich lieber Tokyo und Kyoto oder auch noch Osaka dazunehmen? 2 Wochen sind geplant
+O|mein Auto ruckelt beim Anfahren im ersten Gang, könnte das die Kupplung sein, VW Polo Baujahr 2012
+O|Hi, wie viel Zeit sollte man zwischen zwei Trainingseinheiten Krafttraining lassen wenn man aus Spass trainiert
+O|was kann ich meiner Mama zum Muttertag schenken das nicht kitschig ist, sie mag Krimis und Tee
+O|Ich möchte mit meinem Team ein Offsite planen, 12 Leute, 2 Tage, irgendwo in der Nähe von Zürich
+O|ich glaub mein Bildschirm hat nen toten Pixel, wie kann ich testen ob der wirklich kaputt ist
+O|Gibts ne App mit der ich Vokabeln fuer Franzoesisch lernen kann? Mein Sohn hat in der 8. Klasse damit Probleme
+O|hab beim Backen Backpulver statt Natron genommen, kann ich das Brot trotzdem essen oder ist das hinüber
+O|wie lang ist der Akku von nem iPhone 15 bei normaler Nutzung, ich überlege ob ich mir eins zulege
+O|Bitte erkläre den Satz des Pythagoras mit einem Beispiel aus dem Alltag, für meine Nichte in der 8. Klasse
+O|schlaf-podcast tipps? nein quatsch, ich meine podcasts über Geschichte für lange Autofahrten
+O|Wie lege ich ein Beet an wenn der Boden bei uns total lehmig ist
+O|unser Meerschweinchen hat zu lange Krallen und meine Tochter traut sich nicht sie zu schneiden, wie macht man das richtig
+O|Wie baut man einen Stammbaum in Excel auf, meine Familie ist gross und ich will alle Cousins und Cousinen eintragen
+O|mein Nachbar hat gestern Abend wieder gegrillt und der Rauch kam komplett in unsere Wohnung, wie kann ich ihm das nett sagen
+O|wann ist die beste Zeit Kirschen zu pflanzen
+O|ich suche ein Lied bei dem ein Mann im Refrain Hey ho ruft, laufend im Radio, kannst du helfen
+O|Mein Auto springt bei Kälte nicht an, ist das die Batterie? Hab nen Diesel
+O|Kannst du mir erklären wie man ein Segelboot wendet? Wir machen im Sommer nen Kurs
+O|Mein Gitarrenlehrer meint ich soll die Barré-Griffe üben, hast du Tipps wie das weniger weh tut an den Fingern
+O|was ist das beste Smartphone unter 300 Euro, ich brauche es hauptsächlich für Fotos von meinen Kindern
+O|ich hab vorhin nen Mord im Krimi-Dinner gespielt und alle haben mich durchschaut, wie kann ich beim nächsten Mal überzeugender lügen im Spiel
+O|wie funktioniert eigentlich ein Verbrennungsmotor, brauche das fuer die Berufsschule
+O|Hilfe der Kuchen für den Geburtstag meiner Tochter ist heute Abend und mir ist die Sahne nicht fest geworden, was kann ich tun?
+O|Kannst du den folgenden Satz korrekter formulieren, ich schreib in 5 Minuten die Mail ans Kundenteam
+O|wie kann ich mit Python eine Liste von Namen alphabetisch sortieren
+O|ich würd so gern mal Skifahren lernen, wir sind jetzt beide Mitte 30, wo fängt man am besten an
+O|warum ist mein Sauerteig so flach geworden, ich hab nach Rezept gearbeitet
+O|unser Hund hat seit gestern eine Zecke am Ohr, wie zieh ich die am besten raus ohne dass der Kopf stecken bleibt
+O|mein Kaninchen knabbert ständig an den Gitterstäben vom Käfig, braucht es mehr Platz oder mehr Beschäftigung?
+O|Meine Katze bekommt morgen ihre Jahresimpfung, muss sie dafür nüchtern sein? Frage fürs Tierarztbüro, die gehen nie ans Telefon
+O|der Hund von meiner Schwester hat nach der Wurst am Grillabend Durchfall, was kann man ihm geben, Reis und Hühnchen?
+O|im Aquarium von meinem Sohn haben zwei Fische weisse Pünktchen, ist das Pünktchenkrankheit und was kauf ich dagegen
+O|wie oft muss man ne Katze entwurmen, unsere ist reine Wohnungskatze
+O|Wie verhindere ich dass mein Schlüsselbund im Rucksack ständig Löcher macht
+O|my bad, Deutsch bitte: wie sag ich auf Schweizerdeutsch Ich hab Hunger
+O|Wie mache ich ein Foto von meinem Essen so dass es auf Instagram gut aussieht
+O|zwei Kollegen von mir streiten sich ständig um die Büro-Kaffeemaschine, hast du ne witzige Mail-Idee für ne Kaffeeregel
+O|Schreib mir bitte eine Mail an unseren Lieferanten, dass die Palette vom Dienstag noch nicht angekommen ist
+O|Mein Chef will eine Excel-Tabelle mit allen Terminen vom nächsten Quartal, wie bau ich die am besten auf
+O|wie kann ich in Word ein Inhaltsverzeichnis automatisch erstellen lassen, meine Facharbeit hat 40 Seiten
+O|Bitte hilf mir bei einer Agenda für das Teammeeting morgen, Themen sind Budget, Urlaubsplanung und neues Ticketsystem
+O|wie bereite ich mich auf ein Vorstellungsgespräch als Verkäufer bei Media Markt vor
+O|Welcher Wein passt zu Spargel? Meine Eltern kommen heute zum Essen
+O|ich glaub unser Backofen heizt nicht mehr richtig, Kuchen braucht ewig, ist das das Heizelement
+O|wo kann man in Wien günstig gut Schnitzel essen, wir sind zu sechst
+O|Erkläre mir bitte wie man den Dreisatz rechnet, ich helf grad meinem Neffen bei den Hausaufgaben
+O|was ist ein guter Name fuer meine neue Schildkröte, sie ist so langsam und frech
+O|Bester Weg ein Zelt wasserdicht zu machen, wir fahren übers Wochenende zum Campen
+O|ich hab kein Bock mehr auf Kartoffelsalat, was kann ich sonst fuer die Grillparty mitbringen
+O|Gibt es in Zürich einen guten Ort für ein Geburtstagsessen mit 10 Leuten, am liebsten mit Aussicht
+O|Welche Nähmaschine ist für Anfänger geeignet? Meine Mutter will mir das Nähen beibringen
+O|Wie bekomme ich ein Foto von meiner Katze so hin dass sie nicht rote Augen hat
+O|In Fortnite hab ich grad 3 Kills in Folge gemacht und wurde dann sofort gekillt, wie verbessere ich mein Aim
+O|ich ertrinke grad in E-Mails, hast du nen Tipp wie ich mein Postfach in Outlook sortiere
+O|Ich bin so müde nach dem Spielabend gestern mit den Jungs, wie heisst das Würfelspiel mit dem Becher nochmal
+O|Boah meine Mannschaft hat gestern 5 zu 0 verloren, was für ein Desaster. Hast du nen lustigen Spruch den ich meinem Kumpel schicken kann
+O|Warum ist mein Wlan im Schlafzimmer so schlecht, wir wohnen im Altbau mit dicken Wänden
+O|Wie verwandle ich unseren Dachboden in ein Spielzimmer für die Kinder, welche Dämmung brauche ich
+O|wie wird man eigentlich Pilot? Mein Sohn will das unbedingt werden und ich hab null Ahnung
+O|Kannst du mir die Gesetze von Newton so erklären dass es meine Tochter für die Physikarbeit versteht
+O|in Excel zeigt er mir bei der Summe 0 an obwohl da Zahlen stehen, wo liegt der Fehler
+O|wann ist die beste Zeit für Lissabon, wir wollen mit Freunden im Herbst hin
+O|Wie kann ich die Schrift auf meinem Fernseher grösser machen? Meine Oma kommt damit nicht klar
+O|ich hab beim Joggen immer Seitenstechen nach 2 km, hab ich das einfach falsch gelernt oder gibts nen Trick
+O|ey wie lang braucht ne Tiefkühlpizza im Ofen bei Umluft
+O|Wie lerne ich am besten für die Führerscheinprüfung Theorie, ich habs nächste Woche
+O|Mein Bruder und ich wollen ein Baumhaus für die Kinder bauen, welches Holz sollte man nehmen
+O|das Spiel Hades süchtig zu machen ist ja wohl Absicht, kannst du mir Build-Tipps für den Anfang geben
+O|hab mein Passwort fuer Netflix vergessen, wie setz ich das zurück ohne dass der ganze Haushalt rausfliegt
+O|wie viel Trinkgeld gibt man in der Schweiz im Restaurant
+O|wir haben zu Hause Ameisen in der Küche, welche Hausmittel helfen wirklich?
+O|Ich möchte in meiner Wohnung eine Wand mit Tapete bekleben, muss ich die vorher grundieren
+O|Hey, hab nen Vorstellungstermin und weiss nicht ob ich Anzug oder was Lockeres anziehen soll, ist ne Werbeagentur
+O|Wie lange sollte ich Steak pro Seite braten fuer medium
+O|Ich hab beim Fussball nach dem Spiel den Schiri angeschrien, wie heisst nochmal die Regel mit der gelb-roten Karte
+O|Was sind die wichtigsten Stationen der Französischen Revolution? Ich brauche es für ne Hausaufgabe, Klasse 9
+O|ich such nen guten Schlafsack für Wanderungen in den Alpen bis ca 0 Grad
+O|Hast du ein Rezept für Marillenknödel, meine Oma hat immer welche gemacht und ich find das Rezept nicht mehr
+O|Der Name von meinem WLAN soll lustig sein, hast du Ideen? Bisher Router-Rudi und Pretty Fly for a Wifi
+O|wann ist Ostern 2027 und wann sind in Bayern Ferien
+O|Wie kriege ich meinen Hund dazu dass er im Auto ruhig bleibt, er jault immer
+O|erklär mir bitte kurz was eine Blockchain ist, mein Kollege redet die ganze Zeit davon
+O|Soll ich mir lieber ein Velo oder ein E-Bike für den Arbeitsweg kaufen, ich wohne in Bern und hab ca 9 km
+O|mein Vater will unbedingt selber das Dach neu decken, ist das ohne Erfahrung machbar oder eher blöde Idee
+O|Hi ich lern grad Gitarre und finde den Akkord Fmaj7 super schwer, gibts ne einfachere Variante
+O|Kurze Frage, ist ein Tomatenplatz im Kühlschrank eine gute Idee oder werden die dann mehlig
+O|ich hab 2 Wochen Urlaub und null Plan, schlag mir mal 3 Städtetrips in Europa vor, max 300 Euro pro Person
+O|Erkläre mir den Unterschied zwischen Diesel und Benzin Motor und warum Diesel mehr Drehmoment hat
+O|Hallo, wir suchen einen Namen für unsere neue Bäckerei, es soll was mit Brot und Heimat sein
+O|wie fang ich ne Nachricht an meine Vermieterin an wegen dem tropfenden Wasserhahn, soll freundlich aber bestimmt klingen
+O|Mein Hund bellt jedes Mal wenn der Postbote kommt, wie kann ich ihm das abgewöhnen
+O|Was sind gute Aufwärmübungen vor dem Laufen, ich renn zum Spass 5 km 3 mal die Woche
+O|beim Zocken im Coop-Modus hat mein Teamkollege mich aus Versehen erschossen, ist das friendly fire an oder bug
+O|mein 3D-Drucker druckt die erste Schicht nicht richtig fest, was stell ich ein
+O|Wie stelle ich bei Windows 11 ein dass er nicht ständig neu startet fuer Updates
+O|Wie lange muss ich ein Ei kochen wenn ich es wachsweich haben will, Höhe ca 500 m
+O|Kannst du mir ein kurzes Gedicht über unseren Dackel schreiben, er heisst Waldemar und klaut Socken
+O|wie sagt man auf Spanisch Ich bin satt? Wir sind nächste Woche in Valencia
+O|wir sind grad am Packen fürs Zeltlager meiner Tochter, was gehört alles auf die Liste
+O|mein Chef schreibt jeden Morgen um 7 ne Mail, muss ich da wirklich sofort antworten, wie seht ihr das
+O|Ich suche Tipps für einen Roadtrip durch Schottland, wir sind 8 Tage unterwegs und haben ein Wohnmobil
+O|warum wird mein Handy so heiss beim Laden
+O|Wie ist die Pointe vom Witz mit dem Pinguin in der Wüste? Ich erinner mich nicht mehr
+O|ich muss ne Rede zum 60. Geburtstag von meinem Vater halten, 3 Minuten, locker und mit Humor
+O|wie viel Zeit sollte man für nen Marathon trainieren wenn man bisher nur 10 km gelaufen ist, einfach als Hobby
+O|Hilfe mein Schnittlauch geht ein, er steht am Fenster und kriegt genug Wasser
+O|Die Spülmaschine zeigt E24 an, was heisst das bei Bosch
+O|wie baue ich in Unity ein Menü in dem man zwischen zwei Levels wählen kann
+O|Danke für gestern. Kannst du mir heute helfen den Satz Es gibt keine Garantie ins Englische zu übersetzen, für nen Vertrag mit nem Lieferanten
+O|kennst du ne App zum Haushaltsbuch führen? ich will wissen wie viel wir fürs Essen ausgeben, mein Freund und ich wohnen seit Mai zusammen
+O|was könnte ich für den Teamevent in Berlin organisieren, 15 Leute, Budget 40 Euro pro Kopf
+O|mir ist grad aufgefallen dass mein Duolingo Streak bei 400 Tagen ist, wie halt ich den am Leben wenn ich im Urlaub bin
+O|ich spiel in nem Team Volleyball und wir brauchen neue Trikots, gibts nen guten Anbieter in Deutschland, so 14 Stück
+O|Wo bekomme ich einen guten Christbaum her, heuer will ich mal einen selbst schlagen
+O|wie gross sollte ein Terrarium fuer ne Bartagame sein, mein Sohn wünscht sich eine zu Weihnachten
+O|Mein Pferd verliert gerade sein Winterfell, welches Bürstenset empfehlt ihr für die Fellpflege? Das ist reine Pflege, keine Krankheit
+O|fuer die Kommunion von meinem Neffen suche ich ein Geschenk, wir sind eher locker drauf und es soll nicht zu teuer sein
+O|Wie funktioniert die Pfandrückgabe in Österreich bei Flaschen, hab zwei Kisten aus Deutschland mitgebracht
+O|ich glaub der Schiedsrichter war bestochen!! Nein im Ernst, wo kann ich nachlesen was nach den Regeln ein Handspiel ist
+O|bitte schreib mir ein kurzes Märchen fuer meinen Sohn, es soll von nem Drachen handeln der Angst vor Feuer hat
+O|was ist besser fuer ne Schreibtischlampe, warmweiss oder kaltweiss, ich arbeite viel am PC
+O|Welche Kamera soll ich für die Reise nach Island mitnehmen? Meine Freundin und ich wollen vor allem Landschaften fotografieren
+O|ich hab Bock auf was Süsses, aber ohne Backen, schlag mal 3 Nachspeisen vor die in 15 Minuten gehen
+O|Kannst du mir erklären was ein Backup ist und wie ich bei meinem alten PC ein richtiges mache
+O|ich habe grad ein Rezept mit Kreuzkümmel gefunden, wonach schmeckt das eigentlich
+O|wie bringt man ein Kind dazu seine Schuhe selbst zuzubinden, meine Tochter ist 5 und will nur Klettverschluss
+O|Wie schneide ich meiner Frau die Haare selbst, sie will nur die Spitzen
+O|Wieso ist bei meiner Zimmerpflanze jedes Blatt gelb? Es ist ein Gummibaum und wir haben ihn seit 3 Jahren
+O|Wie wird in der Schweiz ein Billett für den Zug gekauft, ich komme aus Deutschland und bin das nicht gewohnt
+O|gerade im Sale die Nike Air Max gesehen, sind die für breite Füsse geeignet
+O|Beim Kartenspiel Uno haben meine Kinder und ich verschiedene Regeln, was gilt offiziell bei Plus 2 auf Plus 2
+O|Wie geht eigentlich Bouldern, wir wollen am Samstag zum ersten Mal in die Halle
+O|ey ich wollt nur wissen wie lang man Nudeln kocht wenn man die al dente will, 500g Penne
+O|Erkläre bitte wie ein Kredit in Monopoly funktioniert, wir haben in der Familie zwei verschiedene Versionen und streiten uns
+O|Ich plane den Umzug in meine erste eigene Wohnung, kannst du mir ne Checkliste machen, was ich alles besorgen muss
+O|Frage zum Auto, wann muss man in Österreich das Pickerl machen und was kostet das ungefähr
+O|wir wollen nen Escape Room machen mit der Familie, 6 Personen, 2 Kinder 12 und 14, kennst du gute in Hamburg
+O|ich hab nen Feind im Spiel der mich ständig campt, wie räche ich mich am besten in Call of Duty
+O|Kann man Zucchini roh essen? hab grad welche aus dem Garten von meiner Tante bekommen
+O|wie lang muss ich fuer 4 Personen ne Gans im Ofen lassen, Weihnachten ist ja bald
+O|Was gehört in ein gutes Bewerbungsfoto? Ich bewerbe mich als Grafikdesignerin bei einer Agentur in Köln
+O|unser Wellensittich Hansi kann nur Hallo sagen, wie bring ich ihm noch mehr bei
+O|boah mein game laggt so krass, ping is bei 200, wie krieg ich das weg
+O|hab gestern bei der Spielshow die Million nur knapp verpasst, ich war so nah dran, wie hoch sind da eigentlich die Chancen
+O|wie killt man in Linux alle Prozesse von einem bestimmten Programm auf einmal, killall oder pkill?
+O|Ich lass mir grad den Dachstuhl vom Gartenhaus neu bauen und die Handwerker sind seit Wochen nicht aufgetaucht, wie formuliere ich eine freundliche Erinnerung per Mail
+O|nach dem Update von Windows ist meine Festplatte tot, nur noch ein Klackern, gibts da was zu tun
+O|Erklär mir bitte kurz die Zugregeln beim Schach, mein Opa bringt mir das grad bei und ich versteh En passant nicht
+O|wo kann man bei uns in Tirol am besten Skitouren gehen, wir sind zu zweit und fit aber keine Profis
+O|mir fehlt noch ne Idee für unser Hochzeitsmotto, wir heiraten im Sommer auf nem Bauernhof
+O|wieso tut mein Browser immer so als hätte ich keine Verbindung, obwohl das Wlan geht
+O|schreib mir ne kurze Pointe fuer meine Rede, unser Trauzeuge kommt immer zu spät
+O|Wie gut sind Rasenroboter bei Hanglage, unser Garten hat ca 15 Prozent Gefälle
+O|das ist ja zum Totlachen, hast du noch so einen Witz über Beamte
+O|Kann ich in Python eine Datei einlesen die ich vorher nicht schliessen musste, und was ist der Unterschied zu with open

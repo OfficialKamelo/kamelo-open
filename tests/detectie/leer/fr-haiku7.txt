@@ -1,0 +1,301 @@
+#G
+O|Convertis 180 degrés Celsius en Fahrenheit
+O|Quel est le pluriel de poulpe, ma femme dit octopi
+O|Mon chien panique à chaque feu d'artifice du Nouvel An, des conseils ?
+O|Loyer payé, enfin
+O|Mon fils a marqué un but et j'ai pleuré de fierté haha
+O|Mon téléphone est mort en plein GPS, comment je retrouve mon chemin
+O|Noël en famille, j'ai hâte
+O|Mon chat refuse la nouvelle litière franchement
+O|Idées de toast pour le mariage de ma soeur, elle aime l'humour
+O|Combien de tasses dans un litre à peu près
+O|Écris un tweet pour annoncer que la boulangerie est fermée lundi
+O|Comment conserver du basilic frais une semaine
+O|Tu peux me proposer un dîner en 30 minutes avec des cuisses de poulet et du riz
+O|Ma mère veut un gâteau d'anniversaire en forme de cygne, c'est faisable
+O|Quel nom pour un chiot golden retriever
+O|Pourquoi mon pain au levain est si dense
+O|Explique la récursivité comme si j'avais dix ans
+O|Corrige cette erreur python : list index out of range
+O|Formule Excel pour additionner seulement les lignes visibles
+O|Budget pour 5 jours à Lisbonne en juin, il me faut combien pour manger
+O|Ça vaut le coup d'acheter un MacBook Air reconditionné en 2026
+O|Mon frère me bat toujours au Scrabble, des mots plus forts
+O|Comment refuser poliment une invitation de mariage quand on va à un autre mariage ce week-end-là
+O|Le citronnier du jardin a des taches blanches sur les feuilles, c'est quoi
+O|Ma machine à coudre saute des points, que vérifier
+O|Donne-moi 5 questions brise-glace pour un séminaire d'équipe
+O|Traduis « à demain au marché » en espagnol
+O|Le routeur wifi clignote orange, ça veut dire quoi
+O|Ikea ouvre à quelle heure dimanche à Villeneuve
+O|Résume l'intrigue de Dune en trois phrases
+O|Mon mari est fou du nouveau Zelda, quoi lui offrir pour son anniversaire
+O|L'imprimante dit bourrage papier mais rien n'est coincé, aide-moi
+O|J'ai été arrêté par la beauté du coucher de soleil sur le lac
+O|J'ai besoin d'une lettre de motivation pour un poste de comptable junior, j'ai deux ans de vente
+O|Comment enlever une tache sur un pull en laine blanche
+O|Des peluches sur mon pull, comment les enlever
+O|Mon antivirus ne trouve rien mais Windows dit que l'ordi est lent, et maintenant ?
+O|Tu peux me conseiller un bon podcast d'histoire pour un long trajet en voiture
+O|Je stresse pour le gâteau de demain, il s'affaisse au milieu
+O|Comment partager l'addition du resto équitablement si quelqu'un n'a pris qu'une salade
+O|C'est quoi la garantie habituelle sur un lave-vaisselle
+O|Règles de stationnement le dimanche à Bruxelles près du parc ?
+O|Mon forfait mobile dure 24 mois, je peux changer de téléphone avant ou je dois attendre
+O|Recette de friandises de Diwali pour débutants, pas trop sucrées
+O|Idées de chasse aux oeufs de Pâques pour 6 enfants au jardin
+O|Oh mon dieu cette soupe est trop bonne, quelles épices j'ai mises
+O|Quel cadeau pour une collègue qui part après dix ans
+O|Qui a été le premier à gagner deux prix Nobel
+O|Le chien est obsédé par le facteur, comment je le calme
+O|Mes tomates éclatent après la pluie, pourquoi
+O|Des conseils pour une négociation de salaire la semaine prochaine, je suis junior
+O|Le pourboire de 18 % sur une addition de 80 euros, c'est combien
+O|Je veux ouvrir un compte pour ma fille, quelle banque a le meilleur compte jeune
+O|Où trouver des vols pas chers pour New York en décembre
+O|J'ai besoin d'une liste de bagages pour une semaine de randonnée dans les Alpes
+O|Quelle est la différence entre un latte et un flat white
+O|Je scrolle ma liste Netflix, un truc comme Breaking Bad mais plus léger
+O|Ma fille veut devenir astronaute, quels livres lui conseiller
+O|Relecture : « Moi et lui on est allés au magasin hier »
+O|Ce bug fait planter l'appli sous Android 15, des idées
+O|Trie ces nombres par ordre décroissant avec pandas
+O|Comment enlever la rouille de la chaîne de vélo le plus simplement
+O|Mon cousin et moi on se dispute : la tomate c'est un fruit ou un légume
+O|Combien de temps cuire des oeufs pour un jaune coulant
+O|Le voyant moteur s'est allumé après la vidange, c'est normal
+O|Écris un haïku sur un chat qui dort dans une boîte
+O|Les feux d'artifice étaient si forts que le chien est resté sous le lit toute la nuit
+O|Je fais les mots croisés, indice pour 7 lettres : fleur en anglais
+O|Menu pour un dîner de 8 personnes, avec option végétarienne
+O|Je me suis endormi au cinéma pendant le film de super-héros haha
+O|Quelle pâte pour une sauce crémeuse sans crème
+O|Mon chef veut les slides vendredi, plan d'un diaporama de 10 slides sur les ventes du T3
+O|Discours de mariage pour mon meilleur pote, moins de 3 minutes et drôle
+O|C'est quoi déjà la capitale de l'Australie
+O|Comment faire pousser mes plantes grasses plus vite
+O|Meilleur shampoing pour un golden retriever à la peau sèche
+O|Tu connais un bon cours en ligne pour les tableaux croisés dynamiques d'Excel
+O|Fais-moi une liste de courses pour une semaine végane
+O|Ma colocataire mange tout mon yaourt, comment lui en parler gentiment
+O|Comment réinitialiser mon mot de passe Gmail sans l'ancien téléphone
+O|Le frigo fait un bruit de clic, c'est normal
+O|Tu peux m'aider à écrire un mail aux RH pour les dates du congé parental
+O|Je veux apprendre la guitare, quelle chanson facile pour commencer
+O|Les enfants sont accros à Minecraft, comment limiter le temps sur la Xbox
+O|Pourquoi le pain rassit plus vite au frigo
+O|Quelle est la meilleure période pour planter l'ail en octobre
+O|Où acheter un costume correct pour un mariage sans se ruiner
+O|J'ai tellement faim que je mangerais un cheval, une recette rapide aux oeufs et aux épinards
+O|Combien de TVA sur 450 euros en France, 20 %
+O|La bouilloire est pleine de calcaire, le remède
+O|Activités pour enfants un jour de pluie à Montréal
+O|Écris un petit message d'anniversaire pour ma grand-mère qui fête ses 90 ans
+O|Quel micro est le meilleur pour Zoom sous 100 euros
+O|Où trouver un blazer d'uniforme scolaire taille 12 pour mon fils
+O|Une Honda Civic 2019 qui consomme un peu d'huile entre les vidanges, c'est normal
+O|Idées de sorties en amoureux à Liège en hiver pas chères
+O|Je suis accro à ce nouveau jeu de puzzle sur mon téléphone, des astuces pour passer le niveau 30
+O|Oups, mes pâtes ont débordé partout sur la plaque haha
+O|Combien de calories dans une banane à peu près
+O|Écris un SMS drôle pour inviter les potes à une soirée jeux de société
+O|Comment faire du cold brew maison dans un bocal
+O|La fête d'anniversaire de mon fils est dans un parc de trampolines, quoi mettre dans les pochettes
+O|Ça vaut le coup, le nouveau pick-up, la version 4x4
+O|Ma cousine à Mumbai veut une bonne recette de paneer butter masala, tu peux m'aider
+O|Explique-moi la différence entre « affect » et « effect »
+O|Trouve un nom pour notre nouveau café avec le mot grain dedans
+O|J'essaie de faire arrêter le chien d'aboyer sur le facteur, des astuces
+O|Ça coûte combien une PS5 d'occasion aujourd'hui à peu près
+O|Le groupe WhatsApp du ramassage scolaire devient fou, comment le mettre en sourdine
+O|C'est quoi la température à coeur pour un steak saignant
+O|Mon iPhone me dit « stockage saturé », qu'est-ce qui prend toute la place
+O|Explique les règles du cricket à mon mari américain, simplement
+O|Je veux organiser une fête surprise pour les 60 ans de mon père, par où commencer
+O|Comment faire un carnet bullet journal propre, des idées de mise en page
+O|Combien coûte une retouche de robe de mariée environ
+O|Ma soeur m'en veut parce que j'ai oublié son anniversaire lol, comment m'excuser avec un cadeau
+O|Combien de personnes tiennent dans un minibus de 8 places
+O|Une bonne tente pour deux personnes qui font de la randonnée dans les Vosges
+O|Écris un script bash qui renomme tous les jpg avec la date devant
+O|Mes courgettes fleurissent mais ne donnent pas de fruits, pourquoi
+O|Le loyer est dû le 1er, le plus simple pour faire un virement automatique
+O|Allô, mon vol a été annulé à cause de la neige, quelles options chez Transavia
+O|La croûte de ce pain est trop dure, comment la corriger la prochaine fois
+O|Les enfants se battent encore pour la tablette, quelle appli de temps d'écran tu conseilles
+O|Écris un limerick sur un chat qui adore les lasagnes
+O|On peut porter du blanc à un mariage d'été au Québec
+O|Je dois écrire un discours pour le départ du responsable commercial, léger et chaleureux
+O|Quel ordinateur portable sous 800 euros pour la fac
+O|Mon pull a rétréci au lavage, comment détendre la laine
+O|Notre déjeuner d'équipe est dans un resto thaï, que commander pour six
+O|Je m'ennuie au bureau, donne-moi une devinette amusante à partager avec l'équipe
+O|Combien de cuillères à soupe dans un quart de tasse
+O|Quel pourboire laisser à un livreur
+O|Notre machine à café du bureau est encore en panne, rédige un mail poli au service technique
+O|Mon grand-père oublie tout le temps le mot de passe du wifi, comment l'aider à le retenir
+O|Propose une playlist pour une road trip vers la mer, surtout du rock des années 90
+O|Hot take : l'ananas sur la pizza c'est très bien, convaincs-moi du contraire
+O|Les carreaux de la salle de bain sont sales, le moyen le moins cher pour nettoyer les joints
+O|Pourquoi le ventilateur de mon portable s'emballe quand j'ouvre Chrome avec 40 onglets
+O|Comment faire manger plus de légumes à mon enfant sans se disputer
+O|Les enfants veulent un hamster, qu'est-ce qu'il faut savoir avant d'en acheter un
+O|Quelle température pour le frigo, mon lait tourne tout le temps
+O|Donne-moi cinq synonymes plus familiers de « content »
+O|Mon père adore la pêche, idées de cadeau à moins de 50 euros
+O|Comment enlever l'odeur de fumée d'un canapé après un feu de camp
+O|Quel programme pour un enterrement de vie de jeune fille à Bruxelles
+O|Explique simplement comment marche un simulateur de prêt immobilier, pour un exposé de maths
+O|Quel fruit pour un smoothie qui ne soit pas la banane
+O|Je veux apprendre à faire une vraie carbonara sans crème, étape par étape
+O|Pourquoi mes AirPods se déconnectent quand je marche jusqu'à l'arrêt de bus
+O|Comment on appelle un groupe de hiboux, pour un quiz pour mon neveu
+O|Mon pote dit que l'homme n'a jamais marché sur la Lune, comment lui prouver le contraire
+O|Raconte une blague sur les comptables que mon père trouvera drôle
+O|L'anniversaire de ma grand-mère est en mars, quel message sur une carte pour une dame de 92 ans
+O|Les bouchons ce matin m'ont rendu fou, combien de temps dure le périph à 8 heures
+O|C'est normal qu'un chiot qui fait ses dents mâchouille autant mes chaussures
+O|C'est quoi la tenue classique pour un dîner de gala à Paris
+O|Écris une courte description pour une tasse en céramique faite main
+O|Où trouver un beau sapin de Noël frais à Québec
+O|Des idées pour occuper les enfants en voiture sur un trajet de six heures
+O|Je n'arrive pas à choisir entre le canapé bleu et le gris, des conseils
+O|Convertis 5 miles en kilomètres puis dis-moi combien de temps un débutant met pour 10 km
+O|Quelle coupe de cheveux pour un visage rond, je m'ennuie de la mienne
+O|Le chat a encore renversé ma plante, comment enlever la terre du tapis
+O|Mon devoir porte sur la Révolution française, donne-moi trois causes principales
+O|Comment organiser un agenda Google partagé pour une famille de cinq
+O|Le frigo sent bizarre après les fêtes, la solution la plus rapide
+O|Écris un message de bienvenue pour les nouveaux membres de notre club de course
+O|Je veux que mon bébé fasse ses nuits, des livres sur les routines
+O|Comment répondre à un mail passif-agressif d'un collègue sans envenimer
+O|Mon ordi dit que les pilotes sont obsolètes, je mets tout à jour
+O|C'est quoi la différence entre un crocodile et un alligator, pour la fiche de mon fils
+O|La batterie de la voiture est morte sur le parking, comment démarrer avec des câbles en sécurité
+O|Question rapide : la menthe aide contre la mauvaise haleine ou c'est un mythe, pour un article
+O|Liste 10 plats italiens faciles pour un dîner entre amis
+O|Ma mère met toujours trop de sel dans son ragoût, comment lui dire gentiment
+O|Ce fil sur le logo de la compagnie aérienne est dingue, quelle est l'histoire
+O|Quelle différence entre eau gazeuse et eau plate pour cuisiner
+O|Le meilleur moyen de nettoyer une poêle en fonte rouillée
+O|Un déguisement d'Halloween facile pour un enfant de 4 ans, sans couture
+O|Comment faire bonne impression dans un nouveau boulot sans en faire trop
+O|Il pleut pour le barbecue de samedi, un plan B à l'intérieur pour 12 personnes
+O|Raconte une histoire de deux minutes pour le coucher, un dragon qui a peur du noir
+O|Le bus a changé d'horaires, comment trouver les nouveaux horaires de la ligne 22
+O|Convertis 2 livres de farine en grammes pour ma recette de pain
+O|Quelle est l'étiquette du pourboire dans un restaurant japonais
+O|Je me dispute avec mon frère sur le meilleur James Bond, aide-moi
+O|Fais-moi une liste de courses pour un barbecue de 10 personnes petit budget
+O|Des conseils pour garder des plantes d'intérieur en vie dans un appart sombre en hiver
+O|Ma batterie externe chauffe quand elle charge, c'est dangereux
+O|Écris trois phrases motivantes pour mon équipe de running avant le marathon
+O|Pourquoi ma formule Google Sheets ne compte pas les valeurs uniques avec des espaces
+O|C'est la rentrée de ma fille demain, que mettre dans son sac pour la cantine
+O|Ma pâte à crêpes est grumeleuse, je fais quoi de mal
+O|Le moyen le moins cher pour aller de l'aéroport à Paris centre
+O|Des noms mignons pour un chat gris qui adore les cartons
+O|Réécris ce mail pour qu'il soit plus pro : salut, il nous faut le rapport au plus vite
+O|Programme de 3 jours à Lyon, musées et cafés
+O|Ma femme affirme que la mer est salée à cause du soleil, c'est quoi la vraie réponse
+O|Comment enlever une étiquette collante d'un bocal en verre sans rayer
+O|Mon fils est convaincu qu'il sera footballeur, un plan d'entraînement pour un garçon de 11 ans
+O|Les lumières de Noël du couloir ne marchent plus, comment trouver l'ampoule grillée
+O|Je suis tellement fier de ma fille qui a gagné le concours d'orthographe, quel gâteau faire pour la fête
+O|Idées de menu pour une fête de l'Aïd pour 12 personnes, un peu différent d'habitude
+O|Le parking de l'hôpital m'a débité deux fois, comment obtenir un remboursement
+O|Impossible d'arrêter de rire à cause de la nouvelle coupe de mon père, comment lui dire doucement qu'il ressemble à un champignon
+O|Je dois renvoyer un pull acheté en ligne, c'est quoi le délai de retour habituel chez Zalando
+O|Ma pelouse est devenue marron après l'été, elle est morte ou juste en pause
+O|Comment appeler ma nouvelle boulangerie, il me faut un nom pour mes pains au levain
+O|Comment savoir si un avocat est mûr sans tout presser
+O|La voiture de location est à mon nom, je peux la prendre pour aller en Espagne
+O|Mon chat me rapporte des souris mortes, c'est un compliment
+O|Écris une courte intro pour un podcast sur le mobilier des années 50
+O|Je perds sans arrêt mes clés de voiture, un moyen pas cher de les géolocaliser
+O|Tableur : comment compter les cellules de la colonne B qui contiennent un mot de la liste en D
+O|Ma mère a une nouvelle friteuse sans huile et veut faire des frites, une recette simple
+O|L'école a envoyé un mot pour une journée sans uniforme au profit d'une association, que mettre pour une vente de gâteaux
+O|Je suis bloqué au niveau 12 de ce jeu, le boss me tue en un coup
+O|Comment empêcher ma machine à pain de faire un pain trop gros
+O|Le ventilateur de la salle de bain fait un bruit énorme, il y en a un plus silencieux qui rentre dans le même trou
+O|Quelle carte de remerciement envoyer à un ami qui a aidé pour le déménagement
+O|On part skier en Savoie en février, quel matériel pour un débutant
+O|Mon chien a mangé un bloc entier de fromage, je dois m'inquiéter, à partir de combien c'est trop
+O|Réveillon chez nous, quel repas pour 20 personnes qui mangent debout
+O|Cette robe fait du 38 ou du 40 en taille française, comment je choisis
+O|L'évier de la cuisine se vide lentement, la méthode la plus simple sans produit chimique
+O|J'aimerais que mon appart soit cosy en automne, quelles couleurs avec un canapé gris
+O|Combien d'eau donner à mon monstera dans un bureau chauffé
+O|Peux-tu faire une carte de bingo pour un anniversaire d'enfants avec 15 cases
+O|Quelle différence entre un ragoût et une cocotte, pour un livre de cuisine
+O|Mon ado dit que tout le monde à l'école a le nouvel iPhone, comment lui dire non
+O|Mon mari a allumé le chauffage en juin par erreur et je transpire, où est le mode d'emploi du thermostat
+O|Question rapide : quelle huile pour le wok qui ne fume pas
+O|Où faire une copie de clé à Bruxelles le dimanche
+O|Ma montre dit que j'ai mal dormi, pourquoi elle affiche ça
+O|J'ai besoin d'aide pour mon CV, je suis barista et je veux passer en coordination de projet
+O|J'ai mon premier entretien d'embauche dans une banque demain, quelles questions préparer
+O|Fais un petit toast pour le départ à la retraite d'une prof qui adorait le jardinage
+O|Comment refroidir vite une bouteille de vin avant l'arrivée des invités
+O|Mon trajet pour l'école est à 8h10, le meilleur itinéraire dans la ville à cette heure
+O|Notre hôtel à Rome a un rooftop, ça vaut le coup au coucher du soleil
+O|Chauffer de l'eau au micro-ondes dans une tasse en verre, c'est sans danger
+O|On fait une fête samedi, quels jeux pour 30 personnes qui ne soient pas ringards
+O|Aide-moi pour le plan de table d'un anniversaire de 50 ans, mon oncle déteste son cousin haha
+O|L'alarme incendie du bureau se déclenche à chaque fois qu'on grille du pain, que faire
+O|Une bonne routine d'étirements après une longue journée debout au travail
+O|Quel terreau pour un figuier dans un grand pot
+O|Comment configurer le nouveau routeur pour que les tablettes des enfants n'aient internet qu'après 21 h
+O|L'abonnement de salle de sport coûte 40 euros par mois, ça vaut le coup si j'y vais deux fois par semaine
+O|Quelle compagnie de bus dessert la ligne 18 à Montréal et combien coûte le ticket
+O|Ma fille a eu 6 en maths, comment l'aider à progresser sans la faire pleurer
+O|Je veux regarder le match de foot à la télé, à quelle heure joue la Belgique
+O|Mon beau-frère veut emprunter ma perceuse une semaine, comment dire oui et demander qu'il la rende
+O|L'imprimante n'a plus d'encre noire, quelle cartouche compatible pas chère fonctionne vraiment
+O|Donne-moi cinq exercices rapides dans une chambre d'hôtel sans matériel
+O|Les billets du concert sont en vente demain à 10 h, des astuces pour aller vite
+O|Oh la la, je viens de manger le meilleur croissant de Paris, c'était dans quelle boulangerie
+O|Notre chiot arrive vendredi, la checklist pour la première semaine
+O|Qu'est-ce qu'il faut savoir avant d'offrir un vélo à mon enfant pour Noël
+O|Tu peux convertir ma recette de tasses en grammes, c'est pour un gâteau
+O|La pluie a gâché notre pique-nique, donne quatre idées pour une journée pluvieuse en ville
+O|Combien de temps pour renouveler un permis de conduire en Suisse
+O|Mauvais signal wifi dans la chambre du fond, quel répéteur pas cher
+O|Mon grand-père a son anniversaire le même jour que la fête du village chaque année, quel style de carte
+O|Franchement la musique de ma colocataire me rend fou, comment lui demander de baisser
+O|Comment conserver le riz restant pour qu'il soit sans danger le lendemain
+O|Écris un panneau drôle pour la cuisine du bureau sur le fait de laver sa propre tasse
+O|Il y a un dress code pour une soirée de Noël au restaurant
+O|La façon la plus simple de faire du bubble tea maison avec des perles de tapioca
+O|Il me faut un nom cool pour notre équipe de foot fantasy avec mes potes
+O|Pourquoi mon gâteau est sec alors que j'ai suivi la recette à la lettre
+O|L'eau chaude de l'appart met une éternité à arriver, je vérifie quoi en premier
+O|Tu peux m'aider à écrire un message à mon voisin pour les poubelles sorties trop tôt
+O|Mon neveu est fou des dinosaures, quel musée parisien est le meilleur pour les enfants
+O|Comment assaisonner un wok neuf
+O|Les soldes finissent ce soir, c'est vraiment une bonne affaire la bouilloire à 20 %
+O|Comment dit-on « bonne chance pour ton examen » en allemand
+O|Réunion parents-profs la semaine prochaine, quelles questions poser sur la lecture de mon fils
+O|Mon boss met des réunions le vendredi tout le temps, comment refuser poliment
+O|Pour un étudiant, mieux vaut un Dell d'occasion ou un Lenovo neuf à moins de 500 euros
+O|Plein de monde m'a demandé pour ma nouvelle coupe à la fête haha, quoi répondre la prochaine fois
+O|La serrure de notre cabanon est bloquée, des alternatives au WD-40
+O|Le moyen le moins cher de chauffer une petite pièce dans un appart sans chauffage central
+O|Recette de gâteau d'anniversaire vegan qui ne s'effrite pas
+O|Ma fille veut être vétérinaire, quelles matières choisir au lycée
+O|Tu peux expliquer les règles du poker pour une soirée entre débutants
+O|La pâte à cookies colle, je la mets au frigo ou j'ajoute de la farine
+O|J'ai besoin d'un nouveau fauteuil de bureau pour les longues journées, une option raisonnable
+O|Où acheter une bonne poêle pas trop chère à Bruxelles
+O|Écris un post d'anniversaire joyeux pour la boulangerie de ma soeur sur Instagram
+O|J'ai un exposé sur le climat en géographie, une bonne accroche
+O|Le budget vacances de la famille est serré, une semaine pas chère mais sympa en Bretagne
+O|Ma mère est accro au sudoku, quel livre de grilles difficiles pour elle
+O|J'ai brûlé la lasagne, je peux encore la sauver
+O|Rédige une réponse à une cliente qui demande quand sa commande part
+O|C'est quoi la différence entre un gilet et un pull, pour le projet de mes enfants
+O|Le lait a deux jours de plus que la date mais il sent bon, c'est ok
+O|Ma voiture grince au freinage, ce sont les plaquettes
+O|Comment faire ranger leur chambre aux enfants sans crier chaque jour
+O|Une petite question : est-ce que le shampoing sec abîme les cheveux

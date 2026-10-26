@@ -18,7 +18,8 @@ if (typeof importScripts === 'function') {
 const TEAMS = globalThis.KameloEdition !== 'public';
 
 // Na verwijderen opent de browser kamelo.eu/goodbye: waarom weg, met een oplossing per reden. Een gewone pagina, zonder gegevens erbij.
-chrome.runtime.setUninstallURL('https://kamelo.eu/goodbye');
+// Alleen de gratis editie: Kamelo Business wordt door IT uitgerold en belooft dat er niets naar buiten gaat, ook geen tabblad.
+if (!TEAMS) chrome.runtime.setUninstallURL('https://kamelo.eu/goodbye');
 
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason !== 'install' && reason !== 'update') return;
@@ -28,7 +29,10 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   injectIntoOpenTabs();
   // Na installatie: de bedankpagina op kamelo.eu. Dat is een gewoon tabblad; Kamelo stuurt zelf niets.
   // Welkomstpagina in de taal van de browser, als kamelo.eu die taal heeft (testpanel 13 okt: altijd Engels was verwarrend).
-  if (reason === 'install') {
+  // Kamelo Business opent niets: geen kamelo.eu (dat is de welkomstpagina van de gratis Melo), en geen eigen tabblad (bij
+  // installeren is het beleid van IT soms nog niet te lezen, en dan kreeg elke computer een tabblad). Zonder licentie zegt
+  // de rode "!" op het icoon het al.
+  if (reason === 'install' && !TEAMS) {
     const lang = (chrome.i18n?.getUILanguage?.() || 'en').slice(0, 2).toLowerCase();
     chrome.tabs.create({ url: `https://kamelo.eu/${['nl', 'de', 'fr', 'es'].includes(lang) ? lang + '/' : ''}welcome` });
   }
@@ -236,7 +240,21 @@ function touchActivity() {
 }
 chrome.alarms?.onAlarm.addListener(alarm => { if (alarm.name === AUTOLOCK) lock().catch(() => {}); });
 
+// Tellers van placeholders gaan nooit omlaag, anders kan [PERSON_3] twee mensen worden. De popup schrijft de kluis zelf
+// (kopiëren, opschonen, wissen) en kan zo een oudere stand terugzetten die net door een tabblad was opgehoogd: dan hier
+// de hoogste tellers terugzetten, in de rij met updateVault.
+const lowered = (before, after) => Object.entries(before || {}).some(([type, n]) => (after?.[type] || 0) < n);
 chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === 'session' && changes.vault?.newValue && lowered(changes.vault.oldValue?.counters, changes.vault.newValue.counters)) {
+    const high = changes.vault.oldValue.counters;
+    inVaultQueue(async () => {
+      const { vault } = await chrome.storage.session.get('vault');
+      if (!vault || !lowered(high, vault.counters)) return;
+      const counters = { ...vault.counters };
+      for (const [type, n] of Object.entries(high)) if (Number.isInteger(n) && n > (counters[type] || 0)) counters[type] = n;
+      await chrome.storage.session.set({ vault: { ...vault, counters } });
+    });
+  }
   if (area === 'session' && changes.vault) {
     // Iets gewist buiten updateVault om (de popup: "Kluis wissen", bewaartermijn): oude kopieën in tabbladen gelden niet meer.
     if (!changes.vaultCleared && removedFrom(changes.vault.oldValue, changes.vault.newValue))
@@ -636,8 +654,26 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   // De tekst staat alleen in het werkgeheugen en alleen Kamelo's eigen chatpagina kan hem ophalen, één keer, binnen 2 minuten.
   // "Ask Melo" in de melding alleen als Melo hier ook kan antwoorden (docs/KOERS.md, prioriteit 1). Anders leidde de
   // knop naar "Geen AI op dit apparaat"; nu biedt de melding dan alleen de tijdelijke chat. De popup vraagt hetzelfde.
+  // Antwoord: 'mac' (Melo voor Mac staat klaar, zie hieronder), true (de AI van Chrome op dit apparaat) of false.
   if (msg?.type === 'pf:melo-ready' && (sender.tab || fromExtensionPage(sender))) {
-    meloReady().then(reply, () => reply(false));
+    macReady().then(mac => (mac ? 'mac' : meloReady())).then(reply, () => reply(false));
+    return true;
+  }
+  // "Ask Melo" met Melo voor Mac: de vraag gaat naar de app in plaats van naar het zijpaneel. Alleen vanuit een tabblad.
+  if (msg?.type === 'pf:mac-vraag' && sender.tab) {
+    macSend({ type: 'vraag', tekst: String(msg.text || '').slice(0, 20000), direct: msg.typed === true }).then(reply);
+    return true;
+  }
+  // "Vraag het Melo op je Mac" in de melding: de popup met de schakelaar. Kan de browser de popup niet zelf openen (Firefox
+  // na een bericht), dan dezelfde popup in een tabblad.
+  if (msg?.type === 'pf:mac-koppel' && sender.tab && !TEAMS) {
+    const tab = () => chrome.tabs.create({ url: chrome.runtime.getURL('popup/public.html') }).catch(() => {});
+    Promise.resolve().then(() => chrome.action.openPopup ? chrome.action.openPopup({ windowId: sender.tab.windowId }) : Promise.reject())
+      .catch(tab).then(() => reply(true));
+    return true;
+  }
+  if (msg?.type === 'pf:mac-open' && fromExtensionPage(sender)) {
+    macSend({ type: 'open' }).then(reply);
     return true;
   }
   if (msg?.type === 'pf:pchat-open' && sender.tab) {
@@ -683,6 +719,94 @@ if (!TEAMS && globalThis.KameloTopicAi) {
     deviceTopics.ask(String(msg.text || ''), sender.tab.id).then(reply, () => reply({ topic: null }));
     return true;
   });
+}
+
+// ---------- Melo voor Mac ----------
+// "Ask Melo" kan ook naar Melo voor Mac: de AI van Apple op deze Mac (repo melo-mac, Brug.swift). In Safari zit deze extensie
+// in Melo.app en praat ze altijd met Melo. In Chrome, Edge en Firefox pas als je het aanzet in de popup (het optionele recht
+// nativeMessaging) én in Melo (Instellingen → Browsers): dan start de browser melo-brug in Melo.app. De vraag gaat via het
+// geheugen van de browser rechtstreeks naar dat programma op deze Mac, nooit over internet (tests/geen-netwerk.test.mjs).
+// Alleen de gratis editie: Business schermt af in het eigen paneel, en Melo voor Mac kent die kluis niet.
+const MAC_HOST = 'eu.kamelo.melo';
+const UA = globalThis.navigator?.userAgent || '';
+const SAFARI = /\bSafari\//.test(UA) && !/(Chrome|Chromium|Edg|Firefox)\//.test(UA);
+async function macAllowed() {
+  if (TEAMS) return false;
+  if (SAFARI) return true;
+  const { settings } = await chrome.storage.local.get('settings');
+  if (!settings?.meloMac) return false;
+  return chrome.permissions.contains({ permissions: ['nativeMessaging'] }).catch(() => false);
+}
+// Eén bericht, één antwoord: { ok: true } van melo-brug. Safari negeert de naam en praat altijd met Melo.app zelf.
+function macSend(msg) {
+  if (typeof chrome.runtime.sendNativeMessage !== 'function') return Promise.resolve(false);
+  return macAllowed().then(ok => ok && chrome.runtime.sendNativeMessage(MAC_HOST, msg)).then(r => r?.ok === true, () => false);
+}
+// Staat Melo voor Mac klaar? Elke vraag start melo-brug even, dus een ja blijft een halve minuut geldig. Een nee niet: wie
+// Melo voor Mac net aanzet, ziet het meteen (zonder app start er niets, dus opnieuw vragen kost niets). Of het aan staat,
+// wordt elke keer gevraagd: uitzetten in de popup werkt meteen.
+let macPing = { at: 0, ok: false };
+async function macReady() {
+  if (!(await macAllowed())) return false;
+  if (macPing.ok && Date.now() - macPing.at < 30000) return true;
+  const ok = await macSend({ type: 'ping' });
+  macPing = { at: Date.now(), ok };
+  return ok;
+}
+chrome.storage.onChanged.addListener((changes, area) => { if (area === 'local' && changes.settings) { macPing.at = 0; doeMenu(); } });
+for (const ev of [chrome.permissions?.onAdded, chrome.permissions?.onRemoved]) ev?.addListener(() => { macPing.at = 0; doeMenu(); });
+
+// ---------- Melo, doe hier iets mee ----------
+// Tekst kiezen op een pagina (ook Gmail), rechtsklik → Melo → in je agenda, een herinnering of een rekening lezen (26 okt
+// 2026, Lucas: "voeg alles toe"). De gekozen tekst gaat als gewone vraag naar Melo voor Mac (macSend, type 'vraag'): de app
+// zet een plan of rekening klaar en jij keurt het goed. Daardoor werkt het ook met een Melo voor Mac die 'actie' nog niet
+// kent; een nieuwere leest met actie 'rekening' zelf het bedrag en de datum (Betalen.swift). Het menu staat er alleen als
+// Melo voor Mac aan staat. Het recht contextMenus vraagt de popup samen met nativeMessaging (in Safari een gewoon recht).
+const DOE = ['agenda', 'herinner', 'rekening'];
+const DOE_MENU = {
+  en: { agenda: 'Add to my calendar', herinner: 'Remind me about this', rekening: 'Read this bill' },
+  nl: { agenda: 'Zet in mijn agenda', herinner: 'Herinner me hieraan', rekening: 'Lees deze rekening' },
+  de: { agenda: 'In meinen Kalender', herinner: 'Erinnere mich daran', rekening: 'Diese Rechnung lesen' },
+  fr: { agenda: 'Ajouter à mon agenda', herinner: 'Me le rappeler', rekening: 'Lire cette facture' },
+  es: { agenda: 'Añadir a mi calendario', herinner: 'Recuérdamelo', rekening: 'Leer esta factura' },
+};
+// De vraag aan Melo: Nederlands of Engels, want daar herkent Melo voor Mac een plan in ("in mijn agenda", "herinnering").
+// "Eén herinnering": met "Herinner me hieraan" maakte het kleine model er drie van (proef 26 okt).
+const DOE_VRAAG = {
+  en: { agenda: 'Put this in my calendar:', herinner: 'Set a reminder for this, just one:', rekening: 'Read this bill and tell me what I need to do:' },
+  nl: { agenda: 'Zet dit in mijn agenda:', herinner: 'Maak hier één herinnering van:', rekening: 'Lees deze rekening en zeg wat ik moet doen:' },
+};
+const uiTaal = () => (chrome.i18n?.getUILanguage?.() || 'en').slice(0, 2).toLowerCase();
+async function doeMenu() {
+  const menus = chrome.contextMenus;
+  if (TEAMS || !menus) return;
+  try {
+    await menus.removeAll();
+    if (!(await macAllowed())) return;
+    const titels = DOE_MENU[uiTaal()] || DOE_MENU.en;
+    menus.create({ id: 'melo', title: 'Melo', contexts: ['selection'] });
+    for (const a of DOE) menus.create({ id: 'melo-' + a, parentId: 'melo', title: titels[a], contexts: ['selection'] });
+  } catch {}
+}
+function doeKlikt(info) {
+  const actie = String(info.menuItemId).replace(/^melo-/, '');
+  const tekst = String(info.selectionText || '').trim().slice(0, 19000);
+  if (!DOE.includes(actie) || !tekst) return Promise.resolve(false);
+  const vraag = (DOE_VRAAG[uiTaal()] || DOE_VRAAG.en)[actie];
+  // Lukt het niet (Melo voor Mac niet open te krijgen of de brug staat uit), dan de popup: die zegt waar je het aanzet.
+  return macSend({ type: 'vraag', tekst: `${vraag}\n\n${tekst}`, direct: true, actie })
+    .then(ok => { macPing = { at: Date.now(), ok }; if (!ok) chrome.action.openPopup?.()?.catch?.(() => {}); return ok; });
+}
+let doeKlik = false;
+function doeLuister() {
+  if (doeKlik || !chrome.contextMenus?.onClicked) return;
+  doeKlik = true;
+  chrome.contextMenus.onClicked.addListener(doeKlikt);
+}
+if (!TEAMS) {
+  doeLuister();
+  doeMenu();
+  chrome.permissions?.onAdded?.addListener(doeLuister);
 }
 
 // ---------- Private Chat openen ----------

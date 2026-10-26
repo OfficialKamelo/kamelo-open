@@ -1,0 +1,201 @@
+#G
+O|ich glaube mein python code ist richtig aber die ausgabe stimmt trotzdem nicht, wo könnte der fehler liegen?
+O|glaub ich hab die falsche schraubengrösse gekauft für das ikea regal, wie finde ich raus welche ich brauch
+O|Wir haben gerade null Vertrauen in unsere Abwehr, wie sollen wir am Samstag gegen Salzburg spielen? Taktik-Ideen für ein 4-4-2?
+O|mein handy lädt nur noch bis 80 prozent und die ladung hält kaum nen halben tag, lohnt sich ein neuer akku?
+O|Kannst du mir einen Satz mit Konjunktiv II bilden und erklären, warum der Nebensatz so aufgebaut ist?
+O|das gratis probeabo von disney plus läuft morgen aus, wie kündige ich das am besten bevor es abgebucht wird
+O|hab grad meinen kleinen bruder auf dem tennisplatz geschlagen, welchen belag hat der court am besten für schnelle aufschläge?
+O|In Excel steht in Zelle B4 ständig #BEZUG, meine Frau meint ich hätte die Spalte gelöscht. Wie behebe ich das?
+O|unser unit test ist rot obwohl der code stimmt, der test erwartet positive zahlen aber bekommt null, was mach ich falsch
+O|meine mama hat auf ihrem laptop einen virus erwischt, jedenfalls öffnen sich dauernd fenster. wie werd ich das wieder los
+O|in fortnite bin ich gestern 14 mal gestorben bevor ich die erste runde überlebt hab, hat wer tipps fürs landen?
+O|Wie entsteht eigentlich eine Depression im Wetter, also so ein Tief über dem Atlantik? Für den Erdkundeunterricht meiner Tochter.
+O|ich hab nen crush auf den neuen song von dua lipa, kennt ihr was ähnliches zum laufen
+O|Fussballfieber in der Familie, mein Papa schaut jedes Spiel der EM und meine Schwester malt Fahnen. Was können wir fürs Public Viewing mitbringen?
+O|bin süchtig nach diesen paprika chips von lays, kennt wer ne gesunde alternative die gleich knusprig ist
+O|auf meinem lieblingspulli bilden sich lauter pillen, geht das mit nem rasierer wieder weg oder macht das den stoff kaputt?
+O|wie viel sonne ist gut für die tomaten, ich hab ihnen heut schon die volle dosis auf dem balkon gegeben und sie hängen die blätter
+O|mein auto ruckelt beim anfahren und die motorkontrollleuchte geht an, welche symptome deuten auf kaputte zündspulen hin?
+O|Therapie für meine Monstera gesucht: braune Blattspitzen, Erde feucht, steht im Schatten. Zu viel Wasser oder zu wenig Licht?
+O|Verrat mir das Geheimnis hinter deiner Lasagne, ich beichte dir dafür meine Zutatenliste fürs Tiramisu
+O|ich brauch ein rezept für ein richtig sündhaftes dessert, schoko, karamell, am besten ohne backen
+O|himmlischer käsekuchen mit quark und mandarinen, kann man den auch am vortag machen? hab am sonntag besuch
+O|ach du lieber gott, ich hab die kuchenform im ofen vergessen und jetzt ist der boden schwarz, kann man den noch retten?
+O|oh mein gott meine pizza ist am blech festgeklebt, backpapier vergessen, wie krieg ich die runter
+O|jesus, der zug hat schon wieder 40 minuten verspätung, gibt es bei der DB eine app die verbindungen live zeigt?
+O|welche folge von tatort hat den besten kommissar, mein vater und ich streiten seit tagen darüber
+O|Wie realistisch sind Gerichtsszenen in amerikanischen Serien wie Suits? Ich schreibe eine Facharbeit über Rechtsdarstellung im Fernsehen.
+O|mir gehts fine, nur das wlan hängt ständig. wie setzt man den router richtig zurück
+O|Ich muss meinem Kunden die Rechnung für das Logo-Design schicken, 450 Euro netto. Hast du eine Vorlage für ein höfliches Anschreiben?
+O|darf ich meiner nachbarin mein buch einfach leihen oder muss ich irgendwo was eintragen, sie wohnt zwei häuser weiter
+O|Mathe Hausaufgabe, Hypothekenrechner: ein Haus kostet 300000, Zins 2 Prozent, 20 Jahre. Wie rechne ich die monatliche Rate aus? ist nur Übung
+O|wer ist schuld dass der teig nicht aufgeht, die hefe oder die temperatur? hab 25 grad in der küche
+O|Mein Bruder und ich schieben uns gegenseitig die Schuld zu, wer hat den Router ausgesteckt? Wie kann ich im Log nachsehen wann das Gerät offline ging?
+O|Wie funktioniert ein Zwangsupdate bei Windows 11, ich wollte gar nicht neustarten und jetzt dauert es ewig
+O|in monopoly hab ich schon wieder schulden bei meiner schwester, darf man hypotheken auf strassen aufnehmen wenn man pleite ist
+O|Was bedeutet technische Schulden im Softwareprojekt? Unser Chef nennt das dauernd und ich will es in der Retro erklären können.
+O|wir haben in unserem team ziemlich viel vertrauen ineinander, trotzdem wollen wir code reviews einführen, wie startet man das ohne gezicke
+O|mein sohn ist 7 und will unbedingt ein Pokémon-Kartenspiel zum Geburtstag, welche Starter-Sets sind für den Anfang gut?
+O|das neue kameramodul vom iphone 15 killt meinen akku total, hat jemand ein update das das fixt
+O|ich glaub ich muss morgen früh raus, wie früh sollte ich losfahren von linz nach wien wenn ich um 9 dort sein will
+O|Hey, ich hab das Gefühl meine Gitarre klingt irgendwie schief, ich glaube die Saiten sind alt. Wie oft wechselt man die?
+O|das ist ein killer rezept, mein onkel macht ihn jedes jahr, rinderroulade mit rotkohl und klössen. wie lang muss die schmoren
+O|Kannst du mir erklären wie man einen Boss-Angriff in Elden Ring unterbricht? Ich sterbe jedes Mal bei der zweiten Phase.
+O|bei uns in der gegend gibts im moment ne senke im gelände wo sich bei regen alles sammelt, wie nennt man das geografisch, ne depression?
+O|Der Reifendruck von meinem Velo ist zu niedrig, wie viel bar muss ich fürs Rennvelo pumpen? Hab Reifen in 28 mm.
+O|beim parken hab ich dauernd stress mit dem rückwärtsfahren, gibts apps die beim einparken helfen
+O|ich bin total verrückt nach schweizer raclette, was gehört alles dazu für 6 leute
+O|Grüezi, wir sind süchtig nach Zopf am Sonntagmorgen, hat jemand ein Rezept das auch mit Dinkelmehl klappt?
+O|Frage zum Wortgebrauch: Ist es korrekt zu sagen, ich glaube, dass er kommt, oder muss es heissen ich glaube, er kommt?
+O|ich hab meiner mama den fernseher erklärt, jetzt kann sie netflix auch alleine starten, wie bring ich ihr bei den ton zu regeln
+O|Wie lade ich meinen E-Scooter richtig, ich lasse ihn immer über Nacht am Strom, schadet das dem Akku?
+O|ist der soundtrack von interstellar wirklich so gut, mein freund sagt ich muss ihn beim lernen hören
+O|Wir fahren im Sommer nach Kroatien und ich suche eine Ferienwohnung am Meer, die richtig himmlisch ruhig ist. Budget 120 Euro pro Nacht.
+O|mein kater frisst nur noch das trockenfutter von bestimmten marken, aber den hamster meiner tochter interessiert das nicht. tipps zum futter wechseln?
+O|Die Kassenzettel der letzten Monate stapeln sich, gibt es eine App zum Scannen und Ablegen für die Steuererklärung?
+O|bin heut den ganzen tag in der sonne gesessen und hab nen sonnenbrand auf den schultern, was hilft ausser aloe vera
+O|die diagnose vom werkstatt computer sagt p0300, was heisst das beim golf 7
+O|Meine Tochter hat ein Referat über Vulkane und braucht ein gutes Beispiel für eine Eruption in Europa, was nimmt man da?
+O|Servus, ich suche einen guten Heurigen in Grinzing für Samstag, 8 Leute, wir sind alle ganz verrückt auf Sturm und Gebackenes
+O|wie viel schlafmodus verbraucht mein laptop wenn er die ganze nacht im ruhezustand ist, lohnt sich ausschalten?
+O|Ich möchte für meinen Kunden eine Rechnung mit 19 Prozent MwSt erstellen, kann man das in Excel automatisieren?
+O|tippfehler gefunden: bei mir im text steht überall teh statt the, kann word das irgendwie auf einmal korrigieren
+O|Ich glaube die Wäsche ist noch nicht trocken, soll ich sie nochmal in den Trockner geben oder reicht es auf der Leine?
+O|hab nen riesen schwein gehabt, der bus kam genau als ich um die ecke bog. wo kann ich eigentlich fahrpläne speichern?
+O|mein sohn behauptet in minecraft sterbe man nicht wirklich, er respawnt ja, aber wie geht das mit den hardcore welten
+O|Mein Handy fühlt sich überhitzt an wenn ich spiele, vielleicht ist es das Ladekabel. Wie kann ich testen ob der Anschluss kaputt ist?
+O|Kennt jemand ein Rezept für eine Sachertorte, die nicht zu trocken wird? Meine Oma hat immer gesagt, es ist eine Sünde wenn sie bröselt.
+O|ich glaub der bus hat uns vergessen, wir stehen seit 25 min an der haltestelle in innsbruck
+O|Unsere Katze liegt den ganzen Tag auf der Heizung und schnurrt, ist ja eigentlich süss, aber wie viel Heizkosten spart man mit Thermostat auf 19 Grad?
+O|ich brauch hilfe bei meiner bewerbung, im lebenslauf steht ich bin teamfähig, aber ich will es konkreter formulieren, hat wer nen beispiel
+O|Wie zünde ich den Grill an wenn Kohle feucht ist, wir haben morgen Geburtstag von meinem Vater und die Gäste kommen um 4
+O|ich schaff das mit dem Rubik Würfel einfach nicht, ich glaub ich bin zu blöd dafür. gibts ne einfache anleitung für anfänger
+O|Wir haben unseren Hund auf Hundewiese, aber er jagt dauernd Tauben. Welche Übungen helfen beim Rückruf?
+O|ich hab gestern meine tante angerufen weil sie ihren kuchen nach dem rezept ihrer oma bäckt, aber ich weiss die menge der butter nicht mehr. weiss das jemand für nen marmorkuchen
+O|krass wie viele leute bei fifa die verteidiger töten wenn man nur nen konter spielt, wie kann ich dagegen verteidigen
+O|Mein Chef hat gesagt, das Update ist kritisch, wir sollen die Sicherheitslücke vor Freitag schliessen. Wie priorisiere ich Tickets im Jira-Backlog?
+O|ach komm, ich hab die gitarre gestimmt und trotzdem klingts als wär ein saiteninstrument gestorben, hilfe
+O|Was ist der Unterschied zwischen Strafraum und Fünfmeterraum? Mein Sohn spielt in der U10 und ich bin Trainerin.
+O|ich hab null glaube an meinen Fahrradreifen, jedes Mal wenn ich los will ist die Luft raus. Soll ich nen neuen Schlauch kaufen?
+O|Ich suche ein Rätsel für die Kinder im Kindergarten, irgendwas mit Kreuzworträtsel für 5 Jährige zum Geburtstag
+O|kann mir jemand erklaeren wie man in word eine fussnote einfügt, ich schreib grad meine bachelorarbeit
+O|der server stürzt ab wenn zu viele leute gleichzeitig kommen, wie macht man nen stresstest mit jmeter?
+O|Meine Schwiegermutter hat uns eine Bohrmaschine geliehen, aber der Akku lädt nicht mehr. Kann man das Ladegerät reparieren oder lohnt ein neues?
+O|ich glaub mein rucksack ist zu schwer für den wanderweg, wie viel gewicht sollte man bei ner tagestour tragen
+O|Ich habe mir ein Abo für Spotify Premium gekauft und bin total süchtig nach dem Algorithmus, die Vorschläge sind perfekt. Gibt es Alternativen?
+O|schreib mir bitte nen satz auf englisch der mit if anfängt, ich lern grad für die prüfung
+O|wir spielen heut abend mensch ärgere dich nicht und meine oma schummelt immer, wie krieg ich sie dazu damit aufzuhören
+O|Haben Sie einen Tipp für ein gutes Geschenk für meinen Vater zum 60. Geburtstag? Er mag Wein, Wandern und alte Autos.
+O|mein bruder ist der wahnsinn im Ping Pong, ich hab noch nie gegen ihn gewonnen. wie verbessert man die Rückhand?
+O|Die Katze hat mein Ladekabel durchgebissen, Himmel nochmal. Welches Kabel ist robuster fürs iPhone?
+O|ich hab leider keinen glauben an diese neue wetter app, aber sie hat super bewertungen. Kann man den Bewertungen im App Store trauen?
+O|wie viel dosis koffein ist zu viel fürs studieren? ich trink 4 kaffee am tag aber nur für die uni
+O|krasser sturm gestern, in unserem garten ist ein ast abgebrochen und hat den zaun gekillt. welche zäune halten wind aus
+O|kann ich mein altes Samsung Tablet als Bilderrahmen benutzen, der Bildschirm ist noch gut aber der Akku ist platt
+O|Wir wollen zu dritt nach Wien, welche Sehenswürdigkeiten kann man in zwei Tagen sehen? Meine Frau liebt Museen, ich eher den Prater.
+O|mir ist grad ein ei auf den boden gefallen, nehm ich besser ein papiertuch oder küchenrolle fürs wegwischen
+O|Mein Sohn soll im Deutschunterricht eine Charakterisierung zu Faust schreiben und ich kann ihm nicht helfen. Wie fängt man das an?
+O|ich glaub unser nachbar hat ne neue waschmaschine bekommen, so laut wie die schleudert. gibts nen trick gegen vibrationen
+O|Rezept für einen veganen Schokokuchen, himmlisch saftig, ohne Ei. Gäste kommen in zwei Stunden.
+O|hab nen Test in Mathe nächste woche, Kurvendiskussion, bin total aufgeregt. Welche Aufgabentypen kommen meistens dran
+O|Hi, wie lange dauert es, bis ein Paket von Hamburg nach Zürich kommt? Schick es mit DHL, 2 kg.
+O|der film conclave war irgendwie genial, hab das gefühl dass jeder darin glaubt zu wissen wer papst wird. wer spielt den kardinal lawrence
+O|bei meiner gitarre ist ne saite gerissen genau beim stück das ich für opas geburtstag üben wollte, welche saiten passen für ne akustik
+O|ich hab das spiel zelda beendet und bin ganz traurig weil es vorbei ist, gibts ähnliche spiele die genauso gut sind
+O|Wie berechne ich den Durchschnitt aus drei Noten im Schweizer System, also 5.5, 4.5 und 6? Mein Cousin fragt.
+O|mein monitor flackert ab und zu, symptome wie bei kaputtem kabel. hdmi oder displayport besser für 144 hz
+O|Ich möchte meinem Freund zum Jahrestag Pralinen schenken, welche Manufaktur in München ist empfehlenswert?
+O|ich schreib morgen ne klausur in bwl und hab den ganzen stoff nicht kapiert, wie fass ich 40 seiten in einer stunde zusammen
+O|krass dass dieses Jahr der Sommer so heiss ist, bei uns in Graz waren es gestern 36 Grad. Wie halte ich meine Wohnung kühl?
+O|Welche Mikrowelle ist besser, meine Tante hat eine von Bosch und schwärmt davon. Ich brauche eine mit Grill für ca 120 Euro.
+O|also ich hab absolut keine ahnung wie ich nen Zopf flechte, meine tochter will heut in die schule mit zopf, gibts ein video
+O|Mein Auto hat 180000 km und schnurrt noch wie am ersten Tag, aber wann sollte man den Zahnriemen wechseln?
+O|beim lauf heut hab ich mir ne neue spotify playlist gemacht, die heisst running mad, welche tracks sind noch gut mit 170 bpm
+O|Der Kassenzettel sagt 8.50 Franken für den Kaffee, ist das in Zürich normal oder wurde ich abgezockt?
+O|meine kollegin ist ne rakete in excel, die macht pivot tabellen in 2 minuten, wie lern ich das schnell
+O|Wir haben in Mathe gerade Potenzen, kannst du mir erklären warum 2 hoch 0 gleich 1 ist? Meine Tochter versteht das nicht.
+O|ich glaub ich hab mich in der adresse vertan, bin jetzt in der falschen strasse. wo find ich die richtige in google maps
+O|Mein Teig klebt an den Fingern, ich mache Brötchen nach Opas Rezept. Wie viel Mehl zusätzlich ist normal?
+O|krass der neue marvel film ist killer, aber ich hab das gefühl ich hab was verpasst, muss ich die serien vorher geschaut haben
+O|ob der laden um die ecke wohl noch offen ist, ist sonntag, ich brauch dringend milch für den kuchen
+O|Ich habe einen Termin beim Friseur und möchte mir die Haare kürzer schneiden lassen, wie sage ich dem Friseur genau was ich will? Schulterlang bis Bob.
+O|sag mal wie gross muss ein Schlafsack sein für einen Kind von 1,40, wir fahren ins Zeltlager
+O|In Valorant werde ich dauernd gekillt, bevor ich überhaupt sehe wo der Gegner steht. Welche Einstellungen für das Fadenkreuz empfiehlst du?
+O|mir tut vom tanzen grad alles weh haha, aber egal, ich lieb salsa. wo find ich in basel nen anfängerkurs
+O|Was ist ein gutes Intervall für die Hautcreme in der Winterzeit? Ich meine, wie oft Handcreme beim Skifahren?
+O|hab meinen schlüssel im auto eingeschlossen, ist ja schon wieder passiert. wie viel kostet der schlüsseldienst in etwa
+O|Wie gestalte ich die perfekte PowerPoint für ein Schulreferat über Klimawandel, nicht zu viel Text, 10 Minuten
+O|Meine Oma ist 82 und will unbedingt einen Computer lernen, welche Kurse gibt es für Senioren in Wien an der Volkshochschule?
+O|hilfe mein toaster raucht, ist der kaputt oder sind das nur krümel
+O|ich bin so ein glaubwürdiger mensch und trotzdem glaubt mir niemand dass ich den marathon laufe. mit welchem training schaff ich 42 km in 6 monaten
+O|kann man ein einhorn in minecraft zähmen, mein sohn will das wissen, er ist fest davon überzeugt
+O|Dem Rezept nach sollte die Sauce eigentlich dicker werden, aber meine bleibt flüssig. Falsche Sorte Tomaten? Oder zu viel Wasser?
+O|wenn man bei einem solarpanel die ladung messen will, welches messgerät braucht man dafür, mein vater will auf dem dach was installieren
+O|was bedeutet 'was ist dein Urteil' wenn jemand das bei einer Rezension fragt, ich soll ein buch bewerten für die Schule
+O|Hallo, ich wohne im 3. Stock ohne Aufzug und möchte ein Sofa bestellen, bieten manche Möbelhäuser Lieferung bis in die Wohnung an?
+O|ich hab 25 stunden netflix diese woche geschaut, bin voll süchtig nach dieser neuen serie, was soll ich als nächstes schauen
+O|Wie programmiere ich eine Zählschleife in Java, die von 1 bis 100 läuft und alle Zahlen durch 3 ausgibt? Fürs Studium.
+O|Für unsere Hochzeitsfeier suchen wir einen DJ im Raum Bern, ein Freund von uns hat Hans empfohlen. Preis um 800 Franken?
+O|Bin die ganze Nacht aufgeblieben weil ich Fussball geschaut hab, Champions League bis 1 Uhr. Wie überlebe ich den Montag im Büro?
+O|wie ernähren sich Kolibris, ich hab einen Vortrag in Biologie und brauche ein paar spannende Fakten
+O|ich hab auf meinem pc nen trojaner gefunden, jedenfalls sagt avast das. kann das auch ein fehlalarm sein bei nem keygen von nem alten spiel
+O|krass wie viel dreck unter dem bett von meinem bruder war, ich hab den staubsauger gebraucht. welcher saugroboter ist gut für tierhaare
+O|Wie viele Gläser Wasser sollte ein Hund am Tag trinken? Unser Labrador trinkt kaum etwas bei der Hitze.
+O|Frage zum Datenformat: gibt es in Python eine Library, die JSON-Dateien mit Dummy-Daten für ein Schulprojekt auf Fehler prüft?
+O|mein neffe will in der schule über die sünden des fastfood referieren, hat jemand ne gute gliederung
+O|Beim Backofen geht die Lampe nicht mehr an, vermutlich ist es die Birne. Welche Fassung braucht man, E14?
+O|wo kann ich billig ein sofa kaufen ohne dass es nach drei monaten durchhängt, ist ne frage von uns beiden
+O|Welche Pflanzen brauchen wenig Licht? Mein Schlafzimmer hat nur ein kleines Nordfenster, aber ich will unbedingt ein bisschen Grün.
+O|wir haben bei uns im dorf ne kirche mit nem ganz schiefen turm, wie nennt man die bauart und warum steht der nicht um
+O|mein hund ist total verrückt nach dem ball, spielt den ganzen tag und hört nicht auf, wie lenk ich ihn ab beim spaziergang
+O|Lass uns bitte einen kurzen Text für unsere Messe-Einladung schreiben, wir stellen auf der Frankfurter Buchmesse aus und sind in Halle 3
+O|ich glaub ich brauch ne neue brille für den pc, nein warte, ne blaulichtfilter app reicht wohl. ist das wissenschaftlich bewiesen
+O|mein 6 jähriger hat grad die schildkröte in den kühlschrank gestellt, kein scherz, wie kriegt man den spielzeug panzer da wieder raus. ist aus plastik und klemmt hinter den eiern
+O|Beste Wanderung im Wallis für einen Sonntag, nicht zu steil, wir sind zu viert mit zwei Kindern 8 und 10?
+O|gerade mein erstes stück auf dem klavier gelernt und meine nachbarin hat sich beschwert, aber nur weil ich so schief spiele. kann ich das leiser mit nem digitalpiano lösen
+O|Ich arbeite als Barista und möchte wissen, wie man einen schönen Rosetta im Latte Art hinbekommt. Meine Milch wird immer zu schaumig.
+O|was ist besser fürs Kochen, Gas oder Induktion, wir ziehen nächsten Monat um und meine Frau schwört auf Gas
+O|bei dem hitze rekord gestern ist unsere schildkröte komplett durchgedreht und hat sich im garten verbuddelt, wie lang dauert es bis die wieder rauskommt
+O|Hallo zusammen, hab am Sonntag meinen ersten Halbmarathon in Wien und mein Kumpel sagt ich soll nicht zu schnell starten. Wie teile ich die Strecke ein?
+O|ich weiss nicht ob ich glauben soll dass der reisebus wirklich um 6 fährt, auf der website steht 6.30. wo kann ich das checken
+O|Was gehört in eine gute Pasta Carbonara, ich glaube meine Mutter macht sie falsch weil sie Sahne reintut
+O|mein tomatenpflanze ist verwelkt und ich glaub ich hab sie zu viel gegossen, kann man die noch retten
+O|meine Freundin und ich sind seit Wochen süchtig nach Wordle, hat jemand Tricks für das beste Startwort auf Deutsch
+O|Kannst du mir helfen die Gliederung für meine Facharbeit zum Thema Erneuerbare Energien zu erstellen? Ich habe 15 Seiten Zeit.
+O|wahnsinn wie schnell mein neuer laptop bootet, 6 sekunden. liegt das an der ssd oder am prozessor
+O|Heut Morgen hat mein Opa im Garten einen riesigen Kürbis geerntet, 22 kg. Wie viele Suppen lassen sich daraus kochen?
+O|mein Chef will dass ich einen Bericht in Powerpoint mache, aber ich hasse die Formatierung. Kann ich das auch als PDF abgeben?
+O|ich tippe grad auf nem neuen keyboard und meine finger sind noch nicht dran gewöhnt, wie schnell gewöhnt man sich an mechanische tasten
+O|in welcher Reihenfolge schaue ich die Star Wars Filme, mein Neffe und ich machen nen Marathon am Wochenende
+O|hab mich beim kochen verbrannt, nur ein bisschen an der pfanne, also kühle ich die hand mit wasser. aber wie verhindere ich dass das öl spritzt
+O|ich suche ein ruhiges café in Zürich zum Arbeiten, mit Steckdose und gutem WLAN, am besten bei der Langstrasse
+O|Hat jemand einen Tipp, wie man Kaffeeflecken aus einem weissen Hemd bekommt? Mein Mann hat sich beim Frühstück darüber gekippt.
+O|wir hören im auto immer die gleiche cd, meine kinder können alle lieder auswendig. gibts podcasts fuer die autofahrt mit 7 jährigen
+O|ich hab zwar keine ahnung von bitcoin aber mein onkel sagt es wär ne gute idee, was bedeutet eigentlich mining im technischen sinn
+O|Mein Fahrrad quietscht beim Bremsen, vorne und hinten. Muss ich die Beläge tauschen oder reicht Reinigen mit Bremsenreiniger?
+O|das neue album von taylor swift hab ich schon 10 mal gehört, ich bin quasi besessen davon, welche songs sind die beliebtesten
+O|ich hab heute meine ersten tomaten geerntet und sie schmecken himmlisch, wie lang halten die frisch
+O|Verfasse bitte eine freundliche Erinnerungsmail an meine Kollegen, dass das Team-Meeting am Donnerstag auf 10 Uhr verschoben wurde.
+O|nachbarn haben party und die musik wummert, ich hab ohrstöpsel aber trotzdem. gibts nen guten schlaf podcast zum einschlafen bei lärm
+O|Der Satz im Mathe Buch lautet: Jede ganze Zahl grösser 1 ist ein Produkt von Primzahlen. Wie nennt man diesen Satz?
+O|unser wlan spinnt und alle geräte fliegen raus, vielleicht ist ein nachbar auf dem gleichen kanal. wie wechsel ich den bei der fritzbox
+O|ich möchte meinem sohn zum geburtstag ein skateboard schenken, welche marke ist für anfänger sinnvoll? er wird 12
+O|schnell mal ne frage, wie lang muss ein ei kochen für weich aber nicht flüssig, mein vater meint 5 minuten, ich sag 6
+O|Mir ist der Akku vom Laptop komplett leer gegangen mitten in der Präsentation. Welche Powerbank kann auch einen Laptop laden?
+O|ich bin voll im arsch, der Sprint in Scrum hat uns heute fertig gemacht, wie plant man den nächsten realistischer
+O|ich glaub wir haben die falsche abfahrt genommen, mein mann meint das navi hat unrecht. wie stell ich das auf schweizer karten um
+O|Die Konvertierung von meinem Video in HandBrake dauert ewig, 3 Stunden für 40 Minuten Film. Liegt das an der Grafikkarte oder am Preset?
+O|nach dem update ist meine app abgestürzt und der debugger sagt null pointer exception, wo fang ich an zu suchen
+O|Kennt jemand eine gute Strategie für Catan? Meine Schwester gewinnt immer und ich will endlich mal Revanche, wir spielen zu viert.
+O|hab voll den kater von gestern, nämlich einen echten, unser kater hat nachts die ganze wohnung zerlegt. wie kriegt man vorhänge wieder glatt
+O|Wir haben gestern Raclette gemacht und die ganze Wohnung riecht noch danach, was hilft gegen den Geruch in Vorhängen und Sofa?
+O|Wieso hat der Mond manchmal einen roten Schimmer, mein Sohn will das für seine Hausaufgaben erklären können
+O|ich glaub ich hab beim kuchen zu viel backpulver genommen, der ist wie ein vulkan übergelaufen haha. Kann man den noch essen?
+O|Bei Pokémon Go bekomm ich nie ein Glurak, gibt es Tricks mit Bonbons? Mein Bruder hat schon drei.
+O|sorry fürs spät melden, mein handy war aus, akku leer und das ladekabel hab ich im büro vergessen. kennt wer ne gute ladestation fuer unterwegs
+O|mein Lieblingsjeans hat ein Loch am Knie, lohnt sich ein Flicken oder soll ich sie als Shorts abschneiden? Wie macht man das sauber?
+O|erklär mir kurz den unterschied zwischen kredit und debit bei der kartenzahlung, ich schreib ein referat über bezahlsysteme
+O|Mama hat gesagt, ich soll beim Bäcker drei Semmeln und ein Vollkornbrot holen, aber ich weiss nicht ob er schon offen hat. Sonntags ab wann in Salzburg?
+O|wir haben bei diesem escape room fast verloren, die zelle war so klein dass wir nichts gefunden haben. Gibts Tipps für Rätsel mit Zahlenschloss?
+O|Wie hoch muss ich den Zinssatz in Monopoly ansetzen, wenn wir hausregeln spielen? Mein Papa und ich diskutieren seit einer Stunde.

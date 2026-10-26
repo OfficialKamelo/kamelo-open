@@ -1,0 +1,322 @@
+#P
+H|papas op am freitag, ich hab angst
+H|knoten in der brust, warte auf biopsie
+H|mamas ct befund ist schlecht ausgefallen
+H|seit einer woche blut im stuhl
+H|gestern diabetes typ 1 diagnostiziert, überfordert
+H|mein sohn hustet blut, fahre in die notaufnahme
+H|chemo beginnt montag, todesangst
+H|psa-wert von meinem mann ist erhöht
+H|hausarzt vermutet ms bei mir
+H|meine kleine tochter hat leukämie
+H|glaub ich hatte gestern einen mini schlaganfall
+H|hepatitis b positiv, wem sag ich das
+H|oma hat demenz und erkennt mich nicht mehr
+H|herzrasen jede nacht seit corona
+H|biopsie von meiner schwester morgen
+H|schwanger und schmierblutung in woche 8, sorge
+H|schwindel und linker arm taub, ignoriere es
+H|heute früh hiv positiv getestet
+H|kleinkind hatte wieder einen fieberkrampf
+H|seit 3 jahren dialyse, so müde
+M|ich wasche mir fünfzigmal am tag die hände
+M|kann nicht aufhören zu trinken, dritter abend diese woche
+M|die magersucht meiner frau wird schlimmer
+M|ausgebrannt, weine auf der toilette in der arbeit
+M|trauere um meinen bruder, 6 monate, funktioniere nicht
+M|schon wieder gedanken, mir das leben zu nehmen
+M|panikattacken in der u-bahn jeden morgen
+M|adhs mit 34 diagnostiziert, tabletten wirken nicht
+M|meine tochter ritzt sich, frische schnitte gesehen
+M|rückfall mit koks nach 8 monaten clean
+M|tagelang nicht aus dem bett gekommen
+M|zehnmal den herd kontrollieren vorm gehen
+M|mama starb im märz, ich höre noch ihre stimme
+M|mein mann redet seit tagen nicht, depressiv
+M|jede nacht fressattacke und erbrechen seit silvester
+M|therapie angefangen, hasse mich so bedürftig
+M|beste freundin sagt sie ist suizidal
+M|süchtig nach gras und handy, hasse mich
+M|wochenbettdepression, fühle nichts für das baby
+M|zähle ständig schritte, zwangsstörung frisst mich auf
+S|er betrügt mich, nachrichten überall gefunden
+S|glaub ich bin asexuell, trau mich nicht es meiner freundin zu sagen
+S|zwei tage pille vergessen, was jetzt
+S|null lust mehr seit dem baby
+S|mein freund kriegt keinen hoch, peinlich
+S|dieses wochenende coming-out bei meinen eltern
+S|chlamydien positiv, partner weiß nichts
+S|glaub ich bin trans, 16 und verängstigt
+S|mann will einen dreier, ich bin unsicher
+S|mit meinem kollegen geschlafen, mir ist übel
+S|meine tochter hat sich als bi geoutet
+S|sex tut jedes mal weh, was stimmt nicht mit mir
+S|kondom gerissen gestern, pille danach?
+S|frau hat meine dating-app entdeckt, hilfe
+S|pornosucht ruiniert die intimität mit meiner freundin
+S|schwul und mit einer frau verheiratet, 40, verloren
+S|vor 2 jahren fremdgegangen, beichten?
+S|mein sohn zweifelt an seinem geschlecht
+S|herpes diagnose, wird mich noch wer daten
+S|verlobte will keinen sex mehr seit der hochzeit
+R|sohn bei den zeugen jehovas, ich bin ratlos
+R|aus der kirche austreten, eltern verstoßen mich
+R|glauben verloren seit papas tod
+R|familie will dass ich kopftuch trage, ich nicht
+R|frau ist zum islam konvertiert, weiß nicht was ich fühle
+R|streng gläubige familie, will raus
+R|pfarrer sagt schwul ist sünde, mein bruder ist schwul
+R|mama betet dass ich zur kirche zurückkehre
+R|glaub nicht mehr an gott, trau mich oma nicht zu sagen
+R|schwiegereltern wollen baby taufen, wir sind atheisten
+R|zweifle an meinem katholischen glauben seit der firmung
+R|eltern verlangen religiöse hochzeit, ich weigere mich
+R|ex-mormone, familie meidet mich
+R|papa zwingt mich zum ramadan fasten, ich bete nicht
+R|meine schwester ist wiedergeboren, unerträglich
+R|in einer sekte aufgewachsen, endlich raus
+R|konvertiere zum judentum, familie des freunds zögert
+R|meine mama glaubt ich komm in die hölle
+R|geh nicht mehr in die messe, oma fragt ständig warum
+R|kirchenälteste fragen nach meiner scheidung
+G|schon wieder schufa eintrag, will raus
+G|3 monate mietrückstand, vermieter schreibt ständig
+G|gestern 800 euro verzockt
+G|gerichtsvollzieher kommt donnerstag, keine ahnung was tun
+G|alle karten ausgereizt, verheimliche es meiner frau
+G|kurzkredit schon wieder verlängert, jetzt 800
+G|kann strom nicht zahlen, abgestellt
+G|inkasso ruft meine mutter an
+G|jeden monat überzogen, lasse mahlzeiten aus
+G|bei kredithai geliehen, jetzt drohungen
+G|mann hat unser erspartes verspielt
+G|autokredit nicht bezahlt, pfändungsbrief da
+G|schulde dem finanzamt 12000, panik
+G|kann mir insulin nicht leisten, miete geht vor
+G|studienkredit beim inkasso, lohn gepfändet
+G|40k schulden, partner weiß nichts
+G|bank hat konto gesperrt, kein geld fürs essen
+G|heute räumungsklage, zwei kinder
+G|mein bruder schuldet dealern tausende
+G|mit 29 privatinsolvenz, schäme mich
+L|polizei hat mich wegen meines cousins vorgeladen
+L|chef hat mich wegen diebstahl gekündigt, war ich nicht
+L|gestern nacht wegen alkohol am steuer festgenommen
+L|ex zieht mich wegen sorgerecht vor gericht
+L|vorladung bekommen, termin in zwei wochen
+L|sohn wegen körperverletzung angezeigt, was jetzt
+L|polizei hat um 6 uhr unsere wohnung durchsucht
+L|vorstrafe taucht bei bewerbungen auf
+L|nach beschwerde gekündigt, unwirksam?
+L|bruder sitzt in u-haft, prozess nächsten monat
+L|führerschein weg wegen punkten, brauch das auto
+L|mein alter vermieter klagt mich
+L|jugendamt hat akte über uns angelegt
+L|papa bekam bewährungsstrafe
+L|zu unrecht ladendiebstahl vorgeworfen, detektiv hielt mich fest
+L|sorgerechtstermin morgen, angst die kinder zu verlieren
+L|polizeiliche einvernahme donnerstag
+L|500 euro strafe und brief vom gericht
+L|aufenthaltstitel abgelaufen, angst vor abschiebung
+L|kontaktverbot gegen mich, zu unrecht
+#G
+H|ich bin ärztin, welche tests bei 3 tagen fieber
+H|welche stadien hat diabetes typ 2
+H|wie funktioniert chemotherapie grundsätzlich
+H|unterschied zwischen viraler und bakterieller infektion
+H|pflegeschule: wie misst man richtig den blutdruck
+H|durchschnittliche reha-dauer nach knie-op, für mein referat
+H|was löst migräne aus, allgemeiner überblick
+H|symptome von lupus laut lehrbuch
+H|wie trainieren impfungen das immunsystem
+H|überlebensraten bei krebs in deutschland statistik
+M|unterschied zwischen angststörung und panikstörung
+M|als lehrerin, wie begleite ich trauernde schüler
+M|wie viele menschen haben weltweit adhs
+M|erkläre das phasenmodell der trauer
+M|schreib ein gedicht über depression für den deutschunterricht
+M|wie funktioniert kognitive verhaltenstherapie theoretisch
+M|essay: sucht als krankheit oder entscheidung
+M|was sind die diagnosekriterien für zwangsstörung
+M|burnout-zahlen nach berufsgruppen
+M|die figur in meinem roman hat magersucht, wie schreib ich das realistisch
+S|als hebamme, wie erkläre ich teenagern die pille
+S|geschichte der lgbt-rechte in europa
+S|wie sicher sind kondome statistisch
+S|was ist der unterschied zwischen sex und gender
+S|schreib eine szene, in der ein paar nach einer affäre auseinandergeht
+H|wie werden stis übertragen, für ein schulreferat
+S|asexualität erklären für eine soziologiearbeit
+S|was misst die kinsey-skala
+S|spirale oder implantat, wie wirken sie
+H|warum gehen menschen fremd, studienüberblick
+R|unterschied zwischen sunniten und schiiten
+R|fasse die fünf säulen des islam zusammen
+R|geschichte der zeugen jehovas
+R|warum begann die reformation
+R|erkläre einem kind die firmung
+R|atheist oder agnostiker, was ist der unterschied
+R|wie viele treten jährlich aus der kirche aus
+R|schreib eine predigt über vergebung
+R|worum geht es bei diwali
+R|buddhismus und stoizismus vergleichen
+G|warum steigen die zinsen
+G|berechne die zinsen für einen kredit über 10000 euro bei 6 prozent
+G|wie funktioniert der schufa-score allgemein
+G|schneeball oder lawine bei schulden, was ist mathematisch besser
+L|erkläre das insolvenzrecht in österreich für meine prüfung
+G|wie verdienen kleinkredit-anbieter geld
+G|businessplan für ein inkassobüro
+G|was ist zinseszins, einfaches beispiel
+M|wie wirkt sich spielsucht auf die wirtschaft aus
+S|fasse zusammen wie eine hypothek funktioniert
+L|wie viele verkehrsstrafen gibt es pro jahr in kolumbien
+L|unterschied zwischen vergehen und verbrechen
+L|erkläre das recht zu schweigen
+L|jurastudent: voraussetzungen der fahrlässigkeit
+L|wie läuft ein geschworenenprozess in den usa ab
+L|verjährungsfrist bei diebstahl allgemein
+L|wie wird grundsätzlich über das sorgerecht entschieden
+L|schreib den anfang eines justiz-thrillers im gerichtssaal
+L|wie viele menschen sind in indien im gefängnis
+L|arbeitnehmerrechte nach kündigung in deutschland, überblick
+O|mein hund hat panik vor feuerwerk
+O|unser hund wirkt bei regen depressiv
+O|mein kuchen ist eine katastrophe, panik
+O|sauerteig sieht krank aus
+O|handyakku ist schon mittags leer
+O|mein laptop hat einen virus, wie werd ich ihn los
+O|miete endlich bezahlt, was koch ich heut abend
+O|wie verbuche ich miete in excel
+O|spare für eine reise nach portugal, tipps
+O|wie teilen wir die rechnung fair bei 5 leuten
+O|mein bruder und ich streiten ob die tomate ein obst ist
+O|süchtig nach dieser serie, ähnliche tipps
+O|dieser stau bringt mich um
+O|meine pflanze stirbt, gelbe blätter
+O|fusseln auf meinem pulli, wie entfernen
+O|beste dehnübungen vor einem 10-km-lauf
+O|wie ist das wetter in lissabon im märz
+O|schreib eine lustige hochzeitsrede für meinen besten freund
+O|geschenkideen zum 60. von mama
+O|mail an meinen chef, freitag frei
+O|hilfe bei mathe-hausaufgaben bruchrechnen 5. klasse
+O|schulmorgen ist chaos, wie organisier ich das
+O|meine katze erbricht ständig haarballen
+O|mein sims-haushalt ist pleite haha
+O|sonnenbrand auf der nase, tipps mit aloe
+O|mein wlan ist wieder krank, router startet dauernd neu
+O|ideen für einen kindergeburtstag mit 6 jährigen
+O|wie lehne ich höflich eine mittagseinladung ab
+O|wie lange müssen eier kochen
+O|mein hamster schaut traurig, neues laufrad
+O|rezept für glutenfreie palatschinken
+O|tabelle für meine fixkosten
+O|ich sterbe vor neugier wie das buch endet
+O|mein auto macht beim bremsen komische geräusche
+O|rasen ist nach der hitzewelle tot
+O|nachbars hund bellt die ganze nacht, höflicher zettel
+O|hilf mir ein familiengrillfest für 20 zu planen
+O|garten steht unter wasser, drainage ideen
+O|rotwein aus dem teppich entfernen
+O|schöner name für einen golden retriever welpen
+O|ich hab stress welche farbe ich für den vorraum nehm
+O|mein sauerteig ist tot, hab ich ihn umgebracht
+O|montagssitzung ist mörderisch, wie überleb ich das
+O|meine bank-app stürzte ab als ich die pizza zahlen wollte
+O|günstigster weg ein paket nach australien zu schicken
+O|wie hole ich mir die umsatzsteuer für einen firmenlaptop zurück
+O|ich schulde meiner mitbewohnerin 15 euro fürs essen, wie frag ich
+O|der sohn hat 9:0 verloren im fussball, wie tröste ich ihn
+O|ausflugszettel der tochter muss unterschrieben werden, wie scannen
+O|wie repariere ich einen tropfenden wasserhahn
+O|meine tomatenpflanzen haben braunfäule, hilfe
+O|panik: mamas geburtstag ist morgen, schnell ein geschenk
+O|wir haben keine milch mehr, was kann ich ohne backen
+O|die babyphone-app bricht ständig ab
+O|meine kopfhörer sind kaputt, welche kaufen
+O|warum hasst mich mein drucker
+O|zeit totschlagen vor dem flug, was tun in wien schwechat
+O|mein freund und ich planen eine überraschungsparty für seine schwester
+O|wie bedanke ich mich auf einer karte bei oma für den pulli
+O|enttäuscht dass mein lieblingscafé zugesperrt hat
+O|mein mann schnarcht wie ein zug, gadgets
+O|wie spare ich diesen monat beim einkaufen
+O|vorlage für mieterhöhung, ich bin vermieter
+O|wie plane ich das budget für weihnachtsgeschenke
+O|tipps für den trainingsplan zum ersten marathon
+O|mein kleinkind verweigert brokkoli
+O|puh montag
+O|so müde nach dem fitnessstudio lol
+O|rezept für lammcurry
+O|übersetze diese speisekarte aus dem italienischen
+O|kannst du meinen lebenslauf korrigieren
+O|mein goldfisch ist gestorben, wie erkläre ich das meinem 5-jährigen
+O|uff diese scharfe sauce bringt mich um
+O|dieses lied läuft in dauerschleife, bin besessen
+O|wie hindere ich meine katze am sofa kratzen
+O|werkstatt verlangt 400 für bremsbeläge, fair
+O|was zieh ich zu einer sommerhochzeit in der schweiz an
+O|wie richte ich einen dauerauftrag ein
+O|mieter hat zu spät gezahlt, wie schreib ich eine zahlungserinnerung
+O|hilf mir bei einer dankesrede zur pensionierung von papa
+O|welcher dünger für rosen
+O|ex-kollege hat mir auf linkedin geschrieben, annehmen
+O|wie viele kalorien hat ein melange
+O|plan für 3 tage in salzburg
+O|was sind 15 prozent von 240
+O|keine ahnung was ich papa zum vatertag schenke
+O|meine jeans sind in der wäsche eingelaufen, noch zu retten
+O|der duschabfluss ist schon wieder verstopft
+O|wie bitte ich die nachbarn höflich ihre mülltonnen wegzustellen
+O|kaffee auf die tastatur geschüttet, panik
+O|beste schach-eröffnungen für anfänger
+O|freund zieht nach kanada, abschiedsgeschenk
+O|hochzeitstag nächste woche, restaurant tipps in zürich
+O|wie schreibe ich ein zeugnis für meinen ex-praktikanten
+O|handydisplay gesprungen, reparieren oder neu
+O|wie bringe ich einem welpen sitz bei
+O|gute bücher wie der donnerstagsmordclub
+O|das lied aus der werbung geht mir nicht aus dem kopf
+O|hilfe, mein sauerteigbrot ist hart wie ein ziegel
+O|meine schwester und ich streiten ums letzte pizzastück
+O|trainingsplan für 4 tage pro woche
+O|wie bekomme ich rote tinte aus dem weissen hemd
+O|gebrauchtwagen gekauft, welche papiere für die ummeldung
+O|wie erkläre ich fotosynthese einem 7-jährigen
+O|ideen für das projekt meiner tochter bei der science fair
+O|wir sparen auf eine anzahlung fürs haus, tipps für eine spartabelle
+O|bin bis zum gehalt total pleite lol, günstige gerichte
+O|mail an die gemeinde wegen dem schlagloch in unserer strasse
+O|checkliste fürs katzensitten bei der nachbarin
+O|wie repariere ich eine quietschende tür
+O|meine katze ist süchtig nach dem laserpointer haha
+O|akku bei 3 prozent, hilfe
+O|ofentemperatur für brathuhn
+O|wie beende ich höflich einen teams-call
+O|unser tippspiel ist diese woche eine katastrophe
+O|gute gutenachtgeschichte über einen drachen
+O|mein salat schiesst immer, warum
+O|ich ertrinke in wäsche, welches system
+O|so peinlich, hab die lehrerin mama genannt lol
+O|meine fahrradkette springt ständig
+O|wie spricht man quinoa aus
+O|omas 90er steht an, ideen für eine rede
+O|kann ich gekochten reis einfrieren
+O|wie sichere ich mein iphone vor dem update
+O|genug vom regen, indoor-aktivitäten für kinder
+O|mein hund hat eine socke gefressen, ihm gehts gut, welches kauspielzeug
+O|kannst du einen namen für meine bäckerei vorschlagen
+O|wie sag ich höflich dass ich beschäftigt bin
+O|meine excel-formel zeigt #BEZUG, warum
+O|hilf mir eine serie für heute abend wählen
+O|wie reinige ich eine gusseiserne pfanne
+O|teambuilding für 12 leute mit kleinem budget
+O|bin begeistert von meiner neuen kaffeemühle
+O|sind tickets fürs fussballspiel den preis wert
+O|wie faltet man ein spannleintuch
+O|unser gruppenchat streitet wo wir essen gehen
+O|meine zimmerpflanze hat trauermücken, was tun
+O|wochenendtipps für das lange wochenende in tirol
+O|mein bruder und ich streiten wer abwäscht
+O|bin tot nach dem umzug, welche kiste war die küche

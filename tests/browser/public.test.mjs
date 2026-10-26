@@ -14,7 +14,8 @@ const CHAT = `<!doctype html><title>Chat</title>
 <form><div id="prompt-textarea" contenteditable="true"></div><button type="submit" aria-label="Send">↑</button></form>`;
 const SHOP = `<!doctype html><title>Shop</title>
 <textarea id="assistant" placeholder="Ask AI about this product"></textarea>`;
-const HEALTH = `I have been struggling with depression lately. My name is ${SAMPLE.name}, IBAN ${SAMPLE.iban}.`;
+// Zonder IBAN: een IBAN geeft in de gratis editie eerst de melding over gevoelige gegevens (zie de tests onderaan).
+const HEALTH = `I have been struggling with depression lately. My name is ${SAMPLE.name}.`;
 
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-public-'));
 let browser, worker, downloads;
@@ -84,25 +85,28 @@ test('gratis: een persoonlijk onderwerp geeft de melding met tijdelijke chat en 
   assert.equal(taken, false, 'Kamelo nam het plakken over');
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
   assert.match(html, /Temporary chat|Tijdelijke chat/);
-  assert.match(html, /Ask Melo|Vraag het Melo/); // Private Chat, alleen in Chrome
+  assert.match(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/); // Private Chat, alleen in Chrome
   assert.match(html, /class="p melo"><svg viewBox="0 -18 240 240"/); // met het Melo-logo
   assert.doesNotMatch(html, /\[PERSON_|\[IBAN_|protected|afgeschermd|mask/i);
   await new Promise(r => setTimeout(r, 400));
   const text = await textOf(page, '#prompt-textarea');
-  assert.ok(text.includes(SAMPLE.name) && text.includes(SAMPLE.iban), text);
-  assert.equal(await page.evaluate(() => CSS.highlights.size), 0, 'markeringen in de pagina');
+  assert.ok(text.includes(SAMPLE.name), text);
+  // Sinds 21 okt registreert de gratis editie een markeerlaag voor gevoelige gegevens (blauw); bij alleen een naam blijft die leeg.
+  assert.equal(await page.evaluate(() => [...CSS.highlights.values()].reduce((n, h) => n + h.size, 0)), 0, 'markeringen in de pagina');
   await page.close();
 });
 
-test('gratis: in Edge en Firefox zegt de melding eerlijk waarom er een tijdelijke chat is in plaats van Private Chat', async () => {
+// Sinds 21 okt (83928ba) is de melding kort: "Sensitive info" en de knoppen, zonder uitlegzin. In Edge en Firefox (zonder
+// Melo voor Mac) is de tijdelijke chat dan de hoofdknop.
+test('gratis: in Edge en Firefox biedt de melding de tijdelijke chat in plaats van Melo', async () => {
   // ?browser=edge: strings.js doet dan of dit Edge is (zoals in de previews).
   const url = 'https://chatgpt.com/c/edge?browser=edge';
   const page = await mockPage(browser, url, CHAT, undefined, ready(url));
   await pasteText(page, '#prompt-textarea', HEALTH);
   const html = await waitForShadow(page, h => /Temporary chat|Tijdelijke chat/.test(h), 6_000);
-  // De extensie heet Melo: "die Melo kan gebruiken, dus Melo biedt …".
-  assert.match(html, /Edge doesn’t have a built-in AI that Melo can use yet|Edge heeft nog geen ingebouwde AI die Melo kan gebruiken/);
-  assert.doesNotMatch(html, /Ask Melo|Vraag het Melo/);
+  assert.match(html, /<button type="button" class="p">(Temporary chat|Tijdelijke chat)<\/button>/);
+  assert.match(html, /<b>(Sensitive info|Gevoelige info)<\/b>/);
+  assert.doesNotMatch(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/);
   await page.close();
 });
 
@@ -272,8 +276,8 @@ test('gratis: WhatsApp Web, in de chat met Meta AI komt de melding met Ask Melo'
   await page.click('#to-meta');
   await page.click(WA_FIELD);
   await page.keyboard.type(DOCTOR);
-  const html = await waitForShadow(page, h => /Ask Melo|Vraag het Melo/.test(h), 6_000);
-  assert.match(html, /Ask Melo|Vraag het Melo/);
+  const html = await waitForShadow(page, h => /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/.test(h), 6_000);
+  assert.match(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/);
   assert.doesNotMatch(html, /Temporary chat|Tijdelijke chat/, 'WhatsApp heeft (nog) geen tijdelijke chat die Kamelo kan openen');
   await page.close();
 });
@@ -311,9 +315,10 @@ test('gratis: verzoeken aan een AI-API gaan ongewijzigd weg (geen netwerkfilter)
   await page.close();
 });
 
-// Tweede kans (src/topic-ai.js): de woordenlijst mist deze zin; de AI van Chrome op dit apparaat (hier nagebootst in
-// de achtergrond) herkent hem wel. Zonder model ('downloadable') wordt er niets gedownload en komt er geen melding.
-const MISSED = 'Lately everything feels pointless and I cannot get out of bed in the morning';
+// Tweede kans (src/topic-ai.js): de woordenlijst mist deze zin, en voor de gewogen lijst is hij te kort (topic-model.js);
+// de AI van Chrome op dit apparaat (hier nagebootst in de achtergrond) herkent hem wel. Zonder model ('downloadable')
+// wordt er niets gedownload en komt er geen melding.
+const MISSED = 'Everything feels pointless lately';
 const fakeModel = (state, answer) => worker.evaluate((state, answer) => {
   const calls = globalThis.__lmCalls = { availability: 0, create: 0, prompt: [] };
   const session = () => ({ clone: async () => session(), prompt: async t => { calls.prompt.push(t); return answer; }, destroy() {} });
@@ -382,15 +387,15 @@ const meloOffer = async (url, state) => {
 for (const state of ['unavailable', null]) {
   test(`gratis: ${state ? 'Chrome zegt "unavailable"' : 'geen LanguageModel'}: geen "Ask Melo", alleen de tijdelijke chat`, async () => {
     const html = await meloOffer(`https://chatgpt.com/c/no-ai-${state}`, state);
-    assert.doesNotMatch(html, /Ask Melo|Vraag het Melo|class="p melo"/);
+    assert.doesNotMatch(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)|class="p melo"/);
     assert.match(html, /<button type="button" class="p">(Temporary chat|Tijdelijke chat)<\/button>/); // nu de hoofdknop
-    assert.match(html, /stays out of your history|komt niet in je geschiedenis/);
+    assert.match(html, /<b>(Sensitive info|Gevoelige info)<\/b>/); // kort: geen uitlegzin meer (21 okt)
     assert.doesNotMatch(html, /doesn’t have a built-in AI|heeft nog geen ingebouwde AI/); // dat klopt in Chrome niet
   });
 }
 test('gratis: model nog te downloaden ("downloadable"): wel "Ask Melo" (Melo biedt de download zelf aan)', async () => {
   const html = await meloOffer('https://chatgpt.com/c/downloadable', 'downloadable');
-  assert.match(html, /Ask Melo|Vraag het Melo/);
+  assert.match(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/);
   const calls = await lmCalls();
   assert.equal(calls.create, 0, 'de vraag of Melo kan, start geen download');
 });
@@ -458,7 +463,7 @@ for (const state of ['unavailable', null, 'available', 'downloadable']) {
     await page.goto(`chrome-extension://${id}/popup/public.html`);
     await page.waitForFunction(() => document.getElementById('stateText').textContent);
     await new Promise(r => setTimeout(r, 300)); // het antwoord van de achtergrond
-    const rows = await page.$$eval('.pub-row', r => r.filter(x => x.checkVisibility()).map(x => x.id));
+    const rows = await page.$$eval('.pub-row:not(.mac)', r => r.filter(x => x.checkVisibility()).map(x => x.id));
     assert.deepEqual(rows, state === 'unavailable' || !state ? ['tempChat'] : ['openPrivateChat', 'tempChat']);
     if (state) assert.equal((await lmCalls()).create, 0, 'de popup start geen download');
     await page.close();
@@ -471,7 +476,7 @@ test('gratis: op een gewone site draait Kamelo niet, ook niet in AI-velden', asy
   assert.equal(await running('https://shop.example/'), false);
   assert.equal(await paste(page, '#assistant', HEALTH), false);
   await new Promise(r => setTimeout(r, 1500));
-  assert.doesNotMatch(await shadowHTML(page), /Temporary chat|Tijdelijke chat|Sensitive topic|Gevoelig onderwerp/);
+  assert.doesNotMatch(await shadowHTML(page), /Temporary chat|Tijdelijke chat|Sensitive info|Gevoelige info/);
   await page.close();
 });
 
@@ -496,7 +501,7 @@ test('gratis: de popup toont alleen Beschermd, Private Chat en een tijdelijke ch
   await new Promise(r => setTimeout(r, 200));
   const { settings } = await worker.evaluate(() => chrome.storage.local.get('settings'));
   assert.equal(settings.enabled, false);
-  assert.deepEqual(Object.keys(settings), ['enabled']);
+  assert.deepEqual(Object.keys(settings), ['enabled', 'meloMac']); // meloMac: de schakelaar Melo voor Mac in dezelfde popup
   await worker.evaluate(() => chrome.storage.local.set({ settings: { enabled: true } }));
   await page.close();
 });
@@ -584,5 +589,77 @@ test('gratis: Melo tekent een brief met invulvelden en een checklist; wat je inv
   // Een onderdeel van Business bestaat hier niet: gewone tekst, geen kaart en geen codeblok.
   await askMelo(page, 'En verder?');
   assert.equal(await page.$$eval('.thread:not([hidden]) .a', as => as.at(-1).querySelectorAll('.part, pre').length), 0);
+  await page.close();
+});
+
+// ---------- Melding zonder input-event (21 okt 2026) ----------
+// Sommige editors handelen elke toets zelf af (beforeinput + preventDefault) en sturen geen input-event. Daar kwam de
+// melding pas na een klik in het veld. Nu kijkt Kamelo ook na elke toets (keyup).
+const OWN_EDITOR = `<!doctype html><title>Chat</title><main><div id="answer"></div></main>
+<form><div id="prompt-textarea" contenteditable="true" data-testid="chat-input"></div><button type="submit" aria-label="Send">↑</button></form>
+<script>
+const ed = document.getElementById('prompt-textarea');
+ed.addEventListener('beforeinput', e => {
+  if (e.inputType !== 'insertText') return;
+  e.preventDefault();
+  ed.textContent += e.data;
+  const r = document.createRange(); r.selectNodeContents(ed); r.collapse(false);
+  getSelection().removeAllRanges(); getSelection().addRange(r);
+});
+</script>`;
+const SAMPLE_IBAN = SAMPLE.iban;
+const cardShown = h => /class="t card(?: light)? show"/.test(h);
+
+test('gratis: een editor zonder input-event: de melding komt na het typen, zonder klik', async () => {
+  const url = 'https://claude.ai/new';
+  const page = await mockPage(browser, url, OWN_EDITOR, undefined, ready(url));
+  await page.$eval('#prompt-textarea', el => el.focus()); // geen klik, zoals een veld dat zelf de focus heeft
+  await page.keyboard.type('My doctor says I might have diabetes, what should I eat?');
+  assert.equal(await textOf(page, '#prompt-textarea'), 'My doctor says I might have diabetes, what should I eat?');
+  const html = await waitForShadow(page, cardShown, 6_000);
+  assert.match(html, /Sensitive info|Gevoelige info/);
+  await page.close();
+});
+
+// ---------- Gevoelige gegevens (21 okt 2026, src/identifiers.js) ----------
+test('gratis: een IBAN geeft de melding "Sensitive info" met Ask Melo, zonder tijdelijke chat; niets afgeschermd', async () => {
+  await fakeModel('available', '{"personal":false,"topic":"NONE"}');
+  const url = 'https://chatgpt.com/';
+  const page = await mockPage(browser, url, CHAT, undefined, ready(url));
+  await pasteText(page, '#prompt-textarea', SAMPLE.text);
+  const html = await waitForShadow(page, h => /Sensitive info|Gevoelige info/.test(h), 6_000);
+  // Waar het gegeven staat: blauw gemarkeerd in het veld (src/gegevens.css), de tekst zelf blijft gelijk. Na het plakken
+  // staat de tekst pas in het veld na het input-event; de controle daarna (na ~0,9 s) markeert.
+  await new Promise(r => setTimeout(r, 1500));
+  const marked = await page.evaluate(() => [...(CSS.highlights.get('kamelo-gevoelig') || [])].map(r => r.toString()));
+  assert.deepEqual(marked, [SAMPLE_IBAN]);
+  assert.match(html, /Ask Melo(?! on your Mac)|Vraag het Melo(?! op je Mac)/);
+  assert.doesNotMatch(html, /Temporary chat|Tijdelijke chat/); // die stuurt het nummer nog steeds naar het AI-bedrijf
+  assert.doesNotMatch(html, /\[IBAN_|\[PERSON_/);
+  const text = await textOf(page, '#prompt-textarea');
+  assert.ok(text.includes(SAMPLE.iban), `niet ongewijzigd: ${text}`);
+  await page.close();
+});
+
+test('gratis: zonder AI op dit apparaat: bij een BSN de melding zonder Melo, en het BSN blauw gemarkeerd', async () => {
+  await fakeModel('unavailable', '{"personal":false,"topic":"NONE"}');
+  const url = 'https://claude.ai/new';
+  const page = await mockPage(browser, url, CHAT.replace('id="prompt-textarea"', 'id="prompt-textarea" data-testid="chat-input"'), undefined, ready(url));
+  await page.click('#prompt-textarea');
+  await page.keyboard.type('Mijn BSN is 111222333, kun je dit formulier invullen?');
+  const html = await waitForShadow(page, h => /Sensitive info|Gevoelige info/.test(h), 6_000);
+  const marked = await page.evaluate(() => [...(CSS.highlights.get('kamelo-gevoelig') || [])].map(r => r.toString()));
+  assert.deepEqual(marked, ['111222333']);
+  assert.doesNotMatch(html, /Ask Melo|Vraag het Melo|Temporary chat|Tijdelijke chat/);
+  await page.close();
+});
+
+test('gratis: een bestelnummer of telefoonnummer geeft geen melding', async () => {
+  const url = 'https://claude.ai/new';
+  const page = await mockPage(browser, url, CHAT.replace('id="prompt-textarea"', 'id="prompt-textarea" data-testid="chat-input"'), undefined, ready(url));
+  await page.click('#prompt-textarea');
+  await page.keyboard.type('Mijn bestelnummer is 111222333, bel me op 0612345678 als het pakket er is.');
+  await new Promise(r => setTimeout(r, 2500));
+  assert.doesNotMatch(await shadowHTML(page), /Sensitive info|Gevoelige info/);
   await page.close();
 });

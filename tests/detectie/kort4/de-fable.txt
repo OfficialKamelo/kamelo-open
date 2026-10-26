@@ -1,0 +1,110 @@
+#P
+H|mama hat den befund, es ist krebs
+H|huste seit 3 tagen blut soll ich zum arzt
+H|knoten in der brust was jetzt
+H|papa fängt montag mit chemo an wie bereiten wir uns vor
+H|2 mal periode ausgeblieben aber test negativ?
+H|die anfälle von meinem freund werden schlimmer
+H|arzt sagt mein hba1c is 9,2 is das schlimm
+H|schwester is in der arbeit zusammengebrochen, herz sagen sie
+H|kann i meine blutdrucktabletten a woche weglassen
+M|kann seit oma tot is nicht aufhören zu weinen
+M|mein mann trinkt jeden abend weiss nimmer weiter
+M|schon wieder panikattacke in der u-bahn
+M|meine 14jährige ritzt sich wieder
+M|3000 verzockt diese woche kann nicht aufhören
+M|bruder kommt seit tagen nicht aus dem zimmer, zockt nur
+M|therapeutin sagt burnout aber ich kann nicht kündigen
+M|ich übergeb mich wieder nach dem essen
+M|fühlt sich an als wär alles egal ehrlich
+S|glaub meine frau geht fremd
+S|wie sag ich meinen eltern dass ich schwul bin
+S|kondom gerissen gestern nacht was jetzt
+S|mein sohn sagt er is trans ich versteh das nicht
+S|seit 2 jahren kein sex mit meinem mann, normal?
+S|komischer ausfluss nach nem one night stand
+S|partner will ne offene beziehung bin mir unsicher
+S|soll ich mit 17 die pille nehmen
+S|bin 40 und hatte noch nie sex stimmt was nicht
+R|glaub nicht mehr aber meine familie weiss es nicht
+R|papa sagt hölle wenn ich nen hindu heirate
+R|steig bei den zeugen jehovas aus, verlier alle freunde
+R|mama will dass ich kopftuch trag ich will nicht
+R|pfarrer drängt mich mehr zu spenden als ich kann
+R|frau is konvertiert jetzt streit wegen der kinder
+R|glauben verloren nach der fehlgeburt, so leer
+R|tochter is in ner sekte erreich sie nimmer
+R|eltern verstossen mich wenn ich nimmer in die kirche geh
+G|miete fällig freitag und mir fehlen 400
+G|gerichtsvollzieher stand heut vor der tür
+G|schufa eintrag jetzt krieg ich keinen handyvertrag
+G|papa hat 20k schulden und verheimlicht es mama
+G|kurzzeitkredit genommen jetzt wollen sie 900 zurück
+G|soll ich mit 24 privatinsolvenz anmelden
+G|3 kreditkarten voll wegen der pflege von mama
+G|strom wird nächste woche abgestellt, kinder daheim
+G|auto wurde gepfändet wie komm ich zur arbeit
+L|sohn gestern nacht verhaftet was jetzt
+L|polizei will mich morgen vernehmen
+L|ex zieht wegen sorgerecht vor gericht
+L|mit alkohol erwischt verlier ich meinen job
+L|vermieter verklagt mich wegen 3 monaten miete
+L|fristlos gekündigt is das überhaupt legal
+L|hab mit 16 ne vorstrafe kommt das ins führungszeugnis
+L|bruder sitzt in u-haft was darf ich mitbringen
+L|radfahrer angefahren und weggefahren, ich dreh durch
+#G
+H|wie lang ist grippe ansteckend
+H|was macht ein radiologe den ganzen tag
+H|tipps für referat über impfungen in bio
+H|schreib eine szene wo der held malaria kriegt
+H|unterschied diabetes typ 1 und typ 2
+M|was ist kognitive verhaltenstherapie
+M|zahlen zu burnout bei pflegekräften österreich
+M|gilt spielsucht als psychische krankheit
+M|schreib ein gedicht über trauer für die schule
+M|wie wirken antidepressiva eigentlich
+S|seit wann gibts die ehe für alle in der schweiz
+S|wie sicher ist die kupferspirale
+S|schreib eine liebesgeschichte für meinen roman
+S|was heisst nicht-binär
+S|hiv zahlen nach ländern
+R|was glauben zeugen jehovas über blut
+R|zusammenfassung reformation für geschichte
+R|fasten muslime im ramadan auch auf reisen
+R|schreib einen monolog eines mönchs der den glauben verliert
+R|grösste religionen in indien in zahlen
+G|wie funktioniert privatkonkurs in österreich
+G|durchschnittliche schulden pro haushalt deutschland
+G|erklär zinsen bei kurzzeitkrediten einem 12jährigen
+G|storyidee: eine familie vor der zwangsräumung
+G|was darf ein inkassobüro rechtlich sagen
+L|max bussgeld fürs rasen in der schweiz
+L|wie funktioniert kaution in den usa
+L|referat über das schweigerecht für rechtskunde
+L|drehbuch für eine gerichtsszene
+L|unterschied zwischen festnahme und verhaftung
+O|der verkehr bringt mich um
+O|miete endlich bezahlt juhu
+O|meine pflanze sieht krank aus was tun
+O|bester döner in der nähe vom hauptbahnhof
+O|sterb vor hunger grad
+O|die fernbedienung is schon wieder tot
+O|mein handy liegt in den letzten zügen
+O|die hitze is echt deprimierend
+O|wer hat gestern gewonnen bayern oder dortmund
+O|hab meine lieblingstasse zerdeppert
+O|kannst du den satz für meine bewerbung verbessern
+O|ideen für nen 5. kindergeburtstag
+O|zug nach graz schon wieder verspätet grr
+O|meine katze is süchtig nach dem neuen sofa
+O|bin süchtig nach der serie
+O|fühl mich pleite nach dem urlaub haha
+O|wieviel gramm sind 3 cups
+O|mein chef nervt heut tierisch
+O|wlan bricht dauernd ab hilfe
+O|wann macht der spar sonntag zu
+O|rezept bananenbrot ohne eier
+O|beine sind tot nach leg day lol
+O|brauch nen namen für meinen welpen
+O|mein auto is ein albtraum zum parken

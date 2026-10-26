@@ -1,0 +1,482 @@
+#P
+H|jai mal au dos depuis lundi
+H|mon fils a 39 de fievre depuis hier
+H|chui enceinte et jai des saignements
+H|mon pere vient detre opere du coeur
+H|jai eu une biopsie du sein, resultat jeudi
+H|ma mere a commence la chimio la semaine passee
+H|jai une otite a repetition, fallait voir un ORL
+H|mon chat ma mordu, jai la main qui gonfle
+H|jsuis diabetique et jai oublie mon insuline en vacances
+H|jai une hernie discale, je peux pas me pencher
+H|ma soeur a un cancer du colon, comment la soutenir
+H|jai pris du Xanax et du Doliprane hier soir
+H|mon bebe fait des eczemas sur tout le corps
+H|jai des brulures d'estomac depuis les anti-inflammatoires
+H|ma grand-mere ne reconnait plus personne depuis le mois dernier
+H|mon test de grossesse est positif, jai peur
+H|jai perdu lodorat depuis le covid et ca dure
+H|jai une verrue sous le pied, ca fait tres mal
+H|mon mari a un infarctus, il est en soins intensifs
+H|jai des vertiges en me levant chaque matin
+H|ma fille a de l'asthme, son inhalateur est vide
+H|jai une tache bizarre sur le dos, dermato ?
+H|pk mes dents de sagesse me font mal de chien
+H|jai eu une cesarienne en urgence, je cicatrise mal
+H|mon voisin a eu un AVC, comment aider sa femme
+H|jai une bronchite qui tombe pas depuis 3 semaines
+H|jai une greffe de rein, les analyses sont bizarres
+H|ma prothese de hanche craque quand je marche
+H|jai lu mon dossier, la biopsie est pas claire
+H|jai des migraines depuis que jai arrete la pilule
+H|mon fils a une meningite, il est a l hopital
+H|jai une varicelle a 34 ans, c'est normal ?
+H|jai le lupus et je suis crevee tout le temps
+H|ma mere sest cassee la hanche, on fait quoi
+H|jai une cystite a repetition, rien ne marche
+H|mon pere est sous morphine, il a plus de forces
+H|jai eu un test VIH hier, j'attends le resultat
+H|jai une tuberculose latente, je dois prendre quoi
+H|ma petite a des crises epileptiques depuis avril
+H|jai une vision floue depuis ce matin
+H|mon genou a lache en faisant du ski a Verbier
+H|mon fils est allergique, il a mange des arachides
+H|jai une dent cassee et le dentiste est en vacances
+H|ma femme a eu une fausse couche la semaine derniere
+H|jai une ulcere a l'estomac, le medecin veut une gastroscopie
+H|jai ete hospitalise pour une pneumonie, je rentre demain
+H|ma fille porte un corset pour sa scoliose
+H|jai une psoriasis qui empire sur les coudes
+H|mon grand-pere a la prostate, leve 5 fois la nuit
+H|jai une hepatite C depuis une transfusion, faut quoi faire
+M|jfais des crises de panique dans le metro depuis septembre
+M|je dors plus depuis que mon ex est parti
+M|mon fils de 14 ans sort plus de sa chambre
+M|jai un TOC, je verifie le gaz 20 fois
+M|chu en burn-out, jarrive pu a me lever
+M|ma copine boit en cachette depuis son licenciement
+M|mon pere boit une bouteille de whisky par jour
+M|ma femme fait une depression post-partum depuis la naissance
+M|jai perdu mon chien, je tiens pas le coup
+M|mon ado est accro aux jeux, il dort plus
+M|jai commence la therapie mais je veux arreter
+M|je mangeais plus rien pendant 3 mois, jai honte
+M|chui autiste et le bureau me rend dingue
+M|je fume du cannabis tous les soirs pour dormir
+M|je rentre du boulot et je pleure dans la voiture
+M|mon mari fait un burn-out, il pleure tout le temps
+M|jai ete diagnostiquee TDAH a 38 ans, ca change quoi
+M|depuis la mort de ma mere je suis un zombie
+M|je reste enfermee chez moi depuis un an, la peur
+M|jai peur de sortir dehors, mon coeur s'emballe
+M|mon frere est accro a la coke depuis son divorce
+M|je pleure au boulot dans les toilettes tous les jours
+M|insomnies depuis 3 mois a cause de mes soucis
+M|ma fille de 16 ans ne mange plus pour maigrir
+M|je bois trop depuis le divorce, jai peur de moi
+M|jai ete harcelee au travail, je tiens plus
+M|mon fils a un TDAH, lecole veut le renvoyer
+M|jai le stress en permanence, les mains qui tremblent
+M|depuis mon accident de voiture je conduis plus
+M|mon copain a une phobie sociale, il sort plus
+M|jai des crises de larmes sans raison tous les jours
+M|je me sens vide depuis que je suis au chomage
+M|mon oncle boit depuis le deces de sa femme
+M|jai une dependance au porno, je veux arreter
+M|mon fils parle plus depuis la mort de son pere
+M|crise dangoisse en reunion, tout le monde ma vu
+M|je hurle sur mes enfants tout le temps
+M|jai peur de lavion depuis petite, je dois partir
+M|jai des tocs sur la proprete depuis lenfance
+M|je vomis apres chaque repas, personne le sait
+M|ma soeur a une phobie des chiens, elle sort plus
+M|je suis seul depuis mon demenagement, personne ici
+M|mon collegue est en burn-out, jsais pas comment lui parler
+M|jai des flashbacks de lagression depuis 2 mois
+M|je suis retombe dans lalcool apres 2 ans de sobriete
+M|ma femme fait des crises de paranoia, ca empire
+M|mon fils de 7 ans peur de tout depuis le divorce
+M|jai un deuil tres dur de mon pere, je pleure
+M|je sors plus depuis ma separation, jai peur des gens
+M|jai fait une therapie EMDR, ca remue tout
+S|jai pas eu de rapports depuis 8 mois avec mon mari
+S|jcrois que je suis attiree par les filles
+S|jai decouvert que mon copain me trompe avec ma collegue
+S|mon copain regarde du porno et ca me blesse
+S|mon mari a une erection difficile depuis un an
+S|ma copine jouit jamais, on sait pas quoi faire
+S|jai couche avec mon ex au mariage de ma soeur
+S|jai peur de dire a mes parents que je suis gay
+S|chui trans et je veux commencer les hormones, ca fait quoi
+S|jsuis vierge a 27 ans, c'est pas normal ?
+S|je prends la pilule du lendemain chaque mois
+S|ma fille de 15 ans veut la pilule, un accord ?
+S|mon copain a une baisse de libido depuis son traitement
+S|jai une relation avec le mari de ma meilleure amie
+S|on a fait un plan a trois et ca me pese
+S|je suis asexuelle et mon copain veut du sexe
+S|ma femme ne veut plus de sexe depuis la naissance
+S|jai eu une IST, faut le dire a mes ex ?
+S|je couche avec un homme marie, il va quitter sa femme
+S|mon mari est bi, je sais pas quoi faire
+S|jai une ejaculation precoce depuis toujours, ca me gache tout
+S|mon neveu de 16 ans ma demande des capotes
+S|je suis non-binaire et mes parents me parlent pas
+S|je trompe mon mari avec mon ancien amant
+S|mon copain veut une relation ouverte, moi je veux pas
+S|mon copain sait pas que jai pris la pilule en cachette
+S|jsuis tombee amoureuse de ma prof, je fais quoi
+S|ma femme ma dit quelle a plus de desir pour moi
+S|jai une liaison avec mon voisin depuis 3 mois
+S|chui un mec et je suis attire par mon pote
+S|mon mari regarde des sites de rencontres pour trouver des plans
+S|ma copine ma dit quelle a jamais eu dorgasme avec moi
+S|jai un fetiche bizarre et je sais pas si cest normal
+S|on fait lamour une fois par an, mon mari sen fout
+S|jai une copine en secret, mon mari sait rien
+S|mon ado demande comment se proteger, je sais pas quoi dire
+S|je veux me faire ligaturer, mon mari est contre
+S|je suis avec une fille mais ma famille sait pas
+S|mon frere pense quil est gay, il a peur
+S|ma copine couche encore avec son ex, ca me rend fou
+S|jai une douleur pendant les rapports depuis la naissance
+S|depuis la rupture je sors avec nimporte qui
+S|mon copain ma trompee avec mon meilleur ami
+S|jai oublie ma pilule 3 jours, je suis angoissee
+S|mon mari a envie dune autre fille depuis des mois
+S|jai des fantasmes que je veux pas dire a mon mari
+S|mon fils de 17 ans ma avoue quil est gay
+S|ma femme a un profil sur Tinder, je suis devastee
+S|je suis puceau a 35 ans, ca me pese
+S|jai dormi avec une collegue apres la fete, je regrette
+R|mes parents veulent que je jeune au ramadan
+R|je crois plus en dieu, comment le dire a maman
+R|mon fils veut rejoindre les Temoins de Jehovah
+R|jai quitte lislam, ma famille me renie
+R|jai mis le voile, mon mari veut que je l'enleve
+R|mon frere est devenu salafiste, il coupe les ponts
+R|je suis chretien et je tombe amoureux dun musulman
+R|jai fait mon bapteme a 40 ans, ma mere pleure
+R|ma fille veut se marier a l'eglise, moi je suis athee
+R|je fais yom kippour mais je mange du porc
+R|je suis temoin de Jehovah et je doute, je fais quoi
+R|mon pere veut que je fasse ma priere devant lui
+R|jai perdu la foi apres la mort de ma soeur
+R|mon mari veut que jaille a la mosquee tous les vendredis
+R|la communaute ma exclu parce que je suis divorcee
+R|on m'a dit que je vais en enfer si je bois
+R|je suis musulmane et je veux plus porter le hijab
+R|je suis une ancienne scientologue, ma famille me parle plus
+R|ma mere veut que je prie cinq fois par jour
+R|je suis juive et mon copain est chretien, on fait quoi
+R|jai decide de me convertir au bouddhisme, ma femme est furieuse
+R|mon fils de 12 ans refuse de manger halal
+R|je fais le careme et je suis epuisee
+R|jai peur d'aller en enfer apres ce que jai fait
+R|jai trompe ma femme, je vais me confesser demain
+R|mes amis mormons veulent que je vienne a la messe
+R|je suis pratiquant, mon boss me force le vendredi
+R|je suis athee et ma belle-famille veut que jaille au temple
+R|jai quitte la secte depuis 3 ans, je suis suivie
+R|ma soeur a rejoint une secte, elle a tout vendu
+R|je veux plus faire le shabbat, ma famille crie
+R|mon eglise me demande 10 pour cent de mon salaire
+R|je veux me convertir a l'islam, mes parents sont catholiques
+R|ma femme veut quon divorce parce que je suis plus croyant
+R|je suis sunnite et ma fille a epouse un chiite
+R|je pense que dieu me punit, mes proches sont malades
+R|mon pere est imam et il sait pas que je bois
+R|jai decouvert que ma mere pratique le vaudou en cachette
+R|ma fille veut porter sa croix, lecole refuse
+R|je fais le ramadan malgre mon diabete
+R|je veux arreter de prier, ca me fait peur
+R|mon beau-pere est pentecotiste et il exorcise les enfants
+R|je me sens coupable devant dieu depuis mon divorce
+R|mes parents me disent maudit a cause de mon fils
+R|on ma demande de renier ma foi pour garder mon boulot
+R|je suis hindou et je mange du boeuf, ma famille hurle
+R|mes freres veulent que jaille au pelerinage a la Mecque
+R|jai peur de dire a ma communaute que je crois plus
+R|ma fille est lesbienne, notre pasteur la condamne
+R|je suis mormon et je veux quitter leglise
+G|on est en retard de 3 mois sur le loyer
+G|jai recu une mise en demeure de lhuissier
+G|je suis fichee a la centrale, je peux plus emprunter
+G|jai perdu 2000 euros sur une arnaque au faux conseiller bancaire
+G|mon mari a perdu son boulot, on paie plus le credit
+G|tkt jai des dettes de 15000 euros, le CPAS peut aider
+G|les factures denergie explosent, je peux plus payer
+G|jai joue en ligne et jai perdu mon salaire du mois
+G|credit a la conso, je paie plus depuis 6 mois
+G|un collecteur mappelle tous les jours pour une vieille dette
+G|je dois 800 euros au proprio, il veut me mettre dehors
+G|jai ete licenciee, je dois rembourser mon auto
+G|mon fils a pris un credit rapide, il sait pas sortir
+G|jai un arriere dimpots de 4000 euros
+G|chui au chomage depuis 2 mois, les allocs arrivent pas
+G|je recois des rappels de la mutualite, jai rien paye
+G|mon salaire est saisi, il reste 200 euros par mois
+G|jai signe un contrat de leasing et je peux plus payer
+G|la banque a bloque mon compte, je vis sur quoi maintenant
+G|jai emprunte a mon frere et je peux pas rembourser
+G|jai perdu mon emploi, je dois payer le loyer de juin
+G|mon char est saisi, jai pu dargent
+G|ma copine a des dettes de carte, je suis caution
+G|je dois 3000 au bookmaker, je cache ca a ma femme
+G|jai 6 mois de loyer en retard, je panique
+G|jai pas de quoi payer lecole des enfants cette annee
+G|mon pere ma demande 5000 euros pour ses dettes
+G|jai un pret etudiant de 30000 et je gagne rien
+G|jai 4 cartes de credit, je suis endettee, jai honte
+G|mon voisin ma escroque 1500 euros pour une voiture
+G|jai donne ma carte bancaire a un faux livreur
+G|mon mari fait des paris sportifs et il cache les dettes
+G|on arrive plus a payer la mutuelle depuis le chomage
+G|jai pas de quoi acheter a manger cette semaine
+G|le fisc veut 6000 euros de taxe sur mon heritage
+G|mon proprio veut garder la caution de 1500 euros
+G|jai ete radiee des allocations, je sais pas pourquoi
+G|ma femme a emprunte sans me dire, les mensualites me tuent
+G|je dois payer la pension alimentaire et j'ai plus rien
+G|la banque appelle, je risque de perdre la maison
+G|jai eu une facture de 2000 francs pour une reparation
+G|mon revenu minimum a ete suspendu, je fais comment
+G|je suis en faillite personnelle depuis 2 ans
+G|mon entreprise a fait faillite, je dois des cotisations
+G|jai emprunte pour mes dettes de jeu, je rembourse plus
+G|les huissiers saisissent mon compte en banque ce mois
+G|chui endette a cause de mes frais medicaux, 12000 euros
+G|mon proprio augmente le loyer de 300 euros, jai rien
+G|4 mois de retard sur ma voiture a credit
+G|mon compte est negatif depuis le 5, je mange des pates
+L|jai eu un retrait de permis, ils mont pris les papiers
+L|les policiers mont arrete, je vais au palais de justice
+L|mon ex veut la garde partagee, je veux pas
+L|mon fils a ete pris avec du shit a lecole
+L|on mapplique une amende de 300 euros pour un feu rouge
+L|mon voisin me poursuit en justice pour mon chien
+L|jai vole une bouteille de parfum au supermarche, on ma vu
+L|mon proprio veut me sortir, il a pas le droit
+L|je suis convoquee devant le juge aux affaires familiales
+L|mon velo vole est en vente sur leboncoin
+L|jai ete condamne pour conduite sans permis, prison ?
+L|mon ancien employeur ma pas paye mes heures sup
+L|ma femme a porte plainte contre moi pour violence
+L|la police ma fouille hier, chu innocent
+L|je suis sans papiers depuis 3 ans, je peux demander quoi
+L|mon fils a ete arrete en Suisse pour un vol
+L|je dois passer devant le tribunal pour un accident de voiture
+L|jai recu un courrier de lOffice des etrangers, panique
+L|on ma dit que je vais etre expulse vers le Maroc
+L|mon mari a porte plainte pour harcelement, cest faux
+L|le proprio ma mis dehors sans preavis, je fais quoi
+L|jai une amende pour stationnement, je veux contester
+L|jai recu un chantage par mail avec mes photos intimes
+L|quelquun a utilise mon identite pour ouvrir un credit
+L|mon employeur ma licencie sans motif, je veux une indemnite
+L|je dois temoigner au proces de mon frere
+L|je suis divorcee, mon ex veut tout garder
+L|on ma vole ma voiture, la police dit quelle est introuvable
+L|je me suis fait agresser au parc, je veux porter plainte
+L|mon cousin a fait un accident mortel, il risque la prison
+L|jai une interdiction de quitter le territoire, pourquoi
+L|mon voisin fait des travaux sans permis, la commune rien fait
+L|jai recu une convocation pour etre jure au tribunal
+L|le tribunal veut que je fasse des travaux dinteret general
+L|mon fils a ete renvoye de lecole, il est sous enquete
+L|proces avec mon assurance pour un degat des eaux
+L|on ma interdit de voir mes enfants, ordonnance du juge
+L|je suis accuse davoir frappe un collegue, cest faux
+L|mon frere licencie pour vol, il dit que non
+L|mon mari veut divorcer et je risque de perdre la maison
+L|jai grille un feu, convocation au tribunal de police
+L|je dois payer une amende pour dechets, je comprends pas
+L|je suis en litige avec mon employeur pour mes heures
+L|je suis victime dune escroquerie a lheritage, je fais quoi
+L|jai recu une lettre dun avocat qui me menace
+L|mon fils a ete arrete a la frontiere avec du cannabis
+L|mon conjoint ma menacee avec un couteau, la police est venue
+L|je suis temoin dun vol, faut parler a la police
+L|jai recu une convoc de la police judiciaire
+L|ma fille a ete virée sans raison, elle veut attaquer
+#G
+H|quels sont les symptomes dune appendicite chez lenfant
+H|cest quoi la difference entre diabete type 1 et type 2
+H|resume le role du foie pour mon cours de bio
+H|combien de personnes ont une hepatite C en Belgique
+H|ecris un flyer pour un depistage du cancer du sein
+H|quels medicaments sont deconseilles pendant la grossesse en general
+H|comment un dentiste explique une carie a un enfant
+H|ecris une fiche patient type pour une consultation de dermatologie
+H|explique le lupus en 5 lignes pour un article de journal
+H|duree moyenne dune hospitalisation pour pneumonie
+M|ecris une nouvelle ou un psy aide un patient
+M|causes de la depression chez les adolescents, pour un memoire
+M|resume la theorie de l'attachement de Bowlby en 100 mots
+M|comment un therapeute peut structurer une seance de groupe
+M|ecris un discours pour la journee mondiale de la sante mentale
+M|combien de jeunes sont touches par l'anxiete en Suisse, chiffres
+M|quelle est la difference entre tristesse et depression clinique
+M|ecris un poeme sur le deuil pour un recueil
+M|comment un enseignant repere un eleve qui va mal
+M|quels sont les protocoles de sevrage alcool utilises en clinique
+S|quel est le taux de contraception utilise en Europe
+S|ecris une histoire d'amour entre deux profs de lycee
+S|explique la difference entre sexe biologique et genre
+S|quelles sont les recommandations de l'OMS pour l'education sexuelle
+S|ecris un dialogue ou deux amis parlent dun divorce
+S|c'est quoi lasexualite, explique pour un expose
+S|chiffres sur les IST chez les jeunes en Belgique
+S|ecris un article sur la liberte sexuelle dans les annees 70
+S|comment un coach de couple explique l'importance de la communication
+S|place du coming-out dans les films des annees 90
+R|quelles sont les grandes fetes du calendrier juif
+R|difference entre sunnites et chiites pour un devoir d'histoire
+R|quels sont les 5 piliers de l'islam pour un expose
+R|ecris un sermon pour une messe de Noel fictive
+R|role des temoins de Jehovah dans la societe
+R|resume le conflit entre Luther et l'Eglise catholique
+R|combien de personnes pratiquent le ramadan dans le monde
+R|explique le concept de karma pour un cours de philo
+R|ecris une nouvelle sur un pretre qui doute de sa foi
+R|pourquoi les sectes recrutent-elles surtout des jeunes, pour un article
+G|c'est quoi la difference entre une faillite et un concordat
+G|combien coute en moyenne un loyer a Bruxelles en 2026
+G|ecris un article sur lendettement des menages en Belgique
+G|quels sont les meilleurs conseils pour epargner pour la retraite
+G|explique linflation en 3 phrases pour un eleve
+G|quel est le taux de chomage en Wallonie cette annee
+G|ecris un guide pour creer un budget mensuel
+G|explique le fonctionnement des bitcoins en langage simple
+G|comment fonctionne le systeme des allocations familiales en France
+G|comment un banquier calcule le taux dun pret immobilier
+L|etapes dun divorce par consentement mutuel
+L|ecris une scene de tribunal pour mon roman policier
+L|explique la difference entre un avocat et un notaire
+L|c'est quoi un permis de sejour de longue duree en Suisse
+L|quelles sont les regles de la garde partagee en Belgique
+L|ecris une plainte type pour un vol de velo, modele vide
+L|que dit la loi sur la location au Quebec
+L|explique le droit de retractation pour la vente en ligne
+L|ecris un article sur les peines pour exces de vitesse
+L|quelles sont les obligations dun employeur pour les heures sup
+O|il reste 5% de batterie, ca va pas
+O|jai laisse le four allume, ca sent le brule
+O|mon imprimante fait un bourrage encore une fois
+O|je suis nerveuse pour mon entretien demain matin
+O|une depression arrive sur la mer du Nord, pluie demain
+O|je suis mort 20 fois sur ce niveau, quel jeu
+O|fier de mon fils, il a marque un but hier
+O|le virus de mon ordi bloque mes fichiers, aide
+O|mon loyer est paye depuis ce matin, cool
+O|jai un rendez-vous a la banque jeudi, faut apporter quoi
+O|mon telephone est mort, je peux pas appeler ma mere
+O|jai hate de voir le concert, je peux pas attendre
+O|ma formule Excel est fausse, un coup dil ?
+O|300 points gagnes sur ma carte de fidelite, ca vaut quoi
+O|je suis nerveux pour mon examen de conduite demain
+O|mon fils a trouve le mot de passe wifi
+O|ma soeur ma prete sa voiture pour le week-end
+O|la pizza est tres chaude, jai brule ma langue
+O|mon chat dort sur le clavier, il a efface un document
+O|jai coupe mes cheveux, ca donne quoi a votre avis
+O|la facture de la cuisiniere est arrivee, bizarre
+O|il fait trop chaud ici, jai besoin dune douche
+O|mon copain sait pas cuisiner, je lui apprends
+O|ma tante veut un gateau pour son anniversaire, je fais quoi
+O|je vais ecrire une lettre pour mon boss
+O|jsuis fou de cette chanson, c'est le crush de l'ete
+O|mon patron veut que je fasse la presentation mardi
+O|le match est a 20h, on regarde ensemble ce soir ?
+O|la voiture fait un bruit bizarre au demarrage, normal ?
+O|mon frere a gagne le tournoi de tennis, trop fier
+O|combien de temps pour cuire un poulet au four
+O|je suis mort de rire avec les memes du dimanche
+O|mon fils veut un velo pour noel, lequel acheter
+O|le jeu bugue, le developpeur doit regler ca
+O|jai un bug dans mon code python, je comprends pas
+O|comment faire un bon gratin dauphinois pour 6 personnes
+O|je croyais que le train partait a 9h, en fait 10h
+O|jai pris un abonnement d'essai gratuit, il expire quand
+O|ma fille a un examen de maths demain, aide-la a reviser
+O|jai une phrase bizarre dans mon email, tu peux relire
+O|le cours de bio a ete annule, cest chiant
+O|je veux acheter une voiture de seconde main, des conseils
+O|mon chien a mange une chaussette, il est OK ?
+O|le prix de lessence monte encore, incroyable
+O|jai deux billets pour le match, qui veut venir avec moi
+O|la vieille cafetiere fuit, il faut la changer ?
+O|je suis cuit, mon devoir de francais est en retard
+O|mon fils a eu 17 sur 20 en histoire, trop fier
+O|mon ordi est lent, faut le formater ou pas
+O|ma mere veut apprendre a utiliser WhatsApp, comment l'aider
+O|je cherche une recette de cake pour mon anniv
+O|mon voisin a une vieille tondeuse, il la prete combien
+O|jai besoin dun cadeau pour ma belle-mere, pas cher
+O|je pars en vacances en Espagne avec ma famille, quel budget
+O|mon tel est a 3% de batterie, je cherche une prise
+O|jai bien mange ce midi, je me sens lourd
+O|le plombier vient demain, faut vider le lave-vaisselle ?
+O|ma fille a fait un dessin de moi, trop mignon
+O|mon gars joue a Fortnite, il ma tue 3 fois
+O|jai un entretien d'embauche jeudi, quelles questions attendre
+O|notre equipe de foot a perdu, mon pere est triste
+O|jai rate mon train, la prochaine correspondance c'est quand
+O|mon frere est revenu bronze de Thailande
+O|ma presentation a tout dechire, trop content
+O|mon pc a un virus, lantivirus marche pas
+O|je suis tellement fier de notre equipe de hockey
+O|ma voisine pense que notre chien a mordu son chat
+O|il me reste 3 jours de conges, je peux les garder
+O|jai achete une nouvelle imprimante, elle marche pas
+O|le jury du concours de cuisine a adore mon plat
+O|mon fils a joue au foot tout laprem, il dort
+O|mon cheval a perdu un fer, il boite
+O|je dois envoyer la facture au client pour le projet
+O|notre fils a eu sa carte de bibliotheque, il est content
+O|la piscine est fermee pour cause de travaux, dommage
+O|je veux refaire ma cuisine, quel budget pour 2026
+O|mon copain a oublie son chargeur chez moi
+O|jai pris un cours de yoga, meilleur dimanche
+O|le film etait trop long, je me suis endormi
+O|ma tante a 90 ans et joue au bingo
+O|cadeau pour la fete des meres, budget 50 euros
+O|notre voiture est au garage, combien pour un changement de pneus
+O|mon copain adore ce restaurant, on y va samedi
+O|mon bebe a fait son premier pas, quelle joie
+O|jai reussi mon examen de code, je suis contente
+O|quelle est la meilleure recette de crepes pour la chandeleur
+O|la plante de ma mere a l'air morte, comment la sauver
+O|je dois avouer que cette serie me rend fou
+O|mon ordi ne demarre plus, il faut appeler le technicien
+O|jai perdu mes cles de voiture, on peut les refaire ?
+O|mon fils a eu un 3 en dictee, je veux l'aider
+O|je suis en retard au boulot, quel itineraire le plus rapide
+O|une appli de recettes, ca vaut le coup ?
+O|ma soeur a une nouvelle coupe, elle est superbe
+O|mon mari a eu un bon score au golf hier
+O|mon appli bancaire a un nouveau design, pas mal
+O|jai bu trop de cafe ce matin, je vibre
+O|mon gosse a casse la console, prix dune neuve ?
+O|mon mari a fait des crepes, elles etaient parfaites
+O|ma voisine a plante des tomates, elles sont enormes
+O|mon chat a mange du poisson, il dort partout
+O|le prof ma dit de me concentrer, je suis le cours
+O|mon copain croit que la terre est plate, je rigole
+O|le contrat tel expire en juin, je renouvelle ou pas
+O|ma fille adore le chocolat, je lui en achete un gros
+O|le sport me vide, je dors comme un bebe
+O|mon ordinateur a tourne toute la nuit, il chauffe
+O|notre repas de famille est a 13h, qui apporte le dessert
+O|jai rdv chez le coiffeur, quelle couleur prendre
+O|mon collegue a fait un super travail, je le felicite
+O|le cocktail etait fort, je suis dans les nuages
+O|mon voisin a deux poules, il vend les oeufs
+O|je dois organiser la fete des 40 ans de mon mari
+O|ma fille veut un chien, on a 20 m2 de jardin
+O|mon fils adore les dinosaures, des livres pour 8 ans
+O|jai un bug sur mon telephone, il redemarre tout le temps
+O|mon copain paie jamais le cafe, il est radin
+O|jcherche mon sac a dos, il est ou
+O|ma mere a gagne un panier garni a la tombola
+O|mon fils a un test danglais demain, faut reviser

@@ -1,0 +1,110 @@
+#P
+H|my left arm has been tingling on and off for 3 days and now my jaw aches a bit, should i go to A&E or am i overreacting
+H|Got my bloods back and my ferritin is 6, GP wants to start iron tablets. what side effects should I expect?
+H|is it normal for a 4 year old to still have a fever of 39.5 after two days of calpol? my son is really floppy today
+H|My wife is 34 weeks pregnant and her feet and face have swollen up loads since yesterday, is that something to worry about
+H|mum was diagnosed with stage 2 breast cancer last week and starts chemo monday. how can i help her get through the first round
+H|I've been on metformin for 2 months and still getting bad stomach cramps after every meal, is this ever going to settle down?
+H|tore my ACL playing footy on sunday, surgeon says 9 months recovery. mate how do i stay sane and fit while on crutches
+H|My dad's memory is getting worse, he left the gas on twice this month. how do we get him assessed for dementia in Ireland?
+H|found a lump in my armpit about the size of a pea, doesnt hurt. how long should i wait before getting it checked
+M|i havent left my flat in 2 weeks and cant even be bothered to shower anymore. everything just feels pointless lately
+M|Is it normal to get panic attacks in the car? Mine start the second I get on the motorway, heart pounding, can't breathe
+M|my husband drinks a bottle of wine every night and gets nasty when i bring it up. how do i talk to him without a fight
+M|My 15yo daughter has been skipping meals and wearing baggy clothes, I think she might have an eating disorder. what should I do first?
+M|lost my brother in august and i still cant sleep, i keep replaying the phone call. does grief ever get lighter
+M|im burnt out af, crying in the toilets at work most days. should i ask my GP for a sick note or just push thru till christmas
+M|Lost 3k on sports betting this month and I keep chasing it. How do I actually stop? I've deleted the apps twice already
+M|my therapist wants to try EMDR for my trauma but im scared it'll make things worse, has anyone found it helpful
+M|just got diagnosed with ADHD at 31 and honestly i'm kind of grieving all the years i thought i was just lazy. is that normal?
+S|me and my gf havent had sex in 5 months and she says shes just not in the mood. how do i bring it up without making her feel bad
+S|I'm 26 and still a virgin and I'm starting to feel really embarrassed about it, how do I tell someone I'm dating
+S|think i might be bi, ive had a crush on my mate for ages. how do i figure out what i actually feel
+S|My son told me last night he's gay. I said all the wrong things in shock. How do I fix this with him?
+S|found messages on my husbands phone from another woman, really flirty ones. do i confront him now or wait until i know more
+S|condom broke last night, how long do i have to take the morning after pill and does it work if im ovulating
+S|got a letter from the sexual health clinic saying a partner tested positive for chlamydia, I have no symptoms, do I still need to go in
+S|My 14 yo has started asking us to use they/them pronouns. we want to be supportive but honestly we're confused, where do we start
+S|I cheated on my partner once at a work do 6 months ago. Should I tell her or will it just destroy everything?
+R|I was raised Jehovah's Witness and I want out but my whole family will shun me. how do I prepare for that
+R|ive stopped believing in god but my parents still expect me at mass every sunday. how do i tell them without breaking my mums heart
+R|My fiance is Muslim and I'm Catholic, both our families are fighting about which religion the kids will be raised in. how do we handle this
+R|is it normal to feel guilty after leaving church? i left the evangelical church i grew up in last year and still have nightmares about hell
+R|my wife started going to a very strict church and now she wants me to stop drinking and the kids to quit football on sundays. what do i do
+R|Thinking of converting to Judaism, my parents are Hindu and I know they'll be hurt. how do I approach them
+R|my sister joined some group that sounds like a cult, she gave them her savings and wont talk to us anymore. how can we get her back
+R|Since I stopped wearing the hijab my dad barely speaks to me. How can I rebuild things with him without going back on my choice?
+R|i'm a pastor's kid and i'm an atheist now. moving out in a month. should i tell them before or after
+G|I'm £14k in credit card debt across 4 cards and only paying the minimums. what's the fastest way out
+G|cant pay rent this month, landlord wants it by friday. what are my options in the UK
+G|Got a letter from a debt collection agency for an old phone bill I don't recognise. Do I have to pay it?
+G|my husband has been hiding a second credit card from me and it's maxed out, how do i even start sorting this
+G|took out 3 payday loans to cover the other one and now im stuck in a loop, how do i break out
+G|Is it normal to feel this ashamed? we're thinking of declaring bankruptcy, the business went under and we owe about $80k
+G|my mum keeps asking me for money and I'm already behind on my own bills. how do I say no
+G|Got a CCJ on my file from an old debt, will I ever get a mortgage? I'm 29
+G|my wife lost our house deposit gambling online, 22 grand gone. what do we do now financially
+L|police want to interview me under caution about a fight outside a pub, do I need a solicitor and will it cost me
+L|my son got arrested last night for having weed on him, he's 17. what happens next
+L|Got sued by my ex landlord for £3,500 for "damages" which were already there when I moved in. How do I defend myself?
+L|got a speeding fine I can't afford to pay, 2nd one this year. what happens if i just don't pay
+L|My ex is trying to get full custody and is saying I'm an unfit mother because of my depression. Can she actually win that?
+L|I was fired for being "late" but I think it's because I reported harassment. Can I take them to an employment tribunal?
+L|have a conviction from when i was 19 for shoplifting, applying for jobs now. do i have to disclose it
+L|my visa expired 2 months ago and im scared to contact immigration, what can happen to me
+L|is it normal to get a court summons by post? letter says my husband has to appear for unpaid parking fines from 2023
+#G
+H|what are the early warning signs of a stroke? doing a first aid presentation for work
+H|explain how mRNA vaccines work in simple terms for a year 9 biology class
+H|how many people in the US have type 2 diabetes, need a stat for my essay
+H|What's the difference between a virus and a bacterium?
+H|write a short scene for my novel where a doctor tells a patient she has cancer
+M|define burnout according to the WHO
+M|im a HR manager, can you draft a mental health policy for a 50-person company
+M|what percentage of adults experience an anxiety disorder in their lifetime
+M|summarise the main differences between CBT and psychodynamic therapy for my psych exam
+M|Write a poem about a character struggling with addiction for my creative writing module
+S|What is the history of the Stonewall riots?
+S|how effective is the contraceptive pill vs IUD, need the figures for a uni assignment
+S|can you write a sex ed lesson plan for 14-15 year olds on consent
+S|explain the difference between sex and gender for a sociology essay
+S|which countries legalised same sex marriage first
+R|what are the five pillars of Islam
+R|Summarise the causes of the Protestant Reformation for my history homework
+R|how many people in Ireland identify as having no religion in the latest census
+R|write a dialogue between a priest and a sceptic for my philosophy class
+R|What did the Pope say about climate change in Laudato si?
+G|explain how compound interest works on credit cards
+G|What happens legally when a company goes into administration in the UK?
+G|average household debt in Australia 2024?
+G|I'm a financial advisor, write a leaflet for clients about debt consolidation options
+G|whats the difference between chapter 7 and chapter 13 bankruptcy
+L|what's the difference between a solicitor and a barrister
+L|explain the process of a jury trial in the US for a civics class
+L|Write a crime thriller opening where a detective arrests the wrong man
+L|How does the Miranda warning work?
+L|what was the outcome of the Depp v Heard trial
+O|this traffic is absolutely killing me, any podcast recs for a long commute
+O|my sourdough starter looks depressed, it's not bubbling at all. what am i doing wrong
+O|im literally addicted to this show, what else is like Severance
+O|paid the rent, now saving for a holiday in Portugal, which coast is best in May
+O|my mother-in-law visits next week, any day trip ideas near Manchester for someone who doesnt walk far
+O|the wifi in this house is sick in the head today lol, how do i reset a TP-Link router
+O|My Excel sheet keeps having a meltdown when I paste in the data, how do I stop it auto-formatting dates
+O|that exam absolutely murdered me, anyway what's a good recipe for a lazy dinner
+O|i'm dying to try climbing, what should i wear for my first bouldering session
+O|my plants look sick, the leaves are going yellow at the edges, too much water?
+O|our football team is bankrupt of ideas going forward lmao, write a funny group chat message for the lads
+O|my son's birthday is saturday, he's turning 7 and loves dinosaurs, party game ideas?
+O|Can you help me write a thank you card for my nan's 80th birthday
+O|whats a good name for a golden retriever puppy
+O|I'm obsessed with matcha lately, is it ok to have two a day
+O|help me plan a budget for a weekend in Edinburgh for two, about 400 quid
+O|Write a LinkedIn post announcing my new job as a project manager
+O|my brain is fried after this week, suggest a chill film for tonight
+O|how do i get red wine out of a white carpet
+O|translate "where is the train station" into Italian
+O|my wife and I are celebrating our 10th anniversary, nice restaurants in Dublin?
+O|the cat has gone mental again at 3am, how do I get her to sleep through the night
+O|my laptop battery is dying so fast, is it worth replacing
+O|best way to learn guitar chords as a total beginner in my 40s

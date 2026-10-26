@@ -1,0 +1,110 @@
+#P
+H|bulto en la axila hace 2 semanas, me preocupo?
+H|análisis de mi madre salieron raros, pcr alta?
+H|regla 10 días tarde y test negativo
+H|el nene tiene 40 de fiebre desde ayer
+H|mi viejo se olvida todo desde la caída, alzheimer?
+H|mi novia embarazada y sangra un poco, normal?
+H|me torcí el tobillo jugando fútbol, no puedo pisar
+H|abuela toma sintrom, puede tomar ibuprofeno
+H|mi esposo tose sangre desde hace meses
+M|desde que murió papá lloro todos los días
+M|ataques de pánico cada mañana antes del curro
+M|mi novio fuma porros a diario y está siempre bajón
+M|mi hija casi no come y adelgaza mucho
+M|de baja por burnout hace 3 meses
+M|mi hermano se gasta todo en apuestas, es adicto
+M|creo que tengo tdah, cómo me diagnostico
+M|mi mamá toma demasiado desde el divorcio, qué hago
+M|mi hijo juega videojuegos toda la noche y falta a clase
+S|mi novio me puso los cuernos con una compañera
+S|me arde al hacer pis después de coger, ets?
+S|creo que soy lesbiana, cómo lo digo en casa
+S|se rompió el condón, necesita la pastilla del día después?
+S|mi esposo y yo sin sexo hace un año
+S|mi hijo de 14 dice que es no binario
+S|olvidé la pastilla 2 días, puedo estar embarazada?
+S|mi novia quiere relación abierta, yo no
+S|salir del clóset con mi papá que es muy estricto
+R|ya no creo en dios pero mis papás son súper religiosos
+R|quiero salir de los testigos de jehová, mi familia me rechazará
+R|mis suegros quieren bautizar al bebé, somos ateos
+R|ella musulmana yo católico, sus padres se oponen
+R|ya no voy a la mezquita, mi padre está furioso
+R|mi hermana está metida en una secta, cómo la saco
+R|dudo de mi fe desde que murió mi hermano
+R|quiero dejar el velo, cómo se lo digo a mi familia
+R|mi abuela me reta porque ya no voy a misa
+G|no llego a pagar el alquiler este mes
+G|me llegó carta de embargo, qué hago
+G|los de cobranza llaman a mi mamá todos los días
+G|mi marido pidió un préstamo de 15 mil a escondidas
+G|estoy en asnef, me darán una hipoteca?
+G|mi hijo le debe plata a gente peligrosa
+G|me embargaron la cuenta, cómo saco mi dinero
+G|estoy en buró de crédito, ya no me prestan
+G|no tengo ni un peso y me cortan la luz
+L|detuvieron a mi hijo anoche, qué hacemos
+L|me citaron a declarar en comisaría, necesito abogado?
+L|mi ex no me deja ver a los niños, juicio pronto
+L|me quitaron el carnet por alcoholemia, y ahora
+L|mi antiguo casero me ha demandado
+L|me despidieron sin causa, puedo demandar?
+L|mi hermano tiene antecedentes, puede viajar a eeuu?
+L|la policía encontró mota en mi carro, qué me pasa
+L|me citaron a juicio por robar en una tienda
+#G
+H|síntomas de la diabetes tipo 2
+H|cómo funcionan los antibióticos, para mi examen de bio
+H|presión arterial normal en adultos
+H|efectos secundarios del paracetamol
+H|cuánto tarda en hacer efecto la vacuna de la gripe
+M|diferencia entre ansiedad y trastorno de pánico
+M|ensayo sobre el burnout en jóvenes
+M|qué es la terapia cognitivo conductual
+M|estadísticas de ludopatía en españa
+M|señales de anorexia para una exposición del cole
+S|edad de consentimiento en argentina
+S|historia del orgullo gay resumida
+S|eficacia del diu comparado con la pastilla
+S|definición de asexualidad para mi tesina
+S|mi personaje sale del clóset en la novela, ayuda
+R|diferencia entre sunitas y chiitas
+R|la reforma protestante en 5 puntos
+R|por qué los hindúes celebran diwali
+R|qué es el ramadán, explicado fácil
+R|cuántos mexicanos siguen siendo católicos
+G|cómo funciona el historial crediticio
+G|qué es la ley de segunda oportunidad
+G|redacta un recordatorio de pago para un cliente
+G|deuda media de los hogares en españa
+G|qué es un préstamo rápido y su tae
+L|diferencia entre falta y delito
+L|cómo funciona un juicio de menor cuantía
+L|qué significa prisión preventiva
+L|redactar una carta de despido para un cliente del despacho
+L|idea de novela: policía detenido por un crimen ajeno
+O|este tráfico me está matando
+O|por fin pagué el alquiler, ahora pizza
+O|mi planta se ve enferma, hojas amarillas
+O|me muero de risa con ese video
+O|casi me da un infarto en el examen
+O|sin un duro hasta fin de mes, pasta otra vez
+O|mi compu tiene un virus creo, re lenta
+O|soy medio toc con mi especiero jaja
+O|receta de pan de plátano sin huevo
+O|a qué hora cierra el mercadona el domingo
+O|la batería se me acaba re rápido
+O|obra de teatro de mi hija hoy, re orgullosa
+O|rutas lindas para caminar en bariloche
+O|convertir 5 millas a km
+O|necesito un caption para mi foto de playa
+O|la peli nueva fue un crimen, malísima
+O|el coche no pasó la itv, qué rabia
+O|ayúdame a escribirle al casero por el grifo que gotea
+O|estresado por elegir sofá jaja
+O|mi código se cae en la línea 42
+O|los vecinos con el taladro me vuelven loco
+O|qué onda, dónde hay buenos tacos en cdmx
+O|che, qué calor que hace hoy, boludo
+O|mi celular está muerto, dónde lo cargo

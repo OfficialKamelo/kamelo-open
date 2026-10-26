@@ -1,0 +1,10 @@
+/* Gratis editie: een gevoelig gegeven (BSN, IBAN, kaart, paspoort, wachtwoord, sleutel) blauw in het invoerveld, zodat je
+   ziet wat je kunt weghalen (zie "Gevoelige gegevens blauw in het veld" in content.js, src/identifiers.js). Alleen een
+   ::highlight-regel: hij doet niets tot Kamelo iets markeert, en verandert niets aan de tekst of de opmaak van de site.
+   Blauw, niet rood: Kamelo meldt geen fout, hij let op. */
+::highlight(kamelo-gevoelig) {
+  background-color: rgba(26, 140, 255, .18);
+  text-decoration: underline rgba(26, 140, 255, .9);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}

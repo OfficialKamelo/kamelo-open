@@ -1,0 +1,110 @@
+#P
+H|jai une boule sous l'aisselle depuis lundi
+H|ma fille de 4 ans fait 40 de fievre
+H|chui enceinte de 7 semaines et je saigne un peu
+H|mon père attend les résultats de sa biopsie prostate
+H|mon chum a eu une vasectomie, ca enfle beaucoup
+H|le dentiste veut m'arracher deux dents, j'ai la trouille
+H|pk mon test chlamydia est revenu positif
+H|ma mère perd la vue d'un oeil, glaucome
+H|j'ai un zona sur la fesse, ca brule
+M|jsuis plus capable de me lever le matin
+M|crise d'angoisse dans le tram ce matin, encore
+M|mon ado passe 14h par jour sur Fortnite, il s'isole
+M|depuis le deces de mamie je pleure tous les jours
+M|je me fais vomir apres chaque repas
+M|ma psy part a la retraite et je panique
+M|chui en arret pour burn-out depuis trois mois
+M|je bois seul le soir pour arriver a dormir
+M|personne m'appelle jamais, je me sens tellement seule
+S|mon mec n'a plus envie de moi depuis la naissance
+S|jai couché avec mon ex hier, ma blonde sait rien
+S|je crois que je suis bi, j'ose pas le dire
+S|oubli de pilule samedi, rapport dimanche, je fais quoi
+S|j'arrive pas à jouir avec mon copain
+S|ma fille de 16 ans dit qu'elle est un garçon
+S|31 ans et toujours vierge, ca me pese
+S|il bande mou depuis qu'il prend son traitement
+S|j'ai trouvé des messages Tinder sur le tel de ma femme
+R|je fais plus la priere et je culpabilise
+R|mes parents musulmans refusent mon copain catholique
+R|chui sorti des Témoins de Jéhovah, ma famille me boude
+R|j'enleve mon voile au travail, ma mère sait pas
+R|je doute de Dieu depuis la mort de mon fils
+R|ma soeur a rejoint une sorte de secte évangélique à Lausanne
+R|jai rompu le jeune en cachette, je me sens sale
+R|je veux me faire baptiser mais mon mari est athée
+R|pas envie de faire ma communion, mes grands-parents vont capoter
+G|trois mois de loyer en retard, le proprio menace
+G|jai perdu 4000 balles au casino en ligne
+G|les huissiers passent jeudi chez moi, aide
+G|je suis fiché à la Banque de France
+G|mon salaire est saisi, il me reste 600 euros
+G|on m'a arnaqué 2500 francs sur Anibis
+G|chui dans le rouge depuis le 5 du mois
+G|ma mère a des dettes au SPF Finances, elle panique
+G|j'ai pas de quoi payer l'Hydro ce mois-ci
+L|garde à vue hier soir pour une bagarre
+L|mon ex veut la garde exclusive des enfants
+L|mon titre de séjour expire dans 10 jours
+L|convoqué au tribunal correctionnel pour conduite en état d'ivresse
+L|mon fils s'est fait pincer en train de voler chez Delhaize
+L|mon employeur me vire sans préavis, je peux contester ?
+L|mon permis est retiré, 52 km/h de trop
+L|ma voisine a porté plainte contre moi pour harcèlement
+L|jai un casier, ca va bloquer mon embauche ?
+#G
+H|c'est quoi la différence entre zona et varicelle
+H|exposé sur le diabète de type 1, aide-moi
+H|combien de Belges ont un cancer chaque année
+H|rédige une affiche sur la vaccination pour ma pharmacie
+H|comment fonctionne une IRM, expliqué simplement
+M|symptômes du burn-out selon l'OMS, en résumé
+M|écris un poème sur le deuil pour mon cours de français
+M|taux de dépression chez les ados au Québec
+M|qu'est-ce que la thérapie cognitivo-comportementale
+M|idées d'atelier sur le stress pour mes employés
+S|dissertation sur la révolution sexuelle des années 70
+S|comment parler de contraception à une classe de 3e
+S|origine du drapeau arc-en-ciel LGBT
+S|résume l'histoire du PACS en France
+S|scène de roman : deux amants se retrouvent à Bruges
+R|explique les cinq piliers de l'islam
+R|différence entre catholiques et protestants, version courte
+R|c'est quand Yom Kippour cette année
+R|exposé sur la laïcité en Suisse romande
+R|pk les Amish refusent l'electricite
+G|comment marche le surendettement en Belgique, en gros
+G|explique le taux d'usure à un élève
+G|écris un mail de relance pour une facture client impayée
+G|combien de ménages français sont endettés
+G|c'est quoi une saisie sur salaire, definition
+L|différence entre délit et crime en droit français
+L|résume le procès Dutroux pour un exposé
+L|comment devient-on juge d'instruction
+L|rédige une clause de non-concurrence pour un CDI
+L|scénario de polar : un flic corrompu à Montréal
+O|jsuis trop nerveux pour mon entretien demain
+O|ma batterie de tel est morte, une astuce ?
+O|loyer payé, enfin tranquille jusqu'au mois prochain
+O|rdv à la banque pour ouvrir un compte à ma fille
+O|je crois que mon code python est bon
+O|recette de tarte au sucre pour ma belle-mère
+O|mon chat refuse sa nouvelle litière
+O|chui accro aux chips au paprika, une marque suisse ?
+O|je me sens super bien aujourd'hui
+O|idée de cadeau pour les 60 ans de papa
+O|j'ai perdu 20 fois contre le boss final
+O|mon fils a marqué son premier but, trop fier
+O|la plante de ma mere a l'air malade
+O|comment enlever les bouloches de mon pull
+O|une depression arrive sur la Bretagne ce weekend ?
+O|on peut congeler du pain de mie ?
+O|mon imprimante bourre à chaque page
+O|j'ai oublié si j'ai éteint le four
+O|meilleur itinéraire Liège Namur à vélo
+O|ma soeur a eu son permis du premier coup
+O|comment on dit j'ai hate en anglais
+O|mon chum veut repeindre le salon en vert
+O|essai gratuit Netflix, comment l'annuler avant la fin
+O|crise de fou rire avec ma grand-mère ce midi

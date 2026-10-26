@@ -1,0 +1,132 @@
+#P
+H|mein knie hat seit gestern so nen stechen beim treppensteigen
+H|ich hab seit drei tagen fieber und der hals brennt richtig
+H|Meine Mutter hat gestern die Diagnose Brustkrebs bekommen, was jetzt
+H|hab heute blut abgegeben fürs hiv test ergebnis kommt nächste woche
+H|mein sohn hat seit zwei wochen nen ausschlag am bauch
+H|ich hab seit der op noch schmerzen im rücken, normal oder
+H|chemo, die haare gehen büschelweise aus
+H|mein vater hat parkinson, er zittert jetzt auch beim essen
+H|hab mir gestern nen zahn abgebrochen, zahnarzt hat erst im dezember
+H|bin in der neunten woche schwanger und blute, was jetzt
+M|schaff es grad nicht aus dem bett, seit wochen nur müde
+M|hab wieder so nen panikanfall gehabt im supermarkt, bin fast umgekippt
+M|mein freund trinkt jeden abend mehr, was soll ich machen
+M|seit mein papa gestorben ist, kann ich einfach nicht mehr schlafen
+M|bin total ausgebrannt bei der arbeit, weine jeden tag im auto
+M|meine tochter hockt nur noch am handy, nachts bis drei spielen
+M|hab seit monaten angst vor der bahn, mein herz rast sofort
+M|ich fress nachts alles leer und kotz hinterher, schäm mich
+M|Bruder ist seit Mamas Tod komplett zu, redet nicht mehr
+M|seit der trennung nur noch am kiffen, komm kaum noch raus
+S|freund kriegt seit paar monaten keinen hoch, wie sag ich's ihm
+S|seit nem jahr null lust mehr auf sex mit meiner frau
+S|glaub ich bin schwul, aber meine eltern sind streng katholisch
+S|hab gestern mit nem kollegen geschlafen, mein freund weiß es nicht
+S|bin 24 und noch jungfrau, normal?
+S|verlobter hat ne affäre mit seiner chefin, hab die nachrichten gelesen
+S|seit der op spür ich beim sex fast nix mehr
+S|trans, und mein vater nennt mich weiter beim alten namen
+S|hab meiner freundin nen seitensprung gebeichtet, jetzt will sie nix mehr
+S|mein freund drängt mich ständig zum sex, ich will nicht mehr
+R|hab im ramadan gebrochen und fühl mich richtig schuldig vor gott
+R|ich glaub nicht mehr an gott, wie sag ich's meiner mutter
+R|eltern wollen dass ich den glauben wechsle wegen meinem freund
+R|aus der kirche raus und opa redet seitdem kein wort mehr
+R|sohn ist zu den zeugen gegangen, ich weiss nicht mehr weiter
+R|ich will zum islam konvertieren aber meine familie ist dagegen
+R|zweifel am glauben seit dem studium
+R|ex ist orthodox, seine familie will mein kind nicht sehen
+R|bin beim fasten zusammengebrochen, fühl mich wie der letzte dreck
+R|schwester ist zum islam, ich komm mit ihr nicht mehr klar
+G|wir sind 3 monate mit der miete hinterher, vermieter schreibt schon
+G|schulden überall, hab bei drei karten das limit voll
+G|betreibung vom inkasso bekommen, was passiert jetzt
+G|hab meinen ganzen lohn im online casino verzockt, was jetzt
+G|bin seit dem jobverlust pleite, kann die stromrechnung nicht zahlen
+G|nen bekannter hat mich ausgenommen, hab 4000 euro verloren beim anlagebetrug
+G|der exekutor kommt nächste woche wegen den schulden
+G|schwiegermutter hat mir geld geliehen und ich kann's nicht zurückzahlen
+G|ich bekomme seit monaten kein bürgergeld mehr, weil der antrag hängt
+G|lohn wird gepfändet, 1200 euro bleiben
+L|hab nen strafbefehl vom statthalteramt bekommen, was tun
+L|ex will das sorgerecht, vor gericht in zwei wochen
+L|ich hab ne abmahnung wegen meiner krankheit bekommen, darf ich das
+L|nachbar verklagt mich wegen dem baum auf seinem grundstück
+L|die polizei hat mich gestern festgenommen, weil ich angeblich geklaut hab
+L|kündigung von der hausverwaltung bekommen, muss bis märz raus
+L|mein sohn hat ne anzeige wegen körperverletzung an der schule
+L|meine aufenthaltserlaubnis läuft ab und die ausländerbehörde antwortet nicht
+L|meine vermieterin hat mich verklagt wegen der kaution
+L|hab vorladung von der staatsanwaltschaft bekommen, was muss ich tun
+#G
+H|wie lange ist eine grippe normalerweise ansteckend bei kindern
+H|erkläre kurz wie insulin im körper den blutzucker senkt
+H|flyer für die praxis: impfen gegen grippe im herbst
+H|als pflegerin: wie erkläre ich einem patienten einen mrt-befund
+H|statistik: diabetes typ 2 in deutschland
+M|was sind die häufigsten symptome einer depression laut der who
+M|schreib eine kurzgeschichte über einen jungen, dessen vater verschwindet
+M|wie erkläre ich schülern in der 8. klasse was burnout ist
+M|wie viele menschen in der schweiz nehmen antidepressiva
+M|ich schreib ne seminararbeit über alkoholkonsum bei studenten
+S|wie erkläre ich in der aufklärung die verhütungsmethoden für teens
+S|welche rolle spielt sexualität in den romanen von thomas mann
+S|schreib eine szene für meinen roman, zwei alte freunde flirten
+S|wie viele menschen in deutschland identifizieren sich als queer
+S|als sexualberaterin: welche fragen stell ich im ersten gespräch
+R|was steht im koran über das fasten im ramadan
+R|erkläre den unterschied zwischen katholisch und evangelisch
+R|schreib eine predigt für den sonntag über die barmherzigkeit
+R|wie viele menschen in der welt sind muslim
+R|als religionslehrer: wie erkläre ich den kindern die zehn gebote
+G|wie funktioniert die schuldenbremse in der schweiz
+G|was ist der unterschied zwischen leasing und kredit fürs auto
+G|ich bin buchhalterin, wie buche ich eine rückstellung für offene rechnungen
+G|wie hoch ist die inflation in österreich dieses jahr ungefähr
+G|schreib einen brief an kunden wegen einer verspäteten zahlung
+L|was ist der unterschied zwischen einer abmahnung und einer kündigung
+L|wie funktioniert das strafrecht bei diebstahl in deutschland
+L|als anwältin: welche fristen gelten bei einer mietklage
+L|schreib eine krimi-szene, ein kommissar verhört einen verdächtigen
+L|wie viele verkehrsunfälle mit fahrerflucht gibt es pro jahr
+O|mein handyakku ist nach einem tag schon leer, was los
+O|ich bin so nervös vor der präsentation morgen, tipps?
+O|miete ist bezahlt, wie trag ich das in meine excel ein
+O|ich kann es kaum erwarten, dass der sommer endlich kommt
+O|wetter wird morgen besser, oder?
+O|unsere bank hat den termin verschoben, wann passt es dir
+O|laptop stürzt ständig ab, is das der ram oder die festplatte
+O|ich glaub meine code ist richtig, aber der test schlägt fehl
+O|im spiel fällt mein charakter ständig durch die map
+O|mein papa hat ne tolle kuchenidee, die sündhaft gut aussieht
+O|kann ich mein free trial von der app noch verlängern
+O|ich bin so süchtig nach diesen gummibärchen, wie viele sind okay
+O|der kuchen ist heute mega fluffig, hab zwei stück gegessen
+O|wie viel strom verbraucht mein kühlschrank pro tag ungefähr
+O|sprachkurs gebucht, mega gespannt
+O|mein kaffee ist schon wieder kalt, is das net normal
+O|wir fahren heuer im sommer nach kroatien, welche insel
+O|ich find die neue staffel von meiner serie richtig stark
+O|meine schwester plant ihre hochzeit im mai, welche farben passen
+O|hab heute ein meeting mit dem kunden, was soll ich vorbereiten
+O|mein lieblingsteam hat gestern 3:0 verloren, ich bin noch sauer
+O|babysitter für samstag gesucht, tipps?
+O|meine tochter will mit dem rad zur schule, ab welchem alter
+O|mein haus braucht neue dachziegel, was kostet das ungefähr
+O|den trick hab ich gestern erst gelernt, mega praktisch
+O|mein drucker zeigt schon wieder papierstau an, wie kann das sein
+O|wir haben ne neue katze, sie ist total verschmust und frech
+O|was ist ein gutes geschenk für meinen papa zum sechzigsten
+O|schau mal, mein neuer laptop hat jetzt endlich genug akku
+O|bin nervös, morgen ist mein erster tag im neuen job
+O|wann schneide ich die rosen im garten am besten zurück
+O|wir haben den kühlschrank gestern neu eingeräumt, sieht top aus
+O|unser termin beim autohändler ist nächste woche, passt das
+O|der zug nach zürich hat schon wieder verspätung, typisch
+O|mein wlan ist so langsam, wie kann ich das schneller machen
+O|wir haben am sonntag ein picknick im park geplant, wetter gut
+O|ich glaub's nicht, die lehrerin gibt uns eine woche frei
+O|ich bin total verknallt in dieses lied, läuft nonstop
+O|mein kumpel hat mich zu einem fußballspiel mitgenommen, hammer stimmung
+O|uns ist die kaffeemaschine kaputt gegangen, kann man die reparieren

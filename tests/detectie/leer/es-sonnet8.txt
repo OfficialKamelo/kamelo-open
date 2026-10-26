@@ -1,0 +1,272 @@
+#P
+H|mi vieja se rompio la cadera
+H|mi madre tiene cancer de mama, como se lo digo a los ninos
+H|tension 17 esta manana, tengo miedo
+H|mi hijo tiene 39 de fiebre desde hace 3 dias
+H|12 semanas de embarazo y manchado, normal?
+H|llegaron los resultados de papa, biopsia la semana que viene
+H|rodilla operada, sigue hinchada
+H|ronchas por todo el cuerpo desde el antibiotico
+H|la abuela se esta quedando sorda, el audifono no sirve
+H|mi hija tiene dolor abajo a la derecha, apendicitis?
+H|hoy me diagnosticaron diabetes tipo 2
+H|mi hermana tuvo un aborto espontaneo
+H|mi abuelo tuvo un acv, posibilidades de recuperacion
+H|tiroides lenta, cansada todo el dia
+H|hormigueo en el brazo izquierdo desde la manana
+H|mi nene tiene asma y el inhalador ya no le hace
+H|barriga hinchada despues de la quimio, normal
+H|conmocion cerebral, dolor de cabeza hace semanas
+H|mi novio se rompio la muneca, cuanto yeso
+H|bulto en la axila
+H|operan a mi papa de cadera el martes
+H|colesterol alto segun el medico
+H|fiv fallida otra vez, agotada
+H|mi abuelo tiene parkinson, temblores peor
+H|mi marido tiene culebrilla, que hago
+M|recaida tras 200 dias, nadie lo sabe
+M|no salgo de la cama, nada me interesa
+M|ataque de panico en el metro otra vez
+M|mi hermano bebe todos los dias, que hacemos
+M|burnout, lloro en el bano del trabajo
+M|se murio mi perra ayer, no paro de llorar
+M|mi hija casi no come, anorexia quizas
+M|apuesto online todas las noches, no puedo parar
+M|mi hijo juega 12 horas, no sale del cuarto
+M|toc, reviso la estufa diez veces
+M|creo que mi marido tiene tdah, todo se le olvida
+M|ansiedad por los examenes, taquicardia
+M|desde que murio mi abuelo no siento nada
+M|companero de piso fuma porros todo el dia
+M|empece terapia y me siento peor
+M|autoestima por el suelo, no salgo de casa
+M|atracones de noche y luego vomito
+M|mi mama esta deprimida desde que papa se fue
+M|una botella de vino cada noche, tengo que parar
+M|mi novia tiene borderline, estoy agotado
+M|mi adolescente se corta, que le digo
+M|duelo por mi gato, semanas llorando
+M|no duermo del miedo
+M|mi hermano se mete coca los fines de semana
+M|llevo 6 semanas sin apostar, aguanto
+S|anoche otra vez no se me paro
+S|mi marido no me toca hace meses
+S|creo que mi novio me engana, vi mensajes
+S|salgo del closet con mis padres el sabado
+S|soy bi y mi novia no lo sabe
+S|la pastilla me mato las ganas
+S|queremos relacion abierta, tengo miedo
+S|mi hija dice que es trans, como la apoyo
+S|prueba de clamidia, resultado el miercoles
+S|se rompio el condon, necesito la pastilla del dia despues
+S|duele tener sexo desde el parto
+S|mi chavo se viene en un minuto, pena
+S|mi hijo es gay, mi esposo no quiere hablar
+S|sin deseo desde los antidepresivos
+S|infidelidad de mi mujer, no la perdono
+S|diu o implante, cual me conviene
+S|herpes, como le digo a mi nueva novia
+S|mi esposa quiere camas separadas, cero intimidad
+S|dudo de mi genero desde la uni
+S|mi pareja ve demasiado porno
+S|no logro tener orgasmo con mi novio
+S|sexo sin proteccion, miedo al vih
+S|me acoste con mi jefe, me siento fatal
+S|mi novio quiere trio, no se
+S|fantasias gays estando casado
+R|perdi la fe despues de que murio mi papa
+R|sali de los testigos de jehova, mi familia me ignora
+R|mis padres no aceptan a mi novio cristiano
+R|el ramadan se me hace duro, me siento culpable
+R|mi mama me arrastra a misa, soy atea
+R|no me animo a decir que ya no creo
+R|mi abuela quiere que vuelva a misa
+R|mi familia dice que me ire al infierno
+R|mi abuelo no quiere boda fuera de la iglesia
+R|dudas de todo lo que me ensenaron en catequesis
+R|mi papa quiere que use hiyab
+R|exmusulman y lo escondo en casa
+R|mi hermana esta en una secta evangelica
+R|mi marido es hindu, mis padres furiosos
+R|el cura dice que mi divorcio es pecado
+R|deje la iglesia, los vecinos hablan
+R|mi hijo pregunta por que ya no vamos a misa
+R|mis padres quieren boda por la iglesia, yo no
+R|mi hijo se convirtio al islam, mi marido esta en shock
+R|cuaresma fallida, me siento mala cristiana
+R|miedo de decirle a mi mama que soy budista
+R|mi hermano en comunidad estricta, corto el contacto
+R|mis suegros exigen la misa del domingo
+R|shabat con mi familia politica judia, me siento extrana
+R|sali de la secta, perdi todos mis amigos
+G|me estan embargando el sueldo
+G|escondo una segunda tarjeta de credito a mi marido
+G|3 meses atrasada con el alquiler, aviso de desalojo
+G|pedi un prestamo rapido, ahora debo el triple
+G|los cobradores llaman a mi mama todos los dias
+G|mi papa perdio 20 mil apostando, lo supimos ayer
+G|estoy en el buro de credito, banco rechazo hipoteca
+G|4 tarjetas al maximo, no abro la correspondencia
+G|mi hermano debe plata a prestamistas
+G|sobregirada y faltan 2 semanas para cobrar
+G|deuda de alquiler 2400, juicio de desahucio
+G|estafaron a mi abuela, perdio sus ahorros
+G|deuda del credito estudiantil, embargo de sueldo
+G|deudas ocultas de mi esposa, 15 mil
+G|me cortaron la luz, no puedo pagar
+G|me gaste el alquiler en el casino
+G|pedi plata a amigos, no puedo devolver
+G|perdi el trabajo, hipoteca atrasada
+G|mi ex me dejo todas las deudas
+G|me quitaron el coche, aun debo 6000
+G|concurso de acreedores, como empiezo
+G|estoy en bancarrota, mi marido no sabe
+G|asnef por 3 cuotas impagas
+G|compre en cuotas 5 cosas, ya no llego
+G|financiera me acosa por telefono
+L|me detuvieron anoche, que pasa ahora
+L|la policia quiere interrogar a mi hijo manana
+L|el casero me demanda por la fianza
+L|mi ex quiere la custodia, juicio la semana que viene
+L|multa de 200 euros por exceso de velocidad
+L|me despidieron sin aviso, creo que es improcedente
+L|mi papa tiene antecedentes, puede emigrar
+L|denunciar a mi jefe por acoso
+L|nos robaron en casa, la policia pasa
+L|mi hermano en prision preventiva, audiencia el jueves
+L|citacion al juzgado por multa impaga
+L|los policias revisaron mi auto, es legal
+L|mi marido quiere la custodia total, tengo abogado
+L|control de alcoholemia, 0,9, primera vez
+L|mi vecino me acosa, denuncia
+L|mi hijo agarrado robando en una tienda
+L|acusado injustamente en el trabajo, reunion viernes
+L|robaron mi bici, la policia solo dio un numero
+L|declaro por fraude en la empresa, abogado?
+L|mi primo con trabajos comunitarios
+L|mi ex violo la orden de alejamiento
+L|mi amigo detenido en la marcha
+L|juicio laboral por mi despido
+L|multa de estacionamiento 100 euros, recurrir
+L|citado como testigo por la policia
+#G
+H|cuales son los sintomas de la diabetes tipo 2
+H|cuantas personas tienen demencia en espana
+H|soy medica, folleto sobre hipertension
+H|cual es la presion arterial normal
+H|como funciona la quimioterapia
+H|enfermera aqui, hoja corta sobre cuidado de heridas
+H|estadisticas de acv en mexico
+H|diferencia entre virus y bacteria
+H|cuanto tiempo se lleva yeso en muneca rota
+H|como funciona la fiv
+H|que mide la hba1c
+H|historia de la vacuna contra la polio
+H|novelista: personaje tras operacion de cadera, como es la rehabilitacion
+H|farmaceutico aqui, 100 palabras sobre dosis maxima de paracetamol
+H|cuantas personas tienen perdida auditiva en el mundo
+H|que es el primer trimestre
+H|causas del colesterol alto
+H|que es una biopsia
+H|episodio de podcast sobre investigacion del alzheimer
+H|como actua la metformina
+M|que es un ataque de panico
+M|psicologa aqui, 150 palabras sobre ataques de panico para mi web
+M|estadisticas de burnout en docentes
+M|diferencia entre tristeza y depresion
+M|como funciona la terapia cognitivo conductual
+M|orientador escolar, folleto sobre ansiedad ante examenes
+M|que es el toc
+M|cuantos ludopatas hay en espana
+M|senales de trastorno alimentario para taller de profesores
+M|historia de los manicomios
+M|cuales son las etapas del duelo
+M|texto para tarjeta de pesame por perdida de mascota, veterinaria
+M|que es el tdah en adultos
+M|diferencia entre psicologo y psiquiatra
+M|novelista: como se comporta un personaje en abstinencia de alcohol
+M|que es el trastorno por videojuegos segun la oms
+M|como funcionan los isrs
+M|curso de primeros auxilios psicologicos
+M|consejos para jefes para prevenir burnout en el equipo
+M|que es el sindrome del impostor
+S|diferencia entre gay y bisexual
+S|que tan efectiva es la pastilla anticonceptiva
+S|que es una ets
+S|plan de clase de educacion sexual para secundaria
+S|historia del movimiento lgbt en espana
+S|que significa no binario
+S|estadisticas de infidelidad en el matrimonio
+S|como funciona una vasectomia
+S|que es la disfuncion erectil, causas
+S|terapeuta aqui, folleto sobre comunicacion en parejas abiertas
+S|desde cuando es legal el matrimonio igualitario en argentina
+S|que es el poliamor
+S|texto para post de orgullo de mi empresa
+S|como protegen los condones del vih
+S|que es el diu de cobre
+S|periodista: cifras de its en mexico
+S|que es la asexualidad
+S|como difieren los derechos trans en europa
+S|cuanto tiempo es efectiva la pildora del dia despues
+S|diferencia entre genero y sexo
+R|cuantos catolicos practicantes hay en argentina
+R|por que los amish evitan la electricidad
+R|ideas de menu para iftar en mi cafe
+R|que es la cuaresma
+R|historia de la reforma protestante
+R|diferencia entre sunies y chiies
+R|que es yom kipur
+R|por que los testigos de jehova rechazan transfusiones
+R|cuantos musulmanes hay en espana
+R|soy profe, plan de clase sobre religiones del mundo
+R|que es una mision mormona
+R|explica los cinco pilares del islam
+R|que es el humanismo secular
+R|historia de la cienciologia
+R|reglas del ayuno en el hinduismo
+R|que es la excomunion
+R|ideas para ceremonia de boda interreligiosa, soy wedding planner
+R|cuanta gente dejo la iglesia catolica en mexico
+R|que es el festival de diwali
+R|estadisticas de ateismo en europa
+G|como funciona la quiebra personal
+G|que es un embargo de sueldo
+G|asesor de deudas aqui, folleto sobre prestamos rapidos
+G|cual es la tae de un prestamo rapido
+G|cuanto tiempo dura un registro en asnef
+G|que es la ley de segunda oportunidad
+G|historia de la carcel por deudas
+G|cuantos hogares tienen morosidad
+G|que es un plan de pagos de deuda
+G|deuda promedio de tarjeta de credito en estados unidos
+G|derechos del inquilino con atrasos de alquiler
+G|que puede hacer un alguacil
+G|articulo de blog para reconocer prestamistas usureros
+G|como funciona el score crediticio
+G|que es la bancarrota capitulo 7
+G|explica el interes compuesto en tarjetas
+G|estadisticas de deudas por juego
+G|periodista: inflacion y endeudamiento familiar
+G|como montar un servicio de asesoria de deudas
+G|que es el minimo inembargable
+L|limite de alcohol al volante en espana
+L|que es una amonestacion policial
+L|soy abogado, plantilla de carta de reclamacion
+L|que pasa en un juzgado de paz
+L|diferencia entre falta y delito
+L|cuanto tiempo dura un antecedente penal en espana
+L|que son los derechos miranda
+L|como funciona la custodia de menores en general en mexico
+L|que es un despido improcedente
+L|estadisticas de robo de bicicletas
+L|cuantos puntos se pierden por exceso de velocidad
+L|que es una orden de alejamiento
+L|que es un tribunal arbitral
+L|paralegal aqui, lista de verificacion de reclamaciones menores
+L|historia del habeas corpus
+L|plazo de prescripcion del fraude
+L|como funciona la asistencia juridica gratuita
+L|novelista: como es una detencion en estados unidos
+L|que es una multa de transito
+L|como funciona una demanda civil

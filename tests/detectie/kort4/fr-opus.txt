@@ -1,0 +1,110 @@
+#P
+H|bosse sous l'aisselle depuis 2 semaines, inquiétant?
+H|prise de sang de ma mère pas normale, crp élevée?
+H|règles en retard de 10 jours test négatif
+H|mon petit a 40 de fièvre depuis hier
+H|mon père oublie tout depuis sa chute, alzheimer?
+H|ma blonde est enceinte et saigne un peu, normal?
+H|entorse au foot, peux pas poser le pied
+H|mamie sous anticoagulants, elle peut prendre de l'ibuprofène?
+H|mon mari tousse du sang depuis des mois
+M|depuis la mort de papa je pleure tous les jours
+M|crises d'angoisse chaque matin avant le boulot
+M|mon chum fume du pot tous les jours, toujours déprimé
+M|ma fille mange presque plus et maigrit
+M|en arrêt pour burn-out depuis 3 mois
+M|mon frère joue tout son salaire au casino, accro
+M|je pense avoir un tdah, comment me faire diagnostiquer
+M|ma mère boit trop depuis le divorce
+M|mon fils joue aux jeux toute la nuit, sèche les cours
+S|mon copain m'a trompée avec une collègue
+S|ça brûle quand je fais pipi après un rapport, ist?
+S|je crois que je suis lesbienne, comment le dire chez moi
+S|capote craquée, elle doit prendre la pilule du lendemain?
+S|plus de sexe avec mon mari depuis un an
+S|mon ado de 14 ans dit qu'il est non-binaire
+S|oublié la pilule 2 jours, risque de grossesse?
+S|ma copine veut un couple libre, moi pas
+S|faire mon coming out à mon père très strict, conseils
+R|je crois plus en dieu mais mes parents sont très pratiquants
+R|veux quitter les témoins de jéhovah, ma famille va me rejeter
+R|beaux-parents veulent baptiser bébé, nous on est athées
+R|elle est musulmane moi catho, ses parents refusent
+R|je vais plus à la mosquée, mon père est furieux
+R|ma soeur est dans une sorte de secte, comment l'aider
+R|je doute de ma foi depuis le décès de mon frère
+R|veux enlever le voile, comment l'annoncer à ma famille
+R|mamie me fait la morale car je vais plus à l'église
+G|peux pas payer le loyer ce mois-ci
+G|l'huissier passe demain, aidez-moi
+G|une agence de recouvrement appelle ma mère tous les jours
+G|mon mari a fait un crédit de 15000 en cachette
+G|fiché à la banque de france, je peux encore emprunter?
+G|mon fils doit de l'argent à des mauvaises personnes
+G|compte saisi, comment récupérer mon argent
+G|je dois déposer un dossier de surendettement?
+G|j'ai plus une cenne, hydro va couper le courant
+L|mon fils arrêté cette nuit, on fait quoi
+L|convoqué au commissariat, faut un avocat?
+L|mon ex refuse la garde partagée, audience le mois prochain
+L|permis suspendu après alcootest, ça se passe comment
+L|mon ancien proprio me poursuit en justice
+L|licencié pour faute grave, je peux contester?
+L|mon frère a un casier, il peut aller aux usa?
+L|reçu un pv de la police pour du cannabis, conséquences?
+L|citée à comparaître pour vol à l'étalage, première fois
+#G
+H|symptômes du diabète de type 2
+H|comment agissent les antibiotiques, pour mon exposé de svt
+H|tension artérielle normale chez l'adulte
+H|effets secondaires du paracétamol
+H|combien de temps pour que le vaccin grippe agisse
+M|différence entre trouble anxieux et trouble panique
+M|dissertation sur le burn-out chez les jeunes
+M|c'est quoi la thérapie cognitive comportementale
+M|chiffres sur l'addiction aux jeux en france
+M|signes de l'anorexie pour un exposé
+S|majorité sexuelle en belgique c'est quel âge
+S|histoire de la marche des fiertés en bref
+S|efficacité du stérilet vs pilule
+S|définition de l'asexualité pour mon mémoire
+S|personnage de mon roman fait son coming out, aide dialogue
+R|différence entre sunnites et chiites
+R|la réforme protestante en 5 points
+R|pourquoi les hindous fêtent diwali
+R|c'est quoi le ramadan, expliqué simplement
+R|combien de québécois vont encore à la messe
+G|comment fonctionne une cote de crédit
+G|procédure de faillite personnelle expliquée
+G|rédiger une relance de facture impayée pour un client
+G|endettement moyen des ménages en france
+G|c'est quoi un crédit revolving
+L|différence entre contravention, délit et crime
+L|comment fonctionne la cour des petites créances
+L|que veut dire détention provisoire
+L|rédiger une rupture conventionnelle pour un client
+L|idée de polar: flic arrêté pour un meurtre pas commis
+O|ce trafic me tue
+O|enfin payé le loyer, maintenant pizza
+O|ma plante a l'air malade, feuilles jaunes
+O|je suis mort de rire avec cette vidéo
+O|j'ai failli faire une crise cardiaque à l'exam
+O|fauché jusqu'à la paie, encore des pâtes
+O|mon ordi a un virus je crois, trop lent
+O|un peu toc avec mon étagère à épices mdr
+O|recette de banana bread sans oeufs
+O|à quelle heure ferme le carrefour dimanche
+O|ma batterie se vide trop vite
+O|spectacle de ma fille ce soir, trop fière
+O|belles randos dans les vosges
+O|convertir 5 miles en km
+O|besoin d'une légende pour ma photo de plage
+O|le nouveau film était criminel tellement nul
+O|ma voiture a raté le contrôle technique
+O|aide-moi à écrire au proprio pour le robinet qui fuit
+O|stressé pour choisir mon canapé lol
+O|mon code plante à la ligne 42
+O|les voisins avec leur perceuse me rendent fou
+O|y fait frette en tabarnak à matin
+O|on se boit une jatte de café tantôt?
+O|mon téléphone est mort, où le charger

@@ -1,0 +1,132 @@
+#P
+H|jsuis enceinte de 6 semaines et jsaigne un peu, normal ça?
+M|chui plus capable de dormir depuis la mort de ma mère
+S|mon mari et moi on fait plus lamour depuis deux ans
+R|jai arrêté le ramadan et ma mère me parle plus
+G|3 mois de retard sur le loyer, lhuissier arrive
+L|jai reçu une convocation au tribunal pour le divorce
+H|ma fille a 4 ans et une otite depuis 3 jours
+M|je bois une bouteille de vin chaque soir pour tenir
+S|jai trompé mon copain avec un collègue, je fais quoi
+R|je doute de Dieu depuis la mort de ma sœur
+G|jai 14 000 euros de dettes sur des crédits rapides
+L|jai été arrêté hier pour conduite sous lalcool
+H|jai des migraines tous les jours depuis un mois
+M|mon fils joue à Fortnite jusquà 4h, il sèche lécole
+S|jcrois que je suis gay, mes parents savent rien
+R|mes parents me forcent à me marier, je suis athée
+G|jai reçu un commandement de payer de la poursuite
+L|mon permis est retiré 6 mois après un excès de vitesse
+H|mon scanner montre une déchirure du ménisque, on opère quand
+M|je fais des crises de panique dans le métro depuis septembre
+S|mon copain a plus envie de sexe depuis 6 mois
+R|je suis témoin de Jéhovah et je veux quitter la congrégation
+G|je joue en ligne et jai perdu 2000 euros ce mois-ci
+L|mon titre de séjour est expiré, jai peur dune OQTF
+H|ma mère a eu un AVC hier soir, cest grave?
+M|ma copine dit que je suis dépressif, je sais pas
+S|jai des douleurs pendant les rapports depuis laccouchement
+R|jai mangé pendant le ramadan, je me sens coupable devant Dieu
+G|mon ex me doit 3000 euros, jai plus rien
+L|mon proprio veut me mettre dehors, il a envoyé un huissier
+H|jai une hernie discale et mon boulot me met la pression
+M|je prends du Xanax tous les soirs pour pouvoir dormir
+S|je veux un stérilet, ma gyné dit non
+R|je suis athée, mon mari est très croyant
+G|chu tombé en chômage, la banque veut saisir ma voiture
+L|jai été licencié sans motif pour faute grave et je conteste
+H|chu tombé, mon poignet est enflé pis ça fait mal
+M|jsuis en burnout, jarrive plus à aller travailler
+S|chu bi pis ma blonde sait pas encore
+R|chu tanné de léglise, mon père insiste chaque dimanche
+G|mon salaire est saisi, il me reste 300 euros par mois
+L|on maccuse de vol au boulot, la sécurité me convoque demain
+H|jai fait une fausse couche ce matin je comprends rien
+M|depuis le décès de mon père je pleure tous les soirs
+S|je suis vierge à 27 ans et jai honte help
+R|ma copine est chrétienne, ma famille refuse le mariage
+G|jai des dettes et le CPAS me coupe mon revenu
+L|chu rendu accusé pour voies de fait après une bagarre
+H|depuis le Xarelto jai des bleus partout, normal?
+M|jai des TOC, je vérifie le gaz 20 fois
+S|ma femme a une liaison avec son boss depuis lété
+R|jai mis le voile, mes collègues me regardent bizarre
+G|je suis fiché à la Banque de France, plus de carte
+L|mon ex a porté plainte pour harcèlement contre moi
+H|jai un cancer du sein, la chimio commence lundi
+M|depuis que jai perdu mon job je dors plus du tout
+S|mon érection tient plus depuis mon opération de la prostate
+R|on a appelé un exorciste pour ma fille, je culpabilise
+G|jai été arnaqué sur un faux placement, 6000 euros perdus
+L|mon frère a été agressé, la police veut un témoignage
+#G
+H|quels sont les symptômes dun AVC pour un cours de secourisme
+H|explique le mécanisme de la chimio pour mon exposé de bio
+H|comment rédiger une fiche patient sur la pneumonie, je suis infirmière
+H|quelle est la prévalence du diabète de type 2 en Belgique
+H|je suis médecin, quels examens pour une fièvre de 3 jours
+M|pourquoi les adolescents sont-ils plus anxieux aujourdhui, article
+M|écris une scène de roman avec une crise de panique
+M|je suis psychologue, comment aborder le deuil avec un client
+M|quels sont les signes du burn-out selon lOMS
+M|ma prof demande un exposé sur les troubles anxieux
+S|quelle est la différence entre bisexualité et pansexualité
+S|je suis sage-femme, comment expliquer la pilule aux ados
+S|écris une histoire damour entre deux femmes en Suisse
+S|quel est le taux de divorce en France en 2024
+S|je suis prof, comment expliquer le consentement à des 15 ans
+R|quelles sont les règles du jeûne pendant le ramadan
+R|explique la différence entre catholiques et orthodoxes pour mon exposé
+R|écris un dialogue entre un athée et un prêtre
+R|quel est le rôle du rabbin dans une communauté juive
+R|combien de Québécois se disent sans religion en 2021
+G|pourquoi les taux dintérêt montent-ils en zone euro
+G|je suis banquier, comment expliquer le fichier FICP à un client
+G|combien coûte un abonnement Netflix en Suisse en 2026
+G|rédige une annonce pour un poste de conseiller en budget
+G|calcule les intérêts dun prêt de 10000 euros sur 5 ans
+L|quelles sont les règles du permis de conduire en Belgique
+L|je suis avocate, quels arguments pour un divorce à lamiable
+L|écris un polar où un inspecteur interroge un suspect
+L|explique la différence entre une amende et une contravention
+L|comment fonctionne la garde partagée en France, pour un devoir
+O|mon téléphone est à 8% de batterie et je dois partir
+O|jai un virus sur mon pc, je lance un scan
+O|je crois que mon code est juste mais le test échoue
+O|ma sœur a un crush sur mon chanteur préféré
+O|jai mon rendez-vous à la banque demain à 9h
+O|on a payé le loyer, enfin on respire
+O|je me sens nerveux avant lexamen de maths, des conseils?
+O|jai tellement hâte aux vacances de Noël
+O|ma mère veut une recette de gâteau sans sucre pour dimanche
+O|mon cours de piano est annulé cette semaine
+O|mon chien a mangé une chaussette, il est fou
+O|on a un bug dans notre app, il vient de où
+O|mon fils a battu son record au jeu, il est fier
+O|le sac de ma femme a un trou, recoudre?
+O|les peluches de mon pull, comment enlever les pilules
+O|ma copine est accro aux biscuits au chocolat, lol
+O|mon jeu vidéo est trop dur, je suis mort 20 fois
+O|on est en finale du tournoi, cest une vraie bataille
+O|mon frère est en ligne, il attaque le boss final
+O|jai un free trial de Netflix, je le coupe quand
+O|mon crédit de jeu est épuisé, comment en racheter
+O|cette phrase est trop longue, tu peux la raccourcir
+O|je crois en mon équipe pour le match de ce soir
+O|la pression du pneu est basse, quelle valeur mettre
+O|mon père et moi allons voir le match au stade
+O|on a un gros orage ce soir, la foudre est loin
+O|la dépression arrive sur la Suisse, il va pleuvoir demain
+O|un dessert tellement péché, je veux le faire pour ma fête
+O|ma recette de tarte, cest mon secret de famille
+O|mon ordi a eu un bug et la garantie est finie
+O|chu pas capable de trouver mon char dans le stationnement
+O|ma fille a gagné son match, elle est trop fière
+O|mon mari adore la fondue, on fait ça samedi
+O|quelle est la meilleure façon de nettoyer mes baskets blanches
+O|je suis nul en orthographe, mon fils corrige mes mails
+O|on a une réservation chez le coiffeur à 14h samedi
+O|jai trop mangé à Noël, je me sens lourd
+O|nous allons au musée avec les enfants dimanche, des idées
+O|jai besoin dun nouveau chargeur, celui-ci est mort
+O|mon parrain a une voiture de collection, quelle assurance choisir

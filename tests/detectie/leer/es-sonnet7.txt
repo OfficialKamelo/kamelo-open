@@ -1,0 +1,322 @@
+#P
+H|operan a mi papa el viernes, tengo miedo
+H|bulto en el pecho, espero resultado de biopsia
+H|a mi mama le salio mal el resultado del escaner
+H|llevo una semana con sangre en las heces
+H|ayer me diagnosticaron diabetes tipo 1, agobiada
+H|mi hijo tose sangre, vamos a urgencias
+H|la quimio empieza el lunes, estoy aterrado
+H|el psa de mi marido salio alto
+H|el medico sospecha esclerosis multiple en mi
+H|mi nena tiene leucemia
+H|creo que tuve un mini ictus anoche
+H|hepatitis b positivo, a quien se lo digo
+H|mi abuela tiene alzheimer y ya no me conoce
+H|palpitaciones todas las noches desde el covid
+H|manana le hacen la biopsia a mi hermana
+H|embarazada y con sangrado a las 8 semanas, preocupada
+H|mareos y brazo izquierdo dormido, lo ignoro
+H|hoy sali positivo en vih
+H|mi bebe volvio a tener convulsion por fiebre
+H|3 anos en dialisis, estoy agotado
+M|me lavo las manos cincuenta veces al dia
+M|no puedo parar de beber, tercera noche esta semana
+M|la anorexia de mi mujer va a peor
+M|quemada del trabajo, lloro en el bano de la oficina
+M|duelo por mi hermano, 6 meses, no funciono
+M|otra vez ganas de acabar con todo esta noche
+M|ataques de panico en el metro cada manana
+M|tdah a los 34, las pastillas no funcionan
+M|mi hija se corta, vi cortes recientes
+M|recaida con coca tras 8 meses limpio
+M|llevo dias sin poder levantarme de la cama
+M|reviso la estufa diez veces antes de salir
+M|mi mama murio en marzo, todavia oigo su voz
+M|mi marido lleva dias sin hablar, deprimido
+M|atracon y vomito todas las noches desde ano nuevo
+M|empece terapia, me odio por sentirme tan dependiente
+M|mi mejor amiga dice que quiere morirse
+M|adicto a la mota y al celular, me odio
+M|depresion posparto, no siento amor por el bebe
+M|cuento pasos sin parar, mi toc me consume
+S|descubri que me es infiel, mensajes por todos lados
+S|creo que soy asexual, no me animo a decirselo a mi novia
+S|se me olvido la pastilla dos dias, y ahora
+S|cero deseo sexual desde el bebe
+S|mi novio no se le para, incomodo
+S|este finde salgo del armario con mis padres
+S|clamidia positivo, mi pareja no lo sabe
+S|creo que soy trans, 16 anos y con miedo
+S|mi marido quiere un trio, no estoy segura
+S|me acoste con mi companero de trabajo, me da asco
+S|mi hija me conto que es bisexual
+S|el sexo me duele siempre, que me pasa
+S|se rompio el condon anoche, pastilla del dia despues
+S|mi mujer encontro mi app de citas, ayuda
+S|la adiccion al porno arruina la intimidad con mi novia
+S|gay y casado con una mujer, 40 anos, perdido
+S|le fui infiel hace 2 anos, se lo confieso
+S|mi hijo se cuestiona su genero
+S|me salio herpes, alguien querra salir conmigo
+S|mi prometido no quiere sexo desde la boda
+R|mi hijo se hizo testigo de jehova, estoy perdida
+R|dejar la iglesia, mis padres me van a repudiar
+R|perdi la fe desde que murio mi papa
+R|mi familia quiere que use hiyab, yo no quiero
+R|mi esposa se convirtio al islam, no se que sentir
+R|familia muy religiosa, quiero salirme
+R|el cura dice que ser gay es pecado, mi hermano es gay
+R|mi mama reza para que vuelva a la iglesia
+R|ya no creo en dios, me da miedo decirselo a la abuela
+R|mis suegros quieren bautizar al bebe, somos ateos
+R|dudo de mi fe catolica desde la confirmacion
+R|mis padres exigen boda religiosa, me niego
+R|ex mormon, mi familia me da la espalda
+R|mi papa me obliga a ayunar en ramadan, no rezo
+R|mi hermana se hizo cristiana renacida, insoportable
+R|creci en una secta, por fin sali
+R|me convierto al judaismo, la familia de mi novio duda
+R|mi mama cree que me voy al infierno
+R|deje de ir a misa, la abuela pregunta por que
+R|los ancianos de la iglesia preguntan por mi divorcio
+G|otra vez en el buro de credito, quiero salir
+G|3 meses de renta atrasada, el casero escribe
+G|perdi 800 euros apostando anoche
+G|el embargo viene el jueves, no se que hacer
+G|todas mis tarjetas al limite, se lo escondo a mi mujer
+G|prestamo rapido renovado otra vez, ya son 800
+G|no puedo pagar la luz, me la cortaron
+G|los cobradores llaman a mi mama
+G|en descubierto cada mes, me salto comidas
+G|pedi a un prestamista, ahora amenazas
+G|mi marido se jugo todos nuestros ahorros
+G|deje de pagar el coche, llego carta de embargo
+G|le debo 12000 a hacienda, panico
+G|no puedo pagar mi insulina, primero la renta
+G|prestamo estudiantil en cobranza, me embargan el sueldo
+G|40 mil de deuda, mi pareja no sabe nada
+G|el banco bloqueo mi cuenta, sin dinero para comer
+G|hoy llego aviso de desahucio, dos hijos
+G|mi hermano le debe miles a unos dealers
+G|en quiebra a los 29, me da verguenza
+L|la policia me cito por mi primo
+L|mi jefe me echo por un robo que no hice
+L|anoche me detuvieron por manejar borracho
+L|mi ex me lleva a juicio por la custodia
+L|me llego una citacion, juicio en dos semanas
+L|acusaron a mi hijo de agresion, y ahora
+L|la policia registro nuestro piso a las 6
+L|mis antecedentes penales salen en los trabajos
+L|me despidieron tras quejarme, despido improcedente
+L|mi hermano esta en prision preventiva, juicio el mes que viene
+L|me quitaron el carnet por puntos, necesito el coche
+L|mi antiguo casero me demanda
+L|servicios sociales abrio expediente sobre nosotros
+L|a mi papa le dieron condena en suspenso
+L|me acusaron de hurto sin ser cierto, el guardia me retuvo
+L|audiencia por la custodia manana, miedo a perder a mis hijos
+L|declaro ante la policia el jueves
+L|multa de 500 y carta del juzgado
+L|permiso de residencia vencido, miedo a la deportacion
+L|orden de alejamiento contra mi, es falsa
+#G
+H|soy medico, que pruebas pedir en fiebre de 3 dias
+H|cuales son las etapas de la diabetes tipo 2
+H|como funciona la quimioterapia en general
+H|diferencia entre infeccion viral y bacteriana
+H|estudiante de enfermeria: como tomar bien la tension
+H|tiempo medio de recuperacion tras protesis de rodilla, para un informe
+L|que causa las migranas, resumen general
+H|sintomas del lupus segun los libros de texto
+H|como entrenan las vacunas al sistema inmune
+H|estadisticas de supervivencia al cancer en espana
+M|diferencia entre trastorno de ansiedad y de panico
+M|como profesor, como apoyo a alumnos en duelo
+M|cuanta gente tiene tdah en el mundo
+M|explica el modelo de las etapas del duelo
+M|escribe un poema sobre la depresion para clase de lengua
+M|como funciona la terapia cognitivo conductual en teoria
+M|ensayo: adiccion como enfermedad o eleccion
+M|cuales son los criterios del dsm para el toc
+M|tasas de burnout por profesion
+M|mi personaje de novela tiene anorexia, como escribirlo con realismo
+S|como matrona, como explicar la pildora a adolescentes
+S|historia de los derechos lgbt en europa
+S|que tan efectivos son los condones estadisticamente
+S|diferencia entre sexo y genero
+S|escribe una escena donde una pareja rompe tras una infidelidad
+S|como se transmiten las its, para una exposicion escolar
+S|explicar la asexualidad para un trabajo de sociologia
+S|que mide la escala de kinsey
+S|diu o implante, como funcionan
+S|por que la gente engana a su pareja, resumen de estudios
+R|diferencia entre sunitas y chiitas
+R|resume los cinco pilares del islam
+R|historia de los testigos de jehova
+R|por que empezo la reforma protestante
+R|explica la confirmacion catolica a un nino
+R|ateo o agnostico, cual es la diferencia
+R|cuanta gente abandona la religion cada ano en mexico
+R|escribe un sermon sobre el perdon
+R|de que trata el diwali
+R|compara budismo y estoicismo
+G|por que suben los tipos de interes
+G|calcula el interes de un prestamo de 10 mil al 6%
+G|como funciona el scoring crediticio en general
+G|bola de nieve o avalancha para deudas, cual es mejor
+L|explica el derecho concursal en espana para mi examen
+G|como ganan dinero las empresas de prestamos rapidos
+G|plan de negocio para una agencia de cobranza
+G|que es el interes compuesto, ejemplo sencillo
+G|como afecta la ludopatia a la economia
+G|resume como funciona una hipoteca
+S|cuantas multas de transito hay al ano en colombia
+L|diferencia entre delito leve y delito grave
+L|explica el derecho a guardar silencio
+L|estudiante de derecho: elementos de la negligencia
+L|como funciona un juicio con jurado en eeuu
+L|plazo de prescripcion del robo en general
+L|como se decide la custodia en principio
+L|escribe el inicio de un thriller judicial en la sala
+G|cuanta gente hay presa en la india
+L|derechos del trabajador tras un despido en alemania, resumen
+O|mi perro entra en panico con los fuegos artificiales
+O|nuestro perro parece deprimido con la lluvia
+O|mi pastel es un desastre, panico
+O|mi masa madre parece enferma
+O|la bateria del celular se muere a mediodia
+O|mi portatil tiene un virus, como lo quito
+O|por fin pague la renta, que cocino hoy
+O|como registrar el alquiler en excel
+O|ahorrando para un viaje a portugal, consejos
+O|como dividimos la cuenta justo entre 5
+O|mi hermano y yo discutimos si el tomate es fruta
+O|enganchado a esta serie, recomendaciones parecidas
+O|este trafico me mata
+O|mi planta se muere, hojas amarillas
+O|bolitas en mi sueter, como quitarlas
+O|mejores estiramientos antes de correr 10k
+O|que tiempo hace en lisboa en marzo
+O|escribe un discurso de boda gracioso para mi mejor amigo
+O|ideas de regalo para los 60 de mama
+O|correo a mi jefe para pedir el viernes libre
+O|ayuda con la tarea de mates, fracciones de quinto
+O|las mananas antes del cole son un caos, como organizarme
+O|mi gato vomita bolas de pelo siempre
+O|mi familia de los sims quebro jaja
+O|nariz quemada por el sol, consejos con aloe
+O|mi wifi esta enfermo otra vez, el router se reinicia
+O|ideas para cumple de nino de 6 anos
+O|como rechazar con educacion una invitacion a comer de un companero
+O|cuanto hay que hervir los huevos
+O|mi hamster se ve triste, rueda nueva
+O|receta de panqueques sin gluten
+O|hoja de calculo para llevar los gastos fijos
+O|me muero por saber como termina este libro
+O|mi coche hace un ruido raro al frenar
+O|el cesped murio tras la ola de calor
+O|el perro del vecino ladra toda la noche, nota amable
+O|ayudame a planear un asado familiar para 20
+O|mi jardin se inundo, ideas de drenaje
+O|quitar mancha de vino tinto de la alfombra
+O|buen nombre para un cachorro golden retriever
+O|estoy estresado eligiendo el color de pintura del pasillo
+O|mi masa madre murio, la mate yo
+O|la reunion del lunes es una tortura, como sobrevivo
+O|la app del banco se cayo cuando iba a pagar la pizza
+O|forma mas barata de mandar un paquete a australia
+O|como recupero el iva de un portatil del trabajo
+O|le debo 15 pesos a mi companero por el delivery, como se lo pido
+O|mi hijo perdio 9 a 0 en futbol, como lo animo
+O|la autorizacion de la excursion de mi hija necesita firma, como escanear
+O|como arreglo una canilla que gotea
+O|mis tomateras tienen mildiu, ayuda
+O|panico: manana es el cumple de mama, regalo rapido
+O|se acabo la leche, que puedo hornear sin ella
+O|la app del monitor de bebe se desconecta
+O|mis audifonos murieron, cuales compro
+O|por que mi impresora me odia
+O|matar el tiempo antes de mi vuelo, que hacer en barajas
+O|mi novio y yo preparamos una fiesta sorpresa para su hermana
+O|como agradecer a mi abuela el sueter en una tarjeta
+O|decepcionada porque cerro mi cafeteria favorita
+O|mi marido ronca como un tren, algun gadget
+O|como ahorrar en el super este mes
+O|plantilla de aumento de alquiler, soy el casero
+O|como presupuesto los regalos de navidad
+O|consejos para un primer plan de maraton
+O|mi nino de 2 anos rechaza el brocoli
+O|uf lunes
+O|muerta de cansancio tras el gimnasio jaja
+O|receta de cordero al curry
+O|traduce este menu del italiano
+O|puedes revisar mi curriculum
+O|mi pez dorado murio, como se lo explico a mi hija de 5
+O|ay esta salsa picante me mata
+O|esta cancion esta en bucle, estoy obsesionada
+O|como evito que mi gato rasque el sillon
+O|el mecanico pide 400 por las pastillas de freno, es justo
+O|que me pongo para una boda de verano en mendoza
+O|como programo una transferencia mensual
+O|el inquilino pago tarde, como redacto un recordatorio
+O|ayudame con unas palabras de gracias para la jubilacion de papa
+O|que abono para rosas
+O|un ex companero me mando solicitud en linkedin, acepto
+O|cuantas calorias tiene un cortado
+O|plan de 3 dias en sevilla
+O|cuanto es el 15 por ciento de 240
+O|ni idea de que regalarle a papa por el dia del padre
+O|mis jeans encogieron en el lavado, tienen arreglo
+O|el desague de la ducha esta tapado otra vez
+O|como pido con educacion a los vecinos que muevan sus contenedores
+O|derrame cafe en el teclado, panico
+O|mejores aperturas de ajedrez para principiantes
+O|mi amigo se muda a canada, regalo de despedida
+O|aniversario de bodas la semana que viene, restaurantes en buenos aires
+O|como escribo una carta de recomendacion para mi ex becario
+O|pantalla del celular rota, reparar o cambiar
+O|como ensenar a un cachorro a sentarse
+O|buenos libros como el club del crimen de los jueves
+O|no me saco de la cabeza la cancion del anuncio
+O|ayuda, mi pan de masa madre sale duro como ladrillo
+O|mi hermana y yo peleamos por el ultimo trozo de pizza
+O|rutina de gimnasio de 4 dias a la semana
+O|como saco tinta roja de una camisa blanca
+O|compre un auto usado, que papeles necesito para el traspaso
+O|como explico la fotosintesis a un nino de 7
+O|ideas de proyecto de ciencias para mi hija
+O|ahorramos para el enganche de una casa, tips para una hoja de ahorro
+O|estoy muy pelado hasta el cobro jaja, comidas baratas
+O|correo al ayuntamiento por el bache de nuestra calle
+O|lista para cuidar al gato de la vecina
+O|como arreglo una puerta que chirria
+O|mi gato esta enganchado al puntero laser jaja
+O|bateria al 3 por ciento, socorro
+O|temperatura del horno para pollo asado
+O|como termino con educacion una videollamada
+O|nuestra quiniela es un desastre esta semana
+O|buen cuento para dormir sobre un dragon
+O|mi lechuga siempre espiga, por que
+O|me ahogo en ropa sucia, algun sistema
+O|que verguenza, le dije mama a la profe jaja
+O|la cadena de mi bici se sale siempre
+O|como se pronuncia quinoa
+O|mi abuela cumple 90, ideas de discurso
+O|se puede congelar arroz cocido
+O|como hago copia de mi iphone antes de actualizar
+O|harta de la lluvia, actividades en casa para ninos
+O|mi perro se comio un calcetin, esta bien, que juguete para morder
+O|me sugieres un nombre para mi panaderia
+O|como digo con educacion que estoy ocupado
+O|mi formula de excel da #REF, por que
+O|ayudame a elegir una serie para esta noche
+O|como limpio una sarten de hierro fundido
+O|ideas de team building para 12 personas sin presupuesto
+O|estoy obsesionada con mi nuevo molinillo de cafe
+O|valen la pena las entradas para la final
+O|como doblar una sabana bajera
+O|el grupo de whatsapp discute donde cenar
+O|mi planta de interior tiene mosquitas, que hago
+O|ideas para el fin de semana largo cerca de cordoba
+O|mi hermano y yo peleamos por quien lava los platos
+O|estoy muerto despues de la mudanza, que caja era la cocina

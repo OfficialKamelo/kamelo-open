@@ -1,0 +1,241 @@
+#G
+H|explícame cómo funciona la insulina para un trabajo de biología de 3º de la ESO
+H|soy enfermera y necesito un folleto sencillo para pacientes sobre cómo tomar bien la metformina
+H|cuántas personas tienen diabetes tipo 2 en méxico según la última encuesta nacional
+H|para mi tesis de enfermería necesito un resumen de los factores de riesgo de las úlceras por presión
+H|q diferencia hay entre un virus y una bacteria, es pa un trabajo del cole
+H|el protagonista de mi novela se entera de que tiene cáncer de pulmón, cómo sería realista la conversación con el oncólogo
+H|que paso con la pandemia de gripe española de 1918, resumen corto
+H|como funciona una vacuna de arnm, explicalo como si tuviera 12 años
+H|mis pacientes mayores siempre se olvidan de tomar las pastillas, ideas de recordatorios para una charla en el centro de salud
+H|cuál es la esperanza de vida en chile comparada con argentina y colombia
+H|escribe un poema sobre un médico de guardia que lleva 30 horas sin dormir
+H|soy profesor de educación física, dame un plan de calentamiento para prevenir lesiones de rodilla en adolescentes
+H|de qué murió Diego Maradona según los informes médicos publicados
+H|diferencia entre infarto y paro cardiaco
+H|estoy escribiendo un artículo sobre el aumento del dengue en latinoamérica, qué datos de la OPS debería citar
+H|como se transmite el vph y xq hay vacuna, para una exposicion
+H|para mi clase de anatomía necesito una lista de los huesos de la mano con sus nombres en latín
+H|q es la hipertensión arterial y cuáles son los valores normales según la oms
+H|redacta un consentimiento informado para una cirugía de cataratas, soy secretaria en una clínica oftalmológica
+H|cuántos años vivió Fidel Castro y qué enfermedad tenía al final
+H|mi hija tiene que hacer un cartel sobre la higiene dental, ideas de dibujos
+H|como se llama el medicamento que se usa para la malaria y como actua, curiosidad nomas
+H|el personaje de mi guion se rompe una pierna en el desierto, cómo improvisaría una férula
+H|resume la historia de la penicilina y quién la descubrió
+H|quiero montar un taller de primeros auxilios para mi equipo de trabajo en la fábrica, qué temas incluyo
+H|cuántas calorías tiene un aguacate mediano
+H|¿por qué el sistema de salud de Estados Unidos es tan caro comparado con el de España?
+H|soy fisioterapeuta y busco ejercicios de propiocepción para esguince de tobillo, para un blog
+H|que le pasó a Lionel Messi de niño con las hormonas de crecimiento
+H|traduce al inglés: el paciente presenta fiebre alta, tos seca y dificultad para respirar
+H|dame 5 preguntas de examen tipo test sobre el sistema circulatorio
+H|como se hace una rcp, pasos segun la american heart association
+H|mi empresa vende suplementos y necesito redactar un aviso legal que no prometa curas, ejemplo de texto
+H|qué es el síndrome de Down y cuál es la causa genética, resumen pa mi clase de bio
+H|en qué casos reales se basaron los episodios de la serie House
+H|por qué bostezamos y por qué es contagioso
+H|cuántos casos de sarampión hubo en méxico en 2025
+H|escribe un guion de 1 minuto para tiktok sobre lavarse las manos, trabajo en un hospital y es pa la campaña interna
+H|cual es la dosis maxima diaria de paracetamol en adultos segun las guias, estoy preparando una charla de farmacia
+H|háblame de la OMS: cuándo se fundó y qué hace
+M|explícame qué es el trastorno de ansiedad generalizada y cuál es la diferencia con el estrés normal, para un trabajo de psicología
+M|soy psicólogo y necesito una plantilla de consentimiento para terapia online
+M|cuántas personas sufren depresión en el mundo según la oms
+M|el protagonista de mi novela tiene ataques de pánico en el metro, cómo describirlo sin caer en clichés
+M|q es el burnout y quien lo definió primero
+M|para mi tesis sobre adicciones necesito 5 artículos recientes sobre ludopatía en jóvenes
+M|escribe un monólogo para una obra de teatro sobre una madre en duelo
+M|cómo funciona la terapia cognitivo conductual, resumen para un trabajo de la uni
+M|mis alumnos de secundaria están muy estresados con los exámenes, ideas para una dinámica de relajación en clase
+M|que se sabe de la salud mental de Britney Spears en el caso de la tutela
+M|soy orientadora escolar y quiero una charla sobre acoso y autoestima para 2º de bachillerato
+M|diferencia entre tdah y tea, explicación sencilla
+M|dame estadisticas de consumo de alcohol en adolescentes en argentina
+M|estoy escribiendo un artículo sobre la epidemia de soledad en las ciudades, qué estudios puedo citar
+M|cómo se llaman las cinco etapas del duelo de Kübler-Ross
+M|resume la película Una mente brillante y cómo retrata la esquizofrenia
+M|para mi clase de psicología necesito ejemplos de mecanismos de defensa de Freud
+M|mi equipo de rrhh quiere un protocolo para prevenir el burnout en la oficina, borrador
+M|por qué el insomnio es tan común en las sociedades modernas, datos
+M|q paso con Kurt Cobain y la depresión, para un ensayo sobre musica y salud mental
+M|escribe un poema sobre la tristeza de un otoño en Buenos Aires
+M|soy enfermero en una unidad de adicciones, ideas pa dinámicas grupales con pacientes
+M|qué es el mindfulness y de dónde viene
+M|cuántos psicólogos por cada 100.000 habitantes hay en chile y españa
+M|el personaje de mi cuento es un alcohólico en recuperación, cómo sería su primera reunión de AA
+M|explica el efecto placebo con un ejemplo, para mi exposición
+M|redacta un correo a mis empleados presentando el programa de apoyo psicológico de la empresa
+M|¿por qué los videojuegos pueden volverse adictivos? diseño de recompensas, para mi tesis de diseño
+M|significado de anhedonia
+M|recomiéndame libros de divulgación sobre neurociencia de las emociones
+M|cómo ayuda el ejercicio a la salud mental, lo que dicen los estudios
+M|la serie 13 Reasons Why fue criticada por qué motivos, resumen de la polémica
+M|soy profesor y quiero detectar señales de que un alumno tiene trastornos alimentarios, qué guía oficial hay
+M|cual es la diferencia entre un psicologo y un psiquiatra en españa
+M|escribe una escena donde dos amigos hablan de la depresión de uno de ellos, para mi guion de cortometraje
+M|xq la gente se vuelve adicta al celular, explicalo
+M|que es el trastorno de estrés postraumático en soldados, historia del diagnóstico después de vietnam
+M|dame un test de ejemplo de 10 preguntas sobre estrés para una encuesta de clima laboral en mi empresa
+M|quién fue Sigmund Freud y qué críticas tiene hoy
+M|estoy organizando para mi ong un grupo de apoyo para cuidadores, cómo se estructura una sesión
+S|explica la diferencia entre sexo y género para mi trabajo de sociología
+S|soy profesora de ciencias y necesito una clase de educación sexual para 3º de secundaria, qué contenidos incluir
+S|cómo funcionan las pastillas anticonceptivas combinadas, explicación biológica
+S|el protagonista de mi novela se enamora de su mejor amigo y no se anima a decírselo, escribe esa escena
+S|historia del movimiento lgbt en méxico, resumen
+S|cuándo se legalizó el matrimonio igualitario en argentina y españa
+S|q es la asexualidad, para una exposicion
+S|para mi tesis de psicología necesito estudios sobre infidelidad y uso de redes sociales
+S|cuál es el porcentaje de uso de preservativo en jóvenes en colombia
+S|escribe una canción de desamor, tipo reggaetón suave
+S|soy ginecóloga y busco un texto claro para pacientes sobre métodos anticonceptivos
+S|por qué Freud daba tanta importancia a la sexualidad, explicalo simple
+S|quién fue Harvey Milk y por qué es importante
+S|cómo cubre la prensa el caso de un famoso que salió del clóset, qué lecciones de periodismo hay
+S|mi personaje es una mujer trans en los 80 en chile, qué desafíos históricos debería reflejar
+S|diferencia entre ets e its y cuáles son las más comunes según la oms
+S|estoy escribiendo un artículo sobre las apps de citas y cómo ganan dinero
+S|como se transmite el vih y como se previene, para un taller en el cole
+S|resume el escándalo de Clinton y Lewinsky
+S|dame ideas para una obra de teatro sobre un triángulo amoroso en una oficina
+S|qué significa la sigla lgbtq+ y cada letra
+S|la serie Élite cómo retrata la sexualidad adolescente, análisis para clase de comunicación
+S|mis alumnos preguntan q es el consentimiento, cómo se los explico a chicos de 14 años
+S|redacta una política de la empresa contra el acoso sexual en el trabajo, soy de rrhh
+S|cuando se inventó el condón y de qué materiales era
+S|que dice el kamasutra realmente, es solo de posturas?
+S|escribe un diálogo entre dos personajes que terminan su relación en un café
+S|qué es la disfunción eréctil y a qué porcentaje de hombres mayores de 50 afecta, es para un artículo de farmacia
+S|por qué los pavos reales tienen cola larga, selección sexual
+S|quién es Elliot Page y cuándo hizo su anuncio público
+S|cómo funciona la fertilización in vitro paso a paso, explicación general
+S|soy sexóloga y quiero un post de instagram sobre mitos del orgasmo femenino
+S|sinopsis de la película Brokeback Mountain
+S|por qué hay tanta polémica con la educación sexual en las escuelas de latinoamérica
+S|cual es la edad legal de consentimiento en españa y en méxico
+S|sugiere un título para mi novela romántica ambientada en Cartagena
+S|que es el poliamor y como se diferencia de la infidelidad, definicion
+S|me piden una charla sobre prevención de ets para el instituto donde trabajo, dame un esquema de 20 min
+S|por qué se habló tanto de la vida privada del rey Juan Carlos antes de su abdicación
+S|explícame qué es el vaginismo, para mi examen de matrona
+R|explica los cinco pilares del islam de forma sencilla para mi trabajo de religiones
+R|soy profesor de religión y necesito una actividad sobre las fiestas judías para primaria
+R|cuántos católicos hay en latinoamérica y cómo ha cambiado el porcentaje
+R|el protagonista de mi novela pierde la fe después de la guerra, escribe su monólogo en la iglesia vacía
+R|diferencia entre protestantes y católicos
+R|q es el ramadán y por qué se ayuna
+R|quién fue el papa Francisco y qué reformas impulsó
+R|para mi tesis necesito bibliografía sobre sincretismo religioso en brasil y méxico
+R|historia de la inquisición española, resumen
+R|cómo se celebra el día de muertos en méxico y qué significa
+R|escribe una oración corta para la bendición de la mesa en una cena de empresa multicultural
+R|soy periodista y escribo sobre el aumento de los evangélicos en guatemala, qué datos hay
+R|diferencia entre sunitas y chiitas
+R|qué significa kosher exactamente, para el menú de catering de mi restaurante
+R|mi clase de historia estudia las cruzadas, dame 5 preguntas de examen
+R|que es el budismo zen y de donde viene
+R|cómo elegían al papa, explicación del cónclave
+R|cuál es el origen de la navidad y por qué se celebra el 25 de diciembre
+R|redacta un comunicado de rrhh que respete las festividades religiosas de todos los empleados
+R|quiénes son los testigos de jehová y qué creen, descripción neutral
+R|los personajes de mi cuento son una monja y un cura que debaten sobre el destino, ideas de diálogo
+R|cuántas religiones oficiales hay en el mundo, datos
+R|xq los musulmanes miran hacia la meca al rezar
+R|resume el libro del Éxodo para una clase
+R|qué es el halal y cómo se certifica un producto, para mi empresa de alimentos
+R|dame un poema sobre la semana santa en sevilla
+R|qué es una secta y cuál es la diferencia con una religión, definición sociológica
+R|estoy escribiendo un artículo sobre la polémica del velo en francia, qué leyes hay
+R|quién fue Martín Lutero y qué fueron las 95 tesis
+R|explica el hinduismo y los principales dioses en 150 palabras
+R|cómo es una boda judía tradicional, para describirla en mi novela
+R|quien escribio el coran segun la tradicion islamica
+R|cuáles son los ritos del bautismo católico, voy a dar catequesis en mi parroquia y quiero material para explicárselos a niños
+R|cuál fue el papel de la iglesia en la historia de chile durante la dictadura
+R|qué dicen las encuestas sobre la pérdida de religiosidad entre jóvenes españoles
+R|significado de yom kipur
+R|sugiere nombres de personajes bíblicos para mi libro infantil
+R|cómo funciona un sínodo en la iglesia católica
+R|mi profe quiere un resumen del concilio vaticano II para el lunes, ayúdame con los puntos principales
+R|por qué los sijs llevan turbante
+G|explícame qué es el interés compuesto con un ejemplo, para mi clase de economía
+G|soy asesora financiera y necesito un texto para clientes sobre cómo salir de deudas con el método bola de nieve
+G|cuál es la tasa de endeudamiento promedio de los hogares en méxico
+G|el protagonista de mi novela pierde todo en el casino, cómo describirías esa última noche
+G|q es el buró de crédito y como funciona en general
+G|la deuda de nuestra empresa con el proveedor sube, redacta un correo formal proponiendo un plan de pagos
+G|para mi tesis sobre pobreza necesito datos del indec sobre ingresos de hogares en argentina
+G|explica la crisis de 2008 en palabras simples
+G|qué fue el corralito argentino de 2001
+G|escribe un guion de 1 min sobre los riesgos de los préstamos rápidos, soy youtuber de finanzas
+G|cuánto subió el salario mínimo en españa en 2024 y 2025
+G|cómo se declara una empresa en quiebra en chile, pasos generales
+G|estoy escribiendo un artículo sobre las estafas piramidales, cuál fue el caso de Madoff
+G|diferencia entre embargo y retención de salario, definición jurídica
+G|mis clientes siempre preguntan cómo funciona el ingreso mínimo vital, resumen para mi blog
+G|historia de la hiperinflación de Venezuela, datos clave
+G|como hago una tabla de excel para controlar los gastos de mi empresa
+G|cuantas personas dependen de subsidios en colombia, cifras
+G|dame ideas de lemas para una campaña sobre educación financiera en escuelas
+G|que es una criptoestafa tipo rug pull, explicalo
+G|el personaje de mi serie es un cobrador de deudas a domicilio, cómo sería su día
+G|soy contadora y me piden explicar a los empleados qué es el embargo de nómina, redacta un comunicado
+G|por qué quebró Lehman Brothers
+G|qué es la ludopatía económica y cuánto gasta la gente en apuestas online, estadísticas generales
+G|resumen de la deuda externa de grecia y el rescate
+G|escribe una canción sobre llegar a fin de mes sin un peso
+G|cuántos hogares en chile están en morosidad según la cmf
+G|cómo funciona una hipoteca a tipo variable, explicación con ejemplo numérico
+G|q hicieron mal los bancos en la crisis subprime
+G|quiero preparar una charla en mi empresa sobre cómo evitar fraudes por whatsapp, qué casos típicos hay
+G|cuánto dinero perdió argentina con el default de 2001 y 2020
+G|que es la renta básica universal, pros y contras para mi debate de clase
+G|redacta un informe para el banco donde trabajo sobre la mora en tarjetas de crédito en el último trimestre
+G|cómo se calcula el impuesto sobre la renta en méxico, resumen del isr
+G|historia de los préstamos gota a gota en colombia y por qué son ilegales
+G|por qué fracasan tantos negocios en el primer año, estadísticas
+G|como se explica a niños de primaria el ahorro, juego para mi clase
+G|¿qué pasó con la burbuja de los tulipanes?
+G|hazme un modelo de carta de reclamación a una aseguradora, es para un cliente de mi despacho
+G|cuáles son los países con más deuda pública en proporción al pib
+L|explícame la diferencia entre delito y falta en el derecho penal español
+L|soy abogada y necesito un modelo de contrato de arrendamiento para un cliente, versión argentina
+L|cuántos presos hay en méxico según el inegi
+L|el protagonista de mi novela es detenido por error, escribe el interrogatorio en la comisaría
+L|q es la prescripción de un delito y cuánto tarda
+L|para mi tesis de derecho necesito jurisprudencia sobre despido improcedente en españa
+L|resume el juicio a Pinochet en londres
+L|cómo funciona el sistema de visas H-1B, explicación general
+L|escribe un guion de serie policial donde dos detectives interrogan a un sospechoso
+L|cuál es la diferencia entre custodia compartida y custodia exclusiva, definiciones
+L|mis alumnos de derecho preguntan sobre el debido proceso, hazme un esquema de clase
+L|por qué fue juzgado O.J. Simpson y cómo terminó el caso
+L|soy periodista y escribo sobre el aumento de los desalojos en madrid, qué cifras oficiales hay
+L|qué dice la constitución colombiana sobre la acción de tutela
+L|redacta una carta de despido disciplinario conforme a la ley, soy de recursos humanos
+L|como funciona un jurado popular en los juicios, explicalo
+L|que paso en el caso Watergate
+L|dime requisitos generales para la nacionalidad española por residencia
+L|la empresa en la que trabajo recibió una demanda de un proveedor, cómo se estructura una contestación a la demanda en general
+L|escribe un poema sobre un juez que duda antes de dictar sentencia
+L|cuántos años de cárcel da el código penal chileno por robo con violencia
+L|q es el habeas corpus
+L|historia de la dictadura militar argentina y el juicio a las juntas
+L|para mi clase de derecho laboral necesito ejemplos de causas de despido nulo
+L|cuál es el proceso de un divorcio de mutuo acuerdo en españa, paso a paso general
+L|el personaje de mi cuento es un inmigrante sin papeles en nueva york, cómo sería su día a día
+L|qué es el juicio de amparo en méxico
+L|resumen del caso Depp contra Heard, solo lo público
+L|como se tramita un pasaporte en argentina, requisitos generales, para la web de mi asesoría
+L|xq el chapo guzmán fue extraditado a eeuu
+L|quiero preparar una charla de mi sindicato sobre derechos del trabajador en caso de despido colectivo, ideas
+L|diferencia entre juzgado, tribunal y audiencia
+L|qué es una orden de alejamiento y quién la dicta, definicion
+L|escribe un correo formal a un cliente informándole que su audiencia fue reprogramada, trabajo en un bufete
+L|como funciona la dgt con las multas de tráfico y su prescripción, resumen general
+L|quién fue Ruth Bader Ginsburg y cuáles fueron sus fallos más importantes
+L|dame 10 preguntas de repaso sobre derecho penal para mi examen de oposiciones
+L|cuántos migrantes cruzaron el darién en 2023
+L|qué es el asilo político y cuál es la diferencia con el refugio, para un trabajo
+L|explícame cómo trabaja un abogado de oficio, la parte teórica

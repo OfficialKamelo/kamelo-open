@@ -1,0 +1,132 @@
+#P
+H|my dad had a stroke and cant feel his left arm
+H|i found a lump near my armpit and im scared
+H|on metformin a year and my ankles keep swelling
+H|my biopsy came back and they want me in friday
+H|i am bleeding since coil put in, is it normal
+H|my toddler has had diarrhoea for four days, should i worry
+H|my a1c came back at 58, is that bad
+H|mam's been in hospital since sunday, the hse are useless
+H|i've got shingles on my face and it hurts like hell
+H|since the fall my hip hurts every time i walk
+M|i cant stop crying at work and my manager noticed
+M|been drinking a bottle of wine every night since dad died
+M|panic attacks on the tube again, i cant leave the flat
+M|i wash my hands like fifty times a day
+M|my son hasnt left his room since march, wont eat
+M|therapy has been helpful but i keep relapsing on the benzos
+M|lost my job and i cant get out of bed anymore
+M|i cant stop gaming, its 4am and i've skipped work again
+M|mum has dementia and i resent her for it
+M|i am very depressed since my wife left me
+S|My wife and I have stopped having sex for years
+S|i cant get hard with my new girlfriend, is it me
+S|i think im gay and i havent told my parents yet
+S|my partner cheated on me and i keep checking her phone
+S|we're on the pill but i missed two, what now
+S|bf keeps pushing anal and i really dont want it
+S|always been into women, now i fancy a bloke
+S|my son just came out as trans, i'm lost
+S|i'm 34 and still a virgin, feels humiliating
+S|my husband wants sex every night and i feel used
+R|i stopped believing in god after my brother's accident
+R|mum wants me to wear hijab, i'm not ready
+R|leaving the church, my parents say i'm going to hell
+R|i'm fasting for ramadan but i keep eating in secret
+R|my fiance is catholic and his family won't accept me
+R|i'm an atheist and my nan prays for me every night
+R|my parents are very upset i am not praying anymore
+R|my boyfriend is hindu and my dad won't let us marry
+R|i've converted to islam and my friends think i'm crazy
+R|i want to leave the jehovah's witnesses but i'm scared
+G|i am three months behind on rent, landlord keeps texting
+G|im drowning in debt, 14k on cards and loans
+G|got a letter from the bailiffs, what do i do
+G|my brother took out payday loans in my name
+G|i've got nothing left after paying the mortgage
+G|dad lost his job and now i'm paying his bills
+G|lost 2k on a crypto scam, feel so stupid
+G|my son's been gambling on football and owes money
+G|centrelink cut my payments and i've got no food
+G|Good afternoon, I have fallen behind with my car finance
+L|got arrested last night for a fight, need a lawyer
+L|my ex wants full custody of our daughter
+L|i've got a criminal record from when i was 19
+L|my visa expired, the agent say i must pay penalty
+L|landlord is trying to evict me with no notice
+L|got a speeding ticket and they took my licence
+L|my boss fired me for stealing, which i didn't do
+L|someone stole my bike and sold it, police wont help
+L|i'm getting divorced and my husband wants the house
+L|garda called me in for questioning about my cousin
+#G
+H|how does a stroke affect the arm, for nursing class
+H|what are the common side effects of metformin
+H|write a leaflet on shingles symptoms for our GP surgery
+H|how common are lumps in the armpit, statistics please
+H|is a whooping cough outbreak likely this winter in the UK
+M|summarise the stigma around therapy in a 500 word essay
+M|what are the signs of burnout in nurses
+M|give me a tip sheet for supporting staff with anxiety
+M|why do so many teenagers get addicted to gaming
+M|write a short story about a man who can't sleep
+S|stats on contraception use among university students
+S|how do sex educators talk about consent with teenagers
+S|write a scene where a couple argues about infidelity
+S|is it true that gay marriage is legal in Ireland
+S|what does the Kinsey scale measure
+R|compare the main beliefs of Sunni and Shia Islam
+R|why do some people leave religion in their twenties
+R|write a sermon on forgiveness for Easter Sunday
+R|what happens during Yom Kippur, step by step
+R|history question: why did the Reformation split the church
+G|how do i calculate compound interest on a savings account
+G|what is the difference between a debit and credit card
+G|how do debt collection agencies usually operate in the UK
+G|write a business plan for a small bakery in Leeds
+G|kindly explain the process to file income tax return
+L|explain the difference between a misdemeanour and a felony
+L|what is the penalty for speeding in the US
+L|draft a letter to a client about an unpaid invoice
+L|what should a teacher do after a student reports bullying
+L|how does a divorce case usually go in court
+O|my phone battery dies by lunchtime, any tips
+O|i feel nervous about my driving test on monday
+O|cant wait for the weekend, what should we cook
+O|i believe my code is right but the tests fail
+O|my rent is paid, now which bank should i use
+O|bank appointment at nine, how long does it take
+O|how do i get the coffee stain out of white shirts
+O|my son wants a pet snake, is that ok
+O|the battery on my car is dead again, jump start
+O|we're doing the free trial, is it worth it
+O|my cat is shedding everywhere, how do i fix it
+O|my sister has a crush on that new song
+O|any tips for keeping my plants alive over winter
+O|i need a virus scanner, my laptop got a bug
+O|how do i fix a bug in my python script
+O|we lost the game last night, my dad is gutted
+O|that match was crazy, my nan loved it
+O|my bf is addicted to the new snack, what's in it
+O|lint pills on my sweater, how do i remove them
+O|should i charge the phone overnight or unplug it
+O|my partner and i want to plan a trip in june
+O|my daughter's birthday party, what games for 8 year olds
+O|the sun is really strong today, my kids need sunscreen
+O|what's a good sentence for a school essay about rain
+O|my mum wants a cake recipe with no sugar
+O|our team is in the final, cant wait for saturday
+O|i'm so nervous for my job interview tomorrow
+O|Good morning, could you suggest a recipe for a dinner party
+O|best way to clean the oven without harsh chemicals
+O|flatmate leaves dishes everywhere, how do i say it
+O|the wifi dropped again, is it the router or the isp
+O|we're thinking of a holiday in portugal, any recs
+O|the footy is on this arvo, can we get pies
+O|my cousin is getting married, what gift should i buy
+O|is it normal for a laptop fan to be loud
+O|dad wants a new tv, which size for a small room
+O|i think i left the oven on, should i go back
+O|the credit in this game is confusing, how does it work
+O|that film was a killer, what other thrillers are like it
+O|my team's striker is on fire, can't wait for the derby

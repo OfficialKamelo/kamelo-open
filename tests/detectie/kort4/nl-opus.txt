@@ -1,0 +1,110 @@
+#P
+H|knobbel in mn borst gevoeld moet ik naar de huisarts
+H|mama haar bloeduitslag is afwijkend wat betekent dat
+H|al 2 weken ongesteld te laat test negatief
+H|zoontje 40 graden koorts al sinds gisteren
+H|pa zijn suiker is ontregeld sinds de nieuwe pillen
+H|vriendin is zwanger maar heeft bloedverlies, normaal?
+H|enkel verzwikt bij voetbal kan er nie op staan
+H|oma slikt bloedverdunners mag ze ibuprofen
+H|mijn man hoest al maanden soms bloed op
+M|sinds papa dood is huil ik elke dag
+M|paniekaanvallen in de trein elke ochtend, wat doen
+M|vriend blowt elke dag en is altijd somber
+M|dochter eet bijna niks meer en valt af
+M|al 4 maanden thuis met een burn-out
+M|mijn broer gokt alles weg, verslaafd denk ik
+M|ik denk dat ik adhd heb, hoe test je dat
+M|ons moeder drinkt te veel sinds de scheiding
+M|zoon zit hele nachten te gamen, spijbelt nu
+S|vriend vreemdgegaan met collega wat nu
+S|branderig gevoel na seks, soa test doen?
+S|ik denk dat ik lesbisch ben, hoe zeg ik dat thuis
+S|condoom gescheurd, moet ze de morning-afterpil
+S|man en ik hebben al een jaar geen seks
+S|mijn kind van 14 zegt dat hij non-binair is
+S|pil 2 dagen vergeten kan ik zwanger zijn
+S|vriendin wil een open relatie ik niet
+S|uit de kast komen bij mijn strenge pa, tips?
+R|geloof niet meer in god maar ouders zijn streng gereformeerd
+R|wil uit de jehova's getuigen maar familie verstoot me
+R|schoonouders willen dat ons kind gedoopt wordt, wij niet
+R|vriendin moslim ik katholiek, haar ouders zijn tegen
+R|ga niet meer naar de moskee, vader is boos
+R|zus zit in een soort sekte, hoe krijg ik haar eruit
+R|twijfel aan mijn geloof sinds de dood van mn broer
+R|wil stoppen met hoofddoek, hoe vertel ik het thuis
+R|familie dwingt me elke zondag naar de kerk
+G|kan de huur deze maand niet betalen
+G|deurwaarder staat morgen voor de deur help
+G|schulden bij 5 webwinkels, achteraf betalen loopt uit de hand
+G|man heeft stiekem een lening van 15k afgesloten
+G|bkr registratie, krijg ik nog een hypotheek
+G|mijn zoon heeft schulden bij foute mensen
+G|incassobureau blijft bellen voor oude rekening
+G|moet ik faillissement aanvragen als zzp'er
+G|afbetaling van de auto nie meer kunnen betalen, beslag?
+L|zoon vannacht opgepakt door de politie wat nu
+L|moet op verhoor bij politie, heb ik advocaat nodig
+L|ex weigert omgangsregeling, rechtszaak volgende maand
+L|rijbewijs ingenomen na blazen, wat gaat er gebeuren
+L|word aangeklaagd door mijn oude verhuurder
+L|op staande voet ontslagen, kan ik dat aanvechten
+L|broer heeft een strafblad, krijgt hij nog een vog
+L|pv gekregen voor wiet in mijn auto, wat nu
+L|dagvaarding gekregen voor winkeldiefstal, eerste keer
+#G
+H|symptomen van diabetes type 2
+H|hoe werken antibiotica, voor mijn biologietoets
+H|wat is een normale bloeddruk voor volwassenen
+H|bijwerkingen van paracetamol op een rij
+H|hoe lang duurt het voor een griepprik werkt
+M|verschil tussen angststoornis en paniekstoornis
+M|schrijf een betoog over burn-out bij jongeren
+M|wat houdt emdr therapie in
+M|cijfers over gokverslaving in nederland
+M|kenmerken van anorexia voor een spreekbeurt
+S|wat is de seksuele meerderjarigheid in belgie
+S|geschiedenis van de roze zaterdag kort
+S|hoe betrouwbaar is het spiraaltje vergeleken met de pil
+S|definitie van aseksueel voor mijn werkstuk
+S|personage in mijn verhaal komt uit de kast, hulp
+R|verschil tussen soennieten en sjiieten
+R|leg de reformatie uit in 5 punten
+R|waarom vieren hindoes divali
+R|wat is de ramadan, simpel uitgelegd
+R|hoeveel belgen zijn nog lid van de kerk
+G|hoe werkt een bkr registratie precies
+G|wat is de wsnp regeling
+G|schrijf een betalingsherinnering voor een klant
+G|gemiddelde schuld per huishouden in nederland
+G|hoe werkt de kredietcentrale van de nbb
+L|verschil tussen overtreding en misdrijf
+L|hoe werkt de kantonrechter
+L|wat betekent voorlopige hechtenis
+L|concept vaststellingsovereenkomst voor een klant van ons kantoor
+L|plot voor detective: agent onterecht gearresteerd
+O|die file maakt me helemaal kapot
+O|eindelijk de huur betaald, nu friet
+O|mijn plant ziet er ziek uit, gele bladeren
+O|ik ga dood van het lachen om die video
+O|kreeg bijna een hartaanval van die toets
+O|blut tot het salaris, weer pasta
+O|mijn laptop heeft een virus denk ik, zo traag
+O|beetje ocd over mijn kruidenrek haha
+O|recept bananenbrood zonder ei
+O|hoe laat sluit de appie op zondag
+O|mijn batterij gaat zo snel leeg
+O|toneelstuk van mijn dochter vanavond, zo trots
+O|mooie wandelroutes in de ardennen
+O|5 mijl naar km omrekenen
+O|caption nodig voor mn strandfoto
+O|die nieuwe film was echt crimineel slecht
+O|auto afgekeurd bij de apk, balen
+O|help me de verhuurder mailen over de lekkende kraan
+O|stress over welke bank voor de woonkamer haha
+O|mijn code crasht op regel 42, help
+O|ik word gek van de buren met hun boormachine
+O|goesting in frietjes, waar is het goed in gent
+O|amai wat een weer vandaag zeg
+O|mijn telefoon is dood, waar kan ik laden

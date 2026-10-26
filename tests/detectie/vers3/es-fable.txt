@@ -1,0 +1,110 @@
+#P
+H|me llegaron los analisis y tengo las transaminasas en 140, el medico no me ve hasta dentro de 3 semanas. deberia preocuparme
+H|¿Es normal que mi hija de 4 años lleve tres días con 39,5 de fiebre? el apiretal casi no le hace nada
+H|a mi mamá le acaban de diagnosticar cáncer de colon etapa 3, qué preguntas le hacemos al oncólogo el lunes
+H|llevo 2 semanas con sertralina 50 y ahora tengo un temblor raro en las manos, es la medicación o es otra cosa
+H|Estoy de 11 semanas y esta mañana manché marrón. Poco. ¿Es un aborto que está empezando?
+H|la rodilla me cruje y se me va desde que me caí jugando al fútbol, kine o la dejo descansar nomás?
+H|Cómo le digo a mi jefe que necesito días para la quimio sin que se convierta en un tema en toda la oficina
+H|mi mujer tiene esclerosis múltiple y desde el último brote no puede conducir, cómo nos organizamos con el cole de los niños
+H|Bulto en el pecho izquierdo, se mueve, como un guisante. Tengo 29 años. Cita con el gine en 10 días. Qué hago mientras tanto
+M|no salgo de mi piso desde hace 9 días. cada día me digo mañana. qué me pasa
+M|Mi marido se bebe una botella de vino cada noche y dice que no pasa nada porque sigue yendo a trabajar. ¿Es alcoholismo o exagero?
+M|nuestra hija se salta comidas y se pesa cada mañana, tiene 14. cómo lo saco sin empeorarlo
+M|ayer tuve mi primer ataque de pánico en el metro, pensé que me moría. cómo evito que vuelva a pasar
+M|Papá murió en marzo y todavía no puedo entrar a su taller. Todos dicen que se pasa pero no. Cuándo termina el duelo
+M|volví a apostar en las apps de fútbol después de 6 meses limpio, perdí 800 euros anoche y mi novia no sabe nada
+M|es normal no sentir nada de nada? ni triste ni contento, plano desde hace meses. mi psicóloga dice depresión pero ni siquiera lloro
+M|mi mejor amigo dice cada vez más que todos estarían mejor sin él. qué le digo, no quiero empeorarlo
+M|Me diagnosticaron TDAH a los 34 y ahora estoy enojada con mis viejos por no haberse dado cuenta nunca. Cómo arranco esa conversación
+S|creo que soy bi pero llevo 12 años casada con un hombre. se lo digo o lo dejo estar
+S|Mi novio y yo no tenemos sexo desde hace 8 meses, dice que solo está cansado. ¿Me preocupo de que ya no le atraigo?
+S|es normal que con mi mujer no pueda terminar pero solo sí? llevo así un año
+S|descubrí que mi marido está en grindr. tenemos dos hijos. qué hago
+S|cómo le digo a mis papás que soy trans si todavía piensan que es una etapa
+S|me acosté con un compañero en la fiesta de navidad, sin condón, y ahora tengo miedo de haber pillado algo. dónde me hago las pruebas sin que se entere mi médico de cabecera
+S|mi hijo de 16 me preguntó por la vacuna del VPH porque se la sugirió su novio. No sabía que tenía novio. ¿Cómo reacciono sin que sea sobre mí?
+S|Tengo 27 años y sigo siendo virgen y cada cita se siente como una mentira porque nunca lo digo. ¿Hay una forma de decirlo que no sea incómoda?
+S|mi mujer y yo estamos pensando en abrir la relación pero me da miedo que lo arruine todo. cómo lo hacen las parejas para que funcione de verdad
+R|Dejé de creer hace como un año pero sigo dirigiendo la alabanza en la iglesia porque mi papá es el pastor. Cuánto tiempo puedo aguantar así
+R|nuestra hija quiere casarse con un chico musulmán y mi marido dice que la va a desheredar. cómo mantengo unida a esta familia
+R|¿Es normal sentirme culpable cada vez que me salto el rezo del viernes? ya ni sé si creo pero la culpa sigue ahí
+R|dejé a los testigos de jehová hace 3 meses y mi propia madre no me habla. eso de la expulsión es para siempre?
+R|mi mujer se ha vuelto muy religiosa desde que nació el bebé y ahora quiere bautizarlo y criarlo católico, yo soy ateo. es motivo de ruptura?
+R|Cómo les digo a mis padres que me convierto al judaísmo por mi prometida sin que piensen que los abandono
+R|crecí en una familia evangélica muy estricta en el conurbano y ahora en la facu no sé quién soy sin eso. es normal sentirse tan perdido
+R|mi hermano se metió en un grupo que se reúne en una finca en jalisco y les dio todos sus ahorros. es una secta y cómo lo saco de ahí
+R|Estoy embarazada y mis suegros quieren una ceremonia de nombre hindú pero yo soy cristiana y mi madre quedaría destrozada. Cómo elijo
+G|Debo unos 14k entre 3 tarjetas y llevo pagando una con la otra. ¿La ley de segunda oportunidad es mi única salida ya?
+G|el alquiler vence el viernes y tengo 60 euros. mejor pagar la mitad o nada y hablar con el casero
+G|mi marido pidió un préstamo rápido sin decírmelo y ahora llegan cartas de una empresa de cobros. qué derechos tengo
+G|estoy en la lista de morosos sin saberlo y ahora no me alquilan ningún piso. se puede quitar?
+G|¿Es normal que mi pareja no me enseñe los extractos de la cuenta conjunta? llevamos 3 años casados y no tengo ni idea de lo que tenemos
+G|vino el cobrador esta mañana por el impuesto municipal, me dio miedo abrir. qué pasa ahora
+G|mi mamá le sigue prestando a mi hermano plata que no tiene, tiene 71 y ahora anda atrasada con el gas. cómo paro esto
+G|perdí el laburo en junio y la hipoteca va 2 meses atrasada. el banco llama todo el tiempo. atiendo o es peor
+G|me declaré en quiebra en 2024 y mi prometida no lo sabe. tengo que decírselo antes de la boda?
+L|me detuvieron el sábado por una pelea, me soltaron pero la investigación sigue. necesito abogado antes de que me vuelvan a citar
+L|mi ex me lleva a juicio por la custodia completa de nuestro hijo y dice que soy un padre incapaz. qué hago
+L|es normal que la policía aparezca en tu trabajo a hacer preguntas? hoy vinieron a mi restaurante por mi hermano
+L|a mi hijo lo pillaron con maría en el instituto y llamaron a la policía, tiene 15. le queda en los antecedentes para siempre?
+L|Mi antiguo casero me demanda por 4.200 euros por daños que ya estaban cuando entré. No tengo fotos. ¿Estoy jodido?
+L|tengo 3 multas de tráfico que no puedo pagar y ahora una citación del juzgado. qué pasa si no voy
+L|le negaron la residencia a mi marido y tiene 30 días para irse. tenemos un bebé. se puede apelar?
+L|me despidieron la semana pasada por falta grave por algo que no hice, sin audiencia ni nada. puedo pelearlo
+L|a mi papá lo acusaron de fraude en su antigua empresa y mi mamá está destrozada. va a ir preso siendo la primera vez
+#G
+H|¿Cuáles son los efectos secundarios más comunes de la metformina? Para un resumen de farmacología
+H|cuántas personas en españa son diagnosticadas de diabetes tipo 2 cada año
+H|Explica la diferencia entre un TAC y una resonancia en lenguaje sencillo para un folleto de pacientes
+H|Soy enfermera, dame una lista de verificación para documentar el cuidado de heridas postoperatorias
+H|cuál es la presión arterial normal en adultos mayores de 60
+M|Escribe un cuento donde el protagonista lucha contra la depresión pero encuentra esperanza en la música
+M|cuál es la diferencia entre burnout y depresión según la investigación
+M|Hago una presentación sobre estadísticas de ludopatía en Argentina, puedes resumir las cifras clave
+M|Como orientadora escolar, cuáles son formas basadas en evidencia de hablar de ansiedad con adolescentes
+M|explícame la terapia cognitivo-conductual como si tuviera 12 años
+S|¿Cuál es la historia de los disturbios de Stonewall? Lo necesito para un ensayo de historia
+S|Qué eficacia tiene el DIU de cobre comparado con la píldora, en porcentajes
+S|escribe una escena para mi novela donde dos personajes tienen una conversación incómoda sobre una infidelidad
+S|qué dice la investigación sobre la edad de la primera relación sexual en distintos países europeos
+S|Soy profe de educación sexual, cómo explico el consentimiento a niños de 11 años
+R|¿Cuáles son los cinco pilares del islam? Resumen para un trabajo de religión comparada
+R|por qué enrique viii rompió con la iglesia católica
+R|Escribe un discurso de boda que mencione con respeto las tradiciones judía y cristiana de la pareja
+R|cuántas personas abandonan la iglesia católica cada año en méxico según las estadísticas
+R|explica la diferencia entre secta y nuevo movimiento religioso desde la sociología
+G|¿Cuál es la deuda media de los hogares en España en 2025?
+G|explica cómo funciona la ley de segunda oportunidad para un post de finanzas personales
+G|Soy asesor de deudas, redacta una carta modelo que los clientes puedan enviar a una empresa de cobros para pedir un plan de pagos
+G|cómo afecta una quiebra al historial crediticio, en general
+G|escribe un artículo corto sobre por qué los préstamos rápidos son tan caros
+L|¿Qué derechos tiene una persona detenida en España? Para una clase de educación cívica
+L|cómo funciona un proceso de custodia en el juzgado de familia, en general
+L|Soy gerente de RRHH, cuál es el procedimiento correcto para una audiencia disciplinaria antes de un despido
+L|escribe una escena de juicio ficticia donde el acusado es acusado injustamente de fraude
+L|cuál es la multa máxima por exceso de velocidad en argentina
+O|el tráfico en la m-30 me está matando, recomiéndame podcasts para la próxima hora
+O|mi masa madre parece deprimida, no ha subido en dos días. qué estoy haciendo mal
+O|estoy re adicta a esta serie coreana, qué veo después que sea parecido
+O|pagué el alquiler, ahora ahorro para unas vacaciones en portugal. mejor época para el algarve?
+O|mi suegra viene la semana que viene, ideas de excursión de un día desde valencia sin caminar mucho
+O|mi mujer y yo discutimos si cogemos perro o gato. decide tú
+O|la reunión duró 2 horas y tengo el cerebro frito, escríbeme un correo de resumen rápido
+O|cuál es una buena receta de cocido para 6 personas
+O|mi hijo tiene torneo de ajedrez el sábado, qué aperturas puede aprender un niño de 9 en una semana
+O|esta fecha de entrega es mortal, me muero acá. ayudame a estructurar la intro del informe
+O|nuestro presupuesto para la cocina es 15k, es realista para un adosado en sevilla
+O|estoy obsesionada con esta cafetería nueva, cómo hago un flat white en casa
+O|mi papá quiere aprender whatsapp, cómo le explico los audios a un señor de 70
+O|me conviertes 350 fahrenheit a celsius para mi pan de plátano
+O|el sofá rechina cada vez jaja, cómo arreglo una estructura de madera
+O|el jardín está hecho una selva después de la lluvia, qué podo en octubre
+O|buen regalo de cumple para mi hermana que hace escalada, presupuesto 50 euros
+O|redacta un mensaje educado para los vecinos por sus cubos de basura delante de mi entrada
+O|el ventilador del portátil suena como si tuviera un ataque de pánico, cómo lo limpio
+O|finde en buenos aires con los pibes, dónde hay buena música en vivo
+O|estoy pelado hasta la quincena jaja así que una cena barata con arroz y huevos porfa
+O|cómo saco vino tinto de una alfombra beige, mi pareja tiró una copa
+O|la abuela quiere empezar un huerto, qué crece fácil en galicia
+O|escribe un mensaje de buenos días alegre para el whatsapp del equipo, llegamos a la meta de ventas

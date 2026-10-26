@@ -1,0 +1,381 @@
+#P
+H|ok mein linkes knie ist seit 2 wochen dick geschwollen und jetzt knackt es beim gehen, muss ich damit zum arzt oder geht das von allein weg
+H|hab seit gestern so nen stechenden schmerz im unteren rücken, kann kaum aufstehen. ibuprofen hilft nur bissl, was kann das sein
+H|meine mutter hat heute die diagnose brustkrebs bekommen und ich weiss nicht wie ich ihr in der chemo helfen soll, was muss man da alles beachten
+H|der befund vom ct ist da, da steht was von nem knoten in der leber. was heisst das für mich, ich hab schon wieder kein auge zugemacht
+H|ich nehme seit drei Wochen Metformin, verschrieben vom Hausarzt in Bern, und mir ist ständig übel. Soll ich das absetzen oder einfach durchhalten?
+H|mein sohn (7) hat seit vorgestern fieber bis 39,8 und jetzt hat er einen ausschlag an den beinen. ist das gefährlich oder warte ich bis morgen
+H|ich hab seit monaten immer wieder migräne mit flimmern vor den augen, die letzte war so schlimm dass ich mich übergeben musste. wann muss ich zum neurologen
+H|nach meiner Bauch-OP vor 10 Tagen ist die Wunde rot und riecht komisch. Ist das normal oder schon ne Infektion?
+H|wir versuchen seit 2 Jahren schwanger zu werden und jetzt hat die Gynäkologin gesagt die AMH-Werte sind niedrig. Was bedeutet das für eine IVF?
+H|bin in der 9. Woche und hab seit heute leichte Blutungen mit Krämpfen, ich hab tierische Angst dass ich das Baby verliere
+H|mein vater hat nach dem schlaganfall die hälfte seiner sprache verloren, reha dauert 6 wochen. wie kann ich ihm im alltag am besten helfen
+H|ein paar tage nach dem sex brennt es beim pinkeln und es ist so ein gelblicher ausfluss. könnte das chlamydien sein oder nur blasenentzündung
+H|bei mir wurde vor kurzem ADHS diagnostiziert, ich nehm jetzt Medikinet und mein herz rast manchmal richtig. ist das normal
+H|der biopsie-befund vom knoten ist grad gekommen, da steht verdächtig. ich weiss nicht mal was ich morgen beim arzt fragen soll
+H|mein papa hat diabetes typ 2 und will einfach keine insulin spritzen, er isst weiter wie vorher. wie red ich mit ihm ohne dass er dicht macht
+H|hab nen kieferbruch vom fussball, drahtfixierung für 6 wochen. wie lange darf ich maximal nur flüssig essen
+H|ich hab seit dem Corona-Infekt im Herbst noch immer Erschöpfung und Brainfog. Gibt es in Österreich eine Behandlung für Long Covid?
+H|meine tochter hat nachts asthmaanfälle und ihr spray ist leer. ich dreh grad durch, was mach ich jetzt sofort
+H|ich hab seit 4 tagen so nen komischen hautausschlag am bauch, der juckt tierisch und ist voller bläschen. gürtelrose? wie sicher kann ich da sein
+H|was heisst es wenn das ferritin so niedrig ist? ich bin ständig müde und hab haarausfall. helfen eisentabletten da überhaupt
+H|meine schwester blutet seit 3 wochen nach der geburt, mehr als normal. sie will nicht ins spital weil sie das baby nicht allein lassen will
+H|hab die blutwerte bekommen, hba1c 6,8. bin ich jetzt offiziell diabetiker oder ist's noch vorstufe
+H|hab heute meine Ergebnisse vom Pap-Abstrich bekommen, HPV positiv mit Veränderungen. Was heisst das, muss ich operiert werden
+H|mein ex hat mir gesagt er hat HIV. ich hab mich letzte woche testen lassen, test negativ, aber das Fenster ist noch nicht vorbei. Wie sicher ist das Ergebnis
+H|nach der Wurzelbehandlung tut der Zahn jetzt nach 3 Tagen noch mehr weh als vorher. Ist das normal oder muss ich zurück zum Zahnarzt
+H|mein hausarzt hat schilddrüsenunterfunktion festgestellt, TSH 7,2. Levothyroxin muss ich das jetzt für immer nehmen und wie nehm ich es richtig
+H|bin 34 und mir wurde gesagt ich hab endometriose, seit jahren schmerzen bei der periode. welche behandlungen gibt es ausser der pille
+H|mein kleinkind hat vor ner stunde ne knopfzelle geschluckt und ich hab's erst jetzt gemerkt. sie wirkt fit, aber ich dreh durch. 112 oder giftnotruf
+H|mein bruder hat wegen seiner leber ne transplantation auf der warteliste, er trinkt aber immer noch. darf ich ihm das sagen oder nicht
+H|hab ne fette nierenstein-kolik, schmerzen wie bei ner geburt laut freundin. soll ich in die notaufnahme oder reicht das schmerzmittel
+H|nach der darmspiegelung hat der arzt nen polypen entfernt, befund kommt in 2 wochen. wie gross ist das risiko dass der bösartig ist
+H|seit nem konzert hab ich seit 3 monaten pfeifen im linken ohr. gibt's was das wirklich hilft oder muss ich damit leben
+H|mein grossvater ist 84, nach dem sturz im spital ist er seit gestern total verwirrt und redet wirres zeug. Ist das normal bei alten leuten
+H|hab die letzten wochen 6 kilo abgenommen ohne es zu wollen, dazu nachtschweiss. ich hab angst vor dem arzt, was soll ich sagen
+H|mein mann hat nach der chemo jetzt polyneuropathie in den fingern, kann kaum noch knöpfe zumachen. gibt es was dagegen
+H|seit 6 monaten schmerzt die hüfte und jetzt kann ich nicht mal mehr drauf stehen. die mrt warteliste ist 4 monate, super lustig
+H|hab in letzter zeit so starke hitzewallungen und schlafprobleme, bin 49. Sind das die Wechseljahre oder eher was anderes?
+H|meine tochter (15) hat plötzlich gewicht verloren und will nicht mehr essen, der kinderarzt will Blut abnehmen. Was könnte das sein
+H|ich hab mir beim joggen den fuss umgeknickt, seither ist der knöchel blau und dick und ich kann nicht drauftreten. bruch oder nur verstaucht
+H|unser 4 monate altes baby hat ein herzgeräusch, jetzt soll ein herzultraschall gemacht werden. was erwartet uns da
+H|nach der impfung hab ich seit 5 tagen starke kopfschmerzen und schwindel. ist das normal oder sollte ich zum arzt
+H|hab seit jahren neurodermitis an den händen, jetzt sind sie so aufgerissen dass es blutet. welche cremes sind wirklich stark genug
+H|mein vater nimmt marcumar und ist grad gestürzt, kopf angeschlagen. er sagt er ist ok, wirkt aber etwas verwirrt. müssen wir in die notaufnahme
+H|bin nach dem herzinfarkt letzten monat wieder arbeiten gegangen, jetzt hab ich enge brust beim treppensteigen. ist das schlimm
+H|ich hab ne leistenhernie, der chirurg will in 3 monaten operieren, aber ich kann nicht mehr schwer heben. kann ich das so aufschieben
+H|mein arzt will mich auf eisen setzen, aber die tabletten machen mir übel bis zum kotzen. gibts nen anderen weg sie zu nehmen
+H|mein freund hat seit wochen juckreiz am hodensack und will nicht zum arzt. wie bring ich ihn dazu dass er hingeht
+H|nach meiner knie-op vor 4 monaten hab ich noch immer kaum kraft im bein, physio sagt es dauert halt. ist das so lange normal
+H|hab vor 2 wochen ne mammographie gemacht und jetzt soll ich nochmal kommen. wie gross ist die chance dass es nichts ist
+H|meine mum vergisst ständig ihre tabletten und jetzt ist der blutdruck durch die decke. der hausarzt meint es ist demenz, was machen wir jetzt
+H|hab seit 3 Tagen Ohrenschmerzen und Schwindel. Mein Bruder sagt ich soll einfach Schmerztabletten nehmen. Was ist besser
+H|ich nehm seit paar wochen antidepressiva und hab jetzt nen extremen gewichtszuwachs, das stresst mich mehr als der rest. gibts alternativen
+H|meine freundin hatte im märz nen abbruch und jetzt hat sie wieder starke krämpfe und blutet. ist das ne komplikation? sie will nicht ins krankenhaus
+H|hab nen kreuzbandriss vom skifahren, op erst im frühling. kann man bis dahin was machen damit das knie nicht ständig wegrutscht
+H|meine oma hat sich am ohr nen hautkrebs rausschneiden lassen und die wunde will nicht zuheilen. wie oft muss der verband gewechselt werden
+H|hab seit fünf tagen fast kein licht mehr auf dem linken auge, wie ein vorhang. augenarzt hat erst in 3 wochen termin. notfall oder nicht
+H|ich bin 19 und krieg jedes mal nach dem sex blasenentzündung. meine mutter sagt ich soll einfach mehr wasser trinken. sollte ich das mal richtig abklären lassen
+H|mein sohn hat zöliakie bekommen, ich hab keine ahnung was er in der schule essen darf. was ist glutenfrei wirklich, auch bei sosse und bier
+H|ich hab seit monaten muskelschmerzen am ganzen körper, bin ständig müde und die blutwerte sind angeblich unauffällig. fibromyalgie?
+H|ok ehrlich gesagt hab ich nen vasektomie-termin und hab voll angst vor den schmerzen. wie lange fühlt man sich danach richtig mies
+M|ich hab seit paar Monaten so nen engen Hals beim Reden und Herzrasen vor Präsentationen, jetzt will mein Chef dass ich am Montag wieder vorne steh. wie geht man mit so Panik um
+M|seit der trennung schlaf ich kaum noch und wenn ich dann weiter als ein paar stunden komm sitz ich nur heulend auf der couch. is das schon depression oder noch normal
+M|mein freund trinkt seit der beerdigung seines vaters jeden abend ne flasche wein. wenn ich's anspreche wird er wütend. wie red ich mit ihm darüber
+M|Ich merke seit Wochen, dass ich nach dem Essen zittere und alles wieder auskotze. Ich verstecke das vor meinen Eltern. Wie hör ich damit auf
+M|mein kleiner bruder (16) zockt seit nem jahr nonstop, schwänzt schule und lügt uns an. mama weiss nicht mehr weiter, was sollen wir tun
+M|seit meiner scheidung krieg ich im supermarkt so panikwellen, wo ich nicht mehr atmen kann. ich geh inzwischen kaum noch raus. wie heisst das
+M|hab mich in den letzten Monaten total isoliert, keine Freunde mehr gemeldet, nur noch Arbeit und abends zocken. ist das nur ne Phase?
+M|mein sohn kriegt seit der Schule Panikattacken, bevor er in den Bus steigt, er ist erst 11. Wie red ich mit der Lehrerin darüber
+M|ich geh seit 3 Monaten zur Therapie und mein Therapeut meint ich hab Traumata aus der Kindheit. Ich weiss nicht ob ich ihm trauen soll, fühlt sich so komisch an
+M|seit meine Mutter gestorben ist kann ich mich an nichts mehr erinnern und fühl mich wie abgeschaltet. hat jemand Erfahrung mit so Trauer
+M|ich hab immer angst dass mein freund mich verlässt, check jeden abend sein handy und hass mich danach dafür. wie hör ich damit auf
+M|Ich bin 17 und kotz mir nach dem Essen die Seele aus dem Leib, meine Mum merkt nichts. Wie kann ich das verstecken ohne dass es jemand merkt
+M|mein vater hat seit dem Job-Aus kein Wort mehr gesagt außer Bier holen. Er sitzt nur vor dem Fernseher. Wie kriegt man so einen Mann raus aus dem Loch
+M|seit ich ADHS hab fühl ich mich in der Schule permanent als Versager. Lehrer sagen ich hätte mich halt nicht genug bemüht. Ist das wirklich meine Schuld?
+M|mein mitbewohner kifft seit seiner kündigung den ganzen tag, isst kaum und schläft 14 stunden. ich mach mir sorgen dass er abstürzt. was soll ich ihm sagen
+M|hab seit 2 jahren Angst vorm Autofahren, nach nem Unfall mit meinem Kumpel. Jetzt kann ich meinen Job nicht mehr machen. Was hilft da
+M|ich zocke seit Jahren Online-Shooter bis 5 Uhr früh, schaff kaum die Uni und spür nix mehr außer leere. Ist das schon Sucht oder bin ich einfach faul
+M|mein mann hat letzte nacht wieder geschrien im schlaf und sich an die Kriegszeit erinnert, er ist Veteran. wie helf ich ihm wenn er nicht drüber reden will
+M|Seit dem Burnout kann ich mich nicht mehr konzentrieren, mein Kopf fühlt sich an wie Watte. Krankschreibung läuft aus, was mach ich jetzt
+M|meine frau arbeitet seit paar monaten weniger und sitzt nachmittags nur noch im bett und antwortet nicht. ihre hausärztin sagt es ist nur stress. ich bin nicht sicher
+M|ich bin 15 und hab total Angst vor der Schule, jedes Mal wenn ich hin muss wird mir schlecht und ich will nur heim. Eltern glauben mir nicht
+M|nach der Geburt hab ich mich so leer gefühlt, das Baby weint und ich fühl gar nix, nur Schuld. bin ich ne schlechte mutter, oder ist das was Medizinisches
+M|ich trink seit paar Monaten jeden Abend Wodka um einzuschlafen, mein Freund merkt das. Wie komm ich davon weg ohne dass alle ein Drama machen
+M|mein vater hat ne bipolare störung und hat letzte woche sein lithium abgesetzt, jetzt ist er total manisch und gibt überall geld aus. wie krieg ich ihm hilfe
+M|seit ich meine Kündigung hab, schlaf ich nur 3 Stunden, und dann kreist alles im Kopf. Hab ich einen Schlafmangel oder ist das was Anderes
+M|mein Schwiegervater hat so Zwangsgedanken, zählt alles, wäscht sich 20x die Hände, das frisst die ganze Familie auf. Wie sag ich es ihm ohne dass er beleidigt ist
+M|ich hab seit der Trennung kaum noch Lust auf irgendwas, nicht mal Musik oder Serien. Ist das eine Depression oder bin ich einfach nur traurig
+M|mein kumpel hat seit dem Dorfunfall so komische Flashbacks, springt bei jedem Knall. Er weigert sich zum Psychologen. Was kann ich tun
+M|ich nehm seit ca nem jahr benzos von nem kumpel gegen die angst. ich brauch immer mehr. wie komm ich davon runter
+M|hab nen Pornokonsum der außer Kontrolle ist, jeden Tag mehrmals, meine Freundin weiss nichts davon. Ich schäm mich so, wo fang ich an
+M|seit meinem 14. Lebensjahr hab ich so Zwangsgedanken, dass ich mein Kind verletzen könnte. Ich hab das keinem erzählt. Was ist das
+M|ich wache seit Monaten mitten in der Nacht auf und kann dann nicht mehr einschlafen, weil ich mir Sorgen um meinen Job mache. Wie hör ich damit auf
+M|meine Tochter (13) hat Schluss gemacht mit ihrer Freundin und seitdem isst sie kaum noch und hat ständig Bauchweh. Ist das zu viel für ein Kind
+M|mit 31 bin ich auf autismus diagnostiziert worden und jetzt fühl ich mich als wär mein ganzes leben gelogen. ich kann auf der arbeit nicht aufhören zu weinen. ist das normal
+M|mein Opa ist letzte Woche gestorben, ich bin 26 und hab nicht geweint. Jetzt fühl ich mich nur noch leer und schuldig. Normal so
+M|seit ich im Lockdown alleine gewohnt hab, rede ich mit niemandem mehr außer am Kassenbon. Ich weiss nicht wie man wieder Kontakte knüpft mit 40
+M|ich kaue seit dem Stress bei der Arbeit die Nägel bis es blutet und merk es oft gar nicht mehr. Hilft da was
+M|mein freund geht seit monaten zwei stunden am tag laufen, auch wenn er krank ist oder verletzt. wenn er mal nicht darf wird er richtig panisch. ist das schon sucht
+M|seit der Trennung vor einem Jahr kreisen meine Gedanken nur noch um sie, ich kann mich auf nichts mehr konzentrieren und schlaf schlecht. Wie krieg ich den Kopf wieder frei
+M|ich hab zu Hause immer so Angstattacken wenn ich alleine bin, deswegen lass ich mich nie mehr alleine. Mein Freund wird genervt. Was ist das
+M|meine Mutter war immer streng und hat mich geschlagen, jetzt hab ich nachts Albträume und zucke bei jeder Berührung zusammen. Ist das Trauma?
+M|mein sohn ist 9 und hört seit dem Umzug auf, Freunde zu haben, er fragt jeden Tag ob er wieder zurück darf. Sollen wir zum Psychologen?
+M|bin 52 und hab seit der Scheidung Angst, allein zu sterben. Ich geh nicht mehr raus, die Kollegen merken es schon. Was soll ich machen
+M|seit der fehlgeburt hab ich jede nacht albträume und kann nicht in das zimmer wo wir den ultraschall hatten. ist das ptbs oder einfach trauer
+M|seit ich nicht mehr trinken will, hab ich so ein Zittern und Schwitzen wenn ich abends nicht eine Dose Bier zum Runterfahren hab. Ist das Entzug
+M|ich bin 22 und hab seit der Uni eine Essstörung, ich zähl alles und wieg mich dreimal am Tag. Meine WG-Mitbewohnerin hat schon was gesagt
+M|meine Frau hat seit Jahren Tranquilizer genommen nach dem Tod unseres Sohnes und niemand hat was gesagt. Jetzt nimmt sie zu viel. Was soll ich tun
+M|hab seit kurzem wieder so starke Stimmungsschwankungen, mal hoch, dann tief, jede Woche anders. Könnt das bipolar sein oder bin ich einfach launisch
+M|mein Kollege hat jedes Mal wenn es Stress gibt richtig Atemnot und muss rausgehen. Im Team ziehen alle ihn auf. Wie helf ich ihm
+M|seit ich mehr kiffe hör ich stimmen. sind nicht laut, aber sie sind da. soll ich das meinem hausarzt sagen oder steck ich dann in der klapse
+M|seit dem Tod meines Mannes hab ich keinen Appetit mehr und vergesse alles. Die Tochter sagt ich soll zum Arzt, ich will nicht. Was denkt ihr
+M|ich hab mein Smartphone nie aus der Hand, auch nachts nicht, und wenn ich nicht drauf scroll werd ich panisch. Wie löst man sowas
+M|mein Chef hat mich bei allen schlechtgemacht und seitdem hab ich Dauerkopfschmerzen, Herzklopfen und kann nicht mehr schlafen. Sollte ich das melden
+M|hab seit meiner Kindheit das Gefühl nie gut genug zu sein, und jetzt nach der Beförderung kriege ich nen Heulkrampf wenn ich nur an die Präsentation denk
+M|seit dem Tod meiner Schwester hab ich so ne dumpfe Leere, ich funktioniere nur noch. Mein Partner versteht das nicht. Wie erklär ich's ihm
+M|ich bin in der Therapie wegen Borderline und mein Ex hat jetzt meine Aufzeichnungen weitergeschickt. Wie geh ich damit um, ich fühl mich entblösst
+M|mein freund ist seit der Pandemie kaum noch vor die Tür, spielt nur noch Videospiele und reagiert nicht mehr auf mich. Gibts da Hilfe für Angehörige
+M|kann nicht mehr richtig schlafen weil ich ständig überlege was passiert wenn ich den Job verlier. Hab schon Schlafmittel probiert, die machen mich nur träge
+M|seit meine Ehe zerbrochen ist, schaff ich es morgens kaum mehr aus dem Bett und die Kinder sehen mich nur noch weinend. Wie bring ich mich wieder hoch
+M|meine schwester nimmt seit sie 18 ist mal antidepressiva und mal nicht. jetzt sagt sie die wirken nicht mehr und will absetzen. ich hab angst dass sie abstürzt. wie helf ich ohne dass wir streiten
+S|ich hab seit paar monaten keine Lust mehr auf Sex mit meiner Freundin, ich fühl gar nix mehr. Liegt das an den Pillen oder an mir
+S|mein freund bekommt die meiste zeit keinen hoch, er ist 29 und es nimmt ihm echt das selbstvertrauen. gibt's was das wirklich hilft
+S|hab mich vor 2 wochen in meinen besten Freund verliebt, bin verheiratet, Kinder hab ich zwei. Was soll ich jetzt machen
+S|Ich bin 31 und hab noch nie mit jemandem geschlafen. Meine Freunde ziehen mich auf, ich schäm mich dafür. Ist das komisch
+S|mein sohn (17) hat mir gesagt dass er auf jungs steht, er traut sich nicht es seinem vater zu sagen. wie helf ich ihm dabei
+S|ich glaub ich bin bi, hatte bisher nur was mit frauen, aber meine familie ist super religiös. wie find ich das raus ohne alle zu verlieren
+S|seit ich mit meinem Freund zusammen bin, bekomm ich beim Sex einfach keinen Orgasmus, egal was wir probieren. Hab schon ein bisschen Angst dass er sich nen anderen sucht
+S|ich hab letztes Jahr meinen Mann betrogen, mit nem Kollegen, und er weiss es nicht. Ich kann nicht mehr schlafen vor Schuld. Soll ich es beichten
+S|meine freundin hat rausgefunden dass ich ab und zu mit nem ex am sexten war. ich hab geschworen dass das nichts war, aber sie glaubt mir nicht. was mach ich
+S|Seit der Geburt haben wir kaum noch Sex, ich hab null Lust und mein Mann wird immer frustrierter. Ist das normal nach so nem Kind
+S|ich nehm seit 6 Jahren die Pille und will jetzt wechseln, aber ich hab Angst vorm Kupferspirale einsetzen. Was ist da besser
+S|mein mann schläft seit monaten mit seiner kollegin, ich hab die nachrichten. ich bin 42 und weiss nicht ob ich bleiben oder gehen soll. was würdest du tun
+S|seit meinem Coming-out hab ich Stress mit meinen Eltern, sie wollen meinen neuen Namen nicht benutzen. Wie sag ich ihnen dass das wirklich wichtig für mich ist
+S|mein Freund will ständig Dinge beim Sex ausprobieren, Fesselspiel und so. Ich hab mich nicht wohl gefühlt, aber ich will nicht prüde wirken. Was soll ich sagen
+S|seit ich die pille nehme ist meine libido praktisch null und mein partner sagt ich hab kein interesse mehr an ihm. ich weiss nicht was ich ihm sagen soll
+S|hab mit 16 mein erstes Mal gehabt, ein Typ von der Schule, und seitdem hab ich Schmerzen beim Sex. Ist das psychisch oder körperlich
+S|mein Mann will seit paar Monaten Pornos zusammen schauen und ich fühl mich dabei nur mies und vergleich mich. Wie sag ich ihm das ohne dass er gekränkt ist
+S|ich bin seit 8 jahren verheiratet und ich glaub ich bin nicht hetero. mit männern hab ich nie was gespürt. wie sag ich das meiner frau
+S|meine freundin hat mir gestern gesagt sie will ne offene beziehung, ich fühl mich total verletzt und eifersüchtig. ist das normal oder bin ich zu besitzergreifend
+S|Ich merk seit Monaten, dass ich mich zu meiner Kollegin hingezogen fühle, und sie flirtet zurück. Ich bin verheiratet. Wie kann ich das stoppen
+S|meine ex schreibt mir um 2 uhr nachts dass ihr der sex mit mir fehlt. ich schlaf manchmal noch mit ihr und fühl mich danach widerlich. was tun
+S|seit ich mit 14 gesagt hab dass ich lesbisch bin, ist die stimmung zuhause total gekippt. heute hat meine Mutter gesagt ich soll mein Zimmer räumen. Was tun
+S|mein Freund verlangt beim Sex, dass ich ihn anschaue wenn er kommt, sonst ist er sauer. Mich nervt das richtig und ich schäm mich dafür. Stimmt was nicht mit mir
+S|bin 24 und seit der Pille bekomm ich total depressive Phasen, dazu kommt dass ich keinen Sex mehr will. Könnte das die Pille sein
+S|ich hab nach der letzten Geburt Schmerzen beim Sex, die Ärztin meinte es ist normal. Mein Mann versteht nicht warum ich ihn nicht will. Wie erklär ich ihm das
+S|wir streiten ständig über sex, ich will 1x die woche, sie will 1x im monat und sagt sie hat einfach keine lust. ich fühl mich abgelehnt. wie kommen wir da raus
+S|mein 19jähriger Sohn hat mir erzählt dass er mit nem Mann was hatte. Ich bin total überfordert, mein Mann hat schon geschrien. Was sag ich ihm jetzt
+S|Ich hab mit meiner besten Freundin geschlafen und jetzt redet keiner mehr mit mir, auch nicht mein Freund. Wir sind beide 25. Wie krieg ich das wieder hin
+S|ich bin seit 2 jahren verheiratet und mein Mann hat seit der Hochzeit null Interesse an Sex, wir haben nie drüber geredet. Ist das ein Grund zur Scheidung
+S|ich hatte letzte woche nen one night stand von tinder und hab kein kondom benutzt. ich nehm jetzt die pille danach, muss ich mich auf sachen testen lassen
+S|meine Schwester ist mit ihrer Frau zusammen und die Eltern reden nicht mehr mit ihr. Ich weiss nicht wie ich zu ihr stehen soll, ich bin hin und her gerissen
+S|Seit ich 40 bin, hab ich kaum noch Lust und mein Freund denkt ich liebe ihn nicht mehr. Dabei geht's um die Hormone, glaub ich. Wer kann mir da was sagen
+S|ich bin mit meiner Freundin im Bett und sie hat sich sehr zurückgezogen, sie sagt sie fühlt nix für Frauen mehr, nach dem Ex. Ich verstehs nicht
+S|mein partner hat ne sexuelle Vorliebe für Dinge, die mich abstossen, und hat mir das erst nach 3 Jahren gesagt. Ich weiss nicht ob ich bleiben kann
+S|Ich hab heute beim Sex einen Krampf gekriegt, so Scheidenkrampf, jetzt hab ich Angst vor Sex. Was ist das und geht das wieder weg
+S|hab letzte woche bei tinder jemanden kennengelernt, der mir ein foto von sich geschickt hat, ich glaub der hat noch ne frau. Soll ich ihr was sagen
+S|mein mann sagt jetzt er ist bisexuell. ich versuch unterstützend zu sein, bin aber am boden und eifersüchtig. wo fang ich da überhaupt an
+S|seit der Trennung hab ich wieder angefangen mich selbst zu befriedigen, und ich hab jetzt so ein schlechtes Gewissen dabei, wegen meinem Glauben. Normal so
+S|mein Freund und ich sind 18 und wir wollen beide das erste Mal, aber ich hab Angst dass ich schwanger werd. Welche Verhütung ist da die beste
+S|ich bin 27 und hab mit nem partner noch nie einen orgasmus gehabt, nur allein. mein letzter freund meinte ich wär kaputt. ich bin echt down deswegen
+S|mein mann hat herausgefunden dass ich ne Affäre hatte, jetzt will er die Kinder nicht mehr bei mir lassen. Ich schäm mich so, was kann ich machen
+S|Ich bin 45 und frag mich seit ein paar Jahren ob ich lesbisch bin. Ich hab nen Mann und zwei Kinder und wüsste nicht wie ich das sagen soll
+S|meine frau sagt seit ich arbeitslos bin will sie nix mehr von mir, ich fühl mich wie ein fremder im eigenen bett
+S|nach meiner vasektomie ist meine lust total runter und ich weiss nicht ob's die op ist oder mein kopf. meine frau denkt es liegt an mir
+S|meine freundin möchte immer mit Sextoys, ich komm mir dabei unzulänglich vor und frag mich ob mit mir was nicht stimmt
+S|hab seit der Schwangerschaft nen komischen Ausfluss und Schmerzen beim Sex, mein Freund sagt es ist mir nur nicht wichtig. Stimmt das
+S|mein Mann und ich haben einen offenen Deal: er darf mit anderen schlafen, ich nicht. Heute hat er's gebrochen und ich bin komplett am Ende. Was tun
+S|Ich bin Muslima und hab mit meinem Freund vor der Ehe geschlafen, jetzt hab ich das Gefühl ich muss beichten. Wie sag ich es meiner Familie nicht
+S|seit ich mich als bi geoutet hab will meine freundin dass ich mich entscheide. ich datete seit monaten beide und bin echt verwirrt. wie sortier ich das
+S|Hab seit 6 Monaten keine Erektion mehr, auch morgens nicht. Ich bin 38 und mein Hausarzt hat nur Blut abgenommen. Was ist da los
+S|mein freund möchte ein Dreier, ich bin unsicher und sag das aber nicht richtig. Wie soll ich das ansprechen ohne dass er enttäuscht ist
+S|hab mit meinem Ex nach 2 Jahren wieder geschlafen, jetzt bin ich verwirrt was ich eigentlich will, ob ich schwul bin oder ob ich ihn einfach vermisse
+S|mein partner ist trans und ich merke dass ich damit noch Mühe habe, vor allem im Bett. Ich will ihn nicht verletzen, aber ich weiss nicht was ich sagen soll
+S|Ich hab in der Sauna einen Typen geküsst, mein Partner weiss es nicht und ich hab Gewissensbisse ohne Ende. Soll ich's erzählen oder nicht
+S|seit ich das implantat hab ist meine periode total unregelmässig und ich hab grad gar keine lust mehr auf sex. sind das die hormone
+S|ich bin 20 und hab Angst dass mein Freund sich unter Druck gesetzt fühlt wenn ich nicht will. Wie soll ich ihm sagen dass ich noch nicht bereit bin
+S|mein freund hat sich beim wilden sex ne verletzung am bändchen geholt, es blutet ein bisschen, und jetzt will er nicht mehr. ist das normal
+S|hab ne Freundin die jede Woche mit nem anderen schläft und sagt das ist ihr Ding. Ich hab aber Gefühle, bin ich blöd wenn ich weiter mit ihr zusammen bleib
+S|wegen meinem Vaginismus hab ich seit 2 Jahren keinen Sex mehr gehabt und mein Mann redet nicht mehr mit mir darüber. Wie können wir das ansprechen
+S|ok ich seh seit 3 monaten einen typen und hab meinen eltern noch nicht gesagt dass ich schwul bin. ich bin 23 und sie fragen ständig wann ich mal nen jungen mitbring. hilfe
+R|ich glaub seit paar monaten nicht mehr an Gott, aber meine Oma betet jeden Abend für mich. Wie sag ich ihr dass ich aus der Kirche austreten will
+R|ich bin muslim und ess seit 2 jahren im ramadan wegen meiner diabetesmedis. meine familie sagt ich bin kein guter muslim. wie soll ich das erklären
+R|mein vater ist strenggläubiger Katholik und hat mich rausgeschmissen weil ich mit nem Atheisten zusammen bin. Ich weiss nicht wohin, was jetzt
+R|bin mit 19 zu den Zeugen Jehovas gestossen, jetzt will ich raus, aber meine Familie darf nicht mehr mit mir reden. Wie komm ich da raus ohne alles zu verlieren
+R|Ich habe mich nach 20 Jahren Kirche innerlich verabschiedet, aber mein Mann will, dass die Kinder weiter zur Kommunion gehen. Wie regeln wir das
+R|meine freundin ist Jüdin und ihre Eltern wollen nicht dass ich zum Sabbat mitkomme, weil ich nicht konvertieren will. Bin ich schuld an dem Streit
+R|hab mich vor nem halben Jahr zum Islam bekehrt und mein Freund ist katholisch, er will nicht mit mir beten. Wie geht man damit um ohne dass es eskaliert
+R|mein Bruder hat sich einer Freikirche angeschlossen, seitdem redet er nur noch von Sünde und Hölle, und wenn ich was sag, wird er laut. Wie geht man damit um
+R|ich hab seit wochen das freitagsgebet verpasst und fühl mich als ob gott mich dafür straft. ist es normal dass ich jetzt an allem zweifle
+R|hab seit der Firmung nen Knacks, der Pfarrer hat uns damals so Angst gemacht mit der Hölle. Ich bin 24 und der Glauben kommt nicht mehr zurück. Was jetzt
+R|meine Familie ist orthodox und hat mir beim Heiraten mit Enterbung gedroht, weil mein Freund nicht Jude ist. Ich weiss nicht ob ich ihn verlassen soll
+R|Ich trag seit 3 Jahren Kopftuch und will es jetzt ablegen, aber meine Mutter sagt dann bin ich nicht mehr ihre Tochter. Wie red ich mit ihr
+R|mein freund ist hindu und seine familie will ne arrangierte ehe mit nem mädchen aus der eigenen kaste. ich bin christin und sie wissen noch nicht mal von mir. ich weiss nicht weiter
+R|seit dem Tod meiner Großmutter frag ich mich, ob es Gott überhaupt gibt, und ich kann nicht mehr beten. Sollte ich mit dem Pfarrer reden oder geht das nicht
+R|wir haben seit ich klein bin an Jom Kippur gefastet, aber ich glaub ehrlich gesagt nicht mehr dran. ich trau mich nicht es meinen eltern zu sagen, sie sind sehr religiös
+R|hab letzten Monat in der Synagoge geweint, weil ich an nichts mehr glauben kann. Ich bin orthodox aufgewachsen, mein Kopf ist voll Chaos
+R|meine Frau ist Muslima, ich bin Katholik, und jetzt will ihre Familie dass unsere Tochter den Koran lernt. Ich will das nicht, wie stell ich mich da hin
+R|Ich bin Sikh, hab mir den Bart abrasiert nach einem Jobwechsel und jetzt schämen sich meine Eltern vor der Gemeinde. Was kann ich tun um es zu reparieren
+R|ich hab meinen glauben verloren seit papa tot ist, ich zweifel an allem und bet nicht mehr. Wie geh ich damit um
+R|mein Vater meint dass ich in der Hölle schmor weil ich schwul bin, und meine Mutter sagt nichts dazu. Ich bin 21 und komm nicht mehr klar
+R|wir sind ein interreligiöses Paar, ich bin Buddhist und sie katholisch, und ihre Eltern wollen die Hochzeit in der Kirche mit nem Pfarrer. Wir wissen nicht wie wir damit umgehen
+R|seit ich Ramadan nicht mehr halte, sagen meine Cousins ich bin kein richtiger Muslim mehr. Ich hab Angst bei der Familienfeier, wie geh ich damit um
+R|bin ein Zeuge Jehovas und hab mit meinem Mann gestritten weil ich mich in einen anderen verliebt hab. Die Ältesten haben mich jetzt gemeldet. Was passiert jetzt
+R|meine Mama betet täglich den Rosenkranz für mich, weil ich seit meiner Scheidung nicht mehr in die Messe geh. Ich fühl mich so schuldig vor Gott
+R|Ich bin evangelikal und hab angefangen an der Bibel selbst zu zweifeln. Ich trau mich nicht mit dem Pastor zu reden, weil der dann alles weitergibt
+R|ich hab seit monaten viel über atheismus gelesen und hab meiner mutter endlich gesagt dass ich nicht mehr glaub. sie hat geweint. jetzt bin ich an weihnachten der böse. was mach ich
+R|mein Sohn (14) will nicht mehr mit in die Moschee, er sagt er glaubt nicht mehr dran, und mein Mann schreit ihn an. Wie kann ich vermitteln
+R|ich bin seit letztem Jahr katholisch getauft, aber meine Eltern, die muslime sind, reden jetzt nicht mehr mit mir. Ich vermiss sie so und weiss nicht ob ich das richtige gemacht hab
+R|seit meiner Taufe als Baptist bin ich nicht mehr zu meinem Vater durchgedrungen. Er ist Atheist und sagt ich bin verblendet. Wie sprech ich da mit ihm
+R|Ich hab in der Schweiz aus der Landeskirche ausgetreten und jetzt droht mir meine Schwiegermutter, dass sie mich nie wieder zum Essen einlädt. Blöde Situation
+R|mein Partner ist Sunnit und ich Schiit, seine Mutter will dass wir uns trennen. Ich liebe ihn aber, wie überzeug ich seine Familie
+R|Bin mit 40 zum Glauben gekommen und jetzt merkt meine Frau das alles total anders, sie fühlt sich fremd. Wie bring ich das wieder zusammen
+R|hab fast 2 wochen gefastet und lieg jetzt den halben tag im bett. ich bin Ramadan gewohnt aber dieses jahr kipp ich ständig um. Soll ich aufhören zu fasten
+R|ich bin zeugin jehovas und meine mutter will für meinen sohn ne bluttransfusion, das verbietet unser glaube. ich hab angst was die ärzte machen. was ist erlaubt
+R|meine Freundin ist Hindu und hat sich vom Glauben verabschiedet, aber ihre Großeltern wissen davon nichts. Sie will nicht lügen müssen, was können wir tun
+R|seit Corona gehe ich nicht mehr in die Kirche und jetzt hat der Pfarrer angerufen und mich gefragt ob ich wieder komme. Ich weiss nicht was ich ihm sagen soll
+R|bin im strengen glauben aufgewachsen und jetzt geschieden, meine ex will nicht dass unser sohn mit mir in die kirche geht. was tu ich
+R|Ich hab mit meinem Freund Scientology kennengelernt und die Kurse kosten so viel Geld. Meine Eltern sagen es ist eine Sekte. Stimmt das, wie erkenn ich das
+R|hab nach meiner Konversion jetzt Streit mit meinem Mann, er will nicht dass ich den Schleier trage. Der Imam hat gesagt das ist meine Entscheidung. Was jetzt
+R|mein glaube sagt dass schwul sein sünde ist, und ich bin schwul und versuch es seit jahren wegzubeten. ich bin total erschöpft. wo krieg ich unterstützung
+R|ich bin Mormone und will meine Familie verlassen, aber ich hab Angst vor dem Ausschluss. Mein Vater hat schon gesagt dass er mich nicht mehr kennt
+R|bei uns in der Familie ist es Pflicht den Rosenkranz zu beten und ich mag das nicht mehr. Ich trau mich nicht zu sagen dass ich nicht glaube, was mach ich
+R|seit ich die Bibel hinterfrage, hab ich fürchterliche Angst zur Hölle zu fahren, das frisst mich auf. Wie komm ich davon los
+R|ich bin hindu aufgewachsen und beschäftige mich jetzt mit buddhismus und meditation, mein vater ist sauer weil ich die pujas nicht mehr mache. wie erklär ich ihm dass das keine ablehnung ist
+R|mein Freund ist Baha'i und ich bin Atheistin, seine Familie ist nett, aber sie will nicht dass er mich heiratet. Wie kann ich ihnen zeigen dass ich respektvoll bin
+R|mein opa war Pfarrer und jetzt muss ich seine Rede bei der Beerdigung halten, ich glaub aber nicht mehr an den Himmel. Wie sag ich das ohne alle zu enttäuschen
+R|Ich fastete am Versöhnungstag seit der Kindheit, mit 35 hab ich mich entschieden dass es für mich vorbei ist. Meine Familie weiss es noch nicht. Wann sag ich's
+R|hab in Dubai nen Ausflug gemacht und dabei Alkohol getrunken, jetzt hab ich das Gefühl ich hab meinen Glauben verraten und Allah wird mich bestrafen. Hilfe
+R|ich bin Christ und meine Frau hat sich einer Esoterikgruppe angeschlossen, sie geht nicht mehr zur Messe, und die Kinder fragen mich, wer recht hat
+R|Mein Sohn ist bei den Mormonen und will nicht mehr an Weihnachten bei uns feiern, weil es heidnisch sei. Wie geht man da als Großeltern damit um
+R|Wir sind eine gemischte Ehe, ich katholisch, mein Mann Muslim, und er will dass die Kinder den Islam lernen. Ich will dass sie beides wissen, bin ich naiv
+R|ich hab lange halal gegessen und jetzt bin ich wieder zurück bei Schweinefleisch, mein Mann ist sauer und meine Mutter weint. Was sag ich ihnen
+R|seit einem Jahr zweifle ich immer mehr an Gott und hab angefangen mit dem Pastor darüber zu streiten. Er sagt das ist Teufelszeug. Ist das ne Glaubenskrise
+R|mein mann ist diakon und ich hab ihm gesagt dass ich nicht mehr sicher bin ob ich glaube. die gemeinde ist sein ganzes soziales leben und ich hab angst was dann mit uns passiert
+R|ich hab mein Taufversprechen nie wirklich gemeint und mit 17 bin ich ausgetreten, jetzt will meine Frau ne kirchliche Hochzeit. Wie kann ich das ihr sagen
+R|ich bin zum Buddhismus konvertiert und mein Vater sagt ich würde die Familie verraten. Mein Mann hält zu mir, aber die ganze Familie ist gegen mich
+R|bin Imam-Schüler und hab ernsthafte Zweifel an manchen Stellen im Koran, ich trau mich nicht das jemandem zu sagen. Was mach ich mit diesen Gedanken
+R|meine Tochter (16) will kein Kopftuch mehr tragen, aber die Schule und ihre Freundinnen sagen ihr dass sie dann keine gute Muslima ist. Was kann ich als Mama tun
+R|ich bin ex-mormonin und hab nach dem austritt meinen ganzen freundeskreis verloren. jetzt bin ich 30 und weiss nicht mehr wer ich ohne kirche bin. hat wer tipps wie man neu anfängt
+R|meine kirche hat mich ausgeschlossen weil ich in einer homo-beziehung lebe, der pastor sagt ich muss büssen. wie geh ich damit um ohne die ganze gemeinde zu verlieren
+G|wir sind 3 monate mit der miete im rückstand und der vermieter hat heute schon wieder geschrieben. was passiert wenn ich gar nix zahl
+G|Ich habe bei drei Banken Kredite laufen, die Raten fressen 1.400 Euro im Monat, und ich komme nicht mehr hin. Wie komme ich aus diesem Loch
+G|mein sohn hat bei nem handyanbieter nen vertrag auf meinen namen gemacht und jetzt kommt das inkasso. muss ich das zahlen
+G|hab grad den brief vom Betreibungsamt bekommen, 4800 Franken Schulden bei der Krankenkasse und einem Online-Shop. was heisst das jetzt konkret
+G|wir haben nen brief von nem inkassobüro bekommen, 2300 euro aus nem kredit von 2019, den ich bezahlt glaubte. welche rechte hab ich hier
+G|ich bin seit 3 monaten arbeitslos und der Bürgergeld-Antrag ist abgelehnt worden, weil ich angeblich zu viel auf dem Konto habe. Ich weiss nicht wie ich die Miete zahlen soll
+G|mein mann hat im online casino 9000 euro verzockt, unser gemeinsames konto ist leer. Ich wusste nichts davon. Wie kann ich mich schützen
+G|ich hab nach nem whatsapp-betrug 800 euro an nen angeblichen krypto-rückholer bezahlt und jetzt will er noch mehr. wie komm ich da raus
+G|Die Lohnpfändung läuft seit Januar, mir bleiben nur noch 1.100 Euro im Monat, dazu zwei Kinder. Kann ich das irgendwie abwenden
+G|wir haben seit 6 monaten nen dispo von 3000 und die bank hat ihn jetzt gekündigt, ich weiss nicht wie ich das ausgleichen soll. ist das schlimm
+G|hab vom Finanzamt ne Nachzahlung von 6400 Euro bekommen wegen der Selbstständigkeit, das hab ich nicht einkalkuliert. Gibts ne Ratenzahlung
+G|mein vermieter will zwei monatsmieten nachzahlung plus die kaution. meine zahlung vom amt kam zu spät und jetzt droht er mit kündigung. was tun
+G|ich schulde meinem Bruder 12.000 Euro und jetzt droht er mit Anwalt. Ich hab das Geld in ne Firma gesteckt die pleite ist. Was kann passieren
+G|Meine Schwiegereltern haben mir für das Haus gebürgt und jetzt kann ich die Raten nicht mehr zahlen. Wer muss jetzt zahlen, ich oder die
+G|hab 5 Mahnungen von der Telekom liegen, insgesamt knapp 600 Euro, und ich hab nicht mal das Geld für Essen diesen Monat. Was passiert wenn ich nicht zahl
+G|ich nehm seit 8 monaten payday loans um die autoraten zu zahlen und schulde 4 verschiedenen firmen geld. ich weiss gar nicht mehr wie viel es insgesamt ist
+G|Meine Stromrechnung ist auf 980 Franken gestiegen, die EW will jetzt abschalten. Ich bin alleinerziehend. Was kann ich tun, bevor sie den Strom sperren
+G|hab nach der Trennung meine ganze Hälfte vom Erbe ausgegeben und jetzt hab ich 40k Schulden, bei Privat, bei Verwandten und Inkasso. Wie fang ich an das zu sortieren
+G|ich hab heute die Kündigung bekommen und muss jetzt Arbeitslosengeld beantragen, aber ich hab noch Raten für mein Auto, ~480 euro im Monat. Reicht das, kann ich das streichen
+G|mein Mitbewohner hat seit Monaten keine Miete gezahlt und ich muss jetzt die ganze Summe alleine zahlen, der Vermieter droht mir. Ist das so rechtens
+G|mein sohn hat auf fussball-apps gewettet und 3000 von meiner karte abgebucht ohne zu fragen. soll ich die karte sperren oder erst mit der bank reden
+G|ich bin gerade in der Privatinsolvenz gelandet und das Wohlverhaltensverfahren dauert 6 Jahre. Darf ich mir überhaupt noch ein Auto leisten
+G|seit meine Frau arbeitslos ist, reicht unser Geld nicht mehr für die Kita-Gebühren. Die Stadt will 380 Euro im Monat. Gibt's da Erlass
+G|hab bei nem sogenannten Investment-Coach 15.000 eingezahlt, jetzt kommt er nicht mehr ans Telefon. Kann ich das noch zurückholen
+G|Ich bin Student und habe einen Studienkredit der jetzt zurückgezahlt werden muss, 280 Euro im Monat, ich verdien nur 600 im Nebenjob. Was machen?
+G|meine freundin hat letzten monat ihren job verloren und jetzt kommt die hypothek-rate nicht mehr rein. was passiert schlimmstenfalls
+G|hab 3 Jahre lang Schulden bei Verwandten angehäuft und die Bank lehnt jetzt alles ab, auch ein Konto. Wie kann ich ohne Konto klarkommen
+G|wir sind 2 monate mit den autoraten im rückstand und die firma schreibt briefe mit wörtern wie rücknahme. ich hab angst dass sie mir das auto wegnehmen, das ich für die arbeit brauch
+G|mein Vater hat für mich einen Kredit aufgenommen, der lief auf seinen Namen, und jetzt zahl ich nicht mehr. Er ist 71 und hat deshalb Stress. Was tun
+G|ich hab nach dem Umzug zwei Monate lang keine Miete überwiesen weil die Kaution nicht zurückkam, jetzt hab ich die Kündigung. Ist das wirklich der Vermieter der recht hat
+G|Ich bin Rentnerin und mir wurde die Grundsicherung gestrichen weil ich einen Sparbrief hatte. Ich hab nur noch 90 Euro und Angst. Was kann ich dagegen machen
+G|ich bin 23 und hab drei kreditkarten am limit und zahl nur die mindestsumme. mein score ist grad gefallen und meine mum weiss nichts. wie komm ich da raus
+G|meine Bekannte hat mir 2000 Euro geliehen und will sie zurück, ich hab die jetzt für Schulden verwendet. Wie reden wir da drüber ohne dass die Freundschaft zerbricht
+G|die Miete ist seit zwei Monaten nicht bezahlt, weil mein Chef mir den Lohn nicht überwiesen hat. Der Vermieter will mich verklagen. Hab kein Geld für Anwalt
+G|Ich hab nach der Scheidung ne Unterhaltsforderung von 900 Euro im Monat bekommen, dabei verdien ich nur 1.700 netto. Wie hoch darf der Selbstbehalt sein
+G|wir haben von nem Freund einen Gebrauchtwagen mit Kredit übernommen, er zahlt nicht mehr und jetzt steht mein Name im Vertrag. Ich bin am Limit. Wie komm da raus
+G|mein schwager hat unsere eltern um 20.000 erleichtert, jetzt sitzen sie auf nem berg schulden und wir sollen helfen. Was ist fair
+G|ich pflege meine mutter und hab nen brief vom sozialamt bekommen, ich hab 14 monate zu viel bekommen. sie wollen 4200 Franken zurück, ich kann das nicht zahlen. was passiert jetzt
+G|hab Mahnbescheid vom Gericht bekommen über 2800 Euro, Frist 14 Tage, ich hab keine Ahnung was ich machen soll. Kann ich einfach widersprechen
+G|mein Handy wurde vom Gerichtsvollzieher gepfändet, weil ich eine alte Geldstrafe nicht bezahlt hab. Wie lang darf der mir überhaupt was wegnehmen
+G|Ich bekomm seit 3 Monaten Post vom Inkassobüro mit immer höheren Summen, die Gebühren steigen jeden Monat. Muss ich das wirklich zahlen
+G|wir haben 6000 bei nem trader auf instagram verloren, der hat uns das doppelte versprochen. mein mann weiss noch nichts. wie sag ich's ihm ohne dass er mich verlässt
+G|meine Eltern haben mir gesagt sie haben keine Kohle mehr für mein Studium, und ich soll Schulden mit BAföG machen. Ich will nicht so viel Schulden. Was ist der Weg
+G|hab letzten Monat den Job verloren und mein Konto ist seit 2 Wochen im Minus. Die Bank will 14% Zinsen. Gibts Alternativen zum Dispo
+G|mein Papa ist seit paar Monaten arbeitslos, und jetzt haben wir Schulden bei der Krankenkasse und beim Telefonanbieter. Ich will helfen, weiss nicht wie
+G|ich wette jedes wochenende auf fussball und hab diesen monat schon 1800 verloren. ich jage das ständig und ich hasse es meiner freundin davon zu erzählen. was tun
+G|wir zahlen seit der Geburt unseres zweiten Kindes die Raten für das neue Auto nicht mehr, und das Autohaus meldet sich täglich. Wie reagieren?
+G|ich bin Selbstständiger und hab 2 Jahre lang keine Sozialabgaben gezahlt, jetzt kommt die AOK mit 18.000 Euro Nachforderung. Wie geh ich damit um
+G|mein Sohn (19) hat sich bei so nem Kredit-Anbieter übers Internet 4000 geliehen und ich bin jetzt Bürge. Ich hab davon gar nichts gewusst
+G|Meine Pension reicht vorne und hinten nicht mehr, die Mieterhöhung kommt jetzt und ich weiss nicht was ich machen soll. Was kann man da noch tun
+G|ich schulde dem Gerichtsvollzieher seit einem Jahr 1200 Euro von einem Handyvertrag den ich nicht mehr zahlen konnte. Wie oft schickt der die Post noch
+G|mir wurde die gemeindesteuer nachgefordert, 650 Franken, und ab nächstem monat wird mir was vom lohn abgezogen. ich kann kaum essen kaufen. gibts irgendeine hilfe
+G|mein Bruder steckt bis zum Hals in Schulden und kommt jeden Monat um Geld zu fragen. Ich hab selbst nicht genug, wie sag ich nein ohne dass es krass wird
+G|hab bei Temu und Shein so viel auf Raten bestellt, ich hab jetzt 6 Kredite über Klarna und Co und den Überblick verloren. Was zuerst kündigen
+G|hab meinen job verloren, letzte gehälter sind weg und die miete fürs nächste mal fehlt schon. wie viel zeit hab ich bis die bank richtig anruft
+G|das Finanzamt hat mir grad ne Rückforderung über 2100 Euro geschickt, rückwirkend, weil sie gemerkt haben dass ich nebenbei gearbeitet hab und trotzdem Familienbeihilfe bekam. ich wusste nicht dass das ein problem ist. wie schlimm kann das werden
+G|Meine Freundin hat bei einem Kreditbetrug mitgemacht und jetzt bin ich mit drin, weil mein Konto genutzt wurde. Die Bank will das Geld zurück. Kann ich das abwehren
+G|seit der Scheidung hab ich nur noch den Unterhalt von 600 und die Miete ist 950. Ich geh inzwischen zur Tafel. Gibt's noch irgendwas was mir zusteht
+G|ich hab beim Pokern in nem Hinterzimmer verloren und jetzt kommen die Typen und wollen das Geld. Ich hab nur 2000, sie wollen 8000. Was soll ich tun
+G|ok ich kauf seit 6 monaten lebensmittel mit der kreditkarte und die zinsen fressen alles auf. nur mindestzahlung. mein partner hat keine ahnung. wo fang ich überhaupt an
+L|ich wurde gestern nachts von der polizei angehalten, sie haben nen joint bei mir gefunden und jetzt soll ich aufs revier. was passiert jetzt mit mir
+L|Mein Freund wurde verhaftet wegen einer Schlägerei vor dem Club, er sagt er war's nicht. Kann ich zur Polizei gehen und ihn als Zeugen angeben
+L|hab nen unfall gebaut und bin dann abgehauen, ich war zu betrunken. jetzt hat die polizei meine nummer. was krieg ich dafür
+L|mein sohn (17) wurde im park von der polizei kontrolliert und die haben bei ihm nen messer gefunden. Wir sind fassungslos. Was passiert jetzt vor dem Jugendgericht
+L|wir haben nen brief vom familiengericht bekommen wegen sorgerecht für unseren sohn. mein ex will 50/50 und ich denk er ist ne gefahr. was muss ich beweisen
+L|ich hab den Termin beim Migrationsamt verpasst, meine Aufenthaltserlaubnis läuft in 3 Wochen aus. Ich bin aus Syrien und hab Angst vor der Abschiebung
+L|Mein Arbeitgeber hat mich ohne Abfindung rausgeworfen, nachdem ich den Chef wegen Mobbing gemeldet hab. Kann ich dagegen klagen
+L|meine vermieterin will mich rausklagen weil ich angeblich die wohnung versaut hab, ich hab nen mietvertrag und zahl immer pünktlich. wie wehr ich mich
+L|ich bin seit 2 wochen geschieden und mein Mann will das Haus, obwohl er kaum was dazu beigetragen hat. Er droht mit dem Anwalt. Was sind meine Rechte
+L|mein bruder hatte nen unfall, der andere fahrer ist abgehauen. die polizei will dass ich als zeuge aussage, aber ich bin mir nicht sicher ob ich's richtig gesehen hab. was passiert dann
+L|mein Vater hat mich wegen Körperverletzung angezeigt, weil wir uns gestritten haben und ich ihn geschubst hab. Ich will nicht ins Gefängnis. Was passiert jetzt
+L|Ich wurde bei meinem Partner in der Wohnung von der Polizei durchsucht, weil die Nachbarn Streit gemeldet haben. Er hat mich geschlagen, aber ich will keine Anzeige. Was kann ich tun
+L|hab letzte Woche nen Bußgeldbescheid für 700 Euro bekommen, Handy am Steuer. Ich will Einspruch einlegen, aber ich hab schon 2 Punkte. Lohnt sich das
+L|ich bin mit 19 wegen ladendiebstahl festgenommen worden und hab jetzt nen strafregistereintrag. ich bewerb mich überall und keiner meldet sich. kann der weg
+L|mein Freund und ich sind seit 6 Jahren zusammen, er hat ne Strafanzeige gegen mich gestellt wegen Betrug, ich hab ihm nur mal Geld abgenommen. Das ist doch kein Betrug oder?
+L|der vermieter hat uns gekündigt, nachdem wir uns über schimmel beschwert haben. wir haben nen zeitmietvertrag bis märz. darf er das überhaupt
+L|Ich hab mein Visum überzogen, weil meine Frau krank war, und jetzt will das Amt mich ausweisen. Ich hab zwei Kinder hier geboren. Was kann ich machen
+L|mein chef hat mich gestern zum gespräch gerufen und behauptet ich hätte geld aus der kasse genommen. er droht mit der polizei. Was sind meine Rechte
+L|Meine Ex hat mich wegen Stalking angezeigt, ich hab nur ein paar Mal angerufen, bis ich aufgehört hab. Ich weiss nicht ob das strafbar ist
+L|meine frau hat die scheidung eingereicht und will die kinder zu ihren eltern ins ausland nehmen. sie sagt ich bin gewalttätig, aber das bin ich nicht. wo fang ich mit nem anwalt an
+L|ich bin bei der Hausdurchsuchung dabei gewesen, es ging um meinen Mitbewohner. Die Polizei hat meinen Laptop mitgenommen. Brauch ich nen Anwalt
+L|Mein Mann hat illegal in der Firma gearbeitet mit falschen Papieren, und jetzt will das Amt auch mich befragen. Ich hab davon nichts gewusst. Was passiert mit mir
+L|meine nachbarin hat mir eine wegen Lärm angezeigt, jetzt kommt die Polizei ständig vorbei und ich hab Angst vor einem Strafverfahren. Ist das übertrieben
+L|ich wurde vor 3 Jahren wegen Körperverletzung verurteilt, Bewährung läuft bald aus, bin jetzt mit meiner Freundin in ner neuen Stadt. Muss ich das ihr sagen
+L|meine tochter wurde von nem lehrer sexuell belästigt und die schule vertuscht es. wir haben bei der polizei anzeige erstattet. was passiert als nächstes
+L|hab beim Autofahren betrunken nen Unfall gebaut, Führerschein ist weg, Staatsanwaltschaft hat Anklage erhoben. Ich bin 33. Wie lang krieg ich Haft
+L|Ich bin seit 4 Monaten in der Abschiebehaft, wegen fehlender Papiere. Mein Anwalt meldet sich nicht. Wer kann mir helfen, ich hab Angst
+L|mein sohn hat ein mädchen online erpresst mit nacktfotos und die polizei hat ihn jetzt am Wickel. Wir wissen nicht was wir machen sollen, bitte sagt mir ob er ins Heim muss
+L|der ex von meiner freundin droht mir mit der ausländerbehörde, weil ich auf nem studentenvisum bin und zu viel arbeite. kann er das machen
+L|ich hab nen Mietvertrag der gar nicht mehr gilt weil der Vermieter gestorben ist und die Erben jetzt räumen wollen. Kann ich bleiben
+L|Ich bin nach der Trennung in die Wohnung meiner Mutter gezogen und sie will mich jetzt wieder raus. Sie hat den Schlüssel geändert. Wie komm ich rein oder was ist mein Recht
+L|mein Kumpel wurde bei nem Einbruch erwischt und sagt jetzt meinen Namen, dass ich mit dabei war. Ich war nicht dabei, aber ich hab das Auto geliehen. Was mach ich
+L|meine Tochter (16) hat ein Foto von mir ohne Erlaubnis in den Chat gestellt und jetzt ist das Jugendamt bei uns. Wir haben Angst was jetzt kommt
+L|ich war bei nem fussballspiel in ne schlägerei verwickelt und jetzt hab ich nen gerichtstermin. ich hab schon eine vorstrafe. ist prozesskostenhilfe ne option, mein anwalt ist teuer
+L|mein Arbeitgeber zahlt mir seit 4 Monaten keinen Lohn, ich will das einklagen, aber ich weiss nicht ob ich das vor dem Arbeitsgericht machen kann ohne Anwalt
+L|hab mit meinem Bruder einen Erbstreit wegen der Eigentumswohnung von Papa, er hat sie schon verkauft und will mich nicht ausbezahlen. Was jetzt
+L|Ich bin 38 und hab schon wieder meinen Führerschein weg, zum dritten Mal wegen Alkohol. Die MPU kostet ein Vermögen. Muss ich die machen
+L|mein Nachbar hat mir gedroht, dass er mich wegen Nötigung anzeigt, dabei hab ich nur seinen Müll zurück auf seine Terrasse gebracht. Was ist da los
+L|ich wurde an der grenze angehalten und mein visum wurde annulliert, sie sagen ich muss in 14 tagen raus. ich hab nen britischen partner und wir wollen heiraten. was kann ich machen
+L|meine ex hat mich vor gericht gebracht wegen Unterhalt, ich hab wirklich keine Kohle, aber das Gericht will nen Termin. Muss ich hin
+L|Ich wurde von meinem Chef sexuell belästigt und ich weiss nicht ob ich das anzeigen soll, er ist der Inhaber der Firma. Was passiert wenn ich das mache
+L|mein sohn sitzt im Gefängnis wegen Drogen, ich bin seine Mutter und darf ihn nicht besuchen weil er was Falsches gesagt hat. Gibts da was zu tun
+L|mein vermieter sagt er holt den gerichtsvollzieher wenn ich nicht bis freitag raus bin. ich wohn hier 6 jahre und hab nie die miete verpasst. darf er mich einfach aussperren
+L|hab ne Strafanzeige wegen Betrugs bekommen weil ich bei der Versicherung ne falsche Angabe gemacht hab, Fahrrad-Diebstahl. Was passiert jetzt, krieg ich Knast
+L|meine tochter ist 14 und ihr vater hat die zustimmung für ne auslandsreise verweigert, wir sind in nem gerichtsverfahren. Was tun
+L|Ich habe eine Anzeige wegen Drogenbesitz bekommen, es waren nur 3 Gramm und das Ergebnis kommt in 2 Monaten. Lohnt sich ein Anwalt für sowas
+L|wir haben post bekommen dass uns der nachbar wegen nem zaun verklagt. wir haben nicht viel geld für anwälte. wo fangen wir überhaupt an
+L|mein Ex hat mich bei der Polizei gemeldet und ich soll Kontakt zu meinen Kindern lassen? Ich hab nix gemacht, nur die Tür zugeknallt. Ist das strafbar
+L|ich hab nen Verkehrsunfall mit Fahrerflucht, hab den Schaden nicht gemeldet und jetzt schreibt mir die Versicherung. Muss ich mich selbst anzeigen
+L|mein Arbeitgeber will mich nach 15 Jahren mit einem Fehlgrund rausschmeissen, ich war letztes Jahr zwei Monate krank. Ist das rechtens
+L|Ich bin im Asylverfahren beim BAMF und mein Anhörungstermin ist morgen, aber ich hab das Schreiben erst heute bekommen. Was kann ich noch machen
+L|mein vermieter hat den Strom abgestellt weil ich die Miete nicht zahlen konnte, und die Schlösser gewechselt. Darf er das wirklich
+L|ich habe Geld aus meinem Verein abgezweigt und jetzt will der Vorstand Anzeige erstatten. Ich hab das Geld zurückgelegt. Was sind die Folgen
+L|Ich wurde auf der Straße überfallen und der Täter wurde noch nicht gefunden. Die Polizei hat mich gebeten Fotos anzuschauen. Was passiert, wenn ich ihn wieder erkenn
+L|mein Freund hat mich geschlagen, ich hab Fotos von den Verletzungen gemacht, aber ich weiss nicht ob ich zur Polizei soll. Was passiert dann mit ihm
+L|hab seit 3 Monaten keine Aufenthaltsgenehmigung und die Ausländerbehörde schreibt mir das ich ausreisen muss. Ich hab Angst vor der Polizei, was macht die denn
+L|mein Mann wurde wegen Steuerhinterziehung von der Staatsanwaltschaft angeklagt und wir haben das Haus auf meinen Namen. Muss ich auch zahlen oder hab ich damit nichts zu tun
+L|ich wurde nach nem streit mit meinem chef fristlos entlassen, angeblich grobes fehlverhalten. ich finde das unfair und die personalabteilung hat mir nicht zugehört. kann ich vors arbeitsgericht
+L|mein Sohn (15) hat an der Schule ne Schlägerei gehabt und die Schulleitung will ihn der Schule verweisen. Er ist nicht der Typ. Was können wir da tun
+L|hab bei der Arbeit nen Autounfall mit nem Firmenwagen gebaut, die Chefin will das Geld von mir. Muss ich das bezahlen oder ist das nicht ihr Ding
+X|ich will einfach nicht mehr da sein. weiss nicht wie lang ich das noch aushalte
+X|hab gestern wieder ans sterben gedacht, nicht zum ersten mal. ich hab angst vor mir selbst
+X|Ich will nicht mehr leben und ich weiss nicht mit wem ich darüber reden soll
+X|wenn ich morgens aufwache wünsch ich mir einfach dass ich nicht mehr aufwach
+X|meine therapeutin ist im urlaub und ich denk die ganze zeit ans aufhören. nicht dass ich unbedingt sterben will, ich will einfach nicht mehr hier sein
+X|seit der trennung denk ich jeden abend darüber nach mir was anzutun. ich schaff das nicht mehr allein
+X|mein kopf sagt mir ständig dass ich nicht mehr leben soll. ich hab schon angefangen mir zu überlegen wie, und das macht mir selber angst
+X|Ich fühl mich nur noch wie ne Last für alle, meine Kinder wären ohne mich besser dran. Ich weiss nicht mehr weiter
+X|ich schneid mich nicht mehr, dafür denk ich jede nacht ans nicht-mehr-aufwachen. kann mir jemand sagen dass das weggeht
+X|es fühlt sich an als hätt ich keinen grund mehr weiterzumachen. jeden tag denk ich ob ich es heut beende
+X|Seit meine Frau gegangen ist, will ich eigentlich nur noch einschlafen und nie mehr aufwachen. Bin 47
+X|ich hab gestern meine lieblingssachen an meine schwester verschenkt und gesagt es sei nur so. sie hat nicht nachgefragt und ich weiss nicht ob das gut war
+X|wenn ich ehrlich bin weiss ich nicht ob ich nächste woche noch da bin. ich will das niemandem erzählen, weil alle dann so panisch werden
+X|ich glaub nicht mehr dass ich so weitermachen kann. alles ist zu schwer und ich bin so müde davon immer so zu tun als ob's mir gut geht
+X|Die Gedanken kommen immer öfter, dass ich mir was antun könnte. Ich geh nicht zum Arzt, weil ich nicht als Problem gelten will
+X|mein sohn (16) hat gestern gesagt er will nicht mehr leben. ich weiss nicht was ich tun soll und hab angst dass ers wirklich macht
+X|hab keine Lust mehr auf nichts, nicht mal auf essen. Ich wünsch mir einfach dass es aufhört. Egal wie
+X|ich hab einen abschiedsbrief geschrieben und in die schublade gelegt, ich weiss nicht ob ich ihn behalten soll
+X|ich denk ständig dass ich eine last für meine familie bin. Heute Nacht war es wieder so schlimm dass ich nicht schlafen konnte
+X|ich bin 16 und keiner versteht das. ich denk fast jede nacht daran nicht mehr am leben zu sein und weiss nicht wem ich das sagen soll

@@ -114,6 +114,8 @@
         if (!enough(s)) return;
         // Huiswerk, een verhaal, een patiënt: de woordenlijst zag al dat het niet over de schrijver gaat (topics.js).
         if (root.PrivacyTopics?.notAboutWriter?.(s)) return;
+        // Zelfde voor de gewogen lijst: die weet zeker dat het geen persoonlijke vraag is (topics.js, clearlyGeneral).
+        if (root.PrivacyTopics?.clearlyGeneral?.(s)) return;
         const key = hash(s);
         if (cache.has(key)) { const t = cache.get(key); if (t) onTopic(t); return; }
         const wait = last + GAP_MS - now();

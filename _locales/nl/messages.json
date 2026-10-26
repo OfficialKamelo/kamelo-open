@@ -19,5 +19,9 @@
   },
   "extDescriptionFirefox": {
     "message": "Een seintje voor een tijdelijke chat als je AI iets persoonlijks vraagt."
+  },
+  "extDescriptionSafari": {
+    "message": "Merkt op wanneer een vraag aan AI persoonlijk wordt, en laat je die aan Melo op je Mac stellen.",
+    "description": "Safari (in Melo voor Mac): de App Store wil hooguit 112 tekens"
   }
 }

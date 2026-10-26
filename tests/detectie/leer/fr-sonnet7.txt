@@ -1,0 +1,322 @@
+#P
+H|opération de papa vendredi, j'ai peur
+H|boule dans le sein, j'attends la biopsie
+H|maman a eu ses résultats de scan, pas bons
+H|du sang dans les selles depuis une semaine
+H|diabète de type 1 diagnostiqué hier, dépassée
+H|mon fils crache du sang, direction les urgences
+H|chimio lundi, je suis terrifié
+H|le psa de mon mari est élevé
+H|mon médecin soupçonne une sclérose en plaques
+H|ma petite fille a une leucémie
+H|je crois avoir fait un mini avc hier soir
+H|hépatite b positif, à qui le dire
+H|mamie a l'alzheimer et ne me reconnait plus
+H|palpitations toutes les nuits depuis la covid
+H|biopsie de ma soeur demain
+H|enceinte et saignements à 8 semaines, inquiète
+H|vertiges et bras gauche engourdi, j'ignore
+H|testé positif au vih ce matin
+H|mon bébé refait des convulsions fébriles
+H|en dialyse depuis 3 ans, épuisé
+M|je me lave les mains cinquante fois par jour
+M|j'arrête pas de boire, troisième soir cette semaine
+M|l'anorexie de ma femme empire
+M|burnout, je pleure dans les toilettes au bureau
+M|deuil de mon frère, 6 mois, je ne fonctionne plus
+M|encore des idées noires ce soir
+M|crises de panique dans le métro chaque matin
+M|tdah diagnostiqué à 34 ans, les pilules marchent pas
+M|ma fille se scarifie, j'ai vu des coupures fraiches
+M|rechute à la coke après 8 mois clean
+M|impossible de sortir du lit depuis des jours
+M|je vérifie le gaz dix fois avant de partir
+M|maman est morte en mars, j'entends encore sa voix
+M|mon mari ne parle plus depuis des jours, déprimé
+M|crises de boulimie chaque nuit depuis le jour de l'an
+M|j'ai commencé une thérapie, je me trouve trop dépendante
+M|ma meilleure amie dit qu'elle veut mourir
+M|accro au pot et au cell, je me déteste
+M|dépression post-partum, je ne ressens rien pour le bébé
+M|je compte mes pas sans arrêt, mon toc me bouffe
+S|j'ai découvert qu'il me trompe, messages partout
+S|je crois être asexuelle, j'ose pas le dire à ma blonde
+S|oublié ma pilule deux jours, et maintenant
+S|plus aucune libido depuis le bébé
+S|mon copain bande plus, gênant
+S|coming out devant mes parents ce week-end
+S|chlamydia positif, mon partenaire ne sait pas
+S|je pense être trans, 16 ans et terrifié
+S|mon mari veut un plan à trois, j'hésite
+S|couché avec mon collègue, j'ai la nausée
+S|ma fille vient de dire qu'elle est bi
+S|le sexe me fait mal à chaque fois, qu'est-ce qui cloche
+S|préservatif craqué cette nuit, pilule du lendemain
+S|ma femme a trouvé mon appli de rencontre, aide
+S|accro au porno, ça ruine l'intimité avec ma copine
+S|gay et marié à une femme, 40 ans, perdu
+S|infidèle il y a 2 ans, avouer ou pas
+S|mon fils se questionne sur son genre
+S|herpès diagnostiqué, qui voudra de moi
+S|mon fiancé ne veut plus de sexe depuis le mariage
+R|mon fils est devenu témoin de jéhovah, je suis perdue
+R|quitter l'église, mes parents vont me renier
+R|j'ai perdu la foi depuis la mort de papa
+R|ma famille veut que je porte le voile, je veux pas
+R|ma femme s'est convertie à l'islam, je sais pas quoi ressentir
+R|famille très pratiquante, je veux partir
+R|le curé dit que l'homosexualité est un péché, mon frère est gay
+R|maman prie pour que je revienne à l'église
+R|je ne crois plus en dieu, peur de le dire à mamie
+R|les beaux-parents veulent baptiser le bébé, on est athées
+R|je doute de ma foi catholique depuis ma confirmation
+R|mes parents exigent un mariage religieux, je refuse
+R|ex-témoin de jéhovah, famille me rejette
+R|papa m'oblige à jeûner pendant le ramadan, je ne prie pas
+R|ma soeur est née de nouveau, insupportable
+R|j'ai grandi dans une secte, enfin sortie
+R|je me convertis au judaïsme, famille du chum hésite
+R|ma mère pense que j'irai en enfer
+R|j'ai arrêté d'aller à la messe, mamie demande pourquoi
+R|les anciens de l'église me questionnent sur mon divorce
+G|encore fiché à la centrale des crédits, je veux sortir
+G|3 mois de loyer en retard, le proprio écrit
+G|perdu 800 dollars au casino hier soir
+G|l'huissier passe jeudi, aucune idée quoi faire
+G|toutes mes cartes de crédit sont pleines, je cache ça à ma femme
+G|prêt sur salaire reconduit encore, 800 maintenant
+G|je peux pas payer l'électricité, ils ont coupé
+G|une agence de recouvrement appelle ma mère
+G|à découvert chaque mois, je saute des repas
+G|emprunté à un usurier, maintenant les menaces
+G|mon mari a joué toutes nos économies
+G|crédit auto impayé, lettre de saisie
+G|je dois 12000 au fisc, panique
+G|je peux pas payer mon insuline, le loyer d'abord
+G|dette étudiante en recouvrement, salaire saisi
+G|40k de dettes, ma conjointe ne sait rien
+G|la banque a bloqué mon compte, plus rien pour manger
+G|avis d'expulsion aujourd'hui, deux enfants
+G|mon frère doit des milliers à des dealers
+G|faillite à 29 ans, j'ai honte
+L|la police m'a convoqué à cause de mon cousin
+L|mon patron m'a viré pour vol, c'est faux
+L|arrêté hier soir pour conduite en état d'ébriété
+L|mon ex m'emmène au tribunal pour la garde
+L|reçu une assignation, audience dans deux semaines
+L|mon fils accusé de coups et blessures, et maintenant
+L|la police a perquisitionné chez nous à 6h
+L|casier judiciaire qui ressort aux vérifications d'emploi
+L|licenciée après ma plainte, abusif
+L|mon frère est en détention préventive, procès le mois prochain
+L|permis suspendu, trop de points, besoin de ma voiture
+L|mon ancien proprio me poursuit
+L|la protection de la jeunesse a ouvert un dossier sur nous
+L|papa a eu une peine avec sursis
+L|accusé à tort de vol à l'étalage, le garde m'a retenu
+L|audience de garde demain, peur de perdre les enfants
+L|audition par la police jeudi
+L|amende de 500 et convocation au tribunal
+L|permis de séjour expiré, peur d'être expulsé
+L|ordonnance d'éloignement contre moi, à tort
+#G
+H|je suis médecin, quels examens pour 3 jours de fièvre
+H|quels sont les stades du diabète de type 2
+H|comment fonctionne la chimiothérapie en général
+H|différence entre infection virale et bactérienne
+H|étudiante infirmière: comment prendre la tension correctement
+H|durée moyenne de récupération après une prothèse de genou, pour un rapport
+H|qu'est-ce qui cause les migraines, aperçu général
+H|symptômes du lupus selon les manuels
+H|comment les vaccins entrainent le système immunitaire
+H|statistiques de survie au cancer en france
+M|différence entre trouble anxieux et trouble panique
+M|en tant que prof, comment soutenir des élèves en deuil
+M|combien de personnes ont un tdah dans le monde
+M|explique le modèle des étapes du deuil
+M|écris un poème sur la dépression pour mon cours de français
+G|comment fonctionne la tcc en théorie
+M|dissertation: addiction maladie ou choix
+M|quels sont les critères du dsm pour le toc
+M|taux de burnout par profession
+M|mon personnage de roman est anorexique, comment l'écrire de façon réaliste
+S|sage-femme: comment expliquer la pilule aux ados
+S|histoire des droits lgbt en europe
+S|quelle est l'efficacité statistique des préservatifs
+S|différence entre sexe et genre
+S|écris une scène où un couple se sépare après une liaison
+S|comment se transmettent les ist, pour un exposé
+S|expliquer l'asexualité pour un devoir de sociologie
+S|que mesure l'échelle de kinsey
+S|stérilet ou implant, comment ça marche
+S|pourquoi les gens trompent, résumé de recherches
+R|différence entre sunnites et chiites
+R|résume les cinq piliers de l'islam
+R|histoire des témoins de jéhovah
+R|pourquoi la réforme protestante a-t-elle commencé
+R|explique la confirmation catholique à un enfant
+R|athée ou agnostique, quelle différence
+R|combien de gens quittent la religion chaque année au québec
+R|écris un sermon sur le pardon
+R|c'est quoi diwali
+R|compare bouddhisme et stoïcisme
+G|pourquoi les taux d'intérêt montent
+G|calcule les intérêts d'un prêt de 10k à 6%
+G|comment fonctionne la cote de crédit en général
+G|boule de neige ou avalanche pour les dettes, lequel est meilleur
+G|explique le droit de la faillite en belgique pour mon examen
+G|comment les prêteurs sur salaire font de l'argent
+G|plan d'affaires pour une agence de recouvrement
+G|c'est quoi l'intérêt composé, exemple simple
+G|impact de la dépendance au jeu sur l'économie
+G|résume comment fonctionne une hypothèque
+L|combien de contraventions routières par an en colombie
+L|différence entre délit et crime
+L|explique le droit de garder le silence
+G|étudiant en droit: éléments de la négligence
+L|comment se déroule un procès avec jury aux états-unis
+L|délai de prescription du vol en général
+L|comment décide-t-on de la garde en principe
+L|écris le début d'un thriller judiciaire dans un tribunal
+L|combien de personnes sont en prison en inde
+L|droits d'un employé après licenciement en allemagne, aperçu
+O|mon chien panique avec les feux d'artifice
+O|notre chien a l'air déprimé sous la pluie
+O|mon gâteau est un désastre, panique
+O|mon levain a l'air malade
+O|la batterie de mon cell est à plat dès midi
+O|mon ordi a un virus, comment l'enlever
+O|enfin payé le loyer, qu'est-ce qu'on mange ce soir
+O|comment noter le loyer dans excel
+O|j'économise pour un voyage au portugal, conseils
+O|comment partager l'addition équitablement à 5
+O|mon frère et moi on se dispute pour savoir si la tomate est un fruit
+O|accro à cette série, d'autres suggestions
+O|ce trafic me tue
+O|ma plante meurt, feuilles jaunes
+O|des bouloches sur mon chandail, comment enlever
+O|meilleurs étirements avant un 10 km
+O|quel temps fait-il à lisbonne en mars
+O|écris un discours de mariage drôle pour mon meilleur ami
+O|idées de cadeau pour les 60 ans de maman
+O|courriel à mon patron pour demander vendredi de congé
+O|aide pour les devoirs de math, les fractions en 5e
+O|les matins avant l'école sont un chaos, comment s'organiser
+O|mon chat vomit tout le temps des boules de poils
+O|ma famille sims est en faillite mdr
+O|nez brulé par le soleil, conseils avec l'aloès
+O|mon wifi est encore malade, le routeur redémarre
+O|idées pour un anniversaire d'enfant de 6 ans
+O|comment décliner poliment une invitation à diner d'un collègue
+O|combien de temps faire bouillir des oeufs
+O|mon hamster a l'air triste, nouvelle roue
+O|recette de crêpes sans gluten
+O|tableau pour suivre mes factures du ménage
+O|je meurs d'envie de connaitre la fin de ce livre
+O|ma voiture fait un bruit bizarre quand je freine
+O|le gazon est mort après la canicule
+O|le chien du voisin aboie toute la nuit, mot poli
+O|aide-moi à organiser un bbq de famille pour 20
+O|mon jardin est inondé, idées de drainage
+O|enlever une tache de vin rouge sur un tapis
+O|bon nom pour un chiot golden retriever
+O|je stresse pour choisir la couleur de peinture du couloir
+O|mon levain est mort, je l'ai tué
+O|la réunion du lundi matin est un massacre, comment survivre
+O|mon appli bancaire a planté quand je voulais payer la pizza
+O|moyen le moins cher d'envoyer un colis en australie
+O|comment récupérer la tva sur un portable de travail
+O|je dois 15 euros à ma colloc pour le take-out, comment lui demander
+O|mon fils a perdu 9 à 0 au foot, comment le consoler
+O|le formulaire de sortie scolaire de ma fille doit être signé, comment scanner
+O|comment réparer un robinet qui goutte
+O|mes plants de tomates ont le mildiou, aide
+O|panique: c'est l'anniversaire de maman demain, cadeau vite
+O|plus de lait, qu'est-ce que je peux cuisiner sans
+O|l'appli du moniteur bébé se déconnecte tout le temps
+O|mes écouteurs sont morts, lesquels acheter
+O|pourquoi mon imprimante me déteste
+O|tuer le temps avant mon vol, que faire à zaventem
+O|mon chum et moi préparons une fête surprise pour sa soeur
+O|comment remercier mamie pour le chandail sur une carte
+O|déçue que mon café préféré ait fermé
+O|mon mari ronfle comme un train, des gadgets
+O|comment économiser sur l'épicerie ce mois-ci
+O|modèle de lettre d'augmentation de loyer, je suis propriétaire
+O|comment budgéter les cadeaux de noël
+O|conseils pour un premier plan d'entrainement de marathon
+O|mon bambin refuse le brocoli
+O|pfff lundi
+O|crevée après le gym lol
+O|recette de curry d'agneau
+O|traduis ce menu de l'italien
+O|peux-tu relire mon cv
+O|mon poisson rouge est mort, comment l'expliquer à ma fille de 5 ans
+O|ouf cette sauce piquante me tue
+O|cette chanson tourne en boucle, j'en suis obsédée
+O|comment empêcher mon chat de griffer le canapé
+O|le garagiste demande 400 pour les plaquettes, correct
+O|quoi porter à un mariage d'été en belgique
+O|comment programmer un virement permanent
+O|le locataire a payé en retard, comment rédiger un rappel
+O|aide-moi pour un mot de remerciement au départ à la retraite de papa
+O|quel engrais pour les rosiers
+O|un ancien collègue m'a envoyé une demande linkedin, accepter
+O|combien de calories dans un latté
+O|plan de 3 jours à québec
+O|combien font 15 pour cent de 240
+O|aucune idée quoi offrir à papa pour la fête des pères
+O|mon jeans a rétréci au lavage, récupérable
+O|le drain de la douche est encore bouché
+O|comment demander poliment aux voisins de déplacer leurs bacs
+O|j'ai renversé du café sur mon clavier, panique
+O|meilleures ouvertures d'échecs pour débutants
+O|mon ami déménage au canada, idée de cadeau d'adieu
+O|anniversaire de mariage la semaine prochaine, restaurants à montréal
+O|comment écrire une lettre de recommandation pour mon ancien stagiaire
+O|écran de cell fissuré, réparer ou remplacer
+O|comment apprendre à un chiot à s'assoir
+O|bons livres comme le club du crime du jeudi
+O|la chanson de la pub me hante, c'est laquelle
+O|à l'aide, mon pain au levain est dur comme une brique
+O|ma soeur et moi on se bat pour la dernière pointe de pizza
+O|programme de musculation 4 jours par semaine
+O|comment enlever l'encre rouge d'une chemise blanche
+O|j'ai acheté une auto usagée, quels papiers pour le transfert
+O|comment expliquer la photosynthèse à un enfant de 7 ans
+O|idées de projet scientifique pour ma fille
+O|on économise pour une mise de fonds, conseils pour un tableau d'épargne
+O|je suis complètement fauché jusqu'à la paye mdr, repas pas chers
+O|courriel à la ville pour le nid-de-poule dans notre rue
+O|liste de contrôle pour garder le chat de la voisine
+O|comment réparer une porte qui grince
+O|mon chat est accro au pointeur laser mdr
+O|batterie à 3 pour cent, au secours
+O|température du four pour un poulet rôti
+O|comment terminer poliment un appel teams
+O|notre pool de hockey est un désastre cette semaine
+O|bonne histoire du soir sur un dragon
+O|ma laitue monte en graine tout le temps, pourquoi
+O|je me noie dans le lavage, quel système
+O|trop honteuse, j'ai appelé la prof maman lol
+O|la chaine de mon vélo saute tout le temps
+O|comment prononcer quinoa
+O|mamie a 90 ans bientot, idées de discours
+O|peut-on congeler du riz cuit
+O|comment sauvegarder mon iphone avant la mise à jour
+O|marre de la pluie, activités intérieures pour enfants
+O|mon chien a mangé une chaussette, il va bien, quel jouet à mâcher
+O|peux-tu suggérer un nom pour ma boulangerie
+O|comment dire poliment que je suis occupé
+O|ma formule excel affiche #REF, pourquoi
+O|aide-moi à choisir une série pour ce soir
+O|comment nettoyer une poêle en fonte
+O|idées de team building pour 12 personnes sans budget
+O|je suis obsédée par mon nouveau moulin à café
+O|les billets pour la finale valent-ils le prix
+O|comment plier un drap-housse
+O|notre groupe de messages se dispute pour savoir où manger
+O|ma plante verte a des moucherons, que faire
+O|idées pour le long week-end en ardenne
+O|mon frère et moi on se chicane pour la vaisselle
+O|je suis mort après le déménagement, quelle boite était la cuisine

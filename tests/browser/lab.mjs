@@ -7,6 +7,8 @@
 //        → { notice, noticeText, buttons, field, answerShown }   (Kamelo's melding en wat er in het invoerveld staat)
 //   POST /melo   {edition, messages:[...], debug? } → { transcript:[{q,a,ms,drawn}], console? }   (Melo in de zijbalk, met de echte AI;
 //                meetset: melo-eval.mjs). debug: chat.html?debug, en wat Melo in de console schrijft komt mee terug.
+//                images: [{name, base64}] gaat als gesleepte afbeelding mee met de eerste vraag (chat/beeld.js, 22 okt);
+//                attach: of de paperclip zichtbaar was. shot: true geeft png (base64), het hele gesprek op paneelbreedte.
 //   POST /mac    {messages:[...]}            → { transcript }               (Melo voor Mac, Apple's AI; zie tools in scratch)
 //   GET  /sites                              → lijst met nagebootste sites
 import fs from 'node:fs';
@@ -145,7 +147,7 @@ async function notice({ edition = 'gratis', site = 'chatgpt.com', text = '', how
   } finally { await p.close().catch(() => {}); }
 }
 
-async function melo({ edition = 'gratis', messages = [], debug = false }) {
+async function melo({ edition = 'gratis', messages = [], debug = false, images = [], shot = false }) {
   if (!ED[edition]) throw new Error('edition: gratis of business');
   await aiOn();
   const E = { browser: AI, id: AIX[edition].id };
@@ -156,6 +158,22 @@ async function melo({ edition = 'gratis', messages = [], debug = false }) {
     await p.goto(`chrome-extension://${E.id}/chat/chat.html${debug ? '?debug' : ''}`);
     await wait(1500);
     const transcript = [];
+    // De paperclip verschijnt pas als de AI zegt dat hij kan kijken (chat.js, canSee): even laten afronden.
+    await p.waitForFunction(() => !document.getElementById('attach')?.hidden, { timeout: 5000 }).catch(() => {});
+    const attach = await p.evaluate(() => !document.getElementById('attach')?.hidden);
+    if (debug) logs.push('beeld: ' + await p.evaluate(async () => { try { return await LanguageModel.availability({ expectedInputs: [{ type: 'text' }, { type: 'image' }] }); } catch (e) { return String(e); } }));
+    // Afbeeldingen zoals iemand ze naar het venster sleept (dezelfde route als plakken en de paperclip: addFiles).
+    if (images.length) {
+      await p.evaluate(async list => {
+        const dt = new DataTransfer();
+        for (const im of list.slice(0, 3)) {
+          const bytes = Uint8Array.from(atob(im.base64), c => c.charCodeAt(0));
+          dt.items.add(new File([bytes], im.name || 'screenshot.png', { type: 'image/png' }));
+        }
+        document.querySelector('form').dispatchEvent(new DragEvent('drop', { dataTransfer: dt, bubbles: true, cancelable: true }));
+      }, images);
+      await wait(1500);
+    }
     for (const q of messages.slice(0, 6)) {
       const before = await p.evaluate(() => document.querySelectorAll('.msg.a, .a, [data-role="assistant"]').length);
       const t0 = Date.now();
@@ -197,7 +215,9 @@ async function melo({ edition = 'gratis', messages = [], debug = false }) {
       }
       transcript.push({ q, a: a || '(geen antwoord binnen 120 s)', note, drawn, ms: Date.now() - t0 });
     }
-    return debug ? { transcript, console: logs } : { transcript };
+    // shot: een screenshot van het hele gesprek, zo breed als het zijpaneel (22 okt, schrijfstijl naast June).
+    const png = shot ? (await p.setViewport({ width: 420, height: 2800 }), await p.screenshot({ fullPage: true, encoding: 'base64' })) : undefined;
+    return { transcript, attach, ...(debug ? { console: logs } : {}), ...(png ? { png } : {}) };
   } finally { await p.close().catch(() => {}); }
 }
 

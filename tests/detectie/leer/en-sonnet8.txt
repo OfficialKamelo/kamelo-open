@@ -1,0 +1,272 @@
+#P
+H|my dads test results came back, doctor wants a biopsy
+H|couldnt stop coughing for 3 weeks, should i worry
+H|nan has dementia and keeps forgetting who we are
+H|mum just got diagnosed with breast cancer, what do we tell the kids
+H|12 weeks pregnant and spotting a bit, is that normal
+H|hubby is on metformin now, whats the diet like
+H|had my knee op yesterday, swelling normal?
+H|rash all over sons chest and he has a fever
+H|blood pressure 160/100 this morning, scared
+H|grandad going deaf, hearing aids not helping
+H|bairn been vomiting since last night
+H|results show high cholesterol, what now
+H|sister had a miscarriage last week
+H|dad had a stroke, chances of recovery?
+H|tingling in left arm and jaw since morning
+H|started statins last week, achy legs
+H|me mam's got shingles
+H|hip replacement for me nan on tuesday, what to pack
+H|IVF round 3 failed, bloody exhausted
+H|constant headaches since the concussion
+H|boyfriend broke his wrist skiing, cast for how long
+H|found a lump in my armpit
+H|told i have type 2 diabetes today
+H|sons asthma inhaler not working anymore
+H|daughters fever wont go down, 39.5
+M|relapsed after 200 days, told nobody
+M|cant get out of bed again, nothing feels worth it
+M|panic attack on the train again this morning
+M|my brother wont stop drinking, we dont know what to do
+M|burnt out at work, crying in the toilets
+M|lost my dog yesterday and i cant stop crying
+M|think my daughter has an eating disorder, skipping meals
+M|been gambling every night, cant stop
+M|hate how i look, havent left the house in days
+M|mam was just diagnosed with depression, how do i help
+M|started therapy last week, feel worse
+M|son is addicted to gaming, wont leave his room
+M|cant stop checking the oven, ocd is wrecking me
+M|think hubby has adhd, forgetful and restless
+M|anxiety through the roof before exams
+M|ghosting everyone since dad died, grief hits in waves
+M|mate is on coke every weekend, worried sick
+M|feeling empty for months, no motivation
+M|vaping weed all day, cant stop
+M|binge eating at night then hating myself
+M|husband sleeps all day, so low since redundancy
+M|drinking a bottle of wine every night now
+M|cant stop picking my skin, so ashamed
+M|my teen self harms, what do i say to her
+M|adhd assessment tomorrow, nervous
+S|couldnt stay hard again last night
+S|hubby hasnt touched me in 8 months
+S|think my husband is cheating, found texts
+S|coming out to my parents this weekend, terrified
+S|im bi and havent told my girlfriend
+S|pill making me lose all desire
+S|we want an open relationship but im scared
+S|daughter says shes trans, how do i support her
+S|got tested for chlamydia, results in 2 days
+S|condom broke, need morning after pill
+S|sex is painful since the baby
+S|my bf finishes in a minute, embarrassed
+S|slept with my boss, feel sick about it
+S|son just told us hes gay
+S|no sex drive at all since starting antidepressants
+S|partner wants a threesome, not sure
+S|gf cheated and i cant let it go
+S|had unprotected sex, scared of hiv
+S|IUD or implant, which is better for me
+S|wife wants separate beds, no intimacy anymore
+S|questioning my gender since uni
+S|my fella watches too much porn, ignoring me
+S|cant orgasm with my partner
+S|mum found out im gay and wont speak to me
+S|herpes diagnosis, how do i tell new girlfriend
+R|losing my faith after dad died
+R|left the jehovahs witnesses a year ago, family shuns me
+R|my muslim parents wont accept my christian boyfriend
+R|struggling with ramadan fasting, feel guilty
+R|mum keeps dragging me to church, im atheist now
+R|dont believe in god anymore, scared to tell my family
+R|leaving the mormon church, bishop keeps calling
+R|wife converting to islam, im catholic, what about the kids
+R|nan prays the rosary all day, wants me back at mass
+R|my family says im going to hell for being agnostic
+R|feel like a fraud at synagogue
+R|grandma wont attend our wedding, its not in a church
+R|doubting everything i was taught at sunday school
+R|dad is pushing me to wear hijab
+R|quit the exclusive brethren, losing all my friends
+R|fell out with my sister over her new born again church
+R|husband is hindu, my parents are furious
+R|pastor says my divorce is a sin
+R|questioning islam but my family would disown me
+R|my kid asks why we dont go to church anymore
+R|parents want hindu wedding, i want civil
+R|ex-muslim and hiding it at home
+R|lent fast so hard this year, feel like failing god
+R|brother joined a cult-like church, cant reach him
+R|afraid of telling mum i converted to buddhism
+G|they're garnishing my wages
+G|hiding a second credit card from hubby
+G|3 months behind on rent, landlord sent notice
+G|took out a payday loan, now owe triple
+G|debt collectors ringing mum every day
+G|dad lost 20k gambling, we found out last night
+G|cant pay council tax, bailiffs coming
+G|on the credit register, bank refused my mortgage
+G|maxed out 4 cards, afraid to open post
+G|brother owes loan sharks, whats the way out
+G|bills higher than wages, going under
+G|overdrawn again and payday is 2 weeks away
+G|bankrupt at 30, hubby doesnt know
+G|rent arrears 2400, eviction hearing next week
+G|nan fell for a scam, lost savings, owes the bank
+G|student loan default, my wages being taken
+G|found wifes secret debts, 15k on cards
+G|cant afford electric bill, got disconnection letter
+G|spent rent money on slots
+G|borrowed from friends, cant pay back
+G|lost job, mortgage 2 months behind
+G|ex left me with all the debts
+G|car repossessed, still owe 6k
+G|BNPL on 7 things and cant keep up
+G|IVA or bankruptcy for my sister
+L|got arrested last night, what happens now
+L|police want to question my son tomorrow
+L|sued by my landlord over the deposit
+L|my ex is taking me to court for custody
+L|got a speeding fine, 3 points, am i losing my licence
+L|dismissed without warning, think its unfair dismissal
+L|dad has a criminal record, can he still emigrate
+L|reporting my boss for harassment, scared
+L|burglars cleaned us out, police not interested
+L|brother in remand, first hearing thursday
+L|got a court summons for an unpaid fine
+L|cops searched my car, was that legal
+L|my husband wants full custody, i have a solicitor
+L|charged with drink driving, first offence
+L|neighbour stalking me, police report?
+L|son caught shoplifting, what will happen
+L|wrongly accused at work, hr meeting friday
+L|mum got a parking ticket 100 euro, appeal
+L|stolen bike, police gave crime number only
+L|being questioned about fraud at work, need lawyer?
+L|cousin got community service, how long
+L|ex breached restraining order again
+L|my friend was arrested at the protest
+L|tribunal date set for my redundancy dispute
+L|pcn from council, think its unjust
+#G
+H|what are the symptoms of type 2 diabetes
+H|how common is dementia in over 80s
+H|i'm a gp, need a patient leaflet on hypertension
+H|what is a normal blood pressure range
+H|how does chemotherapy work
+H|nurse here, write a short handout on wound care
+H|statistics on stroke in the uk
+H|what is the difference between a virus and bacteria
+H|how long does a cast stay on for a broken wrist
+H|explain how ivf works
+H|what does hba1c measure
+H|history of the polio vaccine
+H|novelist: character recovering from hip surgery, what is rehab like
+H|pharmacist here, 100 words on paracetamol overdose limits
+H|how many people have hearing loss worldwide
+H|what is the first trimester
+H|causes of high cholesterol
+H|what is a biopsy
+H|podcast episode outline on alzheimers research
+H|how does metformin work
+M|what is a panic attack
+M|psychologist here, 150 words on panic attacks for my website
+M|statistics on burnout in nurses
+M|difference between sadness and depression
+M|how does cognitive behavioural therapy work
+M|as a school counsellor, need a leaflet on exam anxiety
+M|what is ocd
+M|how many people are addicted to gambling in the uk
+M|signs of an eating disorder, for a teachers workshop
+M|history of the asylum in europe
+M|what are the stages of grief
+M|sympathy card wording for a vet clinic, loss of a dog
+M|what is adhd in adults
+M|difference between psychologist and psychiatrist
+M|novelist here: how would a character in alcohol withdrawal behave
+M|what is gaming disorder according to the who
+M|how do ssri antidepressants work
+M|mental health first aid course content
+M|tips for managers to prevent employee burnout
+M|what is imposter syndrome
+S|what is the difference between gay and bisexual
+S|how effective is the contraceptive pill
+S|what is an sti
+S|sex education lesson plan for year 9
+S|history of the lgbt movement in the uk
+S|what does non binary mean
+S|statistics on infidelity in marriages
+S|how does a vasectomy work
+S|what is erectile dysfunction, common causes
+S|therapist here, handout on communication in open relationships
+S|when did same sex marriage become legal in ireland
+S|what is polyamory
+S|write a pride month post for my company
+S|how do condoms prevent hiv
+S|what is the copper coil
+S|journalist: stats on stis in england
+S|what is asexuality
+S|how do trans rights differ across europe
+S|how long is the morning after pill effective
+S|what is the difference between sex and gender
+R|how many practising catholics in quebec
+R|why do amish avoid electricity
+R|menu ideas for ramadan iftar at my cafe
+R|what is lent
+R|history of the reformation
+R|difference between sunni and shia
+R|what is yom kippur
+R|why do jehovahs witnesses refuse blood transfusions
+R|how many muslims in the uk
+R|i'm a teacher, lesson plan on world religions
+R|what is a mormon mission
+R|explain the five pillars of islam
+R|what is secular humanism
+R|history of the church of scientology
+R|rules for religious fasting in hinduism
+R|what is excommunication
+R|interfaith wedding ceremony ideas for my wedding planning business
+R|how many people left the church of england
+R|what is the diwali festival
+R|statistics on atheism in europe
+G|how does bankruptcy work
+G|what is wage garnishment
+G|debt counsellor here, leaflet on payday loans
+G|what is the apr on a typical payday loan
+G|how long does a default stay on a credit file
+G|what is an iva
+G|history of the debtors prison
+G|how many households in the uk are in arrears
+G|what is a debt management plan
+G|average credit card debt in america
+G|what rights do tenants have with rent arrears
+G|what is a bailiff allowed to do
+G|write a blog post on avoiding loan sharks
+G|how does a credit score work
+G|what is chapter 7 bankruptcy
+G|explain compound interest on credit card debt
+G|statistics on problem gambling debt
+G|journalist: cost of living crisis and personal debt
+G|how to start a debt advice service
+G|what is a ccj
+L|drink driving limit in ireland
+L|what is a police caution
+L|i'm a lawyer, template for a letter before action
+L|what happens at a magistrates court
+L|what is the difference between a misdemeanour and felony
+L|how long does a criminal record last in the uk
+L|what are miranda rights
+L|how does child custody work in england
+L|what is unfair dismissal
+L|statistics on theft in the uk
+L|how many points for speeding in the uk
+L|what is a restraining order
+L|what is an employment tribunal
+L|paralegal here, checklist for small claims
+L|history of habeas corpus
+L|what is the statute of limitations for fraud
+L|how does legal aid work
+L|novelist: what happens at an arrest in the us
+L|what is a pcn
+L|how does the court process work when you are sued

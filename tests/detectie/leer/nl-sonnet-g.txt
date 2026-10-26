@@ -1,0 +1,241 @@
+#G
+H|leg uit hoe insuline werkt, het is voor een presentatie biologie in 5 vwo
+H|Ik ben verpleegkundige op de spoedeisende hulp en moet een tekst schrijven voor patiënten over wat ze het beste kunnen doen na een lichte hersenschudding. Kun je een duidelijke opzet maken?
+H|wat zijn de gemiddelde wachttijden voor een heupoperatie in nederland volgens de laatste cijfers
+H|de hoofdpersoon van mijn roman krijgt de diagnose ALS, hoe zou de arts dat slechte nieuws brengen? schrijf de scène
+H|hoeveel mensen in belgië krijgen per jaar borstkanker en hoe is de overleving de laatste 20 jaar veranderd
+H|wat is het verschil tussen type 1 en type 2 diabetes, kort uitgelegd
+H|voor mijn scriptie verpleegkunde onderzoek ik valpreventie bij ouderen in verpleeghuizen, welke interventies hebben echt bewijs?
+H|hoe werkt een mRNA-vaccin eigenlijk, uitleg voor een 14-jarige
+H|welke gezondheidsproblemen had Vincent van Gogh volgens zijn biografen
+H|ik maak een infoblad voor de apotheek waar ik werk over de maximale dagdosis paracetamol voor volwassenen, kun je dat in simpele taal zetten
+H|ik ben huisarts en zoek een eenvoudige uitleg over cholesterol voor in de wachtkamerfolder
+H|schrijf een gedicht over een ziekenhuisgang om 3 uur 's nachts, vanuit het oogpunt van een nachtzuster
+H|waarom hebben vrouwen vaker last van migraine dan mannen
+H|wat doet het RIVM bij een uitbraak van mazelen?
+H|mn klas doet volgende week een project over de bloedsomloop, heb je een leuke opdracht voor groep 7
+H|wat gebeurde er met Lance Armstrong na zijn kanker en hoe ging dat verhaal verder
+H|samenvatting nodig: hoe ontstaat een beroerte en wat zijn de FAST-signalen, voor de EHBO-cursus die ik geef
+H|sorry maar wat is nu precies het verschil tussen een virus en een bacterie
+H|ik ben fysiotherapeut en mijn patiënten vragen steeds naar het verschil tussen ibuprofen en naproxen, hoe leg ik dat simpel uit
+H|hoeveel calorieën verbrandt een marathonloper gemiddeld? voor een artikel dat ik schrijf voor de sportpagina
+H|kun je een quiz maken van 10 vragen over het menselijk skelet voor de brugklas
+H|wat was de Spaanse griep en waarom was die zo dodelijk
+H|Wat zijn de belangrijkste symptomen van de ziekte van Lyme volgens de richtlijnen van het RIVM? Ik werk aan een folder voor de gemeente.
+H|hoe werkt een pacemaker
+H|in mijn serie schrijf ik een personage met epilepsie, wat moet ik weten over hoe een aanval er echt uitziet zodat het klopt
+H|wat is het verschil tussen een orthodontist en een tandarts
+H|lijst van de meest voorkomende beroepsziekten in de bouw, voor ons veiligheidsrapport
+H|wat zijn de gevolgen van de stikstofcrisis voor de volksgezondheid volgens studies
+H|waarom krijg je eigenlijk een kater, wat gebeurt er dan in je lichaam
+H|schrijf een korte tekst voor onze praktijkwebsite over wat je kunt verwachten bij een eerste bezoek aan de diëtist
+H|hoe lang duurt een gemiddelde zwangerschap en wat gebeurt er per trimester, voor mijn biologieles
+H|kheb morgen toets over het zenuwstelsel, kunt ge de hoofdonderdelen ff op een rij zetten
+H|wat is de gemiddelde levensverwachting in nederland vs belgië en waarom verschilt dat
+H|hoe werkt chemotherapie in grote lijnen
+H|wat is het nut van de griepprik en voor wie wordt die in nederland aangeraden
+H|leg uit wat een MRI-scan doet, voor een voorlichtingsbrief die ik opstel als radiologieassistent
+H|ik ben redacteur bij een gezondheidsmagazine, kun je een pakkende kop bedenken bij een stuk over slaap en hartziekten
+H|hoe ging de behandeling van tbc in de 19e eeuw
+H|wat is een hernia precies en hoe ontstaat die
+H|is het waar dat we maar 10 procent van onze hersenen gebruiken
+M|wat zijn de DSM-5 criteria voor een depressieve stoornis, voor mijn scriptie psychologie
+M|schrijf een monoloog voor een personage dat een paniekaanval krijgt in de metro, voor ons schooltoneel
+M|hoeveel procent van de nederlanders heeft last van burn-out volgens het CBS
+M|ik ben leerkracht en wil een les maken over pesten en eenzaamheid voor groep 8, kun je een opzet geven
+M|wat is het verschil tussen een psycholoog en een psychiater
+M|hoe werkt cognitieve gedragstherapie, kort uitleggen
+M|de hoofdpersoon van mijn roman is verslaafd aan gokken en verliest alles, hoe laat ik die val geloofwaardig verlopen
+M|welke bekende mensen hebben openlijk over hun depressie gepraat
+M|hoe ontstaat een paniekstoornis volgens onderzoek
+M|Ik ben vertrouwenspersoon op een middelbare school. Wat zijn signalen dat een leerling zich niet goed in zijn vel voelt?
+M|stel een 5-daags mindfulnessprogramma op voor medewerkers, ons bedrijf wil de werkdruk aanpakken
+M|wat is er bekend over de impact van sociale media op de mentale gezondheid van tieners
+M|wie was Sigmund Freud en wat vond hij over dromen
+M|schrijf een gedicht over rouw in de stijl van Toon Hermans
+M|wat is het verschil tussen ADHD en ADD
+M|uitleg over wat een verslaving doet in de hersenen, met dopamine en zo, voor een spreekbeurt
+M|ik werk bij hr en moet een beleid schrijven over psychisch verzuim, welke punten horen daarin
+M|waarom is Vincent van Gogh zo'n symbool geworden voor psychische problemen
+M|welke boeken raden jullie aan over autisme voor leerkrachten? ik geef les in het basisonderwijs
+M|hoe herken je de eerste tekenen van een eetstoornis, ik maak een infoblad voor de ouderavond op school
+M|wat zijn de vijf fasen van rouw volgens Kübler-Ross en klopt dat model nog wel
+M|mn scriptie gaat over burn-out bij verpleegkundigen, welke vragenlijsten worden daarvoor gebruikt, de MBI?
+M|hoe lang duurt een gemiddelde EMDR-behandeling bij trauma
+M|wat is het verschil tussen stress en angst
+M|schrijf een scène waarin twee zussen in het verhaal ruzie krijgen na de begrafenis van hun moeder
+M|hoeveel gamers worden volgens onderzoek verslaafd en wat is gaming disorder officieel
+M|wat doet de Luisterlijn als organisatie en hoe worden de vrijwilligers opgeleid
+M|ik ben therapeut en zoek een korte ademhalingsoefening om cliënten mee te geven, iets simpels
+M|waarom zijn mensen in de winter vaker somber, bestaat winterdepressie echt
+M|wat zijn de gevolgen van slaaptekort op het brein, algemeen gesproken
+M|kunnen jullie een quiz maken over mythes rond psychische aandoeningen
+M|hoe werkt therapie met paarden
+M|wat is het stockholmsyndroom en waar komt de naam vandaan
+M|waar gaat De Avonden van Gerard Reve eigenlijk over, mn leraar nederlands wil een verslag
+M|hoe werkt het systeem van de ggz in nederland, wachtlijsten en verwijzing via de huisarts
+M|schrijf een flyer voor onze koffieochtend in het buurthuis tegen eenzaamheid onder ouderen
+M|wat is het verschil tussen verdriet en een depressie volgens psychologen
+M|kheb voor psychologie een presentatie over fobieën, wat zijn de meest voorkomende
+M|wat zijn de bekendste experimenten uit de psychologie, zoals het Stanford prison experiment
+M|geef drie tips voor werkgevers om burn-out in een team te voorkomen
+S|hoe werkt de anticonceptiepil precies, voor mijn les biologie
+S|wat is het verschil tussen gender en geslacht, voor mijn werkstuk maatschappijleer
+S|hoe zijn de rechten van lhbti-mensen de laatste 50 jaar veranderd in nederland
+S|de hoofdpersoon van mijn roman komt in 1975 uit de kast in een dorp in Brabant, hoe zou dat gesprek met zijn vader gaan
+S|wanneer werd het homohuwelijk in belgië ingevoerd
+S|ik ben docent en geef seksuele voorlichting aan groep 8, wat is leeftijdsgeschikt
+S|wat is het verschil tussen een condoom en een femidom
+S|wie was Alfred Kinsey en wat onderzocht hij
+S|hoe vaak hebben nederlanders gemiddeld seks volgens onderzoek
+S|schrijf een romantische scène voor mijn verhaal over twee mannen die elkaar ontmoeten op een treinstation, niet expliciet
+S|ik werk bij een soa-poli en moet een folder maken over wat chlamydia is en hoe je getest wordt, in helder taalgebruik
+S|wat is er bekend over Oscar Wilde en zijn proces
+S|uitleg: hoe werkt de ovulatie, in groep 8-taal
+S|mn scriptie gaat over seksueel grensoverschrijdend gedrag op de werkvloer, welke wetten zijn daarvoor
+S|wat betekent elke letter in lhbtq+
+S|hoeveel mensen in de wereld identificeren zich als transgender volgens schattingen
+S|wat is de geschiedenis van de pil in europa
+S|ik ben huisarts en zoek een goede uitleg over erectiele disfunctie voor de patiëntenfolder
+S|wat zijn de bekendste liefdesaffaires uit de geschiedenis van de Franse koningshuizen
+S|wat is het verschil tussen aseksueel en celibatair
+S|schrijf een songtekst over een zomerliefde, beetje flirty
+S|wat is sexting en wat zegt de wet erover voor minderjarigen, ik maak een les mediawijsheid
+S|wat waren de ideeën van Simone de Beauvoir over vrouwen en seksualiteit
+S|kun je een sketch schrijven waarin een koppel bij de relatietherapeut zit en alles misgaat, komisch
+S|welke vormen van anticonceptie zijn er en hoe betrouwbaar is elke methode, tabel graag
+S|ik ben journalist en schrijf over de coming-out van een bekende voetballer in het buitenland, welke context moet ik geven
+S|wat is een prostaat en wat doet die
+S|hoe ontstond de pride-optocht en waarom in juni
+S|wat zeggen studies over de oorzaken van ontrouw in relaties
+S|ge moet mij ff helpen, ik schrijf een bijdrage voor het schoolkrantje over respect in relaties
+S|wat is de leeftijd van seksuele meerderjarigheid in verschillende europese landen
+S|mijn personage in het script heeft een affaire met haar baas, geef een dialoog waarin ze betrapt wordt
+S|wat is het verschil in libido tussen mannen en vrouwen, kort
+S|wat is het verschil tussen seksuele intimidatie en ongewenste intimiteit, ik moet het voor onze gedragscode uitleggen
+S|wie zijn de bekendste lhbti-iconen uit de muziek
+S|wat is de Kama Sutra eigenlijk, is het echt een seksboek
+S|geef een lijst van romcoms met een enemies-to-lovers verhaal
+S|wat doet een seksuoloog precies
+S|voor mijn podcast zoek ik een intro over datingapps en hoe Tinder geld verdient
+S|kheb een spreekbeurt over seksuele diversiteit, welke begrippen moet ik uitleggen
+R|wat is het verschil tussen soennieten en sjiieten
+R|ik ben docent godsdienst en wil een les over de vijf zuilen van de islam maken voor 3 havo
+R|waarom vasten moslims tijdens ramadan en hoe lang duurt het
+R|de hoofdpersoon van mijn roman groeit op in een streng gereformeerd gezin in Urk, welke gebruiken moet ik erin verwerken
+R|wat is het verschil tussen katholiek en protestant
+R|hoeveel mensen zijn er wereldwijd boeddhist
+R|wat is de betekenis van Pasen en waarom verschuift de datum elk jaar
+R|schrijf een korte speech voor een interreligieuze dialoogavond in onze gemeente
+R|waar komt de hoofddoekdiscussie in Frankrijk vandaan
+R|wie was Martin Luther en wat deed hij in 1517
+R|ik werk in een ziekenhuis als geestelijk verzorger, wat moet ik weten over joodse rituelen rond het sterven
+R|wat is koosjer en wat is halal, en wat zijn de overeenkomsten
+R|hoe werkt het kiezen van een nieuwe paus
+R|mn werkstuk gaat over hindoeïsme, kun je de belangrijkste goden op een rijtje zetten
+R|wat betekent Allerheiligen in vlaanderen en waarom is het een feestdag
+R|wat zijn de bekendste sekten uit de geschiedenis en hoe werden ze herkend
+R|schrijf een gedicht in de stijl van psalmen over de zee
+R|wat zeggen de tien geboden eigenlijk
+R|hoeveel moskeeën zijn er in nederland
+R|ik schrijf een artikel over de ontkerkelijking in nederland, welke cijfers van het CBS of het SCP kan ik gebruiken
+R|wat is het jodendom en wat is Rosj Hasjana
+R|hoe verschilt de bijbel van de koran in opbouw
+R|voor geschiedenis: wat waren de godsdienstoorlogen in de 16e eeuw
+R|wat is de rol van een imam en hoe word je dat
+R|in mijn D&D-campagne heb ik een priester van een zonnegod, geef me een preek in de stijl van een middeleeuwse prediker
+R|wie is de Dalai Lama en waarom woont hij in India
+R|wat is Diwali en hoe vieren hindoes het
+R|kan je een quiz maken over wereldreligies voor mijn leerlingen in 1 havo
+R|wat is de geschiedenis van de Sint-Pietersbasiliek
+R|waarom is de rustdag bij joden zaterdag, bij christenen zondag en bij moslims vrijdag
+R|hoe wordt een non opgeleid, voor een documentaire die wij maken
+R|wat is atheïsme en wat is het verschil met agnosticisme
+R|vertel over de Reformatie in de Nederlanden
+R|we plannen als team de vergaderingen voor volgend jaar, kun je een kalender maken met de belangrijkste feestdagen van verschillende religies zodat we daar rekening mee houden
+R|wat gebeurt er tijdens een katholieke doopplechtigheid, ik moet er een beschrijven in mn verhaal
+R|wat is het standpunt van Jehovah's Getuigen over bloedtransfusies, voor een werkstuk ethiek
+R|hoe lang bestaat het christendom en hoe verspreidde het zich
+R|wat is de geloofsbelijdenis van Nicea
+R|hoe werkt de bedevaart naar Mekka
+R|wie waren de Pilgrim Fathers
+G|hoe werkt de schuldhulpverlening in nederland, algemene uitleg
+G|de schuldratio van ons bedrijf is gestegen naar 65 procent, welke maatregelen kunnen we nemen om dat te verlagen
+G|wat is het verschil tussen een lening en een hypotheek
+G|hoeveel huishoudens in nederland hebben problematische schulden volgens het CBS
+G|ik ben budgetcoach en zoek een voorbeeld van een maandbegroting die ik cliënten kan meegeven
+G|wat gebeurde er bij de bankencrisis van 2008
+G|de hoofdpersoon van mijn thriller is deurwaarder, welke bevoegdheden heeft die echt
+G|hoe werkt een bitcoin
+G|wat is BKR en hoe lang blijft een registratie erin staan, algemeen
+G|voor mijn scriptie onderzoek ik de effecten van gokreclame op jongeren, welke bronnen zijn er
+G|wat is rente op rente en hoe werkt dat
+G|schrijf een sjabloon voor een betalingsherinnering aan klanten, vriendelijk maar duidelijk
+G|hoe ontstond de tulpenmanie
+G|wat zijn veelvoorkomende vormen van oplichting via whatsapp, voor een workshop die ik geef in de bibliotheek
+G|wat is het verschil tussen faillissement en surseance van betaling voor een bedrijf
+G|hoe wordt de huurtoeslag berekend
+G|wat is inflatie, leg uit alsof ik 12 ben
+G|ik ben boekhouder, kun je een uitleg schrijven over afschrijving van een bedrijfsauto voor een klant
+G|hoeveel kost een gemiddeld gezin per maand aan boodschappen in belgië
+G|wat is een ponzi-schema en wie was Bernie Madoff
+G|kheb een presentatie over de griekse schuldencrisis, kunt ge de oorzaken op een rij zetten
+G|hoe werkt een kredietverzekering
+G|welk percentage van de nederlanders heeft een buffer van minstens 3 maanden salaris
+G|ons team moet een plan maken voor het innen van achterstallige facturen, geef een stappenplan voor debiteurenbeheer
+G|wie is Jordan Belfort en wat gebeurde er echt
+G|wat doet de belastingdienst bij een boekenonderzoek
+G|schrijf een kort verhaal over een oude man die zijn spaargeld verliest aan een babbeltruc, fictie
+G|wat is het minimumloon in nederland nu en hoe wordt het bepaald
+G|de gemeente waar ik werk wil de armoedebestrijding verbeteren, welke maatregelen werken volgens onderzoek
+G|hoe werkt een kredietcheck bij een webshop, achter de schermen
+G|wat is het verschil tussen een flitslening en een gewone lening
+G|waarom ging Lehman Brothers failliet
+G|mn klas doet een spel over budgetteren, heb je een idee voor een rollenspel voor groep 8
+G|hoe werken casino's wiskundig, waarom wint het huis altijd
+G|wat is de AOW-leeftijd en hoe verandert die
+G|hoe werkt het systeem van kinderbijslag in belgië
+G|wat is de gemiddelde hoogte van een bijstandsuitkering voor alleenstaanden volgens de laatste cijfers
+G|ik ben redacteur en schrijf over de stijgende energieprijzen, welke cijfers van de afgelopen drie jaar kan ik gebruiken
+G|hoe werkt een crowdfundingplatform
+G|wat doet een incassobureau precies en wat zijn de wettelijke regels
+L|wat is het verschil tussen een misdrijf en een overtreding
+L|ik ben advocaat en zoek een heldere formulering voor een ingebrekestelling richting een leverancier
+L|hoe lang is de gemiddelde celstraf voor diefstal in nederland
+L|de hoofdpersoon van mijn roman wordt onterecht gearresteerd, hoe verloopt dat in nederland qua procedure
+L|hoe werkt een jury in de verenigde staten en waarom hebben wij die niet
+L|wat was de Dreyfus-affaire
+L|voor mijn scriptie rechten onderzoek ik de positie van slachtoffers in het strafproces, welke literatuur is er
+L|wat zijn de rechten van een verdachte bij een politieverhoor volgens de wet
+L|hoe werkt de huurcommissie
+L|wat is het verschil tussen een rechtbank en een gerechtshof
+L|ik werk bij hr en moet een ontslagprocedure uitleggen, wat is het verschil tussen ontslag op staande voet en ontslag via het UWV
+L|mn klas wil weten hoe een rechtszaak werkt, heb je een idee voor een nagespeelde rechtszaak voor groep 8
+L|hoe verliep het proces tegen O.J. Simpson
+L|wat zijn de regels rond het verlenen van een verblijfsvergunning aan studenten van buiten de EU, algemene uitleg
+L|schrijf een scène voor mijn script waarin een rechercheur een verdachte ondervraagt
+L|wat zegt de wet over camerabewaking in winkels
+L|hoeveel verkeersboetes worden er per jaar ongeveer uitgeschreven in nederland
+L|wat is het verschil tussen echtscheiding en scheiding van tafel en bed
+L|hoe werkt het Europees Hof voor de Rechten van de Mens
+L|we maken een training voor ons team over wat je moet doen bij een inbreuk op merkrecht, geef een overzicht
+L|waarom werd Nelson Mandela veroordeeld in het Rivonia-proces
+L|wat is het verschil tussen asiel en arbeidsmigratie
+L|kunt ge uitleggen wat een notaris doet en wat een gerechtsdeurwaarder doet in belgië
+L|ik ben journalist en schrijf een terugblik op de zaak Dutroux en de parlementaire onderzoekscommissie, welke lessen zijn er voor de politie getrokken
+L|wat zijn de verjaringstermijnen in het nederlandse strafrecht
+L|hoe werkt een kort geding
+L|ik organiseer een avond voor ons wijkcentrum over je rechten bij een huurgeschil, welke punten moeten erin
+L|wat is de straf voor te hard rijden in duitsland voor toeristen
+L|schrijf een korte tekst voor onze website over hoe bemiddeling bij een arbeidsconflict werkt, ik ben mediator
+L|hoe werd Al Capone uiteindelijk gepakt
+L|wat is het verschil tussen een voorwaardelijke en een onvoorwaardelijke straf
+L|spreekbeurt over de rechten van het kind, het VN-verdrag, wat zijn de belangrijkste artikelen
+L|hoe wordt iemand rechter in nederland
+L|wat is de Dublin-verordening
+L|wat zijn de gevolgen van de Brexit voor visa van EU-burgers in het VK, algemeen
+L|mn prof zegt dat ik de zaak Roe v. Wade moet kennen voor het tentamen, kun je dat samenvatten
+L|hoe gaat het in zijn werk als de politie een huiszoeking doet, wat is de wettelijke basis
+L|wat is het verschil tussen civiel recht en strafrecht, met voorbeelden
+L|wat was het proces van Neurenberg
+L|ik ben leerkracht en wil leerlingen leren over de Grondwet en grondrechten, geef een lesopzet

@@ -82,11 +82,13 @@ function check(v, t) {
   const wrong = Kennis.wrongs(a, Kennis.find(v.q));
   add('feit', !wrong.length, wrong.map(x => `fout: "${x.sentence.slice(0, 90)}"`).join('; '));
   if (v.maxChars) add('lengte', a.length <= v.maxChars, `${a.length} tekens (max ${v.maxChars})`);
-  // Persoonlijk verhaal zonder vraag om tips: Melo luistert. Hij vraagt iets terug en geeft (nog) geen lijstje met tips.
+  // Persoonlijk verhaal: sinds 22 okt helpt Melo meteen, zoals June (docs/private-chat/MELO-SCHRIJFSTIJL.md; het
+  // eerst-luisteren van 15 okt vervalt). Dus: concrete hulp (punten of tips) en één gerichte vraag aan het eind.
   if (v.luister) {
-    add('vraagt door', /\?/.test(a), 'geen vraag terug');
-    const tips = flat.match(/hierzijn|eenpaar(dingen|tips|ideeën)|probeer|jekunt|hereare|afew(things|tips|ideas)|youcould|tryto|youcantry|consider/gu) || [];
-    add('geen tips', !(drawn.items > 1) && tips.length < 2, `${drawn.items || 0} opsommingspunten, tipwoorden: ${tips.join(', ') || 'geen'}`);
+    const tips = flat.match(/probeer|jekunt|hereare|youcould|tryto|youcantry|consider|minuten|minutes|uur|hours|\d/gu) || [];
+    add('helpt meteen', drawn.items >= 2 || tips.length >= 2, `${drawn.items || 0} opsommingspunten, tipwoorden: ${tips.slice(0, 6).join(', ') || 'geen'}`);
+    // Zoals June: een vraag, en eventueel nog één zin wat Melo dan kan doen ("… Dan maak ik er een schema van.").
+    add('gerichte slotvraag', /\?[^?\n]{0,160}$/.test(a.trim()), 'geen vraag aan het eind');
   }
   return out;
 }

@@ -1,10 +1,12 @@
 // Draai met: node tests/pack.test.mjs
 // Het Firefox-pakket: Firefox' eigen AI (trialML) alleen als optionele toestemming, en geen zijpaneel (dat kent Firefox
 // niet). Chrome en Edge houden hun zijpaneel en krijgen geen onbekende toestemming. De gratis editie belooft in Firefox
-// geen Melo (die bestaat daar niet).
+// geen Melo (die bestaat daar niet). Safari (in Melo voor Mac) en het optionele recht voor Melo voor Mac.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { firefoxManifest, manifestFor, publicEdition } from '../tools/pack.mjs';
+import os from 'node:os';
+import path from 'node:path';
+import { build, firefoxManifest, manifestFor, publicEdition } from '../tools/pack.mjs';
 import { createRequire } from 'node:module';
 const { FX_ENABLED } = createRequire(import.meta.url)('../chat/device.js');
 
@@ -41,6 +43,14 @@ test('Firefox, gratis editie: eigen beschrijving zonder Melo; Chrome/Edge en Kam
     assert.ok(msgs.extDescriptionFirefox.message.length <= 132, lang);
   }
 });
+test('Safari (Melo voor Mac): eigen beschrijving van hooguit 112 tekens in elke taal (eis van de App Store)', () => {
+  assert.equal(manifestFor(manifest, { safari: true }).description, '__MSG_extDescriptionSafari__');
+  for (const lang of fs.readdirSync(new URL('../_locales', import.meta.url))) {
+    const msgs = JSON.parse(fs.readFileSync(new URL(`../_locales/${lang}/messages.json`, import.meta.url), 'utf8'));
+    assert.ok(msgs.extDescriptionSafari.message.length <= 112, lang);
+    assert.match(msgs.extDescriptionSafari.message, /Melo/, lang);
+  }
+});
 test('Melo-naam: Chrome "private AI chat"; Edge en Firefox (geen chat met Melo) de naam zonder chat; bèta en test blijven herkenbaar', () => {
   assert.equal(manifestFor(manifest).name, '__MSG_extName__');
   for (const opts of [{ edge: true }, { firefox: true }]) {
@@ -68,6 +78,23 @@ test('gratis editie in Chrome/Edge: precies deze rechten, met activeTab (Lees de
   assert.ok(m.host_permissions.every(h => /^https:\/\/(\*\.)?[a-z0-9.-]+\/\*$/.test(h)), 'alleen AI-chatsites');
   assert.equal(m.optional_host_permissions, undefined);
 });
+test('Melo voor Mac: nativeMessaging alleen optioneel (Chrome, Edge, Firefox), in Safari een gewoon recht zonder zijpaneel; Business niet', () => {
+  for (const m of [manifestFor(manifest), manifestFor(manifest, { edge: true }), manifestFor(manifest, { firefox: true })]) {
+    assert.ok(m.optional_permissions.includes('nativeMessaging') && m.optional_permissions.includes('contextMenus'));
+    assert.ok(!m.permissions.includes('nativeMessaging') && !m.permissions.includes('contextMenus'), 'geen nieuwe waarschuwing bij bijwerken');
+  }
+  const sf = manifestFor(manifest, { safari: true });
+  assert.deepEqual(sf.permissions, ['storage', 'scripting', 'activeTab', 'nativeMessaging', 'contextMenus']);
+  assert.equal(sf.side_panel, undefined);
+  assert.equal(sf.optional_permissions, undefined);
+  assert.equal(sf.name, '__MSG_extName__', 'Safari heeft Melo (via de app): de naam met chat');
+  const teams = manifestFor(manifest, { teams: true });
+  assert.ok(![...teams.permissions, ...(teams.optional_permissions || [])].some(p => p === 'nativeMessaging' || p === 'contextMenus'));
+  assert.throws(() => build(fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-sf-')), { safari: true, teams: true }));
+});
+test('Melo voor Mac: de schakelaar in de popup staat aan (de app staat op kamelo.eu/app)', () => {
+  assert.match(fs.readFileSync(new URL('../src/config.js', import.meta.url), 'utf8'), /const MELO_MAC_IN_POPUP = true;/);
+});
 test('Firefox: geen activeTab zolang Melo daar uit staat', () => {
   assert.equal(manifestFor(manifest, { firefox: true }).permissions.includes('activeTab'), FX_ENABLED);
 });
@@ -78,5 +105,16 @@ test('gratis editie: teams wordt public; al public (kamelo-open) mag; onbekend o
   assert.throws(() => publicEdition('  root.KameloEdition = "teams";\n'));
   assert.throws(() => publicEdition(P + '  root.KameloEdition = "teams";\n'));
   assert.throws(() => publicEdition('niets\n'));
+});
+test('geen werkaantekeningen in een pakket: geen CLAUDE.md, geen .DS_Store (beide edities, Chrome en Firefox)', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'kamelo-pack-'));
+  try {
+    for (const opts of [{}, { firefox: true }, { teams: true }, { teams: true, firefox: true }]) {
+      const dir = path.join(tmp, JSON.stringify(opts).replace(/\W/g, '') || 'gratis');
+      build(dir, opts);
+      const bad = fs.readdirSync(dir, { recursive: true }).filter(f => ['CLAUDE.md', '.DS_Store'].includes(path.basename(String(f))));
+      assert.deepEqual(bad, [], JSON.stringify(opts));
+    }
+  } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
 });
 console.log(`\n${passed} geslaagd`);

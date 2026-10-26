@@ -1,0 +1,110 @@
+#P
+H|mum got her biopsy results back, not good
+H|been coughing blood 3 days shud i worry
+H|lump in my breast wat do i do
+H|da's chemo starting monday how do we prep
+H|missed period twice but test negative?
+H|my bf's seizures are getting worse help
+H|doc says my a1c is 9.2 is that bad
+H|sister collapsed at work they think its her heart
+H|can i skip my blood pressure tabs for a week
+M|cant stop crying since nan died
+M|hubby drinks every night now dont know what to do
+M|had another panic attack on the tube
+M|my 14yo is cutting herself again
+M|lost 3 grand on bets this week cant stop
+M|brother wont leave his room gaming for days
+M|therapist said im burnt out but i cant quit
+M|ive been purging again after meals
+M|feel like nothing matters anymore honestly
+S|think my wife is cheating on me
+S|how do i tell my parents im gay
+S|condom broke last nite what now
+S|my son says hes trans and i dont get it
+S|no sex in 2 years with my husband is that normal
+S|got a weird discharge after a one night stand
+S|partner wants an open relationship im not sure
+S|should i go on the pill at 17
+S|im 40 and never had sex is something wrong
+R|i dont believe anymore but my family doesnt know
+R|dad says ill go to hell if i marry a hindu
+R|leaving the jehovahs witnesses, losing all my mates
+R|mum wants me to wear hijab i dont want to
+R|my pastor is pressuring me to tithe more than i can
+R|wife converted and now we fight about the kids
+R|lost my faith after the miscarriage, feel so empty
+R|my daughter joined some cult cant reach her
+R|parents will disown me if i stop going to church
+G|rent due friday and im 400 short
+G|bailiffs came to my door today
+G|got a ccj now cant get a phone contract
+G|dad's in 20k of debt and hiding it from mum
+G|took a payday loan now they want 900 back
+G|should i declare bankruptcy at 24
+G|maxed 3 credit cards paying for my mums care
+G|electricity gettin cut off next week kids at home
+G|car got repossessed how do i get to work
+L|son arrested last night what now
+L|cops want me to come in for questioning tomorrow
+L|ex is taking me to court for custody
+L|got a drink driving charge will i lose my job
+L|landlord suing me for 3 months rent
+L|sacked for gross misconduct is that even legal
+L|got a caution at 16 will it show on dbs
+L|brother is in remand what do i bring him
+L|hit a cyclist and drove off, im panicking
+#G
+H|how long is a flu contagious
+H|what does a radiologist do all day
+H|essay on vaccines for bio class tips
+H|write a scene where the hero gets malaria
+H|difference between type 1 and type 2 diabetes
+M|what is cognitive behavioural therapy
+M|stats on burnout in nurses uk
+M|is gambling addiction classed as a mental illness
+M|write a poem about grief for school
+M|how do antidepressants actually work
+S|when was same sex marriage legalised in ireland
+S|how effective is the copper iud
+S|write a romance subplot for my novel
+S|what does non binary mean
+S|hiv transmission rates by country
+R|what do jehovahs witnesses believe about blood
+R|summary of the reformation for history hw
+R|do muslims fast during ramadan when travelling
+R|write a monologue of a monk losing his faith
+R|biggest religions in india by numbers
+G|how does bankruptcy work in australia
+G|what's the average household debt in the us
+G|explain payday loan interest to a 12 year old
+G|story idea: a family facing eviction
+G|what does a debt collector legally have to say
+L|what's the max fine for speeding in nsw
+L|how does bail work in the us
+L|essay on miranda rights for law class
+L|script for a courtroom drama scene
+L|difference between arrest and detention
+O|this traffic is killing me
+O|finally paid the rent lol
+O|my plant looks sick wat do i do
+O|best pizza near kings cross
+O|im dying for a coffee rn
+O|the tv remote is dead again
+O|my phone is on its last legs
+O|this heat is depressing
+O|who won the match last night
+O|broke my fav mug this morning
+O|can you fix this sentence for my cover letter
+O|ideas for a 5th birthday party
+O|train to leeds is delayed again ugh
+O|my cat is obsessed with the new sofa
+O|im addicted to this new series
+O|feeling poor after that holiday haha
+O|how do i convert 3 cups to grams
+O|my boss is such a pain today
+O|the wifi keeps dropping help
+O|what time does tesco close sunday
+O|recipe for banana bread no eggs
+O|legs are dead after leg day lol
+O|need a name for my new puppy
+O|my car is a nightmare to park

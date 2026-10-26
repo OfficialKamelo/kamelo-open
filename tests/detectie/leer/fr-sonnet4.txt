@@ -1,0 +1,362 @@
+#P
+H|jai un ongle incarné au gros orteil depuis 3 semaines, ça suppure un peu, je dois aller voir un podologue ou direct le médecin?
+H|Ma mère vient de commencer sa deuxième cure de chimio pour son cancer du sein et elle est très nauséeuse. Tu as des astuces pour l'aider à manger quelque chose ?
+H|retard de regles de 9 jours, test negatif ce matin, jdois m'inquiéter ou c'est juste le stress
+H|Mon bébé a 2 mois, quels vaccins sont obligatoires au Québec et est-ce que la RAMQ couvre le rotavirus ?
+H|je commence a mal entendre de l'oreille gauche, genre je dois toujours faire répéter les gens au bureau. audiogramme chez qui en Belgique, et la mutualité rembourse?
+H|crise de colique néphrétique cette nuit, urgences ce matin, ils m'ont dit un calcul de 6 mm. je bois quoi pour l'expulser plus vite
+H|Je fais des migraines avec aura deux fois par semaine, la neurologue veut me mettre sous Sumatriptan mais j'ai peur des effets secondaires avec ma pilule
+H|covid long depuis mars, fatigue de dingue, brouillard mental, je tiens plus une journée complète de boulot. quoi faire à part attendre
+H|prise de sang: cholestérol LDL à 1,95 g/L à 38 ans, mon médecin parle de statines, c'est vraiment obligatoire ?
+H|Mon père de 78 ans a reçu un diagnostic d'Alzheimer stade léger. Comment lui en parler sans le brusquer, il a toujours été fier de sa mémoire ?
+H|ma fille de 3 ans fait 39,5 de fièvre depuis hier soir et le doliprane marche plus trop, j'appelle le 15 ou j'attends ?
+H|eczema qui est reparti sur mes mains, craquelé et ça saigne, la dermato m'a prescrit du Dermoval mais la cortisone me fait peur
+H|on m'enlève les 4 dents de sagesse jeudi sous anesthésie générale, qu'est-ce que je peux manger après ??
+H|FIV numéro 3 cette semaine, transfert d'un embryon congelé mardi. je stresse énormément, des conseils pour les 2 semaines d'attente ?
+H|j'ai fait une fausse couche à 9 semaines hier. la sage-femme dit que c'est fréquent mais je me sens vide. combien de temps avant de pouvoir réessayer ?
+H|IVG médicamenteuse prévue vendredi au planning familial, j'ai 19 ans, c'est douloureux ? faut que quelqu'un soit là avec moi ?
+H|test chlamydia positif et mon copain est pas au courant. comment je le préviens sans que ca explose
+H|diabète de type 2 découvert à ma prise de sang, glycémie à jeun 1,42. Mon médecin veut de la metformine, je dois changer quoi dans mon alimentation
+H|hernie discale L5-S1, sciatique qui descend jusqu'au pied depuis 6 semaines. opération ou infiltration, vous en pensez quoi
+H|mon mari ronfle comme un camion et s'arrête de respirer la nuit, on soupçonne une apnée du sommeil. comment se passe la polysomnographie ?
+H|mon fils de 6 ans a de l'asthme et fait des crises dès qu'il court, le pneumo lui a donné de la Ventoline et du Flixotide. comment gérer ça à l'école
+H|cystite pour la 4e fois en 3 mois, ça brûle quand je fais pipi et j'ai déjà pris du Monuril. pk ça revient tout le temps
+H|endométriose diagnostiquée après 8 ans de douleurs, la gynéco parle de pilule en continu ou de chirurgie. vous avez fait quoi, vous
+H|SOPK, des poils au menton, des règles tous les 3 mois... la spironolactone ça marche vraiment ?
+H|j'ai des hémorroïdes qui saignent quand je vais aux toilettes, c'est gênant d'aller voir un médecin pour ça ?
+H|zona sur le flanc depuis 3 jours, très douloureux, j'ai 52 ans. je peux aller bosser ou c'est contagieux
+H|coloscopie lundi et la préparation au Moviprep m'effraie. des astuces pour la boire sans vomir
+H|ma fille de 12 ans a une scoliose à 28 degrés, l'orthopédiste parle d'un corset. comment elle va le vivre au collège
+H|mon père se fait opérer de la cataracte à Genève lundi, qu'est-ce qu'on doit prévoir pour le retour à la maison
+H|isotrétinoïne depuis 2 mois pour mon acné, lèvres en sang et peau qui pèle. normal ? et la contraception c'est obligatoire pendant tout le traitement
+H|mes 3 enfants ont encore des poux, 3e fois ce trimestre... le vinaigre ça marche ou il faut le produit de la pharmacie
+H|je me suis cassé le poignet en glissant sur le verglas, plâtre pour 6 semaines et je suis droitier. comment je fais pour me laver et bosser
+H|rupture du ligament croisé au foot, opération prévue à la clinique en novembre, rééducation 6 mois. ca va ruiner ma saison
+H|tension 16/10 au contrôle, ma doctoresse veut qu'on surveille, je dois arrêter le sel complètement ?
+H|TSH à 8,2, hypothyroïdie, on me met sous Levothyrox. je peux prendre mon café avec ?
+H|ferritine à 7, anémie sévère, le médecin m'a prescrit des perfusions de fer. pourquoi je suis aussi crevée tout le temps
+H|mon père a fait un infarctus hier, il est en soins intensifs à la Timone. je dis quoi à ma mère qui panique
+H|grand-mère AVC ce matin, elle parle plus bien et son bras droit ne bouge pas. combien de temps pour récupérer en général
+H|brûlure au 2e degré sur l'avant-bras avec l'huile de la friteuse, ça cloque. je mets quoi dessus
+H|mon petit de 18 mois est allergique aux arachides (test positif), on a un stylo d'Epipen. comment je le dis à la crèche
+H|maladie coeliaque confirmée, biopsie positive. des idées de repas sans gluten pas chers pour mes enfants
+H|colon irritable, ballonnements et diarrhées après chaque repas depuis 2 ans. régime FODMAP vous connaissez
+H|acouphènes depuis le concert de samedi, sifflement continu dans l'oreille droite. combien de temps avant que ça passe
+H|j'ai des bouffées de chaleur toutes les heures la nuit, THS ou pas THS à 51 ans avec un cancer du sein dans la famille
+H|je perds mes cheveux par plaques depuis 1 mois, on m'a dit pelade. quelqu'un a testé les injections de corticoïdes ?
+H|sleeve dans 3 semaines, 134 kilos pour 1m68, je dois suivre un régime liquide avant. des conseils svp
+H|fibromyalgie diagnostiquée l'an dernier, j'ai mal partout et personne ne me croit au travail. comment l'expliquer à mon chef
+H|mon fils a fait sa première crise d'épilepsie hier à l'école, il a 8 ans, EEG demain. qu'est-ce que je dois savoir
+H|mon frère est en dialyse 3 fois par semaine à l'hôpital et il est épuisé. comment je peux l'aider au quotidien
+H|pacemaker posé la semaine dernière à ma mère de 81 ans, elle a peur de passer sous le portique à l'aéroport
+M|mon chien est mort hier, 14 ans avec moi, j'arrive plus à rien faire. c'est normal d'être aussi mal pour un animal
+M|mon fils de 15 ans joue à Fortnite 9 heures par jour, il mange plus avec nous et s'est fait virer du lycée. je fais quoi
+M|burn-out confirmé par mon médecin, arrêt de 3 mois. je culpabilise de laisser mes collègues dans la merde
+M|je dois vérifier 7 fois que la porte est fermée sinon je peux pas partir, ça me fait perdre 20 min chaque matin. c'est des TOC ?
+M|jai fait une crise de panique dans le métro ce matin, coeur qui bat à mort, impression de mourir. ca va recommencer ?
+M|depuis 2 mois je me lève sans envie, je pleure sans raison et j'ai arrêté de voir mes potes. dépression ou juste fatigue
+M|je dors plus que 3h par nuit parce que je rumine mon boulot, mon cerveau tourne en boucle. j'ai essayé la mélatonine, rien
+M|ma fille de 16 ans ne mange presque plus, elle compte les calories et se pèse 5 fois par jour. comment lui en parler
+M|je bois une bouteille de vin par soir depuis le décès de mon mari et j'ai honte. comment réduire sans que ça se voie
+M|je fume du shit tous les jours depuis 6 ans et je veux arrêter mais je dors plus sans, des conseils pour le sevrage
+M|chui accro au porno, j'y passe 3h par jour et ma copine a failli le découvrir. comment je décroche
+M|jviens d'être diagnostiqué TDAH à 34 ans, soulagé mais perdu, la Ritaline c'est comment les premières semaines
+M|mon fils de 5 ans est autiste, il a des crises de colère terribles au supermarché. des trucs pour le calmer sans crier
+M|première séance chez la psy demain et j'ai peur de pas savoir quoi dire. ça se passe comment normalement ?
+M|mon psychiatre a changé mon antidépresseur pour du Deroxat, je dois attendre combien de temps avant que ça marche
+M|depuis que j'ai déménagé à Lyon je connais personne, je mange seule tous les soirs et je pleure le dimanche
+M|baby blues qui dure, ma fille a 3 mois et je ne ressens rien pour elle, j'ai honte de le dire. dépression post-partum ?
+M|mon père est mort en mars et je n'arrive toujours pas à ranger sa chambre. quand est-ce que le deuil s'arrête
+M|j'ai été harcelée au collège et à 28 ans je flippe encore dès que des gens rigolent derrière moi
+M|accident de voiture il y a 2 mois, je sursaute au moindre klaxon et je refais la scène toutes les nuits. stress post-traumatique ?
+M|je rougis et je tremble dès que je dois parler en réunion, j'évite les pots entre collègues. phobie sociale ?
+M|j'ai peur d'avoir une maladie grave à chaque petit bouton, je googlise tout et je flippe. hypocondrie comment on se soigne
+M|prof en burn-out dans le canton de Vaud, je pleure en rentrant à l'école, 31 élèves en classe, plus la force
+M|j'ai arrêté la sertraline d'un coup et j'ai des décharges électriques dans la tête. normal ??
+M|je mange des pots entiers de glace en cachette puis je me dégoûte, hyperphagie je crois. comment arrêter
+M|je suis scotchée à mon téléphone 8h par jour, le temps d'écran affiche 8h12, j'ai plus de vie
+M|dimanche soir j'ai la boule au ventre à l'idée du lundi, je déteste mon job mais j'ose pas démissionner
+M|j'ai l'impression d'être une imposture au boulot, un jour ils vont découvrir que je suis nulle
+M|depuis mon divorce je me traîne, je dors tout le week-end et plus rien me fait plaisir
+M|je m'occupe de ma mère malade 24h/24, je suis épuisée, je m'énerve sur elle et ensuite je pleure de culpabilité
+M|je m'arrache les cheveux sans m'en rendre compte quand je stresse, j'ai des zones vides. trichotillomanie ?
+M|mon petit frère est bipolaire, il vient d'arrêter son lithium et il parle hyper vite et dort plus. j'appelle qui
+M|mon oncle est schizophrène et entend des voix, il refuse de se soigner. comment l'aider sans le forcer
+M|j'ai été hospitalisé en psychiatrie 3 semaines à Sainte-Anne et je sais pas comment le dire à mon employeur
+M|je pète les plombs pour rien, j'ai gueulé sur mes enfants hier et je me suis fait peur. gestion de la colère
+M|cauchemars toutes les nuits depuis l'agression, je me réveille en sueur, j'ose plus dormir
+M|mes enfants sont partis de la maison et je tourne en rond, je pleure en voyant leurs chambres vides
+M|depuis la retraite je vois plus personne, mon mari est mort, je parle à la télé. comment retrouver un peu de lien
+M|j'ai mes examens dans 2 semaines et je suis tellement angoissée que j'arrive plus à ouvrir un cahier
+M|mon fils de 19 ans reste enfermé dans sa chambre depuis 8 mois, il sort que la nuit. je sais plus quoi faire
+M|je prends du Xanax tous les soirs depuis 3 ans et j'arrive plus à m'en passer, comment arrêter sans passer par le médecin
+M|je vapote non-stop à 20 mg de nicotine, j'ai essayé d'arrêter 4 fois. un conseil ?
+M|j'achète des fringues compulsivement quand ça va pas, des cartons que j'ouvre même pas. besoin d'aide mais j'ai honte
+M|perfectionnisme maladif, je refais 10 fois mes mails, je mets 3 h à écrire 5 lignes
+M|je suis jaloux de ma copine à un point maladif, je fouille son téléphone et je me déteste pour ça
+M|ma meilleure amie est décédée d'un cancer en juin et personne autour de moi comprend que je sois encore triste
+M|ma mère est en dépression sévère depuis 1 an, elle sort plus de son lit. comment la convaincre de consulter
+M|j'ai des flashbacks de l'agression de l'an dernier, je suis suivie par une psychologue du CLSC mais ça va pas mieux
+M|j'ai des tics vocaux qui s'aggravent quand je suis stressée et des collègues se moquent de moi. syndrome de Tourette ?
+M|nuit blanche encore, mon coeur s'emballe dès que je ferme les yeux, mon cardiologue dit que c'est de l'anxiété
+S|ma copine et moi on a plus de rapports depuis 4 mois, j'ai plus aucune envie, je sais pas si c'est moi ou le couple
+S|j'ai 29 ans et j'ai des pannes une fois sur deux au lit, ma copine commence à poser des questions. c'est le stress ou faut consulter ?
+S|j'éjacule en moins d'une minute à chaque fois et j'en peux plus, ma copine dit rien mais je vois sa déception
+S|vaginisme, impossible de faire pénétrer quoi que ce soit, on essaie depuis 2 ans avec mon mari. y a des kinés spécialisées en Suisse ?
+S|j'ai mal pendant les rapports, une brûlure au début, je fais semblant que ça va pour pas gâcher l'ambiance
+S|comment annoncer à mes parents que je suis gay, ils sont très catho et mon père fait des blagues lourdes
+S|je suis marié depuis 12 ans, 2 enfants, et je me rends compte que je suis attiré par les hommes. je fais quoi
+S|je suis une femme trans, je commence les hormones lundi avec l'endocrino de l'hôpital. à quoi je dois m'attendre les premiers mois
+S|ma fille de 14 ans dit qu'elle ne se sent ni fille ni garçon et veut qu'on utilise un autre prénom. comment réagir
+S|pilule ou stérilet cuivre ? j'ai 24 ans, je supporte pas les hormones mais j'ai peur que ça fasse mal à poser
+S|capote craquée hier soir, pilule du lendemain à prendre avant quand ? je suis dans une petite ville et la pharmacie ferme
+S|jsuis encore vierge à 26 ans et j'ai trop honte pour le dire à un mec que je rencontre sur Tinder
+S|j'ai trouvé des messages de ma femme avec un collègue, elle nie tout. je la confronte ou je fais semblant de rien
+S|j'ai couché avec la meilleure amie de ma copine le mois dernier, j'ai envie de tout avouer mais ça va détruire 3 personnes
+S|mes nudes ont fuité dans le groupe de ma classe de terminale, je veux mourir de honte, je fais quoi
+S|mon mec veut un plan à trois et moi pas du tout, il dit que je suis coincée. j'ai l'impression d'être obligée
+S|on a décidé avec mon conjoint d'ouvrir notre couple mais en vrai je suis jalouse à crever. comment poser des règles
+S|ma femme est bi et elle a une copine depuis quelques mois, je suis d'accord mais je galère à gérer
+S|je viens d'apprendre que j'ai l'herpès génital, comment je préviens mon nouveau copain avant le premier rapport
+S|PrEP depuis 3 mois, je me demande si ça marche aussi contre les autres IST et si je peux arrêter les capotes avec mon mec
+S|j'ai jamais ressenti d'attirance sexuelle pour personne, ma copine pense que je ne l'aime pas. asexualité ?
+S|je n'ai jamais eu d'orgasme avec un partenaire, seule oui, avec lui jamais. y a un truc qui cloche chez moi ?
+S|j'aimerais essayer le bondage avec mon mari mais je sais pas comment lui en parler sans qu'il me prenne pour une pervertie
+S|2 mois après mon accouchement, ma gynéco dit que je peux reprendre mais j'ai zéro libido et mon mari commence à bouder
+S|mon mari a eu une prostatectomie et on n'a plus de vie intime depuis. comment on fait pour retrouver du plaisir ensemble
+S|je veux me faire vasectomiser à 33 ans, sans enfant, et mon médecin refuse. j'ai le droit d'exiger ?
+S|ma copine veut qu'on achète un sextoy ensemble, j'ose pas entrer dans le magasin, des conseils pour un premier achat
+S|première fois ce soir avec mon copain, j'ai 17 ans, je suis morte de trouille, ça fait mal ? on utilise quoi comme protection
+S|je suis retombée dans le lit de mon ex pour la 3e fois, je sais que c'est une mauvaise idée mais je peux pas m'en empêcher
+S|on est ami avec bénéfices avec un pote depuis 6 mois et je commence à avoir des sentiments, il sait rien
+S|je suis un homme marié de 45 ans qui voit des hommes en cachette dans des saunas, ma femme sait rien et je me sens horrible
+S|apres une soirée trop arrosée j'ai couché avec un inconnu sans capote, je dois faire quoi comme tests et quand
+S|ma femme me refuse depuis 3 ans, on dort dans des lits séparés, j'ai 41 ans et je sens que je vais craquer et voir ailleurs
+S|sécheresse vaginale depuis la ménopause, les rapports sont devenus un calvaire, y a des gels qui marchent
+S|mon copain a dit que sa dernière relation avait eu 40 partenaires avant lui et je peux pas m'arrêter d'y penser, jalousie rétroactive
+S|mon fils de 11 ans a été retrouvé en train de regarder du porno sur la tablette, je dois en parler comment sans le traumatiser
+S|mon fils de 16 ans m'a dit hier qu'il est gay, j'ai mal réagi, il pleure dans sa chambre. comment me rattraper
+S|ma fille veut que son copain dorme à la maison, elle a 17 ans. je suis pas à l'aise mais je veux pas qu'elle se cache
+S|je me sens coupable depuis que j'ai trompé mon mari il y a 6 ans, il le sait pas, et on essaie un bébé
+S|mon ex m'envoie des messages comme quoi il va publier nos photos intimes si je reviens pas
+S|j'ai peur d'être accro au sexe, je vais sur des applis de plan cul 3 fois par semaine et je me sens vide après
+S|je suis étudiante et un sugar daddy m'a proposé 800 euros par mois, je suis tentée par ce plan mais flippée
+S|avec ma femme on pense à l'échangisme, comment on trouve un club sérieux en Belgique sans se faire arnaquer
+S|mon copain veut tout le temps de la sodomie et moi ça me fait mal, comment lui dire non sans l'énerver
+S|complexé par la taille de mon sexe, 11 cm au repos, ma copine dit que c'est pas grave mais je me sens nul
+S|j'ai été abusée plus jeune et depuis j'arrive pas à être touchée par mon copain sans me figer, ça fait 3 ans qu'on est ensemble
+S|je suis bi mais jamais avoué à personne, je sors avec un mec et je voudrais pas lui mentir toute ma vie
+S|jai envie de coucher avec ma collègue, on se frôle tous les jours à la machine à café, et je suis en couple depuis 8 ans
+S|mon mari s'habille en femme en cachette, j'ai trouvé une valise de lingerie. je suis perdue, je dois lui en parler
+S|ma copine m'a dit qu'elle avait simulé pendant 2 ans, je suis détruit, je sais plus comment la toucher
+R|j'ai perdu la foi après le décès de mon père, je prie encore par habitude mais je sens plus rien. c'est grave
+R|je me suis converti à l'islam il y a 6 mois, ma famille catho est choquée, comment leur annoncer pour de bon
+R|je veux quitter les Témoins de Jéhovah mais toute ma famille est dedans, si je pars je perds tout le monde
+R|on m'interdit de porter mon foulard au boulot, la direction parle de neutralité, j'ai des droits en Belgique ?
+R|ramadan commence mardi, je suis enceinte de 5 mois, mon imam dit que je peux ne pas jeûner mais je culpabilise
+R|on veut une cuisine casher à la maison, deux éviers, ma belle-famille est stricte. par où commencer
+R|trouver de la viande halal pas chère près de chez moi à Roubaix, y a un boucher que vous recommandez
+R|mon copain est musulman, je suis catholique, on veut se marier mais nos parents sont contre. comment on fait
+R|mes parents refusent que je sorte avec quelqu'un qui n'est pas juif, c'est la 3e fois qu'ils me font la scène
+R|j'ai l'impression que Dieu me punit pour ce que j'ai fait cet été, je prie chaque soir pour qu'il me pardonne
+R|j'ai plus la foi depuis longtemps mais je continue d'aller à la messe pour ma grand-mère, jai l'impression d'être hypocrite
+R|je veux faire baptiser ma fille mais mon mari est athée, on s'engueule depuis des semaines
+R|ma confirmation est dans 2 mois et j'ai des doutes, mon curé de la paroisse compte sur moi, je fais quoi
+R|je fais mes 5 prières au bureau dans la salle de réunion en cachette, un collègue m'a vu. dois-je en parler aux RH
+R|j'étais dans une secte pendant 8 ans, j'en suis sortie il y a un mois, je sais pas ce que je dois faire de ma vie
+R|mon église évangélique me demande la dîme, 10 pour cent de mon salaire, c'est normal ? je galère déjà
+R|mon fils veut partir en mission chez les mormons pour 2 ans, je suis fière mais j'ai peur
+R|mes parents hindous veulent un mariage arrangé, j'ai 27 ans et je suis amoureuse de quelqu'un d'une autre caste
+R|je pratique le bouddhisme depuis 1 an et ma mère dit que c'est une secte, comment lui expliquer
+R|la bar-mitsva de mon fils est en juin, je dois tout organiser avec le rabbin de la communauté de Strasbourg
+R|le chabbat on éteint tout à la maison, mais mon mari veut regarder le foot le samedi. on trouve comment un compromis
+R|j'ai décidé d'enlever mon hijab après 10 ans, ma mère ne me parle plus
+R|c'est l'Aïd demain et je suis seule en France, ma famille est à Alger. des idées pour pas se sentir trop mal
+R|j'économise depuis 5 ans pour le Hajj avec ma mère, quelle agence sérieuse pour partir depuis Marseille
+R|je me suis fait critiquer par le pasteur devant toute la communauté parce que j'ai divorcé, j'ose plus retourner au culte
+R|j'ai peur de l'enfer, je fais des cauchemars sur le jugement dernier depuis que j'ai arrêté de pratiquer
+R|je suis ex-musulman et j'ai pas osé le dire à mes parents, je fais semblant de jeûner depuis 3 ans
+R|je suis catholique pratiquante mais je me suis séparée de mon mari, est-ce que je peux encore communier
+R|ma fille de 8 ans me demande pourquoi elle va pas au caté comme ses copines, on est athées mais ses grands-parents insistent
+R|je veux me marier à la mosquée mais mon père n'accepte pas mon fiancé qui est chiite, on est sunnites
+R|à l'école, mon fils refuse de manger à la cantine à cause du porc, la directrice fait des histoires
+R|enseignante à Montréal, la loi 21 m'interdit de porter mon hijab en classe, je pense démissionner
+R|on a voté pour le référendum sur le foulard et ça m'a énervée, je suis musulmane et suisse depuis 20 ans
+R|mon fils aura 8 jours samedi et on prévoit la circoncision rituelle, le mohel nous demande quels papiers
+R|à Noël on peut pas fêter chez ma mère car elle est Témoin de Jéhovah et mes enfants ne comprennent pas
+R|Pâques orthodoxe ce week-end, je suis la seule de ma famille à jeûner pendant tout le Carême, je me sens seul
+R|je suis sikh et on m'a refusé un poste à cause de mon turban, je pense saisir le Défenseur des droits
+R|mes amis de l'église pentecôtiste disent que j'ai pas encore reçu l'Esprit saint car je parle pas en langues, je me sens nulle
+R|mon examen tombe un samedi et je suis adventiste, le doyen refuse de le déplacer, j'ai le droit de demander
+R|après la mort de ma soeur je me demande pourquoi Dieu a permis ça, je suis en colère contre lui et ça me fait peur
+R|je me demande si j'ai la vocation pour entrer au couvent, mes parents seraient dévastés
+R|j'apprends le Coran par coeur à 40 ans et j'ai du mal à mémoriser, des méthodes qui marchent ?
+R|pendant le Carême j'arrête les réseaux, mais je craque toutes les 3 jours, je peux me rattraper ou c'est foutu
+R|je cherche un prêt immobilier sans intérêts pour respecter ma religion, les banques islamiques existent en France ?
+R|mon père à l'hôpital est juif pratiquant, comment on demande un repas casher à l'établissement
+R|jai peur d'avoir commis un péché impardonnable quand je me suis masturbé, mon prêtre m'a dit non mais j'y pense encore
+R|je suis catéchiste mais je ne crois plus à rien, personne ne le sait dans ma paroisse
+R|ma belle-mère veut que je me convertisse avant le mariage, mon mari dit non mais je le sens tiraillé
+R|on enterre mon grand-père selon le rite musulman demain, c'est la première fois que j'y vais, je dois porter quoi
+R|mon imam m'a conseillé de me réconcilier avec mon frère avant le Ramadan, on se parle plus depuis 5 ans à cause de l'héritage
+G|on a 3 mois de loyer de retard et le propriétaire vient de nous envoyer un commandement de payer. on a combien de temps avant l'expulsion
+G|j'ai pris un petit crédit conso de 500 euros chez Cetelem et maintenant je suis à 6 crédits, je ne sais plus comment rembourser
+G|jai déposé un dossier de surendettement à la Banque de France, la commission l'a déclaré recevable, ça se passe comment ensuite
+G|je suis fiché FICP depuis 2 ans, je peux ouvrir un compte normal ou louer un appartement ?
+G|l'huissier a saisi mon compte bancaire ce matin, j'ai 12 euros dessus et il me reste 15 jours avant le salaire
+G|j'ai perdu 4000 euros sur Parions Sport en un mois, ma femme sait pas, je tente de me refaire avec les cotes
+G|je me suis fait arnaquer sur de la crypto, 8000 euros partis, des gens qui m'appelaient tous les jours sur WhatsApp
+G|j'ai viré 2500 euros à un mec que j'ai rencontré sur Insta qui disait être militaire américain, je réalise que c'est une arnaque
+G|la CAF a suspendu mes allocations pour un trop-perçu de 1800 euros, je comprends rien, j'ai 2 enfants et je touche que le RSA
+G|je suis au CPAS depuis 3 mois, on me demande tous mes extraits bancaires et je me sens traitée comme une voleuse
+G|je suis à l'aide sociale au Québec et j'ai peur de perdre mon chèque si je reprends un petit boulot
+G|on me saisit 300 euros sur mon salaire chaque mois pour une dette que je pensais prescrite. c'est légal
+G|j'ai reçu une mise en demeure des impôts, 4200 euros de redressement et je peux pas payer d'un coup
+G|Pôle emploi a coupé mes allocs parce que j'ai manqué un rdv, je me retrouve sans rien et le loyer est dans 5 jours
+G|licenciée il y a 2 mois, j'ai plus que 300 euros sur mon compte et deux crédits qui tombent le 5
+G|ma facture d'électricité est de 640 euros et EDF menace de couper, je suis en famille monoparentale
+G|j'ai pris 30000 euros de prêt étudiant et je trouve pas de boulot, les mensualités commencent en janvier
+G|je suis à découvert de 1800 euros depuis 8 mois, la banque me facture des frais d'incident, comment sortir de ce cercle
+G|ma voiture va être reprise par la société de crédit, j'ai 4 mensualités de retard et j'en ai besoin pour aller travailler
+G|ma carte est bloquée, plafond atteint, et j'ai honte d'appeler mes parents pour la 3e fois
+G|j'ai acheté plein de trucs en 4x avec Klarna et Alma et je n'arrive plus à suivre les prélèvements
+G|j'ai une poursuite à l'Office des poursuites de Lausanne pour une facture d'assurance maladie non payée, je risque quoi
+G|jai emprunté 800 euros à un mec qui demande 1200 maintenant et il a menacé de venir chez moi
+G|j'arrive plus à payer ma mutuelle ni mon loyer, je dois choisir entre les deux ce mois-ci
+G|je vais aux Restos du coeur depuis un mois pour nourrir mes enfants, je veux plus que personne me voit y entrer
+G|ma mère m'a prêté 3000 euros que je peux pas rendre et elle a rien dit mais je sens qu'elle en a besoin
+G|j'ai co-signé le crédit de mon ex et maintenant la banque me réclame à moi 14000 euros
+G|depuis le divorce je paie seul le crédit immobilier de 1100 euros alors que ma part de salaire est de 1800
+G|facture de l'hôpital de 2300 euros pour mon opération, ma mutuelle rembourse presque rien et je dois payer d'ici fin du mois
+G|je dois 6000 euros d'arriérés d'impôts à Revenu Québec, ils vont saisir mon compte
+G|moi chômeur depuis 14 mois, ma femme veut qu'on vende la maison parce qu'on y arrive plus
+G|mes parents nous demandent 500 euros par mois depuis la mort de papa, mais j'en ai plus pour moi-même
+G|j'ai monté ma boite l'an dernier et je viens de déposer le bilan, redressement judiciaire, j'ai peur pour ma maison
+G|j'ai perdu 9000 euros sur un casino en ligne, j'ai pioché dans l'épargne de nos enfants
+G|contrôle fiscal sur mon auto-entreprise, je me suis planté dans ma déclaration TVA et j'ai tellement peur
+G|je suis payé au smic, une fois le loyer et les charges réglés il me reste 90 euros pour le mois, je fais comment
+G|crèche à 1100 euros par mois, je peux plus travailler à temps plein, c'est eux ou le salaire, je suis épuisée
+G|mon père est mort en nous laissant 40000 euros de dettes, on peut refuser l'héritage ?
+G|ma banque a fermé mon compte sans me prévenir et mon salaire arrive après demain, je fais quoi
+G|mon patron m'a payé en retard 3 mois de suite, le loyer est impayé et je suis en panique
+G|j'ai fait un chèque sans provision de 280 euros, la banque m'a envoyé un courrier recommandé
+G|je suis en retard de loyer et on touche l'APL mais elle est suspendue depuis septembre
+G|j'ai cliqué sur un faux mail de ma banque et on m'a vidé le compte, 3200 euros. la banque refuse de rembourser
+G|il me reste 40 euros d'épargne et mon chauffe-eau vient de lâcher, je peux pas payer 900 euros de plombier
+G|je mets mon alliance et mes bijoux en vente pour payer les factures, je me sens minable
+G|j'ai peur qu'on me licencie et on a un crédit de 280000 sur la maison, je dors plus
+G|jfais des heures sup au black pour payer ma dette de 5000 euros au Casino, ma copine pense que c'est pour les vacances
+G|je suis étudiante, je mange que des pâtes et mon propriétaire me réclame 6 mois de loyer d'un coup
+G|j'ai découvert que mon mari avait contracté 25000 euros de dettes en cachette, je suis sous le choc
+G|la banque m'a refusé un prêt car je suis en CDD, et j'ai besoin de 3000 euros pour réparer mon toit
+L|j'ai flashé à 92 au lieu de 80 hier, 3 points en moins, mon permis est à 4 points, je risque de le perdre ?
+L|jai vu mon vélo volé en vente sur Leboncoin, 200 euros, avec le même autocollant. je vais voir la police ou je mène l'enquête moi-même
+L|mon voisin fait du bruit jusqu'à 2h du matin et menace de me casser la gueule quand je lui dis, j'ai porté plainte hier
+L|mon ancien propriétaire refuse de me rendre ma caution de 1200 euros depuis 4 mois, je fais quoi, la commission de conciliation ?
+L|mon patron me doit 3 mois de salaire et dit qu'il a plus d'argent, je veux aller aux Prud'hommes
+L|je me suis fait prendre à voler un truc à Carrefour hier, 15 euros, la sécurité m'a amené au bureau, je risque quoi
+L|je reviens d'Espagne avec 80 grammes de cannabis dans le sac, j'ai peur de me faire contrôler à la frontière belge
+L|un mec me fait du chantage avec une vidéo que j'ai envoyée, il veut 500 euros par Western Union. sextortion, que faire
+L|quelqu'un a pris un crédit à mon nom, j'ai eu une lettre de recouvrement pour une dette que je connais pas
+L|mon frère et moi on s'écharpe pour l'héritage de maman, il a vidé son compte avant sa mort et il refuse de montrer les relevés
+L|mon ex me suit et m'envoie des messages, j'ai demandé une ordonnance de protection au juge aux affaires familiales
+L|j'ai reçu une convocation pour être juré d'assises et je suis terrifié à l'idée de juger quelqu'un
+L|le juge m'a condamné à 80 heures de TIG pour conduite sans permis, je dois commencer dans un mois, ça se passe comment
+L|je divorce, mon mari veut la garde exclusive de notre fille de 4 ans, je suis morte de peur
+L|j'ai passé 20 heures en garde à vue après une bagarre devant une boîte, je suis ressorti avec une convocation
+L|j'ai un casier avec une condamnation de 2015 pour vol, j'ai postulé dans une banque, ils vont le voir ?
+L|j'ai reçu une OQTF il y a 2 semaines, mon avocate fait un recours mais j'ai peur d'être arrêté en allant au travail
+L|mon titre de séjour expire dans 2 mois et la préfecture ne me donne pas de rendez-vous, je fais quoi
+L|j'ai été convoqué à un entretien préalable de licenciement lundi, mon chef me reproche des retards, je me présente seul ?
+L|mon patron me propose une rupture conventionnelle mais je sens qu'il me met la pression, je dois signer quoi
+L|ma collègue me harcèle depuis des mois, j'ai gardé les mails, je peux aller à l'inspection du travail ?
+L|mon proprio veut me mettre dehors alors que j'ai jamais raté un loyer, il prétend vouloir reprendre l'appartement pour son fils
+L|accrochage en voiture hier soir, j'étais en tort, l'autre conducteur veut un constat à l'amiable et il menace d'appeler la police
+L|j'ai été contrôlé à 0,9 g d'alcool en rentrant d'un mariage, le gendarme m'a retiré le permis sur place
+L|une ancienne amie raconte partout que je l'ai arnaquée, je pense l'attaquer pour diffamation, c'est possible ?
+L|au tribunal de commerce on me demande de payer 7000 euros à un fournisseur, je conteste
+L|on a la garde alternée mais mon ex ne ramène jamais notre fils à l'heure, j'ai gardé tous les sms, je saisis le juge ?
+L|mon ex-mari paie plus la pension alimentaire depuis 5 mois, 400 euros par mois, que faire
+L|j'ai porté plainte contre mon mari pour violences, le commissariat de Lille m'a dit d'attendre, j'ai peur de rentrer
+L|on s'est fait cambrioler pendant les vacances, les flics ont dit qu'ils feraient rien, mon assurance demande un dépôt de plainte
+L|ma voiture a été volée devant chez moi cette nuit, je suis allée au commissariat, et l'assurance veut un rapport
+L|j'ai été interpellé à la manif de samedi, mis en garde à vue et relâché, j'ai peur que ça ruine ma carrière
+L|j'ai reçu une amende de 135 euros dans le tram de Genève, j'avais oublié mon abonnement chez moi, c'est contestable
+L|j'ai téléchargé des films en torrent depuis des années et j'ai reçu un courrier de l'Hadopi, qu'est-ce que je risque
+L|mon fils de 16 ans a été attrapé avec un scooter volé, il est convoqué devant le juge des enfants
+L|ma fille a été harcelée au collège, on veut porter plainte contre le garçon et l'établissement, on commence par où
+L|le TAL (tribunal administratif du logement) m'a convoqué, mon proprio veut une hausse de loyer de 25 pour cent
+L|j'ai reçu un PV pour stationnement gênant et la photo montre pas ma plaque. je conteste comment
+L|je n'ai pas d'avocat et on m'a dit qu'on peut faire une demande d'aide juridictionnelle, quelles pièces faut-il fournir
+L|je fais ma demande de naturalisation, les entretiens avec la préfecture me stressent, je risque quoi si j'ai eu une condamnation à 20 ans
+L|j'ai déposé ma demande d'asile à l'OFPRA il y a 8 mois et toujours pas de convocation, je suis hébergé par une association
+L|ma femme et mes enfants sont toujours au pays et je veux les faire venir, le regroupement familial prend combien de temps
+L|j'ai reçu un SMS de la police qui me convoque demain pour une audition, je sais pas pourquoi et j'ai peur
+L|on m'a signalé pour fraude à la sécu, je dois répondre à un courrier de la CPAM
+L|jai reconnu l'enfant de ma copine avant la naissance mais on s'est séparés, je veux garder des droits
+L|on veut mettre ma mère sous tutelle, elle a Alzheimer et mon frère veut tout gérer, j'ai peur qu'il vide ses comptes
+L|mon mari a eu un bracelet électronique 8 mois après sa sortie de prison, il peut pas sortir le soir, comment on gère avec les enfants
+L|jai eu 6 mois de prison avec sursis et un mec m'a dit que ça apparaît pas sur le B2, c'est vrai
+L|mon chef m'a mis un avertissement injuste et je veux le contester, j'ai 11 ans d'ancienneté, je vais voir le syndicat ou direct l'avocat
+L|mon fils a eu un accident de trottinette et le conducteur du camion dit que c'est de sa faute, l'assurance me demande une déclaration, je dois prendre un avocat
+#G
+H|rédige une fiche d'information pour les patients d'un cabinet médical sur la vaccination contre la grippe, ton clair et rassurant
+H|explique le fonctionnement de l'insuline à des élèves de 3e pour un exposé de SVT
+H|je suis infirmière stagiaire, peux-tu me faire un résumé des signes d'une crise d'asthme chez l'enfant pour mon rapport de stage
+H|combien de personnes sont touchées par le diabète de type 2 en France d'après la DREES
+H|quels sont les effets secondaires connus du Doliprane chez l'adulte, c'est pour un cours de pharmacologie
+H|écris une courte nouvelle où le héros apprend qu'il a une tumeur au cerveau, ça se passe à Montréal dans les années 80
+H|à quel âge est mort Pierre Desproges et de quoi, c'est pour un quiz de culture générale
+H|je suis kiné et je cherche un texte simple à donner à mes patients sur les exercices pour une tendinite de l'épaule
+H|quelle est la différence entre un virus et une bactérie, version simple pour un exposé en CM2
+H|je prépare une présentation pour mon équipe de RH sur le remboursement des soins par la mutuelle d'entreprise
+M|donne-moi un plan de conférence de 30 minutes sur la prévention du burn-out pour des managers
+M|explique la différence entre anxiété et dépression, pour mon cours de psycho L1
+M|je suis psychologue scolaire, peux-tu m'aider à rédiger une lettre aux parents sur le harcèlement en classe
+M|quelle est la prévalence du TDAH chez l'enfant en Suisse, avec sources
+M|écris un poème sur la solitude d'un vieil homme dans un EHPAD
+M|c'est quoi les cinq étapes du deuil de Kübler-Ross, résume pour un exposé
+M|rédige un article de blog pour mon cabinet de sophrologie sur la gestion du stress avant les examens
+M|j'écris un roman et mon personnage est alcoolique, comment décrire ses crises de manque de façon réaliste
+M|quel acteur a parlé publiquement de sa dépression, c'est pour un article sur la santé mentale des célébrités
+M|comment fonctionne une thérapie cognitivo-comportementale, explique pour des étudiants en soins infirmiers
+S|rédige un cours de 45 minutes sur l'éducation à la vie affective et sexuelle pour des classes de 4e
+S|c'est quoi la différence entre orientation sexuelle et identité de genre, pour une présentation en entreprise
+S|je suis sexologue et je cherche un texte pour expliquer le vaginisme à mes patientes, de façon sobre
+S|quelles sont les méthodes de contraception les plus utilisées en France, avec pourcentages
+S|écris une scène de roman où deux anciens amants se retrouvent dans un hôtel à Bruxelles, sans être explicite
+S|résume l'histoire de la dépénalisation de l'homosexualité en France
+S|combien de couples en France déclarent avoir des relations extraconjugales selon les enquêtes
+S|rédige une affiche de campagne pour la journée mondiale de lutte contre le sida pour notre association
+S|je suis professeure de SVT, comment expliquer la puberté à des élèves de 6e sans les gêner
+S|que dit la loi française sur le consentement sexuel, c'est pour mon cours de droit pénal
+R|explique les cinq piliers de l'islam pour un exposé en histoire des religions
+R|quelle est la différence entre catholiques et protestants, résume pour des collégiens
+R|je suis journaliste, je prépare un article sur la montée de la laïcité au Québec depuis la loi 21
+R|écris un dialogue entre un prêtre et un jeune athée pour ma pièce de théâtre
+R|que signifie la kashrout, quels sont les aliments interdits, c'est pour préparer un repas d'entreprise
+R|combien de musulmans vivent en France selon l'Insee et l'Ined
+R|rédige un texte pour une exposition sur l'histoire des Témoins de Jéhovah en Europe au 20e siècle
+R|je suis professeur d'histoire, propose un déroulé de cours sur les guerres de religion en France
+R|quand a lieu Yom Kippour cette année, je dois planifier un planning pour mon équipe
+R|raconte brièvement la vie de Bouddha pour des élèves de 5e
+G|explique comment fonctionne la procédure de surendettement en France pour un article de magazine
+G|je suis conseillère en économie sociale et familiale, aide-moi à écrire une fiche pratique sur les aides au logement
+G|combien de ménages belges sont en défaut de paiement selon la Banque nationale
+G|écris une scène de film où un homme annonce à sa famille qu'il a perdu tout son argent au poker
+G|c'est quoi la différence entre un taux d'intérêt fixe et variable, pour un cours de maths financières en terminale
+G|je suis comptable, comment j'explique à un client le principe des acomptes provisionnels
+G|quels sont les plafonds de ressources pour le RSA en 2025, c'est pour une présentation à notre équipe d'assistants sociaux
+G|donne-moi un résumé de la crise des subprimes de 2008 pour mon exposé d'histoire
+G|rédige un modèle de lettre de relance pour une facture impayée, mon entreprise a un client en retard
+G|combien coûte en moyenne une arnaque au faux conseiller bancaire en France, avec les chiffres de Cybermalveillance
+L|rédige un modèle de lettre de contestation d'amende pour mes clients, je suis juriste dans une association de consommateurs
+L|c'est quoi la différence entre garde à vue et arrestation, pour mon cours de droit pénal en première année
+L|explique la procédure de divorce par consentement mutuel en France, pour un article de blog pour mon cabinet d'avocats
+L|combien de personnes ont été condamnées pour excès de vitesse en France l'an dernier selon la Sécurité routière
+L|écris le début d'un polar où un inspecteur interroge un suspect dans un commissariat de Marseille
+L|je suis RH, rédige-moi une procédure type pour un entretien préalable à un licenciement
+L|que s'est-il passé lors du procès de Gisèle Pelicot, résume les faits de façon neutre
+L|quelles sont les conditions pour obtenir un titre de séjour salarié en Belgique, c'est pour former des bénévoles d'une association d'aide aux migrants
+L|je suis journaliste judiciaire, aide-moi à structurer un article sur la réforme de l'aide juridictionnelle
+L|que risque un mineur de 15 ans qui commet un vol selon l'ordonnance de 1945, question pour un devoir de droit

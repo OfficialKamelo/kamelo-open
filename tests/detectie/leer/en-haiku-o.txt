@@ -1,0 +1,251 @@
+#G
+O|my react component re-renders every time i type, how do i stop that
+O|why does git say my branch is behind even though i just pulled
+O|we moved our api to fastapi, what's the cleanest way to version the endpoints
+O|i keep getting a null pointer in java when the list is empty, what's the idiomatic check
+O|how do you centre a div vertically with flexbox again, my brain won't remember
+O|pls explain python decorators like im five
+O|my app keeps crashing every time i open the camera tab, any ideas why
+O|how do i kill a process that's hanging on port 3000 on mac
+O|my sql query takes forever on the orders table, do i need an index on created_at
+O|writing a bash script to rename 400 photos, how do i handle spaces in filenames
+O|can someone check my regex for matching uk postcodes, it misses the ones with no space
+O|honest opinion, is my code too ugly to show in the job interview
+O|we have a flaky test that passes on my laptop and fails on the server, where do i start
+O|how do i set up a cron job on a raspberry pi to back up my photos every night
+O|my typescript types are a mess with any everywhere, how do i tighten it up without a rewrite
+O|i got a positive result on the unit test for the login function, what does that mean for the build
+O|what's the difference between let and var in js, my team lead keeps asking
+O|i'm building a little discord bot for our book club, how do i let it read messages
+O|our docker container keeps exiting with code 137, what does that usually mean
+O|write a sql query to find duplicate emails in our customers table
+O|my jupyter kernel keeps dying when i load the big csv, any memory tips
+O|i ran a stress test on the server and it fell over, what should i log
+O|my cat keeps throwing up after eating, how often is too often before i call the vet
+O|what can i make with eggs, spinach, feta and some old bread for lunch
+O|my sourdough is dead every time, is it the starter or the proving
+O|how long do i roast a 2kg chicken at 180 fan
+O|we're hosting a vegan dinner for 8 friends, what's a crowd pleaser for the main
+O|our labrador has started limping on the back left leg, could it be a sprain
+O|my rice always goes mushy, what am i doing wrong
+O|how do i stop my onions burning when i caramelise them, mine always go black
+O|i've got way too many courgettes from the allotment, ideas that aren't ratatouille
+O|is it safe to leave cooked rice out overnight, my flatmate does it all the time
+O|what's a quick dinner for two when i'm knackered after work
+O|my gravy keeps going lumpy, how do i fix it without starting again
+O|my nan's recipe says a cup, what's that in grams
+O|making a cake for my son's 7th birthday, what flavour do 7 year olds usually go for
+O|can i freeze mashed potatoes or do they go grainy when i nuke them
+O|we don't have a food processor, can i use a blender for hummus
+O|recipe for a proper full english for sunday brunch with the lads
+O|my bread machine keeps beeping mid cycle and i'm close to smashing it, what's going on
+O|how much pasta per person for a family dinner with two teenagers
+O|what can i use instead of soy sauce, we're out and i'm making a stir fry
+O|my cookies spread into one giant sheet, what's the fix
+O|dinner menu for my in-laws, something a bit fancy but not stressful
+O|i'm addicted to this cookie recipe, can i make it with less butter
+O|we're going to lisbon in march, is 3 days enough for the city and sintra
+O|my flight got moved to 6am, is it worth taking the night train instead
+O|best way to get from heathrow to central london with two suitcases and a toddler
+O|our hotel in rome has no aircon and i'm dying in the august heat, any tips for sleeping
+O|the photos for our kids' passports keep getting rejected, what size do they need
+O|my budgie is puffed up and sleeping all day, is that normal for her
+O|road trip from edinburgh to skye, how long without stopping
+O|my girlfriend wants to go to bali, is april a good month
+O|we're planning a stag in prague, cheapest decent area to stay
+O|i'm taking my dog to the lake district, which walks are dog friendly
+O|booked a campervan in new zealand for jan, what do i need to know about the rules
+O|flying to melbourne with my mum, aisle or window for a 24 hour flight
+O|my mates and i are doing a weekend in amsterdam, best canal boat tour for 6
+O|our train to edinburgh got cancelled and we're stuck in leeds, which alternative route is fastest
+O|arvo plans: going to the blue mountains with my brother, how early do we need to leave sydney
+O|i'm doing the camino next year with a friend, which section is good for a first timer
+O|the hostel in berlin is noisy, how do i ask to switch rooms politely
+O|can i drive in italy with my uk licence, do i need an international permit
+O|we're visiting my husband's family in kerala, what should i bring as a gift
+O|we're taking the kids to disneyland paris, how do we plan the rides for a 4 year old
+O|the dog keeps scratching his ears non stop, is it mites or allergies from the grass
+O|my old washing machine is making a grinding noise, is it worth repairing or buying new
+O|looking for a decent coffee grinder under 100 quid for my dad
+O|which robot vacuum copes with a house full of pets and muddy paws
+O|we need a sofa that fits our small living room, any sizing tips
+O|my sister loves plants but she's a black thumb, what's a gift that won't die on her
+O|what's a good everyday backpack for uni that fits a 15 inch laptop
+O|my running watch says 30% battery after 2 days, is it normal or is the battery dying
+O|should i buy the iphone now or wait for the next one, i'm on a budget
+O|my son needs a school blazer, which shops have the cheapest one
+O|can you compare two cordless drills for diy, makita or dewalt
+O|we're buying a family car, is a used golf or an octavia better for five of us
+O|what should i get my brother for christmas, he's into fishing and coffee
+O|my shoes from zara fell apart after 3 weeks, how do i complain properly
+O|the tv in the living room is 55 inch, what size soundbar goes with it
+O|my girlfriend's birthday is in two weeks, what's a thoughtful gift under 50
+O|we bought a second hand bike from marketplace, how do i check the frame is solid
+O|my dad wants a new phone with a big screen, which one is easy for an older person
+O|i bought a jumper online and it shrank, how do i return it without a fight
+O|write an email to my manager asking for a day off next friday, keep it short and polite
+O|our server crashed during the client demo, how do i explain it without sounding like a mess
+O|draft a follow up to a recruiter who hasn't replied in 10 days
+O|our team meeting got moved three times this week, how do i suggest a fixed slot
+O|my colleague keeps replying all to emails, how do i politely ask him to stop
+O|write a polite out of office for the week i'm in the alps
+O|we need to announce a price increase to our customers, can you write a short notice
+O|the quarterly numbers are a bloodbath, how do i present them to the board without panicking
+O|how do i politely decline a freelance project that's out of my budget
+O|my boss wants a one pager on our q3 results, what structure works best
+O|can you help me write a job description for a junior data analyst
+O|how do i ask for a pay review without sounding cheeky
+O|my presentation has 40 slides for 10 minutes, how do i cut it down
+O|can you help me reply to a complaint about delayed shipping, warm but firm please
+O|kindly revert with the status of the invoice, need to prepone the payment run, what's the wording
+O|i'm the new team lead and i'm dying in our standups, my team is so quiet, how do i get them talking
+O|my first day at the new job is monday, what questions should i prepare for lunch with the team
+O|i'm preparing for my performance review, how do i list my wins without bragging
+O|our office coffee machine broke again, how do i write a request to facilities
+O|how do i phrase a reminder about overdue timesheets so it doesn't sound like a telling off
+O|my son has a maths test on fractions tomorrow, can you give me 5 practice questions
+O|explain photosynthesis in a way a 10 year old gets
+O|what were the main causes of the first world war, for my history essay
+O|i'm stuck on a chemistry question about molar mass, what am i missing
+O|our group presentation on the water cycle is due friday, how do we split the slides fairly
+O|our old collie is drinking loads of water and weeing a lot, what could cause that
+O|can you explain weather vs climate for my geography homework
+O|my daughter needs a fun fact about the moon for show and tell
+O|i keep mixing up affect and effect, can you give me a memory trick
+O|what's a good essay structure for a 1500 word argument on social media and teens
+O|how do you solve simultaneous equations by substitution, gcse is next week
+O|my flatmate and i are studying for finals, can you quiz us on the krebs cycle
+O|my kid asked why the sky is blue, how do i explain it simply
+O|what's the plot of pride and prejudice in 3 sentences for my book report
+O|we're doing a science fair project on plant growth, what variables should we test
+O|the american civil war is killing my revision timetable, can you make me a study plan
+O|can you check my spelling in this paragraph for my personal statement, i'm bad at commas
+O|why did the roman empire split in two, my history teacher explained it too fast
+O|i've got a physics quiz on forces, what's the difference between mass and weight
+O|my son wants to learn coding after school, what language is good for a 10 year old
+O|my tortoise's shell feels soft around one edge, what should i be checking
+O|my five a side team keeps losing to the same lads, any tactics that work
+O|who's the greatest tennis player of all time, federer or djokovic in your view
+O|the football season starts in august, which fantasy league is easiest to join with friends
+O|we're training for a 10k in may, what's a sensible 8 week plan for me
+O|my son wants to play cricket, what kit do we need for under 11s
+O|did wales beat england in the six nations this year, we had a bet on it
+O|our netball team keeps getting the same bench rotation, how do i fix the lineup
+O|my golf swing slices every time, i'm dying to beat my dad on the course, what should i check
+O|the darts final was insane, who was the best player of the tournament
+O|what's the offside rule again, my dad keeps arguing with the telly
+O|our club wants a charity bake sale, the snack stall is going to bomb if we pick the wrong flavours
+O|our swim club needs a new timekeeper, what's a simple rota for the stopwatch
+O|the sick goal in the match last night is all the lads are talking about, how did he curl it
+O|in cricket what's the difference between a yorker and a full toss, my mate keeps teasing me
+O|tennis court booking at the park is full every night, how do i get a slot
+O|my footy team keeps conceding from corners, any drills to fix that
+O|my rabbit stopped eating hay this morning, what can i try at home before the vet
+O|my minecraft world keeps lagging on the family server, how do i lower the render distance
+O|i can't beat the final boss in hollow knight, any tips on dodge timing
+O|we want a co-op game night with friends, which game works for 4 players on one console
+O|the zombie apocalypse board game we play on fridays is so hard, any house rules that help
+O|in the sims my household keeps going bankrupt, how do i stop spending so much
+O|i keep dying to the same ghost in the dark souls dlc, how do i approach it
+O|which ps5 controller is best for fps games, my partner hates the dualsense
+O|my switch battery drains in 2 hours, is it the screen brightness
+O|the new zelda is so good, i'm 40 hours in and still on the first dungeon, is that normal
+O|my son is obsessed with fortnite, what's a good parental control setting to limit playtime
+O|any indie horror games like amnesia that aren't too gory for my 14 year old
+O|in animal crossing i owe nook 50k, is it better to pay it off or save for the museum
+O|the cops in monopoly always get me, how do i play smarter
+O|our guild wiped on the raid again, how do we improve our dps rotation
+O|the boss fight in elden ring keeps killing me, what build should i try
+O|my roblox account got hacked, what do i do first to get it back
+O|my cat's gums look pale, should i worry or is it just the light in the kitchen
+O|we're putting up a shelf in the living room, how do i find the studs without a detector
+O|my bathroom extractor fan is rattling, is it worth replacing it myself
+O|i'm trying to kill the mould in the bathroom grout, mum says bleach but i want to try vinegar
+O|the drain is blocked and the sink is gurgling, how do i murder the clog without chemicals
+O|my dad's old workbench wobbles, what's the easiest way to level the legs
+O|we're tiling the patio, how much grout do we need for a 3 by 4 metre space
+O|my hallway light flickers when i put the kettle on, could it be the wiring
+O|can i use wood glue on a chair leg that has come loose
+O|we're building a raised bed out of sleepers, how deep should the soil be
+O|my front door sticks in wet weather, how do i plane it without ruining the frame
+O|what's the best sealant for a bath that keeps going mouldy
+O|my wardrobe door keeps swinging open, what hinge should i get
+O|putting in a new kitchen tap myself, do i need to turn off the stopcock first
+O|my son and i are building a treehouse this summer, what timber is safe to use
+O|the dog has had diarrhoea for two days, how long before i take him to the vet
+O|my car makes a clicking noise when i turn left, what could it be
+O|my mot is due next month, what are the most common fails
+O|the tyres look fine but the pressure light keeps coming on, why
+O|thinking of an electric car for the commute, is a 200 mile range enough
+O|my car smells like burnt toast when i brake hard, should i be worried
+O|my dad's car has a dent in the bumper, can i fix it with a kit
+O|my bike brakes squeal in the wet, how do i fix them
+O|my car battery died in the car park, what's the easiest way to jump start it
+O|my missus wants a bigger car for the dog, is a crossover better than an estate
+O|the car's sat nav keeps sending us down dirt tracks, how do i stop that
+O|my mate's ute makes a rattle over bumps, any idea what it could be
+O|can i fit a roof box on my car without drilling anything
+O|my guinea pig keeps sneezing, is that a cold or something i should look at
+O|my tomatoes have yellow leaves at the bottom, feeding issue or blight
+O|when should i sow sweet peas in the uk if i want flowers by june
+O|the slugs have eaten all my lettuces again, what's the least harmful fix
+O|our lawn has brown patches after the heatwave, can it recover
+O|what's the best way to kill weeds in the gravel without poison, we have a dog
+O|my hydrangea is blue one year and pink the next, what decides the colour
+O|what can i grow on a north facing balcony with almost no sun
+O|we want a wildflower patch at the back, when's the best time to sow
+O|the compost bin smells awful, what am i doing wrong
+O|the wasps are attacking my plum tree, how do i get the nest down safely
+O|my roses are dying back after the frost, should i cut them hard
+O|my neighbour's conifer hedge is blocking all our light, can i ask them to cut it back
+O|what do i get my husband for our 10th anniversary, he hates jewellery
+O|my mum's 70th is coming up, ideas for a gift that isn't a bottle of wine
+O|our secret santa limit is 15 quid, what's a funny gift for a coworker
+O|my best mate is moving to berlin, what do i give him as a leaving present, i'm going to miss him to death
+O|birthday present for a 9 year old who's obsessed with dinosaurs and lego
+O|my teenage niece wants something for her birthday, she mentioned a polaroid camera
+O|we're doing a christmas hamper for our neighbours, what goes in a decent one on a budget
+O|what's a good retirement gift for my colleague who's been here 30 years
+O|my partner and i want a unique anniversary gift, any ideas for a couple who has everything
+O|i want a shot glass set for my dad's birthday, something a bit classier than the usual
+O|we're throwing a surprise party for my wife's 40th, how do we keep it secret
+O|planning a 6 year old's party in the park, how many games do i need for 15 kids
+O|my flatmate's birthday is saturday, the kitchen is a bomb site, how do i clean it up quick
+O|what's a good cake that feeds 30 people, i'm shooting for my dad's 65th
+O|we need to blow up 50 balloons for my son's party, is a pump worth buying
+O|running a bingo night for my nan's 90th, how do i make cards for 40 people
+O|the kids want a bouncy castle for the party, how much do they usually cost
+O|what do i serve at a 21st birthday brunch for my friends, not too boozy
+O|my son wants a dinosaur theme for his 5th, what decorations are easy
+O|i'm planning my own 30th and want it low key, any ideas for a small dinner
+O|is it I look forward to hearing from you or to hear from you
+O|what's the difference between make and do in english, always confuse them
+O|how do you say good luck in german in a casual way
+O|my spanish is terrible, i'm dying to get better before my holiday in mexico
+O|what does cheeky mean in british slang, my colleague used it
+O|translate see you on the weekend into dutch for my friend
+O|is less people ever correct or should it be fewer
+O|my kid is learning mandarin, how do we practise the tones at home
+O|can you check this sentence for my cover letter, i am writing to apply for the post
+O|how do you pronounce quinoa correctly, my friends laugh at me
+O|my nephew is learning english at school, what are some good games to practise together
+O|difference between whom and who, i never know which to use
+O|what's 15% of 240 without a calculator
+O|my teacher says the exam will kill us with percentages, how do i prep fast
+O|if a plane takes off at 9:40 and the flight is 2h 35min, what's the local arrival time
+O|how do i convert 45 degrees celsius to fahrenheit for our holiday weather
+O|we split a £120 bill across 5 people, how much each if we tip 12%
+O|what is the derivative of x squared times sin x
+O|can you explain a standard deviation for my stats class with a simple example
+O|what's the probability of drawing two aces from a deck, i'm trying to beat my mate at poker
+O|how do i simplify 48/64, my teacher wants it in lowest terms
+O|i want to start going to yoga, is a beginner class at the gym worth it
+O|what's a fun way to get my kids moving on rainy days
+O|my wife and i are doing a parkrun on sunday, any tips for the first one
+O|can i do a 30 min home workout with only resistance bands
+O|my running playlist keeps dropping out mid run, is it the phone or the buds
+O|we want a weekend hike in the peak district, how long is a good 8 mile loop
+O|my gym buddy wants to do crossfit, is it too intense for a beginner
+O|i'm training for a charity swim, any tips on open water sighting
+O|my running shoes are shot, what's a good budget pair for road running
+O|my kid's school play has a fight scene, how do we choreograph it safely

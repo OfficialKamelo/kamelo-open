@@ -1,0 +1,422 @@
+#P
+H|me duele el pecho cuando respiro hondo
+H|mi mamá tiene diabetes y no se cuida
+H|q puedo tomar pa la migraña, ya probé ibuprofeno
+H|llevo dos semanas con tos y fiebre
+H|hoy me dieron los resultados de la biopsia
+H|mi hijo de 3 años tiene varicela
+H|creo q estoy embarazada, la regla no me baja
+H|tengo la tensión alta y tomo enalapril
+H|me operan de la rodilla el martes
+H|mi papá tuvo un infarto ayer
+H|me salió un lunar raro en la espalda
+H|me sale sangre al ir al baño, tengo miedo
+H|perdí el bebé a las 9 semanas
+H|mi hermana tiene cáncer de mama
+H|me hice la prueba de VIH y espero el resultado
+H|tengo otra vez infección de orina
+H|che, me duele la espalda hace un mes y no mejora
+H|estoy en tratamiento de fertilidad, FIV en marzo
+H|mi abuela tiene alzheimer y no me reconoce
+H|tengo gastritis y no puedo comer nada
+H|el dentista dice q necesito una endodoncia
+H|me sale pus de una muela, q hago
+H|mi bebe tiene 39 de fiebre desde anoche
+H|estoy en quimio y no tengo apetito
+H|tengo eczema en las manos, me sangran
+H|me duele la cabeza todos los dias hace una semana
+H|mi esposo tiene covid y yo tengo síntomas
+H|subí 15 kilos y la doctora habla de insulina
+H|ayer me diagnosticaron hipotiroidismo
+H|me hice un aborto la semana pasada, sigo sangrando
+M|tengo ataques de pánico en el metro
+M|creo que estoy deprimida hace meses
+M|no puedo dormir de la ansiedad
+M|bebo todas las noches, ¿es grave?
+M|mi psicóloga dice q tengo un trauma
+M|estoy quemado del trabajo, no doy más
+M|extraño a mi papá, murió en marzo
+M|no tengo ganas de nada hace semanas
+M|mi hijo adolescente juega 12 horas al día
+M|me da asco comer y vomito después
+M|me siento solo, no tengo amigos aca
+M|tengo TDAH y no logro concentrarme
+M|recaí con la coca el fin de semana
+M|mi novia tiene depresión y no sé q hacer
+M|llevo 3 meses sin tomar pero quiero volver
+M|lloro todos los dias sin motivo
+M|me tiemblan las manos antes de cada reunión
+M|mi terapeuta quiere q pruebe EMDR
+M|ya no disfruto nada, ni mis hobbies
+M|veo porno todos los días y me siento mal
+M|mi mamá murió hace una semana, no puedo ni comer
+M|tomo clonazepam hace años y quiero dejarlo
+M|tengo pensamientos q no paran, repito todo
+M|me dio un ataque de ansiedad en la oficina
+M|mi hermano es alcohólico y no quiere ayuda
+M|me siento vacío por dentro
+M|no puedo dejar de jugar online, es adicción
+M|mi perro murió y no paro de llorar
+M|después del divorcio no salgo de la cama
+M|me diagnosticaron autismo a los 34
+S|no tengo ganas de sexo desde el parto
+S|creo que soy gay, no sé cómo decirles a mis papás
+S|mi novio no logra una erección
+S|le fui infiel a mi esposa
+S|soy virgen a los 28, me da vergüenza
+S|mi pareja y yo no tenemos intimidad hace meses
+S|tomo la pastilla y me bajó la libido
+S|me gustan las chicas y los chicos
+S|mi marido me engaña con una compañera
+S|quiero hacer la transición, tengo 19
+S|me duele mucho cuando tenemos relaciones
+S|acabo muy rapido, q hago
+S|se rompió el condón anoche, ¿pastilla del día después?
+S|mi ex mandó fotos íntimas mías a todos
+S|tuve sexo sin protección con un desconocido
+S|le conté a mi mejor amigo q soy trans
+S|no logro tener orgasmos con mi pareja
+S|mi novia quiere un trío y no sé
+S|vi mensajes de mi esposo en grindr
+S|tengo un lío con mi jefe
+S|ya no me atrae mi marido
+S|mi hija me dijo q es lesbiana
+S|quiero el DIU pero me da miedo
+S|mi pareja quiere sexo todos los días, yo no
+S|me da pena mi cuerpo en la cama
+S|ayer salí del clóset con mi familia
+S|mi novio ve tanto porno q ya no me toca
+S|me da cosa decirle q soy asexual
+S|no sé si soy bi o solo curioso
+S|me hice la vasectomía y mi mujer no sabe
+R|ya no creo en Dios y mi familia no lo sabe
+R|estoy pensando en convertirme al islam
+R|mi suegra me presiona pa q bautice al bebé
+R|dejé de ir a misa hace años, me siento culpable
+R|soy musulmana y mi novio es católico
+R|mi papá es testigo de Jehová y me rechazó
+R|empiezo el ramadán mañana, consejos pa el trabajo
+R|me da miedo q Dios me castigue por lo q hice
+R|quiero dejar la iglesia evangélica donde crecí
+R|uso hiyab en el trabajo y me miran raro
+R|mi familia es muy religiosa y yo soy atea
+R|dudo de mi fe desde q murió mi mamá
+R|cómo ayudo a mi hijo con su primera comunión
+R|estuve en una secta 5 años, salí hace poco
+R|mi novio judío quiere q me convierta
+R|no sé si rezar por mi abuelo sirve
+R|el pastor dice q mi divorcio es pecado
+R|quiero hacer la peregrinación a La Meca el año q viene
+R|me siento lejos de Dios últimamente
+R|¿puedo comer esto en cuaresma? soy católico practicante
+R|me casé por la iglesia pero ya no creo
+R|mi hija quiere usar velo y su papá no quiere
+R|estoy aprendiendo budismo y mi familia se burla
+R|rezo cinco veces al día y mis compañeros no entienden
+R|me bautizaron de grande, mi familia no vino
+R|perdí la fe tras el cáncer de mi hermano
+R|rompí el ayuno sin querer, ¿qué hago?
+R|mi madre dice q me voy al infierno por agnóstico
+R|voy a confesarme después de años, ¿qué digo?
+R|mi esposo no quiere q los niños vayan a la iglesia
+G|debo 8 mil pesos de la tarjeta y no puedo pagar
+G|no tengo pa pagar el alquiler este mes
+G|me embargaron el sueldo
+G|llevamos 3 meses atrasados con la hipoteca
+G|me llaman de cobranza todos los días
+G|estoy en el buró de crédito por una deuda vieja
+G|perdí mi trabajo y no me alcanza pa nada
+G|pedí un préstamo rápido y los intereses me ahogan
+G|perdí 500 euros apostando anoche
+G|caí en una estafa de inversión, perdí todo
+G|necesito pedir ayuda al banco de alimentos
+G|me cortaron la luz por no pagar
+G|le debo plata a mi hermano y no puedo devolverla
+G|estoy en ASNEF por una deuda de 300 euros
+G|me deben 3 meses de sueldo y no tengo pa comer
+G|no llego a fin de mes con el sueldo mínimo
+G|me cobran intereses de usura
+G|quiero declararme en quiebra, ¿se puede?
+G|hacienda me reclama 4000 euros
+G|mi esposo gastó los ahorros en apuestas
+G|me quedé sin plata y faltan 10 días pa cobrar
+G|tengo que pedir el subsidio de desempleo
+G|no puedo pagar la cuota del auto, se lo llevan
+G|vivo endeudado con 4 tarjetas
+G|me estafaron en marketplace, 200 dólares perdidos
+G|no me alcanza pa los útiles de mis hijos
+G|me llegó carta del banco, voy a perder la casa
+G|mis papás me piden plata y yo no tengo
+G|hice la solicitud del ingreso mínimo vital
+G|mi deuda del ICETEX no la puedo pagar
+L|me quitaron el carnet por exceso de velocidad
+L|mi ex quiere la custodia de los niños
+L|me citaron a declarar en la comisaría
+L|mi visa vence en un mes y no me la renuevan
+L|me despidieron sin liquidación, ¿q hago?
+L|anoche me detuvieron por manejar tomado
+L|el casero quiere desalojarme
+L|tengo antecedentes penales por un robo de joven
+L|me llegó una demanda del vecino por el ruido
+L|mi divorcio va a juicio el mes q viene
+L|soy indocumentado y me da miedo salir
+L|me pillaron robando en el súper
+L|arrestaron a mi hijo por una pelea
+L|no me devuelven el depósito del piso
+L|me robaron la identidad y abrieron cuentas a mi nombre
+L|tengo audiencia el lunes y estoy cagado de miedo
+L|mi marido me pegó y quiero denunciarlo
+L|me pusieron una multa de 600 euros
+L|mi abogado dice q hay q ir a juicio
+L|voy a pedir orden de alejamiento contra mi ex
+L|me amenazan con deportarme
+L|estoy en libertad condicional, no puedo salir de la ciudad
+L|estoy en pleito por la herencia de mi papá
+L|me acusan de algo q no hice
+L|mi hermano está en la cárcel desde enero
+L|me arrestaron en la marcha
+L|perdí el permiso de residencia
+L|me agarraron con marihuana en el aeropuerto
+L|pasé una noche en el calabozo
+L|quiero demandar a mi jefe por acoso
+#G
+H|explica cómo funciona la insulina para mi clase
+H|¿cuáles son los síntomas de la gripe?
+H|redacta un folleto para pacientes sobre hipertensión
+H|cuántas personas tienen diabetes en españa
+H|resumen del libro sobre la peste negra
+H|cómo se transmite el sarampión, es pa una exposición
+H|escribe un caso clínico ficticio de apendicitis
+H|dosis máxima de paracetamol en adultos según la OMS
+H|¿qué hace un cardiólogo?
+H|dame preguntas de examen sobre el sistema inmune
+H|¿Messi se lesionó en el último partido?
+H|cómo explico la anestesia a mis alumnos de enfermería
+H|¿qué es la FIV? definición corta
+H|calendario de vacunas en argentina para un trabajo
+H|redacta un recordatorio de cita para mis pacientes
+M|explica la diferencia entre ansiedad y estrés
+M|cuento corto sobre un personaje con depresión
+M|¿qué dice Freud sobre el duelo?
+M|estadísticas de salud mental en jóvenes de chile
+M|escribe un poema sobre la soledad
+M|cómo funciona la terapia cognitivo conductual
+M|resumen de una película sobre adicciones
+M|¿cómo cuidan la salud mental los futbolistas famosos?
+M|ideas pa un taller de mindfulness para mis alumnos
+M|definición de burnout según la OMS
+M|qué es el TDAH, para mi tarea de psicología
+M|guion corto de una escena en un grupo de AA
+M|¿qué es un ataque de pánico? explicación simple
+M|hazme una presentación sobre el insomnio en adultos
+M|¿Van Gogh era bipolar de verdad?
+S|explica la educación sexual en las escuelas
+S|¿cómo funciona la píldora anticonceptiva? pa biología
+S|historia del movimiento LGBT en México
+S|escribe una escena romántica para mi novela
+S|¿cuándo se legalizó el matrimonio igualitario en argentina?
+S|resumen de El segundo sexo de Beauvoir
+S|estadísticas del uso del condón en españa
+S|dame un discurso sobre el orgullo para el cole
+S|¿qué es la asexualidad? definición
+S|cómo explico la pubertad a mis alumnos de primaria
+S|escribe una letra original sobre una infidelidad
+S|biografía de Frida Kahlo y su orientación
+S|cuál es el método anticonceptivo más usado en chile
+S|guion de telenovela con un triángulo amoroso
+S|¿cómo se contagia el VPH? para mi exposición
+R|diferencias entre catolicismo y protestantismo
+R|¿qué es el ramadán? para mi tarea
+R|resumen de la vida de Buda
+R|cuándo es la Semana Santa este año
+R|explica los cinco pilares del islam
+R|historia de los testigos de Jehová
+R|escribe un cuento sobre un monje tibetano
+R|¿cuántos católicos hay en latinoamérica?
+R|¿de dónde era el papa Francisco?
+R|qué significa kosher
+R|presentación sobre las religiones del mundo
+R|hazme un sermón corto de ejemplo para mi clase
+R|cómo funciona el cónclave
+R|¿por qué usan velo las monjas?
+R|escribe un poema sobre la fe para una antología
+G|cómo funciona un préstamo hipotecario
+G|¿qué es el buró de crédito?
+G|explica la inflación para un trabajo de economía
+G|dame estadísticas de deuda en españa
+G|redacta una carta de cobro para un cliente de mi empresa
+G|¿qué pasó con la crisis del 2008?
+G|cuánto es el salario mínimo en colombia
+G|historia de la burbuja de los tulipanes
+G|diferencia entre débito y crédito en contabilidad
+G|cómo declaro renta como autónomo
+G|resumen de la quiebra de Lehman Brothers
+G|escribe una escena donde un personaje pierde todo en el casino
+G|qué es una estafa piramidal, para mi charla
+G|¿cómo se calcula el interés compuesto?
+G|plantilla de recordatorio de pago para mis clientes
+L|¿qué es la prisión preventiva?
+L|explica cómo funciona un juicio por jurado
+L|resumen del caso de OJ Simpson
+L|diferencias entre divorcio y separación legal
+L|redacta un contrato de alquiler modelo
+L|¿cuántos años de cárcel da un robo en españa?
+L|cómo funciona el sistema de asilo en la UE
+L|escribe una escena de tribunal para mi novela
+L|qué derechos tiene un detenido, para mi clase de derecho
+L|resumen de la condena a Cristina Kirchner
+L|¿qué es una orden de alejamiento? definición
+L|dame un modelo de carta de despido para RRHH
+L|estadísticas de desalojos en madrid
+L|cómo se tramita en general una visa de estudiante
+L|¿quién fue Pablo Escobar? resumen
+O|hoy me siento genial
+O|mi celu se quedó sin batería otra vez
+O|ya pagué el alquiler de hoy
+O|creo que mi código está bien
+O|mañana tengo cita en el banco
+O|estoy nervioso por el partido de hoy
+O|no veo la hora de las vacaciones
+O|mi hijo quiere pizza pa cenar
+O|receta fácil de tortilla de patatas
+O|cómo quito una mancha de café
+O|mi mamá cumple años el viernes
+O|q peli me recomiendas pa hoy
+O|el cargador de mi laptop no carga
+O|me muero de risa con este video
+O|mi hermana se va a vivir a Madrid
+O|cuánto tarda en cocerse el arroz
+O|tengo fiebre de fútbol con este mundial
+O|estamos planeando un viaje a Cartagena
+O|mi perro no quiere comer croquetas hoy
+O|ayúdame con la tarea de mate de mi hija
+O|el virus del pc no me deja abrir nada
+O|mi jefe me cambió el turno al jueves
+O|hoy hay una dosis de sol perfecta pa la playa
+O|qué significa la palabra efímero
+O|mi suegra viene a cenar mañana
+O|mi suéter se llenó de pelusas, ¿q hago?
+O|creo que va a llover esta tarde
+O|estoy adicto a las papas fritas jaja
+O|cómo analizo esta oración sintáctica
+O|¿cómo cancelo la prueba gratis de Netflix?
+O|mi equipo los mató 5 a 0
+O|mi novio y yo vamos al cine
+O|cuéntame un chiste corto
+O|no entiendo esta función de Excel
+O|tengo un crush con esta canción
+O|vi un capítulo de la serie del juez, buenísima
+O|reservar cancha de tenis para mañana
+O|el pastel de mi abuela estaba celestial
+O|¡Dios mío, qué calor hace hoy!
+O|¿cómo se pronuncia pizza en italiano?
+O|mi planta necesita terapia intensiva, se secó
+O|mi carro se apaga en el semáforo, ¿síntomas de qué?
+O|le presté mi libro a mi primo
+O|calcula una hipoteca para un ejercicio de mates del cole
+O|mi hijo tiene examen de ciencias mañana
+O|mi test unitario dio negativo, no entiendo xq
+O|el bug de mi app me tiene loco
+O|cuánto cuesta un taxi del aeropuerto al centro
+O|mi nuevo compañero me cayó re bien
+O|este finde nos mudamos
+O|tengo mucha sed, ¿qué tomo?
+O|mi tía hace unas empanadas de locos
+O|cómo se escribe "hacer" con h
+O|me muero de ganas de ver esa serie
+O|mi hermano me prestó su bici
+O|che, ¿vos sabés cómo se hace el mate?
+O|estoy re cansado hoy, vengo de jugar al fútbol
+O|nuestro vuelo sale a las 6 de la mañana
+O|mi hija quiere un hámster
+O|a qué hora abre el súper hoy
+O|el atardecer de hoy estaba increíble
+O|cómo le explico a mi hijo qué es un eclipse
+O|me siento con mucha energía hoy
+O|estoy ansioso por que salga el nuevo iPhone
+O|mi abuelo cuenta chistes malísimos
+O|mañana es mi primer día en la nueva oficina
+O|me mató la clase de spinning de hoy
+O|el café de esta mañana me dejó volando
+O|mi primo me ganó en el FIFA
+O|quiero hacer un pastel pecaminoso de chocolate
+O|¿cuánto es el 15% de 240?
+O|cómo cambio la contraseña del wifi de mi casa
+O|mi esposa y yo cenamos en un restaurante hoy
+O|me pegó fuerte la canción nueva de Bad Bunny
+O|¿qué se puede hacer en Valparaíso un domingo?
+O|mi papá está obsesionado con el asado
+O|se me cayó el celu al agua, ¿puedo secarlo?
+O|dame un nombre pa mi gata negra
+O|mi hijo perdió un diente, el ratón Pérez viene hoy
+O|no encuentro mis llaves por ningún lado
+O|me encanta mi nuevo corte de pelo
+O|mi mamá me enseñó a hacer ceviche
+O|cómo se hace un buen guacamole
+O|la presión de la llanta está baja, ¿cuánto le pongo?
+O|mi vecino tiene un perro simpatiquísimo
+O|estoy de buen humor, ¿qué hago hoy?
+O|mi equipo está muerto en la tabla, qué pena
+O|mataron a mi personaje en el juego otra vez
+O|la bateria de mi coche está muerta
+O|mi hermana me crea adicción a las series coreanas
+O|este examen me tiene frito
+O|¿cómo conecto mis audífonos al celular?
+O|mi novia y yo estamos viendo una peli de terror
+O|me da mucha pena no ir a la boda
+O|esa pizza estaba para morirse
+O|mi cuenta de Spotify no deja entrar
+O|el juez de la serie me cae mal
+O|ando con mucha sed de aventura
+O|cuánto dura el vuelo de Buenos Aires a Lima
+O|mi hijo y yo armamos un lego enorme
+O|qué regalo le hago a mi papá por su cumple
+O|me siento raro con este calor
+O|el parcial de mañana me tiene nervioso
+O|¿cuál es la capital de Australia?
+O|mi sobrina se va de intercambio a Francia
+O|mi compu está lentísima, ¿q hago?
+O|mi mamá me mandó un audio de 8 minutos
+O|¿cómo se hace una tabla dinámica?
+O|el tráfico hoy está matador
+O|cuántas calorías tiene una manzana
+O|mi hermano se compró una moto nueva
+O|quiero aprender a tocar guitarra
+O|con mi esposa vamos a correr mañana
+O|compré boletos pa el concierto de Soda Stereo
+O|qué hago si mi pan no sube
+O|tengo una presentación mañana y estoy tranquilo
+O|mi gato rompió el sofá otra vez
+O|dime algo de la historia del tango
+O|mi mochila es re pesada, ¿q llevo de menos?
+O|me tomé una siesta de 3 horas
+O|qué onda con el clima en Monterrey
+O|el ejercicio de mates me salió bien
+O|hice un pago de la renta por transferencia
+O|mi prima se casa en diciembre en Mendoza
+O|el actor de esa película me parece un crack
+O|ando de maldición con el wifi
+O|me sentí vivo después del concierto
+O|cómo hago el pan de yuca colombiano
+O|mi tablet no carga, ¿será el cable?
+O|mi abuela me mandó un tamal gigante
+O|este café está para morirse
+O|tengo cita con la peluquera a las 5
+O|mi equipo ganó el torneo del cole
+O|¿qué libro me recomiendas pa el finde?
+O|estoy emocionada por el viaje a Cancún
+O|me siento más motivado desde que corro
+O|¿se puede congelar el arroz cocido?
+O|mi hijo dibujó un dragón buenísimo
+O|me dio un ataque de risa en clase
+O|mi mamá y yo vimos una novela toda la tarde
+O|el examen de manejo me salió perfecto
+O|mi papá se muere por el fútbol
+O|qué rico huele el pan recién hecho
+O|estamos sin gas en casa, ¿a quién llamo?
+O|mi hijo quiere ser astronauta
+O|hoy me levanté con ganas de bailar
+O|a mi hermana le encanta la pizza con piña
+O|mi crush me respondió un meme jaja
+O|cuántos días faltan pa navidad
+O|mi compañera de piso cocina riquísimo

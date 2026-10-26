@@ -1,0 +1,272 @@
+#P
+H|mein opa vergisst alles, demenz?
+H|mama hat brustkrebs, wie sag ichs den kindern
+H|blutdruck heut morgen 170 zu 100, hab angst
+H|sohn hat seit 3 tagen fieber ueber 39
+H|12 woche schwanger und leichte blutung
+H|papas befund kam, biopsie naechste woche
+H|nach knie-op immer noch dick, normal
+H|ausschlag am ganzen koerper nach dem antibiotikum
+H|oma wird schwerhoerig, hoergeraet bringt nix
+H|tochter hat bauchweh rechts unten, blinddarm?
+H|heute diabetes typ 2 diagnostiziert bekommen
+H|meine schwester hatte eine fehlgeburt
+H|mama hatte schlaganfall, chance auf erholung
+H|schilddruese unterfunktion, immer muede
+H|kribbeln im linken arm seit heut frueh
+H|bub hat asthma und das spray hilft nimmer
+H|nach chemo blaehbauch, normal?
+H|gehirnerschuetterung, seit wochen kopfweh
+H|freund hat sich handgelenk gebrochen, wie lang gips
+H|knoten in der achsel getastet
+H|papa kriegt neue huefte naechste woche
+H|cholesterin zu hoch laut hausarzt
+H|ivf wieder nicht geklappt, fix und fertig
+H|opa hat parkinson, zittern wird schlimmer
+H|meine frau hat gurtelrose, was hilft
+M|rueckfall nach 200 tagen, keiner weiss es
+M|komm nicht mehr aus dem bett, nix freut mich
+M|panikattacke in der u-bahn heut wieder
+M|mein bruder trinkt jeden tag, was tun
+M|burnout, heul jeden tag am klo in der arbeit
+M|unser hund ist gestern gestorben, bin fertig
+M|tochter isst kaum noch, magersucht vielleicht
+M|jeden abend online zocken um geld, kann nicht aufhoeren
+M|sohn daddelt 12 stunden, kommt nicht aus dem zimmer
+M|zwangsstoerung, kontrolliere den herd dauernd
+M|ich glaub mein mann hat adhs, vergisst alles
+M|pruefungsangst, herzrasen
+M|seit opas tod fuehl ich nix mehr
+M|kollege kifft taeglich, mach mir sorgen
+M|therapie angefangen, gehts mir schlechter
+M|selbstwert am boden, geh kaum noch raus
+M|fressanfaelle nachts, dann erbrechen
+M|mama ist depressiv seit papa weg ist
+M|jeden abend ne flasche wein, muss aufhoeren
+M|freundin hat borderline, bin am ende
+M|tochter ritzt sich, was sag ich ihr
+M|trauer um meine katze seit wochen
+M|schlafe nicht mehr vor lauter angst
+M|bruder nimmt am wochenende koks
+M|seit 6 wochen nicht gewettet, bleib dran
+S|gestern wieder keine erektion bekommen
+S|mein mann fasst mich seit monaten nicht an
+S|ich glaub mein freund geht fremd, nachrichten gefunden
+S|coming-out bei den eltern am samstag
+S|bin bi und meine freundin weiss nix
+S|pille killt meine lust komplett
+S|wir wollen offene beziehung, ich hab angst
+S|tochter sagt sie ist trans, wie unterstuetz ich sie
+S|chlamydien test gemacht, ergebnis mittwoch
+S|kondom gerissen, pille danach noetig
+S|sex tut weh seit der geburt
+S|freund kommt nach einer minute, peinlich
+S|sohn hat sich als schwul geoutet, papa schweigt
+S|keine lust mehr durch antidepressiva
+S|affaere meiner frau, kann nicht verzeihen
+S|spirale oder hormonstaebchen
+S|herpes, wie sag ichs der neuen freundin
+S|frau will getrennte betten, keine naehe mehr
+S|zweifle an meinem geschlecht seit dem studium
+S|mann schaut zu viel porno, ignoriert mich
+S|komm beim sex nicht zum hoehepunkt
+S|ungeschuetzter sex, angst vor hiv
+S|mit dem chef geschlafen, fuehl mich elend
+S|freund will dreier, bin unsicher
+S|schwule fantasien obwohl verheiratet
+R|glaube verloren seit papas tod
+R|bei den zeugen jehovas ausgestiegen, familie meidet mich
+R|eltern akzeptieren meinen christlichen freund nicht
+R|ramadan fasten faellt schwer, schlechtes gewissen
+R|mama schleppt mich in die kirche, bin atheist
+R|trau mich nicht zu sagen dass ich nicht mehr glaube
+R|oma will dass ich wieder in die messe geh
+R|meine familie sagt ich komm in die hoelle
+R|opa will keine hochzeit ausserhalb der kirche
+R|zweifle an allem aus der sonntagsschule
+R|papa will dass ich kopftuch trage
+R|exmuslim und versteck es daheim
+R|schwester ist jetzt bei so ner freikirche
+R|mann ist hindu, meine eltern toben
+R|pfarrer sagt meine scheidung ist suende
+R|aus der kirche ausgetreten, nachbarn reden
+R|kind fragt warum wir nicht mehr in die kirche gehen
+R|eltern wollen kirchliche hochzeit, ich nicht
+R|sohn zum islam konvertiert, mein mann ist entsetzt
+R|fastenzeit nicht durchgehalten, fuehl mich schlecht
+R|angst meiner mama zu sagen dass ich buddhistin bin
+R|bruder in strenger gemeinde, bricht kontakt ab
+R|schwiegereltern bestehen auf sonntagsmesse
+R|schabbat mit juedischer schwiegerfamilie, fuehl mich fremd
+R|aus der sekte raus, alle freunde weg
+G|die pfaenden mein gehalt
+G|versteck zweite kreditkarte vor meinem mann
+G|3 monate miete im rueckstand, kuendigung kam
+G|kleinkredit aufgenommen, zahl jetzt das dreifache
+G|inkasso ruft taeglich bei mama an
+G|papa hat 20000 verzockt, gestern rausgekommen
+G|schufa eintrag, bank lehnt kredit ab
+G|vier karten am limit, trau mich nicht post aufmachen
+G|bruder hat schulden bei kredithaien
+G|konto im minus und noch 2 wochen bis gehalt
+G|mietrueckstand 2400, raeumungsklage
+G|oma auf betrueger reingefallen, erspartes weg
+G|bafoeg rueckzahlung, lohnpfaendung droht
+G|versteckte schulden meiner frau, 15000
+G|strom abgestellt, kann nicht zahlen
+G|mietgeld verspielt am automaten
+G|bei freunden geliehen, kann nicht zurueckzahlen
+G|job weg, hypothek 2 monate im verzug
+G|ex hat mir alle schulden hinterlassen
+G|auto gepfaendet, noch 6000 offen
+G|privatinsolvenz, wie fang ich an
+G|krankenkasse nicht bezahlt, mahnungen
+G|gerichtsvollzieher kommt naechste woche
+G|bin pleite, mein mann weiss nix
+G|klarna bei 5 sachen, komm nicht nach
+L|gestern festgenommen, was jetzt
+L|polizei will meinen sohn morgen vernehmen
+L|vermieter klagt wegen kaution
+L|ex will sorgerecht, gericht naechste woche
+L|blitzer 250 euro und 2 punkte
+L|fristlos gekuendigt, glaub das ist unrechtmaessig
+L|papa hat vorstrafe, kann er auswandern
+L|chef anzeigen wegen mobbing, hab angst
+L|einbruch gehabt, polizei interessiert sich nicht
+L|bruder in u-haft, verhandlung donnerstag
+L|mahnbescheid fuer unbezahltes bussgeld
+L|polizei hat mein auto durchsucht, durfte die das
+L|mann will alleiniges sorgerecht, hab anwalt
+L|alkoholkontrolle 0,9 promille, erstes mal
+L|nachbar stalkt mich, anzeige
+L|sohn beim ladendiebstahl erwischt
+L|zu unrecht beschuldigt im job, gespraech freitag
+L|fahrrad geklaut, polizei gab nur aktenzeichen
+L|vernehmung wegen betrug in der firma, anwalt?
+L|cousin kriegt sozialstunden
+L|ex verstoesst gegen kontaktverbot
+L|freund bei demo festgenommen
+L|arbeitsgericht termin wegen meiner kuendigung
+L|parkstrafe 100 euro, einspruch
+L|vorladung als zeuge von der polizei
+#G
+H|was sind symptome von diabetes typ 2
+H|wie viele menschen haben demenz in oesterreich
+H|ich bin hausaerztin, patientenfolder zu bluthochdruck
+H|was ist ein normaler blutdruck
+H|wie funktioniert chemotherapie
+H|krankenschwester hier, kurze anleitung wundversorgung
+H|statistik zu schlaganfaellen in deutschland
+H|unterschied zwischen virus und bakterien
+H|wie lange gips bei gebrochenem handgelenk
+H|wie funktioniert eine ivf
+H|was misst der hba1c
+H|geschichte der polioimpfung
+H|autor: figur erholt sich nach huefte-op, wie laeuft reha
+H|apothekerin hier, 100 woerter zu paracetamol hoechstdosis
+H|wie viele menschen sind weltweit schwerhoerig
+H|was ist das erste trimester
+H|ursachen fuer hohes cholesterin
+H|was ist eine biopsie
+H|podcastfolge ueber alzheimer forschung
+H|wie wirkt metformin
+M|was ist eine panikattacke
+M|psychologe hier, 150 woerter zu panikattacken fuer meine website
+M|statistik burnout bei lehrern
+M|unterschied zwischen traurigkeit und depression
+M|wie funktioniert verhaltenstherapie
+M|schulpsychologin, flyer zu pruefungsangst
+M|was ist eine zwangsstoerung
+M|wie viele glueckspielsuechtige gibt es in deutschland
+M|anzeichen fuer essstoerung, fuer lehrer-workshop
+M|geschichte der psychiatrie
+M|phasen der trauer nach kuebler-ross
+M|text fuer beileidskarte nach tod vom haustier, tierarztpraxis
+M|was ist adhs bei erwachsenen
+M|unterschied psychologe psychiater
+M|romanautor: wie verhaelt sich figur beim alkoholentzug
+M|was ist gaming disorder laut who
+M|wie wirken ssri
+M|kurs erste hilfe fuer psychische gesundheit inhalte
+M|tipps fuer chefs gegen burnout im team
+M|was ist das hochstapler syndrom
+S|unterschied zwischen schwul und bisexuell
+S|wie sicher ist die pille
+S|was ist eine sti
+S|unterrichtsplan sexualkunde 8 klasse
+S|geschichte der lgbt bewegung in deutschland
+S|was bedeutet nicht-binaer
+S|statistik zu fremdgehen in ehen
+S|wie funktioniert eine vasektomie
+S|was ist erektile dysfunktion, ursachen
+S|therapeutin hier, handout zu kommunikation in offenen beziehungen
+S|seit wann ist die ehe fuer alle erlaubt in oesterreich
+S|was ist polyamorie
+S|text fuer pride post meiner firma
+S|wie schuetzen kondome vor hiv
+S|was ist die kupferspirale
+S|journalist: sti zahlen in der schweiz
+S|was ist asexualitaet
+S|wie unterscheiden sich transrechte in europa
+S|wie lange wirkt die pille danach
+S|unterschied zwischen sex und gender
+R|wie viele praktizierende katholiken gibt es in bayern
+R|warum benutzen die amish keinen strom
+R|menue ideen fuer iftar in meinem cafe
+R|was ist die fastenzeit
+R|geschichte der reformation
+R|unterschied zwischen sunniten und schiiten
+R|was ist jom kippur
+R|warum lehnen zeugen jehovas bluttransfusionen ab
+R|wie viele muslime leben in deutschland
+R|ich bin lehrerin, stundenbild weltreligionen
+R|was ist eine mormonen mission
+R|erklaer die fuenf saeulen des islam
+R|was ist humanismus
+R|geschichte von scientology
+R|regeln fuers fasten im hinduismus
+R|was ist exkommunikation
+R|ideen fuer interreligioese trauung, ich bin hochzeitsplanerin
+R|wie viele sind aus der kirche ausgetreten 2023
+R|was ist diwali
+R|statistik zu atheismus in europa
+G|wie funktioniert eine privatinsolvenz
+G|was ist eine lohnpfaendung
+G|schuldnerberater hier, flyer zu kleinkrediten
+G|was ist der effektivzins bei einem kleinkredit
+G|wie lange bleibt ein schufa eintrag
+G|was ist die restschuldbefreiung
+G|geschichte des schuldturms
+G|wie viele haushalte sind ueberschuldet
+G|was ist ein schuldenbereinigungsplan
+G|durchschnittliche kreditkartenschuld in den usa
+G|rechte von mietern bei mietrueckstand
+G|was darf ein gerichtsvollzieher
+G|blogartikel wie man kredithaie erkennt
+G|wie funktioniert der schufa score
+G|was ist pfaendungsfreigrenze
+G|zinseszins bei kreditkarten erklaert
+G|statistik zu spielschulden
+G|journalist: inflation und privatverschuldung
+G|wie gruende ich eine schuldnerberatung
+G|was ist ein mahnbescheid
+L|promillegrenze in oesterreich
+L|was ist eine verwarnung der polizei
+L|ich bin anwalt, vorlage fuer ein mahnschreiben
+L|was passiert vor dem amtsgericht
+L|unterschied zwischen ordnungswidrigkeit und straftat
+L|wie lange steht eine vorstrafe im fuehrungszeugnis
+L|was sind meine rechte bei festnahme
+L|wie funktioniert das sorgerecht nach scheidung allgemein
+L|was ist eine sozial ungerechtfertigte kuendigung
+L|statistik zu fahrraddiebstahl
+L|wie viele punkte in flensburg bis fuehrerscheinentzug
+L|was ist ein kontaktverbot
+L|was ist ein schiedsgericht
+L|rechtsanwaltsfachangestellte, checkliste kleine forderungen
+L|geschichte von habeas corpus
+L|verjaehrungsfrist bei betrug
+L|wie funktioniert prozesskostenhilfe
+L|autor: wie laeuft eine festnahme in den usa ab
+L|was ist ein bussgeldbescheid
+L|wie laeuft eine klage ab

@@ -1,0 +1,201 @@
+#G
+O|creo que mi código está bien pero me da un error en la línea 14, ¿puedes revisarlo? es un for en python
+O|xq mi móvil se apaga de golpe cuando la carga está al 15%? tengo un samsung a52 y la batería es nueva
+O|necesito tres ejemplos de oraciones con sentencia subordinada sustantiva pa el ejercicio de sintaxis de mañana
+O|la prueba gratis de spotify se acaba el viernes, como la cancelo pa q no me cobren el mes siguiente
+O|vos sabés cuánto mide una cancha de pádel? quiero marcar una en el patio de casa, tengo 10 x 6 metros nomás
+O|me compré una funda nueva pero el case no deja pasar la carga inalámbrica, ¿es normal o está defectuoso?
+O|como sumo solo las celdas en rojo en excel? tengo una columna con 300 filas y mi jefe quiere el total hoy
+O|mis tests unitarios en jest dan negativo en el CI pero en local pasan todos, q puede ser
+O|mi laptop tiene un virus o algo, va lentísima y salen ventanas con publicidad, ¿cómo lo quito sin formatear?
+O|jaja me mata el calor en sevilla, qué puedo cenar q no necesite encender el horno
+O|en mi partida de Elden Ring me mataron 15 veces seguidas con el mismo jefe, ¿algún truco para Malenia?
+O|Buenas tardes. Mi hermano y yo queremos montar un servidor de Minecraft para los primos, ¿cuánta RAM hace falta para unos 8 jugadores?
+O|estoy adicto a las papas fritas de cebolla, no puedo parar jajaja, ¿hay alguna receta casera parecida?
+O|mi mamá es adicta a las novelas turcas, ya va por la tercera temporada de esa q sale en netflix, ¿me recomiendas otra parecida pa regalarle?
+O|dios mío q rico quedó el bizcocho de limón, es un pecado de lo bueno q está, ¿lo puedo congelar?
+O|esta tarta de queso es el cielo, la hice con philadelphia y galleta maría, pero se me hundió al enfriar, ¿por qué?
+O|creo q mañana llueve en Bogotá, ¿llevo paraguas o chaqueta? voy de rumba con mis primos
+O|hola, estoy aprendiendo inglés y no entiendo cuándo usar "fine" y cuándo "okay", ¿hay diferencia?
+O|me pasó una cosa rarísima con mi bici: hace un ruido tipo clac clac cada vez q pedaleo, ¿los síntomas de q falla el pedalier?
+O|mi coche arranca pero tiembla al ralentí y se enciende la luz del motor, ¿podría ser la bobina? lo llevo mañana a diagnosis
+O|tengo q hacer la factura a un cliente por el logo q le diseñé, 350 euros más IVA, ¿cómo lo pongo en el pdf?
+O|le presté un libro a mi cuñada hace meses y nunca me lo devuelve, ¿cómo se lo recuerdo sin que suene pesado?
+O|para mates nos mandaron una calculadora de hipoteca en excel, con cuota, interés y plazo, ¿cómo hago la fórmula PAGO?
+O|tengo una crush con esa canción de Bad Bunny q salió ayer, no puedo dejar de ponerla, ¿hay una parecida?
+O|fiebre del sábado noche en mi casa: mi papá y yo no nos perdemos ningún partido del Barça, ¿qué cenamos para el clásico?
+O|mi hijo está loco con los dinosaurios, ¿qué museo en Madrid recomiendan para un niño de 6 años?
+O|esa sudadera q me regalaron se llena de bolitas de pelusa, ¿hay forma de quitarlas sin estropear la tela?
+O|dosis diaria de sol para la monstera? la tengo junto a la ventana pero se le ponen amarillas las hojas
+O|mi pothos necesita terapia urgente, tiene las hojas caídas y no sé si riego mucho o poco
+O|el secreto de mi abuela para las albóndigas era la canela, ¿te cuento mi confesión culinaria y me dices si es raro?
+O|la depresión del terreno junto a mi casa se llena de agua cuando llueve, ¿qué plantas aguantan eso?
+O|en geografía nos piden explicar la depresión del Ebro, ¿me ayudas con un resumen de 10 líneas?
+O|la presión de las llantas de mi moto, ¿cuánta debo ponerle? es una Honda cb125 y salgo en carretera el finde
+O|se me va la presión del agua en la ducha cuando alguien abre la cocina, ¿será el calentador?
+O|ayer vi la peli de Joker y quedé aturdido, ¿cuál es la diferencia entre el cómic y la película?
+O|che, creo q mi equipo va a ganar la liga este año, ¿cómo va la tabla? soy hincha de Boca desde chico
+O|tengo fe en mi equipo de trabajo pero el cliente exige entrega el lunes, ¿cómo reparto las tareas en trello?
+O|mi sobrina se tomó la sopa entera, ¡qué orgullo! ¿qué postre sano le puedo hacer con plátano?
+O|El juez de la serie Suits siempre me ha caído bien, ¿en qué temporada aparece el juicio más largo?
+O|jugando a Phoenix Wright el juicio se me complica, no consigo la prueba del cuchillo, ¿alguna pista?
+O|llevo toda la tarde de pelea con el router, se me cae el wifi cada 10 min y ya reinicié 3 veces
+O|mi hijo mayor pregunta por qué el cielo es azul, ¿cómo se lo explico para q lo entienda un niño de 7?
+O|necesito una playlist de rock de los 90 pa limpiar la casa el sábado, creo q con eso me animo
+O|me debe un café mi compa de oficina por el apuesta del partido, ¿cómo le cobro con gracia? jaja
+O|buenas, vengo del trabajo agotado de tanto tecleo, ¿hay ejercicios de estiramiento pa las manos? uso mucho el mouse
+O|tengo q resolver una ecuación de segundo grado: 2x² - 5x + 3 = 0, ¿me das el paso a paso?
+O|sabes qué es un chivo expiatorio? me lo preguntó mi hija para su redacción de lengua
+O|llego tarde otra vez, es mi culpa por no poner la alarma, ¿qué app de despertador me recomiendan?
+O|nos dieron a mi pareja y a mí una tarjeta regalo de Ikea, ¿qué mueble pequeño nos conviene para el pasillo?
+O|mi perro está fatal con los fuegos artificiales, ¿hay algún truco pa q no se esconda debajo de la cama?
+O|cómo hago un efecto de cámara lenta en CapCut? quiero editar el video del cumple de mi sobrino
+O|quiero aprender a tocar la guitarra, mi tío me prestó la suya, ¿por qué canciones empiezo?
+O|dime tres sinónimos de "creer" para no repetir tanto en mi trabajo de lengua
+O|el cargador de mi mac se calienta muchísimo, ¿es normal o debería cambiarlo?
+O|me aparece "tarjeta de memoria dañada" en mi cámara gopro, ¿cómo recupero los videos de las vacaciones?
+O|estoy preparando un cumpleaños sorpresa para mi mamá, 60 años, ¿qué temática se les ocurre pa una fiesta en el jardín?
+O|Hola. ¿Podría explicarme la diferencia entre "ser" y "estar" con ejemplos sencillos? Mi esposa y yo estudiamos italiano y se parecen
+O|ayer se me murió la tele justo en el penal del final, no puedo creer mi mala suerte jajaja, ¿cómo la reseteo?
+O|en el Fortnite me cayeron 4 encima y ni me dio tiempo de construir, ¿cuál es la mejor sensibilidad para mando?
+O|mi hermana y yo discutimos sobre si la piña va en la pizza, ¿quién tiene la razón? jaja
+O|se me desconfiguró la impresora hp y ya no imprime en color, ¿sabes qué driver bajar?
+O|como se dice "el crédito de la película" en inglés? es para subtitular un video del cole
+O|necesito la fórmula del área de un trapecio, me la olvidé y tengo examen en la mañana
+O|mi suegra viene a comer el domingo y quiero hacer paella pa 6 personas, ¿cuánto arroz y caldo?
+O|por que en Excel me sale #REF! cuando copio la fórmula a otra hoja? ya revisé las celdas y están bien
+O|hoy mi novio y yo vimos Dark en netflix y no entendimos nada del tiempo, ¿hay algún esquema de las líneas temporales?
+O|tengo un bug en mi app de react: el estado no se actualiza al hacer click, creo q es el useEffect, ¿qué puede ser?
+O|me ardió la lengua con el chile habanero jajaja, ¿hay algo q lo calme rápido? no quiero tomar agua
+O|en Valorant mi equipo se rinde siempre en el round 3, ¿cómo motivo a los compas sin ser pesado?
+O|vendo una bicicleta de montaña rodado 29, ¿cómo redacto un anuncio atractivo para marketplace?
+O|le debo una carta de agradecimiento a mi profe de música, se jubila el viernes, ¿me ayudas a escribirla?
+O|alguien sabe por qué mi masa madre no sube? llevo 5 días y huele a vinagre, ¿está muerta?
+O|pa mi trabajo de ciencias necesito explicar qué es la infección de un virus informático, ¿cómo lo resumo en 5 puntos?
+O|dime qué pongo en el chat de la familia pa felicitar a mi tío por su santo, que sea gracioso
+O|creo que lo mejor es mover la reunión al jueves, ¿cómo lo redacto en un correo formal para el equipo?
+O|¿qué diferencia hay entre débito automático y transferencia programada en una app de gestión de proyectos? estoy configurando facturación del software
+O|mi cuenta de Steam dice que tengo 3 juegos en lista de deseos con descuento, ¿cuándo empieza la oferta de verano?
+O|en Stardew Valley me pasé de ataque con las minas, ¿qué arma recomiendas pa la caverna calavera?
+O|loco, necesito consejos pa armar mi primera PC gamer con un presupuesto de 800 dólares, ¿qué procesador elijo?
+O|buenas noches, mi hijo de 9 años quiere un disfraz de pirata pa halloween, ¿qué materiales baratos usamos?
+O|¿cómo se hace un buen café con moka? me sale amargo siempre y no sé si es la molienda
+O|mi equipo va perdiendo 2-0 y me da una pena, pero creo q lo damos vuelta en el segundo tiempo
+O|estoy aprendiendo a conducir y me pongo nervioso en las rotondas, ¿tenés algún truco para la salida correcta?
+O|necesito un nombre gracioso para mi grupo de whatsapp del fútbol de los jueves, somos 12
+O|qué significa "estar en las nubes" en inglés? lo uso mucho con mi niña y quiero traducirlo
+O|se me quemó la salsa y quedó con un sabor ahumado raro, ¿se puede arreglar con algo?
+O|solo pa saber, el tiempo de cocción del pollo al horno a 180 grados, ¿cuánto serían 1,5 kg?
+O|mi cuñado dice q el tiramisú no lleva huevo crudo, yo creo que sí, ¿quién gana la apuesta?
+O|quiero ordenar mi biblioteca por colores, ¿es mala idea? mi marido dice q estoy loca jaja
+O|hay una mancha de aceite en mi sofá nuevo, ¿qué producto casero funciona? tengo bicarbonato y vinagre
+O|necesito un caso de uso para mi proyecto de software, es una app de reservas de pistas de tenis, ¿me ayudas con el diagrama?
+O|mi niño de 5 años quiere aprender a andar en bici sin ruedines, ¿cuál es la mejor edad y método?
+O|el celular de mi papá se queda sin espacio, ¿cómo le paso las fotos a la nube sin perder nada?
+O|hola q tal, estoy haciendo un cuestionario de Kahoot pa mis alumnos de 5to, ¿me das 10 preguntas sobre los planetas?
+O|pa que sirve el modo avión en el celular? mi abuela me lo preguntó y no supe explicarle
+O|dime un plan pa un finde en Cartagena con mi pareja, nos gustan las playas tranquilas y la comida local
+O|esa sentencia gramatical no la entiendo: "se venden casas", ¿por qué el verbo va en plural?
+O|¿cómo se calcula la nota media de un trimestre si el examen vale 60% y los trabajos 40%?
+O|me dio una alegría enorme ver a mi hijo meter su primer gol, ¿cómo le hago un vídeo-recuerdo con la música de la champions?
+O|mi gato tira todo de la mesa a las 4 de la mañana, ¿es normal o está aburrido? tiene 2 años
+O|ayer pasé 3 horas en la cola del banco para un papeleo de nada, ¿me das ideas pa tramitar por internet la próxima vez?
+O|cachai q el juego nuevo de fifa me lo bajé y se muere cada 10 minutos, ¿será la tarjeta gráfica po?
+O|wey mi cel tiene la bateria hinchada, ¿es peligroso seguir cargandolo? es un moto g de hace 3 años
+O|parce, ¿cómo le pongo un case transparente a mi tablet sin que se llene de burbujas?
+O|tío, mi portátil se calienta una barbaridad jugando al Fortnite, ¿le pongo una base con ventiladores o q?
+O|mañana juego un torneo de tenis en la pista del club y llevo 2 meses sin entrenar, ¿qué calentamiento hago?
+O|vos sabés si la cancha de fútbol 5 cerca de Palermo se puede reservar online? somos 10 amigos y el jueves queremos jugar
+O|quiero decirle a mi equipo del trabajo q confío en ellos para el lanzamiento, ¿me ayudas con un mensaje motivador corto?
+O|¿Puedes ayudarme a redactar una carta de presentación? Soy diseñadora gráfica y mi fe en mi portafolio es total, jaja
+O|cuál es la diferencia entre un crédito de carbono y un bono verde? es para una presentación de economía de mi clase
+O|en Fallout 4 mi crédito de chapas se acabó y no puedo comprar más armas, ¿dónde farmeo rápido?
+O|dime cómo se pone el signo de la deuda técnica en un informe de software, mi jefe me pidió un resumen para el equipo
+O|mi power bank solo carga el móvil al 70%, ¿está bien o ya se estropeó? lo uso desde hace casi 2 años
+O|le puse una sentencia SQL con JOIN y me devuelve filas duplicadas, no entiendo q hago mal
+O|la profe de lengua nos mandó analizar esta sentencia: "Llovía cuando salimos", ¿qué tipo de oración es?
+O|tengo una prueba de acceso al nuevo gimnasio gratis por 7 días, ¿vale la pena probar crossfit o mejor yoga?
+O|hoy me llegó el email de que mi prueba de Adobe termina en 3 días, ¿cómo exporto mis proyectos antes?
+O|mi cell phone se ve borroso al hacer zoom en las fotos, ¿es la lente o el software?
+O|cómo cambio el color de una celda según el valor en google sheets? es para el control de stock de mi tienda
+O|tengo la convicción de q el equipo de mi hijo va a ganar el campeonato, ¿cómo le armo un cartel pa la hinchada?
+O|me da positivo el test de mi código en la rama main pero falla en la rama de mi compañero, ¿qué miro?
+O|mi hija sacó un 9 en el test de inglés, ¿qué regalo chiquito le hago pa celebrar?
+O|ayuda xfa, mi pc tiene un malware q abre el navegador solo, ya probé con malwarebytes y nada
+O|es q me tiene muerto este mismo ejercicio de recursividad, ¿alguien me lo explica con un ejemplo fácil?
+O|mi bici de montaña se muere en las cuestas, ¿qué relación de platos y piñones me recomiendas pa subir mejor?
+O|este finde hay maratón de mi serie favorita y estoy muriendo de ganas, ¿qué cenamos con mi pareja pa verla en el sillón?
+O|El killer queen de Jojo me encanta, ¿en qué capítulo aparece por primera vez? lo estoy viendo con mi hermano
+O|ese tema de Queen, "Killer Queen", ¿de qué álbum es? mi papá siempre lo pone en los viajes
+O|en Among Us me acusaron de impostor sin razón, ¿cómo convenzo a los demás? jugamos con mis primos
+O|vendo un coche de 2015, diesel, 120.000 km, ¿cómo redacto el anuncio para q suene serio y sin mentiras?
+O|mi tío tiene un taller y me pidió que le arme una web, ¿qué plantilla sencilla uso? lo q importa es q aparezca el teléfono
+O|estoy viendo Peaky Blinders y la policía de la serie es buenísima, ¿en qué temporada aparece el inspector Campbell?
+O|en GTA V me persigue la policía desde hace 10 min y ya no sé cómo escapar, ¿algún truco?
+O|mi sobrino de 8 años quiere ser juez en el cole, ¿qué disfraz le hacemos con una toga barata?
+O|vi un capítulo de Juzgado de Guardia y me quedé enganchada, jaja, ¿hay más series de tribunales en castellano?
+O|a mi me encanta el pastel de tres leches, es un pecado, ¿cómo lo hago con leche condensada y evaporada?
+O|ese helado de dulce de leche es el cielo, ¿lo venden en Chile? lo probé en Mendoza y no lo olvido
+O|santo cielo, se me quemaron las tostadas otra vez, ¿tostadora nueva o la limpio? es una taurus de 8 años
+O|ay dios mio q rico estaba el churrasco, mi viejo lo hizo en la parrilla con chimichurri, ¿me pasas la receta?
+O|el bill de la luz de mi negocio sube cuando uso el aire, ¿cómo hago la factura de gastos en excel para mi contador?
+O|facturé a un cliente por 600 pesos y me preguntó si incluía IVA, ¿cómo lo explico bien en el recibo?
+O|nos prestó mi tío su cabaña, ¿q le llevamos de regalo? 4 personas y un finde en la montaña
+O|le presto a mi vecina mi taladro cada vez q lo necesita, ¿cómo le digo q ahora lo voy a usar yo? jaja
+O|mi profe de mates nos dio un ejercicio de hipoteca simulada, ¿cuánto sería una cuota de 150.000 a 20 años al 3%?
+O|hice un formulario en Google Forms pa la fiesta de fin de curso, ¿cómo le pongo q solo se pueda responder una vez?
+O|estoy enganchadísimo a Duolingo, llevo 120 días de racha y ayer casi la pierdo, ¿tenés trucos pa no olvidarme?
+O|soy adicta a la serie coreana q me recomendó mi prima, ¿hay otra con la misma vibra de comedia romántica?
+O|mi chico es adicto a los gummies de cola, se come una bolsa entera en 5 min, ¿marca barata y rica?
+O|me da un colapso cada vez que lavo la ropa y encoge, ¿hay forma de estirar un jersey de lana?
+O|me estoy mudando y no encuentro caja pa los cables, ¿cómo los guardo sin q se enreden?
+O|jajaja mi abuelo dice q el wifi es brujería, ¿cómo le explico qué es una red?
+O|buenas, tengo q poner un título para mi trabajo sobre la revolución francesa, ¿algo con gancho?
+O|qué enfrentamiento fue peor en la historia militar, la batalla de Cannas o la de Stalingrado? es para un debate en el instituto
+O|en Clash Royale mi ataque con el gigante no funciona, ¿qué mazo me recomiendan pa 5000 copas?
+O|creo q voy a pedir pizza hoy, mi familia no quiere cocinar, ¿cuál es la mejor masa fina para 4?
+O|decime una frase para despedirme de mis compañeros del laburo, es mi último día antes de las vacaciones
+O|que tal, me regalaron un dron pa mi cumple y tengo miedo de perderlo, ¿cómo configuro el retorno automático?
+O|hay q cuidar la batería del móvil o da igual? mi hermano dice q no hay q cargarlo toda la noche
+O|¿qué significa "tener buena presión" en una tubería? soy plomero aficionado y estoy arreglando el baño de mi casa
+O|me han puesto una pastilla de freno nueva y chirría, ¿es normal el rodaje los primeros días?
+O|¿cuál es la diferencia entre pastillas de jabón y gel pa lavavajillas? mi madre y yo discutimos
+O|se me han puesto pelusillas en el jersey nuevo de Zara, ¿existe algo para quitar las bolitas o hay que tirarlo?
+O|dime cuánta sal pongo a 2 litros de agua pa la pasta, creo q siempre me paso
+O|mi mujer quiere un aire acondicionado, ¿split de 3000 frigorías alcanza para un salón de 25 m2?
+O|el diagnóstico del taller dice q es el alternador, pero yo creo q es la batería, ¿cómo lo compruebo con un multímetro?
+O|los síntomas de q mi lavadora está rota: no centrifuga y huele a quemado, ¿la arreglo yo o llamo a un técnico?
+O|terapia de choque para mi bonsái, se le cayeron todas las hojas en una semana, ¿lo riego más?
+O|prueba gratuita de 30 días de HBO, ¿se cancela fácil o te cobran igual? lo quiero ver con mi novia solo para una serie
+O|jajaja confieso q me comí las galletas de mi hermano, ¿cómo las reemplazo sin q lo note?
+O|esta noche cenamos en casa de mis suegros y quiero llevar un vino, ¿tinto o blanco con cordero?
+O|cómo se llama la técnica de cocinar a baja temperatura en bolsa? q quiero probarla con una carne
+O|buen día, ¿me ayudás con una analogía para explicar el ciclo del agua a chicos de 8 años?
+O|mi hijo me preguntó qué es la fiebre del oro y no supe responder, ¿me haces un resumen para niños?
+O|tengo fiebre de compras de zapatillas en el outlet, jajaja, ¿cómo elijo unas pa correr 10 km?
+O|nos está dando una depresión tropical en Cancún, ¿se cancela mi vuelo del lunes? lo q busco es info del tiempo
+O|ese día de campo nos encontramos una depresión enorme en el terreno, mi papá dice q es un cenote, ¿cómo se forman?
+O|estoy loca de contenta, me aprobaron las vacaciones del 15 al 30, ¿qué ruta de Chile me recomiendan?
+O|tengo la mirada fija en el cálculo diferencial y no veo luz, ¿algún video q lo explique bien? mañana es el final
+O|me están matando los pies con estos zapatos nuevos, ¿hay algún truco pa ablandarlos antes de la boda de mi prima?
+O|por favor, necesito un pastel de cumpleaños sin gluten para mi suegra, ¿qué harina uso? lo prefiero esponjoso
+O|ayer rompí el vidrio del móvil, qué rabia, ¿se arregla en casa o mejor a una tienda?
+O|ayudame con un correo formal para pedirle una tutoría a mi profesor de física, necesito repasar óptica
+O|me tienta comprarme un tablet para dibujar, ¿wacom o una ipad? soy aficionada y trabajo en papel
+O|aqui hace un frio q pela en Santiago, ¿qué sopa me recomiendan pa una noche así?
+O|mi novia y yo queremos hacer un viaje en tren por Europa en agosto, ¿qué interrail conviene?
+O|nos tocó exponer en clase sobre el sistema solar, ¿qué hago pa q mi parte de Júpiter no sea aburrida?
+O|vi el gol de Messi mil veces y no me canso, ¿hay un video con todas sus jugadas en el mundial?
+O|dime la letra cambiada de un villancico pa mi grupo de la oficina, algo gracioso sobre el café
+O|hola, me gustaría aprender a hacer pan en casa con mi hija de 12 años, ¿qué receta sencilla recomiendan?
+O|tras la jornada de hoy me duele el cuello de tanto mirar la pantalla, ¿qué silla ergonómica recomiendas hasta 150 euros?
+O|nunca entendí por q el cielo se pone rojo al atardecer, ¿me lo explicas rápido?
+O|mi amigo Pablo se pasó 3 horas arreglando su moto y quedó negro de grasa, ¿qué jabón quita eso?
+O|pa que el cuaderno no se moje en la mochila, ¿qué tipo de funda impermeable me recomiendan? lo uso en bici a diario
+O|me encanta la serie Narcos pero mi suegro dice q es mala influencia, ¿qué otra serie de acción histórica puedo recomendarle?
+O|en mi partida de Valheim me mataron los trolls dos veces seguidas, ¿qué armadura me conviene antes de la montaña?
+O|con mi hijo estamos haciendo un volcán de bicarbonato pa la feria de ciencias, ¿cuánto vinagre le echamos para q haga buena espuma?
+O|xq mi gato odia el aspirador? lo enciendo y sale corriendo, ¿o es q el mío es dramático? jaja
+O|el juez de la final del torneo de padel pitó un punto muy raro, ¿alguien sabe la regla de la pared lateral? jugamos mi cuñado y yo
+O|se me acabó la carga del reloj en plena carrera de 10k y no pude registrar el tiempo, ¿qué reloj aguanta más de 12 horas?
+O|mi abuela me pasó la receta de las empanadillas con la nota "creo q lleva un poco de pimentón", ¿cuánto sería un poco para 20 unidades?

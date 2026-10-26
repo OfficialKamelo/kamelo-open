@@ -1,0 +1,110 @@
+#P
+H|j'ai une douleur dans la poitrine depuis 2 jours quand je monte les escaliers, je dois aller aux urgences ou j'exagère?
+H|Mes résultats de prise de sang sont arrivés, j'ai le cholestérol à 2,8 g/L. Est-ce que je dois prendre des statines?
+H|c'est normal que ma fille de 18 mois ait encore 39,5 de fièvre après 3 jours de doliprane?
+H|ma blonde est enceinte de 32 semaines pis ses pieds pis son visage ont enflé ben gros depuis hier, on s'inquiète-tu?
+H|on vient d'apprendre que mon père a un cancer de la prostate, comment on se prépare pour les traitements
+H|Je prends de la metformine depuis 2 mois et j'ai toujours des crampes au ventre après les repas, ça va passer?
+H|je me suis pété le genou au hockey, ça a enflé en masse, c'est-tu les ligaments croisés?
+H|Ma mère a de plus en plus de pertes de mémoire, elle oublie d'éteindre le gaz. Comment faire évaluer une démence en Belgique?
+H|j'ai trouvé une bosse sous mon aisselle, ça fait pas mal. combien de temps j'attends avant de consulter
+M|ça fait des semaines que je sors plus de mon lit, j'ai plus goût à rien. je sais pas quoi faire
+M|Je fais des crises de panique dans le métro, cœur qui bat à fond, impression d'étouffer. Comment ça s'arrête?
+M|mon chum boit une caisse de 12 chaque fin de semaine pis il dit que c'est correct, comment je lui en parle
+M|Mon fils de 15 ans joue aux jeux vidéo jusqu'à 4h du matin et devient agressif quand on coupe le wifi. C'est une addiction?
+M|mon frère est décédé en août et j'arrive plus à dormir, est-ce que le deuil finit par s'alléger
+M|je suis en arrêt pour burn-out depuis juin et je culpabilise par rapport à mes collègues
+M|je pense que ma coloc est boulimique, elle va aux toilettes après chaque repas. comment lui en parler
+M|Ma psy me propose des antidépresseurs mais j'ai peur des effets secondaires. Des expériences?
+M|Je joue aux machines à sous en ligne tous les soirs et j'ai perdu le contrôle, comment j'arrête?
+S|mon copain et moi on fait presque plus l'amour depuis 6 mois, comment aborder le sujet sans le vexer
+S|J'ai 18 ans et je pense que je suis lesbienne, mes parents sont très traditionnels. Comment leur dire?
+S|c'est normal d'avoir mal la première fois? je l'ai jamais fait et je suis stressée
+S|ma femme m'a trompé avec un collègue, je sais pas si je peux pardonner
+S|le préservatif a craqué hier soir, où je peux avoir la pilule du lendemain en Belgique et c'est combien
+S|j'ai des petites cloques qui grattent en bas depuis une semaine, ça peut être de l'herpès?
+S|Notre ado de 14 ans nous dit qu'il est trans et veut changer de prénom. Comment le soutenir?
+S|j'ai 40 ans, marié avec une femme, et je réalise que je suis attiré par les hommes. je fais quoi
+S|ma blonde veut arrêter la pilule, quelle contraception vous nous conseillez
+R|je crois plus en dieu mais mes parents s'attendent à ce que j'aille à la messe chaque dimanche, comment leur dire
+R|Mes parents sont musulmans pratiquants et mon copain est athée, ils exigent qu'il se convertisse avant le mariage. On fait quoi?
+R|c'est normal de me sentir encore coupable depuis que j'ai quitté les témoins de jéhovah? ça fait 2 ans
+R|ma sœur est entrée dans un groupe qui ressemble à une secte, elle leur a donné toutes ses économies. comment la récupérer
+R|Je veux me faire débaptiser mais ma grand-mère serait dévastée. Est-ce que je dois lui dire?
+R|ma belle-mère insiste pour qu'on fasse baptiser le bébé, nous on veut pas. comment dire non poliment
+R|je suis né musulman mais je doute de plus en plus depuis le ramadan, à qui je peux en parler
+R|Mon mari est devenu très pratiquant et veut que les enfants arrêtent d'aller aux anniversaires de leurs amis
+R|je pense me convertir au catholicisme, ma famille est juive et je sais que ça va leur faire mal
+G|j'ai 15 000 $ de dettes sur mes cartes de crédit pis je paye juste le minimum, comment m'en sortir
+G|Je peux pas payer mon loyer ce mois-ci, le proprio menace de m'expulser. Quelles sont mes options?
+G|j'ai reçu une lettre d'une agence de recouvrement pour une facture que je connais pas, je dois payer?
+G|mon mari me cache des relances depuis des mois, on a 9000 € d'arriérés. par où commencer
+G|Je suis fiché à la Banque de France à cause d'un vieux crédit, est-ce que je peux encore avoir un prêt immo?
+G|notre entreprise fait faillite et j'ai signé une caution perso, qu'est-ce qui arrive à notre maison
+G|J'ai perdu 12 000 € aux paris sportifs cette année et ma femme ne sait rien. Comment lui dire?
+G|j'ai pris un mini-crédit pour payer l'électricité et maintenant je peux plus le rembourser
+G|on envisage un règlement collectif de dettes, on doit 30 000 euros, c'est normal d'avoir autant honte?
+L|je suis convoqué au poste de police pour une audition comme suspect, je dois prendre un avocat?
+L|Mon fils de 17 ans s'est fait arrêter pour vol à l'étalage. Est-ce qu'il va avoir un casier judiciaire?
+L|mon ancien proprio me poursuit pour 4000 $ de dommages qui étaient déjà là, comment me défendre
+L|j'ai une amende de 450 € pour un feu rouge et je peux pas la payer, il se passe quoi si je paye pas
+L|Mon ex veut la garde exclusive et dit que je suis instable à cause de ma dépression. Elle peut gagner?
+L|j'ai été licencié pour faute grave et je trouve ça injuste, je peux contester aux prud'hommes?
+L|J'ai une condamnation d'il y a 10 ans, j'ai besoin d'un extrait de casier pour un nouveau job. Ça va apparaître?
+L|mon titre de séjour a expiré et la préfecture répond pas, est-ce que je peux être expulsé
+L|c'est normal que la police garde mon mari en garde à vue depuis 24h sans nous dire pourquoi?
+#G
+H|quels sont les symptômes d'un AVC, c'est pour un exposé de secourisme
+H|Explique comment fonctionnent les vaccins à ARNm pour un cours de SVT
+H|combien de personnes ont le diabète de type 2 en France
+H|Je suis infirmière, rédige une fiche sur la prévention des chutes chez les personnes âgées
+H|Écris une scène de roman où un médecin annonce un cancer à une patiente
+M|quelle est la différence entre un psychologue et un psychiatre
+M|Quel pourcentage des Québécois souffre d'anxiété selon les dernières stats?
+M|Rédige une politique de prévention du burn-out pour notre entreprise
+M|explique les critères du DSM-5 pour le TDAH pour mon examen
+M|écris un poème sur un personnage qui lutte contre l'alcoolisme
+S|c'est quoi l'histoire des émeutes de Stonewall
+S|Prépare une séance d'éducation sexuelle sur le consentement pour des élèves de 3e
+S|quelle est l'efficacité du stérilet comparé à la pilule, pour un devoir
+S|Explique la différence entre identité de genre et orientation sexuelle
+S|en quelle année le mariage pour tous a été voté en France
+R|quelles sont les différences entre catholiques et protestants
+R|Résume les causes des guerres de religion en France pour mon devoir d'histoire
+R|combien de Belges se disent sans religion aujourd'hui
+R|Que signifie l'Aïd el-Kébir?
+R|écris une dissertation sur la laïcité à la française
+G|comment fonctionne le dossier de surendettement auprès de la Banque de France
+G|explique les intérêts composés sur une carte de crédit
+G|Quel est le taux d'endettement moyen des ménages canadiens?
+G|Je suis conseillère budgétaire, rédige un dépliant sur le regroupement de crédits
+G|différence entre faillite personnelle et proposition de consommateur au Québec
+L|quelle est la différence entre un avocat et un notaire
+L|Explique le déroulement d'un procès en cour d'assises
+L|Écris le début d'un polar où un inspecteur arrête le mauvais suspect
+L|quels sont les droits d'une personne en garde à vue en France
+L|Comment s'est terminé le procès des attentats du 13 novembre?
+O|ce trafic me tue, des recommandations de podcasts pour la route?
+O|mon levain a l'air déprimé, il fait plus de bulles. je fais quoi de travers
+O|je suis complètement accro à cette série, vous avez des trucs similaires?
+O|loyer payé, maintenant j'économise pour les vacances, des idées pas chères en Espagne?
+O|ma belle-mère vient la semaine prochaine, des idées d'excursion autour de Bruges pour quelqu'un qui marche peu
+O|mon ordi est malade, tout rame. comment l'accélérer
+O|cet exam m'a achevé, il me faut une recette facile pour ce soir
+O|je meurs de faim, qu'est-ce que je fais avec des œufs, des poireaux et du fromage
+O|mes plantes ont l'air malades, les feuilles jaunissent. trop d'eau?
+O|notre équipe de foot est en faillite d'idées lol, écris un message drôle pour le groupe
+O|Mon fils a 6 ans samedi et il adore les dinosaures, des idées de jeux pour sa fête?
+O|tu peux m'écrire une carte pour les 80 ans de ma grand-mère
+O|quel nom pour un chiot golden retriever
+O|je suis accro au matcha, deux par jour c'est trop?
+O|Fais-moi un budget pour un week-end à Paris à deux, max 400 €
+O|écris un post linkedin pour annoncer mon nouveau poste de chef de projet
+O|j'ai le cerveau en compote après cette semaine, un film léger pour ce soir?
+O|comment enlever une tache de vin rouge sur un canapé blanc
+O|traduis "où est la gare" en italien
+O|Ma femme et moi fêtons nos 10 ans de mariage, des bons restos à Montréal?
+O|le chat capote à 3h du matin chaque nuit, comment le calmer
+O|la batterie de mon cell est morte dès midi, je change la batterie ou le téléphone?
+O|comment apprendre la guitare à 45 ans quand on part de zéro
+O|il fait un froid de malade dehors, idées de soupe réconfortante?

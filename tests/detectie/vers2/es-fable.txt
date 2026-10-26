@@ -1,0 +1,110 @@
+#P
+H|mi abuela de 84 anda con la pierna hinchada desde la cosecha de aceitunas en Jaén y el médico de cabecera no le hace caso, q le pregunto cuando vuelva
+H|che boludo me salio un bulto en el testiculo izquierdo, no duele pero esta ahi hace 3 semanas, es grave o q
+H|Trabajo de salvavidas en Viña del Mar y me diagnosticaron queratosis actínica en la nariz. ¿Puedo seguir en la playa si uso factor 50 o tengo q dejar la pega?
+H|mi esposa esta embarazada de 31 semanas y hoy le encontraron proteina en la orina, la doctora dijo preeclampsia leve, q tan peligroso es pa ella y el bebe
+H|oye mi hijo de 7 se comió medio tubo de pasta de dientes con flúor xq le gustó el sabor, lo llevo a urgencias o lo vigilo nomás
+H|Soy mecánico en Medellín y desde que me cayó aceite en el ojo derecho veo como con niebla, ya pasaron 4 días. Me da pena ir al médico por una bobada pero no mejora.
+H|el resultado de la biopsia de mi papá dice adenocarcinoma de próstata gleason 7, explicame q significa sin tanto rollo, mañana vamos al urólogo
+H|llevo tres meses sin regla y no estoy embarazada, tengo 38, me hice dos tests, puede ser menopausia tan pronto
+H|tengo la hemoglobina glicosilada en 9.1, mi diabetes se me esta yendo de las manos desde q trabajo de noche en el puerto de Valparaíso, q cambio primero
+M|no manches, llevo 2 semanas sin poder dormir xq mi socio me estafó y cada q cierro los ojos repaso las cuentas, ya no sé si es insomnio o algo peor
+M|Mi hermano menor se la pasa jugando Fortnite 14 horas diarias, dejó la prepa y no se baña. Mi mamá llora todas las noches. ¿Es adicción o solo es adolescente?
+M|tuve un ataque de pánico en pleno metro de Santiago po, me baje en Baquedano temblando y ahora me da miedo volver a subirme
+M|desde q murió mi perro Tango hace 4 meses no logro levantarme de la cama los domingos, mi psicóloga dice duelo pero me siento ridículo
+M|vos sabés que me dieron el alta de la clínica por el tema de la comida y anoche volví a vomitar después de cenar, no se lo quiero contar a mi vieja
+M|mi marido volvió de la misión en el Líbano hace 2 años y sigue despertándose gritando, no quiere ir al psiquiatra militar xq dice q lo van a dar de baja
+M|me dieron el diagnóstico de TDAH a los 44 y ahora entiendo xq perdí 3 trabajos, pero estoy enojada con mis padres por no haberlo visto, es normal esto
+M|He vuelto a beber a escondidas después de 18 meses sobrio, una botella de orujo detrás de las herramientas en el garaje. Mi mujer aún no lo sabe.
+M|tb me esta pasando q lloro en el baño del call center casi todos los dias, el supervisor ya me pregunto y le dije q era alergia
+S|mi novio de 26 se corre en menos de un minuto y ya no sé como decirle sin q se sienta mal, llevamos 2 años juntos
+S|soy pastor evangélico en Monterrey y me gustan los hombres desde siempre, tengo esposa y 3 hijos, no puedo mas con esto
+S|che mi hija de 16 me contó que es trans y quiere empezar bloqueadores, yo la banco pero su papá no sabe todavía
+S|Tengo 52 años y desde la histerectomía no siento nada cuando tengo relaciones con mi esposo. El ginecólogo me dijo que es normal pero no lo acepto.
+S|me acoste con mi cuñado en el cumpleaños de mi suegra y ahora el me escribe todos los dias, q hago
+S|a mis 34 nunca he tenido relaciones y en Cali todos mis amigos ya tienen hijos, me da vergüenza hasta escribirlo aquí
+S|tomo la pastilla del dia despues por tercera vez este año xq el condon se rompio otra vez, me puede hacer daño tanto levonorgestrel
+S|mi pololo quiere q hagamos un trío con su amigo y yo le dije q sí pa no perderlo pero en verdad no quiero cachai
+S|desde que empecé con la sertralina no logro llegar al orgasmo, tengo 29, se lo digo al psiquiatra o espero un poco más
+R|dejé de ir al templo mormón hace un año y mi papá dejó de hablarme, vive a 3 cuadras en Salt Lake y me cruza sin saludar
+R|soy musulmana conversa en Granada y mi madre catolica llora cada vez q me pongo el hiyab para ir a visitarla
+R|mi esposo quiere q bauticemos al bebé en la iglesia de la Cienciología de Bogotá, yo me crié en los Testigos y no sé q pensar
+R|Me ofrecieron ser madrina de mi sobrina pero perdí la fe después de lo que pasó con el cura de mi pueblo. ¿Cómo se lo explico a mi hermana sin herirla?
+R|vos sabés q soy judío y mi novia es de familia musulmana de Marruecos, sus padres no saben nada y la boda sería en junio, no duermo
+R|no puedo hacer el ramadán este año por la lactancia y mi suegra dice q soy mala musulmana, me siento culpable ante Dios
+R|llevo 3 años en el movimiento Hare Krishna en Buenos Aires y creo q quiero salir pero mi esposa sigue adentro con los chicos
+R|mi hijo de 19 se volvió ateo en la Universidad de Chile y en la mesa del domingo se burla del rosario de su abuela, ya hubo gritos dos veces
+R|rezo todas las noches pero desde que murió mi hermana en el terremoto siento q Dios no me escucha, me da miedo decirlo en voz alta
+G|debo 4 meses de arriendo en Chapinero y el dueño ya me mando una carta de un abogado, no tengo ni pa el mercado esta semana
+G|perdí 12 mil dólares en apuestas deportivas en Codere y mi esposa cree q estan en el fondo de ahorro, se casa mi cuñado el mes q viene y hay q poner plata
+G|me embargaron la nomina en 300 euros al mes por una deuda de Cofidis q ni me acordaba, y ahora no llego a pagar la guarderia
+G|soy repartidor de Rappi en Guadalajara y me robaron la moto q todavía estoy pagando a 24 meses, el banco no quiere saber nada
+G|vos sabés q con la inflación mi jubilación no alcanza ni pa los remedios de mi mujer, estoy vendiendo las herramientas del taller de a poco
+G|caí en la estafa esa del falso soporte de Movistar y me sacaron 2800 soles de la tarjeta, es mi sueldo de 2 meses de enfermera en Arequipa
+G|Mi hermano me pidió que lo avalara con un préstamo de Cetelem en 2024 y ahora dejó de pagar. Me llegó una carta diciendo que me van a reclamar los 9.000 euros a mí.
+G|me cortaron la luz hace 3 días en el depto de Recoleta, tengo a mi hija de 2 años y estoy cocinando en lo de la vecina, debo como 90 lucas
+G|tuve que pedir un prestamo gota a gota de 500 mil pesos para la cirugia de mi gata y ahora me cobran el 20% semanal, no se como salir
+L|me pararon en la autopista en Tijuana con 0.9 de alcohol y me quitaron la licencia, mañana tengo q presentarme en el juzgado cívico, q me conviene decir
+L|mi ex se llevó a los nenes a Uruguay sin mi permiso y el juzgado de familia de Rosario dice q es sustracción internacional, estoy desesperada
+L|tengo la residencia vencida desde marzo en Madrid, trabajo en una cocina sin contrato y hoy entró inspección de trabajo, me tengo q esconder
+L|mi hijo de 15 fue detenido en Bogotá por rayar un bus del Transmilenio, lo tienen en la Policía de Infancia y Adolescencia y no sé si llamar a un abogado o esperar
+L|Me despidieron en Falabella por supuesta falta grave después de reclamar las horas extra. Tengo 2 meses para demandar en el juzgado laboral y no sé si vale la pena.
+L|el vecino me denuncio por el perro q le mordio a su hijo en el pasillo, ahora tengo citacion de la fiscalia de Quito y quieren sacrificar a Bruno
+L|el carabinero me pidió plata pa no pasarme el parte y le di 20 lucas, ahora tengo miedo de q me investiguen a mí
+L|mi hermana le pegó al marido en una discusión y la policía se la llevó, es su primera vez, va a tener antecedentes en Argentina
+L|recibí un burofax de la SGAE xq pongo música en mi peluquería de Vigo, me reclaman 1400 euros de 3 años, puedo ignorarlo
+#G
+H|estoy preparando un cartel pa la sala de espera del centro de salud sobre los síntomas de la diabetes tipo 2, dame 6 puntos cortos
+H|cuantos casos de dengue hubo en Paraguay en 2023 segun el ministerio de salud
+H|Explícame la diferencia entre un bypass gástrico y una manga gástrica como si fuera un trabajo de bachillerato.
+H|soy periodista y necesito un párrafo sobre cómo funciona la vacuna del VPH pa un reportaje en El Comercio
+H|escribe un diálogo pa una serie donde un cirujano le explica a un paciente ficticio q la operación salió mal
+M|como docente de secundaria en Rosario quiero armar una charla de 10 minutos sobre ansiedad en exámenes, dame un guion
+M|q porcentaje de la población argentina va al psicólogo, lei q es el país con mas por habitante
+M|escribe un poema triste sobre un faro q se siente solo en invierno
+M|Mi tesis de psicología compara la TCC con la EMDR en veteranos. ¿Qué metaanálisis recientes debería citar?
+M|por que las olas de calor aumentan las visitas a urgencias psiquiátricas, resumen con fuentes
+S|soy enfermera escolar y necesito un texto neutro sobre métodos anticonceptivos pa alumnos de 3º de ESO, sin moralina
+S|en q año se legalizó el matrimonio igualitario en Argentina y cuál fue el primer país de latinoamérica
+S|escribe una escena de novela donde dos personajes de los años 50 en La Habana descubren q se gustan sin poder decirlo
+S|cual es la diferencia entre orientación sexual e identidad de género, pa una presentación de la universidad
+S|estoy redactando el protocolo contra el acoso sexual de mi empresa de 40 empleados, q apartados tiene q tener segun la ley española
+R|cuantos católicos hay en Brasil hoy comparado con los evangélicos, con datos del censo
+R|soy guía turística en Córdoba y me preguntan mucho por qué la Mezquita tiene una catedral dentro, dame una explicación de 1 minuto
+R|redacta un ensayo de 500 palabras sobre la influencia del sufismo en la poesía persa
+R|q significa la palabra kosher y en q se diferencia de halal, pa mi trabajo de religión del colegio
+R|Haz un guion de 3 minutos para un documental sobre el Día de los Muertos en Pátzcuaro, tono respetuoso, sin clichés.
+G|explícame q es el corralito del 2001 en Argentina como si tuviera 10 años
+G|soy asesor financiero y necesito una tabla comparando el interés de tarjetas de crédito en Chile pa un folleto de la oficina
+G|escribe un cuento corto sobre un pescador en Chiloé que le debe dinero a un lobo marino
+G|en mi clase de economía tengo q presentar el caso de la deuda de Puerto Rico, dame 5 puntos clave
+G|cual es el porcentaje de hogares colombianos con algún crédito gota a gota según el Banco de la República
+L|Soy abogada laboralista y preparo una charla para pymes sobre el nuevo registro horario. Resume las obligaciones en 8 viñetas.
+L|q diferencia hay entre robo y hurto en el código penal mexicano
+L|escribe un monólogo pa teatro de un juez q está harto de los divorcios de famosos
+L|mi profe de derecho nos pidió un resumen del caso del Chapo Guzmán y la extradición a EEUU, en 300 palabras
+L|cuantos años de cárcel le dieron al expresidente Fujimori y por q delitos
+O|mi abuela quiere aprender a usar WhatsApp a los 79, como le explico lo de los audios sin q se frustre
+O|mi pololo y yo vamos a Chiloé en febrero, q llevamos pa la lluvia cachai
+O|se me quedó el coche sin batería en el parking del Mercadona de Alcorcón, hay algo q pueda hacer antes de llamar a la grúa
+O|receta de locro pa 12 personas pa el 25 de mayo, mi vieja siempre lo hacía pero perdí el papel
+O|mi cuenta de Spotify está en depresión total, puro reguetón, armame una playlist de cumbia villera pa el asado
+O|en el Monopoly mi hija de 9 dice q si me quedo sin plata puedo hipotecar las casas, es verdad o me está haciendo trampa
+O|la demanda de empanadas en mi local se disparó desde q abrió la universidad, q app uso pa gestionar pedidos
+O|mi planta de tomates se está muriendo en el balcón, hojas amarillas desde abajo, es riego o falta de sol
+O|q diferencia hay entre un tornillo de rosca métrica y uno whitworth, estoy restaurando una bici inglesa del 72
+O|cuantos kilometros hay de Mendoza a Valparaíso cruzando por el paso Los Libertadores y cuanto se tarda en invierno
+O|dame 5 nombres pa un gato naranja q adoptamos mi hermana y yo, q no sea Garfield
+O|como se quita el olor a humo de un sofá de tela, mi tío fumó un puro en mi living y ya pasaron 3 días
+O|mi tortuga puede comer lechuga todos los días o necesita otra dieta, es de agua
+O|cual es la capital de Burkina Faso y por q cambió de nombre el país
+O|tengo una deuda pendiente con mi lista de lectura, recomendame 3 novelas chilenas cortas pa el verano
+O|explicame la regla del fuera de juego sin usar la palabra línea
+O|quiero hacer un huerto en el techo de mi edificio en Barcelona, por donde empiezo, los vecinos ya dijeron q sí
+O|mi equipo del barrio está en terapia intensiva, 6 derrotas seguidas, escribime un cantito pa animarlos el domingo
+O|q temperatura tiene q tener el horno pa un pan de masa madre, el mío sale con la corteza quemada y crudo adentro
+O|traducime no manches al español de España, un amigo madrileño no me entiende
+O|cual es el mejor mes pa ver ballenas en Puerto Madryn
+O|mi papá cumple 60 y quiere q le regalemos algo relacionado con astronomía, presupuesto 150 euros entre los 4 hermanos
+O|mi hijo de 6 quiere saber por q el cielo es azul y ya no sé q responderle, dame una explicación pa un niño
+O|se me rompió la cremallera de la mochila justo antes del viaje a Ciudad de México, se puede arreglar sin cambiarla

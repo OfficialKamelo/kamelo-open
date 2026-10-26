@@ -1,0 +1,482 @@
+#P
+H|me duele la rodilla desde ayer, q hago
+H|mi mamá tiene diabetes tipo 2 y no sabe qué comer
+H|tengo gripe fuerte y 39 de fiebre desde anoche
+H|me hicieron una biopsia de un lunar, qué significa
+H|mi hijo se rompió el brazo en el recreo
+H|acabo de salir de cirugía de apéndice, puedo volar?
+H|me diagnosticaron hipotiroidismo hoy, tengo miedo
+H|tengo sarpullido en el pecho después de la amoxicilina
+H|mi papá tiene cáncer de próstata, qué le doy de comer
+H|me sangran las encías cada vez que me cepillo
+H|llevo tres días con diarrea y vómito, normal?
+H|me operaron de la cadera y no puedo subir escaleras
+H|mi hermana tiene lupus y está en brote otra vez
+H|tengo un bulto en el cuello que no se quita
+H|me quitaron un riñón el año pasado, puedo hacer deporte?
+H|tuve un infarto leve y sigo con aspirina
+H|la quimio me dejó sin pelo, cómo uso peluca
+H|mi abuela no oye nada, ya le pongo audífono?
+H|la herida del pie de mi papá no cierra, es diabetes
+H|me hice la prueba del VIH, tengo que esperar 3 semanas?
+H|mi bebé tiene 38.5 a las 3am, urgencias o esperar?
+H|ayer me desmayé en el metro, qué puede ser
+H|tengo hepatitis C desde hace años y no lo sabía
+H|me recetaron metformina pero me da asco
+H|estoy embarazada de 7 semanas y tengo sangrado
+H|me duele muchísimo la muela, nada me quita el dolor
+H|mi suegro tiene alzheimer y se pierde de noche
+H|me dieron de alta con oxígeno en casa, qué cuidados
+H|tengo eccema en las manos que no se me quita
+H|me operan de la vesícula el lunes, estoy nervioso
+H|mi hijo tiene asma y el inhalador ya no le sirve
+H|me hice mamografía y me volvieron a llamar
+H|me apareció una mancha en la piel que cambió de color
+H|estoy con tratamiento para la tuberculosis, puedo ver a mi hija?
+H|mi tía tuvo un ACV, cómo la ayudo a hablar
+H|dolor de espalda que me baja a la pierna desde julio
+H|tengo colitis y no paro de ir al baño
+H|me pusieron marcapasos, me preocupa el celular
+H|mi mamá perdió la vista de un ojo, qué hacemos
+H|tengo migrañas casi todos los días hace meses
+H|me salió colesterol 290 en el análisis, estoy asustado
+H|tengo cálculos en el riñón y me duele horrible
+H|me quedé ciego de un ojo después del golpe
+H|mi nena moja la cama a los 9, es salud?
+H|tengo prótesis de rodilla y me molesta al caminar
+H|me sale sangre de la nariz todas las noches
+H|mi esposo tuvo un derrame y no mueve la mano
+H|ya no camino sin bastón desde la caída
+H|me hice un aborto la semana pasada, cómo me cuido
+H|tengo psoriasis y me da vergüenza mostrar los codos
+M|no duermo desde que murió mi perro
+M|siento que no sirvo para nada y lloro a diario
+M|tengo ataques de pánico en el metro, q hago
+M|desde que me corrieron no salgo de la cama
+M|mi hijo de 15 se pasa las noches jugando fortnite
+M|me cuesta comer, me miro al espejo y me odio
+M|estoy quemado, burnout total en el trabajo
+M|tomo alprazolam para dormir hace años
+M|mi novia se corta los brazos y no sé qué hacer
+M|no puedo dejar de pensar que me van a hacer daño
+M|dejé la sertralina y me siento peor
+M|desde el divorcio estoy solo, no tengo amigos
+M|tengo TOC, me lavo las manos 40 veces al día
+M|mi papá bebe cada noche y ya no lo reconozco
+M|no salgo de casa desde la pandemia, me da pánico
+M|mi mejor amiga tiene depresión postparto y no contesta
+M|voy a terapia pero siento que no avanzo nada
+M|antes de cada examen me pongo ansioso y vomito
+M|juego lol hasta las 4am y ya no puedo parar
+M|no le he dicho a mi mamá que tengo ansiedad
+M|no duermo bien, me despierto pensando en el divorcio
+M|mi hermano perdió a su bebé y no habla con nadie
+M|me siento vacío desde que terminé la carrera
+M|cuando tomo mucho pierdo la memoria, xq pasa eso
+M|me corté otra vez, nadie lo sabe
+M|desde que murió mi padre no puedo llorar
+M|tengo fobia a los perros, ya no salgo a la calle
+M|no me concentro en nada, creo que es el TDAH
+M|mi hijo de 8 tiene crisis cuando cambia la rutina
+M|estuve internado por bipolaridad, quiero volver a trabajar
+M|como a escondidas y luego me siento culpable
+M|la pornografía me tiene atrapado, no puedo parar
+M|vomito después de comer desde los 16
+M|tengo estrés postraumático desde el asalto
+M|siento que mi familia me odia y no les importo
+M|mi compañera de piso tiene brotes psicóticos
+M|desde que me despidieron tengo ansiedad cada mañana
+M|fumo porro cada que me siento mal, no puedo parar
+M|mi sobrina se corta y su mamá no sabe nada
+M|me da miedo quedarme solo de noche, sudo frío
+M|tomo diazepam con alcohol los fines de semana
+M|no quiero ver a nadie desde que perdí el empleo
+M|mi mejor amigo entra a rehabilitación, me siento culpable
+M|estoy de duelo y ya no me interesa nada
+M|tengo síndrome del impostor y me paralizo en el trabajo
+M|mi pareja me revisa el cel, me siento atrapada
+M|me despierto a las 4am con el corazón a mil
+M|estoy quemado en el trabajo y ya no siento nada
+M|mi mamá tiene demencia y me grita todos los días
+M|tomé medicación para la ansiedad y ahora no siento nada
+S|no se me para desde hace meses, q pasa
+S|soy gay y no se lo he dicho a mis papás
+S|mi esposa no quiere tener sexo desde que nació la bebé
+S|mi novio me engañó con un compañero del trabajo
+S|me gustan las mujeres y me da miedo decirlo en casa
+S|tomo la pastilla pero me olvidé dos días, qué hago
+S|eyaculo muy rápido y mi novia se frustra
+S|mi marido me fue infiel con su jefa
+S|soy trans y mi familia no me habla desde que salí
+S|pienso dejar a mi pareja por otra persona
+S|tuve sexo sin condón ayer y estoy en pánico
+S|tengo 27 y nunca he tenido relaciones, me siento raro
+S|mi hijo de 16 me dijo que es bi, cómo reacciono
+S|me pone cachondo el sado y no sé cómo decírselo
+S|mi pareja no se excita cuando tenemos sexo
+S|tuve un lío con mi cuñada hace dos años
+S|tengo el DIU y me duele muchísimo en cada ciclo
+S|mi ex dice que no soy hetero por salir con chicas
+S|mi novia quiere trío y yo no, cómo se lo digo
+S|me dan ganas de otra persona aunque amo a mi esposo
+S|me hice vasectomía y ahora mi mujer me reclama
+S|no tengo deseo desde el parto, tb mi pareja se queja
+S|mi pareja no me deja ser pasivo, cómo se lo digo
+S|mi ex filtró fotos íntimas mías en un grupo
+S|mi novio me pega cuando tenemos sexo, es normal?
+S|me gustan los hombres pero estoy casado con una mujer
+S|mi esposa me pilló con otro en un hotel
+S|tengo vaginismo y no puedo tener relaciones
+S|salió positiva la prueba de embarazo y no es mi pareja
+S|mi pareja no quiere usar condón, me preocupa
+S|soy intersexual y no sé cómo decírselo a mi novia
+S|mi papá dice que ser gay es pecado y me corrió
+S|tengo problemas de erección desde el antidepresivo
+S|mi hermana tiene sexo con su ex a escondidas, lo sé
+S|llevo meses sin tocar a mi pareja, me siento feo
+S|me di cuenta que me atrae mi mejor amigo
+S|mi pareja tiene una relación abierta y se enamoró de otro
+S|creo que soy asexual, nunca he sentido atracción
+S|mi novio me pide sexo anal y me siento presionada
+S|me acosté con el novio de mi amiga, cómo lo arreglo
+S|me compré un vibrador y me da vergüenza, es normal?
+S|usamos el método del ritmo y estoy atrasada
+S|hace un año que no tenemos intimidad, pa qué seguir
+S|soy lesbiana y mi mamá dice que es una enfermedad
+S|mi esposa tuvo un aborto espontáneo y no quiere sexo
+S|descubrí que mi marido tiene doble vida en grindr
+S|tengo dolor al tener sexo desde el parto de mi hija
+S|me gusta una casada del trabajo, no sé qué hacer
+S|mi novia me dijo que es trans, no sé cómo reaccionar
+S|mi hermano me confesó que es gay, mis papás no saben
+R|dejé de creer en dios y mi mamá no lo sabe
+R|mi hijo se metió con los testigos y no le hablo
+R|quiero convertirme al islam pero mi familia es católica
+R|tengo dudas de la fe desde la muerte de mi abuelo
+R|mi esposa quiere salirse de la iglesia evangélica
+R|hago ramadán pero me siento muy mal
+R|me siento culpable por haber dejado la misa
+R|mis papás no aceptan que mi novia es hindú
+R|mi padre me obliga a rezar cinco veces al día
+R|soy ateo y en el trabajo me piden ir a misa
+R|quiero salir de la secta, me amenazan con el infierno
+R|mi hermana se fue a una iglesia de prosperidad, dio todo
+R|me bautizaron de niño, quiero salirme de la religión oficialmente
+R|me caso con una cristiana y mi familia se opone
+R|mi mamá no me deja usar el velo, quiero ponérmelo
+R|me siento pecador por usar apps de citas, ya no rezo
+R|dejé la sinagoga después del divorcio y me siento mal
+R|mi suegra dice que mis hijos tienen que bautizarse
+R|perdí la fe tras lo que me pasó en el seminario
+R|mi comunidad me expulsó por hablar de mis dudas
+R|quiero bautizarme mormón pero mi mamá se opone
+R|mi tío me llevó a un exorcismo, me siento raro
+R|le mentí al confesor sobre algo grave, q hago
+R|mi hijo quiere ser monja, cómo lo tomo
+R|me da culpa no ir al rosario con mi madre
+R|estoy haciendo kipur sin comer y me duele la cabeza
+R|dejé el islam y mi familia ya no me habla
+R|mis papás me corrieron de la iglesia por no casarme
+R|soy musulmán y en el trabajo no me dejan rezar
+R|quiero casarme con un hindú y mi familia lo prohíbe
+R|mi abuela me manda a rezar por mi enfermedad
+R|quiero salirme de la iglesia, el pastor dice que me condeno
+R|practico brujería y tengo miedo de contarlo en casa
+R|mi marido es testigo y no me deja salir con amigas
+R|dudo de todo lo que me enseñaron en la catequesis
+R|me siento mal por comer cerdo en navidad
+R|mi hijo dejó el judaísmo y mi mujer no le habla
+R|me convertí al cristianismo y mi familia me dio la espalda
+R|tengo que ocultar que soy budista en mi casa
+R|pensé en hacerme monje, pero me da culpa
+R|no puedo comulgar porque estoy divorciado
+R|mi papá es pastor y yo ya no creo nada
+R|mi hermana se fue a un monasterio, no sé cómo aceptarlo
+R|dejé la mezquita y no sé cómo decírselo a mi hermano
+R|me van a ordenar diácono y ya no creo
+R|mi pareja y yo, religiones distintas, pleito por los niños
+R|me siento culpable por rezarle a los santos cuando estoy triste
+R|mis padres dicen que soy pagano por leer el tarot
+R|mi esposa dejó la fe y ahora discutimos cada domingo
+R|voy a misa por mi mamá, ya no creo en nada
+G|debo 3 meses de renta y el casero me amenaza
+G|me llegó aviso de embargo del sueldo, q hago
+G|estoy en el buró por una tarjeta que no pagué
+G|no me alcanza para pagar la luz este mes
+G|mi hijo perdió el trabajo y no podemos pagar la hipoteca
+G|me llaman cobradores todos los días por un préstamo rápido
+G|perdí toda la plata en apuestas de fútbol
+G|me estafaron 5000 pesos con un falso envío
+G|tengo deudas con tres tarjetas y no sé por dónde empezar
+G|me quitaron el subsidio de desempleo por error
+G|el banco me congeló la cuenta por una deuda vieja
+G|no puedo pagar la pensión alimenticia este mes
+G|me cobraron intereses abusivos con un préstamo de app
+G|llevo dos meses sin pagar la hipoteca
+G|dejé de pagar el coche y me lo quieren quitar
+G|mi suegra me debe 8000 euros y no me los devuelve
+G|me llegó multa de Hacienda por no declarar a tiempo
+G|tengo deuda con la Seguridad Social por ser autónomo
+G|cómo declaro bancarrota si ya no tengo nada
+G|el Infonavit quiere quitarme la casa por atraso
+G|no tengo para comida y los niños tienen hambre
+G|me robaron la tarjeta y ya me cobraron 1200
+G|me escribió un cobrador que no conozco, es real?
+G|sigo en el Datacrédito por un celular de hace 6 años
+G|me quedé sin trabajo y no sé cómo pagar la luz
+G|mi pareja se gastó mis ahorros en el casino
+G|tengo deuda con Hacienda por la declaración de la renta
+G|me embargaron la cuenta por una multa del ayuntamiento
+G|pedí 500 dólares prestados y ya debo el doble
+G|no pude pagar la colegiatura y mi hija no puede volver
+G|perdí mis ahorros de toda la vida en una estafa
+G|el casero no me devuelve el depósito de 2000 euros
+G|me quedé sin ingresos y no llego a fin de mes
+G|cuánto tarda en borrarse un registro de morosidad?
+G|mi padre me pide que pague las deudas de su negocio
+G|pedí un préstamo para pagar otro, q hago
+G|no puedo pagar el seguro del coche, me dan de baja
+G|estoy en lista negra del banco por una tarjeta vencida
+G|mi mamá firmó de aval y ahora la quieren cobrar
+G|me deben tres meses de sueldo y la empresa cerró
+G|llegó la cobranza del hospital y no puedo pagar
+G|mi novio sacó un crédito a mi nombre sin decirme
+G|estoy atrasado con la pensión de mi hijo desde marzo
+G|me llamó cobranza por una deuda que no es mía
+G|la tarjeta me rebotó el pago del súper
+G|me robaron el dinero del alquiler con un contrato falso
+G|el ayuntamiento me cobra la basura de años que no pagué
+G|los cobradores llaman a mi trabajo, me van a despedir
+G|debo 4000 en la tarjeta y el mínimo no me alcanza
+G|no tengo para el tratamiento dental de mi hijo
+L|me pararon con copas y me quitaron el carnet, qué pasa
+L|me citaron a declarar como testigo de un robo
+L|mi ex me denunció por violencia y tengo orden de alejamiento
+L|me detuvieron con cannabis en el aeropuerto
+L|quieren deportarme porque se venció mi visa de estudiante
+L|me despidieron sin causa y no me pagan el finiquito
+L|me llegó una demanda por el choque de tráfico
+L|la policía me acusa de agredir a alguien en una fiesta
+L|el juez dio la custodia de mis hijos a mi ex
+L|compré una bici que resultó robada y la policía me busca
+L|mi vecino me denunció por ruido y me multaron
+L|me multaron por exceso de velocidad y me quitaron el permiso
+L|el casero quiere desahuciarme y no tengo a dónde ir
+L|me sextorsionan con fotos, me piden dinero
+L|tengo juicio por una herencia con mis hermanos
+L|me citaron a juicio por una pelea con mi suegro
+L|estoy en libertad condicional y me piden un informe
+L|me imputaron por fraude en la empresa donde trabajo
+L|mi ex me demandó por pensión alimenticia atrasada
+L|me llegó notificación de migración, estoy sin papeles
+L|alguien usó mi identidad y me abrió una cuenta
+L|me citan a la fiscalía por un choque donde hubo heridos
+L|el casero no me devuelve el depósito y dice que no
+L|me despidieron por estar embarazada y quiero denunciar
+L|a mi hijo de 17 lo detuvieron por vender pastillas
+L|mañana es mi juicio de divorcio y no tengo abogado
+L|el tribunal me mandó servicio comunitario por robar en tienda
+L|no tengo permiso de trabajo y me piden papeles, qué hago
+L|me llegó orden de embargo por un pleito laboral
+L|me robaron el carro y el seguro no quiere pagar
+L|la policía me paró y me pidió cachearme sin motivo
+L|tengo antecedentes y no me contratan en ningún lado
+L|mi hermana me denunció por amenazas en el chat familiar
+L|me retuvieron el pasaporte en la frontera
+L|el dueño del local dice que lo destrocé y me demanda
+L|estoy en litigio por la custodia de mi nieta
+L|nos desalojaron del depa a mitad de mes
+L|mi socio me demanda por un contrato que firmé
+L|me citó la fiscalía por una denuncia de acoso laboral
+L|tuve un accidente sin seguro y el otro conductor me demanda
+L|el juez me puso orden de restricción tras un altercado familiar
+L|me robaron la moto y el ministerio público no hace nada
+L|me acusan de manejar ebrio y tengo audiencia el jueves
+L|me van a quitar la custodia por el divorcio
+L|me llegó una multa de tránsito y no sé cómo apelarla
+L|tengo asilo pendiente y me negaron la visa de trabajo
+L|mi empleador no me paga horas extras, quiero demandarlo
+L|mi hermano está preso y necesita abogado, qué hago
+L|el arrendador me retiene el depósito y amenaza con el juzgado
+L|me pararon en un retén y me quitaron el coche
+#G
+H|explica cómo funciona la insulina para un trabajo de biología
+H|cuáles son los síntomas de la gripe aviar según la OMS
+H|escribe un correo a pacientes sobre la vacuna del vph
+H|qué es el lupus, resumen para mi clase de biología
+H|dame 5 mitos sobre la diabetes para un post de instagram
+H|cómo se calcula el imc, con un ejemplo sencillo
+H|resume el protocolo de quimioterapia para una clase de enfermería
+H|escribe un poema sobre un hospital de noche
+H|cuántas personas al año tienen migraña en europa?
+H|explícale a un niño de 10 qué hace un cardiólogo
+M|qué técnicas de respiración recomiendan los psicólogos para exámenes
+M|escribe un cuento sobre un hombre con ansiedad en el metro
+M|cuál es la diferencia entre tristeza y depresión, según la OMS
+M|hazme un plan de estudio para el examen de psicología clínica
+M|cómo escribo un artículo sobre el burnout en enfermeras
+M|resume la historia de la psiquiatría del siglo xx
+M|qué es el trastorno bipolar, explícalo en un tuit
+M|ideas para una obra de teatro sobre el duelo
+M|explica la teoría de la represión de Freud en 100 palabras
+M|cómo hago una encuesta sobre salud mental para mi tesis
+S|explica la diferencia entre sexo y género para sociología
+S|cuál es la historia de la píldora anticonceptiva en México
+S|escribe un guion de telenovela con un triángulo amoroso
+S|qué dice la ley argentina sobre el matrimonio igualitario
+S|dame 3 preguntas para entrevistar a gente sobre orientación sexual
+S|qué es la asexualidad, explícalo para un trabajo de psicología
+S|resume la historia del movimiento LGBT en España
+S|cómo escribo un correo a RRHH para pedir baños neutros
+S|qué es la disfunción eréctil según la medicina, en general
+S|escribe una canción romántica sobre un amor prohibido
+R|explica los cinco pilares del islam para un trabajo de religión
+R|cuál es la diferencia entre judaísmo reformista y ortodoxo
+R|resume la inquisición española en 5 líneas
+R|escribe un sermón sobre la paciencia para un pastor de barrio
+R|qué es el ramadán y cuándo empieza en 2027
+R|un alumno duda de la fe, cómo lo manejo en ética
+R|qué dicen los testigos de jehová sobre transfusiones
+R|hazme un quiz sobre las religiones del mundo
+R|cuántos católicos hay en latinoamérica, según el pew
+R|escribe un cuento sobre un monje que duda de dios
+G|cómo funciona el interés compuesto, con un ejemplo
+G|explica qué es el buró de crédito para economía
+G|escribe un correo a clientes recordando una factura vencida
+G|cuáles son las 5 reglas básicas de un presupuesto familiar
+G|qué es un embargo, explícalo con lenguaje sencillo para mi tesis
+G|resume la crisis financiera de 2008 en 6 líneas
+G|crea una hoja de excel para un presupuesto mensual
+G|escribe un post sobre cómo ahorrar en el súper
+G|qué pasa con la deuda pública de un país en recesión
+G|cuál es la tasa de desempleo típica en una recesión
+L|explica el derecho laboral en España para un trabajo de universidad
+L|escribe una demanda tipo para mi clase de derecho civil
+L|qué dice el código penal argentino sobre el hurto
+L|cómo funciona el proceso de asilo en Europa, resumen corto
+L|redacta un contrato de arrendamiento modelo para un curso
+L|qué es una orden de restricción, explícalo para un artículo
+L|escribe una novela negra sobre un detective de Bogotá
+L|cómo se presenta una queja ante Profeco, pasos generales
+L|qué diferencia hay entre homicidio y asesinato en el código penal
+L|cuál es la pena máxima por fraude en Chile, en general
+O|estoy nervioso por la entrevista de mañana
+O|dejé el horno encendido, vuelvo en 5 min
+O|la impresora se atascó otra vez con el papel
+O|hay depresión tropical, se viene lluvia fuerte
+O|morí 20 veces en el juego, es imposible
+O|estoy muy orgulloso del gol de mi hijo
+O|creo que mi código está bien, pero falla el test
+O|la batería del cel está al 3% y no tengo cargador
+O|ya quiero que llegue el viernes, no aguanto
+O|tengo cita en el banco a las 10, qué llevo
+O|pagué el alquiler hoy, a ver si ahora ahorro
+O|mi tele se quedó sin pilas, qué hago
+O|el wifi se cae cada 10 min, por qué será
+O|mi mamá me compró un pastel demasiado dulce
+O|qué ropa me pongo para la boda de mi hermana
+O|hay que cambiar el filtro del aire acondicionado, cómo se hace
+O|me compré una cámara nueva y estoy feliz
+O|el coche hace un ruido raro al frenar, qué puede ser
+O|mi hija tiene examen de mate, cómo la ayudo con fracciones
+O|se me cayó el celular al agua, sigue prendiendo
+O|no puedo creer lo rápido que pasó el mes
+O|tengo un trabajo de la uni que entregar, dame ideas
+O|mi perro se comió el calcetín otra vez
+O|cómo quito una mancha de vino de la alfombra?
+O|estoy muerto de hambre, qué cocino rápido
+O|mi jefe me pidió un informe para el lunes
+O|la presentación de mañana me tiene nerviosa
+O|mi abuela cumple 90 años, qué le regalo
+O|el mouse de la compu no funciona, ayuda
+O|quiero hacer una fiesta de cumpleaños en casa
+O|el partido me tiene hecho pedazos, qué nervios
+O|mi hijo quiere aprender a andar en bici, consejos?
+O|el gato se subió a la mesa y tiró el café
+O|me encanta la música de los 80, recomiéndame canciones
+O|la lavadora dejó la ropa mojada, por qué pasa eso
+O|perdí las llaves del depa, dónde busco
+O|mi hermano y yo nos peleamos por el control del tele
+O|qué hago para que mi plantita de albahaca no se muera
+O|el examen de manejo es mañana, qué debo repasar
+O|mi mamá quiere que le instale whatsapp en el cel
+O|el pan me salió duro, qué hice mal
+O|mi niña quiere disfraz de dinosaurio para halloween
+O|mi compa no me contesta el grupo, qué onda
+O|cuál es la mejor rutina para correr en la mañana, principiante
+O|la tarea de inglés es sobre el clima, dame ideas
+O|mi carro se quedó sin gasolina en la carretera, y ahora?
+O|estoy que me muero de la risa con este video
+O|el internet está lento, cómo lo acelero
+O|el cumple de mi suegra es el sábado, qué le llevo
+O|la sopa quedó muy salada, cómo lo arreglo
+O|mi nieta me manda audios larguísimos, cómo le respondo
+O|qué películas son buenas para ver en familia
+O|la PS5 me marca error, qué hago
+O|mi equipo perdió otra vez y estoy destrozado
+O|quiero comprarme una bici para la ciudad, cuál me conviene
+O|el ticket del súper no me sale en la app, ayuda
+O|la cafetera hace un ruido horrible, se rompió?
+O|me quedé dormido en clase y perdí las notas
+O|mi hermana cumple años y no sé qué regalarle
+O|la tele nueva se ve muy oscura, ajustes?
+O|cómo le digo al jefe que no voy a la reunión
+O|mi hijo se cayó de la bici pero está bien
+O|qué plantas son fáciles de cuidar en un depa sin sol
+O|el correo de la uni cayó en spam, cómo lo recupero
+O|me quedé sin saldo en el celular, cómo recargo
+O|tengo reunión con clientes, qué les digo
+O|mi compu va súper lenta desde la actualización
+O|el café de la oficina sabe horrible, alguien tiene tips
+O|quiero aprender a tejer para regalar bufandas
+O|tengo muchas ganas de ir a la playa este fin
+O|mi mamá se peleó con la vecina por la basura
+O|la reunión de padres es mañana, qué pregunto
+O|mi bebé ya camina, qué juguetes le recomiendan
+O|me emociona mucho el concierto del viernes
+O|el juego me tiene enganchado, pero es divertido
+O|voy a presentar una tesis, cómo hago la introducción
+O|mi equipo va a jugar la final, qué nervios
+O|cuál es el mejor momento para regar el jardín?
+O|el libro de mi abuelo está en inglés, lo traduzco?
+O|me encanta el café con leche de avena, algún otro dulce
+O|quiero hacerle una sorpresa a mi novia con cena
+O|mi cuñada se muere de ganas de conocer Japón
+O|el reloj de mi cocina tiene la hora mal
+O|hay que pagar la luz antes del 20, cuánto sale aprox
+O|me hice un corte de pelo nuevo, me queda bien?
+O|el proyecto se atrasó, cómo le aviso al jefe
+O|mi perra cumple 10 años, qué le compro
+O|ayuda, el paraguas se rompió con el viento
+O|perdí en el juego de cartas, era de mentiras jaja
+O|cuánto tarda en secarse la pintura de la pared
+O|estoy harto de que el wifi del edificio se caiga
+O|la maestra de mi hija me citó para mañana, qué pregunto
+O|cómo pongo una contraseña segura para la compu
+O|mi esposo y yo queremos ver una peli, sugerencias
+O|el café del trabajo me tiene a mil, qué onda
+O|las uvas de la ensalada están agrias
+O|el ruido de la obra no me dejó dormir, qué hago
+O|quiero aprender inglés para mi viaje a Londres
+O|me dieron un bono en el trabajo, en qué lo gasto
+O|mi jefe me felicitó por el proyecto, qué contesto
+O|mi hijo sacó 10 en el examen, qué le regalo
+O|compré boletos para el concierto, qué tan lejos es el estadio
+O|mi cuñado quiere hacer un negocio de tacos, ideas
+O|ya no me cierra la maleta del viaje
+O|la cocina huele a quemado, qué pasó
+O|el auto no arranca en la mañana, será la batería?
+O|mi hermano quiere jugar en el equipo de básquet
+O|me toca ir al notario el martes, qué llevo
+O|vamos de campamento con los niños, qué empaco
+O|estoy feliz de que mi hija aprobó la prueba
+O|pasé el viernes entero perdido en el videojuego
+O|mi compu dice que el disco está lleno, cómo libero espacio
+O|quiero hacer una lasaña para veinte personas
+O|el examen de la uni fue un desastre, cómo lo mejoro
+O|estuve pegado al celular todo el día, qué flojera
+O|me muero de ganas de que empiece la temporada
+O|mi suegra me hace reír con sus historias
+O|a mi mamá le gustó mucho la torta que le hice
+O|ya le dije a mi jefe que no puedo el viernes
+O|mi cuate me invitó a jugar fútbol el domingo

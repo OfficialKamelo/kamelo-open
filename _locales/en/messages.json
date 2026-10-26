@@ -19,5 +19,9 @@
   },
   "extDescriptionFirefox": {
     "message": "A nudge to use a temporary chat when you ask AI something personal."
+  },
+  "extDescriptionSafari": {
+    "message": "Notices when a question to an AI gets personal, and lets you ask Melo on your Mac instead.",
+    "description": "Safari (in Melo voor Mac): de App Store wil hooguit 112 tekens"
   }
 }

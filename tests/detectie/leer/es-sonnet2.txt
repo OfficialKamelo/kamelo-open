@@ -1,0 +1,362 @@
+#P
+H|necesito redactar un mail para mi jefa explicando que los viernes no voy a poder venir porque empiezo quimio y tengo sesión cada semana
+H|me dieron el resultado de la biopsia y la doctora dijo q quiere verme con alguien de la familia, q puede significar eso
+H|mi hijo de 4 años lleva tres noches con 39 de fiebre y le salen manchitas en el pecho, el pediatra no contesta, q hago
+H|desde que me operaron del menisco en la clínica no puedo doblar la rodilla y el fisio dice q tengo q aguantar el dolor, es normal tanto tiempo
+H|che mi vieja se olvida de todo, ayer no reconoció a mi hermana. la llevo al neurólogo o es la edad?
+H|me hice la prueba 3 veces y las tres dieron negativo pero llevo 12 dias de retraso, ya me estoy rayando
+H|ayudame a armar la lista de preguntas para la endocrinóloga, me dijeron que la glucosa en ayunas me dio 126 y mi mamá es diabética
+H|tengo un bulto en la axila q no duele pero no se va hace un mes, me da miedo buscarlo en google
+H|mi marido salió del quirófano hace 2 horas y no me dicen nada, cuanto tarda normalmente un bypass triple
+H|necesito justificar con un texto formal ante recursos humanos mi ausencia de la semana pasada por la intervención de mi padre en el hospital La Paz
+H|despues de la segunda dosis de Ozempic tengo unas náuseas horribles y no puedo ni oler la comida, es normal o dejo de pincharme
+H|se me cae el pelo a mechones desde que di a luz y encima me duele la cabeza todo el día
+H|tengo cita con el urólogo el jueves y me da una vergüenza horrible, que me van a hacer exactamente
+H|mi niña de 7 años se hace pipí en la cama todavía y ya probamos de todo, será algo médico o es q es dormilona
+H|mi pareja tuvo un sangrado fuerte a las 9 semanas y estamos en urgencias esperando, que significa si el latido no se ve todavía
+H|llego el informe de la resonancia: hernia discal L5-S1 con compromiso radicular. traducímelo a cristiano por favor
+H|llevo semanas sin poder dormir bien por un pitido constante en el oído, el otorrino me dijo q es acúfeno y q me acostumbre
+H|tomo Eutirox desde hace años pero desde q cambié de marca me siento rarísima, cansada y con frío todo el tiempo
+H|cómo le explico a mi hija de 10 años que su abuelo ya no va a salir del hospital
+H|me dijeron q tengo el colesterol por las nubes y la tensión alta a los 34, mi papá murió del corazón a los 50
+H|ayer me desmayé en el metro y desperté con gente alrededor, es la segunda vez este mes, a quién acudo
+H|con mi pareja llevamos 2 años buscando y nada, nos mandaron a la clínica de fertilidad pero no sé ni por dónde empezar
+H|tengo un hongo en las uñas de los pies que me da asco y evito ir a la playa, algun remedio casero q funcione
+H|quedé de ir el sábado a hacerme todas las pruebas de contagio, VIH y demás, tengo q ir en ayunas
+H|el dentista me dijo q tengo que sacarme las 4 muelas del juicio y estoy aterrada con la anestesia, q se siente despues
+H|mi abuela se cayó y se rompió la cadera, la operan mañana, tiene 88, hay q preocuparse mucho
+H|me recetaron Tramadol para la espalda pero me da miedo engancharme, cuanto tiempo se puede tomar
+H|desde ayer veo como luces y una mancha en el ojo derecho, es grave? voy a urgencias o espero
+H|ayudame a redactar el correo a mi tutora de tesis diciendo q me tienen q operar de la vesícula y pierdo dos semanas
+H|estoy con la regla hace 3 semanas seguidas y me siento muy débil, ya fui a la farmacia y me dieron ibuprofeno q no hace nada
+H|que significa que mi analitica diga ferritina 8, la doctora de cabecera dijo que me iba a mandar suplementos
+H|mi hermano tiene esclerosis múltiple y ayer le dio un brote, no sé si llevarlo a urgencias o esperar al neurólogo
+H|tengo psoriasis en los codos y el cuero cabelludo y me da cosa usar manga corta, que cremas funcionan
+H|ya van 5 días con diarrea y retortijones, volví de Cancún el domingo, tengo q preocuparme
+H|mi bebé de 3 meses no sube de peso y la pediatra del centro de salud ya me dijo q hay q hacer pruebas
+H|desde la cesárea me quedó un dolor en la cicatriz que no se va, ya pasaron 8 meses
+H|me acaban de decir q soy celíaca, q hago con la comida de mi familia en navidad
+H|tengo el tobillo del tamaño de una pelota de tenis desde que me torcí jugando fútbol el domingo, hielo o calor
+H|me da taquicardia cada vez que subo escaleras y mi novia dice q estoy pálido, será anemia
+H|mi mamá empezó la radio la semana pasada y se le cae la piel del cuello, q le podemos poner
+M|no me dan ganas de levantarme de la cama desde hace semanas, solo voy al trabajo por inercia y vuelvo a acostarme
+M|mi terapeuta me mandó de tarea escribir una carta a mi papá que ya no está, no sé por dónde empezar
+M|llevo 47 días sin tomar y hoy casi cedo, me das ideas para aguantar la noche
+M|cada vez que tengo q hablar en reuniones se me cierra la garganta y me tiemblan las manos, ya renuncié a dos ascensos por eso
+M|mi hijo de 15 pasa 12 horas al día en el Fortnite y ya no sale ni a comer, me grita si le apago el wifi
+M|che necesito ayuda, perdí a mi mejor amigo hace un mes y no puedo dejar de llorar en el laburo
+M|me tomo 2 Rivotril por noche hace un año y si no las tomo no pego un ojo, como las dejo sin sentirme mal
+M|mi novia dice que me puse intensa porque entré en pánico cuando no contestó en 3 horas, creo q algo no anda bien conmigo
+M|me diagnosticaron TDAH a los 31 y estoy procesando que toda mi vida creí que era vaga
+M|hace meses q no hablo con nadie salvo en el super, el finde pasa y no cruzo palabra con una persona
+M|ayer vomité todo lo que comí otra vez y me da asco mi cuerpo, no se a quien contarle esto
+M|escribí un mensaje para mi jefe diciendo q necesito unos días por salud mental, q puedo decirle sin que suene a excusa
+M|mi marido llegó borracho otra vez y mi hija de 6 lo vio, no sé q hacer ni a quién llamar
+M|tengo un nudo en el pecho todo el día y de pronto me despierto a las 3am con el corazón a mil, ya no aguanto
+M|me dieron de alta de la clínica de rehab hace 2 semanas y ahora q vuelvo a casa me da pánico recaer
+M|no sé si lo q siento es tristeza normal o algo más, desde q murió mamá en marzo no he podido ni entrar a su cuarto
+M|llevo toda la noche viendo porno y me siento una basura, es la tercera vez esta semana q prometo q no vuelvo
+M|mi hermana casi no come y se pesa 5 veces al día, mi mamá dice q es dieta pero a mí me asusta
+M|estoy quemada del trabajo, hace 3 semanas q lloro en el baño de la oficina y mi jefa ni se entera
+M|mi psiquiatra me subió la dosis de Escitalopram y los primeros días me siento peor, es normal
+M|quiero que me ayudes a escribirle un mensaje a mi ex para pedirle perdón por como me puse cuando me dio la crisis
+M|no puedo parar de lavarme las manos, ya se me agrietaron y igual vuelvo a hacerlo, mi familia cree q exagero
+M|xq me siento vacío cuando estoy rodeado de amigos, salgo de las fiestas y quiero desaparecer un rato
+M|mi papá desde que se jubiló no sale de la casa y se pasa el día mirando la pared con la tele apagada
+M|hace 3 días q no duermo nada, mi cabeza no para de dar vueltas con lo q pasó en el trabajo y ya tengo ojeras hasta el piso
+M|tengo 19 y siento q todos avanzan y yo no, no tengo amigos en la u y me da cosa hasta ir a clases
+M|mi hijo de 8 años tiene rabietas q duran una hora y en el cole dicen q puede ser autismo, ya pedimos cita con el equipo
+M|despues del divorcio me meto a ver tiktok hasta las 4 de la mañana pa no pensar y al otro día soy un zombi
+M|me cuesta un montón decir q no a la gente y después me da una culpa q no me deja en paz, así desde chica
+M|la psicóloga del cole llamó por mi hija de 12, dice q se aísla y llora en el recreo
+M|voy al grupo de AA los martes pero hoy no tengo fuerzas ni para ir, q me dirían ahí
+M|llevo un mes sin fumar yerba y me siento irritable y ansioso, me da miedo volver
+M|todas las noches reviso 5 veces q la puerta esté cerrada y la estufa apagada y aun así no me quedo tranquilo
+M|desde q nació mi bebé lloro por todo y siento q no soy buena madre, mi pareja piensa q estoy exagerando
+M|se me murió el perro hace 2 semanas, tenía 14 años, y me siento ridícula porque no puedo funcionar
+M|necesito una excusa creíble pa no ir a la boda de mi prima, es q me da pánico la gente y los abrazos
+M|ayer en el auto me vino un ataque de esos de no poder respirar y tuve que parar en la banquina, me pasa cada vez más
+M|mi compañero de piso se encierra días en su cuarto y no come, creo q está muy mal de ánimo, como le hablo
+M|el lunes empiezo EMDR con la terapeuta y estoy nerviosa, como funciona eso con los recuerdos de lo q me pasó de chica
+M|me dijeron que lo mío es bipolar tipo 2 y no sé cómo se lo digo a mis papás
+S|con mi novio llevamos 4 meses sin hacerlo y a mi no me nace, él ya se empezó a molestar
+S|me da vergüenza pero se me baja a la mitad y no llego, ya me pasó con 3 chicas distintas, será nervios o es otra cosa
+S|mi marido le escribía a otra del trabajo, vi los mensajes de ayer, cómo hago para confrontarlo
+S|creo q me gustan las chicas pero tengo 17 y vivo en un pueblo donde todos se conocen, no sé cómo manejarlo
+S|mañana le voy a contar a mis papás q soy gay y estoy temblando, ayudame a pensar qué decir
+S|cuánto tardo en estar protegida si empiezo la píldora hoy, anoche se rompió el condón y no quiero lo del día después
+S|tengo 28 y nunca he estado con nadie, siento que ya es tarde y me da pena decírselo a la gente que conozco
+S|mi esposa no quiere que la toque desde que tuvimos al niño, ya pasó un año y me siento rechazado
+S|le fui infiel a mi novia con un amigo de la facu y no sé si decirle o llevármelo a la tumba
+S|me siento hombre atrapado en cuerpo de mujer desde q tengo memoria, hoy me animé a buscar info sobre hormonas
+S|cuando estoy con alguien termino demasiado rápido, 1 minuto si bien me va, ya no quiero ni intentarlo
+S|descubrí q mi novio ve cosas raras en su compu y no se si es normal o debería preocuparme
+S|mi pareja quiere probar un trío y yo no sé, me da curiosidad pero tengo miedo de q todo se arruine
+S|me duele cuando lo hacemos, como si ardiera, y ya evito q pase, mi marido no entiende
+S|wey conocí a alguien en Grindr y quedé en su depa, q medidas debo tomar pa cuidarme
+S|me escribe un tipo casado y me gusta, ya van dos cafés y siento mariposas pero sé que está mal
+S|tengo 40 años y recién ahora me doy cuenta de que nunca tuve un orgasmo, será que algo está mal conmigo
+S|mi novia y yo queremos probar con juguetes pero no sabemos ni por dónde empezar ni qué comprar
+S|ayer mi pareja me dijo q ya no siente atracción por mí y creo q me estoy hundiendo
+S|me da asco mi cuerpo desnudo y por eso apago siempre la luz, mi novio ya lo notó
+S|voy a salir del clóset en el trabajo y quiero preparar lo q voy a decirle a mi jefe
+S|mi novio quiere sin condón y no tomo nada, qué método me recomiendas q no me dañe las hormonas
+S|nunca he sentido deseo por nadie, ni chicos ni chicas, y estoy empezando a pensar q soy asexual
+S|mi hijo de 16 me dijo q le gustan los chicos y no supe q contestar, me quedé helada
+S|me acosté con mi cuñado en la fiesta y ahora no puedo mirar a mi hermana a la cara
+S|con mi esposo queremos recuperar la chispa, ya casi no nos tocamos y dormimos de espaldas
+S|compré unas pastillitas azules por internet pq no se me para con mi nueva novia, es peligroso mezclarlas con alcohol
+S|tengo una amiga con derechos y se está enamorando, como le digo q yo no quiero nada serio
+S|la mujer con la q salgo me pidió q no se lo cuente a nadie, es mi primera vez con una chica, estoy confundida
+S|me excita cuando mi novio me dice cosas feas en la cama pero luego me siento mal conmigo misma, es raro
+S|mi novio vive con sus papás y nunca tenemos privacidad, hace meses q no estamos solos, buenas ideas
+S|soy virgen a los 25 y mi novia es mayor y con experiencia, tengo pánico de q se note
+S|me enteré q mi mujer sigue en Tinder y no me dijo nada
+S|a mi novio le gusta q le hable sucio por videollamada y quiero hacerlo bien, no me salen las palabras
+S|hace 3 años q estoy con mi pareja y siento q el sexo se volvió una obligación, ya no disfruto
+S|después de la menopausia mi libido se fue al piso y mi marido me mira raro
+S|le mandé fotos íntimas a un chico q conocí en Bumble y ahora me arrepiento, cómo le pido q las borre
+S|cómo le digo a mi chico q no me gusta cuando me hace eso en la cama sin que se sienta mal
+S|mi hermana trans empezó a vestirse como mujer en casa y mi papá no la acepta, como la apoyo
+S|cumplo 30 y todavía no sé si soy bi o simplemente curiosa, salgo con un chico y pienso en mi compañera
+R|mi suegra insiste en q bautice al bebé y yo ya no creo en nada de eso, mi marido está en el medio
+R|llevo 3 semanas de ramadán y en el trabajo no me dejan rezar un momento, cómo se lo planteo a RRHH
+R|hace años q no voy a misa y ayer sentí culpa al pasar frente a la iglesia, es normal
+R|me quiero salir de los Testigos de Jehová pero toda mi familia sigue dentro y me van a dar la espalda
+R|mi novio es musulmán y yo católica, sus padres ya dijeron q o me convierto o nada
+R|me dan ganas de ponerme el hiyab pero me da miedo la reacción de mi mamá y de mi jefe
+R|ayer le pedí perdón a Dios por lo que hice con mi ex y siento q no me escucha
+R|hay q ayunar en Yom Kipur aunque uno esté enferma? mi rabino no contesta
+R|mi hijo de 14 dice q no cree en Dios y mi esposo lo regañó muy feo en la cena
+R|fui a la parroquia a hablar con el padre sobre mi divorcio y me dijo q no puedo comulgar, no sé si volver
+R|como hago para encontrar carne halal en un pueblo chico de Soria sin coche
+R|me bautizaron en los evangélicos a los 15 y ahora a los 30 ya no creo, siento q traicioné a mis papás
+R|rezo el rosario todos los días y aun así siento q Dios no responde, será q no tengo fe suficiente
+R|mi mamá se unió a un grupo q la tiene dando todo su sueldo a un pastor, ya no la reconozco
+R|estoy pensando en hacerme cristiana pero en mi familia somos todos musulmanes, no sé a quién pedirle consejo
+R|ayudame con un mensaje para decirle a mi abuela q no voy a ir más a la iglesia con ella
+R|mi esposo dice q rezar cinco veces al día es obligatorio y yo a veces me salto el fajr, me siento mala
+R|con mi pareja judía queremos casarnos pero su mamá pide q me convierta, me lo estoy planteando
+R|necesito pedir en el colegio q mi hija no tenga educación física durante el ramadán, como redacto la carta
+R|voy a la confesión mañana y hace 10 años q no me confieso, que le digo al cura
+R|mi hermano da el 10% de su sueldo a la iglesia mormona aunque estamos apretados y no sé cómo decirle algo
+R|me peleé con mi madre porque no quiero llevar el velo a la boda de mi prima
+R|desde q murió mi papá le rezo todas las noches y le pido señales, estoy loca
+R|no me animo a decirle a mi novia q soy ateo, ella es muy de la iglesia y se lo toma a pecho
+R|me invitaron a un retiro espiritual de una comunidad y siento q algo no cuadra, hay q ir a conocer
+R|como hacer q mis papás evangélicos acepten q ya no voy al culto los domingos
+R|hace dos meses empecé a ir a la mezquita del barrio por curiosidad y siento algo q no sé explicar
+R|hoy es sabbat y mi jefe me programó turno, que derechos tengo
+R|me crié en una secta en Argentina y me fui a los 20, aún tengo pesadillas con los ancianos
+R|donde puedo comprar kosher en CDMX para pascua, soy nueva en esto desde que me convertí
+R|el pastor me dijo q si no diezmo Dios me va a cortar las bendiciones y ya no me alcanza ni pa lo básico
+R|me da miedo morir y que Dios me juzgue por no haber sido buena hija
+R|mi amiga evangélica me quiere llevar a su iglesia y yo soy católica de bautismo pero no practicante, no sé cómo decirle q no
+R|cómo se le dice a una familia muy católica q vas a casarte por civil y no por la iglesia
+R|me hice testigo hace dos años y mi ex dice q le lavé el cerebro a mi hija, tengo ganas de llorar
+R|mi suegro hindú no quiere q cocine carne en su casa, hasta dónde puedo exigir respeto a mis costumbres
+R|estoy en una crisis, leí a Dawkins y ya no sé si lo q me enseñaron de niña es verdad, no tengo a nadie con quien hablarlo
+R|en la iglesia me dijeron q mi hijo no puede ser padrino porque no está casado por la iglesia, me dolió
+R|quiero ir a umrah pero mi marido dice que no hay plata y siento q Dios me llama
+R|cómo me despido del grupo de oración de mi parroquia sin q piensen q me fui peleada, ya no siento nada ahí
+G|el casero mandó un burofax q llevamos 3 meses sin pagar y no tengo ni para comer
+G|me llaman 5 veces al día de una empresa de cobranza y le debo 12 mil pesos a una tarjeta, me amenazan con ir a mi trabajo
+G|pedí un préstamo rápido en una app y los intereses me están comiendo vivo, ya debo el triple
+G|perdí el trabajo en septiembre y ya se acabó el finiquito, cómo se hace para pedir el paro
+G|necesito rellenar el formulario del banco de alimentos y no sé qué poner en ingresos
+G|me embargaron la nómina y me llega casi la mitad, q puedo hacer
+G|aparezco en el Buró de Crédito y por eso no me dan ni un celular a meses
+G|el domingo apostando en Betano perdí lo de la renta, no sé cómo se lo digo a mi mujer
+G|me estafaron 800 euros con un anuncio falso de un piso y la fianza no la recupero
+G|tengo la tarjeta al tope y pago solo el mínimo, cuántos años voy a tardar en salir
+G|mi marido se quedó sin chamba y estamos viviendo del sueldo de mi mamá, cómo recortamos gastos al límite
+G|como hago para pedir una prórroga a la Agencia Tributaria, debo 3.400 de IRPF de hace dos años
+G|me cortaron la luz hoy por falta de pago, hay alguna forma de reconectarla sin pagar todo de golpe
+G|ya me da pena pedirle plata a mi hermano otra vez, es la cuarta vez este año
+G|me llegó una intimación de la AFIP por monotributo atrasado, no puedo pagar todo junto
+G|llevo desde febrero sin pagar el alquiler, el dueño dice q me da hasta fin de mes
+G|mi esposa se endeudó con 5 tarjetas sin decirme y me enteré hoy, debemos como 40 mil
+G|alguien sabe cómo solicitar el Ingreso Mínimo Vital, estoy sin nada desde abril
+G|quiero declararme en quiebra personal, cómo funciona la ley de segunda oportunidad
+G|pagué el gas con el dinero del colegio de mi hijo y ahora no sé cómo completar la matrícula
+G|me prestaron por el gota a gota y ya están llamando a mi familia, no sé qué hacer
+G|necesito un mensaje para pedirle a mi jefe un adelanto del sueldo, es que se me juntó todo
+G|estamos con mi pareja viendo si nos conviene vender el auto pa pagar la deuda del banco
+G|jugué en el casino online toda la noche y perdí el ahorro de 2 años, estoy destruido
+G|me cayó el aviso del DICOM y mi arriendo depende del informe comercial, qué hago
+G|el banco me dice que no me puede refinanciar y llevo 4 cuotas atrasadas de la hipoteca
+G|como pido la ayuda de emergencia del ayuntamiento para pagar el recibo del agua
+G|mi mamá cayó en el fraude del falso banquero y le sacaron todos sus ahorros de jubilada
+G|pasé de ganar 2000 a 700 euros después del ERTE, no me da pa nada
+G|no llego a fin de mes desde enero, y ya voy al Oxxo a pedir fiado todos los días
+G|uso 3 tarjetas pa pagar las otras 3 y ya no sé de dónde sacar
+G|mi cuenta está en números rojos hace 4 meses y me cobran comisiones por todo, el sueldo desaparece el día 2
+G|cómo escribo una carta al propietario pidiendo q me deje pagar el alquiler en dos partes este mes
+G|me dieron la mitad del subsidio de desempleo y no entiendo por qué, la oficina del SEPE no atiende
+G|mi papá apostó la casa en las carreras y ahora vamos a perderla, ni mi mamá sabe todavía
+G|tengo que escoger entre pagar la luz o la farmacia de mi mamá este mes
+G|me hicieron un descuento en la nómina por una deuda con Hacienda q ni sabía q tenía
+G|vendí mi laptop y el celular viejo pa completar la renta, voy a tener q comer solo arroz hasta el 15
+G|sigo pagando un crédito de Elektra q ya liquidé hace 2 años y no me quitan los cargos
+G|mi cuñado me pidió 5 mil dólares prestados y mi marido aceptó sin preguntarme, y ya estamos justos
+L|me llegó una citación del juzgado pa el 14 de noviembre y no entiendo qué es lo q me reclaman
+L|mi ex no me deja ver a mi hija los fines de semana q me tocan según el convenio, a quién acudo
+L|ayer la policía me paró y me puso una multa por conducir con el móvil, me van a quitar puntos
+L|el abogado de oficio dice q mi caso es débil y q me conviene aceptar un acuerdo, no sé si confiar
+L|mi visa de estudiante vence en 20 días y migración todavía no responde la prórroga
+L|mi jefe me despidió por mensaje de whatsapp sin carta ni nada, me debe 3 meses
+L|me van a desalojar el 3 de diciembre y no tengo adónde ir con los chicos
+L|tengo antecedentes por algo q hice con 19 años y no me dan trabajo, cómo se borran
+L|me llevaron anoche por una pelea en el bar y pasé la noche en la comisaría, me soltaron con fecha de juicio
+L|necesito redactar una carta de arraigo pa mi regularización, llevo 3 años aquí sin papeles
+L|el patrón no me paga las horas extra y me dijo q si voy a la inspección me corre
+L|mi esposo me dio una cachetada y fui a denunciar pero en la comisaría no me quisieron tomar la denuncia
+L|mi hijo de 17 fue agarrado con unos gramos en la escuela y el director nos citó con la policía juvenil
+L|me llegó una demanda de mi ex por la pensión alimenticia, dice q no pago hace 5 meses
+L|quiero pedir el divorcio pero mi marido no firma, cuánto sale con abogado
+L|un tipo me chocó el carro y se dio a la fuga, tengo la placa, qué hago, aviso a la patrulla
+L|mi oficial de libertad condicional me pidió que le lleve recibos de sueldo y no tengo contrato todavía
+L|me quitaron la tutela de mi sobrino y quiero apelar, el defensor dice q hay plazo
+L|el casero se quedó con mi depósito y se niega a devolverlo, voy a ir a Profeco
+L|deportaron a mi hermano ayer en Texas y mi cuñada y mis sobrinos quedaron solos
+L|tengo audiencia con el juez de paz el martes, que debería llevar y cómo me visto
+L|me robaron el celular en el bus y la policía no quiere hacer la denuncia sin factura
+L|mi permiso de residencia por reagrupación familiar salió denegado, tengo 10 días pa recurrir
+L|un vecino me denunció por ruido y me llegó un papel del ayuntamiento con multa de 600
+L|firmé un finiquito sin leerlo y ahora creo q me engañaron, puedo reclamar al sindicato
+L|mi hija de 5 años dice q su papá no la trata bien cuando está con él y no sé si mostrarle eso al juez
+L|me pusieron una orden de alejamiento de mi ex y la vi sin querer en el super, voy preso
+L|hace dos años me llevaron preso por algo q no hice y todavía tengo el expediente en mi contra
+L|necesito la apostilla de mi acta de nacimiento para presentar mi solicitud de asilo
+L|mi hermano está en el penal de Santiago Uno y quiero saber cómo mandarle plata y ropa
+L|mi seguro no quiere pagar el siniestro de la inundación y ya mandé 3 reclamos, tengo q ir a juicio
+L|trabajo en negro hace 3 años y ahora me quiero ir, pierdo todo si reclamo en el ministerio de trabajo
+L|el juez me quitó el carnet por 6 meses por dar positivo en el control de alcoholemia, cómo voy a ir a trabajar
+L|dicen q mi marido tiene una orden de captura y hoy vinieron dos de civil a preguntar por él
+L|me llegó la notificación de la sentencia de divorcio y no entiendo cuánto me toca en la repartición de bienes
+L|cómo redacto un recurso de alzada contra la multa del radar, creo q iba a 63 y no a 80
+L|mi cuñado me estafó con un contrato de compraventa y quiero demandarlo
+L|estoy en proceso con mi ex por la custodia compartida y su abogada me escribió algo muy feo, tengo q responder
+L|soy DACA y se me vence en marzo, estoy muy nerviosa por lo q pueda pasar
+L|mi mamá está sin papeles en Madrid y le acaban de dar una orden de expulsión, a quién llamamos
+#G
+H|soy enfermera y necesito un folleto para pacientes sobre cómo usar la insulina correctamente, con lenguaje sencillo
+H|cuántos casos de diabetes tipo 2 hubo en México en 2022 según la OMS
+H|escribe una escena de una novela donde el protagonista recibe un diagnóstico de cáncer y no se lo dice a su familia
+H|que enfermedad tiene Selena Gomez y desde cuando, es para un trabajo de la facu
+H|soy farmacéutico en un pueblo y me preguntan mucho sobre ibuprofeno vs paracetamol, ayúdame a resumirlo para un cartel
+H|pa mi examen de anatomía necesito un resumen de las fases del ciclo menstrual
+H|redacta un consentimiento informado para un ensayo clínico sobre hipertensión
+H|como se contagia la gripe aviar y cuál es el riesgo para humanos, para una nota periodística
+H|soy médica de cabecera y quiero un guion de 3 minutos para explicar a pacientes qué es la hipertensión
+H|hipotéticamente si alguien se rompe el fémur, cuánto tarda en recuperarse en promedio
+H|dame 10 preguntas tipo test sobre el sistema inmunitario para 3º de la ESO
+H|cuál fue la causa de muerte de Maradona según el informe médico publicado
+H|escribe un poema corto sobre un hospital de noche para la revista de la facultad de enfermería
+H|necesito estadísticas de mortalidad infantil en Argentina de los últimos 10 años para un informe de la fundación
+H|soy fisio y quiero una tabla de ejercicios de movilidad de hombro para mis alumnos de pilates
+H|q síntomas tiene la mononucleosis? estoy preparando una charla para el cole donde trabajo como orientadora
+H|cuál es la diferencia entre un infarto y un paro cardiaco, pregunto pq mañana me toca exponer en clase
+H|guion para un video de youtube sobre mitos de las vacunas, que sea ameno
+H|explícame cómo funciona la anestesia epidural para un artículo de divulgación
+H|soy de recursos humanos y necesito redactar la política de bajas médicas de la empresa, versión clara
+M|escribe un cuento sobre una niña que pierde a su hermano y aprende a vivir con el duelo
+M|soy psicóloga clínica y necesito una hoja de ejercicios de respiración para pacientes con ansiedad
+M|que porcentaje de jóvenes en España sufre depresión según los últimos estudios
+M|resumen sobre la teoría del apego de Bowlby para mi examen de psicología evolutiva
+M|cuál fue el diagnóstico de Van Gogh según los biógrafos
+M|soy docente y quiero 5 actividades de aula para trabajar la gestión emocional en 4º de primaria
+M|escribe el monólogo de un personaje alcohólico en una obra de teatro, tiene q dar pena pero no lástima
+M|qué dice la OMS sobre el burnout laboral, cómo lo define
+M|necesito un post de LinkedIn para la campaña de salud mental de mi empresa, tono cercano
+M|imagina q un personaje de mi guion tiene ataques de pánico en el metro, describe la escena
+M|como explico a mis alumnos de secundaria qué es el TDAH sin estigmatizar, soy tutora
+M|diferencia entre tristeza y depresión para un trabajo de la uni, con citas del DSM-5
+M|de qué hablan los estudios sobre el tratamiento de la fobia a las alturas
+M|soy trabajador social y debo escribir un informe sobre un programa de prevención de adicciones en jóvenes
+M|escribe una canción triste sobre la soledad en una ciudad grande
+M|hablame de la depresión de Robin Williams, vi un documental y quiero entender la enfermedad
+M|cuántos pacientes atiende un psicólogo del sistema público chileno en promedio al mes
+M|quiero armar un taller de mindfulness de 4 sesiones para empleados de mi empresa
+M|si hipotéticamente una persona tuviera insomnio crónico, qué tratamientos existen según la ciencia
+M|traduce al inglés este folleto sobre adicción a los videojuegos que repartimos en el instituto
+S|soy educadora sexual y necesito una dinámica para una charla de 3º de la ESO sobre consentimiento
+S|cuál es la historia del matrimonio igualitario en Argentina, para un trabajo de sociales
+S|escribe una escena romántica entre dos mujeres en la Roma antigua para mi novela
+S|que métodos anticonceptivos hay y cuál es su eficacia, es para una exposición de biología
+S|soy ginecóloga y quiero un post para Instagram sobre el uso correcto del DIU
+S|cuándo se despenalizó la homosexualidad en Chile, línea del tiempo
+S|redacta el protocolo de la empresa contra el acoso sexual en el trabajo, versión formal
+S|resume la teoría de Kinsey y por qué fue polémica
+S|escribe un diálogo entre dos amigos donde uno sale del clóset, tono realista, para un cortometraje
+S|cuántas personas LGBT hay en América Latina según encuestas recientes
+S|soy periodista y preparo una nota sobre la infidelidad en las series, qué series la tratan mejor
+S|qué dice la ciencia sobre la libido en la menopausia, para un artículo de divulgación en mi blog de salud
+S|como funciona el condón femenino, para una charla en el centro juvenil donde soy voluntaria
+S|por qué Freud hablaba tanto de sexualidad, explícame sencillo
+S|escribe una carta de una abuela a su nieto gay aceptándolo, para un proyecto de teatro comunitario
+S|cuál es la edad media de la primera relación sexual en España según el INE
+S|dame ideas de preguntas para una entrevista a una sexóloga en mi podcast
+S|cuál es la diferencia entre sexo y género, para el glosario de la guía de diversidad de nuestra empresa
+S|hazme un guion de tiktok sobre mitos del sexo, divertido y respetuoso
+S|qué película trata mejor la transición de género, estoy armando un cine-foro para el instituto
+R|cuántos musulmanes hay en Latinoamérica y dónde se concentran
+R|soy profesora y necesito una actividad sobre las festividades judías para 5º de primaria
+R|explica diferencias entre católicos, protestantes y ortodoxos para mi examen de historia
+R|escribe un poema inspirado en el Salmo 23 para un concurso de literatura del colegio
+R|como era la vida en un monasterio medieval, para una novela histórica
+R|qué opinaba Nietzsche sobre Dios, resumen para un trabajo de filosofía
+R|soy periodista, necesito un perfil sobre el papa León XIV, datos básicos y polémicas
+R|que significa kosher y qué alimentos están prohibidos en el judaísmo, para una guía de restaurantes
+R|dame una lista de versos del Corán sobre la paciencia para un trabajo de literatura árabe
+R|quiero escribir un cuento sobre un niño que descubre que su vecino es sacerdote, ayúdame con el arranque
+R|cuál es la historia de la Inquisición española, versión corta para una exposición
+R|soy gerente de RRHH y necesito una política de adaptación de horarios en festivos religiosos para todos los empleados
+R|cuántos creyentes hay de cada religión en el mundo, tabla actualizada
+R|explícame la diferencia entre ateísmo y agnosticismo con un ejemplo, estoy preparando un debate
+R|traduce al español este versículo de Génesis 1 del hebreo
+R|que dice el budismo sobre el sufrimiento, lo necesito para ética
+R|redacta una invitación para el evento interreligioso que organiza el ayuntamiento
+R|escribe el discurso de un obispo ficticio en un guion de serie, que sea ambiguo moralmente
+R|por qué los sijs llevan turbante, quiero poder explicarlo a mis alumnos de ESO
+R|cuál es el origen de la Semana Santa en Sevilla, para una guía turística
+G|soy asesor financiero y quiero explicar a clientes cómo funciona el interés compuesto en una deuda, con ejemplo
+G|cuál fue la tasa de morosidad bancaria en España en 2023
+G|escribe una escena de una peli donde un personaje pierde todo en el casino
+G|soy contable y necesito una plantilla para registrar impagos de clientes, en excel
+G|qué es el Buró de Crédito y cómo funciona, para un trabajo de economía
+G|resumen sobre la crisis argentina de 2001 y el corralito
+G|cuántas estafas piramidales se denunciaron en Colombia el año pasado, estadísticas
+G|redacta un correo formal para reclamar una factura impagada a un cliente de mi empresa
+G|soy periodista económica, ayúdame con un titular para una nota sobre el aumento de embargos de vivienda
+G|cuál es la diferencia entre concurso de acreedores y quiebra, explicado para un curso de derecho mercantil
+G|hipotéticamente, si una persona gana el salario mínimo en Chile, cuánto tarda en ahorrar 1 millón
+G|dame ideas para una campaña de educación financiera para jóvenes en el instituto
+G|como funciona el IMV, para explicar a los usuarios del centro de servicios sociales donde trabajo
+G|qué pasó con la quiebra de FTX, resumen para mi clase de finanzas
+G|soy cobradora de una empresa y necesito un guion cortés y legal para llamadas a clientes con retraso
+G|escribe un cuento para niños sobre una alcancía que enseña a ahorrar
+G|cuál es el nivel de endeudamiento medio de los hogares mexicanos, datos del Banxico
+G|cómo se calcula el IRPF para un autónomo con ingresos de 30.000 euros, ejemplo numérico para mi blog
+G|cuánto dinero pierden los españoles al año en apuestas online según la DGOJ
+G|necesito una carta modelo para solicitar prórroga de pago a proveedores, como empresa
+L|soy abogada laboralista y quiero un resumen sencillo del despido improcedente para mi blog
+L|cómo funciona el juicio por jurado en Argentina, para el examen de derecho procesal
+L|escribe una escena de un thriller en la que el detective interroga a un sospechoso
+L|cuántos migrantes fueron deportados desde EEUU en 2023 según el DHS
+L|soy paralegal y necesito una plantilla de poder notarial general, formato mexicano
+L|cuál fue el proceso judicial a Shakira por fraude fiscal en España, resumen
+L|redacta un contrato de arrendamiento para mi cliente, un propietario con 2 pisos en Valencia
+L|diferencias entre prisión preventiva y condena, para trabajo de criminología
+L|imagina que eres el juez de una obra de teatro escolar, escribe tu discurso final
+L|como se tramita la nacionalidad española por residencia, pasos, para orientar a usuarios de la ONG donde soy voluntario
+L|soy oficial de policía, necesito redactar un informe tipo de accidente de tráfico (modelo)
+L|resumen del juicio a Pinochet en Londres 1998, para historia
+L|cuántas denuncias por violencia de género se registraron en España en 2022, estadísticas oficiales
+L|hazme un cuestionario de 10 preguntas sobre el código penal colombiano para estudiar
+L|soy profesor de derecho y busco un caso hipotético de custodia compartida para que mis alumnos debatan
+L|escribe un guion de podcast sobre cómo funciona un desahucio, para informar, tono claro
+L|que leyes protegen a los inquilinos en CDMX, resumen general
+L|redacta una carta de presentación para un puesto de asistente en un bufete penal
+L|quién es Julian Assange y por qué lo juzgaron, explicación para un trabajo de clase
+L|necesito un resumen de las novedades de la ley de extranjería de 2024 para el boletín de mi gestoría

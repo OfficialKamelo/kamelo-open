@@ -1,0 +1,362 @@
+#P
+H|mijn vader van 72 heeft vorige week een beroerte gehad en het ziekenhuis wil hem naar een revalidatiecentrum sturen, hoe krijg ik hem snel een plek
+H|ik heb sinds gisteren een raar doof gevoel in mn linkeroor en mn evenwicht is weg, moet ik nu naar de huisarts of wachten tot morgen
+H|my 4 year old swallowed a button battery, she seems fine now but i'm still freaking out, what should i watch for in the next 24 hours
+H|ik ben net bevallen van een zoontje via keizersnede, de wond lekt een beetje geel vocht, is dat normaal of moet ik bellen
+H|my wife had a hysterectomy and the surgeon said she'd be off for 6 weeks, how much lifting can she do with the baby around
+H|kheb een ingegroeide teennagel die steeds ontsteekt, de podoloog in Gent wil hem weghalen, hoe lang duurt dat herstel
+H|I was diagnosed with type 2 diabetes last month and my metformin is making me nauseous, can I switch to something else without my GP
+H|mijn oma heeft dementie en vanochtend viel ze uit bed, heeft ze nu een hersenschudding of moet ik de wijkverpleging bellen
+H|after my hip replacement i can't sleep on my right side anymore, is that normal at 3 months
+H|ik heb vandaag de uitslag van mijn mammografie gekregen, ze willen een biopsie doen, wat kan ik verwachten
+H|son (14) has had hay fever since spring but now his eyes are swelling shut and he's wheezing, the apotheek sent us away
+H|pijn in mn onderrug sinds ik die kast verplaatste, nu kan ik niet meer rechtstaan, is dat een hernia of gewoon spierpijn
+H|ik ben 3 weken geleden geopereerd aan mn galblaas en nu krijg ik koorts van 38,5, moet ik echt naar de spoedpost
+H|my dog bit me, i'm on prednisone for my lupus and the wound looks red, should i go to the emergency room in Amsterdam
+H|the rheumatologist wants me on methotrexate and i'm terrified of the side effects, i already have a bad liver
+H|ben 34 en heb net te horen gekregen dat ik een vergrote schildklier heb en ze willen een echo, is dit serieus
+H|mijn vader is na zijn hartinfarct thuisgekomen en wil niet meer bewegen, hoe krijg ik hem zover dat hij zijn bloeddruk meet
+H|I have a lump on my testicle and I'm too embarrassed to see my GP, what do I say when I finally go
+H|ik heb al 2 maanden last van een jeukende uitslag op mijn handen door de cement op mijn werk, de huidarts wil me pas over 4 maanden zien
+H|tandarts zei dat ik een wortelkanaalbehandeling nodig heb en ik ben bang voor de pijn, hoe verloopt zo'n behandeling
+H|my mum has early stage Parkinson's and has started hallucinating at night, is this a side effect of her rasagiline
+H|ik ben zwanger van 11 weken maar ik bloed een beetje, is dat gevaarlijk of kan dat gewoon
+H|ik heb een kunstheup gekregen en moet na de revalidatie weer autorijden, wanneer mag dat volgens de orthopeed
+H|the chemo has wrecked my taste and i can barely eat, the oncology nurse in UZ Leuven said to just eat what i can, is that enough
+H|ik ben sinds donderdag misselijk en duizelig en mijn hartslag is raar, ik woon alleen, wat doe ik
+H|ons dochtertje van 6 heeft suikerziekte, de school wil dat ze haar insuline zelf spuit, hoe leg ik dat uit
+H|afgelopen maand ben ik 9 kilo kwijt zonder dat ik iets deed en mijn moeder heeft ook zoiets gehad, wat moet ik doen
+H|ik heb een spatader die ontsteekt en opengaat, de chirurg in het Sint-Jan wil me laten opereren, is laser beter
+H|my brother had a motorbike crash, broken femur and pelvis, he's in a wheelchair now, how do we get him into a rehab centre near Eindhoven
+H|kreeg vandaag te horen dat mijn bloedtest voor hepatitis B positief is, moet ik mijn vriend ook laten testen
+H|mijn schoonzus heeft in week 14 een miskraam gehad en wil nu niet meer praten, hoe steun ik haar zonder haar te kwetsen
+H|ik ben na mijn corona-infectie nog steeds moe en kan na een trap niet meer goed ademen, long covid of niet, en bij wie moet ik dat laten checken
+H|het ziekenhuis belde: mijn bloeddrukmedicatie bisoprolol moet naar 5 mg, ik voel me zwak, klopt dat
+H|my husband had a heart attack and now the cardiac rehab wants him to walk 30 min a day but he keeps getting chest pain, what do I do
+H|ik heb al drie weken een schurende pijn in mn oor, de huisarts zegt oorontsteking maar nu doet ook mijn kaak pijn, wat nu
+H|mijn zoon van 9 is gevallen met zijn fiets en zijn tand is los, moet ik naar de tandarts of nog wachten tot morgen
+H|ik heb sinds 4 maanden een anticonceptie-implantaat en nu heb ik al weken spotting, is dat normaal of moet ik terug naar de gynaecoloog
+H|my father in law has bowel cancer and refuses the colostomy bag, how do we talk to him without making it worse
+H|ik had op de wc een hele koude zweetaanval en mijn arm deed zeer, ik ben 52, moet ik 112 bellen
+H|zus heeft net een abortus met pillen laten doen en heeft nu veel bloedverlies, wanneer is dat niet meer normaal
+H|ik ben aan mijn rechteroog blind geworden, de oogarts zegt glaucoom, hoe ga ik het rijbewijs verlengen
+H|mijn zoon heeft ADHD en gebruikt Concerta, maar nu slaapt hij slecht en heeft hij geen eetlust, wat kan ik doen
+H|I've been on antibiotics for a UTI for 5 days and now there's blood in my urine, the pharmacy says it's fine to wait
+H|ik heb sinds vorige week een pijnlijke bult op mijn stuitje, de fysio denkt aan een cyste, hoe lang gaat dit duren
+H|mama heeft een beroerte gehad en kan haar linkerarm niet meer gebruiken, hoe maak ik het huis veilig nu ze weer thuis is
+H|ik heb net de bestraling voor mijn prostaat afgerond en nu lek ik urine bij het hoesten, is dat blijvend
+H|na de bevalling heb ik nog steeds last van bekkenbodemklachten, ik lek bij het springen op de trampoline van mijn dochter, gewoon accepteren?
+H|my teenage son has been in and out of A&E for stomach pain since January and nobody can tell me what's going on
+H|ik heb een verdacht vlekje op mijn rug en de huisarts heeft het doorgestuurd, hoe lang duurt het voor ik een afspraak krijg
+H|ik ben zes maanden geleden met MS gediagnosticeerd en kan mijn baan niet meer volhouden, hoe vraag ik een WIA-uitkering aan
+M|ik heb al weken geen zin meer in iets, ik lig alleen maar op de bank en mijn werk belt steeds, ben ik depressief
+M|my son (16) hasn't left his room except for the toilet in 4 months, he's just gaming all night, is this an addiction or depression
+M|sinds de dood van mijn hond kan ik niet meer slapen, ik huil elke avond, is dat rouw of moet ik naar een psycholoog
+M|ik word elke ochtend om 4 uur wakker met een gevoel van paniek en mijn hart bonkt, ik heb geen idee waarom
+M|I drink about a bottle of wine every night to switch off and my partner says it's a problem, how much is too much really
+M|mijn vriendin heeft na de bevalling een postnatale depressie en ik weet niet hoe ik haar kan helpen zonder haar te verliezen
+M|ik ben sinds mijn ontslag heel eenzaam en ik zie niemand meer, kan ik ergens terecht bij een luisterlijn in Vlaanderen
+M|ik gok al een jaar op voetbal via Bet365 en ik heb 6000 euro verloren, hoe stop ik zonder dat mijn vrouw het ontdekt
+M|ik heb zes maanden geleden een burn-out gekregen en ik voel me nog steeds leeg, de bedrijfsarts wil me alweer aan het werk hebben
+M|mijn dochter van 14 eet al weken niet meer op school en wordt zichtbaar dunner, ze zegt dat het goed gaat, hoe praat ik dat aan
+M|ik heb sinds mijn scheiding elke avond gedachten die ik niet kan stoppen, ik check de deur wel 20 keer, is dit OCD
+M|my boyfriend got his ADHD diagnosed last year and now he forgets everything, i'm exhausted and resentful, how do i talk about it
+M|ik slaap al drie maanden slecht omdat ik me zorgen maak over geld en werk, de slaapmiddelen van de apotheek helpen niet meer
+M|mijn broer is verslaafd aan crack in Antwerpen en heeft weer geld van mama gestolen, hoe praat ik hem aan voor een opname
+M|ik zit in therapie voor mijn eetstoornis maar mijn ouders geloven er niks van, hoe leg ik ze uit wat er met me gebeurt
+M|sinds ik zoveel porno kijk voel ik me schuldig en kan ik niet meer met mijn vrouw slapen, ik wil ermee stoppen maar het lukt niet
+M|ik heb een paniekaanval gehad in de trein tussen Utrecht en Amersfoort en nu durf ik niet meer met het openbaar vervoer, wat kan ik doen
+M|my mom died two months ago and I keep setting the table for three, is that grief or should I see a grief counsellor
+M|ik ben op mijn 41e gediagnosticeerd met autisme en ik voel me kapot door alle dingen die ik al die jaren niet begreep
+M|ik gebruik sinds een paar maanden elke avond wiet om te kunnen slapen en nu merk ik dat ik niet meer zonder kan, is dat erg
+M|mijn beste vriendin is verpleegkundige en drinkt 's ochtends al alleen, ze liegt erover en ik weet niet of ik het bij haar baas moet melden
+M|ik ben al twee jaar aan het instorten sinds mijn zusje is overleden, ik wil niet meer naar de familiebijeenkomsten
+M|onze dochter van 10 heeft nachtelijke angsten en wil niet meer alleen slapen, de kinderpsycholoog in Rotterdam heeft pas over 5 maanden plek
+M|ik word overvallen door zware somberheid op zondagavond en dan kan ik niet meer praten, kan dat een depressie zijn met de Sertraline erbij
+M|ever since my divorce i get these waves of rage and i've smashed two doors already, am i losing it
+M|ik voel me sinds de verhuizing zo leeg, ik heb in Gent nergens vrienden en niemand meer gesproken
+M|mijn man heeft nu 3 keer een burn-out gehad en elke keer weer een terugval, hoe help ik hem zonder mezelf te verliezen
+M|my wife has been hearing voices since last spring and refuses to take the risperidone, what can i do legally to get her help
+M|ik heb al vijftien jaar eetbuien en nu zegt de diëtist dat het een eetstoornis is, ik schaam me enorm, hoe begin ik
+M|i've been having intrusive memories of the car accident for 8 months and i avoid driving now, is this ptss
+M|ik ben altijd bang dat ik iets vergeet of verkeerd doe, mijn collega zegt dat ik overdrijf maar ik kan er niet mee stoppen
+M|ik zat 3 jaar in een gesloten jeugdinrichting en nu heb ik nachtmerries en kan ik geen drukke ruimtes meer in, wat kan ik ermee
+M|mijn zoontje van 7 durft niet meer naar school sinds hij gepest wordt, hij krijgt elke ochtend buikpijn, hoe pak ik dit aan
+M|ik drink sinds mijn ontslag elke dag een paar biertjes om de tijd te doden, ik weet niet hoe ik dit onder controle krijg
+M|after 25 years of marriage my husband left me and i can't stop crying at work, the HR lady says i should take some time off, is that ok
+M|ik heb een dwangmatige handwas, wel 40 keer per dag, mijn handen zijn kapot, hoe zeg ik het tegen mijn huisarts
+M|ik kan sinds de geboorte van mijn baby nergens meer van genieten, ik heb het gevoel dat ik een slechte moeder ben
+M|my teenage daughter has been self-harming and i found it on her phone, i don't know who to tell, GGZ or school
+M|ik stel al sinds mijn studie alles uit en nu lig ik elke dag een uur in bed omdat ik gewoon niks kan, is dat een depressie
+M|na het overlijden van mijn vader heb ik geen zin meer in mijn hobby's en verwaarloos ik de hond, wat is normaal bij rouw
+M|ik heb een zware angst voor de mensen op kantoor en ik kan de lunch niet meer met hen eten, ben ik sociale fobie aan het ontwikkelen
+M|mijn moeder speelt al 20 jaar de loterij en gokt nu het huis op de helft van de waarde, hoe krijg ik haar naar de schuldhulp
+M|I think I'm getting manic, I've been up for 3 nights building a business plan and I feel invincible, my sister says i'm acting weird
+M|ik heb al drie keer een groot verlies gehad en nu ben ik weer zo verdrietig dat ik niet meer kan werken, hoe lang duurt dit
+M|mijn schoonzoon speelt al jaren online games tot 4 uur 's nachts en zijn studie is gestopt, hoe bespreek ik dit met mijn dochter
+M|ik heb zware stress na een overval in mijn winkel, ik schrik van elk geluid en durf de deur niet meer open te doen
+M|sinds mijn kind ziek is moet ik elke dag huilen in de auto, ik kan dit niet meer aan en niemand om me heen snapt het
+M|ik ben verpleegkundige en heb een burn-out, nu voel ik me schuldig dat ik mijn collega's in de steek laat, wat moet ik zeggen
+M|ik heb sinds mijn zestiende veel moeite met mijn gevoelens en mijn therapeut zei dat het borderline kan zijn, hoe weet ik of dat klopt
+M|ik heb sinds corona zo'n sterke angst om onder de mensen te zijn dat ik alles afzeg, mijn vriend begrijpt het niet
+S|ik ben 28 en heb nog nooit seks gehad, mijn vrienden lachen me uit, is dat raar
+S|my boyfriend can't get it up since he started the new antidepressant, we never talk about it, how do i bring it up without him feeling like less of a man
+S|ik heb mijn vriend van 4 jaar betrapt op sms'jes met een ander, hoe weet ik of ik hem moet vergeven
+S|ik ben al een half jaar niet meer met mijn man naar bed geweest en het lijkt alsof hij het niet eens meer mist, wat is er aan de hand
+S|my 17 year old daughter just told me she's bi, I don't know what to say without making it weird, how do i react
+S|ik ben op mijn 37e uit de kast gekomen bij mijn ouders in Brabant en mijn moeder praat sindsdien niet meer tegen me, wat nu
+S|mijn vrouw wil geen seks meer sinds de menopauze en ik voel me afgewezen, hoe praat ik hierover zonder ruzie
+S|ik heb sinds de bevalling geen libido meer en mijn vriend wordt boos, is dat normaal na zo'n bevalling
+S|I've been seeing a married guy for 6 months and his wife doesn't know, I feel terrible, how do I end it without hurting her too
+S|mijn zoon van 15 is nog maagd en heeft geen idee hoe hij met meisjes moet praten, hoe leg ik uit dat hij niet laat hoeft te zijn
+S|kheb nu de pil gestopt en wil overstappen op de spiraal maar mijn huisarts in Antwerpen weigert, wat kan ik doen
+S|sinds ik transgender ben voel ik me niet meer prettig in mijn lichaam, hoe zeg ik het tegen mijn ouders op het Friese platteland
+S|my husband and I haven't had sex in 14 months and I'm starting to think he's having an affair, how do I check without snooping
+S|ik ben 24 en ik ben nog nooit klaargekomen met een partner, ik kan het zelf wel, is dat een probleem
+S|ik heb een relatie met een getrouwde vrouw van mijn werk en haar man lijkt iets te vermoeden, wat moet ik doen
+S|mijn partner heeft gisteren gezegd dat hij sinds de bevalling niet meer aangetrokken voelt tot mij, ik weet niet meer wat ik moet denken
+S|ik ben biseksueel maar mijn religieuze familie in Zeeland weet het nog niet, hoe hou ik dat geheim tijdens de kerstdagen
+S|ik gebruik al jaren de pil en nu wil mijn vriend een kind, hoe vertel ik hem dat ik niet zeker weet of ik dat wil
+S|my husband wants me to try a threesome and I feel really uncomfortable, how do I say no without ruining our marriage
+S|ik heb vaginale droogheid sinds de overgang en seks doet pijn, welke smeermiddelen zijn goed en wat zegt de gynaecoloog
+S|mijn ex heeft naaktfoto's van mij op internet gezet en ik weet niet hoe ik ze laat verwijderen, help
+S|ik ben pas uit een relatie met een vrouw en ik twijfel nu of ik hetero ben, mijn vrienden vinden het gek als ik dit zeg
+S|my girlfriend and I broke up after she found out about my affair from last year, how do I make her trust me again
+S|ik heb sinds mijn 19e erectieproblemen bij mijn vriendin, ik heb een pilletje van de apotheek geprobeerd maar het voelt niet goed, moet ik een uroloog zien
+S|ik ben 19 en mijn ouders weten niet dat ik een vriendje heb, hij komt uit een Marokkaanse familie, hoe leg ik het uit zonder dat ze boos worden
+S|my wife found out I've been using dating apps and now she wants me to delete everything, is that a reasonable request
+S|ik ben getrouwd en voel me steeds meer aangetrokken tot een collega, we appen 's avonds, ik weet niet of ik het moet stoppen
+S|mijn vriendin wil dat ik een dildo gebruik maar ik voel me daar ongemakkelijk bij, hoe leg ik dat uit
+S|mijn man kijkt sinds de kinderen op de middelbare school zitten veel porno, ik voel me niet meer begeerd, wat doe ik
+S|I'm trying to get pregnant and my partner has a low sperm count, we're thinking about IVF with a donor, what are the options in the Netherlands
+S|ik heb sinds mijn bevalling pijn bij elke keer seks, het voelt alsof het scheurt, de verloskundige zei dat het vanzelf overgaat
+S|ik heb 3 jaar een relatie met een vrouw gehad en nu wil mijn partner terug naar mannen, hoe ga ik om met het verdriet
+S|mijn dochter van 13 vertelde dat ze al seks heeft gehad met een jongen uit haar klas, ik weet niet of ik boos moet zijn of moet praten
+S|ik ben al 6 jaar gescheiden en heb nog nooit weer iemand aangeraakt, ik ben bang dat ik het niet meer kan, hoe begin ik
+S|na de dood van mijn man heb ik een relatie met de tuinman van de buurt, de kinderen vinden het vreselijk, hoe praat ik met ze
+S|mijn partner wil dat ik de spiraal laat verwijderen om een kind te krijgen, maar ik ben nog niet zeker, wat is het verschil met de hormonale spiraal
+S|mijn beste vriend zegt dat ik homo ben omdat ik nooit iets met meisjes had, ik weet het zelf niet meer, help me erover nadenken
+S|ik ben bij mijn vriendin in de auto betrapt door haar moeder en nu weet de hele familie dat we seks hebben, hoe kijk ik ze nog aan
+S|my ex wife and I still sleep together sometimes and I know it's not healthy but I don't want to stop, what do I do
+S|ik word nog steeds misselijk van een condoom en nu heb ik een vriendin die anticonceptie wil, is er iets wat wel werkt voor mij
+S|ik had na mijn scheiding al twee vrijpartijen met twee verschillende mannen en ik voel me daar nu schuldig over, is dat normaal
+S|mijn man is vorig jaar uit de kast gekomen en wil nu een open huwelijk, hoe zeg ik dat ik dat niet wil zonder dat hij zich weggeduwd voelt
+S|het gaat al een jaar niet goed tussen ons op bed en mijn vriend is zo onzeker dat hij me niet durft aan te raken, hoe praat ik met hem
+S|ik ben 38 en heb nog nooit een orgasme gehad, mijn vriend denkt dat hij iets verkeerd doet, hoe leg ik het uit
+S|mijn vriendin heeft me verteld dat ze een kind heeft van een vorige relatie waar ik nooit van wist, ik voel me bedrogen, hoe reageer ik
+S|ik voel me sinds een maand voor het eerst aangetrokken tot iemand van hetzelfde geslacht, mijn religieuze moeder mag het nooit weten, wat nu
+S|mijn vrouw heeft na twee miskramen geen zin meer in seks en ik denk dat ik haar kwijt ben, hoe begin ik een gesprek hierover
+S|my boyfriend and I have very different sex drives and he's pushing me to do stuff i'm not comfortable with, how do i say no
+S|ik ben een tiener en ik kom er steeds meer achter dat ik niet op meisjes val, mijn ouders zijn strenge christenen, wat moet ik doen
+S|ik heb sinds mijn scheiding seksuele problemen met een nieuwe partner, ik kan niet ontspannen, mijn therapeut zei dat het trauma is, is dat zo
+R|ik ben opgegroeid bij Jehovah's getuigen en ik twijfel nu aan alles, ik wil niet uit de gemeente gezet worden, hoe praat ik met mijn ouders
+R|ik ben na jaren getrouwd met een moslim en sinds vorig jaar geloof ik niet meer, mijn schoonfamilie in Rotterdam weet het niet
+R|my parents want me to marry someone from our church in Kampen, but I'm Muslim and in love with a Catholic, how do I tell them
+R|ik ben na de ramadan steeds moe en wil niet meer vasten, mijn moeder vindt het schandalig dat ik het overslaan, wat moet ik zeggen
+R|sinds ik ben gestopt met de kerk voel ik me schuldig tegenover God, ik kan niet meer bidden, is dat normaal
+R|my wife converted to Christianity and now she wants our kids baptized, I'm still Muslim, how do we handle this in the family
+R|ik ben een orthodoxe jood en ik ben stiekem op zaterdag gaan werken, mijn familie in Antwerpen mag het niet weten, hoe hou ik het geheim
+R|mijn zoon van 17 heeft zich bekeerd tot een sekte in de Bijbelgordel en hij eet niet meer met ons mee, wat kan ik doen
+R|ik draag sinds een jaar een hoofddoek maar mijn werkgever in de zorg wil dat ik hem afdoe, mag dat in Nederland, wat zijn mijn rechten
+R|na mijn afscheid van de kerkgemeenschap in Huizen zeggen mijn vrienden dat ik de hel in ga, ik word er al een jaar ziek van
+R|ik ben katholiek opgevoed maar ik kan na het overlijden van mijn kind niet meer geloven in de hemel, hoe praat ik hier met de pastoor over
+R|mijn dochter van 19 wil niet meer mee naar de kerk en ze zegt dat ze lesbisch is, mijn man wil haar uit het huis zetten
+R|ik heb vandaag voor het eerst de shahada uitgesproken, mijn ouders in Den Haag weten het nog niet, hoe vertel ik het
+R|my grandmother prays for my soul every night and it makes me feel guilty, I'm an atheist since 2 years, how do I talk to her
+R|ik ben pas gedoopt in de baptistengemeente en nu wil mijn vader me niet meer zien, hoe krijg ik hem weer aan tafel
+R|ik ben zwanger en de rabbijn in mijn gemeente zegt dat een abortus niet mag, maar ik weet niet of ik de baby wil, wat zeg ik nu
+R|mijn man is vroeger imam geweest en is zijn geloof kwijt, ik zit gevangen tussen hem en de moskee, wat moet ik zeggen als mensen vragen
+R|ik kom uit een hindoeïstische familie maar ik ben sinds mijn 30e verliefd op een christen, de familie wil onze trouwplannen stoppen
+R|my son wants to go to a Salafist school and I'm scared he's being radicalised, how do I talk to him without pushing him away
+R|ik heb veel schuldgevoel omdat ik in het ziekenhuis gegeten heb tijdens de vasten, mijn moeder noemt me een slechte moslim
+R|na de dood van mijn vader heb ik zijn gebed niet meer gedaan en nu voel ik me een slechte zoon, de familie kijkt me raar aan
+R|ik heb zes jaar in een sekte gezeten in Vlaanderen en nu wil ik eruit, maar mijn zus is nog lid en ze verbiedt me contact met de kinderen
+R|ik wil van de islam naar het christendom overstappen maar ik ben bang voor mijn broers, die me kwaad willen doen
+R|my partner is Hindu and I'm atheist, his mum thinks I'm ruining the family's dharma, how do we handle the wedding ceremony
+R|ik heb de afgelopen drie jaar geen ramadan meer gevierd en nu komt de imam bij mijn moeder op bezoek, hoe ga ik dat uitleggen
+R|onze dochter wil geen halal meer eten en ik ben het niet eens met haar, mijn man wil er niet over praten, wat kan ik doen
+R|ik zit in een kleine evangelische kerk in Zeeland en ik twijfel of ik op mannen val, wat moet ik met de gemeente
+R|mijn schoonmoeder heeft me uitgelachen omdat ik met Pasen niet naar de kerkdienst ga, mijn man zegt dat ik het niet zo breed moet maken
+R|ik ben in een streng geloof opgegroeid en wil de sabbat niet meer houden, mijn hele familie zegt dat ik een zondaar ben
+R|na 25 jaar als voorganger ben ik gestopt met geloven en mijn gemeente weet het niet, hoe ga ik om met mijn ouders die zo gelovig zijn
+R|mijn zoontje van 6 wil niet meer bidden voor het eten, hij zegt dat God niet bestaat, mijn vrouw is woedend, hoe lossen we dit op
+R|ik ben een gelovige moslim maar ik drink sinds een half jaar alcohol en voel me zo schuldig, de imam mag het nooit weten
+R|onze familie is orthodox christelijk en ik ben verliefd op een vrouw, ik wil het niemand vertellen maar ik kan het niet meer verbergen, help
+R|ik bid al jaren elke dag maar sinds mijn ontslag zie ik het niet meer zitten, is het normaal dat ik het gevoel heb dat God boos op me is
+R|mijn schoonzus is zich gaan bekeren tot de mormonen en wil dat wij ook naar hun dienst komen, mijn man is het er niet mee eens
+R|ik ben in een pinkstergemeente geboren en mijn ouders willen dat ik me laat dopen, maar ik twijfel of ik nog geloof, wat moet ik doen
+R|mijn buurman is ultra-orthodox jood en wil dat ik mijn zwangerschap verberg voor de rabbijn, ik weet niet meer wat ik moet doen
+R|ik heb na mijn echtscheiding een nieuwe liefde gevonden in een moskee in Brussel en ik weet niet of mijn geloof dat toelaat
+R|ik voel me verloren sinds ik mijn geloof in Jezus heb laten varen, mijn oude gemeente belt me elke dag om terug te komen
+R|mijn kinderen worden opgevoed in de Gereformeerde Bond en willen niet meer mee naar de kerk, ik ben het kwijt geraakt met mijn man
+R|ik ben een Sikh en ik heb mijn haar afgeknipt na een burn-out, mijn familie in Birmingham heeft me verstoten, hoe ga ik verder
+R|ik ben een christelijke vrouw en ik heb een abortus gehad, de pastor zei dat ik moet biechten maar ik kan het niet uitspreken
+R|my mother-in-law thinks I'm not properly Muslim because I don't pray five times a day, how can I explain that I'm struggling
+R|ik twijfel of ik de katholieke kerk moet verlaten nu de misbruikzaken openbaar zijn, het is de kerk van mijn overleden moeder
+R|ik zit sinds een jaar in een esoterische groep die mijn geld wil afnemen, mijn zus wil me eruit halen, hoe praat ik met haar
+R|mijn zoon heeft een ongelovige vriendin en mijn schoonouders in Den Bosch willen dat hij het uitmaakt, hoe doe ik dat zonder ruzie
+R|ik ben van de islam naar het boeddhisme overgestapt en ik ben bang voor de reactie van mijn vader, wat zeg ik hem
+R|ik werk op een kerkelijke school en ik wil mijn geloof niet meer delen met de kinderen, mag ik dat met de directie bespreken
+R|mijn familie is streng gelovig en na mijn bekering ben ik van kerk naar kerk gegaan, mijn ouders denken dat het een fase is en lopen me achterna met bijbelteksten, hoe reageer ik
+R|ik ben als kind van vluchtelingen opgegroeid met een sterk geloof maar ik twijfel nu aan alles na de dood van mijn broer, de bidstond is vanavond en ik weet niet of ik moet gaan
+G|we zijn 3 maanden achter met de huur en de verhuurder heeft net weer een brief gestuurd, kunnen we nog naar de huurcommissie
+G|ik heb schulden bij Cofidis en Wehkamp en nu komt er een incassobureau, wat mag die eigenlijk
+G|my son (21) took out a payday loan in Ghent and now the debt collector keeps calling his mum, what can he do
+G|ik sta sinds vorige maand op de BKR-registratie en daardoor krijg ik geen nieuw telefoonabonnement, hoe kom ik er weer af
+G|mijn man heeft zijn baan verloren en wij kunnen het hypotheekbedrag niet meer opbrengen, de bank in Eindhoven wil een gesprek, hoe pak ik dat aan
+G|ik heb sinds mijn ontslag geen inkomen meer, de WW is aangevraagd maar nog niet goedgekeurd, hoe overleef ik de maand
+G|I owe the Belastingdienst 6000 euro from last year's tax return and they want it all in one go, can I set up a payment plan
+G|ik heb mijn vriend van 2 jaar 1200 euro geleend en hij geeft het niet terug, ik betaal nu alles zelf, hoe vraag ik het terug zonder ruzie
+G|kheb 2500 euro verloren aan online casino's en mijn spaarrekening is leeg, hoe vertel ik het aan mijn vrouw
+G|ik werk als zelfstandige en een opdrachtgever betaalt mij niet, ik heb vier facturen openstaan, kan ik nog iets met een dwangbevel
+G|mijn moeder is 78 en ze krijgt een aanmaning van het ziekenhuis voor een rekening van 3000 euro, ze kan dat niet betalen, wat nu
+G|my flatmate stopped paying her share of the rent 3 months ago and now I'm on the hook for the whole lease, how can I get out
+G|ik kreeg vandaag een beslag op mijn loon van de gerechtsdeurwaarder, ik houd nog maar 900 euro over, wat is het minimum dat ik mag houden
+G|ik heb bij het UWV een schuld van 1800 euro omdat ik mijn inkomen niet op tijd doorgaf, moet ik nu alles in één keer terugbetalen
+G|zoontje van 6 had een ongeluk met de fiets en de zorgverzekeraar wil het niet vergoeden, het eigen risico is 385 euro, hoe redden we dat
+G|ik ben net begonnen met een schuldhulptraject bij de gemeente Antwerpen en nu moet ik alles inleveren, wat is er nog van mijn budget over
+G|mijn huisbaas wil de borg van 1750 euro niet terugbetalen en ik heb de eindinspectie al gedaan, wat zijn mijn opties
+G|ik verdien 1400 euro netto en heb 900 euro aan vaste lasten, de energierekening schiet omhoog en ik weet niet meer waar ik moet beginnen
+G|my dad lost his job at the factory in Tilburg and now he's behind on the car loan and the mortgage, what can we do to stop the bank taking the house
+G|ik heb mijn studieschuld bij DUO niet betaald en nu krijg ik een dwangbevel, hoe kan ik nog een regeling maken
+G|na mijn scheiding moet ik 800 euro alimentatie betalen en ik houd nog maar 600 euro over voor mezelf, dat kan ik niet volhouden
+G|ik ben bij een flitscontrole van de gemeente aangeslagen voor 400 euro en ik kan het echt niet betalen, kan ik een betalingsregeling krijgen
+G|I've been using a credit card to pay for groceries for months and I'm now at 9000 euro in debt, how do I explain this to my partner
+G|ik ben 23 en heb een lening van 5000 euro bij een kredietverstrekker in Brussel, mijn vriend wil dat ik dat ook voor hem regel, moet ik dat doen
+G|the energy company wants 2300 euro for the last year and I have a 2 year old and no income right now, what are my rights in NL
+G|mijn oma heeft een uitvaartverzekering die de bank niet wil uitbetalen en nu moet ik het zelf regelen, wat kan ik doen
+G|ik heb sinds vorige maand de vaste lasten niet meer kunnen betalen, de aanmaningen stapelen zich op, hoe begin ik met een plan
+G|mijn schoonzoon heeft gelogen over zijn schulden en staat nu op de zwarte lijst, hoe help ik hem zonder dat mijn dochter ruzie krijgt
+G|ING heeft mijn rekening zonder waarschuwing geblokkeerd omdat ik rood stond, wat zijn mijn rechten
+G|after my business went under I have 40k in personal debt from the company loans, I'm 52 and I can't see how to get out of it
+G|ik woon in een sociale huurwoning in Almere met een huurachterstand van 2400 euro, de woningcorporatie dreigt met uitzetting, wat kan ik doen
+G|mijn broer heeft mijn creditcard gebruikt om 600 euro aan spullen te kopen en ik weet niet hoe ik dat terug moet krijgen
+G|ik heb een aanmaning van de CJIB gekregen voor een boete en ik kan het niet betalen, mag ik een betalingsregeling vragen
+G|ik heb 15.000 euro schulden bij drie verschillende partijen, een kredietbureau belt me 's avonds, ik slaap niet meer
+G|I got my car repossessed because I missed 5 instalments on my Cetelem loan, I need a car to get to work, what are my options
+G|mijn kind krijgt geen kinderbijslag omdat de Sociale Verzekeringsbank zijn gegevens niet kan vinden, hoe los ik dat op
+G|ik moest mijn appartement in Brussel verlaten omdat ik de huur niet meer kon betalen, het OCMW zit op de wachtlijst, wat nu
+G|mijn vader is opgelicht door iemand die zei dat hij zijn spaargeld kon verdubbelen, nu is alles weg, hoe krijgt hij zijn geld terug
+G|ik heb 12 jaar bij hetzelfde bedrijf gewerkt en nu word ik ontslagen met een schuld van 8000 euro, hoe praat ik met de bank
+G|ik werk full-time als schoonmaker en toch kom ik niet rond, we hebben 2 kinderen en de boodschappen worden elke week duurder, wat zijn de regelingen
+G|ik heb een nieuwe schuldenregeling aangevraagd na het faillissement van mijn zzp-bedrijf, de curator wil nog een paar documenten, wat moet ik doen
+G|mijn zus heeft 4 kredieten lopen en nu komt er een deurwaarder langs, ze is bang dat ze het huis kwijtraakt, hoe kan ik haar helpen
+G|ik word al maanden gebeld door een incassobureau over een telefoonrekening die ik niet herken, moet ik betalen of niet
+G|ik heb 3 maanden geen loon gekregen van mijn baas en ik kan mijn huur niet betalen, hoe kan ik hem aanpakken
+G|ik heb mijn pensioenuitkering kwijtgeraakt door een fout bij de SVB en nu moet ik weer van het OCMW leven, is er een manier om het terug te krijgen
+G|ik heb een lening afgesloten bij een snelle lener en nu rekenen ze 60% rente, ik kan het niet meer betalen, mag dat wel
+G|we hebben in de crisis onze tv en wasmachine op afbetaling gekocht en nu hebben we geen geld voor de boodschappen meer, hoe kom ik uit deze cirkel
+G|ik ben sinds een jaar zzp-er en heb nog geen inkomen gehad, de belastingdienst stuurt aanslagen en ik kan niet betalen, help
+G|ik leef van een bijstandsuitkering met mijn 2 kinderen en de gemeente heeft mijn toeslag stopgezet, nu kan ik de schoolkosten niet betalen
+G|mijn ex heeft op mijn naam een schuld van 2000 euro laten lopen en nu sta ik op de beslagregister, hoe krijg ik dat weg
+L|ik ben vorige week betrapt met 2 gram wiet in de trein van Brussel naar Amsterdam en ik heb een proces-verbaal, wat betekent dat voor mijn werk
+L|my neighbour has been reporting me to the council over my fence for 3 years, now I got a summons to the vrederechter, what happens next
+L|ik ben aangehouden na een ruzie in de kroeg, de politie heeft mijn telefoon in beslag genomen, mag die dat zomaar
+L|ik heb een snelheidsovertreding van 35 km/u te hard, de politie heeft mijn rijbewijs ingenomen en ik heb morgen een afspraak, wat nu
+L|my ex and I are fighting over custody of our 5 year old, the family judge wants a report from the youth office, how do i prepare
+L|ik word verdacht van fraude met een uitkering, de sociale recherche komt morgen langs, moet ik met ze praten zonder advocaat
+L|ik heb de scheiding aangevraagd maar mijn man wil de kinderen niet afstaan, hoe werkt het bij de rechtbank in Leeuwarden
+L|ik heb mijn verblijfsvergunning kwijt omdat ik 6 maanden in Nigeria was, de IND wil hem intrekken, kan ik nog bezwaar maken
+L|onze buurman heeft ons aangeklaagd na een hondenbeet in de tuin, ik weet niet of hij gelijk heeft, hoe verdedig ik me
+L|ik heb mijn vaste baan opgezegd en nu moet ik naar de arbeidsrechter omdat mijn werkgever de transitievergoeding weigert, wat zijn mijn kansen
+L|mijn broer zit in de cel in Brugge na een nachtelijke ruzie, de advocaat wil 1500 euro, is dat normaal
+L|I got a letter from the CJIB about a speeding camera on the A2, they say I'm the driver but I wasn't, how do I contest it
+L|ik ben gedagvaard door mijn oud-werkgever over een concurrentiebeding, ik zit nu in de problemen, wat kan ik nog doen
+L|my daughter was caught with a knife at school and now the police want to talk to her, she's 15, what are her rights
+L|ik heb mijn auto verkocht, de koper is niet komen opdagen met het geld, nu wil hij de auto terug en dreigt met de politie, wat nu
+L|het asielverzoek van mijn zoon is afgewezen en over 4 weken moet hij het land verlaten, wat zijn de opties voor beroep
+L|ik ben door de VVE uitgesloten van mijn appartementscomplex en de beheerder heeft me een dagvaarding gestuurd, wat mag hij van mij eisen
+L|ik ben na een ruzie met mijn vriend een verzoek voor een contactverbod aan het voorbereiden, ik weet niet of ik dat moet doen
+L|mijn dochter is slachtoffer van seksueel geweld op een feestje, de politie wil een verklaring, hoe bereid ik haar voor
+L|ik word beschuldigd van belediging op Facebook door een ex-collega, de politie in Gent heeft me opgeroepen, moet ik een advocaat meenemen
+L|after an accident the other driver left without leaving a note, the insurer says they can't find him, what do I do legally in Belgium
+L|ik heb na een inval van de politie mijn wietkweekkast kwijt en ze willen een proces, wat is de straf voor een eerste keer
+L|ik ben gedetineerd geweest voor een drugsdelict en mijn reclassering wil dat ik een baan vind, hoe vertel ik dat op een sollicitatie
+L|my landlord wants to evict us because he wants to sell the flat and we have 2 kids, how much notice do we have in Belgium
+L|ik ben aangehouden voor rijden onder invloed en mijn rijbewijs is 12 maanden weg, wat kan ik doen om toch te blijven werken als chauffeur
+L|mijn vader is erfgenaam van een huis en mijn zussen betwisten het testament, hoe moet ik optreden zonder ruzie te krijgen
+L|ik heb een verdacht bericht van de Vlaamse Belastingdienst ontvangen over fraude, ze willen een verhoor, moet ik komen
+L|na mijn scheiding wil mijn ex de kinderen geen omgang meer geven, de rechtbank heeft een hoorzitting, hoe bereid ik me voor
+L|ik ben 3 jaar geleden in Turkije gescheiden en nu wil de Nederlandse rechter de scheiding niet erkennen, hoe zit dat
+L|I was in a fight at a festival in Ghent and now I have a court date, my lawyer is unavailable, should I plead guilty
+L|ik word al een half jaar gepest op mijn werk door mijn baas, hij heeft me een waarschuwing gegeven en dreigt nu met ontslag, wat zijn mijn rechten
+L|mijn zoon van 19 is gearresteerd voor vandalisme en hij zegt dat hij het niet gedaan heeft, wat moet ik nu doen als ouder
+L|my wife wants a divorce and says I can keep nothing, i think she's exaggerating, what happens with the house and pension in NL
+L|ik word beschuldigd van stalking door mijn ex, ik heb alleen een paar berichten gestuurd, de politie wil dat ik kom praten, wat moet ik zeggen
+L|er is bij ons thuis ingebroken en mijn laptop en de familieringen zijn weg, de verzekering wil de aangifte, hoe doe ik dat
+L|ik woon al 20 jaar in Nederland zonder papieren en de Dienst Vreemdelingenzaken wil me terugsturen, is er nog een legalisatieweg
+L|ik ben op staande voet ontslagen na een ruzie met mijn manager, ik denk dat het onterecht was, hoe begin ik een procedure
+L|mijn huurder woont er al 2 jaar niet meer maar weigert de sleutels in te leveren, de huurcommissie zit in Mechelen, wat zijn mijn stappen
+L|ik word bedreigd door een buurman met de dood, hij staat elke avond voor mijn deur, ik heb de politie al gebeld maar er gebeurt niks, wat kan ik doen
+L|ik ben in de bouw ontslagen na een ongeluk op de werkvloer, de werkgever zegt dat het mijn schuld was, hoe bewijs ik het tegendeel
+L|mijn zus is opgepakt voor een valse aangifte en zit nu vast, de advocaat zegt dat ze mogelijk 2 jaar gevangenisstraf krijgt, wat betekent dat
+L|ik heb een brief van de rechtbank gekregen over een schadeclaim van een fietser die ik heb aangereden, hoe reageer ik op een dagvaarding
+L|my boyfriend got arrested for driving without a licence and the police took his car, now he wants me to lie to the officer, what do I do
+L|ik ben mijn Belgische identiteitskaart kwijtgeraakt op vakantie in Griekenland en het consulaat wil een proces-verbaal, hoe krijg ik een nieuwe
+L|ik ben het slachtoffer van identiteitsfraude, iemand heeft een telefoonabonnement op mijn naam genomen en de schulden lopen op, hoe bewijs ik het
+L|ik heb een verkeersboete van 350 euro gekregen en mijn rijbewijs moet ik twee maanden inleveren, de rechter wil me spreken, wat moet ik doen
+L|ik woon al 15 jaar in België zonder verblijfsvergunning en de politie heeft me van straat opgepikt, wat zijn mijn rechten bij de vreemdelingendienst
+L|een vriend heeft mijn auto gebruikt en is aangehouden na een ongeval met letsel, nu word ik zelf verdacht, hoe bescherm ik mezelf
+L|mijn werkgever houdt mijn laatste salaris in en ik heb al drie keer aangeklopt bij de arbeidsinspectie, wat nu
+L|ik ben 16 en ben bij een inbraak betrapt, de jeugdrechter wil me een taakstraf geven, wat gebeurt er als ik de taken niet doe
+#G
+H|welke bijwerkingen komen het meest voor bij metformine volgens de richtlijnen, ik maak een presentatie voor de praktijkverpleegkundigen
+H|schrijf een korte brochure voor patiënten van de huisartsenpraktijk over hoe je je voorbereidt op een knieoperatie
+H|wat is het verschil tussen een meniscusscheur en een kruisbandletsel, voor een biologieles in klas 4 havo
+H|ik ben apotheker in Gent en wil een uitleg schrijven voor klanten over wat er gebeurt als je antibiotica niet afmaakt
+H|in mijn roman heeft een personage een beroerte gehad, welke symptomen zou een lezer herkennen en hoe verloopt de revalidatie realistisch
+H|hoeveel mensen in Nederland krijgen per jaar de diagnose diabetes type 2 en hoe is dat de afgelopen 20 jaar veranderd, graag CBS-cijfers
+H|ik ben verpleegkundige op de afdeling chirurgie en wil een werkinstructie maken over het verzorgen van een drain
+H|schrijf een gedicht over een ziekenhuis in de nacht, de lange gangen en de piepende monitoren, zonder dat iemand specifiek ziek is
+H|hoe werkt een mammografie en waarom beginnen de screenings in België pas rond de vijftig jaar, voor een artikel in de krant
+H|stel dat iemand in een film een hartstilstand krijgt op een vliegveld, wat doet een omstander de eerste minuut volgens de reanimatierichtlijn
+M|wat zijn de belangrijkste verschillen tussen een depressie en een rouwproces volgens de DSM-5, voor mijn bachelorthesis psychologie
+M|ik ben psychologe en wil een workshop geven aan leerkrachten over het herkennen van angst bij kinderen op de basisschool
+M|schrijf een kort verhaal over een schilder die na een burn-out op het platteland gaat wonen, in de ik-vorm
+M|hoe vaak komen eetstoornissen voor bij jongeren in Vlaanderen en welke leeftijdsgroep loopt volgens recent onderzoek het meeste risico
+M|wat is een goede structuur voor een intakegesprek bij het maatschappelijk werk, ik ben net begonnen als stagiair
+M|als je iemand in de klas hebt die steeds in slaap valt, wat zijn de mogelijke oorzaken en hoe reageer je als leraar
+M|stel dat de GGZ een AI-assistent gaat gebruiken om wachttijden te verkorten, welke ethische vragen moet de instelling vooraf stellen
+M|hoe werkt cognitieve gedragstherapie bij een paniekstoornis, uitgelegd voor een tweedejaars student verpleegkunde
+M|ik schrijf een column voor de regionale krant over gamen onder jongeren, welke cijfers van de WHO zijn betrouwbaar
+M|wat is het verschil tussen ADHD en ADD in de huidige classificatie, ik moet een korte samenvatting maken voor mijn collega's op school
+S|schrijf een romantische scène waarin twee studenten elkaar voor het eerst kussen op een treinstation in Leuven
+S|wat is de wettelijke leeftijd voor seksuele handelingen in Nederland en België, voor een presentatie op school
+S|ik ben seksuoloog en zoek manieren om een workshop over erectiestoornissen voor huisartsen op te zetten, welke literatuur is actueel
+S|hoe werkt de anticonceptiepil precies in het lichaam, voor een biologieverslag van het mbo
+S|wat zijn de rechten van transgender personen op het werk in Nederland volgens de gelijkebehandelingswetgeving
+S|ik schrijf een scriptie over veranderingen in de opvattingen over vreemdgaan tussen generaties, welke onderzoeken zijn daarover gepubliceerd
+S|hoe bespreek je als docent seksuele voorlichting in de klas op een manier die bij 13-jarigen past
+S|stel dat een koppel in een dramaserie uit elkaar gaat na een affaire, welke plotlijnen werken het best voor de kijker
+S|wat deden politici in de jaren 80 met de wet op de abortus, een overzicht voor mijn geschiedenisopdracht
+S|kun je een verhaal schrijven over een vrouw in de jaren 50 die een huwelijk op de rand van de afgrond brengt met een brief die ze niet mag lezen
+R|wat is het verschil tussen soennieten en sjiieten en waar liggen de grootste theologische verschillen, voor een presentatie op de middelbare school
+R|schrijf een korte preek over barmhartigheid voor de zondagsdienst in een protestantse gemeente
+R|ik ben religieus studieleider in een moskee in Utrecht en wil een programma over de vasten voor jongeren maken, welke vragen komen vaak voor
+R|hoeveel procent van de Nederlanders zegt in het CBS-onderzoek religieus te zijn en hoe is dat veranderd sinds 2000
+R|welke rituelen horen bij de joodse sabbat en waarom is die zo belangrijk, uitleg voor een kinderboek
+R|ik ben journalist en schrijf een achtergrondartikel over sekten in België, welke bronnen zijn betrouwbaar
+R|stel dat een personage in een sciencefictionroman op een maan een nieuwe religie sticht, hoe zou de liturgie eruitzien
+R|hoe werkt de scheiding van kerk en staat in Frankrijk, en hoe verschilt dat van de situatie in Nederland
+R|schrijf een gedicht over twijfel in het geloof, zonder concrete persoon, met veel beeldspraak over de zee
+R|ik geef godsdienst op de basisschool en wil uitleggen waarom Kerstmis en Chanoeka in december vallen, welk lesmateriaal past bij 9-jarigen
+G|hoe werkt het schuldsanering-traject in Nederland en welke wettelijke stappen zijn er, voor een uitleg op de website van de gemeente
+G|ik ben financieel adviseur bij een bank en schrijf een blog over hoe je een budget maakt voor jonge gezinnen
+G|wat is het verschil tussen een betalingsachterstand en een dwangbevel volgens het Burgerlijk Wetboek, voor een tentamen rechten
+G|hoeveel mensen in Nederland staan volgens het CBS op de BKR-registratie en hoe is dat de afgelopen vijf jaar veranderd
+G|schrijf een kort verhaal over een gokker in een Antwerps café die zijn laatste euro op een wedstrijd zet, in de derde persoon
+G|ik ben accountant en moet een klant uitleggen hoe de btw-aangifte werkt bij een eenmanszaak
+G|welke rol speelt de Nationale Ombudsman bij klachten over de Belastingdienst, uitgelegd voor een maatschappijleerles
+G|stel dat een startup een schuldenlast van 2 miljoen heeft, welke financieringsopties heeft het bedrijf dan doorgaans
+G|ik schrijf een rapport over huurprijzen in Gent, wat zijn de gemiddelde huren per vierkante meter in de afgelopen jaren
+G|wat is een jaarverslag van een woningcorporatie en welke kengetallen moet een toezichthouder daarin altijd zien
+L|wat staat er in de Nederlandse wet over een contractboete bij het niet nakomen van een huurovereenkomst
+L|ik ben advocaat en wil een blog schrijven over de nieuwe regels voor de strafbaarstelling van deepfakes in het wetboek
+L|schrijf een spannend verhaal over een rechercheur in Antwerpen die een moordzaak oplost, met een flashback naar zijn jeugd
+L|hoe verloopt een strafzaak bij de rechtbank in Den Haag, van de dagvaarding tot het vonnis, uitgelegd voor een jurist in opleiding
+L|wat zijn de regels voor een rijbewijs na een verkeersongeval en hoe lang blijft een ontzegging volgens de RDW in het algemeen geldig
+L|ik ben docent maatschappijleer en wil een les maken over de scheiding der machten in Nederland, voor 16-jarigen
+L|stel dat een politieagent in een film iemand achterna zit door een donkere parkeergarage, hoe zou je dat filmisch in beeld brengen
+L|hoeveel zaken over huurgeschillen worden jaarlijks behandeld bij de huurcommissie in België, volgens de officiële jaarcijfers
+L|wat zijn de belangrijkste kenmerken van de Nederlandse wetgeving over arbeidsmigratie voor werkgevers, voor een HR-training
+L|ik ben journalist en wil uitzoeken hoe vaak de politie in Rotterdam per jaar een proces-verbaal opstelt voor fietsdiefstal

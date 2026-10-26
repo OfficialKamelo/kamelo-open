@@ -1,0 +1,422 @@
+#P
+H|hab seit tagen nen komischen knubbel an der brust
+H|mein blutdruck war heute 165 zu 100, was tun
+H|ich bin schwanger und hab angst vor der geburt
+H|mein sohn hat schon wieder mittelohrentzündung
+H|nach der op am knie tut noch alles weh
+H|hab grad nen positiven schwangerschaftstest gemacht
+H|meine mutter hat die diagnose demenz bekommen
+H|mein hba1c ist 8,4, ist das schlimm
+H|ich hab seit wochen blut im stuhl
+H|wir versuchen seit zwei jahren schwanger zu werden
+H|mein vater hatte gestern nen herzinfarkt
+H|nehm seit montag metformin und mir ist übel
+H|hab termin zur darmspiegelung und hab schiss
+H|meine freundin hatte ne fehlgeburt in der 9. woche
+H|ich hör links kaum noch was
+H|mrt-befund ist da, bandscheibenvorfall
+H|ich hab chlamydien, wie sag ichs meinem freund
+H|ich vertrag das ibuprofen net, magen brennt
+H|meine tochter hat neurodermitis am ganzen körper
+H|migräne mit aura, schon dreimal diese woche
+H|hab vorhin nen hiv-test gemacht, ergebnis kommt morgen
+H|meine oma liegt auf der intensivstation
+H|ich bin 20 kilo zu schwer, der arzt macht druck
+H|nach der chemo gehen mir die haare aus
+H|mein kind verträgt kein gluten, was darf es essen
+H|bin wegen dem rücken seit zwei wochen krankgeschrieben
+H|hab seit gestern fieber und der hals tut höllisch weh
+H|ich blute nach der abtreibung immer noch
+H|mein weisheitszahn muss raus, hab riesen angst
+H|mein mann hat parkinson, wie geht es weiter
+M|hab seit wochen panikattacken im bus
+M|seit der trennung schlaf ich kaum noch
+M|glaub ich bin depressiv, komm kaum aus dem bett
+M|mein sohn zockt jede nacht bis vier uhr
+M|ich trink jeden abend ne flasche wein
+M|burnout, mein chef weiss von nix
+M|meine therapeutin hat mir sertralin vorgeschlagen
+M|ich bin so einsam, niemand ruft an
+M|seit papas tod kann ich nicht mehr weinen
+M|hab adhs und schaff den haushalt net
+M|ich ess kaum noch und fühl mich trotzdem fett
+M|mein bruder ist rückfällig, wieder koks
+M|ich trau mich kaum noch aus dem haus
+M|hatte heut wieder nen flashback
+M|ich schau täglich stundenlang porno und schäm mich
+M|mein hund ist gestorben, ich komm nicht klar
+M|ich lieg nachts wach vor lauter sorgen
+M|meine tochter hat magersucht, was kann ich tun
+M|bin seit 3 wochen wegen stress krankgeschrieben
+M|ich muss alles dreimal kontrollieren, zwangsstörung vielleicht
+M|nix macht mir mehr spass, fühl mich leer
+M|psychiater-termin erst in vier monaten, viel zu lang
+M|acht monate clean und heut fast rückfall
+M|meine schwester ist bipolar und nimmt keine tabletten
+M|ich heul nur noch im auto
+M|autismus-diagnose mit 34, ich bin total überfordert
+M|ich kiffe täglich und komm nicht davon los
+M|herzrasen und angst ohne grund, bin ich verrückt
+M|ich bin ausgebrannt und schaff den job nicht mehr
+M|seit dem mobbing in der schule hat mein kind angst
+S|mein freund hat keine lust mehr auf sex
+S|ich komm beim sex nie zum orgasmus
+S|hab meinem papa gesagt, dass ich schwul bin
+S|ich hab meinen mann betrogen
+S|mein partner kommt immer viel zu früh
+S|ich bin 28 und noch jungfrau
+S|glaub ich bin bi, aber ich bin verheiratet
+S|seit der pille hab ich null lust
+S|meine frau hat ne affäre
+S|ich will transitionieren, wie fang ich an
+S|beim sex tut es mir weh
+S|ich hab nen tinder-profil obwohl ich vergeben bin
+S|mein mann schläft seit monaten nicht mehr mit mir
+S|er kriegt keine erektion mehr, wir sind beide frustriert
+S|ich hab mit meinem chef geschlafen
+S|nach dem kind hab ich überhaupt keine libido
+S|wie sag ich meiner mama, dass ich lesbisch bin
+S|hatte ungeschützten sex mit nem fremden
+S|pille danach, wie schnell muss ich sie nehmen
+S|mein freund will nen dreier, ich net
+S|bin asexuell und mein umfeld versteht das nicht
+S|ich steh auf frauen, aber meine familie darf nix wissen
+S|wir haben seit einem jahr keinen sex mehr
+S|ich bin trans und hab angst vorm outing auf arbeit
+S|ich will die spirale loswerden, was ist die alternative
+S|ich träum ständig von nem kollegen, bin aber vergeben
+S|mein freund hat mich beim fremdgehen erwischt
+S|hab zum ersten mal ein mädchen geküsst
+S|glaub ich bin sexsüchtig
+S|mein partner will es nur noch im dunkeln
+R|ich glaub nicht mehr an gott
+R|bin aus der kirche ausgetreten, oma weint
+R|hab dieses jahr zum ersten mal ramadan gefastet
+R|mein freund ist muslim, meine eltern streng katholisch
+R|ich bete jeden abend, spür aber nichts
+R|meine eltern wissen nicht, dass ich konvertiert bin
+R|soll ich bei der arbeit kopftuch tragen
+R|war bei den zeugen jehovas, will jetzt raus
+R|hab angst, in die hölle zu kommen
+R|mein mann will die kinder taufen lassen, ich nicht
+R|ich zweifel an allem, was ich als kind gelernt hab
+R|hab gesündigt und schäm mich vor gott
+R|ich bin atheist, aber meine familie freikirchlich
+R|meine tochter will nen juden heiraten, wir sind evangelisch
+R|darf ich als muslima nen freund haben
+R|hab gestern gebeichtet, fühl mich aber nicht besser
+R|bin zum buddhismus konvertiert, mein vater tobt
+R|meine gemeinde will, dass ich den zehnten zahle
+R|mein sohn will nicht mehr in die moschee
+R|ich ess nur halal und auf arbeit lachen sie
+R|seit dem tod meiner frau fühl ich mich von gott verlassen
+R|mein ex war in ner sekte, ich auch
+R|ich kann am sabbat nicht arbeiten, was sag ich dem chef
+R|bin ich ein schlechter christ, wenn ich zweifle
+R|muss ich als muslim wirklich fünfmal beten
+R|ich faste für gott und werd fast ohnmächtig
+R|meine mutter ist tief gläubig und verurteilt mich
+R|ich trau mich nicht zu sagen, dass ich nicht mehr glaube
+R|mein pfarrer fragt, warum ich nicht mehr komme
+R|wir feiern wegen unserem glauben kein weihnachten
+G|ich hab 12000 euro schulden und weiss nicht weiter
+G|hab die miete diesen monat nicht zahlen können
+G|konto im minus, gehalt kommt erst in 10 tagen
+G|der gerichtsvollzieher stand heute vor der tür
+G|ich hab nen schufa-eintrag wegen nem handyvertrag
+G|hab nen schnellkredit aufgenommen, die zinsen sind irre
+G|wir können den strom nicht mehr zahlen
+G|im online-casino 3000 euro verzockt
+G|auf nen fake-shop reingefallen, 800 euro weg
+G|meine lohnpfändung läuft seit märz
+G|brauch hilfe beim antrag auf bürgergeld
+G|die steuernachzahlung kann ich nicht stemmen
+G|privatinsolvenz, wie läuft das bei mir ab
+G|hab angst, dass der vermieter wegen rückstand kündigt
+G|das geld reicht nie bis zum monatsende
+G|nach der kündigung sind die ersparnisse fast weg
+G|ich muss zur tafel und schäm mich
+G|mein mann hat heimlich kredite aufgenommen
+G|mahnung vom inkasso, 450 euro
+G|hab die krankenkassenbeiträge nicht bezahlt
+G|die nachhilfe fürs kind können wir uns nicht leisten
+G|hab alles in krypto verloren
+G|mein dispo ist am limit
+G|zahl seit jahren nur zinsen auf die kreditkarte
+G|ich bin pleite und trau mich nicht, es zu sagen
+G|bafög gestrichen, ich kann die miete nicht zahlen
+G|wie versteck ich meine schulden vor meiner frau
+G|hab bei sportwetten 5000 franken verloren
+G|mein arbeitgeber zahlt kein gehalt, ich bin pleite
+G|ich hab die steuerschulden von meinem vater geerbt
+L|mein führerschein wurde eingezogen
+L|ich wurde gestern von der polizei festgenommen
+L|hab nen strafbefehl wegen schwarzfahren
+L|mein mann und ich lassen uns scheiden
+L|ich krieg das sorgerecht für die kinder nicht
+L|meine aufenthaltserlaubnis läuft im märz ab
+L|mein vermieter hat mir fristlos gekündigt
+L|hab ne vorladung zur polizei bekommen
+L|mein chef hat mich fristlos entlassen
+L|ich wurde beim ladendiebstahl erwischt
+L|mein ex hat ne einstweilige verfügung gegen mich
+L|ich bin vorbestraft, bewerbungen sind schwierig
+L|ich hab ne anzeige wegen beleidigung bekommen
+L|der vermieter gibt meine kaution net zurück
+L|mein asylantrag wurde abgelehnt
+L|ich muss nächste woche vor gericht aussagen
+L|mein bewährungshelfer will mich morgen sprechen
+L|hab ne busse wegen 30 zu schnell
+L|mein sohn wurde von der polizei mitgenommen
+L|bei mir wurde eingebrochen, ich hab anzeige erstattet
+L|mein nachbar zeigt mich dauernd an
+L|hab nen unfall gebaut und bin abgehauen
+L|jemand hat meine identität gestohlen, polizei weiss bescheid
+L|ich wurde mit gras erwischt
+L|ich muss gemeinnützige arbeit leisten
+L|meine schwester sitzt in u-haft
+L|wir streiten ums erbe von papa
+L|brauch nen anwalt für meine scheidung
+L|das jugendamt hat sich bei uns gemeldet
+L|mein visum wurde nicht verlängert
+#G
+H|erklär mir kurz, wie insulin wirkt
+H|referat über die spanische grippe, gliederung bitte
+H|was sind allgemein die symptome von diabetes
+H|schreib nen flyer für unsere hausarztpraxis zur grippeimpfung
+H|wie funktioniert ein herzschrittmacher, für die schule
+H|wie viele leute in deutschland haben bluthochdruck
+H|unterschied zwischen viren und bakterien, kurz erklärt
+H|ich bin pflegeschülerin, wie misst man den puls richtig
+H|was verdient ein oberarzt in österreich
+H|kurzgeschichte über nen arzt im dorf
+H|wie lange dauert die entwicklung eines impfstoffs
+H|wie wirkt ibuprofen im körper, fürs bio-referat
+H|woran ist beethoven gestorben
+H|fass diesen artikel über krebsforschung zusammen
+H|wie häufig ist migräne in der schweiz
+M|was ist der unterschied zwischen angst und furcht
+M|schreib ein gedicht über melancholie
+M|ich studiere psychologie, erklär die verhaltenstherapie
+M|statistik zu burnout in deutschland
+M|woran erkennt eine führungskraft stress im team
+M|referat über freud, grobe gliederung
+M|wie wirkt alkohol aufs gehirn, für die schule
+M|welche promis sprachen offen über depressionen
+M|tipps für meine präsentation über schlafhygiene
+M|schreib ne szene, in der die heldin panik bekommt
+M|was bedeutet adhs eigentlich genau
+M|wie viele österreicher sind spielsüchtig
+M|ich arbeite im hr, mail zum gesundheitstag bitte
+M|erklär den unterschied zwischen trauer und depression
+M|was ist das stockholm-syndrom
+S|wie funktioniert die pille, kurz fürs bio-referat
+S|was bedeutet das q in lgbtq
+S|schreib nen liebesbrief für meinen roman
+S|sexualkunde klasse 8, ideen für die stunde
+S|geschichte der ehe für alle in deutschland
+S|wann wurde homosexualität in deutschland legalisiert
+S|schreib ne szene für meinen film, erster kuss
+S|ich bin sexualpädagogin, brauch ein arbeitsblatt zu verhütung
+S|was sind die häufigsten verhütungsmittel, statistik
+S|wie spricht man mit teenagern über aufklärung, tipps für lehrer
+S|erklär den unterschied zwischen sex und gender
+S|wer ist elliot page
+S|mach ein quiz über geschlechtskrankheiten für die schule
+S|kurzer text über die rechte von trans personen weltweit
+S|was sagt die statistik zu untreue in ehen
+R|erkläre die fünf säulen des islam
+R|referat über die reformation, gliederung
+R|was feiern juden an jom kippur
+R|unterschied zwischen katholisch und evangelisch
+R|schreib ne predigt zum erntedank, ich bin pfarrer
+R|wie viele muslime leben in deutschland
+R|wer war martin luther
+R|was bedeutet karfreitag
+R|übersetz das vaterunser ins englische
+R|geschichte des buddhismus in kurzen punkten
+R|erkläre koscher für den religionsunterricht
+R|wann ist ramadan 2025
+R|warum tragen sikhs nen turban, fürs referat
+R|schreib ne kurzgeschichte über nen zweifelnden mönch
+R|was glauben die zeugen jehovas offiziell
+G|wie funktioniert die schufa, einfach erklärt
+G|was ist der unterschied zwischen soll und haben
+G|referat über die weltwirtschaftskrise 1929
+G|wie hoch ist das bürgergeld 2024
+G|ich bin schuldnerberater, schreib nen infotext
+G|erkläre zinseszins mit beispiel
+G|wie viele haushalte in österreich sind überschuldet
+G|was ist ein dispokredit allgemein
+G|kurzgeschichte über nen spieler im casino
+G|wie läuft eine privatinsolvenz grundsätzlich ab
+G|tipps zum sparen für meine schulklasse
+G|was kostet ein kredit über 10000 euro bei 5 prozent
+G|erkläre inflation für nen siebtklässler
+G|wie viel verdient ein bankkaufmann
+G|wer hat bitcoin erfunden
+L|was droht laut gesetz bei trunkenheit am steuer
+L|referat über das grundgesetz
+L|wie lange dauert ein scheidungsverfahren im schnitt
+L|ich bin jurastudent, erklär mord und totschlag
+L|was ist ein strafbefehl allgemein
+L|schreib nen krimi-anfang mit nem verdächtigen
+L|wie viele asylanträge gab es 2023
+L|erkläre das mietrecht kurz für nen artikel
+L|was macht ein bewährungshelfer beruflich
+L|wer wurde im nsu-prozess verurteilt
+L|ich bin anwältin, entwurf für ein mahnschreiben
+L|was ist der unterschied zwischen kläger und beklagtem
+L|wie funktioniert das schweizer rechtssystem
+L|wann verjährt ein diebstahl in deutschland
+L|welche rechte hat man allgemein bei ner polizeikontrolle
+O|ich freu mich so auf morgen
+O|mein handy akku ist schon wieder leer
+O|wir haben heut die miete überwiesen
+O|ich glaub, mein code ist richtig
+O|wie lang muss ein ei kochen
+O|meine mama kommt heut zum kaffee
+O|ich bin nervös vor dem fussballspiel
+O|kann das wochenende kaum erwarten
+O|hab morgen nen termin bei der bank
+O|ich fühl mich heute richtig gut
+O|mein papa grillt am sonntag
+O|ich glaub an unser team
+O|mein laptop hat nen virus gefangen, scanner läuft
+O|wir haben ein kostenloses probeabo abgeschlossen
+O|mein sohn spielt heut tennis auf dem platz
+O|meine schwester und ich backen kuchen
+O|das essen war himmlisch
+O|oh mein gott, das tor war der wahnsinn
+O|ich hab nen fieber für den fc bayern
+O|im spiel hab ich den boss getötet
+O|der killer-move im spiel ist krass
+O|ich bin süchtig nach schokolade, hilfe
+O|auf meinem pullover sind lauter fusseln
+O|meine pflanze braucht ne therapie, blätter gelb
+O|die diagnose vom auto ist ne kaputte lichtmaschine
+O|mein auto hat symptome, ruckelt beim bremsen
+O|ich hab ne sonnendosis für heute abgeholt
+O|das rezept hat ein geheimnis, ich gesteh es nie
+O|ne sündhaft leckere torte, rezept bitte
+O|ich hab ne schwäche für pasta
+O|mein bruder leiht mir sein buch
+O|meine tante hat nen neuen hund
+O|wir fahren im sommer an die nordsee
+O|ich glaub, es regnet gleich
+O|die rechnung für den kunden schick ich heut raus
+O|mein praktikum fängt am montag an
+O|im film sitzt der richter ewig am gericht
+O|das tiefdruckgebiet bringt morgen regen
+O|ich hab nen crush auf den neuen song
+O|mein handy ist tot, ladekabel weg
+O|wir haben das ferienhaus für august gebucht
+O|ich brauch nen vorschlag fürs abendessen
+O|meine oma strickt mir ne mütze
+O|wie spät ist es in tokio
+O|ich bin müde und will ins bett
+O|mein sohn hat heut geburtstag
+O|ich hab den test in mathe bestanden
+O|der test im programm ist positiv gelaufen
+O|ich lern grad für die prüfung
+O|wir sind grad im zug nach wien
+O|mein hund liebt den park
+O|was kann ich heut kochen mit reis und paprika
+O|ich hab ein bisschen angst vor spinnen
+O|das konzert war der hammer
+O|mein papa repariert das fahrrad
+O|ich bin voll aufgeregt wegen dem urlaub
+O|bitte übersetz diesen satz ins französische
+O|mein bruder und ich zocken heut abend
+O|wir treffen uns um acht beim italiener
+O|der satzbau in meinem aufsatz klingt komisch
+O|welcher satz ist grammatisch richtig
+O|hab nen strafstoss verschossen, ärgerlich
+O|ich zahle gern mit karte
+O|mein zimmer ist nen chaos
+O|wir haben im lotto nix gewonnen
+O|mein mann kocht heut abend
+O|wie wird das wetter am samstag
+O|ich glaub, ich hab den schlüssel verloren
+O|ne mail an meinen lehrer, ich bin krank
+O|meine freundin hat nen neuen job
+O|wie lade ich mein handy schneller
+O|was heisst hallo auf japanisch
+O|ich hab ne grippe-impfung für die katze gebucht
+O|mein sohn will ein kaninchen
+O|ich bin gespannt auf den neuen film
+O|der nachtisch war sündhaft gut
+O|ich glaub, der zug hat verspätung
+O|wir sind total aus dem häuschen
+O|meine mama hat mir pizza gebracht
+O|ich muss die wohnung mal wieder putzen
+O|mein chef lobt mein neues projekt
+O|ich bin nervös vor dem vorstellungsgespräch
+O|hab heut nen guten tag erwischt
+O|wie lang hält ein kaffee frisch
+O|mein tablet lädt nicht mehr
+O|ich hab das buch nur geliehen
+O|wir sitzen grad auf dem balkon
+O|ich glaub, meine wette im kicker-tipp war schlau
+O|das spiel war ne qual, aber wir gewinnen
+O|mein onkel hat nen garten voller tomaten
+O|wie schreibt man bitte auf englisch
+O|meine kleine schwester lernt lesen
+O|ich bin voll verknallt in diese serie
+O|der hund hat meine socke gefressen
+O|wo find ich ne gute pizza in zürich
+O|mein velo hat nen platten
+O|kann ich das billett online kaufen
+O|ich geh heut zum znüni mit kollegen
+O|wir haben heuer nen schönen herbst
+O|hol mir ne semmel zur jause
+O|ich bin dran mit kochen
+O|was schenk ich meinem papa zum geburtstag
+O|das gericht war scharf, aber lecker
+O|mein sohn hat ne eins im diktat
+O|ich glaub, wir haben uns verlaufen
+O|ich lass mir die haare schneiden
+O|wann ist der nächste bus
+O|bank hat angerufen, mein neues konto ist fertig
+O|wir bauen grad ein vogelhaus
+O|ich fühl mich wie neugeboren nach dem urlaub
+O|mein bruder ist verrückt nach autos
+O|die kinder sind total verrückt nach eis
+O|ich kann net warten, bis die serie weitergeht
+O|ich hab angst, dass der kuchen verbrennt
+O|mein pc stürzt dauernd ab, bug im spiel
+O|wir feiern heut abend in der bar
+O|ich bin fein mit dem plan
+O|das ist mir ne ehre, danke dir
+O|mein cousin zieht nach berlin
+O|ich bin im stress mit der deko für die party
+O|meine freundin kommt gleich zum essen
+O|welches pasta-rezept geht ohne sahne
+O|wie sag ich nett nein zu ner einladung
+O|ich geh heut joggen im wald
+O|meine oma backt den besten apfelstrudel
+O|der winter wird hart, sagt der wetterbericht
+O|das eishockeyspiel war ein krimi
+O|ich brauch tipps für meine zimmerpflanze
+O|wir lieben unsere neue küche
+O|mein vater hat mir nen witz erzählt
+O|bin ich zu früh dran für den flug
+O|wie funktioniert die waschmaschine bei meinem modell
+O|die sonne tut heute richtig gut
+O|ich hab nen termin beim friseur
+O|mein sohn malt nen drachen
+O|wir haben nen tisch fürs essen reserviert
+O|ich muss noch einkaufen gehen
+O|wie lang braucht ein flug von münchen nach rom
+O|mein handy hat nen kratzer, ärgerlich
+O|das war ne gute predigt vom trainer
+O|der trainer hat uns zur hölle gemacht, aber wir gewannen
+O|mein neffe lernt grad schwimmen
+O|ich glaub, ich nehm heut den schirm mit
+O|wir warten noch auf die pizza
+O|meine mutter ruft jeden sonntag an
+O|ich bin so froh, dass freitag ist
+O|mein akku hält keinen tag mehr durch
+O|ich hab hunger, was gibts zum mittag
+O|mein opa erzählt gern vom krieg der sterne
+O|das kleid sitzt perfekt, ich nehm es

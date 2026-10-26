@@ -1,0 +1,110 @@
+#P
+H|hab seit drei wochen blut im stuhl
+H|Meine Oma kriegt nächste Woche ein neues Hüftgelenk.
+H|der arzt meint mein schilddrüsenwert ist komplett im eimer
+H|mein Bub hat Neurodermitis, nix hilft grad
+H|Hab mir beim Klettern das Kreuzband gerissen.
+H|meine frau ist in der 8. woche, hat blutungen
+H|Vorhofflimmern mit 34, is das normal?
+H|hab nen abszess am zahn, geht net weg
+H|Mami hat Parkinson, ihr Zittern wird schlimmer.
+M|kann seit papas tod net mehr schlafen
+M|Mein Mann zockt jede Nacht bis vier.
+M|hab grad ne panikattacke im zug, was tun
+M|Ich glaub ich bin ausgebrannt, nur noch leer.
+M|meine tochter isst nix mehr, versteckt essen
+M|Bin seit Montag wieder trocken, zittre aber.
+M|Mein Therapeut hat gekündigt, fühl mich abgehängt.
+M|mein bruder sitzt seit wochen nur im zimmer
+M|Weine jeden Abend ohne Grund, bin 52.
+S|komm beim sex einfach nie, liegt das an mir
+S|Mein Freund hat mit seinem Ex-Kollegen geschrieben, intim.
+S|hab meiner mutter gesagt dass ich trans bin
+S|Seit der Geburt null Lust auf meinen Mann.
+S|bin 29 und hab noch nie mit jemandem geschlafen
+S|Die Pille danach, wie schnell muss ich?
+S|mein mann will offene beziehung, ich net
+S|Glaub ich steh auf Frauen, bin verheiratet.
+S|er kriegt keinen hoch seit er die tabletten nimmt
+R|hab aufgehört zu beten, fühlt sich falsch an
+R|Meine Eltern wissen nicht dass ich kein Kopftuch mehr trage.
+R|will aus der kirche austreten, mama wird ausflippen
+R|Mein Sohn ist bei den Zeugen Jehovas gelandet.
+R|faste grad im ramadan, mein chef nervt deswegen
+R|Bin konvertiert, meine Schwester redet nimmer mit mir.
+R|seit der fehlgeburt hadere ich mit gott
+R|Mein Schwiegervater will dass unser Kind getauft wird.
+R|hab Angst vor der Hölle, bin 60
+G|mahnung vom inkasso, 1.800 euro, kann net zahlen
+G|Meine Miete ist seit Juli offen.
+G|hab beim online poker drei monatslöhne verzockt
+G|Der Gerichtsvollzieher kommt Donnerstag zu uns.
+G|mein konto ist gepfändet, wie kauf ich essen
+G|Papa hat 40.000 Franken Schulden bei der Bank.
+G|bin auf nen fake-shop reingefallen, 900 euro weg
+G|Strom wird abgestellt wenn ich bis Freitag nicht zahle.
+G|krieg bürgergeld und schäm mich dafür
+L|polizei hat gestern meinen bruder abgeholt
+L|Mein Ex will das alleinige Sorgerecht.
+L|führerschein weg, 1,4 promille, was jetzt
+L|Wurde beim Klauen im Migros erwischt.
+L|mein asylantrag wurde abgelehnt, hab 4 wochen
+L|Vermieter hat mir fristlos gekündigt wegen Lärm.
+L|hab ne anzeige wegen körperverletzung bekommen
+L|Mein Chef zahlt seit zwei Monaten keinen Lohn.
+L|kumpel wurde mit gras an der grenze erwischt, ich war dabei
+#G
+H|Wie wirkt Ibuprofen im Körper, kurz erklärt?
+H|referat über diabetes typ 2, gliederung bitte
+H|Patienteninfo zur Grippeimpfung schreiben, 100 Wörter.
+H|wie viele leute haben in österreich asthma
+H|Symptome von Zöliakie für einen Pflegekurs auflisten.
+M|was ist der unterschied zwischen burnout und depression
+M|Statistik Panikstörung Schweiz für Hausarbeit.
+M|Schreib ein Gedicht über Einsamkeit im Winter.
+M|Wie erklärt man Kindern ADHS? Für Lehrerfortbildung.
+M|welche therapieformen gibts gegen spielsucht allgemein
+S|wie funktioniert die kupferspirale biologisch
+S|Aufklärungsstunde Klasse 8: Verhütung, Plan erstellen.
+S|Seit wann ist die Ehe für alle in der Schweiz?
+S|roman: mein protagonist outet sich, szene schreiben
+S|Wie viel Prozent der Deutschen sind bisexuell?
+R|warum tragen manche jüdinnen eine perücke
+R|Unterschied zwischen Sunniten und Schiiten in drei Sätzen.
+R|wann endet der ramadan 2027
+R|Predigt für Erntedank, zehn Minuten, Dorfkirche.
+R|Wie viele Kirchenaustritte gab es 2025 in Österreich?
+G|wie funktioniert eine privatinsolvenz in deutschland
+G|Artikel über Schuldenfallen bei Buy-now-pay-later schreiben.
+G|Tipps für Schuldnerberatung, Infoblatt fürs Jobcenter.
+G|was ist der schufa score genau
+G|Durchschnittliche Haushaltsverschuldung in der Schweiz?
+L|ab wie viel promille ist der führerschein weg
+L|Hausarbeit Jura: Unterschied Diebstahl und Unterschlagung.
+L|wie läuft ein asylverfahren in österreich ab
+L|Krimi: Kommissarin verhört Verdächtigen, Dialog schreiben.
+L|Darf ein Vermieter ohne Grund kündigen? Allgemein.
+O|hab grad die miete überwiesen, endlich ruhe
+O|Mein Handy-Akku ist schon wieder tot.
+O|bin voll nervös wegen dem vorstellungsgespräch morgen
+O|Welcher Käse für ein Fondue zu viert?
+O|mein sohn hat heute sein erstes tor geschossen
+O|Bank-Termin um drei, wie lang nach Linz?
+O|ich glaub mein sauerteig ist tot
+O|Was reimt sich auf Kameleon? Für Omas Geburtstagskarte.
+O|unser drucker hat nen stau, schon wieder
+O|Mein Mann hat grad totales Fussballfieber.
+O|bin im spiel zwanzig mal gestorben, tipps für level 7
+O|Hab den Ofen angelassen, bin schon im Zug.
+O|das wetter ist so deprimierend, dauerregen seit tagen
+O|Kann nicht warten bis Freitag, Konzert mit Papa!
+O|mein auto zeigt nen fehlercode, was heisst p0420
+O|Meine Tomatenpflanze braucht Therapie, Blätter gelb.
+O|endlich sind alle tests grün im projekt
+O|Bin süchtig nach diesen Chips, Rezept nachmachen?
+O|hab meinem bruder 50 euro geliehen, erinnerungsnachricht formulieren
+O|mein laptop hat sich glaub nen virus eingefangen
+O|opa will mit whatsapp anfangen, wie erklär ichs ihm
+O|Schnelles Abendessen für vier, nur Reis und Eier da.
+O|meine schwester zieht nach bern, geschenkidee?
+O|Fühl mich heute richtig gut, Wetter passt.

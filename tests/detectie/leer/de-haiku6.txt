@@ -1,0 +1,482 @@
+#P
+H|mein grosszeh ist seit tagen entzündet, eiter kommt raus
+H|Zehennagel wächst ein, der Fuss ist ganz rot geworden
+H|mein Sohn hat seit drei Tagen 39 Fieber
+H|ich hab seit gestern Nierenschmerzen, normal?
+H|Blutdrucktabletten vergessen, seit Montag nicht genommen
+H|Schwangerschaftstest positiv, wir wollten es nicht
+H|Chemo fängt nächste Woche an, mir graut's
+H|meine Mama hat Demenz, wird sie wieder schlechter?
+H|ich hab Gürtelrose am Rücken seit Freitag
+H|Hörsturz letzte Woche, auf einem Ohr hör ich kaum noch
+H|mein Vater braucht ein neues Hüftgelenk
+H|Abszess am Po, der Arzt hat geschnitten, wie lange heilt's
+H|Hämorrhoiden bluten, schäm mich dafür
+H|Mein Kind hat Neurodermitis, die Salbe hilft nicht mehr
+H|Zahnweh seit einer Woche, Schmerzmittel reichen nicht
+H|wie lange nach der Gallen-OP darf ich wieder Sport machen
+H|Warzen an den Fingern, Kryotherapie: lohnt sich das?
+H|Mein Mann hat Prostatakrebs, der PSA-Wert ist hoch
+H|nach der Geburt hab ich immer noch Beckenbodenprobleme
+H|ich hab Asthma und das Ventolin wirkt kaum noch
+H|Mein Bruder hat Hepatitis C, wie steckt man sich an?
+H|Ferritin zu tief bei der Blutprobe, bin ich anämisch?
+H|Mein Kind hat Keuchhusten, die Schule sagt Quarantäne
+H|Ich hab eine Fehlgeburt gehabt, wann wieder normal?
+H|Augeninfekt, das Auge verklebt jeden Morgen, Tropfen?
+H|Meine Oma liegt nach dem Schlaganfall im Spital
+H|ich hab seit Wochen Tinnitus, nachts nicht auszuhalten
+H|Schuppenflechte am Knie, die Creme vom Arzt wirkt nicht
+H|Mein Vater hat Parkinson, das Zittern wird schlimmer
+H|Narbe nach der Brust-OP, sieht komisch aus
+H|Ich bin an Krebs erkrankt, Bestrahlung in zwei Wochen
+H|Meine Tochter hat Epilepsie, Anfall heute Nacht
+H|Fußpilz zwischen den Zehen, nichts hilft bisher
+H|Ich habe Diabetes Typ 2, Insulin jetzt nötig?
+H|Heuschnupfen so schlimm, ich schlaf kaum noch
+H|Meine Frau hat einen MS-Schub, was kann ich tun?
+H|ich hab Rückenprobleme seit dem Bandscheibenvorfall
+H|Kind hat Nussallergie, Panik beim Essen in der Kita
+H|Ohrenschmerzen nach dem Schwimmen, Mittelohrentzündung?
+H|ich hab ein Magengeschwür, Blut im Stuhl
+H|Ich warte auf die MRT-Befunde vom Knie
+H|Mein Sohn hat Zöliakie, Diagnose gestern
+H|Schilddrüsenunterfunktion, die Tabletten wirken noch nicht
+H|Blinddarm-OP morgen, was muss ich mitnehmen?
+H|Kann man mit Bluthochdruck noch Sport machen?
+H|Mein Opa hat Lungenentzündung und ist sehr schwach
+H|ich hab nach der Geburt Milchstau, es brennt total
+H|Zecke gebissen gestern, jetzt Ring am Arm
+H|Ich hab Reizdarm, Durchfall vor jeder Prüfung
+H|Mein Partner hat Hodenkrebs, Operation nächste Woche
+M|ich schlaf seit drei Wochen kaum, grüble nur
+M|Panikattacken im Zug, wie stopp ich die?
+M|mein Freund trinkt jeden Abend mehr, macht mir Angst
+M|seit dem Tod meines Hundes heul ich jeden Tag
+M|Zwangsgedanken: muss Türen dreimal kontrollieren, nervt
+M|mein Sohn zockt nachts bis vier Uhr, lässt nicht los
+M|Burnout im Job, ich kann morgens nicht mehr aufstehen
+M|ich bin seit der Scheidung total einsam
+M|meine Schwester ritzt sich wieder, was tu ich?
+M|Flashbacks seit dem Unfall, ich bin ständig nervös
+M|Mein Mann hat seit Monaten Depressionen, kommt nicht raus
+M|ich hab Essanfälle und kotz danach, schäm mich
+M|Seit dem Jobverlust bin ich in einem tiefen Loch
+M|Meine Mutter hört Stimmen, seit sie allein wohnt
+M|ich trink jeden Abend mein Glas Wein, mehr als früher
+M|Angst vor Menschen seit dem Mobbing in der Schule
+M|Mein Kind ist seit dem Schulwechsel total still
+M|ich bin seit Wochen nur noch müde und leer
+M|Mein Vater hat Alzheimer und ich bin total fertig
+M|Ich geh seit einem Jahr nicht mehr raus, Agoraphobie
+M|Mein Partner hat Spielsucht, die Konten sind leer
+M|nach dem Tod meiner Frau nur noch am Heulen
+M|Ich zähl jede Kalorie, esse kaum noch aus Angst
+M|mit 41 die ADHS-Diagnose bekommen, fühl mich verloren
+M|Die Therapeutin hat mir heute gekündigt, was jetzt?
+M|Meine Tochter hat Magersucht, sie wiegt kaum noch was
+M|Angst vorm Autofahren nach dem Unfall, Panik pur
+M|seit der Diagnose kann ich nachts nicht mehr schlafen
+M|Mein Freund kifft jeden Tag, ich mach mir Sorgen
+M|Schlafprobleme durch Grübeln über die Arbeit
+M|Mein Bruder hat PTBS seit dem Auslandseinsatz
+M|ich hab so Angst vor Spinnen, zittre schon bei Bildern
+M|Ich geh seit Wochen nicht mehr zur Arbeit, krankgeschrieben
+M|Meine Freundin hat Angststörung, kann nicht mehr einkaufen
+M|ich bin pornosüchtig, kann nicht aufhören, schäm mich
+M|Mein Mann hat den Alkohol nicht im Griff, Entzug?
+M|Ich trauere seit dem Tod meines Vaters und komm nicht weiter
+M|Therapeut ist im Urlaub, ich dreh gerade durch
+M|Mein Sohn wird in der Schule gemobbt, sagt nichts mehr
+M|ich hab Einsamkeit im Alter, der Besuch kommt nie
+M|Meine Mutter ist depressiv und redet kaum noch
+M|Mein Kopf explodiert, Stress ohne Ende seit Monaten
+M|Mein Kollege zweifelt an sich, bricht bei Präsentationen ab
+M|Ich hab seit Monaten Angst vor dem Briefkasten
+M|ich hab Trauma aus meiner Kindheit, das kommt jetzt hoch
+M|ich bin glücksspielsüchtig, Lotto und Online-Casino
+M|Meine Tochter hat Panik vor der Schule, weint jeden Morgen
+M|Ich hab Hochs und Tiefs, bipolar, wie sag ich's dem Chef?
+M|Ich bin total erschöpft, pflege meine Mutter neben dem Job
+M|ich fühl mich seit der Trennung wertlos, alles grau
+S|mein Freund kriegt seit Monaten keinen hoch
+S|ich weiß nicht ob ich bi bin, Freundin weiß nichts
+S|ich hab meinen Mann betrogen, mit dem Kollegen
+S|Meine Tochter hat sich geoutet, wie red ich mit Papa?
+S|ich hab seit der Geburt keine Lust mehr auf Sex
+S|wie sag ich meiner Frau, dass ich auf Fesseln steh?
+S|Mein Freund ist trans, die Eltern wollen nichts davon wissen
+S|ich komm beim Sex nie, hab schon alles probiert
+S|ich bin 27 und noch Jungfrau, schäm mich total
+S|Mein Partner will Analsex, ich nicht, wie sag ich nein?
+S|ich hab Chlamydien, wie sag ich's meinem Ex?
+S|Meine Freundin hat Vaginismus, Sex tut ihr weh
+S|Ich liebe zwei Menschen gleichzeitig, Freund weiß nichts
+S|Mein Mann schaut seit Jahren Porno und will kaum Sex
+S|ich bin schwul, meine Eltern sind streng gläubig
+S|Ich steh auf Frauen, bin aber mit einem Mann verheiratet
+S|Mein Ex hat Nacktbilder von mir verschickt
+S|ich hab Potenzprobleme seit ich 30 bin, wo geh ich hin?
+S|Ich hab meinen Verlobten mit einem Escort erwischt
+S|Mein Sohn fragt nach Verhütung, was soll ich sagen?
+S|Ich will die Pille absetzen, Freund will Verhütung
+S|ich bin nonbinär, mein Chef nennt mich immer falsch
+S|Meine Freundin will Schluss wegen meinem Seitensprung
+S|Mein Freund kommt zu früh, wir sind beide frustriert
+S|ich schlaf seit Monaten nebenbei mit meiner Nachbarin
+S|Ich hab in der Ehe keine Lust mehr, Frau merkt es
+S|Mit 16 zum ersten Mal Sex gehabt, bin unsicher
+S|Mein Mann will in den Swingerclub, ich bin dagegen
+S|Ich glaub, ich bin schwul, Familie weiß nichts
+S|Kondom gerissen gestern, Pille danach, was tun?
+S|Ich hab mich in meine beste Freundin verliebt, Ehe läuft
+S|Mein Freund drängt mich immer wieder zum Sex
+S|Mein Sohn ist in einen Jungen verliebt, ich bin unsicher
+S|Ich hatte einen One-Night-Stand, Partner weiß nichts
+S|Meine Frau will seit den Wechseljahren keinen Sex mehr
+S|Ich hab Herpes am Penis, meine Freundin hat's bekommen
+S|ich hab Sexsucht, kann meine Lust nicht kontrollieren
+S|Ich bin asexuell, mein Freund denkt, er ist schuld
+S|Mein Mann hat einen Fetisch für Windeln, ich bin verwirrt
+S|ich will mein Geschlecht angleichen, Eltern sind dagegen
+S|Ich will nach der Geburt wieder Sex, es tut weh
+S|Mein Freund hat Sex mit Männern, ich wusste nichts
+S|Mein Ehemann und ich schlafen seit Monaten getrennt
+S|Ich hab mit meinem Chef geschlafen, bereue es
+S|Nach dem Kaiserschnitt keine Nähe mehr, Sex tut weh
+S|Wie sag ich meinem Vater, dass ich trans bin?
+S|Ich date zwei Männer gleichzeitig, bin total verwirrt
+S|Meine Freundin will polyamor leben, ich nicht
+S|Hatte Sex mit einem Typ aus dem Internet, safer?
+S|Ich bin 45 und noch nie zum Orgasmus gekommen
+R|ich zweifle an Gott seit dem Tod meiner Mutter
+R|Mein Sohn will zu den Zeugen Jehovas, ich bin verzweifelt
+R|ich will aus der Kirche austreten, Mama dreht durch
+R|Im Ramadan gefastet, aber die Arbeit ließ es nicht zu
+R|Meine Tochter trägt Kopftuch, der Vater will's verbieten
+R|ich bin vom Islam zum Christentum, Familie weiß nichts
+R|Mein Freund ist Jude, meine Eltern sind dagegen
+R|Ich war in einer Sekte, wie komm ich da raus?
+R|ich glaub nicht mehr an die Hölle, habe trotzdem Angst
+R|Mein Vater ist Imam und ich trink Alkohol
+R|Ich will nicht mehr beten, fühl mich deswegen schuldig
+R|Kirchliche Scheidung abgelehnt, Pfarrer droht mir
+R|Ich bin Atheist, Schwiegermutter betet ständig für mich
+R|Meine Frau ist Muslima, ich bin Christ, die Kinder taufen?
+R|Ich will koscher leben, meine Familie lacht mich aus
+R|ich bin bei den Zeugen Jehovas raus, Freunde reden nicht mehr
+R|Mein Bruder ist Salafist geworden, wie red ich mit ihm?
+R|Ich bin ex-Mormone, meine Familie schneidet mich ab
+R|Ich fühl mich schuldig, weil ich mein Kind nicht taufen lass
+R|Mein Freund ist Hindu, wir streiten über Hochzeitsriten
+R|Ich will zum Judentum übertreten, der Rabbiner fragt nach
+R|Mein Vater will, dass ich die Gemeinde verlasse, ich zweifle
+R|Ich bin Muslim und hab an Silvester ein Glas Sekt getrunken
+R|Meine Oma betet jeden Tag für meine Bekehrung
+R|ich hab nach der Beichte wieder Gewissensangst, Zweifel
+R|Ich bin Freikirchlerin und verliebt in einen Nicht-Gläubigen
+R|Ich hab meinen Glauben verloren, die Kirche fehlt trotzdem
+R|Mein Sohn fastet nicht, die Familie macht Druck
+R|Ich will das Kopftuch ablegen, meine Familie tobt
+R|Als Kind war ich in einer Sekte, Erinnerungen kommen hoch
+R|Mein Mann ist Atheist, ich bete noch jeden Tag
+R|ich hab mich vom Glauben gelöst, die Gemeinde schreibt mich ab
+R|Mein Freund will in die Moschee, ich bin christlich
+R|Ich hab Angst vor der Hölle, weil ich geschieden bin
+R|Ich will meine Eltern überzeugen, dass sie mich nicht verstoßen
+R|Ich bin Zeuge Jehovas und bin fremdgegangen, was passiert?
+R|Mein Mann will die Kinder taufen, ich will nicht
+R|Ich bin orthodox geworden, die Ehe ist kaputt
+R|Meine Eltern wollen mich zum Glauben zurückbringen, sie drohen
+R|ich hab mich vom Christentum abgewendet, Mutter weint
+R|Ich praktiziere Buddhismus, mein Vater verbietet's
+R|Mein Freund ist Sikh, die Familie will die Hochzeit stoppen
+R|Ich bin Konvertit, meine Familie sieht mich als Verräter
+R|Ich hab den Gott meiner Kindheit verloren, fühl mich schuldig
+R|Ich hab das Fasten im Ramadan abgebrochen, Gewissensbisse
+R|Ich zweifle an der Bibel, der Pfarrer will reden
+R|Mein Vater ist Pastor und ich glaub nicht mehr an Jesus
+R|Mein Freund hat sich bekehrt, will mich auch taufen lassen
+R|Ich hab einen Gottesdienst geschwänzt aus Angst vor Sünde
+R|Ich bin Ordensfrau und will aussteigen, die Oberin droht
+G|wir sind drei Monate im Rückstand mit der Miete
+G|Ich hab einen Schufa-Eintrag wegen einer alten Handyrechnung
+G|mein Sohn hat Schulden bei einem Inkassounternehmen
+G|Ich kann die Stromrechnung nicht zahlen, Sperrung droht
+G|Lohnpfändung, nur noch tausend Euro bleiben übrig
+G|Meine Mutter spielt am Automaten, das Konto ist leer
+G|Bei Smava einen Kredit, die Raten schaff ich nicht
+G|Arbeitslos, und das Jobcenter kürzt meine Leistung
+G|Finanzamt-Schulden von 4.000 Euro, gibt's einen Ratenplan?
+G|ich hab Privatinsolvenz angemeldet, was wird aus der Wohnung?
+G|Mein Mann hat Schulden durch Online-Wetten, wir sind pleite
+G|Beim Online-Shopping betrogen worden, 800 Euro weg
+G|Ich hab eine Betreibung wegen der Swisscom-Rechnung
+G|Pfändungsschutzkonto, aber die Bank hält trotzdem mein Geld zurück
+G|Mein Ex hat mir Geld geliehen und zahlt es nicht zurück
+G|Autokredit läuft weiter, aber ich hab den Job verloren
+G|Meine Tochter steckt bis zum Hals in Klarna-Schulden
+G|Ich hab diese Woche kein Geld mehr fürs Essen, Tafel?
+G|Exekution auf mein Gehalt, nur noch das Existenzminimum
+G|Mein Bruder hat beim Pfandleiher alles verkauft
+G|ich bin im Schuldenstrudel, Dispo 3.000 Euro im Minus
+G|Inkasso-Rechnung über 2.300 Euro, was passiert jetzt?
+G|Mein Schwiegervater hat die Hypothek nicht bezahlt
+G|ich hab 1.200 Euro bei einem Anlagebetrug verloren
+G|Meine Mutter kann die Pflegekosten nicht mehr zahlen
+G|Mindestsicherung gekürzt, Sanktion vom AMS bekommen
+G|Ich krieg das Geld für den Kindergarten nicht zusammen
+G|Konto überzogen, die Bank verlangt 40 Euro Gebühr
+G|Ich hab meinen Job verloren, die Abfindung reicht nicht lang
+G|Fitnessstudio-Mahnung, obwohl ich den Vertrag gekündigt hab
+G|Mein Freund hat mir Geld geklaut für seine Schulden
+G|Kreditkarte, nur noch die Mindestzahlung, Zinsen explodieren
+G|Ich schulde dem Freund meiner Mutter Geld, er droht
+G|Wir können das Leasingauto nicht mehr finanzieren
+G|Mein Kind hat Ärger wegen unbezahlter Schulreise-Kosten
+G|Ich hab 20.000 Euro Schulden vom Studienkredit
+G|Mietschulden, die Räumung droht nächsten Monat
+G|Bei einem Callcenter-Betrug Geld überwiesen, wie zurück?
+G|Mein Vater verliert das Haus, Zwangsversteigerung
+G|ich bekomm kein Wohngeld, Antrag abgelehnt, was jetzt?
+G|Ich schulde meinem Nachbarn 500 Euro, er drängt
+G|Meine Frau ist in Kurzarbeit, wir sind blank
+G|Ich hab die Schuldnerberatung kontaktiert, Wartezeit ewig
+G|Mein Mann verspielt unser Erspartes, ich weiß nicht weiter
+G|Ich hab Geld von der Kreditkarte fürs Glücksspiel genommen
+G|Mein Konto wurde wegen Schulden bei der Bank gesperrt
+G|Der Hausbau hat uns überschuldet, Bau-Kredit läuft aus
+G|Schulden beim Finanzamt, die Vollstreckung läuft schon
+G|Mein Sohn hat sich bei Pay-Later überschuldet
+G|Ich krieg den Kinderzuschlag nicht, wir essen kaum noch
+L|Blitzer-Brief bekommen, jetzt droht der Führerscheinentzug
+L|Mein Nachbar verklagt mich wegen dem Baum im Garten
+L|Polizei hat mich angehalten, Drogen im Auto gefunden
+L|Mein Bruder sitzt wegen Körperverletzung im Gefängnis
+L|Anzeige wegen Betrugs am Hals, kann mich nicht wehren
+L|Mein Chef hat mir ohne Grund gekündigt, gilt der Kündigungsschutz?
+L|Hausdurchsuchung gehabt, was darf die Polizei eigentlich?
+L|Mein Sohn wurde in der Schule als Dieb beschuldigt
+L|ich bin mit 1,9 Promille gefahren, die Polizei hat mich geholt
+L|Ich will meinen Ex wegen dem Unterhalt vor Gericht bringen
+L|Scheidung läuft, Sorgerecht für die Kinder ist umstritten
+L|ich wurde abgeschoben und will mit Visum zurück
+L|Mein Vermieter will mich wegen Eigenbedarf rausschmeißen
+L|Ladendiebstahl gemacht, der Detektiv hat mich erwischt
+L|Nach einer Schlägerei am Bahnhof verhaftet worden
+L|Mein Asylantrag wurde abgelehnt, die Frist läuft
+L|Schwarzfahren erwischt, jetzt kommt eine Strafanzeige
+L|Mein Ex droht mit einer Anzeige wegen Stalking
+L|Mein Mann schlägt mich, was kann ich dagegen tun?
+L|Bei der Verkehrskontrolle soll ich unterschreiben, Anwalt?
+L|Strafbefehl vom Amtsgericht bekommen, was jetzt?
+L|Mein Chef zahlt seit drei Monaten keinen Lohn mehr
+L|Im Ausland verhaftet worden, die Botschaft hilft nicht
+L|Mein Nachbar hat mich wegen Lärm nachts verklagt
+L|Der Inkasso-Anwalt will, dass ich einen Vertrag unterschreibe
+L|Identitätsdiebstahl, jemand hat mein Konto geplündert
+L|Mietkaution, der Vermieter behält sie einfach ein
+L|Mein Sohn hat ein Video verschickt, die Polizei ermittelt
+L|Schlägerei, jetzt bin ich vor dem Jugendgericht
+L|Unfall gebaut, Fahrzeug nicht versichert, jetzt Anzeige
+L|Meine Schwester wird wegen Betrugs angeklagt, braucht Anwalt
+L|Nach dem Autounfall soll ich Schadensersatz zahlen
+L|Der Gerichtsvollzieher steht vor der Tür, was tu ich?
+L|Mein Vater braucht Pflegegrad, Widerspruch vors Gericht?
+L|Aufenthaltstitel abgelaufen, Ausländerbehörde droht Ausweisung
+L|Kündigungsschutzklage am Arbeitsgericht, was erwartet mich?
+L|Drogen im Gepäck, der Zoll hat sie gefunden
+L|Mein Ex hat Fotos von mir hochgeladen, ich will ihn anzeigen
+L|Mein Vermieter ist ohne Ankündigung in die Wohnung gekommen
+L|Als Zeuge vorgeladen, ich hab Angst vor dem Prozess
+L|In der Scheidung, Gütertrennung, und der Anwalt ist teuer
+L|Erbstreit mit meinen Geschwistern, wer bekommt das Haus?
+L|Mein Enkel hat was geklaut, die Polizei will reden
+L|Sozialstunden wurden angeordnet, wie fang ich an?
+L|Mein Handy wurde geklaut, muss ich Anzeige erstatten?
+L|Falschparken, das Bußgeld nicht gezahlt, Mahnung da
+L|Mein gestohlenes Fahrrad taucht auf Kleinanzeigen auf
+L|Ich wurde in der Tram verprügelt, der Täter ist weg
+L|Mein Mann hat Beleidigungen über mich ins Netz gestellt
+L|Fahrerflucht angezeigt, wie verteidige ich mich am besten?
+#G
+H|welche Symptome hat eine Grippe typischerweise?
+H|wie funktioniert ein Herzschrittmacher, kurz erklärt?
+H|schreib ein Infoblatt für Patienten über Blutdruckmessung
+H|was ist der Unterschied zwischen Typ 1 und Typ 2 Diabetes?
+H|Kurzreferat über Hepatitis B für die Schule, fünf Punkte
+H|welche Krebsarten sind in der Schweiz am häufigsten?
+H|wie viele Menschen in Österreich haben Heuschnupfen?
+H|erkläre Zöliakie für eine Präsentation in der Berufsschule
+H|wie wirkt Ibuprofen im Körper, in einfachen Worten?
+H|Newsletter für die Praxis schreiben, Grippeimpfung
+M|Schreib eine Kurzgeschichte über einen Mann mit Panikattacken
+M|Unterschied zwischen Burnout und Depression, kurz für Schüler?
+M|Was ist eine Zwangsstörung? Erklär's für ein Referat
+M|Wie geht man als Lehrerin mit Mobbing in der Klasse um?
+M|Artikel über Einsamkeit bei Senioren in Deutschland schreiben
+M|Welche Therapieformen gibt es bei Angststörungen?
+M|Gedicht über Trauer für eine Beerdigung, im Stil von Rilke
+M|Wie viele Jugendliche in Österreich haben eine Essstörung?
+M|Ich bin Psychologin, wie schreib ich einen Bericht für die Kasse?
+M|Wie erkennt man als HR-Manager Burnout im Team?
+S|Was ist der Unterschied zwischen Bi- und Pansexualität?
+S|Schreib eine Szene für meinen Roman über eine verbotene Liebe
+S|wie wirken Verhütungsmittel hormonell, für ein Referat?
+S|Wie viele Menschen in der Schweiz verstehen sich als queer?
+S|Ratgeber-Artikel über Kommunikation in Beziehungen schreiben
+S|Was regelt das Eherecht für gleichgeschlechtliche Paare in AT?
+S|Pille danach kurz erklärt für die Sexualkunde-Stunde
+S|Schreib ein Lied über ein Paar, das sich trennt
+S|Welche Rolle spielt Sexualität in der Literatur der Romantik?
+S|Ich bin Frauenärztin, wie erkläre ich die Spirale?
+R|Unterschied zwischen Sunniten und Schiiten, kurz bitte?
+R|erkläre den Ramadan für ein Referat im Religionsunterricht
+R|Schreib eine Predigt über Vergebung für Ostern
+R|Welche Feiertage hat das Judentum im Herbst?
+R|Was sagt die Bibel über Nächstenliebe, bitte mit Zitaten
+R|Schreib eine Story über einen Priester, der an Gott zweifelt
+R|Wie viele Menschen in Deutschland sind konfessionslos?
+R|erkläre Kaschrut für Schüler in drei Sätzen
+R|Gibt's im Buddhismus einen Schöpfergott? kurz erklären
+R|Ich bin Religionslehrer, Ideen für eine Diskussion über Glauben?
+G|Wie funktioniert eine Schuldenbremse, erklär's einfach?
+G|Was kostet ein Kredit mit 5 % Zins, zehn Jahre?
+G|Ratgeber über Haushaltsbudget für Studenten schreiben
+G|Wie viele Haushalte in Österreich sind verschuldet, laut Statistik?
+G|Wie funktioniert die Betreibung in der Schweiz, kurz erklärt?
+G|Erklär Inflation für eine Präsentation in der Wirtschaftsklasse
+G|Schreib eine Mahnung als Vorlage für meine Buchhaltung
+G|Wie berechne ich Zinseszins auf 1.000 Euro?
+G|Was passiert bei einer Privatinsolvenz in Deutschland, kurz?
+G|Ich bin Steuerberater, wie erkläre ich Ratenzahlung dem Kunden?
+L|Unterschied zwischen Mord und Totschlag, kurz erklärt?
+L|Wie läuft ein Strafprozess in Deutschland ab, in Schritten?
+L|Schreib eine Kurzgeschichte über einen Richter, der zweifelt
+L|Ich bin Anwältin, Vorlage für eine Kündigung schreiben?
+L|Welche Strafe steht auf Körperverletzung in der Schweiz?
+L|Wie viele Scheidungen gab es 2024 in Österreich?
+L|Was sagt das Asylrecht zu sicheren Herkunftsländern?
+L|Erklär Verjährung im Strafrecht für meine Jura-Klausur
+L|Blogartikel über Rechte bei einer Hausdurchsuchung allgemein
+L|Was ist ein Strafbefehl? Erklär's für meinen Sozialkunde-Vortrag
+O|ich bin so nervös fürs Vorstellungsgespräch morgen
+O|hab den Herd angelassen, rennen wir zurück?
+O|der Drucker hat wieder Papierstau, wie geht das weg
+O|das Wetter heute ist so depressiv, grau pur
+O|ich bin 20 mal im Spiel gestorben lol
+O|mein Sohn hat ein Tor gemacht, bin so stolz
+O|Handy-Akku ist bei 4%, welches Kabel passt
+O|ich glaub mein Code ist fertig, passt das so?
+O|kann es kaum erwarten bis der Urlaub kommt
+O|mein Laptop hat ein Virus? Scan dauert ewig
+O|unser WLAN fällt dauernd aus, Router neustarten?
+O|meine Schwester ist crazy verliebt in den neuen Song
+O|Bank-Termin morgen um zehn, was muss ich mitnehmen?
+O|hab mein Passwort vergessen, wie setz ich's zurück?
+O|mein Kuchen ist total gesunken, woran lag's?
+O|wir haben nen neuen Hund, Name-Vorschläge?
+O|meine Tochter will mit Freundinnen zelten, ok?
+O|ich hab nen Ohrwurm, das Lied geht nicht raus
+O|diese Serie ist so spannend, wann kommt Staffel drei?
+O|meine Gesangsübung klappt nicht, Töne zu hoch
+O|das Auto macht komische Geräusche, Ölwechsel?
+O|bin totmüde vom Joggen, wie lange Pause?
+O|ich hab noch Gänsehaut vom Konzert gestern
+O|meine Oma hat ein Tablet, wie richte ich's ein?
+O|warum läuft meine Waschmaschine so laut?
+O|Stau auf der A5 seit einer Stunde, Umweg?
+O|unser Balkon braucht neue Pflanzen, pflegeleicht?
+O|ich bin süchtig nach diesem Kuchen, Rezept?
+O|Gott sei Dank ist der Zug heute pünktlich
+O|der Schiri war heute total blind, Beschwerde schreiben
+O|wie oft wechselt man den Ölfilter beim Auto?
+O|meine Tochter hat Angst vor Spinnen, Tipps?
+O|zu spät für den Bus, welche Option bleibt?
+O|Akku vom Schlüssel leer, welche Batterie passt?
+O|ich hab mich bei Ikea verlaufen, wie immer lol
+O|Kaffee auf den Holztisch gekippt, wie reinigen?
+O|Papa hat das Radio wieder zu laut, wie sag ich's nett?
+O|die Schuhe sind zu klein, Umtausch möglich?
+O|ich liebe mein neues Kissen, so bequem
+O|meine Katze hat die Vase umgeworfen lol
+O|wann stell ich die Mülltonne raus?
+O|Pizza im Ofen, Timer läuft, wie lange noch?
+O|mein Freund ist so kitschig, was schenk ich ihm Lustiges?
+O|hab den Kuchen vergessen, ist der noch essbar?
+O|Test-Suite ist grün, endlich mal ein Erfolg
+O|mein PC ist gestern abgestürzt, Daten retten?
+O|Papa fragt, ob WhatsApp Hacken braucht, was sag ich?
+O|ich hab einen Crush auf das neue Album, so gut
+O|unsere Sitzung ist um neun, Zoom-Link fehlt
+O|der Wecker hat nicht geklingelt, ich bin spät dran
+O|mein Hund hat den Müll schon wieder umgeworfen
+O|Wasserglas verschüttet, wie krieg ich den Teppich trocken?
+O|ich hab den Zug knapp erwischt, puh
+O|was schenk ich meiner Mutter zum Muttertag?
+O|wir planen ein Grillfest, bleibt das Wetter gut?
+O|der Kuchen im Backofen ist zu dunkel geworden
+O|meine Schwester ist meine beste Freundin, Geburtstagsidee?
+O|hab neue Brille bestellt, wie lang ist die Lieferzeit?
+O|die Ehrenrunde im Spiel war dramatisch lol
+O|mein Sohn hat lauter Einser im Zeugnis, Feier?
+O|wer stellt den Wäscheständer weg?
+O|ich bin sauer auf die Bahn, schon wieder Verspätung
+O|Handy nass gefallen, Reis hilft das wirklich?
+O|wir gehen ins Kino, welcher Film lohnt sich?
+O|die Kinder wollen Eis, wie viel Zucker steckt drin?
+O|Anruf verpasst, wie schreib ich eine Antwort?
+O|mein Spiel stürzt ständig ab, Treiber updaten?
+O|der Kühlschrank macht seltsame Geräusche
+O|ich hab mich in diese Stadt verliebt, Reisetipps?
+O|Mama will Nudeln, ich will Reis, Rezept für beides?
+O|wir stehen im Stau, das Navi schickt uns übers Dorf
+O|ich fühl mich heute richtig gut
+O|morgen ist mein erster Arbeitstag, ich bin aufgeregt
+O|Schwiegermutter kommt Sonntag, Kuchen backen?
+O|welches Brot passt zum Fisch?
+O|mein Laptop-Akku hält nur noch dreißig Minuten
+O|ich bin am Verhungern, was koch ich schnell?
+O|wir gehen Pilze sammeln, wie erkenn ich Steinpilze?
+O|mein Bruder hat ein Auto gekauft, Glückwunsch?
+O|Feuerzeug geht nicht mehr, Tipp?
+O|wer gewinnt morgen das Derby, Tipp?
+O|wie bekomm ich Kaugummi aus den Haaren?
+O|die Dusche tropft seit gestern, Dichtung tauschen?
+O|meine Schwester fährt Samstag mit mir zu Ikea
+O|Mama will ein Geschenk, Ideen für vierzig Euro?
+O|Kaffeeflecken aus dem Hemd, wie krieg ich die raus?
+O|wir haben heute Freunde zum Essen, was kochen?
+O|ich glaub, ich hab den Wecker falsch gestellt
+O|der Nachbar grillt schon wieder, Rauch überall
+O|gestern gab's Kuchen im Büro, wie viel Kalorien?
+O|der Druck im Team ist vor dem Release richtig hoch
+O|meine Freundin lacht über meine Krawatte
+O|ich hab die Passwörter vergessen, Manager nutzen?
+O|Papa Socken schenken, lahm oder?
+O|mein Chef will morgen Feedback, wie formulier ich's?
+O|die Kinder spielen Fangen im Garten, sicher genug?
+O|ich hab den Schlüssel verloren, Schlüsseldienst?
+O|was hilft gegen Ameisen in der Küche?
+O|unser Hund liebt den Park, neue Route?
+O|ich hab nen Ohrwurm vom Werbespot, nervt
+O|mein Bus fährt heute später, wo steht der Fahrplan?
+O|der Tapetenkleber ist überall, Hilfe
+O|ich hab schon wieder den Schlüssel vergessen lol
+O|Opa hat den alten Videorekorder gefunden, lol
+O|mein Freund kocht heute, ich bin gespannt
+O|Lidl oder Aldi, wo ist's günstiger?
+O|warum heulen Katzen nachts so laut?
+O|ich bin stolz auf meinen Garten, Tomaten reif
+O|Gitarre üben, welche Griffe zuerst?
+O|der Chef sagt das Projekt ist tot, was nun?
+O|meine Mutter will ein Ferienhaus mieten, welches?
+O|Laptop lädt nicht mehr, Ladeport kaputt?
+O|das Fenster klemmt, wie öl ich das Scharnier?
+O|kann ich Papa ein Auto-Navi schenken?
+O|Besuch vom Schwiegervater, was zeig ich ihm?
+O|meine Freundin will zum Yoga, ich will zocken
+O|mein Lieblingsverein hat verloren, ich bin sauer lol
+O|Akku der Kamera leer, mitten im Urlaub
+O|mein Hut ist im Regen nass geworden, trocknen?
+O|ich hab nen Schuldenberg im Spiel bei meinem Kumpel, lol

@@ -24,7 +24,8 @@
   // Chrome en Edge: een antwoord stopt na zoveel tekens (de Prompt API kent geen maximum aantal tokens). Kort = snel op
   // een gewone laptop. En na zoveel tijd zonder vraag laten we de AI los, zodat de computer zijn geheugen terugkrijgt;
   // de volgende vraag maakt hem opnieuw aan, met het gesprek tot nu toe.
-  const MAX_CHARS = 1200, IDLE_MS = 2 * 60 * 1000;
+  // 2400 tekens (22 okt, was 1200): een antwoord in de stijl van June (kopjes, tips, huisartsblok, slotvraag) is 150–300 woorden.
+  const MAX_CHARS = 2400, IDLE_MS = 2 * 60 * 1000;
   // Een grafiek (```chart … ```) die nog open staat, mag afmaken: een halve grafiek is niets waard.
   const openFence = t => (t.match(/^\s*```/gm) || []).length % 2 === 1;
   const roomFor = (t, max) => (openFence(t) ? max + 800 : max);

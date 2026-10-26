@@ -5,6 +5,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-10-26
+
+### Changed
+- **The notice recognises personal questions far more reliably, in Edge and Firefox too.** Next to the word list there is now a weighted list for English, Dutch, German, French and Spanish: a weight for each word, word pair and part of a word, learned from thousands of example messages. It catches the ways people really ask that the word list has no word for, like “my son spends eleven hours a day gaming and punched the wall when I turned off the wifi” or “hab grad das Ergebnis vom HIV-Test bekommen, reaktiv”. It is plain arithmetic in the extension: no AI, no download, nothing sent anywhere.
+- **Fewer notices for messages that aren't about you.** The same list recognises a clearly general message, like a GP writing a leaflet about blood pressure for patients, a lesson or a story, and then the notice stays away even when the word list sees a sensitive word.
+- **The weighted list learned from thousands more messages, and makes fewer mistakes.** On new test messages written blind (the writers never saw the lists): about 97% of personal questions of a few sentences get a notice and 3% of ordinary ones do; for short messages of a few words that is 95% and 5%. Version 1.7.2 caught 69% and 43%.
+- **A shorter notice.** It just says “Sensitive info”, with the buttons. It no longer names a topic: the topic it guessed could be wrong (a fight with your partner is not about sexuality).
+- **Measured on sentences the lists never learned from.** `npm run meet:detectie` shows per language how many personal questions get a notice and how many ordinary ones do, on test sentences written by other writers than the example messages.
+
+### Added
+- **“Melo, do something with this” on any page, Gmail and Google Calendar included.** Select text, right-click, and choose Melo → Add to my calendar, Remind me about this or Read this bill. Melo for Mac opens with it and sets up one event or reminder for you to approve, or tells you what to pay, by when and to which account. It goes into the calendar you pick in Melo (Google Calendar too, if it's on your Mac). The menu only appears once you switch on Melo for Mac in the popup.
+- **Melo for Mac in the popup.** On a Mac, switch on Melo for Mac and “Ask Melo” hands your question to the Melo app (from kamelo.eu/app), in Chrome, Edge and Firefox. Without the app, the popup says where to get it.
+- **“Ask Melo on your Mac” in the notice.** On a Mac where Melo can't answer in the browser, the notice about a personal question offers it. One click opens the switch.
+- **Ask Melo about an image or screenshot.** In Chrome with its built-in AI, add a picture with the paperclip, paste it or drag it into Melo, and ask about it: what's on it, or solve the sum in a homework screenshot. Chrome's AI looks at the image on your own computer; Kamelo makes it smaller and drops its metadata (like a location) first, and nothing is sent anywhere. In browsers whose AI can't look at images, the paperclip stays away.
+- **Sensitive details are marked in blue: a citizen service or ID number, an IBAN, a card number, a passport number, a password or PIN, or an API key.** Where the text box allows it, Kamelo marks the detail in blue right in the text, so you see what you could take out, and shows the notice. Only when it is sure: a number counts when its check digit is right (IBAN, card, BSN, Spanish DNI/NIE, French social security, Belgian national number, German tax ID, US SSN) or when a word in front says what it is (“my passport number is…”, “password:”). Order numbers, phone numbers, amounts and dates don't count, and nor do email addresses. In Chrome with its built-in AI the notice offers “Ask Melo”, which answers on your own computer; it never offers a temporary chat here, because that still sends the number to the AI company. Kamelo changes nothing in what you send.
+
+### Fixed
+- **The notice now appears while you type, also in chat boxes that handle typing themselves.** On some sites the notice only came after you clicked in the text field. Kamelo now looks after every key you press, and the notice comes about a second after you stop typing.
+- **Sensitive details also get a notice in a temporary chat.** A temporary chat keeps a chat out of your history, but the number still goes to the AI company. So Kamelo marks it there too.
+- **Without Melo, the notice says what to do.** In Edge, Firefox or a Chrome without its built-in AI, the notice about a sensitive detail now adds: “The AI doesn't need it to help you: remove it before you send.”
+- **Melo no longer suggests a temporary chat for a sensitive detail.** When Melo can't answer a message with a card or ID number in it, it says to remove the number instead.
+- **Fewer wrong notices about sensitive details.** “My password manager is 1Password”, order and tracking numbers, version numbers and sums no longer count. The blue marking stops before a full stop or comma.
+- **The blue marking also works in tabs that were already open,** and it goes away when you switch Melo off.
+
+### Security
+- **Melo for Mac, only when you switch it on.** The extension lists two optional permissions, native messaging and context menus, so that Melo can hand your question or selected text to the Melo app on your Mac. Updating asks you nothing: they are only requested when you switch on Melo for Mac in the popup. The text then goes from your browser straight to the app on your own computer, never over the internet.
+
 ## [1.7.2] - 2026-10-18
 
 ### Changed

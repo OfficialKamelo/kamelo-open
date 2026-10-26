@@ -1,0 +1,24 @@
+# Overgenomen uit tests/topics-corpus.test.js en tests/topics-alledaags.test.js (19 okt), als leerzinnen voor de gewogen lijst.
+#P
+H|jai une grosseur au sein
+H|j’ai mal à la tête depuis 3 jours
+H|mon fils a de la fièvre depuis hier
+M|je suis au bout du rouleau
+M|jarrête pas de pleurer
+M|ma copine est déprimée depuis des semaines
+S|je crois que je suis gay
+S|comment dire à mes parents que je suis bi
+S|ma fille a fait son coming out
+R|je veux quitter ma religion
+R|mes parents sont musulmans très stricts
+R|je me suis converti à lislam
+G|je peux pas payer mon loyer
+G|je suis à découvert depuis 2 mois
+G|jai reçu une lettre dun huissier
+L|jai été arrêté hier soir
+L|jai un casier judiciaire
+L|mon frère est en prison
+#G
+O|quels sont les symptômes du diabète
+O|je veux payer mes factures en ligne
+O|mon code est une catastrophe

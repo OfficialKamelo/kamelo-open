@@ -1,0 +1,489 @@
+# Overgenomen uit tests/topics-corpus.test.js en tests/topics-alledaags.test.js (19 okt), als leerzinnen voor de gewogen lijst.
+#P
+H|kheb al weken hoofdpijn
+H|ik heb een bult in mn nek gevonden moet ik naar de huisarts
+H|mn moeder is steeds duizelig als ze opstaat
+H|mijn vader heeft pijn op de borst bij het traplopen
+H|mijn zoontje heeft 39 graden koorts en eet niks
+H|ik denk dat ik zwanger ben wat nu
+H|mn vriendin heeft elke maand super veel last van krampen
+H|ik moet steeds overgeven na het eten
+H|mijn bloedwaardes zijn niet goed zei de dokter
+H|ik heb al dagen diarree
+H|mn dochter heeft haar arm gebroken hoe lang duurt dat
+H|ik heb uitslag op mijn arm die niet weggaat
+H|mijn oma is gevallen en haar heup doet heel erg pijn
+H|ik heb een rare moedervlek op mijn rug die van kleur verandert
+H|mn vriend snurkt en stopt soms met ademen
+H|ik val af zonder dat ik er iets voor doe
+H|mijn collega heeft borstkanker hoe kan ik haar steunen
+H|ik ben al 2 weken over tijd
+H|ik ben heel snel buiten adem de laatste tijd
+H|ik heb steeds last van mijn maag
+H|kheb zon pijn in mijn knie na het sporten
+H|mijn opa moet geopereerd worden aan zijn hart
+H|ik hoest al 3 weken en het gaat niet over
+H|mijn kind heeft vlekjes over zn hele lijf
+H|ik heb sinds gisteren keelpijn en koorts
+H|mn knie is dik en doet pijn
+H|mijn vader heeft suiker en moet insuline spuiten
+H|ik heb een blaasontsteking denk ik
+H|mijn zoon heeft al dagen oorpijn
+H|ik ben steeds zo moe en mijn haar valt uit
+H|mn moeder moet aan de dialyse
+H|ik heb bloed bij mijn ontlasting gezien
+H|mijn vriend heeft een hernia
+H|ik heb last van brandend maagzuur
+H|mijn dochter heeft waterpokken
+H|ik heb een zere keel en hoest veel
+H|mn vader is gisteren met spoed opgenomen
+H|ik heb last van mijn darmen na het eten
+M|ik zit er echt doorheen
+M|ik kan niet stoppen met huilen
+M|zo gestrest dat ik niet kan slapen
+M|mn vriendin voelt zich al weken somber
+M|ik heb steeds paniekaanvallen op mn werk
+M|mijn moeder komt al dagen haar bed niet uit
+M|ik voel me zo leeg
+M|kheb echt nergens meer zin in
+M|mijn vader drinkt te veel en ik weet niet hoe ik het moet aankaarten
+M|ik voel me zo eenzaam sinds de verhuizing
+M|mijn beste vriend zit in een dip hoe help ik hem
+M|ik pieker de hele dag
+M|ik ben de hele tijd gespannen en mijn hart gaat tekeer
+M|mijn zoon sluit zich op in zijn kamer en praat met niemand
+M|ik heb nergens meer energie voor en alles voelt zwaar
+M|mijn man is zijn vader verloren en hij trekt het niet
+M|ik ben opgebrand en kan niet meer naar mijn werk
+M|ik heb last van stemmingswisselingen
+M|mn broer is gokverslaafd
+M|moet ik naar een psycholoog ik voel me al maanden niet goed
+M|ik voel me waardeloos
+M|ik mis mijn vader zo erg sinds hij overleden is
+M|ik ben constant moe en verdrietig
+M|mn collega zit thuis met een burn-out wat kan ik sturen
+M|ik voel me zo alleen sinds mijn scheiding
+M|mn vriendin heeft last van angst
+M|ik kan me nergens meer op concentreren en ben zo moe van alles
+M|ik ben zo onzeker over alles
+M|mijn moeder is depressief sinds de dood van mijn vader
+M|ik slaap al weken slecht door stress
+M|mn vriend heeft een drankprobleem
+M|ik voel me zo verdrietig vandaag
+M|ik heb geen energie meer en wil alleen maar slapen
+M|ik zie het allemaal niet meer zitten
+M|mn moeder is erg vergeetachtig en verward
+M|ik ben bang dat ik gek word
+M|ik heb een rotperiode
+M|mijn vriend heeft last van zijn mentale gezondheid
+S|ik denk dat ik homo ben maar durf het niet te zeggen
+S|hoe vertel ik mn ouders dat ik bi ben
+S|ben ik lesbisch als ik een meisje heb gezoend
+S|mijn zoon is net uit de kast gekomen als trans
+S|ik val op mn beste vriend en we zijn allebei jongens
+S|ik wil op mijn werk uit de kast komen maar ik ben bang
+S|mijn dochter vertelde dat ze op meisjes valt
+S|ik ben een meisje en ik val op meisjes
+S|ik voel me tot niemand aangetrokken ben ik aseksueel
+S|mn vriend wil dingen in bed die ik niet wil
+S|ik krijg hem niet omhoog bij mn vriendin
+S|mijn man vertelde me dat hij biseksueel is
+S|ik heb al maanden geen zin in seks
+S|ik twijfel al jaren over mijn gender
+S|ik ben 30 en heb nog nooit seks gehad
+S|mijn ouders weten niet dat mijn vriendin een vrouw is
+S|ik denk dat mijn broer homo is
+S|ik ben non-binair en mn familie gebruikt de verkeerde voornaamwoorden
+S|hoe weet ik of ik panseksueel ben
+S|mijn beste vriendin is net uit de kast gekomen als trans
+S|ik wil beginnen met mijn transitie maar durf het mn moeder niet te vertellen
+S|ik ben gay en mijn ouders weten het nog niet
+S|ik ben lesbisch en wil het mn oma vertellen
+S|mijn zoon zegt dat hij bi is
+S|mn zoon is homo en mijn man accepteert het niet
+S|ik weet niet of ik op mannen of vrouwen val
+S|ik heb pijn bij de seks
+S|mijn dochter wil een jongen zijn
+S|ik ben verliefd op een meisje maar ik ben zelf ook een meisje
+S|mijn vrouw wil geen seks meer
+S|hoe weet ik of ik transgender ben
+R|ik denk erover om uit mn geloof te stappen
+R|mijn ouders zijn streng islamitisch en ik wil geen hoofddoek meer
+R|ik ben vorig jaar moslim geworden en mijn familie doet moeilijk
+R|ik geloof niet meer in god maar mn familie is heel gelovig
+R|ik ben katholiek en wil scheiden mag dat
+R|mn vriend is joods en ik ben christen
+R|ik ga niet meer naar de kerk en mijn moeder is er kapot van
+R|ik wil weg bij de jehovah getuigen
+R|ik doe mee aan de ramadan en heb tentamens
+R|mijn man is ineens heel streng gelovig geworden
+R|mag ik bidden op mijn werk ik ben moslim
+R|ik ben streng gereformeerd opgevoed en nu ben ik atheist
+R|mijn ouders willen dat ik met iemand van ons geloof trouw
+R|ik ben mijn geloof kwijtgeraakt na de dood van mijn vader
+R|ik ben hindoe en de ouders van mijn vriendin accepteren dat niet
+R|mijn kind wil gedoopt worden maar ik geloof niet
+R|ik ben uit mijn kerkgemeente gezet
+R|ik ben streng christelijk opgevoed en voel me nog steeds schuldig
+R|mijn schoonouders dringen hun geloof op aan mijn kinderen
+R|ik wil me bekeren tot het jodendom
+R|ik draag een hoofddoek en krijg opmerkingen op mijn werk
+R|mijn zus zit in een sekte en praat niet meer met ons
+R|mijn ouders zijn moslim en ik wil niet meer vasten
+R|ik ben uit de kerk gestapt
+R|ik ben opgegroeid in een streng gelovig gezin
+R|mijn vriend is moslim en mijn ouders vinden dat lastig
+R|ik wil mijn kinderen niet laten dopen
+R|ik twijfel aan mijn geloof
+R|ik ben opgegroeid als jehova
+R|mijn moeder wil dat ik een hoofddoek draag
+R|ik ben niet meer gelovig
+G|ik sta rood en de huur moet eraf
+G|ik kan mijn huur deze maand niet betalen
+G|ik heb een aanmaning gekregen van de energie
+G|er is een incasso gestorneerd en nu krijg ik ook nog boetes
+G|mn creditcard zit aan de limiet
+G|ik heb loonbeslag
+G|mijn huisbaas dreigt me eruit te zetten
+G|mijn vader is zijn baan kwijt en kan de hypotheek niet betalen
+G|ik heb 20k studieschuld en geen baan
+G|ik heb een brief van de deurwaarder gekregen
+G|ik heb nog 12 euro tot mn salaris
+G|we kunnen de boodschappen deze week niet betalen
+G|ik heb geld geleend van vrienden en kan het niet terugbetalen
+G|mn vriend heeft een gokschuld
+G|ik heb een achterstand bij de belastingdienst
+G|mijn moeder zit diep in de schulden
+G|ik heb een betalingsregeling maar kan die ook niet meer betalen
+G|mn rekening staat al maanden in het rood
+G|ik heb een openstaande rekening bij het incassobureau
+G|ik heb mijn zorgverzekering al 3 maanden niet betaald
+G|ik zit krap bij kas en weet niet hoe ik rond moet komen
+G|mijn energie wordt afgesloten omdat ik niet betaald heb
+G|ik heb een lening en kan de aflossing niet meer betalen
+G|ik heb een schuld bij de belastingdienst
+G|ik kan de energierekening niet betalen
+G|mn rekening is geblokkeerd door de bank
+G|ik heb nog 3 maanden huurachterstand
+G|ik krijg mijn rekeningen niet meer betaald
+G|mijn ouders hebben schulden en ik wil helpen
+G|ik heb een betalingsachterstand bij mijn zorgverzekeraar
+G|ik ben blut
+G|ik moet geld lenen om de huur te betalen
+G|ik heb een aanmaning van de gemeente gekregen
+G|mijn bankrekening staat in de min
+G|ik zit in de schuldsanering
+G|ik heb een dwangbevel gekregen
+L|ik ben gisteren opgepakt
+L|ik heb een strafblad kan ik nog een vog krijgen
+L|mijn rechtszaak is volgende week
+L|de politie heeft me verhoord over een vechtpartij
+L|ik ben aangehouden voor rijden onder invloed
+L|mijn zoon is betrapt op winkeldiefstal
+L|mn vriend zit vast en ik weet niet hoe ik hem kan bezoeken
+L|er is aangifte tegen mij gedaan
+L|ik moet voorkomen bij de rechter
+L|ik heb een dagvaarding gekregen
+L|mijn broer heeft een enkelband
+L|mijn ex heeft een contactverbod tegen mij aangevraagd
+L|ik ben aangehouden en ze vonden wiet in mijn auto
+L|ik word verdacht van mishandeling
+L|heb ik een advocaat nodig de politie wil me verhoren
+L|mijn vader heeft 2 jaar cel gekregen
+L|ik ben gepakt zonder rijbewijs
+L|iemand heeft aangifte tegen me gedaan voor iets wat ik niet gedaan heb
+L|ik heb een taakstraf gekregen
+L|mn rijbewijs is ingevorderd
+L|mijn neef zit in voorarrest
+L|ik heb een strafbeschikking gekregen van het om
+L|mn broer is opgepakt voor dealen
+L|ik moet voor de rechter komen
+L|ik heb een boete en een strafblad gekregen
+L|mijn zoon is opgepakt voor vandalisme
+L|ik ben betrapt met drugs
+L|ik moet naar de rechtbank voor een boete
+L|mijn ex heeft aangifte gedaan tegen mij
+L|ik heb een werkstraf gekregen
+L|ik ben opgepakt voor rijden zonder rijbewijs
+L|mijn broer moet de gevangenis in
+L|ik heb een oproep van de politie gekregen
+L|ik word aangeklaagd door mijn oude werkgever
+G|ik heb een schuld van 3000 euro bij de belastingdienst
+G|ik heb een schuld bij duo en kan niet aflossen
+G|hoe kom ik zo snel mogelijk van mijn schuld af
+G|mijn schuld wordt steeds groter door de rente
+G|ik heb een bkr-registratie, kan ik nog een huis kopen
+G|ik sta bij het bkr, wat betekent dat voor een hypotheek
+G|de deurwaarder komt morgen beslag leggen
+G|mijn vriend heeft 15000 euro schuld
+G|ik zit in de schulden door gokken
+G|ik kan mijn huur niet meer betalen wat nu
+G|mijn creditcard staat vol en ik betaal alleen het minimum
+G|ik heb een lening afgesloten om mijn rekeningen te betalen
+G|ik heb al mijn spaargeld vergokt
+G|ik heb een betalingsachterstand bij klarna
+G|ik heb nog een openstaande schuld bij mijn zorgverzekering
+G|hoe vraag ik schuldhulp aan bij de gemeente
+G|mijn man heeft stiekem een lening afgesloten en nu hebben we een schuld van 10.000
+G|ik heb een brief van het cjib gekregen en kan de boete niet betalen
+G|ik heb mijn baan verloren en kan de vaste lasten niet meer betalen
+G|we komen elke maand geld tekort
+G|ik heb een negatieve bkr-codering door een oude telefoonrekening
+G|mijn studieschuld is 40k en ik verdien weinig
+G|ik wil mijn schuld afbetalen maar weet niet hoe
+G|mijn ouders hebben een flinke schuld en schamen zich
+G|ik heb 8000 euro creditcardschuld
+G|mijn duo-schuld is veel hoger dan ik dacht
+H|ik heb al een week last van mijn onderrug
+H|mijn dochter van 3 heeft waterpokken
+H|mag ik ibuprofen nemen met mijn bloeddrukpillen
+H|ik ben vergeten mijn pil te nemen kan ik zwanger zijn
+H|ik ben 10 weken zwanger mag ik nog sporten
+H|ik denk dat ik een soa heb
+H|het brandt als ik plas
+H|ik heb chlamydia moet ik het mijn ex vertellen
+H|mijn huisarts wil mijn schildklier laten testen
+H|ik heb een schimmelinfectie
+H|mijn vader moet aan de dialyse
+H|mijn moeder heeft uitgezaaide kanker
+H|ik heb aambeien wat helpt
+H|mijn hart slaat soms over
+H|ik heb hartkloppingen als ik ga liggen
+H|mijn zoontje heeft eczeem
+H|mijn suiker was 14 vanochtend
+H|ik slik metformine mag ik alcohol drinken
+H|ik heb de morning-afterpil genomen en nu bloed ik
+H|mijn menstruatie duurt al 10 dagen
+H|ik heb een knobbeltje in mijn bal
+H|mijn man heeft een hernia en kan niet werken
+H|ik heb sinds vanochtend een dikke enkel
+H|de dokter zegt dat ik suikerziekte heb
+M|ik voel me al weken somber
+M|ik heb geen vrienden en voel me eenzaam
+H|ik denk dat ik adhd heb
+M|ik krijg paniekaanvallen in de trein
+H|ik ben net begonnen met sertraline en voel me raar
+M|mijn vrouw heeft een postnatale depressie
+M|hoe stop ik met elke avond drinken
+M|ik kom al weken de deur niet uit
+M|ik zie op tegen elke sociale situatie
+M|mijn moeder is vorige maand overleden en ik kan niks meer
+M|sinds mijn vader is overleden voel ik niks meer
+M|ik eet heel veel als ik gestrest ben
+M|ik heb nergens meer zin in
+M|ik slaap heel slecht door het piekeren
+M|ik huil elke dag en weet niet waarom
+M|mijn angst wordt steeds erger
+S|mijn vriendin heeft nooit meer zin in seks
+S|ik krijg hem niet meer omhoog
+S|het doet pijn als we seks hebben
+S|mijn man wil een open relatie
+S|ik ben vreemdgegaan en mijn vrouw weet het niet
+S|ik denk dat mijn vriend vreemdgaat
+S|ik kom nooit klaar tijdens het vrijen
+L|mijn vrouw wil scheiden en ik weet niet hoe het met de kinderen moet
+L|we gaan scheiden en zijn het niet eens over het huis
+L|mijn ex betaalt de alimentatie niet
+R|ik geloof niet meer in god maar mijn familie is heel gelovig
+R|is seks voor het huwelijk een zonde ik ben christen
+R|hoe vertel ik mijn ouders dat ik niet meer vast tijdens de ramadan
+R|ik wil me bekeren tot de islam
+R|ik twijfel aan mijn geloof
+R|mijn vrouw is getuige van jehova geworden
+R|ik wil uit de kerk stappen maar mijn ouders zijn ouderling
+R|ik bid elke dag maar voel niks
+R|mag ik als moslim een hypotheek nemen
+R|ik draag een hoofddoek en word daarop aangesproken op mijn werk
+S|ik denk dat ik homo ben maar durf het niet te zeggen
+S|hoe weet ik of ik bi ben
+S|mijn zoon zegt dat hij trans is
+S|ik twijfel over mijn gender
+S|ik wil beginnen met hormonen voor mijn transitie
+S|hoe kom ik uit de kast op mijn werk
+S|ik denk dat ik aseksueel ben
+S|ik ben lesbisch en wil een kind met mijn vrouw
+S|mijn dochter zegt dat ze non-binair is
+S|ik val op jongens en meisjes is dat raar
+L|ik moet voor de rechter komen voor een verkeersboete
+L|mijn buurman heeft aangifte tegen me gedaan
+L|ik ben betrapt op winkeldiefstal wat gebeurt er nu
+L|de politie wil me verhoren over een vechtpartij
+L|kan ik op vakantie met een strafblad
+L|mijn zoon is opgepakt voor drugs
+L|mijn ex laat me de kinderen niet zien
+L|ik heb een vog nodig maar heb een strafblad
+L|ik heb een dagvaarding gekregen
+L|ik moet een taakstraf doen
+M|ik zit thuis met een burn-out en mijn werkgever belt steeds
+M|ik ben vandaag ontslagen
+M|mijn baas wil me ontslaan omdat ik zwanger ben
+M|ik ben al maanden ziek thuis van mijn werk
+M|ik zie elke ochtend op tegen mijn werk
+M|mijn contract wordt niet verlengd en ik heb een hypotheek
+M|de bedrijfsarts zegt dat ik moet re-integreren
+M|ik ben overspannen door mijn werk
+M|ik word ontslagen en krijg een vaststellingsovereenkomst
+M|ik zit in de ww en vind geen nieuwe baan
+L|mijn verblijfsvergunning verloopt en de ind reageert niet
+L|mijn asielaanvraag is afgewezen
+L|ik ben ongedocumenteerd en ziek
+L|ik heb geen papieren kan ik naar de huisarts
+L|mijn vriend zit in vreemdelingendetentie
+L|kan ik mijn verblijfsvergunning verliezen als ik bijstand aanvraag
+L|de ind heeft mijn aanvraag voor gezinshereniging afgewezen
+L|mijn man moet het land uit van de ind
+#G
+O|wat zijn de symptomen van diabetes
+O|hoe werkt chemotherapie
+O|onze technische schuld loopt uit de hand
+O|ik word gek van deze code
+O|deze deadline maakt me kapot
+O|ik wil mijn rekeningen online betalen
+O|hoe maak ik een budget
+O|hoe splitsen we de rekening
+O|mijn werkstuk gaat over de geschiedenis van de islam
+O|ik moet een spreekbeurt houden over het boeddhisme
+O|in mijn boek wordt de hoofdpersoon gearresteerd
+O|ik schrijf een detective waarin de dader in de gevangenis belandt
+O|ik wil mijn automatische incasso aanpassen
+O|ik geloof dat mijn code klopt
+O|mijn laptop heeft een virus
+O|mijn telefoon is bijna leeg
+O|de server ligt er weer uit
+O|ik wil een nieuwe telefoon kopen
+O|mijn plant heeft gele blaadjes
+O|mijn hond loopt mank moet ik naar de dierenarts
+O|ik heb zin in pizza
+O|ik ben kapot na het sporten
+O|ik heb een afspraak met de bank over mijn hypotheek
+O|ik wil een spaarrekening openen
+O|hoeveel fooi geef je in amerika
+O|ik moet mijn belastingaangifte nog doen
+O|wat zijn de bijwerkingen van ibuprofen
+O|is koffie slecht voor je hart
+O|leg het verschil uit tussen soennieten en sjiieten
+O|wat zijn de tien geboden
+O|ik heb mijn creditcard afgelost
+O|ik heb een betaalverzoek gestuurd naar mijn vrienden
+O|mijn baas maakt me gek
+O|ik ben dol op mijn nieuwe schoenen
+O|mijn ouders komen volgende week langs
+O|mijn moeder wil een recept voor appeltaart
+O|hoe word ik verpleegkundige
+O|wat verdient een psycholoog
+O|ik heb een bug gevonden in mijn code
+O|mijn code is deprimerend lol
+O|mijn bedrijf zit in de rode cijfers
+O|ik ga dood van het lachen
+O|ik ben ziek van dit gezeur
+O|mijn hoofd ontploft van alle meetings
+O|we starten een bug bounty programma
+O|ik moet het proces killen
+O|wat is het grootste pijnpunt van onze klanten
+O|mijn opstel gaat over de reformatie
+O|ik betaal liever in één keer
+O|ik wil een lening voor een nieuwe auto
+O|ik moet mijn huur nog overmaken
+O|ik wil mijn abonnement opzeggen
+O|ik heb aangifte gedaan van mijn gestolen fiets
+O|ik heb pijn in mijn buik van het lachen
+O|ik ben gespannen voor de wedstrijd
+O|mijn rijbewijs moet verlengd worden
+O|ik heb het ticket opgepakt
+O|mijn maag knort ik heb honger
+O|ik zit vast met mijn code
+O|mijn opa is overleden vorig jaar en we gaan zijn huis verkopen
+O|hoe kom ik van mijn overdraft af in excel
+O|ik ben ziek van de regen
+O|onze klantklachten zijn gedaald
+O|mijn laptop heeft een malware-infectie
+O|wat doet een psychiater
+O|hoe werkt de rechtspraak in nederland
+O|ik betaal mijn huur via de app
+O|ik heb zin in het weekend
+O|mijn kat heeft vlooien
+O|ik word gek van mijn buren
+O|mijn laptop is kapot
+O|ik ga met mijn moeder naar de film
+O|mijn spreekbeurt gaat over kanker
+O|ik schrijf een boek over een agent die drugs vindt
+O|we hebben pijn geleden in de finale
+O|hoe bereken ik mijn hypotheek
+O|ik heb een scan gemaakt van mijn paspoort
+O|de uitslag van mijn tentamen is binnen
+O|ik krijg een verhoging van mijn baas
+O|de temperatuur in mijn huis is te laag
+O|hoe werkt een longontsteking
+O|mijn baas is zo vergeetachtig
+O|ik ga naar een feestje
+O|ik heb een nieuwe baan
+O|mijn auto is gestolen
+O|hoe werkt de belastingdienst
+O|ik wil mijn zorgverzekering overstappen
+O|ik zoek een advocaat voor een huurcontract
+O|mijn presentatie gaat over gokverslaving
+O|hoe maak ik een vegan lasagne
+O|wat kan ik koken met kip en rijst
+O|mijn zuurdesem rijst niet wat doe ik fout
+O|maak een weekmenu voor me
+O|mijn react app crasht bij het opstarten
+O|hoe los ik een merge conflict op in git
+O|waarom is mijn python script zo traag
+O|hoe verminderen we technische schuld in ons project
+O|wat moet ik inpakken voor een week lissabon
+O|heb ik een visum nodig voor japan
+O|mijn vlucht is geannuleerd wat zijn mijn rechten
+O|leuke dingen om te doen in rome met kinderen
+O|wat is het verschil tussen goede en slechte schulden
+O|hoe werkt de staatsschuld
+O|leg de schuldquote van nederland uit
+O|het is mijn schuld dat we te laat zijn
+O|het is niet mijn schuld dat de server plat lag
+O|ik voel me schuldig dat ik niet heb gebeld
+O|wiens schuld is het dat de build faalt
+O|het is de schuld van mijn broer
+O|schrijf een verjaardagsbericht voor mijn moeder
+O|mijn kat krabt aan de bank
+O|hoe krijg ik rode wijn uit mijn tapijt
+O|help me een sollicitatiebrief schrijven
+O|mijn laptop batterij is snel leeg
+O|ik wil spaans leren
+O|mijn planten krijgen gele bladeren
+O|hoe vraag ik mijn baas om opslag
+O|mijn auto maakt een raar geluid
+O|ik heb morgen een sollicitatiegesprek
+O|schrijf een mail aan mijn team over de deadline
+O|wat zijn de symptomen van griep
+O|ik word ziek van dit weer
+O|hoe doe ik mijn belastingaangifte
+O|wat doet een notaris
+O|hoe lang duurt het om een paspoort te krijgen
+O|wat is de geschiedenis van kerstmis
+O|ik ben mijn sleutels weer kwijt
+O|ik wil sparen voor een vakantie
+O|hoe verdeel ik de huur met mijn huisgenoot
+O|ik heb een bonus gekregen hoe beleg ik die
+O|hoe werkt een hypotheek
+O|ik wil mijn bkr-gegevens opvragen voor mijn administratie
+O|onze afvalscheiding thuis gaat niet goed
+O|mijn zoon heeft een wiskundetoets morgen
+O|ik zoek een goede boekhouder voor mijn eenmanszaak
+O|ik ga het land uit voor vakantie
+O|ik ben klaar tijdens de lunch
+O|mijn laptop kan niks meer
+O|de sociale situatie in nederland is complex
+O|ik vind het asielbeleid streng
+O|ik heb een schuldgevoel omdat ik vergeten ben te bellen
+O|het is mijn schuld dat de build faalt
+O|het was niet mijn schuld
+O|ik bid je om even te wachten
+O|mijn hart slaat sneller als ik haar zie
+O|onze klant heeft een openstaande factuur
+O|we komen geld tekort voor de bedrijfsborrel
+O|mijn contract wordt verlengd
+O|ik zie op tegen de verhuizing
+O|ik heb ibuprofen gekocht voor in de ehbo-doos
+O|mijn zoon leert over de ww in de economieles
+O|wat is een bkr registratie
+O|hoe werkt alimentatie
+O|ik schrijf een artikel over echtscheiding voor de krant

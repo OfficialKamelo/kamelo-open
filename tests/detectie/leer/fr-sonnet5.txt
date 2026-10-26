@@ -1,0 +1,422 @@
+#P
+H|jai une douleur au ventre depuis trois jours
+H|chui enceinte de 6 semaines et jai peur
+H|le médecin m'a prescrit du Doliprane 1000 pour mon dos
+H|ma mère a un cancer du sein, stade 2
+H|j'ai des plaques rouges aux coudes, psoriasis ?
+H|mon test VIH est négatif mais j'angoisse
+H|ma prise de sang: cholestérol à 2,8 g/L
+H|mon fils de 4 ans fait 39 de fièvre
+H|jsuis diabétique de type 2 depuis 2019
+H|mes règles ont dix jours de retard
+H|après ma fausse couche, on réessaie quand ?
+H|mon genou fait mal depuis l'opération du ménisque
+H|ma fille a encore des poux, pk elle
+H|mon père a fait un AVC lundi
+H|jai des brûlures quand je fais pipi
+H|pk jai tout le temps la migraine
+H|je prends du Levothyrox mais toujours crevé
+H|mon mari a un cancer de la prostate
+H|jai fait une IVG hier à l'hôpital
+H|hémorroïdes qui saignent, c'est grave docteur ?
+H|ma tension est à 16/10, c'est grave ?
+H|mon dentiste veut m'arracher deux dents de sagesse
+H|je n'entends plus de l'oreille gauche depuis ce matin
+H|ma sœur a la sclérose en plaques
+H|jai pris 15 kilos avec mon traitement
+H|mon bébé a des coliques depuis trois semaines
+H|chui sous Ventoline à cause de mon asthme
+H|mon grand-père a Alzheimer, il me reconnaît plus
+H|je pense avoir une mycose, que faire
+H|ma coloscopie est jeudi, jai peur du résultat
+M|jsuis en burn-out depuis deux mois
+M|je fais des crises de panique au boulot
+M|chui dépressif depuis la mort de mon père
+M|jarrive plus à dormir, j'angoisse pour tout
+M|je bois tous les soirs, c'est grave ?
+M|ma psy m'a diagnostiqué un TDAH
+M|mon fils de 15 ans joue 10h par jour à Fortnite
+M|je suis accro au porno, je veux arrêter
+M|j'ai perdu ma mère le mois dernier, je tiens pas
+M|je me sens tellement seul depuis mon divorce
+M|j'ai arrêté mon antidépresseur sans prévenir personne
+M|ma copine est anorexique, que faire ?
+M|je vomis après chaque repas depuis des mois
+M|mon psychiatre m'a mis sous Xanax
+M|je me sens vide, plus envie de rien
+M|tkt c'est juste mes TOC, j'ai ça depuis petit
+M|je fume du shit tous les jours depuis cinq ans
+M|ma fille de 12 ans fait des crises d'angoisse
+M|j'ai honte, j'ai replongé dans la coke
+M|mon frère est bipolaire et refuse de se soigner
+M|je pleure tous les soirs sans raison
+M|je suis autiste et mon boss le sait pas
+M|mon chien est mort, jarrive pas à m'en remettre
+M|rechute alcool ce week-end, je m'en veux
+M|je suis épuisé mentalement, j'en peux plus
+M|je fais des cauchemars depuis mon agression
+M|je mange mes émotions, boulimie je crois
+M|jai peur de tout, même d'aller faire les courses
+M|ma femme est en dépression post-partum
+M|jvois un psy chaque semaine pour mes angoisses
+S|mon copain a des problèmes d'érection
+S|jai plus aucune libido depuis la naissance
+S|je crois que je suis gay mais j'ai peur
+S|jai trompé ma femme avec une collègue
+S|comment dire à mes parents que je suis lesbienne ?
+S|chui encore vierge à 27 ans, c'est bizarre ?
+S|ma copine veut plus coucher depuis des mois
+S|jarrive jamais à jouir avec mon mec
+S|la pilule me coupe l'envie, que faire ?
+S|j'ai découvert que mon mari me trompe
+S|je me questionne sur mon genre, je suis trans ?
+S|j'éjacule trop vite, des astuces ?
+S|mon ex m'a envoyé des nudes, je les garde ?
+S|on n'a plus de rapports depuis un an
+S|j'ai couché avec mon beau-frère
+S|je suis bi mais personne le sait
+S|capote craquée hier, la pilule du lendemain ?
+S|j'ai mal pendant les rapports
+S|mon mec veut un plan à trois, jsuis pas sûre
+S|j'ai des fantasmes bizarres, c'est normal ?
+S|ma femme a trouvé mon compte Tinder
+S|je pense que je suis asexuel
+S|mon fils m'a dit qu'il est gay
+S|je regrette ma première fois
+S|je fais mon coming out au boulot lundi
+S|ma copine a un vaginisme, comment l'aider ?
+S|on essaie l'échangisme avec mon mari
+S|j'ai un plan cul régulier, ma meuf sait pas
+S|je me sens coupable de me masturber
+S|mon couple est mort au lit depuis un an
+R|jai perdu la foi depuis la mort de ma sœur
+R|je veux me convertir à l'islam
+R|mes parents musulmans refusent mon copain chrétien
+R|je fais le ramadan pour la première fois
+R|chui témoin de Jéhovah mais j'ai des doutes
+R|je veux quitter l'Église, comment faire ?
+R|mon mari veut que je porte le voile
+R|jprie plus depuis des mois, je culpabilise
+R|j'ai peur que Dieu me punisse pour mon péché
+R|je suis juif pratiquant, comment manger casher en vacances ?
+R|ma fille veut se faire baptiser, mon mari refuse
+R|mon imam m'a conseillé de pardonner à mon père
+R|j'ai grandi dans une secte, j'en suis sortie
+R|mes parents savent pas que je suis athée
+R|mon fiancé est catholique, moi musulmane
+R|je doute de l'existence de Dieu
+R|le curé me connaît, je me confesse jamais
+R|je veux enlever mon voile mais ma famille
+R|je jeûne pour le carême cette année
+R|je cherche une mosquée près de chez moi
+R|ma belle-famille est très pratiquante, je suis mal à l'aise
+R|jai arrêté de croire à 16 ans, mes parents pleurent
+R|je pense devenir bouddhiste, ma famille est catholique
+R|Dieu m'a abandonné, je crois
+R|je prie cinq fois par jour au bureau en cachette
+R|mon père m'a renié parce que j'ai quitté l'islam
+R|je me sens coupable envers Allah
+R|j'ai fait ma communion mais je crois plus
+R|mon mari est devenu très religieux, ça m'inquiète
+R|je dois choisir entre ma foi et mon couple
+G|jarrive plus à payer mon loyer
+G|on a 12 000 euros de dettes
+G|jsuis fiché à la Banque de France
+G|un huissier a sonné chez moi ce matin
+G|j'ai pris un crédit conso pour rembourser l'autre
+G|chui à découvert de 800 euros
+G|on m'a saisi mon salaire
+G|jai perdu 3000 euros au casino en ligne
+G|je me suis fait arnaquer sur Leboncoin
+G|je touche le RSA, c'est pas assez
+G|la CAF a supprimé mes allocs
+G|je dois 4000 euros aux impôts
+G|mon crédit revolving m'étouffe
+G|plus de quoi manger jusqu'à la fin du mois
+G|chui au chômage et j'ai plus un sou
+G|mon dossier de surendettement est en cours
+G|mon proprio menace de m'expulser pour loyers impayés
+G|jai emprunté à un ami, je peux pas rendre
+G|je suis dans le rouge au CPAS depuis janvier
+G|ma banque a bloqué mon compte
+G|je suis endetté à cause du poker en ligne
+G|facture d'électricité impayée, ils vont couper
+G|je vis aux crochets de ma mère, zéro franc
+G|j'ai pas pu payer la cantine de ma fille
+G|ma carte a été refusée au supermarché
+G|à découvert chaque mois depuis mon licenciement
+G|on a fait faillite avec mon associé
+G|un prêt Cetelem impossible à rembourser
+G|l'aide sociale me réclame 2500 francs
+G|je jongle entre les factures, c'est l'enfer
+L|mon permis est suspendu pour excès de vitesse
+L|chui convoqué au tribunal jeudi
+L|jai reçu une amende de 135 euros
+L|la police m'a arrêté hier soir
+L|ma femme veut divorcer, on a deux enfants
+L|je risque l'expulsion, mon visa expire en mars
+L|mon ex veut la garde exclusive
+L|j'ai fait ma déposition à la gendarmerie hier
+L|mon patron m'a licencié sans motif
+L|mon casier judiciaire bloque mon embauche
+L|mon propriétaire veut me mettre dehors
+L|je suis poursuivi pour diffamation
+L|on m'a volé mon vélo, jvais porter plainte
+L|mon titre de séjour n'est pas renouvelé
+L|mon frère est en prison pour vol
+L|j'ai été agressé, plainte ou pas ?
+L|contrôle de police avec du cannabis sur moi
+L|mon fils a été arrêté pour deal
+L|le juge a fixé l'audience au 12 mars
+L|mon voisin me menace, j'ai appelé la police
+L|je suis en liberté conditionnelle
+L|ma demande d'asile a été refusée
+L|mon avocat dit que c'est mal parti
+L|j'ai conduit sans assurance, quelle sanction ?
+L|j'ai signé une rupture conventionnelle mais je regrette
+L|le bailleur me rend pas ma caution
+L|mon employeur ne m'a pas payé depuis trois mois
+L|j'ai peur d'être renvoyé dans mon pays
+L|j'ai demandé une ordonnance de protection contre mon ex
+L|je me suis fait prendre à voler chez Carrefour
+#G
+H|explique le diabète pour un exposé de SVT
+H|quels sont les symptômes de la grippe en général ?
+H|comment fonctionne un vaccin à ARNm ?
+H|rédige une fiche patient sur l'hypertension
+H|combien de personnes ont un cancer en France ?
+H|résume la grippe espagnole de 1918 pour mon cours
+H|pourquoi a-t-on de la fièvre quand on est malade ?
+H|écris un flyer pour la journée du don du sang
+H|différence entre virus et bactérie, pour un quiz
+H|traitement standard de l'asthme chez l'adulte, pour mon cours d'infirmier
+H|de quoi est mort Napoléon selon les historiens ?
+H|rédige un mail aux patients du cabinet pour les horaires
+H|dose maximale de paracétamol, c'est pour ma fiche de pharmacologie
+H|liste des organes du corps humain pour un CE2
+H|statistiques sur l'espérance de vie en Suisse
+M|différence entre stress et anxiété en psychologie
+M|écris un poème sur la mélancolie
+M|résume le livre sur le deuil de Kübler-Ross
+M|plan d'exposé de psycho sur la dépression chez les ados
+M|comment fonctionne une thérapie cognitivo-comportementale ?
+M|statistiques du burn-out en France en 2023
+M|aide-moi à écrire un personnage de roman avec des TOC
+M|rédige une offre d'emploi pour psychologue clinicien
+M|pourquoi Van Gogh s'est coupé l'oreille ?
+M|les cinq stades du deuil selon Kübler-Ross
+M|rédige un mail RH sur la prévention du burn-out
+M|histoire de la psychanalyse de Freud en bref
+M|définition du trouble de l'attachement pour mon mémoire
+M|activités anti-stress pour une classe de 6e
+M|dissertation sur la solitude dans L'Étranger de Camus
+S|explique le cycle menstruel pour un cours de bio
+S|rédige un texte sur l'éducation sexuelle à l'école
+S|histoire du mouvement LGBT en France
+S|liste des méthodes de contraception pour un exposé
+S|résume la loi sur le consentement en France
+S|écris une scène romantique entre deux personnages
+S|stats sur l'infidélité en France
+S|biographie d'Oscar Wilde en cinq lignes
+S|comment un médecin parle d'IST à des ados ?
+S|rédige un mail RH sur le harcèlement sexuel au travail
+S|poème d'amour pour mon cours de poésie
+S|quel est l'âge du consentement en Belgique ?
+S|explique les hormones sexuelles pour la prépa
+S|différence entre sexe et genre en sociologie
+S|Roméo et Juliette, résumé de l'acte 2
+R|résume les cinq piliers de l'islam
+R|différence entre catholiques et protestants ?
+R|histoire des croisades pour mon cours
+R|écris un poème sur Noël
+R|date du Ramadan en 2027 ?
+R|dates des fêtes juives pour le calendrier de l'école
+R|qui était Martin Luther en bref ?
+R|présentation sur le bouddhisme pour la classe de 5e
+R|traduis le Notre Père en latin
+R|explique la laïcité en France pour un exposé
+R|comment élit-on le pape ?
+R|idées de menus halal pour mon restaurant
+R|origine du mot Kippour ?
+R|roman sur une sœur qui perd la foi, des idées ?
+R|histoire de l'Inquisition espagnole
+G|comment fonctionne un prêt immobilier en général ?
+G|explique l'inflation pour mon cours d'éco
+G|rédige un mail de relance pour une facture client
+G|c'est quoi le surendettement, définition
+G|taux d'endettement des ménages en France en 2024
+G|comment calculer un intérêt composé ?
+G|écris une histoire sur un homme ruiné par le jeu
+G|qu'est-ce que le RSA, en bref ?
+G|la faillite de Lehman Brothers en bref
+G|conseils pour gérer le budget d'une association
+G|différence entre dette publique et déficit
+G|plan de dissertation sur la crise de 1929
+G|modèle de lettre de relance pour mes clients
+G|à quoi sert un huissier de justice en droit français ?
+G|épargne moyenne des ménages suisses ?
+L|différence entre tribunal correctionnel et tribunal civil ?
+L|rédige un contrat de bail type pour mon agence
+L|résume l'affaire Dreyfus
+L|écris un polar avec un détective
+L|combien de personnes en prison en France ?
+L|comment devenir avocat au Québec ?
+L|histoire de la peine de mort en France
+L|explique le divorce par consentement mutuel
+L|étapes d'un procès pénal pour mon cours de droit
+L|en tant que juriste, comment rédiger une assignation ?
+L|rédige un mémo RH sur les licenciements économiques
+L|que dit la Convention de Genève sur les réfugiés ?
+L|procès Depp contre Heard, résumé neutre
+L|scène de tribunal pour mon roman
+L|que dit la loi sur le port d'arme en Suisse ?
+O|jai hâte d'être en vacances
+O|je crois que mon code est bon
+O|mon téléphone est à plat, batterie morte
+O|rdv à la banque à 14h, quoi emmener ?
+O|chui nerveux pour mon match de samedi
+O|jai payé mon loyer aujourd'hui, ouf
+O|je me sens super bien aujourd'hui
+O|recette de crêpes pour six personnes
+O|mon chat est accro aux croquettes
+O|je pense que mon pull fait des bouloches
+O|ce gâteau au chocolat est un vrai péché
+O|ma plante est déprimée, elle jaunit
+O|c'est quoi la météo demain à Lyon ?
+O|je crois en toi, tu vas gagner
+O|mon ordi est lent, c'est un virus ?
+O|on mange quoi ce soir ?
+O|jvais magasiner avec ma blonde
+O|comment cuire un riz parfait ?
+O|ma mère arrive demain, quoi cuisiner ?
+O|idées de cadeau pour mon frère, 30 ans
+O|mon fils a un exposé sur les volcans
+O|ça fait mal de perdre au foot, jsuis dégoûté
+O|le service de la dette, c'est quoi en informatique ?
+O|comment réparer un pneu de vélo crevé ?
+O|quel film regarder ce soir en famille ?
+O|jai raté mon bus, trop nul
+O|ma fille adore les licornes, idée de gâteau
+O|je fais un test de logiciel demain
+O|mon wifi est en panne depuis ce matin
+O|j'ai trop mangé, jsuis cuit
+O|c'est quoi la différence entre septante et soixante-dix ?
+O|mon chum et moi allons au chalet
+O|j'ai attrapé un coup de soleil à la plage
+O|traduis cette phrase en espagnol
+O|chui fatigué mais content de ma journée
+O|comment faire une bonne mayonnaise maison ?
+O|mon mari ronfle comme un tracteur, lol
+O|la sentence de cette phrase est-elle correcte ?
+O|il pleut, quelle déprime ce temps
+O|comment installer Windows 11 sur mon PC ?
+O|j'ai une idée de génie pour le projet
+O|essai gratuit de 30 jours, comment annuler ?
+O|on fête les 40 ans de papa samedi
+O|mon cousin joue au tennis sur un court en terre
+O|conjugue le verbe prendre au futur
+O|pk mon pain ne lève pas ?
+O|quelle heure est-il à Montréal ?
+O|j'adore cette chanson, je suis fan
+O|ma sœur vient dîner ce soir
+O|je suis sur le point de finir mon livre
+O|les enfants ont un contrôle de maths demain
+O|mon voisin tond sa pelouse à 8h, lol
+O|astuce pour repasser une chemise vite
+O|je crois que j'ai oublié mes clés au bureau
+O|c'est quoi un bon prénom pour un chiot ?
+O|ma voiture fait un bruit bizarre au freinage
+O|mon mari veut acheter une perceuse
+O|combien de calories dans une baguette ?
+O|le médecin dans Grey's Anatomy est trop beau
+O|la police dans GTA m'a encore eu
+O|dans Zelda, je suis mort trois fois
+O|jai tué le boss final enfin
+O|le juge de touche a levé son drapeau
+O|c'est fine, merci beaucoup
+O|ça va aller, jsuis juste crevé
+O|mon grand-père m'a prêté un livre génial
+O|comment dire bonjour en japonais ?
+O|mon petit frère a la fièvre du foot
+O|mon cell est tombé dans l'eau, il marche encore
+O|ma tante fait un gâteau divin
+O|jsuis fou de ce nouvel album
+O|chui nul en maths, des conseils pour réviser ?
+O|mes parents arrivent à la gare à 17h
+O|quel est le meilleur char pour la famille ?
+O|jai hâte de voir mes cousins à Noël
+O|mon train a du retard, encore
+O|mes collègues organisent un pot de départ
+O|je fais une dose de soleil sur le balcon
+O|le cours de yoga commence à 18h
+O|mon horaire change la semaine prochaine
+O|j'ai gagné au Mario Kart ce soir
+O|vous croyez que ça va neiger demain ?
+O|mon père veut changer de forfait mobile
+O|mon pote joue de la guitare comme un dieu
+O|ma fille a perdu sa première dent, trop mignon
+O|mon cœur bat vite, j'ai couru pour le tram
+O|j'adore le café, jen bois trois par jour
+O|jai fait un gâteau, il est paradisiaque
+O|pourquoi mon iPhone chauffe pendant la charge ?
+O|ma copine me manque, elle revient samedi
+O|mon boss m'a félicité pour mon rapport
+O|je suis crevé après le sport
+O|jai un faible pour les pains au chocolat
+O|je cherche un bon resto à Bruxelles
+O|le souper est prêt, venez manger
+O|j'ai le trac avant ma présentation de demain
+O|la crise de fou rire de ma fille, quel bonheur
+O|je regrette d'avoir acheté ces chaussures, trop petites
+O|mon charge-batterie ne marche plus
+O|mon mari et moi cherchons un hôtel à Genève
+O|nous avons visité le château hier, magnifique
+O|c'est une question de goût, je trouve
+O|je crois que ma pizza brûle
+O|ma voisine m'a offert des tomates du jardin
+O|mon frère a un bug dans son appli
+O|quel est le score du match PSG hier ?
+O|dis-moi une blague de papa
+O|je dois acheter du lait et des œufs
+O|mon fils adore les dinosaures
+O|ma belle-mère vient pour le week-end, idées de menu
+O|je me suis coupé les cheveux moi-même, lol
+O|combien de temps pour aller de Paris à Lille ?
+O|mes enfants sont fous de Pokémon
+O|ça gaze, je viens de finir mes courses
+O|je tue le temps en attendant le train
+O|mon crush sur cette chanson dure depuis une semaine
+O|jai besoin d'un conseil pour mon CV
+O|mon taux de crédit sur Steam est nul, c'est quoi ?
+O|j'ai l'impression que ma montre avance de cinq minutes
+O|c'est quoi ce truc dans mon assiette, c'est bon ?
+O|ma grand-mère fait les meilleures galettes
+O|jsuis pressé, le bus part dans cinq minutes
+O|jai hâte de rentrer à la maison
+O|ma blonde veut aller au cinéma
+O|mon loyer de jeu Sims est trop cher, lol
+O|jsuis nerveux, mon avion décolle dans une heure
+O|mon fils a faim, quoi lui préparer ?
+O|jai un rendez-vous chez le coiffeur à 16h
+O|ça fait longtemps que je n'ai pas couru
+O|mon ordinateur a un problème de diagnostic au démarrage
+O|le mal de mer sur le bateau, trop drôle
+O|ma sœur a gagné au loto de la kermesse
+O|mon frère et moi jouons aux échecs
+O|mes pâtes sont trop cuites, que faire ?
+O|jai peur des araignées dans ma cave, lol
+O|on a vu un film d'horreur, jsuis mort de peur
+O|j'ai une grosse envie de crêpes
+O|je me sens en forme pour ma course
+O|mon chéri cuisine ce soir
+O|je suis à bout de souffle après l'escalier
+O|ma tante habite à Québec, quelle ville
+O|jai oublié mon mot de passe Netflix
+O|ma bouteille d'eau fuit dans mon sac
+O|on déménage dans un nouvel appart samedi
+O|je cherche un bon livre de science-fiction
+O|mon voisin a un chien adorable
+O|chui trop content, jai eu mon examen
+O|mon vélo électrique ne démarre plus
+O|ma fille veut un hamster, bonne idée ?
+O|jai envie de voyager en Italie cet été

@@ -1,0 +1,132 @@
+#P
+H|me diagnosticaron diabetes y no sé cómo decírselo a mi mamá
+H|mi hermana tiene cáncer de mama y ya empezó la quimio
+H|me hice la prueba de VIH ayer, xq tengo miedo
+H|mi papá tuvo un infarto y lo operaron del corazón
+H|tomo tramadol y no se me quita el dolor de espalda
+H|estoy embarazada de 9 semanas y no quiero seguir, q hago
+H|che me rompí el tobillo jugando fútbol y no puedo laburar
+H|tengo un lunar que sangra y cambia de color, da miedo
+H|se me está yendo la vista del ojo derecho desde ayer
+H|mi hija de 4 años tiene convulsiones con la fiebre
+M|mi mamá murió hace dos meses y no lo supero
+M|no puedo salir de la cama desde hace un mes
+M|tomo más de una botella de vino cada noche para dormir
+M|mi hijo no sale del cuarto, solo juega, ya no come
+M|tengo ataques de pánico en el metro casi todos los días
+M|todo me abruma, ya no puedo
+M|tío, me diagnosticaron TDAH de adulto y me siento fatal
+M|vomito después de comer y nadie lo sabe
+M|llevo 3 años sin amigos y tb ya no aguanto
+M|no puedo dejar de ver porno, me siento asqueroso
+S|no se me para desde hace meses, me da mucha vergüenza
+S|soy bi y mis papás no lo saben
+S|mi esposo me engañó con una compañera del trabajo, q hago
+S|tengo 34 años y nunca he tenido sexo, ¿es normal?
+S|me duele cuando tenemos relaciones desde el parto
+S|perdí las ganas de sexo hace un año, q hago
+S|mi hijo me dijo que es trans, no sé cómo reaccionar
+S|fui infiel a mi novia una vez y ella no sabe
+S|mi pareja no quiere tener sexo desde que nació el bebé
+S|nunca llego al orgasmo con mi novio, ¿será normal?
+R|dejé la iglesia y mi mamá no me habla desde entonces
+R|ya no creo en Dios, mi familia es muy católica
+R|mi novia es musulmana y su familia no me acepta
+R|estoy haciendo ramadán pero me desmayo en el trabajo
+R|soy testigo de Jehová y quiero salir de la congregación
+R|mis papás me obligan a ir a misa cada domingo
+R|siento que Dios me castiga por lo que hice
+R|llevo 2 años sin rezar, tb me siento como un fraude
+R|me convertí al islam y en casa no lo saben todavía
+R|mi hermano se fue con una secta y no nos contesta
+G|debo en 3 tarjetas y no llego a fin de mes
+G|tres meses atrasado con el alquiler, me van a desalojar
+G|me embargaron el sueldo por una deuda de la tarjeta
+G|me reportaron al buró de crédito por un préstamo
+G|perdí 800 euros apostando online, nadie lo sabe
+G|me estafaron con una inversión falsa y perdí todos mis ahorros
+G|tengo que pagar la hipoteca y no tengo ni para comida
+G|me despidieron y no puedo pagar la letra del coche
+G|me llaman los cobradores todos los días, ya no contesto po
+G|me quitaron la ayuda social y no tengo para la renta
+L|me llegó una multa de tráfico y me quitaron el carnet
+L|me pararon los pacos por manejar borracho, qué me pasa ahora
+L|me van a deportar porque se me venció la visa
+L|mi exesposo quiere quitarme la custodia de los niños
+L|el arrendador me quiere sacar sin contrato, ¿puedo negarme?
+L|me demandó mi exjefe por despido, tengo que ir a juicio
+L|me robaron la bici, la vi a la venta en Wallapop
+L|mi hijo de 17 fue detenido por venta de drogas
+L|estoy divorciándome y mi marido se quiere quedar con la casa
+L|me golpearon en la calle, no quiero denunciar, q hago
+#G
+H|síntomas de la diabetes tipo 2 para un trabajo escolar
+H|cómo se hace una biopsia de mama, para un examen
+H|escribe un correo para pacientes sobre la vacuna del VPH
+H|explica qué es la anemia falciforme para un ensayo
+H|ventajas e inconvenientes de la telemedicina en zonas rurales
+M|explica la diferencia entre ansiedad y depresión para un artículo
+M|escribe un cuento sobre un psicólogo que atiende a un fantasma
+M|cuántos adolescentes usan videojuegos más de 4 horas al día
+M|dame 5 consejos pa una presentación sobre el burnout laboral
+M|qué es el TDAH y cómo se diagnostica, para mi tesis
+S|explica la historia del movimiento LGBT en España para un trabajo
+S|escribe una novela sobre un matrimonio que se separa
+S|cuántas personas se identifican como bisexuales en México según la encuesta
+S|explica el consentimiento sexual en una clase de secundaria
+S|qué dice la ley sobre matrimonio igualitario en Chile
+R|explica las diferencias entre sunismo y chiísmo en una frase
+R|qué dice la Biblia sobre el perdón, para un sermón
+R|escribe un discurso para el culto de domingo sobre la esperanza
+R|historia de la Inquisición española en 5 puntos clave
+R|cuáles son los 5 pilares del islam, en una lista corta
+G|cómo funciona el interés compuesto en un ejemplo
+G|explica cómo funciona una quiebra personal en México, en general
+G|escribe un plan de presupuesto para una familia de cuatro
+G|cuántos tipos de deuda existen y cuál se paga primero
+G|qué pasa con las deudas de una persona fallecida, en general
+L|explica el proceso de divorcio en España para un blog
+L|qué dice la ley sobre la custodia compartida en Argentina
+L|escribe un modelo de demanda por despido para un curso
+L|cuántas multas de tránsito se pagan en Colombia al año
+L|explícalo como a un estudiante: qué es una orden de restricción
+O|mi hermana quiere cambiar de carrera, ¿qué le recomiendas?
+O|siento que mi celular se descarga muy rápido desde la actualización
+O|no puedo esperar al viernes, vamos al cine con mis primos
+O|creo que mi código ya está bien, solo falla el login
+O|mi laptop tiene un virus, ¿cómo lo quito sin formatear?
+O|tengo cita en el banco el jueves para cambiar la tarjeta
+O|ya pagué el alquiler, ahora a ahorrar para el viaje
+O|mi hijo mató al jefe final, ¿qué arma le sirve?
+O|la prueba gratis de Netflix termina hoy, la cancelo
+O|mi perro tiene pulgas, pa q champú le compro
+O|esa serie me tiene loca, la vemos juntos el sábado
+O|me muero de ganas por el viaje con mi familia
+O|el suéter tiene muchas pelusas, ¿cómo las quito?
+O|mi abuela tiene la planta con plaga, ¿qué le pongo?
+O|la presión de las llantas del coche, ¿cuánta debe ser?
+O|el coche marca un foco de motor encendido, ¿es grave?
+O|mi cumple es el sábado y somos doce, ¿qué cocino?
+O|esta receta de chocolate es un pecado, la hago el domingo
+O|dios mío, qué bonita quedó la sopa de mi mamá
+O|quiero subir la tarjeta de video, ¿me alcanza la fuente?
+O|mi laptop da positivo en el antivirus, ¿lo borro o no?
+O|necesito ayuda con una oración compuesta pa mi tarea
+O|el juez de la serie se equivocó, ¿lo viste?
+O|mi equipo tiene fe en el nuevo entrenador, ¿tú qué crees?
+O|siento que el wifi de casa va lento en la noche
+O|mi prima se volvió adicta a la pizza de la esquina
+O|mi hermano me pidió un café doble para la reunión
+O|la memoria de mi cámara está llena, ¿cómo la limpio?
+O|mi mamá dice que va a llover el sábado, ¿es cierto?
+O|nos encanta el partido de hoy, ¿a qué hora empieza?
+O|el horno de mi casa se apagó, ¿cómo lo reinicio?
+O|mi hija quiere ver a los dinosaurios, ¿qué museo me recomiendas?
+O|tengo que devolver el libro a la biblioteca antes del lunes
+O|mi novio y yo queremos una mesa para la cena, ¿reservamos?
+O|vamos a hacer una prueba del wifi, ¿qué app uso?
+O|siento que mi teléfono se calienta cuando juego, ¿es normal?
+O|mi papá siempre le gana a mi hermano en el ajedrez
+O|tengo que mandar la factura del cliente antes del viernes
+O|estoy muy nervioso por el penal de la final, jaja
+O|el clima está deprimente, puro gris y frío

@@ -6,7 +6,7 @@ const $ = id => document.getElementById(id);
 
 let settings = { ...C.DEFAULT_SETTINGS };
 // Alleen deze instellingen horen bij de gratis editie; de rest (van het afschermen) schrijft deze popup niet terug.
-const OWN = ['enabled'];
+const OWN = ['enabled', 'meloMac'];
 let stored = {};
 const load = s => { stored = s || {}; settings = { ...C.DEFAULT_SETTINGS, ...stored }; };
 // Het actieve tabblad: een AI-site (waar Kamelo draait) of iets anders.
@@ -25,6 +25,12 @@ function render() {
   $('tempChat').hidden = !!site.private;
   // Melo alleen als hij hier kan antwoorden: zelfde regel als "Ask Melo" in de melding (src/background.js, meloReady).
   $('openPrivateChat').hidden = !meloReady;
+  $('macList').hidden = !onMac;
+  $('meloMac').checked = !!settings.meloMac;
+  // Aan, maar Melo voor Mac antwoordt niet: zeg waar je hem aanzet.
+  const hint = !!settings.meloMac && meloReady !== null && meloReady !== 'mac';
+  $('macSub').textContent = t(hint ? 'macHint' : 'macSub');
+  $('macSub').classList.toggle('hint', hint);
 }
 
 function save() {
@@ -52,16 +58,35 @@ $('reloadTab').addEventListener('click', async () => {
 });
 
 
-// Melo alleen in Chrome (in Edge en Firefox brengt de melding je naar een tijdelijke chat), en alleen als de AI van Chrome
-// op deze computer kan draaien. Tot de achtergrond antwoordt (een paar ms; dit start nooit een download) staat Melo er niet.
-let meloReady = false;
-if (BROWSER.id === 'chrome') {
-  chrome.runtime.sendMessage({ type: 'pf:melo-ready' }).then(r => { meloReady = r === true; render(); }, () => {});
+// Melo als hij hier kan antwoorden: in Chrome als de AI van Chrome op deze computer kan draaien, en in elke browser met
+// Melo voor Mac ('mac'). Anders brengt de melding je naar een tijdelijke chat. Tot de achtergrond antwoordt (een paar ms;
+// dit start nooit een download) staat Melo er niet.
+let meloReady = null; // null = nog geen antwoord
+function askMelo() {
+  chrome.runtime.sendMessage({ type: 'pf:melo-ready' }).then(r => { meloReady = r === 'mac' ? r : r === true; render(); }, () => {});
 }
+askMelo();
+
+// Melo voor Mac (src/background.js): alleen op een Mac en niet in Safari (daar zit de extensie al in de app;
+// PrivacyConfig.MELO_MAC_IN_POPUP). De rechten nativeMessaging en contextMenus (het menu "Melo, doe hier iets mee") zijn
+// optioneel: Chrome vraagt ze pas bij deze klik, en wie Melo voor Mac niet heeft, ziet nooit een vraag.
+let onMac = false;
+chrome.runtime.getPlatformInfo?.().then(p => { onMac = C.MELO_MAC_IN_POPUP && p.os === 'mac' && BROWSER.id !== 'safari'; render(); }, () => {});
+$('meloMac').addEventListener('change', e => {
+  const on = e.target.checked;
+  // Eerst de vraag om het recht (moet direct bij de klik), dan pas de instelling. Firefox sluit de popup bij die vraag:
+  // daarom staat de instelling al aan, en controleert de achtergrond het recht zelf (macAllowed).
+  const perms = { permissions: ['nativeMessaging', 'contextMenus'] };
+  const asked = on ? chrome.permissions.request(perms) : chrome.permissions.remove(perms);
+  settings.meloMac = on;
+  save();
+  asked.then(granted => { if (on && !granted) { settings.meloMac = false; save(); } }, () => {}).then(askMelo);
+});
 // sidePanel.open moet zonder await ervoor, anders telt de klik niet meer als gebruikersactie; daarom het venster-ID vooraf.
 let pchatWindowId = null;
 chrome.windows?.getCurrent().then(w => { pchatWindowId = w.id; }, () => {});
 $('openPrivateChat').addEventListener('click', () => {
+  if (meloReady === 'mac') return void chrome.runtime.sendMessage({ type: 'pf:mac-open' }).catch(() => {}).then(() => window.close());
   const fallback = () => chrome.runtime.sendMessage({ type: 'pf:pchat-window' }).catch(() => {}).then(() => window.close());
   if (chrome.sidePanel?.open && pchatWindowId != null) {
     chrome.sidePanel.open({ windowId: pchatWindowId }).then(() => window.close(), fallback);
@@ -80,6 +105,8 @@ chrome.storage.onChanged.addListener((changes, area) => {
 async function inject(tabId) {
   for (const cs of chrome.runtime.getManifest().content_scripts || []) {
     await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, files: cs.js, world: cs.world || 'ISOLATED' }).catch(() => {});
+    // Ook de css (blauwe markering van gevoelige gegevens), net als background.js bij installeren.
+    if (cs.css?.length) await chrome.scripting.insertCSS({ target: { tabId, allFrames: true }, files: cs.css }).catch(() => {});
   }
 }
 

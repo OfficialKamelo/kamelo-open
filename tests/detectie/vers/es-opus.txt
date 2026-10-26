@@ -1,0 +1,110 @@
+#P
+H|tengo un bulto en el cuello del lado derecho hace como 3 semanas, no duele pero no se va, me tengo q preocupar?
+H|mi mama tiene diabetes tipo 2 y ahora le salio la creatinina en 1.8, eso es grave? tiene 67 años
+H|q onda, me salio positivo el test de embarazo pero tengo 19 y no se ni a quien decirle, cuanto tiempo tengo pa ir al medico
+H|Che, a mi viejo le detectaron un soplo en el corazón y lo quieren operar en el Italiano. ¿Vos sabés cuánto dura la recuperación de un reemplazo de válvula?
+H|llevo 4 dias con ardor al orinar y un flujo raro despues de estar con alguien nuevo. puede ser una ets? me da verguenza ir al ambulatorio
+H|Mi hija de 6 años tiene fiebre de 39 desde ayer, le doy Dalsy cada 8 horas y no le baja. ¿La llevo a urgencias ya o espero?
+H|tuve un aborto espontaneo hace 2 meses en la semana 9 y la regla aun no me ha vuelto, es normal?
+H|el traumatologo me dijo q tengo hernia discal L4-L5 y me duele la pierna izq hasta el pie, la cirugia es la unica opcion?
+H|Desde que empecé con la metformina tengo diarrea casi todos los días. ¿Se le pasa a uno o le pido al doctor de la EPS que me la cambie?
+M|no puedo dormir hace semanas, me despierto a las 4 con el corazon a mil pensando en todo lo q hice mal, q me pasa
+M|Mi psicóloga me dijo que puede que tenga TDAH a los 32 años. ¿Cómo sé si de verdad lo tengo o si solo soy desordenada?
+M|wn desde q murio mi abuela no tengo ganas de nada, voy a la u y me quedo mirando la pared. es normal estar asi 5 meses despues
+M|mi novio toma todos los fines de semana hasta perderse y el lunes no se acuerda de nada, como le digo q tiene un problema sin q se enoje
+M|Llevo tres meses de baja por burnout y solo pensar en volver a la oficina el lunes me da ataques de pánico. ¿Qué le puedo pedir a la mutua?
+M|tb me pasa q vomito despues de comer cuando me siento gorda, lo hago como 3 veces x semana, xq no puedo parar
+M|Mi hijo de 15 se pasa 10 horas al día jugando al Fortnite y si le quito la consola rompe cosas. ¿Esto ya es una adicción?
+M|me siento re sola desde que me mude a Cordoba por laburo, no tengo con quien hablar y los domingos lloro, que hago
+M|El psiquiatra me subió el escitalopram a 20 mg y me siento plano, como sin emociones. ¿Es por la dosis?
+S|tengo 26 y nunca he estado con nadie, me da panico q la chica con la q salgo se entere, se lo cuento o no
+S|Mi marido y yo llevamos casi un año sin tener relaciones y él dice que no le pasa nada. ¿Cómo saco el tema sin que se sienta atacado?
+S|creo q me gustan los hombres pero estoy de novio con una mina hace 3 años, no se q hacer
+S|a veces no se me para con mi pareja, pero solo con ella, solo funciona bien. es psicologico? tengo 34
+S|Le fui infiel a mi esposo con un compañero del trabajo y él no sabe nada. Me carcome la culpa, ¿se lo digo?
+S|me olvide la pastilla 2 dias seguidos y anoche lo hicimos sin condon, tomo la del dia despues?
+S|soy trans y todavia no le dije a mis papas, vivo con ellos en Medellin, como empiezo esa conversacion
+S|nunca llego al orgasmo con penetracion, solo cuando estoy sola, y mi novio cree q es culpa suya. hay algo mal conmigo
+S|Encontré en el celular de mi pareja mensajes bastante subidos de tono con otra mina. Ella dice que es solo charla. ¿Exagero yo?
+R|me crie testigo de jehova y lo deje a los 20, ahora mi familia no me habla. como lo supero
+R|Soy musulmana y estoy pensando en dejar de usar el hiyab, pero mis padres se van a poner fatal. ¿Cómo se lo planteo?
+R|ya no creo en Dios pero mi abuela me hace ir a misa todos los domingos y me siento hipocrita, q le digo
+R|Mi novio es judío y mi familia es muy católica; quieren que se convierta antes de la boda y él no quiere. ¿Cómo lo manejamos?
+R|desde q entre al grupo de oracion de mi hermana me piden el diezmo y q deje de ver a mis amigas, es normal o es una secta?
+R|Me siento culpable con Dios porque aborté hace años y nunca lo he confesado. ¿Puedo comulgar igual?
+R|estoy haciendo el ramadan x primera vez desde q me converti y en el laburo no saben, como hago con los almuerzos
+R|mi papa es pastor evangelico y le dije q no voy mas a la iglesia, ahora dice q vivo en pecado. me duele mucho
+R|Llevo meses dudando de mi fe después de perder a mi bebé. Antes rezaba todos los días y ahora no me sale. ¿Es normal?
+G|debo 3 meses de arriendo y el dueño me dijo q si no pago antes del 30 me saca, tengo 2 hijos, q hago
+G|Tengo una deuda de 8.000 euros con Cofidis y otra con la tarjeta del Corte Inglés, me llaman todos los días. ¿Puedo acogerme a la ley de segunda oportunidad?
+G|me endeude con 4 prestamos rapidos de esos de app y ya no llego ni a los intereses, ya estoy en el buro de credito?
+G|mi hermano perdio como 2 palos en apuestas online y me pide plata otra vez, le presto o no
+G|Me estafaron por WhatsApp haciéndose pasar por mi hijo y les transferí 1.200 €. ¿El banco me lo devuelve?
+G|me quede sin laburo en agosto y la indemnizacion se me fue en el alquiler, no se como voy a pagar la luz este mes
+G|Hacienda me reclama 3.400 € de la renta de 2023 con recargo y no los tengo. ¿Puedo pedir un aplazamiento?
+G|me estan embargando el 30% del sueldo por una deuda de una tarjeta q ni sabia q tenia, es legal?
+G|Estoy en DICOM por una deuda de 600 lucas con la casa comercial, ¿cuánto tiempo me queda ahí?
+L|anoche detuvieron a mi primo en Ecatepec y no nos dejan verlo, cuantas horas lo pueden tener sin presentarlo ante el juez
+L|Me paró la Guardia Civil con 0,6 de alcohol en aire. ¿Me van a quitar el carné y qué multa me cae?
+L|mi ex no me deja ver a mi hija desde hace 2 meses aunque tengo regimen de visitas, puedo denunciarla?
+L|tengo la visa de turista vencida hace 8 meses en Chile y me ofrecieron pega, me pueden expulsar si intento regularizarme?
+L|Mi jefe me despidió por estar embarazada, aunque dice que es por bajo rendimiento. ¿Puedo ir a la Inspección del Trabajo?
+L|tengo antecedentes por un hurto de cuando tenia 19 y ahora no me contratan en ningun lado, se pueden borrar?
+L|Me llegó una demanda de desahucio por impago y el juicio es el 12 de noviembre. ¿Me pueden echar con mis hijos en casa?
+L|mi pareja me pego anoche y tengo el brazo morado, si lo denuncio me quitan a los chicos? no tengo papeles
+L|nos estamos divorciando y mi marido quiere la custodia completa de los niños xq dice q yo trabajo de noche, puede ganarla?
+#G
+H|soy profesora de biologia de 3° de ESO, explicame como funciona la insulina con un ejemplo q entiendan chicos de 14
+H|Estoy preparando un folleto para los pacientes de mi consultorio sobre la hipertensión. ¿Me ayudas con un texto claro de 200 palabras?
+H|cuales son los sintomas mas comunes del dengue y como se diferencia del chikungunya
+H|Para mi trabajo de la facu necesito estadísticas de cáncer de mama en Argentina de los últimos 10 años, ¿dónde las encuentro?
+H|¿Qué enfermedad tenía Frida Kahlo y cómo influyó en su pintura?
+M|en mi novela el protagonista tiene ataques de panico despues de la guerra, como describo uno de forma realista
+M|Soy orientadora en un colegio de Santiago y quiero dar una charla sobre ansiedad a los apoderados. Dame un esquema.
+M|q diferencia hay entre depresion y distimia, explicado facil
+M|Resume los estudios más recientes sobre terapia cognitivo-conductual para el insomnio.
+M|pa mi clase de psicologia tengo q hacer un ensayo sobre adiccion a las redes sociales en adolescentes, me das 3 argumentos
+S|soy profe de educacion sexual en una secundaria de Rosario, como explico los anticonceptivos a pibes de 15 sin q sea incomodo
+S|Estoy escribiendo el guion de una serie y hay una escena donde un personaje sale del clóset con su padre. ¿Me ayudas con el diálogo?
+S|historia del movimiento LGBT en España desde la Transicion hasta el matrimonio igualitario de 2005
+S|¿Qué recomienda la OMS sobre la educación sexual integral en las escuelas?
+S|para mi podcast de cultura pop quiero hablar de las infidelidades mas sonadas de Hollywood, dame 5 casos
+R|para mi exposicion de historia: diferencias entre catolicos y protestantes despues de la Reforma, en 5 puntos
+R|Soy catequista y necesito una actividad para niños de 8 años sobre la parábola del hijo pródigo.
+R|que es el Yom Kipur y como se celebra
+R|Explícame por qué se separaron sunitas y chiitas, de forma neutral.
+R|En mi libro hay una monja que pierde la fe en el siglo XVII, ¿qué detalles de la vida en un convento de la época puedo usar?
+G|explicame q es el buro de credito y como funciona en Mexico
+G|Soy asesora financiera y quiero un correo para clientes explicando cómo consolidar deudas, con un tono cercano.
+G|cuanto subio la morosidad hipotecaria en España en los ultimos años segun el Banco de España
+G|para mi tesis de economia necesito comparar la inflacion de Argentina y Venezuela en la ultima decada
+G|¿Cuáles son las causas más frecuentes de la ludopatía según los estudios? Es para un reportaje.
+L|que derechos tiene una persona detenida en Colombia en las primeras 36 horas
+L|Soy abogada laboralista y necesito un modelo de carta de reclamación por despido improcedente.
+L|en mi novela policial el sospechoso es interrogado sin abogado, eso seria legal en Chile?
+L|Explícame la diferencia entre custodia compartida y patria potestad en el Código Civil español.
+L|resumime como cambiaron las politicas de deportacion en EEUU en la ultima decada, es para una clase de ciudadania
+O|mi laptop se apaga sola cuando abro el chrome, sera el ventilador?
+O|Quiero hacerle una torta de cumpleaños a mi mamá que cumple 60, algo fácil con chocolate.
+O|como hago q mi gato deje de rasguñar el sillon
+O|mi hermano y yo queremos ir a Machu Picchu en diciembre, cuantos dias recomiendas
+O|me muero de hambre, q puedo cocinar con arroz, huevo y un tomate
+O|Mi jefe me pidió un Excel con tablas dinámicas y no tengo idea, ¿me lo explicas paso a paso?
+O|el pan me quedo muerto, re denso, q hice mal con la levadura
+O|Recomiéndame series parecidas a La Casa de Papel para ver con mi novio.
+O|ayudame a escribir un mensaje pa felicitar a mi abuela q cumple 90
+O|tengo una adiccion a las empanadas jaja pasame una receta de empanadas salteñas
+O|¿Cómo se quita una mancha de vino tinto de una alfombra?
+O|mi hija quiere aprender a nadar, desde q edad conviene meterla a clases
+O|este examen de mate me va a matar, explicame las derivadas como si tuviera 10 años
+O|cual es la diferencia entre el iphone 16 y el 17, vale la pena cambiar
+O|Mi papá quiere irse a vivir a la costa cuando se jubile, ¿qué pueblo de Valencia tiene buen clima todo el año?
+O|traduce al ingles: nos vemos el viernes en la oficina
+O|el partido de anoche fue una masacre, 5 a 0. quien fue el maximo goleador del mundial 2014
+O|Necesito ideas de nombres para mi perrita, es una caniche blanca.
+O|como configuro el router pa q el wifi llegue hasta mi pieza
+O|mi suegra viene a cenar el sabado, q plato vegetariano queda bien sin mucho trabajo
+O|Dame un plan de entrenamiento para correr 10 km en 8 semanas, salgo 3 veces por semana.
+O|mis plantas tienen las hojas amarillas, sera q las riego demasiado?
+O|¿Cuál es la capital de Australia? Mi sobrino dice que es Sídney y no le creo.
+O|ayuda, a mi compu le entro un virus? se abren ventanas solas con publicidad

@@ -87,7 +87,8 @@ test('de vraag aan de AI: kort, Engels, JSON-schema met de zes onderwerpen en NO
   assert.deepEqual(A.TOPICS, ['HEALTH', 'MENTAL', 'SEXUALITY', 'RELIGION', 'MONEY', 'LEGAL']);
 });
 test('de voorbeeldzin vindt de woordenlijst niet (daar is de tweede kans voor)', () => {
-  assert.deepEqual(sensitiveTopics(PERSONAL), []);
+  // Alleen de woordenlijst; de gewogen lijst (topic-model.js) vindt hem sinds 1.7.3 wel.
+  assert.deepEqual(sensitiveTopics(PERSONAL, { model: false }), []);
 });
 
 // ---------- achtergrond: model() ----------

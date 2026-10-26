@@ -5,7 +5,7 @@
 <h1 align="center">Melo, by Kamelo</h1>
 
 <p align="center">
-  <strong>Personal questions, private answers.</strong><br>
+  <strong>Keep it yours.</strong><br>
   Melo is a private AI chat in your browser that answers on your own computer. This extension adds Melo to Chrome. When you type
   something personal into ChatGPT, Claude, Gemini or another AI chat, it suggests asking Melo instead, or a temporary chat.
   It works in Edge and Firefox too, with the temporary chat only: chatting with Melo needs Chrome.
@@ -32,9 +32,23 @@ What it does is help you choose where to ask:
 
 ### Recognising personal topics
 A word list in 82 languages ([`src/topic-words.js`](src/topic-words.js), [`src/topics.js`](src/topics.js)), written for the way
-people actually type. In Chrome, when the word list finds nothing, Kamelo asks Chrome's built-in AI (Gemini Nano) on your computer
+people actually type. In English, Dutch, German, French and Spanish a second, weighted list helps
+([`src/topic-model.js`](src/topic-model.js), [`src/topic-weights.js`](src/topic-weights.js)): a weight per word, word pair
+and word part, learned from thousands of example messages ([`tools/detectie-leer.mjs`](tools/detectie-leer.mjs)). It catches
+personal questions the word list has no word for, and holds back the notice for clearly general messages (a leaflet, a
+lesson, a story). It is plain arithmetic in JavaScript: no AI, no download, nothing sent, so it works in Edge and Firefox too.
+`npm run meet:detectie` shows, per language, how many personal questions get a notice and how many ordinary ones do, on
+test sentences the lists never learned from. In Chrome, when the word list finds nothing, Kamelo asks Chrome's built-in AI (Gemini Nano) on your computer
 as a second check ([`src/topic-ai.js`](src/topic-ai.js)): only when the model is already on your computer (Kamelo never downloads it
 for this), only after you pause typing, and nothing is stored. Corrections from native speakers are welcome.
+
+### Sensitive details
+Besides personal topics, Kamelo notices sensitive details in your message ([`src/identifiers.js`](src/identifiers.js)): a citizen
+service or ID number, an IBAN, a card number, a passport or ID card number, a password or PIN, or an API key. Only when it is
+sure: a check digit that is right (IBAN mod-97, Luhn, the Dutch elfproef, DNI letter, NIR and Belgian national number keys,
+German tax ID, US SSN rules) or a word in front that says what it is. Email addresses and phone numbers don't count. Kamelo
+changes nothing: it marks the detail in blue in the text box ([`src/gegevens.css`](src/gegevens.css), CSS Highlight API) and the notice offers Melo (Chrome). It never offers a temporary
+chat for these, because that still sends the number to the AI company.
 
 ### Melo, the private chat
 Melo (called Private Chat before) is a chat in the browser's side panel where Chrome's built-in AI answers on your own computer ([`chat/device.js`](chat/device.js)).
@@ -150,6 +164,7 @@ npm run pack             # the store package for Chrome and Edge (npm run pack:f
 |---|---|
 | `src/content.js` | Watches the text field on AI chat sites and shows the notice |
 | `src/topics.js`, `src/topic-words.js` | Personal topics: the word lists in 82 languages |
+| `src/topic-model.js`, `src/topic-weights.js` | Personal topics: the weighted list for en/nl/de/fr/es (made by `tools/detectie-leer.mjs`) |
 | `src/topic-ai.js` | The second check with Chrome's built-in AI, on the device |
 | `src/background.js` | Hands your message to the temporary chat or Melo; removes old masking data after an update |
 | `src/sites.js` | Known AI sites, their input field and temporary chat. **When a site changes, this is usually the only file to edit** |

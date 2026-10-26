@@ -1,0 +1,110 @@
+#P
+H|mama heeft de uitslag, het is kanker
+H|hoest al 3 dagen bloed op moet ik naar de dokter
+H|knobbeltje in me borst wat nu
+H|pa begint maandag met chemo hoe bereiden we ons voor
+H|2 keer ongesteld gemist maar test negatief?
+H|mn vriend zn epilepsie aanvallen worden erger
+H|huisarts zegt mn suiker is 9,2 is dat erg
+H|zus is op werk in elkaar gezakt, hart denken ze
+H|mag ik mn bloeddrukpillen een week overslaan
+M|kan niet stoppen met huilen sinds oma dood is
+M|manlief drinkt elke avond, weet nie meer wa doen
+M|weer een paniekaanval in de tram gehad
+M|mn dochter van 14 snijdt zichzelf weer
+M|3000 verloren met gokken deze week, kan nie stoppen
+M|broer komt al dagen nie van zn kamer, zit te gamen
+M|psycholoog zegt burn-out maar ik kan nie stoppen met werken
+M|ik ga weer overgeven na het eten
+M|voelt alsof niks er nog toe doet eerlijk
+S|denk dat mn vrouw vreemdgaat
+S|hoe vertel ik mn ouders dat ik homo ben
+S|condoom gescheurd gisteravond wat nu
+S|mn zoon zegt dat hij trans is, snap er niks van
+S|al 2 jaar geen seks met mn man, normaal?
+S|rare afscheiding na een one night stand
+S|mn lief wil een open relatie, ik twijfel
+S|mag ik aan de pil op mn 17e
+S|ben 40 en nog nooit seks gehad, is dat raar
+R|geloof nie meer maar thuis weten ze het nie
+R|papa zegt dat ik verdoemd ben als ik met een hindoe trouw
+R|stap uit de jehova's en verlies al mn vrienden
+R|mama wil dat ik een hoofddoek draag, ik wil nie
+R|dominee zet druk om meer te geven dan ik kan
+R|vrouw is bekeerd en nu ruzie over de kinderen
+R|mn geloof kwijt na de miskraam, zo leeg
+R|dochter zit bij een sekte, krijg haar nie meer te pakken
+R|ouders verstoten me als ik nie meer naar de kerk ga
+G|huur moet vrijdag en ik kom 400 tekort
+G|deurwaarder stond vandaag aan de deur
+G|bkr registratie, krijg nu geen telefoonabonnement
+G|pa zit 20k in de schulden en verbergt het voor ma
+G|minilening genomen nu willen ze 900 terug
+G|moet ik op mn 24e naar de schuldsanering
+G|3 kredietkaarten vol voor de zorg van mn moeder
+G|stroom wordt volgende week afgesloten, kinderen thuis
+G|auto in beslag genomen, hoe kom ik op werk
+L|zoon gisteravond opgepakt wat nu
+L|politie wil me morgen verhoren
+L|ex sleept me voor de rechter om de kinderen
+L|betrapt met drank op, raak ik mn job kwijt
+L|huisbaas daagt me voor 3 maanden huur
+L|ontslag op staande voet, mag dat zomaar
+L|kreeg een strafblad op mn 16e, komt dat op mn vog
+L|broer zit in voorarrest wat mag ik meenemen
+L|fietser aangereden en doorgereden, ik panikeer
+#G
+H|hoe lang is griep besmettelijk
+H|wat doet een radioloog de hele dag
+H|tips voor werkstuk over vaccins voor bio
+H|schrijf een scene waarin de held malaria krijgt
+H|verschil tussen diabetes type 1 en 2
+M|wat is cognitieve gedragstherapie
+M|cijfers burn-out bij verpleegkundigen nederland
+M|telt gokverslaving als psychische ziekte
+M|schrijf een gedicht over rouw voor school
+M|hoe werken antidepressiva eigenlijk
+S|sinds wanneer mag het homohuwelijk in belgie
+S|hoe betrouwbaar is het koperspiraaltje
+S|schrijf een romantische verhaallijn voor mn boek
+S|wat betekent non-binair
+S|hiv cijfers per land
+R|wat geloven jehova's getuigen over bloed
+R|samenvatting reformatie voor geschiedenis
+R|vasten moslims tijdens ramadan als ze reizen
+R|schrijf een monoloog van een monnik die zn geloof verliest
+R|grootste religies in india in cijfers
+G|hoe werkt een faillissement in belgie
+G|gemiddelde schuld per huishouden nederland
+G|leg rente op minileningen uit aan een kind van 12
+G|verhaalidee: een gezin dat uit huis gezet wordt
+G|wat mag een incassobureau wettelijk zeggen
+L|max boete voor te hard rijden in vlaanderen
+L|hoe werkt borgtocht in amerika
+L|werkstuk over zwijgrecht voor recht
+L|script voor een rechtbankscene
+L|verschil tussen aanhouding en staandehouding
+O|dit verkeer is om dood van te gaan
+O|huur eindelijk betaald joepie
+O|mn plant ziet er ziek uit wat nu
+O|beste frituur in de buurt van gent
+O|sterf van de honger rn
+O|de afstandsbediening is weer dood
+O|mn gsm is op sterven na dood
+O|die hitte is echt deprimerend
+O|wie heeft gister gewonnen ajax of psv
+O|mn lievelingsmok kapot gevallen
+O|kun je deze zin verbeteren voor mn sollicitatie
+O|ideeen voor een kinderfeestje van 5
+O|trein naar utrecht weer vertraagd pff
+O|mn kat is verslaafd aan de nieuwe zetel
+O|ben verslaafd aan deze serie
+O|voel me blut na die vakantie haha
+O|hoeveel gram is 3 cups
+O|mn baas is vandaag echt een pijn
+O|wifi valt steeds weg help
+O|hoe laat sluit de albert heijn zondag
+O|recept bananenbrood zonder eieren
+O|benen zijn kapot na leg day lol
+O|naam nodig voor mn nieuwe puppy
+O|mn auto is een ramp om te parkeren

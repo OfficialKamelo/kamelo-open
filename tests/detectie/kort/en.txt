@@ -1,0 +1,514 @@
+# Overgenomen uit tests/topics-corpus.test.js en tests/topics-alledaags.test.js (19 okt), als leerzinnen voor de gewogen lijst.
+#P
+H|found a lump in my breast should i worry
+H|ive had a headache for like 3 days now is that normal
+H|my mum keeps getting dizzy when she stands up
+H|my dad gets chest pain when he walks up the stairs
+H|my kid has a fever of 39 and wont eat
+H|i think im pregnant what should i do first
+H|my gf gets really bad cramps every month and painkillers dont help
+H|ive been coughing up blood since yesterday
+H|my blood test came back with high cholesterol what does that mean
+H|i keep throwing up after every meal
+H|my son broke his arm at school how long does it take to heal
+H|ive got a rash on my arm that wont go away
+H|my grandma fell and now her hip hurts a lot
+H|i have a weird mole on my back that changed color
+H|my bf snores and sometimes stops breathing at night
+H|i keep losing weight without trying
+H|my colleague told me she has a tumor how do i support her
+H|my period is 2 weeks late
+H|i get out of breath really fast lately
+H|my stomach hurts every time i eat
+H|ive been so tired all the time and my joints hurt
+H|my friend got diagnosed with ms and im scared for her
+H|should i go to the er my ankle is super swollen
+H|my toddler has had diarrhea for 3 days
+H|my throat has been sore for a week and i have white spots
+H|my husband keeps forgetting things is it early dementia
+H|my baby wont stop throwing up
+H|my eye has been twitching for weeks
+H|i have a lot of pain when i pee
+H|my daughter has a high temperature and a stiff neck
+H|ive been getting nosebleeds every day
+H|my mum has to go in for a scan next week
+H|i have a bump on my head after falling
+H|my legs keep cramping at night
+H|ive had a weird pressure in my chest all day
+H|my gf might have a uti
+H|i cut my finger pretty deep do i need stitches
+H|my grandpa has trouble swallowing
+H|im on antibiotics can i drink
+M|my gf has been feeling low for weeks
+M|i cant stop crying and i dont know why
+M|so stressed i cant sleep
+M|i feel like nobody cares about me
+M|ive been having panic attacks at work
+M|my mum hasnt left her bed in days i think shes depressed
+M|i feel empty all the time
+M|idk how to deal with my anxiety anymore
+M|my dad drinks every night and i think hes an alcoholic
+M|i feel so lonely since i moved
+M|my best friend is going through a really dark time how can i help
+M|i overthink everything and it ruins my day
+M|im always on edge and my heart races for no reason
+M|my son wont talk to anyone and stays in his room all day
+M|i have no motivation to do anything anymore
+M|my wife lost her mum last month and shes not coping
+M|im burnt out and cant face going to work
+M|i get really bad mood swings
+M|my brother is addicted to gambling
+M|should i see a therapist ive been feeling off for months
+M|i feel worthless lately
+M|im grieving my dog and cant focus on anything
+M|my teenager seems withdrawn and sad all the time
+M|i think i have an eating problem i keep binging
+M|i feel like im falling apart
+M|my mom cries every day since the divorce
+M|i cant get out of bed in the morning
+M|im so anxious about everything lately
+M|my husband has been really down since he lost his job
+M|i hate myself
+M|i dont enjoy anything anymore
+M|my daughter has panic attacks before school
+M|ive been really stressed and snapping at everyone
+M|i feel like a failure
+M|my sister has been self isolating and wont answer calls
+M|i get so nervous around people
+M|im struggling a lot lately
+M|my partner has really bad social anxiety
+S|i think im gay but idk how to tell my parents
+S|how do i tell my parents im bi
+S|am i gay if i liked kissing my friend
+S|my son just came out to me as trans what do i say
+S|im a guy and i have feelings for my best friend who is also a guy
+S|i want to come out at work but im scared
+S|my daughter told me shes a lesbian
+S|im a girl and i think i like girls
+S|i dont feel attracted to anyone am i asexual
+S|my bf wants to try stuff in bed that im not comfortable with
+S|i have trouble getting hard with my gf
+S|my husband told me hes bisexual
+S|my sex drive is basically zero lately
+S|ive been questioning my gender for years
+S|ive never had sex and im 30 is that weird
+S|my parents dont know my partner is a woman too
+S|i think my brother is gay and hes scared to tell anyone
+S|im non binary and my family keeps using the wrong pronouns
+S|how do i know if im pansexual
+S|my friend just came out as trans and i want to support her
+S|i want to start transitioning but im scared to tell my mum
+S|i havent come out to my family yet
+S|i think my daughter is gay how do i bring it up
+S|im trans and want to change my name
+S|how do i tell my wife im gay
+S|my son wants to wear dresses and says hes a girl
+S|im bi and my bf doesnt know
+S|is it normal that i have no sex drive after having a baby
+S|i kissed a girl and i liked it am i lesbian
+S|my dad found out im gay
+S|im scared of being outed
+R|im thinking about leaving my religion
+R|my parents are strict muslims and i dont want to wear the hijab anymore
+R|i converted to islam last year and my family is upset
+R|i dont believe in god anymore but my family is very religious
+R|im catholic and want to get divorced is that allowed
+R|my bf is jewish and im christian will that work
+R|i stopped going to church and my mum is devastated
+R|i want to leave the jehovahs witnesses
+R|im fasting for ramadan and have exams
+R|my husband became really religious lately
+R|can i pray at work im muslim
+R|i grew up mormon and now im an atheist
+R|my parents want me to marry within our faith
+R|i lost my faith after my dad died
+R|im hindu and my gfs parents dont accept that
+R|my kid wants to get baptized but im not religious
+R|i got kicked out of my church
+R|i was raised in a strict christian home and still feel guilty about everything
+R|my in-laws keep pushing their religion on my kids
+R|i want to convert to judaism where do i start
+R|i wear a headscarf and got comments at work
+R|my sister joined a cult and wont talk to us
+R|my parents will disown me if i leave islam
+R|im a christian dating an atheist
+R|im muslim and my boss schedules meetings during friday prayer
+R|my parents dont know im an atheist
+R|i want to get married in a church but my fiance is jewish
+R|my mum says i will go to hell
+R|im the only muslim in my office
+R|my parents force me to go to mosque
+R|i left the church and lost my friends
+G|im $4000 behind on bills and idk what to do
+G|i cant pay my rent this month
+G|my credit card is maxed out and i only pay the minimum
+G|my account is overdrawn again
+G|i got a letter from a debt collector
+G|my landlord says hell evict me if i dont pay by friday
+G|my dad lost his job and cant pay the mortgage
+G|i have 20k in student loans and no job
+G|i keep getting overdraft fees
+G|i owe the irs money and cant pay it
+G|my wages are being garnished
+G|i borrowed money from friends and cant pay them back
+G|my bf has a gambling debt he hid from me
+G|i might have to file for bankruptcy
+G|my car got repossessed
+G|i only have 12 dollars left until payday
+G|we cant afford groceries this week
+G|my electricity is getting shut off because i missed payments
+G|im drowning in debt
+G|my mum is in debt and too proud to ask for help
+G|i have a payday loan and the interest is insane
+G|i missed 3 payments on my car loan
+G|im broke and rent is due tomorrow
+G|i owe my landlord 3 months rent
+G|my paycheck is gone after bills and im 2k in the hole
+G|i cant afford my medication
+G|im so broke i cant buy food
+G|my rent went up and i cant keep up
+G|i have 3 credit cards maxed out
+G|we are about to lose our house
+G|im 3 months behind on my car payment
+G|my bank account is negative
+G|i have collectors calling me every day
+G|we might lose our apartment
+L|i got arrested last night what happens now
+L|i have a record can i still get a job in a school
+L|my court date is next week and idk what to wear
+L|the police questioned me about a fight
+L|i got a dui last weekend
+L|my son got caught shoplifting
+L|my bf is in jail and i dont know how to visit
+L|im being sued by my old landlord
+L|i got a summons to appear in court
+L|my brother is on probation and broke curfew
+L|my ex filed a restraining order against me
+L|i got pulled over and they found weed in my car
+L|i was charged with assault after a bar fight
+L|do i need a lawyer the police want to interview me
+L|my dad got sentenced to 2 years
+L|i got caught driving without a license
+L|someone reported me to the police for something i didnt do
+L|i think i have a warrant out for my arrest
+L|im out on bail
+L|i was convicted of a felony 10 years ago
+L|my husband is being deported next month
+L|my kid got expelled and the police are involved
+L|i got a speeding ticket and court summons
+L|my brother got locked up last night
+L|im on parole and want to move states
+L|i got caught with drugs at a festival
+L|my dad is going to prison next month
+L|im being investigated for fraud
+L|i got a ticket for drunk driving
+L|i have to go to court for custody
+L|i got caught stealing at work
+L|my son was arrested for vandalism
+L|im due in court next month
+G|i have like 8k in credit card debt how do i pay it off fastest
+G|how do i get out of debt on 2000 a month
+G|i have so much debt and i dont know where to start
+G|my boyfriend has 30k of debt should i still move in with him
+G|can a debt collector call me at work
+G|i got a letter saying my debt was sold to a collection agency
+G|i cant pay my rent this month what are my options
+G|i took out a loan to pay my bills and now i cant pay the loan back
+G|i lost a lot of money gambling and my wife doesnt know
+G|i keep gambling my paycheck away how do i stop
+G|my parents are being evicted next month
+G|the bailiffs are coming tomorrow what can they take
+G|i got a ccj and now no one will give me a loan
+G|im behind on my council tax and got a summons
+G|i owe my brother 5000 and cant pay him back
+G|our mortgage went up and we cant make the payments anymore
+G|how do i tell my partner i have debt
+G|my student loan payments are crushing me
+G|im living paycheck to paycheck and have nothing saved
+G|i have a default on my credit report can i still rent a flat
+G|i need to borrow money for groceries till friday
+G|i put all my savings in crypto and lost it
+G|should i declare bankruptcy with 40k in debt
+G|my husband hid 20k of debt from me
+G|i want to be debt free by next year but i have 12k on cards
+G|my dad is in a lot of debt and keeps asking me for money
+H|ive had pain in my lower back for weeks
+H|my 2 year old has a cough that wont go away
+H|i think i broke my toe
+H|can i take ibuprofen with my blood pressure meds
+H|i forgot to take my pill yesterday can i get pregnant
+H|im 12 weeks pregnant can i eat sushi
+H|my wife is pregnant and spotting
+H|i had unprotected sex and now it burns when i pee
+H|how do i tell my partner i have herpes
+H|i think i have chlamydia
+H|my gp wants me to get tested for hiv
+H|i tested positive for an std
+H|can i drink alcohol while im on metformin
+H|my heart keeps skipping beats
+H|i get heart palpitations at night
+H|my mom has stage 3 breast cancer
+H|my dad has to start dialysis
+H|i have a yeast infection
+H|my period is really heavy and lasts 10 days
+H|i have a lump in my testicle
+H|i have hemorrhoids what helps
+H|my sons eczema is getting worse
+H|my blood sugar was 14 this morning
+H|i was just diagnosed with high blood pressure
+H|i took the morning after pill and now im bleeding
+H|my doctor put me on ozempic how much weight will i lose
+M|i feel like im not good enough at anything
+M|i have no friends and feel alone all the time
+H|i think i might have adhd
+M|my therapist moved away and i dont know how to find a new one
+M|i get panic attacks before work
+H|i started taking sertraline and feel weird
+M|my wife has postpartum depression
+M|how do i stop drinking every night
+M|i havent left the house in weeks
+M|i get really anxious in social situations
+M|my mom died last month and i cant function
+M|i feel numb since my dad passed away
+M|i eat way too much when im stressed
+M|im always tired and dont enjoy anything anymore
+M|i cant stop overthinking at night
+M|my teenage son barely talks and stays in his room all day
+M|i cry every day and dont know why
+M|my anxiety is getting worse
+S|my girlfriend never wants to have sex anymore
+S|i have trouble getting an erection
+S|it hurts when we have sex
+S|how do i tell my partner what i like in bed
+S|my husband wants an open relationship
+S|i cheated on my wife and she doesnt know
+S|i think my boyfriend is cheating on me
+S|i have never had an orgasm
+L|my wife wants a divorce and i dont know how custody works
+L|im getting divorced and we cant agree on the house
+R|i stopped believing in god but my family is very religious
+R|is it a sin to have sex before marriage im catholic
+R|how do i tell my muslim parents im not fasting this ramadan
+R|i want to convert to islam how do i tell my parents
+R|my church says being gay is wrong and i dont know what to think
+R|i feel guilty for doubting my faith
+R|my wife became a jehovahs witness
+R|im a christian and struggling with doubt
+R|i want to leave the mormon church
+R|i pray every day but feel nothing
+S|i think im gay but im scared to tell my parents
+S|how do i know if im bisexual
+S|my son told me hes trans what do i do
+S|i want to start hrt
+S|im questioning my gender
+S|i think i might be asexual
+S|how do i come out to my coworkers
+S|im a lesbian and want to have a baby with my wife
+S|my daughter says shes non binary
+S|i like both guys and girls is that weird
+L|i missed my court date for a speeding ticket
+L|my neighbor is suing me
+L|i got caught shoplifting what happens now
+L|the police want to interview me about a fight
+L|can i travel to the us with a criminal record
+L|my son was arrested for possession
+L|my ex wont let me see my kids
+L|my landlord is taking me to court
+L|i have to do community service
+L|im being accused of fraud at work
+M|i think im burning out at work
+M|im on sick leave with burnout and my boss keeps calling
+M|i got fired today and dont know what to do
+M|i was let go after 10 years
+M|my boss wants to fire me because im pregnant
+M|im so stressed at work i cant sleep
+M|i dread going to work every morning
+M|i had a breakdown at work today
+M|my contract isnt being renewed and i have a mortgage to pay
+M|i got laid off and my severance runs out next month
+L|my visa expires next month and my employer wont sponsor me anymore
+L|im undocumented can i still go to the hospital
+L|my asylum application was rejected
+L|can i be deported for a dui
+L|my husband overstayed his visa
+L|my residence permit was refused
+L|im here illegally and my landlord knows
+L|my mom is in immigration detention
+#G
+O|what are symptoms of diabetes
+O|how does chemotherapy work
+O|our technical debt is getting worse every sprint
+O|kill the process thats using port 3000
+O|the build is sick today
+O|we launched a bug bounty program
+O|whats the main pain point for our users
+O|my code is depressing lol
+O|i want to pay a lump sum off my mortgage
+O|i made a rash decision at work
+O|this client is a real pain in the neck
+O|im dying to see the new marvel movie
+O|this deadline is killing me
+O|how do i pay my bills online
+O|how to budget on a small salary
+O|how do we split the bill at dinner
+O|explain the five pillars of islam for my homework
+O|help me write my essay on the history of the catholic church
+O|my history homework is about the reformation
+O|what did buddhists believe about rebirth
+O|my main character gets arrested in chapter 3 is that realistic
+O|im writing a crime novel where the detective ends up in prison
+O|in my story the villain goes to jail for fraud
+O|how does bankruptcy work for a company
+O|i need to kill all node processes
+O|my laptop has a virus
+O|my phone battery is dying
+O|my app crashes on startup
+O|i want to buy a new phone which one is best
+O|my plants have yellow leaves are they sick
+O|my dog is limping should i take him to the vet
+O|my build pipeline keeps failing
+O|we have a memory leak in production
+O|my startup is bleeding money
+O|i have a meeting with my bank tomorrow about a mortgage
+O|i want to open a savings account
+O|i paid off my credit card this month
+O|i need to file my taxes which form do i need
+O|what are the side effects of ibuprofen
+O|is coffee bad for your heart
+O|explain the difference between sunni and shia
+O|can you check my code for bugs
+O|my mum wants a recipe for apple pie
+O|my gf and i are planning a trip to rome
+O|how do i become a nurse
+O|what does a psychologist earn
+O|my essay is about depression in teenagers
+O|im dying to know the answer
+O|my boss is killing me with all these meetings
+O|i caught the travel bug
+O|my server is down again
+O|i want to set up a direct debit for my gym
+O|my code has a lot of pain points
+O|whats the court size in basketball
+O|im attracted to the idea of moving to spain
+O|my team is on edge about the release
+O|the kids are so sad that summer is over
+O|i want to come out as the winner
+O|my bug report was rejected
+O|is a lump sum better than monthly
+O|we split the bill evenly
+O|my landlord is fixing the heating
+O|how to treat burns in general
+O|i want to transition my team to scrum
+O|my python script keeps crashing
+O|i need a lawyer for my startup contract
+O|what are the symptoms of a stroke
+O|my api is throwing errors
+O|the stock market is depressing
+O|i paid my rent today
+O|how do i become a lawyer
+O|explain how the court system works
+O|the movie is about a gay couple in the 80s
+O|my team needs a budget for q4
+O|my battery is draining fast
+O|my car broke down on the highway
+O|my code is a disaster
+O|can you give me a cost breakdown of my project
+O|our legal counsel reviewed the contract
+O|a stroke of luck helped my team win
+O|how is a broken bone treated
+O|my kpi dashboard is broken
+O|i lost my keys again
+O|the patient portal of my client is slow
+O|my plan was a total failure
+O|my mom is the best
+O|i want to learn about the history of islam
+O|what is the age of consent in spain
+O|our debt to equity ratio is high
+O|my landlord sent a new contract
+O|how many calories are in a banana
+O|i feel great today
+O|im nervous about my presentation
+O|my presentation is about lung cancer
+O|i cant wait for the weekend
+O|how do i make a vegan lasagna
+O|what can i cook with chicken and rice
+O|my sourdough isnt rising what am i doing wrong
+O|give me a meal plan for the week
+O|my react app keeps crashing on startup
+O|how do i fix a merge conflict in git
+O|why is my python script so slow
+O|my code has a memory leak
+O|how do i pay down technical debt in a legacy codebase
+O|our team has a lot of tech debt
+O|my function returns undefined
+O|what should i pack for a week in lisbon
+O|do i need a visa for japan as a dutch citizen
+O|my flight got cancelled what are my rights
+O|best things to do in rome with kids
+O|i need a hotel near the airport
+O|can i pay with visa at the airport
+O|explain the difference between good debt and bad debt
+O|what is the debt to equity ratio
+O|how does the national debt work
+O|our company wants to refinance its debt
+O|in my economics class we learn about sovereign debt
+O|calculate the debt service coverage ratio in my spreadsheet
+O|how do i record bad debt in my bookkeeping
+O|should my startup use debt or equity financing
+O|what is my cost of debt for the wacc
+O|what is a debt fund
+O|write a birthday message for my mom
+O|my cat keeps scratching the couch
+O|how do i get red wine out of my carpet
+O|help me write a cover letter
+O|my laptop battery dies fast
+O|i want to learn spanish
+O|my plants have yellow leaves
+O|what is a good name for my dog
+O|how do i ask my boss for a raise
+O|my car makes a weird noise
+O|i have a job interview tomorrow how should i prepare
+O|write an email to my team about the deadline
+O|how do i fire a client politely
+O|my boss fired off an angry email
+O|what are the symptoms of the flu
+O|im sick of this weather
+O|my phone is dying
+O|that exam was a nightmare
+O|how do i file my taxes
+O|what does a notary do
+O|my parking app charged me twice
+O|how long does it take to get a passport
+O|what is the history of christmas
+O|my presentation is about burnout in nursing
+O|i lost my keys again
+O|i want to save money for a holiday
+O|how do i split rent with my roommate
+O|i got a bonus at work how should i invest it
+O|can you explain how a mortgage works
+O|how does divorce work in the netherlands
+O|my favourite song is about a broken heart
+O|i want to drink more water every day
+O|my visa card was declined at the shop
+O|i pray this code works lol
+O|my api is undocumented and nobody knows how it works
+O|i cheated on my diet this weekend
+O|i cheated on my exam once in high school
+O|my variable defaulted on startup
+O|the gun was fired in the movie
+O|i have no friends list in my app yet
+O|my heart skips a beat when i see her
+O|i pray this deploy goes fine
+O|how do i set a default on my form field
+O|my company has a lot of debt on its balance sheet
+O|the cost of debt in my model is 5%
+O|i want to drink less coffee every day
+O|i feel alone in my opinion about tabs vs spaces
+O|my app cant function without internet
+O|what is the national debt of japan
+O|i put my savings in an index fund is that smart
+O|i need to borrow money for a car is a loan smart
+O|my visa card expires next month
+O|i have a green card question for my essay
+O|my thesis is about undocumented immigrants
+O|how does visitation work in general

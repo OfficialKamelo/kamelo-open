@@ -1,0 +1,322 @@
+#P
+H|operatie van papa vrijdag, ik ben bang
+H|knobbeltje in mijn borst, wacht op uitslag
+H|mama heeft uitslag van de scan gekregen, niet goed
+H|al een week bloed in mijn ontlasting
+H|gisteren diabetes type 1 gekregen, overweldigd
+H|mijn zoontje hoest bloed, naar de spoed
+H|chemo begint maandag, doodsbang
+H|psa van mijn man is te hoog
+H|huisarts vermoedt ms bij mij
+H|mijn dochtertje heeft leukemie
+H|denk dat ik gisteren een mini beroerte had
+H|positief op hepatitis b, wie moet ik het zeggen
+H|oma heeft dementie en kent mij niet meer
+H|hartkloppingen elke nacht sinds corona
+H|biopsie van mijn zus is morgen
+H|zwanger en bloedverlies bij 8 weken, zenuwen
+H|duizelig en linkerarm gevoelloos, negeer het
+H|vanochtend hiv positief getest
+H|peuter weer een koortsstuip gehad
+H|al 3 jaar aan de dialyse, zo moe
+M|ik was mijn handen vijftig keer per dag
+M|kan niet stoppen met drinken, derde avond deze week
+M|de anorexia van mijn vrouw wordt erger
+M|opgebrand, ik huil op het werktoilet
+M|rouw om mijn broer, 6 maanden, functioneer niet
+M|weer gedachten om er een einde aan te maken
+M|paniekaanvallen in de trein elke ochtend
+M|adhd op mijn 34e, medicatie werkt niet
+M|mijn tiener snijdt zichzelf, verse sneetjes gezien
+M|teruggevallen op coke na 8 maanden clean
+M|dagenlang niet uit bed geraakt
+M|vijf keer checken of het gas uit is
+M|mama stierf in maart, ik hoor haar stem nog
+M|mijn man praat al dagen niet, depressief
+M|elke nacht vreetbui en dan overgeven sinds nieuwjaar
+M|begonnen met therapie, haat me zo afhankelijk
+M|beste vriendin zegt dat ze suicidaal is
+M|verslaafd aan wiet en mijn gsm, walg van mezelf
+M|postnatale depressie, voel geen liefde voor de baby
+M|blijf stappen tellen, mijn ocd vreet me op
+S|ontdekt dat hij vreemdgaat, berichtjes overal
+S|denk dat ik aseksueel ben, durf het mijn vriendin niet te zeggen
+S|twee dagen pil vergeten, wat nu
+S|geen zin meer in seks sinds de baby
+S|mijn vriend krijgt hem niet omhoog, ongemakkelijk
+S|dit weekend coming-out bij mijn ouders
+S|chlamydia positief, partner weet het niet
+S|denk dat ik trans ben, 16 en bang
+S|man wil een triootje, ik twijfel
+S|met mijn collega geslapen, ik voel me misselijk
+S|mijn dochter vertelde net dat ze bi is
+S|seks doet elke keer pijn, wat is er mis met mij
+S|condoom gescheurd vannacht, morning-afterpil?
+S|vrouw vond mijn datingapp, help
+S|pornoverslaving verknoeit intimiteit met mijn lief
+S|homo en getrouwd met een vrouw, 40, verloren
+S|twee jaar geleden vreemdgegaan, opbiechten?
+S|mijn zoon twijfelt over zijn gender
+S|herpes gehad, zal iemand nog met mij daten
+S|verloofde wil geen seks meer sinds de trouw
+R|zoon is bij de jehovah's gegaan, ik ben de weg kwijt
+R|uit de kerk stappen, ouders zullen me verstoten
+R|mijn geloof kwijt sinds papa stierf
+R|familie wil dat ik een hoofddoek draag, ik wil niet
+R|vrouw is moslim geworden, weet niet wat ik voel
+R|streng gelovige familie, ik wil eruit
+R|pastoor zegt dat homo zonde is, mijn broer is homo
+R|mama bidt dat ik terugkom naar de kerk
+R|geloof niet meer in god, durf het oma niet te zeggen
+R|schoonouders willen de baby laten dopen, wij zijn atheïst
+R|twijfel aan mijn katholiek geloof sinds de vormsel
+R|ouders eisen religieus huwelijk, ik weiger
+R|ex-getuige van jehovah, familie mijdt mij
+R|papa dwingt me vasten met ramadan, ik bid niet
+R|mijn zus is wedergeboren, onuitstaanbaar
+R|opgegroeid in een sekte, eindelijk weg
+R|bekeren tot het jodendom, familie vriend aarzelt
+R|mama denkt dat ik naar de hel ga
+R|niet meer naar de mis, oma blijft vragen waarom
+R|ouderlingen vragen naar mijn echtscheiding
+G|opnieuw in de kredietregistratie, wil eruit
+G|3 maanden huurachterstand, huisbaas stuurt berichten
+G|gisteren 800 euro verloren aan gokken
+G|deurwaarder komt donderdag, geen idee wat doen
+G|alle kredietkaarten leeg, verberg het voor mijn vrouw
+G|flitskrediet weer verlengd, nu 800
+G|kan elektriciteit niet betalen, afgesloten
+G|incassobureau belt naar mijn moeder
+G|elke maand rood, sla maaltijden over
+G|geleend bij een woekeraar, nu bedreigingen
+G|man heeft ons spaargeld vergokt
+G|autolening niet betaald, brief van beslag
+G|moet 12000 aan de belasting, paniek
+G|kan mijn medicijnen niet betalen, huur gaat voor
+G|studieschuld bij incasso, loon in beslag
+G|40k schulden, mijn partner weet van niks
+G|bank blokkeerde rekening, geen geld voor eten
+G|vandaag uitzettingsbrief, twee kinderen
+G|mijn broer heeft duizenden schuld bij dealers
+G|failliet op mijn 29e, ik schaam me zo
+L|rijkswacht belde me over mijn neef
+L|baas ontsloeg me voor diefstal die ik niet pleegde
+L|gisteravond aangehouden voor rijden onder invloed
+L|ex sleept me voor de rechter voor de voogdij
+L|dagvaarding gekregen, zitting over twee weken
+L|zoon beschuldigd van mishandeling, wat nu
+L|politie viel om 6 uur binnen in ons huis
+L|strafblad duikt op bij sollicitaties
+L|ontslagen na klacht, onrechtmatig?
+L|broer zit in voorarrest, proces volgende maand
+L|rijbewijs kwijt na te veel punten, heb auto nodig
+L|mijn oude huisbaas daagt mij
+L|jeugdzorg opende een dossier over ons
+L|papa kreeg voorwaardelijke straf
+L|vals beschuldigd van winkeldiefstal, bewaker hield me vast
+L|zitting over de kinderen morgen, bang ze kwijt te raken
+L|verhoor door de politie donderdag
+L|boete van 500 euro en brief van de rechtbank
+L|verblijfsvergunning verlopen, bang voor uitzetting
+L|contactverbod tegen mij, onterecht
+#G
+H|ik ben huisarts, welke tests bij 3 dagen koorts
+H|wat zijn de stadia van diabetes type 2
+H|hoe werkt chemotherapie in grote lijnen
+H|verschil tussen virale en bacteriële infectie
+H|verpleegkunde: hoe meet je goed een bloeddruk
+H|gemiddelde hersteltijd na een knieprothese, voor mijn verslag
+H|wat veroorzaakt migraine, algemeen overzicht
+H|symptomen van lupus volgens het studieboek
+H|hoe leren vaccins het immuunsysteem iets
+H|overlevingscijfers kanker in nederland
+M|verschil tussen angststoornis en paniekstoornis
+M|als leerkracht, hoe begeleid ik rouwende leerlingen
+M|hoeveel mensen hebben adhd wereldwijd
+M|leg het model van de rouwfasen uit
+M|schrijf een gedicht over depressie voor school
+R|hoe werkt cgt in theorie
+M|essay: verslaving als ziekte of keuze
+M|wat zijn de dsm-criteria voor ocd
+M|burn-outcijfers per beroepsgroep
+M|mijn romanpersonage heeft anorexia, hoe schrijf ik dat realistisch
+S|als verloskundige, hoe leg ik de pil uit aan tieners
+S|geschiedenis van lhbt-rechten in europa
+S|hoe effectief zijn condooms statistisch
+S|wat is het verschil tussen sekse en gender
+S|schrijf een scène waarin een stel uit elkaar gaat na vreemdgaan
+H|hoe worden soa's overgedragen, voor een presentatie op school
+S|aseksualiteit uitleggen voor een socio-opdracht
+S|wat meet de kinsey-schaal
+S|spiraaltje of implantaat, hoe werken ze
+S|waarom gaan mensen vreemd, samenvatting onderzoek
+R|verschil tussen soennieten en sjiieten
+R|vat de vijf zuilen van de islam samen
+R|geschiedenis van de jehovah's getuigen
+R|waarom begon de reformatie
+H|leg het vormsel uit aan een kind
+R|atheïst of agnost, wat is het verschil
+R|hoeveel mensen verlaten jaarlijks hun geloof in nederland
+R|schrijf een preek over vergeving
+R|waar gaat het suikerfeest over
+R|vergelijk boeddhisme en stoïcisme
+G|waarom stijgt de rente
+G|bereken de rente op een lening van 10k aan 6%
+G|hoe werkt kredietscore in het algemeen
+G|schuldenlawine of sneeuwbal, wat is wiskundig beter
+G|leg het faillissementsrecht in belgië uit voor mijn examen
+G|hoe verdienen flitskredietbedrijven geld
+G|ondernemingsplan voor een incassobureau
+G|wat is samengestelde rente, simpel voorbeeld
+G|wat doet gokverslaving met de economie
+G|vat samen hoe een hypotheek werkt
+L|hoeveel verkeersboetes per jaar in colombia
+L|verschil tussen misdrijf en overtreding
+L|leg het zwijgrecht uit
+L|rechtenstudent: voorwaarden voor onrechtmatige daad
+L|hoe werkt een juryrechtspraak in de vs
+L|verjaringstermijn diefstal in het algemeen
+G|hoe wordt over voogdij beslist in principe
+S|schrijf een openingsscène voor een juridische thriller
+L|hoeveel mensen zitten in de gevangenis in india
+L|rechten van werknemers na ontslag in duitsland, overzicht
+O|mijn hond is panisch bij vuurwerk
+O|onze hond lijkt depressief in de regen
+O|mijn taart is een ramp, paniek
+O|zuurdesem ziet er ziek uit
+O|batterij van mijn gsm is al leeg om twaalf uur
+O|mijn laptop heeft een virus, hoe verwijder ik het
+O|eindelijk de huur betaald, wat eten we vanavond
+O|hoe boek ik huur in excel
+O|sparen voor een reis naar portugal, tips
+O|hoe splitsen we de rekening eerlijk met 5 mensen
+O|mijn broer en ik discussiëren of een tomaat fruit is
+O|verslaafd aan deze serie, nog tips
+O|dit verkeer maakt me kapot
+O|mijn plant gaat dood, gele blaadjes
+O|pluisjes op mijn trui, hoe weg
+O|beste rekoefeningen voor een 10 km loop
+O|hoe is het weer in lissabon in maart
+O|schrijf een grappige huwelijkstoespraak voor mijn beste vriend
+O|cadeau-ideeën voor de 60e verjaardag van mama
+O|mail aan mijn baas om vrijdag vrij te vragen
+O|hulp met huiswerk breuken groep 6
+O|schoolochtend is chaos, hoe organiseer ik dat
+O|mijn kat braakt steeds haarballen
+O|mijn sims-gezin is bankroet haha
+O|verbrande neus, tips met aloë vera
+O|mijn wifi is weer ziek, router herstart steeds
+O|ideeën voor een kinderfeestje van 6 jaar
+O|hoe wijs ik een uitnodiging voor lunch beleefd af
+O|hoelang moet een ei koken
+O|mijn hamster lijkt bedroefd, nieuw rad?
+O|recept voor glutenvrije pannenkoeken
+O|spreadsheet om mijn vaste lasten bij te houden
+O|ik sterf van nieuwsgierigheid naar het einde van dit boek
+O|mijn auto maakt een raar geluid bij het remmen
+O|gazon is dood na de hittegolf
+O|buurhond blaft heel de nacht, beleefd briefje schrijven
+O|help me een familiebarbecue voor 20 plannen
+O|tuin staat blank, ideeën voor drainage
+O|rode wijn uit tapijt halen
+O|leuke naam voor een golden retriever pup
+O|ik zit met stress over welke verf ik in de gang neem
+O|mijn zuurdesem is dood, heb ik hem vermoord
+O|maandagochtendvergadering is moordend, hoe overleef ik dat
+O|mijn bankapp crashte toen ik de pizzaboer wou betalen
+O|goedkoopste manier om een pakket naar australië te sturen
+O|hoe vorder ik btw terug op een laptop voor het werk
+O|ik ben mijn huisgenoot 15 euro verschuldigd voor de afhaalmaaltijd, hoe vraag ik dat
+O|mijn zoon verloor met 9-0 voetbal, hoe troost ik hem
+O|schoolreisformulier moet getekend, hoe scan ik dat
+O|hoe herstel ik een druppelende kraan
+O|mijn tomatenplanten hebben plantenziekte, help
+O|paniek: mama's verjaardag is morgen, snel een cadeau
+O|geen melk meer, wat kan ik bakken zonder
+O|de babyfoon-app valt steeds uit
+O|mijn koptelefoon is kapot, welke kopen
+O|waarom haat mijn printer mij
+O|tijd doden voor mijn vlucht, wat doen in zaventem
+O|mijn lief en ik plannen een verrassingsfeest voor zijn zus
+O|hoe bedank ik mijn oma voor de trui op een kaartje
+O|ontgoocheld dat mijn favoriete café sloot
+O|mijn man snurkt als een trein, gadgets
+O|manieren om te besparen op de boodschappen
+O|rekenmodel voor huurverhoging, ik ben verhuurder
+O|hoe budgetteer ik voor kerstcadeaus
+O|tips voor een eerste marathon schema
+O|mijn peuter weigert broccoli
+O|pff maandag
+O|zo moe na de fitness haha
+O|recept voor lamscurry
+O|vertaal dit menu uit het italiaans
+O|kun je mijn cv nalezen
+O|mijn goudvis is dood, hoe leg ik het uit aan mijn kleuter
+O|oei deze hete saus doodt me
+O|dit liedje staat op repeat, ik ben ervan bezeten
+O|hoe laat ik mijn kat stoppen met de zetel krabben
+O|garage vraagt 400 voor remblokken, eerlijk
+O|wat draag ik naar een zomerhuwelijk in vlaanderen
+O|hoe stel ik een maandelijkse doorlopende opdracht in
+O|huurder betaalde te laat, hoe schrijf ik een herinneringsmail
+O|help bij een dankwoord voor het pensioenfeestje van papa
+O|welke meststof voor rozen
+O|oud-collega stuurde een linkedin-verzoek, accepteren
+O|hoeveel calorieën in een koffie verkeerd
+O|plan 3 dagen in brugge
+O|wat is 15 procent van 240
+O|geen idee wat ik papa geef voor vaderdag
+O|mijn jeans zijn gekrompen in de was, nog te redden
+O|de douchegoot zit weer verstopt
+O|hoe vraag ik de buren beleefd hun vuilbakken te verplaatsen
+O|koffie over mijn toetsenbord gemorst, paniek
+O|beste schaakopeningen voor beginners
+O|vriend verhuist naar canada, afscheidscadeau
+O|trouwdag volgende week, restauranttips in gent
+O|hoe schrijf ik een referentie voor mijn ex-stagiair
+O|scherm van mijn gsm gebarsten, herstellen of vervangen
+O|hoe leer ik een pup zitten
+O|goede boeken zoals de donderdagmoordclub
+O|ik krijg dat liedje uit de reclame niet uit mijn kop
+O|help, mijn zuurdesembrood is zo hard als een baksteen
+O|mijn zus en ik vechten om het laatste stukje pizza
+O|trainingsschema voor 4 dagen per week
+O|hoe krijg ik rode inkt uit een wit hemd
+O|tweedehands auto gekocht, welke papieren voor overschrijving
+O|hoe leg ik fotosynthese uit aan een kind van 7
+O|ideeën voor het wetenschapsproject van mijn dochter
+O|we sparen voor een voorschot op een huis, tips voor een spaarsheet
+O|ik ben zo blut tot de loondag haha, goedkope maaltijden
+O|mail aan de gemeente over het gat in onze straat
+O|checklist voor katten oppassen bij de buurvrouw
+O|hoe herstel ik een krakende deur
+O|mijn kat is verslaafd aan de laserpen haha
+O|batterij van mijn gsm staat op 3 procent, help
+O|oventemperatuur voor een kip uit de oven
+O|hoe beëindig ik beleefd een teamsvergadering
+O|ons fantasyteam is een ramp deze week
+O|goed slaapverhaaltje over een draak
+O|mijn sla schiet steeds door, waarom
+O|ik verdrink in de was, welk systeem
+O|zo beschaamd, ik zei mama tegen de juf haha
+O|mijn fietsketting blijft slippen
+O|hoe spreek je quinoa uit
+O|oma wordt 90, ideeën voor een speech
+O|kan ik gekookte rijst invriezen
+O|hoe maak ik een back-up van mijn iphone voor de update
+O|zat van de regen, binnenspelletjes voor kinderen
+O|mijn hond at een sok, hij is oké, welk kauwspeelgoed
+O|kun je een naam voor mijn bakkerij bedenken
+O|hoe zeg ik beleefd dat ik het druk heb
+O|mijn excelformule geeft #VERW, waarom
+O|help me een serie kiezen voor vanavond
+O|hoe maak ik een gietijzeren pan schoon
+O|teambuilding voor 12 mensen met klein budget
+O|ik ben dol op mijn nieuwe koffiemolen
+O|zijn tickets voor de bekerfinale hun prijs waard
+O|hoe vouw je een hoeslaken
+O|onze groepsapp ruziet over waar we eten
+O|mijn kamerplant heeft rouwvliegjes, wat doen
+O|weekendtips voor het lange weekend in de ardennen
+O|mijn broer en ik kibbelen over wie de afwas doet
+O|ik ben dood na de verhuis, welke doos was voor de keuken

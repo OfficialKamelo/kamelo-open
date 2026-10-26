@@ -1,0 +1,241 @@
+#G
+H|explain how insulin works in simple terms for a year 9 biology project
+H|what's the difference between type 1 and type 2 diabetes
+H|i'm a nurse on a surgical ward and need a one-page handout on post-op wound care for patients, plain language please
+H|how many people in the uk get diagnosed with bowel cancer each year
+H|Can you summarise the main findings of the Framingham Heart Study?
+H|write a short story where the main character, a retired surgeon, slowly loses her memory to Alzheimer's
+H|for my thesis on chronic pain management i need a list of peer reviewed sources on opioid tapering guidelines
+H|what did Freddie Mercury die of and when was it announced
+H|how does the mRNA vaccine actually get the immune system to respond lol
+H|my patients keep asking about statins, can u give me a quick evidence summary on side effects vs benefits? i'm a gp registrar
+H|what are the typical stages of chemo side effects over a treatment cycle, general overview only
+H|history of the 1918 influenza pandemic, why was it so deadly for young adults
+H|Draft an email to our staff reminding them about the flu jab clinic dates on 14 and 15 November
+H|whats the normal range for resting heart rate in adults
+H|my novel's main character has a seizure at a wedding, how would the guests realistically react and what should they do
+H|How does the NHS decide which drugs to fund? Asking because I'm writing an essay on NICE.
+H|what's the life expectancy in japan vs the us
+H|explain the difference between a virus and bacteria for kids aged 7
+H|Who was Typhoid Mary and how was she traced?
+H|i'm writing an article on rising dengue cases in Bangladesh, what are the latest WHO numbers
+H|rewrite this paragraph for a patient information leaflet on asthma inhalers so its at reading age 11
+H|pros and cons of keyhole surgery versus open surgery
+H|how does a pacemaker work
+H|Create a quiz with 10 multiple choice questions on the human digestive system for my class of 14 year olds
+H|which countries have the highest obesity rates according to the OECD
+H|summary of the Tuskegee syphilis study and its ethical consequences
+H|what's a CT scan used for vs an MRI
+H|which vitamins are fat soluble and which are water soluble
+H|Novak Djokovic's covid vaccine stance in 2022, give me a neutral timeline
+H|As a physio i want a 6 week progressive exercise plan template for rotator cuff rehab to hand out to clients
+H|what is sepsis and why is it so time critical
+H|how do i structure a lit review on antibiotic resistance, tips pls
+H|what is the incidence of ALS in europe? making a poster for my med school module
+H|write a poem about hospital corridors at night
+H|Boris Johnson went into intensive care with covid in april 2020, what was the timeline
+H|tell me about the history of anaesthesia, ether and chloroform
+H|can you translate 'take one tablet twice daily with food' into spanish and hindi for our pharmacy signs
+H|my company makes hearing aids, help me write a product description for the new behind-the-ear model
+H|difference between a stroke and a heart attack, bullet points
+H|roughly how many bones does a newborn have vs an adult and why
+M|what are the main symptoms of generalised anxiety disorder according to the DSM-5
+M|I'm a school counsellor and need a short assembly script on exam stress for year 11
+M|difference between depression and sadness, explain for a psychology a-level essay
+M|how common is burnout among doctors in australia, any stats?
+M|write a monologue for a play where a widowed fisherman talks to the sea about his grief
+M|who was Robin Williams and what did the autopsy find, just curious about the news coverage back then
+M|for my dissertation on cbt vs emdr for ptsd, what are the key meta-analyses i should cite
+M|explain the five stages of grief by Kubler-Ross and the criticisms of it
+M|Draft a policy for our company on mental health first aiders, around 300 words, formal tone
+M|what's the neuroscience of addiction, dopamine and reward pathway, simple version
+M|my novel's protagonist is a recovering alcoholic who starts the book on day 12 sober, what would his meetings look like
+M|How many people worldwide are estimated to have ADHD per the latest research?
+M|why do people get panic attacks, general explanation pls
+M|i'm a teacher and want 5 classroom activities for mental health awareness week
+M|history of the asylum system in victorian england
+M|Summarise the Stanford prison experiment and why it's criticised
+M|what is the difference between a psychologist and a psychiatrist in the US
+M|write a lyric about loneliness in a big city, indie folk vibe
+M|Simone Biles pulled out of events at tokyo 2020 citing the twisties, can you explain what that is
+M|how does gambling addiction get classified, is it in the DSM
+M|help me write a linkedin post for world mental health day on behalf of my employer
+M|what are some well known books about trauma and recovery, like the body keeps the score
+M|ok so for my psych coursework i need to compare ssris and snris, mechanism only
+M|what is the typical therapy waiting time in the nhs by region, i'm writing a piece for the local paper
+M|explain insomnia in terms of sleep cycles, what goes wrong biologically
+M|script for a 2 minute youtube explainer on what is imposter syndrome
+M|Is it true that Vincent van Gogh had bipolar disorder? what do historians say
+M|as a hr manager i need a checklist for supporting an employee returning after long term stress leave, thinking of policy only
+M|what does eating disorder awareness week focus on
+M|how do i write a character with autism respectfully in my short story, what should i avoid
+M|compare lithium and valproate in bipolar treatment, for a pharmacology exam
+M|what is the suicide hotline number in canada, generic info for a poster
+M|whats the history of the term shell shock
+M|sketch idea: two therapists accidentally booked into the same room, write the dialogue
+M|stats on teen social media use and anxiety, what does the research actually show
+M|define dissociation and give 3 examples from case literature
+M|my podcast is about workplace wellbeing, give me 10 episode title ideas
+M|what is mindfulness based stress reduction and who developed it
+M|how did the opioid epidemic start in america, brief overview
+M|Explain Maslow's hierarchy to a group of first year nursing students
+S|what's the difference between sex and gender, define both for a sociology essay
+S|I teach sex ed to 15 year olds in ireland and need a lesson outline on consent, any structure ideas
+S|how do hormonal contraceptives prevent pregnancy, mechanism overview
+S|history of the pride movement, stonewall 1969 to now
+S|write a love scene for my novel that fades to black, two rival chefs in lisbon
+S|how effective are condoms at preventing STIs according to the CDC, I need figures for a leaflet
+S|who was Alan Turing and how was he treated by the british government
+S|what does the acronym LGBTQIA+ stand for, break it down
+S|my thesis is about same-sex marriage laws across europe, which country was first
+S|statistics on how many people identify as lgbt in the uk, latest census
+S|explain what erectile dysfunction is and the common treatments, for a pharmacy training deck
+S|Draft an inclusive language guide for our company's employee handbook covering gender identity
+S|what was the Kinsey report and why was it controversial
+S|how does the menstrual cycle work, 4 phases, simple language for a school presentation
+S|write a rom-com screenplay opening where two exes get seated together on a flight to mumbai
+S|Elton John came out in the 70s, what was the reaction in the press back then
+S|as a sexual health nurse i want a faq sheet for clients about getting tested, keep it friendly
+S|how common is infidelity according to surveys, and how reliable are those numbers
+S|what is the difference between asexual and celibate
+S|history of the birth control pill in the 1960s
+S|what's the legal age of consent in different european countries, general overview
+S|compare how different cultures define virginity, anthropology essay angle
+S|Can you recommend some well-reviewed novels with trans protagonists for our book club
+S|how did the HIV epidemic change public health policy in the 80s
+S|why do some animals have same sex pairings, nature documentary script
+S|my client is a dating app company, help me write marketing copy that targets people over 50
+S|the plot of the movie Brokeback Mountain and why it mattered, quick summary
+S|what is vasectomy reversal success rate in general, for an article I'm writing
+S|poem about first love at a bus stop in the rain
+S|difference between hpv vaccine types and who is eligible in the uk
+S|explain polyamory vs open relationships for a gender studies seminar
+S|how does the plot of Fifty Shades handle consent, critic perspectives
+S|what did Ellen DeGeneres coming out do to her career in 1997
+S|how are intersex people defined medically, objectively
+S|What does the research say about sexual education programs and teen pregnancy rates
+S|lol what's the origin of the word cougar for older women dating younger men
+S|i'm a family planning clinic receptionist, can you write a short script for answering the phone politely
+S|how many calories does the average person burn during sex, is that myth or real
+S|history of conversion therapy bans around the world
+S|write a funny wedding speech opener for my brother in law who is a total geek, keep it clean
+R|what are the five pillars of islam
+R|i need a lesson plan for my year 8 RE class on the main festivals of hinduism
+R|explain the difference between catholic and protestant christianity
+R|how did the reformation start and who was martin luther
+R|write a short story about a nun in medieval spain who discovers a hidden manuscript
+R|why do muslims fast during ramadan, and how long is the fast, for a school assembly
+R|what is the history of the jewish diaspora, short summary
+R|Pope Francis's views on climate change, i'm writing an article on it
+R|how many buddhists are there in the world and where do most live
+R|my novel's main character is a rabbi in 1930s Vienna, what would his daily routine look like
+R|compare the concept of heaven in christianity and islam for my theology essay
+R|difference between sunni and shia, keep it neutral
+R|what is the significance of the menorah during hanukkah
+R|Draft an email to staff about our company's multi-faith prayer room policy
+R|summary of the book of exodus in 10 bullet points
+R|who founded sikhism and what are the five ks
+R|as a chaplain at a hospital i need a short non denominational blessing for a retirement ceremony
+R|why is the vatican its own country
+R|what is the meaning of the cross in early christian art
+R|explain the concept of karma in hinduism and buddhism, a-level
+R|poem about a church bell ringing in an empty village
+R|what's the difference between halal and kosher food rules
+R|stats on religious affiliation in the uk census 2021
+R|why did the crusades happen, causes in bullet points
+R|I'm writing a thesis on the rise of pentecostalism in nigeria, any key scholars?
+R|who was Muhammad Ali's religious conversion and how did the public react in the 60s
+R|what does the term agnostic mean vs atheist, quick definitions
+R|history of the church of scientology, factual and neutral
+R|how is the dalai lama chosen
+R|write a quiz for pub night with 10 questions about world religions
+R|what are the main rituals of a traditional hindu wedding, for my wedding planning business website
+R|why do orthodox jews wear tzitzit
+R|what happened at the Jonestown massacre in 1978
+R|translate 'eid mubarak' into 5 languages for our shop window sign
+R|origins of the amish and why they avoid modern technology
+R|tell me about the council of nicaea, what was decided
+R|what is the role of an imam, general
+R|discussion questions for our school book club book about a young girl in a convent
+R|explain how a papal conclave works
+R|what is the story of diwali and why is it celebrated
+G|explain what a payday loan is and how the apr is calculated
+G|what is the national debt of the united states roughly and is it a problem
+G|my company's debt ratio is 0.62, is that high for a retail business? asking for a board report
+G|I'm a debt advisor, can you draft a plain english template letter for creditors asking to freeze interest
+G|difference between chapter 7 and chapter 11 bankruptcy
+G|why did Lehman Brothers collapse in 2008, short summary
+G|average household debt in australia by age group, any data
+G|how do credit scores work in the us, what factors go into fico
+G|write a short story about a gambler who loses everything on a single hand in monte carlo
+G|what is the poverty line in the uk and how is it measured
+G|for my economics essay i need the causes of the greek debt crisis
+G|how does universal credit work, general overview
+G|What happened with Bernie Madoff's ponzi scheme and how did it unravel
+G|explain debt snowball vs avalanche method in neutral terms
+G|draft a policy for our finance team on handling overdue invoices from customers, 60 days
+G|how many people in ireland are in mortgage arrears according to the central bank
+G|what is garnishment of wages, how does it work legally in general
+G|Argentina defaulted on its debt multiple times, list the years
+G|i'm writing an article on cost of living in india, what's the inflation trend over last 3 years
+G|how does a bailiff differ from a debt collector in england
+G|what does a debt to income ratio mean when banks lend
+G|write a rap about being broke at the end of the month, funny not sad
+G|what is a credit union and how is it different from a bank
+G|nigerian prince scams, how did they start and why do they still work
+G|we are a small cafe and I need a cashflow forecast template, 12 months
+G|stats on how many americans can't cover a 400 dollar emergency expense
+G|history of the great depression in 5 bullet points
+G|what is a scam called pig butchering, how does it operate
+G|rewrite my company's late payment reminder so it sounds firm but polite
+G|how does student loan forgiveness work in the us right now, general
+G|why is gambling addiction linked to online slots, research summary
+G|explain how interest compounds with a simple example for kids
+G|what is the difference between secured and unsecured debt
+G|plot idea for a thriller where an accountant discovers her firm is laundering money
+G|which countries have the highest levels of household debt to gdp
+G|what are typical collection agency practices that are banned under the fdcpa
+G|as a teacher i want a lesson on budgeting for 16 year olds, give me a simple worksheet
+G|how much do food banks in the uk distribute each year
+G|what happened to Greece after its 2015 capital controls
+G|summary of the history of the pawnbroking industry
+L|what is the difference between a misdemeanor and a felony
+L|explain the miranda rights and when police must read them
+L|I'm a paralegal and need a template for a cease and desist letter, formal tone
+L|how does the uk immigration points based system work, overview
+L|summary of the OJ Simpson trial and why the verdict was controversial
+L|what are the grounds for divorce in england and wales
+L|write a courtroom scene for my novel where the defence lawyer cross examines a nervous witness
+L|how many people are in prison in the us vs europe per capita
+L|what is the difference between a civil and a criminal case
+L|for my law degree essay, explain the doctrine of precedent in common law
+L|who was Nelson Mandela and why was he imprisoned
+L|what are tenants rights in germany regarding eviction, general summary
+L|Draft a disciplinary procedure for our company handbook covering gross misconduct
+L|how does the h1b visa lottery work in general
+L|my thesis is on wrongful convictions, which cases are most cited in the literature
+L|explain what a restraining order is and how courts typically grant them
+L|i'm a barrister and want a quick refresher on the rules around hearsay evidence
+L|what happened in the Watergate scandal, short timeline
+L|difference between custody and guardianship, definitions only
+L|what is the statute of limitations for fraud in california
+L|poem about a prisoner counting days on the wall
+L|how do extradition treaties work between countries
+L|Julian Assange extradition case, latest status as far as you know
+L|what does 'beyond reasonable doubt' mean in practice
+L|write a dialogue between a detective and a suspect in an interrogation room, noir style
+L|how many asylum applications did germany receive in 2023
+L|what is the role of a magistrate in the uk justice system
+L|we're a hr team and need a script for conducting an unfair dismissal hearing fairly
+L|how does jury selection work in the us, voir dire explained
+L|what is the history of the death penalty abolition in europe
+L|can you explain what GDPR fines are and give examples of big ones
+L|crime rates in new zealand over the last decade, any trends
+L|my client is an immigration law firm, help me write a landing page headline and intro paragraph
+L|what's a plea bargain and why are they used so much
+L|why was Al Capone convicted of tax evasion and not murder
+L|how does small claims court work in australia, generic info
+L|summarise the Brown v Board of Education ruling
+L|what's the difference between a solicitor and a barrister
+L|true crime podcast script intro about the zodiac killer, atmospheric
+L|explain how bail works in different countries, comparison for my criminology class

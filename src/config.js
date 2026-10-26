@@ -31,7 +31,13 @@
     topicWarnings: true, // waarschuwen bij gevoelige onderwerpen (zie topics.js)
     mutedTopics: [], // onderwerpen waarbij de gebruiker "Niet meer tonen" koos
     privateChat: true, // "Vraag het Melo" in de melding: naar Melo (de privéchat, heette Private Chat) (op dit apparaat of de tijdelijke chat; nooit een chip of server)
+    meloMac: false, // "Vraag Melo" naar Melo voor Mac (Chrome, Edge, Firefox op een Mac; aan in de popup, src/background.js). Safari: altijd.
   };
 
-  root.PrivacyConfig = { AI_FIELD_HINT, DEFAULT_SETTINGS, SUPPORT_EMAIL };
+  // Melo voor Mac in de popup van Chrome, Edge en Firefox (de schakelaar). Aan sinds 26 okt 2026: Melo voor Mac staat op
+  // kamelo.eu/app (bouw 8 en later stellen de brug in onder Instellingen → Verbindingen). Safari heeft hem niet nodig (daar
+  // zit de extensie in de app).
+  const MELO_MAC_IN_POPUP = true;
+
+  root.PrivacyConfig = { AI_FIELD_HINT, DEFAULT_SETTINGS, SUPPORT_EMAIL, MELO_MAC_IN_POPUP };
 })(typeof globalThis !== 'undefined' ? globalThis : this);

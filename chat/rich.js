@@ -486,8 +486,12 @@
           const end = s.indexOf(`\\end{${env}}`, i);
           const body = s.slice(i, end < 0 ? s.length : end);
           i = end < 0 ? s.length : end + `\\end{${env}}`.length;
+          // aligned (zo schrijft de AI van Apple zijn stappen): kolommen om en om rechts en links, zodat de = onder elkaar
+          // staan, en breuken op ware grootte (displaystyle) zoals in TeX.
+          const lijn = /^(aligned|align|alignat|eqnarray|split)\*?$/.test(env);
+          const cel = c => (lijn ? { columnalign: c % 2 ? 'left' : 'right', style: `text-align:${c % 2 ? 'left' : 'right'}`, displaystyle: 'true' } : {});
           const rows = body.split('\\\\').map(r => r.trim()).filter(Boolean)
-            .map(r => h('mtr', {}, r.split('&').map(cell => h('mtd', {}, texTree(cell).kids))));
+            .map(r => h('mtr', {}, r.split('&').map((cell, c) => h('mtd', cel(c), texTree(cell).kids))));
           const tbl = h('mtable', {}, rows);
           const fence = { pmatrix: ['(', ')'], bmatrix: ['[', ']'], vmatrix: ['|', '|'], cases: ['{', ''] }[env.replace('*', '')];
           return fence ? h('mrow', {}, h('mo', { stretchy: 'true' }, fence[0]), tbl, fence[1] ? h('mo', { stretchy: 'true' }, fence[1]) : null) : tbl;
@@ -512,7 +516,9 @@
       }
       i++;
       if (c === '}') return null;
-      if ('+-−=<>≤≥≠≈±×÷·()[]|,;:!/*→'.includes(c)) return h('mo', c === '-' ? {} : {}, c === '-' ? '−' : c === '*' ? '·' : c);
+      // Gewone haakjes rekken niet mee (zoals in TeX): anders werd Ψ(r,t) naast een breuk zo hoog als de breuk. \left( wel.
+      if ('()[]|'.includes(c)) return h('mo', { stretchy: 'false' }, c);
+      if ('+-−=<>≤≥≠≈±×÷·,;:!/*→'.includes(c)) return h('mo', {}, c === '-' ? '−' : c === '*' ? '·' : c);
       if (c === '~') return h('mspace', { width: '0.25em' });
       return h('mo', {}, c);
     }
@@ -556,7 +562,12 @@
       if (bare) { if (m.index > last) out.push(...plain(str.slice(last, m.index))); out.push(...plain(m[3])); last = m.index + m[0].length; continue; }
       if (m.index > last) out.push(...plain(str.slice(last, m.index)));
       if (m[1] != null) out.push(h('code', {}, m[1]));
-      else if (mathSrc != null) out.push(texTree(mathSrc));
+      else if (mathSrc != null) {
+        // Een leesteken vlak na de formule blijft erbij: anders begon de regel soms met ", met c de schuine zijde".
+        const p = str.slice(m.index + m[0].length).match(/^[.,;:!?)]+/);
+        if (p) { out.push(h('span', { class: 'nw' }, texTree(mathSrc), plain(p[0]))); last = m.index + m[0].length + p[0].length; continue; }
+        out.push(texTree(mathSrc));
+      }
       else if (m[4] != null || m[5] != null) out.push(h('b', {}, inlineTree(m[4] ?? m[5], plain)));
       else out.push(h('i', {}, inlineTree(m[6], plain)));
       last = m.index + m[0].length;

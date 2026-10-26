@@ -1,0 +1,272 @@
+#P
+H|ma vieille s'est casse la hanche
+H|ma mere a un cancer du sein, comment dire aux enfants
+H|tension a 17 ce matin, j'ai peur
+H|mon fils a 39 de fievre depuis 3 jours
+H|12 semaines de grossesse et petits saignements
+H|resultats de papa arrives, biopsie la semaine prochaine
+H|genou opere, toujours gonfle, normal
+H|plaques rouges partout depuis les antibiotiques
+H|mamie devient sourde, appareil ne sert a rien
+H|ma fille a mal au ventre a droite, appendicite?
+H|diagnostiquee diabete de type 2 aujourd'hui
+H|ma soeur a fait une fausse couche
+H|papi a fait un avc, chances de recuperation
+H|thyroide paresseuse, creve toute la journee
+H|fourmillements bras gauche depuis ce matin
+H|mon gars fait de l'asthme, la pompe marche plus
+H|ventre gonfle apres la chimio, normal
+H|commotion cerebrale, mal de tete depuis des semaines
+H|mon chum s'est casse le poignet, platre combien de temps
+H|boule sous l'aisselle
+H|papa se fait operer de la hanche mardi
+H|cholesterol trop haut selon mon medecin
+H|fiv rate encore, epuisee
+H|pepe a parkinson, tremblements pires
+H|mon mari a le zona, que faire
+M|rechute apres 200 jours, personne ne sait
+M|je sors plus du lit, rien me motive
+M|crise de panique dans le metro encore ce matin
+M|mon frere boit tous les jours, quoi faire
+M|burn-out, je pleure aux toilettes au bureau
+M|notre chien est mort hier, je n'arrete pas de pleurer
+M|ma fille mange presque plus, anorexie peut-etre
+M|je joue en ligne chaque soir, impossible d'arreter
+M|mon fils joue 12h par jour, sort pas de sa chambre
+M|toc, je verifie le four dix fois
+M|je crois que mon mari est tdah, oublie tout
+M|angoisse avant les examens, coeur qui bat
+M|depuis la mort de papi je ressens plus rien
+M|collegue fume du pot tous les jours, je m'inquiete
+M|j'ai commence la therapie, je vais pire
+M|estime de moi au plus bas, sors plus
+M|crises de boulimie la nuit, puis vomis
+M|maman est en depression depuis le depart de papa
+M|une bouteille de vin chaque soir, faut que j'arrete
+M|ma blonde est borderline, je suis a bout
+M|ado qui se scarifie, que lui dire
+M|deuil de mon chat depuis des semaines
+M|dors plus tellement j'ai peur
+M|mon frere prend de la coke le weekend
+M|6 semaines sans parier, je tiens bon
+S|panne hier soir, impossible de bander
+S|mon mari me touche plus depuis des mois
+S|je crois que mon copain me trompe, messages trouves
+S|coming out chez mes parents samedi
+S|suis bi et ma copine le sait pas
+S|la pilule tue ma libido
+S|on veut une relation libre, j'ai peur
+S|ma fille dit qu'elle est trans, comment la soutenir
+S|depistage chlamydia fait, resultat mercredi
+S|preservatif craque, pilule du lendemain
+S|rapports douloureux depuis l'accouchement
+S|mon gars jouit en une minute, honte
+S|mon fils est gay, mon mari refuse d'en parler
+S|plus de desir depuis les antidepresseurs
+S|infidelite de ma femme, impossible a pardonner
+S|sterilet ou implant, lequel choisir
+S|herpes, comment le dire a ma nouvelle copine
+S|ma femme veut faire chambre a part
+S|doute sur mon genre depuis la fac
+S|mon mec regarde trop de porno
+S|j'arrive pas a jouir avec mon copain
+S|rapport non protege, peur du vih
+S|couche avec mon patron, je me sens mal
+S|mon copain veut un plan a trois
+S|fantasmes gays alors que je suis marie
+R|j'ai perdu la foi apres la mort de mon pere
+R|sorti des temoins de jehovah, famille me rejette
+R|mes parents acceptent pas mon copain chretien
+R|ramadan difficile, je culpabilise
+R|maman me traine a l'eglise, je suis athee
+R|j'ose pas dire que je ne crois plus
+R|mamie veut que je retourne a la messe
+R|ma famille dit que j'irai en enfer
+R|papi veut pas de mariage hors de l'eglise
+R|doutes sur tout ce qu'on m'a appris au catechisme
+R|papa veut m'imposer le voile
+R|ex-musulman et je le cache a la maison
+R|ma soeur est dans une secte evangelique
+R|mon mari est hindou, mes parents sont furieux
+R|le cure dit que mon divorce est un peche
+R|quitte l'eglise, voisins jasent
+R|ma fille demande pourquoi on va plus a la messe
+R|parents veulent mariage religieux, moi non
+R|fils converti a l'islam, mon mari est choque
+R|careme rate, je me sens mauvaise chretienne
+R|peur de dire a maman que je suis bouddhiste
+R|frere dans une communaute stricte, coupe les ponts
+R|mes beaux-parents exigent la messe du dimanche
+R|shabbat chez ma belle-famille juive, me sens etrangere
+R|sorti de la secte, perdu tous mes amis
+G|ils saisissent mon salaire
+G|cache une deuxieme carte de credit a mon mari
+G|3 mois de loyer en retard, avis d'expulsion
+G|pret rapide pris, je rembourse le triple
+G|huissiers appellent maman tous les jours
+G|papa a perdu 20000 au jeu, decouvert hier
+G|fiche a la banque de france, pret refuse
+G|4 cartes a fond, j'ose pas ouvrir le courrier
+G|mon frere doit de l'argent aux usuriers
+G|a decouvert et 2 semaines avant la paie
+G|arrieres de loyer 2400, audience d'expulsion
+G|mamie s'est fait arnaquer, economies parties
+G|dette etudiante, saisie sur salaire
+G|dettes cachees de ma femme, 15000
+G|electricite coupee, peux pas payer
+G|loyer joue au casino
+G|emprunte a des amis, peux pas rembourser
+G|perdu mon emploi, hypotheque en retard
+G|mon ex m'a laisse toutes les dettes
+G|voiture saisie, il reste 6000
+G|surendettement, comment faire le dossier
+G|faillite personnelle, mon mari sait pas
+G|mise en demeure de la banque, 3 mensualites impayees
+G|paiement en 4 fois sur 5 achats, plus moyen
+G|agence de recouvrement me harcele
+L|arrete hier soir, que se passe-t-il
+L|la police veut interroger mon fils demain
+L|proprio m'assigne pour la caution
+L|mon ex veut la garde, audience la semaine prochaine
+L|amende 135 euros pour exces de vitesse
+L|licencie sans motif, c'est abusif je pense
+L|papa a un casier, peut-il emigrer
+L|denoncer mon patron pour harcelement
+L|cambriolage, police s'en fout
+L|mon frere en detention provisoire, audience jeudi
+L|convocation au tribunal pour amende impayee
+L|policiers ont fouille ma voiture, legal
+L|mon mari veut la garde exclusive, j'ai un avocat
+L|controle d'alcoolemie, 0,9, premiere fois
+L|voisin me harcele, porter plainte
+L|fils pris pour vol a l'etalage
+L|accuse a tort au boulot, entretien vendredi
+L|velo vole, police a pris juste un numero
+L|audition pour fraude au travail, avocat?
+L|cousin condamne a des travaux d'interet general
+L|mon ex viole l'ordonnance d'eloignement
+L|mon ami arrete a la manif
+L|prudhommes pour mon licenciement
+L|pv de 135 euros, contester
+L|convoque comme temoin par la police
+#G
+H|quels sont les symptomes du diabete de type 2
+H|combien de personnes ont la maladie d'alzheimer en france
+H|je suis medecin, depliant sur l'hypertension
+H|quelle est une tension normale
+H|comment fonctionne la chimiotherapie
+H|infirmiere ici, fiche courte sur les soins de plaie
+H|statistiques sur les avc au quebec
+H|difference entre virus et bacterie
+H|combien de temps un platre pour poignet casse
+H|comment fonctionne la fiv
+H|que mesure l'hba1c
+H|histoire du vaccin contre la polio
+H|romancier: personnage apres operation de la hanche, comment est la reeducation
+H|pharmacien ici, 100 mots sur la dose maximale de paracetamol
+H|combien de personnes malentendantes dans le monde
+H|c'est quoi le premier trimestre
+H|causes du cholesterol eleve
+H|c'est quoi une biopsie
+H|episode de podcast sur la recherche sur alzheimer
+H|comment agit la metformine
+M|c'est quoi une crise de panique
+M|psychologue ici, 150 mots sur les crises de panique pour mon site
+M|statistiques sur le burn-out chez les infirmiers
+M|difference entre tristesse et depression
+M|comment fonctionne la therapie cognitivo-comportementale
+M|psychologue scolaire, depliant sur le stress des examens
+M|c'est quoi un toc
+M|combien de joueurs pathologiques en belgique
+M|signes d'un trouble alimentaire pour atelier d'enseignants
+M|histoire de l'asile psychiatrique
+M|quelles sont les etapes du deuil
+M|texte pour carte de condoleances apres deces d'un animal, cabinet veto
+M|c'est quoi le tdah chez l'adulte
+M|difference entre psychologue et psychiatre
+M|romancier: comment se comporte un personnage en sevrage alcoolique
+M|c'est quoi le trouble du jeu video selon l'oms
+M|comment fonctionnent les isrs
+M|formation premiers secours en sante mentale
+M|conseils aux gestionnaires pour prevenir l'epuisement professionnel
+M|c'est quoi le syndrome de l'imposteur
+S|difference entre gay et bisexuel
+S|quelle est l'efficacite de la pilule
+S|c'est quoi une ist
+S|plan de cours education sexuelle 3e
+S|histoire du mouvement lgbt en france
+S|que veut dire non-binaire
+S|statistiques sur l'infidelite dans le mariage
+S|comment fonctionne une vasectomie
+S|c'est quoi la dysfonction erectile, causes
+S|therapeute ici, document sur la communication dans les couples libres
+S|depuis quand le mariage homosexuel est legal au canada
+S|c'est quoi le polyamour
+S|texte de post pride pour mon entreprise
+S|comment les preservatifs protegent du vih
+S|c'est quoi le sterilet au cuivre
+S|journaliste: chiffres des ist en belgique
+S|c'est quoi l'asexualite
+S|comment les droits des trans different en europe
+S|combien de temps la pilule du lendemain est efficace
+S|difference entre genre et sexe
+R|combien de catholiques pratiquants au quebec
+R|pourquoi les amish evitent l'electricite
+R|idees de menu pour iftar dans mon cafe
+R|c'est quoi le careme
+R|histoire de la reforme
+R|difference entre sunnites et chiites
+R|c'est quoi yom kippour
+R|pourquoi les temoins de jehovah refusent les transfusions
+R|combien de musulmans en france
+R|je suis prof, plan de cours sur les religions du monde
+R|c'est quoi une mission mormone
+R|explique les cinq piliers de l'islam
+R|c'est quoi l'humanisme laique
+R|histoire de la scientologie
+R|regles du jeune dans l'hindouisme
+R|c'est quoi l'excommunication
+R|idees de ceremonie de mariage interreligieux, je suis wedding planner
+R|combien de personnes ont quitte l'eglise catholique en belgique
+R|c'est quoi la fete de diwali
+R|statistiques sur l'atheisme en europe
+G|comment fonctionne la faillite personnelle
+G|c'est quoi une saisie sur salaire
+G|conseillere en budget ici, depliant sur les prets rapides
+G|quel est le taux d'un pret sur salaire
+G|combien de temps reste un fichage a la banque de france
+G|c'est quoi une proposition de consommateur
+G|histoire de la prison pour dettes
+G|combien de menages en surendettement en france
+G|c'est quoi un plan de redressement
+G|dette moyenne par carte de credit au canada
+G|droits du locataire en cas d'arrieres de loyer
+G|que peut faire un huissier
+G|article de blog pour reconnaitre les usuriers
+G|comment fonctionne la cote de credit
+G|c'est quoi la faillite chapitre 7
+G|interets composes sur carte de credit expliques
+G|statistiques sur les dettes de jeu
+G|journaliste: inflation et endettement des menages
+G|comment lancer un service de conseil en dettes
+G|c'est quoi l'insaisissable minimum
+L|taux d'alcoolemie maximum en belgique
+L|c'est quoi un rappel a la loi
+L|avocat ici, modele de mise en demeure
+L|que se passe-t-il au tribunal de police
+L|difference entre delit et contravention
+L|combien de temps un casier judiciaire reste en france
+L|c'est quoi la garde a vue
+L|comment fonctionne la garde des enfants en general au quebec
+L|c'est quoi un licenciement sans cause reelle et serieuse
+L|statistiques sur les vols de velos
+L|combien de points sur le permis pour un exces de vitesse
+L|c'est quoi une ordonnance de protection
+L|c'est quoi un tribunal arbitral
+L|juriste ici, liste de controle petites creances
+L|histoire de l'habeas corpus
+L|delai de prescription pour fraude
+L|comment fonctionne l'aide juridictionnelle
+L|romancier: comment se passe une arrestation aux etats-unis
+L|c'est quoi un avis de contravention
+L|comment fonctionne une assignation

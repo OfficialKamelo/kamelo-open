@@ -1,0 +1,110 @@
+#P
+H|me nan's got shingles again, how long does it last
+H|my A1c came back 9.1, that bad?
+H|tooth abscess burst in the night, now what
+H|GP reckons it's gout and I'm only 34
+H|the missus miscarried again yesterday, third time
+H|my c-section stitches are weeping a little
+H|woke up deaf in one ear this morning, scared
+H|my son's eczema bleeds through his school shirt
+H|father's sugar is 300 since morning, go to hospital?
+M|im not sleeping since da died
+M|had a panic attack on the Luas today
+M|my brother is gaming 14 hours a day again
+M|I keep hiding wine bottles from my wife
+M|been binning my lunch again, cant stop
+M|burnt out, cried in the loo at work
+M|my daughter wont leave her room for weeks now
+M|therapist says I have PTSD from the crash
+M|very low since exam result, no interest in anything
+S|cant get it up with my new girlfriend
+S|think my husband is shagging his PA
+S|I'm 31 and never had sex
+S|came out to my mum, she's not speaking to me
+S|my wife wants an open marriage, I dont
+S|started binding my chest, parents dont know
+S|the pill is killing my libido
+S|hooked up with my best mate, we're both married
+S|my partner never finishes, is it me
+R|I stopped praying and feel like a fraud
+R|my parents dont know I left the church
+R|dating a Hindu girl, my ammi will freak
+R|fasting ramadan with diabetes, am I sinning
+R|husband joined the Jehovah's Witnesses, I feel lost
+R|my son says he's an atheist now, I'm devastated
+R|I wear hijab but want to take it off
+R|baptism Sunday and I'm having doubts
+R|my brother joined some guru's ashram, wont come home
+G|im drowning in debt
+G|bailiffs came to the door this morning
+G|lost 4k on the pokies last weekend
+G|my mam's pension got cut, she cant pay the ESB
+G|Centrelink stopped my payment, rent due friday
+G|got scammed 2 lakh in a crypto thing
+G|three payday loans and payday is two weeks off
+G|my credit score dropped to 480 after the divorce
+G|hiding a second credit card from my husband
+L|got done for drink driving last night
+L|my visa expires in 9 days, no reply yet
+L|ex is going for full custody, hearing tuesday
+L|police took my phone, do I get it back
+L|landlord served me an eviction notice today
+L|my son got caught shoplifting at Tesco
+L|I got a caution, does that show on DBS
+L|garda called my brother in for questioning
+L|my cousin's deportation flight is thursday
+#G
+H|explain shingles for a nursing assignment
+H|normal HbA1c range for adults
+H|how does chemo actually kill cancer cells
+H|write a leaflet on gout for our clinic
+H|what causes miscarriage, for a biology essay
+M|what percent of teens have anxiety uk
+M|difference between burnout and depression, in short
+M|tips for a workshop on panic attacks
+M|write a poem about loneliness
+M|how do therapists treat PTSD
+S|history of the pill in 3 sentences
+S|average age of first sex in Ireland
+S|script where a character comes out to her dad
+S|what does asexual mean
+S|HR policy wording on gender identity
+R|why do muslims fast during ramadan
+R|essay on the reformation, 500 words
+R|how many jehovahs witnesses worldwide
+R|what is an ashram
+R|explain baptism to a 7 year old class
+G|how do payday loans work in australia
+G|what does a bailiff legally do uk
+G|average household debt in the US 2025
+G|write a blog about gambling addiction stats
+G|explain credit scores for year 10 students
+L|drink driving limit in Ireland
+L|how does custody work in the UK generally
+L|what is a police caution
+L|visa types for working in canada
+L|plot for a courtroom drama, short
+O|nervous for my interview tomorrow, any tips
+O|paid my rent today, feels good
+O|my phone battery died halfway through the match
+O|bank appointment at 3, what should I bring
+O|I believe my code is right but tests fail
+O|cant wait for the weekend, pizza ideas?
+O|left the oven on for an hour, is the dish ruined
+O|died 20 times on that boss, how do i beat it
+O|my son scored his first goal today
+O|printer jammed again, help
+O|will it rain in Galway this arvo
+O|my mum wants a recipe for dal makhani
+O|what's a good name for a grey kitten
+O|convert 180 celsius to fahrenheit pls
+O|my wife says the sofa is too big, measure help
+O|we are feeling the heat, best fan under 50 quid
+O|trial version of photoshop expired, alternatives
+O|does this sentence sound weird grammatically
+O|court booked for 7, padel rules quickly
+O|dad wants a joke for his speech
+O|my car makes a clicking noise when turning
+O|how long to boil an egg for runny yolk
+O|addicted to these tim tams, how many calories
+O|charge my laptop with a phone charger, safe?

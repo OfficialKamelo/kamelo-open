@@ -1,0 +1,483 @@
+#P
+H|ingrown toenail got infected again, it's all yellow
+H|dad's getting a new hip next month, how long is recovery
+H|my mum starts chemo on monday and im scared
+H|just did a test, two lines. now what
+H|had a miscarriage yesterday at 9 weeks
+H|my son needs grommets for glue ear
+H|i think im losing hearing in my left ear
+H|chlamydia test came back positive, who do i tell
+H|sugar was 11.2 this morning and im type 2
+H|migraines every week even on topiramate
+H|third failed IVF cycle, i dont know what to do
+H|my toddlers eczema is all over her legs
+H|gp reckons its shingles, rash on my ribs
+H|colonoscopy tomorrow and the prep is horrible
+H|found a lump in my breast last night
+H|my wife has endometriosis, what can i do for her
+H|cholesterol is 7.8, doctor wants me on statins
+H|dry socket after wisdom tooth out, agony
+H|sciatica shooting down my leg when i sit
+H|baby has a fever after her 8 week jabs
+H|psoriasis flaring on both elbows again
+H|hair coming out in clumps since covid
+H|my husband had a stroke last month
+H|metformin makes me feel sick all morning
+H|diagnosed with PCOS at 24, feeling lost
+H|slipped disc and i cant even sit in the car
+H|coughing up blood since tuesday, should i panic
+H|hiv test result is tomorrow, cant sleep
+H|gran has dementia and doesnt know us anymore
+H|my 6 year old wheezes at night, asthma?
+H|rolled my ankle at 5-a-side, its huge and purple
+H|passed a kidney stone last night, worst pain ever
+H|my thyroid is high, levothyroxine dose confusing
+H|dad is having cataract surgery thursday
+H|dentist says i need a root canal and a crown
+H|havent had a period in 3 months
+H|long covid fatigue, still wiped out after a year
+H|hernia op wound is oozing a bit
+H|ringing in my ears since the gig, wont stop
+H|im 20 kilos overweight and prediabetic apparently
+H|my sister had a seizure last night, first one
+H|red painful eye after wearing contacts to bed
+H|rheumatoid flare, my hands are too swollen to type
+H|took the abortion pill at home, bleeding heavy
+H|our baby was born with a cleft palate
+H|ibs cramps every day after lunch, so embarrassing
+H|my daughter got a rash after the amoxicillin
+H|ferritin is 8, so tired i could cry
+H|vasectomy booked for next week, any tips
+H|broken wrist, cast for six weeks, cant work
+M|burnt out completely, cant get out of bed
+M|had a panic attack on the train this morning
+M|our dog died today and i cant stop crying
+M|my teen plays fortnite 12 hours a day
+M|i check the stove ten times before leaving
+M|is it bad that i drink every night
+M|citalopram week two and the nausea is awful
+M|dad died in march and i still feel nothing
+M|my anorexia is back and i dont want help
+M|binge eating at midnight again, hate myself
+M|got diagnosed with adhd at 35, feel weird
+M|cant sleep, brain wont stop worrying about work
+M|therapist cancelled on me and im spiralling
+M|moved cities and now i have zero friends
+M|quit porn for 3 days, relapsed again
+M|my husband is depressed and wont talk to me
+M|flashbacks since the car crash, cant drive
+M|day 12 off cocaine, the cravings are mad
+M|had an autistic meltdown at work today
+M|my sister is manic again, hasnt slept in days
+M|i dont feel any bond with my newborn
+M|imposter syndrome is eating me alive
+M|googling symptoms for hours, health anxiety again
+M|i cant answer the phone without shaking
+M|my son hasnt left his room in months
+M|smoking weed daily and cant stop
+M|mum drinks wine by 10am, im exhausted
+M|coming off sertraline, brain zaps are brutal
+M|first EMDR session on tuesday, what to expect
+M|im a teacher and totally fried, sunday dread
+M|i keep snapping at my kids and feel awful
+M|everything feels flat, nothing makes me happy
+M|cried in the work toilets again
+M|too anxious to leave the house this week
+M|still affected by being bullied at school
+M|i pull my hair out when im stressed
+M|picking my skin for hours, cant stop
+M|my ex gaslit me for years, i think its trauma
+M|night terrors since coming back from deployment
+M|exam anxiety, my hands shake so much
+M|psychiatrist upped my quetiapine again
+M|30 days sober today, still wobbly
+M|sleeping 14 hours a day and still tired
+M|screen time was 9 hours, phones got me
+M|my daughter wont speak at school, selective mutism
+M|camhs waiting list is 18 months for my son
+M|kids moved out and i feel so empty
+M|caring for mum is wearing me down
+M|my brother is in rehab for heroin
+M|scary intrusive thoughts about my baby, am i ok
+S|no sex drive at all since the baby
+S|viagra isnt working and im embarrassed
+S|how do i tell my parents im gay
+S|think im bi but never told anyone
+S|i slept with someone else, wife doesnt know
+S|my husband had an affair with his boss
+S|i finish way too fast in bed
+S|never had sex and im 28, is that weird
+S|sex hurts so much, doctor said vaginismus
+S|forgot my pill, do i need the morning after one
+S|starting testosterone next month, nervous
+S|my daughter just came out as lesbian
+S|we havent had sex in two years
+S|found his tinder profile still active
+S|i cant orgasm with my partner
+S|sexting my ex again, what is wrong with me
+S|wife wants an open relationship, im torn
+S|boyfriend asked for a threesome, no idea
+S|sent nudes and now i regret it badly
+S|condom broke last night, what now
+S|im asexual and my partner doesnt get it
+S|got a kink my girlfriend doesnt know about
+S|coil or implant, which hurts less
+S|hubby watches porn all night, ignores me
+S|got tested after a random hookup
+S|fell for a married coworker, help
+S|think my son might be gay, how to support him
+S|low libido since starting antidepressants
+S|still closeted at work, so tiring
+S|i secretly wear my wifes clothes
+S|sex after prostate surgery, is it possible
+S|friends with benefits and i caught feelings
+S|one night stand, now late. panicking
+S|my girlfriend admitted she faked it for years
+S|grindr hookups are becoming a habit
+S|virgin at 35 and so ashamed
+S|worried about my size honestly
+S|slept with my best friends ex
+S|poly relationship and im so jealous
+S|menopause made sex painful, any fix
+S|wife doesnt want me to touch her anymore
+S|my son is trans, new name and pronouns
+S|pull out method, is it safe enough
+S|got a hickey, hiding it from my parents
+S|my partner is in love with someone else
+S|thinking of a sugar daddy, is it safe
+S|rough sex left bruises, bit worried
+S|we sleep in separate rooms now, no intimacy
+S|first time this weekend and im terrified
+S|lost my erection halfway, partner thinks its her
+R|losing my faith and dont know who to tell
+R|my son joined the jehovahs witnesses
+R|fasting ramadan while pregnant, allowed or not
+R|converting to islam, my family is furious
+R|want to leave the church after 30 years
+R|can i wear my hijab at the office
+R|hindu boyfriend, muslim parents. help
+R|i havent been to confession in ten years
+R|praying every day but i feel nothing
+R|atheist in a very religious family
+R|mum says im going to hell
+R|how do i keep a kosher kitchen in a flat
+R|kids laugh at my turban at school
+R|husband mocks me for being born again
+R|i just left a cult, where do i start
+R|halal at work lunches, awkward
+R|thinking about getting baptised as an adult
+R|my wife became extremely devout lately
+R|doubting my mormon mission, 6 months in
+R|tithing when we cant afford groceries
+R|missed fajr again, feel so guilty
+R|my daughter wants to wear hijab at 12
+R|praying at work, where can i go
+R|deconstructing my evangelical childhood
+R|started practising wicca, dont tell my mum
+R|divorced catholic, can i still take communion
+R|became buddhist and my parents are upset
+R|saving for hajj, family thinks its too soon
+R|stopped going to the mosque, dad noticed
+R|dad is a pastor and im full of doubt
+R|planning an interfaith wedding, both families upset
+R|feel guilty before God after sleeping together
+R|im jewish, marrying a christian, grandma weeping
+R|sabbath conflicts with my shift, adventist
+R|grew up in strict brethren, now struggling outside
+R|orthodox easter fast, can i have coffee
+R|ayahuasca ceremony changed my beliefs, odd
+R|spoke in tongues for the first time
+R|believe god is punishing me for my abortion
+R|eid dinner, relatives dont know i drink
+R|im an ex muslim and hiding it
+R|prayed for mums recovery, she still died
+R|memorising the quran with my 9 year old
+R|jain fasting during paryushan, tips please
+R|my church wants a tenth of my salary
+R|praying the rosary again after my divorce
+R|my kid joined hare krishna, should i worry
+R|is it a sin to doubt
+R|first time at the gurdwara, what do i wear
+R|my mother in law wants our baby baptised, i dont
+G|three months behind on rent, landlord texting daily
+G|payday loan rolled over again, now owe double
+G|bailiffs came to the door this morning
+G|credit card maxed out and im hiding it
+G|lost my job, waiting on universal credit
+G|they garnished my wages, what are my rights
+G|thinking of bankruptcy, is it the end
+G|gambled away our savings last night
+G|lost 5k to a crypto scam
+G|first time at the food bank, nervous
+G|cant afford the energy bill this winter
+G|hmrc says i owe 8000, i dont have it
+G|student loan in default, collectors keep ringing
+G|defaulted on a card, my credit score tanked
+G|cant afford dads funeral, any help available
+G|overdraft maxed again before the 15th
+G|klarna payments piling up, im drowning
+G|found out my husband hid 20k debt
+G|car got repossessed on thursday
+G|borrowed from mum again, so embarrassed
+G|owe the irs 12k and cant pay
+G|centrelink says i was overpaid, now owe thousands
+G|ran out of money 10 days before payday
+G|cant afford my kids school uniform
+G|2 months arrears on the mortgage
+G|scammers emptied my bank account overnight
+G|betting app took my whole wage again
+G|borrowed from a loan shark, now scared
+G|sold my wedding ring to pay rent
+G|skipping meals so the kids can eat
+G|is a debt consolidation loan worth it
+G|council tax arrears, got a summons letter
+G|cant pay the hospital bill, 4000 dollars
+G|going into an IVA, what happens to my house
+G|my emi bounced again this month
+G|dads debts, now collectors call me daily
+G|laid off with only two months severance
+G|romance scammer took my life savings
+G|childcare costs more than my salary
+G|three months behind on my car loan
+G|electricity got cut off yesterday
+G|four cards maxed, paying just the minimum
+G|my benefits got sanctioned, no income
+G|cashed my pension early to pay debts
+G|will never afford to retire, im broke
+G|wedding left us 15k in debt
+G|0 percent card offer ended, balance is huge
+G|cant afford the vet bill for my dog
+G|paid off my sons gambling debts again
+G|cant make rent after my hours got cut
+L|speeding ticket and they took my licence
+L|saw my stolen bike for sale online
+L|my neighbour keeps cutting down my hedge
+L|landlord wont give my deposit back
+L|boss hasnt paid my last two months wages
+L|got caught shoplifting, store called the police
+L|found weed in my bag at the border
+L|someone is blackmailing me with my photos
+L|someone opened credit cards in my name
+L|fighting my siblings over mums will
+L|my ex has a restraining order on me
+L|got a jury duty letter, im really anxious
+L|judge gave me 80 hours community service
+L|charged with assault after a pub brawl
+L|fight at a party, police took my statement
+L|appealing a parking fine, got a court date
+L|my husband served me divorce papers today
+L|ex wants full custody of our daughter
+L|my visa expires in 3 weeks, panicking
+L|got a deportation letter this morning
+L|fired without warning, thinking of a tribunal
+L|got an eviction notice taped to my door
+L|arrested for drink driving last night
+L|someone burgled our house while we slept
+L|my landlord is suing me for damages
+L|probation officer wants to see me again
+L|criminal record from 2009, will employers see it
+L|asylum interview is next week, im terrified
+L|got mugged on my way home from work
+L|my stalker keeps turning up at my gym
+L|small claims against my old landlord
+L|speed camera letter arrived, 3 points
+L|ex stopped paying child support
+L|police want me as a witness in court
+L|got arrested at the protest on saturday
+L|filed a harassment complaint against my manager
+L|being sued after a car accident
+L|nervous about the citizenship test next month
+L|can i get my conviction expunged
+L|police knocked on my door at 6am
+L|out on bail, what are my conditions
+L|my brother got 4 years in prison
+L|got a fine for not having a tv licence
+L|my tenant refuses to leave, its been 4 months
+L|solicitor wants 3000 upfront, is that normal
+L|my work permit got refused, what now
+L|sent a letter before action to my builder
+L|ex is taking the kids abroad without asking me
+L|called 999 on my husband last night
+L|tribunal hearing is on the 14th, help
+#G
+H|how does chemotherapy kill cancer cells
+H|write a leaflet for patients about shingles
+H|what are the symptoms of kidney stones in general
+H|essay on the history of the polio vaccine
+H|what did Tom Hanks say about his diabetes
+H|as a nurse, how do I explain grommets to parents
+H|average recovery time after hip replacement, statistics
+H|explain how the pill works for a biology quiz
+H|why do wisdom teeth hurt, for my anatomy class
+H|summarise this article on long covid for our newsletter
+M|how common is burnout among nurses, any stats
+M|write a short story about a girl with panic attacks
+M|explain what EMDR therapy is for my psychology essay
+M|what did Naomi Osaka say about anxiety
+M|as a teacher, how can I support a grieving pupil
+M|difference between ADHD and ADD for a class presentation
+M|poem about loneliness in a big city
+M|how does alcohol affect the brain, for school
+M|draft a wellbeing policy for our HR team
+M|why is gaming addiction in the news so much
+S|explain how condoms work for sex ed class
+S|write a scene where two characters fall in love
+S|what is the history of Pride marches
+S|how many people identify as bisexual, survey data
+S|as a GP, how do I explain the coil to patients
+S|did Elton John ever talk about coming out
+S|essay on gender identity in ancient Greece
+S|summarise the Kinsey report in five lines
+S|how do I write a sensitive sex ed lesson plan
+S|plot ideas for a romance novel with an affair
+R|what is the difference between Sunni and Shia
+R|explain Ramadan to my year 6 class
+R|write a speech for an interfaith dialogue event
+R|when did the Reformation start
+R|how many Jehovahs Witnesses are there worldwide
+R|essay on why people leave religion, sociology
+R|what does kosher mean for a restaurant menu
+R|as a journalist, how do I cover a mosque opening
+R|story about a nun who loses her faith
+R|why do Sikhs wear a turban, for my RE homework
+G|how do payday loans work, in general terms
+G|write a blog post about budgeting for students
+G|what is the national debt of Japan
+G|as a bank clerk, how to explain overdraft fees
+G|summarise the 2008 financial crisis in 100 words
+G|history of bankruptcy law in the UK
+G|how do crypto scams usually work, for a talk
+G|plot for a movie about a gambling addict
+G|how many people use food banks in the UK
+G|create a spreadsheet template for company expenses
+L|what is the legal drinking age in Ireland
+L|write a scene where a detective interviews a suspect
+L|explain the difference between civil and criminal law
+L|as a paralegal, draft a tenancy notice template
+L|how does jury selection work in the US
+L|statistics on shoplifting in London last year
+L|why was Nelson Mandela imprisoned
+L|essay on immigration policy in Australia
+L|how long does a divorce take in India, in general
+L|summarise the Depp v Heard trial for my media class
+#O
+O|my laptop keeps dying at 40 percent battery
+O|nervous about my interview tomorrow, any tips
+O|i left the oven on, should i go back
+O|printer jam again, what now
+O|its so grey today, proper weather depression
+O|died 20 times in this boss fight lol
+O|so proud of my sons goal on saturday
+O|cant wait for my holiday in portugal
+O|my phone battery is dead, charger missing
+O|paid the rent today, finally relaxing
+O|bank appointment at 3, what should i bring
+O|i feel great today, just went for a run
+O|how long should i boil an egg for my daughter
+O|my brother is visiting, what to cook
+O|mum wants a recipe for banoffee pie
+O|i believe my code is right but it crashes
+O|trust in our team is high, how do i say that
+O|my free trial ends tomorrow, how to cancel
+O|we booked a tennis court for sunday
+O|my sentence has too many commas, help
+O|kill the process on my mac, how
+O|this cake is a sinful dessert, recipe please
+O|heavenly lemon cake, what temperature do I bake
+O|my car makes a weird noise, symptoms of what
+O|my monstera needs therapy, leaves going yellow
+O|crushing on this song, whats it called
+O|football fever in our house this weekend
+O|im addicted to salted caramel popcorn
+O|lint pills all over my new jumper
+O|got a good dose of sun today, no sunscreen oops
+O|the weather is awful, feels like a depression
+O|my dad is going mad about the wifi
+O|oh my god this pasta is amazing
+O|jesus, the traffic is crazy this morning
+O|im fine, just tired after the school run
+O|bill my client for 3 hours of design work
+O|can i loan my friend this book
+O|school maths exercise, mortgage interest on 200k
+O|my wife and i are cooking tonight
+O|kids want pancakes for breakfast, easy recipe
+O|my sister is flying in on friday
+O|grandma is turning 80, gift ideas
+O|my cell phone wont connect to wifi
+O|got a virus warning on my laptop, scam
+O|there is a bug in my javascript loop
+O|the test came back negative, my unit tests pass
+O|killer pizza place near me
+O|the match was dead until the 80th minute
+O|how do i defrost chicken quickly
+O|my son has a spelling test tomorrow
+O|we need a new fridge, what brand
+O|my husband snores like a train, earplugs
+O|i love my new running shoes
+O|stressed about packing for the move, tips
+O|dying to see the new marvel film
+O|my guilty pleasure is trashy tv
+O|i cant decide what to wear tonight
+O|any good podcasts for a long drive
+O|my favourite team lost again, gutted
+O|what is a good gift for my teacher
+O|got a free dose of vitamin d by the beach
+O|best way to learn guitar chords
+O|im obsessed with this new playlist
+O|my credit card statement has a typo, tell me how to email
+O|debt in this game is brutal, any cheats
+O|my battery needs a charge, whats the cheapest charger
+O|the judge on this tv show is hilarious
+O|police academy movies, which one first
+O|court case in this video game, how to win
+O|my team has real faith in our coach
+O|the lecture was killing me, so boring
+O|our cat has a vet check up tomorrow
+O|my grandad loves crosswords, gift ideas
+O|im nervous about my driving test thursday
+O|working from home today, any lunch ideas
+O|whats a good name for my puppy
+O|my son wants a drum kit for christmas
+O|how do i fix a dripping tap
+O|our flight got delayed 3 hours, ugh
+O|i cant wait for the weekend, bbq time
+O|mum made the best lasagne today
+O|translate good morning into french please
+O|my daughter lost her first tooth
+O|my uncle is visiting from sydney
+O|im on a diet of pure pizza this week
+O|the pressure in my tyres is low
+O|i keep sneezing, must be the pollen
+O|my cousins wedding is in june, what to wear
+O|i confess my secret ingredient is nutmeg
+O|how to get red wine out of the carpet
+O|my wifi router needs a reset
+O|my boss is off sick, so the office is quiet
+O|my boyfriend and i are planning a road trip
+O|the interest rate on the savings game, in monopoly
+O|my kids love minecraft, any good mods
+O|i am thrilled, got the flat i wanted
+O|how many calories in a flat white
+O|ive got a headache from this spreadsheet, formulas
+O|the sun was crazy hot at the cricket
+O|which pill organiser is best for my gran, a weekly one
+O|where can i watch the cricket tonight
+O|my grandma knitted me a scarf, how to wash
+O|proud of my daughter, she won the spelling bee
+O|feeling a bit tired, early start tomorrow
+O|my tooth is fine, just need a dentist checkup booking email
+O|chargers for my kids tablet, which one
+O|we ran out of milk, what can i use
+O|i think the shop opens at nine
+O|crash course in excel pivot tables please
+O|sorry i was late, traffic was a nightmare
+O|my son is learning to ride a bike
+O|trial run of the new coffee machine worked
+O|i got a new job offer for a bakery assistant
+O|how do you say thank you in hindi
+O|my flatmate and i are painting the lounge
+O|how do i store fresh basil
+O|made it through monday, barely
+O|my wife and kids are at the zoo today
+O|reading a thriller where everyone is a suspect
+O|my dad wants to learn to use whatsapp

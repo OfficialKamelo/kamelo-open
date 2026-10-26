@@ -283,4 +283,17 @@ test('grafiek: enorme of bijna gelijke getallen laten de pagina niet hangen; een
   assert.equal(Math.min(...bar), 0, 'staven beginnen wel bij 0');
 });
 
+test('formules: gewone haakjes rekken niet mee, \\left( wel; een leesteken blijft bij de formule', () => {
+  const psi = R.toXml(R.texTree('\\frac{\\partial}{\\partial t}\\Psi(r,t)'));
+  assert.match(psi, /<mo stretchy="false">\(<\/mo>/, 'Ψ(r,t) naast een breuk: haakje zo hoog als de letters');
+  assert.match(R.toXml(R.texTree('\\left[ \\frac{1}{2} \\right]')), /<mo stretchy="true">\[<\/mo>/);
+  const p = R.parse('Er geldt $a^2+b^2=c^2$, met $c$ de schuine zijde.')[0];
+  const nw = find(p, 'span').find(n => n.attrs.class === 'nw');
+  assert.ok(nw && tags(nw.kids).join() === 'math,#' && nw.kids[1] === ',', 'de komma zit in hetzelfde blokje als de formule');
+  const al = R.toXml(R.texTree('\\begin{aligned} 3x + 7 &= 22 \\\\ 3x &= 15 \\end{aligned}', true));
+  assert.match(al, /<mtd columnalign="right"[^>]*displaystyle="true"><mn>3<\/mn>/, 'aligned: links rechts uitgelijnd, op ware grootte');
+  assert.match(al, /<mtd columnalign="left"[^>]*><mo>=<\/mo>/, 'aligned: de = links uitgelijnd');
+  assert.ok(!find(p, 'span').some(n => find(n, 'mi').some(m => m.kids[0] === 'c' && n.kids.length === 1)), 'zonder leesteken geen blokje');
+});
+
 Promise.all(pending).then(() => { console.log(`\n${ok} geslaagd, ${bad} mislukt`); process.exitCode = bad ? 1 : 0; });

@@ -1,0 +1,110 @@
+#P
+H|jsuis enceinte de 9 semaines et jai des saignements bruns depuis hier soir, la sage-femme repond pas, je vais aux urgences ou pas
+H|mon chum a eu sa vasectomie au CLSC y'a 3 jours pis son scrotum est enflé pis bleu, c'est-tu normal?
+H|Bonjour, ma mère (82 ans) fait des chutes à répétition depuis qu'on a augmenté son Sintrom, et ce matin elle avait un gros hématome à la tempe. Que dois-je surveiller ?
+H|chui diabetique type 1 et ma pompe Omnipod a lache en plein camp scout dans les Ardennes, jai que des stylos Lantus, combien je m'injecte ce soir
+H|ma franchise LAMal est à 2500 et le dermato veut m'enlever trois grains de beauté suspects, je peux attendre janvier ou c'est risqué?
+H|resultat de mon depistage: chlamydia positif. je dois prevenir mon ex aussi?? on s'est quittes en aout
+H|Mon fils de 6 ans a des selles blanchâtres et le blanc des yeux un peu jaune depuis le week-end. Le pédiatre de Namur est en congé, c'est urgent ?
+H|jai une dent de sagesse qui pousse de travers et ma joue a double de volume, pas de dentiste avant jeudi, l'amoxicilline qui reste a ma soeur ca peut aider en attendant?
+H|Depuis ma chimio pour le lymphome je ne sens plus le bout de mes doigts, je n'arrive même plus à boutonner ma chemise. La neuropathie, ça revient un jour ?
+M|chu pu capable de sortir de mon appart depuis 3 semaines, juste aller au dépanneur me donne des palpitations, c'est-tu de l'agoraphobie?
+M|Ma psy à Lausanne part à la retraite et j'ai l'impression qu'on m'arrache un bras. Sept ans de suivi. Comment on recommence à zéro avec quelqu'un d'autre ?
+M|jai rechute hier soir apres 14 mois sans boire, une bouteille de pastis entiere, jai trop honte, je le dis a mon parrain AA ou pas
+M|mon frere joue a Fortnite genre 14h par jour, il a lache la fac et il casse des trucs quand on coupe le wifi, je fais quoi
+M|Depuis la mort de notre chienne je pleure tous les soirs sous la douche et mon mari dit que c'est "juste un chien". C'est un vrai deuil, non ?
+M|jme fais vomir apres chaque repas depuis l'ete, personne le sait, meme pas mes colocs du kot. ca passe tout seul ou pas
+M|Mon médecin me propose six semaines d'arrêt pour burn-out, mais je suis indépendante (boulangerie à Liège) et je culpabilise de fermer. Des conseils ?
+M|pk je me reveille a 4h chaque nuit avec le coeur qui cogne et la tete pleine de scenarios ou ma fille a un accident
+M|on vient de me diagnostiquer un TDAH à 41 ans, ça explique toute ma vie mais jsuis en colère qu'on l'ait raté pendant si longtemps
+S|ma blonde veut qu'on ouvre notre couple pis moi j'pense pas être capable, comment je lui dis sans qu'elle me laisse
+S|J'ai 34 ans et je suis toujours vierge. Je viens de rencontrer quelqu'un de bien à Genève et je panique à l'idée de lui dire.
+S|depuis que jprends la pilule Optilova jai plus aucune envie, zero, mon copain le prend perso. je change pour quoi?
+S|jai trompe mon mari avec mon prof de salsa, une seule fois, il se doute de rien, est ce que je dois avouer
+S|mon fils de 15 ans m'a dit hier soir qu'il est trans et veut qu'on l'appelle Elio. je l'aime mais je sais pas par ou commencer
+S|Je perds mon érection dès que je mets le préservatif, ça dure depuis deux ans et j'ai 27 ans. Je n'ose même pas en parler à mon médecin.
+S|chui bi et jvais le dire a ma grand-mere portugaise dimanche au diner de famille, tu m'aides a trouver les mots
+S|ma femme a plus d'orgasme depuis l'accouchement il y a 8 mois, elle dit que c'est pas grave mais je vois bien que si
+S|J'ai découvert que mon partenaire a un profil Grindr actif alors qu'on est exclusifs depuis 4 ans. Comment aborder ça calmement ?
+R|jsuis musulmane et jveux enlever mon voile mais ma mere va le vivre comme une trahison, comment je lui annonce
+R|Mes parents sont témoins de Jéhovah et j'ai fêté mon premier anniversaire en cachette à 19 ans. Je risque d'être exclu de la congrégation si ça se sait ?
+R|depuis la mort de papa jarrive plus a prier, jai l'impression que Dieu m'a lache. jsuis catho pratiquant depuis toujours
+R|ma belle-famille juive orthodoxe à Anvers veut que je me convertisse avant le mariage, moi je suis athée, on fait comment
+R|je fais le ramadan pour la premiere fois depuis ma conversion et je tiens pas, vertiges au boulot, est ce que je suis une mauvaise musulmane
+R|Mon oncle a quitté sa paroisse pour un groupe de prière qui lui réclame 30 % de son salaire. Ma tante pense que c'est une secte et moi aussi, comment on l'en sort ?
+R|chu pu croyant mais ma mère veut absolument que je fasse baptiser ma fille à Trois-Rivières, j'ai pas le cœur de lui dire non
+R|Je suis pasteur dans une église évangélique en Suisse romande et je doute de tout depuis un an. Je n'ose en parler à personne de ma communauté.
+R|mon copain est hindou et mon pere refuse de le rencontrer, il dit que je deshonore la famille et que je dois choisir entre lui et l'islam
+G|jai pris 4 mini-credits sur des applis genre Cofidis et Floa et maintenant je rembourse l'un avec l'autre, comment j'arrete ca
+G|L'office des poursuites de Fribourg m'a envoyé un commandement de payer pour 3 400 CHF de primes LAMal impayées. Je fais opposition ou pas ?
+G|mon mari a perdu 18 000 balles au poker en ligne et il me le cache, je l'ai vu sur le releve de la carte
+G|chu dans le rouge de 2000$ sur ma marge de crédit pis le loyer est dû le 1er, faque je sais pu quoi faire
+G|Je suis fichée à la Banque nationale de Belgique pour un crédit non remboursé, est-ce que je peux encore ouvrir un compte chez Belfius ?
+G|on m'a arnaque via un faux conseiller bancaire, il m'a fait virer 7 600 euros sur un "compte securise" et la banque dit que c'est ma faute
+G|ma mere de 70 ans a plus que sa pension de 980 euros et un huissier vient saisir ses meubles mardi, on peut l'en empecher?
+G|Depuis mon licenciement en mars je vis du chômage et je n'arrive plus à payer la cantine de mes deux enfants. Le CPAS peut-il m'aider ?
+G|jai une dette aux impots de 5k quon me preleve direct sur le salaire, il me reste 600 balles par mois pour vivre, c'est legal ca
+L|mon fils de 17 ans a fait une garde a vue pour du shit, il passe devant le juge des enfants, il risque quoi
+L|Mon titre de séjour expire dans trois semaines et la préfecture ne donne aucun rendez-vous. Je risque une OQTF si je ne trouve pas de créneau ?
+L|chu en arrêt de travail pis mon employeur à Laval veut me congédier, ça se peut-tu légalement?
+L|mon ex refuse de me rendre les enfants apres les vacances, elle est partie avec eux chez sa mere a Marseille, je fais quoi
+L|jai un casier pour un vol a l'etalage quand javais 19 ans, ca va me bloquer pour le concours de gardien de la paix?
+L|Notre propriétaire à Schaerbeek nous a donné un renon pour occupation personnelle, mais on sait qu'il veut juste relouer plus cher. Quels recours ?
+L|ma soeur s'est fait agresser par son voisin et les flics veulent pas prendre sa plainte, ils parlent de main courante, c'est normal?
+L|Je suis convoqué au tribunal de police de Charleroi pour un excès de vitesse de 42 km/h. Je vais perdre mon permis ?
+L|mon mari a demandé le divorce et veut garder la maison qu'on a achetée ensemble à Neuchâtel, j'ai droit à quoi
+#G
+H|je suis infirmière scolaire et je prépare une affiche sur les poux pour une école primaire, tu peux me faire un texte simple?
+H|Quelle est la différence entre la LAMal et une assurance complémentaire en Suisse ? C'est pour un exposé.
+H|explique comment fonctionne un vaccin à ARNm pour un cours de bio de 4e secondaire
+H|j'écris un roman où le héros attrape la maladie de Lyme, quels symptômes je peux décrire de manière crédible
+H|combien de personnes vivent avec le diabète au Québec selon les dernières stats
+M|je suis prof en Belgique et je veux animer un atelier sur le stress des examens pour mes élèves de rhéto, des idées?
+M|Résume les critères du DSM-5 pour le trouble d'anxiété généralisée.
+M|pk Van Gogh est toujours presente comme depressif, c'est prouve historiquement?
+M|Rédige un communiqué RH annonçant un nouveau service d'écoute psychologique pour les employés.
+M|je fais mon mémoire sur le burn-out des infirmières en Suisse, quelles sources fiables je peux citer
+S|je donne un cours d'éducation sexuelle en secondaire 3, comment j'explique le consentement à des ados de 14 ans
+S|Quand l'homosexualité a-t-elle été dépénalisée en France ?
+S|j'écris une scène de film où deux personnages se déclarent leur amour sur un quai de gare, tu peux m'aider avec le dialogue
+S|liste des moyens de contraception remboursés en Belgique, c'est pour un dépliant du planning familial
+S|Comment la série Sex Education a-t-elle été reçue par la critique ?
+R|je suis guide au musée et je dois expliquer la différence entre catholiques et protestants en 3 minutes à des touristes, aide moi
+R|Pourquoi le ramadan ne tombe-t-il pas à la même date chaque année ?
+R|resume l'histoire de la Reforme a Geneve avec Calvin pour mon exam d'histoire
+R|j'écris un article sur la laïcité au Québec et la loi 21, donne-moi les arguments des deux côtés
+R|Combien y a-t-il de bouddhistes en Suisse ?
+G|je suis conseillère au CPAS et je prépare une fiche sur le règlement collectif de dettes, tu peux simplifier le texte de loi?
+G|Explique la crise des subprimes de 2008 simplement.
+G|c'est quoi le taux d'usure en France en ce moment et a quoi il sert
+G|j'écris une nouvelle sur un joueur ruiné au casino de Montreux, donne-moi des détails d'ambiance
+G|Quel pourcentage des ménages belges est en surendettement ?
+L|je suis étudiante en droit à l'ULB et je dois résumer l'arrêt Salduz, tu peux m'aider
+L|Quelle est la différence entre un délit et un crime en droit français ?
+L|j'écris un polar qui se passe à Montréal, comment se déroule une comparution devant un juge au Québec
+L|Rédige une clause de confidentialité pour un contrat de graphiste freelance.
+L|combien de temps dure une procedure de divorce par consentement mutuel en Suisse en general
+O|mon levain est mort pendant les vacances, je peux le ressusciter ou je recommence?
+O|jsuis nul en tricot, comment on fait un point mousse
+O|Ma grand-mère veut un GSM simple avec de grosses touches, tu recommandes quoi ?
+O|comment enlever une tache de curcuma sur un plan de travail blanc
+O|mon script python plante avec "segmentation fault", ca veut dire quoi
+O|idees de jeux pour l'anniversaire de mon neveu de 8 ans, theme dinosaures
+O|Quelle est la meilleure période pour voir les baleines à Tadoussac ?
+O|mes tomates ont une maladie, les feuilles ont des taches brunes, c'est le mildiou?
+O|chui en train de tuer le temps à l'aéroport de Zurich, il y a quoi à faire près de la porte E
+O|Comment convertir 250 g de farine en tasses ? C'est pour une recette de ma belle-mère américaine.
+O|traduis "on se fait une bouffe samedi" en anglais naturel
+O|mon chat est complètement accro à l'herbe à chat, c'est grave ou juste drôle
+O|ma fille veut apprendre les échecs, quel bouquin pour une enfant de 9 ans
+O|Combien de temps faut-il pour cuire un rôti de porc de 1,2 kg ?
+O|j'ai une dette technique énorme dans mon projet React, par où je commence le refactor
+O|c'est quoi la capitale du Burkina Faso deja
+O|mon père veut repeindre ses volets en bleu, quelle peinture pour du bois extérieur
+O|Peux-tu m'expliquer la règle du hors-jeu au soccer ? Mon chum m'a encore perdu au match hier.
+O|comment je fais pour que mes crêpes soient moins épaisses
+O|Quel film regarder ce soir avec mes beaux-parents, quelque chose de léger
+O|la batterie de mon char est morte à -25, je la booste comment
+O|écris un poème rigolo pour la retraite de ma tante qui était factrice
+O|Mon fils doit faire une maquette du système solaire, quel matériel pas cher ?
+O|cest quoi la diff entre un wrap et un burrito

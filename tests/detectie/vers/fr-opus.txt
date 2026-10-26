@@ -1,0 +1,110 @@
+#P
+H|jai une bosse sous laisselle depuis 3 semaines, ca fait pas mal mais jsuis un peu stressé, je dois aller voir mon médecin ou cest rien
+H|Ma fille de 4 ans a 39,5 de fièvre depuis hier soir et le Doliprane fait presque plus effet, je l'emmène aux urgences ou j'attends demain ?
+H|Bonjour, mon gynéco m'a annoncé que j'ai de l'endométriose stade 3. Est-ce que ça veut dire que je pourrai pas avoir d'enfants ?
+H|chui enceinte de 7 semaines et jai des petits saignements marron depuis ce matin, cest normal ou jappelle ma sage-femme
+H|Mon père (72 ans) vient de faire un AVC léger, il parle un peu de travers. Comment je peux l'aider à la maison pendant sa rééducation au CHUV ?
+H|jai fait un dépistage la semaine passée et jai une chlamydia, je dois le dire à mon ex ou pas
+H|Depuis mon opération de la vésicule en mars j'ai la diarrhée après chaque repas, mon chirurgien dit que c'est normal, vous en pensez quoi?
+H|mon chum fait de lapnée du sommeil pis il refuse de porter sa machine CPAP, ca minquiete pas mal, comment le convaincre
+H|je prends du Lexomil le soir et le dentiste veut m'arracher une dent de sagesse sous anesthésie jeudi, y a un risque avec mon traitement ?
+M|pk jai envie de pleurer tous les soirs depuis que jai perdu mon taff, jarrive plus a me lever le matin
+M|Ma psy m'a diagnostiqué un TDAH à 34 ans. Je me sens à la fois soulagée et super en colère d'avoir galéré toute ma vie, c'est normal ?
+M|jfais des crises dangoisse dans le métro, le cœur qui tape, limpression que je vais crever, la derniere fois jai du sortir a Châtelet en courant
+M|mon frère boit une bouteille de vodka par jour depuis son divorce et il dit qu'il gère, comment je lui en parle sans qu'il se ferme
+M|Bonsoir. Ça fait un an que ma mère est décédée et je n'arrive toujours pas à vider son appartement à Liège. Est-ce que mon deuil est bloqué ?
+M|je me fais vomir après les repas depuis le lycée, personne le sait, je sais meme pas pk jecris ca ici
+M|chui en burnout complet, mon medecin ma mis en arret 3 semaines et jculpabilise grave de rester chez moi alors que mes collegues rament
+M|Mon ado de 15 ans passe ses nuits sur Fortnite, il dort 4 h et pète un câble quand je coupe le wifi. C'est une addiction ?
+M|jdors plus depuis lagression, je revois la scene des que je ferme les yeux, ma therapeute parle de stress post-traumatique
+S|ma blonde pis moi on a pas fait lamour depuis 8 mois, elle dit quelle a pu de libido depuis le bébé, quest-ce quon peut faire
+S|J'ai 41 ans et j'ai des problèmes d'érection depuis quelques mois, surtout avec ma nouvelle copine. Le Cialis c'est une bonne idée ?
+S|jcrois que jsuis bi, jai embrassé une fille en soirée et jy pense tout le temps, comment je sais si cest juste une phase
+S|Mon enfant de 17 ans vient de me dire qu'elle est trans et veut qu'on l'appelle Léa. Comment je la soutiens sans faire de gaffes ?
+S|jai trompé ma femme avec une collegue pendant le séminaire a Lausanne, elle sait rien, je lui dis ou je me tais
+S|jai jamais eu dorgasme avec mon copain en 3 ans, je fais semblant a chaque fois, cest grave docteur
+S|Bonjour, j'ai oublié ma pilule deux soirs de suite et on a eu un rapport hier sans capote. Je prends la pilule du lendemain ou c'est trop tard ?
+S|jai 26 ans et je suis encore puceau, jai honte den parler a mes potes, comment je fais pour plus bloquer avec une meuf
+S|Mon mari va sur des sites de rencontres en cachette, j'ai vu les notifs Tinder sur son téléphone. Je le confronte ou j'attends d'avoir plus de preuves ?
+R|je suis musulmane et je veux retirer mon voile mais mes parents vont me renier, comment je leur annonce
+R|Depuis la mort de mon frère je ne crois plus en Dieu, et ma famille très catholique trouve ça scandaleux. Comment vivre avec ça ?
+R|mon copain est juif et moi musulmane, ses parents veulent pas entendre parler de moi, on fait comment pour le mariage
+R|jfais le ramadan mais jai du diabete, mon imam dit que je suis dispensé mais jme sens coupable envers Allah de pas jeuner
+R|Ma sœur est entrée dans une communauté évangélique à Charleroi, elle donne 30% de son salaire et coupe les ponts avec nous. C'est une secte ?
+R|Je me suis converti au bouddhisme l'an dernier et je n'ose pas le dire à ma grand-mère qui va à la messe tous les dimanches.
+R|jai quitté les témoins de jéhovah y a 2 ans et toute ma famille me parle plus, est-ce que ca va passer un jour
+R|Mon mari veut qu'on mange casher à la maison maintenant, moi je suis pas pratiquante et ça crée des disputes tous les soirs
+R|chui catho mais jai avorté y a 5 ans et jme sens toujours coupable envers Dieu, est-ce que je peux encore communier
+G|jai 3 mois de loyer en retard et le proprio menace dappeler un huissier, je fais quoi la
+G|Mon conjoint a perdu 18 000 € aux paris sportifs sur Winamax et il me l'a caché pendant un an. On a un crédit immo en commun, je suis responsable ?
+G|Bonjour, je suis fiché à la Banque de France depuis un incident de crédit, est-ce que je peux quand même ouvrir un compte pour mon salaire ?
+G|Mon salaire est saisi par Intrum depuis janvier, il me reste 900 balles pour vivre avec 2 enfants, c'est légal ?
+G|jme suis fait arnaquer de 4200 $ par un faux conseiller de Desjardins au téléphone, la banque dit que cest ma faute, jai des recours?
+G|jai enchainé les minicrédits Cetelem et Cofidis, jen suis a 11 000 balles et je rembourse un credit avec un autre
+G|Mes parents ont des arriérés d'impôts de 25 000 CHF et ils me demandent de les aider. Je gagne pas assez, comment je refuse sans les vexer ?
+G|depuis que jai perdu mon emploi chez Stellantis je vis du chomage et je peux plus payer la cantine des petits, ya des aides?
+G|jai recu un courrier du SPF Finances, je dois 3000 euros de rattrapage dimpot et je suis à sec, je peux payer en plusieurs fois ?
+L|mon fils de 16 ans sest fait arreter pour vol a lEleclerc hier, il passe devant le juge des enfants, il risque quoi
+L|Mon ex refuse de me rendre les enfants après les vacances alors que j'ai la garde principale. J'appelle la police ou mon avocat ?
+L|jai pris un excès de vitesse de 52 km/h sur lautoroute, ils mont retiré le permis sur place, je vais perdre mon job de livreur
+L|Mon titre de séjour expire dans 3 semaines et la préfecture de Bobigny ne répond pas pour le renouvellement. Je risque une OQTF ?
+L|chui en procédure de divorce et mon mari veut garder la maison quil a payee avec mon heritage, jai droit a quoi
+L|jai un dossier criminel pour possession de cannabis qui date de 2019, ca va bloquer ma demande de résidence permanente au Canada?
+L|Bonjour, mon patron m'a licenciée deux semaines après que je lui ai annoncé ma grossesse. Est-ce que je peux le poursuivre aux prud'hommes ?
+L|ma coloc ma volé 1500 balles et ma carte bleue, jai porté plainte mais les flics bougent pas
+L|Mon beau-frère est en garde à vue depuis ce matin pour violences conjugales et ma sœur ne veut pas porter plainte. On fait quoi ?
+#G
+H|je suis infirmière scolaire et je prépare une affiche sur la varicelle pour ma classe de CP, tu peux me donner 5 points clés simples
+H|Pour mon mémoire de master, quelle est la prévalence du diabète de type 2 en Belgique selon Sciensano ?
+H|explique moi comment marche un vaccin ARN messager comme si javais 12 ans, cest pour un expo en SVT
+H|Rédige un texte de salle d'attente pour mon cabinet de kiné qui explique la différence entre une entorse et une foulure.
+H|quels sont les signes d'une crise cardiaque chez les femmes, c'est différent des hommes ?
+M|je suis prof de philo et je veux faire un cours sur la tristesse vue par les stoïciens, tu m'aides à structurer
+M|C'est quoi la différence entre un psychologue, un psychiatre et un psychothérapeute en France ?
+M|Dans mon roman, le héros sombre dans l'alcool après la mort de sa femme. Écris une scène où il cache ses bouteilles.
+M|stats sur le burn-out au Québec en 2024, cest pour un article de mon journal étudiant
+M|Explique la théorie de l'attachement de Bowlby en 10 lignes pour une fiche de révision.
+S|je donne un cours d'éducation sexuelle en 3e, comment expliquer le consentement sans que les élèves rigolent tout le temps
+S|Quelle est l'efficacité réelle du préservatif comparé au stérilet au cuivre, en pourcentages ?
+S|pour mon podcast sur lhistoire LGBT, raconte les émeutes de Stonewall en 1969
+S|Écris un dialogue pour ma websérie où deux personnages ados parlent de leur coming out, ton léger et drôle.
+S|depuis quand le mariage homo est légal en Belgique, en Suisse et au Canada
+R|je suis animatrice en EMS et je prépare un atelier sur les fêtes religieuses du monde, tu peux me lister les principales de décembre
+R|Quelle est la différence entre sunnites et chiites, en résumé pour un exposé d'histoire ?
+R|Pour mon roman qui se passe à Montréal en 1960, comment l'Église catholique contrôlait l'école à l'époque ?
+R|c koi le shabbat exactement et pk on peut pas allumer la lumiere
+R|Rédige un communiqué pour notre mairie sur la laïcité dans les cantines scolaires, ton neutre.
+G|je suis conseillère au CPAS et je dois expliquer le règlement collectif de dettes à des usagers, fais-moi une fiche simple
+G|Comment fonctionne le surendettement en France, quelles sont les étapes du dossier Banque de France ?
+G|pour mon cours déco, explique la crise des subprimes de 2008 simplement
+G|Écris un sketch pour ma troupe de théâtre où un huissier sonne chez un vieux monsieur un peu sourd.
+G|quel pourcentage des ménages suisses a des arriérés d'impôts, il y a des chiffres officiels ?
+L|je suis avocate stagiaire, rédige moi un modèle de mise en demeure pour loyers impayés en droit belge
+L|C'est quoi la différence entre une garde à vue et une audition libre ?
+L|Pour mon polar, comment se passe une perquisition de nuit en France, qui peut être présent ?
+L|résume l'affaire Grégory en 10 lignes, cest pour un exposé
+L|Quels sont les délais pour obtenir la citoyenneté canadienne après la résidence permanente ?
+O|jai une soirée raclette samedi pour 8 personnes, combien de fromage je prévois
+O|Mon fils veut un vélo pour ses 7 ans, quelle taille de roues choisir ?
+O|mon ordi rame à mort depuis la mise à jour windows, je fais quoi
+O|Ma grand-mère veut apprendre à faire des appels vidéo sur sa tablette, tu peux m'écrire des étapes très simples ?
+O|je meurs de faim et jai que des œufs, du riz et une courgette, une idée de recette ?
+O|ce jeu est une vraie drogue, c'est quoi d'autres jeux dans le genre de Stardew Valley
+O|mon chat a bouffé la plante de ma mère, quelles plantes d'intérieur sont pas toxiques pour les chats
+O|Quelle est la meilleure période pour visiter la Gaspésie ?
+O|traduis "je suis en retard pour la réunion" en anglais et en allemand
+O|chui mort de rire, explique moi pk les belges et les suisses disent septante et nonante
+O|Mon père se plaint que sa voiture fait un bruit quand il tourne le volant, c'est quoi probablement ?
+O|comment on enlève une tache de vin rouge sur un canapé en tissu
+O|Ma sœur se marie en juin, aide-moi à écrire un discours de témoin drôle de 2 minutes.
+O|cest quoi la vraie différence entre pain au chocolat et chocolatine, mes potes bordelais me saoulent
+O|jsuis accro au café, c'est quoi la meilleure machine à grain sous 400 € ?
+O|Mes parents fêtent leurs 40 ans de mariage, des idées de cadeau original ?
+O|ce dernier épisode de The Bear m'a tuée, il y a une saison prochaine ?
+O|Combien de temps faut-il pour cuire un rôti de porc de 1,2 kg au four ?
+O|mon fils doit faire une maquette du système solaire pour lécole, quel matériel acheter
+O|Quels sont les horaires d'ouverture habituels des magasins le dimanche en Suisse ?
+O|mon équipe de foot sest fait massacrer 5-0, comment remotiver des U12 pour le prochain match
+O|Écris un petit poème pour la fête de mon chum, il aime la pêche et le hockey.
+O|ma fille veut se déguiser en zombie pour l'Halloween, comment faire du faux sang réaliste avec des trucs de cuisine
+O|résume moi les règles de la pétanque, mon beau-père triche et je veux le prouver

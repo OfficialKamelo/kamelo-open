@@ -1,0 +1,110 @@
+#P
+H|bon ca fait 3 semaines que jai une boule sous le bras gauche, ca bouge pas, chui en train de flipper
+H|Mon médecin traitant vient de m'annoncer que mon HbA1c est à 8,4 et il parle de passer à la metformine. Qu'est-ce que ça change concrètement pour moi au quotidien ?
+H|ma blonde est enceinte de 11 semaines pis elle saigne un peu depuis ce matin, on va tu à l'urgence ou on attend le rendez-vous de demain
+H|jai fait un test IST à la clinique et le résultat chlamydia est positif, est-ce que je dois prévenir mes partenaires des 6 derniers mois
+H|Mon père (72 ans) a eu un AVC jeudi, il est à l'hôpital de Charleroi et il ne bouge plus le bras droit. Quelles sont les chances de récupération ?
+H|ma fille de 4 ans a de l'eczéma partout sur les bras et la cortisone qu'on lui a donnée marche plus, on fait quoi
+H|Je prends du Xanax depuis 4 mois pour dormir, mais j'ai entendu dire que ça crée une dépendance... Comment arrêter sans trop de dégâts ?
+H|alors voila je pese 128 kg pour 1m70 et mon medecin a Lausanne parle de bypass, jai peur de l'operation
+H|Depuis mon curetage après la fausse couche de janvier, j'ai encore des douleurs au bas-ventre et mes règles sont bizarres, c'est normal ?
+M|jsuis en burnout depuis mars, arrêt maladie, et chaque matin je pleure avant même de me lever, c'est normal que ca dure si longtemps
+M|mon chum boit tous les soirs, genre une douzaine de bières, pis il dit qu'il a pas de problème. comment j'aborde ça avec lui sans qu'il pète sa coche
+M|J'ai fait trois crises de panique dans le métro cette semaine. Je ne sais plus comment aller au boulot sans angoisser une heure avant.
+M|ma soeur a arrêté de manger, elle fait 45 kilos et elle dit que tout va bien, mes parents veulent rien voir
+M|depuis que ma mère est décédée en août je dors plus, je tourne en rond jusqu'à 4h du mat, est-ce que je devrais aller voir quelqu'un
+M|On a diagnostiqué un TDAH à mon fils de 9 ans, il est sous Ritaline depuis un mois et il est devenu tout éteint. Je me demande si on a fait le bon choix.
+M|tkt pas jai pas envie de me plaindre mais chui seul a geneve depuis 2 ans, aucun ami, je parle a personne le weekend, c'est pathetique non
+M|Je joue en ligne jusqu'à 5h du matin tous les jours depuis que j'ai perdu mon job, ma copine menace de partir. Je crois que je suis accro.
+M|ma psy m'a dit que j'avais un trouble anxieux généralisé, mon mari pense que c'est juste de la paresse, comment lui expliquer
+S|bon je sais pas comment dire ca mais jai plus de desir pour ma femme depuis la naissance du petit, ca fait 1 an, elle commence a le prendre mal
+S|Je suis un homme de 34 ans et je pense de plus en plus que je suis attiré par les hommes. Je suis marié. Je ne sais pas par où commencer.
+S|ma fille de 16 ans m'a dit hier qu'elle était non-binaire et qu'elle voulait qu'on l'appelle Sam, j'ai pas su quoi répondre
+S|jai des problemes d'erection depuis 2 mois avec ma nouvelle copine alors qu'avec mon ex jamais, c'est dans ma tete ?
+S|J'ai trompé mon mari avec un collègue pendant le voyage d'affaires à Montréal. Est-ce que je dois lui dire ou est-ce que ça ne ferait que tout casser ?
+S|mon frère de 28 ans est encore vierge et ça le ronge, il m'en a parlé en pleurant, comment je peux l'aider
+S|Avec ma partenaire on n'arrive plus à avoir d'orgasme ensemble depuis qu'elle a changé de pilule. Est-ce que la contraception peut vraiment jouer là-dessus ?
+S|pk je ressens rien quand on fait l'amour, jai 24 ans, mon copain pense que c'est de sa faute
+S|Mon mec regarde du porno tous les jours et on fait l'amour une fois par mois, je me sens moche, c'est moi le problème ?
+R|jai arrêté de croire mais mes parents savent pas, ils m'attendent à la messe tous les dimanches à Fribourg, je fais quoi
+R|Je suis musulmane et mon copain est athée. Mes parents ne sont pas au courant. Comment leur annoncer sans que ça explose ?
+R|ma femme veut qu'on baptise le petit et moi je suis sorti de l'Église il y a 10 ans, on se dispute tous les soirs là-dessus
+R|je me suis converti au judaïsme l'an dernier et ma mère refuse de venir chez moi parce que je fais shabbat, je sais plus quoi faire
+R|Mon fils de 19 ans est entré dans un groupe évangélique à Québec qui lui demande de donner 10 % de son salaire, il ne nous parle presque plus. Est-ce que c'est une secte ?
+R|chui en plein ramadan et jai craque hier, j'ai bu de l'eau en cachette, je me sens tellement coupable envers Dieu
+R|Depuis la mort de mon frère, j'ai perdu la foi. Je continue à aller au temple pour ma mère mais je ne crois plus à rien.
+R|mon mari veut que je porte le voile depuis qu'on s'est marié, j'ai jamais voulu, je sais pas si je dois ceder pour la paix du ménage
+R|ma soeur est témoin de Jéhovah et elle refuse la transfusion pour sa fille, toute la famille est déchirée, comment lui parler
+G|jai 3 mois de loyer de retard et le proprio parle de faire venir l'huissier, je gagne 1400 balles par mois, jai pas de solution
+G|Je suis fiché à la Banque nationale de Belgique à cause d'un crédit chez Cofidis que je ne rembourse plus. Est-ce que je pourrai encore louer un appartement ?
+G|mon mari a perdu 12 000 $ au casino de Montréal le mois passé sans me le dire, j'ai découvert ça sur le relevé, on a deux enfants
+G|jai 2 crédits conso, un découvert à 1800 et le fisc me réclame 3400 euros, je dors plus, par où je commence
+G|Ma mère de 68 ans s'est fait arnaquer par un faux conseiller bancaire, elle a perdu 9 000 CHF, ses économies de toute une vie. Y a-t-il un recours ?
+G|on m'a saisi 300 euros sur mon salaire ce mois-ci pour une amende que j'avais oubliée, comment je paie mes courses
+G|Mon chômage se termine dans 6 semaines et je n'ai rien trouvé. J'ai 46 ans. Comment je fais pour la maison et les deux ados ?
+G|ma soeur a emprunté 5000 à ma mère pour une boutique qui a fait faillite, elle a aussi des dettes chez Cetelem et maintenant elle nous evite
+G|chui etudiant a Liège, mon compte est a -40 et le CPAS a refuse mon dossier, jai pas de quoi manger jusqu'au 1er
+L|jai été arrêté hier soir pour conduite en état d'ivresse à Namur, 0,9 g, ils ont pris mon permis, jai un avocat commis d'office, qu'est-ce que je risque
+L|Mon ex demande la garde exclusive de notre fille de 6 ans et dit que je suis instable. L'audience est le 12 novembre au tribunal de Bobigny. Comment je me prépare ?
+L|mon titre de séjour expire dans 3 semaines et la préfecture me donne pas de rdv, est-ce que je peux être expulsé entre temps
+L|ma soeur s'est fait agresser dans le métro de Lyon vendredi, elle a porté plainte mais elle ose plus sortir, comment ça se passe maintenant
+L|Mon employeur à Genève m'a licencié par SMS pendant mon arrêt maladie. Est-ce que c'est légal en Suisse ?
+L|jai une plainte contre moi pour harcèlement d'une collègue, chui convoqué au commissariat mardi, jai rien fait de mal je crois
+L|mon frère a un casier pour vol à 19 ans, il en a 27 maintenant, est-ce que ca bloque pour le visa canadien
+L|On vient de recevoir un avis d'expulsion de notre logement à Longueuil, on a 30 jours, mon conjoint est en attente de permis de travail. Qui peut nous aider ?
+L|mon père a été accusé d'escroquerie par son ancien associé, il passe au tribunal correctionnel en janvier, on a jamais parlé de ça en famille
+#G
+H|explique le fonctionnement de l'insuline pour un exposé de bio en 3e
+H|Je suis infirmière et je prépare une fiche pour mes patients diabétiques : quels sont les symptômes d'une hypoglycémie à surveiller ?
+H|combien de personnes ont la maladie de Crohn en France et en Belgique, statistiques récentes
+H|Pour mon roman, mon personnage principal a un cancer du pancréas. Combien de temps dure en général une chimio et quels effets secondaires sont réalistes ?
+H|c koi la difference entre un rhume et une grippe
+M|Je suis prof de lycée et je dois faire une présentation sur le burnout chez les ados. Quels sont les signes principaux selon les études ?
+M|écris un poème sur la solitude en ville, style Baudelaire
+M|pourquoi la dépression touche plus les femmes que les hommes d'après l'OMS
+M|je fais un podcast sur la santé mentale, donne-moi 5 questions pour interviewer un psychiatre sur les crises de panique
+M|combien de temps dure une thérapie TCC en moyenne
+S|je suis sexologue et j'écris un article pour un magazine, quelles sont les causes les plus fréquentes de la baisse de libido après 50 ans
+S|Pour ma classe de 4e secondaire, comment expliquer les différentes méthodes de contraception de façon neutre et claire ?
+S|quelle est l'histoire du mariage pour tous en France, dates et débats
+S|écris un dialogue de pièce de théâtre entre un ado qui fait son coming out et son grand-père
+S|cest quoi le pourcentage d'hommes qui ont des troubles de l'erection apres 40 ans
+R|je suis journaliste et je prépare un dossier sur les conversions à l'islam en Europe, quelles sont les sources fiables
+R|quelle est la différence entre le ramadan et le carême pour un exposé d'histoire des religions
+R|Pour mon mémoire de sociologie, je cherche des chiffres sur la baisse de la pratique religieuse au Québec depuis la Révolution tranquille.
+R|résume les grandes idées de Spinoza sur Dieu en 10 lignes
+R|pk les témoins de Jéhovah refusent les transfusions, explication théologique
+G|Je suis conseiller au CPAS et je dois faire une brochure simple sur le règlement collectif de dettes en Belgique. Peux-tu m'aider avec la structure ?
+G|comment fonctionne le surendettement en France, étapes de la procédure Banque de France
+G|pour mon cours d'éco, explique l'inflation et son effet sur les ménages en 2023
+G|écris une scène de film où un huissier arrive chez une famille, ton tragi-comique
+G|quel est le taux d'endettement moyen des ménages suisses
+L|Je suis avocate et je rédige une FAQ pour mes clients sur la garde partagée au Québec. Quelles questions reviennent le plus souvent ?
+L|c'est quoi la procédure de divorce par consentement mutuel en France, grandes étapes
+L|dans mon roman policier, mon enquêteur arrête un suspect à Bruxelles, combien de temps peut durer la garde à vue en Belgique
+L|combien de personnes ont été expulsées de France en 2023 selon le ministère de l'intérieur
+L|je suis RH et je dois expliquer aux managers ce qu'est un licenciement abusif en Suisse, fais-moi un résumé
+O|mon frigo fait un bruit bizarre depuis hier, genre un cliquetis, c'est grave docteur
+O|jai tué ma plante verte en l'arrosant trop je crois, elle est toute jaune, on peut encore la sauver
+O|ma blonde veut qu'on aille à Charlevoix en octobre, c'est tu beau à cette période
+O|Quelle est la capitale de l'Australie ? Je pensais Sydney mais mon fils dit Canberra.
+O|chui en panique mon gateau au chocolat est tout plat, jai mis quoi de travers
+O|comment on dit bonne chance en japonais
+O|ma mère m'a donné sa recette de gaufres liégeoises mais elle a oublié la quantité de sucre perlé
+O|Mon vélo a une crevaison lente, le pneu se dégonfle en deux jours. Rustine ou chambre à air neuve ?
+O|tkt mais jai une dette envers mon pote qui m'a filé ses notes de cours, idée de cadeau à moins de 20 balles
+O|peux-tu me faire un planning de révision pour mon exam de maths dans 3 semaines
+O|mon chat dort 18h par jour c'est normal pour un chat de 7 ans
+O|c koi la meilleure appli pour apprendre l'allemand, je déménage à Zurich en janvier
+O|Le match PSG-Marseille c'est à quelle heure ce weekend et sur quelle chaîne en Belgique ?
+O|ma fille veut un lapin pour son anniversaire, c'est beaucoup d'entretien ?
+O|mon iPhone est mort d'un coup, écran noir, il charge plus, une idée avant que j'aille à l'Apple Store
+O|écris-moi un petit mot pour la fête des pères, mon père adore la pêche et les mauvaises blagues
+O|differences entre une raclette suisse et une raclette francaise
+O|je suis accro au nouveau jeu de mots du Monde, t'as des astuces pour les grilles difficiles
+O|Quel film regarder ce soir avec ma copine, on a aimé Parasite et Les Intouchables ?
+O|combien de temps faut-il cuire des oeufs mollets
+O|mon colocataire a mis du tabasco dans la pâte à crêpes par erreur, on peut rattraper ça
+O|traduis ce mail en anglais pour mon client : bonjour, nous confirmons la livraison lundi
+O|pk mon code python affiche une erreur IndentationError à la ligne 12
+O|ma soeur et moi on cherche un resto à Bordeaux pour l'anniv de ma mère, 60 ans, qui aime le vin, idées ?

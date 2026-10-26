@@ -1,0 +1,24 @@
+# Overgenomen uit tests/topics-corpus.test.js en tests/topics-alledaags.test.js (19 okt), als leerzinnen voor de gewogen lijst.
+#P
+H|ich hab seit tagen kopfschmerzen
+H|meine mutter hat einen knoten in der brust
+H|mein sohn hat 39 fieber und isst nichts
+M|ich weine nur noch und weiß nicht warum
+M|ich hab ständig panikattacken
+M|meine freundin ist total niedergeschlagen
+S|ich glaub ich bin schwul
+S|wie sag ich meinen eltern dass ich bi bin
+S|mein sohn hatte sein coming out
+R|ich will aus der kirche austreten
+R|meine eltern sind streng muslimisch
+R|ich bin zum islam konvertiert
+G|ich kann meine miete nicht zahlen
+G|mein konto ist im minus
+G|ich hab eine mahnung vom inkasso bekommen
+L|ich wurde gestern festgenommen
+L|ich hab nächste woche einen gerichtstermin
+L|mein bruder sitzt im knast
+#G
+O|was sind die symptome von diabetes
+O|mein code ist ein albtraum
+O|ich will meine rechnungen online bezahlen

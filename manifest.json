@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "1.7.2",
+  "version": "1.8.0",
   "description": "__MSG_extDescription__",
   "homepage_url": "https://kamelo.eu",
   "icons": {
@@ -144,9 +144,15 @@
         "src/sites.js",
         "src/config.js",
         "src/topic-words.js",
+        "src/topic-weights.js",
+        "src/topic-model.js",
         "src/topics.js",
         "src/topic-ai.js",
+        "src/identifiers.js",
         "src/content.js"
+      ],
+      "css": [
+        "src/gegevens.css"
       ],
       "run_at": "document_start",
       "all_frames": true,
@@ -157,5 +163,9 @@
     "service_worker": "src/background.js"
   },
   "default_locale": "en",
-  "short_name": "Melo"
+  "short_name": "Melo",
+  "optional_permissions": [
+    "nativeMessaging",
+    "contextMenus"
+  ]
 }

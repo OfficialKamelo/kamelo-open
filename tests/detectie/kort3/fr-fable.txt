@@ -1,0 +1,110 @@
+#P
+H|jai une boule sous le bras depuis mardi
+H|ma blonde a fait une fausse couche hier
+H|le médecin me met sous Metformine, chui pas rassuré
+H|papa a oublié mon prénom deux fois ce weekend
+H|au CHUV ils ont trouvé un nodule sur ma thyroïde
+H|je pisse du sang depuis ce matin
+H|mon gamin de 4 ans fait des crises d'épilepsie
+H|chlamydia positif, comment le dire a mon chum
+H|jai arrêté ma chimio sans le dire à ma soeur
+M|je capote, troisième crise de panique cette semaine
+M|mon frère rejoue au poker en ligne la nuit
+M|jsuis en burnout mais mon chef veut pas le croire
+M|ma fille vomit après chaque repas, elle nie
+M|depuis l'enterrement de mon chien je pleure tout le temps
+M|pk jarrive plus à dormir depuis le licenciement
+M|ma psy veut m'hospitaliser, jhésite
+M|mon coloc boit une bouteille de vodka par soir
+M|le TDAH de mon mari ruine notre couple
+S|je bande plus avec ma femme, seulement seul
+S|jai embrassé ma collègue à la fête de Noël
+S|mon ado m'a dit qu'il est trans ce matin
+S|ma blonde veut un couple ouvert, moi non
+S|jsuis encore vierge à 31 ans, c grave
+S|mon mari regarde des mecs sur Grindr
+S|jai jamais eu d'orgasme avec lui en 6 ans
+S|stérilet ou pilule, ma mère sait rien
+S|jai couché avec mon ex pendant que Léa était à Genève
+R|jai arrêté le ramadan en cachette de mes parents
+R|mon fils veut se faire baptiser, on est athées
+R|jme sens coupable devant Dieu depuis l'avortement
+R|ma mère refuse mon copain parce qu'il est juif
+R|je doute de tout depuis la mort du pasteur
+R|mon frère est entré chez les Témoins de Jéhovah
+R|jveux enlever mon voile mais mon père
+R|jveux quitter la Scientologie mais ils ont mes papiers
+R|ma belle-famille veut que je me convertisse avant le mariage
+G|jai 3 mois de loyer de retard, le proprio menace
+G|l'huissier passe demain et jai plus rien
+G|je dois 14 000 chez Cofidis et mon mari sait pas
+G|jai perdu la paie du mois au casino de Montreux
+G|Hydro va couper l'électricité mardi, jai pas 400 piasses
+G|saisie sur salaire, comment je nourris les enfants
+G|le CPAS me refuse, jai rien pour manger
+G|ma mère a tout donné à un faux amoureux en ligne
+G|fiché Banque de France, jpeux encore louer
+L|garde à vue hier soir, jsuis convoqué lundi
+L|mon ex veut la garde exclusive de Nathan
+L|la DPJ est venue chez nous ce matin
+L|mon permis B est expiré, ils vont me renvoyer
+L|mon chum a frappé un gars au bar, police
+L|jai volé un parfum chez Sephora, ils ont ma carte
+L|mon patron me vire sans préavis, c légal
+L|retrait de permis 6 mois, jbosse comme livreur
+L|mon frère est en prison à Lantin depuis mardi
+#G
+H|explique le diabète de type 2 à des CM2
+H|combien de temps dure une grossesse chez la vache
+H|résume les symptômes du zona pour un dépliant
+H|tableau des vaccins obligatoires en Suisse
+H|pk les Québécois ont plus de rhumes en hiver
+M|statistiques burnout chez les infirmières belges
+M|écris un poème sur la mélancolie d'automne
+M|cest quoi la différence entre psychologue et psychiatre
+M|idée de scénario, un héros qui a le TDAH
+M|exposé sur Freud en 10 lignes
+S|histoire du mariage pour tous en France
+S|cours sur la contraception pour des ados de 15 ans
+S|synonymes de libido pour un article
+S|pk les manchots sont parfois homosexuels
+S|combien de pays interdisent encore l'homosexualité
+R|différence entre sunnites et chiites, version courte
+R|dates du ramadan 2027 au Maroc
+R|résume la Réforme protestante pour mon cours
+R|combien de catholiques pratiquants au Québec
+R|écris une prière fictive pour mon roman fantasy
+G|cest quoi le taux directeur de la BCE
+G|modèle de lettre de relance pour un client
+G|explique la faillite à des élèves de 4e
+G|combien de Belges sont en médiation de dettes
+G|taux moyen d'un crédit auto au Québec
+L|cest quoi la différence entre prison et pénitencier
+L|rédige une clause de confidentialité pour mon entreprise
+L|nombre de divorces en Suisse en 2025
+L|résume le procès de Dreyfus en 5 points
+L|peut-on filmer la police en Belgique, pour un article
+O|je capote, mon fils a marqué un but
+O|jsuis nerveux pour mon entretien demain
+O|loyer payé, enfin tranquille ce mois-ci
+O|ma batterie de natel est morte, idées
+O|rdv à la banque jeudi, quoi apporter
+O|je crois que mon code est juste, vérifie
+O|jai laissé le four allumé, c grave
+O|jsuis mort 20 fois sur ce niveau mdr
+O|dépression sur la Bretagne ce weekend, parapluie
+O|recette de gaufres de Liège sans lactose
+O|mon char démarre pas quand il fait froid
+O|ma plante a besoin d'une thérapie, feuilles jaunes
+O|jsuis accro aux chips paprika, recette maison
+O|jai hâte à Noël avec ma famille
+O|essai gratuit Netflix, comment annuler avant
+O|le juge de Top Chef est trop sévère
+O|mon PC a chopé un virus, je fais quoi
+O|où magasiner un manteau d'hiver pas cher à Montréal
+O|ma fille a eu 18 au bac blanc
+O|comment poutzer une poêle en fonte
+O|on a la fièvre du hockey à la maison
+O|c'est quoi la meilleure friterie de Namur une fois
+O|jai tué le boss final, enfin
+O|mon gâteau est un péché, jen veux encore

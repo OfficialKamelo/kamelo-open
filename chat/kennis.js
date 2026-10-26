@@ -8,6 +8,8 @@
 // Alleen feiten die vaststaan. Geen doseringen of medisch advies: daarvoor verwijst Melo naar de huisarts of Thuisarts.nl.
 (() => {
   'use strict';
+  // Een advieskaartje: het feit is de titel met de tips achter elkaar (voor de toetsen en de tweede poging in de extensie).
+  const advies = c => ({ ...c, fact: `${c.titel}: ${c.tips.join('; ')}.${c.note ? ' ' + c.note : ''}` });
   const CARDS = [
     {
       id: 'pythagoras',
@@ -162,6 +164,187 @@
       },
       bron: 'https://developer.chrome.com/docs/ai/prompt-api',
     },
+    // Advies (22 okt 2026, Lucas: "dit moet echt beter", de inhoud van Melo's antwoorden): korte, nagekeken tips per onderwerp,
+    // met de getallen uit de bron, zodat de kleine AI ze niet verzint ("ga elke avond om 22.00 naar bed" bij nachtdiensten).
+    // Alleen leefstijladvies uit Thuisarts.nl (NHG), Rijksoverheid/Nibud en universitaire gidsen; geen medicijnen of doses.
+    // tips: de punten, het belangrijkste eerst (de AI krijgt ze als genummerde lijst: meting 22 okt, als lopende tekst sloeg
+    // hij het dutje van 20 minuten over). note: wat er niet in mag. vraag: de gerichte slotvraag zoals bij June; vergeet de AI
+    // die, dan zet Kamelo hem eronder (finish).
+    advies({
+      id: 'nachtdienst',
+      keys: /nachtdienst|nachtwerk|ploegendienst|wisselende diensten|onregelmatige diensten|night ?shifts?|shift work|nachtschicht|schichtarbeit|schichtdienst|travail de nuit|horaires de nuit|turnos? de noche|trabajo nocturno/i,
+      titel: 'Night shifts (Thuisarts.nl)',
+      tips: [
+        'during the shift, a nap (Dutch: dutje, German: Nickerchen) of 20 minutes or less, or a short one before it',
+        'after the shift, sleep about 8 hours in a dark, quiet bedroom: blackout curtains or an eye mask',
+        'no screens (phone, laptop) in the hour before you sleep',
+        'no caffeine, alcohol or energy drinks in the hours before you sleep; at night only a light meal',
+        'a healthy schedule: shifts of 8 hours or less, 2 or 3 nights in a row, rotating forward (day, evening, night)',
+        'with many complaints, talk to your employer or the company doctor (bedrijfsarts) about fewer night shifts',
+      ],
+      note: 'A fixed evening bedtime does not fit night shifts, and melatonin does NOT help.',
+      vraag: {
+        nl: 'Hoeveel nachten draai je meestal achter elkaar, en hoe ziet je slaapkamer eruit als je overdag slaapt? Dan maak ik er een slaapschema voor je van.',
+        en: 'How many nights in a row do you usually work, and what is your bedroom like when you sleep during the day? Then I can make a sleep schedule for you.',
+        de: 'Wie viele Nächte arbeitest du meistens hintereinander, und wie ist dein Schlafzimmer, wenn du tagsüber schläfst? Dann mache ich dir einen Schlafplan.',
+        fr: 'Combien de nuits d’affilée travailles-tu en général, et comment est ta chambre quand tu dors le jour ? Je peux alors te faire un planning de sommeil.',
+        es: '¿Cuántas noches seguidas sueles trabajar y cómo es tu habitación cuando duermes de día? Así te hago un horario de sueño.',
+      },
+      wrong: [/(naar bed|in bed|to bed|go to sleep|ins bett|schlafen gehen|au lit|te coucher|a la cama|acu[ée]state)[^.!?\n]{0,40}(22[.:]00|10 ?pm|tien uur|zehn uhr|22 ?h)/i, /(22[.:]00|10 ?pm|tien uur|zehn uhr|22 ?h)[^.!?\n]{0,30}(naar bed|in bed|to bed|ins bett|au lit|a la cama)/i, /melatonin\w*[^.!?\n]{0,50}\b(helpt|kan helpen|helps?|can help|hilft|aide|ayuda|werkt|works)\b/i],
+      say: {
+        nl: 'Melatonine helpt niet bij nachtwerk, en een vaste bedtijd in de avond past niet bij nachtdiensten: slaap na je dienst in een donkere kamer en neem tijdens de dienst eventueel een dutje van hooguit 20 minuten.',
+        en: 'Melatonin doesn’t help with night work, and a fixed evening bedtime doesn’t fit night shifts: sleep in a dark room after your shift and, if you can, take a nap of 20 minutes or less during the shift.',
+        de: 'Melatonin hilft bei Nachtarbeit nicht, und eine feste Schlafenszeit am Abend passt nicht zu Nachtschichten: Schlaf nach der Schicht in einem dunklen Zimmer und mach während der Schicht wenn möglich ein Nickerchen von höchstens 20 Minuten.',
+        fr: 'La mélatonine n’aide pas pour le travail de nuit, et une heure de coucher fixe le soir ne convient pas aux nuits : dors dans une chambre sombre après ton service et, si possible, fais une sieste de 20 minutes maximum pendant la nuit.',
+        es: 'La melatonina no ayuda con el trabajo nocturno, y una hora fija para acostarse por la noche no encaja con los turnos de noche: duerme en una habitación oscura después del turno y, si puedes, haz una siesta de 20 minutos como máximo durante el turno.',
+      },
+      bron: 'https://www.thuisarts.nl/nachtdiensten-en-gezondheid/ik-werk-vaak-s-nachts-hoe-blijf-ik-gezond',
+    }),
+    advies({
+      id: 'slaap',
+      keys: /slecht slaap|slaap (al )?(weken |maanden )?slecht|slapeloos|niet (in )?slapen|kan niet slapen|wakker lig|doorslapen|inslapen|slaapprobl|insomnia|can'?t sleep|sleep(ing)? (badly|poorly)|trouble sleeping|sleep problem|schlafe? schlecht|schlafprobl|einschlafen|durchschlafen|dors mal|insomnie|troubles du sommeil|duermo mal|insomnio|no puedo dormir/i,
+      titel: 'Sleeping badly (Thuisarts.nl)',
+      tips: [
+        'get up at the same time every day, also at the weekend',
+        'no caffeine (coffee, tea, cola, energy drinks) in the 6 hours before sleeping, and no heavy meal in the 2 hours before',
+        'no screens in the hour before bed, and the phone out of the bedroom',
+        'go outside about an hour a day, preferably in the morning, and move half an hour a day, not right before bed',
+        'lying awake: get up and do something calm elsewhere; nap at most half an hour, before 3 pm',
+        'see the GP (huisarts) if it lasts for weeks, or with heavy daytime sleepiness and snoring',
+      ],
+      note: 'Alcohol worsens sleep; melatonin, valerian and sleeping pills are not recommended.',
+      vraag: {
+        nl: 'Is het vooral het inslapen dat niet lukt, of word je ’s nachts wakker en lig je dan te malen? Dan kijk ik wat bij jou het beste helpt.',
+        en: 'Is it mostly falling asleep that’s hard, or do you wake up at night and lie there thinking? Then I can see what helps you most.',
+        de: 'Ist es vor allem das Einschlafen, oder wachst du nachts auf und grübelst? Dann schaue ich, was dir am meisten hilft.',
+        fr: 'Est-ce surtout l’endormissement qui est difficile, ou te réveilles-tu la nuit en ruminant ? Je regarde alors ce qui t’aide le plus.',
+        es: '¿Te cuesta sobre todo dormirte, o te despiertas de noche dándole vueltas a todo? Así veo qué te ayuda más.',
+      },
+      wrong: [/(melatonin\w*|valeriaan|valerian\w*|baldrian|val[ée]riane)[^.!?\n]{0,50}\b(helpt|kan helpen|helps?|can help|hilft|aide|ayuda|werkt|works)\b/i],
+      say: {
+        nl: 'Melatonine en valeriaan helpen niet om beter te slapen; vaste opstaantijden, daglicht en geen cafeïne in de 6 uur voor het slapen helpen wel.',
+        en: 'Melatonin and valerian don’t help you sleep better; fixed wake-up times, daylight and no caffeine in the 6 hours before bed do.',
+        de: 'Melatonin und Baldrian helfen nicht, besser zu schlafen; feste Aufstehzeiten, Tageslicht und kein Koffein in den 6 Stunden vor dem Schlafen helfen schon.',
+        fr: 'La mélatonine et la valériane n’aident pas à mieux dormir ; des heures de lever fixes, la lumière du jour et pas de caféine dans les 6 heures avant le coucher, oui.',
+        es: 'La melatonina y la valeriana no ayudan a dormir mejor; sí ayudan levantarse siempre a la misma hora, la luz del día y nada de cafeína en las 6 horas antes de dormir.',
+      },
+      bron: 'https://www.thuisarts.nl/slecht-slapen/ik-wil-beter-slapen-slaapadviezen',
+    }),
+    advies({
+      id: 'stress',
+      keys: /stress|overspannen|burn-?out|overwerkt|te druk|overwhelmed|stressed|gestresst|überlastet|überfordert|surmenage|stress[ée]|estresad|agobiad/i,
+      titel: 'Stress (Thuisarts.nl)',
+      tips: [
+        'move at least half an hour a day, like walking or cycling outside',
+        'talk early with someone you trust, and about work with your manager or the company doctor (bedrijfsarts)',
+        'make a list of what costs you energy, and drop or hand over some of it',
+        'write worries down and give worrying a fixed time, like twice a day half an hour',
+        'a fixed daily rhythm (getting up, meals, bedtime), enough sleep, and something relaxing every day (music, reading, breathing exercises)',
+        'most people recover from being overstrained in about 3 months; if self-help is not enough, see your GP (huisarts)',
+      ],
+      note: 'Avoid alcohol and drugs.',
+      vraag: {
+        nl: 'Wat geeft je op je werk de meeste stress: de hoeveelheid werk, een bepaalde situatie of iets anders? Dan zoeken we samen wat je als eerste kunt veranderen.',
+        en: 'What causes you the most stress at work: the amount of work, a particular situation, or something else? Then we can find what to change first.',
+        de: 'Was stresst dich bei der Arbeit am meisten: die Menge, eine bestimmte Situation oder etwas anderes? Dann suchen wir zusammen, was du zuerst ändern kannst.',
+        fr: 'Qu’est-ce qui te stresse le plus au travail : la quantité de travail, une situation précise ou autre chose ? On cherche alors ensemble ce que tu peux changer en premier.',
+        es: '¿Qué te causa más estrés en el trabajo: la cantidad de trabajo, una situación concreta u otra cosa? Así buscamos juntos qué cambiar primero.',
+      },
+      bron: 'https://www.thuisarts.nl/stress/ik-wil-beter-omgaan-met-stress',
+    }),
+    advies({
+      id: 'rouw',
+      keys: /overleden|overlijden|gestorven|rouw|begrafenis|crematie|passed away|\bdied\b|grief|grieving|funeral|verstorben|gestorben|trauer|beerdigung|d[ée]c[ée]d[ée]|deuil|enterrement|falleci|duelo|funeral/i,
+      titel: 'Grief (Thuisarts.nl)',
+      tips: [
+        'grief takes time and everyone has their own pace; sadness, anger and trouble concentrating are normal',
+        'talk with people you trust, and tell them what help you could use (like groceries or the household)',
+        'memories help: look at photos or write things down',
+        'keep fixed sleep and wake times, eat well, move every day, and keep doing things you enjoy',
+        'peer support helps, also online; in the Netherlands the Rouwzorgloket (033 461 68 86) helps you find it',
+        'see the GP (huisarts) if the grief does not get less after about 6 months, or if eating and sleeping no longer work',
+      ],
+      note: 'Avoid alcohol and sedatives.',
+      vraag: {
+        nl: 'Wil je iets vertellen over wie je mist? Of zullen we kijken hoe je de komende dagen een beetje doorkomt, met school of werk?',
+        en: 'Would you like to tell me about the person you miss? Or shall we look at how to get through the next few days, with school or work?',
+        de: 'Möchtest du mir von dem Menschen erzählen, den du vermisst? Oder schauen wir, wie du die nächsten Tage mit Schule oder Arbeit schaffst?',
+        fr: 'Veux-tu me parler de la personne qui te manque ? Ou regardons-nous comment passer les prochains jours, avec l’école ou le travail ?',
+        es: '¿Quieres contarme sobre la persona que echas de menos? ¿O vemos cómo pasar los próximos días, con los estudios o el trabajo?',
+      },
+      bron: 'https://www.thuisarts.nl/rouw/ik-rouw',
+    }),
+    advies({
+      id: 'eenzaam',
+      keys: /eenzaam|zo alleen|alleen voel|voel me alleen|geen vrienden|lonely|loneliness|feel alone|einsam|allein f[üu]hl|seul|solitude|me siento solo|soledad/i,
+      titel: 'Loneliness (Thuisarts.nl)',
+      tips: [
+        'first figure out what you miss: someone to really talk to, a group, or one close friend',
+        'join a club or group that fits your interests, like a walking group, a course, volunteering or the community centre (buurthuis)',
+        'say yes to invitations; it takes time, and you often have to try several things',
+        'tell someone you trust how you feel; in the Netherlands you can call or chat with De Luisterlijn or the MIND Hulplijn (0900 1450)',
+        'if it is very strong, lasts long or comes with low mood, ask the GP (huisarts) or the neighbourhood team (wijkteam) for help',
+      ],
+      note: 'Loneliness usually does not pass by itself; don’t expect too much of one friendship.',
+      vraag: {
+        nl: 'Wat mis je het meest als je met je vrienden bent: echt kunnen praten, of het gevoel dat je erbij hoort? Dan denk ik met je mee over een eerste stap.',
+        en: 'What do you miss most when you’re with your friends: really being able to talk, or feeling that you belong? Then I can think along about a first step.',
+        de: 'Was fehlt dir am meisten, wenn du mit Freunden zusammen bist: wirklich reden zu können oder das Gefühl dazuzugehören? Dann denke ich mit dir über einen ersten Schritt nach.',
+        fr: 'Qu’est-ce qui te manque le plus avec tes amis : pouvoir vraiment parler, ou te sentir à ta place ? Je réfléchis alors avec toi à un premier pas.',
+        es: '¿Qué echas más de menos cuando estás con tus amigos: poder hablar de verdad o sentir que perteneces? Así pensamos juntos un primer paso.',
+      },
+      bron: 'https://www.thuisarts.nl/eenzaamheid/ik-voel-me-eenzaam',
+    }),
+    advies({
+      id: 'schulden',
+      keys: /schulden|schuld van|€\s?[\d.,]+\s*(euro )?schuld|geldzorgen|betalingsachterstand|achterstand (met|bij|op)|rood sta|aanmaning|incasso|deurwaarder|\bin debt\b|\bdebts?\b|owe money|schulden|mahnung|inkasso|dettes?|endett|deudas?|endeudad/i,
+      titel: 'Debts in the Netherlands (Rijksoverheid, Nibud)',
+      tips: [
+        'free and anonymous help: Geldfit.nl or call 0800-8115',
+        'the municipality (gemeente) offers free debt help (schuldhulpverlening) that may never cost money; within 4 weeks you hear what help you get',
+        'make an overview of all income, costs and debts',
+        'contact the creditor where you are behind, say you are working on a solution, and ask for a payment plan (betalingsregeling)',
+        'telling someone you trust helps; many people feel relief after the first step',
+      ],
+      note: 'Never take a new loan to pay off debts.',
+      vraag: {
+        nl: 'Weet je bij wie je de schuld hebt, en loopt er al een aanmaning of incasso? Dan help ik je met wat je als eerste kunt doen, of met wat je tegen je ouders kunt zeggen.',
+        en: 'Do you know who you owe the money to, and have you had a reminder or debt collection letter yet? Then I can help with a first step, or with what to tell someone close to you.',
+        de: 'Weißt du, bei wem du Schulden hast, und kam schon eine Mahnung oder ein Inkasso-Brief? Dann helfe ich dir mit einem ersten Schritt.',
+        fr: 'Sais-tu à qui tu dois l’argent, et as-tu déjà reçu un rappel ou une lettre de recouvrement ? Je t’aide alors avec une première étape.',
+        es: '¿Sabes a quién debes el dinero y te ha llegado ya algún aviso o carta de cobro? Así te ayudo con un primer paso.',
+      },
+      wrong: [/(sluit|neem|afsluiten|nemen|take (out )?|get)[^.!?\n]{0,25}\b(nieuwe |extra |een )?(lening|krediet|loan|credit)\b[^.!?\n]{0,40}(af te lossen|te betalen|aflossen|pay (off|back)|to repay)/i],
+      say: {
+        nl: 'Sluit geen nieuwe lening af om schulden te betalen; vraag liever gratis hulp bij je gemeente of via Geldfit (0800-8115).',
+        en: 'Don’t take a new loan to pay off debts; ask for free help from your municipality or via Geldfit (0800-8115) instead.',
+        de: 'Nimm keinen neuen Kredit auf, um Schulden zu bezahlen; hol dir lieber kostenlose Hilfe bei einer Schuldnerberatung.',
+        fr: 'Ne prends pas de nouveau crédit pour rembourser des dettes ; demande plutôt une aide gratuite à un service de conseil en dettes.',
+        es: 'No pidas un nuevo préstamo para pagar deudas; pide mejor ayuda gratuita a un servicio de asesoría de deudas.',
+      },
+      bron: 'https://www.rijksoverheid.nl/onderwerpen/schulden/vraag-en-antwoord/hoe-kom-ik-van-mijn-schulden-af',
+    }),
+    advies({
+      id: 'presentatie',
+      keys: /presentatie|spreekbeurt|presenteren|presentation|present to|präsentation|referat|vortrag|expos[ée]|pr[ée]sentation|presentaci[óo]n|exposici[óo]n/i,
+      titel: 'A good presentation (university guides: UvA, RUG, Utrecht, Leiden)',
+      tips: [
+        'start from one core message: a sentence with a clear point, not just a topic',
+        'keep to 3 main points at most, each with an example, and say the structure out loud',
+        'slides with little text: keywords, one idea per slide, simple images or graphs',
+        'practise out loud alone at least once to check the time, then a full rehearsal with your slides for someone who gives feedback',
+        'speak from a cheat sheet with keywords, not a written-out text; pause about 3 seconds after a key point and look at the whole audience',
+        'put most care into the opening and the closing',
+      ],
+      vraag: {
+        nl: 'Waar gaat je presentatie over, en hoe lang moet hij duren? Dan maak ik een opzet per dia voor je.',
+        en: 'What is your presentation about, and how long should it be? Then I can make an outline per slide for you.',
+        de: 'Worum geht es in deiner Präsentation, und wie lang soll sie sein? Dann mache ich dir eine Gliederung pro Folie.',
+        fr: 'De quoi parle ta présentation, et combien de temps doit-elle durer ? Je te fais alors un plan diapo par diapo.',
+        es: '¿De qué trata tu presentación y cuánto debe durar? Así te hago un esquema por diapositiva.',
+      },
+      bron: 'https://taalwinkel.uva.nl/studievaardigheden/presenteren/een-presentatie-maken/een-presentatie-maken.html',
+    }),
     {
       id: 'hulp-nl',
       keys: /\b112\b|\b113\b|huisartsenpost|spoedeisende|eerste hulp|ambulance|noodnummer|alarmnummer|emergency number|notruf|num[ée]ro d.urgence|n[úu]mero de emergencia|zelfmoord|suïcid|suicid|suizid|suicide/i,
@@ -177,7 +360,8 @@
   }
   // Zinnen met een bekende fout. Een zin met "niet", "not", "geen" … spreekt de fout juist tegen: die telt niet.
   const NEG = /(?<!\p{L})(niet|geen|nooit|not|no|never|isn['’]t|aren['’]t|doesn['’]t|don['’]t|nicht|kein\w*|nie|pas|ne|jamais|ni|nunca)(?!\p{L})/iu;
-  const SENT = /[^.!?\n]+[.!?]*/g;
+  // Een punt tussen twee cijfers (22.00, 1.5) is geen einde van een zin.
+  const SENT = /(?:[^.!?\n]|(?<=\d)\.(?=\d))+[.!?]*/g;
   function wrongs(answer, cards) {
     const out = [];
     for (const s of String(answer).match(SENT) || []) {
@@ -198,10 +382,30 @@
     }
     return out.replace(/[ \t]{2,}/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
   }
-  // Wat met de vraag meegaat naar de AI.
-  const hint = cards => (cards.length ? ` Checked facts (use them, never contradict them): ${cards.map(c => c.fact).join(' ')}` : '');
+  // Wat met de vraag meegaat naar de AI. Feiten achter elkaar; adviestips als genummerde lijst om over te nemen, alleen van het
+  // best passende advieskaartje (twee lijsten tegelijk worden er te veel voor de kleine AI).
+  // lang: de taal van het antwoord. Met alleen "in the language of the question" nam Melo voor Mac de Engelse tips letterlijk
+  // over in een Nederlands antwoord ("Free and anonymous help", meting 22 okt); met de naam van de taal vertaalt hij ze.
+  const LANG = { nl: 'Dutch', en: 'English', de: 'German', fr: 'French', es: 'Spanish' };
+  function hint(cards, lang) {
+    if (!cards.length) return '';
+    const tips = cards.find(c => c.tips);
+    const facts = cards.filter(c => !c.tips).map(c => c.fact);
+    let out = facts.length ? ` Checked facts (use them, never contradict them): ${facts.join(' ')}` : '';
+    if (tips) out += ` Checked tips, ${tips.titel}. Use these as your points, the first ones first, with their exact numbers, ${LANG[lang] ? `translated into ${LANG[lang]}` : 'written in the language of the question'}: ${tips.tips.map((t, i) => `${i + 1}. ${t}.`).join(' ')}${tips.note ? ' ' + tips.note : ''}`;
+    return out;
+  }
+  // De gerichte slotvraag van het best passende kaartje, in de taal van het antwoord, of ''.
+  const ask = (cards, lang = 'en') => { const c = cards.find(x => x.vraag); return c ? c.vraag[lang] || c.vraag.en : ''; };
+  // Eindigt het antwoord niet met een vraag (de kleine AI vergeet hem vaak: meting 22 okt), dan komt de slotvraag eronder.
+  function close(answer, cards, lang = 'en') {
+    const t = String(answer).trim(), v = ask(cards, lang);
+    if (!t || !v) return t;
+    const last = t.split(/\n\s*\n/).at(-1);
+    return /\?/.test(last) ? t : `${t}\n\n${v}`;
+  }
 
-  const api = { CARDS, find, wrongs, correct, hint };
+  const api = { CARDS, find, wrongs, correct, hint, ask, close };
   globalThis.KameloKennis = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })();

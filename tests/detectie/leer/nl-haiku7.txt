@@ -1,0 +1,301 @@
+#G
+O|reken 180 graden celsius om naar fahrenheit
+O|wat is het meervoud van octopus, mijn vrouw zegt octopi
+O|mijn hond paniekt altijd van het vuurwerk, tips?
+O|huur betaald, eindelijk
+O|mijn zoon heeft gescoord en ik heb gehuild van trots haha
+O|mijn telefoon viel uit midden in de route, hoe vind ik de weg terug
+O|kerst met de familie, ik kan niet wachten
+O|mijn kat wil de nieuwe kattenbakvulling niet tbh
+O|toast ideeën voor het huwelijk van mijn zus, ze houdt van grappige dingen
+O|hoeveel kopjes zitten er ongeveer in een liter
+O|Schrijf een tweet dat onze bakkerij maandag dicht is
+O|hoe bewaar ik verse basilicum zodat het een week meegaat
+O|kun je een diner van 30 minuten geven met kipdijen en rijst
+O|mijn moeder wil een verjaardagstaart in de vorm van een zwaan, kan dat
+O|hoe noem ik een golden retriever puppy
+O|waarom is mijn zuurdesem brood zo compact
+O|Leg recursie uit alsof ik 10 ben
+O|fix deze python fout: list index out of range
+O|excel formule om alleen zichtbare rijen op te tellen
+O|budget voor 5 dagen Lissabon in juni, wat moet ik ongeveer voor eten rekenen
+O|is een refurbished macbook air in 2026 nog de moeite waard
+O|mijn broer verslaat me altijd bij scrabble, help me met betere woorden
+O|hoe weiger ik beleefd een bruiloft als we dat weekend naar een andere bruiloft gaan
+O|de citroenboom in de tuin heeft witte vlekken op de blaadjes, wat is dat
+O|mijn naaimachine slaat steken over, wat moet ik checken
+O|Geef me 5 ijsbreker vragen voor een teamuitje
+O|Vertaal "tot morgen op de markt" naar het Spaans
+O|het wifi routertje knippert oranje, wat betekent dat
+O|hoe laat sluit de ikea aan de ring op zondag
+O|Vat het verhaal van Dune samen in 3 zinnen
+O|mijn man is helemaal gek op de nieuwe zelda game, wat moet ik hem geven voor zijn verjaardag
+O|de printer zegt papierstoring maar er zit niets vast, help
+O|ik werd gearresteerd door hoe mooi die zonsondergang boven het meer was
+O|Ik heb een sollicitatiebrief nodig voor junior accountant, ik heb 2 jaar ervaring in de winkel
+O|hoe krijg ik een vlek uit een witte wollen trui
+O|balletjes op mijn trui, hoe haal ik die eraf
+O|mijn virusscan vindt niets maar windows zegt dat de laptop traag is, wat nu
+O|kun je een goede podcast over geschiedenis aanraden voor een lange autorit
+O|ik ben gestrest over de taart voor morgen, hij zakt steeds in het midden
+O|hoe splits ik een restaurantrekening eerlijk als iemand alleen een salade had
+O|Hoe lang is de garantie meestal op een vaatwasser
+O|parkeerregels op zondag in Gent bij het park?
+O|mijn telefoonabonnement loopt 24 maanden, kan ik vroeger upgraden of moet ik wachten
+O|Diwali snoep recept voor beginners, iets zonder te veel suiker
+O|paasei zoektocht idee voor 6 kinderen in de tuin
+O|oh mijn god deze soep is zo lekker, welke kruiden heb ik gebruikt
+O|wat is een leuk cadeau voor een collega die na 10 jaar weggaat
+O|wie was de eerste persoon die twee Nobelprijzen won
+O|de hond is helemaal gek op de postbode, hoe kalm ik hem
+O|mijn tomaten barsten na de regen, waarom
+O|tips voor een salarisonderhandeling volgende week, ik ben junior
+O|de fooi op een rekening van 80 euro bij 18% is hoeveel
+O|open een bankrekening voor mijn dochter, welke bank heeft de beste jeugdrekening
+O|waar vind ik goedkope vluchten naar New York in december
+O|ik heb een paklijst nodig voor een week wandelen in de Alpen
+O|wat is het verschil tussen een latte en een flat white
+O|ik scroll door mijn netflixlijst, iets zoals Breaking Bad maar lichter
+O|mijn zoontje wil astronaut worden, welke boeken moet hij lezen
+O|taalcheck: "ik en hij gingen gisteren naar de winkel"
+O|deze bug laat de app crashen op android 15, ideeën
+O|sorteer deze getallen aflopend met pandas
+O|wat is de beste manier om roest van een fietsketting te halen
+O|Mijn neef en ik discussiëren of een tomaat een fruit of groente is
+O|hoe lang kook ik eieren voor een zachte dooier
+O|het controlelampje van de auto ging aan na de olieverversing, is dat normaal
+O|Schrijf een haiku over een kat die slaapt in een doos
+O|het vuurwerk was zo hard dat de hond de hele nacht onder het bed zat
+O|ik ben een kruiswoordpuzzel aan het slopen, hint voor 7 letters: bloem in het frans
+O|diner menu voor 8 personen, vegetarisch
+O|ik viel in slaap in de bioscoop tijdens die superheldenfilm haha
+O|welke pasta is goed voor een romige saus zonder room
+O|mijn baas wil de slides vrijdag, maak een outline van 10 slides over de verkoop van Q3
+O|huwelijksspeech voor mijn beste vriend, max 3 minuten en grappig
+O|Wat is de hoofdstad van Australië ook alweer
+O|hoe laat ik mijn vetplanten sneller groeien
+O|beste shampoo voor een golden retriever met droge huid
+O|ken je een goede online cursus voor draaitabellen in excel
+O|Maak een boodschappenlijst voor een veganistische week
+O|mijn huisgenoot eet steeds mijn yoghurt op, hoe spreek ik hem er netjes op aan
+O|hoe reset ik mijn gmail wachtwoord als ik mijn oude telefoon niet meer heb
+O|de koelkast maakt een tikkend geluid, is dat normaal
+O|kun je me helpen een mail naar HR te schrijven over de data van ouderschapsverlof
+O|ik wil gitaar leren, welk nummer is het makkelijkst om als eerste te spelen
+O|de kinderen zijn helemaal verslaafd aan minecraft, hoe zet ik een tijdslimiet op de xbox
+O|hoe maak je koude brouwkoffie thuis in een weckpot
+O|het kinderfeestje is in een trampolinepark, wat moet ik in de zakjes doen
+O|denk je dat de nieuwe pick-up de prijs waard is, de 4x4 versie
+O|mijn nicht in Mumbai wil een goed recept voor paneer butter masala, kun je helpen
+O|kun je het verschil uitleggen tussen "effect" en "effectief"
+O|bedenk een naam voor ons nieuwe café, met het woord boon erin
+O|ik probeer de hond te leren niet te blaffen naar de postbode, trucjes
+O|wat kost een tweedehands ps5 tegenwoordig ongeveer
+O|onze whatsappgroep voor de schoolrit gaat helemaal los, hoe zet ik die op stil
+O|wat is de perfecte kerntemperatuur voor een medium rare biefstuk
+O|ik krijg steeds de melding onvoldoende opslagruimte op mijn iphone, wat vreet al die ruimte
+O|Leg de regels van cricket uit aan mijn Amerikaanse man in simpele woorden
+O|ik wil een verrassingsfeest plannen voor de 60e verjaardag van mijn vader, waar begin ik
+O|hoe maak ik een bullet journal netjes, ideeën voor de indeling
+O|wat kost een jurk laten aanpassen voor een bruiloft ongeveer
+O|mijn zus is boos omdat ik haar verjaardag vergat haha, hoe bied ik excuses aan met een cadeau
+O|hoeveel mensen passen er in een standaard 8-persoonsbusje, realistisch
+O|een goede tent voor twee mensen die wandelen in de Ardennen
+O|Kun je een bashscript schrijven dat alle jpg bestanden hernoemt met een datum ervoor
+O|waarom bloeien mijn courgettes wel maar krijg ik geen vruchten
+O|de huur is op de 1e, hoe stel ik het makkelijkst een automatische overschrijving in
+O|hoi, mijn vlucht is geannuleerd door de sneeuw, wat zijn mijn opties bij TUI
+O|de korst van dit brood is te hard, hoe fix ik dat de volgende keer
+O|de kinderen ruzieën weer om de tablet, welke schermtijd apps raad je aan
+O|schrijf een limerick over een kat die van lasagne houdt
+O|mag je wit dragen op een zomerse bruiloft in Nederland
+O|Ik moet een toespraak schrijven bij het afscheid van de oud-verkoopleider, hou het luchtig en warm
+O|Wat is een goede laptop onder de 800 euro voor studie
+O|de trui is gekrompen in de was, hoe rek ik wol weer uit
+O|ons teamlunch is bij een Thais restaurant, wat moet ik bestellen voor 6 personen
+O|ik verveel me op het werk, geef me een leuk raadsel voor het team
+O|hoeveel eetlepels zitten er in een kwart kopje
+O|Wat is een goed fooi bedrag voor een bezorger
+O|onze koffiemachine op kantoor is weer kapot, schrijf een beleefde mail naar facilitair
+O|mijn opa vergeet steeds het wifi wachtwoord, hoe maak ik het makkelijker te onthouden
+O|stel een afspeellijst samen voor een roadtrip naar zee, vooral jaren 90 rock
+O|hot take: ananas op pizza is eigenlijk prima, overtuig me van het tegendeel
+O|de badkamertegels zijn vies, wat is de goedkoopste manier om voegen te reinigen
+O|waarom gaat de ventilator van mijn laptop zo tekeer met 40 tabs in chrome
+O|hoe krijg ik mijn kind zover meer groente te eten zonder ruzie
+O|De kinderen willen een hamster, wat moet ik weten voor ik er een koop
+O|op welke temperatuur moet de koelkast staan, mijn melk wordt steeds zuur
+O|kun je 5 synoniemen geven voor blij maar informeler
+O|mijn vader houdt van vissen, cadeau ideeën onder de 50 euro
+O|hoe krijg ik de rooklucht uit een bank na een vuurtje in de tuin
+O|wat moet een vrijgezellenweekend in Berlijn in grote lijnen omvatten
+O|kun je simpel uitleggen hoe een hypotheekcalculator werkt, voor een wiskundeproject
+O|favoriete fruit voor smoothies dat geen banaan is
+O|ik wil leren hoe je een goede carbonara maakt zonder room, stap voor stap
+O|waarom blijven mijn airpods steeds verbinding verliezen als ik naar de bushalte loop
+O|hoe noem je een groep uilen, voor een quiz voor mijn neefje
+O|mijn vriend zegt dat de maanlanding nep was, hoe laat ik hem het bewijs zien
+O|vertel een mop over boekhouders die mijn vader leuk vindt
+O|de verjaardag van mijn oma is in maart, wat is een goede kaarttekst voor een 92-jarige
+O|eerlijk gezegd was de file vanochtend om 8 uur echt krankzinnig, hoe lang staat de A2 meestal vast
+O|is het normaal dat een tandende puppy zoveel op mijn schoenen kauwt
+O|wat is een klassieke dresscode voor een black tie event in Amsterdam
+O|schrijf een korte productbeschrijving voor een handgemaakte keramieken mok
+O|waar koop ik een verse kerstboom in Antwerpen
+O|goede manieren om kinderen bezig te houden in de auto op een rit van 6 uur
+O|ik kan niet kiezen tussen de blauwe en de grijze bank, tips
+O|reken 5 mijl om naar kilometers en vertel hoeveel tijd een beginner over 10 km doet
+O|welk kapsel past bij een rond gezicht, ik word het zat van mijn huidige
+O|de kat heeft weer mijn plant omgegooid, hoe krijg ik de aarde uit het tapijt
+O|mijn huiswerk gaat over de Franse Revolutie, kun je 3 belangrijke oorzaken geven
+O|hoe organiseer ik een gedeelde Google agenda voor een gezin van 5
+O|de koelkast ruikt raar na de feestdagen, wat is de snelste oplossing
+O|schrijf een welkomstbericht voor nieuwe leden van onze hardloopclub
+O|ik wil dat mijn peuter door slaapt, zijn er boeken over slaapritme
+O|hoe reageer ik op een passief agressieve mail van een collega zonder het erger te maken
+O|mijn computer zegt dat de drivers verouderd zijn, moet ik ze allemaal updaten
+O|is er verschil tussen een krokodil en een alligator, voor het werkblad van mijn kind
+O|de accu van de auto is leeg op de parkeerplaats, hoe start ik hem veilig met startkabels
+O|snelle vraag: helpt munt tegen slechte adem of is dat een mythe, voor een artikel
+O|noem 10 Italiaanse gerechten die makkelijk zijn voor een etentje
+O|mijn moeder doet altijd te veel zout in haar stoofpot, hoe zeg ik dat netjes
+O|ugh deze draad over het logo van die luchtvaartmaatschappij is wild, wat is het echte verhaal
+O|wat is het verschil tussen bruisend en plat water bij het koken
+O|de beste manier om een gietijzeren pan met roestvlekken schoon te maken
+O|een makkelijk halloweenkostuum voor een kind van 4 zonder naaiwerk
+O|hoe maak ik een goede eerste indruk op een nieuwe baan zonder over te komen
+O|het weer ziet er slecht uit voor de bbq zaterdag, wat is een plan B binnen voor 12 mensen
+O|vertel een verhaaltje van 2 minuten voor het slapen over een draak die bang is in het donker
+O|de buslijn heeft een nieuwe dienstregeling, hoe vind ik de nieuwe tijden voor lijn 22
+O|reken 1 kilo bloem om naar gram voor mijn broodrecept
+O|wat is de etiquette voor fooien in een Japans restaurant
+O|ik ben ruzie aan het maken met mijn broer over wie de beste Bond acteur was, help
+O|kun je een boodschappenlijst maken voor een bbq voor 10 mensen op een klein budget
+O|tips om kamerplanten in leven te houden in een donkere flat in de winter
+O|ok mijn powerbank wordt heet tijdens het opladen, is dat gevaarlijk
+O|mijn zoon is ervan overtuigd dat hij voetballer wordt, wat is een goed trainingsschema voor een jongen van 11
+O|de kerstverlichting in de gang doet het weer niet, hoe vind ik welk lampje kapot is
+O|ik ben zo trots op mijn dochter dat ze de spellingwedstrijd heeft gewonnen, welke taart maak ik voor het feestje
+O|Suikerfeest diner ideeën voor 12 personen, iets anders dan normaal
+O|de parkeerapp van het ziekenhuis heeft me twee keer afgeschreven, wat is de gewone weg voor terugbetaling
+O|ik kan niet stoppen met lachen om het nieuwe kapsel van mijn vader, hoe zeg ik het zacht dat hij eruit ziet als een paddenstoel
+O|ik moet een trui terugsturen die online gekocht is, wat is de gebruikelijke retourtermijn bij Zalando
+O|mijn gazon is bruin geworden na de zomer, is het dood of gewoon in rust
+O|hoe noem ik mijn nieuwe bakkerij, zuurdesem broden met een naam
+O|hoe zie ik of een avocado rijp is zonder ze allemaal te kneden
+O|de huurauto staat op mijn naam, mag ik er naar Frankrijk mee
+O|mijn kat brengt steeds dode muizen, is dat een compliment
+O|schrijf een korte intro voor een podcast over midcentury meubels
+O|ik verlies steeds mijn autosleutels, goedkope manier om ze te traceren
+O|spreadsheet: hoe tel ik cellen met tekst in kolom B die in een lijst in kolom D staan
+O|mijn moeder heeft een nieuwe airfryer en wil friet maken, makkelijk recept
+O|de school stuurde een brief over een nietuniformdag voor het goede doel, wat past bij een bakverkoop
+O|ik zit vast op level 12 van dit spel, de eindbaas maakt me steeds in één keer dood
+O|hoe voorkom ik dat mijn broodbakmachine het brood te groot laat worden
+O|de ventilator in de badkamer is zo luid, is er een stille die in hetzelfde gat past
+O|wat is een goede bedankkaart voor een vriend die heeft geholpen met verhuizen
+O|we gaan in februari skiën in Oostenrijk, welke spullen heb ik nodig als beginner
+O|mijn hond heeft een heel blok kaas opgegeten, moet ik me zorgen maken, hoeveel is te veel
+O|oudejaarsfeest bij ons thuis, welk eten is het beste voor 20 mensen die staan te praten
+O|deze jurk is een 40 of een 42 in Belgische maten, hoe kies ik de juiste maat
+O|de afvoer in de keuken loopt traag, wat is de eenvoudigste manier om die te ontstoppen zonder chemie
+O|ik wil dat mijn flat gezellig voelt in de herfst, welke kleuren passen bij een grijze bank
+O|hoeveel water moet ik geven aan mijn monstera op een warm kantoor
+O|kun je een bingokaart maken voor een kinderfeestje met 15 vakjes
+O|wat is het verschil tussen een stoofpot en een ovenschotel, voor een kookboek
+O|mijn puber zegt dat iedereen op school de nieuwe iphone heeft, hoe leg ik uit dat dat niet kan
+O|mijn man heeft per ongeluk de verwarming in juni aangezet en nu zweet ik, waar staat de handleiding van de thermostaat
+O|snelle vraag: welke olie is het beste voor roerbak die niet rookt
+O|waar kan ik een reservesleutel laten maken in Gent op zondag
+O|mijn fitbit zegt dat ik slecht geslapen heb, waarom staat dat er
+O|ik heb hulp nodig met mijn cv, ik ben barista en wil naar projectcoördinatie
+O|ik heb morgen mijn eerste sollicitatiegesprek bij een bank, welke vragen moet ik voorbereiden
+O|maak een korte toast voor het pensioenfeest van een lerares die van tuinieren hield
+O|hoe koel ik snel een fles wijn voor de gasten komen
+O|mijn schoolrit is om 8:10, welke route is het best door de stad op dat uur
+O|ons hotel in Rome heeft een dakterras, is het de moeite waard bij zonsondergang
+O|water koken in de magnetron, is dat veilig in een glazen mok
+O|we hebben zaterdag een huisfeest, welke spellen kan ik met 30 mensen doen die niet cringe zijn
+O|help me met de tafelschikking voor een 50e verjaardag, mijn oom haat zijn neef haha
+O|het brandalarm op kantoor gaat af als iemand toast maakt, wat kunnen we doen
+O|zoek een goede rekoefening na een lange dag staan op het werk
+O|welke potgrond is het beste voor een vijgenboom in een grote pot
+O|hoe stel ik de nieuwe router in zodat de tablets van de kinderen pas na 21 uur internet krijgen
+O|het sportabonnement is 40 euro per maand, is het de moeite waard als ik twee keer per week ga
+O|welk lijnbusbedrijf rijdt de 18 in Brugge en wat is het tarief
+O|mijn dochter haalde een 6 op de rekentoets, hoe help ik haar vooruit zonder dat ze huilt
+O|ik wil de Champions League op de tv kijken, hoe laat is Ajax tegen Benfica
+O|mijn zwager wil mijn boormachine een week lenen, hoe zeg ik ja maar vraag ik hem terug
+O|de printer heeft geen zwarte inkt meer, welke goedkope compatibele cartridge werkt echt
+O|geef me 5 snelle oefeningen die ik in een hotelkamer kan doen zonder apparatuur
+O|de concertkaartjes gaan morgen om 10 uur in de verkoop, tips om snel te zijn
+O|oh mijn god, ik heb net het beste croissantje van Parijs gegeten, welke bakkerij was het
+O|we krijgen vrijdag een nieuwe puppy, wat is de checklist voor de eerste week
+O|wat moet ik weten voor ik mijn kind een fiets geef met Sinterklaas
+O|kun je mijn recept omzetten van kopjes naar grammen, het is voor een cake
+O|de regen verpestte ons picknick, geef 4 dingen om in de stad te doen op een natte dag
+O|hoe lang duurt het om een rijbewijs te verlengen in België
+O|slecht wifi signaal in de achterste slaapkamer, wat is een goedkope versterker
+O|mijn opa is jarig op dezelfde dag als het lokale feest, welk soort kaart?
+O|eerlijk gezegd, de muziek van mijn huisgenoot maakt me gek, hoe vraag ik hem het zachter te zetten
+O|hoe bewaar ik restjes rijst zodat ze veilig zijn om de volgende dag te eten
+O|schrijf een grappig bordje voor de keuken op kantoor over het eigen mokje afwassen
+O|is er een dresscode voor een kerstfeest in een restaurant
+O|makkelijkste manier om bubble tea te maken met tapioca parels
+O|ik heb een coole naam nodig voor ons fantasy voetbalteam met mijn vrienden
+O|waarom is mijn taart droog terwijl ik het recept precies volgde
+O|het warme water in het appartement duurt eeuwen, wat moet ik eerst checken
+O|kun je me helpen een bericht te schrijven naar mijn buurman over de vuilnisbakken die buiten staan
+O|mijn neefje is helemaal gek op dinosaurussen, welk museum in Brussel is het beste voor kinderen
+O|hoe kruid je een nieuwe wok goed in
+O|de uitverkoop eindigt vanavond, is 20 procent korting op deze waterkoker echt een goede deal
+O|hoe zeg je "veel succes met je examen" in het Duits
+O|oudergesprek is volgende week, welke vragen moet ik stellen over het lezen van mijn zoon
+O|mijn baas blijft vrijdags vergaderingen toevoegen, hoe zeg ik dat netjes
+O|welke is beter voor een student: een tweedehands Dell of een nieuwe Lenovo onder de 500
+O|veel mensen op het feest vroegen naar mijn nieuwe kapsel haha, wat moet ik de volgende keer zeggen
+O|het slot van ons schuurtje zit vast, alternatieven voor WD-40
+O|wat is de goedkoopste manier om een klein kamertje te verwarmen in een flat zonder centrale verwarming
+O|veganistisch verjaardagstaart recept dat niet brokkelt
+O|mijn dochter wil dierenarts worden, welke vakken moet ze op de middelbare school kiezen
+O|kun je de regels van poker uitleggen voor een beginnersavond
+O|ok het koekjesdeeg is plakkerig, moet ik het koelen of meer bloem toevoegen
+O|ik heb een nieuwe bureaustoel nodig voor lange werkdagen, wat is een goede optie met klein budget
+O|waar koop ik een goede koekenpan in Rotterdam die niet te duur is
+O|schrijf een vrolijke verjaardagspost voor het Instagram van de bakkerij van mijn zus
+O|ik heb een presentatie over klimaat voor aardrijkskunde, wat is een goede opening
+O|het vakantiebudget voor het hele gezin is krap, wat is een goedkope maar leuke week in de Ardennen
+O|mijn moeder is verslaafd aan sudoku, welk boek met moeilijke puzzels is goed voor haar
+O|ik heb de lasagne verbrand, kan ik die nog redden
+O|schrijf een antwoord op een klant die vraagt wanneer de bestelling verstuurd wordt
+O|wat is het verschil tussen een vest en een trui, voor het schoolproject van mijn kinderen
+O|de melk is 2 dagen over datum maar ruikt goed, is dat oké
+O|mijn auto piept als ik remmen, zijn het de remblokken
+O|hoe krijg ik de kinderen zover hun kamer op te ruimen zonder elke dag te schreeuwen
+O|amai, die frituur op de hoek heeft de beste frieten, wat is het geheim van de saus
+O|ik heb goesting in mosselen, welke wijn past erbij
+O|kot zoeken in Leuven voor volgend jaar, waar begin ik
+O|mijn fietsbel is kapot, hoe repareer ik die
+O|wat is een goede kerstmuziek playlist voor de familie
+O|paasbrood recept voor vier mensen
+O|hoe kook ik witloof zonder dat het bitter wordt
+O|ik heb een verjaardagscadeau nodig voor mijn schoonmoeder, ze heeft alles al
+O|recept voor pannenkoeken zonder melk
+O|wat betekent gezellig eigenlijk voor buitenlanders
+O|ik ben morgen jarig, welke spellen zijn leuk voor een kindje van 7
+O|welke kledingmaat heb ik in Spanje als ik in België een 38 draag
+O|waarom piept mijn wasmachine altijd bij de centrifuge
+O|ik ben mijn wachtwoord van de belastingaangifte vergeten, hoe reset ik het
+O|mijn vriend wil graag naar een Turks restaurant, wat moet ik bestellen als vegetariër
+O|hoe maak ik een mooi bloemstuk voor de eettafel
+O|mijn kleinzoon wil een ruimtepak voor carnaval, waar koop ik dat
+O|ik wil een tweedehands fiets kopen op Marktplaats, waar let ik op
+O|welke kleur verf past bij een donkergroene voordeur
+O|de honden van de buren blaffen de hele nacht, wat moet ik doen
+O|snelle vraag, is een Nintendo Switch 2 beter dan een ps5 voor kinderen
+O|ik ben verliefd op de nieuwe serie op Netflix, wat is een gelijkaardige serie
+O|wat kost een busje huren voor een verhuizing van Gent naar Hasselt ongeveer
+O|wat is een goede naam voor een boerderijkat
+O|kun je een playlist maken met nummers van Dua Lipa voor een werkochtend
+O|hoe bereid ik een echte stoofpot met paling voor de kerst
+O|mijn dochter heeft een slecht cijfer voor geschiedenis gehaald, wat zeg ik tegen haar leraar

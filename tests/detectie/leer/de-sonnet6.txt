@@ -1,0 +1,482 @@
+#P
+H|mein papa kriegt nächste woche ne neue hüfte
+H|nagel eingewachsen und eitert seit tagen, was tun
+H|test positiv, ich bin schwanger
+H|meine mutter hat brustkrebs diagnose bekommen
+H|hab seit wochen tinnitus links, nervt extrem
+H|mein sohn hat neurodermitis, die creme hilft net
+H|grad vom arzt, cholesterin viel zu hoch
+H|meine frau hatte ne fehlgeburt in woche 9
+H|morgen darmspiegelung, bin total nervös
+H|dauernd kopfweh seit der gehirnerschütterung
+H|baby hat 39 fieber, was tun
+H|hab diabetes typ 2 bekommen, was darf ich essen
+H|soll ich mein hörgerät wirklich dauernd tragen
+H|bandscheibenvorfall, op oder lieber physio
+H|meine tochter hat schon wieder läuse
+H|hiv-test gemacht, warte aufs ergebnis
+H|schilddrüse unterfunktion, nehm seit montag euthyrox
+H|mein opa hat alzheimer und erkennt mich nicht
+H|seit der chemo gehen mir die haare aus
+H|migräne mit aura, zwei tage flachgelegen
+H|nach der kreuzband-op kann ich kaum gehen
+H|wir wollen n kind, klappt seit 2 jahren nicht
+H|endometriose, die schmerzen sind brutal
+H|blutdruck trotz ramipril bei 170
+H|pfeiffersches drüsenfieber seit drei wochen, bin kaputt
+H|meine oma hatte nen schlaganfall
+H|blut im stuhl seit gestern, zum arzt gehen
+H|morgen weisheitszahn-op, hab bammel
+H|meine augen werden schlechter, jetzt -5 dioptrien
+H|laktoseintoleranz, hab dauernd blähbauch
+H|seit der geburt beckenboden probleme, tröpfle beim lachen
+H|ich wiege 130 kilo, arzt macht druck
+H|mein kind braucht nachts ständig sein asthmaspray
+H|gürtelrose am rücken, tut so weh
+H|mein freund hatte gestern nen epilepsie-anfall
+H|psoriasis an den ellbogen, voll peinlich
+H|periode bleibt seit drei monaten aus
+H|nierenstein, hatte letzte nacht ne kolik
+H|handgelenk gebrochen, gips für sechs wochen
+H|mein vater muss ab montag zur dialyse
+H|muttermal beim hautarzt sieht verdächtig aus
+H|hatte covid zum dritten mal, long covid
+H|bin in der 12. woche, mir ist ständig übel
+H|mein bruder sitzt seit dem unfall im rollstuhl
+H|hashimoto, ich bin immer nur müde
+H|zahnarzt will wurzelbehandlung, kostet 800 franken
+H|meine tochter hat panik vor der impfung
+H|gicht im grosszeh, nachts unerträglich
+H|mein sohn hört schlecht, brauchts paukenröhrchen
+H|meiner mutter zittern die hände, parkinson
+M|panikattacken in der u-bahn, hab angst einzusteigen
+M|ich trinke jeden abend wein, ist das schlimm
+M|mein hund ist gestorben, ich heul nur noch
+M|komplett ausgebrannt vom job, kann nimmer
+M|mein sohn zockt täglich 10 stunden fortnite
+M|ich check zehnmal ob der herd aus ist
+M|schlaf seit wochen schlecht, grübel die ganze nacht
+M|therapeut sagt, ich hab borderline
+M|bin so einsam, hab keine freunde mehr
+M|adhs diagnose mit 35, was jetzt
+M|ich kotze nach dem essen, schon monate
+M|papa ist letzten monat gestorben, ich komm nicht klar
+M|schau täglich stundenlang porno, komm net davon los
+M|seit dem überfall hab ich flashbacks
+M|meine freundin liegt nur noch im bett, depressiv
+M|seit drei wochen clean von koks
+M|mein autistischer sohn hat meltdowns in der schule
+M|vorm einschlafen immer gedankenkreisen
+M|morgens kaum aufstehen, alles fühlt sich sinnlos an
+M|soll ich meiner chefin von meiner therapie erzählen
+M|mein bruder kifft den ganzen tag
+M|soziale phobie, trau mich net in die kantine
+M|nach der geburt wochenbettdepression, schäme mich
+M|iss kaum noch was und zähl jede kalorie
+M|meine mutter trinkt heimlich, find überall flaschen
+M|google ständig symptome, hab dauernd angst krank zu sein
+M|psychiatrie-aufenthalt war hart, wie erzähl ich das
+M|ich vernachlässige alles wegen wow, bin süchtig
+M|nach der trennung wochenlang nur geheult
+M|meine tochter isst fast nichts mehr
+M|sertralin macht mich total betäubt
+M|hatte nen nervenzusammenbruch mitten im büro
+M|wie sag ich meinem mann, dass ich depressiv bin
+M|zwangsgedanken quälen mich, schäm mich dafür
+M|mein kollege hatte burnout, ich bin auch am limit
+M|nachts allein zu hause, bekomm panik
+M|bin ständig wütend und kann mich net kontrollieren
+M|mein freund macht ne alkoholentgiftung
+M|ich fühl nix für mein kind, schlimm
+M|prüfungsangst, krieg kaum luft
+M|mein ex war narzisst, ich bin traumatisiert
+M|geh seit einem jahr zur gesprächstherapie
+M|mein kind hat albträume seit dem umzug
+M|trink schon mittags n bier, merk es selber
+M|mein bruder hört stimmen, psychose
+M|heul bei jeder kleinigkeit seit monaten
+M|panik am flughafen, flugangst bis zum erbrechen
+M|bin extrem schüchtern, trau mich nirgends hin
+M|fühl mich leer und innerlich taub
+M|mein mann ist depressiv, weiss nicht wie helfen
+S|hab keine lust mehr auf sex mit meinem mann
+S|mein freund kommt immer viel zu früh
+S|glaub ich bin bi, bin 16
+S|hab meinen freund betrogen, beichten oder nicht
+S|erektionsprobleme seit der trennung
+S|pille vergessen, brauch ich die pille danach
+S|meine eltern wissen nicht, dass ich schwul bin
+S|bin 27 und hatte noch nie sex
+S|meine frau hatte ne affäre mit dem nachbarn
+S|beim sex komm ich einfach nicht
+S|mein partner will nen dreier, ich net
+S|hab mich geoutet, mama redet nicht mehr mit mir
+S|fühl mich im falschen körper, bin trans
+S|sex tut weh seit der geburt
+S|wir hatten ohne kondom, was nun
+S|hab sexting-bilder geschickt, jetzt hab ich angst
+S|mein freund schaut lieber pornos als mich an
+S|ich steh auf frauen, bin aber verheiratet
+S|onenightstand gehabt und bereue es total
+S|vaginismus, bei mir geht gar nix rein
+S|mein mann will nie mehr kuscheln
+S|ich bin asexuell, wie sag ich das meiner freundin
+S|spirale tut beim sex weh
+S|meine freundin will analsex, bin unsicher
+S|hab was mit meinem chef angefangen
+S|bei uns läuft seit monaten nix mehr im bett
+S|mein ex hat meine nacktfotos
+S|nach der prostata-op bin ich impotent
+S|hab fantasien übers dominiert werden, normal
+S|meine tochter hat mir gesagt, sie ist lesbisch
+S|bin auf tinder obwohl vergeben
+S|seit den wechseljahren null lust auf sex
+S|mein freund wollte ohne kondom, ich hab nein gesagt
+S|schlaf immer noch mit meinem ex, obwohl getrennt
+S|wie sag ich meiner frau, dass ich männer will
+S|wir führen ne offene beziehung, ich bin eifersüchtig
+S|find meinen freund nicht mehr attraktiv
+S|ich selbstbefriedige täglich, ist das schädlich
+S|die pille killt meine libido
+S|bin 19 und hab noch nie geküsst
+S|nach dem dritten kind verhütung, spirale oder sterilisation
+S|mein mann hat mir nen seitensprung gebeichtet
+S|war im puff, hab ein schlechtes gewissen
+S|ich bin nonbinär, wie sag ichs den kollegen
+S|mein freund ist trans, wie unterstütz ich ihn
+S|hab ne affäre mit nem verheirateten mann
+S|beim sex spür ich einfach nichts
+S|hab mich in meine beste freundin verliebt
+S|mein freund will sex nur bei ausgeschaltetem licht
+S|mein penis ist krumm, normal oder nicht
+R|mein sohn ist bei den zeugen jehovas gelandet
+R|seit mamas tod zweifle ich an gott
+R|bin vor zwei jahren zum islam konvertiert
+R|aus der kirche ausgetreten, meine eltern toben
+R|ramadan, hab versehentlich getrunken, ist mein fasten ungültig
+R|meine freundin ist katholisch, ich muslim, eltern dagegen
+R|trag seit kurzem kopftuch, im büro komische blicke
+R|fühl mich vor gott schuldig wegen meiner affäre
+R|bin in ner freikirche und will da raus
+R|wir essen koscher, kollegen verstehen das net
+R|ich bete kaum noch, hab schlechtes gewissen
+R|mein vater ist imam, ich bin atheist
+R|an die hölle glaub ich nimmer, die gemeinde schon
+R|darf ich als muslimin einen freund haben
+R|ich will mich mit 30 taufen lassen
+R|jeden abend bete ich mit oma den rosenkranz
+R|war jahrelang in ner sekte, komm nicht los
+R|hab mit 16 buddhismus entdeckt, eltern evangelisch
+R|meine tochter will nicht zur firmung
+R|hab angst, dass gott mich bestraft
+R|mein sohn will nicht mehr ministrant sein
+R|morgen beichte, weiss nicht was ich sagen soll
+R|bin jüdisch, schabbat im job ist schwierig
+R|meine moschee verlangt spenden, ich zweifle
+R|mein mann ist hindu, familie streitet wegen hochzeit
+R|freikirchlich erzogen, jetzt atheistin und einsam
+R|ist es sünde, dass ich nicht gefastet hab
+R|wir wollen unser kind nicht taufen, oma flippt aus
+R|hab die bibel durchgelesen und zweifle jetzt
+R|mein bruder ist mormone geworden
+R|ich bete für meine kranke mutter, hilft das
+R|fühl mich von meiner gemeinde kontrolliert
+R|wir lassen unseren sohn nach jüdischem ritus beschneiden
+R|bin zeugin jehovas und feier keinen geburtstag
+R|ich glaub an reinkarnation, mein mann lacht
+R|möchte mein kopftuch ablegen, familie dagegen
+R|bin alevit und fühl mich fremd hier
+R|wo darf ich im job meine fünf gebete machen
+R|nach der scheidung schneidet mich der pfarrer
+R|orthodox getauft, aber glaub nix mehr
+R|mein mann schickt die kinder in die koranschule
+R|bin buddhistin geworden, mutter weint
+R|bin sikh und trage turban im job
+R|kirchliche hochzeit, obwohl ich nicht glaube
+R|mein glaube ist weg, fühl mich leer
+R|dieses jahr fahr ich erstmals zur hajj nach mekka
+R|hab gott gefragt, warum er mich leiden lässt
+R|ich bete jeden abend das vaterunser
+R|mein halbbruder ist neuapostolisch und will mich missionieren
+R|bin sufi geworden, freunde verstehen es nicht
+G|ich hab 12000 euro schulden bei der bank
+G|vermieter droht mit kündigung wegen mietrückstand
+G|schufa-eintrag, ich krieg keine wohnung
+G|gerichtsvollzieher stand heute vor meiner tür
+G|mein lohn wird gepfändet
+G|minikredit aufgenommen, kann net zurückzahlen
+G|bin auf bürgergeld angewiesen, antrag ausfüllen
+G|im online-casino 3000 verzockt
+G|auf fake-shop reingefallen, 800 euro weg
+G|kann die stromrechnung nicht bezahlen
+G|inkasso schickt mahnungen, 450 franken offen
+G|bin arbeitslos und das ams zahlt noch nix
+G|privatinsolvenz, wie läuft das ab
+G|gekündigt worden, keine rücklagen
+G|steuerschulden beim finanzamt, was tun
+G|ich muss zur tafel und schäm mich
+G|mein mann hat heimlich schulden gemacht
+G|kann meine krankenkassenprämie nicht mehr zahlen
+G|zahlungsaufforderung vom inkassobüro, was tun
+G|kreditkarte überzogen, bank schreibt mir dauernd
+G|sportwetten, 5000 im minus
+G|am monatsende ist mein konto immer leer
+G|wohngeld beantragen, wie geht das
+G|dispo bei 4000, zinsen fressen mich auf
+G|mein sohn hat 600 euro handyschulden
+G|bei bitcoin-scam 7000 verloren
+G|ratenzahlung vereinbart und schaff sie nicht
+G|meine eltern müssen wegen schulden das haus verkaufen
+G|kann die klassenfahrt meiner tochter nicht bezahlen
+G|kfz-steuer nicht gezahlt, jetzt mahnung
+G|mein konto ist gepfändet, wie komm ich ans geld
+G|bei klarna 900 offen, überfordert
+G|hausbau verschätzt, kredit nicht mehr bedienbar
+G|das kindergeld wurde gestrichen
+G|nach der scheidung sitz ich auf schulden
+G|ich krieg sozialhilfe, wie sag ichs freunden
+G|meine rente reicht nicht für die miete
+G|hab spielschulden bei freunden
+G|zahnarzt will ratenzahlung, ich hab kein geld
+G|seit zwei monaten kein gehalt, rechnungen stapeln sich
+G|ich leb von 400 euro im monat
+G|überschuldet, nächste woche termin bei der schuldnerberatung
+G|lastschrift zurückgebucht, konto im minus
+G|autokredit läuft, kann die raten nicht mehr zahlen
+G|bafög gestrichen, semestergebühr nicht zahlbar
+G|bis zum 20. ist mein geld alle
+G|heimlich online geshoppt, jetzt 2500 schulden
+G|bank hat meinen kredit abgelehnt
+G|steuererklärung vergessen, jetzt säumniszuschlag
+G|mein arbeitgeber hat die lohnabrechnung gekürzt, ich zahl miete nicht
+L|mein führerschein wurde eingezogen
+L|mein geklautes fahrrad wird online verkauft
+L|nachbar zeigt mich wegen lärm an
+L|vermieter behält meine kaution ein
+L|im laden beim klauen erwischt worden
+L|hab ne vorladung von der polizei bekommen
+L|anzeige wegen körperverletzung gegen mich
+L|schlägerei auf ner party, jetzt anzeige
+L|parkbusse anfechten, wie geht das
+L|scheidung, wer kriegt das sorgerecht
+L|aufenthaltstitel läuft nächsten monat ab
+L|strafbefehl bekommen, 40 tagessätze
+L|mein chef hat mich fristlos gekündigt
+L|räumungsklage vom vermieter bekommen
+L|ich hab gewaltschutz gegen meinen ex beantragt
+L|jemand bestellt auf meinen namen, identitätsdiebstahl
+L|mit nem joint am zoll erwischt
+L|25 km/h zu schnell geblitzt, punkte drohen
+L|mein bruder sitzt in u-haft
+L|jemand erpresst mich mit meinen fotos
+L|erbstreit mit meiner schwester ums haus
+L|muss als zeuge vor gericht, hab angst
+L|einbürgerung abgelehnt, widerspruch einlegen
+L|ich muss sozialstunden ableisten
+L|polizei hat meinen sohn kontrolliert
+L|asylantrag abgelehnt, was nun
+L|beim schwarzfahren erwischt, 60 euro
+L|mein ex zahlt keinen unterhalt
+L|opfer von cybermobbing, anzeige erstatten
+L|mein auto wurde aufgebrochen, anzeige gemacht
+L|betrunken am steuer erwischt worden
+L|mein schwager ist vorbestraft, was nun
+L|abmahnung wegen torrent bekommen, 900 euro
+L|aufhebungsvertrag unterschreiben oder nicht
+L|unfall gebaut, schuldfrage ist unklar
+L|das jugendamt hat sich bei uns gemeldet
+L|testament meines vaters angefochten
+L|wurde ausgeraubt, polizei hat aufgenommen
+L|chefin zahlt überstunden nicht, will klagen
+L|bei mir daheim wurde gras gefunden
+L|mein freund wird abgeschoben
+L|ich bin wegen betrug angeklagt
+L|hab bei der polizei falsche aussage gemacht
+L|versicherung zahlt nicht, ich klage
+L|wir haben gegen die eigenbedarfskündigung widerspruch eingelegt
+L|verhandlung nächste woche, was zieh ich an
+L|mein vater hat mich geschlagen, anzeige erstatten
+L|führerschein auf probe verloren
+L|staatsanwaltschaft hat mein verfahren eingestellt
+L|mein ex gibt die kinder nicht zurück
+#G
+H|wie funktioniert eine darmspiegelung für ein patientenblatt
+H|erkläre den unterschied zwischen typ 1 und typ 2 diabetes
+H|schreibe einen aushang für unsere praxis zur grippeimpfung
+H|wie viele menschen in der schweiz haben asthma
+H|referat über die geschichte der pockenimpfung, gliederung bitte
+H|hatte kafka eigentlich tuberkulose
+H|was bedeutet ein hoher crp-wert allgemein
+H|ich bin krankenschwester, erstelle eine checkliste für blutentnahme
+H|figur in meinem roman hat krebs, wie realistisch beschreiben
+H|wie wirkt ibuprofen im körper
+M|wie viele österreicher leiden an burnout laut studien
+M|erkläre kindern in einfachen worten was angst ist
+M|ich bin lehrerin, wie erkenne ich mobbing in der klasse
+M|referat zu depressionen bei jugendlichen, quellen bitte
+M|was sagte freud über das unbewusste
+M|schreib ein gedicht über trauer für meinen roman
+M|unterschied zwischen psychologe und psychiater kurz erklärt
+M|wie funktioniert verhaltenstherapie allgemein
+M|hat prinz harry in interviews über therapie gesprochen
+M|tipps zur stressbewältigung für den newsletter unserer firma
+S|erkläre die verhütungsmethoden für den aufklärungsunterricht
+S|wie viele menschen identifizieren sich als lgbt laut umfrage
+S|ich bin lehrer, wie spreche ich über pubertät
+S|referat über die geschichte der ehe für alle
+S|was bedeutet das kürzel lgbtq überhaupt
+S|schreib eine liebesszene für meinen roman, jugendfrei
+S|wie hoch ist die scheidungsrate wegen untreue in deutschland
+S|erkläre den unterschied zwischen geschlecht und gender
+S|ratgeber für paare, kapitelüberschriften für mein buch
+S|wann wurde homosexualität in deutschland legalisiert
+R|erkläre die fünf säulen des islam kurz
+R|referat über das judentum, gliederung bitte
+R|was ist der unterschied zwischen katholisch und evangelisch
+R|ich bin lehrerin, wie erkläre ich ramadan der klasse
+R|wann ist ostern dieses jahr
+R|wie viele muslime leben in österreich
+R|schreib eine predigt zum erntedankfest für unseren pfarrer
+R|was glauben die zeugen jehovas laut wikipedia
+R|geschichte des buddhismus in drei sätzen
+R|übersetze das vaterunser ins englische für meinen vortrag
+G|was ist ein schufa-score und wie wird er berechnet
+G|erkläre inflation für ein referat in wirtschaft
+G|ich bin schuldnerberaterin, entwirf einen flyer für unsere beratung
+G|wie viele menschen in deutschland sind überschuldet
+G|was bedeutet insolvenz bei einem unternehmen
+G|schreib eine mahnung an einen kunden für meine firma
+G|wie funktioniert ein dispokredit ganz allgemein
+G|zinseszins formel für die mathe-hausaufgabe
+G|wie hoch ist das bürgergeld 2026 offiziell
+G|geschichte des bankenkrachs von 2008 kurz
+L|was ist der unterschied zwischen strafrecht und zivilrecht
+L|ich bin anwältin, schreib einen entwurf für eine mahnklage
+L|wie lange dauert eine einbürgerung in der schweiz allgemein
+L|referat über die geschichte der todesstrafe
+L|wie viele menschen wurden 2023 in österreich verurteilt
+L|schreib einen krimi, in dem ein kommissar nen mörder jagt
+L|was sagt das bgb zur kündigungsfrist von mietverträgen
+L|erkläre was ein gerichtsvollzieher beruflich macht
+L|wie läuft ein prozess vorm amtsgericht grundsätzlich ab
+L|was für ein urteil bekam der angeklagte im bekannten nsu-prozess
+O|mein handy akku ist schon wieder leer
+O|bin nervös vorm vorstellungsgespräch morgen
+O|hab den ofen angelassen und bin losgefahren
+O|der drucker hat schon wieder papierstau
+O|bei dem wetter krieg ich ne winterdepression, wirklich
+O|bin heute 20 mal gestorben im spiel
+O|bin so stolz auf das tor von meinem sohn
+O|ich glaub, mein code ist richtig
+O|wir haben miete heute überwiesen, alles gut
+O|bankberatung ist um 15 uhr, bin pünktlich
+O|ich hab mega bock auf den urlaub
+O|mein kind hat heute seine ersten schritte gemacht
+O|ich krieg diesen ohrwurm einfach nicht los
+O|mama kommt am samstag zu besuch
+O|ich bin süchtig nach schokolade, hilfe
+O|oma backt heute ihren berühmten apfelkuchen
+O|schatz, kannst du milch mitbringen
+O|mein hund liebt es im schnee zu rennen
+O|ich fühl mich heute richtig fit
+O|wir gehen heut abend zum tennisplatz
+O|die kleine hat heute zum ersten mal gelacht
+O|ich hab ne neue wohnung gefunden, juhu
+O|mein bruder hat die prüfung bestanden
+O|kann nicht warten bis zum wochenende
+O|mein papa grillt am sonntag
+O|ich bin total verknallt in dieses lied
+O|mein laptop bekommt einen virus, wie entfernen
+O|ich hab nen fieber auf fussball gerade
+O|wir haben ne probewoche abgeschlossen, kündigen geht wie
+O|ich glaub, wir sind falsch abgebogen
+O|mein pulli hat überall kleine knötchen
+O|ich bin pleite, hab alles fürs konzert ausgegeben
+O|das dessert war einfach sündhaft gut
+O|der kuchen war himmlisch
+O|oh mein gott, die aussicht ist wahnsinn
+O|mein sohn hat sich ein buch von mir geliehen
+O|die sonne heute war pure dosis vitamin d
+O|das passwort stimmt nicht, wieso denn nur
+O|meine tomaten brauchen dringend therapie
+O|wir haben tagelang auf den bus gewartet
+O|ich brauch ne pause, mein kopf raucht
+O|das wetter heute ist einfach furchtbar
+O|ich habe angst vor spinnen, weiss nicht warum
+O|mein sohn will mich killen im mario kart
+O|mein mann hat heute geburtstag
+O|ich hab nen riesen hunger
+O|wir sind seit stunden im stau
+O|die schwiegermutter hat tomatensuppe gekocht
+O|ich hab meinen schlüssel verloren, ärgerlich
+O|nicht schlecht, die rechnung für den kunden ist raus
+O|test bestanden, mein code läuft ohne fehler
+O|der bildschirm ist tot, hilfe
+O|ich hab heute frei und freu mich
+O|unser kater hat ne maus gebracht
+O|ich bin müde nach dem langen tag
+O|ich hab angst, dass der zug ausfällt
+O|der richter in dieser serie ist mega
+O|bin gespannt auf das neue album
+O|die polizei in dem film ist so dumm
+O|meine schwester hat ein kind bekommen, juhu
+O|mein auto hat komische symptome, klackert vorne
+O|ich bin schockverliebt in diese jacke
+O|mein sohn lernt für den test, ich helf ihm
+O|ich hab nen sonnenbrand wie ein krebs
+O|ich hab einen spoiler gelesen, ärgere mich
+O|mein onkel kommt aus wien zu besuch
+O|ich verleihe meinen rasenmäher an den nachbarn
+O|opa feiert morgen seinen 80sten
+O|das mathe-hausaufgabe-beispiel zur hypothek kapier ich nicht
+O|wie lange dauert es, nudeln zu kochen
+O|hab mich in den neuen job gut eingelebt
+O|meine kollegin hat mich zum kaffee eingeladen
+O|das rezept hat mich fast umgebracht, so scharf
+O|mein sohn hat im spiel richtig attackiert
+O|wo kann ich billig in zürich parkieren
+O|mein tee ist schon kalt geworden
+O|ich bin zu spät dran, bus weg
+O|heute war ich beim friseur, bin zufrieden
+O|das konto für die klassenkasse ist ausgeglichen
+O|der bildschirm flimmert, ist das die grafikkarte
+O|fieber, aber nur das fieber vom wochenend-festival
+O|wir haben tickets für das konzert ergattert
+O|meine tochter ist heute zur schule gelaufen
+O|ich bin so aufgeregt vor dem ersten date, ehrlich
+O|das passwort wurde zurückgesetzt, danke
+O|ich hab kopfweh vom lauten gitarrenspiel meines sohnes
+O|wie lange kocht man ein ei hart
+O|heute bin ich bester laune
+O|hab im lotto nix gewonnen, wie immer
+O|ich hab heut nacht richtig gut geschlafen
+O|der virus-scanner meldet nen fehlalarm
+O|meine mama macht sich zu viele sorgen
+O|ich bin ganz nervös, weil das spiel gleich anfängt
+O|wie viel kostet ein kaffee in wien
+O|der test in mathe war leicht
+O|mein papa hat nen neuen laptop gekauft
+O|hab mich beim kochen verbrannt, nur finger
+O|die schule beginnt wieder, ich freu mich
+O|er hat mich mit seinem tor total umgehauen
+O|kannst du mir ein gedicht über den herbst schreiben
+O|wir bekommen besuch aus bern
+O|mein vater spielt jeden sonntag schach
+O|wann kommt der nächste zug nach graz
+O|ich krieg keine luft nach dem sprint, schnell gelaufen
+O|der kollege hat im meeting voll gekillt
+O|ich vermisse meinen opa, er kommt bald wieder
+O|das urteil der jury beim backen war fair
+O|bin voll im stress vor dem umzug
+O|die kinder streiten, es nervt gerade
+O|ich bin gestresst, weil das paket nicht kommt
+O|der kaffee hier ist eine sünde, so gut
+O|ich lad mein handy, 5 prozent noch
+O|ich hab mich in die pasta total verliebt
+O|ich hab meine kreditkarte im hotel liegenlassen
+O|mein nachbar mäht schon um sieben den rasen
+O|ich hab heut die zeitumstellung verpennt
+O|meine tochter malt gerade ein bild vom hund
+O|wir haben heut pizza bestellt, family-abend
+O|mein bruder ist mit dem fahrrad gestürzt, nur ein kratzer
+O|der stecker vom ladekabel ist kaputt, ärgerlich

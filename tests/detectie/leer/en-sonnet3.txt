@@ -1,0 +1,201 @@
+#G
+O|i believe my python script is right but it prints the list backwards, what am i missing
+O|We've got total faith in our back four this season, but can they keep a clean sheet against Arsenal on Saturday?
+O|can i get the duolingo free trial without putting my card in
+O|Is there a way to get a refund if I forget to cancel the 14 day trial of Adobe Premiere?
+O|my phone charge drops from 80 to 30 in like an hour, is it the battery or just some app
+O|What's the difference between a compound sentence and a complex sentence? My daughter has a grammar test tomorrow.
+O|booked a court for 7pm at the leisure centre, how many people can play on a padel court at once
+O|how do i lock a cell in google sheets so my brother cant overwrite the formula
+O|my unit test is returning negative when it should be positive, heres the function
+O|pretty sure my laptop has a virus cos chrome keeps opening pop up ads, how do i clean it
+O|theres a bug in my javascript loop and i cannot find it for the life of me
+O|how do I kill a zombie process on linux
+O|in fortnite how do i stop dying straight away when we attack the last circle with the lads
+O|this heatwave is killing me!! tips for keeping a small flat cool without aircon pls
+O|There's a depression in the middle of our lawn that fills with water whenever it rains. Should I level it with topsoil or just leave it?
+O|my 3 year old is addicted to those cheese puffs, any healthier swaps she might actually eat
+O|my jumper is covered in little pills, whats the best fabric shaver for wool
+O|Looking for a good dose of sunshine in March, where in Europe is warm enough for a city break?
+O|my car makes a grinding noise when I brake, what are the symptoms of worn brake pads
+O|my monstera needs some therapy, yellow leaves and drooping, what do I do
+O|Time to confess the secret ingredient in my nan's lemon drizzle: a spoon of yoghurt. Can you help me word it for our family recipe book?
+O|this chocolate lava cake looks sinful, can you give me an easy recipe with stuff I'd already have in the cupboard
+O|heavenly pasta bake ideas for a lazy sunday??
+O|oh my god the new Taylor Swift album is amazing, which song should I learn on piano first
+O|jesus my wifi is so slow tonight, is it the router or the isp
+O|who plays the judge in Suits? cant remember
+O|is it rude to just reply "fine" to my manager's email about the meeting time or does that sound passive aggressive
+O|how do i send an invoice to a client for my freelance design work in quickbooks
+O|can i lend a library book to my brother or does it have to be returned by me
+O|mortgage calculator for my maths homework: loan of 200000 at 4% over 25 years, show the formula pls (not a real one lol)
+O|My crush on this song is out of control, it's been on repeat for six days. Any similar tracks?
+O|football fever has hit our office with the World Cup coming, how can we run a fun sweepstake?
+O|is the Saturday Night Fever soundtrack worth listening to start to finish, my dad keeps banging on about it
+O|she's mad about Bollywood dance, which classes in Pune are good for complete beginners
+O|the technical debt in our codebase is crazy, how do I convince my team lead to give us a sprint to pay it down
+O|how do i debit a test account in stripe test mode
+O|how many credits do you get per match in Rocket League, I'm saving up for a wheels pack
+O|is there a post credits scene in the new Spider-Man film, my son wants to know before we leave the cinema
+O|does Heathrow charge for dropping someone off at the terminal
+O|we need to charge the electric car overnight, what's the cheapest tariff in Ireland for it
+O|tyre pressure for a 2018 Honda Civic, the sticker is worn off
+O|can I use a pressure washer on a wooden deck without wrecking it
+O|Pressure cooker or slow cooker for a beef stew? I have about 2 hours.
+O|what is the best case for the iPhone 15, mine is cracked on the edge
+O|how do i write a use case diagram for a library system, my professor wants it by Monday
+O|what's a good pillow case size for a king size pillow
+O|I have a strong conviction that tabs are better than spaces, change my mind
+O|A/B test result is positive but not statistically significant, can we still ship it?
+O|I'm positive the meeting is at 3 but my calendar says 4, how do I check the time zone setting in outlook
+O|negative space in photography, can you explain with some examples for my photo class
+O|my macbook keeps getting a kernel panic after the Sonoma update, where do I find the panic log
+O|run a stress test on my cpu to check my new cooler, which free tool should I use
+O|how do I abort a git rebase when I've made a mess of it
+O|you wont believe it but my sourdough finally rose!! what should i bake next
+O|do you think 3 coats of paint is overkill for a hallway wall? I believe two is enough
+O|We want to trust the self signed certificate on our test server, how do I do that on windows
+O|weeding the veg patch all weekend, any tool recommendations for dandelions
+O|What's the best pot for a large ficus? Mine is outgrowing its current one.
+O|trying to remember a massive hit from the late 90s with a whistling intro, any ideas
+O|shot of espresso or a double for an affogato
+O|Can you give me a good shot list for a 2 minute wedding highlight video for my cousin?
+O|Poker night on Friday, how many cards does the dealer deal in Texas hold'em before the flop
+O|im bankrupt in Monopoly after landing on Mayfair with a hotel lol, any strategy tips for next time
+O|get out of jail free card in Monopoly, can you keep it or must you use it right away
+O|Prison Break season 1, is it worth rewatching or does it drag
+O|the Police's greatest hits, which album should I get on vinyl for my dad
+O|In GTA V how do I lose a 3 star police chase on the freeway
+O|Judge Judy vs Judge Rinder, which has the better clips for a YouTube compilation
+O|laptop warranty vs extended care, worth it for an 800 euro machine
+O|Baggage allowance on Ryanair for a small bag, my partner and I are flying to Faro next week
+O|garnish ideas for a gin and tonic that look fancy but are cheap
+O|chicken breast keeps coming out dry, I cook it for 25 mins at 200, what am i doing wrong
+O|is extra virgin olive oil okay for frying or should I use something else
+O|naked cake with fresh berries for my sister's 30th, how many layers
+O|nude lipstick for medium skin tone, any drugstore recommendations
+O|fertile soil for tomatoes, how do i improve the heavy clay in my back garden
+O|period drama recommendations like Bridgerton or Downton for a rainy weekend
+O|What's the best breaststroke technique for a beginner? I'm learning at the local pool on Tuesdays.
+O|had a stroke of luck, got a free upgrade on the flight, how do I thank the gate staff
+O|how to fix lumps in gravy
+O|pain au chocolat vs croissant, which one is better for a picnic
+O|operation order in excel formulas, why is it multiplying before adding
+O|blood orange cake recipe in grams please, I'm in Australia
+O|bleeding edge or LTS version of Node for a new project?
+O|my airpods are dying after 2 hours, is that normal
+O|killer playlist for a long drive from Dublin to Galway, what do you recommend
+O|Attack on Titan ending, did i miss something? my brother says it's controversial
+O|in chess how do you defend against the Sicilian attack as black
+O|Arrested Development, which season is the funniest
+O|does the end of Inception mean it was a dream, my mates and I are arguing about it
+O|i got too many tabs open and chrome is crashing, how do I suspend them
+O|cabin fever in the house, kids are climbing the walls, indoor activity ideas for a rainy day
+O|spiritual successor to Skyrim, which game should I play next
+O|hail mary pass in American football, why is it called that
+O|holy moly the price of petrol, any apps to find the cheapest station near Leeds
+O|devil's advocate: should a startup choose a monolith over microservices
+O|angel investor pitch for my bakery app, how many slides should I have
+O|Monk is on Netflix now, is it good for someone who liked Sherlock
+O|which web host is best for a small wordpress site for my dad's plumbing business
+O|how many people can I host for Christmas dinner in a 3 bed semi, my mum is bringing a folding table
+O|ball joint on my Ford Focus makes a clunk over speed bumps, can I drive it to the garage
+O|what is a joint venture in plain words for my business studies essay
+O|screw or nail for hanging a heavy mirror on plasterboard
+O|how do i cut fringe bangs at home without a disaster
+O|my high score in Tetris is 150k, how do I get past level 20
+O|which tablet is best for my daughter's schoolwork, 150 euro budget, iPad or Samsung
+O|do Greggs sausage rolls freeze well, I bought 12 for my brother's party
+O|How do I run diagnostics on my PS5 controller? The left stick drifts.
+O|what are the symptoms of a failing alternator, my headlights flicker at night
+O|retail therapy in Dubai, which malls are best for a weekend with the girls
+O|my wordpress site got an infection, google is showing a malware warning, how do i clean it
+O|my xbox controller is dead, changed the AA batteries and nothing
+O|how do I make a trigger in excel vba that runs when a cell changes
+O|Burnout Paradise remastered, can I play it on a Steam Deck?
+O|that new Indian restaurant near us is crazy good, how do i book a table for 6 on a saturday
+O|mad busy at work this week, can you give me a 20 minute dinner idea with chicken
+O|cheat sheet for Excel shortcuts on Mac, my uni exam is open book
+O|Confession: I've never seen Titanic. Which Leonardo DiCaprio film should I watch first?
+O|my guilty pleasure is trashy reality tv, what's a binge worthy one on Netflix
+O|sin and cos in python give weird numbers for my maths homework, how do i convert degrees to radians
+O|who sang Heaven Is a Place on Earth, my mum is humming it
+O|oh my god I just spilled coffee on my keyboard, will it survive
+O|fine print in the contract of my broadband, how long is the minimum term usually
+O|is a fine tip or a medium better for bullet journalling
+O|how do i read my electricity bill, what is the standing charge exactly
+O|can I loan my camera lens to my mate for the weekend, do I need insurance
+O|how do I credit the photographer in my school magazine
+O|debit and credit in double entry bookkeeping, I'm doing an accounting course and it won't click
+O|how long does a Garmin watch take to charge from empty
+O|how do I make the first word of every sentence uppercase in python
+O|trial run of my new route to work tomorrow, is there an app that shows live traffic in Manchester
+O|badminton court dimensions for a garden, my kids want to play
+O|what is the lower case of ß in unicode
+O|is the battery cell in the new MacBook replaceable or glued in
+O|help me explain the cell membrane to my 12 year old nephew for biology
+O|is poison ivy dangerous to touch? I found some at the back of the garden
+O|how to execute a stored procedure in sql server from a python script
+O|kill -9 doesn't work on my frozen process in ubuntu
+O|fatal error out of memory in php, I'm using wordpress on a cheap shared server
+O|crash course in spanish for a trip to Madrid in 6 weeks
+O|how do I crack open a coconut without making a mess
+O|we're stuck on the last puzzle in an escape room, how do you crack a 4 digit code lock
+O|im hooked on this new k-drama, any similar shows
+O|Doctor Who episodes to show my kids first? they're 7 and 9
+O|which Lonely Planet guide is best for 3 weeks in Vietnam
+O|Hell's Kitchen NYC, where is the best pizza slice
+O|what's the appeal of mechanical keyboards? tempted to buy one for work
+O|how do I bail out of a bash script if one command fails
+O|how do you pronounce parole in italian, it means words right
+O|Guardian cryptic crossword clue help: 'sue for a stage' 5 letters
+O|that new trainer drop is dope, where can i find them in a UK size 10
+O|can I use Coke to clean rust off my bike chain, my uncle swears by it
+O|citric acid for descaling the kettle, how much per litre
+O|i believe our new intern is the best hire we have made, how do i write a good thank you note for the team
+O|sir my java code is giving error, i believe the indentation is correct but still not working please help
+O|heaps keen on a free trial of Stan, do I need to put card details in first
+O|Grand so, I need a court booked for Thursday evening, is it 5 euro an hour in Cork?
+O|please tell me meaning of 'sentence' and 'phrase' in english grammar, i am confuse about the difference
+O|ive got a ton of faith in this recipe, 3 ingredients only, why is my fudge not setting
+O|My phone is dying, no charge left and I'm at the airport, where do the power points hide in Terminal 2
+O|my pc fans sound like a jet taking off, how do i test the temperature of my cpu
+O|got hammered by the rain on my commute, whats the best waterproof jacket under 100 quid
+O|what's a decent pressure point for a tyre on a road bike, i weigh 70kg
+O|dead pixel on my brand new monitor, can I return it to the shop after 2 weeks
+O|Dead Cells or Hades first? I loved Celeste
+O|my sims keep dying in the pool, how do I put a ladder in
+O|how do I tell my boss politely that I think the quarterly report is wrong, I believe the totals are off by 2k
+O|total depression era vibes in this flat, the walls are all brown, what colour should I paint the living room
+O|i've caught the football bug, which team should i support in the Premier League if i like attacking play
+O|crazy weather in Melbourne, four seasons in a day, what should I pack for next week
+O|our printer got an error that says paper jam but there is no paper, what now
+O|test positive for cors on my api? my frontend call keeps getting blocked, how do i fix it
+O|Nasi goreng with leftover rice, any tips? I'm cooking for 4 tonight, my husband is Indonesian
+O|my mortgage calculator in excel for school gives a negative number for the payment, is that the pmt function sign
+O|what are the sins of the seven deadly sins anime, which character is the strongest
+O|bro my crush on this new rapper is real, who produces his beats
+O|Is it normal for a bread machine to be this noisy, mine sounds like it's attacking the counter
+O|my mum's addicted to her Wordle streak, how do I make her a funny card for her birthday
+O|dying to try that new ramen place near campus, anyone know if they do vegetarian
+O|can you give me a killer opening line for my best man speech, my brother is a total nerd
+O|Excel keeps saying circular reference warning, how do I find the cell causing it
+O|can i charge my vape... no wait, my kindle, with a phone charger or will it fry it
+O|my daughter has a crush on a boy band called Stray Kids, what should I get her for her birthday
+O|Rate my sentence: "The quick brown fox jumped over the lazy dog". Is the grammar right?
+O|my team has no faith in the new project manager's schedule, how do I write a polite pushback email with a realistic timeline
+O|its freezing in this office, my toes are dead, can anyone recommend heated slippers
+O|how to say 'fine, thanks' in a more natural way in english, i am from Brazil and my teacher say it sound robotic
+O|my dog is obsessed with the vacuum cleaner and attacks it every day, funny but is it safe for him to bite the hose
+O|what does ODB mean on a motorbike dashboard, the engine light came on after servicing, is it just a sensor?
+O|Looking for a good bakery near Bandra that does heavenly red velvet cupcakes, my wife's birthday is Sunday
+O|my little brother's piano exam is next week, how can I help him practise scales without getting bored
+O|got a trial membership for the climbing gym, what should I bring on the first day
+O|my son wants to be a judge on a cooking show when he grows up lol, which kids' cooking shows are good
+O|dont know if my sourdough starter is dead, no bubbles for 3 days, should I throw it out or feed it more flour
+O|thinking of making a killer chilli for 10 people on Saturday, how much mince and beans do I need
+O|i have a crush on the new barista at our cafe, ha, how do i ask her which coffee beans they use without sounding weird
+O|sorry for my english, i want to buy a case for my laptop 15 inch, which brand is strong and not expensive
+O|What's the best pub in Dublin to watch the rugby on Saturday? There's four of us and we'd like a table.
+O|how do I execute a PowerShell script automatically on startup, windows 11
+O|my mum keeps saying she has no faith in the weather forecast, which app is actually accurate for Sydney

@@ -1,7 +1,7 @@
 // Draai met: npm run test:firefox  (eenmalig eerst: npx puppeteer browsers install firefox)
 // (npm run test:firefox draait dit na firefox.mjs, de test van Kamelo Business.)
 // De gratis editie in een echte Firefox: het Firefox-pakket (tools/pack.mjs --firefox) installeren, op een nagebootste
-// ChatGPT een persoonlijke zin typen en dan de melding "Sensitive topic" met de knop voor een tijdelijke chat zien,
+// ChatGPT een persoonlijke zin typen en dan de melding "Sensitive info" met de knop voor een tijdelijke chat zien,
 // zonder Melo (die bestaat alleen in Chrome). Een algemene vraag geeft geen melding.
 // De melding staat in een gesloten shadow root. CDP bestaat niet in Firefox; WebDriver BiDi kan die wel uitlezen
 // (includeShadowTree: 'all').
@@ -21,6 +21,8 @@ const CHAT = `<!doctype html><title>Chat</title>
 <form><div id="prompt-textarea" contenteditable="true"></div><button type="submit" aria-label="Send">↑</button></form>`;
 const PERSONAL = 'My doctor says I might have diabetes, what should I eat?';
 const GENERAL = 'What is the capital of France?';
+// Die kent de woordenlijst niet; de gewogen lijst (src/topic-model.js) wel. In Firefox is er geen AI: dit is gewoon rekenen.
+const WEIGHTED = 'my son spends eleven hours a day gaming and punched the wall when I turned off the wifi';
 
 // Kamelo's melding zoals hij in beeld staat: de tekst in de shadow roots van de pagina (zonder stijlen), en of de
 // kaart zichtbaar is (klasse "show", net als in public.test.mjs).
@@ -56,7 +58,7 @@ async function waitForNotice(browser, page, test, timeout) {
   }
   return last;
 }
-const topic = n => n.shown && /Sensitive topic|Gevoelig onderwerp/.test(n.text) && /Temporary chat|Tijdelijke chat/.test(n.text);
+const topic = n => n.shown && /Sensitive info|Gevoelige info/.test(n.text) && /Temporary chat|Tijdelijke chat/.test(n.text);
 
 async function type(page, text) {
   await page.click('#prompt-textarea');
@@ -74,7 +76,7 @@ try {
   const page = await mockPage(browser, 'https://chatgpt.com/', CHAT, undefined, async () => {});
   await type(page, PERSONAL);
   const n = await waitForNotice(browser, page, topic, 10_000);
-  check('een persoonlijke vraag geeft de melding "Sensitive topic" met een tijdelijke chat', topic(n), n);
+  check('een persoonlijke vraag geeft de melding "Sensitive info" met een tijdelijke chat', topic(n), n);
   // De extensie heet Melo (17 okt), dus de naam mag in de melding staan; de chat met Melo (de knop "Ask Melo") niet.
   check('de melding belooft in Firefox geen chat met Melo', topic(n) && !/Ask Melo|Vraag het Melo|Frag Melo|Demander à Melo|Pregúntale a Melo/i.test(n.text), n.text);
   check('de melding heeft "Niet meer in dit gesprek"', /Don’t show in this chat|Niet meer in dit gesprek/.test(n.text), n.text);
@@ -89,7 +91,14 @@ try {
   const quiet = await notice(browser, page2);
   await type(page2, ` ${PERSONAL}`);
   const later = await waitForNotice(browser, page2, topic, 10_000);
-  check('een algemene vraag geeft geen melding', !quiet.shown && !/Sensitive topic|Gevoelig onderwerp/.test(quiet.text) && topic(later), { quiet, later });
+  check('een algemene vraag geeft geen melding', !quiet.shown && !/Sensitive info|Gevoelige info/.test(quiet.text) && topic(later), { quiet, later });
+
+  // Een persoonlijke vraag zonder woord uit de woordenlijst: de gewogen lijst geeft de melding, ook zonder AI.
+  const page3 = await mockPage(browser, 'https://chatgpt.com/c/weighted', CHAT, undefined, async () => {});
+  await new Promise(r => setTimeout(r, 1000));
+  await type(page3, WEIGHTED);
+  const weighted = await waitForNotice(browser, page3, topic, 10_000);
+  check('de gewogen lijst werkt in Firefox (een vraag die de woordenlijst niet kent)', topic(weighted), weighted);
 } finally {
   await browser.close();
   fs.rmSync(dir, { recursive: true, force: true });

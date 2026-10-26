@@ -1,0 +1,110 @@
+#P
+H|j'ai recu mes resultats de prise de sang et mes transaminases sont a 140, le medecin ne peut pas me voir avant 3 semaines. je dois m'inquieter ?
+H|C'est normal que ma fille de 4 ans ait 39,5 de fièvre depuis trois jours ? Le doliprane fait presque rien
+H|on vient d'annoncer à ma mère un cancer du côlon stade 3, quelles questions poser à l'oncologue lundi
+H|je suis sous sertraline 50 depuis 2 semaines et là j'ai un tremblement bizarre dans les mains, c'est le médoc ou autre chose
+H|Je suis enceinte de 11 semaines et j'ai eu des pertes brunâtres ce matin. Pas beaucoup. C'est une fausse couche qui commence ?
+H|mon genou craque pis y lâche depuis ma chute au hockey, physio ou je le laisse tranquille un boutte ?
+H|Comment dire à mon patron que j'ai besoin de jours pour la chimio sans que ça devienne toute une histoire au bureau
+H|ma femme a la SEP et depuis sa nouvelle poussée elle ne peut plus conduire, comment on gère l'école des enfants
+H|Boule dans le sein gauche, mobile, grosse comme un petit pois. J'ai 29 ans. Rdv gynéco dans 10 jours. Je fais quoi en attendant
+M|je suis pas sorti de mon appart depuis 9 jours. je me dis demain à chaque fois. qu'est-ce qui cloche chez moi
+M|Mon mari boit une bouteille de vin tous les soirs et dit que c'est ok parce qu'il va quand même bosser. C'est de l'alcoolisme ou j'exagère ?
+M|notre fille saute des repas et se pèse tous les matins, elle a 14 ans. comment aborder ça sans empirer les choses
+M|première crise de panique dans le métro hier, j'ai cru que je mourais. comment éviter que ça recommence
+M|Papa est décédé en mars et je n'arrive toujours pas à entrer dans son garage. Tout le monde dit que ça passe mais non. Quand est-ce que le deuil s'arrête
+M|j'ai rejoué sur les applis de paris après 6 mois clean, perdu 800 balles hier soir et ma copine sait rien
+M|c'est normal de rien ressentir du tout ? pas triste pas content juste plat depuis des mois. ma psy dit dépression mais je pleure même pas
+M|mon meilleur pote dit de plus en plus que tout le monde irait mieux sans lui. je lui dis quoi, je veux pas aggraver
+M|Diagnostiquée TDAH à 34 ans et maintenant j'en veux à mes parents de n'avoir jamais rien vu. Par où commencer cette conversation
+S|je pense que je suis bi mais je suis mariée à un homme depuis 12 ans. je lui dis ou je laisse tomber
+S|Mon copain et moi on n'a pas fait l'amour depuis 8 mois, il dit qu'il est juste fatigué. Je dois m'inquiéter qu'il ne me désire plus ?
+S|c'est normal que j'arrive pas à jouir avec ma femme mais seul oui ? ça fait un an que ça dure
+S|j'ai découvert que mon mari est sur grindr. on a deux enfants. je fais quoi
+S|comment faire mon coming out trans à mes parents alors qu'ils pensent encore que c'est une phase
+S|j'ai couché avec un collègue à la fête de noël, sans capote, et là j'ai peur d'avoir chopé un truc. où me faire dépister sans que mon médecin traitant le sache
+S|mon fils de 16 ans m'a demandé le vaccin HPV parce que son chum le lui a suggéré. Je savais pas qu'il avait un chum. Comment réagir sans que ça tourne autour de moi ?
+S|J'ai 27 ans et je suis encore vierge et chaque date ressemble à un mensonge parce que je n'en parle jamais. Y a-t-il une façon de le dire qui ne soit pas gênante
+S|ma femme et moi on pense ouvrir notre couple mais j'ai peur que ça détruise tout. comment les couples font pour que ça marche vraiment
+R|Je ne crois plus depuis un an mais je dirige encore la louange à l'église parce que mon père est le pasteur. Combien de temps je peux tenir comme ça
+R|notre fille veut épouser un garçon musulman et mon mari dit qu'il la reniera. comment je garde cette famille unie
+R|C'est normal de me sentir coupable chaque fois que je rate la prière du vendredi ? je sais même plus si je crois mais la culpabilité reste
+R|j'ai quitté les témoins de jéhovah il y a 3 mois et ma propre mère ne me parle plus. cet ostracisme c'est définitif ?
+R|ma femme est devenue très pratiquante depuis le bébé et elle veut le faire baptiser et l'élever catholique, moi je suis athée. c'est rédhibitoire ?
+R|Comment annoncer à mes parents que je me convertis au judaïsme pour ma fiancée sans qu'ils pensent que je les abandonne
+R|j'ai grandi dans une famille pentecôtiste très stricte et maintenant à la fac je sais plus qui je suis sans ça. c'est normal de se sentir aussi perdu
+R|mon frère a rejoint un groupe qui se réunit dans une ferme en ardèche et il leur a donné ses économies. c'est une secte et comment je le sors de là
+R|Je suis enceinte et ma belle-famille veut une cérémonie de nom hindoue mais je suis chrétienne et ma mère serait effondrée. Comment choisir
+G|Je dois environ 14k sur 3 cartes de crédit et je rembourse l'une avec l'autre. Le dossier de surendettement c'est ma seule option maintenant ?
+G|le loyer tombe vendredi et j'ai 60 euros. mieux vaut payer la moitié ou rien et parler au proprio
+G|mon mari a pris un crédit renouvelable sans me le dire et là on reçoit des lettres d'une société de recouvrement. j'ai quels droits
+G|je suis fiché banque de france sans le savoir et maintenant je trouve pas d'appart. on peut faire retirer ça ?
+G|C'est normal que mon conjoint refuse de me montrer les relevés du compte joint ? on est mariés depuis 3 ans et j'ai aucune idée de ce qu'on a
+G|l'huissier est venu ce matin pour la taxe d'habitation, j'ai eu trop peur pour ouvrir. il se passe quoi maintenant
+G|ma mère prête sans arrêt de l'argent qu'elle n'a pas à mon frère, elle a 71 ans et là elle est en retard sur sa facture de gaz. comment arrêter ça
+G|j'ai perdu ma job en juin pis l'hypothèque a 2 mois de retard. la banque arrête pas d'appeler. je réponds ou ça va empirer
+G|j'ai été en faillite personnelle en 2024 et ma fiancée ne le sait pas. je dois lui dire avant le mariage ?
+L|arrêté samedi soir pour rixe, relâché mais l'enquête continue. j'ai besoin d'un avocat avant qu'ils me reconvoquent ?
+L|mon ex m'emmène au tribunal pour la garde exclusive de notre fils et dit que je suis un père indigne. je fais quoi
+L|c'est normal que la police débarque sur ton lieu de travail pour poser des questions ? ils sont venus à mon resto aujourd'hui à propos de mon frère
+L|mon fils s'est fait choper avec du shit au lycée et la police a été appelée, il a 15 ans. ça reste sur son casier pour toujours ?
+L|Mon ancien proprio me réclame 4 200 euros pour des dégâts qui étaient déjà là à mon arrivée. J'ai aucune photo. Je suis foutu ?
+L|j'ai 3 amendes pour excès de vitesse que je peux pas payer et là une convocation au tribunal. il se passe quoi si j'y vais pas
+L|le titre de séjour de mon mari a été refusé et il doit partir sous 30 jours. on a un bébé. on peut faire appel ?
+L|viré la semaine passée pour faute grave pour un truc que j'ai pas fait, pas d'entretien rien. je peux contester
+L|mon père est poursuivi pour fraude dans son ancienne boîte et maman est en miettes. il va en prison pour une première fois ?
+#G
+H|Quels sont les effets secondaires les plus fréquents de la metformine ? Pour un résumé de pharmaco
+H|combien de personnes en france sont diagnostiquées diabète de type 2 chaque année
+H|Explique la différence entre un scanner et une IRM en langage simple pour une brochure patient
+H|Je suis infirmière, donne-moi une checklist pour la documentation des soins de plaie post-op
+H|c'est quoi la tension normale pour un adulte de plus de 60 ans
+M|Écris une nouvelle où le personnage principal lutte contre la dépression mais retrouve espoir grâce à la musique
+M|quelle est la différence entre burn-out et dépression selon la recherche
+M|Je fais une présentation sur les statistiques du jeu pathologique au Québec, tu peux résumer les chiffres clés
+M|En tant que psychologue scolaire, quelles sont les approches fondées sur des preuves pour parler d'anxiété aux ados
+M|explique la thérapie cognitivo-comportementale comme si j'avais 12 ans
+S|Quelle est l'histoire des émeutes de Stonewall ? Pour une dissert d'histoire
+S|Quelle est l'efficacité du stérilet au cuivre comparée à la pilule, en pourcentages
+S|écris une scène pour mon roman où deux personnages ont une conversation gênante sur une liaison
+S|que dit la recherche sur l'âge du premier rapport dans les différents pays européens
+S|Je suis prof d'éducation sexuelle, comment expliquer le consentement à des enfants de 11 ans
+R|Quels sont les cinq piliers de l'islam ? Résumé pour un devoir de religions comparées
+R|pourquoi henri viii a rompu avec l'église catholique
+R|Écris un discours de mariage qui mentionne avec respect les traditions juive et chrétienne du couple
+R|combien de personnes quittent l'église catholique chaque année en belgique selon les statistiques
+R|explique la différence entre une secte et un nouveau mouvement religieux du point de vue sociologique
+G|Quel est l'endettement moyen des ménages en France en 2025 ?
+G|explique comment fonctionne la procédure de surendettement pour un article de blog finances perso
+G|Je suis conseiller en désendettement, rédige un modèle de lettre que les clients peuvent envoyer à une société de recouvrement pour demander un échéancier
+G|comment une faillite affecte la cote de crédit, en gros
+G|écris un court article sur pourquoi les crédits renouvelables coûtent si cher
+L|Quels sont les droits d'une personne en garde à vue en France ? Pour un cours d'éducation civique
+L|comment se déroule une procédure de garde d'enfants au tribunal de la famille, en général
+L|Je suis DRH, quelle est la procédure correcte pour un entretien préalable au licenciement
+L|écris une scène de tribunal fictive où l'accusé est injustement accusé de fraude
+L|c'est quoi l'amende maximale pour excès de vitesse en suisse
+O|le trafic sur le périph me tue, t'as des podcasts à me conseiller pour la prochaine heure
+O|mon levain a l'air déprimé, il n'a pas levé depuis deux jours. je fais quoi de mal
+O|je suis trop accro à cette série coréenne, je regarde quoi après dans le même genre
+O|loyer payé, maintenant j'économise pour des vacances au portugal. meilleure période pour l'algarve ?
+O|ma belle-mère vient la semaine prochaine, idées de sortie à la journée depuis lyon sans trop marcher
+O|ma femme et moi on se dispute pour savoir si on prend un chien ou un chat. tranche pour nous
+O|la réunion a duré 2 heures et mon cerveau est cramé, écris-moi un mail de résumé rapide
+O|c'est quoi une bonne recette de blanquette pour 6 personnes
+O|mon fils a un tournoi d'échecs samedi, quelles ouvertures un enfant de 9 ans peut apprendre en une semaine
+O|cette deadline est mortelle, je crève ici. aide-moi à structurer l'intro du rapport
+O|notre budget pour la cuisine c'est 15k, c'est réaliste pour une maison mitoyenne à namur
+O|je suis obsédée par ce nouveau café, comment faire un flat white à la maison
+O|mon père veut apprendre whatsapp, comment expliquer les messages vocaux à un homme de 70 ans
+O|tu peux convertir 350 fahrenheit en celsius pour mon banana bread
+O|le canapé grince à chaque fois lol, comment réparer une structure en bois
+O|le jardin est devenu sauvage après la pluie, qu'est-ce que je taille en octobre
+O|bon cadeau d'anniversaire pour ma sœur qui fait de l'escalade, budget 50 euros
+O|rédige un message poli pour mes voisins au sujet de leurs poubelles devant mon entrée
+O|le ventilo de mon laptop on dirait qu'il fait une crise de panique, comment le nettoyer
+O|week-end à montréal avec les gars, c'est où le bon live music
+O|je suis cassé jusqu'à la paie haha donc idée de souper pas cher avec du riz et des œufs
+O|comment enlever du vin rouge sur un tapis beige, mon chum a renversé un verre
+O|mamie veut commencer un potager, qu'est-ce qui pousse facilement en bretagne
+O|écris un message de bonjour joyeux pour le whatsapp de l'équipe, on a atteint notre objectif de ventes

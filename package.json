@@ -1,13 +1,13 @@
 {
   "name": "kamelo",
-  "version": "1.7.2",
+  "version": "1.8.0",
   "license": "AGPL-3.0-only",
   "private": true,
   "description": "Kamelo: a browser extension that suggests a temporary chat or Melo, a private chat with on-device AI, when you type something personal into an AI chat.",
   "scripts": {
-    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topics-alledaags.test.js && node tests/detectie-meting.mjs && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/device.test.js && node tests/rich.test.js && node tests/melo-face.test.js && node tests/reken.test.js && node tests/guard.test.js && node tests/pack.test.mjs && node tests/geen-netwerk.test.mjs && node tests/talen.test.js && node tests/chat-page.test.js",
+    "test": "node tests/topics.test.js && node tests/topics-corpus.test.js && node tests/topics-alledaags.test.js && node tests/gegevens.test.js && node tests/detectie-meting.mjs && node tests/topic-ai.test.js && node tests/manifest.test.js && node tests/sites.test.js && node tests/device.test.js && node tests/rich.test.js && node tests/melo-face.test.js && node tests/reken.test.js && node tests/guard.test.js && node tests/pack.test.mjs && node tests/geen-netwerk.test.mjs && node tests/talen.test.js && node tests/browser-id.test.js && node tests/chat-page.test.js",
     "meet:detectie": "node tests/detectie-meting.mjs --waarom",
-    "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs tests/browser/lees-pagina.test.mjs",
+    "test:browser": "node --test --test-concurrency=1 tests/browser/public.test.mjs tests/browser/lees-pagina.test.mjs tests/browser/mac.test.mjs",
     "pack": "node tools/pack.mjs",
     "test:firefox": "node tests/browser/firefox-gratis.mjs",
     "pack:firefox": "node tools/pack.mjs --firefox"

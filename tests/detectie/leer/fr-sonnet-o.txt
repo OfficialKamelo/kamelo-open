@@ -1,0 +1,251 @@
+#G
+O|mon appli plante des que j'ouvre l'appareil photo sur android 14, ca vient d'ou
+O|comment tuer un processus qui reste bloque sous linux, kill -9 ne suffit pas
+O|mon téléphone est mort ce matin et il ne se recharge plus du tout, c'est le port usb ou la batterie ?
+O|dans Football Manager mon club a 40 millions de dette, comment remonter sans vendre mes meilleurs joueurs
+O|jsuis en train de faire un gâteau au yaourt et j'ai plus de farine, je peux mettre de la maïzena à la place
+O|j'ai un virus sur mon ordi je crois, des pop-ups partout, comment nettoyer avec Malwarebytes
+O|mon test unitaire est positif alors qu'il devrait échouer, un faux positif avec jest, des idées ?
+O|je meurs d'envie de voir Stromae en concert, comment avoir des places à un prix correct
+O|cherche une bonne série policière à binger ce week-end, genre Capitaine Marleau ou Mongeville
+O|on cherche un court de tennis à louer près de Lausanne pour dimanche matin
+O|notre mariage aura lieu à l'église Saint-Eustache en juin, comment décorer les bancs sans rien abîmer ?
+O|comment tuer les pucerons sur mes rosiers sans produit chimique
+O|chui nul j'ai encore tué mon basilic, comment le garder en vie plus d'un mois
+O|quel est le meilleur moment pour tailler mon tilleul, il commence à cacher toute la terrasse
+O|Écris-moi un mail poli pour reporter la réunion de jeudi à vendredi matin, mon chef est en déplacement
+O|c'est quoi la différence entre passé composé et imparfait, ma fille a un contrôle demain
+O|mon chat vomit des boules de poils presque chaque semaine, ya une pâte ou une croquette qui aide
+O|on part 5 jours à Lisbonne avec des amis, tu peux me faire un itinéraire sans courir partout
+O|recette de crêpes pour 12 personnes, ma belle-mère vient dimanche et elle adore ça
+O|pk mon css s'applique pas sur le bouton, j'ai mis la classe mais rien ne change
+O|mon fils de 8 ans veut une fête d'anniversaire sur le thème Minecraft, des idées de jeux pour 10 enfants ?
+O|Quelle est la meilleure façon de dérouiller la chaîne de mon vélo, mon pauvre vélo est resté dehors tout l'hiver
+O|combien de temps faut-il cuire un rôti de porc de 1,2 kg à 180 degrés
+O|j'ai calé mon moteur en côte pour la troisième fois pendant ma leçon de conduite, des conseils pour le point de patinage
+O|bonjour, pouvez-vous m'aider à rédiger une réponse à un client qui se plaint d'un retard de livraison de trois jours ?
+O|tkt jai trouve, c'était juste un point-virgule en trop, merci quand meme
+O|Ma blonde et moi on veut magasiner un sofa, vaut-il mieux du cuir ou du tissu avec un chat qui gratte
+O|comment on dit nonante-neuf en chiffres et pourquoi les Belges disent septante
+O|idée de cadeau pour mon père qui a 60 ans et qui aime la pêche et le jardinage
+O|l'ordre de visionnage de Prison Break, j'ai commencé par la saison 2 par erreur lol
+O|mon frère fait toujours faillite au Monopoly, vous avez une stratégie simple pour l'aider à gagner
+O|comment gagner le procès du chapitre 3 dans Ace Attorney, je bloque sur le témoin du perroquet
+O|j'ai renversé du café sur mon clavier de portable, je fais quoi tout de suite
+O|explique la différence entre un let et un const en javascript avec un exemple simple
+O|quelle est la capacité maximale du bagage cabine chez Ryanair en 2026, mon sac fait 9 kilos
+O|mon chum veut apprendre à jouer au hockey à 35 ans, quel équipement de base acheter
+O|Combien de calories on brûle en 45 minutes de vélo d'appartement, juste pour ma curiosité de sportif du dimanche
+O|la batterie de ma voiture est morte ce matin, comment faire un démarrage avec des câbles
+O|donne-moi 5 idées d'activités pour une journée de pluie avec deux enfants de 4 et 6 ans
+O|Je cherche un synonyme élégant de "important" pour mon rapport de stage
+O|dans Payday 2 comment faire le braquage de banque en mode furtif sans alerter les gardes
+O|mon signe est cancer et ma copine est balance, c'est compatible ou pas pour l'horoscope
+O|on a gagné 3-1 hier avec mon club de foot, tu peux m'écrire un petit message de remerciement pour le coach
+O|qu'est-ce qu'un accord de quinte en guitare, j'apprends avec mon oncle
+O|mon fils pleure parce que son Tamagotchi est mort, comment le réinitialiser
+O|mon pc portable chauffe à mort quand je lance Fortnite, ventilateur ou pâte thermique
+O|je cherche une enceinte bluetooth étanche pour la plage, budget 80 euros
+O|comment faire une bombe de bain maison avec du bicarbonate et de l'acide citrique pour offrir à ma sœur
+O|conjuguer le verbe "résoudre" au subjonctif présent, je me trompe tout le temps
+O|on organise l'EVG de mon meilleur pote à Barcelone, idées d'activités pour 8 gars qui aiment le foot
+O|les règles du tarot à quatre, mes beaux-parents veulent jouer ce soir et je connais rien
+O|mon petit chiot de 3 mois veut tout mordre, comment lui apprendre à arrêter
+O|bonjour, je dois envoyer un devis pour la rénovation d'une cuisine de 12 m², pouvez-vous m'aider à structurer le mail
+O|comment on calcule l'aire d'un trapèze, mon neveu a un devoir pour demain
+O|meilleure pâte à crêpes pour une soirée entre potes, avec ou sans bière dans la pâte
+O|Visiter le Père-Lachaise, quelles tombes célèbres voir en deux heures, on y va dimanche
+O|j'ai pogné un caillou dans mon pneu, je roule encore ou je change la roue tout de suite
+O|quel jeu de société pour 6 adultes qui n'aiment pas les règles compliquées
+O|comment installer une étagère flottante dans une cloison en placo, les vis tiennent pas
+O|dis moi un truc: la différence entre "quand même" et "pourtant" ?
+O|mon pote m'a envoyé un lien vers un tuto Blender, tu peux m'expliquer ce que fait le modificateur subdivision
+O|quels légumes semer en mars dans le nord de la France pour mon potager
+O|mon lapin ne mange plus son foin depuis hier et reste dans son coin, faut-il aller chez le véto
+O|ma tante vient de Dakar visiter Paris trois jours, quels musées à faire absolument
+O|j'arrive pas à faire un tableau croisé dynamique sur Excel, les dates restent en texte
+O|le prof de maths nous a donné une équation du second degré, x² - 5x + 6 = 0, comment on résout
+O|Quel est le fuseau horaire de Montréal par rapport à Genève pour planifier un appel
+O|j'ai pris un abonnement salle de sport mais je veux juste du cardio, quel programme de 30 minutes
+O|comment sécuriser mon compte Instagram avec la double authentification, c'est pas clair dans les réglages
+O|mon beau-frère veut un barbecue à gaz pour son anniversaire, weber ou napoleon
+O|pourquoi mon pain n'a pas levé, j'ai pourtant mis 7 g de levure pour 500 g de farine
+O|dans Zelda mon personnage est blessé et n'a plus de cœurs, où trouver des fées
+O|notre chaudière fait un bruit de tuyau qui claque quand elle démarre, normal ?
+O|mon chien boite depuis cette promenade, la patte avant gauche, je surveille ou je l'emmène chez le vétérinaire
+O|histoire courte de la tour Eiffel pour un exposé de 5 minutes en CM2
+O|comment dire "mon appli plante" en anglais pour un ticket de support
+O|chui à Genève 2 jours, une bonne fondue pas trop touristique ?
+O|j'ai un entretien technique en python demain, quelles questions de tri et de complexité tombent souvent
+O|quelle taille de pneu pour une Peugeot 208 de 2019, j'ai la flemme de regarder sur le flanc
+O|mes poules ne pondent presque plus depuis octobre, normal avec les jours qui raccourcissent
+O|résume-moi la bataille de Waterloo en dix lignes pour mon fils
+O|le chien du voisin a tué mes tomates en creusant partout, comment protéger le potager
+O|on a une soirée jeux ce soir, vous connaissez un jeu coopératif où personne n'est éliminé
+O|quel sac à main offrir à ma sœur pour ses 30 ans, budget 150 euros
+O|corrige ma phrase svp: "Je suis allé au magasin hier et j'ai acheté des pomme"
+O|Comment je peux faire un backup de mon iPhone sur mon Mac avant la mise à jour iOS
+O|ma fille a une dictée demain, tu peux m'en inventer une de 8 lignes niveau CE2
+O|la différence entre un moteur diesel et essence en mots simples, j'hésite pour mon prochain char
+O|durée du vol Paris Montréal en octobre, avec escale c'est long ?
+O|mon gps de voiture me dit tourne à gauche dans un champ, comment le mettre à jour
+O|comment faire le meilleur chili con carne pour 8, mes amis arrivent à 19h
+O|mon chat s'est fait les griffes sur le canapé encore, comment l'en dissuader sans le gronder
+O|écris un petit discours de 1 minute pour l'anniversaire de mariage de mes grands-parents, 50 ans
+O|jai plus de wifi dans la chambre, mon routeur est au salon, répéteur ou cpl
+O|cherche des chaussures de rando pas chères mais solides pour le Jura
+O|Pouvez-vous expliquer ce qu'est la photosynthèse pour un élève de sixième
+O|quelle est la différence entre un gîte et un Airbnb en France, on cherche pour 6 personnes
+O|on peut congeler une tarte aux pommes déjà cuite ou c'est mort pour la pâte
+O|mon neveu veut un drone pour Noël, quel modèle débutant sous 150 balles
+O|peux-tu me proposer une façon polie de dire à mon collègue que je ne suis pas dispo vendredi pour la réunion
+O|quelle huile pour ma tondeuse thermique, mon voisin dit 10W30 mais le manuel dit autre chose
+O|comment rattraper une sauce trop salée, j'ai versé une demi-cuillère de trop
+O|le chat de ma copine a mangé une plante, c'est dangereux le ficus pour lui ?
+O|Quelles sont les règles du hors-jeu au football, mon fils de 9 ans me pose la question à chaque match
+O|jai besoin dun nom pour mon équipe de pétanque entre collègues, quelque chose de drôle
+O|mon ordi est en phase terminale, il met 10 minutes à démarrer, je change le SSD ou je rachète un portable
+O|pk mon jeu lag alors que ma config est correcte, RTX 4060 et 16 go de ram
+O|traduis en anglais: "Je serai en congé du 3 au 14 août, merci de contacter ma collègue Sophie"
+O|Quand faut-il rentrer mes géraniums pour l'hiver, nous habitons en Alsace
+O|j'ai 3 oeufs, du chocolat et du beurre, un dessert rapide pour ce soir ?
+O|Je prépare un voyage de noces au Japon en avril avec ma femme, Tokyo puis Kyoto, combien de jours dans chaque ville
+O|tu peux m'expliquer les fractions équivalentes comme si j'avais 10 ans
+O|mon fils joue au foot le samedi, quelles chaussures à crampons pour terrain synthétique
+O|mon cousin se marie samedi et je sais pas faire un nœud de cravate
+O|La meilleure application pour apprendre le néerlandais en 6 mois avant de déménager à Gand ?
+O|mon mac est super lent depuis la mise à jour, comment libérer de la place sur le disque
+O|quelle plante d'intérieur survit sans lumière dans ma salle de bain
+O|le dernier épisode de The Bear c'était fou, sans spoiler vous en pensez quoi
+O|dans Elden Ring mon ami et moi on se fait massacrer par Margit, quelle arme prendre pour un build force
+O|cherche un cadeau pour ma prof de piano, pas trop cher, elle part à la retraite
+O|sur quel site je peux acheter un vélo électrique d'occasion en Belgique sans me faire avoir
+O|mon gsm n'a plus de réseau depuis ce matin à Namur, est-ce que c'est une panne chez Proximus
+O|Quelle est la différence entre "ça" et "çà", mon petit frère confond tout
+O|le match de tennis d'hier c'était long, c'est quoi le tie-break à 10 points
+O|mon voisin me prête sa perceuse, quelle mèche pour percer du béton
+O|conseil pour réussir ses pancakes, les miens sont toujours plats comme des crêpes
+O|comment on appelle en français un "bug" dans un logiciel, j'hésite entre anomalie et défaut
+O|Voici mon code: for i in range(10): print(i+1) — comment le modifier pour afficher seulement les nombres pairs
+O|ma tortue d'eau ne sort plus de l'eau depuis deux jours et ne mange pas, est-ce normal à la fin de l'automne
+O|on veut repeindre le salon en vert sauge, quelle couleur pour les boiseries
+O|résume l'intrigue de Les Misérables pour une fiche de lecture de troisième
+O|mon petit-fils veut des Lego Technic pour ses 10 ans, quel set pas trop dur ?
+O|comment dit-on "tu veux" en verlan, mon neveu parle que comme ça
+O|j'ai trouvé une araignée énorme dans la cave, est-ce que c'est une tégénaire ou une mygale
+O|Dans Fortnite comment je gagne face à des gars qui construisent à toute vitesse
+O|Quel est le meilleur moyen de ranger ses câbles sous un bureau, on est quatre dans le même bureau
+O|mon beau-père adore le jardinage, que lui offrir pour la fête des pères, max 40 euros
+O|Réponse formelle: demande de devis pour l'impression de 500 flyers format A5
+O|mon serveur crash sous la charge, comment faire un test de stress avec k6
+O|mon chien de 12 ans mange moins et dort beaucoup, est-ce normal pour un labrador de cet âge
+O|comment tuer le temps pendant 6 heures de train de Zurich à Vienne
+O|je meurs de faim, une idée de repas en 15 minutes avec des pâtes et des œufs
+O|mon prof de physique dit qu'une charge positive attire une charge négative, pourquoi
+O|dans Stardew Valley j'ai une dette envers Joja, ça vaut le coup de la rembourser tout de suite
+O|j'ai un souci de dépendance npm, mon package-lock plante à chaque install
+O|Qu'est-ce qu'une dépression sur une carte météo, mon fils me demande pourquoi il pleut quand c'est un "D"
+O|Je m'excuse, une question de mise en forme: comment faire un saut de page dans Word pour séparer mes chapitres
+O|ma montre connectée est morte et ne s'allume plus même branchée, garantie 2 ans
+O|comment expliquer la dette technique à mon chef de projet qui n'y connaît rien
+O|j'suis accro à la nouvelle saison de Lupin, vous auriez d'autres séries pareilles ?
+O|on a tué le boss final de Hollow Knight à trois essais mon frère et moi, quelle fin choisir
+O|quelle est la meilleure ouverture aux échecs pour attaquer fort quand on joue avec les blancs
+O|ya un moyen de forcer la fermeture d'une app qui répond plus sur mac sans redémarrer
+O|mon site WordPress est super lent, quel plugin de cache choisir, WP Rocket ou LiteSpeed
+O|j'ai fait cramer le riz au fond de la casserole, comment nettoyer sans y passer une heure
+O|mon ficus perd toutes ses feuilles depuis que je l'ai déplacé
+O|des idées de playlist pour une soirée raclette entre amis, un peu de tout
+O|mon anti-virus a mis en quarantaine un fichier de mon jeu, c'est un faux positif ou pas
+O|combien de temps de cuisson pour un poulet entier de 1,6 kg
+O|quelle est la meilleure période pour partir en Crète, on ira avec les enfants fin juin
+O|probabilité de tirer deux as d'affilée dans un jeu de 52 cartes, c'est pour un exercice de maths
+O|mes amis et moi voulons créer un groupe WhatsApp pour organiser le co-voiturage, des conseils pour que ça reste simple
+O|j'ai un entretien d'embauche pour un poste de comptable lundi, quelles questions poser au recruteur
+O|comment pose-t-on du parquet flottant dans une chambre, on est deux et on n'a jamais fait
+O|mon petit frère de 15 ans cherche un premier jeu sur Switch, il aime Mario Kart et Pokémon
+O|Tu peux me proposer un plan de séance de running pour préparer un 10 km en 8 semaines, je cours déjà 5 km
+O|comment dit-on "pamplemousse" en anglais américain, et "pomelo" aussi ?
+O|quelle est la capitale de l'Australie, mon fils pense que c'est Sydney
+O|mon appli Spotify se ferme toute seule sur iPhone depuis hier
+O|la meilleure façon de présenter un exposé sur les volcans à des 6e, mon fils a besoin d'aide
+O|quelle différence entre kayak et canoë, on veut louer en famille à Dinant
+O|y'a une bonne boulangerie vers la gare de Nyon, j'arrive demain matin
+O|on achète une voiture d'occasion avec ma femme, diesel ou essence pour 12 000 km par an
+O|Salut, peux-tu relire ce message pour un collègue: "Merci pour ton retour rapide, je m'occupe du dossier dès lundi"
+O|pourquoi le ciel est bleu, ma petite nièce de 5 ans n'arrête pas de demander
+O|comment changer le nom du réseau wifi de ma Freebox
+O|y a-t-il un moyen de transformer un fichier PDF en Word sans perdre la mise en page
+O|ma copine veut un chiot, golden ou border collie pour un appartement de 60 m²
+O|le salon de l'auto de Genève, c'est encore en février, on voudrait y aller avec mon père
+O|comment réussir une mayonnaise qui ne tourne pas, la mienne rate toujours
+O|une idée pour décorer le gâteau d'anniversaire de ma fille qui a 6 ans et adore les licornes
+O|peux-tu faire un tableau comparatif de trois aspirateurs robots, Roborock, Roomba et Dreame
+O|comment faire une sauvegarde automatique avec rsync tous les soirs à 22h
+O|Notre équipe de basket cherche un nom, on est des collègues, on a entre 30 et 45 ans
+O|je pars à Montréal en février, quels vêtements prévoir pour -20 degrés
+O|mon CD gravé ne se lit pas sur l'autoradio de ma bagnole, graver à 4x ou à 52x
+O|mon fils de 7 ans demande pourquoi la lune change de forme, comment lui expliquer simplement
+O|explique ce que fait la commande git rebase, j'ai peur de casser ma branche
+O|dis, on peut mettre un sapin de Noël artificiel à l'extérieur sur la terrasse
+O|comment on fait pour tricoter un bonnet, ma grand-mère essaie de m'apprendre mais jsuis nul
+O|Pourriez-vous me suggérer un menu de réveillon pour huit convives, entrée, plat, dessert ?
+O|mon ordi n'a plus de son depuis la mise à jour, les haut-parleurs sont activés pourtant
+O|la meilleure raquette de padel pour un débutant, mon pote joue depuis 2 ans et me prête la sienne
+O|dans Mario Kart, comment battre mon cousin à chaque fois sur Rainbow Road
+O|c'est quoi la mort subite en hockey, la prolongation s'arrête au premier but ?
+O|on veut faire un potager en carrés sur notre balcon, quelles dimensions et quelle terre
+O|traduis-moi "tire-bouchon" et "ouvre-boîte" en allemand pour mon voyage à Berlin
+O|quel âge pour offrir un premier téléphone à un enfant, ma fille de 11 ans le réclame
+O|je cherche un synonyme de "cependant" qui sonne moins scolaire
+O|mon beau-père m'a laissé son vieux vélo de course, comment régler la selle à ma taille
+O|les dauphins dorment-ils vraiment avec la moitié du cerveau, mon fils veut le savoir
+O|Rédige un message d'accueil pour le site de ma boulangerie, ton chaleureux, ouverture à 6h
+O|mon chien refuse de monter dans la voiture depuis qu'on a changé de coffre, comment l'habituer
+O|dans mon code python, comment faire pour qu'un test pytest passe quand l'exception est bien levée
+O|j'ai explosé mon forfait data avant la fin du mois, quel forfait illimité en Belgique
+O|quelle est la meilleure façon de faire un feu dans un poêle à bois pour qu'il chauffe vite
+O|quoi manger avant un match de foot à 15 heures, mon fils joue en U13
+O|comment écrire une lettre de remerciement à l'institutrice de ma fille pour la fin de l'année
+O|pk mon imprimante affiche hors ligne alors qu'elle est allumée et connectée au wifi
+O|l'accord du participe passé avec avoir, j'ai jamais compris la règle du COD placé avant
+O|quel est le meilleur moment pour acheter des billets de train SNCF pour les vacances de Noël
+O|comment faire pousser de la menthe en pot sans qu'elle envahisse tout, ma mère en a plein
+O|une série policière à binger qui se passe en Belgique, genre La Trêve
+O|mon écran externe clignote quand je branche mon laptop en usb-c, ca ressemble à un souci de câble
+O|histoire de l'église Notre-Dame de Montréal, on la visite dimanche avec mes parents
+O|Quelle est la formule de l'aire d'un cercle et un petit exemple avec un rayon de 7 cm
+O|un jeu de piste pour l'anniversaire de mon fils de 9 ans dans le jardin, 8 copains, 1h
+O|mes collègues me demandent de gérer le pot de départ de Bernard, que prévoir comme boissons et snacks
+O|comment installer Docker sur ubuntu 22.04, les commandes de la doc ne passent pas
+O|le meilleur café en grains pour une machine à expresso automatique, ma belle-sœur m'a offert une Delonghi
+O|la chasse aux œufs de Pâques dans le jardin, comment cacher des œufs pour des enfants de 3 à 8 ans
+O|voyant moteur orange sur mon tableau de bord d'une Clio 4, je peux rouler jusqu'au garage
+O|trop de moustiques sur notre terrasse, plantes ou pièges qui marchent
+O|on a gagné un voyage à Tenerife au concours de l'entreprise, quel mois pour y aller avec ma femme
+O|je dois faire un powerpoint de 10 diapos sur le tri des déchets pour mon cours de techno
+O|jai un chat de 2 ans qui miaule à 5h du matin tous les jours, comment décaler ses repas
+O|est-ce qu'on dit "un" ou "une" après-midi, ma collègue belge et moi on n'est pas d'accord
+O|les meilleurs réglages de sensibilité pour Valorant, je joue sur écran 144 Hz avec une souris Logitech
+O|je cherche une chanson pour la première danse de mariage de ma sœur, plutôt douce, en français
+O|quel produit pour enlever le calcaire de ma bouilloire, le vinaigre blanc ça suffit
+O|comment fonctionne le moteur d'une voiture électrique, en termes simples pour mon fils de 12 ans
+O|Bonjour, je cherche à traduire en espagnol l'invitation de mon anniversaire pour les amis de ma compagne
+O|ma bagnole fait un bruit de sifflement quand j'accélère, courroie ou turbo ?
+O|idées de questions pour un quiz de pub entre potes, thème années 90
+O|faut-il arroser une pelouse tondue en plein soleil l'été, chez nous il fait 35 degrés
+O|mon vélo électrique n'avance plus en côte, la batterie était pleine hier
+O|quel sport pratiquer à deux avec mon mari le week-end, on veut du plein air sans trop de technique
+O|10 pompes, 20 squats et 30 secondes de gainage, comment organiser ça en circuit de 20 minutes à la maison
+O|en Suisse, quelle est la différence entre un natel et un smartphone ? mon cousin de Paris comprend pas
+O|mon poisson rouge nage de travers depuis ce matin et reste en haut de l'eau, vous avez une idée
+O|mon cochon d'Inde ne veut plus de ses granulés depuis ce matin, que faire
+O|ma chatte a été stérilisée hier et elle dort beaucoup, c'est normal pour le réveil de l'anesthésie
+O|comment donner un comprimé à mon chien sans qu'il le recrache, le véto a prescrit un antibiotique pour son oreille
+O|quelles croquettes pour un chat senior de 14 ans, il maigrit un peu
+O|Quel est le meilleur logiciel gratuit pour monter une vidéo de vacances sur PC
+O|peux-tu m'aider à écrire un poème de 4 vers pour la fête des mères
+O|comment éviter les bouchons sur l'A7 un samedi de départ en vacances
+O|on dit "chocolatine" ou "pain au chocolat", c'est la guerre entre mes collègues du Sud-Ouest et du Nord
+O|mon casque Bluetooth se connecte puis se déconnecte toutes les 10 secondes sur mon PC Windows
+O|notre fête de quartier approche, des idées d'animations pour les enfants, une quarantaine de gamins

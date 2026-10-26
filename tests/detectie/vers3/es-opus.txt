@@ -1,0 +1,110 @@
+#P
+H|llevo 3 días con un dolor en el pecho cuando subo escaleras, voy a urgencias o estoy exagerando
+H|Me llegaron los análisis y tengo la glucosa en 130 en ayunas. ¿Ya es diabetes?
+H|es normal que mi hija de 2 años siga con fiebre de 39 después de 3 días? no quiere comer nada
+H|Mi esposa tiene 33 semanas de embarazo y se le hincharon mucho los pies y la cara desde ayer, ¿es grave?
+H|a mi viejo le diagnosticaron cáncer de próstata, cómo nos preparamos para el tratamiento
+H|Tomo metformina desde hace 2 meses y sigo con dolor de panza después de comer, ¿se me va a pasar?
+H|me lesioné la rodilla jugando al fútbol, está re hinchada, será el ligamento cruzado?
+H|Mi madre cada vez se olvida de más cosas, dejó el gas encendido dos veces. ¿Cómo pedimos una evaluación de demencia?
+H|me encontré un bulto en la axila, no duele. cuánto espero antes de ir al médico
+M|hace semanas que casi no salgo de la cama, nada me importa y lloro todo el tiempo. que hago
+M|Me dan ataques de pánico en el metro, el corazón a mil y siento que me ahogo. ¿Cómo se quita esto?
+M|mi marido se bebe una botella de vino cada noche y se pone fatal si se lo digo, cómo hablo con él
+M|Mi hijo de 15 juega a la play hasta las 4 de la mañana y se pone agresivo si le quitamos el wifi. ¿Es adicción?
+M|mi hermano falleció en agosto y no puedo dormir, el duelo se hace más llevadero algún día?
+M|estoy de baja por burnout desde junio y me siento culpable con mis compañeros
+M|creo que mi amiga tiene bulimia, va al baño después de cada comida. como se lo digo
+M|Mi psicóloga me sugiere antidepresivos pero me dan miedo los efectos secundarios. ¿Experiencias?
+M|no puedo dejar la merca los fines de semana y ya me está afectando el laburo, cómo paro
+S|mi novio y yo casi no tenemos relaciones desde hace 6 meses, cómo lo hablo sin que se ofenda
+S|Tengo 18 y creo que soy lesbiana, mis papás son muy tradicionales. ¿Cómo les digo?
+S|es normal que duela la primera vez? nunca lo hice y estoy re nerviosa
+S|mi mujer me ha puesto los cuernos con un compañero de trabajo, no sé si puedo perdonarla
+S|se nos rompió el condón anoche, dónde consigo la pastilla del día siguiente en México y cuánto cuesta
+S|tengo unas ampollitas que pican ahí abajo desde hace una semana, puede ser herpes?
+S|Nuestro hijo de 14 dice que es trans y quiere cambiarse el nombre. ¿Cómo lo apoyamos?
+S|tengo 40, casado con una mujer, y me doy cuenta de que me gustan los hombres. qué hago
+S|mi novia quiere dejar la píldora, qué anticonceptivo nos recomiendan
+R|ya no creo en dios pero mis papás esperan que vaya a misa cada domingo, cómo se los digo
+R|Mis padres son musulmanes y mi novio es ateo, exigen que se convierta antes de casarnos. ¿Qué hacemos?
+R|es normal que me siga sintiendo culpable desde que dejé los testigos de jehová? ya van 2 años
+R|mi hermana se metió en un grupo que parece una secta y les dio todos sus ahorros, cómo la recuperamos
+R|Quiero apostatar pero mi abuela se moriría del disgusto. ¿Se lo digo?
+R|mi suegra insiste en bautizar al bebé y nosotros no queremos, cómo le digo que no sin pelear
+R|nací en una familia evangélica pero ya no creo nada, me voy de casa el mes que viene. les digo antes o después
+R|Mi marido se volvió muy religioso y no quiere que los niños vayan a cumpleaños de amigos
+R|estoy pensando en convertirme al judaísmo, mi familia es muy católica y les va a doler
+G|debo 200 mil pesos en tarjetas de crédito y solo pago el mínimo, cómo salgo de esto
+G|No puedo pagar el alquiler este mes y el casero amenaza con echarme. ¿Qué opciones tengo?
+G|me llegó una carta de una agencia de cobranza por una deuda que no reconozco, tengo que pagar?
+G|mi marido me ocultaba cartas del banco, ahora resulta que debemos 9000 euros. por dónde empiezo
+G|Estoy en el ASNEF por una factura vieja de móvil, ¿puedo pedir una hipoteca?
+G|nuestro negocio quebró y yo firmé como aval personal, qué pasa con nuestra casa
+G|Perdí 10 mil euros en apuestas deportivas este año y mi mujer no sabe nada. ¿Cómo se lo cuento?
+G|pedí un minicrédito para pagar la luz y ahora no lo puedo devolver, me están llamando todos los días
+G|estoy en el Veraz por una deuda con la tarjeta y no me dan ni un crédito, cómo salgo de ahí
+L|me citaron en comisaría para declarar como investigado, tengo que ir con abogado?
+L|A mi hijo de 17 lo detuvieron por robar en una tienda. ¿Va a tener antecedentes penales?
+L|mi ex casero me demanda por 3000 euros de daños que ya estaban, cómo me defiendo
+L|tengo una multa de 600 euros por saltarme un semáforo y no la puedo pagar, qué pasa si no pago
+L|Mi ex quiere la custodia completa y dice que soy inestable por mi depresión. ¿Puede ganar?
+L|me despidieron de un día para otro, creo que es despido improcedente, puedo reclamar?
+L|Tengo antecedentes de hace 10 años y me piden el certificado para un trabajo nuevo. ¿Va a salir?
+L|se me venció la visa hace 2 meses y tengo miedo de ir a migración, qué me puede pasar
+L|es normal que la policía tenga detenido a mi marido 24 horas sin decirnos por qué?
+#G
+H|cuáles son los síntomas de un ictus, es para una charla de primeros auxilios
+H|Explica cómo funcionan las vacunas de ARNm para clase de biología
+H|cuántas personas tienen diabetes tipo 2 en España
+H|Soy enfermera, redacta un folleto sobre prevención de caídas en mayores
+H|Escribe una escena para mi novela donde un médico le da un diagnóstico de cáncer a una paciente
+M|cuál es la diferencia entre psicólogo y psiquiatra
+M|Qué porcentaje de adolescentes en México tiene depresión según las últimas cifras
+M|Redacta una política de prevención del burnout para nuestra empresa
+M|explica los criterios del DSM-5 para el TDAH para mi examen
+M|escribe un poema sobre un personaje que lucha contra el alcoholismo
+S|cuál es la historia de los disturbios de Stonewall
+S|Prepara una clase de educación sexual sobre consentimiento para 3º de ESO
+S|qué tan efectivo es el DIU comparado con la pastilla, para una tarea
+S|Explica la diferencia entre identidad de género y orientación sexual
+S|en qué año se aprobó el matrimonio igualitario en Argentina
+R|cuáles son las diferencias entre católicos y protestantes
+R|Resume las causas de la Reforma protestante para mi tarea de historia
+R|qué porcentaje de españoles se declara no creyente
+R|Qué significa el Día de Muertos y cómo se celebra?
+R|escribe un ensayo sobre la libertad religiosa en la Constitución
+G|cómo funciona la Ley de Segunda Oportunidad en España
+G|explica el interés compuesto en las tarjetas de crédito
+G|Cuál es el nivel medio de endeudamiento de los hogares argentinos?
+G|Soy asesora financiera, redacta un folleto sobre consolidación de deudas
+G|diferencia entre concurso de acreedores y quiebra
+L|cuál es la diferencia entre abogado y notario
+L|Explica cómo funciona un juicio con jurado en España
+L|Escribe el inicio de una novela negra donde un inspector detiene al sospechoso equivocado
+L|qué derechos tiene un detenido en comisaría en México
+L|cómo terminó el juicio a Dani Alves
+O|este tráfico me está matando, recomiéndame podcasts para el coche
+O|mi masa madre se ve deprimida, ya no hace burbujas. qué hago mal
+O|estoy enganchadísima a esta serie, qué otras parecidas hay
+O|ya pagué el alquiler, ahora ahorro para las vacaciones, destinos baratos en Portugal?
+O|mi suegra viene la semana que viene, ideas de excursión cerca de Madrid para alguien que no camina mucho
+O|mi compu está enferma, todo va lentísimo. cómo la acelero
+O|ese examen me mató, necesito una receta fácil para cenar
+O|me muero de hambre, qué hago con huevos, puerro y queso
+O|mis plantas se ven enfermas, las hojas se ponen amarillas. demasiada agua?
+O|nuestro equipo de fútbol está en bancarrota de ideas jaja, escribe un mensaje gracioso para el grupo
+O|Mi hijo cumple 6 el sábado y le encantan los dinosaurios, ideas de juegos para la fiesta?
+O|me escribes una tarjeta para el cumple 80 de mi abuela
+O|qué nombre le pongo a un cachorro golden retriever
+O|soy adicta al matcha, dos al día es mucho?
+O|Hazme un presupuesto para un finde en Barcelona para dos, máximo 400 €
+O|escribe un post de linkedin anunciando mi nuevo puesto de jefa de proyecto
+O|tengo el cerebro frito después de esta semana, una peli tranqui para esta noche?
+O|cómo saco una mancha de vino tinto de un sofá blanco
+O|traduce "dónde está la estación de tren" al italiano
+O|Mi mujer y yo cumplimos 10 años de casados, buenos restaurantes en Buenos Aires?
+O|el gato se vuelve loco a las 3 de la mañana, cómo lo calmo
+O|la batería del celular se muere al mediodía, cambio la batería o el teléfono?
+O|cómo aprender guitarra a los 45 desde cero
+O|hace un frío que mata, ideas de sopa calentita?

@@ -18,6 +18,9 @@
   'use strict';
 
   const W = root.PrivacyTopicWords || (typeof require === 'function' ? require('./topic-words.js') : null);
+  // Tweede lijst: gewogen woorden en woorddelen (topic-model.js), voor wat de woordenlijst niet kent. Alleen in deze talen.
+  const M = root.PrivacyTopicModel || (typeof require === 'function' ? require('./topic-model.js') : null);
+  const MODEL_LANGS = ['en', 'nl', 'de', 'fr', 'es'];
   const TOPICS = ['HEALTH', 'MENTAL', 'SEXUALITY', 'RELIGION', 'MONEY', 'LEGAL'];
   const KINDS = ['words', 'self', 'NOT', 'ASK', ...TOPICS];
   const MAX_LENGTH = 20000; // bij heel lange teksten alleen het begin
@@ -142,25 +145,78 @@
     return [...found];
   }
 
+  // Alle onderwerpwoorden in de zin, ook zonder ik/mijn en ondanks een NOT-woord (voor de gewogen lijst, die zelf
+  // beoordeelt of het persoonlijk is).
+  function rawTopicsIn(sentence) {
+    const hits = [...hitsIn(sentence).values()];
+    const best = Math.max(0, ...hits.map(h => h.score));
+    const found = new Set();
+    for (const h of hits) {
+      h.alone.forEach(k => found.add(k));
+      if (fits(h, best)) h.topics.forEach(k => found.add(k));
+    }
+    return [...found];
+  }
+
   // Tijdens het typen wordt dezelfde tekst steeds opnieuw gecontroleerd: zinnen die al gecontroleerd zijn, onthouden we.
   const seen = new Map();
   function cachedTopicsIn(sentence) {
     let result = seen.get(sentence);
     if (!result) {
-      result = topicsIn(sentence);
+      result = { strict: topicsIn(sentence), raw: rawTopicsIn(sentence) };
       if (seen.size > 2000) seen.clear();
       seen.set(sentence, result);
     }
     return result;
   }
 
-  // Geeft de gevonden onderwerpen terug, in vaste volgorde: ['HEALTH', 'MENTAL', …].
-  function sensitiveTopics(text) {
+  // De gewogen lijst kijkt per alinea (meestal is dat het hele bericht: "mijn moeder is 72. ze heeft sinds kort …"),
+  // en alleen als de alinea in een van zijn talen is (de taal met de meeste veelgebruikte woorden) en lang genoeg: bij een
+  // korte zin is de woordenlijst precies, en heeft de gewogen lijst te weinig woorden om op te wegen. Anders null.
+  const modelSeen = new Map();
+  function judged(para) {
+    if (modelSeen.has(para)) return modelSeen.get(para);
+    let out = null;
+    if ((para.match(TOKEN) || []).length >= M.limits().words) {
+      let lang = null, best = 0;
+      for (const [code, h] of hitsIn(para.slice(-800))) if (h.score > best) { best = h.score; lang = code; }
+      if (MODEL_LANGS.includes(lang)) out = M.judge(para);
+    }
+    if (modelSeen.size > 500) modelSeen.clear();
+    modelSeen.set(para, out);
+    return out;
+  }
+
+  // Geeft de gevonden onderwerpen terug, in vaste volgorde: ['HEALTH', 'MENTAL', …]. Per alinea, in het Engels,
+  // Nederlands, Duits, Frans en Spaans (anders alleen de woordenlijst, zoals altijd):
+  //  - vond de woordenlijst iets (met ik/mijn, zonder NOT-woord): dat telt, behalve als de gewogen lijst zeker weet dat
+  //    het geen persoonlijke vraag is (een folder, een les, een verhaal) of over iets alledaags gaat ("mijn
+  //    zuurdesemstarter ziet er depressief uit", "je suis accro au café");
+  //  - vond hij niets, maar zegt de gewogen lijst "persoonlijk": de onderwerpwoorden uit de woordenlijst tellen toch,
+  //    ook zonder ik/mijn ("hab grad das ergebnis vom hiv test bekommen"); zonder onderwerpwoord het onderwerp van de
+  //    gewogen lijst, als die genoeg kans op een gevoelig onderwerp ziet. Allebei alleen als de gewogen lijst niet denkt dat het over iets
+  //    alledaags gaat ("ik geloof dat mijn code klopt", "I ran diagnostics on my server").
+  // Zelfbeschadiging: alleen de woordenlijst (die daar bewust zwijgt). { model: false }: alleen de woordenlijst.
+  function sensitiveTopics(text, { model = true } = {}) {
     if (!text) return [];
     const found = new Set();
-    for (const s of text.slice(0, MAX_LENGTH).split(/[.!?;\n。！？；।॥።။؟]+/)) {
-      if (!s.trim()) continue;
-      for (const k of cachedTopicsIn(s.trim())) found.add(k);
+    const L = model && M?.ready() ? M.limits() : null;
+    for (const para of text.slice(0, MAX_LENGTH).split(/\n\s*\n/)) {
+      if (!para.trim()) continue;
+      const strict = new Set(), raw = new Set();
+      for (const s of para.split(/[.!?;\n。！？；।॥።။؟]+/)) {
+        if (!s.trim()) continue;
+        const r = cachedTopicsIn(s.trim());
+        r.strict.forEach(k => strict.add(k));
+        r.raw.forEach(k => raw.add(k));
+      }
+      const j = L ? judged(para.trim()) : null;
+      if (!j || j.selfharm) strict.forEach(k => found.add(k));
+      else if (strict.size) { if (j.personal >= L.keep && j.none < L.everyday) strict.forEach(k => found.add(k)); }
+      else if (j.personal >= L.personal && j.none < L.none) {
+        if (raw.size) raw.forEach(k => found.add(k));
+        else if (j.sensitive >= L.topic) found.add(j.topic);
+      }
       if (found.size === TOPICS.length) break;
     }
     return TOPICS.filter(k => found.has(k));
@@ -178,7 +234,37 @@
     return false;
   }
 
-  const api = { sensitiveTopics, notAboutWriter, TOPICS, LANGUAGES: Object.keys(W?.LANGS || {}) };
+  // Zegt de gewogen lijst zeker dat dit geen persoonlijke vraag is (een folder, een les, iets alledaags)? Dan hoeft de
+  // AI-tweede kans ook niet te raden: dezelfde grens als waarmee sensitiveTopics een woordenlijst-treffer tegenhoudt.
+  function clearlyGeneral(text) {
+    const L = M?.ready() ? M.limits() : null;
+    if (!L) return false;
+    const paras = String(text || '').slice(0, MAX_LENGTH).split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    return paras.length > 0 && paras.every(p => {
+      const j = judged(p);
+      return !!j && !j.selfharm && (j.personal < L.keep || j.none >= L.everyday);
+    });
+  }
+
+  // Alleen voor de meting en het kiezen van de grenzen (tests/detectie-meting.mjs, tools/detectie-leer.mjs): de delen
+  // waaruit sensitiveTopics beslist, per alinea, zonder grenzen.
+  function parts(text) {
+    return String(text || '').slice(0, MAX_LENGTH).split(/\n\s*\n/).filter(p => p.trim()).map(para => {
+      const strict = new Set(), raw = new Set();
+      for (const s of para.split(/[.!?;\n。！？；।॥።။؟]+/)) {
+        if (!s.trim()) continue;
+        const r = cachedTopicsIn(s.trim());
+        r.strict.forEach(k => strict.add(k));
+        r.raw.forEach(k => raw.add(k));
+      }
+      let lang = null, best = 0;
+      for (const [code, h] of hitsIn(para.trim().slice(-800))) if (h.score > best) { best = h.score; lang = code; }
+      const j = M?.ready() && MODEL_LANGS.includes(lang) ? M.judge(para.trim()) : null;
+      return { strict: [...strict], raw: [...raw], words: (para.trim().match(TOKEN) || []).length, j };
+    });
+  }
+
+  const api = { sensitiveTopics, notAboutWriter, clearlyGeneral, parts, TOPICS, LANGUAGES: Object.keys(W?.LANGS || {}) };
   root.PrivacyTopics = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

@@ -1,0 +1,110 @@
+#P
+H|knoten in der brust ertastet, zum arzt?
+H|mamas blutwerte schlecht, was heisst erhöhter crp
+H|periode 2 wochen zu spät, test negativ
+H|kleiner hat seit gestern 40 fieber
+H|opa nimmt marcumar darf er ibuprofen
+H|freundin schwanger und hat blutungen, normal?
+H|knöchel beim kicken verdreht, kann nimma auftreten
+H|papa vergisst seit dem sturz ständig sachen
+H|mein mann hustet seit monaten blut
+M|seit mama tot is wein i jeden tag
+M|panikattacken jeden morgen vor der arbeit
+M|freund kifft täglich und ist nur noch down
+M|tochter isst kaum noch was und nimmt ab
+M|seit 3 monaten krankgeschrieben wegen burnout
+M|bruder verzockt alles, spielsüchtig glaub ich
+M|glaub ich hab adhs, wie lass ich das testen
+M|mini mueter trinkt z'viel sit de scheidig
+M|sohn zockt nächtelang und schwänzt die schule
+S|freund ist mit kollegin fremdgegangen, was nun
+S|brennt beim pinkeln nach dem sex, std?
+S|glaub ich bin lesbisch, wie sag ichs daheim
+S|kondom gerissen, braucht sie die pille danach
+S|mein mann und ich seit nem jahr kein sex
+S|mein 14jähriger sagt er ist nicht-binär
+S|pille 2 tage vergessen, schwanger möglich?
+S|freundin will offene beziehung, ich nicht
+S|outing bei meinem strengen vater, tipps?
+R|glaub nicht mehr an gott, eltern streng freikirchlich
+R|will bei den zeugen jehovas raus, familie verstösst mich
+R|schwiegereltern wollen taufe, wir sind ausgetreten
+R|freundin muslimisch ich katholisch, ihre eltern dagegen
+R|geh nicht mehr in die moschee, vater ist sauer
+R|schwester in einer sekte, wie hol ich sie raus
+R|zweifle an meinem glauben seit bruder gestorben ist
+R|will kopftuch ablegen, wie sag ichs zuhause
+R|kirchenaustritt, oma redet nicht mehr mit mir
+G|kann die miete diesen monat nicht zahlen
+G|gerichtsvollzieher kommt morgen, hilfe
+G|inkasso ruft ständig an wegen alter rechnung
+G|mann hat heimlich 15k kredit aufgenommen
+G|schufa eintrag, krieg ich noch eine wohnung
+G|sohn hat schulden bei falschen leuten
+G|konto gepfändet, wie komm ich an mein geld
+G|privatinsolvenz anmelden mit 30, sinnvoll?
+G|strom wird abgedreht, hab ka geld mehr
+L|sohn letzte nacht festgenommen, was jetzt
+L|vorladung zur polizei, brauch ich einen anwalt
+L|ex verweigert umgang, gerichtstermin nächsten monat
+L|führerschein weg nach alkoholkontrolle, was passiert jetzt
+L|werde von meinem alten vermieter verklagt
+L|fristlos gekündigt, kann ich dagegen klagen
+L|bruder ist vorbestraft, darf er noch in die usa
+L|polizei het gras im auto gfunde, was passiert
+L|strafbefehl wegen ladendiebstahl bekommen, erstes mal
+#G
+H|symptome von diabetes typ 2
+H|wie wirken antibiotika, für bio referat
+H|normaler blutdruck bei erwachsenen
+H|nebenwirkungen von ibuprofen auflisten
+H|wie lange wirkt die grippeimpfung
+M|unterschied angststörung und panikstörung
+M|erörterung über burnout bei jugendlichen schreiben
+M|was ist verhaltenstherapie genau
+M|statistik zu spielsucht in österreich
+M|merkmale von magersucht für ein referat
+S|schutzalter in der schweiz
+S|geschichte des csd kurz erklärt
+S|wie sicher ist die spirale im vergleich zur pille
+S|definition asexualität für meine hausarbeit
+S|figur in meinem roman hat ein coming-out, dialog hilfe
+R|unterschied zwischen sunniten und schiiten
+R|reformation in 5 punkten erklären
+R|warum feiern hindus diwali
+R|was ist ramadan, einfach erklärt
+R|wie viele menschen treten jährlich aus der kirche aus
+G|wie funktioniert die schufa
+G|ablauf einer privatinsolvenz erklärt
+G|zahlungserinnerung für einen kunden formulieren
+G|durchschnittliche verschuldung pro haushalt deutschland
+G|was ist ein dispokredit
+L|unterschied vergehen und verbrechen
+L|wie läuft ein zivilprozess ab
+L|was bedeutet untersuchungshaft
+L|aufhebungsvertrag für einen mandanten entwerfen
+L|krimi idee: kommissar unschuldig verhaftet
+O|dieser stau bringt mich um
+O|endlich miete überwiesen, jetzt pizza
+O|meine pflanze sieht krank aus, gelbe blätter
+O|ich sterbe vor lachen bei dem video
+O|fast nen herzinfarkt bekommen bei der klausur
+O|pleite bis zum gehalt, wieder nudeln
+O|laptop hat glaub ich nen virus, so langsam
+O|bin voll zwanghaft mit meinem gewürzregal haha
+O|bananenbrot rezept ohne ei
+O|wann macht der billa am samstag zu
+O|akku ist so schnell leer
+O|theaterstück meiner tochter heute, so stolz
+O|schöne wanderwege im allgäu
+O|5 meilen in km umrechnen
+O|brauch caption fürs strandfoto
+O|der neue film war echt kriminell schlecht
+O|auto nicht durch den tüv gekommen, mist
+O|hilf mir dem vermieter wegen tropfendem hahn schreiben
+O|stress wegen welchem sofa ich nehmen soll haha
+O|mein code stürzt in zeile 42 ab
+O|die nachbarn mit ihrer bohrmaschine machen mich wahnsinnig
+O|grüezi, wo gits guete kafi in züri
+O|heut is a wetter, a wahnsinn
+O|handy ist tot, wo kann ich laden

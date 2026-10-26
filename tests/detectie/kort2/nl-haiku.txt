@@ -1,0 +1,132 @@
+#P
+H|mn rechterknie zwelt al twee weken en klikt bij elke stap
+H|ik heb sinds gisteren bloed in mn plas ben echt bang
+H|mijn moeder heeft net de diagnose borstkanker gekregen
+H|kheb mn pillen voor de bloeddruk vergeten wat nu
+H|mijn zoon van 6 heeft weer een epileptische aanval gehad
+H|ik heb na de abortus nog altijd bloedverlies is dat normaal
+H|de uitslag van mn SOA-test kwam binnen chlamydia positief
+H|mn vader krijgt volgende week een nieuwe heup
+H|ik ben zwanger van 9 weken en heb constant misselijkheid
+H|mijn linkeroog ziet sinds vanmorgen wazig wat kan dat zijn
+M|ik slaap al weken slecht door de zorgen huil elke avond
+M|sinds mijn scheiding drink ik elke avond al 3 flessen wijn
+M|mn zoon zit al maanden non-stop op de game
+M|paniekaanval in de supermarkt nu durf ik er niet meer
+M|mijn vriend is na het overlijden van zijn broer helemaal dicht
+M|ik zit al 4 maanden in burn-out kom niet uit bed
+M|mn man slikt sinds zijn moeders dood elke dag xanax
+M|ik kan niet stoppen met porno kijken al twee jaar
+M|pas op 34 gediagnosticeerd met adhd ik voel me kapot
+M|mijn zus eet al maanden bijna niets wa moet ik doen
+S|mn vriend krijgt geen erectie meer sinds die nieuwe pillen
+S|ik ben biseksueel mijn ouders weten het nog niet
+S|ik heb gezoend met de vrouw van mn beste vriend
+S|mn vrouw wil al een jaar geen seks meer
+S|ik ben 22 en nog maagd voel me een loser
+S|mn zoon van 15 zei net dat hij op jongens valt
+S|de pil geeft me totaal geen zin meer in seks
+S|het condoom scheurde vannacht wat nu morning after pil
+S|ik denk dat ik trans ben durf niks te zeggen
+S|seks doet pijn sinds de bevalling wa kan ik doen
+R|ik twijfel aan mn geloof de kerk voelt niet meer goed
+R|mijn ouders weten niet dat ik ben uitgetreden uit de kerk
+R|mn ouders willen dat ik stop met de moskee
+R|ik vast al 3 dagen in ramadan en voel me flauw
+R|ik heb mn hoofddoek af en mn broer praat niet meer
+R|schuldgevoel omdat ik niet meer naar de mis ga
+R|mn zus is naar een sekte gegaan en belt niet meer
+R|mijn vriendin is hindoe en haar ouders zijn tegen ons huwelijk
+R|ik twijfel aan God sinds mn oma stierf
+R|ik ben bekeerd en mn papa wil mij niet meer zien
+G|mn huur is 2 maanden achter en de deurwaarder belt me
+G|ik zit in de schuldsanering en mag niks meer kopen
+G|ik heb nog 12 euro tot de 25e wat nu
+G|mn kredietregistratie staat er weer op ik wil eruit
+G|we kunnen de energiefactuur niet betalen wat nu
+G|sinds mn ontslag geen inkomen ik kan mn huur niet betalen
+G|mn broer heeft 8000 euro schuld en vraagt mij om geld
+G|ik verloor 1500 euro bij online poker niemand weet het
+G|ik ben opgelicht via WhatsApp 6000 euro weg
+G|mn loon wordt al een maand in beslag genomen wa nu
+L|ik heb mn rijbewijs kwijt na drie keer rijden onder invloed
+L|de politie heeft mijn broer opgepakt voor drugsbezit
+L|mn ex wil de kinderen in het weekend niet meer afgeven
+L|mn verblijfsvergunning loopt af en de IND reageert niet
+L|ik heb een ontslag op staande voet gekregen mag dat zomaar
+L|de huisbaas wil me eruit gooien zonder reden
+L|mn ex heeft me aangegeven bij de politie voor bedreiging
+L|ik word voor de rechter gedaagd door mn vroegere werkgever
+L|ik ben in elkaar geslagen de pv wil niks doen
+L|scheiding aangevraagd mijn advocaat wil 50/50 hoederecht
+#G
+H|welke symptomen horen bij een beroerte voor biologie
+H|schrijf een folder voor patiënten over diabetes type 2
+H|hoeveel mensen krijgen jaarlijks borstkanker in België
+H|leg uit wat een infuus doet voor mijn zorgopleiding
+H|schrijf een kort verhaal over een spoedarts in Gent
+M|wat zijn de verschillen tussen burn-out en een depressie
+M|geef 5 tips voor mijn presentatie over angststoornissen op school
+M|hoeveel jongeren hebben last van gamen in Nederland en België
+M|schrijf een gedicht over eenzaamheid in de grote stad
+M|hoe begeleid ik als coach een team dat een burn-out dreigt
+S|welke soorten anticonceptie zijn er voor mijn spreekbeurt
+S|schrijf een scène van twee verliefde mensen in Parijs
+S|hoe bespreek ik als seksuoloog libido met een cliënt
+S|wat is het verschil tussen biseksueel en pansexueel
+S|hoeveel procent van de Belgen heeft een vaste partner
+R|wat is het verschil tussen soennieten en sjiieten
+R|wanneer begint het suikerfeest dit jaar
+R|schrijf een korte toespraak voor de kerstdienst van morgen
+R|hoe werkt de kosher regel voor vlees en zuivel
+R|waarom zijn er zoveel sekten in Zuid-Amerika
+G|hoe werkt een schuldsanering volgens de wet
+G|leg uit wat een rente-op-rente effect is
+G|wat zijn de regels voor een persoonlijke lening bij de bank
+G|schrijf een e-mail naar de klant met een betalingsherinnering
+G|hoeveel Nederlanders gokken er online per jaar
+L|wat zijn de regels om een verkeersboete te betwisten
+L|schrijf een thriller over een inbraak in een villa in Antwerpen
+L|hoe werkt de uitzettingsprocedure in het Nederlandse recht
+L|wat is het verschil tussen voogdij en omgangsregeling
+L|help me een bezwaarbrief opstellen voor de klant van mijn kantoor
+O|ik voel me nerveus voor mijn presentatie van morgen
+O|mijn telefoon batterij is bijna leeg hoe bespaar ik stroom
+O|de huur is betaald nu kan ik mijn vakantie boeken
+O|ik kan niet wachten op het weekend aan zee
+O|ik geloof dat mijn code klopt maar de test faalt nog
+O|mijn bankafspraak is verzet naar vrijdag is dat erg
+O|mijn laptop blijft crashen is het een virus of gewoon oud
+O|mn zoontje wil elke avond dezelfde film suggesties
+O|mn fiets heeft een lege batterij welke lader past erop
+O|wij gaan dit weekend pizza bakken welk meel is het lekkerst
+O|ik voel me vandaag zo goed de zon schijnt eindelijk
+O|mijn vriendin en ik zoeken een nieuwe bank
+O|mn oma is jarig welke bloemen zijn het mooist in april
+O|mijn tuin staat vol met onkruid hoe krijg ik het weg
+O|we spelen vanavond Monopoly wat is de beste strategie
+O|mijn kat weigert nog steeds zijn nieuwe bak te gebruiken
+O|ik ben zo nerveus voor mijn rijexamen tips
+O|mijn broer wil een nieuwe console welke is het beste
+O|het internet ligt er weer uit hoe reset ik mijn router
+O|ik geloof dat deze nieuwe stofzuiger beter zuigt
+O|mijn schoonmoeder komt zondag eten wat maak ik het beste
+O|we hebben een hond gekocht wat hebben puppy's het meest nodig
+O|mijn nieuwe fiets piept bij elke trap wat kan dat zijn
+O|ik voel me schuldig dat ik de vaatwasser vergat
+O|mijn telefoon is kapot het scherm reageert niet meer
+O|wij zoeken een kinderdagverblijf in de buurt van de school
+O|ik kan de nieuwe bankapp niet installeren wat doe ik fout
+O|mijn vriend en ik gaan volgende maand samen naar Lissabon
+O|ge moet me helpen de wasmachine lekt op de vloer
+O|mijn dochter wil een paard hoeveel kost zoiets per maand
+O|ik ben zo trots mijn zoon scoorde zijn eerste goal
+O|wij hebben een nieuwe buurman hij lijkt aardig
+O|de verwarming staat hoog hoe zet ik hem lager
+O|mijn telefoon lag de hele nacht op oplader is dat slecht
+O|we hebben vanavond een film gekeken het eindigde echt triest
+O|mijn computer is zo traag hoe kan ik de cache wissen
+O|de zon brandt vandaag echt hard welke zonnebrand is goed
+O|mijn broer is kwaad omdat ik zijn fiets kapot heb gemaakt
+O|ik kijk vanavond de finale wie denk je dat er wint
+O|mn wekker gaat altijd te vroeg af kan ik dat veranderen

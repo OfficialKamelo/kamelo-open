@@ -1,0 +1,482 @@
+#P
+H|jai un ongle incarné qui saigne
+H|mon père va avoir une prothèse de hanche
+H|chui enceinte de 6 semaines et jai peur
+H|ma fille de 3 ans fait 39 de fièvre
+H|mon test VIH est positif
+H|jai fait une fausse couche hier
+H|je mange du Doliprane toute la journée pour mon dos
+H|ma mère a un cancer du sein
+H|ma glycémie était à 2,1 ce matin
+H|migraines atroces depuis trois semaines, normal ?
+H|mon fils a la varicelle, je fais quoi
+H|coloscopie lundi, jai trop peur
+H|mon bébé de 2 mois ne grossit pas
+H|jai la chlamydia, comment le dire à mon copain
+H|je vois flou de l'oeil gauche depuis ce matin
+H|mon mari a de l'apnée du sommeil sévère
+H|je perds mes cheveux depuis ma chimio
+H|hernie discale L5-S1, opération ou pas ?
+H|mon audiogramme montre 40 pour cent de perte
+H|chui diabétique type 1 depuis mes 9 ans
+H|dévitalisation demain chez le dentiste, ça fait mal ?
+H|psoriasis sur les coudes, quelle crème
+H|ma grand-mère a Alzheimer, elle ne me reconnaît plus
+H|j'attends les résultats de ma biopsie
+H|mon fils de 5 ans tousse la nuit, asthme
+H|ma tension est à 17/10 ce soir
+H|poignet cassé après une chute de vélo je crois
+H|ma femme fait sa deuxième FIV
+H|mon bébé a des coliques toute la nuit
+H|jai la gale, comment prévenir mes colocs
+H|prise de sang : manque de fer, jsuis crevée
+H|opération du sein mardi, tumeur bénigne
+H|mon père est en dialyse trois fois par semaine
+H|jai pris 15 kilos à cause de la thyroïde
+H|ma mère a la DMLA et voit de moins en moins
+H|test de grossesse positif, deux traits
+H|mon chum a mal aux testicules depuis 3 jours
+H|jai le zona, c'est contagieux ?
+H|cystite pour la 4e fois cette année
+H|mon fils est né à 30 semaines, il est en couveuse
+H|kyste à l'ovaire, échographie demain matin
+H|jai fait un malaise au boulot hier
+H|mon oncle a un cancer du poumon stade 4
+H|vertiges depuis mon accident de voiture
+H|je me suis fait avorter hier, ces saignements sont normaux ?
+H|mon fils est sourd d'une oreille depuis la naissance
+H|jai des hémorroïdes qui saignent, quelle pommade
+H|mon père a eu un infarctus à 58 ans
+H|prothèse de genou à septante ans, convalescence longue ?
+H|frottis anormal, jpanique un peu
+M|chui en burn-out depuis deux mois
+M|jfais des attaques de panique dans le métro
+M|mon chat est mort hier, jpeux pas arrêter de pleurer
+M|mon fils de 14 ans joue 10 heures par jour
+M|jvérifie dix fois que la porte est fermée
+M|jai peur de manger, jperds du poids vite
+M|jsuis sous antidépresseurs depuis janvier
+M|ma mère est morte il y a un mois
+M|je bois tous les soirs pour dormir
+M|jsuis seul le week-end, personne m'écrit
+M|mon psy m'a diagnostiqué un TDAH à 35 ans
+M|pas dormi depuis trois nuits, jangoisse trop
+M|jsuis accro au porno, jn'arrive plus à arrêter
+M|jai des flashbacks depuis l'agression
+M|ma fille se fait vomir après chaque repas
+M|j'ai envie de pleurer sans raison depuis des semaines
+M|jfume du shit tous les jours, jveux arrêter
+M|mon frère autiste fait des crises à l'école
+M|séance chez ma psy demain, jstresse déjà
+M|mon ex me manque, jn'arrive plus à manger
+M|jai peur de tout, même d'aller au supermarché
+M|ma sœur est bipolaire et refuse son traitement
+M|chui en arrêt maladie pour dépression
+M|mon pote s'est suicidé, jme sens coupable
+M|jmarche sur les lignes du carrelage, jpeux pas m'arrêter
+M|jai plus goût à rien depuis le divorce
+M|mon fils refuse d'aller à l'école, il angoisse
+M|jme gratte la peau jusqu'au sang quand jstresse
+M|ma femme a une dépression post-partum
+M|jsuis accro aux jeux vidéo, jai perdu mon taf
+M|jai honte, jai rechuté hier soir avec l'alcool
+M|jai des pensées bizarres qui me font peur
+M|ma mère déprime depuis sa retraite
+M|jpleure aux toilettes du bureau tous les jours
+M|mon père boit et ma mère le cache
+M|jai l'impression de ne plus exister
+M|mon enfant fait des cauchemars depuis le décès de son papi
+M|jsuis jaloux de façon maladive de ma copine
+M|jmange compulsivement la nuit puis jme déteste
+M|jsuis en thérapie EMDR depuis septembre
+M|ma meilleure amie ne sort plus de chez elle
+M|jprends du Lexomil depuis cinq ans, jsais pas arrêter
+M|ma grand-mère se laisse aller depuis la mort de papi
+M|crises d'angoisse avant chaque examen
+M|jai peur d'avoir un trouble borderline
+M|mon ado ne parle plus, elle reste dans sa chambre
+M|jai la phobie des avions et un voyage pro
+M|je me sens vide depuis que les enfants sont partis
+M|jvois un psychiatre à Lausanne, ma famille ne sait pas
+M|mon coloc fait de la dépression, jsais pas quoi dire
+S|jai trompé ma copine ce week-end
+S|mon mari n'a plus envie de moi
+S|jarrive pas à avoir d'orgasme
+S|jai des pannes quand on essaie de faire l'amour
+S|jvais dire à mes parents que jsuis gay
+S|jsuis vierge à 28 ans, c'est bizarre ?
+S|jsais pas si jsuis bi ou juste curieuse
+S|ma copine a trouvé mes messages Tinder
+S|jprends la pilule mais jai zéro libido
+S|mon chéri éjacule trop vite
+S|jme sens né dans le mauvais corps
+S|ma fille de 15 ans m'a dit qu'elle aime les filles
+S|le préservatif a craqué hier, pilule du lendemain ?
+S|jfais des sextos avec mon collègue marié
+S|sexe une fois par mois dans le couple, normal ?
+S|jai une liaison depuis un an avec ma patronne
+S|ma femme veut une relation libre, jsais pas
+S|jai honte de mon corps pendant l'amour
+S|jai mal pendant les rapports, vaginisme peut-être
+S|mon ex a diffusé mes photos nues
+S|jveux faire ma transition, par où commencer
+S|mon copain veut qu'on essaie un plan à trois
+S|jai envoyé une photo intime à un inconnu
+S|jme suis fait vasectomiser la semaine dernière
+S|jfréquente un club libertin, ma famille ne sait pas
+S|mon fils ado m'a dit qu'il est trans
+S|plus de désir depuis la naissance du bébé
+S|jai peur que mon mari découvre mon amant
+S|jaime un homme marié, jdois arrêter
+S|on fait chambre à part depuis 6 mois
+S|jsuis asexuel et mes amis rigolent
+S|jveux acheter un sextoy discret
+S|mon copain insiste quand jdis non
+S|stérilet ou implant, jsais pas quoi choisir
+S|jai peur d'avoir une IST après une soirée
+S|jai honte de ma sexualité à cause de mon éducation
+S|jme suis fait larguer parce que jsuis nul au lit
+S|jaime mon meilleur ami mais jsuis hétéro, je crois
+S|ma femme découvre qu'elle est lesbienne après 20 ans
+S|jpense au sexe toute la journée, c'est normal ?
+S|mon mari a mis fin à notre vie sexuelle, jsuis frustrée
+S|jai couché avec le frère de ma pote
+S|jaimerais dire à mon pote qu'il me plaît
+S|ménopause et sécheresse, l'amour fait mal
+S|mon chum veut pas de capote, jfais quoi
+S|jai été infidèle et jai peur d'être enceinte
+S|éjaculation retardée, jn'y arrive jamais avec ma copine
+S|jme découvre kinky, comment en parler à mon mec
+S|mon père a trouvé mes affaires de drag, jsuis terrorisé
+S|ma copine veut plus me toucher depuis son accouchement
+R|mon fils veut devenir Témoin de Jéhovah
+R|jai perdu la foi, jn'ose pas le dire
+R|jfais le ramadan au boulot, comment gérer
+R|ma belle-famille veut que jme convertisse au catholicisme
+R|jvais me faire baptiser à 30 ans
+R|jporte le voile depuis un mois, mon patron grimace
+R|mon copain est musulman, mes parents sont juifs
+R|jsuis sorti d'une secte il y a un an
+R|jai honte d'avoir arrêté de prier
+R|mon mari veut élever nos enfants dans l'islam
+R|jme demande si Dieu me punit pour mes péchés
+R|jai peur d'aller à la messe depuis le divorce
+R|ma fille refuse sa première communion
+R|jmange pas de porc, comment le dire à l'école
+R|on mange casher à la maison, mon pote veut venir
+R|jsuis athée dans une famille très pratiquante
+R|ma grand-mère prie pour mon âme chaque soir
+R|jvais à la mosquée le vendredi, mon collègue se moque
+R|jai quitté l'église évangélique, tout le monde m'ignore
+R|mon père veut un mariage religieux, pas moi
+R|mes doutes sur ma foi datent de la mort de papa
+R|ma sœur est devenue bouddhiste, mes parents flippent
+R|jvais me confesser demain pour la première fois en 10 ans
+R|jsuis hindou et mon copain est chrétien
+R|le shabbat est difficile avec mon nouveau taf
+R|jveux quitter les Témoins sans perdre ma famille
+R|ma mère pense que jsuis possédé, elle veut un exorciste
+R|jprie 5 fois par jour mais ma coloc se plaint
+R|jme sens coupable envers Allah d'avoir bu
+R|mon ex m'a quitté parce que jsuis croyant
+R|ma tante essaie de me recruter dans son église
+R|jvais me convertir à l'islam, par où commencer
+R|jai peur de dire à mes parents que jsuis agnostique
+R|mes parents refusent la transfusion à cause de leur foi
+R|jfais le carême cette année pour la première fois
+R|ma femme veut qu'on retourne à la messe
+R|jme suis converti en prison et jveux continuer
+R|jne sais plus si jcrois en quoi que ce soit
+R|mon fils de 12 ans veut devenir moine
+R|jporte la kippa à la fac, jai peur des regards
+R|mes parents me coupent les vivres parce que jsuis athée
+R|jvais au temple sikh tous les dimanches, mon chef hésite
+R|ma meilleure amie est tombée dans une secte à Genève
+R|jne veux plus faire Pessah chez mes parents
+R|on a fait un mariage mixte, la famille ne vient pas
+R|jai arrêté le hijab et jme sens coupable
+R|mon grand-père voulait des obsèques religieuses, jsuis athée
+R|mon prêtre m'a dit que jvivais dans le péché
+R|jsuis en retraite spirituelle, ma famille panique
+R|ma fille veut se faire baptiser, son père s'y oppose
+G|chui à découvert de 1500 euros
+G|jsuis fiché à la Banque de France
+G|jai reçu une lettre d'huissier ce matin
+G|trois mois de loyer impayés, jai peur
+G|jai perdu 3000 euros au casino en ligne
+G|on m'a arnaqué de 800 balles sur Vinted
+G|mon salaire est saisi, jn'ai plus rien
+G|dossier de surendettement déposé hier
+G|jvais au CPAS demain pour une aide
+G|jdois 2000 euros aux impôts, jpeux pas payer
+G|jai pris un prêt express, les intérêts m'étouffent
+G|plus de quoi acheter à manger ce mois-ci
+G|jdemande le RSA, jsais pas comment faire
+G|jai perdu mon emploi, plus aucun revenu
+G|une société de recouvrement me harcèle
+G|mon crédit conso est refusé, jsuis fiché
+G|jpeux pas payer la facture d'électricité
+G|le chômage a coupé mes allocations
+G|jai misé toute ma paie sur des paris sportifs
+G|mon ex ne paie plus la pension, jgalère
+G|la banque a bloqué mon compte, jsuis à sec
+G|jvais à la banque alimentaire ce soir
+G|un faux conseiller crypto m'a pris 5000 francs
+G|mon loyer a augmenté, jpeux plus suivre
+G|mon prêt étudiant m'étrangle
+G|la CAF me réclame 3500 euros de trop-perçu
+G|jai emprunté à mes parents, jn'arrive pas à rendre
+G|mes cartes bancaires sont toutes à découvert
+G|mon commerce coule, jvais déposer le bilan
+G|poursuite de 2400 francs dans ma boîte aux lettres
+G|jmens à ma femme, on est ruinés
+G|jn'ai plus de quoi payer la cantine
+G|aide pour remplir le dossier de la banque alimentaire
+G|jvis avec 400 euros par mois
+G|crédit revolving de 6000, jn'en sors pas
+G|jai vendu ma voiture pour payer mes dettes
+G|pas de quoi payer la mutuelle ce mois-ci
+G|jai pas payé mes impôts depuis 3 ans
+G|on m'a coupé le gaz pour impayé
+G|mon copain m'a volé mes économies
+G|jai honte, jdois 800 balles à mes potes
+G|jai perdu toute ma paie sur Binance
+G|mon assurance chômage se termine dans 2 mois
+G|jfais des petits boulots au noir pour manger
+G|mon compte est en négatif depuis 8 mois
+G|jai caché mes dettes de jeu à ma conjointe
+G|jtouche l'aide sociale et jai honte
+G|mon frère me réclame l'argent prêté, jai plus rien
+G|jai plus un sou avant le 15
+G|jpaie un crédit pour un mariage qui a foiré
+L|mon permis est suspendu pour excès de vitesse
+L|jai été placé en garde à vue
+L|mon ex veut la garde de notre fils
+L|mon titre de séjour expire dans un mois
+L|jvais divorcer, par où commencer
+L|mon patron m'a viré sans raison, prud'hommes ?
+L|jme fais expulser de mon appartement
+L|jai reçu une convocation au tribunal
+L|mon vélo volé est en vente sur Leboncoin
+L|la police m'a arrêté pour du cannabis
+L|jai une amende de 135 euros à contester
+L|mon voisin me menace, jvais porter plainte
+L|jai pas récupéré mon dépôt de garantie
+L|mes salaires de 3 mois sont impayés
+L|jai fait du vol à l'étalage, jme suis fait pincer
+L|mon ex menace de diffuser mes photos
+L|on a usurpé mon identité, des prêts à mon nom
+L|jconteste le testament de mon père
+L|jai une ordonnance d'éloignement contre moi
+L|jsuis convoqué comme juré, jai peur
+L|jai été condamné à des travaux d'intérêt général
+L|mon casier judiciaire bloque mon embauche
+L|jme suis battu en soirée, plainte déposée
+L|jsuis accusé d'agression, jdois trouver un avocat
+L|mon fils est en garde à vue à Bruxelles
+L|demande d'asile refusée, quel recours ?
+L|jai reçu une OQTF hier
+L|jai un contrôle de police tous les week-ends
+L|mon ex est sorti de prison, jai peur
+L|on m'a pris à conduire avec 1,2 g d'alcool
+L|mon proprio refuse de faire les réparations
+L|mon assurance refuse de payer l'accident
+L|jfais appel de mon licenciement
+L|rupture conventionnelle forcée, jai signé, jregrette
+L|mon mari me frappe, jveux porter plainte
+L|ma fille s'est fait agresser, la police ne bouge pas
+L|jai été arnaqué, jveux déposer plainte
+L|mon permis B est refusé à Genève
+L|jsuis sous bracelet électronique
+L|mon patron me harcèle, jveux le poursuivre
+L|mon frère est en détention préventive
+L|procès en petites créances lundi, jdois dire quoi
+L|médiation familiale pour la pension alimentaire
+L|jfais l'objet d'un contrôle fiscal
+L|on me poursuit pour diffamation
+L|mon fils a eu une amende pour tapage
+L|jai passé la nuit au poste hier
+L|la mairie refuse ma demande de nationalité
+L|jai peur d'être renvoyé dans mon pays
+L|mon avocat dit que jrisque de la prison
+#G
+H|explique comment fonctionne l'insuline pour un exposé
+H|quels sont les symptômes de la grippe en général
+H|rédige une fiche patient sur le diabète
+H|combien de cas de cancer par an en France
+H|quel est le taux de vaccination en Belgique
+H|comment calculer la dose de paracétamol pour un enfant (cours infirmier)
+H|écris un poème sur un hôpital la nuit
+H|que fait un cardiologue exactement
+H|résume l'histoire du vaccin contre la polio
+H|quels sont les effets du tabac selon l'OMS
+M|écris un texte sur le burnout pour mon blog RH
+M|quelle différence entre anxiété et stress, pour un cours
+M|donne des statistiques sur la dépression au Québec
+M|résume le livre sur le deuil de Kübler-Ross
+M|mon personnage de roman fait une crise de panique, aide
+M|quels sont les stades du deuil selon la psychologie
+M|comment animer un atelier de gestion du stress en entreprise
+M|explique l'addiction au jeu pour un exposé de terminale
+M|que fait un psychologue scolaire au quotidien
+M|écris une chanson triste sur la solitude
+S|explique la contraception pour un cours de SVT
+S|quelle est l'histoire du mariage pour tous en France
+S|rédige un flyer de prévention des IST pour le lycée
+S|écris une scène d'amour pour mon roman
+S|combien de couples se séparent après une infidélité, statistiques
+S|définis les termes de l'acronyme LGBTQ pour un article
+S|que dit la loi sur l'âge du consentement en Belgique
+S|conseils pour parler de sexualité en classe de 4e
+S|résume le film Call Me by Your Name
+S|comment fonctionne la pilule contraceptive, en général
+R|explique les cinq piliers de l'islam pour mon exposé
+R|quelle est l'origine de la fête de Pâques
+R|résume l'histoire des Témoins de Jéhovah
+R|différence entre catholiques et protestants, en gros
+R|que mange-t-on pendant le ramadan, pour un reportage
+R|écris un discours pour un mariage interreligieux fictif
+R|quand tombe Yom Kippur cette année
+R|explique le bouddhisme à des élèves de 6e
+R|comment fonctionne le conclave pour élire le pape
+R|liste les grandes religions et leur nombre de fidèles
+G|explique le surendettement pour mon cours d'économie
+G|quel est le taux d'intérêt d'un crédit conso en France
+G|comment fonctionne le fichage à la Banque de France, en général
+G|rédige un courrier de relance pour un client en retard
+G|que fait un huissier de justice exactement
+G|écris une scène où un personnage est ruiné
+G|statistiques de la pauvreté en Suisse
+G|comment calculer des intérêts composés
+G|conseils d'épargne pour un étudiant, article de blog
+G|explique comment marche le RSA, pour une fiche
+L|explique la procédure de divorce en droit français
+L|que risque-t-on pour 30 km/h de trop, en général
+L|rédige un contrat de bail type pour mon client
+L|résume l'affaire Dreyfus
+L|quelle est la différence entre un tribunal et une cour d'appel
+L|écris le dialogue d'un interrogatoire de police pour mon polar
+L|combien de temps dure une garde à vue légalement
+L|droits d'un salarié licencié, pour mon cours de droit
+L|comment obtenir la nationalité belge, procédure générale
+L|le procès de Nuremberg en dix lignes
+O|jvais être en retard, le bus est bloqué
+O|mon imprimante est encore bloquée par du papier
+O|jai laissé le four allumé, jreviens vite
+O|chui nerveux pour mon entretien de demain
+O|mon fils a marqué un but, trop fier
+O|ma batterie de téléphone est morte
+O|quelle météo demain à Lyon
+O|jai oublié mes clés dans la voiture
+O|jai le trac avant ma présentation
+O|jai crevé 20 fois à ce jeu, jfais n'importe quoi
+O|la dépression sur la côte apporte de la pluie ?
+O|jai rendez-vous à la banque jeudi pour mon compte
+O|mon loyer est payé, enfin tranquille
+O|ma mère arrive demain, jdois ranger l'appart
+O|jcrois que mon code est bon, jai testé
+O|ma petite sœur a eu son permis ce matin
+O|jme sens super bien aujourd'hui
+O|jsuis accro à ces chips au paprika
+O|le test de ma nouvelle appli est positif
+O|mon pull a plein de bouloches, jfais quoi
+O|jai une journée de dingue au boulot
+O|mon wifi coupe tout le temps ce soir
+O|chui crevé, jvais me coucher tôt
+O|mon père m'a offert un vélo pour mes 18 ans
+O|jai hâte d'être en vacances
+O|mon chat dort sur le clavier
+O|recette simple pour un gâteau au chocolat
+O|c'est péché mignon, ce dessert est divin
+O|mon frère joue au tennis, jlui prête ma raquette
+O|jai gagné un essai gratuit de 30 jours
+O|comment charger mon ordi sans chargeur ?
+O|mon mari a perdu ses lunettes, encore
+O|jme suis enfin acheté un canapé
+O|le virus a infecté mon vieux PC, jle jette
+O|bug dans mon code, jvois pas où
+O|jai crush sur cette chanson depuis ce matin
+O|ma fille a dix ans aujourd'hui, quelle idée cadeau ?
+O|la police dans cette série est nulle, jarrête
+O|ça va, jsuis fine, merci de demander
+O|mon fils a fièvre du samedi soir, il veut danser
+O|jai mal aux jambes après ma course
+O|le tuto de tricot est trop compliqué pour moi
+O|quelle heure est-il à Montréal ?
+O|jai cassé mon écran, chui dég
+O|ma tante vient dîner, que cuisiner ?
+O|ma phrase est trop longue, comment la raccourcir
+O|jsuis tuée de fatigue après ce match
+O|jai commandé une pizza, elle arrive dans 20 minutes
+O|comment réparer une fuite sous l'évier
+O|jai trop mangé, jsuis plein
+O|mon grand-père a 90 ans et fait du vélo
+O|jme suis perdu en voiture, le GPS déconne
+O|cest quoi la dose de soleil recommandée pour une plante
+O|jai planté mon cactus, il se porte bien
+O|jvais courir ce soir, jsuis motivé
+O|ma sœur se marie en juin, jvais être témoin
+O|quel est le meilleur restau à Bruxelles
+O|jai raté mon bus de 2 minutes
+O|le tribunal dans ce jeu vidéo est trop dur
+O|mon enfant a fait ses premiers pas
+O|jattends mon colis depuis lundi
+O|jai le cafard quand il pleut tout le temps
+O|jai bien dormi cette nuit, trop bon
+O|ma voiture fait un bruit bizarre au démarrage
+O|mon frère est un tueur au ping-pong
+O|jvais bientôt déménager à Québec
+O|mon chien a volé mon sandwich
+O|jai une question sur la grammaire de cette phrase
+O|j'ai cru que mon vol était annulé, fausse alerte
+O|mon collègue vient de m'apporter un café
+O|le diagnostic de ma voiture au garage est fait
+O|c'est une bonne affaire, j'ai négocié le prix
+O|mon pote m'a emprunté un livre, il le rend jamais
+O|jsuis en retard pour le dîner de famille
+O|le thérapie par le jardinage, ça marche pour mes plantes
+O|combien de temps pour cuire un rôti de porc
+O|jai hâte de voir mon neveu ce week-end
+O|ma grand-mère fait la meilleure tarte aux pommes
+O|jai de la confession à faire, jai mangé le dernier biscuit
+O|mon ordi chauffe trop, quoi faire
+O|jai eu une idée géniale pour la fête de papa
+O|c'est un peu fou, mais jadore cette série
+O|jai la flemme de faire le ménage
+O|mon fils joue au foot tous les mercredis
+O|jai besoin d'un bon plan pour le week-end à Genève
+O|ma copine adore cette chanson, jla passe en boucle
+O|mon téléphone chauffe quand jcharge
+O|quel cadeau pour les 60 ans de ma mère
+O|jai un rhume de cerveau, jme sens ridicule
+O|jai attendu une heure à la poste
+O|jai perdu mes lunettes de soleil à la plage
+O|mon voisin a une belle voiture
+O|le mariage de mon cousin était trop bien
+O|jai une peur bleue des araignées, jvais pas dans la cave
+O|jai appelé ma mère, elle va bien
+O|chui content, jai eu mon examen de maths
+O|mes enfants jouent dans le jardin
+O|mon cousin m'a prêté sa perceuse
+O|jai le droit de garer ici ou pas
+O|quelle est la bonne température pour le vin rouge
+O|jai tellement ri hier avec ma sœur
+O|mon thé est froid, encore
+O|jai du mal à choisir entre deux canapés
+O|j'ai un rendez-vous chez le coiffeur à 14h
+O|mon coach de foot a sifflé la fin
+O|jai adopté un lapin ce week-end
+O|ma recette de crêpes est enfin au point
+O|dernier épisode de la série, jai pleuré de rire
+O|jai gagné à la loterie de l'école, un stylo
+O|mon train est annulé, jfais quoi
+O|jai attrapé un coup de soleil sur le nez
+O|jeudi jai un rendez-vous chez le garagiste
+O|cest dingue, mon fils parle déjà anglais
+O|mon petit frère est tombé dans la boue, trop drôle
+O|mes plantes sont mortes pendant les vacances
+O|comment faire un bon espresso à la maison
+O|mon pc plante à chaque démarrage
+O|mon fils a peur du noir, on a pris une veilleuse
+O|jsuis dans le train, jarrive dans 10 minutes
+O|ma fille a fait son premier dessin pour moi

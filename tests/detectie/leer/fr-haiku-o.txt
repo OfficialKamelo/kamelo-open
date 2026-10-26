@@ -1,0 +1,251 @@
+#G
+O|jsuis en train de coder un site en React et le bouton se met pas à jour quand je clique, qu'est-ce que je rate?
+O|mon appli plante à chaque fois que j'ouvre la page des réglages, le log dit null pointer, je cherche où ça coince
+O|comment tuer un processus qui bloque mon terminal sous linux, le ctrl+c marche plus
+O|comment on fait un git rebase -i pour fusionner mes 3 derniers commits en un seul
+O|nous avons un bug dans notre API, les dates sont décalées de 2 heures selon le serveur, une idée?
+O|quelle est la différence entre let et const en javascript, mon prof a dit que c'était important
+O|ma base sqlite est verrouillee depuis ce matin, jsp pourquoi, quelqu'un a deja vu ca
+O|explique-moi les promesses en js comme si j'avais 12 ans, merci d'avance
+O|mon pote veut que je l'aide à installer docker sur son mac, par où on commence
+O|faut quoi comme RAM pour android studio tranquille
+O|un virus sur mon ordi d'après le pop-up, c'est vrai ou c'est une arnaque? comment je vérifie
+O|ma regex pour valider une adresse mail marche pas avec les accents, un truc à changer?
+O|test positif en lint sur mon commit, ça veut dire quoi exactement et je le corrige comment
+O|la CI de notre repo GitHub échoue sur les tests unitaires mais en local tout passe, bizarre non
+O|on traîne une dette technique dans notre code depuis 3 ans, comment on la rembourse petit à petit sans tout casser
+O|le serveur de ma boîte est tombé à 3h du mat, je dois écrire le post-mortem demain, je commence par quoi
+O|comment je fais pour lancer un stress test sur mon GPU et voir s'il chauffe trop
+O|mon wifi coupe toutes les 20 min, c'est le routeur ou le fournisseur d'après vous
+O|un bug qui tue ma session à chaque clic sur le formulaire, je cherche depuis hier, aide
+O|ma petite boutique en ligne bloque au paiement, le message dit timeout après 30 secondes
+O|chui débutant en linux, comment je change le fond d'écran depuis le terminal sans tout casser
+O|mon frère m'a donné son vieux pc et il est lent comme une tortue, comment accélérer le démarrage
+O|aide-moi à écrire un petit bot discord qui répond bonjour quand quelqu'un tape !salut
+O|je dois avorter un téléchargement bloqué depuis ce matin, la commande wget fait quoi exactement
+O|pour une tarte aux pommes de 8 personnes, je prends combien de beurre et de farine
+O|ma mère veut faire un poulet rôti pour dimanche midi, combien de temps au four pour 1,8 kg
+O|on a trop de courgettes au jardin, une idée de recette sans viande pour les enfants?
+O|jsuis en train de faire des crêpes mais la pâte est comme de la bouillie, je rajoute quoi
+O|mon copain est intolérant au lactose, comment faire des pancakes sans lait qui restent moelleux
+O|mon père fait un risotto aux champignons, c'est mieux avec du vin blanc ou du bouillon en premier
+O|quelle différence entre un roux blanc et un roux brun pour une béchamel
+O|combien de temps cuire des pâtes fraîches pour 4 à table, nous sommes 2 adultes et 2 ados
+O|faut quoi comme ingrédients pour une vraie sauce bolognaise à la belge, pas la version en pot
+O|je veux faire un gâteau au chocolat sans four, il existe une recette de cookies au frigo?
+O|mon frigo est plein de restes, c'est quoi la meilleure soupe avec des poireaux et des pommes de terre
+O|nous avons un barbecue samedi, quelle quantité de viande par personne pour 12 adultes
+O|cuisiner une fondue savoyarde pour mes beaux-parents, il faut combien de fromage par personne
+O|une quiche aux lardons, on peut la garder combien de jours au frigo avant de la jeter
+O|mes macarons se fendillent à chaque fois, je fais quoi avec mon four trop chaud
+O|faut-il rincer le riz avant de le faire cuire, mon amie dit que non et ma mère dit oui
+O|recette de gaufres liégeoises facile pour le goûter des gosses ce week-end
+O|j'ai un couscous à faire pour une dizaine de personnes, je prends combien de semoule
+O|à Québec on dit quoi pour une soupe aux pois typique, j'en veux la recette de ma grand-mère
+O|ma sauce hollandaise a tranché, je la sauve comment, c'est pas la première fois
+O|j'ai carrément noyé ma sauce tomate avec de l'eau, comment la rattraper sans la rendre fade
+O|j'ai cuit mes oeufs à mort, les jaunes sont verdâtres, pourquoi et comment éviter ça
+O|écris un menu de trois plats pour une soirée entre amis, thème méditerranéen, 6 personnes
+O|je veux tuer le goût trop fort de l'ail dans ma soupe, il y a une astuce
+O|on part à Lisbonne en mars, quels quartiers éviter pour dormir avec les valises
+O|faut une vignette pour rouler en Suisse avec une voiture belge, et on la prend où
+O|mon mari et moi cherchons un hôtel à Bruges pour la Saint-Valentin, idées pas trop chères
+O|ma soeur veut voyager en train jusqu'à Marseille, combien de temps depuis Paris Gare de Lyon
+O|nous partons 10 jours au Japon en avril, faut-il un JR pass ou c'est pas rentable
+O|mon téléphone est mort en plein milieu du trajet, je dois retrouver mon hôtel sans GPS, aide
+O|on fait le Camino de Compostelle avec des amis, combien de jours pour 200 km à pied
+O|je pars à Montréal pour le boulot, eSIM ou carte locale, c'est quoi le moins cher pour 2 semaines
+O|on a une correspondance de 40 minutes à Bruxelles-Midi avec les enfants, c'est jouable?
+O|itinéraire en camping-car en Norvège en juillet, on veut voir les aurores, des conseils
+O|faut réserver le Louvre à l'avance, je vais avec ma femme et nos 2 ados, c'est quel créneau
+O|quelle est la meilleure saison pour aller en Corse en famille sans les touristes
+O|j'ai un vol à 6h, à quelle heure je dois partir de Liège pour l'aéroport de Charleroi
+O|vacances à Tenerife avec mes parents, la piscine de l'hôtel est-elle chauffée en mai
+O|faut un adaptateur pour la prise en Thaïlande, c'est quel type, je pars 3 semaines en octobre
+O|mon cousin veut louer une maison en Ardèche pour 12 personnes, comment on partage les frais
+O|je cherche une destination au soleil pour la lune de miel de ma meilleure amie, idées svp
+O|on part en roadtrip aux USA, Route 66 ou Pacific Coast Highway? on a 2 semaines
+O|chui allé à Genève l'an dernier, je retourne le mois prochain, quelles visites gratuites
+O|mon vol est annulé à cause de la grève, comment on demande une compensation à la compagnie
+O|ma valise fait 23 kg, c'est le max en soute sur Air France ou je paie combien en plus
+O|je veux visiter la prison d'Alcatraz avec mes neveux, le billet se réserve comment
+O|chui perdu à Barcelone, mon google maps marche plus, où je trouve le métro sans internet
+O|je dois tuer le temps à la gare de Liège, 2 heures de retard, quoi faire autour
+O|je cherche un canapé 3 places pas plus de 800 euros, gris clair, qui se déplie peut-être
+O|ma soeur veut une machine à café pour son anniversaire, Nespresso ou Dolce Gusto
+O|j'ai craqué sur des baskets en solde, taille 44, ça va chez Nike ou Adidas
+O|pour les chaussures de mon fils qui grandit trop vite, quelle marque dure le plus longtemps
+O|j'ai un vieux téléphone qui marche bien mais la batterie est morte, je le remplace? quel modèle entre 300 et 400 euros
+O|c'est quoi la différence entre un ordi reconditionné et un ordi d'occasion, c'est risqué
+O|tu sais où acheter des bougies parfumées pas chères en Belgique sans frais de port
+O|faut un vélo électrique pour aller au boulot à 15 km, je prends lequel
+O|je veux racheter le même parfum que ma mère, il est bleu et ça s'appelle quoi déjà
+O|mon mari pense que la TV 55 pouces c'est trop grand pour le salon, vous en pensez quoi
+O|je veux acheter une chaise de bureau confortable pour le télétravail, pas plus de 200 euros
+O|j'ai reçu un colis endommagé de Zalando, c'est quoi la démarche pour le retour
+O|pour les lunettes de soleil de l'été, Ray-Ban ou moins cher pour la même qualité, vous avez un avis
+O|ma grand-mère veut une tablette facile pour regarder ses photos, Samsung ou iPad, lequel est plus simple
+O|quel sac à dos pour un voyage de 3 jours, 35 litres ça suffit ou il faut plus
+O|on hésite à louer ou acheter un frigo américain pour la cuisine de notre colocation
+O|ma cafetière a rendu l'âme ce matin, budget 60 euros max, vous conseillez quoi
+O|nous voulons un lit en 160 cm pour la chambre d'ami, un bon matelas c'est quelle épaisseur
+O|mon chéri a cassé la pile de mon casque, je cherche un pack de rechange, c'est où en Suisse
+O|je dois tuer un projet qui traîne depuis six mois, comment annoncer l'arrêt à l'équipe
+O|écris un mail à mon chef pour lui demander de passer en télétravail deux jours par semaine
+O|pour mon collègue qui part en retraite, quel petit mot écrire sur la carte collective
+O|nous organisons un afterwork pour l'équipe de 15 personnes, comment faire le sondage des dates
+O|mon mail de candidature pour un poste de chef de projet, je veux paraître dynamique sans être cheap
+O|tkt je dois répondre à un client qui veut un remboursement de 50 euros, je fais comment
+O|reformule mon mail pour dire que la réunion de jeudi est décalée à 14h, merci
+O|faut-il mettre en CC ou en BCC quand on envoie un mail à toute la direction
+O|ma responsable m'a demandé un compte rendu de la réunion d'hier, je le structure comment
+O|écris-moi une signature mail pro pour un freelance en graphisme, avec téléphone et site
+O|je veux refuser poliment une invitation à un salon, je suis déjà pris ce jour-là
+O|nous avons un nouveau stagiaire lundi, quel petit message de bienvenue pour l'équipe
+O|mon boss veut un tableau de bord pour nos ventes trimestrielles, par où je commence
+O|écris un mail de relance pour une facture impayée d'un client, poli mais clair
+O|je cherche un sujet pour l'email d'annonce de la nouvelle appli interne de l'entreprise
+O|j'ai un entretien d'embauche jeudi, quelle tenue porter pour un poste en logistique
+O|mon collègue Thomas m'a demandé de reprendre son dossier pendant ses vacances, je réponds quoi
+O|je veux écrire une newsletter interne sur les nouveautés produit, 5 points max, des idées de structure
+O|pour mon exposé d'histoire sur la Révolution française, c'est quoi les trois causes principales
+O|pouvez m'expliquer la photosynthèse pour un devoir de 4e, en mots simples
+O|ma fille doit faire un résumé de Germinal de Zola, on peut trouver le fil conducteur en 5 lignes
+O|explique la différence entre un verbe transitif et intransitif, mon fils n'y comprend rien
+O|pourquoi la guerre de Cent Ans a duré 116 ans, mon prof a pas été clair
+O|c'est quoi la loi d'Ohm pour un examen de physique au lycée, avec un exemple
+O|pour mon mémoire de master en marketing, comment on construit une bonne question de recherche
+O|sur combien de pages faut-il une dissertation de philo au bac, je dois viser quoi
+O|mon prof d'espagnol nous demande un texte sur nuestra ciudad, des idées de vocabulaire
+O|je prépare un oral de géographie sur les fleuves d'Europe, quels points retenir
+O|c'est quoi la différence entre mitose et méiose, j'ai un contrôle de bio mardi
+O|c'est quoi la différence entre un virus et une bactérie, pour mon cours de SVT
+O|mon fils de 9 ans veut faire du judo, à partir de quel âge on peut commencer en club
+O|j'ai un match de tennis dimanche, comment je travaille mon revers en solo contre le mur
+O|le coach de notre équipe de foot veut une tactique en 4-3-3, c'est quoi la différence avec 4-4-2
+O|nous jouons un tournoi de padel à Namur le week-end prochain, conseils pour débuter à deux
+O|je meurs d'envie de voir le match de ce soir, il passe sur quelle chaîne en Belgique
+O|le Tour de France passe par la Belgique cette année, on veut aller voir ça en famille, où se placer
+O|ma copine court son premier semi-marathon, combien de temps avant elle doit arrêter les sorties longues
+O|il y a un bon court de tennis couvert à Strasbourg pour jouer entre amis le soir?
+O|mon pote veut qu'on fasse du ski de fond au Jura, c'est faisable pour des débutants
+O|comment shooter un penalty en tirant sur le côté, mes potes disent que c'est plus efficace
+O|les règles du hors-jeu au foot, mon fils me demande et je suis perdu
+O|la coupe de ping-pong à Liège, les places partent vite, on prend quoi, deux ou quatre billets
+O|mon équipe perd tout le temps en ranked sur Valorant, comment on communique mieux en vocal
+O|je viens de perdre ma progression sur Fortnite à cause d'un bug, il y a un moyen de la récupérer
+O|j'ai une dette de 50 gold dans Minecraft hardcore, comment je la rembourse dans le serveur
+O|mon fils veut un skin pour Roblox, il y a une façon de le gagner sans payer
+O|le boss final de Zelda Tears of the Kingdom me tue sans arrêt, quel équipement prendre
+O|je suis mort 40 fois sur le niveau 3 de Celeste, comment on passe le dash en l'air
+O|tuer le temps sur Animal Crossing avant le DLC, on fait quoi en attendant
+O|ma console plante dès que je lance un jeu en 4K, c'est le câble HDMI ou la console
+O|mon téléphone est mort pendant la partie de ranked, ça compte comme défaite?
+O|série policière à binger ce week-end, vous me conseillez quoi, sans spoilers stp
+O|un virus sur mon PC a fait planter Steam, la mise à jour du pilote peut régler ça?
+O|je veux un bon jeu de stratégie en coop pour jouer avec ma femme le soir
+O|c'est quoi les colliers dans Stardew Valley, ça sert à quoi concrètement pour le perso
+O|mon ami me challenge sur Rocket League, je suis nul, des tips pour les tirs aériens
+O|le clan de mon frère dans Clash of Clans fait n'importe quoi, c'est quoi la stratégie pour la guerre de clans
+O|je veux poser du parquet flottant dans le salon, il faut une sous-couche ou pas
+O|mon robinet goutte depuis une semaine, faut changer la cartouche ou tout le mitigeur
+O|nous voulons repeindre la chambre des enfants en vert sauge, combien de litres pour 14 m²
+O|pour percer du béton sans tout casser, quelle mèche je prends avec ma perceuse
+O|mon voisin dit que le mur de séparation est porteur, comment on vérifie avant de faire un trou
+O|jsuis nul en bricolage, comment monter une étagère Billy sans finir avec une vis en trop
+O|pk ma porte de garage fait un bruit horrible, graisser les rails ça suffit?
+O|c'est quoi la différence entre un silicone sanitaire et un acrylique pour le joint de douche
+O|je dois refaire la pelouse de notre jardin, du gazon en rouleau ou des graines, c'est mieux
+O|ma terrasse en bois grisonne, comment la traiter pour retrouver sa couleur
+O|le carrelage de la cuisine se décolle, je le recolle avec quoi
+O|mon pistolet à colle chauffe mais ne coule plus, il est mort ou je peux le réparer
+O|on a un trou dans le mur après avoir enlevé une vieille étagère, comment le reboucher proprement
+O|mon mari veut installer une douche italienne, c'est faisable en DIY ou faut un pro
+O|le lave-linge fait un bruit de casserole depuis ce matin, je regarde quoi en premier
+O|j'ai pris une bombe de peinture rouge pour le portail, il faut combien de couches
+O|tuer les fourmis dans la cuisine sans produits toxiques pour les enfants, des astuces naturelles
+O|ma voiture fait un bruit de claquement quand je tourne le volant, c'est la rotule ou la direction
+O|quelle pression de pneus pour une Clio 4 avec 4 personnes dedans et un coffre plein
+O|mon mari cherche une voiture familiale d'occasion, 7 places, diesel, budget 15000 euros
+O|ma batterie est morte ce matin, comment la recharger avec des câbles de démarrage
+O|la bagnole de ma copine fait un bruit bizarre à froid, faut l'emmener au garage tout de suite
+O|c'est quoi le voyant orange en forme de moteur sur mon tableau de bord, je dois m'arrêter
+O|mon voyant pression d'huile s'est allumé sur la route, je coupe le moteur ou je continue
+O|pour l'assurance auto, tiers ou tous risques pour une voiture de 8 ans, ça vaut le coup
+O|ma voiture a un impact de gravillon sur le pare-brise, c'est grave ou ça se répare
+O|le contrôle technique de ma Golf tombe demain, quels points surveiller avant d'y aller
+O|je dois passer mes pneus été en hiver, il faut le faire à quelle température
+O|mes tomates ont des taches brunes sur les feuilles, c'est une maladie ou juste de l'eau
+O|ma voisine dit qu'il faut tailler les rosiers en février, c'est vrai pour les grimpants
+O|on a planté des fraisiers au potager, faut les couvrir pour l'hiver en Suisse
+O|mon ficus a des petites bêtes blanches sur les feuilles, je traite avec quoi
+O|quand semer les haricots verts en France, avant ou après les saints de glace
+O|mes plantes d'intérieur sont mortes pendant mes vacances, comment les ressusciter
+O|tuer les mauvaises herbes dans l'allée sans glyphosate, vous avez des astuces
+O|faut un compost au fond du jardin pour nos déchets de cuisine, quel bac prendre
+O|la dépression qui passe sur la Belgique cette semaine, le vent va casser le sapin de ma mère?
+O|mes pivoines ne fleurissent pas depuis que mon père les a déplacées, pourquoi
+O|mon chien tire trop en balade, comment lui apprendre à marcher calmement à côté de moi
+O|on prend un chaton la semaine prochaine, quelles croquettes pour un petit de 2 mois
+O|quelle litière la moins poussiéreuse pour mon chat, il fait ses besoins à côté
+O|mon lapin mange les câbles du salon, comment le détourner de ça
+O|ma fille veut un hamster pour son anniversaire, c'est facile à garder pour une enfant de 8 ans
+O|le toilettage de mon caniche coûte 60 euros chez le toiletteur, je peux le faire moi-même
+O|mon perroquet crie à 6h du matin, comment le calmer sans le punir
+O|combien de temps peut-on laisser un chiot seul à la maison dans la journée
+O|ma copine a adopté un chien de refuge, on fait comment pour la socialisation avec le chat
+O|mon poisson rouge a un bassin de 60 litres, il faut combien de filtres pour ça
+O|mes chats se battent depuis qu'on a un bébé, des conseils pour les réconcilier
+O|j'emmène mon chien en voiture en vacances dans le sud, des conseils pour le voyage
+O|mon chat a vomi une boule de poils ce matin, c'est normal une fois par mois
+O|le véto veut faire le vaccin de rappel de mon labrador en juin, c'est obligatoire
+O|mon chien tousse un peu après les balades, c'est peut-être juste le pollen, non?
+O|mon chat mange de l'herbe à chat tous les jours, c'est grave ou pas du tout
+O|ma lapine a les dents qui poussent trop, comment savoir si c'est normal pour sa race
+O|le chiot de mon fils a un petit trou de poil sur le dos depuis hier, ça peut attendre demain
+O|les puces de mon chat, quel antiparasitaire choisir entre la pipette et le collier
+O|mon poisson a les nageoires un peu abîmées, quel traitement dans l'aquarium
+O|mon hamster boit beaucoup ces derniers jours, faut que je surveille quelque chose
+O|on doit vermifuger notre chien tous les combien de mois selon le véto
+O|ma soeur fête ses 30 ans, idée cadeau pas chère pour une amie qui aime le yoga
+O|mon mari cherche un cadeau de Noël pour son père, il aime la pêche et le whisky
+O|je veux offrir un cadeau qui tue pour la fête de mon frère, budget 30 euros max
+O|pour la fête des mères, une idée de cadeau fait main avec les enfants de 5 et 7 ans
+O|je cherche un livre de cuisine pour mon beau-frère qui découvre le barbecue
+O|il faut offrir quoi pour l'anniversaire de notre neveu de 10 ans, il a déjà tout
+O|mon pote fête sa crémaillère demain, on lui prend quoi comme cadeau qui ne prend pas de place
+O|ma grand-mère adore les puzzles, je lui prends lequel, 500 ou 1000 pièces
+O|cadeau pour mon prof de guitare qui fait un bon boulot, sympa de lui offrir quoi
+O|je dois offrir une bouteille à la maîtresse de ma fille pour la fin d'année, quoi prendre
+O|on organise l'anniversaire de notre fils de 7 ans, idées de jeux pour 12 enfants dans le jardin
+O|quel gâteau faire pour les 40 ans de mon mari, il veut quelque chose de sobre
+O|mon amie fête ses 25 ans dans un bar, comment je fais une surprise sans qu'elle le sache
+O|un anniversaire déguisé années 80 pour ma mère, les décorations qui vont bien
+O|pour un goûter d'anniversaire de 10 ans, faut prévoir combien de pâtisseries par enfant
+O|on veut louer une salle pour la fête de la retraite de papa, pour 60 invités ça prend quoi
+O|mon fils veut une fête Spider-Man, je fais le gâteau moi-même ou je commande à la boulangerie
+O|la fête surprise de ma femme pour ses 50 ans, combien de monde inviter pour que ce soit pas trop
+O|mon fils veut un fusil à eau pour sa fête, c'est quel âge minimum et où en acheter pas cher
+O|faut réserver l'église de notre village pour le mariage de ma sœur, c'est combien en 2026
+O|comment on dit "je suis en retard" en anglais de manière polie quand je parle à mon boss
+O|mon fils apprend l'italien, c'est quoi la différence entre "ciao" et "arrivederci" en pratique
+O|jsuis en train d'apprendre le néerlandais, pourquoi "u" et "jij" sont différents, c'est compliqué
+O|c'est quoi un dépanneur au Québec, une épicerie de quartier ou autre chose
+O|dans quel cas on met le subjonctif en français, je galère toujours avec le "que"
+O|c'est quoi la traduction de "je te fais un câlin" en espagnol, pour ma meilleure amie
+O|"pantoute" ça veut dire quoi au Québec, mon collègue l'a dit en réunion
+O|ma femme parle allemand à la maison, je veux une phrase pour dire "bonne nuit" en allemand
+O|les Suisses disent "septante" ou "soixante-dix", et en Belgique c'est quoi l'usage
+O|comment on dit "je meurs de rire" en espagnol, ma copine m'a envoyé un mème
+O|comment on calcule l'aire d'un trapèze, le prof a pas bien expliqué
+O|combien font 17% de 240 sans calculatrice, j'ai un devoir demain avec mon fils
+O|explique-moi les fractions équivalentes avec un exemple de pizzas coupées en parts
+O|quelle est la somme des angles d'un pentagone, mon frère doit le démontrer en classe
+O|nous avons une question de probas: deux dés, quelle chance d'avoir un double six
+O|tkt la racine carrée de 144 c'est 12 non? je check pour mon exercice
+O|je dois résoudre 3x + 7 = 22 pour mon cours, montre-moi les étapes
+O|mon prof dit que ma moyenne est à 9,5 sur 20, combien il me faut au prochain contrôle pour passer 10
+O|je veux commencer à courir avec mes potes le dimanche, combien de temps pour un 5 km en débutant
+O|c'est quoi un bon programme de yoga de 15 minutes le matin pour se réveiller en douceur
+O|on fait un défi sportif en famille, 10 000 pas par jour pendant un mois, des idées de balades
+O|ma soeur se met à la natation adulte, la brasse ou le crawl pour commencer, qu'est-ce qui est plus simple

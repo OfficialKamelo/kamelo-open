@@ -1,0 +1,110 @@
+#P
+H|maman a eu les résultats, c'est un cancer
+H|je crache du sang depuis 3 jours je consulte?
+H|une boule dans le sein je fais quoi
+H|papa commence la chimio lundi comment on se prépare
+H|2 règles de retard mais test négatif?
+H|les crises de mon chum empirent au secours
+H|le doc dit que mon hba1c est à 9,2 c'est grave
+H|ma soeur s'est effondrée au boulot, le coeur ils pensent
+H|je peux sauter mes cachets pour la tension une semaine
+M|j'arrête pas de pleurer depuis la mort de mamie
+M|mon mari boit tous les soirs je sais plus quoi faire
+M|encore une crise de panique dans le métro
+M|ma fille de 14 ans se scarifie encore
+M|perdu 3000 aux paris cette semaine j'arrive pas à arrêter
+M|mon frère sort plus de sa chambre, il game non stop
+M|la psy dit burnout mais je peux pas démissionner
+M|je me fais vomir à nouveau après les repas
+M|j'ai l'impression que plus rien compte franchement
+S|je pense que ma femme me trompe
+S|comment dire à mes parents que je suis gay
+S|capote déchirée hier soir je fais quoi
+S|mon fils dit qu'il est trans je comprends pas
+S|pas de sexe depuis 2 ans avec mon mari c'est normal?
+S|pertes bizarres après un coup d'un soir
+S|mon chum veut un couple libre je sais pas
+S|je peux prendre la pilule à 17 ans
+S|j'ai 40 ans et jamais couché, y a un problème?
+R|je crois plus mais ma famille le sait pas
+R|papa dit que j'irai en enfer si j'épouse un hindou
+R|je quitte les témoins de jéhovah, je perds tous mes amis
+R|maman veut que je porte le voile je veux pas
+R|le pasteur me pousse à donner plus que je peux
+R|ma femme s'est convertie, on se dispute pour les enfants
+R|perdu la foi après la fausse couche, tellement vide
+R|ma fille est dans une secte j'arrive plus à la joindre
+R|mes parents me renient si j'arrête d'aller à la messe
+G|loyer vendredi et il me manque 400
+G|l'huissier est passé chez moi ce matin
+G|fiché banque de france, pu de forfait possible
+G|papa a 20k de dettes et le cache à maman
+G|pris un prêt rapide ils veulent 900 maintenant
+G|je devrais faire faillite à 24 ans?
+G|3 cartes de crédit au max pour les soins de maman
+G|l'électricité est coupée la semaine prochaine, les enfants à la maison
+G|char saisi comment j'vais au travail
+L|fils arrêté hier soir on fait quoi
+L|la police veut m'interroger demain
+L|mon ex me traîne au tribunal pour la garde
+L|pris en alcool au volant je perds ma job?
+L|le proprio me poursuit pour 3 mois de loyer
+L|viré pour faute grave c'est même légal
+L|casier à 16 ans ça sort sur l'extrait
+L|mon frère est en détention provisoire j'amène quoi
+L|j'ai renversé un cycliste et je suis parti, je panique
+#G
+H|combien de temps la grippe est contagieuse
+H|que fait un radiologue de sa journée
+H|conseils pour exposé sur les vaccins en bio
+H|écris une scène où le héros attrape la malaria
+H|différence entre diabète type 1 et 2
+M|c'est quoi la thérapie cognitivo-comportementale
+M|chiffres burnout chez les infirmières au québec
+M|l'addiction au jeu c'est une maladie mentale?
+M|écris un poème sur le deuil pour l'école
+M|comment marchent les antidépresseurs en vrai
+S|depuis quand le mariage gay est légal en belgique
+S|quelle est l'efficacité du stérilet au cuivre
+S|écris une intrigue amoureuse pour mon roman
+S|ça veut dire quoi non-binaire
+S|taux de vih par pays
+R|que croient les témoins de jéhovah sur le sang
+R|résumé de la réforme pour l'histoire
+R|les musulmans jeûnent-ils en voyage pendant le ramadan
+R|écris un monologue d'un moine qui perd la foi
+R|plus grandes religions en inde en chiffres
+G|comment marche la faillite personnelle au québec
+G|dette moyenne par ménage en france
+G|explique les intérêts d'un prêt rapide à un enfant
+G|idée d'histoire: une famille face à l'expulsion
+G|qu'est-ce qu'un huissier a le droit de dire
+L|amende max pour excès de vitesse en belgique
+L|comment fonctionne la caution aux usa
+L|exposé sur le droit au silence pour le cours de droit
+L|script pour une scène de procès
+L|différence entre garde à vue et arrestation
+O|ce trafic me tue
+O|loyer enfin payé youpi
+O|ma plante a l'air malade je fais quoi
+O|meilleure frite près de la gare du midi
+O|je meurs de faim là
+O|la télécommande est encore morte
+O|mon cell est à l'agonie
+O|cette chaleur est déprimante
+O|qui a gagné hier le psg ou l'om
+O|j'ai pété ma tasse préférée ce matin
+O|tu peux corriger cette phrase pour ma lettre de motivation
+O|idées pour une fête de 5 ans
+O|train pour lyon encore en retard pfff
+O|mon chat est accro au nouveau divan
+O|je suis accro à cette série
+O|je me sens fauché après les vacances haha
+O|3 cups ça fait combien de grammes
+O|mon boss est une plaie aujourd'hui
+O|le wifi coupe tout le temps help
+O|le carrefour ferme à quelle heure dimanche
+O|recette banana bread sans oeufs
+O|jambes mortes après le leg day lol
+O|besoin d'un nom pour mon chiot
+O|mon char est un cauchemar à stationner

@@ -196,6 +196,28 @@
     '(estar[ií]a|estar[ií]an|ser[ií]a|ser[ií]an)( \\S+){0,2} mejor sin m[ií]',
   ].join('|'), 'i');
   const crisis = q => CRISIS.test(String(q || ''));
+  // ---------- vraag om advies (schrijfstijl zoals June) ----------
+  // Een vraag om hulp of advies, of iets persoonlijks, krijgt in chat.js kopjes met tips en een slotvraag. Nooit bij een
+  // crisisbericht: "ik wil dood" kreeg eerst een tipslijstje met de hulplijn pas eronder (review 22 okt). Losse "ik wil",
+  // "ik heb", "I have" en "I am" telden eerst ook mee: "ik heb zin in pizza" kreeg kopjes. Nu alleen met een woord erachter
+  // dat om hulp vraagt of een last noemt.
+  const ADVICE = new RegExp('^\\s*[¿¡]?(' + [
+    'hoe (kan|moet|maak|word|krijg|ga|hou|houd|leer|zorg)', 'wat (kan|moet|zal) ik', 'heb je tips', 'tips (voor|om|bij)',
+    'kun je me helpen', 'ik (slaap|sliep) (slecht|niet|weinig|te)', 'ik voel me', 'ik maak me (zorgen|druk)',
+    'ik heb (last|moeite|problemen|ruzie|stress|pijn|geen idee hoe|het moeilijk|vaak|steeds)', 'ik ben (zo |heel |erg |vaak |altijd )?(bang|moe|bezorgd|gestrest|onzeker|verdrietig|eenzaam|ziek|boos|somber|zenuwachtig)',
+    'ik weet niet (wat|hoe|of)', 'ik kan niet', 'ik twijfel', 'ik wil (graag )?(leren|stoppen|beginnen|afvallen|minder|meer|beter|weten hoe)',
+    'mijn \\p{L}+ (is|heeft|wil|doet)',
+    'how (do|can|should) i', 'what (should|can) i', 'any tips', "i can['’]?t", 'i feel',
+    'i am (so |very |always |really )?(tired|stressed|anxious|worried|scared|lonely|sad|sick|nervous|angry)',
+    "i['’]m (so |very |always |really )?(tired|stressed|anxious|worried|scared|lonely|sad|sick|nervous|angry)",
+    "i don['’]?t know (what|how|if|whether)", 'i have (trouble|a hard time|problems|pain|been)',
+    'i want to (learn|stop|start|lose|get better|be better|know how)',
+    'wie (kann|soll|mache|werde) ich', 'was (soll|kann) ich', 'hast du tipps', 'ich (schlafe|fühle mich|mache mir|weiß nicht|kann nicht)',
+    'ich habe (probleme|angst|schmerzen|stress|mühe)', 'ich bin (so |sehr |oft |immer )?(müde|gestresst|traurig|einsam|krank|nervös)',
+    'comment (je|puis|faire)', "je (dors|me sens|n['’]arrive)", 'je suis (si |très |toujours )?(fatigu|stress|triste|seul|malade|anxieu)',
+    'c[oó]mo (puedo|hago)', 'me siento', 'no puedo',
+  ].join('|') + ')', 'iu');
+  const advice = q => !crisis(q) && ADVICE.test(String(q || ''));
   const HELP = {
     nl: 'Wil je erover praten met iemand? Bel **113 Zelfmoordpreventie** op 0800-0113 (gratis, dag en nacht) of chat via 113.nl. In België: 1813. Ben je nu in gevaar, bel dan **112**.',
     en: 'If you want to talk to someone: please reach out to a crisis line in your country. If you are in danger right now, call **112** (Europe) or your local emergency number.',
@@ -249,7 +271,7 @@
     return out;
   }
 
-  const api = { LANGS, NAME, detect, pickLang, langHint, wrongLang, tidy, placeholders, looseTex, isFiller, problems, crisis, withHelp };
+  const api = { LANGS, NAME, detect, pickLang, langHint, wrongLang, tidy, placeholders, looseTex, isFiller, problems, crisis, advice, withHelp };
   globalThis.KameloGuard = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })();

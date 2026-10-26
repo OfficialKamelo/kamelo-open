@@ -1,0 +1,322 @@
+#P
+H|dad's surgery on friday scared
+H|lump in my breast, waiting on biopsy results
+H|my mum got her scan results back, not good
+H|blood in my stool for a week now
+H|diagnosed with type 1 diabetes yesterday, overwhelmed
+H|my son's been coughing blood, taking him to A&E
+H|chemo starts monday, terrified
+H|hubby's PSA came back high
+H|gp referred me for suspected MS
+H|my little girl has leukaemia
+H|think i had a mini stroke last night
+H|positive for hep b, who do i tell
+H|nan has dementia and doesnt know me anymore
+H|heart palpitations every night since covid
+H|my sister's biopsy is tomorrow
+H|pregnant and spotting at 8 weeks, worried
+H|dizzy and left arm numb, ignoring it
+H|tested positive for HIV this morning
+H|toddler had another febrile seizure
+H|on dialysis 3 years, so tired
+M|i wash my hands fifty times a day
+M|cant stop drinking, third night this week
+M|my wife's anorexia is getting worse
+M|burnt out, cry in the work toilets
+M|grieving my brother, 6 months, can't function
+M|thoughts of ending it again tonight
+M|panic attacks on the train every morning
+M|adhd diagnosed at 34, meds not working
+M|my teen self harms, found fresh cuts
+M|relapsed on coke after 8 months clean
+M|cant get out of bed for days
+M|checking the stove ten times before leaving
+M|mum died in march, i keep hearing her voice
+M|husband hasnt spoken in days, depressed
+M|binge then purge every night since new year
+M|started therapy, hate feeling so needy
+M|best friend told me she's suicidal
+M|addicted to my phone and weed, hate myself
+M|postnatal depression, dont feel love for baby
+M|cant stop counting steps, ocd eating me alive
+S|found out he's been cheating, texts everywhere
+S|think im asexual, scared to tell my girlfriend
+S|missed my pill two days, now what
+S|zero sex drive since the baby
+S|my boyfriend cant stay hard, awkward
+S|coming out to my parents this weekend
+S|chlamydia positive, partner doesnt know
+S|think im trans, 16 and terrified
+S|husband wants a threesome, im not sure
+S|slept with my coworker, feel sick
+S|my daughter just came out as bi
+S|sex hurts every time, whats wrong with me
+S|condom broke last night, plan b?
+S|wife found my dating app, help
+S|porn habit ruining intimacy with my gf
+S|gay and married to a woman, 40, lost
+S|had an affair 2 years ago, confess?
+S|my son is questioning his gender
+S|herpes diagnosis, will anyone date me
+S|fiance wants no sex since the wedding
+R|son joined the jehovahs, lost
+R|leaving the church, parents will disown me
+R|lost my faith after dad died
+R|family wants me in hijab, i dont
+R|wife converted to islam, dont know how i feel
+R|brethren family, planning to leave
+R|pastor says gay is sin, my brother is gay
+R|mum prays i come back to church
+R|dont believe in god anymore, afraid to tell nan
+R|in-laws want baby baptised, we're atheists
+R|doubting my catholic faith since confirmation
+R|parents want a religious marriage, i refuse
+R|ex-mormon, family shunning me
+R|dad pushing me to fast ramadan, i dont pray
+R|sister became born again, unbearable now
+R|raised in a cult, finally got out
+R|converting to judaism, bf's family hesitant
+R|my mum thinks im going to hell
+R|stopped going to mass, nan keeps asking why
+R|church elders asking about my divorce
+G|credit registration again, want out
+G|3 months behind on rent, landlord texting
+G|lost 8k gambling last night
+G|bailiffs coming thursday, no idea what to do
+G|maxed all my cards, hiding it from wife
+G|payday loan rolled over again, 800 now
+G|cant pay electric, they cut it off
+G|debt collectors ringing my mum
+G|overdrawn every month, skipping meals
+G|borrowed from a loan shark, now threats
+G|husband gambled our savings away
+G|defaulted on car finance, repo letter came
+G|owe the taxman 12k, panicking
+G|cant afford insulin, rent comes first
+G|student loan collections, wages garnished
+G|40k in debt, never told my partner
+G|bank froze my account, no money for food
+G|eviction notice today, two kids
+G|my brother owes dealers and loansharks thousands
+G|bankrupt at 29, so ashamed
+L|garda called me in about my cousin
+L|boss fired me for theft i didnt do
+L|arrested last night for dui
+L|ex is taking me to court for custody
+L|got a summons, court in two weeks
+L|son charged with assault, what now
+L|police raided our flat at 6am
+L|criminal record showing on job checks
+L|sacked after i complained, unfair dismissal?
+L|brother's on remand, trial next month
+L|12 points on my licence, need my car
+L|being sued by my old landlord
+L|social services opened a file on us
+L|dad got a suspended sentence
+L|accused of shoplifting, security held me
+L|custody hearing tomorrow, scared of losing kids
+L|police interviewing me under caution thursday
+L|fined 500 for no tv licence, court letter
+L|visa overstay, scared of deportation
+L|restraining order against me, its false
+#G
+H|i'm a doctor, which tests for a 3-day fever
+H|what are the stages of type 2 diabetes
+H|how does chemotherapy work in general
+H|difference between viral and bacterial infection
+H|nursing student: how to take blood pressure properly
+H|average recovery time after knee replacement, for a report
+H|what causes migraines, general overview
+H|list the symptoms of lupus from textbooks
+H|how do vaccines train the immune system
+H|cancer survival rate statistics uk
+M|difference between anxiety and panic disorder
+M|as a teacher how do i support grieving pupils
+M|how many people have adhd worldwide
+M|explain the five stages of grief model
+M|write a poem about depression for my english class
+R|how does cbt work in theory
+M|essay outline: addiction as disease vs choice
+M|what are the dsm criteria for ocd
+M|burnout rates across professions, any data
+M|my novel's character has anorexia, how to write her realistically
+S|as a midwife how to explain the pill to teens
+S|history of lgbt rights in europe
+S|how effective are condoms statistically
+S|what is the difference between sex and gender
+S|write a scene where a couple splits after an affair
+S|how are stis transmitted, for a school presentation
+S|explain asexuality for a sociology paper
+S|what does the kinsey scale measure
+S|iud vs implant, how do they work
+H|why do people cheat, research summary
+R|difference between sunni and shia
+R|summarise the five pillars of islam
+R|history of the jehovah's witnesses
+R|why did the reformation start
+R|explain catholic confirmation to a child
+R|atheist vs agnostic, what's the difference
+R|how many people leave religion in the us each year
+R|write a sermon on forgiveness
+R|what is diwali about
+R|compare buddhism and stoicism
+G|why are interest rates rising
+G|calculate interest on a 10k loan at 6%
+G|how does credit scoring work in general
+G|debt snowball vs avalanche, which is mathematically better
+G|explain irish bankruptcy law for my exam
+G|how do payday loan companies make money
+G|business plan for a debt collection agency
+G|what is compound interest, simple example
+G|how does gambling addiction affect the economy
+G|summarise how a mortgage works
+L|how many traffic fines in colombia per year
+L|misdemeanor vs felony difference
+L|explain the miranda rights
+L|law student here: elements of negligence
+L|how does a jury trial work in the us
+L|statute of limitations for theft in general
+L|how are custody cases decided in principle
+L|write a legal thriller opening in a courtroom
+L|how many people are in prison in india
+L|employee rights after dismissal in germany, overview
+O|my dog panics at fireworks
+O|our dog seems depressed in the rain
+O|my cake is a disaster, panic
+O|sourdough starter looks sick
+O|phone battery dies by noon
+O|my laptop has a virus, how do i remove it
+O|paid the rent finally, what should i cook tonight
+O|how to log rent in excel
+O|saving for a trip to portugal, budget tips
+O|how do we split the bill fairly with 5 people
+O|my brother and i argue whether a tomato is a fruit
+O|addicted to this series, any similar
+O|this traffic is killing me
+O|my plant is dying, yellow leaves
+O|pills on my sweater, how to remove
+O|best stretching routine before a 10k run
+O|whats the weather like in lisbon in march
+O|write a funny wedding speech for my best mate
+O|gift ideas for mum's 60th
+O|email to my boss asking for friday off
+O|help with year 5 maths homework fractions
+O|school run is chaos, how to organise mornings
+O|my cat keeps throwing up hairballs
+O|my sims family just went bankrupt lol
+O|sunburnt nose, aloe tips
+O|my wifi is sick again, router keeps restarting
+O|kids birthday party ideas for a 6 year old
+O|how to politely decline a colleague's lunch invite
+O|how long to boil eggs
+O|my hamster looks sad, new wheel?
+O|gluten free pancake recipe
+O|spreadsheet to track household bills
+O|dying to know how this book ends
+O|my car is making a weird noise when i brake
+O|lawn is dead after the heatwave
+O|neighbour's dog barks all night, write a polite note
+O|help me plan a family bbq for 20
+O|back garden flooded, drainage ideas
+O|remove red wine stain from carpet
+O|good name for a golden retriever puppy
+O|i'm so stressed about choosing a paint colour for the hallway
+O|my sourdough is dead, did i kill the starter?
+O|monday morning meeting is murder, how do i survive
+O|my bank app crashed when i tried to pay the pizza guy
+O|cheapest way to send a parcel to australia
+O|how do i claim back vat on a work laptop
+O|i owe my flatmate 15 quid for the takeaway, how to ask
+O|my son's football team lost 9-0, how to cheer him up
+O|my daughter's school trip form needs a signature, how to scan it
+O|how do i fix a leaky tap
+O|my tomato plants have blight, help
+O|panic: forgot my mum's birthday is tomorrow, quick gift
+O|we ran out of milk, what can i bake without it
+O|the baby monitor app keeps disconnecting
+O|my headphones are dead, which ones to buy
+O|why does my printer hate me
+O|killing time before my flight, what to do in heathrow
+O|my boyfriend and i are planning a surprise party for his sister
+O|how to word a thank you card to my nan for the jumper
+O|heartbroken that my favourite cafe closed down
+O|hubby snores like a train, any gadgets
+O|best ways to save on groceries this month
+O|my son wants a loan of my bike, any bike lock recommendations
+O|rent increase letter template for my tenants, i'm the landlord
+O|how do i budget for christmas presents
+O|tips for a first marathon training plan
+O|my toddler refuses to eat broccoli
+O|ugh monday
+O|so tired after the gym lol
+O|recipe for lamb curry
+O|translate this menu from italian
+O|can you proofread my cv
+O|my goldfish died, how do i explain to my 5 year old
+O|oh my god this hot sauce is killing me
+O|this song is on repeat, im obsessed
+O|how to stop my cat scratching the sofa
+O|the car mechanic quoted 400 for brake pads, fair?
+O|what to wear to a summer wedding in ireland
+O|how do i set up a monthly standing order
+O|my tenant paid the rent late, how to write a reminder email
+O|help me write a thank you speech for my dad's retirement do
+O|which fertiliser for roses
+O|my ex-colleague sent me a linkedin request, accept?
+O|how many calories in a flat white
+O|plan a 3 day itinerary for edinburgh
+O|what is 15 percent of 240
+O|dont know what to get my dad for father's day
+O|my jeans shrank in the wash, can they be saved
+O|the shower drain is clogged again
+O|how do i politely ask my neighbour to move their bins
+O|i spilled coffee on my keyboard, panic
+O|best chess openings for beginners
+O|my mate is moving to canada, farewell gift ideas
+O|our wedding anniversary is next week, restaurant recommendations in bristol
+O|how do i write a reference for my former intern
+O|my phone screen cracked, repair or replace
+O|how to teach a puppy to sit
+O|good books like the thursday murder club
+O|haunted by that song from the ad, what is it
+O|help, my sourdough bread is dense as a brick
+O|my sister and i are fighting over who gets the last slice of pizza
+O|workout split for 4 days a week
+O|how do i get red ink out of white shirt
+O|bought a used car, what paperwork do i need to transfer ownership
+O|how to explain photosynthesis to a 7 year old
+O|my daughter's science fair project ideas
+O|we are saving up for a deposit on a house, tips for a savings spreadsheet
+O|im so broke until payday lol, cheap meal ideas
+O|drafting an email to the council about the pothole on our street
+O|cat sitting checklist for my neighbour
+O|how do i fix a squeaky door
+O|lol my cat is addicted to the laser pointer
+O|my battery is at 3 percent, send help
+O|oven temperature for roast chicken
+O|how do i politely end a zoom call
+O|my team's fantasy league is a disaster this week
+O|what is a good bedtime story about a dragon
+O|my lettuce keeps bolting, why
+O|i'm drowning in laundry, any system
+O|so embarrassed i called the teacher mum lol
+O|my bike chain keeps slipping
+O|how do you pronounce quinoa
+O|insane how much my rent in excel looks, is there a template for splitting utilities with flatmates
+O|my nan's 90th is coming up, speech ideas
+O|can i freeze cooked rice
+O|how do i back up my iphone before updating
+O|sick of this rain, indoor activities for kids
+O|my dog ate a sock, he's fine now but what's a good chew toy
+O|can you suggest a name for my bakery
+O|what's a polite way to say i'm busy
+O|my spreadsheet formula is giving #REF, why
+O|help me pick a netflix show tonight
+O|how do i clean a cast iron pan
+O|team building ideas for 12 people on a budget
+O|i'm obsessed with this new coffee grinder
+O|are tickets for the cricket final worth the price
+O|how to fold a fitted sheet
+O|our group chat keeps arguing about where to eat
+O|my houseplant has fungus gnats, what to do
+O|bank holiday weekend ideas near dublin

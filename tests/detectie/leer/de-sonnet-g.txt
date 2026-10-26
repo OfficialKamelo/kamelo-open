@@ -1,0 +1,241 @@
+#G
+H|erklär mir bitte kurz, wie insulin im körper wirkt, für mein biologie-referat in klasse 9
+H|Wie hoch ist die Sterblichkeitsrate bei einem Herzinfarkt in Deutschland laut aktuellen Statistiken?
+H|ich bin Pfleger auf einer Intensivstation, kannst du mir ein Merkblatt zur Dekubitusprophylaxe für neue Kollegen schreiben
+H|was ist der unterschied zwischen viren und bakterien, hab morgen test in bio
+H|Meine Patienten sind überwiegend ältere Menschen mit Diabetes Typ 2. Wie formuliere ich einen verständlichen Infozettel zur Fusspflege?
+H|Wie funktioniert eine mRNA-Impfung eigentlich genau?
+H|schreib mir ne kurzgeschichte über nen arzt in wien, der während der pandemie arbeitet
+H|Woran ist Steve Jobs gestorben und wie verläuft Bauchspeicheldrüsenkrebs typischerweise?
+H|Die Hauptfigur in meinem Roman hat MS. Wie könnte ein realistischer Krankheitsverlauf über zehn Jahre aussehen?
+H|wie viele Menschen in der Schweiz haben Allergien, gibts da Zahlen vom BAG?
+H|Ich schreibe einen Artikel über den Hausärztemangel auf dem Land. Welche Zahlen der KBV kann ich zitieren?
+H|was bedeutet ein hoher crp wert ganz allgemein? brauch das für meine pflegeausbildung
+H|Ich bin Physiotherapeutin und suche Übungen, die ich in einer Rückenschule-Gruppe mit 10 Leuten einbauen kann.
+H|wie wirkt ibuprofen im körper und warum soll man es nicht auf nüchternen magen nehmen
+H|Fasse mir die wichtigsten Ergebnisse der Framingham-Studie zusammen.
+H|für meine bachelorarbeit in gesundheitsmanagement suche ich literatur zur telemedizin in ländlichen regionen
+H|wann wurde die pockenimpfung abgeschafft und warum
+H|Erkläre den Ablauf einer Blinddarmoperation so, dass es ein Zehnjähriger versteht, für unsere Schulzeitung.
+H|wie lange überlebt das norovirus auf oberflächen
+H|Ich bin Apotheker und brauche einen Text für den Kundenbrief: Wechselwirkungen von Johanniskraut mit anderen Medikamenten.
+H|Was war nochmal die Krankheit von Beethoven, wissen das die Historiker?
+H|wie ist das mit der organspende in österreich, widerspruchslösung oder wie
+H|Gib mir 5 Quizfragen zum menschlichen Herzen für meine Klasse 6.
+H|in meiner Kita gabs Läuse, wie schreib ich den Elternbrief sachlich und nicht panisch?
+H|was sind die häufigsten todesursachen weltweit laut who
+H|Schreib ein Drehbuch für ein Aufklärungsvideo übers Händewaschen, 90 Sekunden.
+H|Was ist der Unterschied zwischen Pflegegrad 2 und 3? Muss das für einen Vortrag im Altenheim erklären.
+H|wie läuft ne klinische studie ab, phase 1 bis 3
+H|Welche Rolle spielte Robert Koch bei der Entdeckung des Tuberkulose-Erregers?
+H|mein Chef will, dass ich ne Präsentation zu Betrieblichem Gesundheitsmanagement baue. Hast du ne Gliederung?
+H|kann man aus dem blutbild eigentlich was über krebs ablesen, rein allgemein?
+H|Wie viele Kalorien verbrennt ein Marathonläufer durchschnittlich?
+H|ich arbeite im Rettungsdienst und muss ne Schulung zur stabilen Seitenlage halten, hast du nen Ablauf dafür?
+H|Was versteht man unter Herdenimmunität? Bitte mit Beispiel Masern.
+H|Wie hat sich die Lebenserwartung in der Schweiz seit 1950 entwickelt?
+H|schreib nen witzigen limerick über nen zahnarzt
+H|Meine Schüler (8. Klasse) sollen den Blutkreislauf verstehen, hast du ein Arbeitsblatt dazu?
+H|erklär den placebo-effekt, wie wird der in studien kontrolliert
+H|In unserem Pflegeheim haben wir 60 Bewohner. Wie berechne ich den Personalschlüssel nach der neuen Regelung?
+H|was passiert biologisch beim schlafen, die einzelnen schlafphasen, kurz
+M|Wie viele Menschen in Deutschland sind laut RKI von Depressionen betroffen?
+M|ich bin Psychologin und brauche ein Handout für Klienten zu Atemübungen bei Panik, verständlich formuliert
+M|schreib ne kurzgeschichte in der die hauptfigur an einer angststörung leidet, aus ihrer sicht, 500 wörter
+M|Meine Hauptfigur im Roman verliert ihren Mann und trauert. Wie könnte ich die ersten Wochen glaubwürdig schildern?
+M|was ist der unterschied zwischen burnout und depression, brauch ich für die uni
+M|Fasse die fünf Phasen der Trauer nach Kübler-Ross zusammen und nenne Kritik daran.
+M|Für meine Bachelorarbeit in Sozialer Arbeit untersuche ich Suchtprävention bei Jugendlichen. Welche Modelle gibt es?
+M|wie funktioniert eine kognitive verhaltenstherapie grundsätzlich
+M|Was weiß man über die psychische Erkrankung von Vincent van Gogh?
+M|Ich bin Lehrerin an einer Mittelschule in Zürich und suche Unterrichtsideen zu Stress und Prüfungsangst für die 9. Klasse.
+M|wie wirkt alkohol aufs gehirn, nur so allgemein
+M|Schreib mir eine Stellenanzeige für eine Sozialpädagogin in einer Suchtberatungsstelle.
+M|was versteht man unter einem trauma im psychologischen sinn
+M|Wie lange ist die Wartezeit auf einen Kassen-Therapieplatz in Österreich im Durchschnitt? Hab dazu irgendwo ne Studie gesehen.
+M|Unser Unternehmen will ein Konzept zur Burnout-Prävention einführen. Welche Maßnahmen haben sich in Studien bewährt?
+M|erklär adhs bei kindern in einfachen worten für einen elternabend, den ich moderiere
+M|wie viele gamer gelten laut who als süchtig? stichwort gaming disorder
+M|Welche Wirkung hat Sport auf Depressionen laut Metaanalysen?
+M|ich schreib nen artikel über einsamkeit bei senioren, hast du aktuelle statistiken aus deutschland?
+M|Erkläre bitte, was eine Panikattacke im Körper auslöst (Adrenalin etc.).
+M|gib mir nen gesprächsleitfaden für ein erstgespräch in der beratung, bin sozialarbeiter
+M|was ist magersucht und wie entsteht die laut forschung, referat nächste woche
+M|Schreib ein Gedicht über den Winterblues, melancholisch aber nicht kitschig.
+M|Wie hat sich die Zahl der Krankschreibungen wegen psychischer Erkrankungen seit 2010 entwickelt?
+M|meine Klientin (ich bin Ergotherapeutin) hat Probleme sich zu strukturieren, welche Methoden gibts für Menschen mit ADHS im Allgemeinen?
+M|wer war sigmund freud und was ist an seiner theorie heute noch gültig
+M|Was ist der Unterschied zwischen Psychologe, Psychiater und Psychotherapeut in Deutschland?
+M|Bitte ein Rollenspiel-Szenario für unser Teamtraining: Wie führt man ein Gespräch mit einem Mitarbeiter, der überlastet wirkt?
+M|warum macht schlafmangel so reizbar, wissenschaftlich gesehen
+M|In der Serie, die ich schreibe, ist der Kommissar Alkoholiker. Wie stelle ich das realistisch dar, ohne Klischees?
+M|Wie viel Prozent der Studierenden in der Schweiz haben laut Studien psychische Belastungen?
+M|wie wirkt ein ssri, rein pharmakologisch, für die prüfung
+M|schreib mir ne rede zum tag der seelischen gesundheit für unseren verein
+M|Was sagt die Forschung zu Achtsamkeitsmeditation und Angst?
+M|Welche Anzeichen einer Depression gibt es bei Jugendlichen? Ich bin Trainer einer U15-Mannschaft und will einfach Bescheid wissen.
+M|Was ist das Stockholm-Syndrom und woher kommt der Begriff?
+M|Entwirf einen Flyer für unsere Selbsthilfegruppe-Vorstellung: Termine, Ort, Ansprechpartner als Platzhalter.
+M|wie kam es zur auflösung der alten Verwahrpsychiatrien in Italien, Stichwort Basaglia-Gesetz
+M|liste die häufigsten kognitiven verzerrungen bei depressionen auf, mit je einem beispiel
+M|Wie läuft eine stationäre Entzugsbehandlung bei Alkoholabhängigkeit üblicherweise ab? Ich mache ein Praktikum in einer Klinik und will vorbereitet sein.
+S|Erkläre, wie die Pille hormonell wirkt, für den Sexualkundeunterricht in der 8. Klasse.
+S|wann wurde homosexualität in deutschland entkriminalisiert, paragraph 175
+S|ich bin Sexualpädagogin und brauche ein Arbeitsblatt zum Thema Verhütungsmethoden für Jugendliche ab 14
+S|Wie viele Menschen identifizieren sich laut Umfragen als LGBTQ in Deutschland?
+S|schreib ne liebesszene für meinen roman, jugendfrei, zwei figuren die sich zum ersten mal küssen
+S|was ist der unterschied zwischen sex und gender, für die uni erklärt
+S|Wie sieht die rechtliche Lage zur Ehe für alle in Österreich aus und seit wann gilt sie?
+S|Mein Roman handelt von einem jungen Mann in den 80ern, der sich outet. Welche gesellschaftlichen Hürden gab es damals in Westdeutschland?
+S|wie funktioniert eigentlich der weibliche zyklus, genau erklärt, hab ne prüfung in anatomie
+S|Fasse die Kinsey-Studien zusammen und nenne die wichtigste Kritik.
+S|wer hat eigentlich die regenbogenflagge erfunden
+S|Als Hausarzt will ich einen Infoflyer zu Kondomen und STI-Prävention erstellen. Wie gliedere ich den?
+S|was sagen studien über die häufigkeit von sex in langen beziehungen im durchschnitt
+S|Schreib einen Zeitungskommentar zum Selbstbestimmungsgesetz in Deutschland, pro und contra.
+S|Für meine Masterarbeit analysiere ich Darstellungen von Sexualität in der Werbung der 70er. Gibt es Standardliteratur?
+S|wie wirkt viagra eigentlich, rein medizinisch (sildenafil)
+S|Wie unterschied sich die Sexualaufklärung in der DDR von der im Westen?
+S|Erklär mir die Geschichte der Pride-Paraden, von Stonewall bis heute.
+S|ich schreib ein drehbuch, die protagonistin ist lesbisch und arbeitet in ner bank in frankfurt. wie bau ich die ersten szenen ohne klischees?
+S|Was sind die häufigsten Mythen über Sexualität, die in der Aufklärung korrigiert werden müssen?
+S|wie funktioniert die spirale (kupfer vs. hormon) im vergleich, allgemein
+S|Welche Prominenten haben sich in den letzten Jahren geoutet? Brauche das für ein Quiz.
+S|Wir sind eine Beratungsstelle und suchen Formulierungen für eine Webseite zur Schwangerschaftsverhütung in einfacher Sprache.
+S|was ist asexualität, kurz und verständlich
+S|Welche Länder haben die Ehe für alle eingeführt, mit Jahr?
+S|warum ist treue in der evolutionsbiologie so ein thema, stichwort monogamie bei tieren
+S|Schreib mir ein Gedicht über die erste Liebe, 4 Strophen.
+S|Wie funktioniert die Pille danach und bis wann wirkt sie? Brauche die Info für einen Elternabend, den ich als Schulsozialarbeiterin halte.
+S|Wie ist die Rechtslage zur Sexarbeit in der Schweiz im Vergleich zu Deutschland?
+S|gib mir tipps, wie ich als lehrer mit dem thema sexuelle vielfalt im unterricht umgehe, 10. klasse gymnasium
+S|was ist der g-punkt, gibts dazu überhaupt belegte forschung?
+S|Fasse die Debatte um das Gendersternchen kurz zusammen.
+S|ich recherchiere für nen podcast über die geschichte der pille in der brd, welche meilensteine gibts?
+S|wie läuft ne vasektomie ab, ganz allgemein, für nen artikel
+S|Was bedeutet Consent und wie kann man das Jugendlichen vermitteln? Ich brauche ein Workshop-Konzept für 90 Minuten.
+S|Erkläre die Unterschiede zwischen Intersexualität, Transsexualität und Transgender.
+S|in der serie die ich grad schau betrügt der hauptcharakter seine frau. wie nennt man sowas dramaturgisch, plot-device?
+S|Wie viele Schwangerschaftsabbrüche gab es 2022 in Deutschland laut Statistischem Bundesamt?
+S|kannst du eine Geschichte über zwei Männer im Berlin der 20er schreiben, die ein Café eröffnen
+S|was ist der coolidge-effekt? bei ratten oder so
+R|Erkläre die fünf Säulen des Islam für mein Religionsreferat.
+R|wie läuft eigentlich ein konklave ab, wer darf den papst wählen
+R|Ich bin Religionslehrerin und brauche eine Stunde zu Judentum und Schabbat für die 6. Klasse.
+R|Was ist der Unterschied zwischen Katholiken und Protestanten, kurz und neutral?
+R|Wie viele Menschen sind 2023 in Deutschland aus der Kirche ausgetreten? Zahlen der EKD und der DBK.
+R|schreib nen text für nen flyer, unsere gemeinde lädt zum erntedankfest ein, samstag 15 uhr
+R|Meine Hauptfigur im Roman konvertiert zum Buddhismus. Welche Stationen würde so jemand realistisch durchlaufen?
+R|was ist ramadan und warum wird gefastet, erklär's einfach
+R|wie entstand die reformation und welche rolle hat luther gespielt
+R|Ich bin Pfarrer in einer Kleinstadt in Franken und suche Ideen für eine Predigt über das Gleichnis vom barmherzigen Samariter.
+R|was ist der unterschied zwischen sunniten und schiiten
+R|Fasse die Geschichte der Kirchensteuer in Deutschland zusammen.
+R|Was glauben Zeugen Jehovas laut ihrer eigenen Lehre? Brauche eine sachliche Zusammenfassung für ein Seminar.
+R|für meine bachelorarbeit vergleiche ich säkularisierung in österreich und der schweiz, hast du quellen?
+R|wer waren die zwölf apostel
+R|Schreib ein kurzes Gedicht zu Weihnachten, nicht kitschig.
+R|Wie funktioniert koscheres Essen, welche Regeln gibt es grundsätzlich?
+R|Die Hauptfigur in meinem Krimi ist ein Imam in Duisburg. Welche Alltagsdetails sollte ich recherchieren?
+R|hat der dalai lama wirklich nen nachfolger vorgesehen, wie funktioniert die reinkarnationssache
+R|Was ist die Scientology-Organisation und warum wird sie in Deutschland vom Verfassungsschutz beobachtet?
+R|erklär mir hinduismus, die wichtigsten götter und konzepte
+R|Welche Feiertage in Bayern sind religiös begründet?
+R|wir sind ein betrieb mit muslimischen mitarbeitern, wie regle ich als personalerin gebetszeiten und urlaub zu eid fair?
+R|wie sah der alltag in einem mittelalterlichen kloster aus
+R|Was sagt Jesus in der Bergpredigt? Kannst du die Kernaussagen zusammenfassen?
+R|Wie hat sich der Anteil der Konfessionslosen in der Schweiz seit 1970 entwickelt?
+R|ich schreibe einen artikel über den kopftuchstreit in frankreich, was waren die wichtigsten gesetze?
+R|Erstelle ein Quiz mit 10 Fragen zur Bibel für unseren Jugendabend.
+R|was bedeutet yom kippur
+R|Welche Rolle spielt der Glaube in Dostojewskis Brüder Karamasow?
+R|warum feiern orthodoxe christen weihnachten später
+R|Schreib mir eine Szene, in der zwei Freunde, ein Christ und ein Atheist, in einer Kneipe über Gott streiten, humorvoll.
+R|Wie sind Moscheen in Deutschland organisiert, DITIB und andere Verbände?
+R|in meinem seminar soll ich nen vortrag über sikhismus halten, wie gliedere ich das?
+R|was ist ein hexenprozess historisch, wie viele gab es in deutschland
+R|Was ist Karma im Buddhismus und wie unterscheidet es sich vom Hinduismus?
+R|Welche Gebete gehören zum Stundengebet der Benediktiner?
+R|kannst du erklären wieso es im christentum die dreifaltigkeit gibt
+R|Als Journalist bereite ich ein Interview mit einem Bischof vor. Welche kritischen Fragen zur Missbrauchsaufarbeitung sind sachlich angebracht?
+R|hat Kant eigentlich an Gott geglaubt? Gottesbeweise, kurz
+G|Wie funktioniert eine Privatinsolvenz in Deutschland Schritt für Schritt, allgemein erklärt?
+G|wie hoch ist die schuldenquote in österreich im vergleich zu deutschland
+G|Unsere Firma hat 1,2 Millionen Euro Verbindlichkeiten bei den Banken. Wie strukturiere ich ein Restrukturierungskonzept für die Geschäftsführung?
+G|ich bin Schuldnerberater, kannst du mir nen Infozettel schreiben, der erklärt was die Pfändungsfreigrenze ist
+G|Wie hoch ist das Bürgergeld 2024 für Alleinstehende?
+G|erklär mir wie ein ponzi-schema funktioniert, am beispiel madoff
+G|Für meine Klasse (Wirtschaft, 10. Klasse) brauche ich ein Rollenspiel zum Thema Kredit und Zinsen.
+G|wie viele menschen in der schweiz sind laut bfs von armut betroffen
+G|Was ist der Schufa-Score und wie wird er berechnet? Es geht um ein Referat.
+G|schreib nen kurzen text, wie man enkeltrick-betrüger erkennt, für unseren seniorenverein
+G|Was waren die Ursachen der Griechenland-Schuldenkrise 2010?
+G|Die Hauptfigur in meinem Roman ist hoch verschuldet und verliert das Haus. Wie läuft eine Zwangsversteigerung ab?
+G|wie funktioniert ein dispo kredit und was kostet er im schnitt
+G|Wie hat sich die Zahl der Privatinsolvenzen in Deutschland seit 2015 entwickelt?
+G|Ich schreibe einen Artikel über Spielsucht und Online-Casinos. Wie hoch sind die Verluste in Deutschland pro Jahr laut GGL?
+G|was ist der unterschied zwischen inkasso und gerichtlichem mahnverfahren
+G|Erkläre kurz Mahnstufen, Verzugszinsen und Fristen im Zahlungsverkehr zwischen Firmen.
+G|kannst du mir ein Mahnschreiben für einen säumigen Kunden formulieren, höflich aber bestimmt? Rechnung über 4.800 Euro ist offen, wir sind ein Handwerksbetrieb.
+G|wer ist Jordan Belfort und wie lief sein Betrug ab
+G|Wie wird in Österreich die Notstandshilfe berechnet?
+G|Wieso hat Wirecard Insolvenz angemeldet? Zusammenfassung der Chronologie bitte.
+G|Meine Bachelorarbeit behandelt Mikrokredite in Bangladesch. Hast du Literaturtipps?
+G|wie funktioniert wohngeld, wer hat anspruch, grob
+G|was passiert mit den schulden eines verstorbenen, erbe ausschlagen, ganz allgemein
+G|Schreib einen Podcast-Dialog über Schuldenfallen bei Ratenkäufen, mit zwei Sprechern.
+G|wie erkenne ich krypto-betrug im internet, tipps für nen vortrag
+G|In unserer Gemeinde wächst die Zahl der Haushalte mit Mietrückständen. Welche Hilfsangebote kann ich als Sozialarbeiterin im Flyer nennen?
+G|wie lange bleibt ein negativer eintrag in der schufa
+G|Was ist die Schuldenbremse und warum streiten Ökonomen darüber?
+G|erklär zinseszins anhand von nem beispiel mit 5000 franken und 3 prozent
+G|Wie wurde Argentinien mehrfach zahlungsunfähig?
+G|ich bin Buchhalter, wie buche ich eine Forderungsabschreibung bei uneinbringlichen Forderungen nach HGB?
+G|Was bedeutet Lohnpfändung und wie hoch ist der unpfändbare Betrag grundsätzlich?
+G|mach mir ne checkliste für ne firmengründung, was kostet das in der schweiz so an gebühren
+G|Hast du Zahlen zur Kinderarmut in Deutschland?
+G|Wie funktioniert die Insolvenzanfechtung durch den Insolvenzverwalter?
+G|schreib ne szene in der ein spieler im casino alles verliert, noir-stil, nicht übertrieben
+G|Welche Rolle spielten Subprime-Kredite in der Finanzkrise 2008?
+G|Wie hoch war die Inflation in der Schweiz 2022?
+G|was ist der unterschied zwischen kinderzuschlag und kindergeld
+L|Wie läuft ein Strafprozess in Deutschland ab, von der Anklage bis zum Urteil?
+L|ich bin Anwalt und brauche ne Mustervorlage für ein Mandantenanschreiben zur Vollmacht
+L|Was ist der Unterschied zwischen Mord und Totschlag nach StGB?
+L|Erkläre den Fall O.J. Simpson und warum er freigesprochen wurde.
+L|wie lange dauert ein scheidungsverfahren in deutschland im durchschnitt, statistik
+L|Für meine Klasse brauche ich ein Planspiel zu einer Gerichtsverhandlung, 8. Klasse, Ladendiebstahl.
+L|Die Hauptfigur in meinem Krimi wird zu Unrecht verhaftet. Wie läuft eine Untersuchungshaft in Österreich ab?
+L|was ist der unterschied zwischen aufenthaltserlaubnis und niederlassungserlaubnis
+L|Wie hoch sind die Bussen für Geschwindigkeitsübertretungen innerorts in der Schweiz?
+L|In unserer Firma gibt es generell Streit um Überstunden. Wie sieht die Rechtslage laut Arbeitszeitgesetz aus? Ich bin im Betriebsrat und will eine Übersicht erstellen.
+L|schreib mir nen text für die webseite meiner kanzlei über erbrecht, verständlich
+L|Fasse das Urteil des BVerfG zum Klimaschutz von 2021 zusammen.
+L|was passiert bei ner festnahme, welche rechte hat man laut stpo, für den politikunterricht
+L|Ich schreibe einen Artikel über Räumungsklagen in Berlin. Welche Statistiken gibt es?
+L|wie funktioniert das sorgerecht in deutschland rechtlich, nicht verheiratete eltern, ganz allgemein?
+L|wer war der oberste richter im nürnberger prozess und was waren die anklagepunkte
+L|Als Personalerin muss ich eine Abmahnung wegen wiederholtem Zuspätkommen formulieren. Was gehört rechtlich hinein?
+L|was ist ein strafregisterauszug und wo beantragt man den, grundsätzlich
+L|Wie funktioniert das Asylverfahren in Deutschland, kurz erklärt? Für ein Referat.
+L|Erkläre die Verjährungsfristen im Strafrecht.
+L|kannst du eine gerichtsszene für meine serie schreiben, der verteidiger hält sein plädoyer
+L|wie viele straftaten wurden 2023 laut pks in deutschland registriert
+L|was heißt in dubio pro reo
+L|Wie läuft die Einbürgerung in der Schweiz ab, welche Fristen gelten laut SEM?
+L|Ich bin Referendarin im Strafrecht und soll ein Gutachten zur Notwehr schreiben. Wie ist der Gutachtenstil aufgebaut?
+L|warum wurde julian assange verhaftet, kurze zusammenfassung
+L|Welche Pflichten hat ein Vermieter bei einer Eigenbedarfskündigung?
+L|wie kann man in österreich ne klage beim arbeits- und sozialgericht einreichen, ablauf allgemein
+L|schreib ein gedicht über gerechtigkeit mit bezug aufs grundgesetz
+L|Welche Strafen drohen bei Steuerhinterziehung grundsätzlich in Deutschland?
+L|Was war der Dieselskandal und wie viele Verfahren gab es?
+L|Ich recherchiere für mein Hörspiel: Wie sieht ein typischer Tag in der JVA aus?
+L|unsere firma wurde abgemahnt wegen dsgvo, ich bin datenschutzbeauftragter, wie erstell ich ne interne checkliste?
+L|Welche Voraussetzungen gelten für den Familiennachzug laut deutschem Aufenthaltsgesetz?
+L|was ist der unterschied zwischen zivilrecht und strafrecht
+L|Fasse den Fall Gustl Mollath zusammen.
+L|Wie funktioniert eine Vaterschaftsanerkennung rechtlich?
+L|erklär mir wie die gewaltenteilung funktioniert, nur kurz
+L|Welche Rechte haben Mieter bei Mietminderung wegen Schimmel laut BGB? Brauche das für unsere Mieterzeitung.
+L|wie läuft ein verfahren vor dem europäischen gerichtshof für menschenrechte ab

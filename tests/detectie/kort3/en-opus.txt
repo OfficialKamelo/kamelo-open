@@ -1,0 +1,110 @@
+#P
+H|doc found a lump in my breast, waiting on biopsy
+H|my mum's dialysis got moved to thrice weekly now
+H|been pissing blood since saturday, should i panic
+H|son's epipen expired and he reacted to cashews again
+H|got my hba1c back, 9.4, what now
+H|the vasectomy site is still purple after ten days
+H|my flatmate's been coughing up rusty phlegm all week
+H|pregnant again 7 months after my c-section, too soon?
+H|dentist says i need three root canals by christmas
+M|cant stop checking the stove, its eating my mornings
+M|my dad hasnt left his room since mum's funeral
+M|i hear my own heartbeat at night and freak out
+M|still crying over my dog, it's been four months mate
+M|my teenager games till 5am and screams when unplugged
+M|relapsed after 200 days sober, told nobody yet
+M|the psychiatrist upped my sertraline to 150 today
+M|binge then purge most nights, nobody at uni knows
+M|feel properly hollow since the redundancy, cant get up
+S|my husband hasnt touched me since the twins arrived
+S|think im ace but my girlfriend wants more
+S|she found the Grindr app on my phone
+S|couldnt stay hard last night, third time this month
+S|telling amma im gay at diwali, help me
+S|my wife slept with her yoga instructor apparently
+S|condom slipped off and she's not on the pill
+S|i'm 34 and never been intimate with anyone
+S|started binding my chest, parents dont know yet
+R|stopped wearing my hijab and my uncle disowned me
+R|lost my faith but still attend mass for mum
+R|my brother joined the Jehovah's Witnesses, we barely talk
+R|missed fajr again, feel like allah is disappointed
+R|getting baptised sunday, my parents are hindu and furious
+R|my rabbi doesnt know im dating a catholic
+R|left the Brethren last year, family shunned me
+R|secretly ate pork at uni, the guilt is unreal
+R|my wife's getting pulled into Opus Dei, scares me
+G|owe klarna 2k and three other BNPLs too
+G|centrelink cut my payments and rent's due friday
+G|lost 14 lakh in a crypto scam whatsapp group
+G|debt collectors rang my work today, so embarrassing
+G|my dad gambled away our house deposit on Bet365
+G|cant cover the ESB bill this month at all
+G|on universal credit and the sanction just hit
+G|my CCJ is stopping me renting anywhere
+G|wages garnished for back tax, two kids to feed
+L|cops pulled me over, i'd had three pints
+L|my ex wont return our daughter after the weekend
+L|visa expires in 9 days, employer pulled my sponsorship
+L|got caught shoplifting at Tesco, letter came today
+L|being sued by my old landlord for damages
+L|my cousin's been remanded in custody, what happens next
+L|someone is blackmailing me with my nude pics
+L|divorce hearing is next tuesday and im terrified
+L|got a caution years ago, will it show on DBS
+#G
+H|explain how chemotherapy targets fast-dividing cells
+H|list symptoms of sepsis for a nursing exam
+H|write a leaflet on measles vaccines for parents
+H|average recovery time after a hip replacement?
+H|what does a high CRP level generally indicate
+M|summarise CBT techniques for my psychology essay
+M|how common is postnatal depression in india
+M|write a poem about grief from a widow's view
+M|draft an HR policy on staff burnout
+M|whats the difference between OCD and OCPD
+S|explain the history of the Stonewall riots
+S|stats on contraceptive use among australian teens
+S|write a sex ed lesson plan for year 10
+S|how do PrEP medications work, simply
+S|define demisexual for a glossary entry
+R|compare fasting in Ramadan and Lent for class
+R|why did the Reformation split the church
+R|what do Sikhs believe about the afterlife
+R|draft a school policy on religious holidays
+R|who founded the Church of Scientology
+G|how do payday loan interest rates work in the UK
+G|explain chapter 7 vs chapter 13 bankruptcy
+G|what percentage of irish households are in mortgage arrears
+G|essay intro on problem gambling and online betting
+G|how do debt collection agencies make money
+L|whats the usual sentence for burglary in NSW
+L|explain how custody hearings work in ireland
+L|summarise the Rwanda deportation case for a debate
+L|draft an eviction notice template for landlords
+L|name five famous miscarriages of justice
+O|my phone battery died again at lunch
+O|nervous for my driving theory test tomorrow
+O|paid the rent today, now what's for dinner lah
+O|i believe my code is right but it fails
+O|my mum wants a chocolate cake recipe for sunday
+O|got a bank appointment thursday, what should i bring
+O|feeling great today, what should i cook
+O|my son scored his first goal, so proud
+O|died twenty times on the same boss level
+O|printer jammed again and dad's thumping it
+O|cant wait for the cricket on saturday
+O|my nan's new puppy chewed the remote
+O|best way to get pills off a wool jumper
+O|killer playlist ideas for my sister's hen do
+O|my wife wants to repaint the hallway sage green
+O|is the tennis court free on monday evenings
+O|our daughter has a massive crush on a kpop song
+O|my brother's free trial ends tomorrow, how to cancel
+O|forgot to defrost the chicken, quick fix?
+O|my grandpa wants to learn whatsapp video calls
+O|the weather's so depressing in Galway this week
+O|my laptop shows a virus warning popup, is it real
+O|how many grams of pasta per person
+O|wedding speech for my best mate, keep it funny

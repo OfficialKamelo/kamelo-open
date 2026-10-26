@@ -21,6 +21,9 @@
   const I = globalThis.PrivacyI18n;
   const T = globalThis.PrivacyTopics;
   const TA = globalThis.KameloTopicAi;
+  // Gevoelige gegevens (BSN, IBAN, kaart, paspoort, wachtwoord, sleutel) herkennen: alleen voor de melding in de gratis
+  // editie (identifiers.js). Kamelo Business schermt ze af met detector.js.
+  const ID = globalThis.PrivacyIdentifiers;
   // Alleen Kamelo Business: beheerd beleid van de organisatie (policy.js). In de gratis editie ontbreekt het.
   const P = globalThis.KameloPolicy;
   // Alleen Kamelo Business: beleid per AI-app (teams/ai-apps.js): masked, allowed of blocked.
@@ -112,6 +115,7 @@
       // Een AI-app die Kamelo kent zonder invoerveld (teams/ai-apps.js) of die de organisatie noemt: elk tekstveld.
       || (appMode === 'masked' && location.hostname ? { name: AA.nameFor(HOST), hosts: [HOST] } : null);
     if (appMode === 'blocked') blockHere();
+    if (!settings.enabled) try { dataMarks?.clear?.(); } catch {} // uitgezet: geen blauwe markering laten staan (try: dataMarks staat verderop)
     if (MASK && active() && !MARKS) MARKS = makeMarks();
     if (aiSite && MASK && active()) startAnswers();
     repaintAll();
@@ -152,6 +156,20 @@
     return active();
   }
   let loaded = false;
+  // Kamelo Business op een AI-site, nog bezig met opstarten (licentie, kluis, instellingen): dan gaat er niets ongemerkt
+  // onafgeschermd weg. Plakken, Enter, de verstuurknop en uploaden wachten even, met een korte melding. Hooguit 15 s,
+  // zodat een haperende achtergrond de site nooit blijvend dichtzet. Zonder licentie (licensed false) doet Kamelo niets.
+  let started = !MASK;
+  const startedAt = Date.now();
+  const starting = () => MASK && !started && !superseded && !!S.siteFor(location.hostname) && licensed !== false
+    && Date.now() - startedAt < 15000;
+  function holdWhileStarting(e) {
+    if (!starting()) return false;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    showToast('compact', [el('span', { textContent: I.t('starting') })], 2500);
+    return true;
+  }
   // Een licentie die net is ingevuld (popup) of via het beleid binnenkomt: meteen aan, zonder de pagina te herladen.
   async function recheckLicence() {
     if (!MASK || superseded || !alive()) return;
@@ -179,6 +197,7 @@
     policy = p || {};
     noticesSeen = Number(seen) || 0;
     applySettings(s);
+    started = true;
   }
 
   P?.watch(p => { policy = p; applySettings(userSettings); recheckLicence(); });
@@ -244,7 +263,11 @@
     };
   }
   if (MASK) globalThis.KameloUpload?.install({
-    active: () => !superseded && settings.enabled && settings.maskFiles !== false && !!aiSite?.files,
+    // Elke AI-dienst die Kamelo afschermt, niet alleen de sites met `files: true`: anders ging een bestand op een
+    // afgeschermde AI-app zonder die vlag (Harvey, Julius, eigen AI-tools van de organisatie) ongewijzigd mee.
+    // upload.js vangt de gewone events (kiezen, slepen, plakken), dus dat werkt op elke site. Niet in WhatsApp (only).
+    active: () => !superseded && settings.enabled && settings.maskFiles !== false && !!aiSite && !aiSite.only,
+    starting: () => starting(),
     unreadable: () => settings.unreadableFiles || 'ask',
     begin: docSession,
     mask: (text, terms) => D.mask(text, vault, fileOpts(terms)),
@@ -437,6 +460,7 @@
 
   window.addEventListener('paste', e => {
     if (superseded) return;
+    if (!internalPaste && (e.clipboardData?.types || []).length && aiEditor(e.target) && holdWhileStarting(e)) return;
     if (internalPaste || !settings.enabled) return;
     const ed = aiEditor(e.target);
     const text = ed && e.clipboardData?.getData('text/plain');
@@ -456,6 +480,7 @@
 
   window.addEventListener('keydown', e => {
     if (superseded) return;
+    if (MASK && e.key === 'Enter' && !e.shiftKey && !e.isComposing && aiEditor(e.target) && holdWhileStarting(e)) return;
     if (!MASK || !settings.enabled || e.key !== 'Enter' || e.shiftKey || e.isComposing) return;
     const ed = aiEditor(e.target);
     if (ed && guard(ed)) {
@@ -507,9 +532,11 @@
 
   window.addEventListener('click', e => {
     if (superseded) return;
-    if (!MASK || !settings.enabled) return;
+    if (!MASK) return;
     const btn = e.target.closest?.(BUTTON_SEL);
     if (!btn || !isSendButton(btn)) return;
+    if (holdWhileStarting(e)) return;
+    if (!settings.enabled) return;
     if (guardAll(editorsNear(btn))) {
       e.preventDefault();
       e.stopImmediatePropagation();
@@ -520,7 +547,9 @@
   // rond het veld wordt verzonden. Ook dan eerst afschermen en tegenhouden, zodat de gebruiker kan controleren.
   window.addEventListener('submit', e => {
     if (superseded) return;
-    if (!MASK || !settings.enabled || !(e.target instanceof HTMLFormElement)) return;
+    if (!MASK || !(e.target instanceof HTMLFormElement)) return;
+    if (e.target.querySelector(EDITOR_SEL) && holdWhileStarting(e)) return;
+    if (!settings.enabled) return;
     const eds = [...new Set([...e.target.querySelectorAll(EDITOR_SEL)].map(findEditor).filter(Boolean))];
     if (guardAll(eds)) {
       e.preventDefault();
@@ -625,6 +654,20 @@
     if (!superseded && settings.enabled && goesToAi(ed)) checkTopicsSoon(ed);
     paintSoon(ed);
   }, true);
+  // Niet elke editor stuurt een input-event bij typen: sommige handelen elke toets zelf af (beforeinput met
+  // preventDefault) en zetten de tekst er zelf in. Dan kwam de melding pas bij een later event, zoals een klik in het veld.
+  // Daarom ook na elke toets en na een samengesteld teken (IME) kijken. checkTopicsSoon wacht zelf tot het typen even
+  // stopt en kijkt naar de tekst, dus een extra aanroep kost niets; een melding die er al was, komt niet dubbel.
+  const afterKey = e => {
+    if (!active() || superseded || !settings.enabled) return;
+    const ed = findEditor(e.target);
+    if (!ed || !goesToAi(ed)) return;
+    typedIn.add(ed);
+    if (e.isTrusted) byUser.set(ed, true);
+    checkTopicsSoon(ed);
+  };
+  window.addEventListener('keyup', afterKey, true);
+  window.addEventListener('compositionend', afterKey, true);
   function isComposer(ed) {
     if (!aiHere()) return hinted(ed);
     if (matchesComposer(ed)) return true;
@@ -1456,11 +1499,14 @@
   }
   function muteChat() {
     mutedChat = location.pathname;
+    dataMarks?.clear?.();
     hideToast();
     clearTimeout(topicTimer);
     deviceTopics?.cancel();
   }
   const topicsOn = () => !!T && settings.enabled && settings.topicWarnings && !inPrivateChat() && !mutedHere();
+  // Gevoelige gegevens (gratis editie) ook in een tijdelijke chat: daar gaat een BSN of IBAN nog steeds naar het AI-bedrijf.
+  const dataOn = () => !MASK && !!ID && settings.enabled && settings.topicWarnings && !mutedHere();
   const freshTopic = k => !warnedTopics.has(k) && !(settings.mutedTopics || []).includes(k);
   function checkTopicsSoon(ed) {
     clearTimeout(topicTimer);
@@ -1468,19 +1514,30 @@
     topicTimer = setTimeout(() => {
       if (!ed.isConnected || !goesToAi(ed)) return; // intussen naar een andere chat (WhatsApp)
       const text = getText(ed);
-      if (!text.trim()) return void forgetTopics('', []);
+      if (!text.trim()) { dataMarks?.clear?.(); return void forgetTopics('', []); }
       if (!checkTopics(text, ed)) askDevice(ed);
     }, 900);
   }
 
   // Geeft true als de woordenlijst een onderwerp vond (ook als de melding daarvoor al is geweest of uitstaat).
+  // Gratis editie: eerst gevoelige gegevens (een BSN of IBAN gaat voor: dat is een nummer dat je makkelijk weghaalt of
+  // bij Melo houdt). Die staan als 'DATA:IBAN' enz. in dezelfde lijsten als de onderwerpen, zodat ze net zo per bericht
+  // terugkomen en met "Niet meer in dit gesprek" stil zijn.
+  // Een gevonden gegeven telt niet als onderwerp: de tweede kans (de AI op dit apparaat) mag dan nog naar onderwerpen kijken.
   function checkTopics(text, ed = null) {
-    if (!topicsOn()) return false;
-    const found = T.sensitiveTopics(text);
+    const withData = dataOn(), withTopics = topicsOn();
+    if (!withData && !withTopics) return false;
+    const data = withData ? ID.kinds(text).map(k => `DATA:${k}`) : [];
+    if (withData) markData(ed);
+    const topics = withTopics ? T.sensitiveTopics(text) : [];
+    const found = [...data, ...topics];
     forgetTopics(text, found);
     const topic = found.find(freshTopic);
-    if (topic) { showTopic(topic, ed); if (warnedTopics.has(topic) && PER_MESSAGE) byWords.add(topic); }
-    return found.length > 0;
+    if (topic) {
+      if (topic.startsWith('DATA:')) showData(topic.slice(5), ed); else showTopic(topic, ed);
+      if (warnedTopics.has(topic) && PER_MESSAGE) byWords.add(topic);
+    }
+    return topics.length > 0;
   }
 
   // Tweede kans (zie topic-ai.js): vond de woordenlijst niets, dan de AI van Chrome op dit apparaat, als die er al is.
@@ -1497,12 +1554,19 @@
     });
   }
 
-  // Kan Melo hier antwoorden (de AI van Chrome op deze computer)? null = nog niet gevraagd. De achtergrond vraagt alleen
-  // availability(), dus dit start nooit een download. Bij elke melding opnieuw gevraagd, voor de volgende.
+  // Kan Melo hier antwoorden (de AI van Chrome op deze computer, of 'mac': Melo voor Mac)? null = nog niet gevraagd. De
+  // achtergrond vraagt alleen availability(), dus dit start nooit een download. Bij elke melding opnieuw gevraagd, voor de volgende.
   let meloReady = null, meloCheck = null;
+  // Melo kan hier misschien antwoorden: in Chrome op het apparaat, en in elke browser met Melo voor Mac (src/background.js).
+  const meloHere = () => I.BROWSER.id === 'chrome' || I.BROWSER.id === 'safari' || settings.meloMac === true;
+  // De knop "Vraag het Melo op je Mac": gratis editie, op een Mac in Chrome, Edge of Firefox, Melo voor Mac nog niet aan,
+  // en geen andere Melo in deze melding. Met Melo voor Mac aan biedt de melding gewoon "Vraag het Melo".
+  const onMacOS = /Mac/i.test(navigator.userAgentData?.platform || navigator.platform || '');
+  const macTip = (canProtect, ed) => !MASK && !!ed && !canProtect && onMacOS && I.BROWSER.id !== 'safari' &&
+    !!settings.privateChat && settings.meloMac !== true;
   function checkMelo() {
     meloCheck ??= (alive() ? chrome.runtime.sendMessage({ type: 'pf:melo-ready' }) : Promise.resolve(false))
-      .then(r => r === true, () => false)
+      .then(r => (r === 'mac' ? r : r === true), () => false)
       .then(r => { meloReady = r; meloCheck = null; return r; });
     return meloCheck;
   }
@@ -1514,8 +1578,9 @@
     // is belangrijker, en de kaart zegt zelf hoeveel er is afgeschermd.
     if (panel) return void setTimeout(() => showTopic(topic, ed), 1500);
     // Met een veld: "Ask Melo" brengt de vraag naar Melo, de privéchat van Kamelo (docs/private-chat/PLAN-PRIVE-CHAT.md).
-    // Alleen in Chrome: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding alleen de tijdelijke chat.
-    const wantsMelo = !!ed && !!settings.privateChat && I.BROWSER.id === 'chrome';
+    // In Chrome, of met Melo voor Mac: Edge en Firefox hebben (nog) geen AI op het apparaat; daar biedt de melding anders
+    // alleen de tijdelijke chat.
+    const wantsMelo = !!ed && !!settings.privateChat && meloHere();
     // En alleen als de AI van Chrome op deze computer kan draaien; anders leidde "Ask Melo" naar "Geen AI op dit apparaat".
     // De eerste keer even op het antwoord wachten (meestal een paar ms, hooguit 1,5 s; geen antwoord = geen Melo).
     if (wantsMelo && meloReady === null) {
@@ -1528,16 +1593,13 @@
     const canProtect = wantsMelo && meloReady;
     // Ging de tijdelijke chat op deze pagina net niet open (zie takePrivate), dan bieden we hem hier niet opnieuw aan.
     const offerPrivate = !!ed && !!aiSite?.private && !privateFailed;
-    // In Edge en Firefox zegt de melding waarom er een tijdelijke chat staat waar Chrome Private Chat aanbiedt. Chrome
-    // zonder AI op deze computer: gewoon de tijdelijke chat, zonder "Chrome heeft nog geen ingebouwde AI" (die heeft hij wel).
-    const advice = canProtect ? 'topicAdviceChat'
-      : offerPrivate ? (settings.privateChat && I.BROWSER.id !== 'chrome' ? 'topicAdviceNoDevice' : 'topicAdvicePrivate')
-      : 'topicAdvice';
-    const masked = ed?.isConnected ? new Set(getText(ed).match(/\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g) || []).size : 0;
+    // Alleen Business schermt af; in de gratis editie kan "[STAP_1]" in een prompt nooit "1 afgeschermd" worden.
+    const masked = MASK && ed?.isConnected ? new Set(getText(ed).match(/\[[A-Z]+(?:_[A-Z]+)*_\d+\]/g) || []).size : 0;
     showToast('card', [
       el('div', { className: 'c' },
         el('b', { textContent: I.t('topicTitle') }),
-        el('span', { className: 'm', textContent: `${I.t(`topic_${topic}`)} ${I.t(advice)}` }),
+        // Kort (Lucas, 21 okt): alleen "Sensitive info" en de knoppen. Geen onderwerp noemen: het model kan het verkeerde
+        // kiezen, en bij een ruzie of geweld is een verkeerd woord pijnlijk. De knoppen zeggen zelf wat je kunt doen.
         ...(masked ? [lastMasked && lastMasked.ctx?.ed === ed
           ? textButton('done', I.t('toastCompact', { n: masked }), e => { const m = lastMasked; hideToast(); openDetails(m.unique, m.ctx, e.detail === 0); })
           : el('span', { className: 'done', textContent: I.t('toastCompact', { n: masked }) })] : []),
@@ -1545,6 +1607,9 @@
           ...(canProtect ? [meloButton(() => { hideToast(); goPrivateChat(ed); })] : []),
           // Tweede keuze: een tijdelijke chat in dezelfde AI (voor wie z'n eigen ChatGPT wil houden).
           ...(offerPrivate ? [textButton(canProtect ? '' : 'p', I.t('topicPrivate'), () => { hideToast(); goPrivate(ed); })] : []),
+          // Op een Mac zonder Melo hier: zeg dat Melo voor Mac dit op je eigen Mac kan beantwoorden (26 okt 2026). De klik
+          // opent de popup met de schakelaar; daar staat ook waar je de app krijgt.
+          ...(macTip(canProtect, ed) ? [textButton('', I.t('topicMac'), () => { hideToast(); chrome.runtime.sendMessage({ type: 'pf:mac-koppel' }).catch(() => {}); })] : []),
           // Stil, als laatste: de gratis melding komt bij elk bericht terug, en wil je hem hier niet meer, dan kan dat.
           ...(PER_MESSAGE ? [textButton('q', I.t('topicMuteChat'), muteChat)] : []),
         )),
@@ -1554,6 +1619,86 @@
       iconButton('x', I.t('detailsClose'), hideToast),
     // Publiek is deze melding het hele product: langer laten staan. Teams toont daarnaast al de placeholders.
     ], MASK ? 15000 : 40000);
+  }
+
+  // ---------- Gratis: gevoelige gegevens blauw in het veld ----------
+  // Een BSN, IBAN, wachtwoord … krijgt in het invoerveld een blauwe markering (src/gegevens.css), zodat je ziet wat je kunt
+  // weghalen. Alleen markeren met de CSS Highlight API: de tekst en de pagina veranderen niet. Per blok (alinea), zoals
+  // paint() voor Business. Een <textarea> heeft geen tekstknopen; daar alleen de melding. Elke controle tekent opnieuw.
+  let dataMarks = null;
+  function dataHighlight() {
+    if (dataMarks === null) {
+      try {
+        dataMarks = globalThis.CSS?.highlights && typeof Highlight === 'function' ? new Highlight() : false;
+        if (dataMarks) CSS.highlights.set('kamelo-gevoelig', dataMarks);
+      } catch { dataMarks = false; }
+    }
+    return dataMarks;
+  }
+  function markData(ed) {
+    const h = dataHighlight();
+    if (!h) return;
+    h.clear();
+    if (!ed?.isConnected || isField(ed) || !dataOn()) return;
+    const blocks = new Map();
+    const walker = document.createTreeWalker(ed, NodeFilter.SHOW_TEXT);
+    for (let n; (n = walker.nextNode());) {
+      let b = n.parentElement;
+      while (b && b !== ed && !BLOCK_TAGS.test(b.tagName)) b = b.parentElement;
+      if (!blocks.has(b)) blocks.set(b, []);
+      blocks.get(b).push(n);
+    }
+    for (const nodes of blocks.values()) {
+      const text = nodes.map(n => n.nodeValue).join('');
+      if (!text.trim() || text.length > 20000) continue;
+      const at = (i, isEnd) => {
+        let acc = 0;
+        for (const n of nodes) {
+          const len = n.nodeValue.length;
+          if (i < acc + len || (isEnd && i === acc + len)) return [n, i - acc];
+          acc += len;
+        }
+        return [nodes.at(-1), nodes.at(-1).nodeValue.length];
+      };
+      for (const f of ID.find(text)) {
+        try {
+          const r = document.createRange();
+          r.setStart(...at(f.start));
+          r.setEnd(...at(f.end, true));
+          h.add(r);
+        } catch {} // knoop net veranderd
+      }
+    }
+  }
+
+  // Gevoelig gegeven (gratis editie): dezelfde kaart, met Melo als die hier kan antwoorden. Geen tijdelijke chat: die stuurt
+  // het nummer nog steeds naar het AI-bedrijf. Zonder Melo (Edge, Firefox, Chrome zonder AI op deze computer) het eerlijke
+  // advies om het weg te halen: de AI heeft het niet nodig om te helpen.
+  function showData(kind, ed = null) {
+    const key = `DATA:${kind}`;
+    if (!dataOn() || !freshTopic(key)) return;
+    if (panel) return void setTimeout(() => showData(kind, ed), 1500);
+    const wantsMelo = !!ed && !!settings.privateChat && meloHere();
+    if (wantsMelo && meloReady === null) {
+      return void Promise.race([checkMelo(), sleep(1500).then(() => false)]).then(r => { meloReady ??= r; showData(kind, ed); });
+    }
+    if (wantsMelo) checkMelo();
+    warnedTopics.add(key);
+    watchEmpty(ed);
+    anchorEd = ed;
+    const canProtect = wantsMelo && meloReady;
+    showToast('card', [
+      el('div', { className: 'c' },
+        // Kort: alleen "Sensitive info". Wát en waar laat de blauwe markering in het veld zien (markData).
+        el('b', { textContent: I.t('dataTitle') }),
+        // Zonder Melo (Edge, Firefox, Chrome zonder AI hier, of in een tijdelijke chat) het eerlijke advies.
+        ...(canProtect ? [] : [el('span', { className: 'm', textContent: I.t('dataAdviceRemove') })]),
+        el('div', { className: 'k' },
+          ...(canProtect ? [meloButton(() => { hideToast(); goPrivateChat(ed); })] : []),
+          ...(PER_MESSAGE ? [textButton('q', I.t('topicMuteChat'), muteChat)] : []),
+        )),
+      iconButton('x', I.t('detailsClose'), hideToast),
+    ], 40000);
   }
 
   // ---------- Tijdelijke chat (Ask privately) ----------
@@ -1583,8 +1728,11 @@
     // twee mensen daar allebei [PERSON_1] worden. Hij gaat alleen via het werkgeheugen van de achtergrond.
     const text = ed.isConnected ? (MASK ? restoreText(getText(ed)) : getText(ed)).trim() : '';
     if (!alive()) return;
-    chrome.runtime.sendMessage({ type: 'pf:pchat-open', text, typed: byUser.get(ed) === true }).catch(() => {});
-    if (ed.isConnected) clearField(ed);
+    // Het veld pas leeg als de achtergrond de tekst heeft (anders was de vraag weg). Het paneel opent al bij ontvangst.
+    // Met Melo voor Mac gaat de vraag naar de app; antwoordt die niet, dan de volgende keer opnieuw kijken.
+    const mac = meloReady === 'mac';
+    chrome.runtime.sendMessage({ type: mac ? 'pf:mac-vraag' : 'pf:pchat-open', text, typed: byUser.get(ed) === true })
+      .then(ok => { if (ok === true && ed.isConnected) clearField(ed); else if (mac) meloReady = null; }, () => {});
   }
 
   // ed: het veld met de vraag; uit de popup kan dat leeg zijn of ontbreken (dan gewoon een nieuwe tijdelijke chat).

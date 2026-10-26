@@ -1,0 +1,241 @@
+#G
+H|explique-moi comment un vaccin à ARN messager fait réagir le système immunitaire, en termes simples pour un exposé de bio
+H|pk les antibiotiques marchent pas contre la grippe? mon prof de bio a dit un truc mais jsais plus
+H|je suis infirmière en soins intensifs et je dois faire une fiche pour les familles sur le déroulement d'une intubation, tu peux la simplifier
+H|diabète de type 1 ou type 2, ça change quoi concrètement, en gros, sans les termes compliqués
+H|quelles sont les principales causes de mortalité infantile dans le monde selon les rapports récents de l'OMS
+H|pour mon mémoire en santé publique je compare les systèmes de sécu en Belgique et en France, tu peux me résumer les grandes différences
+H|comment fonctionne la dialyse rénale? la prof a dit que c'était un filtre mais elle a pas trop expliqué
+H|rédige une notice simple pour nos patients sur la préparation à une coloscopie, ton rassurant et phrases courtes
+H|c'est vrai que le sucre rend les enfants hyperactifs? mon frère dit que la science l'a prouvé mais je crois pas
+H|dans l'histoire, combien de personnes la peste noire a-t-elle tuées en Europe au XIVe siècle à peu près
+H|mon chum fait du sport de haut niveau, comment les athlètes gèrent la récupération musculaire après un gros entraînement
+H|je dois écrire un article pour mon blog sur les mythes autour de la vitamine C et le rhume, t'as des sources sérieuses?
+H|explique la différence entre une maladie auto-immune et une allergie, pour une présentation de 5 minutes devant ma classe de 2e
+H|quelle est la règle en Suisse pour un médicament générique par rapport au princeps, comment c'est encadré
+H|le Dr House c'est fiable pour expliquer les maladies rares? genre est-ce que les diagnostics dans la série sont réalistes
+H|jsuis en train de lire un roman où le personnage principal a une sclérose en plaques, qu'est-ce qui est exact dans sa description
+H|quels sont les signes d'un AVC qu'on apprend aux secouristes, je veux faire un affichage pour la salle des profs
+H|comment les pharmacies au Québec peuvent-elles délivrer des médicaments sans ordonnance, quelles sont les règles générales
+H|tu peux m'expliquer ce que fait un anesthésiste pendant une opération, en langage simple pour un élève de 4e
+H|la grippe espagnole de 1918, combien de morts et pourquoi elle a frappé si fort les jeunes adultes
+H|pour mon cours de nutrition: qu'est-ce qu'une carence en fer, comment on la détecte en général et quelles sont les conséquences
+H|dis-moi comment les hôpitaux belges gèrent les pics de patients en hiver, c'est pour un article de journal
+H|je suis kiné dans un centre de rééducation, comment expliquer à un patient âgé l'intérêt de marcher chaque jour sans le braquer
+H|c'est quoi le principe d'un test PCR et pourquoi il faut plusieurs heures pour le résultat
+H|sur Wikipédia il est écrit que l'obésité est une maladie reconnue depuis 2013, c'est vrai ou j'ai mal lu
+H|écris un petit dialogue entre un médecin et un enfant qui a peur de la piqûre, pour une pièce de théâtre à l'école
+H|les étudiants en médecine doivent apprendre combien de muscles dans le bras? je fais une fiche de révision pour mes copains
+H|cest quoi le cholestérol HDL vs LDL en gros, le pharmacien en a parlé à la télé hier soir
+H|pour une fiction, comment une épidémie fictive pourrait se propager dans une grande ville sans que personne le remarque au début
+H|quels sont les effets secondaires connus de l'ibuprofène à forte dose selon la notice générale, je prépare un tableau pour un cours de pharmacie
+H|combien de temps une plaie met à guérir en moyenne, genre une écorchure de vélo, c'est le même délai qu'une coupure profonde?
+H|tu crois que l'IA va remplacer les radiologues d'ici 20 ans? c'est le sujet de mon débat au lycée
+H|mdr le fou rire c'est quoi, les endorphines?
+H|liste les étapes du protocole de réanimation cardio-pulmonaire pour un adulte, selon les recommandations du conseil européen
+H|les bébés nés prématurément ont quelles chances de développement à long terme, c'est pour une émission de radio
+H|je rédige la brochure d'une mutuelle sur les remboursements dentaires en général, tu peux vérifier que mon texte est clair
+H|comment fonctionne une prothèse de hanche, ça dure combien d'années en moyenne
+H|ya quoi comme différence entre une entorse et une fracture pour un cours de secourisme, c'est un sujet de révision
+H|explique le fonctionnement d'une IRM à un public de lycéens sans jargon, une anecdote à la fin serait bien
+H|écris-moi une fiche sur la fièvre chez le nourrisson pour le site de la maternité, ton clair et pas alarmiste
+M|pour mon mémoire de psycho je dois résumer les grandes théories de l'anxiété, Beck vs les approches comportementales, t'as un plan?
+M|c'est quoi le burn-out officiellement, l'OMS le classe comme phénomène lié au travail et pas comme maladie? je confonds toujours
+M|je suis prof de français en collège et je voudrais une activité pour parler de la dépression avec des élèves de 14 ans sans les effrayer
+M|à quoi ressemble une séance de thérapie cognitive typique, combien de séances en moyenne et qui la rembourse en Suisse
+M|dans le roman que j'écris, la mère du héros sombre dans une grosse dépression après le deuil, comment décrire ça sans clichés
+M|les gens qui jouent beaucoup aux jeux vidéo sont-ils plus exposés à l'addiction, ce que disent les études récentes en gros
+M|dans une boîte de 300 salariés, quels indicateurs les RH utilisent pour mesurer les risques psychosociaux
+M|tristesse, déprime, dépression clinique: où est la frontière, pour un article de vulgarisation
+M|quels sont les critères du DSM-5 pour le trouble panique? je prépare un quiz pour mes étudiants en psychologie
+M|le travail de Freud, c'était quoi son apport réel à la psychanalyse, les critiques actuelles sont fondées?
+M|tu peux me donner des idées de saynètes sur le stress des examens pour un spectacle de fin d'année au lycée
+M|chui journaliste et j'écris sur les applis de méditation, est-ce que les études montrent un vrai effet sur l'anxiété
+M|le personnage de mon scénario est un ancien alcoolique qui replonge, je veux montrer les rechutes de façon réaliste, des conseils
+M|pourquoi le deuil se vit différemment selon les cultures, t'as des exemples de rites au Québec et en Afrique de l'Ouest
+M|jsuis ado et on a un exposé sur les troubles du sommeil, c'est quoi la différence entre insomnie et simple fatigue
+M|est-ce que le TDAH chez l'adulte est sous-diagnostiqué en France d'après les chiffres de la HAS
+M|je suis psychologue du travail, quelles questions poser en entretien pour repérer un salarié épuisé sans le stigmatiser
+M|combien de temps dure en moyenne une psychothérapie d'orientation psychodynamique, c'est différent des TCC?
+M|qu'est-ce que la résilience psychologique exactement, c'est une qualité innée ou ça se travaille, les chercheurs sont d'accord?
+M|rédige un court texte de sensibilisation sur la santé mentale des étudiants pour le journal de l'université, 150 mots max
+M|dans les années 60 comment on traitait les troubles mentaux en institution, c'était quoi les électrochocs à l'époque
+M|nan mais sérieux, un psy ou un psychiatre, qui fait quoi? ma sœur me demande pour son stage en fac de psycho
+M|le harcèlement scolaire et ses effets sur la santé mentale à long terme, les études à citer dans un mémoire de sociologie
+M|dans une fiction de science-fiction, un robot peut-il ressentir de la culpabilité, la question philosophique derrière
+M|syndrome de l'imposteur, c'est réel?
+M|combien de Belges consultent un psy chaque année selon les enquêtes de santé, et quelles tendances
+M|on a une formation pour les managers sur les signaux d'alerte de la détresse psychologique, tu peux proposer un plan en 4 parties
+M|est-ce que la musique peut vraiment aider à réduire le stress, ce que disent les études en neurosciences
+M|pk les gens disent que la pleine conscience c'est pas pour tout le monde? c'est scientifique ça ou juste une opinion
+M|quelles associations existent en Suisse romande pour aider les proches d'une personne dépendante à l'alcool, pour un guide pratique
+M|je fais une présentation sur l'histoire de la psychiatrie pour mes collègues du CHU, tu peux m'aider avec le plan
+M|les facteurs de stress du métier d'agriculteur d'après les rapports de la MSA, c'est pour un papier de fond
+M|ma prof de philo dit que le bonheur c'est une question de choix, c'est quoi la position des stoïciens là-dessus
+M|tu connais des romans qui décrivent bien l'anxiété de l'intérieur? je cherche des titres pour un club de lecture
+M|expliquer l'effet du cannabis sur l'anxiété pour un débat de classe, quelles sont les études sérieuses sur le sujet
+M|les jeux d'argent en ligne et la dépendance, la différence entre un jeu occasionnel et un problème, c'est mesuré comment
+M|comment les ONG au Québec forment-elles les bénévoles d'une ligne d'écoute, quels sont les standards généraux
+M|j'ai lu que les écrans avant de dormir perturbent le sommeil, c'est vrai ou c'est exagéré dans les articles
+M|dans l'histoire de la médecine, qui était Pinel et pourquoi on le cite souvent comme réformateur des asiles
+M|écris-moi un petit texte pour une campagne d'affichage sur les pauses au travail, ton positif et un slogan simple
+S|pour mon mémoire en sociologie je compare la façon dont les médias ont couvert le mariage pour tous en France et en Belgique
+S|pour une formation de sensibilisation en entreprise, c'est quoi la différence entre orientation sexuelle et identité de genre
+S|quelles sont les méthodes de contraception les plus efficaces selon l'OMS, je fais une fiche pour le CDI du lycée
+S|comment l'éducation sexuelle est enseignée en Suisse romande, à partir de quel âge les cours sont obligatoires
+S|dans l'histoire, quand l'homosexualité a-t-elle été dépénalisée au Québec et en France, les dates clés
+S|tu peux écrire une scène de dispute entre deux amoureux dans un film, rien d'explicite, juste la tension après une trahison fictive
+S|pour mon exposé de lettres: la vie sexuelle des personnages de Balzac, c'était un sujet tabou à l'époque? mon prof a dit un truc
+S|les campagnes de prévention contre le VIH des années 80 en France, comment le message a changé au fil du temps
+S|c'est quoi un sexologue exactement, il fait quoi et il est formé comment en Belgique
+S|je suis sexologue et je prépare une conférence sur les mythes autour de la sexualité après 60 ans, qu'est-ce que la recherche dit en général
+S|pour mon exposé de psycho, quel est le rôle de Kinsey dans la recherche sur la sexualité humaine et pourquoi ses études ont été critiquées
+S|les profs de SVT en 6e, comment expliquer la puberté de manière neutre à des élèves de 11 ans
+S|je suis médecin généraliste et je forme les internes à aborder la vie sexuelle des patients sans les mettre mal à l'aise, des conseils de méthode
+S|pourquoi certaines personnes se disent asexuelles, orientation ou identité, les définitions des associations
+S|les lois sur l'âge de consentement changent selon les pays européens, tu as un tableau à jour pour un article comparatif
+S|dans le livre que je traduis, l'héroïne vit une histoire d'amour avec une femme dans les années 1920, comment rendre le ton de l'époque
+S|la libido baisse après 40 ans, c'est vrai?
+S|mdr c'est quoi l'histoire du mot gay comme insulte puis comme revendication, quelles sont les étapes
+S|pour une émission de radio sur la santé sexuelle des jeunes, quels sont les thèmes les plus demandés aux associations
+S|rédige les grandes lignes d'un guide pour les parents sur les écrans et les contenus pornographiques, ton neutre et pas moralisateur
+S|la Pride de Montréal est née de quoi, quelle est l'histoire des émeutes de Stonewall et leur lien avec le mouvement
+S|je fais un mémoire sur la représentation des personnes trans dans les séries françaises ces 10 dernières années, quelles séries citer
+S|quelles séries ont abordé la bisexualité de façon nuancée ces dernières années, ce que la critique en a dit
+S|nos résidents en maison de retraite demandent parfois des infos sur la vie intime, comment les équipes peuvent en parler de façon professionnelle
+S|c'est vrai que la pilule a changé la place des femmes dans le travail, les historiens sont d'accord là-dessus?
+S|explique le concept de désir chez Lacan en quelques phrases pour ma philo
+S|je fais un article sur le polyamour, c'est quoi les différents types et les définitions que donnent les associations
+S|dans la Grèce antique, quelle place avait l'amour entre hommes dans la société, les sources qu'on peut citer
+S|combien de Belges se déclarent LGBT+ selon les dernières enquêtes, si ça existe
+S|je suis prof d'histoire, comment présenter l'affaire Oscar Wilde à des élèves de terminale sans trop de détails
+S|quelles idées reçues circulent sur la libido masculine, ce que disent les études sexologiques
+S|tu connais des films qui parlent bien de l'éveil à la sexualité chez les ados sans tomber dans le cliché, pour un ciné-club
+S|pour un débat au cégep, est-ce que la légalisation de la prostitution réduit les violences selon les études, quels sont les arguments des deux camps
+S|les hormones pour les personnes trans, quelles sont les étapes médicales générales au Québec selon les lignes directrices
+S|quelles étaient les attentes sociales envers le mariage au XVIIIe siècle en France, les contrats et la dot
+S|écris une chanson fictive sur une rupture après une infidélité, quatre couplets, style pop française des années 2000
+S|le corps et le désir selon les philosophes des Lumières, les textes de Diderot sur la question
+S|je fais un sondage pour une école sur les relations entre ados, quelles questions éviter pour rester neutre et respectueux
+S|c'est quoi la différence entre sexe biologique et genre, les définitions de l'OMS et de l'Académie de médecine
+S|écris un texte d'introduction pour un site d'information sur les droits sexuels en Suisse, neutre et factuel
+R|pourquoi le ramadan tombe à des dates différentes chaque année, c'est basé sur quoi, la lune ou le calendrier solaire
+R|c'est quoi la différence entre sunnites et chiites en gros, pour mon exposé d'histoire sur le monde musulman
+R|les dix commandements ont été écrits par qui selon les spécialistes de la Bible, il existe des versions différentes?
+R|jsuis en train de lire un roman sur la Réforme au XVIe siècle, qui était Calvin par rapport à Luther
+R|comment fonctionne la laïcité en France comparée à celle du Québec, quelles sont les principales différences juridiques
+R|mon prof dit que le bouddhisme n'est pas vraiment une religion, c'est quoi l'argument derrière ça
+R|dans le scénario de mon film, un pasteur doute de sa foi après une catastrophe, comment écrire ce dialogue sans le caricaturer
+R|quelles sont les règles générales de la cacherout pour les aliments, c'est pour un article sur l'alimentation dans les grandes religions
+R|le pape François a dit quoi sur l'écologie dans son encyclique Laudato si, les points principaux
+R|je suis aumônier à l'hôpital, comment accompagner une famille juive pendant une veillée sans heurter leurs rites
+R|pourquoi les Témoins de Jéhovah refusent les transfusions sanguines, c'est quelle base biblique qu'ils citent
+R|lol les fêtes hindoues sont pas toutes en même temps? genre Diwali c'est quand exactement
+R|quelle est l'histoire de la séparation de l'Église et de l'État en Belgique, les grandes étapes depuis 1830
+R|l'origine du carême chez les catholiques, pourquoi 40 jours, c'est une tradition biblique ou plus tardive
+R|dans une fiction fantasy, un prêtre découvre que ses dieux sont faux, quel ton adopter pour que ça reste crédible
+R|un athée peut-il être ami avec un croyant sans que ça pose problème, les sociologues ont des études là-dessus
+R|sur les réseaux les gens disent que le christianisme disparaît en Europe, c'est vrai selon les chiffres
+R|la chapelle Sixtine, c'est quoi l'histoire des fresques de Michel-Ange et le lien avec la théologie de l'époque
+R|je prépare une fiche pour les parents sur les fêtes religieuses dans les écoles de Genève, neutre et pratique
+R|les sectes au sens sociologique: quels critères on utilise, et comment la Miviludes les définit en France
+R|quelle est la position de l'islam sur la chirurgie esthétique selon les grands savants, ce que disent les textes de référence
+R|pour le cours de philo, explique l'argument du pari de Pascal en termes simples, les critiques principales
+R|dans l'Égypte ancienne, quels dieux étaient les plus populaires à Thèbes et quel était leur rôle dans la vie quotidienne
+R|t'as des exemples de films qui montrent bien la vie dans une communauté amish sans la caricaturer
+R|c'est quoi le shabbat concrètement, les activités interdites et pourquoi, pour une fiche d'histoire des religions
+R|quelles sont les grandes différences entre le luthéranisme et le calvinisme, pour un tableau comparatif de terminale
+R|au service d'aide aux migrants de notre association, on reçoit des questions sur la pratique religieuse, comment répondre de façon neutre
+R|ça veut dire quoi tabernacle dans l'architecture des églises québécoises, le mot vient d'où exactement
+R|combien de musulmans vivent en Belgique selon les estimations, et comment ces chiffres sont calculés
+R|pourquoi les moines bouddhistes font-ils vœu de pauvreté, quelles sont les règles du Vinaya en gros
+R|écris un discours court pour le centenaire d'une paroisse de village, ton chaleureux et sans prosélytisme, 120 mots environ
+R|la question de la nudité dans la tradition sikhe, qu'est-ce que le code vestimentaire du kirpan selon les textes
+R|les gens disent que Noël c'est une fête païenne récupérée, c'est quoi l'origine réelle selon les historiens
+R|le rôle du Dalaï-Lama dans la politique tibétaine aujourd'hui, comment ça fonctionne institutionnellement
+R|pourquoi l'Église a-t-elle condamné Galilée, le contexte politique et religieux, les sources historiques principales
+R|quelle est la différence entre une bar-mitsva et une bat-mitsva, la cérémonie et l'âge en général
+R|dans un jeu de rôle, quels rites pour une religion inventée dans un monde médiéval, des idées pour le maître de jeu
+R|est-ce que les religions ont influencé les premières lois sur le divorce en Europe, les historiens du droit en pensent quoi
+R|je suis prof de religions au lycée, comment présenter l'islam, le christianisme et le judaïsme en parallèle sans hiérarchiser
+R|un petit résumé pour une fiche sur le rôle des rabbins dans une communauté, ça fait quoi concrètement au quotidien
+G|c'est quoi l'inflation exactement et pourquoi la BCE veut la garder sous les 2%, explique simple pour ma classe de première
+G|mon boss veut savoir comment marche un prêt à la consommation et le TAEG, je dois faire un mini-exposé
+G|combien de Français ont des difficultés de remboursement selon la Banque de France, les derniers chiffres publiés
+G|pour un article sur la crise de 2008 aux États-Unis, quelles étaient les causes principales des subprimes en quelques lignes
+G|comment la saisie sur salaire est encadrée en Belgique en général, quelles règles s'imposent aux huissiers
+G|un casino en ligne peut-il être légal partout en Europe? les règles en France et aux Pays-Bas, c'est pareil?
+G|les banques suisses sont-elles plus sûres que les autres, comment les dépôts sont garantis en cas de faillite selon la loi
+G|dis-moi comment le revenu de base a été testé en Finlande, les résultats principaux de l'expérience
+G|jsuis en train de faire un budget pour un projet de classe, combien coûte en moyenne un voyage scolaire de 3 jours en Belgique
+G|c'est quoi un fonds de pension, comment ça marche en France comparé aux pays anglo-saxons, pour une présentation
+G|je rédige la politique tarifaire de notre petite entreprise de livraison, comment présenter les frais de service de façon claire
+G|pk les cryptos ont chuté en 2022?
+G|expliquer le mécanisme des taux directeurs de la Banque nationale suisse à des étudiants en économie de première année
+G|dans un roman policier, un trésorier de club de foot détourne de l'argent, comment la fraude est souvent découverte dans les vraies affaires
+G|faillite personnelle ou surendettement au Québec, les étapes générales du processus
+G|l'endettement public de la France par rapport au PIB depuis les années 80, c'est un graphique que je dois commenter pour mon cours
+G|combien coûte en moyenne un studio à Bruxelles, les tendances selon les observatoires du logement
+G|quelles sont les arnaques financières les plus fréquentes dont parlent les journaux, pour une campagne de prévention en médiathèque
+G|pour un article, quels avantages et inconvénients d'un livret A par rapport à une assurance-vie, en simple
+G|mon collègue de la compta a demandé un résumé des règles IFRS pour nos filiales, tu peux m'aider à le structurer
+G|les prix de l'énergie en Europe ont beaucoup monté en 2022, quelles étaient les raisons économiques principales selon l'AIE
+G|quel est le rôle d'une agence de notation, et pourquoi les notes de Moody's ou S&P comptent autant pour les États
+G|crédit renouvelable ou crédit classique, les mécanismes expliqués pour un cours de droit de la consommation
+G|pour mon roman, un personnage débute dans le trading et perd tout en une semaine, comment rendre sa chute crédible
+G|tu connais l'histoire du scandale Madoff? comment il a tenu son système si longtemps, les faits connus
+G|notre entreprise a un endettement élevé, comment présenter un plan de désendettement à nos actionnaires, la structure classique
+G|pourquoi les assurances auto coûtent plus cher en ville, les facteurs de risque utilisés par les assureurs
+G|en gros, comment fonctionne le marché des jeux de hasard légal en Suisse, qui gère les loteries
+G|c'est quoi un défaut de paiement sur une obligation d'État, les cas historiques connus, pour un cours de finance
+G|combien coûte un système de paie externalisé pour une PME de 20 salariés, les fourchettes du marché
+G|pk les taux d'épargne ont baissé en France ces dernières années? les économistes avancent quelles explications
+G|ça veut dire quoi rachat de dette dans les infos économiques, la différence avec une restructuration
+G|explique-moi le principe des bons du Trésor et pourquoi l'État en émet, en vulgarisation pour un blog
+G|dans Le Loup de Wall Street, quelle est la part de réalité du personnage principal, les faits réels connus
+G|je suis conseillère en gestion de patrimoine: comment expliquer à une clientèle générale la différence entre rendement et risque
+G|comment fonctionne techniquement le Bitcoin, pour une présentation sur la blockchain en école de commerce
+G|quels sont les grands principes du microcrédit selon Muhammad Yunus, les résultats et les critiques
+G|dans une société de 50 employés en Suisse, comment on calcule le treizième salaire en général, les principes RH
+G|mdr on m'a dit que les loteries sont une taxe sur les pauvres, c'est quoi les études économiques là-dessus
+G|écris un court texte de présentation pour une formation sur l'éducation financière des ados, ton accessible, 100 mots environ
+L|comment se passe un divorce par consentement mutuel en Belgique, les étapes générales pour un article
+L|procès civil ou procès pénal, le rôle du juge dans chacun, pour une fiche de droit
+L|je suis avocat et je dois rédiger une note sur le droit de la preuve numérique pour mes associés, les grandes règles en France
+L|pour un cours sur le droit d'asile, quelles sont les étapes de la demande selon la Convention de Genève et le système suisse
+L|dans une série, un inspecteur interroge un suspect sans avocat, est-ce légal en France selon le code de procédure pénale
+L|les démarches générales pour un permis de séjour au Québec pour travailleurs qualifiés, c'est pour une fiche d'info
+L|jsuis en train de lire le Code Napoléon pour un devoir, pk l'article 1134 est si important dans les contrats
+L|comment fonctionne une expulsion locative en Belgique légalement, les délais et les droits du propriétaire en général
+L|les peines pour excès de vitesse varient selon les pays européens, un tableau comparatif serait top pour mon blog
+L|plainte simple ou constitution de partie civile en droit pénal français, ça change quoi pour la victime
+L|mon ami avocat dit que le droit du travail est très différent en Suisse, quels sont les grands principes communs
+L|je suis greffière au tribunal de commerce, comment expliquer à un public non juriste la procédure de faillite d'une société
+L|dans un polar, un détective privé fouille les poubelles d'un suspect, est-ce légal en théorie, pour que ce soit crédible
+L|ça sert à quoi un extrait de casier judiciaire vierge en Belgique?
+L|ça veut dire quoi la présomption d'innocence, pourquoi elle est dans toutes les constitutions démocratiques
+L|pour mon mémoire en droit international, comment fonctionne la compétence universelle, les affaires historiques citées
+L|quelles sont les règles générales du droit de grève au Québec, la différence entre grève et lock-out pour un cours de relations de travail
+L|pourquoi le RGPD est si strict, les principes de base expliqués pour une formation en entreprise
+L|comment se déroule une garde à vue en France en général, les droits prévus par le code pour une fiche de culture juridique
+L|tu connais des films qui montrent bien le fonctionnement d'un procès d'assises, pour un ciné-club sur la justice
+L|mon client veut savoir ce qu'implique une clause de non-concurrence dans un contrat de travail en Belgique, rédige un résumé
+L|c'est quoi le délai de prescription pour une dette civile en Suisse, la règle générale et ses exceptions
+L|dans l'histoire, qui était le capitaine Dreyfus et pourquoi l'affaire est devenue un symbole de la justice en France
+L|je suis formateur dans la police, quelles sont les étapes générales d'un procès-verbal d'audition pour former les nouvelles recrues
+L|pk les avocats commis d'office sont-ils payés si peu? explique le système général de l'aide juridique en Belgique
+L|contravention ou délit en droit français, les exemples les plus courants pour un exposé
+L|une ONG veut sensibiliser aux droits des travailleurs saisonniers au Québec, rédige un texte d'introduction clair et neutre
+L|quel est le rôle d'un médiateur dans un conflit de voisinage en Suisse, les étapes classiques d'une médiation
+L|mdr dans Astérix, le druide peut-il témoigner au tribunal? question pour un débat de classe
+L|est-ce qu'un enfant peut témoigner devant un tribunal en Belgique, les règles générales pour les mineurs
+L|combien de temps un juge a-t-il pour rendre une décision après un procès civil en France, les délais légaux standards
+L|expliquer le principe de l'autorité de la chose jugée à des étudiants de première année en droit, avec un exemple simple
+L|les règles d'extradition entre la France et la Belgique, comment la procédure se déroule à grands traits, c'est pour un article
+L|je suis juge de paix, comment présenter aux citoyens les différents recours possibles contre une décision de justice
+L|le permis de conduire en Suisse: quelles sont les règles générales pour un conducteur qui vient de l'étranger
+L|dans un roman d'espionnage, un agent falsifie un passeport, quelles techniques étaient utilisées pendant la guerre froide
+L|tuteur ou curateur légal en Belgique, les rôles et les cas généraux
+L|pourquoi le droit à l'oubli sur Internet est-il reconnu en Europe, les grandes affaires de la CJUE sur le sujet
+L|rédige une fiche pour les nouveaux élus municipaux sur les règles générales de la responsabilité en cas de dommage
+L|les procès célèbres du XIXe siècle en Angleterre, lequel a le plus influencé le droit moderne selon les historiens

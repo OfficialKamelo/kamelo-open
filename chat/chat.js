@@ -26,10 +26,11 @@
     de: 'TelefonSeelsorge (0800 111 0 111, free, day and night)', fr: '3114 (free, day and night)', es: '024 (free, day and night)',
   };
   const WORK = globalThis.KameloEdition !== 'public';
-  // Gratis: iemand die luistert en raad geeft (persoonlijke vragen). Business: een gewone, zakelijke assistent voor werk.
-  // Persoonlijk (verdriet, liefde, gezondheid, zorgen, eenzaamheid): eerst luisteren en het gesprek aangaan, tips pas als iemand
-  // erom vraagt (Lucas 15 okt: "er echt zijn voor iemand, niet een snelle oplossing sturen"). Getest op de AI van Chrome: met
-  // "één zin begrip, dan 2 of 3 tips" gaf hij bij elk verdriet een lijstje met drie tips. Praktische vragen: direct antwoord.
+  // Gratis: een warme vriend die echt helpt. Business: een gewone, zakelijke assistent voor werk.
+  // Schrijfstijl zoals June (Lucas 22 okt: "kijk hoe de ai hier schrijft… ik wil dat je het ook zo maakt voor melo";
+  // docs/private-chat/MELO-SCHRIJFSTIJL.md): de kern in de eerste zin, lengte naar de vraag, vette kopjes of genummerde punten
+  // met concrete tips, een huisartsblok bij gezondheid, één gerichte slotvraag. Het eerst-luisteren van 15 okt vervalt
+  // ("is niet meer nodig"); het vangnet blijft.
   // Wat waar is over Melo zelf, vóóraan (getest 14 okt op de AI van Chrome: anders verzon hij "je info gaat versleuteld naar
   // mijn servers"). Melo draait alleen op deze computer; er is geen server of chip. Gesprekken staan nergens.
   const FACTS_DEVICE = 'The only true facts about you: you are Melo, the AI built into Chrome, and you run on this computer. Nothing the user types ' +
@@ -40,21 +41,23 @@
       'Placeholders like [PERSON_1] stand for hidden real details: use them as written, never ask what they mean. ' +
       'In emails and letters, never invent details the user didn’t give (times, dates, names, reasons). ' +
       'Start with the direct answer. Short paragraphs, concrete next steps. '
-    : 'You are Melo, a calm, warm friend who really listens. Write naturally and kindly, in simple, correct words, without slang. ' +
-      'Never assume a problem they didn’t mention. Short, casual messages (a joke, a remark, slang) are not a personal problem: reply lightly and naturally, and if you’re not sure what they mean, ask. Read a short follow-up as a reaction to your own last answer. When someone shares something personal (grief, love, health, worries, loneliness), ' +
-      'don’t rush to fix it: say in your own words what you hear, then ask one open question about them. No tips or lists unless they ask; ' +
-      'if they ask, 1 or 2 ideas that fit their story. A practical question gets a direct answer. No disclaimers. For health: be careful and supportive, ' +
-      'you are not a doctor; for complaints that are serious, last long or get worse (like a lump, chest pain, weeks of bad sleep): kindly add that the GP can help. ' +
+    : 'You are Melo, a calm, warm friend who knows a lot and really helps. Write naturally and kindly, in simple, correct words, without slang. ' +
+      'Never assume a problem they didn’t mention. Short, casual messages (a joke, a remark, slang) are not a personal problem: reply lightly and naturally, and if you’re not sure what they mean, ask. Read a short follow-up as a reaction to your own last answer. ' +
+      'How you write: the first sentence gives the core of the answer, without a warm-up. When someone shares something personal (sleep, health, love, worries, grief), start with one sentence that shows you understand why it is hard, then help right away. ' +
+      'Match the length to the question: an equation gets only its steps, one per line; a short factual question a few sentences; a request for help or advice 150 to 300 words. ' +
+      'For help or advice: 3 to 5 groups, each with a short **bold heading** or a numbered point with a bold start (like **1. Start with your main point**), with short, concrete points under it that someone can do right away, with a number where it helps (like 20–30 minutes, not in the last 5–6 hours). ' +
+      'For health: be careful, you are not a doctor; end with a bold **When to see your GP** block with concrete signs, once (a lump, chest pain or complaints that last long or get worse always belong there). ' +
+      'End a help or advice answer with one specific question that makes your next answer more personal, and say what you can then do (like: Do you work a fixed rotating schedule? Then I can help you plan your sleep.). Never end with “good luck” or “let me know”. No exclamation marks, no emoji, no disclaimers. ' +
       `Only if someone mentions suicide, self-harm or wanting to die: kindly mention ${CRISIS[I.LANG] || CRISIS.en}, and 112 if they are in danger now. ` +
       'Never write placeholders in brackets. ') +
     'Short paragraphs. If you are not sure about something, say so honestly. ' +
     'Don’t start with “Yes” unless they asked a yes/no question. ' +
-    `Answer in the language of the user’s message (if unclear, in ${LANG_NAME[I.LANG] || 'English'}), briefly (under 200 words).`;
+    `Answer in the language of the user’s message (if unclear, in ${LANG_NAME[I.LANG] || 'English'})${WORK ? ', briefly (under 200 words)' : ''}.`;
   // Wat Melo kan laten zien (Kamelo tekent het, chat/rich.js): formules, grafieken en hele documenten (bewaren als pdf of Word).
   // Getest 15 okt op de AI van Chrome: zonder dit zei hij bij "teken de grafiek" alleen hoe de grafiek eruit zou zien, en sloot hij
   // elk antwoord af met "Heb je nog andere vragen?".
   const CAN = 'No greeting or compliment at the start (“Hello!”, “Good question”), and never end with “anything else?”, “I hope this helps” or “let me know”. ' +
-    'Math: formulas in LaTeX between $ signs (like $a^2+b^2=c^2$), the final answer in **bold** (no \\boxed). A simple sum gets just the answer. ' +
+    'Math: formulas in LaTeX between $ signs (like $a^2+b^2=c^2$), the final answer in **bold** (no \\boxed). A simple sum gets just the answer; an equation gets only its steps, each a formula on its own line with a short line in between (like “Subtract 7 from both sides:”). ' +
     'You can show charts (Kamelo draws them), but only when the user asks for a chart, graph or plot: never say you cannot draw. ' +
     'For a document (letter, CV, report, summary): write all of it, with a # title and ## headings; the user can save it as PDF or Word. ';
   // Het grafiekformaat alleen bij een vraag om een grafiek (met de vraag mee, niet in de vaste instructies): met voorbeelden
@@ -86,7 +89,8 @@
       '(Kamelo adds them up), and one sentence of advice:\n```decision\ntitle: (short title)\ncriteria: (criterion) | (criterion) | (criterion)\n' +
       '(option): (score) | (score) | (score)\n(option): (score) | (score) | (score)\nadvice: (one sentence)\n```',
   };
-  // Op dit apparaat korter: elk woord kost op een gewone laptop merkbaar tijd (en de AI van Chrome is klein).
+  // Op dit apparaat korter (Business): elk woord kost op een gewone laptop merkbaar tijd. De gratis Melo volgt de lengte uit
+  // zijn schrijfstijl (22 okt).
   const DEVICE_SYSTEM = FACTS_DEVICE + CAN + BASE.replace('briefly (under 200 words)', 'briefly (under 100 words, a few short paragraphs at most)');
   // Temperatuur 0.4: minder rare woorden van de kleine AI (getest 14 okt).
   const SAMPLING = { temperature: 0.4, topK: 3 };
@@ -146,12 +150,25 @@
   const WANTS_MATH = /bereken|\breken (uit|na)|calculat|compute|los op|solve|afgeleide|derivative|integra|vergelijking|equation|formule|formula|berechne|lös(e|en)\b|ableitung|calcul|r[ée]sou|d[ée]riv|[ée]quation|resuelve|derivada|ecuaci[oó]n|\d\s*[+*/^×÷]\s*\d|\d\s+-\s+\d|\d\s*%|\bx\s*[=+^²]/i;
   // Brieven: de AI van Chrome zette er [jouw telefoonnummer] in, ook als de vaste instructies het verbieden (meetset 15 okt).
   const NO_FILL = ' Never use [brackets] or fill-in fields: leave out what you don’t know (a name, address or phone number).';
+  // Schrijfstijl zoals June (22 okt): de vaste instructies zeggen het, maar een korte aanwijzing direct bij de vraag volgt de
+  // kleine AI beter (zelfde aanpak als Melo voor Mac en iPhone, Schrijfstijl.swift). Een vraag om hulp of advies, of iets
+  // persoonlijks: kern, 3 tot 5 vette kopjes met concrete punten, bij gezondheid een huisartsblok, een gerichte slotvraag.
+  // Welke vraag dat is, zegt G.advice (chat/guard.js): nooit bij een crisisbericht.
+  const HEALTH = /slaap|slapen|\bmoe\b|moeheid|pijn|ziek|klacht|hoofdpijn|stress|angst|somber|depress|duizelig|misselijk|hoest|koorts|\beten\b|gewicht|nachtdienst|sleep|tired|pain|sick|headache|anxi|dizzy|fever|cough|weight|schlaf|müde|schmerz|krank|schwindel|fieber|husten|sommeil|dormir|fatigu|douleur|malade|sueño|dormir|cansad|dolor|enferm/iu;
+  // Het kopje in de taal van het antwoord: met alleen het Engelse voorbeeld schreef de AI "When to see your GP" boven een
+  // Nederlands antwoord (22 okt).
+  const GP_HEAD = { nl: 'Wanneer naar de huisarts', en: 'When to see your GP', de: 'Wann zum Hausarzt', fr: 'Quand consulter ton médecin', es: 'Cuándo ir al médico' };
+  const adviceHint = (q, lang) => ' Write it like this: one first sentence with the core' + (HEALTH.test(q) ? ' and why it is hard' : '') +
+    '. Then 3 to 5 short **bold headings**, each with 2 or 3 short, concrete points someone can do right away, with a number where it really says something; never make up numbers.' +
+    (HEALTH.test(q) ? ` Then a bold **${GP_HEAD[lang] || GP_HEAD.en}** block with 2 or 3 signs that fit this complaint (like how long it has lasted).` : '') +
+    ' End with one specific question that makes your next answer more personal, and say what you can then do.';
   function taskHint(q, lang) {
     const part = partFor(q);
     if (part) return { hint: PART_HOW[part](lang), max: part === 'letter' || part === 'email' ? 3200 : 2400, part };
     if (WANTS_DOC.test(q)) return { hint: ' Write the complete document (up to 350 words), starting with a # title.' + NO_FILL, max: 3200 };
     if (WANTS_CHART.test(q)) return { hint: CHART_HOW, max: 1600, chart: true };
-    if (WANTS_MATH.test(q) && q.length > 14) return { hint: ' Explain step by step, one step per line, formulas between $ signs, the answer in bold.', max: 1400 };
+    if (WANTS_MATH.test(q) && q.length > 14) return { hint: ' Only the steps: each step a formula between $ signs on its own line, with one short sentence in between (like “Subtract 7 from both sides:”), the answer in bold. No introduction and no closing.', max: 1400 };
+    if (!WORK && G.advice(q)) return { hint: adviceHint(q, lang), max: 2400 };
     return { hint: '', max: undefined };
   }
   // Taal van het antwoord: eigen woordenlijst (guard.pickLang), met de taalherkenner van Chrome als tweede mening; korte
@@ -168,7 +185,7 @@
   const careHint = q => (!WORK && ALARM.test(q) ? ' Start by kindly advising to call the GP today or tomorrow.' : '') +
     (!WORK && CHEST.test(q) ? ' If the pain is severe or they are short of breath: call 112 now.' : '');
   // Wat met de vraag meegaat: Kamelo's eigen uitkomst (als iemand om uitleg vraagt) en de feitenkaartjes.
-  const factHint = (calc, cards) => (calc ? ` Kamelo computed this exactly, use these numbers and this result: ${calc.fact}` : '') + Kennis.hint(cards);
+  const factHint = (calc, cards, lang) => (calc ? ` Kamelo computed this exactly, use these numbers and this result: ${calc.fact}` : '') + Kennis.hint(cards, lang);
   const CHECKED = { nl: 'Nagerekend op je computer:', en: 'Checked on your computer:', de: 'Auf deinem Computer nachgerechnet:', fr: 'Vérifié sur ton ordinateur :', es: 'Comprobado en tu ordenador:' };
   // Het antwoord netjes maken: opvulzinnen, invulplekken en losse LaTeX eruit, een bekende fout vervangen door het feit,
   // en klopt de uitkomst niet met wat Kamelo uitrekende, dan staat Kamelo's uitkomst eronder.
@@ -178,6 +195,7 @@
     let t = G.tidy(part === 'letter' || part === 'email' ? KameloRich.asLetter(text, part) : text, { lang });
     const bad = Kennis.wrongs(t, cards);
     if (bad.length) t = Kennis.correct(t, bad, lang);
+    t = Kennis.close(t, cards, lang);
     if (calc && t && !Reken.has(t, calc)) t += `\n\n${CHECKED[lang] || CHECKED.en} ${calc.text.split('\n').filter(Boolean).at(-1)}`;
     return G.withHelp(t, q, lang);
   }
@@ -285,7 +303,10 @@
   // ?engine=device dwingt de AI op dit apparaat af (om te testen); ?fxmodel=qwen3-0.6b kiest een ander Firefox-model.
   const params = new URLSearchParams(location.search);
   const FORCE = params.get('engine');
-  const dev = KameloDevice.create({ lang: I.LANG, force: FORCE, system: DEVICE_SYSTEM, sampling: SAMPLING, browserId: I.BROWSER.id, fxModel: params.get('fxmodel'), onProgress: showProgress });
+  // Kan Melo hier naar afbeeldingen kijken (Gemini Nano in Chrome), dan zegt de instructie dat: anders zei hij dat hij
+  // geen afbeeldingen kon zien, terwijl de paperclip er stond (22 okt, Lucas: Melo moet nooit zeggen dat hij iets niet kan).
+  const SEES = ' The user can add images and screenshots (paperclip, paste or drag them in); they come with the message and you see them. Answer about what is in them, and never say you can’t see or read images.';
+  const dev = KameloDevice.create({ lang: I.LANG, force: FORCE, system: DEVICE_SYSTEM + (I.BROWSER.id === 'chrome' ? SEES : ''), sampling: SAMPLING, browserId: I.BROWSER.id, fxModel: params.get('fxmodel'), onProgress: showProgress });
   let engine = 'none', devInfo = { state: 'unavailable', backend: 'none', langs: [], download: {} };
   let devAbort = null, preparing = false, onChunk = null, sourceHost = '', offReason = '';
   const fmtGB = gb => `${new Intl.NumberFormat(I.LANG, { maximumFractionDigits: 1 }).format(gb)} GB`;
@@ -368,6 +389,11 @@
     offerOther(title || I.t('pchatNoDeviceTitle'), offText());
   }
   function offerOther(title, text, extra = []) {
+    // Staat er een BSN, IBAN, wachtwoord of sleutel in de vraag, dan geen tijdelijke chat: die stuurt het nummer nog steeds
+    // naar het AI-bedrijf (zelfde regel als de melding op de site). Alleen het eerlijke advies om het weg te halen.
+    if (globalThis.PrivacyIdentifiers?.kinds(realText()).length) {
+      return note(title, `${text} ${I.t('dataAdviceRemove')}`, { buttons: extra });
+    }
     note(title, text, { buttons: [btn(I.t('pchatTempChat', { site: siteName() }), openTempChat), ...extra] });
   }
   const siteName = () => (globalThis.PrivacySites?.siteFor(sourceHost)?.private ? globalThis.PrivacySites.siteFor(sourceHost).name : 'ChatGPT');
@@ -595,13 +621,20 @@
     if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); form.requestSubmit(); }
   });
 
-  // ---------- bestanden en afbeeldingen (alleen Business, alleen de AI op dit apparaat) ----------
-  // Paperclip, plakken (⌘V) of slepen. Kamelo leest het bestand op dit apparaat (chat/read.js): een afbeelding gaat als
-  // beeld naar de AI, de rest als tekst achter je vraag, afgeschermd net als wat je typt. Niet in de gratis editie
-  // (die heeft de lezers niet).
-  const R = WORK && globalThis.KameloPdf && globalThis.KameloRead;
+  // ---------- bestanden en afbeeldingen (alleen de AI op dit apparaat) ----------
+  // Paperclip, plakken (⌘V) of slepen. Business leest het bestand op dit apparaat (chat/read.js): een afbeelding gaat als
+  // beeld naar de AI, de rest als tekst achter je vraag, afgeschermd net als wat je typt. De gratis editie neemt alleen
+  // afbeeldingen en screenshots (chat/beeld.js; Lucas 22 okt: "fix ook dat dit in de extensie kan"), en toont de paperclip
+  // alleen als de AI van deze browser naar afbeeldingen kan kijken (dev.canSee: Gemini Nano in Chrome, zonder download).
+  const R = WORK ? (globalThis.KameloPdf && globalThis.KameloRead) : globalThis.KameloBeeld;
+  // Eén keer vragen of de AI kan kijken; slepen of plakken terwijl dat nog loopt, wacht op hetzelfde antwoord.
+  let sees = WORK ? true : null, seeing = null;
+  const canSee = () => WORK ? Promise.resolve(true) : (seeing ??= dev.canSee().then(ok => (sees = ok)));
   // Een functie (geen const): hij wordt ook aangeroepen vanuit code hierboven, zodra bekend is welke AI antwoordt.
-  function syncAttach() { $('attach').hidden = !(WORK && globalThis.KameloPdf && globalThis.KameloRead) || engine !== 'device'; }
+  function syncAttach() {
+    $('attach').hidden = !R || engine !== 'device' || sees !== true;
+    if (R && engine === 'device' && sees === null) canSee().then(ok => { $('attach').hidden = !ok || engine !== 'device'; });
+  }
 
   const MAX_ATTACH = 3;
   // Zoveel tekst uit bestanden per vraag: de AI op dit apparaat kan maar een paar pagina's tegelijk aan.
@@ -638,10 +671,11 @@
   }
   async function addFiles(list) {
     if (!R || engine !== 'device') return;
+    if (!(await canSee())) return note('', I.t('pchatNoImagesPublic'));
     for (const f of [...list]) {
       if (atts.length >= MAX_ATTACH) { note('', I.t('pchatMaxFiles', { max: MAX_ATTACH })); break; }
       const r = await R.read(f);
-      if (r.kind === 'unreadable') { note('', I.t(r.why === 'big' ? 'pchatTooBig' : 'pchatUnreadable', { name: r.name })); continue; }
+      if (r.kind === 'unreadable') { note('', I.t(r.why === 'big' ? 'pchatTooBig' : WORK ? 'pchatUnreadable' : 'pchatOnlyImages', { name: r.name })); continue; }
       atts.push(r);
     }
     drawAtts();
@@ -649,8 +683,10 @@
   }
   if (R) {
     $('file').accept = R.ACCEPT;
+    if (!WORK) { $('attach').title = I.t('pchatAttachImage'); $('attach').setAttribute('aria-label', I.t('pchatAttachImage')); }
     $('attach').addEventListener('click', () => $('file').click());
-    $('file').addEventListener('change', e => { addFiles(e.target.files); e.target.value = ''; });
+    // Eerst een kopie: value = '' maakt in Chrome ook de FileList leeg, en addFiles leest hem pas na een await (26 okt).
+    $('file').addEventListener('change', e => { addFiles([...e.target.files]); e.target.value = ''; });
     // Alleen een plaatje plakken; tekst uit Word komt soms met een plaatje mee, dan gewoon de tekst.
     input.addEventListener('paste', e => {
       const files = [...(e.clipboardData?.files || [])];
@@ -658,7 +694,7 @@
     });
     form.addEventListener('dragover', e => { if (e.dataTransfer?.types?.includes('Files')) { e.preventDefault(); form.classList.add('drop'); } });
     form.addEventListener('dragleave', () => form.classList.remove('drop'));
-    form.addEventListener('drop', e => { form.classList.remove('drop'); if (e.dataTransfer?.files?.length) { e.preventDefault(); addFiles(e.dataTransfer.files); } });
+    form.addEventListener('drop', e => { form.classList.remove('drop'); if (e.dataTransfer?.files?.length) { e.preventDefault(); addFiles([...e.dataTransfer.files]); } });
   }
   syncAttach();
 
@@ -763,7 +799,7 @@
     }
 
     const sent = atts, images = sent.filter(x => x.kind === 'image'), docs = sent.filter(x => x.kind === 'text' || x.kind === 'page');
-    if (images.length && !(await dev.canSee())) return note('', I.t('pchatNoImages'));
+    if (images.length && !(await dev.canSee())) return note('', I.t(WORK ? 'pchatNoImages' : 'pchatNoImagesPublic'));
     // Zonder vraag: "Wat staat hierop?" of "Vat dit samen."
     const question = raw || I.t(images.length && !docs.length ? 'pchatAskImage' : docs.some(d => d.kind === 'page') ? 'pchatAskPage' : 'pchatAskFile');
     let room = FILE_CHARS;
@@ -821,7 +857,7 @@
     const cards = sent.length ? [] : Kennis.find(raw);
     // Grafiek van een rechte lijn of parabool: snijpunten en top, door Kamelo uitgerekend.
     const curve = task.chart && !sent.length ? Reken.functionFacts(raw, lang) : null;
-    const extra = factHint(calc, cards) + (curve ? ` Checked facts about this graph (use them): ${curve}` : '');
+    const extra = factHint(calc, cards, lang) + (curve ? ` Checked facts about this graph (use them): ${curve}` : '');
     busy = true; stopper = new AbortController(); stopped = false; partial = '';
     const partState = {}; // ingevuld en aangevinkt in de onderdelen van dit antwoord (alleen hier)
     setSend('stop'); syncConvButtons(); typing();

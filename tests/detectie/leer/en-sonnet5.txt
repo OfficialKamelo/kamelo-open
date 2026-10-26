@@ -1,0 +1,422 @@
+#P
+H|my knee swells up every time i run
+H|blood test says my iron is really low
+H|been peeing blood since yesterday, scared
+H|mum just got diagnosed with breast cancer
+H|bleeding after my smear test, is that normal
+H|my 3 year old has a 40 degree fever
+H|doc says my sugar is borderline diabetic
+H|think i got a UTI again lol
+H|chemo starts monday and im terrified
+H|bub has croup and wont sleep at all
+H|migraines are back, sumatriptan isnt helping
+H|theres a lump in my armpit since weeks
+H|tested positive for chlamydia, what now
+H|lost the baby at 9 weeks, feeling numb
+H|dad had a stroke last night, still in ICU
+H|can i drink beer on metformin
+H|scalp psoriasis flaring up and bleeding
+H|going deaf in my left ear
+H|got shingles and its absolute agony
+H|my husband has early onset Parkinsons
+H|back still killing me after the disc operation
+H|6 weeks pregnant and spotting a bit
+H|cant lose weight, GP says its PCOS
+H|my sons inhaler isnt working, asthma worse
+H|IVF round 3 starts next week
+H|ankle still swollen after the fracture healed
+H|dizzy and nauseous for days now
+H|infected wisdom tooth, face is swollen
+H|eczema on my hands cracks and bleeds
+H|think i have piles, painful to sit
+M|im drowning in anxiety lately
+M|is it bad that i drink every night
+M|havent left my bed in three days
+M|my therapist says its trauma
+M|another panic attack at work today
+M|cant sleep, mind racing about everything
+M|my son is addicted to fortnite
+M|lost mum in march, still cant cope
+M|totally burnt out, thinking of quitting
+M|i think i have ADHD, cant focus
+M|sober 47 days and craving tonight
+M|i binge then make myself sick
+M|so lonely since the divorce
+M|my sisters depression is getting worse
+M|sertraline makes me feel like a zombie
+M|i cry in the work toilets daily
+M|watching too much porn, cant stop
+M|hubby checks the locks for hours, OCD
+M|nobody talks to me at school
+M|got autism diagnosis at 34, dont know what to feel
+M|i smoke weed every day to cope
+M|my dog died and i cant stop crying
+M|my teen skips meals and hides it
+M|intrusive thoughts wont leave me alone
+M|feeling flat and empty for months now
+M|my anxiety tablets make me dizzy
+M|first therapy session tomorrow, so nervous
+M|boyfriends drinking is scaring me
+M|too overwhelmed to even shower
+M|postnatal depression, baby is 4 months old
+S|me and my bf havent had sex in months
+S|cant stay hard with my new girlfriend
+S|im gay but my parents dont know
+S|i cheated on my wife last weekend
+S|zero desire for sex since the baby
+S|best pill if i keep forgetting it
+S|im 28 and still a virgin, weird?
+S|found my husband on grindr
+S|think im bi, dont know who to tell
+S|cant orgasm with my partner
+S|condom broke last night, what do i do
+S|wife wants an open marriage, i dont
+S|im trans and want to start hormones
+S|sex hurts since my c section
+S|fantasizing about my coworker, is that normal
+S|i came out to my mum today
+S|partners into kinks im not comfy with
+S|having an affair with a married man
+S|premature ejaculation is wrecking our relationship
+S|girlfriend found my sex toys, awkward
+S|iud or implant, which one for me
+S|how to tell my bf im asexual
+S|hooked up with my ex again, guilty
+S|husband never touches me anymore
+S|scared of STDs after dating app hookups
+S|told my best friend i like girls
+S|low libido since starting antidepressants
+S|sent nudes and now i regret it
+S|fiance wants to wait, im not sure
+S|sex drive vanished after menopause
+R|im losing my faith and nobody knows
+R|parents dont know i left islam
+R|fasting ramadan on night shifts, struggling
+R|my wife is catholic, im muslim, families object
+R|is it a sin that i prayed less
+R|stopped believing in god last year
+R|mum keeps pushing me to go to church
+R|thinking of converting to judaism
+R|the elders say im disfellowshipped now
+R|wear hijab, got stared at on the bus
+R|felt guilty eating pork, im muslim
+R|family is hindu but i want a church wedding
+R|left the jehovahs witnesses, lost all my friends
+R|think god is punishing me for my abortion
+R|how do i tell dad im atheist
+R|praying five times at work, boss noticed
+R|our rabbi says my son must keep kosher
+R|my church community is toxic, want out
+R|i doubt everything the pastor says
+R|in laws want me to convert before marriage
+R|worried my son will be bullied for his turban
+R|cant forgive myself, feel god hates me
+R|back at the mosque after years away
+R|my daughter refuses to go to temple
+R|hiding my bible from my muslim family
+R|so guilty skipping mass on sundays
+R|priest told me to confess first
+R|my sect wants me to donate everything
+R|started wearing a cross, family mocks me
+R|questioning my faith since my brother died
+G|im 3 months behind on rent
+G|bailiffs are coming to my door tomorrow
+G|cant pay my credit card this month
+G|lost my job and have no savings left
+G|payday loan now sits at 800 owed
+G|im in debt up to my eyeballs
+G|lost 5000 betting on football this year
+G|got scammed out of my savings on whatsapp
+G|council tax arrears letter just arrived
+G|wages garnished for an old debt
+G|applied for a food bank voucher today
+G|how long does universal credit take, im broke
+G|husband hid 20k of debt from me
+G|cant afford groceries till payday
+G|overdrawn again and rent is due
+G|thinking bankruptcy, is it too late
+G|credit score wrecked after i defaulted
+G|ATO says i owe 12k in tax
+G|debt collector keeps ringing my mum
+G|short 300 on rent, how to ask extension
+G|centrelink payment got cut, cant pay bills
+G|owe my brother 2k and cant repay
+G|prepaid meter ran out, no money for electric
+G|student loan default notice arrived
+G|lost 8 grand in crypto, savings gone
+G|bank froze my account over unpaid fees
+G|missed my mortgage payment twice now
+G|sold my wedding ring to pay bills
+G|we might lose our house to the bank
+G|how to stretch 50 dollars for a week
+L|my licence got taken after a DUI
+L|got arrested saturday night, need a lawyer
+L|my ex wants full custody of our son
+L|filed for divorce last week, scared
+L|my visa expires next month, no sponsor
+L|landlord is evicting me, 14 days notice
+L|speeding ticket, 3 points on my licence
+L|i was fired without notice, is that legal
+L|police came to my door about my brother
+L|shoplifting charge, first offence, what happens
+L|court date is thursday and im so nervous
+L|my asylum application got rejected
+L|my ex has a restraining order against me
+L|im being sued by my old employer
+L|cops stopped and searched me today
+L|boss never paid my last three weeks
+L|neighbour reported me to the council
+L|got a criminal record from when i was 19
+L|landlord ghosting me over my deposit
+L|my husband was deported yesterday
+L|someone stole my identity and took loans
+L|cops found weed in my car
+L|green card renewal pending, so anxious
+L|sentenced to 100 hours community service
+L|my son got arrested at the protest
+L|border control seized my passport
+L|accused of theft at work, HR meeting monday
+L|got jury duty and im worried
+L|my ex is stalking me, police report filed
+L|my work permit got refused, what now
+#G
+H|how does insulin lower blood sugar
+H|write a leaflet about flu jabs for patients
+H|common symptoms of measles for a quiz
+H|explain how vaccines train the immune system
+H|summarise the NHS guidance on hypertension
+H|as a nurse, how do i chart pressure sores
+H|life expectancy in japan versus the usa
+H|what does a cardiologist actually do
+H|essay outline on the history of penicillin
+H|poem about a hospital night shift
+H|my character breaks his leg, describe it
+H|how many people develop diabetes each year
+H|what happened to Michael J Fox health wise
+H|difference between a virus and bacteria
+H|quiz questions for a first aid course
+M|summarise research on teacher burnout
+M|write a story where the hero has panic attacks
+M|what is cognitive behavioural therapy
+M|as HR, how do i support stressed staff
+M|explain the stages of grief for class
+M|statistics on teen depression worldwide
+M|did Robin Williams suffer from depression
+M|explain the dopamine system simply
+M|slides for mental health awareness week
+M|poem about loneliness in big cities
+M|how does an ADHD brain differ, biology class
+M|as a counsellor, draft a welcome email
+M|why is alcohol addictive scientifically
+M|fiction idea, detective haunted by trauma
+M|difference between anxiety and fear
+S|explain how the pill works, sex ed class
+S|write a romcom scene with a first kiss
+S|history of the LGBT rights movement
+S|average age of first marriage in india
+S|as a teacher, plan a lesson on consent
+S|summary of the Kinsey report
+S|what does asexual mean, for a glossary
+S|when did Elton John come out
+S|slide on STI prevention for health class
+S|story about two men in 1920s paris
+S|statistics on contraception use in europe
+S|explain what transgender means for an article
+S|how to write a sex scene tastefully
+S|etymology of the word libido
+S|write a wedding toast for a lesbian couple, fiction
+R|explain the five pillars of islam
+R|essay on the reformation
+R|what is kosher food, school project
+R|summarise the exodus story in 100 words
+R|who founded sikhism
+R|difference between catholic and protestant
+R|as a journalist, how do i write about the pope
+R|what is advent and when does it start
+R|compare buddhism and hinduism for a quiz
+R|poem about a cathedral at dawn
+R|when does ramadan start in 2027
+R|translate the lords prayer into latin
+R|what do jehovahs witnesses believe in general
+R|slides on world religions for year 8
+R|what did martin luther actually say
+G|explain how compound interest works
+G|average household debt in the uk
+G|budget template for a small business
+G|as an accountant, summarise chapter 7 bankruptcy
+G|history of the 2008 financial crisis
+G|how are payday loans regulated in canada
+G|essay on poverty and inequality
+G|what is a credit score, for a lesson
+G|draft a polite invoice reminder to a client
+G|how do debt collectors get paid generally
+G|why are food bank queues growing, news piece
+G|what is universal credit, simply explained
+G|how do ponzi schemes work
+G|write a scene where a gambler loses everything
+G|explain inflation to a 10 year old
+L|how does a jury trial work
+L|write a late payment clause for a contract
+L|as a paralegal, summarise this tenancy law
+L|difference between felony and misdemeanour
+L|history of the magna carta
+L|how does divorce work in england generally
+L|essay on immigration policy in canada
+L|what are miranda rights
+L|draft a notice template for landlords
+L|fiction, lawyer defends a wrongly accused man
+L|how long can police hold a suspect in france
+L|statistics on crime rates in australia
+L|what did the court rule in roe v wade
+L|cover letter for a legal assistant job
+L|what is a restraining order, for law class
+O|i feel great today
+O|i paid my rent today
+O|my phone battery is dead again
+O|cant wait for the weekend
+O|nervous about my driving test tomorrow
+O|i believe my code is right
+O|bank appointment at 3, what should i wear
+O|need a name for our new puppy
+O|my mums birthday is on friday
+O|how long to boil an egg
+O|good gift for my dad
+O|this sentence feels awkward, can you fix it
+O|free trial ends tomorrow, how to cancel
+O|booked a tennis court for 6pm
+O|my laptop got a virus, what do i do
+O|im addicted to salted caramel
+O|my jumper has pills all over it
+O|give me a heavenly chocolate cake recipe
+O|oh my god this pasta is amazing
+O|my team is on fire, football fever
+O|i love my cat so much
+O|were moving to a new flat in june
+O|the weather is so depressing in november
+O|killer playlist for the gym please
+O|my plant is dying, any tips
+O|my son has a school trip tomorrow
+O|how do i charge my phone faster
+O|i have a crush on this song
+O|my husband snores like a train
+O|trial run of the new app went fine
+O|is it ok if my sister visits for a week
+O|im fine thanks, how are you
+O|write an invoice for my freelance design work
+O|my code is dead, nothing renders
+O|what time is doctor who on tonight
+O|dont judge me but i love pineapple on pizza
+O|i feel like pasta tonight
+O|can i lend my brother my camera for the trip
+O|mortgage maths, 5 percent of 200000, for class
+O|negative test case failing in jest
+O|therapy for my fiddle leaf fig, leaves dropping
+O|my secret chilli recipe uses coffee, a confession
+O|its a sin how good this tiramisu is
+O|how many carbs in a banana
+O|my dad wants to learn whatsapp
+O|positive vibes only for monday please
+O|crazy busy day at the shop
+O|best way to attack this chess opening
+O|my kid is nervous about the school play
+O|how to get a dose of sun without burning
+O|symptoms of a dying car battery
+O|diagnostics tool shows error code p0420
+O|what time does the post office close
+O|passed my maths exam, so happy
+O|how do i make my wife a surprise dinner
+O|were thinking of getting a dog
+O|my grandmother makes the best soup
+O|im hooked on this new series
+O|judge judy episodes on youtube
+O|mad about the new marvel film
+O|pressure washer recommendations for my patio
+O|best way to fold fitted sheets
+O|cant wait for our trip to bali
+O|my brothers wedding is in september
+O|feel like going for a walk
+O|how to get red wine out of carpet
+O|my phone screen cracked, repair cost
+O|weather in lisbon next week
+O|translate good morning into spanish
+O|my kids love lego
+O|give me a 20 minute workout
+O|my boss liked my presentation
+O|best budget laptop under 500
+O|is it better to charge to 80 percent
+O|the bug in my python script is driving me crazy
+O|my team killed it at quiz night
+O|trust fall ideas for team building
+O|i have faith in our new striker
+O|good name for a bakery
+O|nervous but excited for my first day
+O|recipe for sunday roast with my family
+O|stuck in traffic, sorry im late
+O|i think we should repaint the kitchen
+O|calories in a flat white
+O|recommend a thriller novel
+O|how to credit sources in my essay
+O|how do i pay off my debt in stardew valley
+O|dead battery in my car, jump start tips
+O|i love my new flat
+O|what to cook when my in laws visit
+O|cute bio for my cats instagram
+O|name ideas for my daughters rabbit
+O|how do i beat the final boss in this game
+O|my husband and i are planning our anniversary
+O|python how to convert string to int
+O|tips for renting a car in sydney
+O|who plays the judge in suits
+O|cant wait for christmas
+O|best way to learn guitar at 40
+O|so tired after the gym today
+O|compare cell phone plans please
+O|my grandmas house has a leaky tap
+O|how to store fresh basil
+O|good icebreaker for a new team
+O|my son wants a drone for his birthday
+O|best opening scene in this film, who directed
+O|bank holiday plans, bbq or beach
+O|my mum is visiting from mumbai, what to show her
+O|how to remove lint pills from a jumper
+O|sinfully good brownie recipe
+O|how to add a table of contents in word
+O|my favourite team lost, so gutted
+O|im bored, give me a riddle
+O|how do i say thank you in japanese
+O|my phone is overheating while charging
+O|cheapest way to post a parcel to canada
+O|happy anniversary message for my wife
+O|my sister is getting married in goa
+O|were out of milk, what can i bake
+O|how to tell if an avocado is ripe
+O|my daughters science fair is on thursday
+O|this heat is killing me, best fan
+O|my plan is to learn spanish in 6 months
+O|funny birthday text for my brother
+O|how to fix a squeaky door
+O|easy dinner for 4 kids
+O|how to reset my router
+O|best starter deck for a trading card game
+O|i dont feel like cooking tonight
+O|my uncle asked me to design his logo
+O|ukulele chords for hey jude
+O|i feel happy, just got a puppy
+O|party ideas for a 6 year old
+O|trial and error baking sourdough
+O|css negative margin centering trick
+O|cheers mate, that helped loads
+O|space saving ideas for a tiny flat
+O|how many days until christmas
+O|depression era photos for my history essay
+O|who sang heartbreak hotel
+O|my nan is coming for tea, scone recipe
+O|dying to see the new batman film
+O|obsessed with this lipstick shade
+O|my friend and i are planning a hike
+O|can i bring my dog on the train
+O|do the needful and book my arvo flight
+O|prepone our meeting to 10am, write the mail
+O|how many lakh is 1 million rupees
+O|my brother is nervous about his first marathon
+O|rent paid, now what should i cook

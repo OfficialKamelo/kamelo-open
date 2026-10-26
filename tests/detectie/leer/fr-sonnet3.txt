@@ -1,0 +1,201 @@
+#G
+O|je crois que mon code est bon mais le test unitaire plante quand même, une idée ?
+O|jsuis accro aux chips au paprika, c'est grave docteur haha, une recette maison pour les remplacer ?
+O|c'est ma faute si le build a planté ce matin, j'avais oublié de commit le fichier de config, comment je rattrape ça proprement
+O|ma batterie se charge à 1% par minute, c'est le câble ou le chargeur qui est mort ?
+O|corrige cette phrase svp : "les enfants qui joue dehors sont heureux"
+O|mon essai gratuit de Spotify se termine demain, comment je l'annule sans oublier
+O|on a réservé un court de tennis samedi à 10h, quelle raquette pour un débutant qui veut pas se ruiner
+O|quel est le meilleur moyen d'ajouter une cellule dans un tableau Excel sans décaler toute la colonne
+O|chui persuadé que mon frère triche à Mario Kart, comment on fait pour désactiver les objets dans une partie perso
+O|mon pc a chopé un virus ou c'est juste Chrome qui rame ? il met 3 minutes à s'ouvrir
+O|dans Elden Ring le boss me tue en deux coups, jai essayé 14 fois, un conseil pour l'esquive ?
+O|il y a une dépression qui arrive sur la Bretagne ce week-end, je dois reporter la sortie en kayak ou pas
+O|la pression de mes pneus est à 1,8 bar à l'avant, c'est assez pour la route ou je regonfle ?
+O|j'ai un coup de coeur pour une chanson de Stromae, tu peux m'en proposer d'autres dans le même style
+O|mon père a la fièvre du foot depuis l'Euro, il veut absolument aller voir un match à Marseille, on trouve des billets où
+O|mon pull en laine fait plein de bouloches sous les bras, y a un truc pour les enlever sans l'abîmer
+O|il me faut ma dose de soleil ce week-end, tu connais des plages pas trop bondées près de Perpignan
+O|le voyant moteur de ma Clio s'est allumé, c'est quoi les symptômes d'une courroie de distribution qui va lâcher
+O|mon ficus perd ses feuilles, il lui faudrait une bonne thérapie de choc, rempotage ou engrais d'abord ?
+O|je veux garder le secret de ma recette de tarte aux pommes mais ma belle-mère me demande la confession complète, comment je lui réponds avec humour
+O|ce fondant au chocolat est un vrai péché, quelqu'un a une recette qui rate jamais ?
+O|gâteau paradis au citron pour dimanche, quelles proportions pour 8 personnes
+O|mon Dieu ce cours de maths est interminable, tu peux m'expliquer les dérivées en gros pour demain
+O|on regarde Engrenages ce soir, la juge d'instruction est vraiment crédible dans la série ou c'est exagéré ?
+O|tkt ça va, c'est fine, juste dis-moi comment on dit "c'est bon" en anglais de façon naturelle
+O|j'ai envoyé la facture au client hier pour mon travail de graphiste, comment je relance poliment si ça traîne
+O|j'ai prêté mon livre de Harry Potter à ma cousine et elle me l'a pas rendu, comment lui rappeler gentiment
+O|exercice de maths pour mon fils en 3e : calculer la mensualité d'un prêt de 10 000 euros à 3% sur 5 ans, y a une formule simple ?
+O|dans mon jeu spatial sur mobile, comment je gagne des crédits plus vite sans payer
+O|on a trop de dette technique dans le projet, comment convaincre le chef de projet de nous laisser une semaine pour refactorer
+O|mon équipe est super, j'ai une confiance totale en eux pour la démo de vendredi, tu m'aides à écrire un mot pour les remercier
+O|j'ai la foi en notre équipe de hand cette saison, ça te dit qu'on fasse un petit pronostic du classement
+O|le test est négatif sur mon pipeline CI alors que ça passe en local, ça vient d'où
+O|mon script renvoie un faux positif sur la détection de doublons, comment j'affine la règle
+O|c'est quoi la différence entre débit et crédit en comptabilité, pour mon cours de BTS demain
+O|mon portable est à 4% de charge et j'ai pas de chargeur, des astuces pour tenir jusqu'au soir
+O|un bug s'est glissé dans mon appli et il se propage à tous les écrans comme une infection, comment je le trouve
+O|dans Valorant je me fais descendre dès que je push, c'est quoi la meilleure attaque sur Bind
+O|ce riff de guitare est un tueur, quelqu'un connaît les accords de Seven Nation Army
+O|mon téléphone est mort ce matin, plus rien, même pas le logo, ça vaut le coup de le réparer ou j'en rachète un
+O|chui mort de rire, ma petite soeur a mis du sel à la place du sucre dans le gâteau, comment on rattrape ça
+O|je meurs de faim, qu'est-ce que je peux cuisiner en 15 min avec des pâtes et des oeufs
+O|mon fils est fou de dinosaures, tu me conseilles des livres pour un gamin de 6 ans
+O|ma mère est complètement folle de son nouveau chiot, elle l'emmène partout, comment on dit "dingue de" en anglais
+O|je suis accro à cette série Netflix, je regarde 4 épisodes d'affilée, quelque chose dans le même genre ?
+O|le mari de ma soeur est accro à la pétanque, on cherche un cadeau pour son anniversaire, des idées
+O|on a fait un essai gratuit de 7 jours de Disney+ avec mon copain, c'est quoi les films pour ado à voir
+O|chui sur le court depuis 2h et ma raquette est foutue, le cordage a cassé, ça coûte combien de le refaire
+O|je crois que l'Italie a gagné la Coupe du monde 2006, tu peux confirmer
+O|jcrois que la capitale de l'Australie c'est Sydney, non ? pk tout le monde dit Canberra
+O|ma cousine a un faible pour les macarons à la pistache, on en trouve où à Lausanne
+O|je dois conjuguer "croire" au subjonctif présent pour demain, donne-moi un exemple avec "que nous"
+O|dans cette phrase, quelle est la proposition subordonnée : "je pense qu'il viendra demain" ?
+O|ma conviction c'est que Python est meilleur que Java pour débuter, tu peux me donner des arguments pour mon exposé
+O|on cherche un bon cas d'usage pour notre appli de covoiturage, comment je structure mon pitch
+O|j'ai un cas pratique en maths à rendre, probabilités avec deux dés, tu peux m'expliquer la méthode
+O|le juge de touche a levé son drapeau pour un hors-jeu pas évident, c'est quoi la règle exacte
+O|dans Phoenix Wright le procureur est insupportable, tu connais des jeux d'enquête dans le même style ?
+O|on a regardé un procès dans la série Suits hier et ma femme veut savoir si les avocats comme ça existent vraiment
+O|bon jai le crush pour la chanson d'Angèle, on peut l'écouter en boucle sans que ça lasse, nan ?
+O|mon crush pour ce nouveau synthé analogique est total, c'est quoi la différence entre Moog et Korg
+O|dans Clash Royale on me dit que j'ai plus de crédits, comment je fais pour en gagner
+O|quelle est la meilleure appli pour lire le diagnostic de ma voiture avec une prise OBD
+O|mon ordi fait un bruit de ventilateur horrible, les symptômes d'un processeur qui chauffe trop c'est quoi
+O|ma grand-mère croit que les tomates poussent mieux avec de la musique, c'est vrai ou pas
+O|je crois que ma plante a trop d'eau, les feuilles jaunissent, on arrête d'arroser ?
+O|la fièvre du samedi soir, je cherche une playlist disco pour la fête de mon frère
+O|le chemin descend dans une dépression et le brouillard s'y accumule, comment décrire ça pour ma rédaction de géographie
+O|dans The Last of Us, quelqu'un a une astuce pour tuer les claqueurs sans gaspiller de munitions
+O|le boss final de Zelda est dur, j'ai déjà perdu 3 fois, comment je gagne
+O|mon chat a ramené une souris morte dans la cuisine, comment je nettoie sans toucher
+O|ma pizza maison est un péché mignon, quelle farine pour une pâte bien croustillante
+O|ce tiramisu est divin, un vrai paradis, ma belle-soeur veut la recette complète
+O|oh mon Dieu j'ai oublié d'éteindre le four, combien de temps ça tient un gratin au chaud
+O|Jésus Marie Joseph, le prix des billets de train pour Noël, y a un moyen d'avoir des tarifs réduits à la SNCF
+O|le Central court de Roland-Garros a quelle capacité, on y va avec mon père en juin
+O|je regarde Brooklyn Nine-Nine, les flics sont trop drôles, tu me conseilles d'autres sitcoms
+O|quelle police pour mon CV, Arial ou Calibri ?
+O|le poste de police dans Grand Theft Auto est où sur la carte de Vice City
+O|dis-moi comment répondre "je suis fine, merci" à un Anglais qui me demande comment ça va
+O|je vais envoyer une facture à mon client pour le logo que j'ai dessiné, comment je la rédige en tant qu'indépendant
+O|j'ai prêté ma perceuse à mon voisin Marc, comment je lui demande de me la rendre sans que ça paraisse relou
+O|emprunter un livre à la médiathèque de Namur, y a une limite de prêt ?
+O|calculatrice de prêt immobilier pour un exercice en classe, j'ai le capital 100 000 et le taux 2%, comment je calcule les intérêts
+O|on fait un Monopoly avec les enfants, comment on gère l'hypothèque d'une rue, je me rappelle plus la règle
+O|ma femme dit que j'ai l'esprit de contradiction, c'est quoi l'origine de cette expression
+O|ce bug css me rend dingue, le bouton se décale de 2 pixels et jarrive pas à trouver pourquoi
+O|dans Fortnite on me snipe de partout, comment je survis plus longtemps dans le cercle final
+O|mon équipe de foot de quartier a pris une valise 8-0 hier, c'est quoi la pire défaite de l'histoire du foot
+O|ce film d'horreur m'a achevé, trop de gore, tu connais des films qui font peur sans être trop sanglants pour une soirée avec ma femme
+O|le tueur en série dans la série Mindhunter est inspiré de qui, c'est vrai ou fiction
+O|ce morceau de Daft Punk est un tueur, je cherche des remix
+O|je cherche un bon test de vitesse de connexion, la fibre de chez moi rame
+O|j'ai un test de maths demain sur les fractions, tu me fais un petit quiz de 5 questions
+O|mon fils doit faire une expérience sur les charges positives et négatives en physique, tu as une idée simple avec un ballon
+O|je dois charger mon scooter électrique 6h, y a une borne publique à Genève
+O|on charge trop la camionnette pour le déménagement, c'est combien la charge utile d'un Master
+O|mon chef m'a mis en charge du projet de refonte du site, comment je planifie les 3 premières semaines
+O|mes cheveux ont tellement de charge statique en hiver, un truc contre l'électricité statique
+O|dans Escape Simulator on est enfermés dans une cellule et on arrive pas à ouvrir le cadenas, ma soeur et moi, un indice ?
+O|la cellule B2 de mon tableur affiche #REF, ça vient de quoi
+O|le téléphone de mon père capte mal, il dit que c'est la cellule 4G du coin, c'est quoi une cellule en réseau mobile
+O|je dois dessiner une cellule animale pour la SVT, tu peux lister les organites
+O|ma phrase d'accroche pour mon CV est nulle, tu peux m'aider à la reformuler : "développeur motivé à la recherche d'un nouveau défi"
+O|une phrase peut-elle commencer par "et" en français ? mon prof dit non
+O|dans une phrase interrogative, on met le sujet avant ou après le verbe ? j'ai un doute pour ma dictée
+O|tu connais une bonne appli de dictée vocale en français suisse, ma mère parle avec l'accent vaudois et ça comprend rien
+O|l'essai de la nouvelle Peugeot 208 électrique, ça donne quoi niveau autonomie
+O|mon fils fait son essai en philo, le sujet c'est "est-ce que la technologie nous rend libres", un plan en 3 parties ?
+O|je crois que le dossier est dans le Drive partagé, mais je retrouve plus où, tu as une astuce pour chercher
+O|je crois qu'on a un souci de DNS, le site répond pas depuis ce matin
+O|j'crois que mon wifi capte mal dans la chambre, un répéteur ou un CPL ?
+O|on dirait que mon Mac a un virus, des pubs partout dans Safari, comment je nettoie
+O|le virus informatique ILOVEYOU c'était quand, j'ai un exposé sur l'histoire d'internet
+O|c'est quoi la différence entre un virus et un ver informatique, pour mon cours d'info
+O|mon bug s'est auto-corrigé ce matin, c'est flippant, comment je comprends pourquoi ça marche maintenant
+O|le bug de l'an 2000 a vraiment eu des conséquences ?
+O|un bug dans Pokémon Rouge permet de dupliquer des objets, comment ça marche, la méthode MissingNo
+O|on est en train de se faire démolir sur Rocket League, 6-0, comment je rattrape avec mon frère
+O|notre attaquant a raté un but tout fait à la 90e, on était tous morts de rire, c'est quoi le pire raté de l'histoire
+O|l'attaque des titans saison 4, ça vaut le coup de regarder jusqu'au bout ou ça gâche le truc
+O|quelle est la meilleure attaque aux échecs pour les débutants, genre le coup du berger
+O|on a joué au Cluedo en famille, qui a tué le colonel Moutarde, j'ai oublié les règles
+O|ça me tue, mon cousin veut que je lui prête ma Switch pour tout l'été, comment je dis non gentiment
+O|ma collègue Sophie est un vrai tueur au tennis de table, comment je peux battre quelqu'un comme ça
+O|en baby-foot on s'est fait massacrer par mes beaux-parents, quelles techniques pour défendre
+O|le dernier épisode de Squid Game m'a tué, personne n'avait deviné la fin, vous en pensez quoi
+O|je crois que ma soeur a mal compris mon texto, je voulais dire que je viens samedi pas dimanche, comment je reformule
+O|jai la dalle, tu me proposes un menu de la semaine pour 2 personnes, végétarien, avec des courses simples
+O|dans Minecraft je me fais exploser par des creepers, comment je construis une maison sûre en 10 minutes
+O|mon frère est fou de joie, il a eu sa place pour le concert de Mylène Farmer, on y va ensemble, un truc pour se garer vers Bercy
+O|il fait un temps de dépression ce week-end, pluie, vent, gris, tu peux me suggérer des activités en intérieur pour les gosses
+O|la dépression du Danakil en Éthiopie est le point le plus bas, c'est quoi son altitude, pour mon exposé de géo
+O|je veux gonfler mes pneus de vélo à 6 bars mais la valve est de type Presta, mon embout marche pas
+O|ma cocotte-minute siffle trop fort, la pression est normale ou y a un souci de soupape
+O|la pression du ballon de basket doit être de combien pour un match officiel, je gère l'équipe de ma fille
+O|je veux une bonne dose de cardamome dans mon chaï, combien pour 2 tasses
+O|quelle dose de levure pour 500 g de farine, ma pâte monte pas
+O|le garagiste a fait le diagnostic de ma voiture, c'est la sonde lambda, ça se change facilement ou faut un pro
+O|les symptômes de ma vieille Twingo : elle cale au feu rouge et fait un bruit de ferraille, c'est quoi
+O|mon orchidée a besoin d'une thérapie, plus de fleurs depuis 8 mois, que faire
+O|ma plante verte est en dépression haha elle penche vers le sol, comment je la redresse
+O|je vais faire ma confession : j'ai jamais su faire une pâte feuilletée, des tips ?
+O|ma grand-mère garde jalousement la recette de sa tarte au citron, comment lui faire avouer le secret avec tact
+O|mon gâteau au chocolat est un vrai péché, 4 oeufs, 200 g de beurre, c'est trop riche pour des enfants ?
+O|ce gâteau est un petit paradis, fruits rouges, mascarpone, ma tante demande la recette
+O|mon Dieu, la file d'attente à la Poste, je dois envoyer un colis en Belgique, y a un moyen d'éviter la queue
+O|nom de Dieu, mon imprimante est encore en panne, comment je réinitialise la file d'impression
+O|Jésus, ces escaliers à Montmartre c'est un calvaire, y a un funiculaire pour monter
+O|ma mère a crié "Seigneur" en voyant l'araignée dans la baignoire, comment je l'attrape sans la tuer
+O|le juge dans The Voice est vraiment dur avec les candidats, y a des règles pour que les coachs votent
+O|Dr House, c'est vraiment le meilleur médecin de série ? ma femme et moi on se dispute
+O|la police a débarqué dans l'épisode 3 de Narcos, c'est vrai historique ?
+O|quelle série policière belge tu conseilles, j'ai fini Unité 42 avec ma copine
+O|dans GTA 6 y aura quel type de police, y a des rumeurs
+O|le procès de Phoenix Wright est coupé en deux parties, j'ai un blocage dans le chapitre 3, un indice
+O|mon fils veut jouer au juge dans un jeu de rôle avec ses copains, des règles simples pour 6 enfants de 9 ans
+O|j'ai dit "ça va fine" à mon pote anglais et il a rigolé, c'était faux ou quoi
+O|comment je mets en forme la facture pour mon client à Montréal, avec la TPS et la TVQ
+O|le crédit photo pour une image libre sur mon blog, comment je le mets proprement
+O|le débit de ma connexion fibre tombe à 20 Mb/s le soir, c'est normal ?
+O|jveux calculer le débit d'eau d'un tuyau de 20 mm pour mon arrosage, y a une formule
+O|dans Mario Party on a un crédit de 500 pièces, on achète quoi pour gagner
+O|mon équipe de dev a trop de dette technique, on fait comment pour la prioriser dans le backlog
+O|dans Civilization, comment éviter la dette de l'État quand on construit trop de bâtiments
+O|j'ai un faible pour les séries coréennes, tu m'en conseilles une qui change de Squid Game
+O|mon prof de ciné dit qu'en anglais c'est credits et chez nous générique, c'est quoi la différence entre crédits et générique
+O|chui accro aux Haribo, je sais pas résister, tu peux me trouver une recette de bonbons maison
+O|on est accros aux cookies de chez Subway, ma soeur et moi, tu as la recette du copycat
+O|mon petit frère est accro à Bluey, 3 épisodes par jour, tu me proposes des dessins animés similaires pour ses 4 ans
+O|mes parents sont accros à Netflix, comment je leur partage mon compte sur la télé du salon
+O|c'est ma faute, j'ai renversé du café sur le clavier, comment je le sèche, c'est un MacBook Air 2020
+O|jsuis désolé, c'est ma faute si on est en retard, le GPS m'a envoyé au mauvais endroit, comment j'écris un message d'excuse à ma meuf pour le resto
+O|c'est pas ma faute si la fonction renvoie null, l'API est mal documentée, comment je gère ça proprement
+O|j'ai la conviction que React est mieux que Vue pour notre projet, comment je défends ça en réunion
+O|dans ce cas précis, mon formulaire HTML renvoie une erreur 422, comment je débugge
+O|tkt pas, je crois que c'est bon, je viens de relire mon mémoire, il reste deux fautes d'orthographe... pk Word ne les voit pas
+O|jcrois que mon essai fait 3000 mots, comment j'en enlève 500 sans perdre le fond
+O|je crois que ma fille a oublié son doudou chez la nounou, tu peux m'aider à lui écrire un petit message pour le récupérer demain
+O|ma soeur croit que les chameaux stockent l'eau dans leur bosse, c'est faux non ?
+O|je crois que ce film est sorti en 2019, c'est lequel déjà, un truc avec un clown qui danse dans l'escalier
+O|je crois que j'ai fait une faute dans mon mail à mon prof, comment je corrige sans paraître nul
+O|on dit "foi" ou "fois" dans "une fois de plus" ? mon fils hésite
+O|j'ai confiance en mes collègues mais le planning de la semaine est chaotique, un modèle de tableau
+O|on a foi en notre équipe, le club de rugby de mon village a atteint la finale, comment on organise un car pour y aller
+O|ma soeur est dingue de pâtisserie, elle voudrait suivre un cours en Suisse, il y a quoi à Genève
+O|le crash de mon jeu à chaque lancement est un cauchemar, j'ai déjà réinstallé deux fois, une idée
+O|j'ai un coup de coeur pour une paire de baskets blanches, jhésite entre Nike et Adidas, vous en pensez quoi
+O|le nouveau tueur dans Dead by Daylight est trop fort, comment je lui échappe avec mon frère
+O|ma mère veut emprunter 12 romans pour l'été à la bibliothèque de Montréal, y a une limite de livres
+O|ma voisine me prête sa tondeuse tous les samedis, je veux lui offrir un petit cadeau pour la remercier
+O|le tie-break au tennis se joue à combien de points, ma fille de 10 ans débute en club
+O|jai trouvé un court de padel pas cher à Lille, c'est quoi la différence avec le tennis
+O|c'est quoi une bonne phrase de passe pour mon gestionnaire de mots de passe, un truc facile à retenir mais solide
+O|mon essai gratuit de 30 jours sur Canva se termine, comment je garde mes créations
+O|mon mari est passionné de maquettes de train, on cherche un cadeau pour ses 50 ans
+O|le Barça a perdu 4-0 hier, mon père est fou, tu me résumes le match
+O|ma mère a laissé la crème brûlée trop longtemps au four, on peut sauver le dessert avec un peu de sucre
+O|mon fils fait un exposé sur le volcan Etna, tu peux m'expliquer comment se forme la lave
+O|je cherche un nom pour mon groupe de rock avec mes potes, un truc genre Les Fièvres Jaunes ou plus stylé

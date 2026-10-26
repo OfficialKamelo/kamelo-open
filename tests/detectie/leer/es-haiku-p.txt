@@ -1,0 +1,381 @@
+#P
+H|oye tengo la rodilla izq hinchada desde hace 2 semanas y ahora cruje cuando camino, debo ir al traumatologo o esperar a que se pase
+H|Mi mamá tiene diabetes tipo 2 desde hace seis años y el médico le subió la metformina. Desde ayer está muy mareada y sudada, ¿qué hago?
+H|tengo la presion alta desde los 30 y me cambiaron el losartan. ahora me siento cansado todo el dia y me duele la cabeza en la mañana, es normal?
+H|Acabo de salir del hospital con un diagnóstico de cáncer de mama en etapa dos. No sé cómo decírselo a mis hijos sin asustarlos.
+H|me duele muchisimo la muela del juicio desde el lunes, ya me tome dos ibuprofenos y nada. tb tengo la cara hinchada del lado derecho
+H|mi polola lleva tres meses con sangrado raro después de la regla y no quiere ir al ginecólogo por vergüenza. ¿cómo le digo que vaya sin que se enoje?
+H|Mi hijo de 4 años tiene silbido al respirar y tos seca por las noches desde el jueves. El pediatra dice que es bronquiolitis pero no mejora. ¿Cuándo urge ir a urgencias?
+H|tengo el colesterol en 286 y el doctor quiere que tome estatinas, pero me dan miedo los efectos secundarios porque mi padre tuvo un infarto a los 58
+H|Mi abuela tiene alzhéimer desde hace dos años y ya no reconoce a nadie. Ayer se cayó en el baño y se rompió la cadera, la operaron hoy.
+H|me hicieron una biopsia de un lunar en la espalda y me llamaron para decir que tengo que volver a revisión urgente. estoy temblando
+H|ando con diarrea y dolor de panza desde hace como un mes. ya fui al gastro y me mandó colonoscopia, me da pavor hacérmela
+H|desde la cesárea me duele el abdomen abajo y tengo fiebre de 38.5. ya es normal o tengo que llamar a la matrona?
+H|me hice la prueba de VIH en el centro de salud y dijeron que el resultado sale el jueves, no he podido dormir bien
+H|Soy profesora de primaria y tengo epilepsia desde niña. Me cambiaron de medicamento el mes pasado y tuve dos convulsiones la semana pasada. ¿Puedo seguir dando clases?
+H|Mi papá tiene un marcapasos nuevo y dice que le pitan los oídos desde que se lo pusieron, pero no quiere llamar al cardiólogo. ¿Qué le digo?
+H|tengo tendinitis en el hombro desde que empecé a levantar pesas. el fisio me dijo que deje el gym 6 semanas y yo ya estoy desesperado
+H|Me diagnosticaron fibromialgia hace un año y los dolores están peor con el frío. ¿Hay algún tratamiento que realmente funcione o solo analgésicos?
+H|me llamó el laboratorio, dicen que el PSA salió alto. tengo 63 años y no sé si preocuparme o esperar al urólogo
+H|Mi hermana tiene artritis reumatoide y el reumatólogo le cambió el metotrexato. Tiene náuseas y se le caen las pestañas, ¿es normal?
+H|se me cayó el pelo a mechones después de la quimio y me da mucha vergüenza salir a la calle, qué puedo hacer
+H|me pusieron una prótesis de cadera hace 3 semanas y el dolor no baja. la fisio dice que es normal pero yo ya no puedo dormir
+H|tengo migraña con aura casi todas las semanas. el neurólogo me recetó un preventivo pero me da náuseas. ¿Lo puedo dejar o tengo que esperar 3 meses?
+H|me sale una erupción roja en las piernas desde que empecé el antibiótico para la infección de orina, ¿es alergia o puedo esperar?
+H|Tengo un nódulo en la tiroides de 1,2 cm y el endocrino quiere otra ecografía. Me siento sin energía y bajé 6 kilos sin querer.
+H|mi hijo de 9 meses tiene fiebre desde ayer y no quiere comer. le di paracetamol pero vomitó dos veces. es grave?
+H|me diagnosticaron celiaquía a los 40 y cuando como pan me dan cólicos horribles. ya no sé qué comer en los almuerzos de la familia
+H|Mi suegro tiene insuficiencia renal y tiene que hacer diálisis tres veces por semana. Mi suegra no puede con todo y yo no sé cómo ayudar.
+H|tengo un bultito en el testículo que me noté en la ducha. no me duele pero me da mucho miedo que sea algo serio, ¿cuánto tarda en salir un resultado?
+H|me hicieron una mamografía y dicen que hay microcalcificaciones, tengo que hacerme una biopsia la semana que viene. no le he contado a nadie
+H|Llevo tres días con culebrilla en el costado izquierdo, ardor insoportable y una ampolla. ¿El antiviral sirve si ya pasaron cuatro días?
+H|me operaron de la vesícula el martes y tengo la herida roja y supurando, tb me sube la fiebre por la tarde. ¿Llamo o espero a la cita?
+H|Mi hermano de 22 tiene asma desde chico y hace dos días le dio un ataque fuerte. Usó el inhalador 4 veces y no le baja. ¿Lo llevo a urgencias ya?
+H|tengo dolores de regla tan fuertes que me tiran al piso. el ginecólogo dice que puede ser endometriosis pero me hace esperar 6 meses para la ecografía
+H|Mi mamá se cayó de la escalera y tiene una fisura en las costillas. Dice que no es nada pero respira muy superficial. ¿Hay que llevarla?
+H|me salieron manchas blancas en la cara que no se quitan con nada, la dermatóloga dice vitiligo. cómo le explico a mi pareja que no es contagioso
+H|Tengo acné quístico en la espalda y la cara desde los 17. Me recetaron isotretinoína pero me asusta lo del hígado y lo de las pastillas de embarazo
+H|Estoy embarazada de 14 semanas y tuve sangrado leve hoy. La matrona dice que reposo, pero me da miedo perderlo. ¿Qué señales son de alarma?
+H|Mi cuñada tuvo un aborto espontáneo en la semana 9 y no quiere volver a hablar del tema con el médico. ¿Cómo le hablo sin que se cierre?
+H|tengo muchas náuseas y no paro de vomitar desde la semana 6. el obstetra me dijo que es hiperemesis y me dio medicación, ¿es peligroso para el bebé?
+H|Me hice la prueba de embarazo y salió positiva, pero tomo litio por el trastorno bipolar. Hablé con mi médico y todavía me siento perdida.
+H|me diagnosticaron hepatitis B en el análisis de rutina. cómo se contagia, lo tengo que decir en el trabajo? trabajo en una guardería
+H|Mi hija de 6 años tiene piojos y ya le hicimos tres tratamientos, pero el colegio dice que siguen. ¿Y si tiene otra cosa en el cuero cabelludo?
+H|tengo la vista borrosa desde hace una semana en el ojo derecho y veo como unas moscas. mi oftalmólogo está de vacaciones, qué hago
+H|Mi papá perdió casi toda la vista del ojo izquierdo por el glaucoma. Tiene 71 años y se niega a ponerse las gotas porque le arden.
+H|me pusieron implante coclear hace dos meses y el zumbido en el oído no se va. pensé que mejoraría. ¿Es normal que tarde tanto?
+H|Tengo tinnitus desde el concierto del año pasado y a veces el pitido no me deja dormir. El otorrino dijo que no hay cura, pero no sé cómo vivir con eso.
+H|che, la nena de mi hermana tiene 3 años y lleva dos noches con 39 de fiebre y convulsiones pequeñas. La llevaron a urgencias. ¿Qué significa esto?
+H|Soy enfermero en una residencia y me hice análisis: tengo anemia severa y el hematólogo quiere una biopsia de médula. Tengo miedo.
+H|Me sangran mucho las encías al cepillarme y se me mueven dos dientes de abajo. El dentista habla de periodontitis avanzada y de pagar 3.000 euros.
+H|Mi mamá tuvo un ictus hace un mes y ahora habla raro y se le cae la comisura del labio. Nadie me explica qué esperar de la rehabilitación.
+H|tengo infección urinaria cada 3 semanas desde hace medio año y los antibióticos ya no me hacen efecto. cuál es el siguiente paso?
+H|me sale mucha caspa y se me cae el pelo a la altura de las sienes desde los 35. el dermatólogo habló de alopecia androgénica. ¿Minoxidil sirve de verdad?
+H|Llevo meses con hormigueo en las manos y se me duermen por la noche. El médico de cabecera dice síndrome del túnel carpiano, pero quiero una segunda opinión.
+H|Mi hijo de 13 tiene un brote de acné brutal y le da vergüenza ir al colegio. Le recetaron doxiciclina pero no tiene fuerza para tomarla todos los días.
+H|tuve covid en marzo y desde entonces no tengo fuerzas, me cansa subir un piso y tengo niebla mental. el médico dice long covid, cuánto dura esto?
+H|Soy diabético tipo 1 desde los 12 y me bajó el azúcar a 42 en mitad de la noche. Mi novio se asustó mucho. ¿Debería tener glucagón en casa?
+H|El mes pasado me detectaron un tumor benigno en el hígado en un TAC de rutina. Tengo que hacer otro escáner en 3 meses y no puedo dejar de pensar en eso.
+H|Mi pareja tiene la enfermedad de Crohn y tuvo una crisis con sangre en las heces. Me pidió que no se lo cuente a su madre. Yo no sé qué hacer.
+H|me dolió el pecho al subir la cuesta y me faltaba el aire. el médico solo me mandó a casa con paracetamol, tengo 52 años y fumo
+H|tengo la piel de los pies descamada y con grietas que sangran, me pica un montón y ya probé cremas de farmacia. es hongos o es otra cosa
+M|llevo 4 meses sin poder salir del piso, me dan taquicardia solo de pensar en ir al super. mi madre dice que es vagancia
+M|Desde que murió mi papá no paro de llorar en el baño del trabajo. Ya nadie me pregunta cómo estoy y yo no sé cómo decirlo
+M|tomo clonazepam desde hace un año para dormir y ya no me hace nada. me da miedo subir la dosis sin decírselo a la psiquiatra
+M|mi hermano de 17 se encierra en el cuarto todo el día y dice que todo es una mierda y no quiere salir con nadie. no sé si es depre o algo más
+M|Llevo tres noches sin dormir pensando en la deuda y en si mi jefe me va a despedir. Tengo la mandíbula dolorida de apretar los dientes.
+M|me pasa algo raro: de la nada siento que me ahogo, el corazón a mil y pienso que me voy a morir. ya me pasó 3 veces en el metro
+M|Mi mejor amiga murió en un accidente hace dos meses y no puedo pasar por su calle sin que me den ganas de vomitar. El duelo me está comiendo viva
+M|llevo 6 años jugando al LoL hasta las 4 de la mañana, me escondo de mi familia, ya no tengo amigos fuera del juego. no sé si es adicción
+M|Tomo más vino de lo que quisiera desde que me separé. Lo escondo en el garaje y mi hermana ya lo nota. ¿Cómo le digo que no es para tanto?
+M|me cuesta concentrarme desde niño, siempre me dijeron distraído, y ahora me diagnosticaron TDAH a los 34. me siento como un fracasado, la verdad
+M|Mi hija de 15 años dejó de comer casi nada en los últimos meses y se mira al espejo durante horas. Ya no sé cómo hablar con ella sin que se cierre.
+M|soy enfermero en urgencias y desde esta temporada no puedo dormir. tengo pesadillas con los pacientes que se murieron. el jefe dice que aguante
+M|Después del accidente de coche tengo flashbacks cada noche y me pongo a temblar cuando oigo frenazos. Llevo un año así y ya no quiero conducir.
+M|mi esposo se pasa todo el día con el porno y yo siento que ya no me mira. no sé si es adicción o si soy yo, me siento muy sola en casa
+M|Tengo un trastorno de la conducta alimentaria desde los 16. Cuando como me quedo horas sintiéndome culpable y vomito. ya no sé si me recupero.
+M|Mi padre se volvió muy agresivo con el alcohol y mi madre sigue aguantando. Yo tengo 19 años y vivo lejos, no sé si debería llamar a alguien.
+M|me pasa que cada vez que me toca llamar a un cliente me pongo a sudar y se me olvida todo. creo que tengo ansiedad social desde el colegio
+M|Llevo dos años en terapia porque no puedo dejar de pensar que todo lo que hago sale mal. La terapeuta quiere que pruebe medicación y yo me siento débil.
+M|hace un mes que terminé con mi novia y no puedo dormir ni comer bien. Todos me dicen que lo supere, pero es como si me hubieran quitado el piso
+M|Trabajo de maestra y estoy quemadísima. Lloro en el coche antes de entrar al colegio y ya no disfruto nada. Creo que me estoy hundiendo.
+M|hace como tres semanas me despertaba con el pecho cerrado y pensaba que me moría. Me hicieron electro y todo salió bien, pero sigo con miedo a que vuelva
+M|Tengo 23 años y desde que dejé la u me siento vacío. Me levanto a las doce y paso el día con el celular sin hacer nada. Me da vergüenza contarlo, cachai?
+M|Mi tía de 80 años se niega a comer desde que murió su marido. Vive sola y no quiere hablar con nadie. ¿Vos qué creés, es duelo o depresión?
+M|el psiquiatra me subió la sertralina y ahora tengo muchísimo sueño y me siento como en una niebla. Me da miedo dejarla pero tampoco puedo funcionar
+M|Soy adicto a la coca desde los 25 y perdí la casa de mis padres por eso. Les mentí durante años. Acabo de empezar en un grupo de ayuda.
+M|me siento ansiosa todo el tiempo, reviso el celu de mi pareja a escondidas y luego me odio. no sé cómo parar de hacerlo
+M|Mi hijo de 8 años tiene miedo a ir al cole, dice que le duele la barriga cada mañana. La psicóloga habla de ansiedad por separación. ¿Qué hacemos, pues?
+M|tengo pánico a la gente desde que me robaron a mano armada hace 2 años. me cambio de acera cuando veo a alguien y ya no salgo de noche
+M|Me diagnosticaron autismo a los 41 años y ahora todo tiene sentido, pero también me siento agotada de tener que disimular en el trabajo.
+M|llevo 8 meses con ataques de pánico y el médico de cabecera no me derivó. el psicólogo de la mutua tarda 4 meses. ¿Hay algo que pueda hacer ya?
+M|murió mi perra después de 15 años y no puedo dejar de llorar. sé que suena tonto pero me siento solo en casa y no tengo con quién hablar
+M|Mi hermana tiene trastorno bipolar y desde hace un mes está en fase maníaca. No duerme, gasta todo y mamá no quiere llamar a emergencias.
+M|neta siento que todo me pesa mucho desde hace semanas. me cuesta levantarme y mi pareja dice que vaya al médico. ¿cómo sé si es depresión?
+M|Mi compañera de piso bebe en la cocina todas las noches desde que la echaron del trabajo. No sé si decírselo o dejarlo pasar.
+M|Tengo cefaleas tensionales por el estrés del examen de la oposición. Me despierto a las 4 y me pongo a repasar. ¿Cómo bajo el ritmo sin dejarlo?
+M|desde que le diagnosticaron cáncer a mi madre no puedo concentrarme en nada. estoy cuidando a mis hermanos y no tengo tiempo para llorar
+M|Mi jefa me grita delante de todo el equipo y cada lunes me da un ataque de nervios. Ya no quiero ir a trabajar, pero necesito el sueldo.
+M|ya no puedo dejar el vape, es lo primero que hago al despertar. además fumo a escondidas. sé que estoy enganchado pero no sé por dónde empezar
+M|Después de la ruptura me quedé sin amigos porque todos eran de mi ex. Paso el fin de semana solo y me da una tristeza enorme. ¿Es normal sentirse así?
+M|Mi esposo murió hace tres meses y mis hijos me dicen que ya tengo que salir. Yo solo quiero quedarme en la cama. ¿Cuánto dura el duelo normal?
+M|tengo 17 y me obsesiono con mi cuerpo, cuento las calorías de todo y me peso 3 veces al día. mi mamá cree que es dieta
+M|Pierdo la noción del tiempo, me quedo en blanco en las reuniones y a veces me siento como si no fuera yo. Desde hace un año. ¿Es disociación?
+M|Mi amigo de la uni dejó la carrera y se encerró. Lleva meses sin contestar mensajes y su madre me dijo que no sale de la habitación. Me preocupa.
+M|algo muy malo pasó con mi tío cuando era chica y desde entonces no soporto que me abracen. mi novio se enoja y no sé cómo explicárselo
+M|Soy muy perfeccionista y me agoto. Me quedo despierta hasta las 2 repasando el trabajo y el sábado me dio un bajón que no me dejaba levantarme.
+M|Llevo 2 años intentando dejar la cerveza y los calmantes para la ansiedad, pero recaigo cada fin de semana con mis amigos. ¿Cómo salgo de ese círculo?
+M|Mi hermano no se levanta de la cama desde que volvió de la mili. Dice que no aguanta más. Mis papás no lo entienden y yo tampoco sé qué hacer.
+M|me diagnosticaron trastorno obsesivo compulsivo y la terapia de exposición me está matando. quiero dejarla pero me siento culpable
+M|Tengo mucho miedo a morirme de la nada. Desde la pandemia no salgo sin mi pastilla de ansiedad en el bolsillo y el corazón se me acelera solo de pensarlo
+M|Mi abuela vive sola en el campo y está cada vez más callada. No tiene ganas de levantarse, no se baña y no quiere ir al médico. ¿Qué puedo hacer desde la ciudad?
+M|Estoy de baja por estrés laboral desde hace un mes. Me despierto con el estómago cerrado y siento que no puedo volver al trabajo. ¿Cuánto tiempo es normal?
+M|Mi mujer tiene postparto desde hace cuatro meses. No duerme, llora todo el día y no quiere ver a nadie. Yo no sé si es normal o si tengo que hacer algo.
+M|vivo con un trastorno de la alimentación (atracones) desde hace años. Después me siento asquerosa y me castigo sin comer al día siguiente. mi familia no sabe nada
+M|desde que empecé medicina me cuesta tanto ir a clase que me quedo llorando en el baño de la facu. es normal o me estoy quemando?
+M|El insomnio no me deja en paz desde que perdí el trabajo. Me acuesto a las 3 y a las 6 ya estoy despierta dándole vueltas a las cuentas.
+M|Tengo ansiedad al hablar en público y el jefe quiere que haga la presentación del año. Me tiembla la voz desde siempre y ya me escapé dos veces de una reunión
+M|Mi novio me pega a veces, después se disculpa y dice que es por el estrés. Yo me siento confundida y no quiero que se entere mi familia.
+M|cuando veo imágenes de la guerra me dan ataques de ansiedad y ya no puedo ver las noticias. lo peor es que mi hijo ya lo nota. me siento una mala madre
+M|Tengo 67 años y desde que me jubilé no tengo rutina ni amigos. A veces paso días sin hablar con nadie. ¿Dónde se va uno a encontrar gente?
+M|me llevo peleando con mi cabeza desde el divorcio. hago yoga, meditación, todo, pero sigo sin dormir y con un nudo en la garganta todo el día
+S|tengo 34 años y desde hace un año no se me para casi nunca cuando estoy con mi novia. me da vergüenza y ya evito tener sexo. ¿qué pastillas hay?
+S|Mi marido no quiere tener sexo desde que nació el bebé hace 8 meses. Yo lo entiendo, pero ya me siento como una compañera de piso. ¿Cómo se lo digo sin pelear?
+S|eyaculo muy rápido desde que empecé a salir con mi chica, en dos minutos ya estoy. joder, ella no dice nada pero yo me muero de vergüenza
+S|soy lesbiana y todavía no se lo he dicho a mis padres. mi hermana lo sabe y me presiona para que lo cuente en navidad. tengo mucho miedo
+S|Llevo tres años pensando que soy bisexual, pero no sé si lo digo en el trabajo ni a mi familia cristiana. Me pesa mucho seguir callando.
+S|me cuesta llegar al orgasmo con mi novio desde hace un par de años. con mis ex no me pasaba. hablar de eso me da una vergüenza horrible
+S|Mi hija de 16 me dijo que se siente chico y quiere empezar bloqueadores. Su padre no lo acepta y yo no sé ni por dónde empezar.
+S|Soy mujer trans y estoy empezando con estrógenos. No sé si tengo que avisar a la aseguradora ni cómo le digo a mi jefe que voy a cambiar de nombre.
+S|Tengo 29 años y nunca he tenido relaciones. Mis amigas se burlan de mí y me siento un bicho raro. ¿Es normal esperar a la persona correcta?
+S|me acosté con mi compañera de trabajo en la fiesta de la empresa y ahora mi novia sospecha. no sé si confesarlo o callarme para siempre
+S|Mi pareja me fue infiel con el vecino y me enteré por un mensaje en el celular. Dice que fue un error, pero no puedo dejar de pensar en eso cada noche.
+S|Llevo un año con un hombre casado. Él dice que va a dejarla pero no hace nada. Ya no sé si lo quiero o si solo me gusta la emoción.
+S|tengo sexo con mi esposo y me duele siempre, desde el parto. el ginecólogo dice que es vaginismo pero me da vergüenza hablarlo con él
+S|Tengo DIU de cobre desde hace dos años y a veces me sangra después del sexo. Mi novio no quiere usar condón. ¿Es peligroso seguir así?
+S|Mi novia y yo queremos tener sexo, pero me entra un miedo tremendo cuando empezamos, siento que me voy a bloquear. ¿Tiene solución esto?
+S|Acabo de cumplir 40 y mi mujer ya no tiene ganas de nada, ni siquiera de besarme. A veces pienso en otras personas y me siento culpable.
+S|me hice una vasectomía hace un mes y desde entonces siento que mi cuerpo ya no es mío. mi mujer quiere retomar el sexo pero no sé cuándo estoy listo
+S|Soy hombre gay de 52 años y solo he tenido un par de novios. Me siento muy atrasado y me cuesta usar las apps de citas.
+S|Hace tres meses me acosté con mi ex y me sentí fatal. Mi pareja actual no lo sabe y tengo mucho miedo de perderla si se entera.
+S|Mi hijo de 19 me preguntó si su novio puede dormir en casa y yo me puse rígida. Sé que tengo que apoyarlo, pero no sé qué sentimientos son los míos.
+S|Vivo en una relación abierta con mi pareja y ahora siento celos de un tercero. Hablamos mucho pero me cuesta sentirme bien con esto.
+S|mi novia quiere probar algo más atrevido en la cama y yo me siento presionado wey. no sé si decir que no sin que se sienta rechazada
+S|Tengo 28 años y mi libido está por el suelo. No tengo ganas ni cuando estoy con alguien que me atrae. ¿Será la sertralina o algo más?
+S|Me enteré de que mi pareja mira porno todas las noches y yo ya no siento deseo. Me hace sentir poco deseada. ¿Cómo hablarlo sin que sea una pelea?
+S|Estoy embarazada de un tipo con el que tuve un rollo de una noche. No sé si quiero tener al bebé ni cómo se lo digo a mi novio.
+S|Soy asexual y mi pareja no lo entiende. Siente que lo rechazo. Yo lo quiero mucho pero no me atrae el sexo, ¿es una etapa?
+S|llevamos 6 años juntos y casi no tenemos sexo. Yo no le llamo la atención y eso me está matando por dentro. ¿Cómo vuelvo a sentirme deseado?
+S|Mi hermano de 24 acaba de salir del clóset con la familia y mis padres no le hablan. Yo no sé cómo ponerme de su lado sin pelearme con ellos.
+S|usé la pastilla del día después dos veces este mes porque el condón se rompió. Me asusta lo que le hace a las hormonas, cuánto puede bajar mi fertilidad?
+S|Soy mujer de 41 y mi marido me dice que ya no me ve atractiva desde la menopausia. Yo no tengo ganas, me duele todo y eso me hace sentir muy sola.
+S|Mi chico y yo tuvimos sexo sin protección y ahora estoy con mucha ansiedad por si me contagió algo. ¿En qué momento me hago la prueba?
+S|tengo 22 años y me gusta una chica de mi curso pero no sé si soy hetero o no. Mis amigos ya lo saben todo, yo sigo confundido.
+S|Con mi exnovio siempre sentía presión de tener sexo aunque no tuviera ganas, y ahora con mi pareja nueva me bloqueo. ¿Cómo empiezo a sentir placer otra vez?
+S|Mi mujer me pidió que probemos juguetes sexuales y yo me sentí raro, como si no fuera suficiente. ¿Cómo le explico que me gusta la idea pero me da vergüenza?
+S|mi exmujer me dijo que el sexo siempre fue un problema para mí y ahora me pregunto si tenía razón. no quiero volver a tener citas
+S|me dijeron en el ginecólogo que tengo dispareunia y que hay tratamientos, pero mi novio se siente culpable cada vez que lo intentamos. Estamos rotos.
+S|Llevo años con mi pareja de toda la vida y ahora descubro que me gustan las mujeres. Lo peor es que no quiero perderlo todo. ¿Qué hago?
+S|Me enteré de que mi marido tiene otra familia en otra ciudad, con un hijo de 5 años con otra mujer. Yo llevo 15 años casada con él.
+S|mi novio quiere que hagamos un trío y yo ni de broma. me siento presionada y él dice que estoy anticuada. ¿Estoy mal por no querer?
+S|Tengo 36 años y nunca he tenido un orgasmo con penetración. Mi pareja se frustra y yo me siento rota. ¿Hay alguna ayuda que no sea solo ir al sexólogo?
+S|mi ex me ha sido infiel varias veces y todavía estoy ahí. no sé si es amor o costumbre, mis amigas dicen que me deje pero me duele la idea
+S|Hace un mes tuve un encuentro con un compañero de la universidad y me siento fatal porque tengo novio desde hace 4 años. Nadie sabe nada.
+S|Mi chica quiere que hablemos de nuestras fantasías y yo me quedo en blanco. Me da miedo que se rían de lo que yo quiero. ¿Cómo empiezo?
+S|soy hombre trans y todavía no me he operado. me cuesta mucho tener sexo porque no me siento cómodo con mi cuerpo. mi pareja lo entiende pero yo me odio
+S|Tengo 17 años y mi mejor amiga se me declaró. Creo que me gusta, pero no sé si se lo cuento a mi mamá, que es super religiosa.
+S|llevo 3 años con mi esposo y su problema de erección lo tiene deprimido. Él no quiere ir al urólogo y yo no sé si hablar del tema o dejarlo pasar.
+S|Estoy en el segundo año de tratamiento hormonal para la transición y el apetito sexual cambió mucho. Me siento perdido con mi pareja de siempre.
+S|Mi novio y yo tenemos sexo a diario desde hace 3 meses y me siento presionada. Lo quiero, pero no siempre tengo ganas. ¿Es normal?
+S|Mi pareja me dijo que quiere tener sexo con otros hombres y que lo acepte. Yo lo quiero, pero me duele tanto que no sé si puedo.
+S|tengo 60 años y mi marido nunca quiso hablar de sexo. Ahora que tengo tiempo descubro que quiero explorar, pero tengo miedo de que se rompa todo.
+S|Me gustan las mujeres desde chica pero me casé con un hombre a los 22. Ahora me estoy enamorando de una compañera y no sé qué hacer con mi matrimonio.
+S|Mi amigo de la universidad me confesó que es gay y me pregunto si yo también lo soy. No sé quién soy y me da miedo perder a mis amigos.
+S|Tengo 45 años y hace 6 meses que mi esposa y yo no tenemos sexo. Ya nos pasa todo el tiempo. ¿Cómo se vuelve a encender algo con alguien de tanto tiempo?
+S|Trabajo como acompañante de forma privada y mi pareja no lo sabe. Estoy cansada de ocultarlo, pero me da miedo perderlo todo. ¿Cómo se lo cuento?
+S|mi chico me dice que no le atraigo desde que engordé y ya no quiere tocarme. me siento horrible con mi cuerpo y tengo miedo de quedarme sola
+S|Llevo dos meses evitando el sexo con mi marido porque después del parto me siento incómoda con mi cuerpo. Él ya empieza a preguntar qué pasa.
+S|Hace poco tuve un orgasmo por primera vez con la masturbación y ahora me pregunto si mi novio me va a tomar por rara si se lo cuento. Estoy muy confundida.
+S|Mi suegra encontró preservativos en la mochila de mi hijo de 16 y ahora él se avergüenza y no me habla. ¿Qué hago con esto?
+S|soy pareja de un hombre bi que sigue viéndose con hombres por fuera. no es que me moleste el sexo, es que me siento poco importante. ¿sigo o me voy?
+S|tengo 27 años y uso inyecciones anticonceptivas desde hace 3 años, pero mi pareja quiere tener hijos ya. Me siento presionada y no sé cómo decirle que no estoy segura.
+R|soy musulmana y estoy en Ramadán pero no aguanto ayunar, tengo diabetes y mi familia en Marruecos me juzga. ¿Cómo lo explico sin que se enojen?
+R|Dejé de creer en Dios a los 30 años y mi madre no lo sabe. Ella va a misa todos los domingos y me pide que la acompañe a bautizar a mi sobrina.
+R|Mi novio es judío ortodoxo y yo soy católica. Sus padres no quieren que nos casemos y yo ya no sé si puedo cambiar de religión por él.
+R|Llevo dos años sin rezar y me siento culpable cada noche. Mi abuela dice que Dios me va a castigar. ¿Es normal sentir esto al dejar la iglesia?
+R|me metí en un grupo evangélico hace un año y ahora mi familia dice que es una secta. no sé si me están manipulando o si es mi familia la que no entiende
+R|Soy testigo de Jehová desde los 19 y me quiero salir, pero tengo miedo de que mi esposo me deje y de perder a mis amigas de la congregación.
+R|Mi hijo de 14 años quiere dejar de rezar y no ir a la mezquita. Yo me siento fracasada como madre y mi marido se pone furioso. ¿Qué hago?
+R|me convertí al islam hace 6 meses y mi padre no me habla. Trabajo en una empresa donde no puedo llevar el velo y estoy perdida.
+R|Crecí en una familia muy estricta de testigos y ahora soy agnóstica. Cada vez que me llaman mis tíos me dicen que estoy perdida. ¿Vos cómo cortás con esa presión?
+R|Hago ayuno de Ramadán desde los 12 años y este año tengo un problema de presión baja. Mi médico dice que no lo haga y mi suegra me quiere obligar.
+R|Estoy dudando de todo lo que me enseñaron en la iglesia y no sé si puedo seguir siendo católica. Me siento muy sola porque mis amigos son todos de allí.
+R|Mi hija se quiere casar con un chico hindú y nosotros somos cristianos evangélicos. Me pregunto si estoy haciendo mal al no querer ir a la boda.
+R|Tengo 45 años y dejé el budismo hace cinco años. Mi maestro dice que mi karma se va a arruinar. Ya no sé si creo en nada, y eso me da mucha angustia.
+R|Soy rabino en una comunidad pequeña y tengo un problema con mi fe desde que murió mi hijo. Rezo pero siento que nadie me escucha. ¿Se puede decir esto en voz alta?
+R|Mi mamá me hizo jurar en el lecho de muerte que iba a seguir yendo a la iglesia. Ya no creo y me siento un mentiroso cada domingo.
+R|Mi esposo quiere que nos convirtamos al judaísmo para la familia, pero yo no creo en nada. ¿Cómo le digo que no sin romper el matrimonio?
+R|Me van a expulsar de la hermandad si sigo viéndome con mi novia. Vivo con el miedo de que mi familia se entere por la comunidad.
+R|Llevo rezando el rosario todos los días desde que mi hermano se enfermó. Ahora no siento nada y me da miedo que Dios me esté castigando.
+R|Soy musulmán practicante y mi hermana se casó con un no musulmán. Mi padre dice que ya no es de la familia. ¿Estoy obligado a cortar con ella?
+R|cuando estoy en el hospital con mi madre no sé si rezar o si no es buena idea. ella es cristiana y yo ya no. pa mí es muy difícil estar ahí
+R|Mi novio es de la Iglesia Adventista y yo soy atea. Me dijo que tiene que casarse con alguien de su fe y yo siento que me estoy quedando afuera.
+R|Estoy estudiando para ser sacerdote y ahora dudo de Dios. No se lo digo a nadie porque me echarían del seminario. ¿Qué hago con esta duda?
+R|Soy hindú y mi familia quiere arreglarme un matrimonio, pero me enamoré de un chico que no es de mi casta. Mis padres ya me han amenazado con cortar relación.
+R|Mi suegra dice que me voy a condenar por no ir a misa y por usar métodos de anticoncepción según la iglesia. Yo ya no sé en qué creer, me siento agobiada.
+R|Llevo tres años buscando otra iglesia porque la mía me parece hipócrita. Mi pastor dice que es rebeldía. ¿Cómo sé si estoy perdiendo la fe?
+R|Me dijeron que hice algo muy malo y que tengo que confesarme cada semana para ser perdonado. Siento culpa todo el tiempo aunque no sé de qué.
+R|Soy de una familia de mormones y hace un año no me siento parte de la iglesia. Mis hermanas me ignoran y mi mamá llora cada vez que me ve.
+R|Mi madre es muy devota y yo soy musulmana conversa; cuando hago el ayuno ella me manda comida a escondidas. Me siento agradecida, pero también culpable.
+R|Ya no quiero ir al templo porque la comunidad me trata como si fuera una vergüenza. Ni mis tíos ni mi suegro me hablan desde que me divorcié.
+R|No sé si es pecado seguir con el tratamiento de fertilidad porque mi comunidad dice que va contra Dios. Mi esposo está de acuerdo, pero yo tengo miedo.
+R|Soy pastor en una iglesia pequeña y tengo dudas profundas desde hace unos meses. Mis feligreses confían en mí y no sé cómo seguir predicando así.
+R|Estoy haciendo el ayuno de Yom Kipur y mi hija pequeña tiene fiebre. Mi esposa dice que no pasa nada, pero yo me siento culpable por no cuidar bien de ellos.
+R|Mi hermano fue expulsado de la comunidad por casarse fuera de la religión y mi madre no le contesta el teléfono. Me parte el alma.
+R|cuando era niño me obligaban a rezar de rodillas toda la noche y ahora tengo pesadillas con Dios. no sé si es trauma o es que de verdad no creo
+R|Me dijeron que mi enfermedad es un castigo de Dios por haber dejado la iglesia. Mi mamá lo cree y cada vez que la visito me lo dice.
+R|Quiero hacer la peregrinación a La Meca pero mi esposo no es musulmán y no sé si tengo derecho a elegir por mi cuenta. Me siento dividida.
+R|Mi comunidad me pide que tome el velo y yo quiero estudiar en la universidad sin él. Mi familia cree que es una vergüenza. ¿Es pecado hacerlo?
+R|Mi tía es una sanadora espiritual y dice que tengo un espíritu malo. Mi madre le cree y ahora no me dejan estar en casa. Me siento perdida.
+R|Después de tantos años de doctrina me di cuenta de que no creo en el infierno y me da miedo decírselo a mi madre. ¿Cómo lo hago?
+R|Mi pareja es budista y yo soy católica, celebramos todo por separado. Cuando llega la Navidad nos peleamos y yo me siento mal con Dios.
+R|Estoy de luto por mi fe. Llevaba 20 años siendo monja y acabo de salir del convento. Nadie me entiende y no sé quién soy sin Dios.
+R|Mi hija de 10 años me pidió que dejemos de ir a la mezquita porque sus amigas se burlan de ella. Yo no sé si insistir o escucharla. ¿Es mala madre?
+R|Llevo cuatro años sin comulgar porque me divorcié y la Iglesia dice que estoy en pecado mortal. Mi párroco no me deja ni acercarme al altar.
+R|me pasó algo muy fuerte en el retiro espiritual y desde entonces siento que estoy en una secta. mis amigos dicen que exagero, pero no quiero volver
+R|Mi novio es de otra religión y en su familia dicen que no puede casarse con alguien que no ayuna. Yo no quiero convertirme y estamos en un callejón sin salida.
+R|Mi padre me dijo que si dejo de ser musulmán no vuelve a verme. Yo ya no creo en Alá. ¿Cómo sigo fingiendo en la boda de mi prima?
+R|Practico la religión kosher en casa pero en el trabajo no puedo cumplirla. Mis compañeros se ríen y mi jefe quiere que coma en la oficina. ¿Qué derechos tengo?
+R|Desde que me metí en el movimiento de la nueva era, mis padres piensan que estoy metida en una secta. No sé cómo convencerlos de que es algo personal.
+R|Me pidieron en la iglesia que dé el diezmo de mi sueldo entero. Lo estoy pensando y siento culpa de no hacerlo, pero también me ahogo con las deudas.
+R|No voy a la sinagoga desde que perdí a mi padre y siento que lo traicioné. Mi madre dice que es mi deber rezar el kadish y yo no puedo.
+R|soy de origen musulmán pero no creo. mi mamá sabe que no rezo, pero mis tíos no lo saben y me invitan a todas las fiestas. me siento un farsante
+R|Estoy en el coro de la iglesia hace 30 años y ahora no creo en la resurrección. El pastor me pidió que siga cantando. ¿Estoy viviendo una mentira?
+R|Mi hermana se unió a una congregación muy estricta y ahora no nos deja entrar a su casa si no nos cambiamos de religión. Llevo 2 años sin verla.
+R|soy budista y mi pareja cristiana quiere bautizar a nuestro bebé. Yo no quiero hacerlo, pero su madre dice que el niño va a estar perdido sin bautismo.
+R|Me preguntaron en el trabajo si practico algo y tuve que mentir porque tengo miedo de que me echen. Soy musulmana y no hago ayuno, pero no quiero que lo sepan.
+R|Tengo 17 años y me siento muy culpable porque no quiero rezar más con mi familia. Siento que Dios me abandonó y no sé si es un pecado seguir así.
+R|Crecí en una secta que no permitía salir solos ni tener amigos fuera. Ya hace un año que me fui, pero todavía tengo pesadillas con las reuniones.
+R|Mi fe me ha dado paz muchos años, pero ahora siento que Dios no me responde. ¿Es normal la crisis de fe después de perder a alguien?
+R|Me casé por la iglesia y ahora me quiero divorciar, pero mi familia dice que Dios no lo permite. Me siento como si estuviera pecando al decidir.
+R|Mi suegra es muy católica y yo soy de religión yoruba. Cuando vamos a la misa de Navidad me obligan a ponerme de rodillas y yo me siento fuera de lugar.
+G|llevo 3 meses atrasado con el alquiler y el casero ya me mandó un burofax. no tengo ni para pagar la luz, qué pasa si me desalojan
+G|Me llegó una carta de la AEAT por 4.000 euros de deuda de IRPF de dos años y no sé cómo pagarla. ¿Puedo fraccionar o me embargan la cuenta?
+G|tengo 3 tarjetas al máximo y ya pedí un préstamo rápido para pagar otra. mi pareja no sabe nada, cómo le digo esto sin que se vaya
+G|Me despidieron hace un mes y me quedan 2 cuotas de la hipoteca sin pagar. El banco no me contesta. ¿Qué pasa si no pago?
+G|Perdí 2000 dólares en una estafa de inversión por WhatsApp. El que me escribió dice que me devuelve el dinero si pago impuestos. Ya no sé qué hacer.
+G|mi hermano me debe 800 mil pesos de un préstamo que no me ha devuelto y ahora no contesta. tengo las cuentas en rojo y no sé a quién pedirle ayuda
+G|Estoy en Datacrédito desde hace dos años por un crédito de celular que no pude pagar. Quiero comprar un carro pero me lo niegan. ¿Cómo salgo de ahí?
+G|Me llegaron cartas de cobranza de tres bancos y una agencia me llama todos los días desde las 7 am. ¿Me pueden llamar tanto?
+G|Mi esposo jugaba en el casino en línea y nos quedamos sin ahorros. Yo tengo que pagar las deudas de la tarjeta que él usó. ¿Eso me toca a mí?
+G|Ya no alcanzo para la quincena, pago el alquiler con tarjeta de crédito y los intereses me están ahogando. Tengo 2 hijos y un sueldo de 14 mil.
+G|Perdí el trabajo en la fábrica y me embargaron la cuenta por una deuda de un préstamo personal. Me queda muy poco para vivir. ¿Qué puedo hacer?
+G|Me quedé sin trabajo y ahora me llegó un correo del banco diciendo que me van a cobrar intereses de demora. ¿Eso se puede negociar?
+G|tengo la luz cortada desde hace una semana porque no pude pagar 3 meses. Tengo bebé de 6 meses. ¿Qué ayuda me dan para esto?
+G|Me enviaron una carta del juzgado por 6.000 euros de una deuda con una empresa de telefonía. No sé si es real o es un timo, qué hago
+G|Estoy con 4 préstamos de créditos rápidos que me cobran 300% de interés. Debo más de lo que gano en seis meses. ¿Hay salida?
+G|Mi hija me pidió dinero para pagar la deuda del coche y se lo di con mis ahorros de toda la vida. Ahora no tengo para la renta ni para comer.
+G|Me quedé sin subsidio de desempleo porque no contesté al correo a tiempo. ¿Qué pongo en la solicitud para recuperarlo?
+G|Tengo que pagar 900 de la guardería y 1.200 del alquiler y solo cobro 1.450. Mi novio no me ayuda. ¿Cómo hago para no quedarme sin nada?
+G|Me llamó alguien diciendo que soy beneficiaria de un bono del gobierno y me pidió los datos de mi tarjeta para depositarlo. ¿Es estafa?
+G|Llevo dos años pagando una deuda de Dicom que no reconozco. me dicen que es de un celular que nunca compré, y nadie me ayuda
+G|Estoy tratando de hacer un concurso de acreedores porque debo 80 mil euros entre tarjetas y préstamos. Mi abogado dice que puedo perder la casa.
+G|mi suegra me prestó 5000 para pagar el carro y ahora me reclama cada semana, no tengo cómo devolvérselo porque trabajo por horas
+G|Cobro la AUH pero me la cortaron porque dicen que cobro en negro. Yo hago changas y no me alcanza nada. ¿Cómo lo arreglo?
+G|Estoy en Veraz por una deuda de 40 mil pesos de la tarjeta. Quería alquilar un depto y me rechazaron. ¿Cuánto tiempo me queda ahí?
+G|Mi negocio cerró y me quedaron deudas con proveedores y con el SAT. No sé si declarar quiebra o pagar en cuotas.
+G|Pedí un crédito para la moto y perdí el trabajo al mes. Me amenazan con embargarme y no sé cómo explicarlo en casa. Estoy muy angustiado.
+G|Mi marido tiene el 40% de su sueldo embargado por pensión alimenticia atrasada y ahora no llegamos a fin de mes. ¿Hay algún límite legal?
+G|Estoy cobrando el IMV pero me pidieron devolver 2.300 euros porque dicen que cobré de más. No tengo ese dinero y tengo miedo.
+G|Me timaron con un falso alquiler por internet y transferí 1.500 soles a un desconocido. Ya denuncié pero nadie me devuelve nada.
+G|Tengo la tarjeta bloqueada por una deuda de 3 mil y no puedo pagar ni el supermercado. Mi mamá no tiene para ayudarme.
+G|Vendí mi carro para pagar una deuda de la tarjeta, pero me quedaron 4 mil de saldo. Cada mes me cobran intereses. ¿Me conviene refinanciar?
+G|Me llegó una notificación de Hacienda por una deuda del IVA de mi antiguo negocio. Yo no sabía que todavía estaba a mi nombre. ¿Qué hago?
+G|Mi hermano perdió 12 mil en apuestas deportivas con el dinero de la boda y mi mamá no lo sabe. Yo ya no sé si contarlo o pagar yo.
+G|Hace 3 meses me despidieron y todavía no me pagaron la liquidación. El dueño me dice que no hay plata. ¿Puedo reclamar el dinero?
+G|Pido prestado a un amigo cada quincena desde hace un año. Ya me da vergüenza y no sé cómo cortar. ¿Cómo salgo de esto?
+G|Mi mamá vive sola y pagó de más la factura de la luz durante 2 años. Ahora la empresa le exige una deuda enorme y ella no entiende nada.
+G|Cada vez que cobro, la mitad se va en intereses de los créditos de compras. Tengo 26 años y no tengo ahorros ni para una emergencia.
+G|Tengo 4 meses de atraso en la mensualidad del coche y el banco quiere quitármelo. Lo uso para ir al trabajo, si lo pierdo no sé cómo llego.
+G|Compré un celular a plazos y después me quedé sin trabajo. Ahora me llaman de cobranza todos los días y amenazan con reportarme.
+G|Me robaron la tarjeta en el metro y alguien hizo compras por 900 euros antes de que la bloqueara. El banco dice que no me devuelve nada.
+G|Mi empresa me debe 3 meses de sueldo y yo tengo que pagar la renta y el seguro médico. Ya no tengo para comprar comida. ¿Qué hago?
+G|Soy estudiante y me quedé con 6 mil de deuda por un crédito educativo. Ahora trabajo medio tiempo y las cuotas me ahogan.
+G|Me enteré de que mi ex sacó un préstamo a mi nombre con mis datos. Ahora tengo una deuda de 12 mil y no fui yo.
+G|Mi tía me pidió avalar un crédito y ahora que dejó de pagar me toca a mí. No tengo cómo pagar. ¿Puedo renunciar al aval?
+G|Gasté todo en apuestas en la app del fútbol este mes y ahora no tengo para pagar el alquiler. Me quiero parar pero siento que ya no puedo.
+G|Me quedé en paro hace 5 meses y ya no tengo ni para la cuota de la casa. Mi pareja también está sin trabajo. ¿Qué ayudas podemos pedir?
+G|Me quitaron la ayuda de vivienda porque dicen que mis ingresos subieron por 300 euros. Con mi sueldo no llego a fin de mes.
+G|Tengo que pagar 2 mil de multas del coche más la deuda del seguro y no tengo ni para la comida. Mi cuñado dice que lo deje pasar.
+G|Me embargaron el sueldo de la empresa porque debía 9.000 a un proveedor. Ahora cobro casi nada y no sé cómo mantener a mis hijos.
+G|Mi hijo gastó 1200 de mi tarjeta en juegos online sin que me diera cuenta. El banco no quiere devolver nada porque fue con mi clave. ¿Qué puedo hacer?
+G|vivo al día, cobro 1200 y de eso 900 son para deudas. no me alcanza para comida ni para las cosas del bebé. ¿Hay alguna forma de bajar lo que pago?
+G|Le presté a mi amiga 3000 para su operación y ahora no me paga y tampoco contesta mensajes. Yo también lo necesito, me siento estafada.
+G|Pagué un curso de inversión de 2 mil euros y ahora me dicen que necesito pagar más para recuperar el capital. Ya perdí mucho y no sé si parar.
+G|Cuando perdí la pega me vi sin plata y tengo deudas en la casa comercial, el Dicom me tiene marcado. Me llaman de cobranza todos los días.
+G|Mi mamá firmó un crédito de consumo por una estafa y ahora le cobran 600 mil pesos. Ella no lee bien y se siente culpable. ¿Qué hacemos?
+G|soy freelance y tuve 3 meses sin cobrar. el cliente no paga la factura y el SII me pide impuestos por lo que facturé. ¿Qué pongo?
+G|Llevo 6 meses sin poder pagar la cuota del colegio de mi hijo y me van a quitar el cupo. Me da vergüenza pedirle plata a la familia.
+G|Me quedé sin pensión de invalidez y ahora tengo que vender lo poco que tengo para pagar la clínica. Mi hermana no puede ayudarme.
+G|Mi pareja se fue con todo el dinero de la casa y me dejó con dos cuotas del crédito que sacamos juntos. ¿Puedo cargarle la deuda a él?
+G|tengo 58 años y perdí todo mi ahorro en una estafa de cripto. Ahora tengo que trabajar de limpiadora y no sé cuánto me alcanza para la renta.
+L|me pararon en un control de alcoholemia y di positivo por poco. me dijeron que me van a quitar el carnet y tengo juicio la semana que viene
+L|Me detuvieron por una pelea afuera de un bar y estoy con una denuncia de lesiones. Me dieron libertad con cargos. ¿Qué pasa si no me presento al juicio?
+L|Mi esposo me pegó la semana pasada y llamé a la policía. Ahora me dicen que tengo que ir a la audiencia y no sé si retiro la denuncia o no.
+L|me llegó una citación de la fiscalía porque mi hijo de 17 está acusado de robo en la tienda. Yo no sabía nada. ¿Puedo ir como representante?
+L|Tengo antecedentes de 2015 por posesión de marihuana y ahora me rechazan en todos los trabajos. ¿Se puede borrar?
+L|Mi visa de estudiante vence en dos semanas y la universidad no me renovó la carta. Tengo miedo de que me deporten. ¿Qué opciones tengo?
+L|Me despidieron sin carta de por medio después de 8 años en la empresa. Mi jefe dice que robé dinero pero yo no fui. ¿Puedo demandarlos?
+L|Me estoy divorciando y mi exmarido quiere la custodia compartida de nuestro hijo de 3 años. Él trabaja de noche y yo no confío en que lo cuide. ¿Qué pasa en el juzgado?
+L|el casero me dio 30 días para irme por una supuesta obra. no tengo contrato firmado y ya me amenazó con cambiar las cerraduras. ¿Puede hacer eso?
+L|Me llegó una multa de tráfico de 600 euros por una cámara y yo juro que no iba a esa velocidad. ¿Hay forma de impugnarla?
+L|Estoy siendo investigado por un fraude de seguros en el trabajo que no cometí. Me citaron a declarar y no tengo abogado. ¿Qué derechos tengo?
+L|Un vecino me denunció por ruidos y ahora tengo un juicio por injurias. La verdad es que sí le dije cosas feas. Creo que me van a condenar.
+L|Mi hermana fue arrestada en la frontera con un paquete y dice que no sabía lo que tenía. No sé cómo ayudarla y no tengo dinero para un abogado.
+L|Mi expareja me denunció por acoso. Yo le escribí muchos mensajes pero no quería hacerle daño. La policía me citó para mañana.
+L|Vivo en EEUU hace 12 años sin papeles y me ofrecieron un trabajo con visa, pero para eso tengo que salir del país. Tengo miedo de no poder volver.
+L|Mi tía fue deportada y dejó a sus dos hijos aquí. Tiene que seguir un proceso en la corte de inmigración y no sé qué papeles hacen falta.
+L|me cobraron una multa por manejar sin seguro, pero yo sí tenía seguro. la aseguradora dice que venció y no encuentro el papel. ¿Qué hago?
+L|Tengo una orden de restricción de mi ex y hoy me llamó desde un número distinto. No sé si tengo que avisar a la policía o esperar.
+L|Me acusan de haber atropellado a alguien en la carretera. Yo dije que no fui, pero me llamaron de la policía para declarar la próxima semana.
+L|Fui víctima de una estafa de un notario falso que cobró dinero por unos papeles de herencia. ¿Puedo presentar demanda contra él o contra el banco?
+L|Mi hijo fue detenido por la policía en la escuela con un cuchillo. Tiene 16 años y el juez quiere hablar con los padres. vos sabés qué derechos tenemos?
+L|La empresa me obligó a firmar la renuncia para no pagarme el finiquito. Me dicen que es legal. ¿Puedo ir al tribunal de trabajo?
+L|Tengo un juicio por desahucio en 15 días. Dejé de pagar 4 meses porque me quitaron el trabajo. ¿Cuánto tiempo tengo para buscar ayuda legal?
+L|Mi suegra me demandó para quitarme el uso de la casa que compramos con mi dinero. Mi marido no se pone de mi lado. ¿Qué puedo hacer?
+L|Un policía me pidió los papeles en la calle y me dijo que me iba a llevar por no tener permiso de residencia. ¿Tengo que mostrar algo o puedo negarme?
+L|Me sacaron del colegio por una pelea y estoy pensando en demandar al director. ¿Mi hija puede seguir yendo mientras tanto?
+L|Estoy esperando la resolución de mi solicitud de asilo desde hace 2 años. Mi abogado no contesta y me llegó una carta de deportación. ¿Qué hago?
+L|me robaron la moto en la calle y puse la denuncia, pero la policía dice que no hay nada que hacer. Ya no creo que la recupere. ¿Qué otros pasos tengo?
+L|Tengo una denuncia por hurto en un supermercado porque me olvidé de pagar una cosa. Me dieron un citatorio para declarar. Nunca había tenido problemas con la ley.
+L|Mi ex se llevó a los niños a otro estado sin avisar y tiene una orden de custodia a mi favor. La policía dice que no puede hacer nada. ¿Qué hago?
+L|Me despidieron por bajas médicas y la empresa dice que es despido justificado. Tengo los informes del médico pero no sé si sirven en juicio.
+L|Mi cliente me demandó por daños en un contrato de obra y me reclama 80 mil. Yo entregué el trabajo y ellos no pagaron. ¿Tengo que contestar la demanda?
+L|Me dijeron en la comisaría que tengo que pagar la fianza en 48 horas o me quedo detenido. Mi familia no tiene ese dinero. ¿Qué pasa ahora?
+L|Hace 6 meses estoy con la solicitud de permiso de trabajo y el consulado no contesta. Mientras tanto mi visa de turista ya venció y temo que me detengan.
+L|Mi hermano tiene una orden de arresto por falta de pago de alimentos de su hijo. ¿Qué tiene que hacer para evitar la cárcel?
+L|Fui arrestado por manejar bajo los efectos de drogas. Es mi primera vez y el abogado de oficio dice que habrá un juicio rápido. ¿Me puede servir el curso de rehabilitación?
+L|Me denunció mi jefe por revelar información confidencial a un periodista. Yo lo hice porque había acoso en la oficina. ¿Me pueden despedir por eso?
+L|Estoy siendo demandado por una empresa por usar su marca en mi tienda online. Yo pensaba que era genérico. ¿Me tengo que cerrar?
+L|Mi esposa perdió la custodia de nuestra hija por una denuncia de malos tratos. Yo creo que es mentira pero no tengo pruebas. ¿Cómo lo defiendo?
+L|Me llegó una demanda por daños al local vecino después de una fuga de agua en mi piso. El seguro dice que no cubre. ¿Qué hago con la demanda?
+L|Me vi involucrado en un accidente de tránsito con una camioneta y el otro conductor dice que yo me metí en su carril. Hay testigos. ¿Me pueden culpar?
+L|Me acusaron de lavado de dinero por recibir transferencias de mi cuñado. No sabía de dónde venía. Estoy desesperado.
+L|soy venezolano con permiso humanitario que vence el mes que viene. no tengo abogado ni plata para uno. qué pasa si no renuevo a tiempo
+L|Estoy divorciada y mi ex me sigue pidiendo que le devuelva el 40% de la herencia de mi abuela. El juez dice que tengo que devolverla. ¿Cuánto tiempo tengo?
+L|Trabajé 6 años sin contrato y ahora me despidieron. La empresa dice que yo era autónomo. ¿Puedo reclamar la indemnización aunque no tenga papeles?
+L|Fui víctima de un robo con violencia en mi casa y la policía me dijo que el caso puede tardar años. Tengo miedo de que me vuelvan a atacar.
+L|Mi pareja me agredió y ahora me quiere demandar por lesiones porque dice que yo empecé. Tengo una contusión en el brazo. ¿Me conviene ir con abogado?
+L|Tengo una orden de alejamiento de mi vecino por una discusión. Lo tengo que ver todos los días porque comparte portal. ¿Qué pasa si me acerco sin querer?
+L|Mi ex y yo nos divorciamos hace 2 años pero me sigue reclamando la pensión en el juzgado. Dejé de trabajar para cuidar a los niños. ¿Cuánto me corresponde?
+L|Me multaron por no llevar el cinturón de seguridad en el coche de mi empresa. No sé si la multa es mía o de la empresa. ¿Cómo lo averiguo?
+L|Estoy esperando el juicio por una denuncia de estafa, pero el juzgado lo ha retrasado 2 veces. Me dicen que me puede caer prisión. ¿Qué pasa?
+L|Me citaron para declarar como testigo en un homicidio del barrio. Tengo miedo de represalias y no sé si puedo negarme.
+L|El banco embargó mi cuenta por una sentencia de un juicio que perdí hace 3 años. No recibí ninguna notificación. ¿Qué hago?
+L|Mi empleador me hizo firmar un papel sin leer. Ahora me quitó las vacaciones y me dice que es lo que dice el contrato. ¿Puedo impugnarlo?
+L|Tengo 19 años y me acusan de haber vendido pastillas en la escuela. Yo solo le pasé unas a un amigo. Me van a meter en un proceso de menores.
+L|Me detuvieron por no pagar la multa del transporte público y estuve encerrado 6 horas. Ahora tengo que volver a ir a una audiencia el lunes.
+L|Soy turista en España y me robaron el pasaporte en el metro. La policía me dice que tengo que ir a la embajada, pero no tengo papeles. ¿Qué hago?
+L|Fui testigo de una pelea donde un chico murió y ahora la policía me dice que lo cuente todo. Tengo miedo de que me metan a mí también.
+L|Mi madre fue desahuciada por una deuda de la hipoteca de mi padre, que murió hace 1 año. La casa ya no es de ella. Qué puede hacer ahora?
+L|Mi esposo y yo estamos en un proceso de separación y él no quiere firmar el acuerdo de bienes. Dice que la casa es suya y que yo no tengo derecho. Estoy asustada.
+X|ya no aguanto mas, siento que mi familia estaria mejor sin mi
+X|no quiero seguir viviendo asi, todo el dia pienso en desaparecer
+X|llevo semanas pensando que seria mejor no despertar. no se a quien decirle esto
+X|me corte el brazo otra vez anoche y nadie se dio cuenta. ya no se como parar
+X|Hoy escribí una carta de despedida y la guardé en el cajón. No sé si es una señal o si estoy exagerando.
+X|cada noche me acuesto con la idea de no volver a levantarme y me da miedo que un día no me controle
+X|Mi mamá me dijo que sería mejor que nunca hubiera nacido. Desde entonces pienso que tiene razón.
+X|estoy cansado de sentirme una carga para todos, creo que el mundo no me va a extrañar
+X|Nadie se daría cuenta si yo no estuviera. Lo pienso casi todos los días y hoy fue peor que nunca.
+X|me siento muerta por dentro desde que murió mi hijo. a veces pienso que me gustaría irme con él
+X|Llevo tres días sin comer, me corto cuando me siento así y ya no aguanto. no quiero preocupar a mi pareja
+X|ya no tengo ganas de nada ni de seguir. es como si el dolor no se fuera nunca y no quiero seguir sintiéndolo
+X|Tengo 16 años y pienso en suicidarme casi todos los días. No se lo he contado a mis padres porque no quiero que se preocupen.
+X|pa qué sigo si todo lo que toco se arruina. a veces pienso que no tendría que estar aquí
+X|Me hice cortes en las piernas el fin de semana y ahora me da miedo lo que estoy pensando. ¿Es normal sentir tantas ganas de desaparecer?
+X|Mi hermano lleva meses diciendo que todos estarían mejor sin él. Hoy me mandó un audio raro y no sé si llamar a alguien o esperar.
+X|me pasé con las pastillas de la ansiedad hace un mes y no le dije a nadie. a veces siento que podría volver a hacerlo
+X|Ya no me quedan fuerzas para luchar. Estoy pensando en dejar de existir y no sé cómo decirlo sin que me internen.
+X|sigo viva por mis hijos pero cada día cuesta más. hoy no sé si voy a poder con esto
+X|Escribo esto desde el baño del trabajo, con las manos temblando. Ya no quiero vivir y no tengo a nadie a quien llamar.

@@ -1,0 +1,110 @@
+#P
+H|kheb al drie weken bloed bij mn stoelgang
+H|mn bomma krijgt vrijdag een nieuwe heup
+H|zwangerschapstest positief, ik ben 44
+H|die knobbel in mn oksel wordt groter
+H|onze dochter heeft weer een oorontsteking, derde keer
+H|pa zijn nieren werken nog voor 30 procent
+H|metformine geeft mij diarree, mag ik ermee stoppen
+H|ik hoor met mn rechteroor bijna niks meer
+H|mn zus heeft chlamydia en durft niet naar de dokter
+M|ik slaap al een maand nauwelijks van de zorgen
+M|ik praat al dagen met niemand, behalve met u
+M|mn broer zit weer aan de coke
+M|paniekaanval gehad in de Colruyt, ik schaam me kapot
+M|sinds oma dood is huil ik elke avond
+M|ik eet en kots het dan weer uit
+M|me vrouw zit thuis met burn-out en praat niet
+M|ik drink elke avond een fles wijn alleen
+M|therapeut zegt dat ik ptss heb, wat nu
+S|kom niet meer klaar sinds de antidepressiva
+S|mn lief wil nooit meer vrijen, al een jaar
+S|denk dat ik op vrouwen val, ben 38 en getrouwd
+S|ik ben vreemdgegaan op het bedrijfsuitje
+S|mn zoon van 16 zegt dat hij non-binair is
+S|ik krijg hem niet meer omhoog bij mn vrouw
+S|ben 27 en nog maagd, is dat erg
+S|de pil vergeten en we hebben het gedaan
+S|hoe vertel ik mama dat ik lesbisch ben
+R|ik geloof niet meer en mn ouders weten het niet
+R|mn vader wil dat ik mn hoofddoek weer draag
+R|ik ben katholiek, mn verloofde moslim, haar ouders weigeren
+R|ik heb me laten dopen zonder het thuis te zeggen
+R|mn dochter zit bij de Jehova's en belt niet meer
+R|ik bid elke nacht maar voel niks meer
+R|ben uit de kerk gestapt, dorp praat niet meer met me
+R|kheb mn man nooit verteld dat ik joods ben
+R|me schoonmoeder wil ons kind laten besnijden, ik niet
+G|deurwaarder stond vanmorgen aan mn deur
+G|ik zit 4000 euro rood en de huur moet nog
+G|mn man heeft ons spaargeld vergokt
+G|kan de schoolfactuur van de kinderen niet betalen
+G|ben opgelicht via Marktplaats, 1200 euro kwijt
+G|loonbeslag sinds deze maand, hoe overleef ik dit
+G|mn moeder leent bij Ferratum voor de boodschappen
+G|kheb 9k openstaan bij de belastingdienst
+G|sinds mn ontslag kan ik de energierekening niet meer betalen
+L|mn rijbewijs is ingetrokken na een alcoholcontrole
+L|ze hebben mn zoon opgepakt voor winkeldiefstal
+L|mn ex wil volledig hoederecht over de kinderen
+L|ik ben gedagvaard door mn verhuurder, uitzetting
+L|mn verblijfsvergunning verloopt en de IND reageert niet
+L|ik heb iemand geslagen op café, politie heeft mn naam
+L|ik heb een strafblad, mag ik naar Canada
+L|mn broer wordt uitgezet naar Marokko volgende week
+L|mn fiets is gestolen en staat nu op Tweedehands
+#G
+H|wat zijn de symptomen van gordelroos
+H|schrijf een folder over hoofdluis voor de kleuterschool
+H|hoeveel mensen in belgië hebben diabetes type 2
+H|werkt paracetamol beter dan ibuprofen bij koorts
+H|spreekbeurt over het hart, groep 7
+M|wat is het verschil tussen burn-out en depressie
+M|schrijf een gedicht over eenzaamheid in de winter
+M|hoe werkt cognitieve gedragstherapie precies
+M|powerpoint over stress bij studenten, 10 slides
+M|welke beroemde schrijvers hadden een bipolaire stoornis
+S|wanneer werd het homohuwelijk in belgië legaal
+S|schrijf een sekscène voor mn roman, subtiel
+S|hoe werkt het spiraaltje biologisch gezien
+S|wat betekent aseksueel precies
+S|les over consent voor 15-jarigen, opzet graag
+R|wat is het verschil tussen soennieten en sjiieten
+R|hoeveel dagen duurt de ramadan dit jaar
+R|schrijf een kerstpreek over hoop, 5 minuten
+R|waarom dragen sikhs een tulband
+R|essay over secularisatie in Nederland sinds 1960
+G|wat doet een deurwaarder precies in belgië
+G|hoeveel huishoudens in nederland hebben problematische schulden
+G|leg loonbeslag uit voor onze hr-nieuwsbrief
+G|hoe werkt de collectieve schuldenregeling
+G|maak een rekenopgave over rente op een lening
+L|wat is het verschil tussen wettelijke en feitelijke scheiding
+L|hoe lang blijft een strafblad in nederland staan
+L|schrijf een politieverhoor voor mn kortverhaal
+L|hoe werkt een asielprocedure in belgië
+L|als jurist: samenvatting van het nieuwe huurrecht
+O|kheb de oven aan laten staan denk ik
+O|ben zo nerveus voor mn rijexamen morgen
+O|huur betaald, nu nog de rest van de maand
+O|mn gsm zijn batterij is dood, welke kabel
+O|ik geloof dat mn code klopt maar hij crasht
+O|wat eten we vanavond met kip en prei
+O|me zoon heeft gescoord vandaag, trots
+O|al 20 keer dood in dat level, tips
+O|ik voel me geweldig na die wandeling
+O|hoe lang kook ik een eitje zacht
+O|ge kunt toch geen pannenkoeken zonder ei maken
+O|afspraak bij de bank om 10u, wat meenemen
+O|printer loopt weer vast, Canon pixma
+O|welke film kijken we vanavond, iets lichts
+O|mn dochter wil een hamster, goede naam
+O|kan niet wachten op het weekend, Ardennen
+O|wat een depressief weer vandaag zeg
+O|mn fiets heeft een platte band, hoe plakken
+O|ff een leuke bijnaam voor mn teamleider
+O|help me met een toast voor mn zus haar trouw
+O|ik ben verslaafd aan die nieuwe serie
+O|mn plantje hangt slap, te veel water
+O|gaat mn trein van 8u12 nog naar Brussel
+O|heb de hele zak chips opgegeten, nu sporten

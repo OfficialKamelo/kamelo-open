@@ -35,6 +35,16 @@
         <svg class="chev" viewBox="0 0 8 14" aria-hidden="true"><path d="m1 1 6 6-6 6"/></svg>
       </button>
     </div>
+
+    <!-- Melo voor Mac (alleen op een Mac, niet in Safari: daar zit de extensie al in de app). Aan = het optionele recht
+         nativeMessaging, en "Vraag Melo" gaat naar de app (src/background.js). -->
+    <div class="pub-list" id="macList" hidden>
+      <label class="pub-row mac">
+        <span class="ico mac"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.8"/><path d="M2.5 19h19"/></svg></span>
+        <span class="txt"><b data-i18n="macTitle"></b><span data-i18n="macSub" id="macSub"></span></span>
+        <span class="switch"><input type="checkbox" id="meloMac"><span class="track"></span></span>
+      </label>
+    </div>
   </div>
 
   <script src="../src/edition.js"></script>

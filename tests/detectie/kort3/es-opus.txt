@@ -1,0 +1,110 @@
+#P
+H|me salió un bulto raro en la axila
+H|mi vieja se hace una colonoscopía el jueves y estoy cagado
+H|llevo tres dias vomitando y no retengo ni agua
+H|el dentista dice q me tiene q sacar 4 muelas
+H|estoy embarazada de 8 semanas y sangro un poco
+H|a mi abuelo le pusieron un marcapasos ayer
+H|me recetaron clonazepam, lo puedo tomar con ibuprofeno?
+H|a mi chamaco le diagnosticaron diabetes tipo 1
+H|me dio positivo el test de clamidia, q hago
+M|no puedo dejar de llorar desde que murió mi perra
+M|llevo un mes sin salir de mi depa
+M|mi hermano no para con la coca, ya van meses
+M|tengo ataques de panico en el metro casi todos los dias
+M|mi hija de 15 vomita a escondidas despues de cenar
+M|el psiquiatra me subió la sertralina a 100
+M|me siento re solo desde que me mudé a Córdoba
+M|llevo 3 noches sin pegar ojo por la ansiedad
+M|vale, lo admito, bebo sola todas las noches
+S|mi novio ya no quiere tener relaciones conmigo
+S|creo q soy bi y no se como decirlo
+S|se nos rompió el condón anoche, q hago
+S|le puse los cuernos a mi esposa con su prima
+S|tengo 34 y nunca he estado con nadie
+S|mi pareja quiere abrir la relacion y yo no
+S|no se me para cuando estoy con mi novia
+S|mi hijo me dijo q es trans, no se q hacer
+S|descubrí q mi marido habla con hombres en Grindr
+R|ya no creo en Dios y mis viejos son pastores
+R|mi novia es judía y mi familia es muy católica
+R|dejé la iglesia y mi mamá ya no me habla
+R|me quiero convertir al islam pero me da miedo
+R|mi hermana se metió en una secta en Medellín
+R|siento culpa por no rezar el rosario con mi abuela
+R|soy testigo de jehova y quiero salirme, ayuda
+R|ayuno en ramadán pero mi jefe no lo entiende
+R|me bautizaron mormona y ahora dudo de todo
+G|debo tres meses de arriendo y el dueño me amenaza
+G|me llegó carta de un cobrador por una deuda vieja
+G|estoy en Dicom y no me dan ni una tarjeta
+G|perdi 200 lucas en apuestas online este finde
+G|me embargaron el sueldo por una deuda con Hacienda
+G|no llego a fin de mes desde q me echaron
+G|me estafaron 3000 euros con una inversion en cripto
+G|pedí un préstamo rápido pa pagar otro préstamo
+G|mi papá tiene la tarjeta al tope y no paga
+L|me detuvieron anoche por manejar borracho
+L|mi ex no me deja ver a mi hija
+L|tengo la visa vencida hace dos años en EEUU
+L|me denunciaron por lesiones tras una pelea en un bar
+L|el casero se quedó con mi fianza, puedo denunciarlo
+L|a mi primo lo agarraron con marihuana en la frontera
+L|me quieren desalojar el mes que viene
+L|firmé el divorcio pero mi marido no paga la pension
+L|tengo antecedentes y me rechazaron en otro trabajo
+#G
+H|cuáles son los síntomas del dengue
+H|explicame la mitosis pa mi examen de bio
+H|redacta un folleto sobre vacunas para una clínica
+H|cuanto dura en promedio una recuperacion de menisco
+H|qué hace el paracetamol en el cuerpo
+M|estadísticas de depresión en adolescentes en España
+M|ideas pa una charla escolar sobre salud mental
+M|qué diferencia hay entre ansiedad y estrés
+M|escribe un poema sobre la soledad en la ciudad
+M|como funciona la terapia cognitivo conductual
+S|resumen de la historia del movimiento LGBT en Argentina
+S|cómo explicar la menstruación en una clase de sexto
+S|cuál es la eficacia de la píldora del día después
+S|guion de una escena romántica pa mi telenovela
+S|que significa ser asexual
+R|diferencias entre sunitas y chiítas, version breve
+R|por qué los católicos no comen carne en cuaresma
+R|ensayo sobre la Inquisición española, 500 palabras
+R|qué significaba la muerte pa los aztecas
+R|cuántos mormones hay en Chile
+G|qué es el Dicom y cómo funciona
+G|explícame el interés compuesto con un ejemplo
+G|cómo calcular la cuota de una hipoteca
+G|cómo se mide la inflación en Argentina
+G|redacta una carta de cobro pa un cliente moroso
+L|qué pena tiene el robo con violencia en México
+L|explicame qué es la prisión preventiva
+L|cómo funciona la custodia compartida en España
+L|resume el caso Pinochet pa historia
+L|qué es el habeas corpus, ejemplo sencillo
+O|mi celu murió a las 3 de la tarde
+O|ya pagué el arriendo, me siento liviano jaja
+O|mañana tengo cita en el banco pa abrir cuenta
+O|estoy nerviosa por la entrevista del lunes
+O|receta de alfajores de maicena pa mi abuela
+O|creo que mi código está bien pero no compila
+O|mi hijo metió su primer gol hoy!!
+O|dejé el horno prendido? no me acuerdo jaja
+O|me muero de ganas de ver la final
+O|mi planta tiene las hojas amarillas, q le pasa
+O|morí 30 veces con el mismo jefe de Elden Ring
+O|q regalo le compro a mi suegra q tiene todo
+O|la impresora de la ofi se atasca siempre
+O|soy adicta a las papas fritas jaja
+O|mi hermana y yo vamos a Cartagena en enero
+O|como quito las pelotitas de un sueter de lana
+O|le tengo fe a mi equipo este año
+O|el wifi se cae cada vez q llueve
+O|como se dice buenos dias en portugues
+O|mi papá cumple 60 y quiero hacerle un asado
+O|me siento genial hoy, salí a correr
+O|cuánto tarda en cargar un auto eléctrico
+O|vos sabés si el subte anda el feriado?
+O|hoy hace un frío q mata, q me pongo

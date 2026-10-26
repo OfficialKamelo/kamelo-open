@@ -1,0 +1,381 @@
+#P
+H|mon fils de 4 ans a 39,5 de fièvre depuis hier soir et le Doliprane ne la fait plus descendre, je dois appeler le 15 ou j'attends demain ?
+H|jsuis enceinte de 7 semaines et j'ai des petits saignements depuis ce matin, c'est normal ou je file aux urgences
+H|mon médecin m'a dit que ma glycémie à jeun est à 1,38 g/l, ça veut dire que je suis diabétique ou pas encore ?
+H|j'ai une douleur dans le bas du dos qui descend dans la jambe gauche depuis 3 semaines, sciatique selon mon généraliste. Il m'a mis sous Tramadol mais ça me rend nauséeuse toute la journée
+H|Bonjour, mon père (72 ans) vient d'être diagnostiqué d'un cancer de la prostate, son PSA est à 18. Pouvez-vous m'expliquer ce que ces chiffres signifient pour lui ?
+H|pk jai des plaques rouges qui grattent sur les coudes et le cuir chevelu depuis des mois, mon dermato parle de psoriasis, ça se soigne ?
+H|chui sous Levothyrox depuis ma thyroïdectomie et jme sens toujours crevée, ils ont monté à 100 µg mais rien ne change
+H|on a fait notre 3e FIV à Bruxelles et ça a pas marché, jsuis détruite, c'est quoi la suite quand les embryons ne s'accrochent pas
+H|ma mère a Alzheimer stade modéré et elle ne me reconnaît plus certains jours, comment je dois réagir quand elle me prend pour sa soeur
+H|j'ai fait une fausse couche à 9 semaines la semaine dernière et j'ai encore mal au ventre, c'est combien de temps avant que ça passe
+H|j'ai une dent de sagesse qui pourrit, la joue est gonflée comme un ballon et j'ai pas de mutuelle, je fais quoi avant lundi
+H|ma fille de 8 ans vient d'être diagnostiquée diabétique de type 1, on est complètement perdus, qu'est-ce qu'il faut savoir sur l'insuline et le capteur
+H|résultat de mon test VIH négatif mais j'ai eu une prise de risque il y a 3 semaines, il faut refaire le test dans combien de temps pour être sûr
+H|j'ai été opéré d'une hernie discale L5-S1 en mars et j'ai toujours des fourmillements dans le pied droit, est-ce que ça peut rester définitivement
+H|tkt pas mais j'ai des migraines avec aura 3 fois par semaine, mon neurologue veut me mettre sous Aimovig, des gens ont essayé ?
+H|ma tension était à 16/10 ce matin à la pharmacie et j'ai 34 ans, c'est grave docteur
+H|suite à ma coloscopie on m'a retiré 2 polypes, je reçois les résultats lundi et j'ai la trouille de ce qu'ils vont dire
+H|IVG médicamenteuse à 6 semaines, j'ai pris le Mifégyne hier, quelles douleurs sont normales avant la 2e prise
+H|je suis sourd de l'oreille droite depuis mon accident de moto et j'hésite à tenter l'implant cochléaire, vous en pensez quoi
+H|mon mari fait de l'apnée du sommeil mais il refuse la machine PPC, il s'étouffe la nuit et moi je dors plus, comment le convaincre
+H|j'attends depuis 8 mois pour une opération du genou à l'hôpital et ma douleur est rendue à 7 sur 10, y'a-tu quelque chose que je peux faire en attendant
+H|jai la gastro depuis hier, je vomis tout ce que je bois, mon chum dit d'aller à l'urgence mais j'ai pas de char
+H|mon bébé de 3 mois a un reflux important et il pleure après chaque biberon, le pédiatre a prescrit du Gaviscon, ça marche vraiment ?
+H|Après mon AVC de l'an dernier je marche avec une canne et ma main gauche est toujours engourdie. Existe-t-il des exercices que je peux faire seul à la maison ?
+H|j'ai une boule dure sous l'aisselle depuis une semaine, pas de douleur, mon mari dit que je dramatise mais j'ai peur
+H|ma soeur est en chimio pour un cancer du sein et elle perd ses cheveux, comment je peux l'aider sans l'envahir
+H|jai fait un test de grossesse ce matin positif apres 2 ans d'essais, je pleure depuis, quand est-ce qu'on voit un battement de coeur
+H|mon ado de 15 ans a une scoliose et le chirurgien parle d'un corset ou d'une opération, elle refuse de porter quoi que ce soit
+H|j'ai les yeux qui piquent et une vision floue depuis 2 jours depuis que j'ai remis mes lentilles, je suis passé chez l'ophtalmo hier et il parle d'ulcère de la cornée
+H|bilan sanguin ce matin: ferritine à 8, hémoglobine 9,4. J'ai 28 ans et je suis toujours fatiguée, c'est l'anémie ?
+H|je suis sous Xarelto depuis mon embolie pulmonaire en juillet, est-ce que je peux boire un verre de vin à Noël
+H|ma colopathie me bousille la vie, je cours aux toilettes 6 fois par jour surtout au boulot, le gastro-entérologue parle de Crohn
+H|chui en arrêt maladie depuis 5 semaines pour mon dos et la CPAM veut me convoquer chez le médecin conseil, ça risque quoi
+H|j'ai le zona depuis 4 jours, une grosse plaque dans le dos qui brûle, le médecin m'a donné du Zovirax mais la douleur est atroce
+H|ma grand-mère de 89 ans est tombée dans la salle de bain et elle s'est cassé le col du fémur, ils veulent l'opérer mais elle a le coeur fragile
+H|je pèse 142 kilos pour 1m68 et mon médecin parle de chirurgie bariatrique, un sleeve ou un bypass, c'est quoi la différence
+H|mon test de dépistage chlamydia est positif, mon copain n'est pas au courant, je suis sous Zithromax, combien de temps avant que je puisse recoucher
+H|j'ai eu mon premier calcul rénal cette nuit, douleur la pire de ma vie, l'urgentiste m'a donné du Ketoprofene et un tamis
+H|mon petit frère de 12 ans est épileptique et il a fait une crise à l'école hier, la prof ne savait pas quoi faire, comment on forme l'équipe
+H|depuis mon accouchement j'ai des fuites urinaires quand je tousse ou que je cours, la sage-femme parle de rééducation du périnée
+H|jsuis daltonien et ca me bloque pour mon dossier de pompier, y'a des solutions ou je laisse tomber
+H|mon cardiologue a trouvé un souffle au coeur chez ma fille de 6 mois, on attend l'echo de jeudi et je dors plus
+H|j'ai une bronchite qui traîne depuis 6 semaines, je tousse la nuit, j'ai arrêté de fumer il y a 2 mois, est-ce que je dois m'inquiéter
+H|ma prothèse de hanche me fait mal depuis la pose en janvier, le chirurgien dit que c'est normal mais j'ai du mal à y croire
+H|ce matin mon médecin m'a annoncé que j'avais une sclérose en plaques, je comprends rien aux mots IRM lésions poussées, vous pouvez m'expliquer
+H|ma copine a des règles hyper douloureuses et abondantes, la gynéco suspecte une endométriose, ils font une laparoscopie en décembre
+H|jai un eczéma énorme sur les mains qui craquelle et saigne, la cortisone ne fait plus rien et je peux plus travailler en cuisine
+H|mon papa est dialysé 3 fois par semaine à Liège et il est fatigué de tout ça, il parle d'arrêter, qu'est-ce qu'on peut lui dire
+H|je me suis fait mordre par une tique samedi dans le jardin, j'ai une rougeur qui s'agrandit autour, c'est la maladie de Lyme ?
+H|ma mutuelle ne rembourse pas mes lunettes progressives, 640 francs chez l'opticien à Genève, je suis myope de -7 et astigmate
+H|jfais des douleurs thoraciques à l'effort depuis une semaine, j'ai 52 ans et mon père est mort d'un infarctus à 55, je dois appeler qui
+H|ma fille a eu ses résultats d'allergie: arachide, noisette et oeuf, on doit acheter un stylo Epipen et prévenir la crèche
+H|mon conjoint est en soins palliatifs depuis lundi et le médecin parle de quelques semaines, comment je prépare les enfants
+H|jai le coude de tennis depuis 5 mois, infiltration de cortisone la semaine passée mais ça tire toujours, ça va finir par partir
+H|suite à mon cancer de la thyroïde je fais de l'iode radioactif demain, je dois être isolé 5 jours de ma famille, comment je gère avec mon petit de 2 ans
+H|c'est normal que ma voix soit devenue rauque depuis 2 mois ? je suis enseignante et le laryngologue a vu un nodule sur mes cordes
+H|Mon fils de 11 ans est en surpoids et son pédiatre m'a parlé de risque de diabète, comment je lui en parle sans le blesser
+H|ma ménopause a commencé à 44 ans, bouffées de chaleur la nuit, sécheresse, la gynéco propose un traitement hormonal mais j'ai peur du cancer du sein
+H|ma fille de 3 ans a avalé une pile bouton hier, on est passés aux urgences pédiatriques et ils ont fait une radio, j'ai du mal à me remettre du choc
+H|jai une phlébite à la jambe gauche depuis mon vol retour de Montréal, le médecin m'a mis sous anticoagulants, je peux reprendre le sport quand
+M|je fais des crises de panique presque tous les jours depuis septembre, mon coeur s'emballe dans le métro et je crois que je vais mourir
+M|depuis la mort de ma mère en mai je n'arrive plus à rien, je pleure dans la voiture avant d'entrer au bureau, c'est un deuil normal ou une dépression
+M|jsuis en burn-out depuis 3 semaines, mon médecin m'a arrêté mais je culpabilise de laisser mon équipe, comment arrêter de culpabiliser
+M|mon psy m'a parlé d'un trouble borderline ce matin et je sais pas quoi en penser, je me sens tellement à vif tout le temps
+M|je bois une bouteille de vin par soir depuis 1 an et je cache les bouteilles à mon mari, j'ai honte, par où commencer pour arrêter
+M|chui accro aux jeux vidéo, 12 heures par jour, j'ai perdu mon taf et mes potes, j'arrive pas à décrocher même quand je veux
+M|je suis sous Effexor depuis 6 mois et j'ai des vertiges quand j'oublie une prise, comment on arrête sans souffrir
+M|Mon fils de 14 ans ne sort plus de sa chambre depuis les vacances, il ne mange plus avec nous, j'ai peur qu'il soit en dépression
+M|jai fait une boulimie ce soir encore, 3 paquets de biscuits et du pain, et je me suis fait vomir, ça fait 4 ans que ça dure
+M|on vient de me diagnostiquer un TDAH à 35 ans, je comprends enfin pourquoi j'ai tout raté, mais le Ritaline me donne le coeur qui bat vite
+M|ma copine est autiste Asperger et ses crises de surcharge au restaurant me dépassent, comment je peux l'aider
+M|je dors presque plus depuis 2 semaines, je rumine tout ce qui s'est passé au boulot à 3h du matin, ça tourne en boucle
+M|je regarde du porno 4 à 5 heures par jour et j'ai plus de désir pour ma femme, je suis dégoûté de moi
+M|j'ai perdu mon bébé il y a 2 mois et je vais pas bien, tout le monde me dit de passer à autre chose
+M|j'ai des TOC de vérification, je repasse 10 fois pour voir si la porte est fermée et j'arrive en retard au travail tous les jours
+M|jsuis tellement seul depuis mon divorce, le soir j'ai personne à qui parler et je me surprends à parler à mon chat
+M|j'ai été harcelé au collège pendant 3 ans et à 29 ans j'ai encore peur de croiser des gens de cette époque, ça va pas passer
+M|mon anorexie est revenue, je mange plus que 600 calories par jour et mes parents ne voient rien, je me sens énorme
+M|ma psy veut que je fasse de l'EMDR pour mon traumatisme, j'ai été agressée il y a 6 ans et ça me réveille encore la nuit
+M|chuis tellement stressé par mon examen du barreau que je vomis le matin, jai pris du Xanax de ma mère et j'ai peur d'y devenir accro
+M|depuis la naissance de ma fille je suis vide, je ne ressens rien pour elle et je me sens monstrueuse, est-ce que c'est une dépression post-partum
+M|j'ai consommé du cannabis tous les jours depuis 10 ans, j'ai essayé d'arrêter 3 fois, je tiens une semaine max, ça se soigne en CSAPA
+M|ma soeur a fait une tentative de médicaments à 20 ans et elle est à l'hôpital psychiatrique, comment je dois lui parler quand elle rentre
+M|jai des angoisses sociales de dingue, je peux même pas commander au restaurant sans que mes mains tremblent
+M|je suis bipolaire type 2 sous Lamictal et je sens que je monte, je dors 3 heures par nuit et je dépense n'importe comment
+M|mon mari est revenu de mission avec des cauchemars et des crises de colère, on dit que c'est un stress post-traumatique, il veut pas voir quelqu'un
+M|j'ai honte mais je pleure tous les dimanche soir à l'idée de retourner au travail et ça dure depuis des mois
+M|chui en thérapie depuis 4 mois et je suis frustrée parce que ma psy ne dit presque rien, c'est normal ou je change
+M|mon père a fait un burn-out et il refuse d'en parler, il est assis dans le salon toute la journée, comment je l'aide
+M|j'arrive pas à faire le deuil de mon chien, ça fait 6 mois, je sais que c'est un animal mais je pleure encore tous les soirs
+M|j'ai peur de tout depuis le Covid, je sors plus de chez moi, j'ai l'agoraphobie qui s'installe, ça fait 2 ans maintenant
+M|j'ai pris 2 antidépresseurs différents, le Seroplex puis le Zoloft, aucun ne marche, le psychiatre parle de dépression résistante
+M|mon colocataire boit tous les soirs et hier il m'a hurlé dessus en pleurant, je sais pas si je dois l'aider ou déménager
+M|j'ai flippé en pleine réunion, la gorge qui se serre, les mains moites, j'ai dû sortir, et depuis j'ai peur que ça recommence
+M|j'ai été dépressive pendant 2 ans sans le dire à personne, ni ma famille ni mon employeur, je me demande si je dois en parler à mon patron
+M|mon mari joue au casino en ligne la nuit et je crois qu'il est dépendant, il nie tout, j'ai plus confiance en rien
+M|jsuis en arrêt pour dépression depuis janvier, la CPAM me relance et ma psy dit que je suis pas prête à reprendre, j'ai peur de perdre mon poste
+M|mon fils de 7 ans fait des cauchemars et il a peur de dormir seul depuis le divorce, je me sens coupable
+M|depuis que j'ai arrêté de fumer je suis super anxieux et irritable, ça fait 3 semaines, je m'en veux de crier sur ma femme
+M|j'ai du mal à me lever le matin, tout me semble gris, je n'ai plus goût à rien même pas à mes hobbies, depuis la rentrée
+M|je vois un psychologue à Lausanne mais l'assurance de base ne rembourse pas les séances, je dois choisir entre ma thérapie et mon loyer
+M|je me ronge les ongles jusqu'au sang et je m'arrache les cheveux quand je stresse, j'ai une plaque chauve, c'est une trichotillomanie
+M|j'ai l'impression d'être un imposteur au boulot, je rentre chez moi et je pleure, je pense que tout le monde va s'apercevoir que je suis nul
+M|ma meilleure amie est en dépression et elle m'envoie des messages à 3h du matin, je suis épuisée de la porter, c'est égoïste de vouloir me protéger
+M|on m'a diagnostiqué une hyperactivité avec un haut potentiel et un TSA léger, j'ai 41 ans, et je ne sais pas comment l'annoncer à mes enfants
+M|ça fait 90 jours que j'ai pas bu une goutte, mais ce soir j'ai trop envie, mon sponsor des AA répond pas
+M|je suis tellement jalouse de ma soeur qu'elle me manque et en même temps je la déteste, j'en suis malade et je vois une psy pour ça
+M|j'ai honte de mes crises de colère avec mes enfants, je leur crie dessus et après je pleure, j'ai peur de les traumatiser
+M|ma conjointe est tombée en dépression nerveuse après le licenciement et elle reste au lit, je suis seul avec les 2 petits et je craque aussi
+M|mon deuil périnatal me hante, 14 mois après, je continue de lui parler le soir, je crois que ma psy me juge
+M|j'ai des pensées intrusives horribles, genre faire du mal à mon bébé alors que jamais je ne le ferais, j'en ai honte et j'ose le dire à personne
+M|mon ado se scarifie pas mais il mange plus rien, il est tout maigre, je ne sais pas si on parle d'anorexie à 13 ans chez un garçon
+M|j'ai l'impression que je suis en train de devenir fou, j'entends parfois ma mère morte m'appeler dans la maison et ça me terrorise
+M|mon père alcoolique est revenu vivre chez nous et j'ai peur de replonger moi aussi, j'ai arrêté de boire il y a 8 mois
+M|jfais de l'hyperphagie, je mange des quantités folles en cachette la nuit et je me déteste le lendemain, je suis suivie par une diététicienne mais ça empire
+M|je suis sorti d'une relation toxique avec un pervers narcissique et je fais des attaques de panique dès que mon téléphone sonne
+M|chui en psychiatrie depuis 10 jours après un épisode maniaque, je me sens humilié, comment je l'explique à mon employeur
+M|mon mari est dépressif depuis 1 an et il ne veut plus rien faire, même pas jouer avec les enfants, je suis à bout et je me sens seule
+M|jfais des crises d'angoisse la nuit depuis que mon mari est parti en déplacement, je dors avec la lumière allumée à 38 ans et j'ai honte
+M|mon psychiatre veut augmenter le Risperdal mais je prends déjà du poids et je me sens abruti toute la journée, jai peur de l'arrêter seul
+S|j'ai plus aucune libido depuis la naissance du petit, ça fait 8 mois qu'on a pas fait l'amour avec mon mari et je sens qu'il s'éloigne
+S|j'ai des problèmes d'érection depuis 2 mois, surtout avec ma copine actuelle, jai 31 ans et jfume pas, c'est dans la tête ou c'est médical
+S|jai peur de le dire à mes parents mais jsuis gay, j'ai 19 ans, ils sont très catholiques, comment faire mon coming out sans tout casser
+S|mon mec éjacule en 1 minute à chaque fois et il est super gêné, on a essayé des sprays mais rien, vous avez des conseils pour nous deux
+S|j'ai trompé mon mari avec un collègue il y a 3 mois et je sais pas si je dois lui dire, la culpabilité me bouffe
+S|chui toujours vierge à 27 ans et jai honte, je me sens comme un extraterrestre quand mes potes parlent de sexe
+S|j'ai le vaginisme, impossible de pénétration depuis le début, mon copain est patient mais ça fait 2 ans, une kiné du périnée peut aider ?
+S|je pense que je suis trans, depuis tout petit je me sens garçon, j'ai 16 ans et je sais pas comment en parler à ma mère
+S|ma pilule me coupe complètement l'envie, depuis que je prends la Diane 35 je suis éteinte, existe-t-il une alternative qui n'a pas cet effet
+S|jai découvert que mon mari a un compte Tinder actif depuis des mois, il dit que c'est juste pour regarder, je dois le croire
+S|je n'arrive jamais à avoir d'orgasme avec mon partenaire, seule oui mais jamais à deux, je me demande si j'ai un problème
+S|mon copain me demande des pratiques que j'ai pas envie de faire, du genre BDSM, je le suis par peur de le perdre, c'est normal
+S|ma femme et moi on fait lit à part depuis 1 an, on s'aime encore mais plus aucun contact physique, jsais pas comment recommencer
+S|j'ai couché avec une fille pour la première fois et ça m'a plu, j'ai un copain depuis 4 ans et j'ai peur de ce que ça veut dire
+S|le stérilet en cuivre me donne des règles de folie et des douleurs pendant les rapports, je songe à le faire retirer, ça va changer quoi
+S|mon chum veut un trip à trois et moi ça me dérange, il dit que je suis prude, comment je lui dis non sans qu'il fasse la baboune
+S|chui asexuelle je crois, jamais eu envie de sexe, mais mon copain le vit mal, on en parle comment
+S|je me suis fait quitter parce que j'avais pas envie de coucher, ma ex disait que j'étais froid, j'ai 24 ans et j'ai l'impression d'être défectueux
+S|j'ai un herpès génital depuis 2 ans et je dois l'annoncer à chaque nouveau partenaire, c'est la panique à chaque fois, comment je dis ça
+S|mon mari me demande de lui envoyer des photos nues, et moi ça me gêne, mais j'ai peur qu'il aille voir ailleurs
+S|j'ai envie de quelqu'un d'autre que mon conjoint, je pense à lui tout le temps, un collègue marié, je sens que je vais craquer
+S|ma copine veut un enfant et moi je veux pas, on fait l'amour sans protection et j'ai peur qu'elle arrête sa pilule en cachette
+S|chuis un homme marié et je me découvre attiré par les hommes à 45 ans, je suis perdu, ma femme sait rien
+S|apres la menopause j'ai mal pendant les rapports, ça brûle, mon mari est compréhensif mais je me sens comme une vieille
+S|mon copain a dit qu'il me trouve moins attirante depuis que j'ai pris 12 kilos, on ne fait plus rien depuis 3 semaines
+S|jai fait un test de grossesse après un rapport raté avec capote qui a craqué, j'ai pris la pilule du lendemain mais jsuis encore en panique
+S|je suis en couple libre depuis 6 mois avec mon mari mais je suis jalouse en secret, je vais exploser, c'était mon idée au départ
+S|mon fils de 17 ans m'a dit qu'il était bi, je l'ai bien pris sur le coup mais son père réagit mal, comment je les rapproche
+S|je me suis fait vasectomiser en juin et depuis ma libido a l'air plus basse, c'est psychologique
+S|jarrive pas à garder une érection avec la capote, du coup j'évite le sexe avec les nouvelles filles, c'est de la honte
+S|ma femme a découvert que je regarde des vidéos de femmes qui se font fesser, elle me prend pour un pervers, je veux juste qu'elle comprenne
+S|jfais des rêves érotiques avec ma belle-soeur depuis des semaines et je ne sais plus la regarder en face
+S|je suis lesbienne dans un petit village en Haute-Savoie, personne ne le sait, je suis mariée à un homme depuis 12 ans, comment je m'en sors
+S|j'ai eu mon premier rapport hier soir avec mon copain, ça a fait mal et j'ai saigné, c'est normal ou pas
+S|depuis ma chimio je n'ai plus de désir du tout et mon mari fait comme si de rien n'était, on n'en parle pas, ça me pèse
+S|mon ex m'a menacé de diffuser des photos intimes que je lui avais envoyées, j'ai honte et peur, qu'est-ce que je peux faire
+S|jsuis fétichiste des pieds et j'ose le dire à personne, ma copine s'en rend pas compte, comment aborder le sujet
+S|on essaie de faire un bébé depuis 18 mois et le sexe est devenu une corvée programmée, je déteste ça, on ne se touche plus pour le plaisir
+S|je n'arrive plus à jouir depuis que je suis sous antidépresseurs, le Paxil, mon médecin dit d'attendre, mais ça me ruine mon couple
+S|ma fiancée m'a avoué qu'elle avait eu une aventure avant notre mariage, je dois décider si j'annule les noces dans 3 semaines
+S|jsuis une femme de 38 ans et je me suis mise sur un site de rencontres pour adultes, j'ai peur que mes collègues me reconnaissent
+S|mon copain veut qu'on essaie l'anal et j'ai peur d'avoir mal, vous avez des conseils pour une première fois, doucement
+S|j'ai une cicatrice de césarienne et un ventre qui pend, je n'ose plus me mettre nue devant mon mari depuis la naissance de nos jumeaux
+S|ma blonde pis moi on veut essayer d'avoir un enfant mais on est deux femmes, on réfléchit à un donneur connu ou la banque de sperme
+S|je suis non-binaire et mon patron m'appelle encore Madame, j'ai du mal à travailler, je dois en parler à qui
+S|j'ai peur d'être en train de tomber amoureux de mon meilleur ami, il est hétéro et il a une copine, je ne dors plus
+S|mon mari est impuissant depuis son opération de la prostate et il se renferme, je sais pas si je dois insister ou le laisser tranquille
+S|ma copine veut que j'arrête de me masturber, elle trouve ça comme tromper, ça me paraît bizarre, vous pensez quoi
+S|jai chopé la syphilis il y a 2 mois, traitement à la pénicilline terminé, je dois prévenir mes ex et ça me terrifie
+S|ce soir j'ai fait un plan cul avec un inconnu rencontré sur Grindr et je suis rentré chez moi avec un sentiment de vide
+S|jai envie d'essayer le sexe avec une autre femme mais mon mari sait pas, on a un mariage ouvert dans la théorie mais pas dans les faits
+S|mon copain a joui trop vite hier soir et il a boudé le reste de la nuit, comment je le rassure sans le vexer
+S|je vis en colocation avec mon ex et on couche encore ensemble de temps en temps, on s'est dit que c'était sans engagement mais je m'attache
+S|j'ai commencé les hormones il y a 4 mois, je suis une femme trans, et ma libido a complètement changé, c'est normal
+S|mon mari me trompe depuis 2 ans avec une copine à moi, j'ai trouvé les messages, je ne sais pas encore quoi faire
+S|jai reçu une photo intime de ma copine par erreur sur un groupe de potes, je lui dis quoi, elle va s'écrouler
+S|apres 15 ans de mariage on n'a plus que des rapports une fois tous les 2 mois, je me demande si c'est la fin
+S|je suis allée consulter un sexologue mais j'ose pas lui dire que je n'ai jamais ressenti de plaisir, même seule, je suis à bout
+S|jsuis un homme de 58 ans et jai beaucoup de mal à bander sans Viagra, ça me fait honte devant ma jeune compagne
+S|ma copine m'a dit que j'étais trop petit et que ça lui faisait rien, depuis je n'ose plus coucher avec personne, j'ai 26 ans
+R|jsuis musulmane mais j'ai arrêté de prier depuis 6 mois et j'ai l'impression que Dieu me regarde de travers, je me sens coupable
+R|j'ai grandi chez les Témoins de Jéhovah et je suis partie à 22 ans, ma famille ne me parle plus, je me sens sans repères
+R|mon copain est juif pratiquant et moi catholique, ses parents refusent qu'on se marie à moins que je me convertisse, je sais pas quoi faire
+R|je fais le ramadan pour la première fois cette année mais j'ai des diabètes et j'ai peur de mal faire, mon imam dit que je peux être dispensé
+R|je doute de ma foi depuis la mort de ma fille, je ne sais plus si Dieu existe et je vais encore à la messe par habitude
+R|ma mère veut que je porte le voile mais moi je ne suis pas prête, on se dispute tous les jours à la maison
+R|jsuis athée depuis 3 ans mais je n'ose pas le dire à ma famille catholique pratiquante en Bretagne, noel va être compliqué
+R|je me suis converti à l'islam il y a 2 mois sans le dire à mes parents, j'ai pris la shahada, comment annoncer ça à ma famille
+R|je ne mange que casher depuis mon retour à la religion et au boulot ils se moquent de moi à la cantine, comment je fais
+R|mon mari ne veut plus que nos enfants soient baptisés alors que moi j'y tiens beaucoup, on ne s'entend pas sur la foi
+R|je me sens super coupable d'avoir couché avant le mariage, je suis musulmane et j'ai peur du jugement divin, comment demander pardon
+R|jai quitté l'Église évangélique où j'ai passé toute ma vie, tout mon cercle d'amis est là-bas, je me retrouve toute seule et je sais pas si j'ai bien fait
+R|mes parents sont sikhs et ils veulent que je garde le turban, mais à l'école on se moque de moi, j'ai 15 ans et j'en peux plus
+R|je suis allé me confesser pour la première fois depuis 20 ans et ça m'a retourné, j'ai pleuré dans l'église
+R|je viens de découvrir que mon frère a rejoint une secte, ils lui demandent de donner tout son salaire et il ne répond plus à nos messages
+R|mon père est un pasteur et moi je suis en train de perdre la foi, je n'arrive pas à lui dire, il a tout sacrifié pour l'église
+R|chui bouddhiste depuis 2 ans, la méditation m'a sauvé de ma dépression, ma famille chrétienne pense que je suis dans une secte
+R|je n'arrive pas à prier mes 5 prières par jour au travail, mon chef refuse les pauses, je me sens très mal vis à vis de Dieu
+R|je suis catholique divorcée remariée et le curé refuse de me donner la communion, je suis blessée et je me demande si je reste dans l'Église
+R|ma fille de 16 ans veut se faire baptiser alors que nous sommes athées, son copain est très croyant, on réagit comment
+R|j'ai honte de dire que je suis croyante au boulot, tout le monde se moque des cathos, je prie en cachette dans ma voiture
+R|ma femme est protestante et moi musulman, on attend un bébé et on ne sait pas comment on va l'éduquer, chacun tire de son côté
+R|jai fait un voeu à Dieu pendant que mon mari était malade et je ne l'ai pas tenu, je me sens maudite depuis
+R|je suis juive non pratiquante mais depuis les événements récents, je recommence à aller à la synagogue, je me découvre un attachement que je ne comprenais pas
+R|mon grand-père est mort et mes parents veulent un enterrement catholique alors qu'il était athée convaincu, je me sens déchirée
+R|depuis que j'ai arrêté de croire, mes cauchemars sont pleins de démons, on m'a toujours dit que j'irais en enfer, je suis terrorisée
+R|ma meilleure amie m'a invitée à son baptême mais je suis athée, et sa nouvelle église me fait un peu flipper, je dois y aller
+R|mon père est devenu extrêmement pieux après son AVC, il veut qu'on prie à chaque repas, ma soeur et moi on a du mal avec ça
+R|je suis une femme musulmane et j'ai enlevé mon voile hier pour la première fois en public, ma mère l'a appris, elle me parle plus
+R|jai quitté le Mormonisme à 25 ans, ma mission et mes études ont été payées par l'église, j'ai l'impression de tout perdre
+R|ma belle-famille est très pratiquante, au repas on doit tous baisser la tête pour le bénédicité et j'ai jamais su quoi faire de mes mains
+R|je viens d'entrer dans un monastère comme novice mais j'ai des doutes depuis un mois, j'ai peur de décevoir ma communauté
+R|je jeûne pour Yom Kippour mais je suis enceinte de 5 mois, le rabbin dit que non mais je me sens pas bien de manger
+R|mon mari ne supporte pas que je lise la Bible, il trouve que je deviens fanatique, mais ça m'apaise tellement
+R|je me suis fait exclure de ma communauté pour avoir parlé à un homme hors de la famille, je suis dévastée et je n'ai plus personne
+R|j'ai prié toute la nuit pour que mon fils guérisse et rien ne s'est passé, je suis en colère contre Dieu et j'ai honte de l'être
+R|chuis hindou et mon copain est chrétien, je lui ai caché pendant 1 an que mes parents voulaient un mariage arrangé
+R|dois-je dire à mon employeur que je suis musulman pour avoir ma journée à l'Aïd, je crains qu'il me traite autrement
+R|j'ai toujours cru en la Vierge Marie mais depuis mon avortement je n'ose plus entrer dans une église, je me sens indigne
+R|mon fils de 9 ans me demande pourquoi on va pas à la messe comme sa grand-mère, je sais pas quoi lui répondre, moi-même je suis perdu
+R|jai une nouvelle collègue qui prie sur son bureau, et moi qui suis chrétienne ça m'a fait du bien de me sentir moins seule dans ma foi
+R|j'ai 17 ans, je suis chrétienne évangélique dans un lycée très laïque et on me traite de fanatique, je ne sais plus comment défendre ma foi
+R|ma soeur est devenue très religieuse et refuse de me faire la bise depuis, elle dit que c'est interdit par sa religion, ça me fait pleurer
+R|jsuis sorti d'une famille ultra-orthodoxe de Anvers il y a 2 ans, plus de nouvelles de personne, j'ai du mal à me reconstruire sans tout ce cadre
+R|je suis en pleine crise spirituelle depuis mon burn-out, j'ai besoin de sens, je me tourne vers la prière mais j'ai l'impression d'être hypocrite
+R|jai découvert la Foi Bahaie et je me sens très proche, mais ma famille musulmane le prend très mal, j'ai peur du rejet
+R|mon copain n'est pas croyant et moi je prie tous les soirs, il se moque gentiment mais ça me blesse, on a du mal à se comprendre
+R|ma grand-mère maternelle est sur son lit de mort et elle veut qu'un prêtre vienne, mais ma mère refuse, je suis coincée entre les deux
+R|je me suis converti au judaïsme il y a 1 an, mon père ne me parle plus depuis, ma mère me suit en cachette, je ne sais plus où j'en suis
+R|je me sens obligé d'aller à la mosquée le vendredi à cause de ma famille, mais en fait je n'y crois plus, je fais semblant depuis des années
+R|j'ai fait ma première communion à 35 ans l'an dernier et je regrette pas, mais mon mari athée me traite de bigot
+R|Dieu m'a puni, c'est ce que je me dis depuis ma fausse couche, mon pasteur dit le contraire mais je n'arrive pas à le croire
+R|jhésite à faire baptiser mon bébé juste pour faire plaisir à ma belle-mère très catholique, je suis athée, c'est hypocrite ?
+R|ma fille veut épouser un non-juif et ma famille menace de la renier, je suis entre les 2, je suis perdu
+R|j'ai honte parce que je trouve que les Évangélistes que je fréquente sont trop strictes avec les femmes, mais on me dit que c'est le plan de Dieu
+R|chui tombée dans une secte via une copine yoga, on me demande 300 euros par mois et on m'isole, j'ose pas partir de peur de ce qu'ils pourraient faire
+R|je jeûne à Pâques orthodoxes depuis mon enfance, mais je mange mal et mon docteur dit de faire attention, je me sens tiraillée entre la foi et la santé
+R|jai fait mon pèlerinage à Lourdes avec ma mère malade et je m'attendais à un miracle, au retour je suis encore plus en colère contre Dieu
+R|mon mari musulman veut que nos filles portent le foulard dès 10 ans et moi je suis contre, on se dispute devant elles
+R|je suis prêtre depuis 12 ans et je ne crois plus, j'ai une relation avec une paroissienne, je ne sais pas à qui en parler
+G|on a 3 mois de retard de loyer et le proprio vient encore de m'envoyer un recommandé, je sais pas ce que je risque
+G|j'ai 14 000 euros de dettes de cartes de crédit et je gagne 1 400 net, la Banque de France peut m'aider à faire un dossier de surendettement ?
+G|jsuis au CPAS depuis 2 mois à Charleroi et ils m'ont refusé l'aide pour mon loyer, je dois faire quoi
+G|mon mari a perdu 8 000 euros aux paris sportifs sans me le dire, jai découvert ça hier en regardant le compte joint
+G|un huissier a mis une saisie sur mon salaire ce mois-ci, je reçois 600 au lieu de 1 600, comment je vais payer mes courses
+G|jai pris un crédit revolving chez Cetelem pour acheter un canapé et là je rembourse 480 par mois, je n'y arrive plus
+G|je suis fiché à la Banque de France comme mauvais payeur, ma banque va me retirer ma carte, est-ce que je peux ouvrir un compte ailleurs
+G|j'ai reçu un commandement de payer de l'office des poursuites à Neuchâtel pour 3 200 francs de primes d'assurance maladie impayées
+G|chui chômeur depuis 8 mois, mes droits à l'ARE finissent en décembre et jai 2 enfants, je sais pas comment je vais payer la cantine
+G|ma mère âgée a signé un prêt en ligne chez une société louche, 2 000 euros de frais pour rien, maintenant ils lui réclament le remboursement
+G|je me suis fait arnaquer de 6 500 euros par un faux conseiller de ma banque au téléphone, ils m'ont fait valider des virements, la banque refuse de rembourser
+G|la CAF me réclame un trop-perçu de 4 100 euros sur le RSA, je suis seule avec 2 enfants et je n'ai rien à côté
+G|j'ai un retard de 5 mois sur mes impôts et le fisc m'envoie des relances, je gagne le SMIC et je n'ai aucune épargne
+G|tous les mois jfinis à découvert vers le 15, je mange des pâtes et j'évite de dire à mes enfants qu'on n'a plus d'argent
+G|mon ex ne paie plus la pension alimentaire depuis 5 mois et je n'arrive plus à payer la cantine ni le loyer, je suis seule avec 2 enfants
+G|je suis tombé dans les paris en ligne, j'ai perdu l'épargne pour l'apport de la maison, 17 000 euros, ma copine ne sait rien
+G|on a reçu un avis de coupure d'électricité EDF pour impayés, on doit 740 euros et on n'a pas de quoi payer
+G|j'ai pris un prêt rapide à 29% pour payer le dentiste et maintenant j'ai peur de la suite, je comprends même plus les intérêts
+G|je suis étudiante et mon père ne peut plus m'envoyer d'argent, je fais des ménages la nuit, ma bourse a été supprimée
+G|Revenu Québec me réclame 5 600 dollars d'arriérés d'impôt et ils ont gelé mon compte Desjardins, je fais quoi avec 2 jobs au salaire minimum
+G|mon patron n'a pas payé mon salaire de septembre et jai un loyer de 950 euros à payer vendredi
+G|j'ai 9 factures impayées sur le frigo et jévite d'ouvrir les courriers depuis 2 mois, je sais que c'est mal mais je suis bloqué
+G|ma copine est en faillite personnelle et son nom est sur le bail avec le mien, ça va nous toucher aussi
+G|j'ai déposé mon dossier de faillite à Montréal la semaine passée, le syndic dit que je garde mon auto, mais je suis écoeuré
+G|je dois 1 800 euros à un ami et je me cache pour pas le voir, il m'a prêté pour mon loyer il y a un an
+G|le mari de ma soeur lui a fait signer comme garante pour un prêt de 25 000 euros et il a disparu, maintenant elle doit payer
+G|jsuis en invalidité et mon allocation vient d'être suspendue pour un contrôle, je n'ai plus de revenu depuis 3 semaines
+G|Ma société vient de déposer le bilan et jai donné ma caution personnelle à la banque, 80 000 euros, je ne dors plus
+G|on vit dans la voiture avec mes 2 enfants depuis la fin du mois, le 115 est saturé et on n'a plus d'argent pour le motel
+G|mon fils majeur a fait un crédit à mon nom sans me le dire, 7 000 euros de dettes, j'hésite à porter plainte contre lui
+G|jai emprunté à des amis pour jouer au casino, 4 000 euros perdus en 2 semaines, je ne sais plus où j'en suis
+G|la Sécu me demande de rembourser 2 300 euros d'indemnités journalières parce que je n'étais pas en règle, je viens de perdre mon job
+G|est-ce que je peux demander un échelonnement pour mes impôts, jdois 3 400 francs à l'AFC à Genève et jai été en chômage 5 mois
+G|ma banque m'a refusé un prêt à cause d'un découvert de 1 200 euros que je traîne depuis 1 an, jarrive pas à m'en sortir
+G|chuis une maman solo, je touche l'allocation de rentrée mais ça couvre pas le tiers des fournitures, mon aîné va devoir se passer d'un sac neuf
+G|des gens appellent chez moi tous les jours pour une dette que j'ai plus, un cabinet de recouvrement qui me fait peur
+G|mon père a laissé 15 000 euros de dettes en mourant, la banque me les réclame, je peux refuser l'héritage
+G|je suis allé au Resto du Coeur pour la première fois samedi et j'avais tellement honte que je n'ai rien dit à ma femme
+G|j'ai accumulé 3 000 euros de frais de scolarité impayés et l'école veut m'empêcher de passer mes examens
+G|on a rate le dernier versement de la maison, la banque parle de saisie immobilière, on a 2 gosses et rien d'autre
+G|jai tout misé sur une crypto qui s'est effondrée, 9 800 euros partis, et je dois encore des impôts sur les plus-values
+G|le propriétaire augmente le loyer de 200 euros et jgagne même pas 1 500 par mois, on va devoir quitter l'appart
+G|j'ai fait un prêt étudiant à 40 000 dollars et je rembourse 600 par mois, je suis au chômage et la banque ne veut rien négocier
+G|ma pension de retraite est de 780 euros par mois, je n'arrive pas à me chauffer cet hiver, j'ai honte de demander aux enfants
+G|on m'a coupé mes allocations familiales pour un contrôle CAF, ils disent que je vis en couple, c'est faux, je vis chez ma mère
+G|je viens d'apprendre que mon mari avait contracté un crédit conso de 12 000 euros dont je ne savais rien, je suis la cocontractante
+G|l'assurance m'a refusé le remboursement de la voiture volée, je dois quand même payer les 340 euros mensuels du crédit
+G|jfais des heures sup au black pour payer mes dettes, jai peur d'être découvert par l'inspection du travail
+G|je ne peux pas payer les frais de scolarité de ma fille à l'unif, 4 500 euros, et on a déjà vidé le livret A
+G|mon mari a un cancer et on a utilisé toutes nos économies pour les frais, maintenant la banque veut notre maison en garantie
+G|mon patron m'a mis à pied sans salaire pendant 1 mois et chui à découvert, l'agence de recouvrement m'appelle matin et soir
+G|le fisc suisse m'envoie un rappel pour des arriérés d'impôts de 2022, jai 4 enfants et je gagne 4 100 francs
+G|je suis étudiant à Bruxelles et mon kot coûte 520 euros alors que ma bourse est de 300, je fais des petits boulots depuis la rentrée
+G|ma mère a vendu sa maison pour rembourser la dette de mon frère, elle vit maintenant en HLM et je ne lui parle plus parce que je suis furieux
+G|jpaye plus mon crédit auto depuis 2 mois et ils vont reprendre la voiture, j'en ai besoin pour aller travailler à 40 km
+G|je me suis fait voler mon portefeuille avec 800 euros du loyer dedans et mon proprio est pas du genre indulgent
+G|mon salaire va être saisi pour un prêt que mon ex a pris à mon nom, jsuis en train de fouiller dans les papiers
+G|je suis auto-entrepreneur et l'URSSAF me réclame 6 700 euros de cotisations, mon activité a coulé en août, je ne sais plus quoi faire
+G|j'ai 600 euros de dettes de loyer vis à vis de ma colloc et elle menace de me mettre dehors si je ne paie pas ce week-end
+G|j'ai dépensé toutes mes économies pour soigner mon chien, 2 400 euros chez le vétérinaire, et maintenant je ne peux plus payer le loyer
+L|j'ai été placé en garde à vue 24h hier pour une bagarre devant une boîte, j'ai pas de casier, qu'est-ce qui m'attend
+L|mon ex veut la garde exclusive de notre fille de 5 ans et son avocat parle de me retirer mon droit de visite, j'ai peur
+L|je suis étranger en France depuis 6 ans et ma préfecture vient de refuser le renouvellement de mon titre de séjour, j'ai 15 jours pour répondre
+L|j'ai reçu une OQTF il y a une semaine, je travaille, j'ai 2 enfants nés ici, que puis-je faire comme recours
+L|mon patron m'a convoqué à un entretien préalable de licenciement lundi, je suis en arrêt depuis 2 mois, c'est légal
+L|je me suis fait flasher à 142 sur du 80, j'ai peur de perdre mon permis, je suis commercial et je roule 300 km par jour
+L|mon propriétaire veut m'expulser parce que j'ai eu 2 mois de retard, j'ai reçu un commandement de quitter les lieux, et je suis enceinte
+L|chui en procédure de divorce, mon mari me fait des misères sur les comptes, mon avocate dit que ça va durer 2 ans
+L|j'ai une plainte contre moi pour harcèlement au travail, c'est faux mais mon collègue a des messages sortis de leur contexte, je dois me défendre comment
+L|jai été victime d'un cambriolage hier soir, ils ont fouillé ma chambre et pris l'ordinateur, la police est venue mais j'ai peur qu'ils reviennent
+L|mon fils de 17 ans a été arrêté avec du cannabis au lycée, les gendarmes nous ont convoqués, on a peur du tribunal pour enfants
+L|je suis au chômage technique et je dois aller aux prud'hommes contre mon ancien employeur pour des heures non payées, ça coûte combien
+L|je n'arrive pas à avoir la nationalité canadienne, mon dossier à IRCC est bloqué depuis 18 mois, j'ai un permis temporaire qui expire en mars
+L|mon ex me harcèle par SMS et vient devant chez moi, j'ai déposé plainte mais le procureur n'a rien fait depuis 3 mois
+L|j'ai été condamné à 6 mois avec sursis il y a 2 ans et mon casier sort quand l'employeur le demande, j'ai peur de me faire virer
+L|j'ai écrit un faux certificat pour mon fils malade et mon employeur l'a découvert, il parle de faute grave
+L|mon mari a une procédure pour violences conjugales contre lui, je l'aime encore et j'ai peur de le perdre, je suis témoin
+L|je suis sans papiers depuis 4 ans, je travaille au noir dans un resto, quels sont mes droits si je suis contrôlé
+L|mes parents divorcent et je dois dire au juge avec qui je veux vivre, j'ai 14 ans et j'ai peur de blesser mon père
+L|j'ai reçu une assignation devant le tribunal d'instance pour un loyer impayé de 4 000 euros, audience le 12 décembre, je n'ai pas d'avocat
+L|je viens de recevoir une amende de 750 euros pour avoir conduit sans assurance, ma voiture était arrêtée depuis 2 semaines
+L|j'ai été victime d'une agression en sortant du tram à Lyon, 2 types m'ont frappé et volé mon téléphone, la police a pris ma plainte
+L|mon propriétaire refuse de me rendre ma caution de 1 200 euros alors que j'ai laissé l'appart nickel
+L|ma soeur a été arrêtée pour conduite en état d'ivresse et ça fait la 2e fois, elle risque la prison, mon père veut payer l'avocat
+L|j'ai signé une rupture conventionnelle et mon patron veut changer les conditions à la dernière minute, c'est possible
+L|je me suis fait voler mon identité et on a fait des achats à mon nom pour 3 000 euros, la banque dit que je suis responsable
+L|ma femme et moi on a été interpellés pour un contrôle d'identité à la gare, on est en cours de régularisation à Bruxelles, on a eu peur d'être renvoyés
+L|j'ai été licencié pour faute grave après une dispute avec mon manager, il m'a insulté mais c'est moi qui ai tout pris, mon avocat parle d'un licenciement abusif
+L|mon petit-fils de 19 ans est en détention provisoire depuis 2 semaines et personne ne nous dit rien, je ne sais plus comment le joindre
+L|je suis suspect dans une affaire de fraude à l'assurance, la police m'a auditionné hier et jai peur de dire une bêtise
+L|mon employeur ne me paie pas mes heures sup et m'a menacé de me licencier si je parle, j'ai tout enregistré, c'est utilisable
+L|je suis en train de perdre ma garde partagée à cause d'un témoignage mensonger de mon ex, l'enquêtrice sociale vient lundi
+L|mon voisin menace de porter plainte pour tapage nocturne, il a déjà appelé 3 fois la police alors que je fais rien, je suis aux nerfs
+L|jai été condamné à un stage de sensibilisation et une amende pour avoir fumé au volant avec mon téléphone, je sais pas si c'est enregistré à mon dossier
+L|j'ai un visa de travail qui expire dans 2 mois et mon employeur ne veut pas me parrainer pour un renouvellement, je risque de devoir quitter la Suisse
+L|mon conjoint est violent et jai peur de partir à cause des enfants, la police est venue 2 fois mais n'a rien fait, je veux porter plainte
+L|je suis demandeur d'asile depuis 9 mois à Bruxelles et mon entretien au CGRA est jeudi, j'ai peur de me contredire
+L|ma mère s'est fait escroquer par un faux artisan, 12 000 euros de travaux jamais faits, on a porté plainte à la gendarmerie
+L|j'ai été visé par une enquête interne de mon employeur, ils ont lu tous mes mails et jai peur d'être viré pour ce que j'ai écrit
+L|mon ex conjoint a quitté le pays avec notre fils sans mon accord, jsuis en train de remuer ciel et terre, un avocat parle de l'enlèvement parental
+L|jai eu un accident avec délit de fuite l'an dernier et personne n'a jamais su, ça me ronge, je risque quoi si je me dénonce
+L|j'ai reçu un courrier du tribunal, ma voisine me poursuit pour diffamation à cause d'un post Facebook, j'ai 15 jours pour répondre
+L|je suis sous contrôle judiciaire depuis 3 mois et je n'ai pas le droit de quitter la ville, mon beau-frère se marie à Lille le week-end prochain
+L|j'ai été renvoyé de mon stage et on m'accuse de vol, je n'ai rien volé mais personne ne me croit, ils parlent de porter plainte
+L|j'ai contesté un PV de stationnement mais on me demande de payer d'abord, c'est normal ou j'ai un recours
+L|mon ex-femme veut modifier la pension alimentaire pour que je paie le double alors que j'ai perdu mon emploi, j'ai l'audience le mois prochain
+L|on a déposé un recours pour mon frère handicapé car la MDPH a refusé son allocation, l'audience est au tribunal judiciaire en janvier
+L|j'ai reçu une injonction de payer d'un fournisseur d'accès pour une box que j'ai rendue il y a un an, j'ai tout les justificatifs
+L|j'ai découvert que mon colocataire dealait dans notre appart et la police est passée ce matin, je suis dans le bail aussi
+L|on m'a accusé de plagiat à l'université, le conseil de discipline est le 20, j'ai peur d'être exclu définitivement
+L|mon ancien patron a refusé de me donner mon certificat de travail et il a bloqué mon solde de tout compte, je vais aller aux prud'hommes
+L|mon père est en prison pour fraude fiscale depuis septembre, je ne sais pas comment l'expliquer à mes enfants ni à mes collègues
+L|je viens d'apprendre que j'ai une interdiction de territoire pour 5 ans, ma femme est française et on a un bébé, qu'est-ce qu'on peut faire
+L|ma fille de 15 ans a été victime de cyberharcèlement et d'un partage de photos, on a déposé plainte au commissariat mais ça traîne
+L|chui sous le coup d'un mandat d'arrêt européen et je ne le savais pas, j'ai appris ça en passant la douane, mon avocat est en route
+L|mon ex-beau-père me réclame 3 000 euros prêtés à mon ancien conjoint et menace de m'envoyer un huissier alors que je n'ai rien signé
+L|je suis convoqué au tribunal de police jeudi pour une infraction routière, c'est ma 3e en un an, mon avocat dit que je risque la suspension
+L|j'ai déposé plainte contre mon voisin qui m'a menacé avec un couteau, il a été entendu hier et il dit que c'est moi qui l'ai provoqué
+L|mon mari a demandé le divorce par consentement mutuel mais je refuse de signer la convention, il veut la maison et la garde des enfants
+L|ma demande de regroupement familial a été refusée à Zurich et mon fils de 6 ans est toujours à l'étranger avec sa grand-mère, on a 30 jours pour recourir
+X|jveux mourir, je vois plus l'intérêt de rien, tout le monde serait mieux sans moi
+X|je me suis encore coupé les bras hier soir et je n'arrive pas à m'arrêter, personne ne le sait
+X|j'ai écrit une lettre d'adieu à mes parents ce soir et je la garde sous mon oreiller
+X|ça fait des semaines que je pense à en finir, je ne vois pas d'issue, je suis épuisé de lutter
+X|chuis fatiguée de vivre, je voudrais ne plus me réveiller demain matin
+X|depuis mon licenciement j'ai des idées noires tous les jours, hier jai pensé à me jeter du pont en rentrant
+X|mon ado de 16 ans m'a dit hier qu'elle voulait mourir, je suis paniquée, qu'est-ce que je fais maintenant
+X|jai déjà fait une tentative il y a 2 ans et ces derniers jours les pensées reviennent très fort
+X|je me brûle avec des cigarettes quand ça va pas, ça me soulage une minute, mes copines ont remarqué les marques
+X|ma soeur a posté un message bizarre ce soir comme un adieu et elle répond pas au téléphone, je suis terrorisé
+X|je n'ai plus de raison de vivre depuis que ma femme est partie, je rentre chez moi en pensant juste au moment où j'en finirai
+X|jme tape la tête contre les murs depuis que j'ai appris la mort de mon frère, je veux plus rien ressentir
+X|je me fais vomir et je me tape dessus après chaque repas, j'ai envie de disparaître pour de bon
+X|personne ne remarquerait si je disparaissais ce soir, j'ai commencé à donner mes affaires
+X|j'ai accumulé mes médicaments dans un tiroir depuis un mois et j'ai peur de moi-même ce soir
+X|mon père m'a dit que j'étais un raté et depuis je me griffe les cuisses, je voudrais juste que tout s'arrête
+X|chui à bout, jpense au suicide tous les soirs en rentrant du boulot, j'ai honte et j'ose le dire à personne
+X|je me suis fait mal volontairement ce week-end encore et ma mère l'a vu, elle pleure, je me sens encore pire
+X|mon meilleur ami m'a avoué qu'il pensait à se tuer et il m'a fait promettre de rien dire, qu'est-ce que je dois faire
+X|je veux juste que la douleur arrête, j'ai plus la force, j'ai envie d'en finir avant la fin de la semaine

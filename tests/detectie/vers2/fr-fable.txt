@@ -1,0 +1,110 @@
+#P
+H|chui a Montréal, ma blonde a passé une écho hier pis le médecin a vu un kyste de 4 cm sur l'ovaire gauche. ça veut dire quoi concrètement
+H|Bonjour, j'ai 58 ans, je vis à Fribourg et ma caisse maladie vient de rembourser ma coloscopie : ils ont trouvé trois polypes. Est-ce que je dois m'inquiéter avant le rendez-vous du 3 novembre ?
+H|mon ptit frere de 14 ans a des plaques rouges qui pelent sur les coudes depuis 2 mois, maman dit que c du psoriasis comme papy, ca se soigne ou c pour la vie
+H|jai arrêté le Levothyrox pendant 3 semaines sans le dire à mon endocrino pk j'en avais marre, maintenant je dors tout le temps et jai pris 4 kilos. je fais quoi
+H|Ma femme fait des fausses couches à répétition, trois depuis 2024, la dernière à 11 semaines au CHU de Liège. On nous parle d'un bilan de thrombophilie. Vous pouvez m'expliquer ce qu'ils cherchent ?
+H|mon dentiste a Sion veut m'enlever les 4 dents de sagesse en meme temps sous narcose, jai une peur bleue de l'anesthesie, c vraiment necessaire d'enlever les 4
+H|depuis mon accident de scooter à Nouméa j'ai une plaque dans le tibia et ça me lance dès qu'il fait froid, c'est normal 2 ans après ?
+H|Résultat de mon test VIH négatif mais la chlamydia est positive. Le planning familial m'a donné de l'azithromycine. Est-ce que je dois prévenir le gars de la semaine passée ?
+H|ma mère a 71 ans et elle a oublié deux fois de fermer le gaz ce mois-ci, son neurologue à Tours parle d'un début d'Alzheimer. on fait quoi en premier
+M|jai fait une crise de panique dans le métro ligne 13 ce matin, jai cru que je mourais, c la 3e fois ce mois. chui pas fou hein ?
+M|Ma fille de 16 ans ne mange presque plus rien depuis la rentrée au cégep, elle pèse 44 kilos. Elle dit que tout va bien. Comment on aborde ça sans la braquer ?
+M|mon copain joue à Valorant jusqu'à 5h du mat tous les jours depuis qu'il a perdu sa job, il me parle plus. c'est une addiction ou je dramatise
+M|voilà, mon père est décédé en mars et je n'arrive toujours pas à ouvrir la porte de son atelier. tout le monde dit que ça passe. ça fait 7 mois.
+M|Je suis infirmier de nuit aux HUG et depuis six mois je pleure dans ma voiture avant chaque garde. Mon médecin parle de burnout mais j'ai peur d'être mis en arrêt.
+M|tkt c pas grave mais genre jai pris de la 3-MMC trois weekends de suite avec des potes a Lille et la jarrive plus a dire non, jme sens nul le lundi
+M|ma coloc en kot à Louvain-la-Neuve dort plus, elle se ronge les ongles jusqu'au sang et dit que ses parents vont la tuer si elle rate son année. jfais quoi
+M|j'ai eu mon diagnostic de TDAH à 34 ans la semaine dernière et je me sens à la fois soulagée et en colère contre toutes les années perdues. c'est normal ce mélange ?
+M|Mon mari boit une bouteille de rouge chaque soir depuis le licenciement chez Michelin. Il dit que c'est pour dormir. Comment je lui en parle sans que ça finisse en engueulade
+S|ok jai 29 ans et jai jamais couché avec personne, jai honte de le dire à la fille que je fréquente, jlui dis ou pas
+S|Ma femme et moi n'avons plus fait l'amour depuis la naissance de notre deuxième, ça fait quatorze mois. Elle dit qu'elle n'a plus aucune envie. Est-ce que c'est hormonal ?
+S|mon chum veut qu'on essaye le libertinage, moi ça me tente pas pantoute mais jai peur qu'il aille voir ailleurs si je dis non
+S|je crois que je suis bi et je l'ai dit à ma sœur hier, elle a rigolé en disant que c'est une phase. je sais plus quoi penser
+S|jai 52 ans et depuis un an ca marche plus bien au lit, le Cialis marche mais ma copine dit que c dans la tete. qui a raison
+S|jai trompé mon mec avec son meilleur pote pendant son stage à Genève, ça fait 2 mois, il se doute de rien. jlui dis ou je ferme ma gueule
+S|Mon fils de 15 ans m'a dit qu'il se sentait fille depuis toujours et veut qu'on l'appelle Lina à la maison. Je l'aime mais je suis complètement perdue, par où je commence ?
+S|jsuis sous Desogestrel et jai des saignements entre les règles depuis 3 cycles, c la pilule ou autre chose ? jose pas en parler à mon gynéco qui est l'ami de mon père
+S|chui mariée depuis 12 ans et j'ai jamais eu d'orgasme avec mon mari, uniquement seule. j'ai l'impression que c'est trop tard pour en parler
+R|jsuis née musulmane à Molenbeek et ça fait 2 ans que je prie plus, je fais semblant pendant le ramadan pour mes parents. jme sens hypocrite
+R|Mon fiancé est juif pratiquant et je suis catholique, sa mère refuse de venir au mariage si je ne me convertis pas. Je ne sais pas si je peux faire ça juste pour elle.
+R|mon frère a rejoint un groupe à Sherbrooke qui dit que la fin du monde arrive en 2027, il a vendu son char et donné l'argent au pasteur. c'est une secte ça non
+R|jai arrete de porter le voile il y a un mois et ma mere me parle plus, mon pere dit que je deshonore la famille. jme sens coupable envers Dieu aussi
+R|Je suis pasteur évangélique à Neuchâtel depuis 19 ans et depuis cet hiver je ne crois plus en rien. Je continue à prêcher chaque dimanche. Comment on sort de ça ?
+R|ma femme veut baptiser le petit et moi je suis athée, ses parents mettent la pression, on s'engueule chaque dimanche. jcède ou jtiens
+R|je fais le ramadan en cachette de mon copain qui est anticlérical, je mange rien au boulot et je dis que c'est un régime. jai honte de me cacher
+R|Depuis que mon fils est mort je suis en colère contre Dieu, je n'arrive plus à entrer dans l'église de Saint-Brieuc où on l'a enterré. Est-ce que c'est un péché de ressentir ça ?
+R|mes parents témoins de Jéhovah veulent plus me voir depuis que jai quitté l'assemblée, ma mère m'a bloqué sur WhatsApp. on peut revenir de ça
+G|jai 2400 balles de retard sur mon loyer et le proprio à Marseille menace de me foutre dehors, la CAF m'a coupé l'APL pk jai pas renvoyé un papier
+G|Bonjour, je suis fiché à la Banque Nationale de Belgique pour un crédit auto impayé de septante mille euros après ma faillite. Est-ce qu'une banque peut encore m'ouvrir un compte ?
+G|mon père a perdu 18 000 $ dans une fausse plateforme crypto, il a honte et il veut pas porter plainte. je fais quoi avec Revenu Québec, il l'avait déclaré comme gain
+G|jai joué 600 francs sur Swisslos ce mois et jai dû emprunter à ma sœur pr payer la LAMal. jme dégoûte
+G|l'huissier est passé ce matin pour la facture Proximus, 890 euros avec les frais, je touche le CPAS, jai rien a leur donner
+G|Mon ex ne paie plus la pension alimentaire depuis avril et je suis à découvert chaque 15 du mois. Hydro-Québec menace de couper. Par quoi je commence ?
+G|tkt jvais pas pleurer mais jai pris 3 crédits Cofidis pour rembourser le premier et là je rembourse 740 par mois sur 1 500 de salaire
+G|ma mère est en saisie sur salaire depuis le redressement des impôts de 2023, elle a honte et me cache les courriers. comment je l'aide sans l'humilier
+G|On est deux agriculteurs dans le Cantal, la banque refuse de repousser l'échéance de 31 000 euros du tracteur et on n'a pas vendu les veaux. Si on ne paie pas, ils prennent quoi en premier
+L|jme suis fait arrêter hier soir à Lyon avec 0,9 g, garde à vue jusqu'à 6h, on m'a dit que jserais convoqué. je risque de perdre mon permis direct ?
+L|Mon titre de séjour expire le 12 décembre et la préfecture de Bobigny n'a toujours pas répondu à ma demande de renouvellement. Est-ce que je peux encore travailler ?
+L|ma soeur est en garde partagée et son ex a emmené les enfants en Tunisie sans prévenir, ça fait 10 jours. c'est un enlèvement ça
+L|jai reçu une convocation du tribunal de police de Charleroi pr un délit de fuite que jai pas fait, c mon cousin qui conduisait ma voiture. je dis quoi
+L|mon patron à Lausanne m'a licenciée le jour où j'ai annoncé ma grossesse, il dit que c'est pour restructuration. j'ai quels droits
+L|La DPJ est venue chez moi hier parce que la garderie a signalé un bleu sur le bras de ma fille. C'est elle qui est tombée du module. Je suis morte de peur, ils peuvent me l'enlever ?
+L|jai un casier B2 pour une bagarre en 2019 et je veux passer le concours de gardien de la paix, c mort ou ya moyen
+L|mon proprio a changé la serrure pendant que jetais a l'hopital, mes affaires sont encore dedans, ya pas de jugement d'expulsion. jappelle la police ?
+L|Mon frère a été dénoncé par son ex pour violences, il jure que c'est faux, il est sous contrôle judiciaire avec interdiction de la contacter. Est-ce qu'il peut voir ses enfants quand même ?
+#G
+H|je prépare un cours pour mes élèves de 4e sur le fonctionnement des vaccins à ARN messager, tu peux me faire un schéma simple en 5 étapes
+H|Combien de Suisses sont touchés par le diabète de type 2 et quelle est la tendance depuis 2010 ?
+H|jsuis médecin généraliste à Namur, rédige une affiche pour la salle d'attente sur grippe vs rhume, langage simple
+H|explique pk les Inuits avaient historiquement moins de maladies cardiovasculaires, c pour mon exposé de cégep
+H|Dans mon roman, l'héroïne est chirurgienne cardiaque. Décris une opération de pontage de façon réaliste mais compréhensible.
+M|Rédige une présentation de 10 slides sur le burnout chez les enseignants belges, avec des chiffres récents si possible
+M|c quoi la différence entre un psychologue, un psychiatre et un psychothérapeute en France, pr mon TPE
+M|je suis RH dans une boîte de 200 personnes à Montréal, écris une politique interne sur la santé mentale et le droit à la déconnexion
+M|Pourquoi les Finlandais sont-ils classés comme le peuple le plus heureux alors que le taux de dépression y est élevé ?
+M|écris un monologue de théâtre où un vieux marin parle de sa solitude après la mort de ses camarades, 200 mots
+S|Quel pourcentage de la population mondiale s'identifie comme LGBT selon les enquêtes Ipsos de 2023 ?
+S|jsuis sage-femme et je dois faire une fiche sur les différents moyens de contraception pr des ados de 15 ans, ton neutre
+S|explique l'histoire de la dépénalisation de l'homosexualité en France en 1982 pour un exposé
+S|Dans ma série, deux personnages ont une liaison secrète. Comment structurer la révélation à l'épisode 6 sans tomber dans le cliché ?
+S|comment fonctionne la pilule du lendemain biologiquement, question de cours
+R|Explique les cinq piliers de l'islam pour un cours d'éthique et culture religieuse au secondaire au Québec
+R|je suis guide touristique à Bruges, rédige un texte de 150 mots sur l'histoire du béguinage et des béguines
+R|pk le Vatican a attendu 1992 pour réhabiliter Galilée, c pour un devoir d'histoire
+R|Quelle est la différence entre un temple protestant et une église catholique dans l'architecture suisse ?
+R|jécris une nouvelle où un moine bouddhiste doute de sa vocation, propose-moi trois scènes clés
+G|comment fonctionne la procédure de règlement collectif de dettes en Belgique, résumé pour un article
+G|Je suis journaliste à La Presse, donne-moi les chiffres de l'endettement des ménages québécois par rapport au revenu disponible depuis 2015
+G|explique à un enfant de 10 ans pourquoi un pays peut faire faillite, avec l'exemple de l'Argentine
+G|Mon équipe de conseillers au Crédit Agricole a besoin d'une fiche sur le surendettement : qui peut déposer un dossier à la Banque de France et les étapes
+G|pourquoi les paris sportifs rapportent plus à l'État français que le Loto, c pour un exposé d'éco
+L|Quelle est la différence entre une garde à vue et une arrestation provisoire en droit suisse ?
+L|jsuis avocat stagiaire à Liège, rédige un modèle de mise en demeure pour loyers impayés, ton formel
+L|combien de temps dure une procédure de divorce par consentement mutuel en France depuis la réforme de 2017
+L|Écris le dialogue d'interrogatoire entre un commissaire et un suspect pour mon polar, scène de 300 mots à Marseille
+L|je prépare un podcast sur les grandes affaires judiciaires, résume l'affaire Dutroux en 5 points factuels
+O|mon four Whirlpool fait un bruit de ventilo même quand il est éteint, c normal ou jappelle quelqu'un
+O|jai une fête de famille à Namur samedi, 30 personnes, idée de plat qui tient au chaud facile
+O|ma fille de 8 ans veut un hamster, c'est quoi la cage minimum et ils vivent combien de temps
+O|chui a Québec pr la fin de semaine, ça vaut la peine d'aller aux chutes Montmorency en octobre ?
+O|tkt j'ai le temps, mais dis-moi comment on dit huitante en belge, c'est octante ou quatre-vingts
+O|Rédige un mail poli à mon syndic pour signaler que l'ampoule du hall est grillée depuis trois semaines
+O|mon beau-frère jure que la fondue moitié-moitié c'est vacherin et gruyère, ma mère dit emmental. qui a raison
+O|jsp pk mon natel Samsung se connecte plus au wifi de la maison depuis la mise à jour, les autres appareils marchent
+O|c quoi la meilleure façon d'enlever une tache de rouge sur une nappe en lin, jai déjà essayé le sel
+O|Mon frère et moi on veut traverser le Jura en vélo gravel en 4 jours, propose un itinéraire avec des gîtes
+O|combien de temps on cuit des gnocchis maison, ils remontent à la surface pis après ?
+O|quelle est la capitale administrative de la Suisse et pourquoi ce n'est pas Zurich
+O|jai un entretien chez Bombardier mardi pour un poste d'ingénieur, comment je m'habille
+O|jai oublié le code de mon casier à la piscine de Verviers, ils peuvent l'ouvrir ou je dois attendre la fermeture
+O|mon vieux Peugeot 206 fait un bruit de ferraille quand je tourne à gauche, roulement ou cardan
+O|ma tomate a des symptômes bizarres, feuilles jaunes et taches noires, c'est le mildiou ? elle est en pot sur le balcon
+O|jai besoin d'un traitement pour mon olivier qui perd ses feuilles, il est en bac sur la terrasse à Nice
+O|écris une carte d'anniversaire pour mon grand-père qui a 90 ans et qui est fan de pétanque
+O|c quoi la différence entre une dette technique et un refactoring, mon lead dev arrête pas de dire ça en réunion
+O|le ragoût de boulettes de ma belle-mère est trop liquide, comment l'épaissir sans farine grillée
+O|mon chat a l'air dépressif, il ne joue plus avec sa souris en plastique, il s'ennuie ou c'est l'âge ? il a 11 ans
+O|comment je vire le virus que mon fils a chopé sur son PC en téléchargeant un crack de Minecraft
+O|mon pain au levain a une croûte super dure et la mie compacte, faut-il plus d'hydratation
+O|la police d'écriture Helvetica et Arial, c quoi la différence concrètement, pour un logo

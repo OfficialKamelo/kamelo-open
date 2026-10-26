@@ -1,0 +1,24 @@
+# Overgenomen uit tests/topics-corpus.test.js en tests/topics-alledaags.test.js (19 okt), als leerzinnen voor de gewogen lijst.
+#P
+H|tengo un bulto en el pecho
+H|mi hijo tiene fiebre desde ayer
+H|mi madre tiene cáncer y no se que hacer
+M|no paro de llorar y estoy muy triste
+M|tengo ataques de pánico en el trabajo
+M|mi novia está deprimida
+S|creo que soy gay
+S|como le digo a mis padres que soy bi
+S|mi hijo salió del armario
+R|quiero dejar mi religión
+R|mis padres son musulmanes muy estrictos
+R|yo me convertí al islam
+G|no puedo pagar mi alquiler
+G|tengo muchas deudas
+G|estoy en números rojos
+L|me arrestaron anoche y no se que hacer
+L|tengo antecedentes penales
+L|mi hermano está en la cárcel
+#G
+O|cuáles son los síntomas de la diabetes
+O|quiero pagar mis facturas en línea
+O|mi código es un desastre

@@ -1,0 +1,272 @@
+#P
+H|ons ma heeft borstkanker, wat nu
+H|mijn bloeddruk was 170 vanochtend, schrik me rot
+H|bompa is zijn geheugen kwijt, dementie denk ik
+H|kind heeft al drie dagen koorts boven 39
+H|12 weken zwanger en bloedverlies, normaal?
+H|pa zijn uitslagen zijn binnen, biopt volgende week
+H|na mijn knieoperatie nog steeds dik, normaal
+H|overal jeuk en uitslag sinds die antibiotica
+H|oma wordt doof, hoorapparaat helpt niks
+H|dochter heeft pijn rechtsonder in buik, blinde darm?
+H|kreeg vandaag te horen dat ik suikerziekte heb
+H|mijn zus had een miskraam, hoe steun ik haar
+H|ma heeft een beroerte gehad, kans op herstel
+H|schildklier te traag, moe de hele dag
+H|tintelingen in m'n linkerarm sinds vanmorgen
+H|zoontje heeft astma en puffer werkt niet meer
+H|buik opgezet na chemo, normaal?
+H|hersenschudding gehad, nog altijd hoofdpijn
+H|vriend breekt z'n pols, hoelang gips
+H|bult in mijn oksel gevonden
+H|pa moet aan z'n heup geopereerd worden
+H|lijf doet overal pijn, al weken moe
+H|cholesterol te hoog volgens huisarts
+H|ivf poging mislukt, uitgeput
+H|opa heeft parkinson, trillen wordt erger
+M|terug in de fles gevallen na 200 dagen, niemand weet het
+M|kom mijn bed niet meer uit, niks interesseert
+M|paniekaanval in de trein vanochtend weer
+M|ons Jan blijft maar zuipen, wat doen we
+M|burn-out, huil elke dag op het werk
+M|onze hond is gisteren overleden, ik kan niet stoppen met huilen
+M|dochter eet bijna niks meer, anorexia misschien
+M|elke avond online gokken, kan niet stoppen
+M|zoon gamet 12 uur per dag, komt z'n kamer niet uit
+M|ocd maakt me gek, moet alles drie keer checken
+M|vermoed adhd bij m'n man, vergeet alles
+M|faalangst voor tentamens, hartkloppingen
+M|sinds opa dood is voel ik niks meer
+M|collega blowt elke dag, ik maak me zorgen
+M|ben bij de psych begonnen, voel me slechter
+M|zelfbeeld op nul, durf niet meer naar buiten
+M|binge eten 's nachts, daarna kots ik
+M|ma is depressief sinds pa weg is
+M|elke avond een fles wijn nu, ik moet minderen
+M|mijn vriendin heeft borderline, ik ben uitgeput
+M|puber krabt zich open, wat zeg ik
+M|na overlijden van m'n kat al weken verdrietig
+M|slaap niet meer door de angst
+M|broer gebruikt cocaine in het weekend
+M|bijna 6 weken niet gegokt, wil volhouden
+S|kreeg het er gisteren weer niet hard
+S|man raakt me al maanden niet meer aan
+S|denk dat m'n vriend vreemdgaat, appjes gezien
+S|ga zaterdag uit de kast bij ma en pa
+S|ben bi en mijn vriendin weet het niet
+S|pil verpest mijn zin in seks
+S|we willen een open relatie, maar ik ben bang
+S|dochter zegt trans te zijn, hoe steun ik haar
+S|test op chlamydia gedaan, uitslag woensdag
+S|condoom kapot, morning-afterpil nodig
+S|seks doet pijn sinds de bevalling
+S|vriend komt na een minuut, schaamte
+S|zoon is homo, pa wil er niet over praten
+S|geen libido meer door antidepressiva
+S|overspel van m'n vrouw, kan het niet vergeten
+S|spiraaltje of implanon, wat past
+S|herpes gekregen, hoe vertel ik het aan nieuwe date
+S|vrouw wil gescheiden bedden, geen intimiteit
+S|twijfel over mijn gender sinds studie
+S|mijn man kijkt te veel porno
+S|kan niet klaarkomen bij mijn vriend
+S|had onbeschermde seks, bang voor hiv
+S|fantasie over mannen terwijl ik getrouwd ben
+S|vriend wil triootje, weet niet
+S|met m'n baas naar bed geweest, voel me ellendig
+R|ik geloof niet meer na het overlijden van m'n pa
+R|uit de getuigen van jehova gestapt, familie negeert me
+R|mijn ouders accepteren mijn christelijke vriend niet
+R|ramadan valt zwaar, ik voel me schuldig
+R|ma sleept me naar de kerk, terwijl ik atheist ben
+R|durf niet te zeggen dat ik niet meer geloof
+R|oma wil dat ik terug naar de mis ga
+R|mijn familie zegt dat ik naar de hel ga
+R|bompa wil geen bruiloft buiten de kerk
+R|twijfel aan alles van zondagsschool
+R|pa dwingt me een hoofddoek te dragen
+R|ex-moslim en verberg het thuis
+R|mijn zus zit nu bij een of andere evangelische sekte
+R|man is hindoe, mijn ouders zijn furieus
+R|dominee zegt dat mijn scheiding zonde is
+R|uit de kerk gestapt, buren praten
+R|kind vraagt waarom we niet meer naar de kerk gaan
+R|ouders willen een kerkelijk huwelijk, ik niet
+R|zoon bekeerd tot de islam, mijn man is ontzet
+R|vastentijd mislukt, voel me een slechte christen
+R|bang om te vertellen dat ik boeddhist ben
+R|broer zit in strenge gemeente, hij breekt contact af
+R|schoonouders eisen dat we mee naar de kerk gaan
+R|sabbat vieren met joodse schoonfamilie, voel me een buitenstaander
+R|ramadan vasten op school lukt niet, schaam me
+G|ze leggen beslag op mijn loon
+G|verberg een tweede creditcard voor m'n man
+G|3 maanden achter met huur, deurwaarder gebeld
+G|flitskrediet genomen, nu betaal ik het drievoudige
+G|deurwaarders bellen ma elke dag
+G|pa heeft 20k vergokt, gisteren ontdekt
+G|sta bij BKR geregistreerd, hypotheek geweigerd
+G|vier kaarten leeg, durf post niet te openen
+G|broer zit bij woekeraars, wat nu
+G|rood staan en nog twee weken tot salaris
+G|huurachterstand 2400, uitzetting volgende week
+G|oma is opgelicht, spaargeld weg
+G|studieschuld, DUO int via loonbeslag
+G|verborgen schulden van m'n vrouw, 15k
+G|stroom afgesloten, kan niet betalen
+G|huurgeld vergokt in het casino
+G|geld geleend bij vrienden, kan niet terugbetalen
+G|baan kwijt, hypotheek 2 maanden achter
+G|ex liet mij met alle schulden zitten
+G|auto in beslag genomen, nog 6000 schuld
+G|schuldsanering aanvragen, hoe begin ik
+G|zorgverzekering niet betaald, nu boete
+G|gemeente wil mijn uitkering korten wegens schuld
+G|ben failliet als zzp'er, man weet het niet
+G|klarna op vijf dingen, kan niet bijbenen
+L|gisteren aangehouden, wat nu
+L|politie wil mijn zoon morgen verhoren
+L|huisbaas daagt mij voor de rechter om waarborg
+L|ex wil co-ouderschap stoppen, rechtszaak
+L|boete van 250 euro voor te hard rijden
+L|ontslagen zonder reden, denk dat het onterecht is
+L|pa heeft strafblad, kan hij nog emigreren
+L|mijn baas aangeven wegens intimidatie
+L|inbraak gehad, politie geeft geen thuis
+L|broer zit in voorarrest, zitting donderdag
+L|dagvaarding gekregen voor onbetaalde boete
+L|agenten doorzochten mijn auto, mag dat
+L|man wil volledige voogdij, ik heb advocaat
+L|alcoholcontrole, 0,9 promille, eerste keer
+L|buurman stalkt mij, aangifte doen
+L|zoon betrapt bij winkeldiefstal, wat volgt
+L|onterecht beschuldigd op werk, gesprek vrijdag
+L|fiets gestolen, politie nam geen aangifte op
+L|verhoord over fraude op werk, advocaat nodig
+L|neef heeft taakstraf gekregen
+L|ex overtreedt contactverbod weer
+L|vriend opgepakt bij demonstratie
+L|kantonrechter zitting over mijn ontslag
+L|parkeerbon van 100 euro, bezwaar maken
+L|getuige bij ongeluk, nu opgeroepen door politie
+#G
+H|wat zijn symptomen van suikerziekte
+H|hoeveel mensen hebben dementie in nederland
+H|ik ben huisarts, folder over hoge bloeddruk
+H|wat is een normale bloeddruk
+H|hoe werkt chemotherapie
+H|verpleegkundige hier, korte instructie wondverzorging
+H|cijfers over beroertes in belgie
+H|verschil tussen virus en bacterie
+H|hoe lang gips bij gebroken pols
+H|hoe werkt ivf
+H|wat meet hba1c
+H|geschiedenis van de poliovaccinatie
+H|schrijver: personage herstelt van heupoperatie, hoe is revalidatie
+H|apotheker hier, 100 woorden over paracetamol dosering
+H|hoeveel mensen zijn slechthorend wereldwijd
+H|wat is het eerste trimester
+H|oorzaken van hoog cholesterol
+H|wat is een biopsie
+H|podcast over onderzoek naar alzheimer
+H|hoe werkt metformine
+M|wat is een paniekaanval
+M|psycholoog hier, 150 woorden over paniekaanvallen voor mijn website
+M|cijfers over burn-out bij leerkrachten
+M|verschil tussen verdriet en depressie
+M|hoe werkt cognitieve gedragstherapie
+M|als schoolpsycholoog, folder over examenstress
+M|wat is ocd
+M|hoeveel gokverslaafden zijn er in nederland
+M|signalen van een eetstoornis voor docentenworkshop
+M|geschiedenis van psychiatrische inrichtingen
+M|wat zijn de fasen van rouw
+M|tekst voor condoleancekaart na overlijden huisdier, dierenarts
+M|wat is adhd bij volwassenen
+M|verschil psycholoog en psychiater
+M|schrijver: hoe gedraagt een personage zich bij alcoholontwenning
+M|wat is gameverslaving volgens de who
+M|hoe werken ssri's
+M|cursus eerste hulp bij psychische problemen
+M|tips voor managers tegen burn-out bij personeel
+M|wat is het imposter syndroom
+S|verschil tussen homo en biseksueel
+S|hoe betrouwbaar is de pil
+S|wat is een soa
+S|lesplan seksuele voorlichting groep 8
+S|geschiedenis van de homobeweging in nederland
+S|wat betekent non-binair
+S|cijfers over vreemdgaan in huwelijken
+S|hoe werkt een vasectomie
+S|wat is erectiestoornis, oorzaken
+S|therapeut hier, handout over communicatie in open relaties
+S|sinds wanneer is het homohuwelijk legaal in nederland
+S|wat is polyamorie
+S|tekst voor pride-post van mijn bedrijf
+S|hoe beschermen condooms tegen hiv
+S|wat is een koperen spiraal
+S|journalist: soa-cijfers in belgie
+S|wat is aseksualiteit
+S|hoe verschillen transrechten in europa
+S|hoe lang werkt de morning-afterpil
+S|wat is het verschil tussen gender en geslacht
+R|hoeveel praktiserende katholieken in vlaanderen
+R|waarom gebruiken amish geen elektriciteit
+R|menu-ideeen voor iftar in mijn cafe
+R|wat is vastentijd
+R|geschiedenis van de reformatie
+R|verschil tussen soennieten en sjiieten
+R|wat is yom kippoer
+R|waarom weigeren getuigen van jehova bloedtransfusie
+R|hoeveel moslims wonen er in nederland
+R|ik ben docent, lesplan wereldreligies
+R|wat is een mormoonse zending
+R|uitleg vijf zuilen van de islam
+R|wat is humanisme
+R|geschiedenis van scientology
+R|regels voor vasten in het hindoeisme
+R|wat is excommunicatie
+R|ideeen voor interreligieuze huwelijksceremonie, ik ben trouwambtenaar
+R|hoeveel mensen zijn uit de kerk getreden
+R|wat is divali
+R|cijfers over atheisme in europa
+G|hoe werkt een faillissement
+G|wat is loonbeslag
+G|schuldhulpverlener hier, folder over flitskredieten
+G|wat is het jaarlijkse kostenpercentage van een flitskrediet
+G|hoe lang blijft een bkr registratie staan
+G|wat is wsnp
+G|geschiedenis van de schuldgevangenis
+G|hoeveel huishoudens hebben betalingsachterstand
+G|wat is een schuldregeling
+G|gemiddelde schuld per huishouden in nederland
+G|rechten huurder bij huurachterstand
+G|wat mag een deurwaarder
+G|blogartikel over hoe je woekeraars herkent
+G|hoe werkt een kredietscore
+G|wat is een kredietregistratie
+G|uitleg samengestelde rente op creditcard
+G|cijfers over gokschulden
+G|journalist: koopkrachtcrisis en schulden
+G|hoe start ik een schuldhulpdienst
+G|wat is een beslagvrije voet
+L|wat is de alcohollimiet in belgie
+L|wat is een transactie van het om
+L|advocaat hier, sjabloon ingebrekestelling
+L|wat gebeurt er bij de kantonrechter
+L|verschil tussen overtreding en misdrijf
+L|hoe lang blijft een strafblad staan
+L|wat zijn de rechten bij een aanhouding
+L|hoe werkt omgangsregeling bij scheiding
+L|wat is een kennelijk onredelijk ontslag
+L|cijfers over fietsendiefstal
+L|hoeveel strafpunten bij te hard rijden in belgie
+L|wat is een contactverbod
+L|wat is een arbitragezaak
+L|juridisch medewerker, checklist kleine vorderingen
+L|geschiedenis van habeas corpus
+L|verjaringstermijn fraude
+L|hoe werkt gesubsidieerde rechtsbijstand
+L|schrijver: wat gebeurt er bij een arrestatie
+L|wat is een gemeentelijke administratieve sanctie
+L|hoe werkt een dagvaarding

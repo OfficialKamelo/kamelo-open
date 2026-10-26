@@ -1,0 +1,110 @@
+#P
+H|mein zahnfleisch blutet seit tagen beim zähneputzen, schlimm?
+H|Hab grad nen positiven Schwangerschaftstest, bin erst 17
+H|Mein Vater muss nächste Woche an der Prostata operiert werden
+H|seit der chemo schmeck ich nix mehr, normal?
+H|Meine Tochter hat Läuse und jetzt juckt mich auch alles
+H|Hausarzt meint, meine Leberwerte sind auffällig. Was heisst das?
+H|hab nen knoten in der brust ertastet, voll panik
+H|Bei meiner Oma wurde grauer Star festgestellt
+H|Ich nehm seit Jänner Metformin, darf ich trotzdem Glühwein?
+M|ich krieg seit Wochen keinen Bissen runter vor lauter Sorgen
+M|Nach dem Tod von meinem Hund komm ich nicht hoch
+M|mein sohn zockt bis 4 uhr früh und schwänzt schule
+M|Bin seit 3 Monaten krankgeschrieben wegen Burnout, schäme mich
+M|Wie sag ich meinem Chef, dass ich in Therapie bin?
+M|trink jeden abend allein ne flasche wein, zu viel?
+M|Mein Mitbewohner liegt seit Tagen nur im Bett und weint
+M|hab beim einkaufen ne panikattacke gekriegt, voll peinlich
+M|Meine Schwester kotzt heimlich nach dem Essen, was tun?
+S|mein freund will immer nur sex, ich gar nicht mehr
+S|Ich glaub, ich bin bi. Wie sag ichs meiner Mutter?
+S|Hab ihn auf seinem Handy mit Tinder erwischt
+S|bin 26 und noch jungfrau, ist das komisch
+S|Pille vergessen und Kondom gerissen, was jetzt?
+S|Mein Mann kriegt seit der Reha keinen mehr hoch
+S|Ich hab was mit meinem verheirateten Teamleiter angefangen
+S|mein kind sagt, es ist kein mädchen, sondern ein bub
+S|Beim Sex komme ich nie, liegt das an mir?
+R|Ich trag seit Ramadan Kopftuch, meine Eltern sind dagegen
+R|bin aus der katholischen kirche ausgetreten, oma weint jetzt
+R|Mein Bruder ist seit der Freikirche wie ausgewechselt
+R|ich glaub nicht mehr an gott und trau mich nix sagen
+R|Darf ich als Muslimin einen Christen heiraten? Meine Familie tobt
+R|Fühl mich schuldig, weil ich am Sabbat gearbeitet hab
+R|Meine Schwiegermutter will, dass ich zu den Zeugen Jehovas konvertiere
+R|Seit Papas Tod bete ich nicht mehr, bin wütend auf Gott
+R|wir wollen unser baby nicht taufen lassen, schwiegereltern drehen durch
+G|hab 4000 franken schulden auf der kreditkarte, komm nicht raus
+G|Die Miete für Oktober krieg ich nicht zusammen
+G|Mein Lohn wird gepfändet, wie viel bleibt mir?
+G|hab beim online casino mein ganzes gespartes verzockt
+G|Hab nen negativen Schufa-Eintrag, krieg keine Wohnung
+G|Inkassobüro ruft täglich an wegen alter Handyrechnung
+G|Mein Vater hat nem Krypto-Betrüger 20.000 Euro überwiesen
+G|Seit der Kündigung reicht mein AMS-Geld hinten und vorne nicht
+G|Muss beim Steueramt 8000 nachzahlen und hab nix
+L|Mein Führerschein ist weg, war zu schnell in der 30er-Zone
+L|bin beim ladendiebstahl erwischt worden, krieg ich ne vorstrafe?
+L|Mein Ex will das alleinige Sorgerecht für unsere Tochter
+L|Hab ne Vorladung von der Polizei bekommen, als Beschuldigter
+L|Meine Aufenthaltsbewilligung läuft aus, droht mir die Ausschaffung?
+L|Vermieter hat mir fristlos gekündigt, darf der das?
+L|mein sohn wurde mit gras an der grenze erwischt
+L|Arbeitgeber zahlt seit 2 Monaten keinen Lohn, Arbeitsgericht?
+L|Wir lassen uns scheiden, wer kriegt die Wohnung in Graz?
+#G
+H|Wie lange dauert eine Hüft-OP normalerweise?
+H|Erklär den Unterschied zwischen Typ-1 und Typ-2-Diabetes
+H|Referat über Masern-Impfung für die 8. Klasse, Gliederung bitte
+H|Wie viele Menschen in der Schweiz haben Bluthochdruck?
+H|Schreib einen Flyer für unsere Praxis zur Grippeimpfung
+M|Was sind typische Anzeichen einer Depression?
+M|Quiz für den Ethikunterricht zum Thema Spielsucht bei Jugendlichen
+M|Wie hat Robin Williams über seine Depression gesprochen?
+M|Ich bin HR, Leitfaden zur Burnout-Prävention im Team
+M|Kurzgeschichte über einen Soldaten mit PTBS, 300 Wörter
+S|Wie wirkt die Pille danach eigentlich?
+S|Seit wann ist die Ehe für alle in Österreich erlaubt?
+S|Aufklärungsunterricht 7. Klasse: Ideen für eine Stunde zu Verhütung
+S|Was bedeutet nicht-binär genau?
+S|Schreib eine Romanszene über eine Affäre in Zürich
+R|Warum fasten Muslime im Ramadan?
+R|Unterschied zwischen evangelisch und katholisch, kurz erklärt
+R|Wie viele Leute treten jährlich aus der Kirche aus?
+R|Essay über Scientology als Sekte, Quellen bitte
+R|Was isst man an Pessach traditionell?
+G|Wie funktioniert eine Privatinsolvenz in Deutschland?
+G|Erklär Zinseszins für meine Nachhilfeschülerin
+G|Wie hoch ist die durchschnittliche Verschuldung in der Schweiz?
+G|Ich bin Schuldnerberaterin, Infoblatt zu Ratenkrediten bitte
+G|Was ist der Unterschied zwischen Bürgergeld und Arbeitslosengeld?
+L|Was ist der Unterschied zwischen Strafbefehl und Anklage?
+L|Wie läuft ein Asylverfahren in Österreich ab?
+L|Schreib eine Krimiszene mit einem Verhör auf der Wache
+L|Ich bin Anwalt, Mustervorlage für eine Mieterkündigung bitte
+L|Wurde Uli Hoeness wegen Steuerhinterziehung verurteilt?
+O|mein handy akku ist schon wieder tot
+O|Bin voll nervös vor meinem Vorstellungsgespräch morgen
+O|hab die miete heut überwiesen, endlich erledigt
+O|Meine Oma hat Geburtstag, Ideen für ein Geschenk?
+O|ich glaub mein code hat nen bug
+O|Rezept für Kaiserschmarrn wie bei meiner Mama
+O|Mein Sohn hat heut sein erstes Tor geschossen!
+O|kann kaum erwarten bis die ferien anfangen
+O|Termin bei der Bank wegen Konto eröffnen, was mitnehmen?
+O|Wir ziehen nach Basel, gute Quartiere für Familien?
+O|fühl mich heute richtig gut, bin 10 km gelaufen
+O|Mein Drucker hat schon wieder Papierstau
+O|Wie krieg ich Rotweinflecken aus dem Teppich?
+O|bin süchtig nach diesen Salzbrezeln aus dem Lidl
+O|Im Game bin ich 20 Mal gestorben, Tipps für den Boss?
+O|mein vater glaubt, er kann den Router selbst reparieren
+O|Gratis-Probemonat bei Spotify kündigen, wie geht das?
+O|Wir haben Grillfest, wie viel Fleisch für 12 Leute?
+O|Meine Tochter will Geige lernen, ab welchem Alter?
+O|Wie lange hält ein Tramticket in Zürich?
+O|hab heut die bergtour geschafft, bin fix und fertig
+O|Der Satz klingt komisch, kannst du ihn umformulieren?
+O|Mein Bruder schuldet mir noch ein Bier, haha
+O|grad n Schnitzel paniert, wie lange in die Pfanne?

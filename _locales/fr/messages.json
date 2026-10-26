@@ -19,5 +19,9 @@
   },
   "extDescriptionFirefox": {
     "message": "Un rappel pour utiliser une discussion temporaire quand vous posez une question personnelle à une IA."
+  },
+  "extDescriptionSafari": {
+    "message": "Remarque quand une question à une IA devient personnelle, et vous laisse la poser à Melo sur votre Mac.",
+    "description": "Safari (in Melo voor Mac): de App Store wil hooguit 112 tekens"
   }
 }

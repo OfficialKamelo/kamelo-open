@@ -1,0 +1,482 @@
+#P
+H|mn knie is al twee weken dik
+H|kheb sinds drie dagen migraine, niks helpt
+H|mijn vader krijgt volgende maand een nieuwe heup
+H|ik ben 6 weken zwanger en kots de hele dag
+H|dochter 3 jaar, koorts 40 en rode vlekjes
+H|chlamydia test was positief, wat nu
+H|net gehoord dat ik diabetes type 2 heb
+H|mama heeft borstkanker, donderdag operatie
+H|ingegroeide teennagel is ontstoken, wat doen
+H|ik slik sinds gisteren bloeddrukpillen, bijwerkingen?
+H|mn linkeroor piept de hele dag
+H|gehoorverlies rechts, huisdokter stuurt me naar KNO
+H|ik heb een miskraam gehad, hoe lang bloeden
+H|zoontje heeft pinda-allergie, wat als hij het eet
+H|mijn ijzerwaarde is te laag, voel me kapot
+H|last van aambeien, echt vervelend
+H|eczeem op mn handen bloedt weer
+H|morgen darmonderzoek, moet drankje nemen, tips
+H|mijn man heeft net een hartinfarct gehad
+H|ben duizelig sowieso als ik opsta
+H|baby 4 maanden, vaccinatie gehad, koortsig
+H|we proberen 2 jaar zwanger te worden, PCOS
+H|ik voelde een knobbeltje in mijn borst
+H|na de chemo smaakt alles naar metaal
+H|mn TSH is te hoog, schildklier traag
+H|opvliegers de hele nacht, overgang zeker
+H|nog steeds rugpijn na mijn hernia-operatie
+H|opa heeft alzheimer, wat komt er op ons af
+H|gordelroos op mn rug, hoe lang duurt dat
+H|kies getrokken en het bloedt nog na 2 dagen
+H|ben 8 kilo kwijt zonder reden, eng
+H|zus kreeg gisteren de diagnose MS
+H|alweer blaasontsteking, antibiotica helpt niet
+H|zoontje puft veel met zn astmapomp
+H|oogarts zegt glaucoom, word ik blind
+H|ik heb epilepsie en mag niet rijden
+H|keizersnede-wond ziet er raar uit
+H|vriendin heeft coeliakie, wat mag ze eten
+H|bult op mn rug die steeds groeit
+H|abortus gehad gisteren, is dit bloeden normaal
+H|mn zoon heeft acne, Roaccutane, bijwerkingen
+H|prikkelbare darm, ik moet constant naar de wc
+H|sinds corona altijd moe, long covid denk ik
+H|papa heeft prostaatkanker, PSA-waarde 14
+H|brandwond op mn arm van de oven, blaar open
+H|bloed in mn ontlasting, moet ik schrikken
+H|tandvlees bloedt, parodontitis gezegd
+H|na mn beroerte werkt mn arm niet goed
+H|soa-test gedaan, uitslag morgen, zenuwen
+H|sinds de bevalling lek ik als ik hoest
+M|kreeg paniekaanval in de supermarkt, kon niet ademen
+M|ik zit al 3 maanden thuis met burn-out
+M|mijn zoon gamet de hele nacht door
+M|ik drink elke avond een fles wijn
+M|onze hond is dood, ik huil de hele dag
+M|OCD: ik check de deur wel tien keer
+M|vriendin eet bijna niks meer
+M|ik zie sinds maart een psycholoog
+M|slaap niet door het piekeren
+M|Concerta werkt niet meer voor mn adhd
+M|moeder is depressief en wil niet praten
+M|ik voel me zo eenzaam sinds de verhuizing
+M|ik kan niet stoppen met porno kijken
+M|trauma uit mn jeugd komt weer boven
+M|zo'n faalangst voor mn examens, ik blokkeer
+M|mijn man is alcoholist en ontkent het
+M|durf niet meer naar buiten, ben bang
+M|kreeg op mn 35e de autismediagnose
+M|ik rouw nog steeds om mijn man
+M|ik trek mijn haren uit als ik gestrest ben
+M|voel niks meer, alsof ik leeg ben
+M|dochter heeft anorexia, we weten niet wat te doen
+M|ik blow elke dag en wil stoppen
+M|sociale angst op werk, lunch vermijd ik
+M|mn puber komt niet meer uit zn kamer
+M|na de bevalling ben ik zo somber
+M|nachtmerries sinds het ongeluk, slaap slecht
+M|ik eet stiekem veel en spuug het uit
+M|mn therapeut gaat met verlof, ik raak in paniek
+M|volgende week mijn eerste EMDR-sessie, bang
+M|pa dementeert en ik ben helemaal opgebrand
+M|ik rook elke avond weed om te slapen
+M|voel me waardeloos sinds de scheiding
+M|vriend is bipolair en nu manisch
+M|kan geen keuzes meer maken, hoofd is leeg
+M|ik mis mijn overleden zus zo erg
+M|ik koop dwangmatig dingen online en schaam me
+M|scroll tot 4 uur 's nachts, verslaafd aan telefoon
+M|hartkloppingen door de stress, ben bang
+M|word gepest door collega's, ik wil niet meer
+M|ben gestopt met antidepressiva, spijt
+M|zoontje krijgt buikpijn van schoolstress
+M|ik heb een week niet gedoucht, depri
+M|durf niemand te bellen, telefoonangst
+M|dwanggedachten in mn hoofd, ik raak ze niet kwijt
+M|mijn broertje overleed vorig jaar, ik kom er niet doorheen
+M|ik ben bang voor mijn eigen woede
+M|sinds mn ontslag drink ik al 's ochtends
+M|mn vriend gebruikt coke elk weekend
+M|ik huil elke dag in de auto voor werk
+S|erectieproblemen sinds ik 40 werd, schaam me
+S|geen zin meer in seks met mijn man
+S|ik ben homo en mn ouders weten het niet
+S|ik val op mannen én vrouwen, wat nu
+S|mn vriend komt altijd veel te snel
+S|pil vergeten, nu bang dat ik zwanger ben
+S|ik ben 28 en nog maagd
+S|mijn vrouw heeft een affaire
+S|ben vreemdgegaan met een collega, spijt
+S|ik denk dat ik trans ben
+S|hoe doe ik coming-out bij mn collega's
+S|seks doet pijn, elke keer weer
+S|ik kan niet klaarkomen met mijn vriend
+S|mn vriend wil dingen in bed die ik niet wil
+S|condoom scheurde gisteren, morning-afterpil nodig
+S|spiraal inbrengen, doet dat pijn
+S|geen libido door mn antidepressiva
+S|vriendin wil een open relatie
+S|ik val op mannen maar ben getrouwd
+S|mijn zoon vertelde dat hij gay is
+S|date via Tinder vanavond, hoe veilig vrijen
+S|mijn man kijkt porno en ik voel me afgewezen
+S|we hebben al maanden geen seks gehad
+S|misschien ben ik aseksueel, geen interesse
+S|partner heeft herpes, kan ik het krijgen
+S|ik schaam me voor mijn lijf in bed
+S|man wil een triootje, ik niet
+S|one-night stand gehad, voel me schuldig
+S|ik ben polyamoureus, mn vriend worstelt ermee
+S|mijn dochter is lesbisch en ik worstel ermee
+S|verliefd op mn beste vriend, maar ben getrouwd
+S|vaginisme, tampon past niet eens
+S|ik heb een fetisj waar ik me voor schaam
+S|mijn vriend wil nooit meer vrijen
+S|ik ben non-binair, hoe zeg ik dat thuis
+S|sexting met een getrouwde man, stop ik?
+S|vriendin deed alsof tijdens de seks
+S|ik begin volgende week met hormonen, transitie
+S|man vreemdgegaan, blijven of gaan
+S|sinds de baby geen zin meer in seks
+S|ik wil me laten steriliseren, 32 en geen kinderen
+S|zit stiekem op Grindr
+S|we willen zwanger worden maar seks doet pijn
+S|bang voor intimiteit na wat mij overkwam
+S|mijn man was bij een prostituee
+S|bijna 40 en nog nooit een relatie gehad
+S|vriend wil geen condoom gebruiken
+S|ik masturbeer elke dag, is dat erg
+S|hoe zeg ik tegen mijn vriend dat ik biseksueel ben
+S|na mn vasectomie heb ik geen zin meer
+R|ik twijfel of ik nog in God geloof
+R|ramadan valt zwaar met mn nachtdiensten
+R|mijn zoon is Jehovah's Getuige geworden
+R|ik wil uit de kerk stappen, familie flipt
+R|mijn vriend is moslim, ik ben christen
+R|bid ik wel genoeg, vraag ik me af
+R|mn ouders accepteren mijn hoofddoek niet
+R|ik ben vorig jaar tot de islam bekeerd
+R|ik ben bang dat God me straft
+R|ik kom niet meer in de moskee
+R|opgegroeid in een streng gereformeerd gezin, nu twijfel ik
+R|dochter wil niet meer naar de zondagsschool
+R|nieuwe kerk gevonden, mijn familie is boos
+R|ik vast voor Yom Kippur ondanks mn medicatie
+R|kosher eten op kantoor is een gedoe
+R|mijn man is ex-moslim, zijn familie weet het niet
+R|ik voel me schuldig dat ik niet meer bid
+R|schoonfamilie is Jehovah's, wat doen met kerst
+R|volgens mij zit mijn zus in een sekte
+R|papa zit bij Scientology en wil dat ik meega
+R|we trouwen hindoeïstisch en mn ouders zijn er tegen
+R|ik ben atheïst in een streng katholiek gezin
+R|oma wil dat ik mijn baby laat dopen
+R|vragen over de bijbel waar niemand antwoord op heeft
+R|ik wil mn kind niet laten dopen
+R|vriendin is evangelisch en probeert mij te bekeren
+R|ik draag mijn hoofddoek niet meer, thuis weten ze het niet
+R|ik wil biechten maar durf niet
+R|mijn man wil dat ik een nikab draag
+R|sjabbat gaat voor, hoe zeg ik dat tegen mijn baas
+R|mijn zoon mag niet besneden worden volgens zijn vader
+R|ik ben bang dat mijn overleden vader in de hel zit
+R|ik heb gebeden maar er gebeurt niks
+R|vanavond voor het eerst naar de synagoge
+R|mijn zoontje wil boeddhist worden
+R|ik bid vijf keer per dag op kantoor, collega's kijken raar
+R|na de dood van mijn kind, waarom liet God dat toe
+R|mijn zwager zit bij een sekte, wat nu
+R|de pastoor weet dat ik gescheiden ben
+R|halal eten in de kantine, collega's lachen
+R|mijn broer stapte uit het geloof, ouders breken contact
+R|ik wil naar Mekka maar kan het niet betalen
+R|ik vier geen kerst vanwege mijn geloof
+R|bijbelstudie met de ouderlingen, ik twijfel
+R|ik doe wicca, mijn familie weet van niks
+R|de imam zegt dat ik niet mag trouwen zonder wali
+R|ik denk dat God het mij nooit vergeeft na mijn abortus
+R|gij gelooft toch ook niet meer, zegt mijn broer, klopt
+G|ik ben 3 maanden achter met de huur
+G|de deurwaarder belde net, ik schrik me rot
+G|BKR-registratie, krijg nergens nog een lening
+G|hoe vraag ik schuldhulpverlening aan
+G|mijn loon wordt beslagen
+G|flitslening afgesloten, nu kan ik niks meer betalen
+G|kan mijn boodschappen deze week niet betalen
+G|ik moet naar de voedselbank, schaam me
+G|ik ben failliet gegaan met mijn zaak
+G|mijn man heeft gokschulden van 15000
+G|opgelicht via WhatsApp, 800 euro weg
+G|baan kwijt en het geld is op
+G|belastingschuld van 6000, aanslag niet betaald
+G|ik zit in de bijstand en kom niet rond
+G|toeslagen terugbetalen, ik heb het geld niet
+G|mijn energie is afgesloten
+G|studieschuld bij DUO, ik betaal niks
+G|creditcard staat op max, rente loopt op
+G|alles verloren in het online casino
+G|zorgtoeslag teruggevorderd, wat nu
+G|ik kan de hypotheek niet meer betalen
+G|moet weer geld lenen van mijn ouders
+G|incassobureau dreigt met een rechtszaak
+G|mn crypto is 90% gedaald, mijn spaargeld weg
+G|ik zit in de schuldsanering, WSNP
+G|mijn WW is op, geen inkomen
+G|auto wordt in beslag genomen door de deurwaarder
+G|geen geld voor het verjaardagscadeautje van mn kind
+G|zorgverzekering niet betaald, ik sta bij het CAK
+G|gemeente stopt mijn uitkering
+G|Klarna-achterstand, ik raak de weg kwijt
+G|kan de huurborg niet betalen
+G|mijn pensioen is te laag om van te leven
+G|mijn ex betaalt geen alimentatie meer
+G|8000 kwijt aan sportweddenschappen
+G|het OCMW wil mijn dossier nakijken, ben bang
+G|mijn zus leent steeds geld en betaalt niet terug
+G|mijn rekening staat al drie maanden rood
+G|we moeten ons huis verkopen door de schulden
+G|mijn zoon heeft schulden bij vrienden
+G|mijn spaargeld kwijt aan een datingscam
+G|de gasrekening kan ik niet betalen
+G|leef van 200 euro per maand
+G|nog 12 euro tot de 25e
+G|kan ik schulden verzwijgen bij een hypotheekaanvraag
+G|mijn partner weet niets van mijn schulden
+G|ik heb een betalingsregeling bij de Belastingdienst
+G|kheb mn leefloon niet gekregen, ik heb niks meer
+G|mn mutualiteit eist geld terug, hoe moet ik dat betalen
+G|mijn auto is weg en de lening loopt nog door
+L|mijn rijbewijs is ingevorderd
+L|zag mijn gestolen fiets te koop op Marktplaats
+L|ruzie met de buurman over de heg, politie gebeld
+L|verhuurder geeft mijn borg niet terug
+L|werkgever heeft mijn laatste loon niet betaald
+L|betrapt op winkeldiefstal, wat nu
+L|wiet bij me op de grens gevonden
+L|iemand chanteert me met naaktfoto's
+L|identiteitsfraude, iemand heeft op mn naam gekocht
+L|ruzie met mijn broer over de erfenis
+L|mijn ex heeft een contactverbod gekregen
+L|ik moet als getuige voor de rechter komen
+L|mijn taakstraf van 60 uur, hoe pak ik dat aan
+L|ik word beschuldigd van mishandeling
+L|vechtpartij op een feestje, aangifte tegen mij
+L|bezwaar tegen parkeerboete aan het schrijven
+L|ik dien volgende week de scheiding in
+L|omgangsregeling met de kinderen, mijn ex weigert
+L|mijn verblijfsvergunning is afgewezen
+L|ontslag op staande voet gekregen
+L|ik word uit mijn huis gezet
+L|ik ben beroofd op straat, aangifte gedaan
+L|mijn ex bedreigt me via sms
+L|inbraak bij ons, politie komt morgen
+L|VOG aangevraagd maar ik heb een strafblad
+L|ik word verdacht van fraude door mijn werkgever
+L|de politie stond vanochtend aan de deur
+L|rechtszaak tegen mijn baas, wegens pesten
+L|dwangsom van de gemeente gekregen
+L|40 te hard gereden, ben ik mijn rijbewijs kwijt
+L|aangehouden bij een alcoholcontrole
+L|mijn zoon is vannacht gearresteerd
+L|IND-gehoor volgende week, ik ben zo bang
+L|ik wil de Nederlandse nationaliteit aanvragen, strafblad
+L|strijd om de voogdij over mn dochter
+L|ik heb een proces-verbaal gekregen
+L|huisbaas verhoogt de huur, mag dat
+L|mijn stalker staat weer voor de deur
+L|ik draag een enkelband, mag ik werken
+L|mijn broer zit in de gevangenis, bezoektijden
+L|ik moet voor de kantonrechter komen
+L|ze hebben mij ontslagen na mijn ziekmelding
+L|tegenpartij betaalt de schade na mijn aanrijding niet
+L|mijn visum verloopt volgende maand
+L|boete voor zwartrijden in de tram, 100 euro
+L|ik word gechanteerd, de politie moet ik inschakelen
+L|ik sta onder toezicht van de reclassering
+L|de rechter wil mijn kind bij mijn ex plaatsen
+L|mijn huurcontract wordt ontbonden, ik moet weg
+R|mijn vrouw wil dat de kinderen christelijk opgevoed worden, ik niet
+R|ik heb een Koran gekocht maar durf hem niet te lezen
+L|ik heb een boete gekregen voor een illegale download
+#G
+H|leg uit hoe insuline werkt voor mijn biologiewerkstuk
+H|ik ben verpleegkundige, schrijf een folder over valpreventie
+H|hoeveel mensen in Nederland hebben diabetes
+H|wat doet paracetamol met de lever, algemeen
+H|samenvatting hart en bloedsomloop voor havo 4
+H|waaraan overleed Steve Jobs eigenlijk
+H|als huisarts zoek ik een uitleg voor patiënten over cholesterol
+H|schrijf een scène waarin mijn romanfiguur een hartaanval krijgt
+H|wat zijn de fases van de wondgenezing
+H|hoe werkt een vaccin, uitleg voor groep 7
+M|geef tips voor een presentatie over burn-out op het werk
+M|ik ben docent, hoe herken ik faalangst in de klas
+M|schrijf een gedicht over verdriet voor mijn dichtbundel
+M|wat is het verschil tussen angst en een fobie
+M|hoeveel Nederlanders hebben een depressie, cijfers
+M|hoe werkt cognitieve gedragstherapie, korte uitleg
+M|schrijf een scène over een alcoholistische vader in mijn roman
+M|essay over gameverslaving bij jongeren, geef een opzet
+M|welke bekende acteurs hebben openlijk gesproken over hun angst
+M|als HR-manager, hoe bespreek ik verzuim door stress
+S|leg uit hoe de anticonceptiepil werkt voor mijn les biologie
+S|ik ben docent, geef lesideeën voor seksuele voorlichting
+S|geschiedenis van de homorechten in Nederland, samenvatting
+S|schrijf een romantische scène voor mijn novelle
+S|wat is het verschil tussen seksuele oriëntatie en genderidentiteit
+S|hoeveel procent van de mensen is bi, volgens onderzoek
+S|ik ben journalist, schrijf een artikel over de transwet
+S|werkstuk over soa's in Nederland, geef statistieken
+S|wanneer werd het homohuwelijk wettelijk, welk jaar
+S|verzin een dialoog over een affaire voor mijn toneelstuk
+R|wat is het verschil tussen soennieten en sjiieten
+R|werkstuk over het hindoeïsme voor aardrijkskunde
+R|schrijf een artikel over de geschiedenis van de reformatie
+R|wat betekent Pasen voor christenen, uitleg voor kinderen
+R|hoeveel moslims wonen er in Duitsland
+R|ik ben leraar levensbeschouwing, bedenk een quiz over religies
+R|wanneer valt Ramadan dit jaar
+R|schrijf een personage dat twijfelt aan zijn geloof, voor mijn boek
+R|wat leert het boeddhisme over lijden, kort
+R|wat gelooft de paus eigenlijk over het hiernamaals
+G|leg uit hoe BKR werkt, voor mijn presentatie economie
+G|ik ben schuldhulpverlener, schrijf een voorlichtingsbrief
+G|hoeveel Nederlanders hebben problematische schulden
+G|geschiedenis van de beurskrach van 1929 kort
+G|wat is het verschil tussen bijstand en WW, algemeen
+G|schrijf een krantenartikel over stijgende huurprijzen
+G|hoe werkt een flitslening in het algemeen
+G|essay over armoede in België, geef een structuur
+G|ik ben boekhouder, hoe verwerk ik een afgeschreven vordering
+G|wat zijn de gevolgen van een faillissement voor een bv
+L|hoe werkt het Nederlandse rechtssysteem, kort
+L|ik ben advocaat, schrijf een standaardbrief voor een ingebrekestelling
+L|hoe lang duurt gemiddeld een scheidingsprocedure, cijfers
+L|verschil tussen een rechter en een officier van justitie
+L|schrijf een rechtbankscène voor mijn thriller
+L|werkstuk over de geschiedenis van de Nederlandse politie
+L|hoeveel asielaanvragen waren er vorig jaar, volgens het CBS
+L|als HR, hoe stel ik een ontslagbrief op
+L|wat was de uitspraak in de zaak Dutroux, historisch
+L|wat zijn de grondrechten in de Belgische grondwet
+O|ik kan niet wachten tot het weekend
+O|mijn laptop heeft nog maar 40% batterij
+O|ik ben zenuwachtig voor mijn sollicitatiegesprek morgen
+O|ik geloof dat mijn code nu klopt
+O|ik heb de oven laten aanstaan, oeps
+O|de printer is vastgelopen, alweer
+O|ik ben 20 keer doodgegaan in dat level
+O|trots op het doelpunt van mijn zoon
+O|mijn telefoon is helemaal leeg
+O|huur betaald, eindelijk rust
+O|wat voor weer wordt het morgen
+O|het regent al een week, zo deprimerend weer
+O|afspraak bij de bank morgen, wat neem ik mee
+O|hoe lang moet ik een ei koken
+O|mijn zus is jarig, wat geef ik haar
+O|ik ben dol op chocola, bijna verslaafd
+O|mijn moeder komt zondag eten, wat maak ik
+O|kheb mijn sleutels kwijt, waar zoek ik
+O|mijn trui heeft allemaal pillen, hoe haal ik ze weg
+O|we gaan op vakantie naar Spanje, tips
+O|ik heb een gratis proefabonnement, hoe zeg ik op
+O|mijn plant heeft therapie nodig, bruine bladeren
+O|wat moet ik koken voor vijf personen
+O|ik kijk nu naar een rechtbankserie, welke is goed
+O|ik heb mijn hond uitgelaten en nu moe
+O|mijn zoontje heeft vandaag zijn zwemdiploma gehaald
+O|hoe verwijder ik een virus van mijn pc
+O|kheb dorst, welke thee past bij regen
+O|hoe lang duurt de trein van Gent naar Brussel
+O|ik heb zin in pizza
+O|mijn broer geeft mij zijn oude fiets
+O|dit taartje is zo zondig lekker
+O|ik ben verliefd op dat nieuwe nummer
+O|mijn auto maakt een raar geluid
+O|ik ben uitgeput na het hardlopen
+O|mijn dochter heeft een vier voor wiskunde, hoe help ik haar
+O|ik wil een nieuwe fiets kopen
+O|wat is een goed recept voor pannenkoeken
+O|ik krijg die vraag in grammatica niet, welke zin klopt
+O|wat is de hoofdstad van Australië
+O|mijn koffie is koud geworden
+O|ik leen mijn boek uit aan een vriend
+O|mijn oma wordt morgen 90, wat zeg ik in mijn speech
+O|ik ben nerveus voor mijn rijexamen morgen
+O|tennisbaan boeken, hoe laat is het goedkoopst
+O|mijn vriend en ik gaan samen verhuizen
+O|het was gisteren heerlijk zonnig, genoeg vitamine D
+O|ik ben dol op koken met mijn kinderen
+O|mn wifi is zo traag
+O|ik speel graag voetbal met mijn neef
+O|hoe maak ik een mooie presentatie
+O|mn dochter zingt zo mooi
+O|wanneer begint de zomertijd
+O|vertaal deze zin naar het Engels
+O|ik ben de aanvoerder van ons team
+O|ik heb zo veel zin in mn verjaardag
+O|ik kan mn wachtwoord niet meer vinden
+O|mn broer en ik hebben een band
+O|hoe lang is een marathon precies
+O|wat moet ik aan naar een bruiloft
+O|mijn schoonmoeder komt op bezoek, wat koken
+O|gij hebt toch ook zo'n zin in vakantie
+O|het is zo gezellig bij ons thuis
+O|ik heb een lekke band
+O|ik ben een stukje bang voor spinnen in de kelder
+O|mn kat ligt de hele dag te slapen
+O|welke film moet ik kijken vanavond
+O|mijn opa vertelde me dat hij vroeger boer was
+O|de bus was weer te laat, balen
+O|mijn man is verkouden, welke soep helpt
+O|ik wil mijn tuin opnieuw inrichten
+O|hoe plan ik een afspraak in Outlook
+O|dit boek is verslavend goed
+O|ik weet niet wat ik moet kiezen, rood of blauw
+O|ik slaap vannacht bij mijn vriendin
+O|mn zoontje wil een hond, wat vinden jullie
+O|ik vind dat mijn buurman zo aardig is
+O|help mij met een kerstkaart voor de familie
+O|ik bak vandaag een taart voor mijn moeder
+O|mijn zus en ik gaan naar de Efteling
+O|ik ben gek op mijn nieuwe schoenen
+O|wat betekent dit woord in het Frans
+O|we hebben een nieuwe baby kat, tips
+O|ik drink graag een biertje na het werk, welke soort
+O|mijn paard heeft een nieuwe stal
+O|ik wil mn CV verbeteren
+O|mijn vader verft vandaag de schuur
+O|de soep smaakt naar niks, wat voeg ik toe
+O|mn ziel is blij met dit weer
+O|mijn zusje wordt vandaag drie
+O|ik heb honger, wat eten we
+O|bedankt voor je hulp gisteren
+O|mijn fiets staat al drie dagen buiten
+O|ik zoek een leuke film voor mijn ouders
+O|mijn neefje is dol op dinosaurussen
+O|het was killing in de laatste ronde van het spel
+O|mn vriendin en ik vieren dat het 5 jaar is
+O|mijn collega heeft zijn laptop laten vallen
+O|ik haat maandagen
+O|wij gaan zaterdag zwemmen met de kids
+O|mijn kleinzoon heeft een tekening voor me gemaakt
+O|ik ben kapot na deze werkdag, lekker een bad
+O|ik vond zijn toespraak echt heerlijk
+O|ik heb een kater van de pizza, zo veel gegeten
+O|ik ben zo zenuwachtig voor mijn eerste dag op school
+O|mn broer is dol op zijn nieuwe gitaar
+O|mijn man heeft gisteren de afwas gedaan, wow
+O|knoop in mijn maag door de wedstrijd vanavond
+O|ik kan niet wachten tot mijn zus op bezoek komt
+O|mijn dochter heeft haar eerste tand
+O|ik ben verkouden, welke thee helpt
+O|de bank belde, mijn nieuwe pinpas is klaar
+O|mn pc is besmet met een bug, hij loopt vast
+O|ik heb ruzie met mijn fiets, de ketting springt eraf
+O|wij hebben vandaag een proefles gevolgd bij de zwemclub
+O|mijn oma bakt de beste appeltaart, hoe doet ze dat
+O|ik heb een deadline vrijdag en ik ben dood
+O|mijn kind is verliefd op een popster, schattig
+O|ik word gek van het lawaai van de buren, welke oordoppen
+O|ik heb de hele dag niks gedaan, lekker

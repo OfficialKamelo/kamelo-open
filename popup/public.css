@@ -41,3 +41,11 @@ html:has(body.pub) { background: var(--surface); }
 .pub-row .txt span { font-size: 12px; color: var(--secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pub-row .chev { width: 7px; height: 12px; flex: none; fill: none; stroke: var(--tertiary); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .pub-list:not(:has(.pub-row:not([hidden]))) { display: none; }
+
+/* Melo voor Mac: een rij met schakelaar in plaats van een pijltje */
+.pub-row.mac { cursor: default; }
+.pub-row.mac:hover { background: none; }
+.pub-row .ico.mac { color: var(--ink); background: var(--fill); }
+.pub-row.mac .txt span.hint { white-space: normal; color: var(--accent-text); }
+.pub-row.mac .switch .track { background: var(--switch-off); }
+.pub-row.mac .switch input:checked + .track { background: var(--accent); }

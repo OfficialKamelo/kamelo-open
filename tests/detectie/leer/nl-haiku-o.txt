@@ -1,0 +1,251 @@
+#G
+O|ik snap niet waarom mijn python script een keyerror geeft op regel 12, die key staat toch in de dict
+O|mijn app crasht zodra ik op de knop tik, hoe vind ik in de logs waar het misgaat
+O|hoe maak ik in git een commit ongedaan zonder mijn wijzigingen kwijt te raken
+O|we moeten onze api van v2 naar v3 zetten, welke breaking changes verwacht ik
+O|kun je kijken waarom deze sql query zo traag is, ik vermoed die dubbele join
+O|hoe maak ik van een lijst een set in javascript
+O|mijn docker container blijft herstarten, in de logs staat alleen out of memory, wat nu
+O|ons team wil de build van webpack naar vite, waar moeten we het eerst op checken
+O|ik heb een css grid die op mobiel stukloopt, hoe zorg ik dat de kaarten onder elkaar komen
+O|hoe schrijf ik een unittest voor een functie die een datum parseert, ik heb drie edge cases
+O|kheb een regex nodig die een nederlandse postcode herkent, 1234 AB met of zonder spatie
+O|waarom geeft mijn cronjob niks terug als ik hem handmatig draai, het script werkt wel
+O|ge kunt mij zeggen hoe ik een virtuele omgeving activeer in powershell, want het lukt niet
+O|Mijn collega zegt dat onze tests altijd groen moeten zijn voor we mergen, klopt dat
+O|hoe voorkom ik dat mijn react component elke keer opnieuw rendert als de parent verandert
+O|ik heb een fijne week gehad met de nieuwe repo maar de ci faalt op de linter, wat doe ik
+O|hoe lees ik in node een json bestand in zonder dat de server blokkeert
+O|mijn vriend heeft mij gevraagd een kleine discordbot te maken, waar begin ik
+O|kun je deze functie herschrijven zonder recursie, ze is traag bij grote lijsten
+O|hoe maak ik een git branch op basis van de tag van vorige week
+O|we hebben een bug in de login die alleen op safari voorkomt, wat zijn de vaakste oorzaken
+O|Ons backend geeft een 500 bij een lege body, moet dat volgens jou niet een 400 zijn
+O|mijn oma maakt altijd stamppot, hoe krijg ik die boerenkool minder bitter
+O|we hebben vanavond gasten, wat is een snel hoofdgerecht dat ook voor vegetariers kan
+O|ik heb nog drie aardappels en een pot kikkererwten, wat kan ik ervan maken
+O|hoe lang kook ik een ei zodat het dooier nog zacht is
+O|ons zoontje wil geen groenten meer, hoe verstop ik spinazie in een saus
+O|mijn beste vriend komt zaterdag eten en is gek op pasta, welke saus is makkelijk
+O|ge moet mij een recept geven voor dadelbrood, hoeveel suiker gebruik ge daarvoor
+O|kheb een pan met aangebrande rijst, hoe maak ik die schoon zonder te krassen
+O|hoe lang moet een kip van 1,5 kilo in de oven op 180 graden
+O|We willen een italiaans diner voor zes personen, waar beginnen we
+O|mijn papa heeft restjes over, hoe lang houdt gekookte pasta zich in de vriezer
+O|ik wil zonder klontjes pannenkoeken bakken, welk beslag is het beste
+O|wat kan ik in een risotto gebruiken in plaats van witte wijn, we drinken geen alcohol
+O|hoe bewaar ik basilicum zodat het langer groen blijft
+O|ik heb een hele zak uien, hoe bewaar ik die zodat ze niet gaan schieten
+O|mijn zus bakt taart met zure room, kun je een vervanger geven voor de room
+O|ff snel: hoeveel gram pasta voor vier personen als voorgerecht
+O|we zijn met de kinderen naar de markt geweest, wat kun je met vijgen doen
+O|amai we gaan in juli met de auto naar kroatie, hoe lang rijden we ongeveer vanaf utrecht
+O|ik ga volgend jaar twee weken naar japan met mijn vriendin, wat moeten we niet missen
+O|mijn zoon reist alleen met de trein naar parijs, welke tickets heeft hij nodig
+O|kun je een route maken van brussel naar lissabon met een paar mooie stops
+O|ik heb een vlucht naar new york met een overstap, hoeveel tijd moet ik minimaal laten
+O|hoe kom ik zonder auto van schiphol naar een hostel in amsterdam oost
+O|we willen een weekend naar de ardennen, welke wandelroute is niet te zwaar
+O|wat moet ik meenemen voor een rondreis door thailand in het regenseizoen
+O|ik wil in maart naar marokko, is marrakesh of agadir beter voor een eerste keer
+O|mijn papa heeft een busreis naar de dolomieten geboekt, welke tips hebben jullie
+O|we hebben een hotel in gent, is het makkelijk om met de tram naar het centrum
+O|ik ga met mijn collega's naar een congres in berlijn, waar eten we goedkoop
+O|hoe regel ik een interrailpas voor tien dagen door europa
+O|ons vliegtuig heeft drie uur vertraging, kunnen we iets claimen bij de maatschappij
+O|wat is de beste tijd om naar sicilie te gaan zonder de drukte van augustus
+O|ik wil een roadtrip door schotland, moet ik een internationaal rijbewijs meenemen
+O|we zoeken een camping aan de kust van portugal met een zwembad voor de kinderen
+O|mijn vriend en ik willen naar een festival in portugal, wat is de handigste route
+O|ik zoek een stofzuiger die niet te veel lawaai maakt, budget rond de 250 euro
+O|kun je vergelijken welke wasmachine het zuinigst is voor een gezin van vier
+O|mijn dochter wil sneakers, welke merken zijn stevig maar niet te duur
+O|we hebben een nieuwe bank nodig voor de woonkamer, leer of stof
+O|hoe kies ik de juiste maat fiets als ik 1 meter 80 ben
+O|ik wil een cadeau voor mijn moeder, ze houdt van tuinieren, wat zou ze leuk vinden
+O|welke koptelefoon is beter in een drukke trein, met of zonder ruisonderdrukking
+O|mijn partner en ik zoeken een tweedehands auto onder 8000 euro, wat moeten we checken
+O|ons kantoor wil nieuwe bureaustoelen, welke zijn ergonomisch en niet te duur
+O|ik wil een rugzak voor school, het moet een laptop van 15 inch passen
+O|mijn oom wil een elektrische tandenborstel, welk model is goed voor een beginner
+O|kheb een jas gekocht die te klein is, hoe werkt het ruilen bij de meeste winkels
+O|da's toch een mooie fles wijn voor bij de lasagne, of moet het iets anders zijn
+O|Kun je deze mail aan de klant korter en vriendelijker maken, het is te stijf
+O|ik moet mijn baas vertellen dat het project een week later klaar is, hoe zeg ik dat netjes
+O|Beste team, kunnen we de deadline van vrijdag verschuiven naar maandag, wat vinden jullie
+O|ik wil reageren op de klacht van een klant zonder het excuus te overdrijven
+O|Formele mail naar een leverancier over een vertraagde levering van 200 stuks
+O|mijn collega reageert altijd laat, hoe stuur ik een herinnering zonder onbeleefd te zijn
+O|hoe schrijf ik een uitnodiging voor een teamlunch op vrijdag om 12 uur
+O|ons bedrijf verhuist naar een nieuw kantoor, schrijf een korte aankondiging voor de nieuwsbrief
+O|ik ben op vakantie en wil een automatisch antwoord met de naam van mijn vervanger
+O|hoe vraag ik een collega om feedback op mijn presentatie zonder dat het raar klinkt
+O|kun je dit vergaderverslag samenvatten in vijf bullets voor het team
+O|we moeten een offerte sturen naar een bouwbedrijf, welke onderdelen moeten erin staan
+O|hoe reageer ik op een klant die boos is over een verkeerde factuur
+O|Ik wil mijn collega's bedanken voor het teamuitje, schrijf een korte tekst
+O|wat is het beste format voor een projectplanning die alle teams begrijpen
+O|kun je mijn linkedin tekst nakijken, ik solliciteer naar een functie als projectmanager
+O|ons klantenserviceteam wil standaardantwoorden, geef mij drie voorbeelden voor retouren
+O|ik moet een verslag van de maandvergadering schrijven, welke structuur werkt het best
+O|schrijf een bedankmail aan de sprekers van ons event, het was een mooie middag
+O|ik wil een feedbackformulier maken voor de bezoekers van onze webinar
+O|ons voetbalteam speelt zaterdag tegen de koploper, welke opstelling is slim met 4-3-3
+O|ik wil leren crawlen, hoe adem ik het best
+O|mijn vriend wil meedoen aan een hardloopwedstrijd van 10 km, hoeveel weken training heb je nodig
+O|we spelen volgende week padel met de buren, welke racket is goed voor beginners
+O|hoe werkt de buitenspelregel precies, ik snap het niet bij ons zaalvoetbal
+O|hoe verbeter ik mijn balcontrole bij het basketballen zonder coach
+O|mijn zoon wil graag judo doen, welke leeftijd is gebruikelijk om te beginnen
+O|ik kijk morgen de champions league, welke wedstrijd is het spannendst volgens jou
+O|ons schaakclubje wil een toernooi, hoeveel rondes zijn er bij acht spelers
+O|ik speel elke zondag badminton met mijn broer, hoe verbeter ik mijn smash
+O|ik zit vast in level zeven van zelda, waar vind ik de sleutel van de tempel
+O|welke grafische instellingen zijn het best voor cyberpunk op mijn gtx 1660
+O|ons team speelt elke vrijdag league of legends, hoe ondersteun ik beter als support
+O|mijn broer en ik bouwen samen in minecraft, hoe maak ik een kasteel met weinig materiaal
+O|welke coopgame is leuk om met mijn partner te spelen, we houden van samenwerken
+O|hoe haal ik meer fps uit fortnite op een oude laptop
+O|mijn zus heeft mijn save in animal crossing verwijderd, kan ik die via de cloud terugzetten
+O|ik wil met unity een speelse game maken voor mijn neef van twaalf, waar begin ik
+O|kheb een baas in elden ring die me steeds verslaat, wat is de tip om hem te verslaan
+O|ik speel sinds gisteren rocket league en ik verlies alleen maar, wat doe ik fout
+O|ik wil een kast in de hal monteren op een gipsplaat, welke pluggen heb ik nodig
+O|hoe verf ik een houten vloer zonder dat de lak gaat schilferen
+O|we gaan de badkamertegels vernieuwen, hoeveel m2 bestellen we voor 6 m2 wand
+O|mijn vader wil een schuur in de tuin bouwen, welke vergunning is daarvoor nodig
+O|ik heb een lekkende kraan in de keuken, moet ik de pakking vervangen of de hele kraan
+O|ons huis heeft tocht bij de voordeur, wat is het goedkoopste om dat op te lossen
+O|hoe kies ik de juiste schroef voor een houten plank in een betonnen muur
+O|ik wil de kinderkamer in een boshut-thema zetten, welke kleuren passen samen
+O|mijn bureau wiebelt elke keer als ik typ, hoe maak ik het stabiel
+O|ik wil mijn auto laten keuren, wat moet ik allemaal nakijken voor de apk
+O|welke winterbanden zijn goed voor Nederland, met of zonder spikes
+O|mijn vriendin rijdt een oude golf, hoe vaak moet de olie ververst worden
+O|we willen een elektrische auto, is een tweedehands leaf een goede eerste stap
+O|de check-enginelamp van mijn auto gaat aan, wat betekent dat meestal
+O|ik wil mijn auto zelf wassen, welk middel is niet te agressief voor de lak
+O|hoe rijd ik zuinig met een diesel in de file op de ring
+O|mijn zoon heeft zijn rijbewijs gehaald, welke verzekering is het goedkoopst voor een beginner
+O|hoe stel ik de spiegels goed af zodat ik geen dode hoek heb
+O|de ruitenwissers van mijn auto piepen, hoe los ik dat op
+O|mijn tomaten krijgen bruine vlekken op de bladeren, wat kan ik ertegen doen
+O|ik wil een moestuin op het balkon beginnen, welke groenten groeien het makkelijkst
+O|hoe snoei ik mijn rozen in het voorjaar zodat ze goed blijven bloeien
+O|mijn oma heeft een grote tuin met een appelboom, wanneer plukken we de appels
+O|ons gras wordt geel in de zomer, hoe krijg ik het groen zonder veel water
+O|hoe kweek ik zonnebloemen vanuit een zaadje met de kinderen
+O|slakken in mijn moestuin, wat werkt zonder gif
+O|hoe maak ik een vijver in de tuin die niet na een jaar leegloopt
+O|het is de verjaardag van mijn dochter van zeven en we willen een piratenfeest, welke spelletjes zijn leuk
+O|ik zoek een cadeau voor mijn vriendin die alles al heeft, iets creatiefs misschien
+O|mijn beste vriend wordt veertig en we willen een surpriseparty, hoe houd ik het geheim
+O|wat geef ik een collega die afscheid neemt, budget 25 euro
+O|hoe maak ik een grappige zelfgemaakte kaart voor mijn papa
+O|we organiseren een bbq voor het vijftigste van mijn oom, wat koop ik voor twintig gasten
+O|wat is een origineel cadeau voor een gamer van vijftien die van lego houdt
+O|mijn zus wordt jarig en wil een taart met unicorns, hoe lang duurt het om die te versieren
+O|ons gezin heeft een pubquiz gepland voor de verjaardag van mijn broer, hoeveel vragen zijn genoeg
+O|we hebben een babyshower voor onze vriendin, welke spelletjes zijn klassiek
+O|wat is het verschil tussen zich en zichzelf, ik zit er altijd naast
+O|hoe zeg je in het frans dat ik het er niet mee eens ben zonder onbeleefd te klinken
+O|ons dochtertje leert spaans, hoe help ik haar met de tegenwoordige tijd van de werkwoorden
+O|wat betekent het woord gedoe precies en hoe gebruik je het in een zin
+O|hoe zeg je in het duits wat kost dat op de markt
+O|ik leer japans via een app, waarom zijn er drie schriftsoorten
+O|mijn zoon vraagt wat sarcasme is, hoe leg ik dat uit aan een kind van tien
+O|gij kunt mij vertellen wat het verschil is tussen waar en waarom bij een vraag
+O|hoe bereken ik de oppervlakte van een driehoek als ik alleen de zijden ken
+O|ik snap het niet: hoeveel is 3/4 gedeeld door 1/2, leg het stap voor stap uit
+O|mijn zoon heeft huiswerk over procenten, hoe reken je 15 procent korting uit op 80 euro
+O|hoe los ik een vergelijking op met x aan beide kanten, zoals 3x + 5 = 2x + 9
+O|wat is de formule voor de omtrek van een cirkel met straal 4
+O|kun je mij uitleggen waarom een negatief keer een negatief positief is
+O|hoe maak ik in excel een grafiek van y = x^2 - 3x voor mijn huiswerk
+O|hoeveel is 17 procent van 350
+O|we hadden een discussie op kantoor over gemiddelde en mediaan, wat is het verschil bij scheve data
+O|hoe bereken ik de inhoud van een cilinder met diameter 10 en hoogte 20
+O|ik wil in de zomer fit zijn voor het strand, welk schema is haalbaar in acht weken
+O|hoe doe ik een goede push-up zonder dat mijn onderrug doorzakt
+O|welke oefeningen kan ik thuis doen met een yogamat en twee dumbbells
+O|mijn vriend en ik gaan elke ochtend een rondje hardlopen, welke app houdt de voortgang bij
+O|wat eet ik na een training om mijn spieren te laten groeien, zonder supplementen
+O|kun je een schema maken voor een 5 km-loop in zes weken voor een beginner
+O|ik wil meer beweging op mijn werkdag, welke kleine oefeningen kan ik achter het bureau doen
+O|ik begin met fietsen naar mijn werk, welke route is het veiligst in de stad
+O|hoe warm ik me op voor een zaalvoetbalwedstrijd van dertig minuten
+O|mijn zus en ik doen elke vrijdag een spinningles, welk tempo is goed voor beginners
+O|mijn zoon heeft een werkstuk over de tweede wereldoorlog, welke bronnen zijn betrouwbaar
+O|kun je een samenvatting maken van het boek De avonden van Hella Haasse, ik heb het niet gelezen
+O|hoe schrijf ik een betoog over smartphones op school in vier alinea's
+O|wat zijn de oorzaken van de franse revolutie, kort samengevat voor de toets
+O|ons klas moet een presentatie maken over de nijl, welke structuur past
+O|hoe werkt fotosynthese precies, mijn dochter snapt het niet uit haar biologieboek
+O|mijn zus studeert economie, hoe leg ik inflatie uit zonder jargon
+O|kun je een quiz maken van tien vragen over de geschiedenis van nederland voor de les
+O|mijn hond heeft sinds gisteren diarree en eet minder, wanneer moet ik naar de dierenarts
+O|onze kat niest veel en heeft waterige ogen, is dat iets om snel te laten zien
+O|mijn konijn eet zijn hooi niet meer, wat kan ik doen naast naar de dierenarts gaan
+O|ik heb een hamster die al twee dagen niet drinkt, wat zijn de tekenen dat het ernstig is
+O|mijn papa's hond heeft een bijtwond van een andere hond, moet die gehecht worden
+O|de vogel van mijn zus zit opgeblazen stil op de stok, wat betekent dat
+O|mijn hond scheurt op zijn poot en blijft likken, hoe verzorg ik die thuis
+O|onze kat drinkt veel meer water dan normaal, hoe vaak moeten we laten nakijken
+O|mijn oude labrador heeft stijve achterpoten als hij opstaat, wat kan dat zijn
+O|de cavia van mijn dochter snuffelt wel maar eet niks, wat nu
+O|mijn hond wil niet meer aan de riem lopen, hoe leer ik hem rustig naast mij te lopen
+O|ons katje kan niet alleen blijven, hoe maak ik het makkelijker als we twee dagen weg zijn
+O|welk hondenvoer voor een pup van 8 weken
+O|onze kat krabt aan de bank, hoe krijg ik hem op de krabpaal
+O|mijn konijn heeft een nieuw hok nodig, welke maat is het minimum
+O|mijn zus wil een papegaai, hoeveel zorg vraagt die per dag
+O|mijn telefoon is helemaal dood na een val, wat kan ik nog proberen voordat ik naar de winkel ga
+O|ik heb een virus op mijn laptop gekregen via een gekke download, hoe haal ik hem weg zonder te formatteren
+O|proces killen in linux als een programma vastloopt, welk commando is het ook alweer
+O|mijn app crasht zodra ik hem opstart, ik heb hem al twee keer opnieuw geinstalleerd
+O|schuld in een spel: mijn team verloor door een fout van mij, hoe zeg ik sorry zonder dat het gênant wordt
+O|de test is positief in onze software, dat betekent dat de functie werkt toch, leg het uit voor de demo
+O|ik sterf van het lachen om die video van de kat in de doos, wie maakt zoiets
+O|we gaan vanavond een politieserie om te bingen kijken, welke reeks is het spannendst van de laatste jaren
+O|ik wil een tennisbaan reserveren in het park voor zaterdagochtend, hoe werkt het boeken
+O|we willen trouwen in een kerk als locatie maar zonder dienst, kan dat of is een zaal beter
+O|mijn wagen in minecraft is in de lava gevallen, hoe krijg ik mijn items er weer uit
+O|ik ben drie keer dood gegaan in de grot in mijn spel, wat was de fout en hoe kom ik er voorbij
+O|de explosie in mijn keuken was maar een taart die te heet werd, hoe voorkom ik dat volgende keer
+O|hoe fix ik een memory leak in mijn javascript, de tab wordt elke keer trager
+O|mijn computer loopt op hoog en de ventilator giert, is dat normaal bij een zware game
+O|mijn kind heeft de router gereset en nu is het wifi weg, hoe zet ik hem terug op de fabrieksinstellingen
+O|kill de achtergrondprocessen op mijn mac die de batterij leegtrekken, welke zijn het
+O|onze presentatie was een ramp, de demo faalde twee keer, hoe bereid ik ons beter voor
+O|mijn zoon schrijft een verhaal over een spion, geef hem een spannend begin van drie zinnen
+O|ik word gek van die reclame op youtube, hoe blokkeer ik die op mijn telefoon
+O|hoe maak ik een knockout-combo in street fighter, welke knoppen moet ik indrukken
+O|ons team kreeg de schuld van de crash in productie, hoe schrijven we een postmortem zonder schuldvraag
+O|mijn laptop wordt heet als ik twee zware programma's tegelijk draai, is dat slecht voor het toestel
+O|mijn game-account is geblokkeerd na drie foute logins, hoe herstel ik hem via de support
+O|de crimineel in mijn boek moet een overtuigend motief hebben, hoe bouw ik zijn karakter op
+O|voor mijn verjaardag wil ik een moordmysterie-spel voor acht gasten, hoe schrijf ik een goede plot
+O|ik wil een donker schaduweffect op mijn foto in photoshop, hoe doe ik dat
+O|de kat sprong op het toetsenbord en nu staat mijn website half in het japans, hoe zet ik het terug
+O|gisteren stond mijn wagen vast in de sneeuw, hoe kom ik eruit zonder te graven
+O|we hadden een brand in de testomgeving van de server, wat zijn de stappen om te herstellen
+O|mijn kind schreeuwt van vreugde bij het spel, hoe leer ik hem om zijn beurt te geven
+O|het is een moordmysterie-avond met vrienden, welke rol geef ik wie zodat niemand vastloopt
+O|mijn zoon wil een zombie-kostuum voor carnaval, welke make-up is makkelijk af te halen
+O|onze hitbox in het spel is kapot, hoe maak ik die opnieuw in unity
+O|ik heb mijn mailaccount geblokkeerd omdat ik te vaak fout inlogde, hoe herstel ik de toegang
+O|ik heb al weken een bug die elke nacht terugkomt in de build, hoe vind ik de oorzaak
+O|mijn drone viel uit de lucht in het park, hoe check ik of de accu nog goed is
+O|we spelen dit weekend een verschrikkelijk moeilijk level van elden ring, ik ben er drie keer aan gesneuveld, kheb tips nodig
+O|het oude gebouw bij ons in de straat wordt gesloopt, hoe vind ik de geschiedenis ervan voor mijn stadsboek
+O|ik heb mijn zus laten schrikken met een nepspin, hoe maak je een grap die niet te hard is
+O|mijn kantoorprinter is gecrasht en wil niet printen, welke stappen zijn er eerst
+O|ik speel elke ochtend wordle en dat wordt een gewoonte, hoe kies ik betere startwoorden
+O|het project van mijn collega zit vol met bugs, hoe prioriteer ik die het beste
+O|ons team wil een hacker-thema voor de kerstborrel, welke decoratie past erbij
+O|mijn pizza is verbrand in de oven en de rookmelder ging af, hoe zet ik die melder uit en lucht ik de keuken
+O|het kanon in mijn minecraft-kasteel werkt niet, hoe bouw ik een redstone-circuit dat vuurt
+O|ik speel dit weekend met mijn broer paintball in de loods, welke bescherming is nodig
+O|de moordenaar in het bordspel Cluedo heb ik per ongeluk verraden, wat is de beste strategie voor het volgende spel
+O|ons bedrijf heeft een zware meeting met de bank over de lancering, hoe bereid ik mijn pitch voor
+O|mijn wagen weigert te starten bij min tien, welke accu past bij mijn type

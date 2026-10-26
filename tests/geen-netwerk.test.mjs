@@ -17,6 +17,9 @@
 //     kamelo.eu (welkomstpagina na installeren, afscheidspagina na verwijderen: een gewoon tabblad, zonder gegevens),
 //     pagina's van de browser zelf (chrome://extensions),
 //     XML-naamruimten (een naam, geen verbinding), en de bronnen in chat/kennis.js (alleen voor ons, nooit gelezen).
+//   - native messaging naar precies één programma: melo-brug in Melo voor Mac (eu.kamelo.melo, repo melo-mac), op dezelfde
+//     Mac, geen server. Alleen sendNativeMessage in src/background.js (nooit connectNative), en het recht nativeMessaging
+//     alleen optioneel (je zet het zelf aan in de popup); in Safari een gewoon recht, want daar zit de extensie in Melo.app.
 // Wat deze test niet kan zien: wat de browser zelf doet. Chrome downloadt zijn AI-model bij Google, en een link die je
 // aanklikt, opent gewoon een pagina. Een statische test is een vangnet, geen bewijs tegen opzet: daarom ook geen eval.
 import assert from 'node:assert/strict';
@@ -66,8 +69,12 @@ function checkPublic(label, { dir, manifest }) {
   });
 
   test(`${label}: manifest zonder netwerkrechten, zonder script in de pagina zelf, zonder code van buiten`, () => {
+    // Melo voor Mac (zie boven): nativeMessaging optioneel, of in Safari een gewoon recht. Verder geen enkel netwerkrecht.
+    const safari = label.includes('Safari');
+    assert.ok((safari ? manifest.permissions : manifest.optional_permissions || []).includes('nativeMessaging'), 'nativeMessaging voor Melo voor Mac');
+    if (!safari) assert.ok(!manifest.permissions.includes('nativeMessaging'), 'nativeMessaging alleen optioneel');
     const perms = [...(manifest.permissions || []), ...(manifest.optional_permissions || [])];
-    assert.deepEqual(perms.filter(p => NET_PERMISSIONS.includes(p)), []);
+    assert.deepEqual(perms.filter(p => NET_PERMISSIONS.includes(p) && p !== 'nativeMessaging'), []);
     assert.equal(manifest.externally_connectable, undefined, 'andere extensies of sites mogen niet met Kamelo praten');
     assert.equal(manifest.web_accessible_resources, undefined);
     assert.equal(manifest.update_url, undefined, 'bijwerken alleen via de winkel');
@@ -82,7 +89,12 @@ function checkPublic(label, { dir, manifest }) {
 
   test(`${label}: geen enkele verbinding of code van buiten in de scripts`, () => {
     const found = js.flatMap(f => { const c = code(read(dir, f)); return Object.entries(FORBIDDEN).flatMap(([what, re]) => hits(c, re).map(h => `${f}:${h} (${what})`)); });
-    assert.deepEqual(found, []);
+    // De ene uitzondering: Melo voor Mac, in de achtergrond, naar één vaste naam (zie boven). De andere regel kijkt alleen
+    // of de functie er is (zonder het optionele recht ontbreekt hij).
+    const mac = found.filter(h => /^src\/background\.js:\d+: .*(chrome\.runtime\.sendNativeMessage\(MAC_HOST, msg\)|typeof chrome\.runtime\.sendNativeMessage !== 'function').* \(native messaging\)$/.test(h));
+    assert.equal(mac.length, 2, mac.join('\n'));
+    assert.match(code(read(dir, 'src/background.js')), /^const MAC_HOST = 'eu\.kamelo\.melo';$/m);
+    assert.deepEqual(found.filter(h => !mac.includes(h)), []);
   });
 
   test(`${label}: importScripts alleen in de achtergrond, met vaste namen van eigen bestanden`, () => {
@@ -134,6 +146,7 @@ function checkPublic(label, { dir, manifest }) {
 const chrome = pkg('chrome', {});
 checkPublic('gratis (Chrome/Edge)', chrome);
 checkPublic('gratis (Firefox)', pkg('firefox', { firefox: true }));
+checkPublic('gratis (Safari, in Melo voor Mac)', pkg('safari', { safari: true }));
 
 test('de test zelf: hij vangt wat hij moet vangen', () => {
   const caught = s => Object.values(FORBIDDEN).some(re => re.test(code(s)));

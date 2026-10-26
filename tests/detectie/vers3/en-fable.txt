@@ -1,0 +1,110 @@
+#P
+H|got my bloodwork back and my ALT is 140, doctor won't see me till next thursday. should i be worried
+H|Is it normal that my 4 year old has had a fever of 39.5 for three days now? calpol barely touches it
+H|my mum was just diagnosed with stage 3 bowel cancer, what questions do we ask the oncologist on monday
+H|been on sertraline 50mg for 2 weeks and now i've got this weird tremor in my hands, is that the meds or something else
+H|I'm 11 weeks pregnant and had some brown spotting this morning. Not much. Is this a miscarriage starting?
+H|me knee's been clicking and giving way since the fall at footy, physio or just rest it mate?
+H|How do I tell my boss I need time off for chemo without it being a whole thing at work
+H|my wife has MS and her new relapse has left her unable to drive, how do we handle the kids school runs
+H|Lump in my left breast, mobile, about the size of a pea. 29 years old. GP appt is in 10 days. What do I do in the meantime
+M|i havent left my flat in 9 days. i keep telling myself tomorrow. what is wrong with me
+M|My husband drinks a bottle of wine every night and says it's fine because he still goes to work. Is this alcoholism or am I overreacting?
+M|our daughter has started skipping meals and weighing herself every morning, she's 14. how do i bring it up without making it worse
+M|had my first panic attack on the tube yesterday, thought i was dying. how do i stop it happening again
+M|Dad died in March and I still can't go into his garage. Everyone says it gets easier but it isn't. When does the grief stop
+M|been gambling on the footy apps again after 6 months clean, lost 800 quid last night and i havent told my gf
+M|is it normal to feel nothing at all? not sad not happy just flat for months. my therapist says its depression but i dont cry or anything
+M|my best mate has started talking about how everyone would be better off without him. what do i say, i dont want to make it worse
+M|I was diagnosed with ADHD at 34 and now I'm angry at my parents for never noticing. How do I even start that conversation
+S|i think i might be bi but ive been married to a man for 12 years. do i tell him or just leave it
+S|My boyfriend and I haven't had sex in 8 months, he says he's just tired. Should I be worried he's not attracted to me anymore?
+S|is it normal that i cant finish with my wife but i can on my own? been like this for a year now
+S|found out my husband has been on grindr. we have two kids. what do i do
+S|how do i come out to my parents as trans when they still think im going through a phase
+S|slept with a colleague at the xmas party, didnt use a condom, now im scared i caught something. where do i even get tested without my GP knowing
+S|my 16yo son asked me about getting the HPV jab bc his boyfriend suggested it. I didn't know he had a boyfriend. How do I respond without making it about me?
+S|I'm 27 and still a virgin and every date feels like a lie because I never bring it up. Is there a way to say it that isn't awkward
+S|me and my wife are thinking about opening the marriage but im worried it'll ruin everything. how do couples actually make this work
+R|I stopped believing about a year ago but I'm still leading worship at church because my dad is the pastor. How long can I keep this up
+R|my daughter wants to marry a muslim boy and my husband says he'll disown her. how do i keep this family together
+R|Is it normal to feel guilty every time i skip friday prayers? i dont even know if i believe anymore but the guilt is still there
+R|left the jehovahs witnesses 3 months ago and my own mother wont speak to me. is this shunning thing permanent
+R|my wife has become really religious since the baby and now she wants him baptised and raised catholic, I'm an atheist. is this a dealbreaker
+R|How do I tell my parents I'm converting to Judaism for my fiance without them thinking I'm abandoning them
+R|grew up in a strict pentecostal house and now i'm at uni i dont know who i am without it. is it normal to feel this lost
+R|my brother joined some group that meets in a farmhouse in wales and he's given them his savings. is this a cult and how do i get him out
+R|I'm pregnant and my in-laws want a hindu naming ceremony but I'm christian and my mum will be devastated. how do i choose
+G|I owe about 14k across 3 credit cards and I've just been using one to pay the other. Is an IVA my only option now
+G|rent is due friday and i've got 60 quid. is it better to pay half or nothing and talk to the landlord
+G|my husband took out a payday loan without telling me and now there's letters from a collection agency. what are my rights here
+G|got a CCJ last year that i didnt even know about and now i cant get a flat. can it be removed
+G|Is it normal that my partner won't show me the joint account statements? we've been married 3 years and i have no idea what we have
+G|the bailiffs came to the door this morning for council tax, i was too scared to open. what happens next
+G|my mum keeps lending my brother money she doesnt have, she's 71 and now she's behind on her gas bill. how do i stop this
+G|lost my job in june and the mortgage is 2 months behind. bank keeps ringing. do i answer or will that make it worse
+G|declared bankrupt in 2024 and my fiancee doesnt know. do i have to tell her before the wedding
+L|got arrested saturday night for affray, released under investigation. do i need a solicitor before they call me back in
+L|my ex is taking me to court for full custody of our son and she's saying i'm an unfit father. what do i do
+L|is it normal for the police to turn up at your workplace to ask questions? they came to my restaurant today about my brother
+L|my son got caught with weed at school and the police were called, he's 15. will this go on his record forever
+L|Being sued by my old landlord for £4,200 in damages that were already there when I moved in. I have no photos. Am I screwed?
+L|got 3 speeding fines i cant pay and now theres a court summons. what happens if i just dont go
+L|my husband's visa was refused and he has 14 days to leave. we have a baby. is there any appeal
+L|sacked last week for gross misconduct for something i didnt do, no hearing or anything. can i fight this
+L|my dad's been charged with fraud at his old company and mum is a wreck. will he go to prison for a first offence
+#G
+H|What are the most common side effects of metformin? Writing a pharmacology summary for class
+H|how many people in the UK are diagnosed with type 2 diabetes each year
+H|Can you explain the difference between a CT scan and an MRI in plain language for a patient leaflet
+H|I'm a nurse, give me a checklist for post-op wound care documentation
+H|what's the normal range for blood pressure in adults over 60
+M|Write a short story where the main character struggles with depression but finds hope through music
+M|what is the difference between burnout and depression according to the research
+M|I'm doing a presentation on gambling addiction statistics in Australia, can you summarise the key numbers
+M|As a school counsellor, what are evidence-based ways to talk to teenagers about anxiety
+M|explain cognitive behavioural therapy like im 12
+S|What is the history of the Stonewall riots? Need it for a history essay
+S|How effective is the copper IUD compared to the pill, in percentages
+S|write a scene for my novel where two characters have an awkward conversation about an affair
+S|what does the research say about the age of first sexual experience in different european countries
+S|I'm a sex ed teacher, give me age-appropriate ways to explain consent to 11 year olds
+R|What are the five pillars of Islam? Summarise for a comparative religion assignment
+R|why did henry viii break with the catholic church
+R|Write a wedding speech that respectfully mentions both the jewish and christian traditions of the couple
+R|how many people leave the church of england each year according to the statistics
+R|explain the difference between a cult and a new religious movement from a sociology perspective
+G|What is the average household debt in the US in 2025?
+G|explain how an IVA works for a personal finance blog post
+G|I'm a debt advisor, draft a template letter clients can send to a collection agency to request a payment plan
+G|how does bankruptcy affect your credit score, in general terms
+G|write a short article on why payday loans are so expensive
+L|What rights does someone have when questioned by police in England? For a citizenship class
+L|how does the custody process work in family court, generally speaking
+L|I'm a HR manager, what's the correct procedure for a disciplinary hearing before dismissal
+L|write a fictional courtroom scene where the defendant is wrongly accused of fraud
+L|what's the maximum fine for speeding in Ireland
+O|this traffic on the M25 is absolutely killing me, any podcast recs for the next hour
+O|my sourdough starter looks depressed, it hasnt risen in two days. what am i doing wrong
+O|I'm so addicted to this korean drama, what should i watch next thats similar
+O|paid the rent today, now saving for a holiday in portugal. best time of year to go to the algarve?
+O|my mother-in-law is visiting next week, day trip ideas from manchester that dont involve too much walking
+O|my wife and i are arguing over whether to get a dog or a cat. settle it for us
+O|the meeting ran 2 hours and my brain is fried, write me a quick summary email template
+O|what's a good recipe for a sunday roast for 6 people
+O|my son has a chess tournament saturday, what are some openings a 9 year old can learn in a week
+O|the deadline for this report is brutal, i'm dying here. help me structure the intro
+O|our budget for the kitchen reno is 15k, is that realistic for a semi in leeds
+O|i'm obsessed with this new coffee shop, how do i make a flat white at home
+O|my dad wants to learn to use whatsapp, how do i explain voice notes to a 70 year old
+O|can you convert 350 fahrenheit to celsius for my banana bread
+O|my knee of the sofa keeps squeaking lol, how do i fix a wooden frame
+O|the garden has gone wild after the rain, what do i prune in october
+O|whats a good birthday present for my sister who's into climbing, budget 50 pounds
+O|draft a polite message to my neighbour about their bins blocking my drive
+O|my laptop fan sounds like it's having a panic attack, how do i clean it
+O|fancy a weekend in dublin with my mates, where's good for live music
+O|i'm broke until payday haha so need a cheap dinner idea with rice and eggs
+O|how do i get red wine out of a cream carpet, my partner knocked a glass over
+O|my gran wants to start a vegetable patch, what grows easily in scotland
+O|write a cheerful good morning message for our team whatsapp, we hit our sales target

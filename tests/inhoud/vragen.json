@@ -1,0 +1,27 @@
+{
+  "uitleg": "Meetset voor de inhoud van Melo's antwoorden op adviesvragen (22 okt 2026, Lucas: 'dit moet echt beter', de inhoud). Per vraag: wat er inhoudelijk in moet (elke regex moet passen) en wat fout is, volgens de bron. Daarnaast telt de vorm: kopjes of punten, en een vraag aan het eind. Gebruikt door melo-mac/meet-inhoud.sh en melo-ios/meet-inhoud.sh; de extensie meet dezelfde vragen in tests/browser/melo-vragen.json (soort advies).",
+  "vragen": [
+    { "id": "nacht", "vraag": "Ik slaap slecht sinds ik nachtdiensten draai", "bron": "https://www.thuisarts.nl/nachtdiensten-en-gezondheid/ik-werk-vaak-s-nachts-hoe-blijf-ik-gezond",
+      "moet": ["dutje|slaapje|power ?nap|kort slapen|korte slaap", "20[- ]?min|twintig min", "donker|verduister|slaapmasker", "scherm|telefoon|beeldscherm"],
+      "nietMag": ["22[.:]00|om tien uur 's avonds|elke avond (om|rond) ", "melatonine (helpt|kan helpen|werkt)|neem melatonine|valeriaan"] },
+    { "id": "slaap", "vraag": "Ik slaap al weken slecht door stress over mijn studie", "bron": "https://www.thuisarts.nl/slecht-slapen/ik-wil-beter-slapen-slaapadviezen",
+      "moet": ["cafe[ïi]ne|koffie", "scherm|telefoon", "(zelfde|vaste) tijd|uit bed|opstaan", "huisarts"],
+      "nietMag": ["melatonine (helpt|kan helpen|werkt)|neem melatonine|valeriaan|slaappil"] },
+    { "id": "stress", "vraag": "Ik heb zoveel stress van mijn werk, wat kan ik doen?", "bron": "https://www.thuisarts.nl/stress/ik-wil-beter-omgaan-met-stress",
+      "moet": ["beweeg|bewegen|wandel|sport|half uur|30 min", "praat|bespreek|bedrijfsarts|leidinggevende|baas", "opschrijven|schrijf|lijst|plan|prioritei|minder"] },
+    { "id": "rouw", "vraag": "Mijn oma is vorige week overleden en ik kan me nergens op concentreren.", "bron": "https://www.thuisarts.nl/rouw/ik-rouw",
+      "moet": ["tijd|normaal|hoort bij|tempo", "praat|vertel|steun|vrienden|familie", "huisarts|rouwzorg|mind|hulplijn|6 maanden|zes maanden"],
+      "nietMag": ["113|zelfmoord"] },
+    { "id": "eenzaam", "vraag": "Ik voel me de laatste tijd zo alleen, ook als ik met vrienden ben.", "bron": "https://www.thuisarts.nl/eenzaamheid/ik-voel-me-eenzaam",
+      "moet": ["club|vereniging|groep|vrijwillig|activiteit|cursus|buurthuis", "praat|luisterlijn|mind|huisarts|vertel"],
+      "nietMag": ["113|zelfmoord"] },
+    { "id": "schuld", "vraag": "Ik heb €4.000 schuld en durf het niet aan mijn ouders te vertellen.", "bron": "https://www.rijksoverheid.nl/onderwerpen/schulden/vraag-en-antwoord/hoe-kom-ik-van-mijn-schulden-af",
+      "moet": ["gemeente|geldfit|0800[- ]?8115|schuldhulp", "overzicht|op een rij|schuldeiser|aflos|betalingsregeling"],
+      "nietMag": ["(sluit|neem) (een )?(nieuwe |extra )?lening|leen (geld )?bij|creditcard"] },
+    { "id": "presentatie", "vraag": "Hoe maak ik een goede presentatie voor school?", "bron": "https://taalwinkel.uva.nl/studievaardigheden/presenteren/een-presentatie-maken/een-presentatie-maken.html",
+      "moet": ["kern|boodschap|hoofdpunt", "oefen|hardop|proef", "weinig tekst|niet te veel tekst|steekwoord|kort|dia"] },
+    { "id": "nacht-en", "vraag": "I sleep badly since I started working night shifts", "bron": "https://www.thuisarts.nl/nachtdiensten-en-gezondheid/ik-werk-vaak-s-nachts-hoe-blijf-ik-gezond",
+      "moet": ["nap", "20[- ]?min|twenty min", "dark|blackout|eye mask", "screen|phone"],
+      "nietMag": ["10 ?pm|22[.:]00|every night at the same time", "melatonin (helps|can help|works)|take melatonin"] }
+  ]
+}

@@ -66,6 +66,9 @@ body { margin: 0; display: flex; flex-direction: column; background: var(--bg); 
 .a pre { margin: 0 0 8px; padding: 10px 12px; background: var(--soft); border-radius: 12px; overflow-x: auto; }
 .a pre code { padding: 0; background: none; white-space: pre; }
 .a math { font-size: 1.08em; }
+.a .nw { white-space: nowrap; }
+/* aligned: kolommen tegen elkaar, de = direct na de linkerkant (zoals in TeX) */
+.a mtd[columnalign] { padding-left: 0; padding-right: 0; }
 .a .mathblock { margin: 6px 0 10px; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .a .mathblock math { font-size: 1.2em; }
 /* \boxed{…}: de uitkomst van een som in een kader */

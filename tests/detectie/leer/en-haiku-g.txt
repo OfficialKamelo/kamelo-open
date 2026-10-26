@@ -1,0 +1,241 @@
+#G
+H|how many people in the uk are living with type 2 diabetes right now, and has that number gone up since 2015
+H|explain the difference between a virus and a bacterium like i'm 12, we have a science quiz tomorrow
+H|i'm a healthcare assistant on a surgical ward and we're running a training session on sepsis, what early warning signs should staff check for
+H|grand question, what's the typical recovery time for an achilles tendon rupture in footballers? asking for a sports journalism piece
+H|Could you draft a patient leaflet explaining how to use a dry powder inhaler correctly? The reader will be someone newly diagnosed with asthma, aged 60 or over.
+H|my GP practice is updating its website and wants a plain-English page on what to expect at a cervical screening appointment, can you help write it
+H|which celebrities have spoken publicly about breast cancer awareness campaigns, and did any of them start a fundraiser
+H|quick one: how long does a cold sore usually last, and is it contagious before the blisters show up
+H|how did victorian doctors treat tuberculosis?
+H|I'm writing a short story where a cyclist gets hit by a car and loses a leg. How would the hospital team realistically handle the first 24 hours?
+H|what's the current evidence on whether ibuprofen or paracetamol works better for toothache in adults? summarise the NHS guidance please
+H|Kindly prepare five quiz questions for year 10 PE students on how smoking affects lung capacity.
+H|for my pharmacology exam, explain how beta blockers slow the heart rate at receptor level
+H|how do hearing aids actually amplify sound, and why do some people find background noise harder with them
+H|can someone translate this into French for a leaflet: "Keep the wound clean and dry and check for redness every day."
+H|statistically, which age group has the highest rate of flu hospital admissions in the US? pls include a source
+H|I'm a physio and my clinic is making a poster about posture for office workers, what top five things should go on it
+H|how is the cancer moonshot funding in the US different from the original National Cancer Act of 1971
+H|why do some people get migraines with aura and others don't? what does the research actually say
+H|write short ad copy for a whitening strip brand, under 40 words and not too pushy
+H|I'm a med student prepping for finals, can you summarise the main side effects of lithium and why blood levels get monitored
+H|what were the main findings of the 2024 study on early screen time and myopia in children in China
+H|pretend you're a pharmacist explaining to a customer how to read the dosage label on an amoxicillin bottle, keep it plain
+H|I need a list of the main symptoms of hypothermia and the first aid steps the RNLI recommends, please
+H|how does the immune system tell its own cells apart from invaders? simple version for a biology lesson
+H|my company's HR team wants a briefing on whether our wellness programme has any evidence behind it, what should we look for in the research
+H|what's the history behind the polio vaccine rollout in the 1950s and the Salk vs Sabin debate
+H|are e-cigarettes better than nicotine patches for quitting, according to the big reviews? headline findings only
+H|I'm a nurse educator and I need three open-ended discussion questions for students on ethics in end-of-life care
+H|reckon there's any link between high-altitude flying and cosmic radiation for pilots? looking at it for a documentary voiceover
+H|explain how a CT scan differs from an MRI, my uni assignment needs 150 words on imaging
+H|what's the most common cause of blindness in UK adults, and what does the NHS say about prevention
+H|Please write a 60-word summary of how malaria spreads, suitable for a school children's charity newsletter
+H|can you explain what a glycaemic index is and why low GI foods are said to give steadier energy? for a nutrition module
+H|how did the 1918 flu spread so fast across Europe, and was it the worst pandemic per capita in terms of deaths
+H|my pharmacy's team meeting is on antibiotic resistance, give me three points to present on why overprescribing is a problem
+H|what's the difference between a hernia and a hiatus hernia? I keep seeing the two mixed up in articles
+H|wat are the most common netball injuries and how do physios usually prevent ankle sprains
+H|dermatology question for a novel: what would a doctor in 1950s London have written in the notes for a patient with psoriasis
+H|tell me about the history of the Lourdes medical bureau and how it assesses reported miracles, for a religion and science essay
+M|what's the difference between generalised anxiety disorder and panic disorder? my psych module essay is due friday
+M|I am needing the latest NHS number for adults waiting for talking therapies in England, can you tell me
+M|can you write a scene where a teenage character has a panic attack in a school corridor? want it to feel real but not melodramatic
+M|famous athletes who've talked openly about burnout and how they got back to playing, list a few with sources
+M|My novel's main character is a widower whose grief is starting to show at work. Can you suggest five realistic ways his sister might notice without being preachy?
+M|I'm a counsellor preparing a workshop on compassion fatigue for new trainees. What should be in the first half hour?
+M|why does caffeine make anxiety worse for some people, and does the research actually back that up
+M|how does the WHO define burnout in ICD-11 compared with how people use the word casually
+M|write a short poem about the quiet after a loss, no rhymes, around twelve lines
+M|my company's HR wants a short guide for managers on spotting stress in their teams, can you draft one with five bullets
+M|what does the evidence say about gaming disorder being classed as a condition by the WHO
+M|explain cognitive behavioural therapy the way you'd explain it to a sixteen year old on a school trip
+M|for a documentary on the history of asylums in Scotland, what happened to patients in the 1950s and what changed after the Mental Health Act 1959
+M|I'm a social worker and need plain-language definitions of self-harm and suicidal ideation for a foster carer training slide, keep it factual
+M|y'all online keep saying adhd is overdiagnosed in adults, is there data on that or is it just vibes
+M|stats on how many people in the uk take antidepressants and how that compares with 2010
+M|Can you help me structure a ten-minute talk for my Rotary club on the mental health impact of job insecurity?
+M|what's the role of the amygdala in fear conditioning? simple version please for an intro neuroscience class
+M|best books on grief for teens, any suggestions?
+M|in Inside Out, what do the core memories and personality islands represent? I need it for a film studies discussion
+M|my thesis looks at how mindfulness apps get marketed to students, what are the main ethics concerns researchers have raised
+M|Explain how exposure therapy works for phobias to a general audience. Keep it under 100 words.
+M|my editor says the bipolar subplot in my crime novel doesn't feel accurate yet. The protagonist's brother has bipolar disorder and the manic chapter is where it falls apart. What are the common signs of a manic episode a reader would recognise, and what do writers usually get wrong about them?
+M|how long does a grief support group usually take to help, going by the research on bereavement groups
+M|youtube channel covering the anti-psychiatry movement of the 1960s, can you give me a short timeline
+M|what's the difference between loneliness and social isolation in public health research? my dissertation needs the definitions
+M|sleep hygiene tips for shift workers in general, and what the science says about melatonin timing for night nurses
+M|as a secondary teacher I'm updating our wellbeing policy. what should it say about mental health first aid training for staff
+M|is there any evidence EMDR works for PTSD in veterans compared with other trauma therapies
+M|lol what's the bet next year's phones have a mood tracking app, cringe or actually useful for depression research
+M|explain the stages of grief in Kübler-Ross's model and what critics say about it being too neat
+M|write a press release for a charity running a free 24/7 helpline for men in crisis, calm tone, no stigma
+M|what is emotional labour and how is it different from burnout? asking for a sociology seminar
+M|why do people with eating disorders often have such strong perfectionism? what are the main psychological theories
+M|how did the 1980s Just Say No campaign shape the way addiction was discussed in the US
+M|what share of young adults in the UK say they feel lonely most days, according to the latest polling? need a number and year for my essay intro
+M|in Fleabag, how is the protagonist's grief handled across the two seasons? I'm writing a review
+M|I'm an occupational therapist with stroke patients. Give me a quick list of signs of post-stroke depression to flag to the team
+M|what's the evidence that loud, dense music can induce panic in listeners? a magazine claimed it and I want to check
+M|was the term imposter syndrome coined in 1978 by Clance and Imes, and is that accurate? what did their original study involve
+S|what did the Kinsey reports actually find about sexual behaviour in 1948, and why were they so controversial at the time
+S|how has the age of consent varied across European countries over the last 50 years? quick summary for a politics class
+S|Write a scene for my romance novel where two characters argue about whether to take things slower. Keep it PG-13.
+S|I'm a sexual health nurse in Leeds and we're making a leaflet on chlamydia testing. What should the key messages be?
+S|did any celebrities come out as bisexual publicly in the 2010s? list some with the year they said it
+S|I want to know contraception use among women aged 15 to 49 in sub-Saharan Africa, please give the latest DHS source
+S|what's the history of the Stonewall riots and why is it seen as a turning point for LGBTQ+ rights in the US
+S|our school's sex education lesson on consent for year 9, what age-appropriate activities could the teacher run
+S|why did the word gay change meaning over the 20th century? for my etymology assignment
+S|the UK Gender Recognition Act reform debate, what were the main arguments on each side between 2019 and 2024
+S|write a short dialogue between a couple recalling their first online dating disaster, light and funny
+S|explain the difference between sexual orientation and gender identity in plain English for a PSHE lesson
+S|how many US adults identify as LGBTQ+ in the latest Gallup poll, and how has that changed since 2012
+S|in the 1960s how did the contraceptive pill get approved in the UK versus the US? the timeline is confusing me
+S|my company's harassment training has to be updated for new laws in Ireland, can you list the main legal changes for employers
+S|is there research on how common erectile dysfunction is in men over 50 generally? my health psychology module asked about it
+S|what's the difference between a sexologist and a sex therapist, and which one needs a formal qualification in the UK
+S|yo any idea how pop culture has portrayed polyamory over the years? which shows got it right, doing a listicle
+S|I'm writing an article on the history of Pride flags. What did Gilbert Baker's 1978 rainbow flag design originally represent?
+S|which affairs of Henry VIII are well documented by historians, and which are just rumour
+S|my podcast episode is about the Wolfenden Report, can you give me the key recommendations and the year it came out
+S|history of the Kinsey scale, quick?
+S|as an HR officer I need a neutral policy line on relationships between colleagues. Can you draft one?
+S|I'm curious what the top sex-related search trends were in 2023, purely as a data question
+S|I'm making a biology GCSE revision card: explain how oestrogen and progesterone shift across the menstrual cycle
+S|main arguments in the historical debate over whether Sappho's poems were about women loving women
+S|for a school debate on whether sex education should start earlier, what are the strongest points for and against
+S|hiya, is "friends with benefits" used differently in Australia than in the UK? checking slang for a dictionary entry
+S|can you summarise how the HPV vaccine rollout for boys was decided in the UK and what the cost-effectiveness argument was
+S|my uni's student union wants a short explainer on what enthusiastic consent means for a freshers' week leaflet
+S|how did Alice Oseman handle the coming out storyline in the first season of Heartstopper
+S|what's the difference between cisgender and transgender in academic writing? my sociology lecturer used both without defining them
+S|write a 60-word blurb for a romcom about two rival wedding planners who fall in love, playful but not cheesy
+S|in ancient Greece, how were relationships between men viewed across city states like Athens and Sparta
+S|what do the latest UK figures say about teenage pregnancy rates, and how far have they dropped since the 1990s
+S|I'm a family law solicitor. A client asked how the Sexual Offences Act 1967 decriminalised male homosexuality in England. Summarise the key provisions for a client note
+S|why do so many sex toy companies use the word "wellness" in their branding? is it a marketing trend? asking for a retail class
+S|was the sexual revolution of the 1960s and 70s really a revolution, or how do historians describe it
+S|hypothetically, how would a novel's plot change if the couple lived in 1890s Paris where divorce was almost impossible
+S|what's the research on infidelity rates across countries? which surveys are most reliable and which get overquoted in the media
+R|how many people worldwide describe themselves as religiously unaffiliated, according to the latest Pew survey
+R|sunni vs shia, quick difference on who should have succeeded the prophet?
+R|Write a short scene for my fantasy novel where a village priest starts to doubt whether the gods are listening
+R|I'm a religious studies teacher and need a five-minute lesson on the Five Pillars of Islam for year 8, keep it accessible
+R|did any famous footballers publicly convert to Christianity in the 2010s? which ones, and what did they say in interviews
+R|why did the Reformation split the church in the 16th century? asking for an essay intro on Luther's 95 Theses
+R|what does the Talmud contain and how did rabbinic debate shape Jewish law? explain it like a first-year uni student
+R|Our HR team is planning a holiday calendar for offices in India, Kenya and Poland. Which key dates should we include for Diwali, Eid and Easter?
+R|I'm writing an article about falling church attendance in Scotland. What reasons do sociologists usually give?
+R|how do Theravada and Mahayana Buddhism explain nirvana? compare the two views
+R|stats on how many people in the UK have left their religion as adults, and what the British Social Attitudes survey says
+R|the story of Jonestown and what made Jim Jones's group so isolated, for a true crime podcast
+R|buddhism and karma, simple explanation pls
+R|write a short dialogue for a play where two sisters argue about whether their grandmother's faith still matters today
+R|my dissertation looks at secularisation in the Netherlands. What theories should I cite besides Max Weber?
+R|i'm putting together a festival calendar for a Hindu community centre, can you explain what Navaratri celebrates and how it's observed in Gujarat
+R|I'm a hospital chaplain. I need a short list of common questions patients ask about prayer at end of life, for a training session
+R|I'm writing a travel agency brochure, so what is the Hajj and what are the basic rules pilgrims follow? plain English please
+R|how did the Quakers come to oppose war in the seventeenth century, and does that position still hold today
+R|how many people in Nigeria are Christian versus Muslim according to the most recent estimates, and what's the source for those numbers
+R|I'm drafting a museum panel: write a 50-word description of the Amish community's main beliefs
+R|did early Christian councils actually decide the biblical canon, or is that a myth? quick explanation pls
+R|My uni essay is on the role of prophets in the Hebrew Bible. Can you give me the main schools of interpretation?
+R|Explain to a fourteen year old the main beliefs of Sikhism, including Ik Onkar, langar and the Gurus. Keep it respectful and simple.
+R|what are the main theological differences between Catholic and Orthodox views on the papacy? my notes are getting muddled
+R|why do some scientists argue religion is an evolutionary byproduct, and what do critics say about the cognitive science of religion
+R|who was Joseph Smith and why did the Mormon migration end in Utah? for a US history paper
+R|in Dune by Frank Herbert, how does the Fremen religion shape their politics? asking for a book club prompt
+R|bro what's the deal with the rapture theory? where did the idea come from and how did it spread in the US
+R|can you summarise the main arguments of the New Atheism movement of the 2000s, from Dawkins, Hitchens and Harris
+R|which Hollywood actors have publicly spoken about joining Scientology, and what reasons did they give
+R|the history of the Dead Sea Scrolls and why they changed how scholars date the Old Testament texts
+R|how do Quakers make decisions without voting? explain the sense of the meeting simply
+R|I'm working on a museum display about Hindu temple architecture in Tamil Nadu. What are the main features of Dravidian style?
+R|quick one: what does halal mean, and where does the word come from in the Quran
+R|stats on deaths in the European religious wars between 1500 and 1700, and how many died in the Thirty Years' War
+R|what did pagan festivals like Samhain and Imbolc originally refer to, and how much of modern Wicca is historical
+R|my company's Christmas party contract has a religious neutrality clause. What does that usually mean in UK employment law?
+R|the Bhagavad Gita is set on a battlefield. What's the scene about, and why do scholars read it as philosophy rather than just epic?
+R|write a sixteen-line poem from the point of view of a monk who has been silent for thirty years, contemplative tone
+G|what's the average household debt in the UK according to the latest ONS figures, and how does it compare with the US
+G|I'm teaching a maths lesson on compound interest: a £1,000 savings account at 4%, how does it grow
+G|my company's debt ratio jumped to 68% after the last acquisition. How should I present that to the board without sounding alarmist?
+G|I'm a debt adviser at a charity in Manchester and need a plain-English explainer on debt relief orders for our website
+G|write a short story about a family who wins the lottery and has to decide what to do with the money, with a twist at the end
+G|what caused the 2008 financial crisis? 200-word summary for year 12 economics please
+G|what's the APR on a payday loan usually?
+G|can someone explain how the universal credit taper rate works in plain English? the gov site makes my head spin and I'm writing a benefits explainer
+G|how many personal bankruptcies were filed in the US in 2023, and was that higher than in 2019
+G|the 1929 stock market crash: why did so many banks fail, and what did the New Deal change?
+G|In a business school case, a retailer has rising inventory and falling margins. What three levers should the CFO prioritise?
+G|i'm writing a piece on debt collection. what are the main reasons people end up with collectors calling them, according to FCA research
+G|do scratch cards and fruit machines have a bigger house edge than roulette? asking for a lecture on the maths of gambling
+G|I'm a bookkeeper with small landscaping firms. One client is 90 days late paying suppliers. What's the best way to write a firm reminder letter?
+G|origins of the Ponzi scheme and why Bernie Madoff's fraud took so long to unravel, for a finance podcast script
+G|how many scam calls do UK residents report each month, and which scams are rising fastest
+G|write a 40-word advert for a credit union offering low-interest loans. Friendly tone, no hard sell
+G|heaps interested in the Icelandic bank collapse of 2008, what happened and how did the government treat depositors?
+G|My essay is on how gig economy workers are classified, and what courts have said about holiday pay and minimum wage
+G|why do some economists argue a universal basic income would cut poverty? what do the pilot studies show
+G|difference between a CCJ and a bankruptcy for credit scores in England? for a banking module
+G|stats on how many people in the UK use buy now, pay later schemes, and what share of them miss payments
+G|as a finance lecturer I'm building a case study on a firm that went into administration after cash flow problems. What warning signs should I highlight?
+G|explain the history of pawnbroking and how pawnbrokers came to be regulated in the UK
+G|rough guide to how the Bank of England sets interest rates and what the MPC actually looks at
+G|what's a sinking fund and how is it different from an emergency fund? for a personal finance blog series
+G|I'm writing a comedy sketch where a pensioner tries to pay his bill in coins at the bank. Keep it light
+G|summarise the main points of the Consumer Credit Act 1974 for a trainee legal executive, under 100 words
+G|why do crypto Ponzi schemes keep appearing? what patterns do regulators say they share
+G|if a company has £2m of debt and £5m of assets, what's the debt-to-equity ratio and what counts as healthy? my accounting homework
+G|ngl why do casinos have no clocks, real reason or just a myth
+G|how does a debt consolidation loan work, and how do the rates compare with balance transfer cards? for a money blog
+G|I'm reading about the South Sea Bubble of 1720: who got rich, and who got wiped out
+G|what share of the world's adults have no bank account, latest World Bank Findex figure please
+G|hypothetically, if a city scrapped council tax tomorrow, what would the knock-on effects be for local services
+G|I work in HR and need a clear template for a redundancy consultation letter that complies with UK employment law
+G|how did the 1990 Poll Tax cause such big protests, and why was it scrapped?
+G|what are the main types of insurance fraud the ABI reports on each year? for fraud awareness training
+G|my accountancy firm's client is a bakery with a cash flow gap. What working capital tools should we suggest in the board pack?
+G|tell me about Enron's accounting tricks in the 1990s, especially the special purpose entities, my audit class is covering it
+L|what's the legal difference between manslaughter and murder in England and Wales? for a criminal law seminar
+L|explain how the right to silence changed in the UK after the Criminal Justice and Public Order Act 1994, in plain English
+L|my client is a small landlord who rents out two flats in Leeds, and one tenant just sent him a letter about repairs. He wants a summary of how the section 21 abolition under the Renters' Rights Act changes what he can do next, including any notice periods he should know about.
+L|as a criminal defence barrister I need a 150-word summary of R v Jogee on joint enterprise for a CPD session
+L|the Stephen Lawrence inquiry and how it changed police practice in the UK. Asking for a history essay
+L|write a short scene for my legal drama script where a detective and a junior barrister argue over disclosure of evidence
+L|how many people were held in immigration detention in the UK last year? the Home Office stats are hard to read
+L|difference between civil and criminal courts in the US, and which one handles small claims?
+L|did the Nuremberg trials establish that following orders is no defence? what did the judges actually rule
+L|I'm a paralegal and a partner asked me to compare GDPR fines in Germany and France for a client memo. What should I cover?
+L|explain the Miranda warning in the US and how the 1966 Supreme Court case changed police questioning
+L|stats on wrongful convictions in the US and the main causes, according to the National Registry of Exonerations
+L|for the advice leaflet we're making at my housing charity: what happens after an unpaid fine in the UK, and can a warrant be issued?
+L|pls explain copyright vs trademark like I'm 15, my school project is on a famous brand logo being copied
+L|what were the main legal issues the jury had to weigh in the OJ Simpson trial in 1995, and why did the verdict surprise people
+L|can you draft a polite but firm template letter asking the council for a repair report, UK-style
+L|my uni's law society is hosting a mock trial. Can you write a witness statement for a fictional burglary case?
+L|did Magna Carta actually limit the king's power or was it mostly about the barons? for a history of law class
+L|what are the main steps in a US federal civil lawsuit, from complaint to discovery to trial? quick summary
+L|stats on how many cases the European Court of Human Rights decides a year, and what share are admissible
+L|the Hillsborough inquests of 2016 and the findings on police statements, summarise for a news explainer
+L|In a contract law exam, what's the difference between an offer and an invitation to treat? Use Carlill v Carbolic Smoke Ball as the example
+L|I'm a prosecutor writing a briefing on jury selection in the UK. What reasons can jurors be excused for?
+L|why do some countries use juries and others use judges only? pros and cons according to comparative law research
+L|bruh what happens if you get caught with a fake ID in the US, is it a misdemeanour or a felony in most states
+L|my thriller draft has a corrupt police chief who gets blackmailed. How would the plot resolve if the evidence is inadmissible?
+L|explain the purpose of judicial review in UK law and how it differs from an appeal, for a public law tutorial
+L|summarise the main points of the Human Rights Act 1998 and how it brought the ECHR into UK law
+L|the history of the Geneva Conventions, and which countries have never ratified them
+L|my law firm wants a quick checklist for lawyers handling a first meeting with a new divorce client in England
+L|In 1960s America, how did Brown v Board of Education connect to later desegregation cases? For an essay on civil rights law
+L|what does mens rea mean in plain English? law student flashcard
+L|in the Dreyfus affair in France, what legal arguments were used to convict him, and how was the conviction overturned
+L|quick question for a crime novel: could a murder suspect in 1930s London legally refuse to give fingerprints?
+L|what's the Crown Prosecution Service charging standard, and how does it decide whether to prosecute?
+L|how do Australian courts treat unfair dismissal claims differently across the states? need a comparison table for our HR team
+L|history of abolishing the death penalty in the UK in the 1960s, which Parliamentary votes happened and when
+L|I'm an immigration lawyer trainee. What's the difference between indefinite leave to remain and settled status under the EU Settlement Scheme?
+L|I'm writing a feature on police body cameras. What does the research say about their effect on use-of-force complaints?
+L|in company law, what is the principle of separate legal personality from Salomon v Salomon? Explain it for an essay

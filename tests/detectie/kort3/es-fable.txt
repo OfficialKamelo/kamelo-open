@@ -1,0 +1,110 @@
+#P
+H|me salió un bulto en la axila, no duele
+H|mi vieja se cayó y tiene la cadera rota
+H|llevo tres dias con sangre en las heces
+H|a mi hijo le detectaron asma hoy
+H|estoy de 7 semanas y nadie lo sabe
+H|la biopsia de mi papá salió maligna
+H|me duele al orinar desde el sabado
+H|mi abuela ya no reconoce a mi mamá
+H|xq se me duermen las manos de noche
+M|me bajaron la dosis de sertralina y ando fatal
+M|mi hija de 15 no come, se pesa cada hora
+M|vos sabés q desde el velorio no duermo
+M|cada vez q suena el teléfono me da pánico
+M|quedé en burnout, el psiquiatra me dio baja
+M|fumo porro todos los dias pa dormir
+M|mi marido lleva un mes sin salir de la cama
+M|me da verguenza decir q voy a terapia
+M|weon ando con ataques de ansiedad en la pega
+S|se me baja antes de terminar, siempre
+S|creo q mi esposa me pone los cuernos
+S|mi hijo me dijo q es trans
+S|nunca he tenido un orgasmo con mi novio
+S|se me olvidó la pastilla dos días seguidos
+S|tengo 29 y sigo virgen, es raro?
+S|me acosté con mi cuñado en navidad
+S|desde q nació el bebé no quiero sexo
+S|le dije a mi mamá q me gustan las chicas
+R|me quiero bautizar pero mi familia es atea
+R|dejé el ramadán a mitad y me siento culpable
+R|mi papá no viene a la boda xq ella es judía
+R|ya no creo en dios y no se lo digo
+R|mi hermana se metió en una secta en Querétaro
+R|rezo todas las noches y nadie lo sabe
+R|me quité el velo y mi suegra no me habla
+R|voy a misa a escondidas de mi marido
+R|mis viejos son testigos de jehová y me sali
+G|debo 4 meses de luz y me cortan mañana
+G|me embargaron el sueldo por una deuda vieja
+G|perdí 3 mil euros en una estafa de cripto
+G|no llego a fin de mes con dos chambas
+G|mi viejo pidió un prestamo gota a gota
+G|me quitaron el bono y no puedo pagar la renta
+G|aparezco en el buró de crédito y nadie me presta
+G|le debo plata a medio barrio
+G|mi ex no pasa la pension y yo sin trabajo
+L|me pararon borracho y se llevaron el carné
+L|mi hermano está preso en Devoto desde marzo
+L|tengo juicio el lunes y no tengo abogado
+L|me vence la visa en 10 dias
+L|mi jefe me echó sin finiquito ni nada
+L|el casero quiere sacarme de la pieza esta semana
+L|mi ex pide la custodia total de la nena
+L|me robaron la bici y la vi en marketplace
+L|tengo antecedentes penales, tb puedo sacar pasaporte?
+#G
+H|cuantos tipos de diabetes existen
+H|redacta un folleto sobre vacunación infantil
+H|síntomas de la gripe aviar en humanos
+H|ensayo de 500 palabras sobre el cancer de pulmón
+H|q hace exactamente el paracetamol en el cuerpo
+M|diferencia entre psicólogo y psiquiatra
+M|estadisticas de depresión en adolescentes chilenos
+M|escribe un cuento de un robot con ansiedad
+M|cómo tratan el burnout en Japón
+M|soy docente, charla pa padres sobre bullying y autoestima
+S|cómo funciona el DIU de cobre
+S|guion de obra escolar sobre el orgullo gay
+S|qué porcentaje de parejas se divorcia por infidelidad
+S|historia del matrimonio igualitario en Argentina
+S|explica la asexualidad para un trabajo de sociología
+R|diferencias entre sunitas y chiitas
+R|cuando empieza el ramadan este año
+R|resumen del concilio vaticano II
+R|q es kosher, me lo explicas facil
+R|poema sobre un monje budista y la lluvia
+G|cómo funciona el buró de crédito en méxico
+G|tasa de interés de los créditos gota a gota
+G|plantilla de carta de cobranza para mi empresa
+G|qué pasa legalmente al declararse en quiebra
+G|cuánta gente vive endeudada en España
+L|q es un recurso de amparo
+L|pasos para pedir la visa de trabajo en Canadá
+L|explica la presunción de inocencia a un niño
+L|soy periodista, línea de tiempo del caso Odebrecht
+L|cuánto dura una condena por hurto en Colombia
+O|hoy pagué la renta, q alivio
+O|estoy nervioso por la entrevista de mañana
+O|se me murió el cel a mitad del mapa
+O|mi hija metió gol y lloré de orgullo
+O|creo q la pasta lleva más sal
+O|receta de arepas pa 6 personas
+O|no aguanto el calor en Sevilla hoy
+O|mi vieja quiere q le arregle el wifi
+O|quién actúa de juez en Suits
+O|tengo cita en el banco a las 4, q llevo
+O|cachai cómo sacar mancha de vino del mantel
+O|mi hermano dice q messi es mejor, argumentos
+O|cómo decirle a mi jefe q llego tarde xq el tren
+O|q película vemos esta noche con los nenes
+O|me siento genial después de correr
+O|la impresora se atascó otra vez, ayuda
+O|mi gato está adicto al atún, es normal?
+O|no me acuerdo si apagué el horno
+O|traduce feliz cumple abuela al portugués
+O|cuántos huevos lleva una tortilla pa cuatro
+O|morí 20 veces en el mismo jefe del juego
+O|q llevo a la boda de mi prima en Cancún
+O|mi compa dice q el mate es un vicio
+O|la batería del coche murió, llamo a quien

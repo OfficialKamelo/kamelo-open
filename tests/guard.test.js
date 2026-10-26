@@ -133,6 +133,8 @@ test('vangnet: gewone zinnen in alle talen (onderzoek 17 okt)', () => {
 
 console.log('Feitenkaartjes (chat/kennis.js)');
 test('het juiste kaartje bij de vraag, niets bij persoonlijke vragen', () => {
+  // Sinds 22 okt helpt Melo bij iets persoonlijks meteen, met nagekeken tips: verlies krijgt het kaartje over rouw.
+  assert.deepEqual(K.find('Mijn hond is gisteren overleden.').map(c => c.id), ['rouw']);
   const ids = q => K.find(q).map(c => c.id);
   assert.deepEqual(ids('Leg de stelling van Pythagoras uit met een voorbeeld.'), ['pythagoras']);
   assert.deepEqual(ids('How long does it take light from the Sun to reach Earth? Show the calculation.'), ['licht-zon', 'zon-aarde']);
@@ -141,7 +143,7 @@ test('het juiste kaartje bij de vraag, niets bij persoonlijke vragen', () => {
   assert.deepEqual(ids('Is 1 een priemgetal?'), ['priemgetal']);
   assert.deepEqual(ids('Leg uit wat fotosynthese is, voor een kind van 10.'), ['fotosynthese']);
   assert.deepEqual(ids('How does compound interest work?'), ['rente']);
-  for (const q of ['Ik voel me somber', 'Ik heb lichte hoofdpijn en pijn in mijn mond', 'Mijn hond is gisteren overleden.', 'Wat is de omtrek van een rechthoek?'])
+  for (const q of ['Ik voel me somber', 'Ik heb lichte hoofdpijn en pijn in mijn mond', 'Wat is de omtrek van een rechthoek?'])
     assert.deepEqual(ids(q), [], q);
 });
 test('elk kaartje: een bron, een kort feit, en waar een fout herkend wordt een juiste zin in vijf talen', () => {
@@ -150,6 +152,16 @@ test('elk kaartje: een bron, een kort feit, en waar een fout herkend wordt een j
     assert.ok(c.fact.length > 40 && c.fact.length < 700, `${c.id}: ${c.fact.length} tekens`);
     if (c.wrong) for (const l of ['nl', 'en', 'de', 'fr', 'es']) assert.ok(c.say?.[l], `${c.id}: say.${l}`);
   }
+});
+test('advies: tips als genummerde lijst, één lijst tegelijk, en de slotvraag als het antwoord er geen heeft', () => {
+  const cards = K.find('Ik slaap al weken slecht door stress over mijn studie');
+  const h = K.hint(cards);
+  assert.match(h, /1\. get up at the same time/);
+  assert.equal((h.match(/Checked tips/g) || []).length, 1);
+  for (const c of K.CARDS.filter(x => x.tips)) for (const l of ['nl', 'en', 'de', 'fr', 'es']) assert.match(c.vraag[l], /\?/, `${c.id}: vraag.${l}`);
+  assert.match(K.close('Eerst dit.\n\nDan dat.', cards, 'nl'), /\n\nIs het vooral het inslapen/);
+  assert.equal(K.close('Eerst dit.\n\nWil je dat ik meedenk?', cards, 'nl'), 'Eerst dit.\n\nWil je dat ik meedenk?');
+  assert.equal(K.close('Pythagoras is a² + b² = c².', K.find('Pythagoras'), 'nl'), 'Pythagoras is a² + b² = c².');
 });
 test('Pythagoras: de fout uit de meetset herkend en vervangen; juiste zinnen niet', () => {
   const cards = K.find('Pythagoras');
@@ -185,6 +197,22 @@ test('vragen over Melo zelf: eerlijk, en nooit "niet goed in emoties"', () => {
 test('wat met de vraag meegaat naar de AI', () => {
   assert.equal(K.hint([]), '');
   assert.match(K.hint(K.find('Pythagoras')), /^ Checked facts \(use them, never contradict them\): Pythagoras: .*OPPOSITE the right angle/);
+});
+
+console.log('Vraag om advies (chat/guard.js)');
+test('een crisisbericht krijgt nooit de tipslijst, ook niet in een adviesvraag', () => {
+  for (const q of ['Ik wil dood', 'ik wil niet meer leven', 'I want to die', 'Ik voel me zo leeg, ik wil dood',
+    'I feel like I want to end it all', 'Ich will sterben', 'Je veux mourir', 'Me siento fatal, quiero morir'])
+    assert.ok(!G.advice(q), q);
+});
+test('alleen een echte vraag om hulp of iets persoonlijks krijgt kopjes', () => {
+  for (const q of ['Hoe kan ik beter slapen?', 'Ik slaap slecht door nachtdiensten', 'Ik voel me eenzaam', 'Ik ben zo moe de laatste tijd',
+    'Mijn hond is gisteren overleden', 'How can I stop procrastinating?', "I'm so stressed about exams", 'I feel sad',
+    'Ich bin müde', 'Je me sens seul', '¿Cómo puedo dormir mejor?'])
+    assert.ok(G.advice(q), q);
+  for (const q of ['ik heb zin in pizza', 'i have a question about python', 'Ik wil een brief schrijven', 'I am 25 years old',
+    'Ik ben benieuwd naar Rome', 'I want a recipe for pasta', 'Wat is 2 + 2?', 'Ich habe eine Frage'])
+    assert.ok(!G.advice(q), q);
 });
 
 console.log(`\n${ok} geslaagd, ${bad} mislukt`);

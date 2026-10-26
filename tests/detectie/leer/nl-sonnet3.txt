@@ -1,0 +1,201 @@
+#G
+O|ik geloof dat mn code gewoon klopt maar de unit test blijft rood, wat zie ik over het hoofd
+O|kheb gisteren zo'n zondig lekkere chocoladetaart gemaakt, heb je een idee voor een glazuur dat er netter uitziet
+O|mn laptop is bijna dood, 5% en de oplader ligt nog op kantoor, hoe haal ik er nog een uurtje uit
+O|Mijn zoon heeft volgende week een proefles bij de tennisclub, welke baan is het beste voor beginners, gravel of hardcourt
+O|ik denk dat we deze sprint te veel hebben ingepland, ge gelooft toch ook niet dat we dat halen?
+O|in Excel staat in cel B4 een #VERW! fout nadat ik een kolom heb verwijderd, hoe los ik dat op
+O|we hebben veel technical debt in ons project en mn baas wil toch nieuwe features, hoe leg ik het uit zonder jargon
+O|mn schoonmoeder zegt dat de wolken op de weerkaart een depressie boven de Noordzee zijn, wat betekent dat eigenlijk voor het weer
+O|ff checken: is 'ik heb honger' een hoofdzin of een bijzin, moet morgen een toets spellen en zinsontleding maken
+O|mn gratis proefperiode van Spotify loopt morgen af en ik vergeet altijd op te zeggen, hoe zet ik een herinnering
+O|ik ben echt verslaafd aan stroopwafels, bestaat er een gezonder alternatief dat net zo lekker is
+O|Mijn trui heeft overal van die pilletjes na één keer wassen, wat is de beste manier om ze eraf te halen
+O|hoeveel zon is genoeg voor mn tomatenplanten, krijgen een flinke dosis van 8 uur per dag maar de blaadjes worden geel
+O|de motor van mn auto slaat af bij het stoplicht en de diagnose lampje brandt, wat kunnen de symptomen betekenen
+O|mn monstera heeft denk ik therapie nodig, hij laat alle bladeren hangen, wat doe ik fout
+O|mama vraagt het geheime recept van haar appeltaart en ze biecht eindelijk op dat er een snuf kardemom in zit, hoe verwerk ik dat in mijn versie
+O|mijn dochter van 8 is helemaal weg van een nieuw liedje en ze heeft een crush op die zanger, kheb geen idee wie hij is, kunnen jullie helpen zoeken
+O|heel België heeft koorts van het WK voetbal, welke kroegen in Gent hebben een groot scherm
+O|mn man is een beetje gek op planten, we hebben er al 40, hoe krijg ik daar nog water aan zonder gedoe
+O|mijn zoon heeft een vriendje dat helemaal mad is van Pokémon, wat kan ik cadeau doen voor een verjaardag van 7
+O|ik heb een rekening gestuurd naar mn klant voor het logo-ontwerp, hoeveel dagen betalingstermijn is gebruikelijk
+O|kan ik een boek lenen bij de bieb zonder pasje, mn pas ligt nog thuis en ik sta er al
+O|voor wiskunde moeten we een hypotheekberekening maken met annuïteiten, kun je het stap voor stap uitleggen met een voorbeeld van 200.000 euro
+O|oh mijn God, ik heb net mn hele scriptie per ongeluk overschreven in Word, is er een manier om een oude versie terug te halen
+O|Jezus wat is dat een mooie zonsondergang vanavond, welke camera-instellingen moet ik gebruiken om dit vast te leggen met mn telefoon
+O|in die Nederlandse politieserie zie je altijd een rechtbank van binnen, is dat echt zo gebouwd of is dat studio
+O|hoe heet die film waarin een rechter een kikker veroordeelt, mn oom en ik zijn het vergeten
+O|ik vind het prima, fine, mag ik dat in een zakelijke mail zo schrijven of klinkt dat te nonchalant
+O|mn telefoon laadt heel traag op sinds de update, de kabel is nieuw, zou de lader kapot zijn
+O|ik geloof dat het morgen gaat regenen, moet ik mn fiets binnenzetten of niet
+O|we hebben vertrouwen in ons team maar de deadline van vrijdag lijkt krap, hoe vraag ik mn manager om een dag extra
+O|ik denk dat mn broer de beste bakker van de familie is, welke broodrecepten kan ik hem cadeau doen
+O|in Minecraft ben ik net dood gegaan en ik ben al mn diamanten kwijt, kan ik die nog terugvinden
+O|wat is de beste tactiek om de eindbaas in Zelda te killen, mn zoontje van 9 zit al een week vast
+O|killer outfit nodig voor het bedrijfsfeest van vrijdag, ik denk iets in donkerblauw, wat past erbij
+O|ik ben dood moe na de verhuizing, kan iemand een schema maken om de dozen uit te pakken in 3 dagen
+O|mijn plant is bijna dood door de vrieskou, kan ik hem nog redden of moet hij weg
+O|we staan 2-1 achter, de aanvallers van ons team moeten echt harder lopen, welke oefeningen zijn er voor een voetbaltraining van jeugd onder 12
+O|in Fortnite worden we steeds aangevallen vanuit de bomen, hoe verdedig ik mn bouwwerk beter
+O|mijn mobiel zit vol met een virus volgens een pop-up, is dat echt of nep, en hoe kom ik ervan af
+O|mn pc heeft een bug in Windows waardoor de taakbalk niet meer reageert, wat is de snelste fix
+O|ik heb een bug gevonden in onze checkout-pagina, kun je helpen een nette bugmelding te schrijven voor de developers
+O|mn site is geïnfecteerd met malware, de host zegt dat ik alles moet herstellen, hoe doe ik dat het veiligst
+O|mijn mama gelooft niet dat een Raspberry Pi een volwaardige computer is, hoe overtuig ik haar met een leuk project
+O|ik heb een positieve review gekregen van mn klant over het logo, hoe bedank ik hem netjes
+O|testresultaten van mijn applicatie komen negatief uit bij login, de code geeft een 401, wat is het probleem
+O|ik moet voor Frans een zin vormen met de passé composé, kan je mijn voorbeeld nakijken: hier ben ik naar de markt gegaan
+O|mijn teamleider heeft een sterke overtuiging dat we naar Notion moeten, welke argumenten zijn er voor en tegen
+O|ik zit in het examenjaar en mn proefwerk Nederlands was echt een nachtmerrie, kun je tips geven voor het volgende
+O|waarom voel ik me altijd zo moe na een tentamen, ik sliep gewoon 8 uur en at goed, is dat de adrenaline
+O|ik gebruik graag het woord geloof in een tekst, wat zijn synoniemen die er niet te religieus uitzien
+O|mijn zus is verslaafd aan Netflix-series, welke nieuwe serie zou ze leuk vinden, ze houdt van politieke drama's
+O|hoeveel dagen kan ik een gratis proefabonnement van Adobe verlengen, kheb er nog maar 2 over
+O|de druk in mn fietsband is te laag, hoeveel bar moet erin voor een stadsfiets met brede banden
+O|er staat veel druk op mijn team door de release van vrijdag, hoe plan ik een gezellige afsluiter voor iedereen
+O|ik heb een kater van de Vlaamse kermis, geen grap, drink je daar echt zoveel bier, ik ga volgend jaar weer
+O|mama had het over een zwarte schuld in de keuken, hoe bedoelt ze dat, bedoelt ze zwarte aanslag op de pannen
+O|wie is de beste padelcoach in Antwerpen, mn man en ik willen starten met lessen maar we weten niet waar te beginnen
+O|het regent al dagen en ik zit in de put qua films, welke gezellige films kan ik kijken met mn gezin
+O|we hebben een depressie in het landschap gevonden, een soort kuil met meertjes, wanneer is dat een natuurlijk of een kunstmatig ding
+O|kan je me helpen met een zin die zegt dat ik overtuigd ben van de kwaliteit van mn product, voor mn website
+O|mn kat gelooft in niets anders dan eten, welke brokken zijn lekker en niet te duur
+O|schuld in boekhouden is niet hetzelfde als schuld in het dagelijkse leven, wat is het verschil voor mijn boekhoudcursus
+O|ik heb in mn spel 500 credits te weinig om het nieuwe karakter te kopen, wat is de snelste manier om ze te verdienen
+O|hoe boek ik een debet-bedrag terug in mn bedrijfsboekhouding, ik ben een zzp'er en kheb een foutje gemaakt bij een factuur
+O|ik krijg mijn kleine broertje niet van zijn tablet, welke leuke buitenspelletjes zijn er voor een kind van 6
+O|mijn dochter speelt tennis en haar baan ligt onder water na de regen, kunnen ze toch spelen of niet
+O|ik wil mn oprit laten bestraten, kan je een offerte checken die ik van een aannemer kreeg: 4.200 euro voor 35 m2
+O|ons dossier voor het schoolproject bevat nog geen zaak om te onderzoeken, welke case study kan ik kiezen voor marketing
+O|mn telefoonhoesje zit te los, welk soort case is het best voor een iPhone 15 en valt veel
+O|ik denk dat ik mijn sleutels ben verloren in de bioscoop, wie moet ik daar bellen
+O|mn zusje heeft verjaardagskoorts, ze telt al dagen af en wil een themafeest, wat kunnen we organiseren voor tien kinderen van 5
+O|ik hoop dat de vlucht op tijd is, ik moet nog tanken en inchecken, hoe laat moet ik vertrekken naar Zaventem
+O|kan je een korte toespraak schrijven voor mn vaders verjaardag, hij wordt 65 en hij houdt van fietsen en dahlia's
+O|wat betekent de uitspraak dat iemand zijn eigen graf graaft, ik zag het in een krant en snap het niet
+O|dat nieuwe dessert is echt hemels, kheb het bij onze favoriete bakker gegeten, hoe maken ze die romige laag
+O|mn schoonzus verwacht een groot feest, heb jij tips voor een goedkope maar gezellige tuinversiering
+O|we gaan zondag met de hele familie naar de kerstmarkt in Brugge, wat is het beste moment om de drukte te vermijden
+O|ik wil een wekker die me rustig wakker maakt, welke apps zijn er met een zonsopgang-effect
+O|mijn man schrijft een thriller over een moord in een Vlaams dorp, welke achtergrond past voor de dader
+O|ik schrijf een toneelstuk met een rechtbankscène voor mn klas, hoe ziet de opbouw van een proces eruit
+O|bestaat er een app om mn dagelijkse stappen te tellen zonder dat die al mn data verzamelt
+O|mn oma van 82 wil leren appen, hoe leg ik het simpel uit zonder dat ze afhaakt
+O|ik ben zo verliefd op dat nieuwe nummer van Stromae dat ik het 20 keer per dag speel, hoe heet dat akkoordenschema
+O|ik word helemaal gek van die oorwurm in mn hoofd, het gaat 'tadada' en dan een fluitje, weet je welk lied dat is
+O|ik was net bij de kapper en het is veel te kort, hoe lang duurt het voordat dit weer is aangegroeid
+O|kun je mn motivatiebrief voor een stage bij Colruyt nakijken, ik denk dat de eerste alinea te lang is
+O|ik moet mn kamer opruimen maar ik word er gek van, geef me een stappenplan voor een rommelige zolder
+O|hoe laat is de wedstrijd van Club Brugge morgen en op welke zender, mn pa wil er graag naar kijken
+O|is het verstandig om een nieuwe tv te kopen in de uitverkoop of zijn de modellen van vorig jaar beter
+O|mn broer heeft een zwak voor ouderwetse bromfietsen, hoe vind ik een betrouwbare tweedehands Kreidler
+O|ik sta op het punt een nieuwe fiets te kopen, wat vind je van een elektrische met middenmotor van Gazelle voor 2.800 euro
+O|kan je een beschrijving schrijven voor mijn tweedehands-bank op Marktplaats, drie zits, grijs, 2 jaar oud
+O|ik ben net begonnen met hardlopen en mn kuiten branden, is dat normaal of moet ik anders lopen, ik doe 2 km
+O|ik zoek een leuke naam voor mn nieuwe hond, een kleine bruine labradoodle
+O|hoe krijg ik mn mobiele data lager, ik zit constant aan mijn limiet door filmpjes
+O|ik snap niet waarom mn WiFi zo langzaam is in de slaapkamer, moet ik een repeater kopen
+O|mijn printer zegt dat de inkt op is maar ik heb net een nieuwe cartridge geplaatst, wat is het probleem
+O|we gaan met de klas naar Parijs, welke musea moeten we absoluut zien in twee dagen
+O|wat kan ik koken voor 6 mensen die allemaal iets anders eten, een vegetariër, een glutenvrije en twee kinderen
+O|hoe lang moet een kippenpoot in de oven bij 200 graden, mn schoonvader komt en ik wil het goed doen
+O|ik zoek de beste app om mn uitgaven bij te houden, ik werk als freelancer en bewaar alle facturen
+O|ik wil mn opa een cadeau geven voor zijn 80ste, hij houdt van oude klokken en tuinieren
+O|schrijf een gedicht over de herfst voor mn dochter, ze is 7 en wil het voordragen in de klas
+O|mn zoon wil per se een Pokémon-kaart met een glimmende rand, hoe herken ik of het echt is
+O|hoe maak ik een Excel-tabel die automatisch de som berekent per maand, ik ben redelijk nieuw
+O|help, mijn Zoom-verbinding valt steeds weg tijdens het sollicitatiegesprek van morgen, hoe test ik mn internet
+O|de batterij van mn auto is leeg, kan ik hem zelf opladen met een lader van 6 ampère of is dat te zwak
+O|ik laad mn e-bike elke nacht op, is het slecht voor de accu om hem aan de lader te laten
+O|mijn powerbank laadt maar tot 80% op, is hij stuk of is dat normaal
+O|kunnen we vergelijken wat een zonnepaneel installeren kost in 2026, we wonen in een rijtjeshuis in Mechelen
+O|hij heeft een zwak voor chips met paprikasmaak, is dat een typisch Nederlands ding of kennen ze dat ook in Vlaanderen
+O|we zijn verslaafd geraakt aan Gooische Vrouwen, wat is een goede opvolger om te bingen
+O|ik heb een zonde begaan: ik heb de laatste cuberdon opgegeten en niemand heeft het door, hoe verberg ik dat
+O|mn dochter noemt alles wat lekker is 'hemels', zelfs een boterham met pindakaas, leuk toch
+O|mijn bruine boterham met kaas is een zonde zegt mn collega, maar ik vind hem heerlijk, welk beleg past nog meer
+O|waarom noemen mensen een dikke dessertsaus 'zondig', ik zie de link niet
+O|ik denk dat jullie dit wel leuk vinden: 5 tips voor een goedkope vakantie, kun je het inkorten naar 3
+O|geloof je dat een kerstmenu van drie gangen haalbaar is voor 8 personen in een kleine keuken
+O|ik geloof niet dat mn pasta nog goed is, hij staat al 2 jaar in de kast, kan ik hem nog eten
+O|ik denk dat mn collega verkeerd gerekend heeft in het budget voor volgend jaar, hoe vraag ik dat beleefd
+O|we geloven in dit product maar de verkoop valt tegen, welke marketingtactiek werkt voor een klein bedrijf
+O|trial and error werkt niet voor mn CSS, ik wil een logische aanpak om mijn layout te debuggen
+O|mijn gratis proefaccount bij Canva loopt af, welke functies verlies ik dan precies
+O|de gratis trial van Duolingo Max is gestart, de eerste 7 dagen, is dat de moeite
+O|ik wil een proefrit maken met een Tesla Model 3, hoe plan ik dat in en wat moet ik meenemen
+O|tijdens de rechtszaak in Suits zeggen ze steeds 'objection', wat betekent dat in het echt
+O|we kijken Law and Order met het hele gezin, wat is het verschil tussen een officier van justitie en een rechter in zo'n serie
+O|ik speel Phoenix Wright en snap het rechtbankgedeelte niet, hoe bewijs ik dat de getuige liegt
+O|in Grand Theft Auto word ik steeds door de politie gepakt, hoe ontsnap ik aan een 5-sterren wanted level
+O|de ijshockeyclub van mijn zoon speelt een wedstrijd op een nieuwe baan in Eindhoven, hoe kom ik daar met de trein
+O|de tennisbaan in ons park is verlicht, mag je daar na 10 uur spelen, mn man en ik zijn nachtvogels
+O|ik wil een padelbaan huren voor zaterdag in Utrecht, wat kost dat gemiddeld per uur
+O|mn buurman heeft een nieuwe basketbalbaan in zijn tuin laten leggen, hoeveel kost zoiets
+O|ik heb een rare sensatie in mn Excel, de cel wil niet breder worden, hoe krijg ik dat aangepast
+O|ik werk met Google Sheets en wil één cel kleuren als de waarde onder de 100 komt, hoe stel ik dat in
+O|mn zonnecel in de zaklamp is stuk, kan ik dat zelf vervangen of moet ik een nieuwe kopen
+O|voor biologie leren we over een plantencel, kun je het uitleggen als je tien bent
+O|mn tuinhuisje heeft een raar geluid, een soort tikken in de nacht, zou het een muis zijn of een vogel
+O|mn kleine zusje houdt veel van prinsessen en ik zoek een kamer-ideeën voor haar vierde verjaardag
+O|ik ga mn eerste marathon lopen, hoe bouw ik mn weekschema op, nu ren ik 15 km per week
+O|help me een goeie openingszin te bedenken voor mijn sollicitatiebrief als boekhouder, niet de standaard
+O|schrijf een zin met het woord overtuiging voor mn kind van groep 5, het mag niet te moeilijk zijn
+O|ik wil weten wat een bijzin is, mn zoon van 11 vraagt het en ik herinner het me niet meer
+O|ik heb een kruiswoordraadsel waarin staat 'zonde van het geld', 5 letters, een idee
+O|mn collega zegt dat ze gelooft in de kracht van routines, kun je daar een kort artikel over schrijven voor ons intranet
+O|ik heb zin in friet vanavond, kheb een nieuwe friteuse maar weet niet of de olie moet vervangen worden
+O|bij ons op kantoor is de printer dood, we hebben de IT gebeld maar die zijn op vakantie, kan ik het zelf nakijken
+O|mn zus heeft een fijne stem en wil in een koor, hoe vind ik er eentje in Rotterdam
+O|ik ben bezig met een draaiboek voor een speelfilm over een bankoverval, wat is het typische verloop van de derde akte
+O|ik schrijf een script voor een misdaadserie en zoek een goeie plottwist waarin de rechercheur de dader blijkt
+O|mijn vriendin en ik kijken een true crime-documentaire, hoe vaak klopt dat met de echte rechtszaak
+O|ik zoek een ludiek idee voor een proefschrift-titel in de scheikunde, kheb geen inspiratie
+O|ik wil een mooie quote voor mijn vaders afscheid van zijn werk, hij gaat na 40 jaar met pensioen en we maken een kaart
+O|hoe kan ik een zakelijke factuur in Word maken die er netjes uitziet, ik ben net gestart als zzp'er
+O|we hebben een betalingsherinnering gestuurd naar een klant die nog niet betaald heeft, hoe formuleer ik de volgende mail beleefd
+O|ik denk dat mn website te traag is, hoe test ik de laadtijd zonder dure tools
+O|ik geloof dat ik een beter wachtwoordbeheer nodig heb, wat is een goeie gratis optie voor mijn gezin
+O|mn zoon wil in Roblox een gaming-pc, welke specs heeft hij echt nodig zodat het niet te duur wordt
+O|ik zoek een geschikt cadeau voor mijn man, hij houdt van wielrennen en koffie, budget 60 euro
+O|ik doe mee aan een quiz, hoe heet de hoofdstad van Australië, mijn zus zegt Sydney maar dat klopt toch niet
+O|mijn vader wil een nieuwe bbq kopen, gas of houtskool, we eten meestal met 6 man
+O|ik heb een goeie sfeer in mn team maar niemand durft nee te zeggen, hoe pak ik dat aan
+O|mn dochter heeft morgen een spreekbeurt over dolfijnen, kun je 5 leuke weetjes geven voor groep 6
+O|ik wil mn broer verrassen met een weekend naar Valkenburg, welke hotels zijn betaalbaar en vlakbij de grot
+O|wat zijn de beste podcasts over geschiedenis in het Nederlands, ik rij elke dag 40 minuten naar mn werk
+O|kheb een leuk idee voor een startup rond tweedehands kinderkleding, hoe test ik of er vraag naar is
+O|help met een mailtje aan de gemeente om een container voor groenafval aan te vragen, we hebben een grote tuin
+O|ik heb een enorme zin in zon, de zomer was zo kort, waar kan ik in oktober nog warm weer vinden in Europa
+O|waarom smaakt mn koffie zo bitter sinds ik een nieuwe machine heb, ik gebruik dezelfde bonen
+O|hoe verdeel ik 84 euro eerlijk over 7 collega's na een etentje in een tikkie-groepje, sommigen hadden geen dessert
+O|wie heeft er schuld in dit logicaraadsel, de boer, de wolf of de kool, mn zoon vindt de oplossing niet
+O|zoek een manier om een lening van een bibliotheekboek te verlengen, ik ben nog niet klaar met lezen
+O|mijn dochter wil graag een paar boeken lenen over paarden, welke zijn leuk voor een meisje van 9
+O|kan iemand me uitleggen wat een groepsproces in het project is, ik moet er een rapport over schrijven voor school
+O|we hebben vandaag een groepsfoto gemaakt met onze hele klas, hoe sla ik hem het best op voor een jaarboek
+O|mn man vindt dat ik te veel aan mijn telefoon hang, ik denk dat hij gelijk heeft, hoe stel ik een schermtijdlimiet in op iPhone
+O|bij ons thuis geloven we heilig in zondagse pannenkoeken, welke toppings zijn er buiten stroop en suiker
+O|mn zoon is helemaal weg van dinosaurussen, hij is dood serieus over zijn collectie, welk museum kunnen we bezoeken in Antwerpen
+O|mn tante noemt alles een 'ramp' en 'drama', ook als de koffie op is, hoe reageer ik daar luchtig op
+O|oh mijn hemel, het regent weer al een week, wat kunnen we doen met drie kinderen binnen in Leuven
+O|ik ben mn Netflix-wachtwoord vergeten maar ik heb geen toegang tot mijn oude mail, hoe krijg ik het terug
+O|mijn zusje studeert rechten en moet een pleidooi houden over een fictieve zaak, welke structuur raad je aan
+O|onze buren hebben een bouwvergunning aangevraagd voor een serre, hoe lang duurt dat gemiddeld in Gent
+O|kan je mijn brief aan de gemeente checken, ik vraag toestemming voor een tijdelijke terrasvergunning voor mijn café
+O|ik wil mn oma een mooie brief schrijven voor haar 90ste, hou je rekening met haar liefde voor tulpen
+O|waar kan ik in Nederland het beste een nieuwe Apple Watch kopen, bij Coolblue of de Apple Store
+O|ik probeer een nieuw bakrecept uit voor brownies en de bovenkant is krokant maar binnen nog nat, wat doe ik fout
+O|mn broertje wil een kamp organiseren voor zijn scoutsgroep, hoe maak ik een draaiboek voor 3 dagen
+O|hoe speel ik een kaartspel dat Rummikub heet, mn schoonmoeder komt en wil het spelen
+O|mn dochter heeft kermiskoorts en wil niet meer weg van de draaimolen, hoe krijg ik haar mee naar huis zonder gejank
+O|ik weet niet of ik de test van mn Wordpress-site moet verwijderen na de livegang, wat is gebruikelijk
+O|er is een fout in mijn query, de join geeft negatieve resultaten, kun je helpen met de syntax
+O|mn tentamen statistiek gaat over positieve en negatieve correlaties, kun je een eenvoudig voorbeeld geven
+O|ik zoek een leuk verjaardagsgedicht voor mijn tante die 60 wordt, ze houdt van zingen en wandelen
+O|hoeveel kost het gemiddeld om een dakkapel te laten plaatsen in een rijtjeshuis, we denken aan 2027
+O|kun je me helpen een zin te herschrijven: ik zal u ten volle in kennis stellen, zonder te stijf te klinken
+O|schrijf een korte tekst voor mijn Instagram over onze nieuwe bakkerij, we openen volgende week in Hasselt
+O|mijn zoon is bang dat zijn nieuwe sneakers uit zijn handen glippen, hoe maak ik de zool minder glad, hij heeft ze pas een dag
+O|in ons huis is de verwarming de hele ochtend dood, ik geloof dat de ketel gewoon druk verloren heeft, hoe bij ik die weer op 1,5 bar

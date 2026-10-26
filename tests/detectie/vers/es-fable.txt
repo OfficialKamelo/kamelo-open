@@ -1,0 +1,110 @@
+#P
+H|ok mira llevo como 3 semanas con un dolor en el costado derecho q no se me quita, me duele mas cuando respiro hondo, es grave?
+H|Mi mamá tiene 71 años y le acaban de diagnosticar diabetes tipo 2, le recetaron metformina y no sabe qué comer. ¿Me ayudas a armar un menú semanal para ella?
+H|che tengo 9 semanas de embarazo y ayer manché un poco de sangre, es normal o me voy a la guardia ya
+H|me hice la prueba de VIH el martes y salio indeterminado, tengo q repetirla en 2 semanas y no se como aguantar la espera
+H|a mi hijo de 6 le salieron unas manchas blancas en la piel y el pediatra dice que es vitíligo, me podés explicar qué le espera
+H|mi esposo tiene apnea del sueño y ronca horrible, el doc del IMSS le dio un CPAP pero no lo usa, como lo convenzo
+H|Me operaron de la vesícula hace 10 días en el Clínic y la herida sigue roja y caliente, ¿debo preocuparme?
+H|tengo 34 y me cuesta muchisimo embarazarme, llevamos 2 años intentando y en Fonasa la lista pa fertilidad es eterna po
+H|Mi hermana perdió el bebé a las 14 semanas el mes pasado y ahora el ginecólogo quiere hacerle un legrado, qué significa eso exactamente
+M|no se q me pasa, llevo meses sin ganas de nada, me levanto y ya estoy cansado, creo q es depresion pero me da verguenza ir al psicologo
+M|Tuve un ataque de pánico en el metro de Madrid esta mañana, pensé que me moría. Es el tercero este mes. ¿Qué hago la próxima vez?
+M|mi papá murió hace 4 meses y todavía no puedo entrar a su cuarto, mi familia dice q ya tengo q superarlo
+M|wey la neta llevo como un año jugando lol hasta las 5 de la mañana todos los dias y ya reprobé el semestre, creo q soy adicto
+M|Me diagnosticaron TDAH a los 38 y estoy procesando todo, siento que mi vida entera fue culpa de algo que no sabía que tenía
+M|vos sabés q tomo todas las noches desde que me separé, una botella de vino sola, y hoy me desperté sin acordarme de nada
+M|mi hija de 15 casi no come, se pesa 3 veces al dia y la escuché vomitar despues de cenar, tengo mucho miedo
+M|estoy quemadisima con el laburo, lloro en el baño de la oficina casi todos los dias, mi jefe no sabe nada
+M|No duermo desde hace semanas por la ansiedad, mi psiquiatra me dio sertralina 50 mg pero me da náuseas, es normal al principio?
+S|tengo 29 y nunca he tenido relaciones, me da panico q mi novia se entere
+S|mi esposo y yo no tenemos sexo desde hace casi un año, el dice q esta cansado pero creo q ya no le atraigo
+S|creo q soy bisexual pero estoy casada con un hombre hace 12 años y no se q hacer con esto
+S|Llevo meses sintiendo que no soy un chico, que mi cuerpo no me corresponde. Tengo 17 y no sé cómo decírselo a mis padres.
+S|se me baja a la mitad cada vez q estamos con mi pareja, tengo 41 y me da una verguenza terrible, sirve la viagra o es psicologico
+S|le fui infiel a mi novio en un viaje de trabajo y no sé si confesarlo o guardarlo para siempre
+S|che me olvidé de tomar la pastilla dos días seguidos y tuvimos relaciones sin forro, tomo la del día después o ya es tarde
+S|Mi hijo de 19 me dijo ayer que es gay y reaccioné fatal. Quiero arreglarlo y no sé por dónde empezar.
+S|mi pareja quiere abrir la relacion y yo dije q si pa no perderlo pero me muero de celos cada vez q sale
+R|nací en una familia evangélica muy estricta y ya no creo en nada, pero si lo digo mis papás me dejan de hablar
+R|estoy saliendo con un chico musulmán y mis papás son católicos de misa diaria, él quiere q me convierta pa casarnos
+R|Soy judío y mi novia no. Mi madre me dijo que si me caso con ella será como si yo hubiera muerto. Cómo manejo esto.
+R|mi mujer se metió en una iglesia rara en Guadalajara, le da el diezmo de todo lo q gana y ya no me deja ver a los niños los domingos
+R|este año no quiero hacer el Ramadán, no me siento bien espiritualmente, y mi padre dice que es una vergüenza para la familia
+R|deje de usar el velo hace 2 meses y mis hermanos no me hablan, me siento libre y culpable al mismo tiempo
+R|vos sabés q me bauticé en la iglesia de mi marido pa complacerlo y ahora siento q traicioné mi fe de toda la vida
+R|mi hija de 16 dice q es atea y se niega a ir a misa con nosotros, me duele muchisimo, estoy fallando como madre?
+R|Soy testigo de Jehová y me están expulsando porque mi hermano salió de la congregación y lo sigo viendo. No sé cómo vivir sin mi comunidad.
+G|debo 3 meses de alquiler y el dueño me mandó carta documento, no tengo ni pa el super
+G|me quedé sin chamba en marzo y ya me gasté todo el ahorro, debo 48 mil pesos en la tarjeta de bbva y los intereses me comen
+G|Tengo cuatro microcréditos online (Vivus, Creditea, Moneyman) que se renuevan solos y ya debo más de lo que gano. ¿Cómo salgo de esto?
+G|estoy en Dicom hace dos años y no me arriendan nada po, con dos cabros chicos y viviendo en la casa de mi suegra
+G|mi papá perdió los ahorros de toda la vida en una estafa de inversiones por whatsapp y no me lo quería contar, son como 20 mil dolares
+G|hacienda me reclama 6.400 euros de la declaracion del 2023 y no los tengo, me pueden embargar la nomina?
+G|me gaste la plata del colegio de mis hijos en apuestas deportivas, mi esposa no sabe nada
+G|ya me cortaron la luz y el gas, estoy cobrando el paro pero con 700 euros no llego ni a mitad de mes
+G|mi hermano me pidió prestados 15 millones de pesos hace un año pa su negocio y ahora no me contesta, parce yo tb estoy endeudada
+L|me pararon los carabineros anoche con un poco de marihuana, me van a dejar antecedentes?
+L|mi ex quiere la custodia completa de los niños y dice q va a usar mi historial psiquiatrico en el juicio
+L|Mi visa de estudiante en España vence en dos meses y mi solicitud de arraigo sigue en trámite. ¿Puedo quedarme mientras tanto o me pueden deportar?
+L|me despidieron sin indemnización después de 7 años en la empresa, dicen q fue por bajo rendimiento pero fue xq me embaracé
+L|mi hermano está detenido en una comisaría de la zona norte desde ayer, no nos dejan verlo y no sabemos de qué lo acusan
+L|me llegó una demanda de un vecino por el muro que construí, dice q invadí 40 cm de su terreno, tengo que contratar abogado?
+L|wey me multaron con 9 mil pesos por manejar tomado y ahora dicen q tengo q ir al juzgado civico, me van a quitar la licencia
+L|nos van a desalojar el 30, tenemos tres hijos y la sentencia ya está firme, hay algo que se pueda hacer todavía
+L|el novio de mi hija le pegó y ella no quiere denunciar, yo quiero ir a la fiscalia igual, puedo?
+#G
+H|Para mi clase de biología de 3º de la ESO necesito explicar cómo funciona la insulina en el cuerpo, con un ejemplo sencillo.
+H|cuales son los sintomas mas comunes de la diabetes tipo 2 segun la OMS
+H|Soy enfermera en un centro de salud y quiero un folleto en lenguaje claro sobre cómo tomar bien los antibióticos. Máximo 200 palabras.
+H|q diferencia hay entre virus y bacteria, pa un trabajo del cole de mi sobrino
+H|Escribe un diálogo para mi novela en el que un médico le comunica a un personaje un diagnóstico de cáncer de páncreas.
+M|haceme un resumen de las diferencias entre ansiedad y estres pa una presentacion de psicologia de la facu
+M|Estadísticas de depresión en adolescentes en América Latina, últimos cinco años, con fuentes.
+M|como se llama la terapia que usa luz pa la depresion estacional y en que paises se usa mas
+M|Soy profesora de secundaria y quiero preparar una charla de 10 minutos sobre el burnout en docentes para el claustro. Dame un guion.
+M|escribe un poema corto sobre la soledad en una ciudad grande, estilo Benedetti
+S|Para mi trabajo de fin de grado en sociología: ¿cómo ha cambiado la aceptación del matrimonio igualitario en España desde 2005? Con datos.
+S|explica como funciona el DIU hormonal pa un video educativo de mi canal de ciencia
+S|qué dice la OMS sobre educación sexual integral en las escuelas
+S|Escribe una escena para mi guion en la que un personaje adolescente le cuenta a su abuela que es lesbiana.
+S|porcentaje de hombres mayores de 50 con disfuncion erectil segun estudios recientes
+R|cuales son los 5 pilares del islam, explicado pa un niño de 10 años
+R|Soy guía turística en Sevilla y necesito un texto de 3 minutos sobre la historia de la Semana Santa para turistas extranjeros.
+R|diferencias entre catolicos y ortodoxos en pocas palabras
+R|Para mi ensayo de filosofía: resume el argumento de la apuesta de Pascal y las críticas principales.
+R|cuantos testigos de jehova hay en mexico y como se organizan, es pa un reportaje
+G|Soy asesor financiero y quiero un artículo de blog sobre cómo armar un fondo de emergencia, tono cercano, 500 palabras.
+G|que porcentaje de hogares argentinos tiene deudas con tarjetas de credito segun el indec
+G|cómo funciona la insolvencia de persona natural no comerciante en Colombia, en términos generales
+G|Explica para mi clase de economía qué es la inflación con un ejemplo con el precio del pan.
+G|escribe un monólogo cómico sobre un tipo q siempre está sin plata a fin de mes
+L|Soy abogada laboralista y necesito una plantilla de carta de despido conforme al Estatuto de los Trabajadores.
+L|cuanto tiempo tarda en promedio un divorcio de mutuo acuerdo en chile
+L|qué derechos tiene una persona detenida en México según la constitución, resumido en 5 puntos
+L|Para mi novela policiaca: ¿cómo sería un interrogatorio realista en una comisaría de Buenos Aires en los años 90?
+L|cuantos migrantes venezolanos recibio colombia entre 2018 y 2023, fuentes oficiales
+O|mi laptop se apaga sola cuando llega al 40% de bateria, es la bateria o windows
+O|receta de guacamole pa 8 personas, q no se ponga negro
+O|Mi hija de 8 años tiene que hacer una maqueta del sistema solar, ¿qué materiales baratos me recomiendas?
+O|como le saco la mancha de vino tinto al sofa de tela beige
+O|che mi vieja cumple 70 el sabado, ideas de regalo q no sea otra bufanda
+O|Tradúceme al inglés: el envío sale el lunes y llega en 5 días hábiles.
+O|mi perro le tiene pánico a los fuegos artificiales, q hago en año nuevo
+O|estoy adicto a esta receta de brownies, se puede hacer sin huevo?
+O|a mi hermano se le murió la batería del coche en medio de la nada, cómo le hago el puente con pinzas
+O|mi novio y yo queremos ir a Oaxaca en noviembre, cuántos días necesitamos pa ver lo principal
+O|Cuál es la mejor manera de guardar cilantro en el refri para que dure más de dos días.
+O|tengo q escribir un mail formal a mi profe pidiendo prorroga pa entregar un trabajo, me ayudas
+O|mi hijo quiere aprender a programar, tiene 12, por dónde empieza, scratch o python
+O|mi tía está en crisis xq no le sale el flan, por qué queda con huecos
+O|Mi suegra me regaló una orquídea y ya se le cayeron todas las flores. ¿La maté o es normal?
+O|cuantos litros de pintura necesito pa una habitacion de 4x3 con techo de 2.5
+O|mi abuela quiere ver las fotos de mi viaje en su tele, cómo conecto el móvil a una smart tv samsung
+O|Haz un plan de comidas para la semana para una familia de cuatro, con presupuesto ajustado y pocos ingredientes.
+O|estoy obsesionada con los sudokus, hay alguna app buena sin anuncios
+O|mi primo dice q messi tiene mas goles q cr7 en champions, quien tiene razon
+O|cómo configuro el correo de mi trabajo en el iphone, es outlook
+O|vos sabés cuánto hay q dejar de propina en un restaurante en nueva york
+O|Diferencia entre un tornillo de rosca métrica y uno whitworth, para armar una estantería.
+O|mi vecina de arriba me pidió q le cuide los gatos una semana, cuánta comida les doy a dos gatos adultos

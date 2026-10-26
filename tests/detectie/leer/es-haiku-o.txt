@@ -1,0 +1,251 @@
+#G
+O|mi hermana me pidió ayuda para una receta de flan sin horno, qué molde me recomiendan
+O|mi app se cuelga cada vez que abro la cámara, cómo la arreglo
+O|mi perra tiene la nariz seca y come menos desde ayer, es normal en verano o la llevo al vet
+O|cuánto tiempo hay que dejar reposar la masa de pizza en la nevera? la hice ayer en la noche
+O|vamos a Cartagena con mi novia en diciembre, qué barrio conviene para dormir sin pagar taxi todos los días? parce ayúdame
+O|cómo mato un proceso colgado en Linux, el sistema ya no responde
+O|xfa dime cómo hago tortillas de harina que no se rompan cuando las enrollo
+O|mi hijo tiene examen de historia de la Independencia de México, ¿me resumes los puntos clave en 10 líneas?
+O|mi celular murió ayer en la lluvia, ¿qué hago con el chip y los contactos?
+O|Estimado equipo: les escribo para confirmar la reunión del jueves a las 10 en la sala 3. Gracias.
+O|el gato vomita bolas de pelo cada semana, qué comida ayuda a reducirlo
+O|mis tomates tienen hojas amarillas, será falta de agua o de nitrógeno
+O|tengo una deuda enorme en el juego de cartas del celular, cómo subo de nivel más rápido
+O|mi papá quiere pintar la cerca de negro, cuántos litros de pintura necesito para 20 metros?
+O|cuánto es el 15% de propina sobre 430 pesos para la cuenta de la cena
+O|encontré un virus en mi laptop, cómo lo borro con Windows Defender sin perder mis fotos
+O|el juego me dice game over cada vez en el jefe final, cómo le gano sin perder el progreso
+O|mi tío dice que el coche hace un ruido raro al frenar, ¿puede ser la pastilla o el disco?
+O|me muero por ver el concierto de Coldplay en octubre, cómo consigo entradas sin pagar de más
+O|quiero comprar una batidora para mi mamá, cuál sirve para masa de pan y no cueste más de 2000 pesos
+O|mi perro cojea un poquito después del paseo, esperamos un día o vamos al vet ya
+O|buenos días, quisiera saber si el curso de Excel del mes que viene todavía tiene lugares libres
+O|la sudadera que compré llegó más chica, cómo hago la devolución sin pagar envío
+O|quiero maratonear una serie policial, cuál me recomiendan parecida a la de Bosch
+O|nosotros hacemos paella los domingos, cuál es el arroz que aguanta mejor el caldo
+O|mi amiga me pidió ayuda con una tarea de HTML, cómo centro un div con flexbox
+O|vamos a Puerto Vallarta en familia, cuántos días necesitamos para ver las playas sin apuro
+O|la cancha de tenis del club está muy resbalosa después de llover, qué hacemos con la reserva
+O|redacta un correo para el cliente diciendo que el envío se retrasa dos días por la aduana
+O|mi conejo no quiere comer el heno, ¿es normal en los conejos o algo anda mal?
+O|cuántos kilos de carne necesito para 12 personas si hago asado para los amigos del laburo
+O|ayuda, mi bici se quedó trabada en la rueda trasera, cómo quito la cadena sin romperla
+O|quiero una iglesia antigua como lugar de boda, cuánto cuesta alquilar una en Sevilla
+O|mi hija quiere un regalo para su maestra de primaria, algo sencillo y que no cueste mucho
+O|si el litro de leche sube de 24 a 27 pesos, cuál es el porcentaje de aumento
+O|mi sobrino de 16 tiene examen de derivadas, ¿me explicas la idea en palabras sencillas?
+O|el bug de mi app mata la sesión del usuario cada 5 minutos, cómo lo arreglo en Node
+O|qué le pongo a las lentejas para que no queden tan aguadas
+O|tengo que dar un discurso en la boda de mi mejor amigo, cómo empiezo sin sonar cursi
+O|mi perro es muy juguetón en el parque y se pelea con otros perros, cómo lo calmo
+O|mi equipo de fútbol juega el domingo, qué formación conviene con cuatro defensas
+O|el cumple de mi mamá es el sábado, qué le regalo si le gusta leer novelas históricas
+O|el bloque de hielo se mueve por la mesa de la cocina, cómo lo enfrío mejor para la fiesta
+O|mi suegra quiere que la boda sea en el jardín de su casa, cómo organizo las mesas
+O|cuántos kilómetros puedo manejar con la luz de reserva encendida en mi camioneta
+O|cuánto tardan en cocerse los frijoles negros en la olla de presión si los dejo en remojo toda la noche
+O|mi papá busca una cafetera de goteo sencilla, algo que no ocupe mucho espacio
+O|en la oficina el proyector se ve borroso, ¿lo ajusto yo o hay que llamar a soporte?
+O|mi padre dice que el coche ya se está muriendo, qué reviso antes de llevarlo al taller
+O|cómo hago que mi página de React se actualice sola cuando guardo, uso Vite
+O|mi hermano quiere jugar Minecraft con nosotros en el servidor, cómo lo conecto desde la consola
+O|quiero envenenar a los zombies en mi juego de Minecraft, cuál poción sirve mejor
+O|mi gato estornuda un montón y tiene los ojos llorosos, puede ser alergia al polvo
+O|busco un regalo para mi jefe por su cumpleaños, algo sencillo que no sea de cosméticos
+O|cuánto tiempo antes hay que mandar las invitaciones de la boda de mi hermana
+O|mi tía viene de visita y quiere conocer el centro histórico, qué ruta de un día recomiendan
+O|mi perro se robó el sándwich de la mesa, cómo le quito esa costumbre
+O|escribí un script que duplica archivos en mi carpeta de fotos, cómo lo arreglo
+O|ayer comí tacos de canasta en el centro, quisiera replicar la salsa verde en casa
+O|le compré un juguete a mi sobrino que venía sin pilas, dónde consigo las de tamaño AA
+O|mi abuela usa polvo de hornear para los panqueques, cuánto va por taza
+O|mi hijo de 10 años necesita una mochila ligera y resistente, qué marca conviene
+O|necesito hacer un checklist para el cierre del mes, qué puntos no pueden faltar en contabilidad básica
+O|cómo armo una bomba de burbujas gigante para el cumple de mi sobrina
+O|mi equipo de básquet pierde mucho, qué jugadas recomiendan para la defensa
+O|quién ganó más campeonatos de la NBA, Celtics o Lakers? discusión con mi papá
+O|el ataque de pánico del jefe del juego es muy difícil, cómo lo paso sin morir
+O|mi suegra dice que el mole le queda ralo, cómo lo espeso sin que sepa a harina
+O|mi perra quiere salir cada hora al jardín, es normal o le falta paseo
+O|quiero armar un huerto en el balcón, qué verduras crecen bien en maceta
+O|hola, ¿me puedes mandar el informe de ventas de septiembre antes de las 5? Lo necesita el jefe
+O|ayúdame con mi ensayo de literatura, el tema es el realismo mágico de Gabriel García Márquez
+O|cuál es la diferencia entre let y const en JavaScript, nunca lo entendí bien
+O|mi hijo quiere saber cuántos libros puede llevar a la biblioteca en una semana
+O|mi equipo de softbol perdió 12 a 0 hoy, cómo motivo a las niñas para la siguiente semana
+O|mi novia cumple años la otra semana, ideas de regalo barato que sea romántico
+O|mi tortuga tiene manchitas blancas en el caparazón, es normal o hay que preocuparse
+O|nuestra empresa lanza una línea nueva de productos en abril, ayúdame a pensar 3 titulares
+O|el tanque de gasolina del auto está en reserva, cuántos km aguanta más o menos
+O|hay sangre de tomate en la camisa blanca, cómo la saco sin dañar la tela
+O|cuánto cuesta el bus de Santiago a Valparaíso? mi pareja quiere ir en la mañana, po
+O|mi hermano dice que quiere pasar la semana en la playa, qué llevar para el viaje de carretera
+O|voy a comprar un refri nuevo, cuál es más eficiente en luz para una familia de cuatro
+O|quiero hacer un disparo perfecto en el fútbol, cuál es la técnica para el penal
+O|cómo reporto a un jugador tramposo en Valorant, es con el botón o por soporte
+O|mi hámster no toma agua desde hace dos días, qué le doy mientras consigo el vet
+O|tenemos una parrilla y mi tío quiere cocinar costillas toda la tarde, cuánto tiempo a fuego lento
+O|quiero cambiar el colchón de mis papás, cuál es firme pero cómodo para mi mamá
+O|el tiburón de Jaws me da miedo, qué otras pelis de terror de los 70 me recomiendan
+O|quiero hacer un speedrun de Super Mario, por dónde empiezo a practicar los saltos
+O|mi equipo de natación me pidió una rutina de calentamiento para niños, ideas
+O|el hijo de mi vecino quiere usar el taladro, es seguro que lo use a los 9 años
+O|mi hija no quiere comer verdura, algún truco para que la acepte en la sopa
+O|quiero llevar a mi perro a la playa en Ensenada, qué reglas tiene la playa para mascotas
+O|en el mercado de Coyoacán, dónde conviene comprar la cajeta sin que te la pasen con azúcar
+O|mi equipo de béisbol perdió el juego por un out, qué hacemos en el entrenamiento
+O|qué juego cooperativo me recomiendan para jugar con mis hijos de 7 y 10 años
+O|mi papá viaja a Madrid por trabajo la semana que viene, qué metro conviene para ir al centro
+O|tenemos práctica de hockey sobre hielo a las 6 am y no tengo carro, mi amigo me puede llevar?
+O|nuestro jefe quiere que matemos la reunión de los lunes, cómo la hacemos más corta
+O|vamos a manejar de Monterrey a Saltillo con el carro de mi mamá, cuánta gasolina llevamos
+O|mi compa de clase quiere saber cómo se hace un experimento de densidad con refresco y aceite
+O|el helecho de mi suegra se ve marchito, cómo lo revivo sin cambiarlo de maceta
+O|mi hermano y yo nos peleamos por el último pedazo de pastel, cómo lo dividimos justo
+O|quiero pintar la sala de mi casa en verde menta, cuántos litros para 20 metros cuadrados
+O|las pulgas de mi perro siguen aunque le puse collar, qué pastilla o spray sirve mejor
+O|mi papá va a cumplir 70 años, qué le regalamos si ya tiene de todo
+O|xq la tienda online me cobró dos veces el envío, cómo pido el reembolso
+O|la pistola de agua de mi sobrino moja todo, cómo la limpio sin tirarla
+O|cuál es el saludo más neutro para un mail en Colombia? mi jefe es de Bogotá, usted o tú
+O|mi amiga juega en la liga de fútbol femenil, cuántas sesiones de fuerza a la semana le sirven
+O|el lavabo del baño se tapó, qué le echo para destapar sin químicos fuertes
+O|tengo examen de anatomía del cuerpo humano, me repasas los huesos del brazo
+O|ustedes qué recomiendan para la cena de fin de año de la oficina, restaurante en Polanco
+O|qué tan grande debe ser una cochera para dos autos compactos
+O|quiero organizar la fiesta de graduación de mi hijo, presupuesto bajo y 30 invitados
+O|mi pareja y yo jugamos a la verdad o el reto en la fiesta, ideas de retos divertidos sin pasarnos
+O|quiero aprender alemán en un año para trabajar en Berlín, qué método me recomiendan
+O|me podrías ayudar a entender la ley de Ohm? el libro está muy confuso y el examen es mañana
+O|cuál fue el resultado de la Batalla de Maipú? para mi trabajo de historia de Chile
+O|cuántas horas al día puede pasar un perro adulto solo en casa sin problema
+O|che, cómo se conjuga el verbo haber en futuro? tengo prueba de lengua el lunes, vos sabés?
+O|cuántas patas tiene un pulpo y un calamar, y en qué se diferencian? mi hija preguntó
+O|el juego de mesa de la mafia se volvió muy aburrido, qué reglas agregamos
+O|hay que organizar el amigo secreto de la oficina, qué reglas funcionan con 15 personas
+O|ya sacamos los boletos para el festival de Viña del Mar con mis compas, dónde nos quedamos cerca del escenario
+O|quiero empezar a correr 5 km en el parque, qué ritmo es normal para principiante
+O|el perro del vecino ladra toda la noche y ya no duermo bien, cómo le hablo sin pelear
+O|mi jefe pide que los reportes estén en PDF, cómo los exporto desde Google Sheets sin que se vean feos
+O|quiero hacer una piñata de unicornio para la fiesta de mi sobrina, cómo la armo con papel
+O|mi mamá quiere plantar una buganvilia en la entrada, cuándo es la mejor época
+O|mi hijo tiene 6 años y quiere aprender a andar en bici, consejos para la primera vez
+O|quiero reservar una cancha de pádel para cuatro, cuánto cobran por hora en Puebla
+O|necesito un poema corto sobre el mar para la clase de lengua, que rime en A y en O
+O|el control de mi PS4 hace drift en el stick izquierdo, cómo lo calibro antes de comprar otro
+O|mi perra no quiere salir al paseo con la lluvia, qué hago con su rutina diaria
+O|nosotros jugamos ultimate frisbee los sábados, qué regla no entiendo sobre las pasadas
+O|la puerta del clóset se atora cada vez que la cierro, cómo le ajusto las bisagras
+O|quiero hacer una repisa flotante en la sala, qué madera es barata y aguanta libros pesados
+O|el foco de la lámpara del pasillo parpadea, es el foco o la instalación eléctrica
+O|soy novato en el juego de estrategia, cómo aprendo a hacer rush de tropas
+O|hay una fuga de agua en el techo del baño, cómo le aplico el sellador
+O|mi abuelo se compró una tele nueva y no sabe conectar el HDMI, me ayudas a explicarle paso a paso
+O|el aceite del motor de mi moto quedó muy oscuro, cada cuánto se cambia
+O|mi hijo quiere construir una casita para el perro en el jardín, planos sencillos
+O|el partido de mi equipo se va a jugar en la cancha de arriba, qué hacemos si llueve
+O|cuántas combinaciones hay para elegir 3 colores de 8 para pintar los cuadros del salón
+O|la hierba del jardín está muy alta, cuándo es buen momento para cortar el pasto en primavera
+O|mi amiga quiere saber cuál es la capital de Mongolia para su juego de trivia
+O|quiero que me expliques la fotosíntesis con una comparación sencilla para mis alumnos
+O|mi equipo de rugby entrena los martes, qué tengo que llevar el primer día
+O|entrené de 6 a 7 y el cuerpo me duele, cómo estiro bien después de correr
+O|el jefe quiere que la app salga a producción el viernes, cómo hago el checklist de despliegue
+O|quiero armar un terrario en un frasco para mi hijo, qué plantas no se mueren rápido
+O|vi un documental del Amazonas en la tele, qué libros recomiendan para saber más de la selva
+O|mi hermana tiene una panadería chica, cómo calculo el precio del pan dulce
+O|en Excel, cómo saco el promedio de notas de mis alumnos sin contar las celdas vacías
+O|mi equipo perdió por dos goles, cómo le pido al entrenador que cambie de tono
+O|quiero ir al cine con mi novio a ver la película nueva, qué sala tiene mejor sonido en Monterrey
+O|me encontré un buen lugar para acampar en el bosque, ¿se permite encender fogata?
+O|quiero una rutina de estiramientos para después de jugar fútbol con mis amigos el sábado
+O|para la comida de mi perro, cuál croqueta de marca es mejor para uno de 15 kilos?
+O|cómo le quito al pastel la capa de chocolate sin que se rompa, es para el cumple de mi mamá
+O|la impresora de la oficina no imprime en color, qué reviso primero
+O|mi tía me pidió que le ayude con su disfraz de bruja para el baile, qué material compro barato
+O|quiero armar una sesión de yoga los martes con mi mamá, qué ropa conviene usar
+O|mi cuñado quiere un juego de mesa para la cena familiar, que sea rápido para 6 personas
+O|mi sobrina de 7 años quiere saber por qué el cielo es azul, cómo le explico con palabras fáciles
+O|mis papás quieren pintar el cuarto de amarillo pastel, cuántas capas de pintura se necesitan
+O|cómo saco la probabilidad de sacar dos ases seguidos en una baraja para la clase de mates
+O|cuántos días necesito para conocer Oaxaca sin prisa si vamos con mis dos hermanos
+O|ya quiero que llegue el fin de semana para jugar con mi equipo de voleibol de la uni
+O|me voy a dormir en el tren nocturno a Oaxaca, es seguro llevar la mochila en el asiento
+O|mi hijo juega fútbol los sábados, qué zapatos son mejores para pasto sintético
+O|quiero preparar empanadas de carne para la reunión familiar del sábado, cómo hago el repulgue
+O|mi papá me pidió que le ayude a armar el escritorio nuevo, paso a paso por favor
+O|quiero comprar un colchón de agua para el cuarto de mis hijos, es buena idea?
+O|busco ideas para regalar a mi equipo de trabajo al cerrar el año, presupuesto de 500 pesos por persona
+O|mi tía quiere organizar una pijamada con las primas, juegos sencillos para niñas de 12
+O|tengo que resumir la lectura de biología celular para el jueves, dame 5 ideas clave
+O|mi perro tiene la piel roja en la panza y se rasca mucho, qué champú le sirve
+O|quiero cambiar el wifi de la casa, mi mamá dice que el router viejo es el problema
+O|nuestro perro se escapa por el hoyo de la cerca, cómo lo cierro sin que se note
+O|quiero hacer un video de cumpleaños para mi papá con fotos de cuando era chico, qué app sirve
+O|mi compañera de trabajo se va a jubilar, qué le escribo en la tarjeta de despedida
+O|mi hermano va a estudiar diseño gráfico, qué programa le conviene aprender primero
+O|cuánto vale una cobija de lana buena para el invierno en Chile, en tienda normal po
+O|mi carro huele raro y el limpiaparabrisas no funciona, cómo lo reviso
+O|nosotros queremos ir al cine el viernes, qué horario conviene para evitar la fila
+O|xfa, cuál es el tamaño de bolsa de basura para un bote de 50 litros
+O|hay un nido de avispas en el techo de mi casa, quién lo quita sin matarlas
+O|mi sobrino quiere un telescopio para ver la luna, qué modelo es bueno para niños
+O|quiero una cena sorpresa para mi esposa en nuestro aniversario, qué platillo sencillo puedo hacer
+O|quiero volar un globo con helio en la fiesta, es legal en mi ciudad o hay multa?
+O|tengo que dar la presentación del equipo en la junta, cuánto tiempo le doy a cada slide
+O|mi suegra cumple sesenta, qué le compro que no sea ropa
+O|cuánto tardo en llegar en bici de mi casa al trabajo si son 6 km y subo una cuesta
+O|la carrera de drones se fue al suelo y se rompió la hélice, la pego o compro otra
+O|mi hija tiene que hacer un collage de animales en peligro de extinción, qué fuentes uso
+O|cuántos ml de jugo de limón necesito para 4 litros de agua fresca para la fiesta
+O|mi tío quiere tomar un curso de fotografía para su viaje a Japón, qué cámara de principiante recomiendan
+O|el wifi del hotel en Cusco es lentísimo, cómo configuro el hotspot de mi celular
+O|el juego de rol se pone intenso y mi personaje debe sacrificarse para salvar el reino, es buena idea
+O|mi hijo entra a la secundaria y necesita una lista de útiles, qué cosas faltan
+O|cuál es la diferencia entre aceite 5W30 y 10W40 para el auto de mi hermana
+O|xq mi máquina de café hace un ruido raro cuando se calienta, cómo la limpio por dentro
+O|hay un pozo de lodo en el jardín de mi suegra, cómo lo relleno sin que se hunda el pasto
+O|quiero una lista de películas para ver con mi mamá los domingos, que sean tranquilas
+O|mi pareja quiere empezar a hacer senderismo, qué mochila conviene para una caminata de 5 horas
+O|cómo convierto un video vertical a horizontal sin que se vea mal en el celular de mi hermano
+O|mi conejo dejó de hacer caca hoy, qué hago, es grave o espero hasta mañana
+O|mis suegros vienen a cenar el viernes, qué menú sencillo puedo preparar para 5 personas
+O|quién me recomienda un proveedor de fruta en el mercado de Lagos de Moreno para mi tienda
+O|el jardinero de mi casa corta las plantas, no quiero que las mate, cómo le explico
+O|en el trabajo nos piden un reporte de cuánto tiempo gastamos en cada proyecto, qué formato uso
+O|quiero jugar básquetbol en la cuadra con mis primos, cómo organizo dos equipos parejos
+O|mi hermano me pidió que le pase el manual de la máquina de soldar del taller, dónde lo consigo
+O|mi mamá quiere una receta de pan de muerto para la ofrenda, qué harina usamos
+O|el sistema de mi oficina va lento a partir de las 4, cómo lo reviso con el equipo de TI
+O|quiero llevar a mi familia a la feria del pueblo en diciembre, qué días conviene ir
+O|mi amiga y yo jugamos a los mitos de terror en la noche, cuentos cortos para leer en voz alta
+O|mi vecina quiere aprender inglés, qué app gratis le recomiendan para empezar
+O|hay un error en la base de datos de la tienda que duplica pedidos, cómo lo busco
+O|quiero armar un regalo para mi novio con sus cosas favoritas, ideas de caja sorpresa
+O|la moto de mi amigo tiene la cadena muy floja, cuánto se debe tensar
+O|tengo que escribir una carta de presentación para mi hija que va a entrar a la universidad, tono formal
+O|mi taller de bicis necesita un proveedor de llantas, qué marca de cámaras conviene comprar al mayoreo
+O|cuál es el mejor prompt para que un chatbot me haga una lista de regalos para el amigo secreto
+O|mi hijo de 12 años quiere su propio canal de YouTube, qué reglas mínimas le pongo
+O|mi cuñada tiene una tienda de ropa, cómo le calculo el margen de ganancia por prenda
+O|me quedé sin tinta en la impresora de la oficina justo antes del examen, qué hacemos
+O|quiero hacer una tabla de ejercicios para el gym en casa, sin pesas, que quede en 30 minutos
+O|tenemos que decidir el menú para el banquete de la boda de mi hermano, qué es más económico, pollo o cerdo
+O|mi perro se come las plantas del jardín, qué plantas son tóxicas para los perros
+O|cuánto cuesta un boleto de metro en Madrid con viajes ilimitados de tres días
+O|voy a sacar mi primer pasaporte para el viaje de mi mamá, qué documentos necesito
+O|el cable de la tele se quemó y huele raro, cómo lo cambio sin que se apague todo
+O|quiero armar mi propio blog de recetas, qué plataforma gratuita es fácil para empezar
+O|mi hermano está en tercero de secundaria y quiere estudiar programación, por dónde empieza
+O|cómo hago un tiramisú sin huevo crudo para la comida de mi familia, quiero algo seguro para todos
+O|el mosquito del túnel de la casa me tiene cansado, qué trampa sirve sin matar al gato
+O|mi amigo me pidió que le ayude a montar una página de eventos para su taller de guitarra
+O|mi mamá quiere empezar a hacer crucigramas todos los días, dónde consigo buenos
+O|el mensaje de error dice fatal exception en la app, qué lo busco en el log
+O|mi tía quiere saber cuántas maletas de mano se permiten en el avión de Aeroméxico
+O|estoy grabando un podcast con mi mejor amigo sobre cine, cómo edito la música de fondo sin que tape la voz
+O|mi jefa quiere que evalúe a los nuevos candidatos con un juicio de cinco preguntas, cómo armo el formato
+O|nos llega el paquete de la tienda el viernes, qué hacemos si lo entregan a la vecina
+O|mi papá quiere ir a pescar en el lago con mis hermanos, qué carnada sirve para lobina
+O|mi hija estudia piano desde los 6 años, qué método le recomiendan para la semana de examen

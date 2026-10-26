@@ -12,8 +12,10 @@
 //             start  = adres van een nieuwe chat + button = de knop die daar de tijdelijke chat aanzet;
 //             onUrl  = stukje van de url, of onSel = element, waaraan je ziet dat je er al in zit
 //             (nagekeken op de echte, ingelogde sites op 11 okt 2026)
-//   files     alleen in Kamelo Business: bestanden afschermen bij uploaden (upload.js van teams): kiezen met de
-//             bestandsknop, slepen en plakken. Zet dit pas aan als uploaden op de echte site is nagekeken.
+//   files     alleen in Kamelo Business: uploaden is op de echte site nagekeken. Dan ook het origineel bekijken en
+//             downloads met de echte gegevens terugzetten (teams/originals.js). Afschermen bij uploaden (upload.js)
+//             gebeurt sinds 22 okt 2026 op élke afgeschermde AI-site, ook zonder deze vlag (anders ging het bestand
+//             ongewijzigd mee).
 //   teams     alleen in Kamelo Business: ontwikkelaarsconsoles en chatbot-widgets (daar stelt niemand een persoonlijke
 //             vraag, maar wel klantgegevens). De gratis editie vraagt er geen toegang tot.
 //   perHost   de domeinen zijn verschillende bedrijven onder één naam: elk domein krijgt een eigen kluis (zie scopeFor).

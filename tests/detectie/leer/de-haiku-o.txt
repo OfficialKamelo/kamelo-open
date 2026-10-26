@@ -1,0 +1,251 @@
+#G
+O|ich bau grad ne kleine todo app in react und die liste rendert nicht neu wenn ich ein item lösche, woran liegts?
+O|python: wie sortier ich ein dictionary nach value absteigend, hab zwei varianten gefunden und versteh keine
+O|warum gibt mir git push immer rejected non-fast-forward obwohl ich grad erst gepullt hab
+O|kann mir jemand erklären was der unterschied zwischen let und const in js ist, für meine erste woche code
+O|ich brauch ein regex das e-mail-adressen aus nem text fischt, nichts zu strenges, nur für meine excel-liste
+O|mein docker container startet nicht, port 5432 ist belegt, wie find ich raus was den port nutzt
+O|wie rück ich in vs code alle zeilen gleichzeitig ein, ich hab ne liste mit 200 zeilen und das nervt
+O|unser team nutzt jira und ich will die sprints automatisch zählen lassen, geht das ohne plugin?
+O|hab in excel ne sverweis-formel die manchmal #NV zeigt, was mach ich falsch
+O|mein kollege hat meinen pull request als zu groß abgelehnt, wie teil ich den am besten in kleinere stücke
+O|ich will meinem papa ein kleines skript schreiben das jeden morgen das wetter in den kalender schreibt, wo fang ich an
+O|warum läuft mein node-script auf dem büro-laptop langsamer als auf meinem privaten mac, beide sind neu
+O|sql-frage fürs uni-projekt: wie zähl ich pro kategorie die bestellungen und zeig nur die über 10
+O|hab meine seite mit wordpress gebaut und das menü verschwindet auf dem handy, css oder plugin?
+O|kann man in bash eine liste dateien umbenennen die alle mit IMG beginnen und ein datum davor setzen
+O|mein python-code bricht ab mit exit code 137 killed, was heisst das und woran liegts
+O|wir wollen unsere api-doku auf swagger umstellen, lohnt sich das für ein team von vier leuten?
+O|was ist der unterschied zwischen array und liste in java, bin noch anfänger und versteh das nicht so richtig
+O|meine app stürzt ab sobald ich auf speichern drück, cache hab ich schon geleert, was noch?
+O|kann ich in github actions ein build nur auf dem main branch laufen lassen oder geht das nur mit nem trick
+O|mein react-component ist seit dem update tot, nichts rendert mehr, wo fang ich an zu suchen
+O|brauch nen alias für ll der die versteckten dateien auch zeigt, mein zsh spinnt bei jedem neustart
+O|excel: wie mach ich aus einer spalte mit vor- und nachnamen zwei getrennte spalten, ohne alles von hand
+O|meine freundin studiert informatik und will wissen ob rust oder go besser ist um mit kleinen projekten anzufangen
+O|ich will den prozess mit der pid 4821 killen weil er den port blockiert, welcher befehl im terminal dafür
+O|mein handy ist tot und ich will die fotos vom icloud auf den mac holen, wie geht das am einfachsten
+O|wie seh ich in der aktivitätsanzeige welcher prozess am meisten ram frisst, mein laptop ist so langsam
+O|virus auf meinem laptop?? windows defender meldet was, ich hab nur chrome und spotify offen, ist das normal
+O|kann ich mein altes ipad als zweiten bildschirm für meinen laptop nutzen, mit welcher app
+O|meine externe festplatte macht klick-geräusche, ist die tot oder kann man noch was retten
+O|meine tochter (12) will programmieren lernen, scratch oder gleich python?
+O|mein sohn spielt minecraft und fragt wie er einen eigenen server aufsetzt, ist das für nen anfänger machbar
+O|in unserem testreport steht bei meinem neuen modul positive test results 3, ist das gut oder schlecht, wir nutzen pytest
+O|ich hab ein unity-spiel gebaut und die kollisionsabfrage geht nicht, der charakter fällt durch den boden
+O|meine oma will fotos mit der familie teilen, was empfehlt ihr für ein iphone, sie ist 80
+O|rezept für kürbissuppe ohne sahne? meine schwester ist vegan und ich will für sie kochen
+O|wie lange muss ich für ne bisque den krebs-fond kochen bevor ich ihn abseihe
+O|wir haben am samstag acht leute zum essen, was kann ich vorher schon machen damit ich nicht den ganzen tag steh
+O|kann man semmelknödel auch am vortag machen oder werden die dann hart
+O|mein papa will endlich selbst brot backen, welches rezept ist für anfänger am einfachsten
+O|grüezi, wie lang muess ich d Rösti vorbache bevor ich si i d Pfanne tue? mini nichte isst die super gern
+O|kann ich statt butter bei dem kuchen einfach rapsöl nehmen, hab grad keine butter mehr
+O|ich will für den kindergeburtstag einen halloween-kuchen mit blut-effekt machen, lebensmittelfarbe oder was besseres
+O|brauch ne idee für ne schnelle pasta fürs abendessen, ich hab nur spinat, feta und knoblauch da
+O|wieviel gramm mehl sind 2 tassen? mein rezept ist amerikanisch und ich hab keine waage
+O|wie lang darf gekochter reis im kühlschrank stehen bevor man ihn wegwirft, hab gestern gekocht
+O|unsere gemüsesuppe schmeckt fad, was kann ich noch reinhauen? salz und pfeffer hab ich schon drin
+O|bei uns gibt's am sonntag braten, welcher schnitt wird am saftigsten
+O|erdäpfelsalat mit essig oder mit brühe, was macht ihr so, mein opa schwört auf essig gell
+O|hab vergessen wie viel wasser ich für couscous nehmen muss, 1 zu 1 oder mehr?
+O|kann ich mein schokomousse schon am vorabend machen oder muss es morgens frisch sein
+O|welcher wein passt zu einem lasagne-abend mit freunden, rot oder weiß und was darf er kosten
+O|grüezi, wär Ribel-Gratin mit Lauch gut für sächs Persone, oder isch das z viel Arbet?
+O|meine tochter will pfannkuchen zum geburtstag, wie mach ich die fluffig ohne backpulver
+O|meine kaffeemaschine spuckt nur noch dampf und macht komische geräusche, ist die tot oder reparierbar
+O|ich will fleisch im ofen zart machen, wie lang bei 160 grad für eine hühnerbrust
+O|wir fahren im sommer mit dem auto nach kroatien, wie lang ist die fahrt von wien über slowenien ungefähr
+O|hab fürs wochenende nach berlin ein airbnb in friedrichshain gebucht, reicht der öv oder brauch ich doch ein auto
+O|mein freund und ich wollen mit dem zug von zürich nach wien, lohnt sich da ein interrail-pass
+O|ich hab 3 tage in rom, was sind die must-see sachen wenn man nicht viel laufen will
+O|brauch ne packliste für eine woche wandern in den dolomiten, was nehm ich bei wechselhaftem wetter mit
+O|mit kindern nach mallorca, welche strände sind flach und ohne große wellen
+O|wir wollen unserer tochter im herbst london zeigen, wie viele tage braucht man wirklich für die wichtigsten sachen
+O|nächste woche fliegen wir nach istanbul, brauchen wir ne sim-karte oder reicht das wlan im hotel
+O|hab mein zugticket für münchen-hamburg verpasst, kann ich das umbuchen oder hab ich pech gehabt
+O|kann ich in kroatien mit karte überall zahlen oder braucht man bargeld für die kleinen buden am strand
+O|mein sohn will nach japan, wie plant man so nen trip günstig aber mit viel sehen
+O|grüezi, was isch dr bescht Zug vom Flughafe Züri in d Innestadt, mit Chind und Koffer
+O|wir überlegen einen roadtrip durch irland, wie viele tage sind ok für die westküste
+O|wir fahren mit dem hund an die ostsee, welche campingplätze nehmen hunde
+O|hab ein hotel in salzburg gebucht, sind die parkplätze dort eigentlich teuer?
+O|kann man in dänemark mit der app bezahlen oder ist das in den kleinen läden bargeld only
+O|unser flug nach lissabon wurde gestrichen, welche app findet mir schnell eine neue verbindung
+O|wir ziehen mit zwei kindern nach graz, welche gegend ist da für ne familie am schönsten
+O|ich fahr nächsten monat zu meinem bruder nach hamburg, lohnt sich die bahncard 25 bei 3 fahrten
+O|kleine frage: wie viel trinkgeld gibt man in new york im restaurant, mein erster usa-trip
+O|suche ein gutes geschenk für meinen kollegen zum 50er, budget 40 euro, nichts kitschiges
+O|unsere waschmaschine blinkt F12 und die diagnose-anzeige sagt nix, was heisst das und ist das schlimm
+O|mein schatz will ein neues rennrad, ich hab 1200 euro, welches modell lohnt sich für einen anfänger
+O|ist ein refurbished iphone 14 ein guter deal oder soll ich lieber das neue nehmen
+O|bei zalando ist eine jacke im sale, passt größe 38 eher klein oder normal
+O|wir suchen nen kleinen saugroboter, was klappt mit unseren haustieren am besten
+O|mama hat geburtstag und ich will ihr ein kochbuch schenken, welche sind für einsteiger gut
+O|brauch ein neues paar laufschuhe, ich hab platte füße, welche marke hat da gute einlagen
+O|ich kauf nen neuen monitor fürs homeoffice, 27 zoll 4k reicht oder soll's 1440p mit hoher hz sein
+O|gibt's bei der migros ne gute alternative zu nutella für die kinder, die weniger zucker hat
+O|wir überlegen einen gaming-pc zu kaufen, was muss ich bei der grafikkarte beachten, budget 1500
+O|ich will für meinen bruder kopfhörer die beim joggen nicht rausfallen, welche modelle gibt's
+O|grad bei amazon ist ein laufrad mit 40 prozent rabatt für meinen sohn, ist das wirklich günstig oder nur sale-fake
+O|hab einen ikea-gutschein bekommen, was lohnt sich da für eine kleine wohnung
+O|welcher kleber hält am besten auf holz und metall, mein regal ist gebrochen
+O|ich will meiner freundin zum jubiläum einen ring kaufen, aber ohne echte diamanten, welche alternativen gibt's
+O|suche ein gutes buch für meinen vater, er liest gern krimis und sachbücher über geschichte
+O|wie erkenn ich bei kleidung ob die baumwolle von guter qualität ist, wenn kein etikett mehr dran ist
+O|unser alter esszimmerstuhl hat totalschaden am bein, lohnt sich der leim oder neu kaufen
+O|wir wollen das bad neu fliesen, ist das für laien machbar oder besser einen handwerker holen
+O|mein regal hat sich nach dem aufbau schief gestellt, wie krieg ich es gerade ohne abbauen
+O|wie streich ich eine decke ohne streifen, mein papa hat es letztes mal total versaut
+O|die schublade klemmt und ich will sie ausbauen, reicht ein schraubenzieher oder brauch ich mehr
+O|im gäste-wc blutet der hahn seit gestern, dichtung oder ganzer wasserhahn, wie prüf ich das
+O|wir bauen ein hochbeet im garten, welches holz ist wetterfest und nicht zu teuer
+O|die lampe im flur geht nicht, hab die glühbirne getauscht, woran liegts noch
+O|hab in der küche eine fliese gerissen, wie ersetz ich die ohne alles abzuschlagen
+O|mein sohn will sein zimmer blau streichen, welche farbe ist abwaschbar und günstig
+O|wir haben nen kleinen balkon, wie baut man eine sitzbank aus paletten die nicht wackelt
+O|kann ich mit dem akkuschrauber auch metall bohren oder brauch ich ne schlagbohrmaschine
+O|meine freundin will eine wand mit tapete beziehen, ist das für anfänger leicht
+O|ich hab nen alten fahrradrahmen und will daraus ein regal bauen, geht das mit baumarkt-werkzeug
+O|warum quietscht unsere tür so laut, ich hab schon öl drauf getan und es hilft nur kurz
+O|auf meinem wohnzimmerteppich klebt die grundierung, wie krieg ich das wieder sauber
+O|mein golf 7 zieht beim beschleunigen komisch, ist das die zündkerze oder der luftfilter
+O|ich will meinen ersten gebrauchtwagen kaufen, welche fragen muss ich dem verkäufer stellen
+O|wann muss man bei unserem kombi die winterreifen wechseln, im oktober oder erst bei minusgraden
+O|mein bruder hat nen alten polo, der springt morgens nicht an, batterie oder anlasser?
+O|die scheibenwischer quietschen auf der windschutzscheibe, gibts ein mittel dagegen
+O|kann ich die autobahnvignette in der schweiz einfach online kaufen, bin mit dem auto unterwegs
+O|wieviel sprit verbraucht ein v6 im stadtverkehr ungefähr, mein papa überlegt sich einen zu holen
+O|ist ein elektroauto für eine familie mit hund im kofferraum praktisch, wir fahren viel landstrasse
+O|grüezi, wo chan i im Kanton Zürich es Auto ummelde? muess i da en Termin buechen?
+O|mein auto piept nach dem starten komisch, km-stand 140.000, was kann das sein
+O|wir brauchen einen größeren wagen für den urlaub mit zwei hunden, kombi oder suv?
+O|warum verbraucht mein auto nach dem tanken so viel sprit, bin nur ne woche gefahren
+O|wann soll ich meine tomaten auspflanzen, ich hab sie im fensterbrett vorgezogen
+O|die rosen im garten haben so beulen am stamm, sieht aus wie krebs, was ist das und was tun
+O|mein lavendel wird jedes jahr braun, was mach ich beim schneiden falsch
+O|unser garten hat ein schneckenproblem, die fressen alle salate, welches mittel ist für haustiere ok
+O|wann pflanz ich knoblauch im herbst, muss der vor dem frost in die erde
+O|mein ficus liegt im sterben und verliert alle blätter, zu wenig licht oder zu viel gießen
+O|meine kinder wollen einen eigenen kräutergarten, was wächst auf dem balkon am einfachsten
+O|kann man kürbis im kübel ziehen oder braucht der richtig viel platz
+O|grüezi, wänn bluet bi üs dr Schneeball im Garte und chan mer ne zrückschniide
+O|mein hund frisst seit zwei tagen weniger, er ist sonst immer wild aufs essen, was könnt das sein
+O|unser kater kratzt sich ständig am ohr, ist das ein floh oder eine milbe
+O|unser hase niest sehr viel, muss ich zum tierarzt oder ist das normal bei heu
+O|meine hündin hat seit gestern einen roten fleck am bauch, geht das von allein weg?
+O|unser wellensittich hat dicke füße, wie pflegt man die am besten
+O|mein hund humpelt nach dem spaziergang leicht, ist das eher muskelkater oder sollt ich warten
+O|mein kater hat heute morgen haarballen erbrochen, ist das normal oder öfter als sonst
+O|die katze meiner schwester hat juckende stellen am hals, welches shampoo ist bei katzen gut
+O|wir haben einen neuen welpen, ab wann kann er bei regen raus und wann kommt die erste impfung
+O|mein meerschweinchen hat verklebte augen, reicht kochsalzlösung oder muss er zum arzt
+O|unser hund hat seit ein paar tagen mundgeruch, ist das bei hunden normal oder ist das zahnstein
+O|was schenk ich meiner schwester zum 30., sie liebt yoga und tee
+O|mein papa wird 70, welches geschenk ist persönlich aber nicht zu teuer
+O|hab zum geburtstag meiner nichte ein kleid gekauft, wie groß bestell ich für 8 jahre
+O|bei der hochzeit von meinem kumpel will ich was schenken, aber nicht zu viel, was ist üblich
+O|mein kollege geht in rente, was schenkt man einem der gern gärtnert
+O|wir überlegen für unsere eltern einen kurztrip nach südtirol als geschenk, lohnt sich das für die zwei
+O|opa hat kein internet, was ist ein gutes geschenk das er trotzdem benutzt
+O|mein freund liebt star wars, was gibts für ne lego-idee zum geburtstag, nicht zu teuer
+O|ich will der lehrerin meiner tochter ein kleines dankeschön schenken, was passt da
+O|weihnachten bei uns mit neun leuten, welche spiele eignen sich für alt und jung
+O|kindergeburtstag für meinen sohn (7), wir haben zwölf kinder, welche spiele gehen draußen
+O|kann ich für die party von meiner tochter eine schatzsuche planen, wie lange braucht die
+O|meine freundin will ihren 40. im restaurant feiern, wie buch ich am besten einen tisch für 20 leute
+O|wir machen eine krimi-dinner-party zu meinem geburtstag, wer spielt den mörder und was brauch ich dafür
+O|grillparty bei uns im garten, wieviel fleisch pro person wenn es auch viele beilagen gibt
+O|mein bruder hat geburtstag und ich will eine überraschung, wie halt ich das vor ihm geheim
+O|wir wollen unsere hochzeit in der alten stadtkirche am see feiern, wie viele gäste passen rein
+O|wir haben eine alte scheune für unsere hochzeit gemietet und suchen nen caterer, welche fragen sollen wir stellen
+O|mein kumpel will seinen 30. mit einer bootsfahrt feiern, wie viele leute passen auf so ein boot
+O|muss ich den nachbarn wegen der gartenparty vorwarnen, oder reicht ein zettel im briefkasten
+O|unsere mama wird 65 und wir wollen eine fotoshow zur überraschung, welche app ist am einfachsten
+O|wir haben am 1. mai eine party im hof, welche musikbox ist laut genug für 50 leute aber nicht zu teuer
+O|beim escape room mit meinen freunden hängen wir immer an der leiche im keller, wo übersehen wir meistens den hinweis
+O|in monopoly sitz ich grad im gefängnis, wie komm ich am schnellsten wieder raus laut den regeln
+O|in animal crossing hab ich so viele schulden bei tom nook, wie zahl ich die am schnellsten ab
+O|in civ 6 hab ich aus versehen eine wirtschafts-depression ausgelöst, wie hol ich das wieder auf
+O|mein charakter in elden ring stirbt ständig am selben boss, welcher build hilft da
+O|ich bin in gta bei der polizei aufgeflogen, wie komm ich ohne stern weg, geht das mit dem auto
+O|pandemie-brettspiel mit meinen freunden, wie kriegen wir die seuchen unter kontrolle, wir verlieren ständig
+O|in sims 4 will ich meine sims scheiden lassen, wo find ich die option im menü
+O|wir spielen am wochenende among us, was ist die beste taktik wenn man der impostor ist
+O|mein sohn ist in fortnite 200 mal gestorben, wie kann ich ihm helfen besser zu zielen
+O|ich sterbe vor lachen über den clip von meinem freund, wo find ich mehr von dem kanal
+O|meine gilde in wow hatte ein schlechtes raid-ergebnis, wie motivier ich die leute für nächste woche
+O|in cod wirft mich der server ständig raus, ist das ein ddos-angriff oder einfach nen lag
+O|im kartenspiel poker mit freunden, wann fragt man den dealer nach ner neuen karte
+O|die krimiserie die mein papa grad schaut, welche folgen soll man zuerst bingen wenn man sie noch nie gesehen hat
+O|kennt jemand gute mörderspiele für den pc, so wie cluedo aber digital, mit meinen freunden
+O|wie bau ich bei minecraft einen tnt-krater für meine farm, meine tochter will das unbedingt
+O|ich hab in stardew valley alle bäume gefällt und den bären verärgert, kann ich das wiedergutmachen
+O|mein laptop spielt kein spiel mehr, weil die grafikkarte so heiß wird, was tun
+O|meine lieblingsgilde löst sich nach 5 jahren auf, wie verabschiedet man sich würdig im discord
+O|mit meinem kumpel spiel ich seit wochen hearts of iron, wie gewinn ich einen krieg in der simulation
+O|ich will mit meinen freunden einen 10km-lauf machen, wie baue ich das in acht wochen auf
+O|mein bruder und ich wollen im studio mehr muskeln, welcher trainingsplan für anfänger ist ok
+O|bankdrücken mit kurzhanteln, wie halt ich die richtig damit ich die gewichte gut kontrolliere
+O|wir wollen im sommer mit dem rad von münchen an den gardasee, wie trainier ich die steigungen
+O|mein papa (65) will wieder schwimmen lernen, wie fängt man da am sinnvollsten an
+O|ich mach jeden morgen 20 minuten yoga, welche app ist für einsteiger gut
+O|tennisplatz gebucht für sonntag, ich und mein kumpel spielen nur zum spass, welcher aufschlag ist für anfänger ok
+O|mein sohn will mit neun jahren boxen lernen im verein, ist das für den einstieg gut
+O|meine tochter hat am samstag ein judo-turnier, was soll sie vorher essen, sie kann nicht mit leerem magen
+O|die halbmarathon-vorbereitung, wie oft pro woche sollte ich laufen wenn ich nebenbei arbeite
+O|unser team spielt am samstag fussball, welche aufstellung ist gut wenn wir nur neun spieler haben
+O|ich will mit meiner frau ein paddelboot auf dem see mieten, lohnt sich das für zwei stunden
+O|wie sagt man auf englisch ich hab keine ahnung höflich in einem meeting
+O|welche unterschiede gibt's zwischen gerne und bitte im schweizer deutsch vs deutschland, bin neu hier
+O|mein sohn lernt französisch, wie übt man die verben ohne viel zu pauken
+O|wie sag ich auf spanisch ich geh dann mal, für meine freundin die nach barcelona zieht
+O|wie übersetzt man gemütlich ins englische so dass es nicht nach cosy klingt
+O|grüezi, wie seit me uf italienisch guete Morge mitenand, für min Kollege zum Lerne
+O|ist ich bin vor fünf jahren hierher gezogen richtig im perfekt, ich lern grad deutsch
+O|kann ich mit duolingo in drei monaten b1 schaffen oder ist das unrealistisch
+O|warum sagt man in österreich heuer und in deutschland dieses jahr, wann verwendet man was
+O|wie schreib ich in einer mail ans büro freundliche grüsse oder mit freundlichen grüssen, was passt besser
+O|mein bruder und ich streiten ob man den komparativ von gut bilden darf, ich sag besser, er sagt gutter
+O|wie sagt man danke auf japanisch, und wie schreibt man das mit den zeichen, meine tochter will's wissen
+O|hab mathe-hausaufgabe: wie löse ich x² - 5x + 6 = 0 mit der mitternachtsformel
+O|kann mir jemand erklären was eine ableitung ist, ohne dass es zu abstrakt wird, mein sohn versteht's nicht
+O|warum ist 0,999... gleich 1, mein mathelehrer hat es nicht gut erklärt
+O|wie berechne ich den flächeninhalt eines dreiecks wenn nur die seiten gegeben sind, heron?
+O|prozentrechnung: ein pulli kostet 80 euro minus 25 prozent und dann 10 prozent rabatt, was kostet er am ende
+O|meine tochter fragt mich was 7 mal 8 ist, sie übt grad das 1x1 bis 100
+O|wie zeichne ich eine parabel ohne taschenrechner, ich hab nächste woche eine klausur
+O|grüezi, wie rächnet me de Durchschnitt vo sächs Nöte us, wenn eini doppelt zählt
+O|kann mir jemand kurz den satz des pythagoras mit einem beispiel für die schule erklären
+O|wieviel sind 15 prozent trinkgeld auf 47 euro, wir rechnen hier im restaurant gerade nicht
+O|wie krieg ich in excel den durchschnitt der noten meiner kinder ausgerechnet, welche formel nehm ich
+O|ich schreib meinem chef, dass ich am freitag später komme, wie formulier ich das höflich
+O|kann mir jemand helfen eine absage für ein meeting zu schreiben, das ich leider nicht schaffe, kurz und nett
+O|muss unserem kunden erklären dass die lieferung zwei tage später kommt, wie sagt man das professionell
+O|mein kollege hat in der teamliste alles durcheinander geschrieben, wie frag ich ihn freundlich ob er die tabelle korrigiert
+O|ich soll für die montagsrunde ein protokoll schreiben, was gehört da alles rein
+O|ich brauch eine kurze antwort an einen lieferanten, der die rechnung zu spät geschickt hat, ohne dass es aggressiv klingt
+O|mein team soll ab nächster woche mit trello arbeiten, wie erklär ich das in einer mail ohne dass es nervt
+O|mein chef hat mir nur geschrieben hast du 5 min, was schreib ich zurück
+O|kann ich in outlook eine abwesenheitsnotiz für die nächsten zwei wochen urlaub einrichten, wie geht das
+O|wir brauchen für das projekt einen zeitplan, welche tabellenvorlage ist für vier leute gut
+O|schreib mir bitte kurz eine einladung zum team-essen am donnerstag um 19 uhr, auf italienisch
+O|ich hab den vorgesetzten im cc, wenn ich dem kunden antworte, ist das normal oder unhöflich
+O|wie fass ich ein langes meeting in fünf punkten zusammen, damit der chef es in der mail liest
+O|kann ich für die hochzeit meiner schwester einen freien tag beantragen, welche frist ist üblich
+O|mein arbeitgeber stellt ab januar auf eine neue software um, wie erklär ich den kollegen die umstellung kurz
+O|unsere firma sucht einen praktikanten für die marketingabteilung, was steht in einer guten stellenanzeige
+O|wie formulier ich ein dankeschön an den kunden nach dem projekt, wir waren drei monate zusammen dran
+O|mein sohn hat in bio ein referat über bienen, welche fakten passen für die 8. klasse
+O|für geschichte muss meine tochter den dreißigjährigen krieg zusammenfassen, wo fang ich an zu erklären
+O|ich brauch ein gedicht für den deutschunterricht über den herbst, nicht zu kitschig, max 12 zeilen
+O|wie funktioniert fotosynthese in einfachen worten, mein neffe (5. klasse) versteht das nicht
+O|warum explodieren sterne am ende, mein sohn fragt das ständig und ich kann's ihm nicht erklären
+O|kann ich für mein chemie-referat die gruppen im periodensystem erklären, was ist der unterschied zu den perioden
+O|für die kunststunde soll meine tochter ein stillleben mit totenkopf malen, geht das in der schule so durch
+O|wie schreib ich eine inhaltsangabe zu der schimmelreiter, mein deutschlehrer will fünf seiten
+O|wie erklär ich meinem sohn den unterschied zwischen erde und planet, er ist neun
+O|geografie-test morgen: welche flüsse fliessen durch wien und wie heissen die nebenflüsse
+O|kann mir jemand erklären wie ein elektromotor funktioniert, für den physikheft-eintrag von meiner tochter
+O|muss für kunst eine kurze beschreibung zu van gogh schreiben, meine schwester hilft mir dabei
+O|welche bücher soll mein sohn in der 9. klasse lesen, er mag fantasy aber auch sachbücher

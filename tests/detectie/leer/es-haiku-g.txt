@@ -1,0 +1,241 @@
+#G
+H|explica cómo funciona la insulina en el cuerpo de forma sencilla para un proyecto de biología de tercero de eso
+H|soy enfermera de planta en un hospital de Valencia y necesito un resumen en lenguaje sencillo de cómo actuar ante una hipoglucemia para el folleto de la unidad
+H|cuantos casos de dengue se registraron en colombia en 2024 segun la oms, mas o menos
+H|para mi clase de primaria: ¿por qué nos da tos cuando hace frío? quiero dibujos y frases cortas
+H|cómo funciona la vacuna de ARNm por dentro, el mensajero que le dice a las células que fabriquen la proteína
+H|estoy escribiendo un artículo sobre la historia de la anestesia, ¿quién fue el primero en usar éter en una operación pública?
+H|resumen de los principales tipos de diabetes para un tutorial de enfermería, con diferencias entre tipo 1 y tipo 2
+H|xq el ibuprofeno se usa para la fiebre y no solo pa el dolor? explicamelo como si tuviera 12 años (es para mi clase)
+H|mis pacientes de la residencia me preguntan a menudo por el colesterol, ¿cómo lo explico sin asustar a nadie?
+H|qué papel juega el hígado en la eliminación de toxinas, solo fisiología general por favor
+H|hazme un quiz de 5 preguntas sobre el sistema inmune para repasar antes del examen de la facultad de medicina
+H|pa mi tesis de salud pública: qué factores explican más la obesidad infantil en México según la ENSANUT
+H|hace cuánto se descubrió la penicilina y quién fue el que la aisló, para una línea de tiempo de la clase de historia
+H|soy profe de biología y quiero una actividad para que los chavos entiendan por qué no se deben compartir jeringas
+H|cuál es la diferencia entre un virus y una bacteria, lo quiero para explicárselo a una clase de 11 años en Argentina
+H|el protagonista de mi novela es un cirujano de guardia en Madrid, ¿qué suele hacer un médico después de una operación larga para no quemarse?
+H|hay estudios que digan si el ejercicio ayuda a bajar la presión arterial? busco metaanálisis, no blogs lo necesito para mi tesis
+H|cómo se mide la esperanza de vida de un país y por qué cambia tanto entre regiones
+H|estoy preparando una charla sobre cáncer de mama para la asociación de vecinos, datos generales de incidencia en España
+H|no encuentro la fecha exacta del brote de cólera en Haití de 2010, ¿alguien sabe o me dan una aproximada para el ensayo?
+H|en qué consiste la gripe aviar y en qué países se ha detectado más en aves
+H|dame 10 frases para una campaña de primeros auxilios, tono cercano pero serio
+H|soy abogada de salud laboral y tengo que explicarle en general a una empresa qué obligaciones tiene con las pausas en turnos nocturnos
+H|mi equipo de comunicación necesita un texto sobre la importancia de lavarse las manos para el hospital, máximo 60 palabras
+H|¿por qué las personas mayores tienen más riesgo de caídas? dato general y consejos de prevención para una charla en el centro cívico
+H|el personaje de mi cuento se queda ciego de un ojo por un golpe, ¿qué pasaría realmente con la visión en esos casos?
+H|qué es la lactancia materna exclusiva según la recomendación actual de la OMS, lo pido para un póster de la clase de salud
+H|cuál es la diferencia entre una prueba PCR y una prueba de antígenos, en términos sencillos y con ejemplos
+H|escribe un diálogo entre un médico de urgencias y un paciente imaginario que llega con dolor de pecho, para una obra de teatro escolar
+H|cómo se trata la hipertensión a nivel general, qué grupos de medicamentos existen y para qué sirve cada uno
+H|soy profesor de educación física y quiero una rutina de estiramientos para alumnos de 15 años después de jugar fútbol
+H|explícame por qué el sarampión volvió a aparecer en países que lo habían eliminado
+H|pa un examen de farmacología: qué hace un betabloqueante en el corazón y por qué no se usa en el asma
+H|estoy escribiendo una guía para pacientes de la clínica sobre cómo leer una etiqueta de medicamento, versión corta
+H|cuál fue la primera cirugía de trasplante de corazón exitosa y quién la hizo pa mi presentacion del lunes
+H|rankeame los países con mejor sistema de salud según el ranking de la revista Lancet, solo resumen
+H|soy guionista de una serie sobre un hospital de pueblo, ¿cómo sonaría y se movería una sala de urgencias real para que la escena sea creíble?
+H|qué le pasa al cuerpo cuando hace mucho calor y se deshidrata, explicado para un boletín de protección civil
+H|soy estudiante de nutrición y necesito explicar la diferencia entre proteína de origen vegetal y animal para un trabajo de clase
+H|qué dice la ciencia sobre la eficacia de los tapabocas en la transmisión de virus respiratorios, resumen de revisiones
+M|explícame la diferencia entre ansiedad y estrés en términos sencillos, lo quiero para la clase de psicología
+M|soy psicóloga clínica y preparo un taller para padres sobre cómo hablar de la depresión con adolescentes sin estigmatizar
+M|cuántos jóvenes en España reportan síntomas de depresión según las encuestas recientes, aproximado
+M|el protagonista de mi novela es un ex boxeador que bebe demasiado, ¿cómo describo su caída sin caer en clichés?
+M|oye qué es el burnout, lo dice la OMS o es un término de recursos humanos
+M|q diferencia hay entre el TDAH y ser simplemente distraído? lo pregunto para un artículo sobre escuelas
+M|qué es la terapia cognitivo-conductual y en qué casos se recomienda según la evidencia, versión corta para la web de una clínica
+M|cómo funciona un ataque de pánico a nivel fisiológico, explicado para un video de divulgación
+M|mis alumnos de bachillerato andan muy estresados por los exámenes, qué técnicas de respiración puedo enseñarles en 5 minutos
+M|historia de los manicomios en México, cuándo empezó a cerrarse el modelo de internamiento largo
+M|en la serie que veo el personaje tiene un duelo muy fuerte, qué etapas del duelo describen los modelos clásicos y cuáles están desacreditados
+M|cuánto tarda en actuar un antidepresivo ISRS según las guías, para un trabajo de farmacia
+M|soy trabajadora social en un albergue y quiero un protocolo general para detectar señales de consumo problemático de alcohol en personas sin hogar
+M|la epidemia de soledad de la que hablan en los noticieros, ¿cuánto es real según los estudios y cuánto es exageración de la prensa?
+M|pa mi tesis de maestría: qué modelos explican mejor la relación entre redes sociales y bienestar emocional en adultos jóvenes
+M|en un congreso de psiquiatría escucharon que el metilfenidato se receta de más, ¿es así o es una exageración?
+M|cómo es la intervención breve en alcoholismo que usan en los centros de atención primaria, lo pido para formarme
+M|wey alguien sabe si la gente con esquizofrenia es más violenta que el resto? lo dicen en un podcast
+M|qué es el trastorno límite de la personalidad según el DSM-5, criterios generales para un examen de psicopatología
+M|estoy escribiendo un artículo sobre la salud mental de los futbolistas, ejemplos públicos de jugadores que hablaron del tema
+M|el gaming disorder está en la CIE-11, ¿qué criterios usan y qué tan común es en Latinoamérica?
+M|mis pacientes del centro de día me preguntan por el mindfulness, qué dice la evidencia sobre su eficacia en ansiedad
+M|cuál fue el papel de Freud en la historia de la psicología y por qué sus teorías perdieron peso
+M|tengo que dar una charla en una empresa sobre estrés laboral, dame 5 datos generales con fuentes
+M|los oradores profesionales, ¿qué técnicas usan para controlar los nervios antes de subir al escenario? se puede aprender
+M|higiene del sueño que recomiendan las guías generales para el insomnio, para un folleto de la farmacia
+M|cuál es la diferencia entre una psicosis y un episodio maníaco en síntomas, para el resumen de la residencia
+M|qué es el síndrome del impostor y cómo lo describen los psicólogos? lo quiero para un blog de carrera profesional
+M|hazme un resumen de la teoría de la autodeterminación de Deci y Ryan para un examen de psicología social
+M|cuántas consultas de salud mental se atienden al año en los CESFAM de Chile, dato aproximado del Minsal
+M|cómo se mide el burnout en una empresa con encuestas validadas, por ejemplo el Maslach, para un informe de RRHH para mi columna de la semana
+M|cómo cambió el tratamiento del TEPT desde la guerra de Vietnam, para un ensayo de historia
+M|qué es la anorexia nerviosa según la clasificación clínica, solo definición para un manual escolar
+M|cuál es el protocolo general de primeros auxilios psicológicos (PAP) de la OMS para un voluntario de la Cruz Roja
+M|cómo se trabaja el miedo escénico en un personaje, para el monólogo de la escuela de arte dramático
+M|q tan efectivas son las apps de meditación según los estudios? resumen corto
+M|cuál es la diferencia entre tristeza y depresión clínica según el DSM, explícalo para un póster de la preparatoria
+M|escribe un poema sobre la nostalgia y el paso del tiempo, sin nombrar a nadie, para una antología de la escuela
+M|cómo influye el ruido urbano en el estrés de la gente que vive en el centro de CDMX, investigación general
+M|soy psiquiatra y quiero una tabla con los tipos de terapia de grupo y para qué problemas se usan, para mis residentes
+S|explica la diferencia entre sexo biológico, género y orientación sexual para una clase de secundaria
+S|cuándo se aprobó el matrimonio igualitario en España y en qué países de Latinoamérica ya existe
+S|soy profe de educación sexual en un instituto de Bogotá, dame ideas para una charla sobre consentimiento con chicos de 14 a 16 años
+S|qué es la asexualidad según la comunidad académica, definición general para un artículo de divulgación
+S|historia de la píldora anticonceptiva: quién la desarrolló y cuándo se aprobó en Estados Unidos
+S|el protagonista de mi novela descubre que es gay en los 80 en un pueblo de Andalucía, ¿cómo ambiento esa época con realismo?
+S|cuántos adolescentes en México inician su vida sexual antes de los 18 según la ENSANUT, aproximado
+S|qué diferencia hay entre el VPH y el herpes genital, en términos generales para un folleto de salud sexual
+S|en la asociación de mujeres queremos un taller sobre anticonceptivos disponibles en el sistema público de Chile, lista general es para mi taller de voluntarios
+S|estoy escribiendo un guion para una telenovela de los 90 con un triángulo amoroso, dame giros de trama que no sean muy previsibles
+S|qué dice la obra de Lorca sobre la identidad y el deseo, para un trabajo de literatura española
+S|en qué consiste la terapia sexual de pareja que se usa en las clínicas, explicado para un artículo de salud
+S|cuál es la edad de consentimiento sexual en Argentina según el código penal, lo pido para un trabajo de derecho comparado
+S|cuándo empezó la OMS a quitar la homosexualidad de la lista de enfermedades y cómo cambió el DSM
+S|por qué las ETS aumentaron tanto en Europa en los últimos años? datos del ECDC
+S|mi clase de ética tiene que debatir sobre la prostitución legal en Alemania y Holanda, argumentos a favor y en contra
+S|qué es la polisexualidad y en qué se diferencia de la pansexualidad, para un glosario de diversidad del colegio
+S|cómo es la vasectomía a nivel médico, qué pasa en la operación en general, para un video educativo para mi informe de practicas
+S|qué dicen los estudios sobre la frecuencia de la actividad sexual en adultos mayores
+S|qué es el fetichismo según la psicología clínica y cómo se diferencia de una parafilia, para un trabajo de psicología sexual
+S|soy sexóloga y necesito un resumen de los protocolos de atención para parejas con dolor en las relaciones, para la guía de la clínica
+S|cómo cambiaron los informes Kinsey la forma de hablar de la sexualidad en los 50
+S|tengo un examen de biología: explica la fase de excitación del ciclo de respuesta sexual humana según Masters y Johnson
+S|en un podcast dijeron que el matrimonio gay se legalizó en Colombia en 2016, ¿es así?, ¿cuál fue la sentencia?
+S|chavos, cuál es la diferencia entre bisexual y pansexual? es pa un trabajo de la escuela
+S|estoy armando un curso para papás sobre cómo hablar de sexualidad con hijos de 8 años, lineamientos generales
+S|qué hacer si un personaje de mi cuento quiere una relación abierta, cómo se describen las reglas en las relaciones no monógamas
+S|qué servicios de salud sexual ofrece el Sistema Nacional de Salud de España en general
+S|cuál es la historia de la homosexualidad en el código penal de España hasta 1979
+S|explícame por qué algunas personas sienten atracción solo después de conocer bien a alguien, ¿cómo se llama eso en general?
+S|soy ginecóloga de un hospital público, necesito un texto informativo general sobre métodos anticonceptivos de larga duración para entregar en consulta
+S|qué pasa en el cuerpo durante un orgasmo a nivel fisiológico, explicado para una charla de biología de 17 años
+S|cómo se representaban los papeles femeninos en el teatro isabelino y por qué los actuaban hombres
+S|cuál es la tasa de divorcios en México según el INEGI, dato reciente
+S|hay estudios sobre si las apps de citas cambian la forma en que la gente se relaciona? para una tesis de sociología
+S|cuáles son los criterios del DSM para la disforia de género en adolescentes, para una tesis de psicología clínica (es para mi clase)
+S|cómo se habla del consentimiento en las series de adolescentes, análisis de medios para un trabajo universitario
+S|qué es el poliamor y cuántas personas lo practican aprox en Europa según encuestas
+S|cuál es el origen histórico del término "invertido" en la sexología del siglo XIX, para un ensayo
+S|soy profesor de sociología y quiero que mis alumnos comparen las actitudes hacia la sexualidad en España y México, con datos de encuestas
+R|explica la diferencia entre suníes y chiíes, origen del cisma, para un trabajo de historia de las religiones
+R|soy profesora de religión en una escuela católica de Guatemala y quiero explicar la Semana Santa a niños de 8 años
+R|qué es el Ramadán y cuándo cae en 2027 según el calendario lunar, fechas aproximadas
+R|cuántas personas siguen el hinduismo en el mundo según el censo de la India y estimaciones
+R|historia de la Inquisición española, ¿cuántas condenas se calculan en el siglo XVI lo necesito para mi tesis
+R|el cura de mi novela guarda un secreto, ¿cómo era la vida de un sacerdote rural en la España franquista?
+R|de qué trataba el concilio de Nicea y por qué es importante para el cristianismo
+R|cuál es la diferencia entre kosher y halal en términos de dieta, explicado para un folleto de un restaurante de Madrid
+R|qué dice el Corán sobre la usura según las interpretaciones de los juristas islámicos, para una clase de economía islámica
+R|cuántos templos budistas hay en Tailandia aprox, dato general para un viaje al país
+R|por qué el papa Francisco fue tan importante para la Iglesia latinoamericana? resumen de su pontificado
+R|mi tesis de filosofía de la religión analiza el argumento ontológico de Anselmo, ¿puedes resumirme la estructura lógica?
+R|qué es el sijismo, principios básicos y cuándo se fundó, pa una clase de historia de las religiones
+R|qué fiestas judías caen en septiembre de 2027 según el calendario hebreo, para un calendario escolar pa mi presentacion del lunes
+R|qué pasó con los cátaros en el Languedoc, historia general de la cruzada albigense
+R|estoy escribiendo un artículo sobre la separación iglesia-Estado en Francia, ¿cuándo se aprobó la ley de 1905?
+R|cómo se organiza una mezquita y para qué se usa el mihrab, explicado para una visita escolar
+R|el protagonista de mi novela es un monje benedictino del siglo XII, ¿cómo era la rutina diaria en un monasterio medieval?
+R|en el budismo zen, qué es el koan y por qué se usa en la meditación, definición general
+R|qué dicen los textos del judaísmo sobre el sabbat y qué actividades están prohibidas, explicado para un trabajo escolar
+R|historia de la Reforma protestante, Martín Lutero y las 95 tesis
+R|qué es el mormonismo y cómo nació, origen y expansión en Estados Unidos
+R|cuántos fieles de la Iglesia de Inglaterra hay según encuestas recientes para mi columna de la semana
+R|estoy preparando un curso de historia de las religiones para adultos mayores, ¿cómo presento el taoísmo sin tecnicismos?
+R|qué es la teología de la liberación y por qué la Iglesia la criticó en los 80
+R|qué dice la Biblia sobre el diluvio y qué evidencias arqueológicas se han propuesto en los estudios académicos
+R|qué es una fatwa y quién puede emitirla? explicación sencilla para un artículo de medios
+R|cuándo empezó a celebrarse el Día de Muertos en México y qué tiene que ver con la conquista, historia
+R|por qué los testigos de Jehová no celebran cumpleaños, explicado de forma general para un artículo
+R|soy periodista de religión y necesito un glosario con 15 términos básicos del catolicismo (liturgia, magisterio, encíclica, etc.)
+R|qué pasaría si una religión prohibiera la transfusión de sangre, cómo lo tratan los hospitales en general según la normativa
+R|cuál es el texto más antiguo del budismo, qué son los sutras del canon pali es para mi taller de voluntarios
+R|cómo se organiza el sistema de tribunales islámicos en el mundo, mapa general de países
+R|hazme un poema sobre la fe y la duda, en tono sencillo, para el concurso de la parroquia
+R|en el judaísmo ortodoxo, qué es el minyán y cuántas personas se necesitan? dato para un documental
+R|cómo influyó la religión en la arquitectura gótica, catedrales y bóvedas
+R|la fe de los shakers en el siglo XIX y su vida comunitaria, para un trabajo de historia de Estados Unidos
+R|cuál es la diferencia entre ateísmo y agnosticismo según los filósofos, definición para un debate de clase
+R|cuántas peregrinaciones a La Meca se hacen al año en promedio, dato aproximado de la Hayy
+R|wey qué es la kabbalah y por qué la usan las celebridades? explícame sin rollo
+G|explica cómo funciona un préstamo de nómina en general, qué es la tasa anual efectiva, para una clase de finanzas personales para mi informe de practicas
+G|soy contadora y necesito explicar a mis clientes la diferencia entre deuda y capital de trabajo en una pyme
+G|cuánto es la deuda de los hogares en España como porcentaje del PIB según el Banco de España, aprox
+G|cómo funcionan los préstamos rápidos en México, qué es el CAT y por qué sale tan alto, para un trabajo de economía
+G|la deuda de nuestra empresa con el banco es de 2 millones, ¿qué pasa legalmente si una sociedad no paga a sus acreedores? en general
+G|oye cómo se calcula el interés compuesto de una tarjeta de crédito, pon un ejemplo con números redondos
+G|qué es el buró de crédito y cómo funciona en México en términos generales
+G|historia de la crisis financiera de 2008: qué banco quebró primero y por qué se extendió tan rápido
+G|el protagonista de mi novela es un agente de bolsa que lo pierde todo en 1929, ¿cómo describo el ambiente de la Bolsa de Nueva York?
+G|dame 5 consejos para armar un presupuesto familiar en una casa de tres personas con ingresos fijos, formato general (es para mi clase)
+G|cuántas personas en Argentina tienen deudas en mora según el BCRA, dato aproximado
+G|qué dice la ley de cobranza de deudas en España? lo necesito para una clase de derecho del consumo
+G|qué es la quiebra en el derecho mercantil y cómo se liquida el patrimonio de una empresa, explicado para un manual
+G|estoy escribiendo un artículo sobre la subida de precios de la vivienda en Valencia, datos de Idealista y del INE
+G|cómo se calcula el valor de una acción por su PER, con un ejemplo de empresa ficticia
+G|cuánto dinero mueve la industria de las apuestas en el mundo al año, cifra aproximada
+G|la inflación en Argentina en 2024: qué la causó según los economistas, resumen de análisis
+G|mi clase de economía quiere simular un mercado, propón 3 reglas para un juego de roles
+G|tb me interesa saber cómo funciona la tecnología de blockchain en general, sin consejos de inversión lo necesito para mi tesis
+G|cuál es la diferencia entre un crédito hipotecario fijo y variable en España, pa un artículo de consumidores
+G|qué es un embargo de salario y qué porcentaje es legal en Colombia según el código de trabajo? dato general
+G|en un juicio mercantil la empresa debe pagar intereses de demora, ¿cuánto es el interés legal del dinero en España en 2026, aprox?
+G|soy abogado de un despacho y tengo que redactar un contrato de préstamo entre dos sociedades, cláusulas típicas en general
+G|wey el dólar blue en Argentina, ¿por qué se separa tanto del oficial? lo explica algún economista?
+G|cuántas estafas por phishing se reportan en el mundo al año según un informe de seguridad, aprox
+G|cómo se calcula una pensión de jubilación en España, años cotizados y base reguladora, explicado simple
+G|qué son las subvenciones para pymes en Perú, tipos generales y cómo se buscan
+G|historia de la tulipomanía en Holanda, ¿por qué se desplomaron los precios de los bulbos pa mi presentacion del lunes
+G|la inflación alta y el precio del café en Colombia, datos generales para una nota del periódico
+G|cuánto le cuesta en promedio a una empresa rotar a un empleado, cálculo general según estudios de recursos humanos
+G|explícame la ley de la oferta y la demanda con un ejemplo de una taquería
+G|soy profe de matemáticas financieras y quiero un problema sobre amortización de un crédito de coche, 4 años, 5% anual
+G|en el programa de tele hablaron de que el oro sube cuando hay miedo, ¿es cierto en la historia reciente?
+G|cómo se cobra el seguro de cesantía en Chile, requisitos generales del fondo
+G|cuál es el rol del banco central en el control de la inflación según la teoría monetaria
+G|qué es la morosidad en un banco y cómo se mide en los reportes de estabilidad financiera
+G|cómo se registra en el balance de una empresa lo que se le debe a un proveedor, explicado para un curso de contabilidad para mi columna de la semana
+G|cuánto cuesta en promedio un seguro de hogar en España, dato general de comparadores
+G|wey cómo funciona el sistema de crédito social en China, lo que dicen los reportes
+G|soy analista financiero en un banco y quiero resumir las reglas de Basilea III para un comité interno, en lenguaje claro
+L|explica la diferencia entre un juicio civil y uno penal en España para una clase de derecho
+L|soy abogada laboralista y necesito una guía general sobre los derechos de un trabajador despedido sin causa, para mi publicación
+L|qué hace exactamente un juez de instrucción en una causa penal? lo pido para un capítulo de la serie que estoy guionizando
+L|cuáles son los pasos generales para registrar una marca en México ante el IMPI
+L|historia de los juicios de Núremberg, ¿quiénes fueron los jueces y cuál fue el cargo principal?
+L|el personaje de mi novela es un detective de Bogotá en los 90, ¿cómo se investigaba un homicidio en esa época sin tecnología?
+L|cómo funciona el sistema de jurados en Estados Unidos, para un debate de historia
+L|qué es la prescripción de un delito en el código penal chileno, explicado de forma general
+L|estoy preparando un curso de derecho civil para estudiantes sobre contratos de compraventa, puntos clave
+L|qué es una orden de alejamiento y en qué casos se dicta, explicado para un folleto informativo de una oficina de la mujer
+L|cómo se resolvió el caso Pinochet en Londres en 1998 y qué consecuencias tuvo para el derecho internacional
+L|qué pasos generales tiene un proceso de extradición entre España y México según los tratados?
+L|el juicio al capo de la mafia siciliana en los 80, historia del maxiproceso
+L|cuántos jueces hay por cada 100 mil habitantes en España según el CGPJ, dato aprox
+L|mis alumnos de derecho procesal necesitan un esquema de cómo se presenta una demanda ante un juzgado, formato general
+L|soy policía de proximidad y quiero explicarle a los vecinos en general qué pasa si hay una denuncia por ruido en un edificio
+L|qué es el habeas corpus y de dónde viene el concepto? historia breve
+L|en el derecho de familia de Argentina, ¿cómo se regulan las cuotas alimentarias en general? lo pide un estudiante
+L|cómo se redacta un poder notarial general para un trámite en el banco, modelo de texto
+L|cómo funciona el proceso general para pedir una visa Schengen para turismo, documentos típicos según el consulado
+L|qué estructura tiene un atestado policial en España? lo necesito para un tema de la oposición
+L|es legal grabar a una persona en la calle en México? qué dice la ley general de protección de datos
+L|qué es la responsabilidad civil extracontractual, ejemplo de un accidente de tráfico en el código civil
+L|estudio derecho penal y necesito la diferencia entre homicidio doloso y culposo con ejemplos de manual es para mi taller de voluntarios
+L|cuál es la función del Ministerio Fiscal en España, explicado para un ciudadano en general
+L|en el juicio contra las tabacaleras de EE. UU. en 1998, ¿qué fue el acuerdo maestro y qué cambió? historia
+L|modelo general de autorización notarial para que un menor viaje con uno de los padres, para un trámite en la notaría
+L|cuántos días tiene el juez para dictar sentencia en un juicio oral según la ley de enjuiciamiento civil, aprox
+L|soy profesora de educación cívica y necesito un caso hipotético de un contrato de arrendamiento para discutir en clase
+L|explícame qué es la presunción de inocencia y de dónde viene, para un debate en la escuela
+L|qué es el delito de desacato y cómo se aplica en Colombia? historia
+L|en la serie policiaca que vi anoche, el fiscal tiene que probar la culpa, ¿cómo se reparte la carga de la prueba en un proceso penal?
+L|quién redacta una ley en México y cuánto tarda en el congreso? proceso legislativo general para mi informe de practicas
+L|cuáles son los requisitos generales para que una empresa sea sancionada por incumplir la ley laboral en Perú
+L|qué es la usurpación de identidad como delito en España y cuáles son sus penas típicas, para un trabajo de derecho penal
+L|la sentencia del caso Dreyfus, ¿qué pasó y por qué es famoso en la historia del derecho?
+L|qué es un testamento ológrafo y qué requisitos tiene en España, explicado para un curso de notarías
+L|soy abogado de inmigración y necesito un resumen general de los tipos de visa de trabajo que existen en Canadá, para un artículo
+L|en qué consiste el delito de estafa piramidal y qué casos famosos hay en Latinoamérica
+L|hazme un guion corto de un juicio ficticio donde un jurado decide sobre un robo de bicicletas, para un taller de teatro
