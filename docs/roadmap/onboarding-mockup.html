@@ -1,0 +1,291 @@
+<title>Melo onboarding, privé</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: een rij Mac-vensters onder elkaar, elk één onboardingstap, met een korte noot ernaast */
+:root{
+  --bg:#F5F5F7; --win:#FFFFFF; --vlak:#F5F5F7; --lijn:#E5E5EA; --fg:#1D1D1F; --zacht:#6E6E73;
+  --knop:#1D1D1F; --knoptekst:#FFFFFF; --merk:#1A8CFF; --link:#0A6CD6; --goed:#1A7F3C; --let:#A15C00;
+  --font:"Inter",-apple-system,"SF Pro Text",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B0B0C; --win:#000000; --vlak:#1C1C1E; --lijn:#2C2C2E; --fg:#F5F5F7; --zacht:#A1A1A6;
+  --knop:#F5F5F7; --knoptekst:#000000; --link:#4DA6FF; --goed:#30D158; --let:#FFB547; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0B0C; --win:#000000; --vlak:#1C1C1E; --lijn:#2C2C2E; --fg:#F5F5F7; --zacht:#A1A1A6;
+  --knop:#F5F5F7; --knoptekst:#000000; --link:#4DA6FF; --goed:#30D158; --let:#FFB547; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:48px}
+header h1{font-size:28px;font-weight:600;margin:0 0 8px;text-wrap:balance}
+header p{margin:0;color:var(--zacht);max-width:62ch}
+.stap{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:32px;align-items:start}
+@media (max-width:860px){.stap{grid-template-columns:minmax(0,1fr)}}
+.noot{display:flex;flex-direction:column;gap:8px;padding-top:8px}
+.noot .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht);font-weight:600}
+.noot h2{font-size:18px;margin:0;font-weight:600}
+.noot p{margin:0;color:var(--zacht);font-size:14px}
+.noot .vs{font-size:13px;border-top:1px solid var(--lijn);padding-top:8px}
+.win{background:var(--win);border:1px solid var(--lijn);border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.08);min-width:0}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 16px}
+.bar i{width:12px;height:12px;border-radius:50%;background:var(--lijn);display:block}
+.top{display:flex;align-items:center;justify-content:space-between;padding:8px 32px 0;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:18px}
+.logo svg{width:28px;height:24px;color:var(--merk)}
+.dots{display:flex;gap:6px;align-items:center}
+.dots b{width:7px;height:7px;border-radius:4px;background:var(--lijn);display:block}
+.dots b.on{width:28px;background:var(--fg)}
+.top .rep{font-size:13px;color:var(--zacht)}
+.body{padding:32px;min-height:460px;display:flex;flex-direction:column;gap:16px}
+.mid{align-items:center;text-align:center;justify-content:center}
+.groot svg{width:72px;height:62px;color:var(--merk)}
+.groot{display:flex;flex-direction:column;align-items:center;gap:8px}
+.groot span{font-size:40px;font-weight:600;letter-spacing:-.02em}
+.tag{font-size:22px;font-weight:500;margin:8px 0 16px;text-wrap:balance}
+.punten{display:flex;flex-direction:column;gap:16px;text-align:left;max-width:520px}
+.punt{display:grid;grid-template-columns:24px 1fr;gap:12px}
+.punt svg{width:20px;height:20px;stroke:var(--fg);fill:none;stroke-width:1.6;margin-top:2px}
+.punt h3{margin:0;font-size:16px;font-weight:600}
+.punt p{margin:0;color:var(--zacht);font-size:14px}
+.knop{background:var(--knop);color:var(--knoptekst);border:0;border-radius:999px;padding:12px 32px;font:600 15px var(--font);min-height:48px}
+.knop2{background:transparent;color:var(--fg);border:1px solid var(--lijn);border-radius:999px;padding:10px 20px;font:500 14px var(--font)}
+.klein{font-size:13px;color:var(--zacht);margin:0}
+.chat{display:flex;gap:12px;align-items:flex-start;max-width:640px;margin:0 auto;width:100%}
+.chat .av{width:32px;height:28px;color:var(--merk);flex:none;margin-top:6px}
+.bel{background:var(--vlak);border-radius:18px;padding:12px 16px;min-width:0}
+.kol{max-width:640px;margin:0 auto;width:100%;display:flex;flex-direction:column;gap:8px}
+.rij{display:flex;align-items:center;gap:12px;border:1px solid var(--lijn);border-radius:14px;padding:12px 16px}
+.rij .ic{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;font-weight:600;color:#fff;flex:none}
+.rij .nm{flex:1;min-width:0;font-weight:500}
+.rij .nm small{display:block;font-weight:400;color:var(--zacht);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;max-width:640px;margin:0 auto;width:100%;padding-left:44px}
+.chip{border:1px solid var(--lijn);border-radius:999px;padding:8px 16px;font-size:14px;background:transparent;color:var(--fg)}
+.chip.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.chip.cb::before{content:"";display:inline-block;width:12px;height:12px;border:1.5px solid currentColor;border-radius:3px;margin-right:8px;vertical-align:-1px}
+.chip.cb.on::before{background:currentColor;box-shadow:inset 0 0 0 2px var(--fg)}
+.voor{border:1px solid var(--lijn);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.voor .bron{font-size:12px;color:var(--zacht)}
+.voor h4{margin:0;font-size:15px;font-weight:600}
+.voor .knoppen{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.voor .knop{padding:8px 16px;min-height:36px;font-size:14px}
+.status{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--goed)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.keus{border:1px solid var(--lijn);border-radius:14px;padding:16px;display:grid;grid-template-columns:20px 1fr;gap:12px}
+.keus.on{border-color:var(--fg);border-width:2px;padding:15px}
+.radio{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--zacht);margin-top:2px}
+.keus.on .radio{border:6px solid var(--fg)}
+.keus h4{margin:0;font-size:15px;font-weight:600}
+.keus p{margin:4px 0 0;color:var(--zacht);font-size:14px}
+.pill{display:inline-block;font-size:12px;border:1px solid var(--lijn);border-radius:999px;padding:2px 8px;margin-left:6px;color:var(--zacht);font-weight:500}
+.kaart{max-width:460px;margin:0 auto;width:100%;border:1px solid var(--lijn);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.kaart label{display:flex;gap:8px;align-items:flex-start;font-size:14px}
+.kaart input{margin-top:3px}
+.mail{background:var(--vlak);border-radius:10px;padding:12px;font-size:14px}
+.mail b{display:block;font-size:12px;color:var(--zacht);font-weight:500;margin-bottom:4px}
+.lijst{max-width:640px;margin:0 auto;width:100%;border:1px solid var(--lijn);border-radius:16px;overflow:hidden}
+.li{display:grid;grid-template-columns:28px 1fr 16px;gap:12px;align-items:center;padding:14px 18px;border-top:1px solid var(--lijn)}
+.li:first-child{border-top:0}
+.li .ico{width:24px;height:24px;display:grid;place-items:center;font-weight:600;font-size:13px}
+.li .ico svg{width:22px;height:20px;color:var(--merk)}
+.li b{font-weight:500;display:block}
+.li small{display:block;color:var(--zacht);font-size:13px}
+.li .pijl{color:var(--zacht);font-size:18px;line-height:1}
+.slot{display:inline-flex;gap:4px;align-items:center;font-size:12px;color:var(--goed);margin-left:6px;font-weight:500}
+.veld{display:flex;flex-direction:column;gap:4px}
+.veld label{font-size:13px;font-weight:500}
+.veld .in{border:1px solid var(--lijn);border-radius:10px;padding:10px 12px;font-size:14px;font-family:ui-monospace,Menlo,monospace;background:var(--win)}
+.veld .in.leeg{color:var(--zacht);font-family:var(--font)}
+.bewijs{max-width:460px;margin:0 auto;width:100%;border:1px solid var(--lijn);border-radius:16px;overflow:hidden}
+.bewijs .kop{padding:16px;display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--lijn)}
+.bewijs .kop .vink{width:32px;height:32px;border-radius:50%;background:var(--goed);color:var(--win);display:grid;place-items:center;font-weight:700;flex:none}
+.bewijs .r{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px 16px;border-top:1px solid var(--lijn);font-size:14px}
+.bewijs .r:first-of-type{border-top:0}
+.bewijs .r span:first-child{color:var(--zacht)}
+.bewijs code{font-family:ui-monospace,Menlo,monospace;font-size:12px;word-break:break-all}
+.chipv{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--goed);color:var(--goed);border-radius:999px;padding:4px 10px;font-size:13px;font-weight:500}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Melo onboarding, zoals Nod, maar privé</h1>
+  <p>Negen schermen voor de Mac. De iPhone krijgt dezelfde stappen onder elkaar. Rechts staat steeds wat anders is dan bij Nod. Dit is een voorbeeld: niets is gebouwd.</p>
+</header>
+
+<!-- 1 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="body mid">
+   <div class="groot"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg><span>Melo</span><small style="color:var(--zacht);font-size:13px">van Kamelo</small></div>
+   <p class="tag">Een assistent die werk van je overneemt. Privé.</p>
+   <div class="punten">
+    <div class="punt"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg><div><h3>Doet je taken</h3><p>Melo gebruikt je mail, agenda en papieren om taken af te maken.</p></div></div>
+    <div class="punt"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg><div><h3>Denkt vooruit</h3><p>Melo ziet wat er moet gebeuren en stelt het voor.</p></div></div>
+    <div class="punt"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><div><h3>Volledig privé</h3><p>Alles is versleuteld. Melo denkt in een afgesloten kluis. Niemand kan je data zien, ook wij niet.</p></div></div>
+    <div class="punt"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/></svg><div><h3>Jij beslist</h3><p>Melo vraagt altijd eerst. Alles kun je terugzetten.</p></div></div>
+   </div>
+   <p class="klein" style="margin-top:8px">We verzamelen geen gebruiksgegevens. Er staat niets aan om uit te zetten.</p>
+   <button class="knop">Begin</button>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 1 · Welkom</span><h2>Zelfde opbouw als Nod</h2>
+  <p>Logo, één zin, vier punten, één knop.</p>
+  <p class="vs">Nod vraagt om gebruiksdata aan te laten. Kamelo verzamelt niets. "Verbind met een server" valt weg.</p></div>
+</section>
+
+<!-- 2 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b class="on"></b><b></b><b></b><b></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Ik neem werk van je over. Koppel je mail. Dan lees ik je laatste berichten en stel ik een paar taken voor. Alles blijft versleuteld.</div></div>
+   <div class="kol">
+    <div class="rij"><span class="ic" style="background:#D93025">G</span><span class="nm">Gmail</span><button class="knop2">Log in bij Google</button></div>
+    <div class="rij"><span class="ic" style="background:#0F6CBD">O</span><span class="nm">Outlook</span><button class="knop2">Log in bij Microsoft</button></div>
+    <div class="rij"><span class="ic" style="background:#5B6475">@</span><span class="nm">Mail op deze Mac<small>iCloud en andere accounts in Apple Mail</small></span><button class="knop2">Gebruik</button></div>
+    <p class="klein">Je logt direct in bij Google of Microsoft. Er zit geen bedrijf tussen. De sleutel blijft in de sleutelhanger van deze Mac.</p>
+    <p class="klein"><span style="text-decoration:underline">Later</span></p>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 2 · Stap 1</span><h2>Meteen een actie</h2>
+  <p>Net als Nod begint Kamelo direct met werk: mail koppelen en lezen.</p>
+  <p class="vs">Nod koppelt via Composio. Dat is een bedrijf in de cloud dat je sleutels bewaart en logs tot een jaar kan houden. Kamelo logt direct in bij Google of Microsoft, zonder tussenpersoon.</p></div>
+</section>
+
+<!-- 3 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b class="on"></b><b></b><b></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Ik las je laatste 50 mails, versleuteld. Dit kan ik voor je doen:</div></div>
+   <div class="kol">
+    <div class="voor"><span class="bron">Gmail · factuur 2026-118, 14 dagen open</span><h4>Studio Vos heeft factuur 2026-118 nog niet betaald. Zal ik een vriendelijke herinnering klaarzetten?</h4><div class="knoppen"><button class="knop">Zet klaar</button><button class="knop2">Niet nu</button></div></div>
+    <div class="voor"><span class="bron">Gmail · 3 vragen van Sara over de offerte</span><h4>Sara wacht op een antwoord over de prijs. Zal ik een concept schrijven?</h4><div class="knoppen"><button class="knop">Schrijf concept</button><button class="knop2">Niet nu</button></div></div>
+    <div class="voor"><span class="bron">Gmail · proefperiode Canva eindigt vrijdag</span><h4>Je proef van Canva Pro stopt vrijdag. Zal ik je donderdag herinneren?</h4><div class="knoppen"><button class="knop">Herinner me</button><button class="knop2">Niet nu</button></div></div>
+    <span class="status">Niets is verstuurd. Niemand kon meelezen.</span>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 3 · Eerste resultaat</span><h2>Binnen een minuut iets nuttigs</h2>
+  <p>Drie voorstellen uit je eigen mail. "Zet klaar" maakt alleen een concept. Versturen vraagt later nog een ja.</p>
+  <p class="vs">De mail gaat versleuteld naar de Tinfoil-kluis. Daar leest het model hem. Daarna wordt alles gewist. Voorbeelden: in de app komen de voorstellen uit de echte mail van de gebruiker.</p></div>
+</section>
+
+<!-- 4 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b></b><b class="on"></b><b></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Vertel kort iets over jezelf. Waar wil je hulp bij?</div></div>
+   <div class="chips"><button class="chip on">Vooral werk</button><button class="chip">Vooral privé</button><button class="chip">Allebei</button></div>
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Wat doe je? Kies er zoveel als je wilt.</div></div>
+   <div class="chips">
+    <button class="chip cb on">Eigen bedrijf</button><button class="chip cb">Freelance</button><button class="chip cb">Bureau</button><button class="chip cb">Techniek</button><button class="chip cb">Product of ontwerp</button><button class="chip cb on">Verkoop of marketing</button><button class="chip cb">Leidinggevende</button><button class="chip cb">Iets anders</button>
+   </div>
+   <div class="chips"><p class="klein">Je antwoorden blijven versleuteld op deze Mac. Melo gebruikt ze alleen om betere voorstellen te doen.</p></div>
+   <div class="chips"><button class="knop">Verder</button></div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 4 · Stap 2</span><h2>Over jou</h2>
+  <p>Dezelfde vragen als Nod, met knoppen in plaats van typen.</p>
+  <p class="vs">Nod deelt deze antwoorden met het Nod-team. Melo stuurt ze nergens heen. Ze komen in "Over jou" en je kunt ze altijd wissen.</p></div>
+</section>
+
+<!-- 5 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b></b><b></b><b class="on"></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Ik ben klaar. Je hoeft niets in te stellen. Wil je toch een andere AI? Kies hieronder.</div></div>
+   <div class="kol"><button class="knop" style="align-self:flex-start">Begin met Melo</button><p class="klein">Melo Kluis staat al aan. Geen account, geen sleutel nodig.</p><p class="klein" style="margin-top:8px;font-weight:600;color:var(--fg)">Andere AI kiezen</p></div>
+   <div class="lijst">
+    <div class="li"><span class="ico"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><span><b>Melo Kluis<span class="slot">● Versleuteld</span></b><small>Sterke open modellen in de Tinfoil-kluis. Niemand kan meelezen. Aanbevolen</small></span><span class="pijl">›</span></div>
+    <div class="li"><span class="ico">T</span><span><b>Je eigen Tinfoil-sleutel<span class="slot">● Versleuteld</span></b><small>Je eigen Tinfoil-abonnement. Dezelfde kluis, niemand leest mee</small></span><span class="pijl">›</span></div>
+    <div class="li"><span class="ico">L</span><span><b>Je eigen server<span class="slot">● Op je Mac</span></b><small>Ollama, LM Studio, llama.cpp. Gratis</small></span><span class="pijl">›</span></div>
+    <div class="li"><span class="ico" style="color:var(--zacht)">⌄</span><span><b>Meer modellen in de kluis<span class="slot">● Versleuteld</span></b><small>Gemma 4, DeepSeek, Kimi, GLM, GPT-OSS, Llama</small></span><span class="pijl"></span></div>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 5 · Stap 3</span><h2>Zoals de lijst van Nod, maar alles privé</h2>
+  <p>Makkelijk zoals ChatGPT: één knop, "Begin met Melo". Melo Kluis staat al aan.</p>
+  <p>Wie wil kiezen: je eigen Tinfoil-sleutel, je eigen server, of een ander model in de kluis.</p>
+  <p class="vs">Alles in deze lijst is privé. Groen "Versleuteld": de modellen draaien in de Tinfoil-kluis, niemand leest mee. "Op je Mac": niets gaat het internet op.</p>
+  <p class="vs">OpenAI, Anthropic en Gemini staan er niet in. Die bedrijven kunnen je vraag lezen (besluit 28 nov).</p></div>
+</section>
+
+
+<!-- 5b -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b></b><b></b><b class="on"></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Plak je Tinfoil-sleutel. Je vindt hem op tinfoil.sh onder API keys.</div></div>
+   <div class="kol">
+    <div class="rij"><span class="ic" style="background:#5B6475">T</span><span class="nm">tk-••••••••••••••••3f9a<small>Tinfoil-sleutel</small></span><button class="knop2">Plak</button></div>
+    <div class="mail" style="border:1px solid var(--goed)"><b style="color:var(--goed)">Kluis gecontroleerd</b>De kluis is echt afgesloten. De code in de kluis is gelijk aan de openbare code. Melo stuurt alleen versleuteld.</div>
+    <p class="klein">Je sleutel blijft in de sleutelhanger van deze Mac. Melo stuurt hem nergens anders heen.</p>
+    <div><button class="knop">Verder</button></div>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 5b · Eigen sleutel</span><h2>Je eigen Tinfoil-sleutel</h2>
+  <p>Zoals het sleutelscherm van Nod. De gebruiker betaalt Tinfoil zelf. Kamelo betaalt niets.</p>
+  <p class="vs">Volledig privé: dezelfde kluis als Melo Kluis, dus groen "Versleuteld".</p></div>
+</section>
+<!-- 5c -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b></b><b></b><b class="on"></b><b></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">Je eigen lokale AI. Werkt met Ollama, LM Studio en llama.cpp op deze Mac.</div></div>
+   <div class="kol">
+    <div class="veld"><label for="adres">Serveradres</label><div class="in" id="adres">http://localhost:11434/v1</div></div>
+    <div class="veld"><label for="sleutel">Sleutel (alleen als je server erom vraagt)</label><div class="in leeg" id="sleutel">Leeg laten</div></div>
+    <div><button class="knop">Verbind</button></div>
+    <div class="voor"><span class="bron">localhost:11434 · 3 modellen met tools</span><h4>gpt-oss:20b</h4>
+      <span class="status">Getest: kan tools gebruiken, geheugen 65.536 tokens</span>
+      <div class="knoppen"><button class="knop2">Ander model</button></div></div>
+    <p class="klein">Werkt Melo raar of vergeet het dingen? Zet het geheugen (context) van je model op 65.536 of meer.</p>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 5c · Eigen lokale AI</span><h2>Zoals "Your own server" bij Nod</h2>
+  <p>Serveradres, sleutel als dat moet, Verbind. Melo vult het adres van Ollama al in.</p>
+  <p class="vs">Melo test het model meteen: kan het tools gebruiken, en is het geheugen groot genoeg? Zo niet, dan zegt Melo dat eerlijk. Alleen modellen met tools staan in de lijst. Gratis, alles blijft op de Mac.</p>
+  <p class="vs">iPhone: daar draait geen eigen server. De iPhone gebruikt het ingebouwde model, of je Mac in hetzelfde netwerk.</p></div>
+</section>
+<!-- 6 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><div class="dots"><b></b><b></b><b></b><b></b><b class="on"></b></div><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="chat"><span class="av"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg></span><div class="bel">De herinnering voor Studio Vos staat klaar. Wil je hem versturen?</div></div>
+   <div class="kaart">
+    <div class="mail"><b>Aan: administratie@studiovos.nl · Onderwerp: Factuur 2026-118</b>Hoi, ik zag dat factuur 2026-118 van 14 november nog openstaat. Wil je er even naar kijken? Groet, Sam</div>
+    <label><input type="checkbox" checked id="c1"> Stuur deze mail</label>
+    <label><input type="checkbox" checked id="c2"> Herinner me over 7 dagen als er geen betaling is</label>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="knop">Ja, stuur</button><button class="knop2">Pas aan</button></div>
+    <p class="klein">Daarna zie je: "Verstuurd aan Studio Vos." met de knop Zet terug.</p>
+   </div>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 6 · Eerste ja</span><h2>De eerste echte actie</h2>
+  <p>Zoals bij Nod: "Reply to Sara?" met één knop. Kamelo laat precies zien wat er gebeurt, met vinkjes.</p>
+  <p class="vs">Na deze stap opent het gewone Kamelo-scherm.</p></div>
+</section>
+<!-- 7 -->
+<section class="stap">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div>
+  <div class="top"><div class="logo"><svg viewBox="3.63 12.42 120.49 103.37" aria-hidden="true"><path transform="translate(-35.29 -36.75) scale(0.19469) translate(0 1024) scale(.1 -.1)" fill="currentColor" fill-rule="evenodd" d="M6313 7694 c-70 -26 -126 -84 -178 -186 -142 -276 -218 -293 -685 -152 -1562 470 -3188 -605 -3414 -2258 -163 -1187 218 -2103 1043 -2514 1165 -579 2347 337 1884 1461 -25 61 -67 170 -94 243 -67 185 -102 243 -229 377 -274 288 -170 479 253 463 203 -8 269 -43 522 -274 260 -238 317 -293 445 -430 285 -304 426 -361 516 -208 93 158 18 335 -174 414 -247 103 -361 236 -323 378 33 122 83 132 711 142 782 13 980 51 1280 247 496 325 401 1004 -210 1491 -52 42 -194 173 -315 291 -423 415 -797 601 -1032 515z m-2514 -2709 c230 -118 251 -394 46 -579 -313 -283 -388 -441 -332 -703 102 -477 828 -555 828 -89 0 215 -213 286 -337 113 -95 -132 -167 -143 -204 -31 -76 231 185 458 448 390 743 -190 352 -1281 -425 -1186 -687 84 -1063 743 -816 1433 149 419 571 767 792 652z M7030 6440 a300 300 0 1 0 600 0 a300 300 0 1 0 -600 0z"/></svg> Melo</div><span class="chipv">● Versleuteld · gecontroleerd</span><span class="rep">Meld een fout</span></div>
+  <div class="body">
+   <div class="bewijs">
+    <div class="kop"><span class="vink">✓</span><div><b>De kluis is gecontroleerd</b><div class="klein">Vandaag 11:32, vóór je laatste bericht</div></div></div>
+    <div class="r"><span>Je sleutels</span><span>Op deze Mac, in de sleutelhanger. Ze gaan nergens heen.</span></div>
+    <div class="r"><span>Je mail en agenda</span><span>Op deze Mac. Melo stuurt alleen de tekst van één taak, versleuteld.</span></div>
+    <div class="r"><span>De kluis</span><span>Afgesloten computer bij Tinfoil. Melo heeft gecontroleerd dat hij echt afgesloten is.</span></div>
+    <div class="r"><span>Vingerafdruk</span><span><code>a3f9 61c2 08be 4d7e … 9b10</code><br>Gelijk aan de openbare code</span></div>
+    <div class="r"><span>Wat Tinfoil ziet</span><span>Dat er een vraag was, wanneer, en hoe lang. Niet wat erin staat.</span></div>
+    <div class="r"><span>Wat niemand ziet</span><span>Je tekst. Ook wij niet.</span></div>
+    <div class="r"><span>Zelf nakijken</span><span style="color:var(--link);text-decoration:underline">Bekijk het bewijs</span></div>
+   </div>
+   <p class="klein" style="text-align:center">Mislukt de controle? Dan stuurt Melo niets en zegt dat meteen.</p>
+  </div></div>
+ <div class="noot"><span class="lbl">Scherm 7 · Bewijs</span><h2>Privacy die je kunt zien</h2>
+  <p>Bovenaan elk gesprek staat een groen label: "Versleuteld · gecontroleerd". Tik erop en je ziet dit blad.</p>
+  <p class="vs">Advies van Ritik: we zeggen niet meer "niets verlaat je telefoon". Dus moet je de privacy kunnen zien. Je sleutels blijven op je toestel. De controle van de kluis is zichtbaar en zelf na te kijken.</p>
+  <p class="vs">Eerlijk: Tinfoil ziet wel wanneer en hoeveel. Dat staat er gewoon bij.</p></div>
+</section>
+
+</div>
